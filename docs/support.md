@@ -26,6 +26,6 @@ Choose the problem you need to solve. Include your device, app version, a safe d
 
 ## Contact Support
 
-Email [nimotecode@gmail.com](mailto:nimotecode@gmail.com) for account, subscription and private support requests. For reproducible product bugs and feature ideas, use [GitHub Issues](https://github.com/mobiledevloperlab/nimote_issues/issues). We aim to reply to urgent access issues within 1–2 business days and regular requests within 2–3 business days.
+Email [support@nimotecode.com](mailto:support@nimotecode.com) for account, subscription and private support requests. For reproducible product bugs and feature ideas, use [GitHub Issues](https://github.com/mobiledevloperlab/nimote_issues/issues). We aim to reply to urgent access issues within 1–2 business days and regular requests within 2–3 business days.
 
 For privacy or account deletion, see [Privacy](/privacy) and [Account deletion](/account-delete). Include only the information needed to locate the request.

@@ -119,5 +119,5 @@ We may update these Terms from time to time. Continued use of the Application co
 
 ## 15. Contact
 
-Email: nimotecode@gmail.com  
+Email: support@nimotecode.com  
 GitHub: https://github.com/mobiledevloperlab/nimote_issues/issues

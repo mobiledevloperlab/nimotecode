@@ -16,9 +16,9 @@
 </p>
 
 > [!IMPORTANT]
-> **请从商店安装。** 当前 GitHub Release 附带的安装包是较早的构建，不包含 1.1.6–1.1.7 的重要更新。新版 NimoteCode 正在通过 [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) 和 [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253) 推送；在你所在地区可用后，请前往商店下载或更新。
+> **请从商店安装。** GitHub Release 附带的是较早构建；请通过 [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) 或 [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253) 获取 NimoteCode。
 >
-> **本轮重点更新：**1.1.6 加入首次启动引导，并提升编辑器、浏览器、Git 与 iOS 输入的可靠性；1.1.7 带来 Android 本地 Linux、HTML 快照预览、外部 ACP Agent 和统一 SSH 登录环境。1.1.8 将开启 **Early Access Pro**，面向希望提前体验 Pro 工作流并参与后续打磨的用户。[查看发布说明](https://github.com/mobiledevloperlab/nimotecode/releases)。
+> **1.1.6–1.1.8 重点更新：**新增首次启动引导、Android 本地 Linux、HTML 快照预览、外部 ACP Agent 和灵活的工作区目录切换；并提升 SSH 凭据、Tasks、Source Control 与 Diff、Git 刷新、终端、AI 和 Local Linux 的可靠性。1.1.8 同时开启 **Early Access Pro**。[查看发布说明](https://github.com/mobiledevloperlab/nimotecode/releases)。
 
 <p align="center">
   <img src="docs/public/screenshots/nimote-pro-framed.webp" alt="NimoteCode 移动 IDE，在平板和手机上展示本地与 SSH 工作区" width="1000">
@@ -32,62 +32,47 @@ Explorer、编辑器、搜索、终端、任务、诊断、调试器、Git、预
 
 ## 演示
 
+> [!TIP]
+> **持续迭代，开放共建。**我们的目标是打造移动端最强的 IDE。欢迎通过 [GitHub Issues](https://github.com/mobiledevloperlab/nimote_issues/issues) 提交建议、问题或 Bug；我们会阅读并回复每一条反馈。
+
 <div align="center" style="padding: 24px 16px; background: radial-gradient(ellipse at center, rgba(56, 139, 253, 0.16) 0%, rgba(56, 139, 253, 0) 72%);">
   <video src="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6" controls muted playsinline width="420" poster="docs/public/videos/nimotecode-poster.jpg" style="display: block; max-width: 100%; margin: 0 auto; border: 1px solid rgba(56, 139, 253, 0.28); border-radius: 16px; box-shadow: 0 12px 32px rgba(27, 31, 35, 0.18);">
     打开 <a href="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6">AI Agent 演示视频</a>。
   </video>
 </div>
 
-## 像 IDE 一样构建，而不只是 SSH 终端
+## 从项目到完成一次改动
 
-| 编码 | 运行 | 理解 | 交付 |
-| --- | --- | --- | --- |
-| Explorer | 终端 | LSP 诊断 | Git 状态 |
-| 编辑器 | Tasks | 代码操作 | Diff 审查 |
-| 项目搜索 | 多终端 | 调试器 | 提交 / 分支 |
-| 预览 | Commands | AI 辅助修复 | Push |
+NimoteCode 将移动端的关键开发闭环放在一起：选择工作区、完成编辑、运行验证、审查 diff，并在改动就绪时交付。
 
-许多移动工具只提供 shell。NimoteCode 还保留了围绕它的 IDE 工作流。
-
-## 一个 IDE。三种环境。
-
-| 本地工作区 | Android 本地 Linux | 远程 SSH |
+| 从这里开始 | 接着做什么 | 如何完成 |
 | --- | --- | --- |
-| 直接使用本地文件 | Ubuntu + PRoot，无 Android root | Mac / Linux / VPS |
-| 快速编辑 | ARM64 / x86_64 | 将重型工具链留在主机 |
-| 编辑器、Git 与 AI | 同一 IDE | 同一工作流 |
+| 打开本地目录、Android 本地 Linux 或 SSH 项目 | 在编辑器中修改，通过终端或 Tasks 完成验证 | 提交或推送前审查 Git 状态和 Diff |
+| 搜索项目，或让 AI 协助处理聚焦任务 | 检查产生的文件变更与命令输出 | 让决策和交付步骤始终清晰可见 |
 
-切换环境，不必切换开发工作流。
+## 为项目选择合适的工作区
 
-> [!NOTE]
-> **按任务选择工作区。** 快速处理文件可使用本地工作区；支持的 Android 设备可通过 Android 本地 Linux 获得免 root 的 Ubuntu 环境；项目或工具链已在另一台设备上时，使用远程 SSH。
-
-## 按你的方式使用 AI Agent
-
-| 内置 Agent | ACP Agent | CLI Agent |
+| 项目所在位置或需求 | 选择 | 你将获得 |
 | --- | --- | --- |
-| 项目感知 AI | 兼容的 ACP Agent | Claude Code / Codex |
-| 文件、终端与 Git 上下文 | 统一的移动工作流 | 在自己的主机上运行 |
-| 集成式体验 | SSH 工作区集成 | 通过终端使用 |
+| 文件已在手机或平板上 | **本地工作区** | 快速编辑，并使用同一套编辑器、终端、Git 与 AI 工作流 |
+| 需要在 Android 上使用 Linux 工具 | **Android 本地 Linux** | 在支持 ARM64 与 x86_64 的 Android 设备上，通过 PRoot 使用免 root 的 Ubuntu |
+| 项目位于 Mac、Linux 主机或 VPS | **远程 SSH** | 直接操作真实主机，同时将重型工具链与服务保留在主机上 |
 
-可选择内置 Agent、兼容的 ACP Agent，或在自己的主机上运行 Claude Code / Codex，同时在移动端保留编辑器、终端与 Git 工作流。
+无论切换到哪种工作区，浏览、编辑、运行与审查项目的方式始终一致。
 
-> [!TIP]
-> **按需选择 Agent 路径。** 希望获得一体化体验时，直接使用内置 Agent；在 SSH 工作区中使用兼容的外部 Agent 时选择 ACP；也可以在自己的主机终端中运行 Claude Code / Codex。
+## 选择 AI 工作流
 
-## 直接在 Android 上进行 Linux 开发
+| 你的需求 | 选择 | 最适合 |
+| --- | --- | --- |
+| 一体化、理解项目上下文的助手 | **内置 Agent** | 在文件、终端与 Git 上下文中完成聚焦任务 |
+| 在 SSH 工作区使用兼容的外部 Agent | **ACP Agent** | 在统一的移动时间线中审查权限与进度 |
+| 在自己的主机上使用 Claude Code 或 Codex | **CLI Agent** | 将 Agent 与认证留在远程主机，通过终端访问 |
 
-Ubuntu 通过 PRoot 运行，无需 Android root。
+希望最快上手时，先使用内置 Agent；已有兼容外部运行时可选择 ACP；现有工作流已经在远程主机中运行时，使用 CLI Agent。
 
-**ARM64 · x86_64 · Ubuntu 24.04**
+## 需要时再深入
 
-[本地 Linux 文档](https://nimotecode.com/zh/docs/local-linux) · [Linux Presets](https://github.com/mobiledevloperlab/nimote-linux-presets)
-
-## 开发者资源
-
-移动开发 · Android Linux · 远程开发 · AI 编程
-
-[浏览资源](resources/README.md) · [移动工作流指南](resources/mobile-coding-workflows.md) · [示例](examples/README.md) · [文档](https://nimotecode.com/zh/docs/quick-start)
+Android 本地 Linux 通过 PRoot 运行 Ubuntu 24.04，无需 Android root。需要配置或继续学习时，可查看[本地 Linux 文档](https://nimotecode.com/zh/docs/local-linux)、[Linux Presets](https://github.com/mobiledevloperlab/nimote-linux-presets)、[移动工作流指南](resources/mobile-coding-workflows.md)、[示例](examples/README.md)和[文档](https://nimotecode.com/zh/docs/quick-start)。
 
 🗒️ [产品更新说明](https://github.com/mobiledevloperlab/nimotecode/releases)
 

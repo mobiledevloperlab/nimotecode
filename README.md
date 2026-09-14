@@ -16,9 +16,9 @@
 </p>
 
 > [!IMPORTANT]
-> **Install from the stores.** The package attached to the current GitHub Release is an older build and does not include the major 1.1.6–1.1.7 updates. The newest NimoteCode build is rolling out through [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) and the [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253); download or update there when it is available in your region.
+> **Install from your store.** The GitHub Release package is an older build; get NimoteCode from [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) or the [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253).
 >
-> **What’s new:** 1.1.6 adds first-launch onboarding and improves editor, browser, Git, and iOS input reliability. 1.1.7 introduces Android Local Linux, HTML snapshot preview, external ACP agents, and a unified SSH login environment. Version 1.1.8 begins **Early Access Pro**—an early rollout for users who want to try Pro workflows and help shape what comes next. [Read the release notes](https://github.com/mobiledevloperlab/nimotecode/releases).
+> **1.1.6–1.1.8 highlights:** First-launch onboarding, Android Local Linux, HTML snapshot preview, external ACP agents, and flexible workspace directories. Reliability fixes improve SSH credentials, Tasks, Source Control and Diff, Git refresh, Terminal, AI, and Local Linux. Version 1.1.8 also begins **Early Access Pro**. [Read the release notes](https://github.com/mobiledevloperlab/nimotecode/releases).
 
 <p align="center">
   <img src="docs/public/screenshots/nimote-pro-framed.webp" alt="NimoteCode mobile IDE with local and SSH workspaces on tablet and phone" width="1000">
@@ -32,62 +32,47 @@ Explorer, editor, search, terminal, tasks, diagnostics, debugger, Git, preview, 
 
 ## Demo
 
+> [!TIP]
+> **Built in the open, and continuously improving.** Our goal is to build the most capable IDE for mobile development. Share ideas, questions, or bugs in [GitHub Issues](https://github.com/mobiledevloperlab/nimote_issues/issues); we read and reply to every report.
+
 <div align="center" style="padding: 24px 16px; background: radial-gradient(ellipse at center, rgba(56, 139, 253, 0.16) 0%, rgba(56, 139, 253, 0) 72%);">
   <video src="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6" controls muted playsinline width="420" poster="docs/public/videos/nimotecode-poster.jpg" style="display: block; max-width: 100%; margin: 0 auto; border: 1px solid rgba(56, 139, 253, 0.28); border-radius: 16px; box-shadow: 0 12px 32px rgba(27, 31, 35, 0.18);">
     Open the <a href="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6">AI Agent demo video</a>.
   </video>
 </div>
 
-## Built like an IDE — not just an SSH terminal
+## From project to completed change
 
-| Code | Run | Understand | Ship |
-| --- | --- | --- | --- |
-| Explorer | Terminal | LSP diagnostics | Git status |
-| Editor | Tasks | Code actions | Diff review |
-| Project search | Multi-terminal | Debugger | Commit / branch |
-| Preview | Commands | AI-assisted fixes | Push |
+NimoteCode keeps the essential development loop together on mobile: choose a workspace, make an edit, run a check, review the diff, and ship when the change is ready.
 
-Many mobile tools give you a shell. NimoteCode keeps the surrounding IDE workflow with it.
-
-## One IDE. Three environments.
-
-| Local Workspace | Android Local Linux | Remote SSH |
+| Start here | Then | Finish with |
 | --- | --- | --- |
-| Work with local files | Ubuntu + PRoot, no Android root | Mac / Linux / VPS |
-| Quick editing | ARM64 / x86_64 | Keep heavy toolchains on the host |
-| Editor, Git and AI | Same IDE | Same workflow |
+| Open a local folder, Android Local Linux, or an SSH project | Edit in the Editor and verify in Terminal or Tasks | Review Git status and Diff before a commit or push |
+| Search the project or use AI for a focused task | Inspect the resulting files and command output | Keep the decision and delivery steps visible |
 
-Switch environments without switching your development workflow.
+## Choose the workspace for your project
 
-> [!NOTE]
-> **Choose the workspace that fits the job.** Use Local Workspace for quick file work, Android Local Linux for a root-free Ubuntu environment on supported Android devices, and Remote SSH when your project or toolchain already lives on another machine.
-
-## AI agents, your way
-
-| Built-in Agent | ACP Agents | CLI Agents |
+| If your project is… | Choose | What you get |
 | --- | --- | --- |
-| Project-aware AI | Compatible ACP agents | Claude Code / Codex |
-| Files + terminal + Git context | Unified mobile workflow | Run on your own host |
-| Integrated experience | SSH workspace integration | Use through Terminal |
+| Already on your phone or tablet | **Local Workspace** | Fast file editing with the same Editor, Terminal, Git, and AI workflow |
+| Best handled with Linux tools on Android | **Android Local Linux** | Root-free Ubuntu through PRoot on supported ARM64 and x86_64 Android devices |
+| On a Mac, Linux machine, or VPS | **Remote SSH** | Work against the real host while keeping heavy toolchains and services there |
 
-Choose the built-in agent, compatible ACP agents, or Claude Code / Codex on your own host—while keeping the surrounding editor, terminal and Git workflow on mobile.
+Switch workspaces without changing the way you browse, edit, run, or review a project.
 
-> [!TIP]
-> **Pick an agent path.** Start with the built-in agent for an integrated workflow; choose ACP for a compatible external agent in an SSH workspace; or run Claude Code / Codex in Terminal on your own host.
+## Choose an AI workflow
 
-## Linux development directly on Android
+| When you need… | Use | Best for |
+| --- | --- | --- |
+| An integrated, project-aware assistant | **Built-in Agent** | Focused tasks across files, Terminal, and Git context |
+| A compatible external Agent in an SSH workspace | **ACP Agent** | Reviewing permissions and progress in one mobile timeline |
+| Claude Code or Codex on your own host | **CLI Agent** | Keeping the agent and its authentication on the remote machine, accessed through Terminal |
 
-Ubuntu through PRoot, no Android root.
+Start with the built-in Agent for the simplest path. Choose ACP when you already use a compatible external runtime, or use a CLI Agent when your existing workflow runs on the remote host.
 
-**ARM64 · x86_64 · Ubuntu 24.04**
+## Go deeper when you need it
 
-[Local Linux Docs](https://nimotecode.com/docs/local-linux) · [Linux Presets](https://github.com/mobiledevloperlab/nimote-linux-presets)
-
-## Developer Resources
-
-Mobile Development · Android Linux · Remote Development · AI Coding
-
-[Browse Resources](resources/README.md) · [Mobile workflow guide](resources/mobile-coding-workflows.md) · [Examples](examples/README.md) · [Documentation](https://nimotecode.com/docs/quick-start)
+Android Local Linux runs Ubuntu 24.04 through PRoot without Android root. For setup and next steps, explore [Local Linux Docs](https://nimotecode.com/docs/local-linux), [Linux Presets](https://github.com/mobiledevloperlab/nimote-linux-presets), [mobile workflow guides](resources/mobile-coding-workflows.md), [examples](examples/README.md), and the [documentation](https://nimotecode.com/docs/quick-start).
 
 🗒️ [Product release notes](https://github.com/mobiledevloperlab/nimotecode/releases)
 

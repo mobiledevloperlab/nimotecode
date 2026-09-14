@@ -8,13 +8,22 @@ description: Open a local, Android Local Linux, or SSH workspace in NimoteCode, 
 Use this guide to prove the workflow first: open a project, make one small edit and verify it in the terminal. It works with a local project, an SSH workspace, or Android Local Linux on a supported device.
 
 <figure class="quick-start-hero">
-  <img src="https://nimotecode.com/screenshots/nimote-pro.webp" width="1440" height="810" alt="NimoteCode mobile IDE on tablet and phone, with a remote project explorer, editor, and AI chat" loading="lazy" decoding="async">
-  <figcaption>One mobile workspace brings project browsing, code editing, terminal work, Git, and AI assistance into view.</figcaption>
+  <img src="/images/placeholders/Start_Overview.png" width="1400" height="900" alt="NimoteCode overview showing the welcome screen and options for demo, Local Linux, remote SSH, and local workspaces" loading="lazy" decoding="async">
+  <figcaption>Start with a demo, Local Linux, a remote SSH host, or files already on your device.</figcaption>
 </figure>
 
 ## 1. Open a workspace
 
-Choose **Local Explorer** for a project on your device, **Remote Explorer** for a remote host, or **Local Linux** for bundled Ubuntu on a supported Android 8+ ARM64/x86_64 device. Local Linux needs no root access and is not available on iOS; see [Android Local Linux](/docs/local-linux) for its setup and lifecycle. For an SSH workspace, enter the host, port and username; then choose password, key file or pasted private key authentication. Confirm the project root before you start working.
+Choose **Open Local Workspace** for a project on your device, **Connect Remote Workspace** for a remote host, or **Local Linux** for bundled Ubuntu on a supported Android 8+ ARM64/x86_64 device. You can also use **Try Demo Workspace** to explore a sample project immediately. Local Linux needs no root access and is not available on iOS; see [Android Local Linux](/docs/local-linux) for its setup and lifecycle. For an SSH workspace, enter the host, port and username; then choose password, key file or pasted private key authentication. Confirm the project root before you start working.
+
+<figure class="seo-media-placeholder seo-media-placeholder--device-pair has-image has-single-device-image">
+  <div class="seo-media-placeholder__device-pair">
+    <div class="seo-media-placeholder__device seo-media-placeholder__device--phone">
+      <img class="seo-media-placeholder__image" src="/images/placeholders/Getting_Started.jpg" width="930" height="2048" alt="NimoteCode welcome screen with options to open a demo, Local Linux, remote, or local workspace" loading="lazy" decoding="async">
+    </div>
+  </div>
+  <figcaption class="seo-media-placeholder__caption">Choose the workspace that matches where your project runs; AI configuration can be changed later.</figcaption>
+</figure>
 
 ## 2. Open, edit and save a file
 

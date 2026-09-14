@@ -1,11 +1,11 @@
 ---
 title: 账户与订阅 | NimoteCode
-description: 了解 NimoteCode 的账户登录、Pro 权益验证、恢复购买、14 天试用以及 Pro 解锁的进阶工作流。
+description: 了解 NimoteCode 的账户登录、Early Access Pro 可用性、恢复购买以及 Pro 解锁的进阶工作流。
 ---
 
 # 账户与订阅
 
-NimoteCode 使用账户与订阅状态验证 **Pro** 权益。新用户可通过按设备计算的 14 天试用体验受限工作流。具体购买与恢复入口取决于平台商店和当前发布渠道。
+NimoteCode 使用账户与订阅状态验证 **Early Access Pro** 权益。具体可用性、购买与恢复入口取决于平台商店、账号、地区和当前发布渠道。
 
 ## 登录的用途
 

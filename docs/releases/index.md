@@ -7,20 +7,35 @@ description: Complete release notes for NimoteCode, including new features, impr
 
 This page contains the complete public release history. NimoteCode is available on Android through Google Play and on iPhone and iPad through the App Store; see the [Download page](/download) for current store links.
 
-## 1.1.8 · September 14, 2026
+## 1.1.8 · September 14, 2026 · Build 45
 
-Version 1.1.8 begins **Early Access Pro**. It is for users who want to try Pro workflows early and help shape the experience as it reaches more people. The newest build is rolling out through [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) and the [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253); store availability can vary by region and rollout status.
+Version 1.1.8 begins **Early Access Pro** while making switching workspaces more flexible, strengthening Android Local Linux installation, file operations, and Git reliability, and refining Source Control and the overall visual hierarchy.
+
+**Platform availability:** Local Linux improvements are Android-only and are not available on iOS.
 
 ### Early Access Pro
 
-- **Try Pro early.** Early Access Pro opens the next phase of Pro availability for users who want to explore the complete mobile development workflow.
-- **Help guide the rollout.** Early users can use the experience in real projects and share feedback as availability expands.
-- **Get the current build from the stores.** The installation package attached to the current GitHub Release is an older build and does not include the major 1.1.6–1.1.7 updates. Download or update through Google Play or the App Store when the latest version appears for your account and region.
+Early Access Pro opens advanced mobile workflows to more users over time: AI Agent, remote search, Git write workflows, multi-terminal, LSP, Debug, and Sync / Cache. Availability and displayed pricing vary by store, account, and region; check Google Play or the App Store for the current offer.
 
-### Recent major updates
+### New
 
-- **1.1.7:** Android Local Linux, HTML snapshot preview, external ACP agents, and a unified SSH login environment, alongside broad reliability improvements for Editor, AI, and Tasks.
-- **1.1.6:** First-launch onboarding, a code-oriented editor default, clearer subscription and theme presentation, plus fixes for Editor, in-app browser, Git status, and iOS text input.
+- **Switch workspace directories.** Choose a different directory as the active local or SSH workspace. Previously opened directories are retained in recent history for quick return.
+
+### Improved
+
+- **More reliable Local Linux (Android only).** PRoot startup and runtime preparation are more robust, guest temporary directories are prepared as needed, and Ubuntu Base installation compatibility is improved.
+- **Clearer file-access boundaries (Android only).** Editor, Search, language services, Git, Terminal, and Agent operations now use a consistent workspace scope in Local Linux, reducing errors caused by crossing runtime boundaries.
+- **More reliable Local Linux Git (Android only).** Git operations in Local Linux workspaces, including file changes made by Tasks, run through the guest environment so status, diffs, and history reflect the actual workspace.
+- **Improved open-source delivery (Android only).** Local Linux now includes more complete package, license, and source-provenance records.
+- **Simpler visual hierarchy.** Themes, panels, tabs, Terminal commands, and the AI execution timeline have been refined to reduce distraction while keeping primary actions prominent.
+
+### Fixed
+
+- Fixed Source Control not refreshing promptly after a branch switch and inconsistent commit-history styling.
+- Fixed cases where incomplete Local Linux temporary-directory setup caused commands or installation flows to fail.
+- Fixed SSH private-key connections losing pasted or imported key credentials after reopening a saved connection. Imported keys are now retained securely instead of relying on temporary file-picker paths on Android and iOS.
+- Fixed Android Local Linux Explorer being unable to navigate up from `/workspace` to the guest root and directories such as `/home`.
+- Fixed duplicate system inset space at the top of Git Commit Detail and Diff pages, and improved readability of filenames, diff headers, line numbers, and content across themes.
 
 ## 1.1.7 · September 12, 2026
 

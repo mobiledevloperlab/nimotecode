@@ -18,6 +18,6 @@ Search helps you answer a focused question in an SSH project: where is this conf
 3. Narrow results with case-sensitive matching when needed.
 4. Open the matching result and continue in [Editor](/docs/editor).
 
-Remote content search is available during the 14-day, per-device trial and with Pro; it does not use a free usage quota. Keep patterns specific on large repositories to make a mobile investigation easier to scan.
+Remote content search is available through Early Access Pro as availability expands; it does not use a free usage quota. Keep patterns specific on large repositories to make a mobile investigation easier to scan.
 
 Related: [Editor](/docs/editor) · [Terminal](/docs/terminal) · [Pro](/pro)

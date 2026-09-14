@@ -147,5 +147,5 @@ NimoteCode 并非面向 13 岁以下儿童（或您所在地区规定的最低�
 
 ## 12. 联系方式
 
-- 邮箱：nimotecode@gmail.com
+- 邮箱：support@nimotecode.com
 - GitHub Issues：https://github.com/mobiledevloperlab/nimote_issues/issues
