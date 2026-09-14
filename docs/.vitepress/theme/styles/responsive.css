@@ -1,0 +1,307 @@
+/* ==========================================================================
+   Responsive
+   - Tablet (≤1280px, ≤1024px)
+   - Mobile (≤768px, ≤560px, ≤420px) — primary focus
+   - iOS safe-area insets
+   - Touch device optimizations
+   Loaded last so it can override component rules above.
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  /* Hero — collapse to single column, image goes on top */
+  .home-page-hero {
+    padding: 0 0 24px;
+    min-height: 0;
+  }
+  .home-page-hero::before {
+    background-position: 72% center;
+  }
+  .home-page-hero-shell {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    padding: 44px 20px 26px;
+  }
+  .home-page-hero-copy {
+    text-align: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .home-page-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home-page-actions {
+    justify-content: center;
+  }
+  .pf-feature-grid,
+  .home-page-feature-grid-priority {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .pf-pricing-grid {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --nimote-nav-height: 56px;
+    --nimote-section-space: 48px;
+    --nimote-section-space-compact: 36px;
+  }
+
+  .VPNav,
+  .VPNavBar {
+    z-index: calc(var(--vp-z-index-layout-top) + 20);
+  }
+  .VPNavBarHamburger {
+    min-width: 52px;
+    min-height: 52px;
+    touch-action: manipulation;
+  }
+
+  .home-page-hero {
+    padding: 0 0 18px;
+    min-height: clamp(560px, 100svh - var(--nimote-nav-height), 760px);
+  }
+  .home-page-hero::before {
+    background-image: url("/screenshots/homepage_bk_mobile.jpg");
+    background-position: center top;
+    filter: saturate(1.02) contrast(0.98) brightness(0.78);
+  }
+  .home-page-hero::after {
+    background:
+      linear-gradient(180deg, rgba(var(--nimote-bg-rgb), 0.32) 0%, rgba(var(--nimote-bg-rgb), 0.18) 18%, rgba(var(--nimote-bg-rgb), 0.58) 52%, rgba(var(--nimote-bg-rgb), 0.9) 100%),
+      linear-gradient(90deg, rgba(var(--nimote-bg-rgb), 0.3) 0%, rgba(var(--nimote-bg-rgb), 0.08) 28%, rgba(var(--nimote-bg-rgb), 0.08) 72%, rgba(var(--nimote-bg-rgb), 0.34) 100%);
+  }
+  .home-page-hero-shell {
+    padding: 26px 16px 60px;
+    gap: 16px;
+    align-content: end;
+  }
+  .home-page-badge {
+    margin-bottom: 14px;
+    padding: 7px 12px;
+    font-size: 0.66rem;
+    letter-spacing: 0.12em;
+  }
+  .home-page-logo-lockup {
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .home-page-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+  }
+  .home-page-brand {
+    font-size: 1.08rem;
+  }
+
+  .home-page-title {
+    max-width: 11ch;
+    font-size: clamp(2rem, 8.6vw, 2.9rem);
+    line-height: 1.02;
+    letter-spacing: -0.05em;
+  }
+
+  .home-page-subtitle,
+  .home-page-section-copy {
+    font-size: 0.98rem;
+  }
+  .home-page-subtitle {
+    max-width: 31rem;
+    margin-top: 18px;
+    line-height: 1.65;
+  }
+
+  .home-page-section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .home-page-section.dense {
+    padding-top: var(--nimote-section-space-compact);
+    padding-bottom: var(--nimote-section-space-compact);
+  }
+  .home-page-video-section {
+    padding-top: var(--nimote-section-space-compact);
+    padding-bottom: var(--nimote-section-space-compact);
+  }
+
+  .home-page-section-title {
+    font-size: clamp(1.6rem, 6vw, 2rem);
+  }
+  .home-page-section-head-centered {
+    margin-bottom: 32px;
+  }
+
+  .home-page-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 320px;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home-page-actions .home-page-btn {
+    width: 100%;
+  }
+  .home-page-actions-hero {
+    margin-top: 28px;
+  }
+
+  .home-page-feature-grid,
+  .pf-feature-grid,
+  .pf-pricing-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .home-page-feature-card {
+    padding: 22px;
+  }
+
+  .home-page-video {
+    margin-top: 28px;
+  }
+  .home-page-video-shell {
+    border-radius: var(--nimote-radius-lg);
+    box-shadow: var(--nimote-shadow-md);
+  }
+
+  .home-page-feature-card-ai::after {
+    inset: auto -10% -20% auto;
+    width: 160px;
+    height: 160px;
+  }
+
+  /* Sidebar becomes drawer */
+  .VPSidebar {
+    background: var(--nimote-bg-elevated);
+  }
+
+  /* Doc layout */
+  .vp-doc {
+    padding: 8px 0 64px;
+    font-size: 0.95rem;
+  }
+  .vp-doc h1 {
+    font-size: clamp(1.65rem, 6vw, 2rem);
+  }
+  .vp-doc h2 {
+    margin-top: 34px;
+    font-size: 1.35rem;
+  }
+  .vp-doc h3 {
+    font-size: 1.15rem;
+  }
+  .vp-doc pre {
+    padding: 14px 16px;
+    border-radius: var(--nimote-radius-md);
+  }
+  .vp-doc table {
+    font-size: 0.86rem;
+  }
+  .vp-doc blockquote {
+    padding: 12px 14px;
+  }
+
+  .pf-plan-card {
+    padding: 1.8rem;
+  }
+  .pf-price-row strong {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 560px) {
+  :root {
+    --nimote-section-space: 40px;
+  }
+
+  .home-page-hero {
+    padding: 0 0 18px;
+  }
+  .home-page-hero::before {
+    background-position: center top;
+  }
+  .home-page-hero-shell {
+    padding: 24px 16px 56px;
+    gap: 14px;
+  }
+  .home-page-title {
+    max-width: 10ch;
+    font-size: clamp(1.9rem, 9vw, 2.45rem);
+  }
+  .home-page-subtitle {
+    font-size: 0.93rem;
+  }
+  .home-page-actions {
+    max-width: 100%;
+  }
+  .home-page-btn {
+    min-height: 46px;
+    font-size: 0.92rem;
+    padding: 0.78rem 1.2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .home-page-hero-shell {
+    padding: 22px 12px 48px;
+    gap: 16px;
+  }
+  .home-page-title {
+    font-size: 1.78rem;
+  }
+  .home-page-subtitle {
+    font-size: 0.9rem;
+  }
+  .home-page-section-title {
+    font-size: 1.55rem;
+  }
+  .home-page-community-card {
+    padding: 20px;
+  }
+  .vp-doc h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* iOS safe area — only apply to in-page sections, hero is full-bleed */
+@supports (padding: env(safe-area-inset-left)) {
+  /* The documentation header owns a full-width two-column grid. Giving its
+     container safe-area padding shifts the first grid track, while the fixed
+     sidebar remains at x=0. Keep this padding for the marketing header only;
+     mobile docs retain VitePress's own responsive chrome spacing. */
+  .VPNavBar:not(.has-sidebar) .container,
+  .home-page-section,
+  .VPFooter .container {
+    padding-left: max(var(--nimote-home-gutter), env(safe-area-inset-left));
+    padding-right: max(var(--nimote-home-gutter), env(safe-area-inset-right));
+  }
+  .home-page-hero-shell {
+    padding-left: max(var(--nimote-home-gutter), env(safe-area-inset-left));
+    padding-right: max(var(--nimote-home-gutter), env(safe-area-inset-right));
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .home-page-btn,
+  .VPSidebarItem .item .link,
+  .vp-doc a {
+    -webkit-tap-highlight-color: rgba(var(--nimote-accent-rgb), 0.12);
+  }
+  .home-page-feature-card,
+  .home-page-video-shell {
+    transition: none;
+  }
+  .home-page-feature-card:active {
+    transform: scale(0.99);
+  }
+}

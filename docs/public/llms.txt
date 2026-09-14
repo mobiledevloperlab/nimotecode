@@ -1,0 +1,50 @@
+# NimoteCode
+
+> NimoteCode is a Mobile AI Development Workspace available for Android and iOS. It combines SSH workspaces, split code editing, in-app web and media preview, terminals, Git workflows, AI Chat and Agent, debugging, tasks, sync/cache, and product support in one app.
+
+NimoteCode is organized around a few primary journeys: learn the product, compare Free and Pro, install the app, and move into the documentation for day-to-day workflows.
+
+The product is positioned as a Mobile AI Development Workspace: Editor + Explorer + SSH + Web Preview + Terminal + Git + AI Chat and Agent. It is not only an SSH client or a standalone code editor.
+
+## Product
+- [Home](https://nimotecode.com/): Main product overview and demo-led landing page.
+- [Features](https://nimotecode.com/features): Core capabilities and workflow summary.
+- [Pro](https://nimotecode.com/pro): Free vs Pro comparison and upgrade value.
+- [Download](https://nimotecode.com/download): Store links and installation steps.
+- [Use Cases](https://nimotecode.com/use-cases/): Scenario overview for urgent mobile development work.
+- [Mobile IDE](https://nimotecode.com/mobile-ide): Mobile IDE overview for SSH, Git, and AI coding.
+- [SSH IDE](https://nimotecode.com/ssh-ide): Remote development workflow for SSH projects.
+- [Mobile AI Coding](https://nimotecode.com/mobile-ai-coding): AI Chat and Agent alongside editor, terminal, and Git context.
+- [Demo](https://nimotecode.com/demo): Product video and written workflow walkthrough.
+
+## Guides
+- [Mobile Developer Lab](https://nimotecode.com/blog/): Practical mobile development tutorials.
+- [How to Use Android as a Remote IDE with Tailscale and NimoteCode: Free SSH Access to Mac and Linux](https://nimotecode.com/blog/tailscale-ssh-android-mac-linux): A guide to free private SSH access over the internet, without a public IP address or router port forwarding.
+
+## Documentation
+- [Quick Start](https://nimotecode.com/docs/quick-start): First-run setup and workspace basics.
+- [SSH Workspace](https://nimotecode.com/docs/ssh): Remote connections and workspace setup.
+- [Editor](https://nimotecode.com/docs/editor): Editing workflow and navigation.
+- [Terminal](https://nimotecode.com/docs/terminal): Terminal sessions and command execution.
+- [Search](https://nimotecode.com/docs/search): Project and output search guidance.
+- [Source Control](https://nimotecode.com/docs/source-control): Git review and write workflows.
+- [AI Chat and Agent](https://nimotecode.com/docs/ai): AI chat and agent usage.
+- [LSP](https://nimotecode.com/docs/lsp): Language server diagnostics and code actions.
+- [Debug](https://nimotecode.com/docs/debug): Breakpoints, call stacks, variables, and watch views.
+- [Tasks](https://nimotecode.com/docs/tasks): Task creation and execution.
+- [Sync / Cache](https://nimotecode.com/docs/sync-cache): Workspace movement and cache flows.
+
+## Use Cases
+- [Remote Hotfix](https://nimotecode.com/use-cases/remote-hotfix): Patch production from a phone.
+- [On-call Diagnostics](https://nimotecode.com/use-cases/on-call-diagnostics): Investigate incidents while away from a desk.
+- [AI Agent Workflows](https://nimotecode.com/use-cases/ai-agent): Use AI inside a real development workflow.
+
+## Support and Policy
+- [Support](https://nimotecode.com/support): Help and contact information.
+- [Privacy](https://nimotecode.com/privacy): Privacy policy.
+- [Terms](https://nimotecode.com/terms): Terms of service.
+- [Account Deletion](https://nimotecode.com/account-delete): Account deletion instructions.
+
+## Locales
+- [English](https://nimotecode.com/): Default site locale.
+- [Chinese](https://nimotecode.com/zh/): Simplified Chinese locale.

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "ubuntu",
+  "name": "Ubuntu",
+  "version": "24.04",
+  "architecture": "arm64",
+  "rootfsVersion": "ubuntu-24.04-arm64-1",
+  "archiveAsset": "local_linux/ubuntu-minimal-arm64.tgz",
+  "sha256": "6f615bf2eb555f6e6e5043e1067247c22081e7263ced4c9208a16daff2e23976",
+  "compressedSize": 54382288,
+  "extractedSize": 186633428,
+  "baseUrl": "https://partner-images.canonical.com/oci/noble/current/ubuntu-noble-oci-arm64-root.tar.gz",
+  "baseSha256": "c51720d23dfd13bdcea32cd03d05138eae551ab755b0302b56f69a8bebb44e01"
+}

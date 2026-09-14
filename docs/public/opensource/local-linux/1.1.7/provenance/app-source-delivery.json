@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "nimoteCodeVersion": "1.1.7",
+  "sourceBundle": {
+    "file": "nimotecode-local-linux-sources-1.1.7.tar.zst",
+    "sha256": "533d08593742a0bd2d28092279e5db2f1e051eb8289d46ed17e4299f5c0deaa8",
+    "websiteUrl": "https://nimotecode.com/opensource/local-linux/1.1.7/",
+    "githubReleaseUrl": "https://github.com/mobiledevloperlab/nimotecode/releases/tag/local-linux-sources-v1.1.7"
+  }
+}

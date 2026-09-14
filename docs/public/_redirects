@@ -1,0 +1,19 @@
+# Legacy URLs and retired locales. Keep these as server-side 301s on hosts
+# that support the standard _redirects format (Netlify, Cloudflare adapters).
+/introduction / 301
+/zh/introduction /zh/ 301
+/ja/* /:splat 301
+/ko/* /:splat 301
+/es/* /:splat 301
+/ru/* /:splat 301
+/best-mobile-ide /mobile-ide 301
+/best-mobile-ides /mobile-ide 301
+/best-ssh-client /ssh-ide 301
+/best-ssh-clients /ssh-ide 301
+/use-cases/remote-hotfix /use-cases/ 301
+/use-cases/on-call-diagnostics /use-cases/ 301
+/use-cases/ai-agent /use-cases/ 301
+/zh/use-cases/remote-hotfix /zh/use-cases/ 301
+/zh/use-cases/on-call-diagnostics /zh/use-cases/ 301
+/zh/use-cases/ai-agent /zh/use-cases/ 301
+/opensource/local-linux/1.1.7/nimotecode-local-linux-sources-1.1.7.tar.zst https://opensource-downloads.nimotecode.com/local-linux/1.1.7/nimotecode-local-linux-sources-1.1.7.tar.zst 301

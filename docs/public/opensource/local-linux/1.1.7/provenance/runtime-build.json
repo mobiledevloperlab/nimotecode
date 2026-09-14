@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "ndkVersion": "28.2.13676358",
+  "apiLevel": 24,
+  "proot": {
+    "version": "5.1.107.92",
+    "url": "https://github.com/termux/proot/archive/v5.1.107.92.zip",
+    "sha256": "29385d1ddb619a9c4449ab512bfd55032034b22f724ddf98fc95ff300ea32135"
+  },
+  "talloc": {
+    "version": "2.4.3",
+    "url": "https://www.samba.org/ftp/talloc/talloc-2.4.3.tar.gz",
+    "sha256": "dc46c40b9f46bb34dd97fe41f548b0e8b247b77a918576733c528e83abd854dd"
+  },
+  "abis": {
+    "arm64-v8a": "aarch64",
+    "x86_64": "x86_64"
+  },
+  "binaries": {
+    "arm64-v8a/libproot.so": {
+      "sha256": "e3e147d1a73e4a5622c69e1cf6080b65cf8075a06e50afa0d3a3aea9216c0849",
+      "bytes": 261640
+    },
+    "arm64-v8a/libproot_launcher.so": {
+      "sha256": "623c15311ee9344e7870086da55b2fde6b65bd1d9450e0a3f82a47c3b83dfc00",
+      "bytes": 4760
+    },
+    "arm64-v8a/libproot_loader.so": {
+      "sha256": "12d2b63e897fd91a334fce23edea5d2419cae4d5fd2a369f05d03ab75682add0",
+      "bytes": 17624
+    },
+    "x86_64/libproot.so": {
+      "sha256": "a8f8277260fecff2553406467f383838de215adc8dc93b4740bf92199e33223c",
+      "bytes": 275816
+    },
+    "x86_64/libproot_launcher.so": {
+      "sha256": "97b8a78b86b2a49932639506d87e792f81339a66bbcbe4f73f7ef4703f981ada",
+      "bytes": 4640
+    },
+    "x86_64/libproot_loader.so": {
+      "sha256": "4ca6f14810548610501d012144abeb4c27c1530e2e37201cabf30cab2c39a585",
+      "bytes": 17832
+    }
+  }
+}

@@ -1,0 +1,2485 @@
+{
+  "schemaVersion": 1,
+  "sourceIndexes": [
+    "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/dists/noble/main/source/Sources.gz",
+    "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/dists/noble-updates/main/source/Sources.gz",
+    "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/dists/noble-security/main/source/Sources.gz"
+  ],
+  "originBaseUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z",
+  "sourcePackages": [
+    {
+      "sourcePackage": "acl",
+      "sourceVersion": "2.3.2-1build1.1",
+      "artifacts": [
+        {
+          "file": "acl_2.3.2.orig.tar.xz",
+          "sha256": "97203a72cae99ab89a067fe2210c1cbf052bc492b479eca7d226d9830883b0bd",
+          "size": 371680,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/acl/acl_2.3.2.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.861153+00:00"
+        },
+        {
+          "file": "acl_2.3.2.orig.tar.xz.asc",
+          "sha256": "184c6a903490885a096095db67b433a04542c6569f167cbe8115268c0f227273",
+          "size": 833,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/acl/acl_2.3.2.orig.tar.xz.asc",
+          "downloadedAt": "2026-09-14T02:01:27.861496+00:00"
+        },
+        {
+          "file": "acl_2.3.2-1build1.1.debian.tar.xz",
+          "sha256": "0d324adb403a50aa2889a11e098d34ce5adecd1cb89f83799f66dbb1d8b71280",
+          "size": 23472,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/acl/acl_2.3.2-1build1.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.861803+00:00"
+        },
+        {
+          "file": "acl_2.3.2-1build1.1.dsc",
+          "sha256": "da831b979338d324df2adcedd5a06f9a5f303e83be2b43d58ee39288dde8fc88",
+          "size": 2616,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/acl/acl_2.3.2-1build1.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.862016+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "adduser",
+      "sourceVersion": "3.137ubuntu1",
+      "artifacts": [
+        {
+          "file": "adduser_3.137ubuntu1.dsc",
+          "sha256": "3f9e61ffef61902c9eaf1c8738bb987ff882dbba2d22385fccefaa3fcd53a77b",
+          "size": 1862,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/adduser/adduser_3.137ubuntu1.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.862850+00:00"
+        },
+        {
+          "file": "adduser_3.137ubuntu1.tar.xz",
+          "sha256": "f4b0669a5731e1a63fc6eb56a8a4b9e54b19d76ed6c819bf48c1028790e395f3",
+          "size": 280408,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/adduser/adduser_3.137ubuntu1.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.863609+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "apt",
+      "sourceVersion": "2.8.3",
+      "artifacts": [
+        {
+          "file": "apt_2.8.3.tar.xz",
+          "sha256": "088522b3613b28fdbcfa61f1f7e476bf6dc6b0120a8f74409e9527580c9f9d3b",
+          "size": 2354680,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/apt/apt_2.8.3.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.867824+00:00"
+        },
+        {
+          "file": "apt_2.8.3.dsc",
+          "sha256": "1d41cd04115e1a79f0fa4d738e5c34603ae8a4f40122d8a18a622fd6d20a5523",
+          "size": 2973,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/apt/apt_2.8.3.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.868086+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "attr",
+      "sourceVersion": "1:2.5.2-1ubuntu0.1",
+      "artifacts": [
+        {
+          "file": "attr_2.5.2.orig.tar.xz",
+          "sha256": "f2e97b0ab7ce293681ab701915766190d607a1dba7fae8a718138150b700a70b",
+          "size": 334180,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/attr/attr_2.5.2.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.869267+00:00"
+        },
+        {
+          "file": "attr_2.5.2.orig.tar.xz.asc",
+          "sha256": "eeac729088d3c6379e91b7596cb3582e46b047c47f0fa3c5c77f9c9e84dc3a4c",
+          "size": 833,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/attr/attr_2.5.2.orig.tar.xz.asc",
+          "downloadedAt": "2026-09-14T02:01:27.869464+00:00"
+        },
+        {
+          "file": "attr_2.5.2-1ubuntu0.1.debian.tar.xz",
+          "sha256": "11d4663edfac0d6738201ff942b65706cb1eb29ae0e8dad50790c9bf6509fc1f",
+          "size": 39340,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/attr/attr_2.5.2-1ubuntu0.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.869778+00:00"
+        },
+        {
+          "file": "attr_2.5.2-1ubuntu0.1.dsc",
+          "sha256": "3b0921ea6607447a2c61e5fa6136a72977712d1b1c7d24a205d107a17e7b3ad6",
+          "size": 2592,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/attr/attr_2.5.2-1ubuntu0.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.869974+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "audit",
+      "sourceVersion": "1:3.1.2-2.1build1.1",
+      "artifacts": [
+        {
+          "file": "audit_3.1.2.orig.tar.gz",
+          "sha256": "c0b1792d1f0a88c6f1828710509cbb987059fc68712c97669ca90eae103d287d",
+          "size": 1219860,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/audit/audit_3.1.2.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:27.872206+00:00"
+        },
+        {
+          "file": "audit_3.1.2-2.1build1.1.debian.tar.xz",
+          "sha256": "ed9d8bb3ff1194b6c8943c7768596383f995b1d45dbc57b8f5ca5868a7b22558",
+          "size": 18860,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/audit/audit_3.1.2-2.1build1.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.872532+00:00"
+        },
+        {
+          "file": "audit_3.1.2-2.1build1.1.dsc",
+          "sha256": "3df86dee4b6d645173901fad492776add35f82c4e7c58cd8a4f82931a2588324",
+          "size": 2848,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/audit/audit_3.1.2-2.1build1.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.873376+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "base-files",
+      "sourceVersion": "13ubuntu10.4",
+      "artifacts": [
+        {
+          "file": "base-files_13ubuntu10.4.tar.xz",
+          "sha256": "3656f87d5a7ed92ac53cece416f918099e7e4f90281c3effcc346e2ce09c653d",
+          "size": 94240,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/b/base-files/base-files_13ubuntu10.4.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.874276+00:00"
+        },
+        {
+          "file": "base-files_13ubuntu10.4.dsc",
+          "sha256": "db0386e7111a5e0b1f9d473b1fdae76f421f0df4e66edfdbc8060cf3dc92a561",
+          "size": 1642,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/b/base-files/base-files_13ubuntu10.4.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.874558+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "base-passwd",
+      "sourceVersion": "3.6.3build1",
+      "artifacts": [
+        {
+          "file": "base-passwd_3.6.3build1.dsc",
+          "sha256": "6c7289264d48fd871e1c516c8dd0814160558e339202cffa8768621785302185",
+          "size": 1779,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/b/base-passwd/base-passwd_3.6.3build1.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.875149+00:00"
+        },
+        {
+          "file": "base-passwd_3.6.3build1.tar.xz",
+          "sha256": "ea51df18f6f7d969ff93d25ce42780ded35ccb4292353780ba6ad9861857d787",
+          "size": 58252,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/b/base-passwd/base-passwd_3.6.3build1.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.875465+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "bash",
+      "sourceVersion": "5.2.21-2ubuntu4",
+      "artifacts": [
+        {
+          "file": "bash_5.2.21-2ubuntu4.dsc",
+          "sha256": "d5a89c09f42c828d5e31dc3a1680882aa0ddaad5072963e563dec7dfc4919d33",
+          "size": 2437,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/b/bash/bash_5.2.21-2ubuntu4.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.875994+00:00"
+        },
+        {
+          "file": "bash_5.2.21.orig.tar.xz",
+          "sha256": "ec21ab4efd6bd7a6e2802fbda622b81bfc43a8095d721234d4bf075797683014",
+          "size": 5598816,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/b/bash/bash_5.2.21.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.882585+00:00"
+        },
+        {
+          "file": "bash_5.2.21-2ubuntu4.debian.tar.xz",
+          "sha256": "bdb10c18d167dda3b265cb3db75314d524edbf7794fed36f0fb0dcc32f5e6ac9",
+          "size": 94124,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/b/bash/bash_5.2.21-2ubuntu4.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.882992+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "brotli",
+      "sourceVersion": "1.1.0-2build2",
+      "artifacts": [
+        {
+          "file": "brotli_1.1.0-2build2.dsc",
+          "sha256": "c58421959677a80d942924685007e8d5b5d1160fd7f61a1f0a9062bf08835856",
+          "size": 2401,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/b/brotli/brotli_1.1.0-2build2.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.883703+00:00"
+        },
+        {
+          "file": "brotli_1.1.0.orig.tar.gz",
+          "sha256": "10973f4b4199eafa1d5735ef661ddb2ec2f97319ee9fd1824d4aabe08cff5265",
+          "size": 512036,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/b/brotli/brotli_1.1.0.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:27.884758+00:00"
+        },
+        {
+          "file": "brotli_1.1.0-2build2.debian.tar.xz",
+          "sha256": "96603222d7b6edb3253a846852972b6bde5b86814907d5540249e6950980a943",
+          "size": 5644,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/b/brotli/brotli_1.1.0-2build2.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.885065+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "bzip2",
+      "sourceVersion": "1.0.8-5.1ubuntu0.1",
+      "artifacts": [
+        {
+          "file": "bzip2_1.0.8.orig.tar.gz",
+          "sha256": "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269",
+          "size": 810029,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/b/bzip2/bzip2_1.0.8.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:27.887071+00:00"
+        },
+        {
+          "file": "bzip2_1.0.8-5.1ubuntu0.1.debian.tar.bz2",
+          "sha256": "77c61e0490ff7cf49aa8ffe62e117e85b3af08e14341c4b851f8d7ec757fe099",
+          "size": 27529,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/b/bzip2/bzip2_1.0.8-5.1ubuntu0.1.debian.tar.bz2",
+          "downloadedAt": "2026-09-14T02:01:27.887406+00:00"
+        },
+        {
+          "file": "bzip2_1.0.8-5.1ubuntu0.1.dsc",
+          "sha256": "87d782671790af480ab3c3b258885ad2c239e41772e0116ceda6446c493f9dd4",
+          "size": 1699,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/b/bzip2/bzip2_1.0.8-5.1ubuntu0.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.887599+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "ca-certificates",
+      "sourceVersion": "20260601~24.04.1",
+      "artifacts": [
+        {
+          "file": "ca-certificates_20260601~24.04.1.tar.xz",
+          "sha256": "fd3a351ad98f5b714915d4a7c82ae258a174b48f7d5391713c7f3445067143eb",
+          "size": 266460,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/c/ca-certificates/ca-certificates_20260601~24.04.1.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.888678+00:00"
+        },
+        {
+          "file": "ca-certificates_20260601~24.04.1.dsc",
+          "sha256": "42292e01982f1a0aaed5ab540bc771322864bf92798ca3099a1e582ced440116",
+          "size": 1769,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/c/ca-certificates/ca-certificates_20260601~24.04.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.888868+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "cdebconf",
+      "sourceVersion": "0.271ubuntu3",
+      "artifacts": [
+        {
+          "file": "cdebconf_0.271ubuntu3.dsc",
+          "sha256": "87a9567bdbdc9401d5cde6e5dbc8fb48619d7a2ef38795156c24a7fef3200ef5",
+          "size": 2910,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/c/cdebconf/cdebconf_0.271ubuntu3.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.889894+00:00"
+        },
+        {
+          "file": "cdebconf_0.271ubuntu3.tar.xz",
+          "sha256": "a4b242e7aef7923fd16d3aeb5a220ab6f4d27bc005b9d1e7d67449faaa68bcd1",
+          "size": 285500,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/c/cdebconf/cdebconf_0.271ubuntu3.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.890698+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "coreutils",
+      "sourceVersion": "9.4-3ubuntu6.3",
+      "artifacts": [
+        {
+          "file": "coreutils_9.4.orig.tar.xz",
+          "sha256": "ea613a4cf44612326e917201bbbcdfbd301de21ffc3b59b6e5c07e040b275e52",
+          "size": 5979200,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/c/coreutils/coreutils_9.4.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.897820+00:00"
+        },
+        {
+          "file": "coreutils_9.4-3ubuntu6.3.debian.tar.xz",
+          "sha256": "23eb9e94564e2451ea02a879daa0ee9ba8db3777e84e020fcd08d49aaebc57d4",
+          "size": 43156,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.3.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.898148+00:00"
+        },
+        {
+          "file": "coreutils_9.4-3ubuntu6.3.dsc",
+          "sha256": "419fea2f0fec8299d95cafb11425391fe45d60b30d052c7f1e3a162ea56a6653",
+          "size": 2030,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.3.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.898378+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "curl",
+      "sourceVersion": "8.5.0-2ubuntu10.13",
+      "artifacts": [
+        {
+          "file": "curl_8.5.0.orig.tar.gz",
+          "sha256": "05fc17ff25b793a437a0906e0484b82172a9f4de02be5ed447e0cab8c3475add",
+          "size": 4372979,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/c/curl/curl_8.5.0.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:27.905119+00:00"
+        },
+        {
+          "file": "curl_8.5.0-2ubuntu10.13.debian.tar.xz",
+          "sha256": "d11ea8d8546146b4367410b04945db4462832d262bb04ba81c97d145e86e9ce7",
+          "size": 89820,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/c/curl/curl_8.5.0-2ubuntu10.13.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.905667+00:00"
+        },
+        {
+          "file": "curl_8.5.0-2ubuntu10.13.dsc",
+          "sha256": "4b473f9f00fdbdd696f4dd71915c155207284bbb24b6dbd5eea2638efd488cb3",
+          "size": 3092,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/c/curl/curl_8.5.0-2ubuntu10.13.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.905903+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "cyrus-sasl2",
+      "sourceVersion": "2.1.28+dfsg1-5ubuntu3.1",
+      "artifacts": [
+        {
+          "file": "cyrus-sasl2_2.1.28+dfsg1.orig.tar.xz",
+          "sha256": "e796a5d85d1a85e1b433d43504e467f9075c7ebc0b45730a3996cf11b1deada4",
+          "size": 794540,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28+dfsg1.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.907970+00:00"
+        },
+        {
+          "file": "cyrus-sasl2_2.1.28+dfsg1-5ubuntu3.1.debian.tar.xz",
+          "sha256": "a1017cf9d4fd098325338d1d7f1f71cb87102934e7b35c8f5e726d246360689e",
+          "size": 98324,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28+dfsg1-5ubuntu3.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.908483+00:00"
+        },
+        {
+          "file": "cyrus-sasl2_2.1.28+dfsg1-5ubuntu3.1.dsc",
+          "sha256": "6ede2d7122c4ea1e807f45b647edbdf9fb1521ad09b0ca0b9b48f220ef33f23f",
+          "size": 3501,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28+dfsg1-5ubuntu3.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.908769+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "dash",
+      "sourceVersion": "0.5.12-6ubuntu5",
+      "artifacts": [
+        {
+          "file": "dash_0.5.12-6ubuntu5.dsc",
+          "sha256": "be4a5ba81756b24d0d22f30cd9e609f5b84f8a8d685cb9825e9eae6201c52cf9",
+          "size": 2124,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/dash/dash_0.5.12-6ubuntu5.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.909490+00:00"
+        },
+        {
+          "file": "dash_0.5.12.orig.tar.gz",
+          "sha256": "6a474ac46e8b0b32916c4c60df694c82058d3297d8b385b74508030ca4a8f28a",
+          "size": 246054,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/dash/dash_0.5.12.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:27.910172+00:00"
+        },
+        {
+          "file": "dash_0.5.12-6ubuntu5.debian.tar.xz",
+          "sha256": "84671be9725b738725575d44069f9e7a41344ae6a8027d8ba2d6a172b5e406d6",
+          "size": 39616,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/dash/dash_0.5.12-6ubuntu5.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.910511+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "db5.3",
+      "sourceVersion": "5.3.28+dfsg2-7",
+      "artifacts": [
+        {
+          "file": "db5.3_5.3.28+dfsg2-7.dsc",
+          "sha256": "f7313fb306b5bf7ad6a428bffb581e649318859df139e35dd47c3d1f733803b2",
+          "size": 2374,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/db5.3/db5.3_5.3.28+dfsg2-7.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.911145+00:00"
+        },
+        {
+          "file": "db5.3_5.3.28+dfsg2.orig.tar.xz",
+          "sha256": "ad41b507415dec8316e828b2230242af2251d2c86eefa3c7aa9ef47c5239ef33",
+          "size": 21287688,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/db5.3/db5.3_5.3.28+dfsg2.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.932667+00:00"
+        },
+        {
+          "file": "db5.3_5.3.28+dfsg2-7.debian.tar.xz",
+          "sha256": "9cee8969e1f440ec8aa2fbacd3a5819907829e0e7e7f1f746dccaa2c93fbf3f2",
+          "size": 35232,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/db5.3/db5.3_5.3.28+dfsg2-7.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.933431+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "debconf",
+      "sourceVersion": "1.5.86ubuntu1",
+      "artifacts": [
+        {
+          "file": "debconf_1.5.86ubuntu1.dsc",
+          "sha256": "fc3475b7134c7780b34d21dde63bea3be2a225215a3e9f9c90e27df40189f1bc",
+          "size": 2030,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/debconf/debconf_1.5.86ubuntu1.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.934184+00:00"
+        },
+        {
+          "file": "debconf_1.5.86ubuntu1.tar.xz",
+          "sha256": "1a50d1697b9c36b3600d1746b6a47864ed4adfd26c3d180f2d2b1286ad51c6f4",
+          "size": 574112,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/debconf/debconf_1.5.86ubuntu1.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.935380+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "debianutils",
+      "sourceVersion": "5.17build1",
+      "artifacts": [
+        {
+          "file": "debianutils_5.17build1.dsc",
+          "sha256": "f6479aa03505646f946cc42d7d093bc0d47dd2d374b7dcc84d84330f7e86095d",
+          "size": 1771,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/debianutils/debianutils_5.17build1.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.936122+00:00"
+        },
+        {
+          "file": "debianutils_5.17build1.tar.xz",
+          "sha256": "f1f157a50769fcf8117909938dd8cbb75d39da26cff5a5aa15aa34b4d6c9acc2",
+          "size": 80468,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/debianutils/debianutils_5.17build1.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.936637+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "diffutils",
+      "sourceVersion": "1:3.10-1ubuntu0.1",
+      "artifacts": [
+        {
+          "file": "diffutils_3.10.orig.tar.xz",
+          "sha256": "90e5e93cc724e4ebe12ede80df1634063c7a855692685919bfe60b556c9bd09e",
+          "size": 1624240,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.939524+00:00"
+        },
+        {
+          "file": "diffutils_3.10.orig.tar.xz.asc",
+          "sha256": "a94faf8f1baa04ff220f7b2ccb137c16337284e023ebc4a1d5df475c08d810f7",
+          "size": 833,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz.asc",
+          "downloadedAt": "2026-09-14T02:01:27.939774+00:00"
+        },
+        {
+          "file": "diffutils_3.10-1ubuntu0.1.debian.tar.xz",
+          "sha256": "5010764e1ebbb3e2a99b90e0c14b86d44d15508f8ba7fa2ec7a51ffcba706d49",
+          "size": 15332,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/diffutils/diffutils_3.10-1ubuntu0.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.940102+00:00"
+        },
+        {
+          "file": "diffutils_3.10-1ubuntu0.1.dsc",
+          "sha256": "cd25a52b3cc70a46c98462e3893491d9a461cebbf8600461c879c0c900ae88b4",
+          "size": 2175,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/diffutils/diffutils_3.10-1ubuntu0.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.940272+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "dpkg",
+      "sourceVersion": "1.22.6ubuntu6.6",
+      "artifacts": [
+        {
+          "file": "dpkg_1.22.6ubuntu6.6.tar.xz",
+          "sha256": "7048ee31e30066ae123cdcb891cfa1ad55b2f42a4e04fca2c5db41607ae25196",
+          "size": 5548716,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.6.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.947607+00:00"
+        },
+        {
+          "file": "dpkg_1.22.6ubuntu6.6.dsc",
+          "sha256": "5828d5dd77635c8bd0197116446bc64ec76913500affbcb42aaae1644acb749d",
+          "size": 3156,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.6.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.947957+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "e2fsprogs",
+      "sourceVersion": "1.47.0-2.4~exp1ubuntu4.1",
+      "artifacts": [
+        {
+          "file": "e2fsprogs_1.47.0.orig.tar.gz",
+          "sha256": "6667afde56eef0c6af26684974400e4d2288ea49e9441bf5e6229195d51a3578",
+          "size": 9637717,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/e/e2fsprogs/e2fsprogs_1.47.0.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:27.959171+00:00"
+        },
+        {
+          "file": "e2fsprogs_1.47.0.orig.tar.gz.asc",
+          "sha256": "704928204a52ddaa0ac8ef549c1bfba3c38e66c361d3853c8a4c38e6082b90f1",
+          "size": 488,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/e/e2fsprogs/e2fsprogs_1.47.0.orig.tar.gz.asc",
+          "downloadedAt": "2026-09-14T02:01:27.959647+00:00"
+        },
+        {
+          "file": "e2fsprogs_1.47.0-2.4~exp1ubuntu4.1.debian.tar.xz",
+          "sha256": "26b381ec175ff52d1cc2fd1b217f84b9e1d7d33a58dcbaf8942115dd27a03f84",
+          "size": 90580,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/e/e2fsprogs/e2fsprogs_1.47.0-2.4~exp1ubuntu4.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.960227+00:00"
+        },
+        {
+          "file": "e2fsprogs_1.47.0-2.4~exp1ubuntu4.1.dsc",
+          "sha256": "215fe7b95c246894654c59a01514dfdc16ec17a0dcb09dc7a7c1ec1246ed4964",
+          "size": 3294,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/e/e2fsprogs/e2fsprogs_1.47.0-2.4~exp1ubuntu4.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.960511+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "expat",
+      "sourceVersion": "2.6.1-2ubuntu0.4",
+      "artifacts": [
+        {
+          "file": "expat_2.6.1.orig.tar.gz",
+          "sha256": "14113ed69357172a0bf5a268793c8b5b01afc77c7a2e5fb8dd0b06cb87c02c4a",
+          "size": 8414649,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/e/expat/expat_2.6.1.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:27.970727+00:00"
+        },
+        {
+          "file": "expat_2.6.1-2ubuntu0.4.debian.tar.xz",
+          "sha256": "8a24bd6c87fe292a2f00a2df71f7d2bbe3713fa63b1952c8552cdac4288d10fd",
+          "size": 31092,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/e/expat/expat_2.6.1-2ubuntu0.4.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.971143+00:00"
+        },
+        {
+          "file": "expat_2.6.1-2ubuntu0.4.dsc",
+          "sha256": "a25d3fde103454ad5d34d4770bd5adb60bb5872da775df74cad193b5c4de1dff",
+          "size": 1945,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/e/expat/expat_2.6.1-2ubuntu0.4.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.971351+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "findutils",
+      "sourceVersion": "4.9.0-5build1",
+      "artifacts": [
+        {
+          "file": "findutils_4.9.0-5build1.dsc",
+          "sha256": "c586baab1e53ace30420e86364df848fb8c6f754c1935ff556060b030052f603",
+          "size": 2404,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/f/findutils/findutils_4.9.0-5build1.dsc",
+          "downloadedAt": "2026-09-14T02:01:27.972059+00:00"
+        },
+        {
+          "file": "findutils_4.9.0.orig.tar.xz",
+          "sha256": "a2bfb8c09d436770edc59f50fa483e785b161a3b7b9d547573cb08065fd462fe",
+          "size": 2046252,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/f/findutils/findutils_4.9.0.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.974900+00:00"
+        },
+        {
+          "file": "findutils_4.9.0.orig.tar.xz.asc",
+          "sha256": "924c3719d066eda1b3e47175f8b83e90e9a23f0a639ebe7445621917b283c385",
+          "size": 488,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/f/findutils/findutils_4.9.0.orig.tar.xz.asc",
+          "downloadedAt": "2026-09-14T02:01:27.975217+00:00"
+        },
+        {
+          "file": "findutils_4.9.0-5build1.debian.tar.xz",
+          "sha256": "c266ae3fdf861d29b71436237f7a564058d68810029daa95e581b219c5c69d5c",
+          "size": 32864,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/f/findutils/findutils_4.9.0-5build1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:27.975551+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "gcc-14",
+      "sourceVersion": "14.2.0-4ubuntu2~24.04.1",
+      "artifacts": [
+        {
+          "file": "gcc-14_14.2.0.orig.tar.gz",
+          "sha256": "768c314c11eeab56ccebb91eb42ec4a41122fa94f0d83400126401942622197b",
+          "size": 97158172,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gcc-14/gcc-14_14.2.0.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.067444+00:00"
+        },
+        {
+          "file": "gcc-14_14.2.0-4ubuntu2~24.04.1.debian.tar.xz",
+          "sha256": "cfece214c2fb790ef5f3baffb9a53e40618e7ae12d053610b251e94d77d08ade",
+          "size": 1950432,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2~24.04.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.070425+00:00"
+        },
+        {
+          "file": "gcc-14_14.2.0-4ubuntu2~24.04.1.dsc",
+          "sha256": "50950080874a6ec6780dd60c243e21d9cda9d736bb32bca98d16095d27cc01b5",
+          "size": 46930,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2~24.04.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.070777+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "gdbm",
+      "sourceVersion": "1.23-5.1build1",
+      "artifacts": [
+        {
+          "file": "gdbm_1.23-5.1build1.dsc",
+          "sha256": "70317d44b2f27b11ded9676d58e6c89de34994594797f6e2ac0707070599e457",
+          "size": 2608,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gdbm/gdbm_1.23-5.1build1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.071515+00:00"
+        },
+        {
+          "file": "gdbm_1.23.orig.tar.gz",
+          "sha256": "74b1081d21fff13ae4bd7c16e5d6e504a4c26f7cde1dca0d963a484174bbcacd",
+          "size": 1115854,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gdbm/gdbm_1.23.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.073393+00:00"
+        },
+        {
+          "file": "gdbm_1.23.orig.tar.gz.asc",
+          "sha256": "64ebb68cc68e8915d62cb20ea40323c00b56051f844589ee0a52169fff34cecb",
+          "size": 181,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gdbm/gdbm_1.23.orig.tar.gz.asc",
+          "downloadedAt": "2026-09-14T02:01:28.073636+00:00"
+        },
+        {
+          "file": "gdbm_1.23-5.1build1.debian.tar.xz",
+          "sha256": "2561846bb0493ab9549fc46ea6431861a84111567b1c5f6bf1956feb8a389b49",
+          "size": 18524,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gdbm/gdbm_1.23-5.1build1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.074009+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "git",
+      "sourceVersion": "1:2.43.0-1ubuntu7.3",
+      "artifacts": [
+        {
+          "file": "git_2.43.0.orig.tar.xz",
+          "sha256": "5446603e73d911781d259e565750dcd277a42836c8e392cac91cf137aa9b76ec",
+          "size": 7382996,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/git/git_2.43.0.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.082284+00:00"
+        },
+        {
+          "file": "git_2.43.0-1ubuntu7.3.debian.tar.xz",
+          "sha256": "5bb363b59fda93816ec9ef34476e720b4f66f4b9947866bfaf414964be7dd4a7",
+          "size": 795448,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/git/git_2.43.0-1ubuntu7.3.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.083774+00:00"
+        },
+        {
+          "file": "git_2.43.0-1ubuntu7.3.dsc",
+          "sha256": "1e3e5b83bf41318cc957a9e471ed82f8ca4d6befe91b008699959072c97430f4",
+          "size": 2972,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/git/git_2.43.0-1ubuntu7.3.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.084018+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "glibc",
+      "sourceVersion": "2.39-0ubuntu8.8",
+      "artifacts": [
+        {
+          "file": "glibc_2.39.orig.tar.xz",
+          "sha256": "f77bd47cf8170c57365ae7bf86696c118adb3b120d3259c64c502d3dc1e2d926",
+          "size": 18520988,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/glibc/glibc_2.39.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.105445+00:00"
+        },
+        {
+          "file": "glibc_2.39.orig.tar.xz.asc",
+          "sha256": "2cce427ef7933c17379f5514e4f0ccf8dffae5bf8c72f0f7e0bf8b8401f34be5",
+          "size": 833,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/glibc/glibc_2.39.orig.tar.xz.asc",
+          "downloadedAt": "2026-09-14T02:01:28.106322+00:00"
+        },
+        {
+          "file": "glibc_2.39-0ubuntu8.8.debian.tar.xz",
+          "sha256": "ff1aa3bb3eba4f302a99c9b957cacff6d79f26e9b0e663e379bf70a4f39d4283",
+          "size": 483068,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/glibc/glibc_2.39-0ubuntu8.8.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.107357+00:00"
+        },
+        {
+          "file": "glibc_2.39-0ubuntu8.8.dsc",
+          "sha256": "69c09b540d03e56b3adea7c4af98b862bfc36789795c9e21d37e58e699f57b00",
+          "size": 9387,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/glibc/glibc_2.39-0ubuntu8.8.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.107688+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "gmp",
+      "sourceVersion": "2:6.3.0+dfsg-2ubuntu6.1",
+      "artifacts": [
+        {
+          "file": "gmp_6.3.0+dfsg.orig.tar.xz",
+          "sha256": "bd2966e6d277f79328e894a5a9f3ba3fbf2ed2be81def5f48623e30c23fb1572",
+          "size": 1870556,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gmp/gmp_6.3.0+dfsg.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.110988+00:00"
+        },
+        {
+          "file": "gmp_6.3.0+dfsg-2ubuntu6.1.debian.tar.xz",
+          "sha256": "0a7592ee94876fcc0dba60c9a9fba806a72752c104c04d553803e1b7a97026a3",
+          "size": 38908,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gmp/gmp_6.3.0+dfsg-2ubuntu6.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.111287+00:00"
+        },
+        {
+          "file": "gmp_6.3.0+dfsg-2ubuntu6.1.dsc",
+          "sha256": "7fdd2464ee453296e33598dad6f84dd489640c08f50552389469bcf90537582e",
+          "size": 2345,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gmp/gmp_6.3.0+dfsg-2ubuntu6.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.111495+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "gnupg2",
+      "sourceVersion": "2.4.4-2ubuntu17.6",
+      "artifacts": [
+        {
+          "file": "gnupg2_2.4.4.orig.tar.bz2",
+          "sha256": "67ebe016ca90fa7688ce67a387ebd82c6261e95897db7b23df24ff335be85bc6",
+          "size": 7886036,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2",
+          "downloadedAt": "2026-09-14T02:01:28.121105+00:00"
+        },
+        {
+          "file": "gnupg2_2.4.4.orig.tar.bz2.asc",
+          "sha256": "47986167998b2cb6be4e4cdeef0c468139e06580ed65ce2cf241c527d74e54db",
+          "size": 386,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2.asc",
+          "downloadedAt": "2026-09-14T02:01:28.121347+00:00"
+        },
+        {
+          "file": "gnupg2_2.4.4-2ubuntu17.6.debian.tar.xz",
+          "sha256": "c66b2623b54792f70c6598367ad1f3c4dcf7c65e68c2a4e4e98f0ba6eaa8ba80",
+          "size": 97820,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.6.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.121800+00:00"
+        },
+        {
+          "file": "gnupg2_2.4.4-2ubuntu17.6.dsc",
+          "sha256": "67504c8f474dce8880c25a5a14993d419b3f39db2a77039f24e65903ce93f4b9",
+          "size": 3947,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.6.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.122036+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "gnutls28",
+      "sourceVersion": "3.8.3-1.1ubuntu3.6",
+      "artifacts": [
+        {
+          "file": "gnutls28_3.8.3.orig.tar.xz",
+          "sha256": "f74fc5954b27d4ec6dfbb11dea987888b5b124289a3703afcada0ee520f4173e",
+          "size": 6463720,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gnutls28/gnutls28_3.8.3.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.130767+00:00"
+        },
+        {
+          "file": "gnutls28_3.8.3.orig.tar.xz.asc",
+          "sha256": "b2b90d225728890b0e2aa7c05e5f25f8ba1282821b46e72cd99f0c732b639cef",
+          "size": 854,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gnutls28/gnutls28_3.8.3.orig.tar.xz.asc",
+          "downloadedAt": "2026-09-14T02:01:28.131083+00:00"
+        },
+        {
+          "file": "gnutls28_3.8.3-1.1ubuntu3.6.debian.tar.xz",
+          "sha256": "b4cc6ebad4cb21ffe82d094f6d9c90de31e08a8b31ed36911a2adbe5aaa56d47",
+          "size": 124984,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gnutls28/gnutls28_3.8.3-1.1ubuntu3.6.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.131651+00:00"
+        },
+        {
+          "file": "gnutls28_3.8.3-1.1ubuntu3.6.dsc",
+          "sha256": "34455be2f5fb343b5833ff40cc00623106326e6cc88aaf9862943f6b3aa5ab60",
+          "size": 3397,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gnutls28/gnutls28_3.8.3-1.1ubuntu3.6.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.131909+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "grep",
+      "sourceVersion": "3.11-4build1",
+      "artifacts": [
+        {
+          "file": "grep_3.11-4build1.dsc",
+          "sha256": "2d0a5ced73347bbf22f35421c31360fc2fe4a0e6267dc31578e2630abe97afa4",
+          "size": 2379,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/grep/grep_3.11-4build1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.132534+00:00"
+        },
+        {
+          "file": "grep_3.11.orig.tar.xz",
+          "sha256": "1db2aedde89d0dea42b16d9528f894c8d15dae4e190b59aecc78f5a951276eab",
+          "size": 1703776,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/grep/grep_3.11.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.135417+00:00"
+        },
+        {
+          "file": "grep_3.11.orig.tar.xz.asc",
+          "sha256": "89ec23ffd59b68822732dc8204fc89883c3af30a90ae390feb94346d9d09a589",
+          "size": 833,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/grep/grep_3.11.orig.tar.xz.asc",
+          "downloadedAt": "2026-09-14T02:01:28.135619+00:00"
+        },
+        {
+          "file": "grep_3.11-4build1.debian.tar.xz",
+          "sha256": "f87cd3d0db16527f5c3a8eb6c737a72b0404eaafdbba19d707f8d89315d32e4a",
+          "size": 20584,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/grep/grep_3.11-4build1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.135963+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "gzip",
+      "sourceVersion": "1.12-1ubuntu3.2",
+      "artifacts": [
+        {
+          "file": "gzip_1.12.orig.tar.xz",
+          "sha256": "ce5e03e519f637e1f814011ace35c4f87b33c0bbabeec35baf5fbd3479e91956",
+          "size": 825548,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gzip/gzip_1.12.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.138105+00:00"
+        },
+        {
+          "file": "gzip_1.12-1ubuntu3.2.debian.tar.xz",
+          "sha256": "13008977038dcf4058301a96006e994a5c3c48877d2bc39ee4c29d234ba21832",
+          "size": 22820,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gzip/gzip_1.12-1ubuntu3.2.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.138441+00:00"
+        },
+        {
+          "file": "gzip_1.12-1ubuntu3.2.dsc",
+          "sha256": "5919ccc72dbb8a02b7c461345f3c04bd3b33445ff2a23035b8d5837db3f09d44",
+          "size": 2042,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gzip/gzip_1.12-1ubuntu3.2.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.138757+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "hostname",
+      "sourceVersion": "3.23+nmu2ubuntu2",
+      "artifacts": [
+        {
+          "file": "hostname_3.23+nmu2ubuntu2.dsc",
+          "sha256": "547a860636d92c3696b47ca33807293b74a0c80a92e6f1210b75aa1f27650e79",
+          "size": 1567,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/h/hostname/hostname_3.23+nmu2ubuntu2.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.139358+00:00"
+        },
+        {
+          "file": "hostname_3.23+nmu2ubuntu2.tar.xz",
+          "sha256": "38e2dcc815ccebd90a7623197a530da2538d8f14f64546147c95cffba5138e7f",
+          "size": 13276,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/h/hostname/hostname_3.23+nmu2ubuntu2.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.139598+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "init-system-helpers",
+      "sourceVersion": "1.66ubuntu1",
+      "artifacts": [
+        {
+          "file": "init-system-helpers_1.66ubuntu1.dsc",
+          "sha256": "99bad9c4c7b98a89f4cb6b2a7151f4ed0dee46d5671712782ae98cc879d1feb2",
+          "size": 2353,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/i/init-system-helpers/init-system-helpers_1.66ubuntu1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.140277+00:00"
+        },
+        {
+          "file": "init-system-helpers_1.66ubuntu1.tar.xz",
+          "sha256": "ca60a744414997068de76bfeff98a6834ebd92c1c691bfc28d49df93e67b6a78",
+          "size": 45100,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/i/init-system-helpers/init-system-helpers_1.66ubuntu1.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.140593+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "keyutils",
+      "sourceVersion": "1.6.3-3build1",
+      "artifacts": [
+        {
+          "file": "keyutils_1.6.3-3build1.dsc",
+          "sha256": "d81679165d93bfcadd5bf3fdca123ce0e4562e2ad9712aa2b9d8c2d1c701324d",
+          "size": 2211,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/k/keyutils/keyutils_1.6.3-3build1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.141204+00:00"
+        },
+        {
+          "file": "keyutils_1.6.3.orig.tar.gz",
+          "sha256": "a61d5706136ae4c05bd48f86186bcfdbd88dd8bd5107e3e195c924cfc1b39bb4",
+          "size": 137022,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/k/keyutils/keyutils_1.6.3.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.141736+00:00"
+        },
+        {
+          "file": "keyutils_1.6.3-3build1.debian.tar.xz",
+          "sha256": "71904f9f862c496333fd04c7af70c15b42198b90b41f460c501c80e86c3f1d3d",
+          "size": 13456,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/k/keyutils/keyutils_1.6.3-3build1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.141946+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "krb5",
+      "sourceVersion": "1.20.1-6ubuntu2.8",
+      "artifacts": [
+        {
+          "file": "krb5_1.20.1.orig.tar.gz",
+          "sha256": "704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851",
+          "size": 8661660,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.152398+00:00"
+        },
+        {
+          "file": "krb5_1.20.1-6ubuntu2.8.debian.tar.xz",
+          "sha256": "f8c90ef24a2a3c8396fa6c2f169017c03697c1468e243b34ab1e97141a903317",
+          "size": 130012,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.8.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.153026+00:00"
+        },
+        {
+          "file": "krb5_1.20.1-6ubuntu2.8.dsc",
+          "sha256": "22fee326733aa493194a9f616378299c6dbc53de0b1577f309a7a08c1d4cf600",
+          "size": 3256,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.8.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.153266+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libassuan",
+      "sourceVersion": "2.5.6-1build1",
+      "artifacts": [
+        {
+          "file": "libassuan_2.5.6-1build1.dsc",
+          "sha256": "f1f7508772b8f7c4620b115cf5d6adce5133d3f43d2d61cf5d9ea7152fa7cf9e",
+          "size": 2734,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/liba/libassuan/libassuan_2.5.6-1build1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.153896+00:00"
+        },
+        {
+          "file": "libassuan_2.5.6.orig.tar.bz2",
+          "sha256": "e9fd27218d5394904e4e39788f9b1742711c3e6b41689a31aa3380bd5aa4f426",
+          "size": 577012,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/liba/libassuan/libassuan_2.5.6.orig.tar.bz2",
+          "downloadedAt": "2026-09-14T02:01:28.155072+00:00"
+        },
+        {
+          "file": "libassuan_2.5.6.orig.tar.bz2.asc",
+          "sha256": "a1be6f5611de2f563a904c539e0415dd5823d9e1c4c0c1071418e7412174eaea",
+          "size": 228,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/liba/libassuan/libassuan_2.5.6.orig.tar.bz2.asc",
+          "downloadedAt": "2026-09-14T02:01:28.155278+00:00"
+        },
+        {
+          "file": "libassuan_2.5.6-1build1.debian.tar.xz",
+          "sha256": "f6e12195adc071a935556ccea239a64cd305ce667dde4ce9a11691e41278a1c4",
+          "size": 14412,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/liba/libassuan/libassuan_2.5.6-1build1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.155533+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libbsd",
+      "sourceVersion": "0.12.1-1build1.1",
+      "artifacts": [
+        {
+          "file": "libbsd_0.12.1.orig.tar.xz",
+          "sha256": "d7747f8ec1baa6ff5c096a9dd587c061233dec90da0f1aedd66d830f6db6996a",
+          "size": 444048,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libb/libbsd/libbsd_0.12.1.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.156994+00:00"
+        },
+        {
+          "file": "libbsd_0.12.1.orig.tar.xz.asc",
+          "sha256": "04a4b66da93ea3c761e15fcedd705a969b67597d0619c3ebc5fe3cf72d477f1f",
+          "size": 833,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libb/libbsd/libbsd_0.12.1.orig.tar.xz.asc",
+          "downloadedAt": "2026-09-14T02:01:28.157185+00:00"
+        },
+        {
+          "file": "libbsd_0.12.1-1build1.1.debian.tar.xz",
+          "sha256": "4086dc52ae53f0d7625a593c331460377868edc2a5606f4d8a341565aa94b2be",
+          "size": 18732,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libb/libbsd/libbsd_0.12.1-1build1.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.157487+00:00"
+        },
+        {
+          "file": "libbsd_0.12.1-1build1.1.dsc",
+          "sha256": "a44c2a70dbb9703c342ae49525507d22795b37308302c6167d72c3cbd3e76236",
+          "size": 2458,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libb/libbsd/libbsd_0.12.1-1build1.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.157668+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libcap-ng",
+      "sourceVersion": "0.8.4-2build2",
+      "artifacts": [
+        {
+          "file": "libcap-ng_0.8.4-2build2.dsc",
+          "sha256": "fb7456a3439418628d6c62c5545da55a7ee1a65e539b44b48c39ee9c2d3d9ce4",
+          "size": 2351,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libc/libcap-ng/libcap-ng_0.8.4-2build2.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.158204+00:00"
+        },
+        {
+          "file": "libcap-ng_0.8.4.orig.tar.gz",
+          "sha256": "5615c76a61039e283a6bd107c4faf345ae5ad4dcd45907defe5e474d8fdb6fd2",
+          "size": 59317,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libc/libcap-ng/libcap-ng_0.8.4.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.158505+00:00"
+        },
+        {
+          "file": "libcap-ng_0.8.4-2build2.debian.tar.xz",
+          "sha256": "dcbce4356e06358e39e94ea66c9fdf9ef4e635e560467918345c732df5237691",
+          "size": 7384,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libc/libcap-ng/libcap-ng_0.8.4-2build2.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.158741+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libcap2",
+      "sourceVersion": "1:2.66-5ubuntu2.4",
+      "artifacts": [
+        {
+          "file": "libcap2_2.66.orig.tar.xz",
+          "sha256": "15c40ededb3003d70a283fe587a36b7d19c8b3b554e33f86129c059a4bb466b2",
+          "size": 181592,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libc/libcap2/libcap2_2.66.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.159751+00:00"
+        },
+        {
+          "file": "libcap2_2.66-5ubuntu2.4.debian.tar.xz",
+          "sha256": "7eb46752c6b59984494d2f641a049b9d4b394b7d1fe067729ccbc413c5943136",
+          "size": 24724,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libc/libcap2/libcap2_2.66-5ubuntu2.4.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.160056+00:00"
+        },
+        {
+          "file": "libcap2_2.66-5ubuntu2.4.dsc",
+          "sha256": "8178019803f285b92e52e82cf84b0a6fc18840041270b2c588db826b8277e3e0",
+          "size": 2319,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libc/libcap2/libcap2_2.66-5ubuntu2.4.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.160301+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libcbor",
+      "sourceVersion": "0.10.2-1.2ubuntu2",
+      "artifacts": [
+        {
+          "file": "libcbor_0.10.2-1.2ubuntu2.dsc",
+          "sha256": "f17a3e0194ebfbdfc8253f5fe88ce2d085f3fa6a6e7655785057116e93b3aea9",
+          "size": 2283,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libc/libcbor/libcbor_0.10.2-1.2ubuntu2.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.160887+00:00"
+        },
+        {
+          "file": "libcbor_0.10.2.orig.tar.gz",
+          "sha256": "e75f712215d7b7e5c89ef322a09b701f7159f028b8b48978865725f00f79875b",
+          "size": 289450,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libc/libcbor/libcbor_0.10.2.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.161855+00:00"
+        },
+        {
+          "file": "libcbor_0.10.2-1.2ubuntu2.debian.tar.xz",
+          "sha256": "cb31352cf8be1d8c6f58827dd21b62d09a2241e2ac3e9d52e4991740196b2e60",
+          "size": 6560,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libc/libcbor/libcbor_0.10.2-1.2ubuntu2.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.162151+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libedit",
+      "sourceVersion": "3.1-20230828-1build1",
+      "artifacts": [
+        {
+          "file": "libedit_3.1-20230828-1build1.dsc",
+          "sha256": "8f0644bf36c5c07122dccfdf6025941b7d6625582562292544068f323505b4bd",
+          "size": 2399,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libe/libedit/libedit_3.1-20230828-1build1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.162834+00:00"
+        },
+        {
+          "file": "libedit_3.1-20230828.orig.tar.gz",
+          "sha256": "4ee8182b6e569290e7d1f44f0f78dac8716b35f656b76528f699c69c98814dad",
+          "size": 534072,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libe/libedit/libedit_3.1-20230828.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.164098+00:00"
+        },
+        {
+          "file": "libedit_3.1-20230828-1build1.debian.tar.xz",
+          "sha256": "0df7e31ff4324654caa22386b7a7d404f769838e035555507eacd6e86bcf570d",
+          "size": 16748,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libe/libedit/libedit_3.1-20230828-1build1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.164398+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "liberror-perl",
+      "sourceVersion": "0.17029-2",
+      "artifacts": [
+        {
+          "file": "liberror-perl_0.17029-2.dsc",
+          "sha256": "48c6ca66e03144a8bec4f32b2419f34d70e8a00500b01ea3bb6a5cab0c03e164",
+          "size": 2085,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libe/liberror-perl/liberror-perl_0.17029-2.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.165021+00:00"
+        },
+        {
+          "file": "liberror-perl_0.17029.orig.tar.gz",
+          "sha256": "1a23f7913032aed6d4b68321373a3899ca66590f4727391a091ec19c95bf7adc",
+          "size": 33304,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libe/liberror-perl/liberror-perl_0.17029.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.165438+00:00"
+        },
+        {
+          "file": "liberror-perl_0.17029-2.debian.tar.xz",
+          "sha256": "60deb5d5cbc4b478f8db4cfa0ac6c512e85eea5fcd7fc7285c26a9942d3b8b67",
+          "size": 4608,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libe/liberror-perl/liberror-perl_0.17029-2.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.165630+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libffi",
+      "sourceVersion": "3.4.6-1build1",
+      "artifacts": [
+        {
+          "file": "libffi_3.4.6-1build1.dsc",
+          "sha256": "a7a2c320c04149192a6dd78df8be28b2b27fd38e48d76f2ee6ba0c19ae0758f6",
+          "size": 2055,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libf/libffi/libffi_3.4.6-1build1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.166167+00:00"
+        },
+        {
+          "file": "libffi_3.4.6.orig.tar.gz",
+          "sha256": "9ac790464c1eb2f5ab5809e978a1683e9393131aede72d1b0a0703771d3c6cda",
+          "size": 598175,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libf/libffi/libffi_3.4.6.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.167332+00:00"
+        },
+        {
+          "file": "libffi_3.4.6-1build1.debian.tar.xz",
+          "sha256": "9d8712818b833baf002a2413552194b8770800cb20b802ba1d3714156eba14fe",
+          "size": 10736,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libf/libffi/libffi_3.4.6-1build1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.167575+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libfido2",
+      "sourceVersion": "1.14.0-1build3",
+      "artifacts": [
+        {
+          "file": "libfido2_1.14.0-1build3.dsc",
+          "sha256": "8511b4e00b9b9ea4888196a5096d690d6ab0cf888a4b98402dfb1a9d463553bb",
+          "size": 2577,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libf/libfido2/libfido2_1.14.0-1build3.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.168169+00:00"
+        },
+        {
+          "file": "libfido2_1.14.0.orig.tar.gz",
+          "sha256": "3601792e320032d428002c4cce8499a4c7b803319051a25a0c9f1f138ffee45a",
+          "size": 660289,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libf/libfido2/libfido2_1.14.0.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.169531+00:00"
+        },
+        {
+          "file": "libfido2_1.14.0.orig.tar.gz.asc",
+          "sha256": "2c1e1c0ab6f3ea6590c69a73a0f524dc6b8b523915b071872f2b26ee97eba4a4",
+          "size": 228,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libf/libfido2/libfido2_1.14.0.orig.tar.gz.asc",
+          "downloadedAt": "2026-09-14T02:01:28.169760+00:00"
+        },
+        {
+          "file": "libfido2_1.14.0-1build3.debian.tar.xz",
+          "sha256": "c7decd6b53a4660dccc5551dfbd56fcf717998812f3c4e82eb3a48c9bf955d65",
+          "size": 53020,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libf/libfido2/libfido2_1.14.0-1build3.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.170281+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libgcrypt20",
+      "sourceVersion": "1.10.3-2ubuntu0.2",
+      "artifacts": [
+        {
+          "file": "libgcrypt20_1.10.3.orig.tar.bz2",
+          "sha256": "8b0870897ac5ac67ded568dcfadf45969cfa8a6beb0fd60af2a9eadc2a3272aa",
+          "size": 3783827,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libg/libgcrypt20/libgcrypt20_1.10.3.orig.tar.bz2",
+          "downloadedAt": "2026-09-14T02:01:28.175431+00:00"
+        },
+        {
+          "file": "libgcrypt20_1.10.3.orig.tar.bz2.asc",
+          "sha256": "f02a5f961b89c034a78decbb355ea5a8d9356df5a9636dec53ae548d7d814b14",
+          "size": 390,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libg/libgcrypt20/libgcrypt20_1.10.3.orig.tar.bz2.asc",
+          "downloadedAt": "2026-09-14T02:01:28.175717+00:00"
+        },
+        {
+          "file": "libgcrypt20_1.10.3-2ubuntu0.2.debian.tar.xz",
+          "sha256": "8298a57538f427d3c1112f2d86e374dd8223156e06b403f5c7945dd3d86f2050",
+          "size": 66364,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libg/libgcrypt20/libgcrypt20_1.10.3-2ubuntu0.2.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.176118+00:00"
+        },
+        {
+          "file": "libgcrypt20_1.10.3-2ubuntu0.2.dsc",
+          "sha256": "688df10bc9c90b241926470d1f12a4d5092157263a6c1555996c53bcf40ca7d1",
+          "size": 2914,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libg/libgcrypt20/libgcrypt20_1.10.3-2ubuntu0.2.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.176319+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libgpg-error",
+      "sourceVersion": "1.47-3build2.1",
+      "artifacts": [
+        {
+          "file": "libgpg-error_1.47.orig.tar.bz2",
+          "sha256": "9e3c670966b96ecc746c28c2c419541e3bcb787d1a73930f5e5f5e1bcbbb9bdb",
+          "size": 1020862,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libg/libgpg-error/libgpg-error_1.47.orig.tar.bz2",
+          "downloadedAt": "2026-09-14T02:01:28.178582+00:00"
+        },
+        {
+          "file": "libgpg-error_1.47.orig.tar.bz2.asc",
+          "sha256": "6ab547bf020761e1df80b08335773a91c345ff2c1344f15b1f7d195293ab21a5",
+          "size": 228,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libg/libgpg-error/libgpg-error_1.47.orig.tar.bz2.asc",
+          "downloadedAt": "2026-09-14T02:01:28.178861+00:00"
+        },
+        {
+          "file": "libgpg-error_1.47-3build2.1.debian.tar.xz",
+          "sha256": "f02a079a6ddf9930659c3402820b6bd190687e8f1c223f340c965a9da74abcd5",
+          "size": 18776,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libg/libgpg-error/libgpg-error_1.47-3build2.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.179211+00:00"
+        },
+        {
+          "file": "libgpg-error_1.47-3build2.1.dsc",
+          "sha256": "3c8abf463c9ade945fe2e9d87c4aa2bff0026964207b07e99432d9ef6d9436d8",
+          "size": 3007,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libg/libgpg-error/libgpg-error_1.47-3build2.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.179448+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libidn2",
+      "sourceVersion": "2.3.7-2build1.1",
+      "artifacts": [
+        {
+          "file": "libidn2_2.3.7.orig.tar.gz",
+          "sha256": "4c21a791b610b9519b9d0e12b8097bf2f359b12f8dd92647611a929e6bfd7d64",
+          "size": 2155214,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libi/libidn2/libidn2_2.3.7.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.183120+00:00"
+        },
+        {
+          "file": "libidn2_2.3.7.orig.tar.gz.asc",
+          "sha256": "d4e78fc1c5a5c35980be3a04dd864574f450d55921360b0aa19326c75ada4a98",
+          "size": 228,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libi/libidn2/libidn2_2.3.7.orig.tar.gz.asc",
+          "downloadedAt": "2026-09-14T02:01:28.183338+00:00"
+        },
+        {
+          "file": "libidn2_2.3.7-2build1.1.debian.tar.xz",
+          "sha256": "50d3154a3a5b3506aa340c1784f96bfe0f4c5608e2a1a9dd265aa204da4ef327",
+          "size": 16468,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libi/libidn2/libidn2_2.3.7-2build1.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.183639+00:00"
+        },
+        {
+          "file": "libidn2_2.3.7-2build1.1.dsc",
+          "sha256": "fa2970145d391578511ef78bc74a9ba7a57cff510d9e5fba39520f63b023986c",
+          "size": 2651,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libi/libidn2/libidn2_2.3.7-2build1.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.183846+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libmd",
+      "sourceVersion": "1.1.0-2build1.1",
+      "artifacts": [
+        {
+          "file": "libmd_1.1.0.orig.tar.xz",
+          "sha256": "1bd6aa42275313af3141c7cf2e5b964e8b1fd488025caf2f971f43b00776b332",
+          "size": 271228,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libm/libmd/libmd_1.1.0.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.185022+00:00"
+        },
+        {
+          "file": "libmd_1.1.0.orig.tar.xz.asc",
+          "sha256": "402fd3024e43ab975733d09e661804a58ca58697194e4b15216b1217cfe1dadb",
+          "size": 833,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libm/libmd/libmd_1.1.0.orig.tar.xz.asc",
+          "downloadedAt": "2026-09-14T02:01:28.185209+00:00"
+        },
+        {
+          "file": "libmd_1.1.0-2build1.1.debian.tar.xz",
+          "sha256": "ed337af7e336b7dbb6b246c339baa34c9e832bf614a44d06158238259df12307",
+          "size": 8448,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libm/libmd/libmd_1.1.0-2build1.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.185519+00:00"
+        },
+        {
+          "file": "libmd_1.1.0-2build1.1.dsc",
+          "sha256": "11dfd22bba97a4c4ca6c09f34743ac6c72a34eb81344e3a1681c45e2d60ce239",
+          "size": 2391,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libm/libmd/libmd_1.1.0-2build1.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.185763+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libpsl",
+      "sourceVersion": "0.21.2-1.1build1",
+      "artifacts": [
+        {
+          "file": "libpsl_0.21.2-1.1build1.dsc",
+          "sha256": "bc742d8be05151fc4e5a5e20f48a03a276dd3094286861f19da1346a0dd761b4",
+          "size": 2425,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libp/libpsl/libpsl_0.21.2-1.1build1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.186534+00:00"
+        },
+        {
+          "file": "libpsl_0.21.2.orig.tar.xz",
+          "sha256": "11e34380f2c81d6e72c710464aae3b680df4ddcc1007826c630fb03c7ca6aa54",
+          "size": 1870352,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libp/libpsl/libpsl_0.21.2.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.189457+00:00"
+        },
+        {
+          "file": "libpsl_0.21.2-1.1build1.debian.tar.xz",
+          "sha256": "70e66bec75c564eee5ce7b1b422a51753601bd64d9738b68551127093321eabc",
+          "size": 12244,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libp/libpsl/libpsl_0.21.2-1.1build1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.189718+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libseccomp",
+      "sourceVersion": "2.5.5-1ubuntu3.1",
+      "artifacts": [
+        {
+          "file": "libseccomp_2.5.5.orig.tar.gz",
+          "sha256": "248a2c8a4d9b9858aa6baf52712c34afefcf9c9e94b76dce02c1c9aa25fb3375",
+          "size": 642445,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libseccomp/libseccomp_2.5.5.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.191351+00:00"
+        },
+        {
+          "file": "libseccomp_2.5.5.orig.tar.gz.asc",
+          "sha256": "f3bf8a946020d3047581f11fe6ac71971a842115ddb362562b193861ef57d97b",
+          "size": 833,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libseccomp/libseccomp_2.5.5.orig.tar.gz.asc",
+          "downloadedAt": "2026-09-14T02:01:28.191542+00:00"
+        },
+        {
+          "file": "libseccomp_2.5.5-1ubuntu3.1.debian.tar.xz",
+          "sha256": "ee1e79bc46f18a992ac80f349fdd5cfa0b5f2f6b298473b587c7cf5af89a8df6",
+          "size": 24484,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libseccomp/libseccomp_2.5.5-1ubuntu3.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.191924+00:00"
+        },
+        {
+          "file": "libseccomp_2.5.5-1ubuntu3.1.dsc",
+          "sha256": "8039579c8cd02819d8246b40483d69e2113979b5acc5900d7206e0b4bebff392",
+          "size": 2838,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libseccomp/libseccomp_2.5.5-1ubuntu3.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.192115+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libselinux",
+      "sourceVersion": "3.5-2ubuntu2.1",
+      "artifacts": [
+        {
+          "file": "libselinux_3.5.orig.tar.gz",
+          "sha256": "9a3a3705ac13a2ccca2de6d652b6356fead10f36fb33115c185c5ccdf29eec19",
+          "size": 211453,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libselinux/libselinux_3.5.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.193249+00:00"
+        },
+        {
+          "file": "libselinux_3.5.orig.tar.gz.asc",
+          "sha256": "fd37d441e0c08cabe9ac8f7815f52355bab2011549ec5792424fe18be9e1e015",
+          "size": 981,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libselinux/libselinux_3.5.orig.tar.gz.asc",
+          "downloadedAt": "2026-09-14T02:01:28.193438+00:00"
+        },
+        {
+          "file": "libselinux_3.5-2ubuntu2.1.debian.tar.xz",
+          "sha256": "13e47e0983f59235e34f5abe07a2a0d1af3dd2d255962c6a50fac4698c3fe891",
+          "size": 38112,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libselinux/libselinux_3.5-2ubuntu2.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.193688+00:00"
+        },
+        {
+          "file": "libselinux_3.5-2ubuntu2.1.dsc",
+          "sha256": "96134581a745ed85b3d5f1c24cdd88fa7d3e29548c0f80a683094ed886b7f150",
+          "size": 3098,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libselinux/libselinux_3.5-2ubuntu2.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.193935+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libsemanage",
+      "sourceVersion": "3.5-1build5",
+      "artifacts": [
+        {
+          "file": "libsemanage_3.5-1build5.dsc",
+          "sha256": "352d869841ec5d98fd97791aa9b9896af905d5f3517ec99850f48b095c8c3193",
+          "size": 3105,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libsemanage/libsemanage_3.5-1build5.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.194553+00:00"
+        },
+        {
+          "file": "libsemanage_3.5.orig.tar.gz",
+          "sha256": "f53534e50247538280ed0d76c6ce81d8fb3939bd64cadb89da10dba42e40dd9c",
+          "size": 185060,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libsemanage/libsemanage_3.5.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.195231+00:00"
+        },
+        {
+          "file": "libsemanage_3.5.orig.tar.gz.asc",
+          "sha256": "f9126c861c666f3308b60cea4405c5e686a056113ca3cbd0a5b0e4af7600c8f5",
+          "size": 981,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libsemanage/libsemanage_3.5.orig.tar.gz.asc",
+          "downloadedAt": "2026-09-14T02:01:28.195493+00:00"
+        },
+        {
+          "file": "libsemanage_3.5-1build5.debian.tar.xz",
+          "sha256": "522654c2f5e0f508ce7c82f3c58cd394e1b9386226a2a6ac917e7fed9d8895b7",
+          "size": 30188,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libsemanage/libsemanage_3.5-1build5.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.195866+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libsepol",
+      "sourceVersion": "3.5-2build1",
+      "artifacts": [
+        {
+          "file": "libsepol_3.5-2build1.dsc",
+          "sha256": "476b00c198591e38927f274a17dc91bc716e619537f13db58180b10c3daa16e0",
+          "size": 2458,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libsepol/libsepol_3.5-2build1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.196525+00:00"
+        },
+        {
+          "file": "libsepol_3.5.orig.tar.gz",
+          "sha256": "78fdaf69924db780bac78546e43d9c44074bad798c2c415d0b9bb96d065ee8a2",
+          "size": 497522,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libsepol/libsepol_3.5.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.197734+00:00"
+        },
+        {
+          "file": "libsepol_3.5.orig.tar.gz.asc",
+          "sha256": "2309ab5e7cd38e2eb9196f92a60e00d4508cb293f1181d34a5a050128c9b7b24",
+          "size": 981,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libsepol/libsepol_3.5.orig.tar.gz.asc",
+          "downloadedAt": "2026-09-14T02:01:28.197982+00:00"
+        },
+        {
+          "file": "libsepol_3.5-2build1.debian.tar.xz",
+          "sha256": "2e0b6c45b864f36e58c2e1fdeed262283e5ad1aed1599ebb43a859a8760b2307",
+          "size": 27716,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libsepol/libsepol_3.5-2build1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.198398+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libssh",
+      "sourceVersion": "0.10.6-2ubuntu0.5",
+      "artifacts": [
+        {
+          "file": "libssh_0.10.6.orig.tar.xz",
+          "sha256": "1861d498f5b6f1741b6abc73e608478491edcf9c9d4b6630eef6e74596de9dc1",
+          "size": 561036,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.200884+00:00"
+        },
+        {
+          "file": "libssh_0.10.6.orig.tar.xz.asc",
+          "sha256": "140420406d7796548b0beaf736e73864c32291787cf2bd3983fdbc41741494ae",
+          "size": 833,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz.asc",
+          "downloadedAt": "2026-09-14T02:01:28.201532+00:00"
+        },
+        {
+          "file": "libssh_0.10.6-2ubuntu0.5.debian.tar.xz",
+          "sha256": "5ea1b360802689a7daa557470a661665d95996ab8c0b8dc700083ed8caf8f8d8",
+          "size": 63744,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.5.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.201930+00:00"
+        },
+        {
+          "file": "libssh_0.10.6-2ubuntu0.5.dsc",
+          "sha256": "e5eb4bf8c16013acaab5a3ed38d3c4141b3d5fab317cbc8f11118ddd5b4479ad",
+          "size": 2857,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.5.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.202184+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libtasn1-6",
+      "sourceVersion": "4.19.0-3ubuntu0.24.04.2",
+      "artifacts": [
+        {
+          "file": "libtasn1-6_4.19.0.orig.tar.gz",
+          "sha256": "1613f0ac1cf484d6ec0ce3b8c06d56263cc7242f1c23b30d82d23de345a63f7a",
+          "size": 1786576,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.205651+00:00"
+        },
+        {
+          "file": "libtasn1-6_4.19.0.orig.tar.gz.asc",
+          "sha256": "8410c0c004f3509c218a98b276b3308b9c46f48068e8b1a6d9ebfd61ea9f357a",
+          "size": 228,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0.orig.tar.gz.asc",
+          "downloadedAt": "2026-09-14T02:01:28.205871+00:00"
+        },
+        {
+          "file": "libtasn1-6_4.19.0-3ubuntu0.24.04.2.debian.tar.xz",
+          "sha256": "23e6e79b1be16c247e0d3b152a5838d5d182a788ba053c640b2a120b8b00adad",
+          "size": 25112,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0-3ubuntu0.24.04.2.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.206178+00:00"
+        },
+        {
+          "file": "libtasn1-6_4.19.0-3ubuntu0.24.04.2.dsc",
+          "sha256": "a322b48ad14f13ef24ccebcc1feab975817c67000382096146a281d0b4354e7e",
+          "size": 2801,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0-3ubuntu0.24.04.2.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.206375+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libunistring",
+      "sourceVersion": "1.1-2build1.1",
+      "artifacts": [
+        {
+          "file": "libunistring_1.1.orig.tar.xz",
+          "sha256": "827c1eb9cb6e7c738b171745dac0888aa58c5924df2e59239318383de0729b98",
+          "size": 2397676,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libu/libunistring/libunistring_1.1.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.210508+00:00"
+        },
+        {
+          "file": "libunistring_1.1.orig.tar.xz.asc",
+          "sha256": "dadae6c38f85f9e8776231436c601c386924ceb44d511456c61c9be73608933d",
+          "size": 833,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libu/libunistring/libunistring_1.1.orig.tar.xz.asc",
+          "downloadedAt": "2026-09-14T02:01:28.210805+00:00"
+        },
+        {
+          "file": "libunistring_1.1-2build1.1.debian.tar.xz",
+          "sha256": "06254c8f2ad989bd8ff267fd921d6711fbc0390ff10b99bc3be09fe870baab5e",
+          "size": 14188,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libu/libunistring/libunistring_1.1-2build1.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.211075+00:00"
+        },
+        {
+          "file": "libunistring_1.1-2build1.1.dsc",
+          "sha256": "496ec65625b57a9c5cd0577843814cbd4701ab123a6146a56053dcc9463ae09e",
+          "size": 2292,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libu/libunistring/libunistring_1.1-2build1.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.211315+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libxcrypt",
+      "sourceVersion": "1:4.4.36-4build1",
+      "artifacts": [
+        {
+          "file": "libxcrypt_4.4.36-4build1.dsc",
+          "sha256": "68df46e1ca34983971acc5490a3eec493c6e88cdf4868acdcafba2831e910d78",
+          "size": 2300,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libx/libxcrypt/libxcrypt_4.4.36-4build1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.212005+00:00"
+        },
+        {
+          "file": "libxcrypt_4.4.36.orig.tar.xz",
+          "sha256": "7b7abbc89f13f5194211aa6861ed954e4fa3a210a4cb64f7e13dc8cf413e7f2a",
+          "size": 392732,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libx/libxcrypt/libxcrypt_4.4.36.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.213031+00:00"
+        },
+        {
+          "file": "libxcrypt_4.4.36-4build1.debian.tar.xz",
+          "sha256": "b75925e5d2c40abab99f8078c40f2a666125067b080466a38eb670730188ca4a",
+          "size": 8356,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libx/libxcrypt/libxcrypt_4.4.36-4build1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.213330+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "libzstd",
+      "sourceVersion": "1.5.5+dfsg2-2build1.1",
+      "artifacts": [
+        {
+          "file": "libzstd_1.5.5+dfsg2.orig.tar.xz",
+          "sha256": "d7cf3c10d416fd999cb8fcf7685d9268ba7bec8eb78121fc2d0d916fa393d22b",
+          "size": 1784164,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libz/libzstd/libzstd_1.5.5+dfsg2.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.216520+00:00"
+        },
+        {
+          "file": "libzstd_1.5.5+dfsg2-2build1.1.debian.tar.xz",
+          "sha256": "c1df6d2628b26d085259b8e7ac020eb060e4c1feca98d6103058eda5ded725bc",
+          "size": 21288,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libz/libzstd/libzstd_1.5.5+dfsg2-2build1.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.216748+00:00"
+        },
+        {
+          "file": "libzstd_1.5.5+dfsg2-2build1.1.dsc",
+          "sha256": "c190a5dff9e7c5b5b1399f0d701bb2c173bc7cbdf14d5e05970f5ac066c25570",
+          "size": 2485,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libz/libzstd/libzstd_1.5.5+dfsg2-2build1.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.216975+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "lz4",
+      "sourceVersion": "1.9.4-1build1.1",
+      "artifacts": [
+        {
+          "file": "lz4_1.9.4.orig.tar.gz",
+          "sha256": "0b0e3aa07c8c063ddf40b082bdf7e37a1562bda40a0ff5272957f3e987e0e54b",
+          "size": 354063,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/l/lz4/lz4_1.9.4.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.218337+00:00"
+        },
+        {
+          "file": "lz4_1.9.4-1build1.1.debian.tar.xz",
+          "sha256": "9551b039576db7c87f38c3c847283877de65114cca06488accb9596a7c4f1ead",
+          "size": 8356,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/l/lz4/lz4_1.9.4-1build1.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.218633+00:00"
+        },
+        {
+          "file": "lz4_1.9.4-1build1.1.dsc",
+          "sha256": "ba7b585b15d8b4c955dd68c7af5aa89901cfbb3fdb4f2607ccad51628857d669",
+          "size": 2061,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/l/lz4/lz4_1.9.4-1build1.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.218821+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "mawk",
+      "sourceVersion": "1.3.4.20240123-1build1",
+      "artifacts": [
+        {
+          "file": "mawk_1.3.4.20240123-1build1.dsc",
+          "sha256": "3b5a9d204c10db2e6793e4b0c10e2dda1c7584771567e6a9b8fc4e96e4124979",
+          "size": 2312,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/m/mawk/mawk_1.3.4.20240123-1build1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.219396+00:00"
+        },
+        {
+          "file": "mawk_1.3.4.20240123.orig.tar.gz",
+          "sha256": "a8e319a83744b1f1fb6988dfa189d61887f866e9140cc9a49eb003b2b0655e88",
+          "size": 413943,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/m/mawk/mawk_1.3.4.20240123.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.220466+00:00"
+        },
+        {
+          "file": "mawk_1.3.4.20240123.orig.tar.gz.asc",
+          "sha256": "3b688572de36ecbb8a013cda92e294038324ed2745485e883508e9a6fdbd2472",
+          "size": 729,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/m/mawk/mawk_1.3.4.20240123.orig.tar.gz.asc",
+          "downloadedAt": "2026-09-14T02:01:28.220662+00:00"
+        },
+        {
+          "file": "mawk_1.3.4.20240123-1build1.debian.tar.xz",
+          "sha256": "354344a65a3626c162b69430aabc5e4861d5c4ad0c862c3df5a44c6186f273ef",
+          "size": 15704,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/m/mawk/mawk_1.3.4.20240123-1build1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.220976+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "ncurses",
+      "sourceVersion": "6.4+20240113-1ubuntu2.2",
+      "artifacts": [
+        {
+          "file": "ncurses_6.4+20240113.orig.tar.gz",
+          "sha256": "37a12a0f8ae2605012c9a164dd286b0cfa02b51b5055836d09eb3d597fc351b1",
+          "size": 3688489,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/ncurses/ncurses_6.4+20240113.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.226519+00:00"
+        },
+        {
+          "file": "ncurses_6.4+20240113.orig.tar.gz.asc",
+          "sha256": "b70cfa4f155f61dfa7c085ad1e3f90c73132ad198764d7793a44cd7fdca51f1b",
+          "size": 729,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/ncurses/ncurses_6.4+20240113.orig.tar.gz.asc",
+          "downloadedAt": "2026-09-14T02:01:28.226773+00:00"
+        },
+        {
+          "file": "ncurses_6.4+20240113-1ubuntu2.2.debian.tar.xz",
+          "sha256": "c7bbb8483d7ec358fb925a370575d8ebef63d6e455edce140de2ca7b86cf98d1",
+          "size": 50532,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/ncurses/ncurses_6.4+20240113-1ubuntu2.2.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.227117+00:00"
+        },
+        {
+          "file": "ncurses_6.4+20240113-1ubuntu2.2.dsc",
+          "sha256": "a7dea4604db5c8bc113eda2c4a7353f357618a74d96e404ae98655128e2f03ec",
+          "size": 3942,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/ncurses/ncurses_6.4+20240113-1ubuntu2.2.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.227308+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "nettle",
+      "sourceVersion": "3.9.1-2.2build1.1",
+      "artifacts": [
+        {
+          "file": "nettle_3.9.1.orig.tar.gz",
+          "sha256": "ccfeff981b0ca71bbd6fbcb054f407c60ffb644389a5be80d6716d5b550c6ce3",
+          "size": 2396741,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/nettle/nettle_3.9.1.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.231503+00:00"
+        },
+        {
+          "file": "nettle_3.9.1.orig.tar.gz.asc",
+          "sha256": "9746017a1a7fe60aad4b929ea592bc6ac51e12ea7179f289944eb44828d958af",
+          "size": 573,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/nettle/nettle_3.9.1.orig.tar.gz.asc",
+          "downloadedAt": "2026-09-14T02:01:28.231699+00:00"
+        },
+        {
+          "file": "nettle_3.9.1-2.2build1.1.debian.tar.xz",
+          "sha256": "be4ad3b97b32c4c4bacc10aa4caef2f3fa0840c21c642407fc3d48c4535b7c5e",
+          "size": 24848,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/nettle/nettle_3.9.1-2.2build1.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.231928+00:00"
+        },
+        {
+          "file": "nettle_3.9.1-2.2build1.1.dsc",
+          "sha256": "db439554d51174b657660a2a47d3d4128838e063f3c9c7da67bb3fe91931d1d2",
+          "size": 2325,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/nettle/nettle_3.9.1-2.2build1.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.232214+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "nghttp2",
+      "sourceVersion": "1.59.0-1ubuntu0.4",
+      "artifacts": [
+        {
+          "file": "nghttp2_1.59.0.orig.tar.gz",
+          "sha256": "0dd5c980f1262ff5f03676fd99f46f250b66c842f7d864fa1ca9f8453e5f8868",
+          "size": 1055492,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/nghttp2/nghttp2_1.59.0.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.234607+00:00"
+        },
+        {
+          "file": "nghttp2_1.59.0-1ubuntu0.4.debian.tar.xz",
+          "sha256": "f9f73792cc9c1b903dac7ab6742674e275cc8fb0489c536dba644baccc777119",
+          "size": 18840,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/nghttp2/nghttp2_1.59.0-1ubuntu0.4.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.234923+00:00"
+        },
+        {
+          "file": "nghttp2_1.59.0-1ubuntu0.4.dsc",
+          "sha256": "2e88ef28abff157157454f097e50256dccafd071206623c0b9294e83457b919b",
+          "size": 2624,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/nghttp2/nghttp2_1.59.0-1ubuntu0.4.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.235118+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "npth",
+      "sourceVersion": "1.6-3.1build1",
+      "artifacts": [
+        {
+          "file": "npth_1.6-3.1build1.dsc",
+          "sha256": "7e83a0dc387e8ab8cf152500526fefd46440b2b652470007b57b65b579539a32",
+          "size": 2107,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/npth/npth_1.6-3.1build1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.236069+00:00"
+        },
+        {
+          "file": "npth_1.6.orig.tar.bz2",
+          "sha256": "1393abd9adcf0762d34798dc34fdcf4d0d22a8410721e76f1e3afcd1daa4e2d1",
+          "size": 300486,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/npth/npth_1.6.orig.tar.bz2",
+          "downloadedAt": "2026-09-14T02:01:28.236840+00:00"
+        },
+        {
+          "file": "npth_1.6-3.1build1.debian.tar.xz",
+          "sha256": "5ca6d77eef4b2d04db11ab1c1a4691769a419ba42391d41ae36cf8a0968ef94e",
+          "size": 11036,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/npth/npth_1.6-3.1build1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.237111+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "openldap",
+      "sourceVersion": "2.6.10+dfsg-0ubuntu0.24.04.1",
+      "artifacts": [
+        {
+          "file": "openldap_2.6.10+dfsg.orig.tar.xz",
+          "sha256": "e871102bda1e42155fd4d6be4825a297e1c593cb0907b84fc7dde888dc847877",
+          "size": 3754560,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/o/openldap/openldap_2.6.10+dfsg.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.242904+00:00"
+        },
+        {
+          "file": "openldap_2.6.10+dfsg-0ubuntu0.24.04.1.debian.tar.xz",
+          "sha256": "91bdd643954645ce8ba51152516831ce4dcb497a222b88a5df847c4780e5f79e",
+          "size": 191132,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/o/openldap/openldap_2.6.10+dfsg-0ubuntu0.24.04.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.243613+00:00"
+        },
+        {
+          "file": "openldap_2.6.10+dfsg-0ubuntu0.24.04.1.dsc",
+          "sha256": "63be3643ff4157d84ef8bd9763fb7252695ceaea46773277600377417ecd21de",
+          "size": 3653,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/o/openldap/openldap_2.6.10+dfsg-0ubuntu0.24.04.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.243831+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "openssh",
+      "sourceVersion": "1:9.6p1-3ubuntu13.19",
+      "artifacts": [
+        {
+          "file": "openssh_9.6p1.orig.tar.gz",
+          "sha256": "910211c07255a8c5ad654391b40ee59800710dd8119dd5362de09385aa7a777c",
+          "size": 1857862,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.247424+00:00"
+        },
+        {
+          "file": "openssh_9.6p1-3ubuntu13.19.debian.tar.xz",
+          "sha256": "861ef0a496465b99fa4ad4a5966416e92fef784e6d4dc9dfb48330065666bcb8",
+          "size": 218096,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.19.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.248139+00:00"
+        },
+        {
+          "file": "openssh_9.6p1-3ubuntu13.19.dsc",
+          "sha256": "f8e66ff9aeecbe78bafe55e50afe17b9738b10c1fe2a5d1c6302884adc18808b",
+          "size": 3102,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.19.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.248361+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "openssl",
+      "sourceVersion": "3.0.13-0ubuntu3.15",
+      "artifacts": [
+        {
+          "file": "openssl_3.0.13.orig.tar.gz",
+          "sha256": "88525753f79d3bec27d2fa7c66aa0b92b3aa9498dafd93d7cfa4b3780cdae313",
+          "size": 15294843,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.265518+00:00"
+        },
+        {
+          "file": "openssl_3.0.13-0ubuntu3.15.debian.tar.xz",
+          "sha256": "a48bc18f3afd7030cd73712f180af343c4642e2d0ac65ac06fe1ec0ca7506077",
+          "size": 209648,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.15.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.266248+00:00"
+        },
+        {
+          "file": "openssl_3.0.13-0ubuntu3.15.dsc",
+          "sha256": "ae1c9a23219f0617b866d765f750ebd3bac74d93b7a235e6e53289781a056f0a",
+          "size": 2516,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.15.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.266465+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "p11-kit",
+      "sourceVersion": "0.25.3-4ubuntu2.2",
+      "artifacts": [
+        {
+          "file": "p11-kit_0.25.3.orig.tar.xz",
+          "sha256": "d8ddce1bb7e898986f9d250ccae7c09ce14d82f1009046d202a0eb1b428b2adc",
+          "size": 991528,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/p11-kit/p11-kit_0.25.3.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.268767+00:00"
+        },
+        {
+          "file": "p11-kit_0.25.3-4ubuntu2.2.debian.tar.xz",
+          "sha256": "297b8c03f6cf5bc9a00487ddcfee8ab674040afb7b256029a5eeaf8c5edb18a5",
+          "size": 28712,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/p11-kit/p11-kit_0.25.3-4ubuntu2.2.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.269060+00:00"
+        },
+        {
+          "file": "p11-kit_0.25.3-4ubuntu2.2.dsc",
+          "sha256": "c3975f825965d6ee899edcfb8bce29d56716b322859df37f200e3aa80d0da69e",
+          "size": 2406,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/p11-kit/p11-kit_0.25.3-4ubuntu2.2.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.269288+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "pam",
+      "sourceVersion": "1.5.3-5ubuntu5.7",
+      "artifacts": [
+        {
+          "file": "pam_1.5.3.orig.tar.xz",
+          "sha256": "7ac4b50feee004a9fa88f1dfd2d2fa738a82896763050cd773b3c54b0a818283",
+          "size": 1020076,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/pam/pam_1.5.3.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.271514+00:00"
+        },
+        {
+          "file": "pam_1.5.3-5ubuntu5.7.debian.tar.xz",
+          "sha256": "20a011e675ba5c2fdb22b681c395b3282128dfff119b8bec9adc39f4e87cddf9",
+          "size": 207384,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/pam/pam_1.5.3-5ubuntu5.7.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.272187+00:00"
+        },
+        {
+          "file": "pam_1.5.3-5ubuntu5.7.dsc",
+          "sha256": "df25ccfc35891011b8976281516ea239a6eb2cb17bec07c17d4ee2fc7a7be96e",
+          "size": 2772,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/pam/pam_1.5.3-5ubuntu5.7.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.272458+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "pcre2",
+      "sourceVersion": "10.42-4ubuntu2.1",
+      "artifacts": [
+        {
+          "file": "pcre2_10.42.orig.tar.gz",
+          "sha256": "c33b418e3b936ee3153de2c61cc638e7e4fe3156022a5c77d0711bcbb9d64f1f",
+          "size": 2397194,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/pcre2/pcre2_10.42.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.276969+00:00"
+        },
+        {
+          "file": "pcre2_10.42-4ubuntu2.1.diff.gz",
+          "sha256": "29c5cb6ff392544bf48bd3ec2a98aa0da5297457fa4f4199a1c392ec3d41f19c",
+          "size": 8431,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/pcre2/pcre2_10.42-4ubuntu2.1.diff.gz",
+          "downloadedAt": "2026-09-14T02:01:28.277327+00:00"
+        },
+        {
+          "file": "pcre2_10.42-4ubuntu2.1.dsc",
+          "sha256": "6272177be186d6f8ad16b668bb508b2e07645e05b5b8402d446492cb6d18104e",
+          "size": 2277,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/pcre2/pcre2_10.42-4ubuntu2.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.277524+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "perl",
+      "sourceVersion": "5.38.2-3.2ubuntu0.4",
+      "artifacts": [
+        {
+          "file": "perl_5.38.2.orig-regen-configure.tar.xz",
+          "sha256": "4d1b34cc058f9963cb89785ecc040d57f6d7725cd83329cfa4ef8b27566454d2",
+          "size": 418808,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.279006+00:00"
+        },
+        {
+          "file": "perl_5.38.2.orig.tar.xz",
+          "sha256": "d91115e90b896520e83d4de6b52f8254ef2b70a8d545ffab33200ea9f1cf29e8",
+          "size": 13679524,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/perl/perl_5.38.2.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.294054+00:00"
+        },
+        {
+          "file": "perl_5.38.2-3.2ubuntu0.4.debian.tar.xz",
+          "sha256": "4126b187cc0cdc7baf3a5c3532d24847b6c62228f15b2fcb4f77bb0afbf948af",
+          "size": 181972,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.4.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.294750+00:00"
+        },
+        {
+          "file": "perl_5.38.2-3.2ubuntu0.4.dsc",
+          "sha256": "4e39e38aaa15fee077b4540ad33adfef676dc90c3d3dfba2bde3abefa1394259",
+          "size": 3036,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.4.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.295146+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "procps",
+      "sourceVersion": "2:4.0.4-4ubuntu3.3",
+      "artifacts": [
+        {
+          "file": "procps_4.0.4.orig.tar.xz",
+          "sha256": "22870d6feb2478adb617ce4f09a787addaf2d260c5a8aa7b17d889a962c5e42e",
+          "size": 1401540,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/procps/procps_4.0.4.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.297862+00:00"
+        },
+        {
+          "file": "procps_4.0.4-4ubuntu3.3.debian.tar.xz",
+          "sha256": "895493786388b9ffa8a9ba894f473371cd4bbd2aa5089a8327cfdf00cf7cbc2d",
+          "size": 39588,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/procps/procps_4.0.4-4ubuntu3.3.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.298213+00:00"
+        },
+        {
+          "file": "procps_4.0.4-4ubuntu3.3.dsc",
+          "sha256": "0a57e936bcadc6f226991a0d02f20a190763eba59a830784ef51669c04745d58",
+          "size": 2280,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/procps/procps_4.0.4-4ubuntu3.3.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.298402+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "rtmpdump",
+      "sourceVersion": "2.4+20151223.gitfa8646d.1-2build7",
+      "artifacts": [
+        {
+          "file": "rtmpdump_2.4+20151223.gitfa8646d.1-2build7.dsc",
+          "sha256": "076006f9c26e898a8da252ee8dbd6f04252833fac08898b9fd9344ccba848853",
+          "size": 2439,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/r/rtmpdump/rtmpdump_2.4+20151223.gitfa8646d.1-2build7.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.299015+00:00"
+        },
+        {
+          "file": "rtmpdump_2.4+20151223.gitfa8646d.1.orig.tar.gz",
+          "sha256": "5c032f5c8cc2937eb55a81a94effdfed3b0a0304b6376147b86f951e225e3ab5",
+          "size": 142213,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/r/rtmpdump/rtmpdump_2.4+20151223.gitfa8646d.1.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.299601+00:00"
+        },
+        {
+          "file": "rtmpdump_2.4+20151223.gitfa8646d.1-2build7.debian.tar.xz",
+          "sha256": "bbc24a32c42f37238190944ecfc640387373d7dfa8e570fa23353d6a1f0e3d0b",
+          "size": 8464,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/r/rtmpdump/rtmpdump_2.4+20151223.gitfa8646d.1-2build7.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.299865+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "sed",
+      "sourceVersion": "4.9-2ubuntu0.24.04.1",
+      "artifacts": [
+        {
+          "file": "sed_4.9.orig.tar.xz",
+          "sha256": "6e226b732e1cd739464ad6862bd1a1aba42d7982922da7a53519631d24975181",
+          "size": 1397092,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/sed/sed_4.9.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.302611+00:00"
+        },
+        {
+          "file": "sed_4.9-2ubuntu0.24.04.1.debian.tar.xz",
+          "sha256": "81ac2757638817c9628f51dbdf425e0bfc820dd8a97e2bdef10cdaeba1dec7c0",
+          "size": 63288,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/sed/sed_4.9-2ubuntu0.24.04.1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.302979+00:00"
+        },
+        {
+          "file": "sed_4.9-2ubuntu0.24.04.1.dsc",
+          "sha256": "b62f26deec4d06d8d096d577e0a0eb004f4e79da2c75ed5338e1ed8c175f9fcf",
+          "size": 1999,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/sed/sed_4.9-2ubuntu0.24.04.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.303273+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "sensible-utils",
+      "sourceVersion": "0.0.22",
+      "artifacts": [
+        {
+          "file": "sensible-utils_0.0.22.dsc",
+          "sha256": "2a49b3be4b85b3f455f9c15c26f9bfb6c508496025a414f32649b16fe6326773",
+          "size": 1737,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/sensible-utils/sensible-utils_0.0.22.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.303838+00:00"
+        },
+        {
+          "file": "sensible-utils_0.0.22.tar.xz",
+          "sha256": "c744d604ad6e1f3c8b4831cd84d653cf86bf9867a856724bf3f4fceb2de215b5",
+          "size": 74412,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/sensible-utils/sensible-utils_0.0.22.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.304302+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "shadow",
+      "sourceVersion": "1:4.13+dfsg1-4ubuntu3.2",
+      "artifacts": [
+        {
+          "file": "shadow_4.13+dfsg1.orig.tar.xz",
+          "sha256": "a8bb3a2aceff1cbe39d0f50687dcc1d7e7be0516a9d954d8e2eedb93f5906207",
+          "size": 1811752,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/shadow/shadow_4.13+dfsg1.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.307498+00:00"
+        },
+        {
+          "file": "shadow_4.13+dfsg1-4ubuntu3.2.debian.tar.xz",
+          "sha256": "ff01a3e94111ca8c4dca097ebe54edbee912cbdeba042c214bfa4c34e7839f61",
+          "size": 96392,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/shadow/shadow_4.13+dfsg1-4ubuntu3.2.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.307990+00:00"
+        },
+        {
+          "file": "shadow_4.13+dfsg1-4ubuntu3.2.dsc",
+          "sha256": "0be17fd044f3e23f714a5b286a04bd040f246af1ac32fcc406b63756baa9c368",
+          "size": 2400,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/shadow/shadow_4.13+dfsg1-4ubuntu3.2.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.308250+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "systemd",
+      "sourceVersion": "255.4-1ubuntu8.17",
+      "artifacts": [
+        {
+          "file": "systemd_255.4.orig.tar.gz",
+          "sha256": "96e75bd08c57ad401677456fb88ef54a9f05bb1695693013bc6ecce839640fd5",
+          "size": 14952427,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/systemd/systemd_255.4.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.324967+00:00"
+        },
+        {
+          "file": "systemd_255.4-1ubuntu8.17.debian.tar.xz",
+          "sha256": "4695ff34f83b1f7e6e02bf3cfac2e2a44ac76b6cfc5a38c0081bac6919d547bb",
+          "size": 272596,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/systemd/systemd_255.4-1ubuntu8.17.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.325854+00:00"
+        },
+        {
+          "file": "systemd_255.4-1ubuntu8.17.dsc",
+          "sha256": "8e5f4e5a7b7ee457214be1efd1ea1d380186c38b146d8c98af5da0f625d3c396",
+          "size": 7324,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/systemd/systemd_255.4-1ubuntu8.17.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.326151+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "sysvinit",
+      "sourceVersion": "3.08-6ubuntu3",
+      "artifacts": [
+        {
+          "file": "sysvinit_3.08-6ubuntu3.dsc",
+          "sha256": "e440a6f97aaf42f8067f87e2589dd7636bd0e95bc6fcb8b902f50631f83157c0",
+          "size": 2495,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/sysvinit/sysvinit_3.08-6ubuntu3.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.327010+00:00"
+        },
+        {
+          "file": "sysvinit_3.08.orig.tar.gz",
+          "sha256": "325e42ae4ae5ae3e4d989e0604aeb5e4eae5f3ee21e401db3c79000718f8c836",
+          "size": 513674,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/sysvinit/sysvinit_3.08.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.328131+00:00"
+        },
+        {
+          "file": "sysvinit_3.08-6ubuntu3.debian.tar.xz",
+          "sha256": "1a8a8365cdc393e349fc115094a8ef7c52082ed22e7f1337ab1b8dd6b5e0103b",
+          "size": 140128,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/sysvinit/sysvinit_3.08-6ubuntu3.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.328771+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "tar",
+      "sourceVersion": "1.35+dfsg-3ubuntu0.4",
+      "artifacts": [
+        {
+          "file": "tar_1.35+dfsg.orig.tar.xz",
+          "sha256": "9ae57e981c1e73c0eebc2b26c9b0c4497fe310ef1d516ea430efb5470b71f7a8",
+          "size": 2111608,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/t/tar/tar_1.35+dfsg.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.332973+00:00"
+        },
+        {
+          "file": "tar_1.35+dfsg-3ubuntu0.4.debian.tar.xz",
+          "sha256": "66111c3bd3ca8c4d619ae67c6f80eaeee46f239dbfecad78d1f08ce0a924a133",
+          "size": 52244,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/t/tar/tar_1.35+dfsg-3ubuntu0.4.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.333295+00:00"
+        },
+        {
+          "file": "tar_1.35+dfsg-3ubuntu0.4.dsc",
+          "sha256": "08ed7d5680f4d342723e0ef5c568c95be1c5053b4c2d0f2723b63ddd378a908d",
+          "size": 2124,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/t/tar/tar_1.35+dfsg-3ubuntu0.4.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.333482+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "tcp-wrappers",
+      "sourceVersion": "7.6.q-33",
+      "artifacts": [
+        {
+          "file": "tcp-wrappers_7.6.q-33.dsc",
+          "sha256": "2f50647c31584e04965ba4376c67766f744e33cc781a463d4fd825f28e41afb2",
+          "size": 1354,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.q-33.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.334046+00:00"
+        },
+        {
+          "file": "tcp-wrappers_7.6.q.orig.tar.gz",
+          "sha256": "9543d7adedf78a6de0b221ccbbd1952e08b5138717f4ade814039bb489a4315d",
+          "size": 99438,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.q.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.334527+00:00"
+        },
+        {
+          "file": "tcp-wrappers_7.6.q-33.debian.tar.xz",
+          "sha256": "2f2923caee212834bf0ea43c2401612837df1eb6c9f56d608c128da5d68d45ec",
+          "size": 38348,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.q-33.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.334827+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "ubuntu-keyring",
+      "sourceVersion": "2023.11.28.1",
+      "artifacts": [
+        {
+          "file": "ubuntu-keyring_2023.11.28.1.dsc",
+          "sha256": "c71c8e5a1dd5e8ef682b7104645a88f0bc9eeb9380bf64288adcf78f40bcf68b",
+          "size": 1872,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/u/ubuntu-keyring/ubuntu-keyring_2023.11.28.1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.335445+00:00"
+        },
+        {
+          "file": "ubuntu-keyring_2023.11.28.1.tar.xz",
+          "sha256": "aecd455ae15561371d6e454f121f079f0641d5e1b579a5563a2bc363fc74aa2e",
+          "size": 20236,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/u/ubuntu-keyring/ubuntu-keyring_2023.11.28.1.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.335723+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "ucf",
+      "sourceVersion": "3.0043+nmu1",
+      "artifacts": [
+        {
+          "file": "ucf_3.0043+nmu1.dsc",
+          "sha256": "5ef70fa7a58cd3f162932661453a1e9d21d749b47a1aa84198f7c4cd9eac20ee",
+          "size": 1567,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/u/ucf/ucf_3.0043+nmu1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.336397+00:00"
+        },
+        {
+          "file": "ucf_3.0043+nmu1.tar.xz",
+          "sha256": "a07143046236cb082517e346362306cb3fe4d3634cad1add40c905b0e0ecf58c",
+          "size": 70916,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/u/ucf/ucf_3.0043+nmu1.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.336847+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "util-linux",
+      "sourceVersion": "2.39.3-9ubuntu6.6",
+      "artifacts": [
+        {
+          "file": "util-linux_2.39.3.orig.tar.xz",
+          "sha256": "7b6605e48d1a49f43cc4b4cfc59f313d0dd5402fa40b96810bd572e167dfed0f",
+          "size": 8526168,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/u/util-linux/util-linux_2.39.3.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.347464+00:00"
+        },
+        {
+          "file": "util-linux_2.39.3-9ubuntu6.6.debian.tar.xz",
+          "sha256": "d63476e26c149179ae8a19f4c701e27cf9235c3df2482714d369211683824e37",
+          "size": 155164,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.6.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.348119+00:00"
+        },
+        {
+          "file": "util-linux_2.39.3-9ubuntu6.6.dsc",
+          "sha256": "b30cb22e05473810a48e14db8b5ea7786bb38aed7617dc89ad4f81cd7c6c3397",
+          "size": 4726,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.6.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.348393+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "xxhash",
+      "sourceVersion": "0.8.2-2build1",
+      "artifacts": [
+        {
+          "file": "xxhash_0.8.2-2build1.dsc",
+          "sha256": "a500864f82084ce3c431c0f4a233fb1c0c48a3a8486cc49989ea073e05814d31",
+          "size": 2076,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/x/xxhash/xxhash_0.8.2-2build1.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.349065+00:00"
+        },
+        {
+          "file": "xxhash_0.8.2.orig.tar.gz",
+          "sha256": "baee0c6afd4f03165de7a4e67988d16f0f2b257b51d0e3cb91909302a26a79c4",
+          "size": 1141188,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/x/xxhash/xxhash_0.8.2.orig.tar.gz",
+          "downloadedAt": "2026-09-14T02:01:28.351186+00:00"
+        },
+        {
+          "file": "xxhash_0.8.2-2build1.debian.tar.xz",
+          "sha256": "2ec69c1d868b3634a91c6f9e4921b86101fd9384b186f2401fdbac532c78830c",
+          "size": 5048,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/x/xxhash/xxhash_0.8.2-2build1.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.351465+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "xz-utils",
+      "sourceVersion": "5.6.1+really5.4.5-1ubuntu0.3",
+      "artifacts": [
+        {
+          "file": "xz-utils_5.6.1+really5.4.5.orig.tar.xz",
+          "sha256": "da9dec6c12cf2ecf269c31ab65b5de18e8e52b96f35d5bcd08c12b43e6878803",
+          "size": 1680520,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/x/xz-utils/xz-utils_5.6.1+really5.4.5.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.354569+00:00"
+        },
+        {
+          "file": "xz-utils_5.6.1+really5.4.5-1ubuntu0.3.debian.tar.xz",
+          "sha256": "03f321901f6e1c56235cd7ae6a6784c104b1b1060ca3afa5a5806e345ee72e01",
+          "size": 31672,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/x/xz-utils/xz-utils_5.6.1+really5.4.5-1ubuntu0.3.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.354881+00:00"
+        },
+        {
+          "file": "xz-utils_5.6.1+really5.4.5-1ubuntu0.3.dsc",
+          "sha256": "34c2be772533a5c31e881bc620cedaf9be3d315feb677f00e12c136c299d126a",
+          "size": 2505,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/x/xz-utils/xz-utils_5.6.1+really5.4.5-1ubuntu0.3.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.355113+00:00"
+        }
+      ]
+    },
+    {
+      "sourcePackage": "zlib",
+      "sourceVersion": "1:1.3.dfsg-3.1ubuntu2.2",
+      "artifacts": [
+        {
+          "file": "zlib_1.3.dfsg.orig.tar.xz",
+          "sha256": "5eea0322c1c21c75cad3b607ac1c43ff5c71e014b8ac4a34300b5e2b80d02e70",
+          "size": 1128572,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/z/zlib/zlib_1.3.dfsg.orig.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.357700+00:00"
+        },
+        {
+          "file": "zlib_1.3.dfsg-3.1ubuntu2.2.debian.tar.xz",
+          "sha256": "de1c2d532ecb7caf99ccb905fb03c37fe0c8117fbdc79d05be4474b71e6398c2",
+          "size": 61316,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/z/zlib/zlib_1.3.dfsg-3.1ubuntu2.2.debian.tar.xz",
+          "downloadedAt": "2026-09-14T02:01:28.358064+00:00"
+        },
+        {
+          "file": "zlib_1.3.dfsg-3.1ubuntu2.2.dsc",
+          "sha256": "56a7cd029863cbddafce831e4e63cccfa84017f93617929cb7c02f80bb5a122a",
+          "size": 2987,
+          "originUrl": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/z/zlib/zlib_1.3.dfsg-3.1ubuntu2.2.dsc",
+          "downloadedAt": "2026-09-14T02:01:28.358292+00:00"
+        }
+      ]
+    }
+  ]
+}
