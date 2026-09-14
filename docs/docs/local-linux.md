@@ -22,9 +22,31 @@ The bundled environment includes Ubuntu, Bash, Git, and SSH. It does not include
 
 The initial install uses the bundled Ubuntu image. Installing additional packages later may require internet access.
 
+<figure class="seo-media-placeholder seo-media-placeholder--device-pair has-image has-single-device-image">
+  <div class="seo-media-placeholder__device-pair">
+    <div class="seo-media-placeholder__device seo-media-placeholder__device--phone">
+      <img class="seo-media-placeholder__image" src="/images/placeholders/Local_Linux.jpg" width="930" height="2048" alt="NimoteCode Local Linux panel showing the environment status and Open, Start, Reset, and Delete Environment controls" loading="lazy" decoding="async">
+    </div>
+  </div>
+  <figcaption class="seo-media-placeholder__caption">The Local Linux panel shows the environment status, storage use, and its workspace and lifecycle controls.</figcaption>
+</figure>
+
 ## Manage its lifecycle
 
 The Local Linux page lets you start, stop, reset, or delete the environment. Stopping it closes its active workspace; starting it again reconnects to the same environment. Reset and delete are destructive actions: review the confirmation before using either one. Deleting Local Linux removes its environment data without deleting your other device or SSH workspaces.
+
+## Use AI in the local environment
+
+Once the environment is open, [AI Chat and Agent](/docs/ai) can work in the same Local Linux workspace as Explorer and Terminal. Start with a small, read-only request such as checking the OS version, then review the planned commands and output before allowing any change.
+
+<figure class="seo-media-placeholder seo-media-placeholder--device-pair has-image has-single-device-image">
+  <div class="seo-media-placeholder__device-pair">
+    <div class="seo-media-placeholder__device seo-media-placeholder__device--phone">
+      <img class="seo-media-placeholder__image" src="/images/placeholders/Local_Linux_AI_Agent.jpg" width="930" height="2048" alt="NimoteCode AI Agent reporting the Ubuntu version and ARM64 architecture from a Local Linux workspace" loading="lazy" decoding="async">
+    </div>
+  </div>
+  <figcaption class="seo-media-placeholder__caption">An AI Agent can inspect the Local Linux environment and present the result alongside its command plan.</figcaption>
+</figure>
 
 ## Storage, network, and process behavior
 

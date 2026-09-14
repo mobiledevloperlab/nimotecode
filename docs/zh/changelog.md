@@ -13,7 +13,7 @@ description: NimoteCode 的产品更新、新能力、修复与兼容性说明�
 
 ### 版本 1.1.8 · 2026 年 9 月 14 日
 
-本版本开启 Early Access Pro。新版正在通过 [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) 与 [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253) 推送；GitHub Release 安装包仍是较早的构建。
+本版本（Build 45）开启面向进阶移动工作流的 Early Access Pro，并支持在本地或 SSH 工作区间切换目录；同时强化 Android Local Linux 的安装、文件操作和 Git 可靠性，并优化源代码管理与整体界面层级。Local Linux 相关改进仅适用于 Android。
 
 [查看完整的 1.1.8 更新说明 →](/zh/releases/)
 
@@ -32,7 +32,7 @@ description: NimoteCode 的产品更新、新能力、修复与兼容性说明�
 ### 当前发布渠道
 
 - **兼容性：**NimoteCode 已上架 [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode)（Android）与 [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253)（iPhone 与 iPad）。
-- **Pro 试用：**新用户可获得按设备计算的 14 天 Pro 试用。
+- **Early Access Pro：**具体可用性和显示价格因商店、账号和地区而异。
 - **AI Provider：**AI Chat 与 Agent 使用你配置的 Provider 和 API Key（BYOK）；Provider 账户负责访问与计费。
 
 后续条目会按**新增**、**改进**、**修复**和**兼容性**归类。

@@ -8,13 +8,22 @@ description: 在 NimoteCode 打开本地、Android 本地 Linux 或 SSH 工作�
 先跑通核心流程：打开一个项目、完成一处小修改，再通过终端验证。项目可以在设备、远程 SSH 主机，或受支持 Android 设备上的本地 Linux 中。
 
 <figure class="quick-start-hero">
-  <img src="https://nimotecode.com/screenshots/nimote-pro.webp" width="1440" height="810" alt="平板和手机上的 NimoteCode 移动 IDE，展示远程项目资源管理器、编辑器与 AI Chat" loading="lazy" decoding="async">
-  <figcaption>在同一个移动工作区中查看项目、编辑代码、使用终端、Git 和 AI 协助。</figcaption>
+  <img src="/images/placeholders/Start_Overview.png" width="1400" height="900" alt="NimoteCode 概览，展示欢迎页以及演示、本地 Linux、远程 SSH 和本地工作区入口" loading="lazy" decoding="async">
+  <figcaption>可从演示工作区、本地 Linux、远程 SSH 主机或设备上的文件开始。</figcaption>
 </figure>
 
 ## 1. 打开工作区
 
-项目位于设备时，选择 **Local Explorer**；项目位于远程主机时，选择 **Remote Explorer**；在支持 Android 8+ ARM64/x86_64 的设备上，可选择 **Local Linux** 使用内置 Ubuntu，无需 root，iOS 不提供此功能；其安装和生命周期请查看 [Android 本地 Linux](/zh/docs/local-linux)。SSH 模式下填写主机、端口和用户名，再选择密码、私钥文件或粘贴私钥认证。开始前务必确认项目根路径。
+项目位于设备时，选择 **Open Local Workspace**；项目位于远程主机时，选择 **Connect Remote Workspace**；在支持 Android 8+ ARM64/x86_64 的设备上，可选择 **Local Linux** 使用内置 Ubuntu。也可以通过 **Try Demo Workspace** 立即体验示例项目。本地 Linux 无需 root，iOS 不提供此功能；其安装和生命周期请查看 [Android 本地 Linux](/zh/docs/local-linux)。SSH 模式下填写主机、端口和用户名，再选择密码、私钥文件或粘贴私钥认证。开始前务必确认项目根路径。
+
+<figure class="seo-media-placeholder seo-media-placeholder--device-pair has-image has-single-device-image">
+  <div class="seo-media-placeholder__device-pair">
+    <div class="seo-media-placeholder__device seo-media-placeholder__device--phone">
+      <img class="seo-media-placeholder__image" src="/images/placeholders/Getting_Started.jpg" width="930" height="2048" alt="NimoteCode 欢迎页，提供演示、本地 Linux、远程和本地工作区入口" loading="lazy" decoding="async">
+    </div>
+  </div>
+  <figcaption class="seo-media-placeholder__caption">根据项目运行位置选择工作区；AI 配置可随时修改。</figcaption>
+</figure>
 
 ## 2. 打开、编辑并保存文件
 

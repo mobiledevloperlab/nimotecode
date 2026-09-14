@@ -1,11 +1,11 @@
 ---
 title: Account and Subscription | NimoteCode
-description: Understand NimoteCode account sign-in, Pro access verification, purchase restoration, the 14-day trial and the workflows unlocked by Pro.
+description: Understand NimoteCode account sign-in, Early Access Pro availability, purchase restoration, and the workflows unlocked by Pro.
 ---
 
 # Account and Subscription
 
-NimoteCode uses account and subscription state to verify **Pro** access. New users can evaluate gated workflows through a 14-day, per-device trial. The exact purchase and restore options depend on the platform store and current release channel.
+NimoteCode uses account and subscription state to verify **Early Access Pro** access. The exact availability, purchase, and restore options depend on the platform store, account, region, and current release channel.
 
 ## What sign-in is used for
 

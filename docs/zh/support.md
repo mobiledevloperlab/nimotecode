@@ -26,6 +26,6 @@ description: 获取 SSH 连接、AI Provider 和 API Key、恢复 Pro、订阅�
 
 ## 联系支持
 
-账户、订阅和私密支持请求请发送至 [nimotecode@gmail.com](mailto:nimotecode@gmail.com)。可复现的产品问题和功能建议请使用 [GitHub Issues](https://github.com/mobiledevloperlab/nimote_issues/issues)。紧急访问问题通常在 1–2 个工作日内回复，常规请求通常在 2–3 个工作日内回复。
+账户、订阅和私密支持请求请发送至 [support@nimotecode.com](mailto:support@nimotecode.com)。可复现的产品问题和功能建议请使用 [GitHub Issues](https://github.com/mobiledevloperlab/nimote_issues/issues)。紧急访问问题通常在 1–2 个工作日内回复，常规请求通常在 2–3 个工作日内回复。
 
 隐私或账户删除请查看[隐私政策](/zh/privacy)和[账户删除](/zh/account-delete)，并仅提供处理请求所需的信息。

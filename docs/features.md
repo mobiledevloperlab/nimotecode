@@ -36,17 +36,17 @@ The free tier is a full workspace, not a preview. Everything below works without
 
 ## Pro features
 
-A 14-day, per-device Pro trial unlocks every Pro feature below. Pro adds:
+With version 1.1.8, **Early Access Pro** opens the workflows below as availability expands. Check Google Play or the App Store for the offer and price shown for your account and region.
 
 | Feature | What it gives you | Access |
 | --- | --- | --- |
-| **AI Agent & external ACP agents** | Run controlled multi-step workflows across files, Terminal, and Git tools. In an SSH workspace, choose a compatible ACP runtime—such as Claude Code or Codex CLI when configured—review permissions and progress in one timeline, and use `/` commands with touch or keyboard completion. | Trial · Pro |
-| **Git write** | Commit, push and stash, plus branch/checkout/merge actions — with review before you act. | Trial · Pro |
-| **Remote search** | Global content search across a remote workspace. | Trial · Pro |
-| **Multi-terminal** | Keep parallel sessions for logs, tests, services and deployments. | Trial · Pro |
-| **LSP** | Configured remote language-server diagnostics, code actions and navigation. | Trial · Pro |
-| **Debugger** | Breakpoints and runtime inspection through a configured debug adapter. | Trial · Pro |
-| **Sync / Cache** | Move project content between local and remote workspaces with explicit direction and history. | Trial · Pro |
+| **AI Agent & external ACP agents** | Run controlled multi-step workflows across files, Terminal, and Git tools. In an SSH workspace, choose a compatible ACP runtime—such as Claude Code or Codex CLI when configured—review permissions and progress in one timeline, and use `/` commands with touch or keyboard completion. | Early Access Pro |
+| **Git write** | Commit, push and stash, plus branch/checkout/merge actions — with review before you act. | Early Access Pro |
+| **Remote search** | Global content search across a remote workspace. | Early Access Pro |
+| **Multi-terminal** | Keep parallel sessions for logs, tests, services and deployments. | Early Access Pro |
+| **LSP** | Configured remote language-server diagnostics, code actions and navigation. | Early Access Pro |
+| **Debugger** | Breakpoints and runtime inspection through a configured debug adapter. | Early Access Pro |
+| **Sync / Cache** | Move project content between local and remote workspaces with explicit direction and history. | Early Access Pro |
 
 ## Recently added to the workspace
 
