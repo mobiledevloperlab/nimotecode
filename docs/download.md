@@ -30,6 +30,6 @@ NimoteCode lets you open a local or SSH project, or use bundled Ubuntu through A
 
 ## What comes with the app
 
-Free includes local, Android Local Linux and SSH workspaces, editor, baseline terminal, Git review, AI Chat and Tasks. Local Linux requires Android 8+ on a 64-bit ARM64 or x86_64 device and is unavailable on iOS. AI Agent and remote content search are available during the 14-day, per-device Pro trial and with Pro. Pro is $3.99/month or $39.99/year and also adds Git write workflows, multi-terminal, LSP, Debug and Sync / Cache. AI is BYOK: your provider account controls model access and billing.
+Free includes local, Android Local Linux and SSH workspaces, editor, baseline terminal, Git review, AI Chat and Tasks. Local Linux requires Android 8+ on a 64-bit ARM64 or x86_64 device and is unavailable on iOS. Version 1.1.8 begins **Early Access Pro** for AI Agent, remote content search, Git write workflows, multi-terminal, LSP, Debug and Sync / Cache. Availability and pricing are shown in Google Play or the App Store for your account and region. AI is BYOK: your provider account controls model access and billing.
 
 After installation, continue with [Quick Start](/docs/quick-start), [Android Local Linux](/docs/local-linux), [SSH Workspace](/docs/ssh), or [Mobile IDE](/mobile-ide). If you are choosing a tool rather than setting one up, start with the [Android SSH client](/android-ssh-client) page or [the mobile IDE guide](/blog/best-ssh-clients).

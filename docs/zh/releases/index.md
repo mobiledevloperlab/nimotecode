@@ -7,20 +7,35 @@ description: NimoteCode 的完整发布说明，包括新增功能、改进与�
 
 本页收录全部公开发布记录。NimoteCode 已在 Google Play（Android）和 App Store（iPhone 与 iPad）上架；当前商店链接请见[下载页面](/zh/download)。
 
-## 1.1.8 · 2026 年 9 月 14 日
+## 1.1.8 · 2026 年 9 月 14 日 · Build 45
 
-1.1.8 开启 **Early Access Pro**。它面向希望提前体验 Pro 工作流，并在覆盖更多用户的过程中参与产品打磨的用户。新版正在通过 [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) 和 [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253) 推送；具体可用性会因地区和商店的分发进度而不同。
+1.1.8 开启 **Early Access Pro**，同时让工作区切换更灵活，强化 Android Local Linux 的安装、文件操作与 Git 可靠性，并优化源代码管理和整体界面层级。
+
+**平台支持：**Local Linux 相关改进仅适用于 Android，iOS 不提供此功能。
 
 ### Early Access Pro
 
-- **提前体验 Pro。** Early Access Pro 开启 Pro 权益下一阶段的可用性，适合希望探索完整移动开发工作流的用户。
-- **参与后续打磨。** 早期用户可在真实项目中使用并反馈体验，帮助完善后续发布。
-- **从商店获取当前版本。** 当前 GitHub Release 附带的安装包是较早的构建，不包含 1.1.6–1.1.7 的重要更新。请在最新版对你的账号和所在地区可用后，通过 Google Play 或 App Store 下载或更新。
+Early Access Pro 会逐步向更多用户开放进阶移动工作流：AI Agent、远程搜索、Git 写入、多终端、LSP、Debug 与 Sync / Cache。具体可用性和显示价格因商店、账号和地区而异，请以 Google Play 或 App Store 的当前内容为准。
 
-### 近期重要更新
+### 新增
 
-- **1.1.7：**Android 本地 Linux、HTML 快照预览、外部 ACP Agent 和统一 SSH 登录环境，并全面提升编辑器、AI 与 Task 的可靠性。
-- **1.1.6：**首次启动引导、面向代码阅读的编辑器默认设置、更清晰的订阅与主题呈现，以及编辑器、应用内浏览器、Git 状态和 iOS 输入修复。
+- **切换工作区目录。** 可在本地或 SSH 工作区中选择其他目录作为当前工作区；已访问的目录会保留在最近记录中，方便快速返回。
+
+### 改进
+
+- **更可靠的 Local Linux（仅 Android）。** 强化 PRoot 环境的启动与运行准备，补齐访客环境所需的临时目录，并改善 Ubuntu Base 的安装兼容性。
+- **更清晰的文件访问边界（仅 Android）。** 编辑器、搜索、语言服务、Git、终端和 Agent 在 Local Linux 中使用一致的工作区范围，减少跨环境操作造成的异常。
+- **更可靠的 Local Linux Git（仅 Android）。** 对 Local Linux 工作区的 Git 操作和 Task 产生的文件变更使用环境内的 Git 处理，确保状态、差异和提交历史反映实际工作区内容。
+- **改进的开源信息交付（仅 Android）。** 随 Local Linux 提供更完整的软件包、许可证和源码来源记录。
+- **更简洁的界面层级。** 调整主题、面板、标签、终端命令和 AI 执行时间线的视觉层次，降低干扰并保持主要操作更醒目。
+
+### 修复
+
+- 修复源代码管理面板在切换分支后未及时刷新，以及提交历史显示样式不一致的问题。
+- 修复 Local Linux 中临时目录未完整准备而导致部分命令或安装流程失败的问题。
+- 修复 SSH 私钥连接在重新打开已保存连接后丢失手动粘贴或文件导入的密钥凭据的问题。导入的密钥现会安全保存，不再依赖 Android 和 iOS 上文件选择器的临时路径。
+- 修复 Android Local Linux Explorer 无法从 `/workspace` 返回访客根目录、继而进入 `/home` 等目录的问题。
+- 修复 Git Commit Detail 和 Diff 页面顶部重复预留系统间距、内容区出现异常空白的问题，并提升文件名、Diff 表头、行号和内容在不同主题下的可读性。
 
 ## 1.1.7 · 2026 年 9 月 12 日
 

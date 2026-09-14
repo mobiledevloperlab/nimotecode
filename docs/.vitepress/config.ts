@@ -2,7 +2,7 @@ import { defineConfig, type HeadConfig, type TransformContext } from 'vitepress'
 import { existsSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
-import { product, productCopy } from './theme/product'
+import { productCopy } from './theme/product'
 import { allCompetitors } from './theme/data/mobileDevelopmentCompetitors'
 
 const siteUrl = 'https://nimotecode.com'
@@ -323,7 +323,7 @@ function faqSchema(context: TransformContext): object | null {
       },
       {
         question: 'Can I use it without Pro?',
-        answer: `Yes. Free includes local and SSH workspaces, the editor, baseline terminal, AI Chat and basic Tasks. AI Agent and remote search are available during the ${productCopy.en.trial} and with Pro.`
+        answer: 'Yes. Free includes local and SSH workspaces, the editor, baseline terminal, AI Chat and basic Tasks. AI Agent and remote search are available through Early Access Pro as availability expands; check your store for the offer shown to your account and region.'
       },
       {
         question: 'Which AI providers can I configure?',
@@ -349,7 +349,7 @@ function faqSchema(context: TransformContext): object | null {
       },
       {
         question: '不购买 Pro 能使用吗？',
-        answer: `可以。免费版包含本地与 SSH 工作区、编辑器、基础终端、AI Chat 和基础 Tasks。AI Agent 与远程内容搜索可在${productCopy.zh.trial}期间使用，也可通过 Pro 使用。`
+        answer: '可以。免费版包含本地与 SSH 工作区、编辑器、基础终端、AI Chat 和基础 Tasks。AI Agent 与远程内容搜索将通过 Early Access Pro 逐步开放；请以商店为你的账号和地区显示的内容为准。'
       },
       {
         question: '可配置哪些 AI Provider？',

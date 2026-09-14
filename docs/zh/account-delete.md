@@ -23,7 +23,7 @@ description: 了解如何在应用内或通过联系支持来删除 NimoteCode �
 
 若你无法登录应用，可通过以下渠道提交删除请求：
 
-- 邮箱：nimotecode@gmail.com
+- 邮箱：support@nimotecode.com
 - GitHub Issues：https://github.com/mobiledevloperlab/nimote_issues/issues
 
 请尽量提供：

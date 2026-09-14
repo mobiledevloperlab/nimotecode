@@ -1,12 +1,12 @@
 ---
-title: NimoteCode Pro Pricing | 14-Day Free Trial, $3.99/Month
-description: NimoteCode pricing. Start with a free 14-day Pro trial, then keep Pro for $3.99/month or $39.99/year. The free plan includes local, Android Local Linux and SSH workspaces, editor, terminal and AI Chat.
+title: NimoteCode Early Access Pro | Mobile IDE Workflows
+description: NimoteCode 1.1.8 introduces Early Access Pro for advanced mobile IDE workflows. Availability and pricing are shown in Google Play or the App Store for your account and region.
 pageClass: pricing-page
 ---
 
 # NimoteCode Pro
 
-NimoteCode is free to start: open local or SSH projects, or use Android Local Linux on a supported device; edit files, run commands and use AI Chat on the Free plan. **Every Pro workflow starts with a free 14-day trial** — AI Agent, remote search, multi-terminal, Git writes, LSP, debugging and sync — then you upgrade only if mobile work needs to reach a reviewable finish.
+NimoteCode is free to start: open local or SSH projects, or use Android Local Linux on a supported device; edit files, run commands and use AI Chat on the Free plan. **NimoteCode 1.1.8 introduces Early Access Pro** for AI Agent, remote search, multi-terminal, Git writes, LSP, debugging, and Sync / Cache. Availability and displayed pricing vary by store, account, and region.
 
 <PricingFeatureSystem lang="en" mode="full" />
 
@@ -17,7 +17,7 @@ Pro exists for the moments mobile work has to end with a carefully reviewed resu
 For subscription verification, purchase restoration and access behavior, see [Account and Subscription](/docs/account-subscription).
 
 <div class="seo-cta">
-  <p><strong>Start with the free plan — unlock Pro for free for 14 days.</strong></p>
+  <p><strong>Start with the free plan, then check your store for Early Access Pro availability.</strong></p>
   <p class="seo-cta-actions">
     <a href="/download?utm_source=pro&utm_medium=website&utm_campaign=download" class="home-page-btn primary">Download NimoteCode</a>
     <a href="/features?utm_source=pro&utm_medium=website&utm_campaign=feature_map" class="home-page-btn secondary">View all features</a>

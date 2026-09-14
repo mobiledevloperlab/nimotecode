@@ -2,8 +2,8 @@
   "en": {
     "features": {
       "eyebrow": "Mobile development system",
-      "title": "Free gives you the foundation. Pro unlocks gated mobile workflows.",
-      "summary": "NimoteCode keeps the free plan useful for real development, then groups the gated systems independent developers need most in Pro.",
+      "title": "Free gives you the foundation. Early Access Pro opens the full workflow.",
+      "summary": "NimoteCode 1.1.8 begins an Early Access rollout for Pro workflows. Availability and displayed prices can vary by store, account, and region.",
       "groups": [
         {
           "name": "Foundation",
@@ -21,7 +21,7 @@
           "name": "AI",
           "badge": "Pro",
           "items": [
-            "AI Agent after the 14-day trial",
+            "AI Agent in Early Access Pro",
             "Controlled multi-step tasks",
             "Remote content search"
           ]
@@ -85,9 +85,9 @@
     },
     "pricing": {
       "eyebrow": "Pricing",
-      "title": "Start free. Upgrade when you need the full loop.",
-      "summary": "Every Pro workflow starts with a free 14-day trial, then stays on with a simple monthly or yearly plan. No ads, no credit, no model-upselling.",
-      "trustLine": "Cancel anytime. No ads. No hidden fees.",
+      "title": "Early Access Pro for the complete mobile workflow.",
+      "summary": "Early Access Pro is rolling out with 1.1.8. Check Google Play or the App Store for availability and the price shown for your account and region.",
+      "trustLine": "No ads. No model credits. Store terms and regional availability apply.",
       "billing": {
         "label": "Billing period",
         "monthly": "Monthly",
@@ -98,9 +98,9 @@
         "or": "or"
       },
       "trial": {
-        "title": "Try Pro free for 14 days",
-        "body": "Full Pro access on this device for 14 days. No credit card required — cancel anytime.",
-        "cta": "Start free trial",
+        "title": "Join Early Access Pro",
+        "body": "Try the Pro workflow as availability expands. Eligibility and introductory pricing are shown in your store.",
+        "cta": "Check availability",
         "link": "/download"
       },
       "plans": [
@@ -121,17 +121,15 @@
         },
         {
           "name": "Pro",
-          "badge": "Best Value",
-          "price": "$3.99",
-          "period": "per month",
-          "yearlyPrice": "$39.99",
-          "yearlyPeriod": "per year",
-          "summary": "Unlock the complete mobile IDE system for serious delivery.",
-          "cta": "Upgrade to Pro",
+          "badge": "Early Access",
+          "price": "Early Access",
+          "period": "rolling out now",
+          "summary": "Explore the complete mobile IDE workflow while Early Access expands.",
+          "cta": "Check store availability",
           "link": "/download",
           "highlight": true,
           "features": [
-            "AI Agent and remote search after the trial",
+            "AI Agent and remote search",
             "Gated Git write workflows and AI Git assistant",
             "Multiple concurrent terminal sessions",
             "LSP diagnostics, completion, navigation, and code actions",
@@ -145,8 +143,8 @@
   "zh": {
     "features": {
       "eyebrow": "移动开发系统",
-      "title": "免费版提供完整基础，Pro 解锁受限移动工作流。",
-      "summary": "NimoteCode 让免费版真正可用于开发，并将独立开发者常用的受限系统清晰归入 Pro。",
+      "title": "免费版提供完整基础，Early Access Pro 开启完整工作流。",
+      "summary": "NimoteCode 1.1.8 开始逐步开放 Pro 工作流的 Early Access。具体可用性与商店显示价格会因地区和账号而异。",
       "groups": [
         {
           "name": "基础能力",
@@ -164,7 +162,7 @@
           "name": "AI",
           "badge": "Pro",
           "items": [
-            "14 天试用后使用 AI Agent",
+            "在 Early Access Pro 中使用 AI Agent",
             "受控多步骤任务",
             "远程内容搜索"
           ]
@@ -228,9 +226,9 @@
     },
     "pricing": {
       "eyebrow": "价格",
-      "title": "免费开始，需要完整闭环时再升级。",
-      "summary": "每个 Pro 工作流都从 14 天免费试用开始，之后按简单的月度或年度方案继续。无广告、无额度、不推销模型。",
-      "trustLine": "可随时取消。无广告。无隐藏费用。",
+      "title": "通过 Early Access Pro 使用完整移动工作流。",
+      "summary": "Early Access Pro 正随 1.1.8 逐步开放。请在 Google Play 或 App Store 查看你的账号和地区可用性及显示价格。",
+      "trustLine": "无广告、无模型额度；以商店条款和地区可用性为准。",
       "billing": {
         "label": "计费周期",
         "monthly": "按月",
@@ -241,9 +239,9 @@
         "or": "或"
       },
       "trial": {
-        "title": "免费试用 Pro 14 天",
-        "body": "此设备 14 天内免费使用全部 Pro 功能。无需信用卡，可随时取消。",
-        "cta": "开始免费试用",
+        "title": "加入 Early Access Pro",
+        "body": "随着 Early Access 扩展，提前体验完整 Pro 工作流；资格与早期价格以商店显示为准。",
+        "cta": "查看可用性",
         "link": "/zh/download"
       },
       "plans": [
@@ -264,17 +262,15 @@
         },
         {
           "name": "Pro",
-          "badge": "最佳价值",
-          "price": "$3.99",
-          "period": "每月",
-          "yearlyPrice": "$39.99",
-          "yearlyPeriod": "每年",
-          "summary": "解锁用于严肃交付的完整移动 IDE 系统。",
-          "cta": "升级到 Pro",
+          "badge": "Early Access",
+          "price": "Early Access",
+          "period": "现正逐步开放",
+          "summary": "在 Early Access 扩展期间体验完整移动 IDE 工作流。",
+          "cta": "查看商店可用性",
           "link": "/zh/download",
           "highlight": true,
           "features": [
-            "试用结束后使用 AI Agent 与远程搜索",
+            "AI Agent 与远程搜索",
             "受限 Git 写入工作流和 AI Git 助手",
             "多个并发终端会话",
             "LSP 诊断、补全、导航与代码动作",
@@ -308,7 +304,7 @@
           "name": "AI",
           "badge": "Pro",
           "items": [
-            "14 日間の試用後に AI Agent を利用",
+            "Early Access Pro で AI Agent を利用",
             "制御された複数ステップのタスク",
             "リモートコンテンツ検索"
           ]
@@ -372,9 +368,9 @@
     },
     "pricing": {
       "eyebrow": "料金",
-      "title": "無料で始め、必要なときにアップグレード。",
-      "summary": "Pro のすべてのワークフローは 14 日間の無料トライアルから始まり、シンプルな月払い・年払いで継続できます。広告なし、モデルの押し売りなし。",
-      "trustLine": "いつでも解約可能。広告なし。隠れた料金なし。",
+      "title": "Early Access Pro で完全なモバイルワークフローを利用。",
+      "summary": "Early Access Pro は 1.1.8 とともに段階的に提供されます。対象のアカウントと地域に表示される利用可否と価格をストアで確認してください。",
+      "trustLine": "広告なし。モデルクレジットなし。ストアの条件と地域ごとの提供状況が適用されます。",
       "billing": {
         "label": "支払い期間",
         "monthly": "月払い",
@@ -385,9 +381,9 @@
         "or": "または"
       },
       "trial": {
-        "title": "Pro を 14 日間無料でお試し",
-        "body": "このデバイスで Pro の全機能を 14 日間無料で利用。クレジットカード不要、いつでも解約可能です。",
-        "cta": "無料トライアルを開始",
+        "title": "Early Access Pro に参加",
+        "body": "Early Access の拡大に合わせて Pro ワークフローをお試しください。利用資格と価格はストアに表示されます。",
+        "cta": "利用可否を確認",
         "link": "/ja/download"
       },
       "plans": [
@@ -408,15 +404,15 @@
         },
         {
           "name": "Pro",
-          "badge": "最もお得",
-          "price": "ストア価格",
-          "period": "アプリ内に表示",
-          "summary": "本格的な配信のための完全なモバイル IDE システムを解放。",
-          "cta": "Pro にアップグレード",
+          "badge": "Early Access",
+          "price": "Early Access",
+          "period": "段階的に提供中",
+          "summary": "Early Access の拡大に合わせて完全なモバイル IDE ワークフローを体験。",
+          "cta": "ストアで利用可否を確認",
           "link": "/ja/download",
           "highlight": true,
           "features": [
-            "試用後の AI Agent とリモート検索",
+            "AI Agent とリモート検索",
             "制限付き Git 書き込みと AI Git アシスタント",
             "複数の同時ターミナルセッション",
             "LSP 診断、補完、ナビゲーション、コードアクション",
@@ -450,7 +446,7 @@
           "name": "AI",
           "badge": "Pro",
           "items": [
-            "14일 체험 후 AI Agent 사용",
+            "Early Access Pro에서 AI Agent 사용",
             "제어된 다단계 작업",
             "원격 콘텐츠 검색"
           ]
@@ -514,9 +510,9 @@
     },
     "pricing": {
       "eyebrow": "가격",
-      "title": "무료로 시작하고, 필요할 때 업그레이드하세요.",
-      "summary": "모든 Pro 워크플로는 14일 무료 체험으로 시작하며, 간단한 월간·연간 요금제로 계속 사용할 수 있습니다. 광고 없음, 크레딧 없음, 모델 판촉 없음.",
-      "trustLine": "언제든 취소 가능. 광고 없음. 숨은 비용 없음.",
+      "title": "Early Access Pro로 완전한 모바일 워크플로를 이용하세요.",
+      "summary": "Early Access Pro는 1.1.8과 함께 단계적으로 제공됩니다. 스토어에서 계정과 지역에 표시되는 이용 가능 여부 및 가격을 확인하세요.",
+      "trustLine": "광고 없음. 모델 크레딧 없음. 스토어 약관과 지역별 이용 가능 여부가 적용됩니다.",
       "billing": {
         "label": "결제 주기",
         "monthly": "월간",
@@ -527,9 +523,9 @@
         "or": "또는"
       },
       "trial": {
-        "title": "Pro 14일 무료 체험",
-        "body": "이 기기에서 Pro 전체 기능을 14일간 무료로 사용하세요. 신용카드 불필요, 언제든 취소 가능합니다.",
-        "cta": "무료 체험 시작",
+        "title": "Early Access Pro 참여",
+        "body": "Early Access가 확대됨에 따라 Pro 워크플로를 사용해 보세요. 자격과 가격은 스토어에 표시됩니다.",
+        "cta": "이용 가능 여부 확인",
         "link": "/ko/download"
       },
       "plans": [
@@ -550,15 +546,15 @@
         },
         {
           "name": "Pro",
-          "badge": "최고 가치",
-          "price": "스토어 가격",
-          "period": "앱에 표시",
-          "summary": "진지한 배포를 위한 완전한 모바일 IDE 시스템을 엽니다.",
-          "cta": "Pro로 업그레이드",
+          "badge": "Early Access",
+          "price": "Early Access",
+          "period": "단계적으로 제공 중",
+          "summary": "Early Access가 확대되는 동안 완전한 모바일 IDE 워크플로를 경험하세요.",
+          "cta": "스토어에서 이용 가능 여부 확인",
           "link": "/ko/download",
           "highlight": true,
           "features": [
-            "체험 후 AI Agent 및 원격 검색",
+            "AI Agent 및 원격 검색",
             "제한된 Git 쓰기와 AI Git 어시스턴트",
             "여러 동시 터미널 세션",
             "LSP 진단, 완성, 탐색 및 코드 작업",

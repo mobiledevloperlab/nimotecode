@@ -22,9 +22,31 @@ description: 了解 NimoteCode 在受支持 Android 设备上的内置 Ubuntu �
 
 首次安装使用随应用提供的 Ubuntu 镜像。后续安装额外软件包时可能需要联网。
 
+<figure class="seo-media-placeholder seo-media-placeholder--device-pair has-image has-single-device-image">
+  <div class="seo-media-placeholder__device-pair">
+    <div class="seo-media-placeholder__device seo-media-placeholder__device--phone">
+      <img class="seo-media-placeholder__image" src="/images/placeholders/Local_Linux.jpg" width="930" height="2048" alt="NimoteCode 本地 Linux 面板，展示环境状态以及打开、启动、重置和删除环境的控制项" loading="lazy" decoding="async">
+    </div>
+  </div>
+  <figcaption class="seo-media-placeholder__caption">本地 Linux 面板显示环境状态、存储用量以及工作区和生命周期控制项。</figcaption>
+</figure>
+
 ## 管理环境生命周期
 
 本地 Linux 页面可启动、停止、重置或删除环境。停止会关闭当前活跃的本地 Linux 工作区；再次启动会连接回同一环境。重置和删除都是破坏性操作，使用前请阅读确认提示。删除本地 Linux 只会移除其环境数据，不会删除设备上的其他项目或 SSH 工作区。
+
+## 在本地环境中使用 AI
+
+打开环境后，[AI Chat 和 Agent](/zh/docs/ai) 可与 Explorer 和终端在同一个本地 Linux 工作区中协同工作。建议从检查操作系统版本等小范围只读请求开始，并在允许任何改动前审查计划执行的命令及输出。
+
+<figure class="seo-media-placeholder seo-media-placeholder--device-pair has-image has-single-device-image">
+  <div class="seo-media-placeholder__device-pair">
+    <div class="seo-media-placeholder__device seo-media-placeholder__device--phone">
+      <img class="seo-media-placeholder__image" src="/images/placeholders/Local_Linux_AI_Agent.jpg" width="930" height="2048" alt="NimoteCode AI Agent 在本地 Linux 工作区中报告 Ubuntu 版本和 ARM64 架构" loading="lazy" decoding="async">
+    </div>
+  </div>
+  <figcaption class="seo-media-placeholder__caption">AI Agent 可以检查本地 Linux 环境，并将结果与命令计划一同展示。</figcaption>
+</figure>
 
 ## 存储、网络与进程行为
 

@@ -13,7 +13,7 @@ This is the public record of notable product updates. For setup help, use the [d
 
 ### Version 1.1.8 · September 14, 2026
 
-Early Access Pro begins in this release. The newest build is rolling out through [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) and the [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253); the GitHub Release package is an older build.
+This release (Build 45) begins Early Access Pro for advanced mobile workflows and lets you switch directories in local and SSH workspaces. It also strengthens Android Local Linux installation, file operations, and Git reliability, and refines Source Control and the overall visual hierarchy. Local Linux improvements are Android-only.
 
 [Read the complete 1.1.8 release notes →](/releases/)
 
@@ -32,7 +32,7 @@ This release makes getting started clearer with first-launch onboarding, default
 ### Current release channel
 
 - **Compatibility:** NimoteCode is available on Android via [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) and on iPhone and iPad via the [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253).
-- **Pro trial:** New users receive a 14-day, per-device Pro trial.
+- **Early Access Pro:** Availability and displayed pricing vary by store, account, and region.
 - **AI providers:** AI Chat and Agent use your configured provider and API key (BYOK); provider access and billing remain with that provider.
 
 Future entries will group changes under **New**, **Improved**, **Fixed**, and **Compatibility** so subscribers and support teams can quickly assess an update.
