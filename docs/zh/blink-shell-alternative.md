@@ -5,6 +5,8 @@ description: 需要面向移动开发的 Blink Shell 替代品？NimoteCode 把 
 
 # 面向移动编程工作流的 Blink Shell 替代品
 
+<p class="article-meta">最后核实：2026-09-14 · Blink 工作流请参阅<a href="https://docs.blink.sh/advanced/code" target="_blank" rel="nofollow noopener noreferrer">Blink Code 官方文档</a>。</p>
+
 Shell 访问是在移动端工作的强大方式。但当工作涉及一个仓库时，命令行只是闭环的一部分。你需要检查项目树、做一处改动、查看输出，并在它变成别人依赖的改动之前审查结果。
 
 NimoteCode 是当你想让这一切发生在同一个移动开发工作区时值得考虑的替代品：**Editor + Explorer + SSH + Terminal + Git + AI Chat 与 Agent**。

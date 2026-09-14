@@ -5,6 +5,8 @@ description: "Looking for a Termius alternative for coding work? NimoteCode pair
 
 # A Termius Alternative for Developers Who Need to Change Code
 
+<p class="article-meta">Last verified: 2026-09-14 · Termius positioning and feature references: <a href="https://termius.com/" target="_blank" rel="nofollow noopener noreferrer">official Termius website</a>.</p>
+
 People looking for a **Termius alternative** often want reliable SSH access from a phone or tablet. That is a good starting point. But if your remote session regularly turns into a code change, a terminal-only workflow leaves the rest of the task scattered across apps.
 
 NimoteCode is a mobile development workspace for that broader job. Alongside SSH and Terminal, it provides Explorer, Editor, Git, AI Chat and Agent so you can work through a repository rather than only interact with a shell.

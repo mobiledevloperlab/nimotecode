@@ -1,11 +1,13 @@
 ---
 title: NimoteCode Features | Mobile AI Development Workspace
-description: "Explore NimoteCode’s mobile development capabilities: Android Local Linux, local and SSH workspaces, split editing, HTML preview, terminal, Git, AI Chat and Agent, LSP, debugging, tasks and sync/cache."
+description: "Explore NimoteCode’s mobile development capabilities: Android Local Linux, flexible local and SSH workspaces, split editing, live HTML and media preview, terminal, Git, AI Chat and external agents, LSP, debugging, tasks and sync/cache."
 ---
 
 # NimoteCode Features
 
 NimoteCode keeps the essential development loop in one mobile workspace: **Explorer → Editor → Preview → Terminal → Git → AI**. Start with a project on your device, an SSH host, or bundled Ubuntu through Android Local Linux. This page lists what every feature does and whether it is included in the free tier or requires Pro.
+
+> **Android Local Linux is Android-only.** On supported Android 8+ ARM64 and x86_64 devices, it provides a rootless Ubuntu workspace with Bash, Git, and SSH. iPhone and iPad use local and SSH workspaces instead.
 
 <div class="feature-showcase" role="region" aria-label="NimoteCode feature highlights">
   <div class="feature-showcase__track">
@@ -24,13 +26,13 @@ The free tier is a full workspace, not a preview. Everything below works without
 
 | Feature | What it gives you | Access |
 | --- | --- | --- |
-| **Local, [Local Linux](/docs/local-linux) & SSH workspaces** | Open a local project, connect to a saved SSH workspace, or use bundled Ubuntu on supported Android 8+ ARM64/x86_64 devices without root. Local Linux is Android-only. | Free |
-| **Code editor** | Tabs or split panes, save, preview images and supported media, clipboard, undo/redo, cursor tracking and structural context. | Free |
-| **Web & media preview** | Open a local or remote web project in-app, preview the current HTML contents before saving, or open a URL from Terminal, AI replies, or tool output. | Free |
-| **Terminal** | Run commands in the active workspace, search output, use shortcuts and recover after a remote reconnect. | Free |
-| **Git review** | Inspect repository status, diffs, branch state and history. | Free |
-| **AI Chat** | Explain code, inspect error output and plan the next change with current-file, task and Agent context. | Free |
-| **Tasks** | Save repeated remote commands, group them and run them from the workspace. | Free |
+| **Local, [Local Linux](/docs/local-linux) & SSH workspaces** | Open local projects, saved SSH workspaces, or rootless bundled Ubuntu on supported Android devices. Switch the current directory when work moves, then return to recently used folders. Install, start, stop, reset, or delete Local Linux from the workspace flow. | Free |
+| **Code editor** | Work in tabs or two independent split panes; save, use clipboard and undo/redo, follow cursor context, and inspect images or supported audio/video without leaving the app. | Free |
+| **Web & media preview** | Open local or remote web projects in-app, preview the current HTML contents—including unsaved changes—with workspace CSS, JavaScript, and image assets, or open links from Terminal, AI replies, and tool output. | Free |
+| **Terminal & SSH environment** | Run commands in the active workspace, search output, use shortcuts, and reconnect reliably. SSH workspaces load the account’s normal shell environment, so PATH, locale, SSH agent, and custom variables are available consistently to remote tools. | Free |
+| **Git review** | Inspect repository status, diffs, branches, and history. In Android Local Linux, Git operates inside the Linux workspace so status and history match its files. | Free |
+| **AI Chat** | Explain code, inspect error output, and plan or continue a task with current-file, workspace, recent-task, and Agent context. | Free |
+| **Tasks** | Save repeated workspace commands, organize them in groups, and run them directly where the project lives. | Free |
 
 ## Pro features
 
@@ -38,13 +40,20 @@ A 14-day, per-device Pro trial unlocks every Pro feature below. Pro adds:
 
 | Feature | What it gives you | Access |
 | --- | --- | --- |
-| **AI Agent** | Controlled multi-step workflows across files, terminal and Git tools; in an SSH workspace, select a compatible external ACP runtime when configured. | Trial · Pro |
+| **AI Agent & external ACP agents** | Run controlled multi-step workflows across files, Terminal, and Git tools. In an SSH workspace, choose a compatible ACP runtime—such as Claude Code or Codex CLI when configured—review permissions and progress in one timeline, and use `/` commands with touch or keyboard completion. | Trial · Pro |
 | **Git write** | Commit, push and stash, plus branch/checkout/merge actions — with review before you act. | Trial · Pro |
 | **Remote search** | Global content search across a remote workspace. | Trial · Pro |
 | **Multi-terminal** | Keep parallel sessions for logs, tests, services and deployments. | Trial · Pro |
 | **LSP** | Configured remote language-server diagnostics, code actions and navigation. | Trial · Pro |
 | **Debugger** | Breakpoints and runtime inspection through a configured debug adapter. | Trial · Pro |
 | **Sync / Cache** | Move project content between local and remote workspaces with explicit direction and history. | Trial · Pro |
+
+## Recently added to the workspace
+
+- **Flexible workspace directories.** Local and SSH projects can switch to another directory and retain recent locations for quick return.
+- **Android Local Linux reliability.** The Ubuntu environment now has clearer file-access boundaries and more dependable setup, Git, and Task file handling. These improvements apply only to Android.
+- **A more complete preview loop.** Split editing, live HTML snapshots, built-in media preview, and shared link opening make it practical to inspect a result before leaving the workspace.
+- **Agent workflows that fit your environment.** External ACP runtimes, slash-command completion, shared SSH login-environment handling, and safe environment diagnostics keep Terminal, Tasks, Debug, language servers, Git, and agents aligned.
 
 ## A practical way to use the features
 
@@ -58,4 +67,4 @@ A 14-day, per-device Pro trial unlocks every Pro feature below. Pro adds:
 
 ## Explore the SSH workflow
 
-If you are evaluating how these features fit an SSH session, see the [Android SSH client](/android-ssh-client) workflow, compare [SSH clients](/blog/best-ssh-clients), or read the [SSH IDE overview](/ssh-ide) for the full remote development loop.
+If you are evaluating how these features fit an SSH session, see the [Android SSH client](/android-ssh-client) workflow, read [the mobile IDE guide](/blog/best-ssh-clients), or open the [SSH IDE overview](/ssh-ide) for the full remote development loop.

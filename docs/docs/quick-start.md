@@ -7,10 +7,10 @@ description: Open a local, Android Local Linux, or SSH workspace in NimoteCode, 
 
 Use this guide to prove the workflow first: open a project, make one small edit and verify it in the terminal. It works with a local project, an SSH workspace, or Android Local Linux on a supported device.
 
-<ImagePlaceholder image-key="quickStart" alt="Local workspace in NimoteCode on phone">
-  <strong>Image placeholder — complete the first mobile workflow</strong>
-  <span>Open a local workspace, make a focused edit, then verify it in Terminal.</span>
-</ImagePlaceholder>
+<figure class="quick-start-hero">
+  <img src="https://nimotecode.com/screenshots/nimote-pro.webp" width="1440" height="810" alt="NimoteCode mobile IDE on tablet and phone, with a remote project explorer, editor, and AI chat" loading="lazy" decoding="async">
+  <figcaption>One mobile workspace brings project browsing, code editing, terminal work, Git, and AI assistance into view.</figcaption>
+</figure>
 
 ## 1. Open a workspace
 

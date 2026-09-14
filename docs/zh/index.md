@@ -23,8 +23,8 @@ description: NimoteCode 是移动开发工作区：Android 本地 Linux、Editor
     <h2 class="home-page-section-title">看看 NimoteCode 实际运行效果。</h2>
     <p class="home-page-section-copy">观看一个在同一个工作区中结合 AI、终端、项目文件与验证的真实移动开发工作流。</p>
   </div>
-  <div class="home-page-demo-media">
-    <video class="home-page-demo-video" controls playsinline preload="none" poster="/videos/nimotecode-poster.jpg" aria-label="NimoteCode AI Agent 构建演示"><source src="/videos/nimotecode.mp4" type="video/mp4">当前浏览器不支持内嵌视频。</video>
+  <div class="home-page-demo-media" data-reveal>
+    <video class="home-page-demo-video" controls playsinline preload="metadata" poster="/videos/nimotecode-poster.jpg" aria-label="NimoteCode AI Agent 构建演示"><source src="/videos/nimotecode.mp4" type="video/mp4">当前浏览器不支持内嵌视频。</video>
   </div>
   <div class="home-page-demo-note">
     <p class="home-page-demo-note-chain">检查 → 规划 → 执行 → 验证 → 预览</p>
@@ -167,7 +167,7 @@ description: NimoteCode 是移动开发工作区：Android 本地 Linux、Editor
     <p class="home-page-section-copy">关于用手机写代码、远程开发与 AI 工作流的实用文章。</p>
   </div>
   <div class="home-page-guide-grid">
-      <a href="/zh/blog/best-ssh-clients" class="home-page-guide-card"><span>SSH 客户端</span><h3>开发者最佳 SSH 客户端</h3><p>终端还是移动工作区——按工作选，而不是按 shell 选。</p></a>
+      <a href="/zh/blog/best-ssh-clients" class="home-page-guide-card"><span>移动 IDE 指南</span><h3>2026 年最好的移动 IDE</h3><p>从终端优先、云端、编辑器优先与工作区优先方案中，按要完成的任务选择。</p></a>
     <a href="/zh/blog/can-an-ai-agent-really-code-from-a-phone" class="home-page-guide-card"><span>AI 编程</span><h3>AI Agent 真的能在手机上编程吗？</h3><p>通过 SSH 在手机上规划、编辑、运行并提交真实改动。</p></a>
     <a href="/zh/blog/tailscale-ssh-android-mac-linux" class="home-page-guide-card"><span>远程开发</span><h3>用 Tailscale 把 Android 用作远程 IDE</h3><p>无需公网 IP 或端口映射，免费 SSH 访问 Mac 与 Linux。</p></a>
   </div>

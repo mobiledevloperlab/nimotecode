@@ -11,6 +11,12 @@ This is the public record of notable product updates. For setup help, use the [d
 
 ## 2026
 
+### Version 1.1.8 · September 14, 2026
+
+Early Access Pro begins in this release. The newest build is rolling out through [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) and the [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253); the GitHub Release package is an older build.
+
+[Read the complete 1.1.8 release notes →](/releases/)
+
 ### Version 1.1.7 · September 12, 2026
 
 This release adds an Android Local Linux development environment, improves HTML and link previews, and makes Editor, AI, and Task operations more reliable. It also brings external ACP agents and a unified SSH login environment.

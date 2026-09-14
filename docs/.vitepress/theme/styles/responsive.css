@@ -298,7 +298,8 @@
     -webkit-tap-highlight-color: rgba(var(--nimote-accent-rgb), 0.12);
   }
   .home-page-feature-card,
-  .home-page-video-shell {
+  .home-page-video-shell,
+  .home-page-demo-video {
     transition: none;
   }
   .home-page-feature-card:active {

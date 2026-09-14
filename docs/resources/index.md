@@ -26,4 +26,4 @@ These are technical starting points for developers evaluating where work should 
 
 Android Local Linux uses Ubuntu through PRoot on supported Android devices. Start with [Overview](/docs/local-linux), then read [Architecture](/docs/local-linux/architecture), [Compatibility](/docs/local-linux/compatibility), and [Security and Integrity](/docs/local-linux/security-integrity). Optional development toolsets, manifests, hashes, and test records are owned by the independent [NimoteCode Linux Presets](https://github.com/mobiledevloperlab/nimote-linux-presets) repository.
 
-All resource source files are versioned in the [main repository](https://github.com/mobiledevloperlab/nimotecode/tree/main/resources); corrections and focused additions are welcome through its normal issue process.
+All resource source files are versioned in the [main repository](https://github.com/mobiledevloperlab/nimotecode/tree/main/resources); report corrections or focused additions through [NimoteCode Issues](https://github.com/mobiledevloperlab/nimote_issues/issues).

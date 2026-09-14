@@ -442,6 +442,32 @@
   text-align: center;
 }
 
+.vp-doc .quick-start-hero,
+.vp-doc .article-hero {
+  width: 100%;
+  max-width: none;
+  margin: 28px 0 36px;
+}
+
+.vp-doc .quick-start-hero img,
+.vp-doc .article-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-lg);
+  box-shadow: var(--nimote-shadow-sm);
+}
+
+.vp-doc .quick-start-hero figcaption,
+.vp-doc .article-hero figcaption {
+  margin-top: 10px;
+  color: var(--nimote-text-muted);
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
 /* Compact product-documentation primitives. They keep long-form pages useful
    without turning the documentation into a wall of tables. */
 .vp-doc .product-kicker {

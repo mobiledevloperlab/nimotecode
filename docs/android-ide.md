@@ -80,4 +80,4 @@ Not the same way a desktop does. Long local compilation and large multi-file ref
 - [SSH IDE for remote development](/ssh-ide)
 - [Remote coding from a phone or tablet](/remote-coding)
 - [Code from a phone](/code-from-phone)
-- [The Best Mobile IDEs in 2026](/blog/best-mobile-ides)
+- [The Best Mobile IDEs in 2026](/blog/best-ssh-clients)

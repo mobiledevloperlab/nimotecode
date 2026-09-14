@@ -71,7 +71,7 @@ export interface Competitor {
   lastVerified: string
 }
 
-export const LAST_VERIFIED = '2026-09-12'
+export const LAST_VERIFIED = '2026-09-14'
 
 export const featureRows: FeatureRow[] = [
   { key: 'platform', kind: 'info', label: { en: 'Platform', zh: '平台' } },
@@ -101,9 +101,9 @@ export const featureRows: FeatureRow[] = [
 
 const yes = (note?: Localized): FeatureCell => ({ status: 'yes', note })
 const partial = (note?: Localized): FeatureCell => ({ status: 'partial', note })
-const no = (): FeatureCell => ({ status: 'no' })
 const unknown = (note?: Localized): FeatureCell => ({ status: 'unknown', note })
 const info = (en: string, zh: string): FeatureCell => ({ status: 'no', text: { en, zh } })
+const notDocumented = (): FeatureCell => unknown({ en: 'Not documented as a native capability', zh: '官方未说明为原生能力' })
 
 const terminalBased: Localized = { en: 'Terminal-based', zh: '基于终端' }
 const viaSshTerminal: Localized = { en: 'Via SSH terminal', zh: '通过 SSH 终端' }
@@ -209,16 +209,16 @@ export const competitors: Competitor[] = [
       platform: info('iOS / Android / Desktop', 'iOS / Android / 桌面端'),
       directSshWorkspace: partial({ en: 'SSH sessions / SFTP', zh: 'SSH 会话 / SFTP' }),
       fileExplorer: partial({ en: 'SFTP file browser', zh: 'SFTP 文件浏览' }),
-      codeEditor: no(),
-      lsp: no(),
-      debugger: no(),
+      codeEditor: notDocumented(),
+      lsp: notDocumented(),
+      debugger: notDocumented(),
       terminal: yes(),
       gitDiff: partial(terminalBased),
-      aiChatAgent: no(),
+      aiChatAgent: notDocumented(),
       claudeCodexWorkflow: partial(terminalBased),
-      agentAwareStatus: no(),
+      agentAwareStatus: notDocumented(),
       persistentSessions: unknown({ en: 'Not confirmed', zh: '未确认' }),
-      webAppPreview: no(),
+      webAppPreview: notDocumented(),
       desktopCompanionRequired: info('No', '否'),
       openSource: info('No — proprietary', '否——专有软件')
     },
@@ -250,11 +250,11 @@ export const competitors: Competitor[] = [
       debugger: unknown({ en: 'Not confirmed', zh: '未确认' }),
       terminal: yes(),
       gitDiff: partial({ en: 'Terminal / remote IDE', zh: '终端 / 远程 IDE' }),
-      aiChatAgent: no(),
+      aiChatAgent: notDocumented(),
       claudeCodexWorkflow: partial(terminalBased),
-      agentAwareStatus: no(),
+      agentAwareStatus: notDocumented(),
       persistentSessions: partial({ en: 'Mosh roaming', zh: 'Mosh 漫游' }),
-      webAppPreview: no(),
+      webAppPreview: notDocumented(),
       desktopCompanionRequired: info('No', '否'),
       openSource: info('Yes', '是')
     },
@@ -285,9 +285,9 @@ export const competitors: Competitor[] = [
       platform: info('iOS / Android', 'iOS / Android'),
       directSshWorkspace: yes(),
       fileExplorer: partial({ en: 'SFTP file browser', zh: 'SFTP 文件浏览' }),
-      codeEditor: no(),
-      lsp: no(),
-      debugger: no(),
+      codeEditor: notDocumented(),
+      lsp: notDocumented(),
+      debugger: notDocumented(),
       terminal: yes(),
       gitDiff: unknown({ en: 'Not confirmed', zh: '未确认' }),
       aiChatAgent: yes(),
@@ -368,9 +368,9 @@ export const competitors: Competitor[] = [
       platform: info('iOS / Android', 'iOS / Android'),
       directSshWorkspace: yes(),
       fileExplorer: unknown({ en: 'Not confirmed', zh: '未确认' }),
-      codeEditor: partial({ en: 'Not a full IDE editor', zh: '未达到完整 IDE 编辑器级别' }),
+      codeEditor: partial({ en: 'Focused editor; full-IDE workflow not documented', zh: '聚焦编辑器；官方未说明完整 IDE 工作流' }),
       lsp: unknown({ en: 'Not confirmed', zh: '未确认' }),
-      debugger: no(),
+      debugger: notDocumented(),
       terminal: yes(),
       gitDiff: yes(),
       aiChatAgent: yes(),
@@ -405,9 +405,9 @@ export const competitors: Competitor[] = [
       platform: info('iOS / Android', 'iOS / Android'),
       directSshWorkspace: partial({ en: 'SSH / Mosh sessions', zh: 'SSH / Mosh 会话' }),
       fileExplorer: yes({ en: 'File Browser', zh: '文件浏览器' }),
-      codeEditor: no(),
-      lsp: no(),
-      debugger: no(),
+      codeEditor: notDocumented(),
+      lsp: notDocumented(),
+      debugger: notDocumented(),
       terminal: yes(),
       gitDiff: yes(),
       aiChatAgent: yes({ en: 'Agent chat / hooks', zh: 'Agent 聊天 / hooks' }),
@@ -443,7 +443,7 @@ export const comparisonCopy = {
     ],
     tableHeading: 'Feature comparison',
     tableIntro:
-      'The table compares the products most often evaluated together for mobile and remote development. Entries are based on public vendor documentation reviewed on September 9, 2026.',
+      'The table compares the products most often evaluated together for mobile and remote development. Entries are based on public vendor documentation reviewed on September 14, 2026.',
     categoriesHeading: 'Broadly, these tools emphasize different parts of the mobile development workflow',
     picksHeading: 'Which tool is right for you?',
     sourcesHeading: 'Sources / Data Sources',
@@ -452,9 +452,9 @@ export const comparisonCopy = {
     methodologyHeading: 'Comparison methodology',
     methodologyBody:
       'This comparison is based on publicly available official documentation, product websites, app-store listings, and project repositories. Features may change over time.',
-    methodologyLastReviewed: 'Last reviewed: September 2026',
+    methodologyLastReviewed: 'Last reviewed: September 14, 2026',
     disclaimer:
-      'Feature availability and platform support change frequently. This comparison was last reviewed on September 12, 2026 and is based on publicly available vendor documentation, official websites and app-store listings.',
+      'Feature availability and platform support change frequently. This comparison was last reviewed on September 14, 2026 and is based on publicly available vendor documentation, official websites and app-store listings.',
     verifiedLabel: 'Last verified',
     midCtaTitle: 'Need more than a terminal?',
     midCtaBody:
@@ -475,16 +475,16 @@ export const comparisonCopy = {
     ],
     tableHeading: '功能对比',
     tableIntro:
-      '下表对比最常被一起评估的移动与远程开发工具。信息基于 2026 年 9 月 9 日核实过的各产品公开官方文档。',
+      '下表对比最常被一起评估的移动与远程开发工具。信息基于 2026 年 9 月 14 日核实过的各产品公开官方文档。',
     categoriesHeading: '总体而言，这些工具强调移动开发工作流的不同部分',
     picksHeading: '哪款工具适合你？',
     sourcesHeading: '来源 / 数据来源',
     sourcesIntro: '仅列出官方或一手来源。链接在新标签页打开，并标记为 nofollow。',
     methodologyHeading: '对比方法论',
     methodologyBody: '本对比基于公开的官方文档、产品官网、应用商店信息与项目仓库整理而成。功能可能随时间变化。',
-    methodologyLastReviewed: '最后核实：2026 年 9 月',
+    methodologyLastReviewed: '最后核实：2026 年 9 月 14 日',
     disclaimer:
-      '功能和平台支持可能随版本变化。本对比最后核实于 2026 年 9 月 12 日，信息来源于各产品官方网站、官方文档及应用商店公开信息。',
+      '功能和平台支持可能随版本变化。本对比最后核实于 2026 年 9 月 14 日，信息来源于各产品官方网站、官方文档及应用商店公开信息。',
     verifiedLabel: '最后核实',
     midCtaTitle: '需要的不止是终端？',
     midCtaBody: '体验集代码编辑、Android 本地 Linux、SSH、Git、终端与 AI 于一体的完整移动开发工作区。',
