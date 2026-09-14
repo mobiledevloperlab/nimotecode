@@ -818,7 +818,7 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: 'All Guides', link: '/blog/' },
-                { text: 'Best SSH Clients in 2026: Android, Mobile & Desktop Compared', link: '/blog/best-ssh-clients' },
+                { text: 'The Best Mobile IDEs in 2026', link: '/blog/best-ssh-clients' },
                 { text: 'How to Use Android as a Remote IDE with Tailscale and NimoteCode: Free SSH Access to Mac and Linux', link: '/blog/tailscale-ssh-android-mac-linux' }
               ]
             },
@@ -937,7 +937,7 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: '全部指南', link: '/zh/blog/' },
-                { text: '2026 年最好的移动 IDE：应该看什么', link: '/zh/blog/best-mobile-ides' },
+                { text: '2026 年最好的移动 IDE：应该看什么', link: '/zh/blog/best-ssh-clients' },
                 { text: '如何使用 Android 作为远程 IDE：借助 Tailscale 和 NimoteCode 免费 SSH 访问 Mac 与 Linux', link: '/zh/blog/tailscale-ssh-android-mac-linux' }
               ]
             },

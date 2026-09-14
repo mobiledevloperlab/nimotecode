@@ -26,4 +26,4 @@ description: 关于移动开发、Android Linux、PRoot、SSH 远程开发、移
 
 Android 本地 Linux 在支持的 Android 设备上通过 PRoot 使用 Ubuntu。先阅读[概览](/zh/docs/local-linux)，再查看[架构](/zh/docs/local-linux/architecture)、[兼容性](/zh/docs/local-linux/compatibility)和[安全与完整性](/zh/docs/local-linux/security-integrity)。可选工具集、manifest、哈希和测试记录由独立的 [NimoteCode Linux Presets](https://github.com/mobiledevloperlab/nimote-linux-presets) 仓库维护。
 
-全部英文技术资源源文件均版本化保存在[主仓库](https://github.com/mobiledevloperlab/nimotecode/tree/main/resources)；欢迎通过正常 issue 流程提出针对性的修正或补充。
+全部英文技术资源源文件均版本化保存在[主仓库](https://github.com/mobiledevloperlab/nimotecode/tree/main/resources)；针对性的修正或补充请通过 [NimoteCode Issues](https://github.com/mobiledevloperlab/nimote_issues/issues) 提出。

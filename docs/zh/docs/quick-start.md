@@ -7,10 +7,10 @@ description: 在 NimoteCode 打开本地、Android 本地 Linux 或 SSH 工作�
 
 先跑通核心流程：打开一个项目、完成一处小修改，再通过终端验证。项目可以在设备、远程 SSH 主机，或受支持 Android 设备上的本地 Linux 中。
 
-<ImagePlaceholder image-key="quickStart" alt="NimoteCode 手机上的本地工作区">
-  <strong>图片占位符 —— 跑通第一条移动开发流程</strong>
-  <span>打开本地工作区、完成聚焦编辑，再在终端中验证。</span>
-</ImagePlaceholder>
+<figure class="quick-start-hero">
+  <img src="https://nimotecode.com/screenshots/nimote-pro.webp" width="1440" height="810" alt="平板和手机上的 NimoteCode 移动 IDE，展示远程项目资源管理器、编辑器与 AI Chat" loading="lazy" decoding="async">
+  <figcaption>在同一个移动工作区中查看项目、编辑代码、使用终端、Git 和 AI 协助。</figcaption>
+</figure>
 
 ## 1. 打开工作区
 

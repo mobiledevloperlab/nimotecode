@@ -73,5 +73,5 @@ NimoteCode is available for Android on Google Play and for iPhone and iPad on th
 - [Android SSH client](/android-ssh-client)
 - [Mobile AI coding](/mobile-ai-coding)
 - [iPad coding workspace](/ipad-coding)
-- [Best SSH clients in 2026](/blog/best-ssh-clients)
-- [The Best Mobile IDEs in 2026](/blog/best-mobile-ides)
+- [The Best Mobile IDEs in 2026](/blog/best-ssh-clients)
+- [The Best Mobile IDEs in 2026](/blog/best-ssh-clients)

@@ -11,6 +11,12 @@ description: NimoteCode 的产品更新、新能力、修复与兼容性说明�
 
 ## 2026
 
+### 版本 1.1.8 · 2026 年 9 月 14 日
+
+本版本开启 Early Access Pro。新版正在通过 [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) 与 [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253) 推送；GitHub Release 安装包仍是较早的构建。
+
+[查看完整的 1.1.8 更新说明 →](/zh/releases/)
+
 ### 版本 1.1.7 · 2026 年 9 月 12 日
 
 本次更新加入 Android 本地 Linux 开发环境，完善 HTML 与链接预览，并提升编辑器、AI 和 Task 操作的可靠性；同时带来外部 ACP Agent 与统一 SSH 登录环境的改进。

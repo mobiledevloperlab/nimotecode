@@ -6,7 +6,7 @@ pageClass: compare-page
 
 # 对比移动 IDE、SSH 客户端与 AI 编码工具
 
-<p class="article-meta">最后核实于 2026 年 9 月 12 日 · NimoteCode 团队</p>
+<p class="article-meta">最后核实：2026-09-14 · NimoteCode 团队</p>
 
 在众多**移动开发工具**之间做选择，通常从一个问题开始：任务止步于哪里？如果只是想在服务器上运行命令，成熟的 SSH 客户端就是正确答案；如果只是想在远程主机上驱动 **AI 编码 Agent**，一个 Agent 感知终端可能就够了。但如果任务还包括检查文件、编辑代码、审查 diff、查看预览，工具就不能只像终端，而需要更像一个**移动 IDE**。
 
@@ -40,7 +40,7 @@ pageClass: compare-page
 - [移动 AI 编程](/zh/mobile-ai-coding) —— 项目上下文中的 AI Chat 与 Agent
 - [Android 本地 Linux](/zh/docs/local-linux) —— 受支持 Android 设备上的内置 Ubuntu
 - [NimoteCode Pro](/zh/pro) —— 扩展免费工作区的工作流
-- [2026 年最好的移动 IDE](/zh/blog/best-mobile-ides) —— 移动 IDE 类别如何构成
+- [2026 年最好的移动 IDE](/zh/blog/best-ssh-clients) —— 移动 IDE 类别如何构成
 - [用 Tailscale 把 Android 用作远程 IDE](/zh/blog/tailscale-ssh-android-mac-linux) —— 免费 SSH 访问 Mac 与 Linux
 - [AI Agent 真的能在手机上编程吗？](/zh/blog/can-an-ai-agent-really-code-from-a-phone) —— 移动端真实 Agent 工作流
 - [下载 NimoteCode](/zh/download) —— Android 可于 Google Play 下载，iPhone 与 iPad 可于 App Store 下载

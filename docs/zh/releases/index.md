@@ -7,6 +7,21 @@ description: NimoteCode 的完整发布说明，包括新增功能、改进与�
 
 本页收录全部公开发布记录。NimoteCode 已在 Google Play（Android）和 App Store（iPhone 与 iPad）上架；当前商店链接请见[下载页面](/zh/download)。
 
+## 1.1.8 · 2026 年 9 月 14 日
+
+1.1.8 开启 **Early Access Pro**。它面向希望提前体验 Pro 工作流，并在覆盖更多用户的过程中参与产品打磨的用户。新版正在通过 [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) 和 [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253) 推送；具体可用性会因地区和商店的分发进度而不同。
+
+### Early Access Pro
+
+- **提前体验 Pro。** Early Access Pro 开启 Pro 权益下一阶段的可用性，适合希望探索完整移动开发工作流的用户。
+- **参与后续打磨。** 早期用户可在真实项目中使用并反馈体验，帮助完善后续发布。
+- **从商店获取当前版本。** 当前 GitHub Release 附带的安装包是较早的构建，不包含 1.1.6–1.1.7 的重要更新。请在最新版对你的账号和所在地区可用后，通过 Google Play 或 App Store 下载或更新。
+
+### 近期重要更新
+
+- **1.1.7：**Android 本地 Linux、HTML 快照预览、外部 ACP Agent 和统一 SSH 登录环境，并全面提升编辑器、AI 与 Task 的可靠性。
+- **1.1.6：**首次启动引导、面向代码阅读的编辑器默认设置、更清晰的订阅与主题呈现，以及编辑器、应用内浏览器、Git 状态和 iOS 输入修复。
+
 ## 1.1.7 · 2026 年 9 月 12 日
 
 发布于 2026 年 9 月 12 日（Build 41）。本次更新加入 Android 本地 Linux 开发环境，完善 HTML 与链接预览，并提升编辑器、AI 和 Task 操作的可靠性；同时带来外部 ACP Agent 与统一 SSH 登录环境的改进。

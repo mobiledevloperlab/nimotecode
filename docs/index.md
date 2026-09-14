@@ -30,8 +30,8 @@ description: "NimoteCode is a mobile development workspace with Android Local Li
     <h2 class="home-page-section-title">See NimoteCode in action.</h2>
     <p class="home-page-section-copy">Watch a real mobile development workflow using AI, terminal, project files and verification in the same workspace.</p>
   </div>
-  <div class="home-page-demo-media">
-    <video class="home-page-demo-video" controls playsinline preload="none" poster="/videos/nimotecode-poster.jpg" aria-label="NimoteCode AI Agent build demonstration"><source src="/videos/nimotecode.mp4" type="video/mp4">Your browser does not support embedded video.</video>
+  <div class="home-page-demo-media" data-reveal>
+    <video class="home-page-demo-video" controls playsinline preload="metadata" poster="/videos/nimotecode-poster.jpg" aria-label="NimoteCode AI Agent build demonstration"><source src="/videos/nimotecode.mp4" type="video/mp4">Your browser does not support embedded video.</video>
   </div>
   <div class="home-page-demo-note">
     <p class="home-page-demo-note-chain">Inspect → Plan → Execute → Verify → Preview.</p>
@@ -174,7 +174,7 @@ description: "NimoteCode is a mobile development workspace with Android Local Li
     <p class="home-page-section-copy">Practical write-ups on coding from a phone, remote development and AI workflows.</p>
   </div>
   <div class="home-page-guide-grid">
-    <a href="/blog/best-ssh-clients" class="home-page-guide-card" data-reveal><span>SSH CLIENTS</span><h3>Best SSH Clients in 2026</h3><p>Android, mobile, terminal and desktop SSH clients compared — and how to choose by the work, not the shell.</p></a>
+    <a href="/blog/best-ssh-clients" class="home-page-guide-card" data-reveal><span>MOBILE IDE GUIDE</span><h3>The Best Mobile IDEs in 2026</h3><p>Compare terminal-first, cloud, editor-first and workspace-first approaches by the work you need to complete.</p></a>
     <a href="/blog/can-an-ai-agent-really-code-from-a-phone" class="home-page-guide-card" data-reveal><span>AI CODING</span><h3>Can an AI Agent Really Code From a Phone?</h3><p>Plan, edit, run and commit real changes from a phone over SSH.</p></a>
     <a href="/blog/tailscale-ssh-android-mac-linux" class="home-page-guide-card" data-reveal><span>REMOTE DEVELOPMENT</span><h3>Android as a Remote IDE with Tailscale</h3><p>Free SSH access to Mac and Linux without a public IP or port forwarding.</p></a>
   </div>

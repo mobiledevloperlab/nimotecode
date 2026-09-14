@@ -463,21 +463,51 @@ html:not(.dark) .home-page-feature-icon {
   color: var(--nimote-link);
 }
 
-/* Demo — single centred portrait player with a small description beneath */
+/* Demo — centred portrait player with a quiet ambient stage on wide screens. */
 .home-page-demo-media {
-  width: min(100%, 520px);
+  position: relative;
+  isolation: isolate;
+  width: min(100%, 760px);
   margin: 36px auto 0;
+  padding: 26px clamp(20px, 7vw, 72px);
+}
+
+.home-page-demo-media::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border: 1px solid rgba(var(--nimote-accent-rgb), 0.12);
+  border-radius: calc(var(--nimote-radius-lg) + 8px);
+  background:
+    radial-gradient(ellipse 42% 78% at 8% 50%, rgba(var(--nimote-accent-rgb), 0.14), transparent 72%),
+    radial-gradient(ellipse 42% 78% at 92% 50%, rgba(var(--nimote-accent-2-rgb), 0.12), transparent 72%),
+    linear-gradient(135deg, rgba(var(--nimote-accent-rgb), 0.045), rgba(var(--nimote-accent-2-rgb), 0.025));
+  box-shadow: var(--nimote-shadow-xs);
 }
 
 .home-page-demo-video {
   display: block;
-  width: 100%;
+  position: relative;
+  width: min(100%, 520px);
+  margin: 0 auto;
   aspect-ratio: 9 / 16;
   object-fit: cover;
-  border: 1px solid var(--nimote-border);
+  border: 1px solid var(--nimote-border-accent);
   border-radius: var(--nimote-radius-lg);
   background: #05060a;
-  box-shadow: var(--nimote-shadow-sm);
+  box-shadow: var(--nimote-shadow-md);
+  transition: transform 0.24s var(--nimote-ease), box-shadow 0.24s var(--nimote-ease);
+}
+
+.home-page-demo-video:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--nimote-shadow-lg);
+}
+
+.home-page-demo-video:focus-visible {
+  outline: 3px solid rgba(var(--nimote-accent-rgb), 0.5);
+  outline-offset: 4px;
 }
 
 .home-page-demo-note {
@@ -783,7 +813,7 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
   .home-page-subtitle { margin-top: 18px; font-size: 0.98rem; }
   .home-page-actions-hero { width: 100%; }
 
-  .home-page-demo-media { width: min(100%, 400px); margin-top: 34px; }
+  .home-page-demo-media { width: min(100%, 440px); margin-top: 34px; padding: 14px; }
   .home-page-demo-note { font-size: 0.9rem; }
 
   .home-page-use-case-grid { grid-template-columns: 1fr; margin-top: 28px; }
