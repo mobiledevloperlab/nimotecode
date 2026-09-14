@@ -1,0 +1,22 @@
+# Cloudflare resources behind the NimoteCode open-source downloads.
+#
+# Wrangler is a project-local devDependency; it is never installed globally:
+#   npx wrangler --version        # or ./node_modules/.bin/wrangler
+#
+# The bucket is bound here so the resource is declared in the repository rather
+# than only in the dashboard. Uploads do not use the binding: they go through
+# scripts/publish-local-linux-source.sh, which calls wrangler for small objects
+# and scripts/r2-upload.py (S3 multipart) for archives over wrangler's 300 MiB
+# limit. Nothing in this file is a secret, and credentials are supplied at run
+# time through the environment or --credentials.
+#
+# Zone-level policy for the download host — cache rules and rate limiting — is
+# not manageable with the release token. docs/cloudflare-r2-protection.md
+# records the dashboard settings that must exist.
+
+name = "nimotecode-opensource"
+compatibility_date = "2026-09-14"
+
+[[r2_buckets]]
+binding = "OPENSOURCE_DOWNLOADS"
+bucket_name = "nimotecode-opensource"

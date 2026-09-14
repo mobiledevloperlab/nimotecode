@@ -1,0 +1,1492 @@
+/* ==========================================================================
+   Home Page
+   - Hero (premium framed banner with scrim & grid overlay)
+   - Hero content (badge, logo lockup, title, subtitle, actions)
+   - Signal / feature / link cards
+   - Statement block, feature grid, demo stage, CTA
+   - Light-mode overrides for home page
+   ========================================================================== */
+
+.VPHome .VPHero.VPHomeHero {
+  display: none;
+}
+
+/* VitePress wraps home Markdown in a narrow reading container. The home page
+   carries no prose, so drop that cap and let the wrapper become one full-width
+   track that every section below centres itself within. */
+.VPHome .vp-doc.container {
+  max-width: none;
+  width: 100%;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Shared home container contract -------------------------------------------------
+   All primary home sections ride the same fluid track. width:100% + max-width +
+   margin-inline:auto pins one center axis for every breakpoint; desktop,
+   tablet and mobile only adjust inline padding, never the center. */
+.home-page-section,
+.home-page-hero-shell.home-page-hero-shell-product {
+  width: 100%;
+  max-width: var(--vp-layout-max-width);
+  margin-inline: auto;
+}
+
+.home-page-section {
+  position: relative;
+  padding-left: var(--nimote-home-gutter);
+  padding-right: var(--nimote-home-gutter);
+}
+
+/* Hero — product-led, with a restrained ambient grid behind the supplied art.
+   It is a true full-bleed band: the wrapper above is full-width, so width:100%
+   spans edge to edge with no vw math and no negative margins. */
+.home-page-hero {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 82% 20%, rgba(var(--nimote-accent-2-rgb), 0.08), transparent 28%),
+    radial-gradient(circle at 14% 8%, rgba(var(--nimote-accent-rgb), 0.07), transparent 34%),
+    var(--hero-ambient),
+    var(--nimote-bg);
+  border: 0;
+  box-shadow: none;
+  min-height: 0;
+  overflow-anchor: none;
+}
+
+.home-page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(var(--nimote-accent-rgb), 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--nimote-accent-rgb), 0.04) 1px, transparent 1px),
+    url("/screenshots/homepage_bk.jpg");
+  background-size: 42px 42px, 42px 42px, cover;
+  background-position: center, center, right center;
+  background-repeat: repeat, repeat, no-repeat;
+  transform: none;
+  filter: none;
+  will-change: opacity;
+}
+
+.home-page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 62% 94% at 16% 50%, rgba(var(--nimote-bg-rgb), 0.97) 0%, rgba(var(--nimote-bg-rgb), 0.82) 42%, rgba(var(--nimote-bg-rgb), 0.38) 70%, transparent 100%),
+    radial-gradient(ellipse 42% 56% at 96% 50%, rgba(var(--nimote-bg-rgb), 0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 72% 22% at 58% 100%, rgba(var(--nimote-bg-rgb), 0.32) 0%, transparent 78%);
+  will-change: opacity;
+}
+
+.home-page-hero-shell {
+  position: relative;
+  z-index: 3;
+  max-width: var(--nimote-container);
+  margin: 0 auto;
+}
+
+.home-page-hero-shell-product {
+  display: grid;
+  grid-template-columns: minmax(0, 590px);
+  align-items: center;
+  gap: 0;
+  min-height: 570px;
+  padding: 70px clamp(20px, 3vw, 42px) 56px;
+}
+
+/* Hero text stays on the same contrast scale as the rest of the page. */
+.home-page-hero .home-page-brand,
+.home-page-hero .home-page-title {
+  color: var(--nimote-text-primary);
+  text-shadow: none;
+}
+
+.home-page-hero .home-page-subtitle {
+  color: var(--nimote-text-secondary);
+  opacity: 0.82;
+  text-shadow: none;
+}
+
+.home-page-hero .home-page-title :is(em, i) {
+  background: var(--nimote-gradient-vivid);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.home-page-hero-copy {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 590px;
+  padding: 0;
+}
+
+/* Hero device mockup — the hand-built app mockup lives in its own standalone
+   component file `components/AppMockup.vue`, including its own layout, glow and
+   float animation. It is intentionally NOT referenced by the homepage right now;
+   see `docs/index.md` for the commented-out mount point. */
+
+/* Eyebrows / labels — uppercase kept only as a short hierarchy marker. */
+.home-page-badge,
+.home-page-eyebrow,
+.home-page-feature-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: fit-content;
+  border-radius: var(--nimote-radius-pill);
+  border: 1px solid var(--nimote-border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--nimote-text-muted);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 8px 14px;
+}
+
+.home-page-badge {
+  margin: 0 0 18px;
+}
+
+.home-page-logo-lockup {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 22px;
+  padding: 0;
+}
+
+.home-page-logo {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--nimote-radius-md);
+  flex-shrink: 0;
+  box-shadow: var(--nimote-panel-shadow);
+  transition: transform 0.4s var(--nimote-ease);
+}
+.home-page-logo-lockup:hover .home-page-logo {
+  transform: translateY(-1px) scale(1.02);
+}
+
+.home-page-brand {
+  position: relative;
+  top: -1px;
+  font-size: clamp(1.2rem, 1vw + 0.7rem, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: var(--nimote-text-primary);
+}
+
+.home-page-title {
+  margin: 0;
+  font-size: clamp(2.6rem, 4vw, 4rem);
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+  color: var(--nimote-text-primary);
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+
+.home-page-title :is(em, i) {
+  font-style: normal;
+  background: var(--nimote-gradient-vivid);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.home-page-subtitle {
+  max-width: 520px;
+  margin: 20px 0 0;
+  color: var(--nimote-text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  text-wrap: balance;
+}
+
+.home-page-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.home-page-video-shell::before,
+.home-page-feature-card::before {
+  content: none;
+}
+
+.home-page-actions-hero {
+  max-width: 540px;
+  gap: 14px;
+}
+
+.home-page-feature-card {
+  border-radius: var(--nimote-radius-md);
+  border: 1px solid var(--nimote-border);
+  padding: 24px;
+  background: var(--nimote-card);
+  box-shadow: var(--nimote-panel-shadow);
+  transition: transform 0.22s var(--nimote-ease), border-color 0.18s var(--nimote-ease), box-shadow 0.18s var(--nimote-ease);
+  position: relative;
+  overflow: hidden;
+}
+.home-page-feature-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--nimote-border-accent);
+  box-shadow: var(--nimote-panel-shadow-hover);
+}
+
+.home-page-feature-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.home-page-feature-top .home-page-feature-label {
+  margin-bottom: 0;
+  padding: 6px 12px;
+  font-size: 0.66rem;
+}
+
+.home-page-feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  flex: none;
+  border-radius: var(--nimote-radius-sm);
+  border: 1px solid var(--nimote-border);
+  background: var(--nimote-bg-subtle);
+  color: var(--nimote-link);
+  transition: transform 0.25s var(--nimote-ease), color 0.25s var(--nimote-ease);
+}
+
+html:not(.dark) .home-page-feature-icon {
+  border-color: var(--nimote-border);
+  background: #ffffff;
+}
+
+.home-page-feature-icon svg {
+  width: 21px;
+  height: 21px;
+}
+
+.home-page-feature-card:hover .home-page-feature-icon {
+  color: var(--nimote-accent);
+  transform: translateY(-1px);
+}
+
+.home-page-feature-card h3 {
+  margin: 0;
+  color: var(--nimote-text-primary);
+  letter-spacing: -0.01em;
+  font-size: 1.08rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.home-page-feature-card p {
+  margin: 14px 0 0;
+  color: var(--nimote-text-secondary);
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+/* Buttons */
+.home-page-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--nimote-radius-sm);
+  border: 1px solid transparent;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s var(--nimote-ease), box-shadow 0.2s var(--nimote-ease),
+    border-color 0.2s var(--nimote-ease), background-color 0.2s var(--nimote-ease);
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.home-page-btn.primary {
+  background: var(--nimote-action);
+  color: var(--nimote-on-action);
+  border-color: var(--nimote-action);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    0 1px 2px rgba(8, 9, 10, 0.12);
+  transition: transform 0.2s var(--nimote-ease), box-shadow 0.2s var(--nimote-ease),
+    border-color 0.2s var(--nimote-ease), filter 0.2s var(--nimote-ease);
+}
+.home-page-btn.primary:hover {
+  transform: translateY(-1px);
+  background: var(--nimote-action-hover);
+  border-color: var(--nimote-action-hover);
+  filter: none;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 4px 12px rgba(var(--nimote-accent-rgb), 0.2);
+}
+.home-page-btn.primary:active {
+  transform: translateY(0);
+  filter: brightness(0.97);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 1px 2px rgba(8, 9, 10, 0.1);
+}
+
+.home-page-btn.secondary {
+  background: var(--nimote-bg-elevated);
+  color: var(--nimote-text-primary);
+  border-color: var(--nimote-border);
+  box-shadow: none;
+}
+.home-page-btn.secondary:hover {
+  transform: translateY(-1px);
+  border-color: var(--nimote-border-strong);
+  background: var(--nimote-bg-elevated);
+}
+
+.home-page-btn:focus-visible,
+.home-page-feature-card h3 a:focus-visible {
+  outline: 2px solid var(--nimote-accent-2);
+  outline-offset: 3px;
+}
+
+/* Sections */
+.home-page-section {
+  padding-top: var(--nimote-section-space);
+  padding-bottom: var(--nimote-section-space);
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 900px;
+}
+.home-page-section-head {
+  max-width: 760px;
+}
+.home-page-section-head-centered {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-page-section-title {
+  margin: 0;
+  color: var(--nimote-text-primary);
+  font-size: var(--nimote-fs-3xl);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+
+.home-page-section-copy {
+  max-width: 680px;
+  margin: 18px auto 0;
+  color: var(--nimote-text-secondary);
+  line-height: 1.8;
+  font-size: 1rem;
+  text-wrap: balance;
+}
+
+/* Feature grid */
+.home-page-feature-grid {
+  display: grid;
+  gap: 18px;
+  margin-top: 32px;
+}
+
+.home-page-feature-grid-priority {
+  grid-template-columns: minmax(0, 1.2fr) repeat(3, minmax(0, 1fr));
+}
+
+.home-page-feature-card-ai {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(var(--nimote-accent-rgb), 0.2);
+  background: var(--nimote-card);
+  box-shadow: var(--nimote-panel-shadow);
+}
+
+.home-page-feature-card-ai::after {
+  content: "";
+  position: absolute;
+  inset: auto -20% -35% auto;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(var(--nimote-accent-rgb), 0.06), transparent 64%);
+  pointer-events: none;
+}
+
+.home-page-feature-card h3 a {
+  color: inherit;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s var(--nimote-ease);
+  padding-bottom: 2px;
+}
+.home-page-feature-card h3 a:hover {
+  background-size: 100% 1px;
+  color: var(--nimote-link);
+}
+
+/* Demo — single centred portrait player with a small description beneath */
+.home-page-demo-media {
+  width: min(100%, 520px);
+  margin: 36px auto 0;
+}
+
+.home-page-demo-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-lg);
+  background: #05060a;
+  box-shadow: var(--nimote-shadow-sm);
+}
+
+.home-page-demo-note {
+  max-width: 720px;
+  margin: 26px auto 0;
+  text-align: center;
+  color: var(--nimote-text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+
+.home-page-demo-note p {
+  margin: 0 0 8px;
+}
+
+.home-page-demo-note p:last-child {
+  margin-bottom: 0;
+}
+
+.home-page-demo-note-chain {
+  color: var(--nimote-text-primary);
+  font-weight: 600;
+  font-size: 0.98rem;
+  letter-spacing: 0.01em;
+}
+
+/* Community links — sits on the same plain canvas as every other section so
+   the page reads as one continuous surface. */
+.home-page-community-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.home-page-community-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 248px;
+  padding: 26px;
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-md);
+  background: var(--nimote-card);
+  box-shadow: var(--nimote-shadow-xs);
+  text-decoration: none;
+  transition: transform 0.2s var(--nimote-ease), border-color 0.18s var(--nimote-ease), box-shadow 0.18s var(--nimote-ease);
+}
+
+.home-page-community-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--nimote-border-accent);
+  box-shadow: var(--nimote-panel-shadow-hover);
+}
+
+.home-page-community-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 20px;
+  border-radius: var(--nimote-radius-sm);
+  border: 1px solid var(--nimote-border);
+  background: var(--nimote-bg-subtle);
+  color: var(--nimote-text-primary);
+}
+
+html:not(.dark) .home-page-community-icon {
+  background: var(--nimote-bg-subtle);
+}
+
+.home-page-community-icon-discord {
+  border-color: rgba(88, 101, 242, 0.28);
+  background: rgba(88, 101, 242, 0.12);
+  color: #5865f2;
+}
+
+.home-page-community-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.home-page-community-card h3 {
+  margin: 0;
+  color: var(--nimote-text-primary);
+  font-size: 1.12rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.home-page-community-card p {
+  margin: 8px 0 0;
+  color: var(--nimote-text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.home-page-community-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 20px;
+  color: var(--nimote-link);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.home-page-community-cta span {
+  transition: transform 0.2s var(--nimote-ease);
+}
+
+.home-page-community-card:hover .home-page-community-cta {
+  color: var(--nimote-link-hover);
+}
+
+.home-page-community-card:hover .home-page-community-cta span {
+  transform: translateX(3px);
+}
+
+.home-page-community-card:focus-visible {
+  outline: 2px solid var(--nimote-accent-2);
+  outline-offset: 3px;
+}
+
+/* Video */
+.home-page-video {
+  width: 100%;
+  margin-top: 36px;
+}
+
+.home-page-video-shell {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: var(--nimote-radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--nimote-border);
+  background: var(--nimote-video-shell-bg);
+  box-shadow: var(--nimote-shadow-md);
+  transition: transform 0.25s var(--nimote-ease), box-shadow 0.25s var(--nimote-ease);
+}
+.home-page-video-shell:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--nimote-shadow-lg);
+}
+
+.home-page-video-player {
+  display: block;
+  width: 100%;
+  height: min(78vh, 860px);
+  background: #08090a;
+  object-fit: contain;
+}
+
+.home-page-video-shell figcaption {
+  padding: 12px 16px 14px;
+  color: var(--nimote-text-muted);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Light-mode overrides for home page (cleaner cards, less dark) */
+/* Light-mode hero override: keep dark badge style on the image background */
+html:not(.dark) .home-page-hero .home-page-badge,
+html:not(.dark) .home-page-hero .home-page-eyebrow,
+html:not(.dark) .home-page-badge,
+html:not(.dark) .home-page-eyebrow,
+html:not(.dark) .home-page-feature-label {
+  border-color: var(--nimote-border);
+  background: rgba(255, 255, 255, 0.64);
+  color: var(--nimote-text-secondary);
+}
+
+html:not(.dark) .home-page-hero::after {
+  background: var(--nimote-hero-overlay);
+}
+html:not(.dark) .home-page-hero::before {
+  filter: var(--nimote-hero-image-filter);
+}
+
+html:not(.dark) .home-page-feature-card {
+  background: var(--nimote-card);
+  box-shadow: var(--nimote-panel-shadow);
+}
+html:not(.dark) .home-page-feature-card:hover {
+  box-shadow: var(--nimote-panel-shadow-hover);
+}
+
+html:not(.dark) .home-page-feature-card-ai {
+  border-color: var(--nimote-border-accent);
+  background: var(--nimote-card);
+  box-shadow: var(--nimote-panel-shadow);
+}
+html:not(.dark) .home-page-feature-card-ai::after {
+  background: radial-gradient(circle, rgba(var(--nimote-accent-rgb), 0.05), transparent 64%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-page-logo,
+  .home-page-btn,
+  .home-page-feature-card,
+  .home-page-pillar,
+  .home-page-pillar-icon,
+  .home-page-video-shell,
+  .home-page-community-card,
+  .home-page-community-cta span,
+  [data-reveal] {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+html:not(.dark) .home-page-video-shell {
+  background: var(--nimote-video-shell-bg);
+  box-shadow: var(--nimote-shadow-md);
+}
+
+html:not(.dark) .home-page-hero .home-page-brand,
+html:not(.dark) .home-page-hero .home-page-title {
+  color: var(--nimote-text-primary);
+}
+
+html:not(.dark) .home-page-hero .home-page-subtitle {
+  color: var(--nimote-text-secondary);
+}
+
+.home-page-availability-link {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 18px;
+  color: var(--nimote-text-secondary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.home-page-availability-link:hover {
+  color: var(--nimote-link);
+}
+
+.home-page-use-case-card > span {
+  color: var(--nimote-link);
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.home-page-use-case-grid { display: grid; gap: 16px; margin-top: 32px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.home-page-use-case-card {
+  position: relative;
+  min-height: 220px;
+  padding: 24px;
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-md);
+  background: var(--nimote-card);
+  box-shadow: var(--nimote-shadow-xs);
+  text-decoration: none;
+  transition: transform 0.2s var(--nimote-ease), border-color 0.2s var(--nimote-ease), box-shadow 0.2s var(--nimote-ease);
+}
+.home-page-use-case-card h3 { margin: 34px 0 10px; color: var(--nimote-text-primary); font-size: 1.16rem; letter-spacing: -0.02em; }
+.home-page-use-case-card p { margin: 0; color: var(--nimote-text-secondary); font-size: 0.92rem; line-height: 1.7; }
+.home-page-use-case-card:hover { transform: translateY(-2px); border-color: var(--nimote-border-accent); box-shadow: var(--nimote-panel-shadow-hover); }
+
+/* Latest Guides on the homepage — shares the use-case card system. */
+.home-page-guide-grid { display: grid; gap: 16px; margin-top: 32px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.home-page-guide-card { position: relative; min-height: 210px; padding: 24px; border: 1px solid var(--nimote-border); border-radius: var(--nimote-radius-md); background: var(--nimote-card); box-shadow: var(--nimote-shadow-xs); text-decoration: none; transition: transform 0.2s var(--nimote-ease), border-color 0.2s var(--nimote-ease), box-shadow 0.2s var(--nimote-ease); }
+.home-page-guide-card > span { color: var(--nimote-link); font-size: 0.67rem; font-weight: 700; letter-spacing: 0.1em; }
+.home-page-guide-card h3 { margin: 26px 0 10px; color: var(--nimote-text-primary); font-size: 1.12rem; letter-spacing: -0.02em; line-height: 1.35; }
+.home-page-guide-card p { margin: 0; color: var(--nimote-text-secondary); font-size: 0.92rem; line-height: 1.7; }
+.home-page-guide-card:hover { transform: translateY(-2px); border-color: var(--nimote-border-accent); box-shadow: var(--nimote-panel-shadow-hover); }
+
+@media (max-width: 920px) {
+  .home-page-hero-shell.home-page-hero-shell-product {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-page-hero::before {
+    background-image:
+      linear-gradient(rgba(var(--nimote-accent-rgb), 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(var(--nimote-accent-rgb), 0.04) 1px, transparent 1px),
+      url("/screenshots/homepage_bk_mobile.jpg");
+    background-position: center, center, center top;
+  }
+
+  .home-page-hero::after {
+    background:
+      linear-gradient(180deg, rgba(var(--nimote-bg-rgb), 0.62) 0%, rgba(var(--nimote-bg-rgb), 0.74) 60%, var(--nimote-bg) 100%),
+      linear-gradient(90deg, rgba(var(--nimote-bg-rgb), 0.42), rgba(var(--nimote-bg-rgb), 0.18));
+  }
+
+  .home-page-hero-shell.home-page-hero-shell-product { gap: 36px; padding: 46px 18px 44px; }
+  .home-page-title { font-size: clamp(2.35rem, 11vw, 3.25rem); }
+  .home-page-subtitle { margin-top: 18px; font-size: 0.98rem; }
+  .home-page-actions-hero { width: 100%; }
+
+  .home-page-demo-media { width: min(100%, 400px); margin-top: 34px; }
+  .home-page-demo-note { font-size: 0.9rem; }
+
+  .home-page-use-case-grid { grid-template-columns: 1fr; margin-top: 28px; }
+  .home-page-use-case-card { min-height: 230px; }
+  .home-page-guide-grid { grid-template-columns: 1fr; margin-top: 28px; }
+  .home-page-guide-card { min-height: 0; }
+  .home-page-community-grid { grid-template-columns: 1fr; margin-top: 32px; }
+  .home-page-community-card { min-height: 0; }
+}
+
+@media (max-width: 560px) {
+  .home-page-demo-note { font-size: 0.88rem; }
+  .home-page-community-card { padding: 22px; }
+}
+
+/* Wide-screen hero balance -------------------------------------------------
+   The product image is part of the supplied Hero background. On large
+   displays, constrain its rendering independently from the copy so it reads
+   as a deliberate right-hand visual rather than an oversized page backdrop. */
+@media (min-width: 1025px) {
+  /* The supplied artwork carries its visual weight on the right. Reserve the
+     quieter left portion for the message so the copy and the product read as
+     one intentional composition instead of competing at the centre. */
+  .home-page-hero-shell.home-page-hero-shell-product {
+    grid-template-columns: minmax(0, 510px) minmax(0, 1fr);
+    justify-items: start;
+    column-gap: clamp(32px, 4vw, 64px);
+    /* Keep sufficient vertical runway so the availability link remains
+       distinct from the Product Demo section below. */
+    min-height: 620px;
+    padding: 80px var(--nimote-home-gutter) 60px;
+  }
+
+  .home-page-hero-copy {
+    max-width: 510px;
+    margin-inline: 0;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .home-page-hero-copy .home-page-subtitle {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .home-page-hero-copy .home-page-badge {
+    margin-bottom: 20px;
+  }
+
+  .home-page-hero-copy .home-page-logo-lockup {
+    margin-bottom: 28px;
+  }
+
+  .home-page-hero-copy .home-page-subtitle {
+    margin-top: 24px;
+  }
+
+  .home-page-hero-copy .home-page-actions {
+    margin-top: 32px;
+  }
+
+  .home-page-hero-copy .home-page-availability-link {
+    margin-top: 22px;
+  }
+
+  /* At 1920px this renders the product layer at 1728px instead of 1920px
+     (10% smaller), then leaves a quiet edge on the right instead of pushing
+     the iPad to the viewport boundary. */
+  .home-page-hero::before {
+    /* Fill the full-bleed Hero edge to edge — no exposed page background on
+       either side. cover crops the JPG and centre keeps it balanced. */
+    background-size: 42px 42px, 42px 42px, cover;
+    background-position: center, center, center;
+    /* The supplied product image is intentionally larger than its visible
+       device artwork. Intersected masks keep the centre crisp, then dissolve
+       the image before its own rectangular bounds can become perceptible. */
+    -webkit-mask-image:
+      radial-gradient(ellipse 65% 78% at 56% 54%, #000 0%, #000 42%, rgba(0, 0, 0, 0.9) 58%, rgba(0, 0, 0, 0.46) 76%, transparent 100%),
+      linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.68) 16%, #000 34%, #000 70%, rgba(0, 0, 0, 0.7) 76%, rgba(0, 0, 0, 0.28) 84%, transparent 91%),
+      linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.66) 13%, #000 28%, #000 72%, rgba(0, 0, 0, 0.6) 87%, transparent 100%);
+    -webkit-mask-composite: source-in, source-in;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image:
+      radial-gradient(ellipse 65% 78% at 56% 54%, #000 0%, #000 42%, rgba(0, 0, 0, 0.9) 58%, rgba(0, 0, 0, 0.46) 76%, transparent 100%),
+      linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.68) 16%, #000 34%, #000 70%, rgba(0, 0, 0, 0.7) 76%, rgba(0, 0, 0, 0.28) 84%, transparent 91%),
+      linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.66) 13%, #000 28%, #000 72%, rgba(0, 0, 0, 0.6) 87%, transparent 100%);
+    mask-composite: intersect, intersect;
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+  }
+
+  /* The product layer now does its own edge fade. Keep this layer radial only
+     so no full-width linear wash can introduce a new rectangular boundary. */
+  .home-page-hero::after {
+    background:
+      radial-gradient(ellipse 52% 88% at 17% 48%, rgba(var(--nimote-bg-rgb), 0.96) 0%, rgba(var(--nimote-bg-rgb), 0.84) 44%, rgba(var(--nimote-bg-rgb), 0.42) 67%, transparent 100%),
+      radial-gradient(ellipse 42% 60% at 97% 48%, rgba(var(--nimote-bg-rgb), 0.14) 0%, rgba(var(--nimote-bg-rgb), 0.05) 46%, transparent 78%),
+      radial-gradient(ellipse 74% 24% at 58% 100%, rgba(var(--nimote-bg-rgb), 0.34) 0%, transparent 78%),
+      radial-gradient(ellipse 52% 26% at 60% 0%, rgba(var(--nimote-bg-rgb), 0.13) 0%, transparent 78%);
+  }
+}
+
+/* Keep the product Hero genuinely single-column through the tablet landscape
+   breakpoint. The product-specific desktop selector would otherwise outrank
+   VitePress's generic responsive rule and leave a fixed 590px first column. */
+@media (min-width: 921px) and (max-width: 1024px) {
+  .home-page-hero-shell.home-page-hero-shell-product {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 44px 20px 26px;
+  }
+}
+
+/* ==========================================================================
+   Stage 1 — Homepage structure & information hierarchy
+   - Weak hero CTA (de-emphasised third button)
+   - Trust / product-facts bar
+   - Three capability pillars (Remote Development, AI Coding, Complete IDE)
+   - Compact 2×3 capability grid inside the Complete IDE pillar
+   - Compare table (SSH client vs NimoteCode)
+   - Section-level CTA
+   Reuses existing design tokens; no global token changes.
+   ========================================================================== */
+
+/* Screen-reader-only helper used by the compare table marks. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Hero: keep the two primary CTAs as buttons, render the weak link as a quieter
+   text-style button that still shares the button shape for consistency. */
+.home-page-btn-weak {
+  background: transparent;
+  color: var(--nimote-text-secondary);
+  border-color: transparent;
+  box-shadow: none;
+}
+.home-page-btn-weak:hover {
+  transform: translateY(-1px);
+  color: var(--nimote-link);
+  border-color: var(--nimote-border);
+  background: rgba(var(--nimote-accent-rgb), 0.04);
+}
+
+/* Trust / product-facts bar — intentionally lighter than the hero. */
+.home-page-trust-section {
+  padding-top: var(--nimote-space-8);
+  padding-bottom: var(--nimote-space-8);
+}
+.home-page-trust {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+  max-width: var(--nimote-container);
+  margin: 0 auto;
+}
+.home-page-trust-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 14px 16px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--nimote-radius-md);
+  background: var(--nimote-card);
+  box-shadow: var(--nimote-shadow-xs);
+  color: var(--nimote-text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+.home-page-trust-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--nimote-radius-sm);
+  border: 1px solid var(--nimote-border);
+  background: var(--nimote-bg-subtle);
+  color: var(--nimote-link);
+}
+.home-page-trust-icon svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* Three capability pillars. */
+.home-page-pillars-section {
+  padding-top: var(--nimote-section-space);
+  padding-bottom: var(--nimote-section-space);
+}
+.home-page-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  width: 100%;
+  max-width: var(--nimote-container);
+  margin: 0 auto;
+  align-items: stretch;
+}
+.home-page-pillar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px;
+  border-radius: var(--nimote-radius-md);
+  border: 1px solid var(--nimote-border);
+  background: var(--nimote-card);
+  box-shadow: var(--nimote-panel-shadow);
+  transition: transform 0.22s var(--nimote-ease), border-color 0.18s var(--nimote-ease), box-shadow 0.18s var(--nimote-ease);
+}
+.home-page-pillar:hover {
+  transform: translateY(-2px);
+  border-color: var(--nimote-border-accent);
+  box-shadow: var(--nimote-panel-shadow-hover);
+}
+.home-page-pillar-accent {
+  position: relative;
+  border: 1px solid rgba(165, 180, 252, 0.18);
+  background:
+    radial-gradient(ellipse 120% 70% at 110% -10%, rgba(139, 92, 246, 0.38), transparent 52%),
+    radial-gradient(ellipse 80% 60% at -20% 110%, rgba(99, 102, 241, 0.3), transparent 55%),
+    linear-gradient(155deg, #1e1b4b 0%, #2a2a7a 55%, #3b3491 100%);
+  box-shadow: 0 20px 44px rgba(37, 32, 102, 0.32);
+}
+.home-page-pillar-accent:hover {
+  border-color: rgba(165, 180, 252, 0.32);
+  box-shadow: 0 26px 54px rgba(37, 32, 102, 0.4);
+}
+/* The AI pillar is the page's one dark, gradient moment. Every child needs an
+   explicit light-on-indigo override so the panel reads as a deliberate hero. */
+.home-page-pillars .home-page-pillar-accent .home-page-eyebrow {
+  border-color: rgba(199, 210, 254, 0.22);
+  background: rgba(199, 210, 254, 0.08);
+  color: #c7d2fe;
+}
+.home-page-pillars .home-page-pillar-accent .home-page-pillar-title {
+  color: #f5f7ff;
+}
+.home-page-pillars .home-page-pillar-accent .home-page-pillar-copy {
+  color: #c7d2fe;
+}
+.home-page-pillars .home-page-pillar-accent .home-page-pillar-flow {
+  border-color: rgba(199, 210, 254, 0.24);
+  background: rgba(199, 210, 254, 0.1);
+  color: #e0e7ff;
+}
+.home-page-pillars .home-page-pillar-accent .home-page-pillar-points li {
+  border-color: rgba(199, 210, 254, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: #dbe3ff;
+}
+.home-page-pillars .home-page-pillar-accent .home-page-pillar-link {
+  color: #a5b4fc;
+}
+.home-page-pillars .home-page-pillar-accent:hover .home-page-pillar-link {
+  color: #c7d2fe;
+}
+.home-page-pillars .home-page-pillar-accent .home-page-cap-grid li {
+  border-color: rgba(199, 210, 254, 0.16);
+  background: rgba(255, 255, 255, 0.05);
+  color: #e6eaff;
+}
+.home-page-pillars .home-page-pillar-accent .home-page-cap-icon {
+  border-color: rgba(199, 210, 254, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #e0e7ff;
+}
+/* Pillar head — icon and label on the same line. */
+.home-page-pillar-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+/* Pillar icon — a quiet brand mark beside the label. */
+.home-page-pillar-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--nimote-radius-md);
+  border: 1px solid var(--nimote-border);
+  background: var(--nimote-bg-subtle);
+  color: var(--nimote-link);
+  transition: transform 0.25s var(--nimote-ease), color 0.25s var(--nimote-ease), border-color 0.25s var(--nimote-ease);
+}
+.home-page-pillar-icon svg {
+  width: 22px;
+  height: 22px;
+}
+.home-page-pillars .home-page-pillar-accent .home-page-pillar-icon {
+  border-color: rgba(199, 210, 254, 0.24);
+  background: rgba(199, 210, 254, 0.1);
+  color: #e0e7ff;
+}
+.home-page-pillars .home-page-pillar-accent:hover .home-page-pillar-icon {
+  color: #ffffff;
+}
+.home-page-pillar:hover .home-page-pillar-icon {
+  color: var(--nimote-accent);
+  transform: translateY(-1px);
+}
+.home-page-pillar .home-page-eyebrow {
+  margin: 0;
+}
+.home-page-pillar-title {
+  margin: 0;
+  color: var(--nimote-text-primary);
+  font-size: var(--nimote-fs-2xl);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+.home-page-pillar-copy {
+  margin: 12px 0 0;
+  color: var(--nimote-text-secondary);
+  font-size: 0.94rem;
+  line-height: 1.6;
+  text-wrap: balance;
+}
+.home-page-pillar-flow {
+  margin: 16px 0 0;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 5px 11px;
+  border: 1px solid rgba(var(--nimote-accent-rgb), 0.22);
+  border-radius: var(--nimote-radius-pill);
+  background: rgba(var(--nimote-accent-rgb), 0.05);
+  color: var(--nimote-link);
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0;
+}
+.home-page-pillar-points {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.home-page-pillar-points li {
+  padding: 5px 11px;
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-pill);
+  background: var(--nimote-bg-subtle);
+  color: var(--nimote-text-secondary);
+  font-size: 0.82rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.home-page-pillar-link {
+  margin-top: auto;
+  padding-top: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--nimote-link);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.home-page-pillar-link span {
+  transition: transform 0.2s var(--nimote-ease);
+}
+.home-page-pillar:hover .home-page-pillar-link span {
+  transform: translateX(3px);
+}
+
+/* Compact 2×3 capability grid inside the Complete IDE pillar. */
+.home-page-cap-grid {
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  width: 100%;
+}
+.home-page-cap-grid li {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--nimote-radius-md);
+  background: var(--nimote-bg-subtle);
+  color: var(--nimote-text-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.home-page-cap-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--nimote-radius-sm);
+  border: 1px solid var(--nimote-border);
+  background: var(--nimote-card);
+  color: var(--nimote-link);
+}
+.home-page-cap-icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Compare table. */
+.home-page-compare-section {
+  padding-top: var(--nimote-section-space);
+  padding-bottom: var(--nimote-section-space);
+}
+.home-page-compare-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 1040px;
+  margin: 32px auto 0;
+}
+.home-page-compare-card {
+  min-height: 190px;
+  padding: 24px;
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-lg);
+  background: var(--nimote-card);
+  box-shadow: var(--nimote-shadow-sm);
+}
+.home-page-compare-card--nimote {
+  border-color: var(--nimote-border-accent);
+  background: rgba(var(--nimote-accent-rgb), 0.06);
+}
+.home-page-compare-card-kicker {
+  margin: 0;
+  color: var(--nimote-link);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.home-page-compare-card h3 {
+  margin: 28px 0 10px;
+  color: var(--nimote-text-primary);
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+}
+.home-page-compare-card p:not(.home-page-compare-card-kicker) {
+  margin: 0;
+  color: var(--nimote-text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+.home-page-compare-wrap {
+  display: block;
+  width: 100%;
+  margin: 32px auto 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-lg);
+  background: var(--nimote-card);
+  box-shadow: var(--nimote-shadow-sm);
+  scrollbar-width: thin;
+}
+/* Override VitePress .vp-doc table defaults (display:block, border-collapse:separate,
+   zebra row backgrounds, cell borders) so the comparison table lays out as a real,
+   full-width table. Higher specificity than .vp-doc table / tr / th / td. */
+.home-page-compare-wrap .home-page-compare {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 0.92rem;
+}
+.home-page-compare-wrap .home-page-compare th:first-child,
+.home-page-compare-wrap .home-page-compare td:first-child {
+  width: 26%;
+}
+.home-page-compare-wrap .home-page-compare th:nth-child(n+2),
+.home-page-compare-wrap .home-page-compare td:nth-child(n+2) {
+  width: 12.3%;
+}
+.home-page-compare-wrap .home-page-compare--compact th,
+.home-page-compare-wrap .home-page-compare--compact td,
+.home-page-compare-wrap .home-page-compare--compact th:first-child,
+.home-page-compare-wrap .home-page-compare--compact td:first-child {
+  width: 25%;
+}
+.home-page-compare-wrap .home-page-compare th,
+.home-page-compare-wrap .home-page-compare td {
+  padding: 11px 12px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid var(--border-subtle);
+  background: transparent;
+  color: var(--nimote-text-secondary);
+  white-space: nowrap;
+}
+.home-page-compare-wrap .home-page-compare tbody tr,
+.home-page-compare-wrap .home-page-compare tbody tr:nth-child(2n) {
+  background: transparent;
+  border-top: none;
+}
+.home-page-compare-wrap .home-page-compare th:first-child,
+.home-page-compare-wrap .home-page-compare td:first-child {
+  text-align: left;
+}
+.home-page-compare-wrap .home-page-compare thead th {
+  color: var(--nimote-text-primary);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+}
+.home-page-compare-wrap .home-page-compare thead th.home-page-compare-col-nimote {
+  color: var(--nimote-link);
+}
+.home-page-compare-wrap .home-page-compare tbody th {
+  color: var(--nimote-text-primary);
+  font-weight: 500;
+  white-space: normal;
+}
+.home-page-compare-wrap .home-page-compare tbody tr:last-child th,
+.home-page-compare-wrap .home-page-compare tbody tr:last-child td {
+  border-bottom: none;
+}
+.home-page-compare-wrap .home-page-compare td {
+  color: var(--nimote-text-muted);
+}
+.home-page-compare-wrap .home-page-compare td span[aria-hidden="true"] {
+  color: var(--nimote-accent-3);
+  font-weight: 600;
+}
+.home-page-compare-wrap .home-page-compare td.home-page-compare-partial {
+  color: var(--nimote-text-secondary);
+}
+.home-page-compare-wrap .home-page-compare td.home-page-compare-none {
+  color: var(--nimote-text-muted);
+}
+/* Highlight the NimoteCode column. */
+.home-page-compare-wrap .home-page-compare .home-page-compare-col-nimote,
+.home-page-compare-wrap .home-page-compare td.home-page-compare-col-nimote {
+  background: rgba(var(--nimote-accent-rgb), 0.06);
+}
+.home-page-compare-wrap .home-page-compare thead th.home-page-compare-col-nimote {
+  background: rgba(var(--nimote-accent-rgb), 0.1);
+}
+/* Override .vp-doc p (margin:16px 0) so the caption can centre itself. */
+.home-page-compare-section .home-page-compare-caption {
+  width: 100%;
+  margin: 16px auto 0;
+  color: var(--nimote-text-muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Capability strip — an explicit hierarchy of the seven core areas. */
+.home-page-strip-section {
+  padding-top: var(--nimote-section-space-compact);
+}
+/* Scoped with .home-page-section so it outranks VitePress's `.vp-doc ul`
+   (which sets `margin: 12px 0` and `padding-left: 1.4rem`). Without this the
+   strip loses its auto margins and is left-aligned instead of centred. */
+.home-page-section .home-page-cap-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 900px;
+  margin: 28px auto 0;
+  padding: 0;
+  list-style: none;
+}
+.home-page-section .home-page-cap-strip li {
+  margin: 0;
+  padding: 9px 16px;
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-pill);
+  background: var(--nimote-bg-elevated);
+  color: var(--nimote-text-primary);
+  font-size: 0.88rem;
+  font-weight: 500;
+  line-height: 1;
+  list-style: none;
+}
+.home-page-section .home-page-cap-strip li::marker {
+  content: none;
+}
+
+/* Section-level CTA centred beneath the use-case grid. */
+.home-page-section-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+/* Stage 1 responsive refinements. */
+@media (max-width: 1024px) {
+  .home-page-pillars {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 680px;
+  }
+  .home-page-trust {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .home-page-trust {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .home-page-trust-item {
+    padding: 12px;
+    font-size: 0.85rem;
+  }
+  .home-page-pillar {
+    padding: 22px;
+  }
+  .home-page-compare-cards {
+    grid-template-columns: 1fr;
+    margin-top: 24px;
+  }
+  .home-page-compare-card {
+    min-height: 0;
+    padding: 20px;
+  }
+  .home-page-compare-card h3 {
+    margin-top: 22px;
+  }
+  .home-page-compare th,
+  .home-page-compare td {
+    padding: 9px 10px;
+    font-size: 0.82rem;
+  }
+  .home-page-compare-caption {
+    font-size: 0.78rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .home-page-trust {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Motion
+   - Scroll reveal (gated on html.js so content stays visible without JS)
+   - Button sheen sweep
+   - Staggered reveal delays for sibling grids
+   ========================================================================== */
+
+[data-reveal] {
+  transition:
+    opacity 0.6s var(--nimote-ease-out),
+    transform 0.6s var(--nimote-ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+html.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+}
+html.js [data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+}
+html.js [data-reveal]:nth-child(2) { --reveal-delay: 80ms; }
+html.js [data-reveal]:nth-child(3) { --reveal-delay: 160ms; }
+html.js [data-reveal]:nth-child(4) { --reveal-delay: 240ms; }
+html.js [data-reveal]:nth-child(5) { --reveal-delay: 320ms; }
+
+/* Primary CTA sheen — a light sweep across the button on hover. */
+.home-page-btn.primary {
+  position: relative;
+  overflow: hidden;
+}
+.home-page-btn.primary::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -70%;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(105deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transform: skewX(-18deg);
+  transition: left 0.55s var(--nimote-ease);
+  pointer-events: none;
+}
+.home-page-btn.primary:hover::after {
+  left: 130%;
+}

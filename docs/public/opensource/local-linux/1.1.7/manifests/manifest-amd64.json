@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "ubuntu",
+  "name": "Ubuntu",
+  "version": "24.04",
+  "architecture": "amd64",
+  "rootfsVersion": "ubuntu-24.04-amd64-1",
+  "archiveAsset": "local_linux/ubuntu-minimal-amd64.tgz",
+  "sha256": "747be10233c1f4e2fb0dbfa771f0d06be2223690aff5e8bb5147303488f05f4d",
+  "compressedSize": 55306958,
+  "extractedSize": 161522487,
+  "baseUrl": "https://partner-images.canonical.com/oci/noble/current/ubuntu-noble-oci-amd64-root.tar.gz",
+  "baseSha256": "cafe7e2fd9e9b538f4aea973ce3399c9624850f6894d16c2e1d5aa5417774689"
+}

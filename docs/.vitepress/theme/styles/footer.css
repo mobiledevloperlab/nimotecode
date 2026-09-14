@@ -1,0 +1,140 @@
+/* ==========================================================================
+   Footer (.VPFooter)
+   ========================================================================== */
+
+.VPFooter {
+  border-top: 1px solid var(--nimote-border);
+  padding: 36px 0;
+  margin-top: 80px;
+  background: var(--nimote-bg-elevated);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+}
+
+.VPFooter .message,
+.VPFooter .copyright {
+  color: var(--nimote-text-muted);
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+.VPFooter .message {
+  font-weight: 500;
+  color: var(--nimote-text-secondary);
+}
+
+/* Shared site footer. Legal and account links deliberately live here instead
+   of competing with product journeys in the primary navigation. */
+.nimote-site-footer {
+  position: relative;
+  z-index: var(--vp-z-index-footer);
+  margin-top: auto;
+  border-top: 1px solid var(--nimote-border);
+  background:
+    radial-gradient(circle at 10% 0%, rgba(var(--nimote-accent-rgb), 0.05), transparent 24%),
+    var(--nimote-bg-elevated);
+}
+
+.nimote-site-footer-content {
+  /* 100% (not 100vw) so the symmetric gutter tracks the visible width even
+     when a vertical scrollbar is present — the inner block keeps centering. */
+  padding: 52px max(24px, calc((100% - var(--nimote-container)) / 2)) 24px;
+}
+
+.nimote-site-footer-inner {
+  display: grid;
+  grid-template-columns: minmax(230px, 1.6fr) repeat(4, minmax(130px, 1fr));
+  gap: 36px;
+  max-width: var(--nimote-container);
+  margin: 0 auto;
+}
+
+.nimote-footer-brand p {
+  max-width: 300px;
+  margin: 16px 0 0;
+  color: var(--nimote-text-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+.nimote-footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--nimote-text-primary);
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nimote-footer-logo img {
+  border-radius: var(--nimote-radius-sm);
+  box-shadow: var(--nimote-shadow-xs);
+}
+
+.nimote-site-footer nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.nimote-site-footer h2 {
+  margin: 3px 0 4px;
+  color: var(--nimote-text-primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.nimote-site-footer nav a {
+  color: var(--nimote-text-secondary);
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.nimote-site-footer nav a {
+  transition: color 0.18s var(--nimote-ease), transform 0.18s var(--nimote-ease);
+}
+
+.nimote-site-footer nav a:hover,
+.nimote-footer-logo:hover {
+  color: var(--nimote-link);
+}
+
+.nimote-site-footer nav a:hover {
+  transform: translateX(2px);
+}
+
+.nimote-site-footer-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: var(--nimote-container);
+  margin: 38px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--nimote-border);
+  color: var(--nimote-text-muted);
+  font-size: 0.8125rem;
+}
+
+@media (max-width: 760px) {
+  .nimote-site-footer-content {
+    padding: 40px 24px 22px;
+  }
+
+  .nimote-site-footer-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px 22px;
+  }
+
+  .nimote-footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .nimote-site-footer-meta {
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 30px;
+  }
+}

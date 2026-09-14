@@ -1,0 +1,428 @@
+/* ==========================================================================
+   Pricing Feature System
+   - Pricing page shell (.pricing-page) widens the marketing doc track
+   - Billing toggle (.pf-billing-toggle)
+   - Pricing plan grid (.pf-pricing-grid / .pf-plan-card)
+   - Free-trial banner (.pf-trial-banner)
+   - Feature grid (.pf-feature-grid / .pf-feature-card)
+   - Trust lines
+   - Light-mode overrides + responsive behaviour
+   ========================================================================== */
+
+/* The pricing page borrows the comparison page's wider shell so the plan
+   cards and feature grid can breathe instead of squeezing into the 760px
+   article column. Prose inside the page stays capped by .vp-doc. */
+.pricing-page .nimote-marketing-doc {
+  width: min(100% - 48px, 1120px);
+}
+.pricing-page .nimote-marketing-doc .vp-doc {
+  max-width: 100%;
+}
+.pricing-page .vp-doc > h1,
+.pricing-page .vp-doc > p {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing-feature-system {
+  width: 100%;
+}
+
+/* Section rhythm --------------------------------------------------------- */
+.pf-pricing-section,
+.pf-features-section {
+  padding-top: var(--nimote-section-space-compact);
+  padding-bottom: var(--nimote-section-space);
+}
+.pf-features-section {
+  border-top: 1px solid var(--nimote-border);
+}
+
+.pf-pricing-section .home-page-section-head,
+.pf-features-section .home-page-section-head {
+  margin: 0 auto;
+  text-align: center;
+}
+.pf-pricing-section .home-page-section-copy,
+.pf-features-section .home-page-section-copy {
+  margin-inline: auto;
+}
+
+/* Billing toggle --------------------------------------------------------- */
+.pf-billing-toggle {
+  display: flex;
+  width: fit-content;
+  margin: 28px auto 0;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-pill);
+  background: var(--nimote-bg-subtle);
+}
+
+.pf-billing-toggle button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 0;
+  background: transparent;
+  color: var(--nimote-text-secondary);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 10px 18px;
+  border-radius: var(--nimote-radius-pill);
+  cursor: pointer;
+  transition: color 0.2s var(--nimote-ease), background-color 0.2s var(--nimote-ease),
+    box-shadow 0.2s var(--nimote-ease);
+}
+
+.pf-billing-toggle button:hover {
+  color: var(--nimote-text-primary);
+}
+
+.pf-billing-toggle button.active {
+  background: var(--nimote-card);
+  color: var(--nimote-text-primary);
+  box-shadow: var(--nimote-shadow-xs);
+}
+
+.pf-billing-toggle button span {
+  padding: 3px 8px;
+  border-radius: var(--nimote-radius-pill);
+  background: rgba(var(--nimote-accent-3-rgb), 0.12);
+  color: var(--nimote-accent-3);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.pf-billing-toggle button:focus-visible {
+  outline: 2px solid var(--nimote-accent-2);
+  outline-offset: 2px;
+}
+
+/* Plan cards ------------------------------------------------------------- */
+.pf-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.8rem;
+  max-width: 860px;
+  margin: 2.4rem auto 0;
+}
+
+.pf-plan-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-lg);
+  padding: 2.2rem;
+  background: var(--nimote-card);
+  box-shadow: var(--nimote-panel-shadow);
+  transition: transform 0.25s var(--nimote-ease), border-color 0.25s var(--nimote-ease),
+    box-shadow 0.25s var(--nimote-ease);
+  position: relative;
+}
+
+.pf-plan-card.is-featured {
+  border-color: var(--nimote-border-accent);
+  box-shadow: var(--nimote-shadow-brand);
+  background:
+    radial-gradient(ellipse 120% 60% at 100% -10%, rgba(var(--nimote-accent-rgb), 0.08), transparent 55%),
+    var(--nimote-card);
+}
+
+.pf-plan-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--nimote-border-accent);
+  box-shadow: var(--nimote-shadow-md);
+}
+.pf-plan-card.is-featured:hover {
+  box-shadow: 0 14px 34px rgba(var(--nimote-accent-rgb), 0.2);
+}
+
+.pf-plan-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.pf-plan-topline h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--nimote-text-primary);
+  letter-spacing: -0.015em;
+}
+
+.pf-plan-topline span {
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--nimote-radius-pill);
+  background: var(--nimote-action);
+  color: var(--nimote-on-action);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.pf-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin-bottom: 0.35rem;
+}
+.pf-price-row strong {
+  font-size: 2.75rem;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  color: var(--nimote-text-primary);
+  line-height: 1;
+}
+.pf-price-row span {
+  font-size: 0.96rem;
+  color: var(--nimote-text-secondary);
+}
+
+.pf-price-alt {
+  margin: 0 0 1.1rem;
+  font-size: 0.88rem;
+  color: var(--nimote-text-muted);
+}
+.pf-price-alt em {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--nimote-accent-3);
+}
+
+.pf-plan-summary {
+  margin: 0 0 1.5rem;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--nimote-text-secondary);
+}
+
+.pf-plan-card .home-page-btn {
+  width: 100%;
+  margin-top: auto;
+}
+
+.pf-plan-features {
+  margin: 1.8rem 0 0;
+  padding: 1.4rem 0 0;
+  list-style: none;
+  border-top: 1px solid var(--nimote-border);
+}
+
+.pf-plan-features li {
+  margin: 0.7rem 0;
+  font-size: 0.93rem;
+  line-height: 1.55;
+  color: var(--nimote-text-secondary);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding-left: 0;
+}
+.pf-plan-features li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--nimote-accent);
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+}
+
+/* Free-trial banner ------------------------------------------------------ */
+.pf-trial-banner {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  max-width: 860px;
+  margin: 2.6rem auto 0;
+  padding: 22px 28px;
+  border-radius: var(--nimote-radius-lg);
+  border: 1px solid var(--nimote-border-accent);
+  background:
+    radial-gradient(circle at 92% 8%, rgba(var(--nimote-accent-2-rgb), 0.14), transparent 44%),
+    var(--nimote-gradient-soft),
+    var(--nimote-card);
+  box-shadow: var(--nimote-shadow-brand);
+}
+
+.pf-trial-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.pf-trial-copy strong {
+  color: var(--nimote-text-primary);
+  font-size: 1.08rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.pf-trial-copy span {
+  color: var(--nimote-text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.pf-trial-banner .home-page-btn {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/* Trust lines ------------------------------------------------------------ */
+.pf-trust-line {
+  text-align: center;
+  margin: 1.4rem 0 0;
+  color: var(--nimote-text-muted);
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+.pf-trust-line + .pf-trust-line {
+  margin-top: 0.35rem;
+}
+
+/* Feature grid ----------------------------------------------------------- */
+.pf-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.pf-feature-card {
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-md);
+  padding: 1.8rem;
+  background: var(--nimote-card);
+  box-shadow: var(--nimote-panel-shadow);
+  transition: transform 0.25s var(--nimote-ease), border-color 0.25s var(--nimote-ease), box-shadow 0.25s var(--nimote-ease);
+}
+.pf-feature-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--nimote-border-accent);
+  box-shadow: var(--nimote-panel-shadow-hover);
+}
+
+.pf-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.1rem;
+}
+
+.pf-card-head h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--nimote-text-primary);
+  letter-spacing: -0.01em;
+}
+
+.pf-card-head span {
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--nimote-radius-pill);
+  border: 1px solid var(--nimote-border);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--nimote-text-secondary);
+  background: var(--nimote-bg-subtle);
+  white-space: nowrap;
+}
+
+.pf-feature-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.pf-feature-card li {
+  margin: 0.55rem 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--nimote-text-secondary);
+  padding-left: 18px;
+  position: relative;
+}
+.pf-feature-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--nimote-accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Light-mode overrides --------------------------------------------------- */
+html:not(.dark) .pf-feature-card,
+html:not(.dark) .pf-plan-card {
+  border-color: var(--nimote-border);
+  background: var(--nimote-card);
+  box-shadow: var(--nimote-panel-shadow);
+}
+html:not(.dark) .pf-plan-card.is-featured {
+  border-color: var(--nimote-border-accent);
+  background: var(--nimote-card);
+  box-shadow: var(--nimote-shadow-brand);
+}
+html:not(.dark) .pf-card-head span {
+  background: var(--nimote-bg-subtle);
+  border-color: var(--nimote-border);
+  color: var(--nimote-text-secondary);
+}
+html:not(.dark) .pf-billing-toggle button.active {
+  background: var(--nimote-card);
+  color: var(--nimote-text-primary);
+  box-shadow: var(--nimote-shadow-xs);
+}
+
+/* Responsive ------------------------------------------------------------- */
+@media (max-width: 900px) {
+  .pf-feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .pricing-page .nimote-marketing-doc {
+    width: min(100% - 40px, 1120px);
+  }
+
+  .pf-pricing-grid {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 480px;
+  }
+
+  .pf-trial-banner {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    padding: 24px;
+  }
+  .pf-trial-banner .home-page-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .pf-feature-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .pf-plan-card {
+    padding: 1.7rem;
+  }
+
+  .pf-price-row strong {
+    font-size: 2.4rem;
+  }
+}
