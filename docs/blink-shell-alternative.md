@@ -5,6 +5,8 @@ description: "Looking for a Blink Shell alternative for mobile development? Nimo
 
 # A Blink Shell Alternative for Mobile Coding Workflows
 
+<p class="article-meta">Last verified: 2026-09-14 · Blink workflow references: <a href="https://docs.blink.sh/advanced/code" target="_blank" rel="nofollow noopener noreferrer">official Blink Code documentation</a>.</p>
+
 Shell access is a powerful way to work from a mobile device. When the job involves a repository, however, the command line is only one part of the loop. You need to inspect the tree, make an edit, check the output and review the result before it becomes a change someone else depends on.
 
 NimoteCode is an alternative to consider when you want that work to happen in one mobile development workspace: **Editor + Explorer + SSH + Terminal + Git + AI Chat and Agent**.

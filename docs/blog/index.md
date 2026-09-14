@@ -10,7 +10,7 @@ Practical guides and engineering notes on coding from a phone — over SSH, with
 ## Featured Article
 
 <div class="product-card-grid blog-index-cards">
-  <a class="product-card product-card-featured" href="/blog/best-ssh-clients"><strong>Best SSH Clients in 2026: Android, Mobile &amp; Desktop Compared</strong><span>Terminal-first tools vs developer-oriented clients — Termius, Blink Shell, ConnectBot, Termux, OpenSSH, PuTTY and NimoteCode. Start here to choose an SSH client by the work, not the shell.</span></a>
+  <a class="product-card product-card-featured" href="/blog/best-ssh-clients"><strong>The Best Mobile IDEs in 2026</strong><span>Compare terminal-first, cloud, editor-first and workspace-first approaches for mobile development. Start with the workflow you need to complete.</span></a>
 </div>
 
 ## Latest Guides

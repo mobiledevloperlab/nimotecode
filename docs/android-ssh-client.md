@@ -27,7 +27,7 @@ A terminal-first client is genuinely useful, and it is the correct choice for ma
 - Run commands, read logs and manage services.
 - Transfer files with tools such as `scp` or `sftp` from the command line.
 
-If your Android device is a way to reach a server, a lightweight client keeps things simple. You can compare terminal-first tools in the [SSH clients guide](/blog/best-ssh-clients).
+If your Android device is a way to reach a server, a lightweight client keeps things simple. For the broader mobile-development context, see [the mobile IDE guide](/blog/best-ssh-clients).
 
 ## What a developer-oriented SSH client adds
 
@@ -71,7 +71,7 @@ Files open in a real editor with tabs, split panes on larger screens, project se
 
 ## Android SSH client or mobile IDE?
 
-Use a lightweight client if your work begins and ends at a command prompt. Choose NimoteCode when your SSH session is part of a wider coding task: editing a project, using Git, checking a test result, or collaborating with an AI coding assistant. If you want the broader picture first, start with the [SSH clients guide](/blog/best-ssh-clients) or the [SSH IDE overview](/ssh-ide).
+Use a lightweight client if your work begins and ends at a command prompt. Choose NimoteCode when your SSH session is part of a wider coding task: editing a project, using Git, checking a test result, or collaborating with an AI coding assistant. If you want the broader picture first, start with [the mobile IDE guide](/blog/best-ssh-clients) or the [SSH IDE overview](/ssh-ide).
 
 ## Frequently asked questions
 
@@ -113,7 +113,7 @@ NimoteCode is available for Android on Google Play and for iPhone and iPad on th
 
 ## Related pages
 
-- [Best SSH clients in 2026](/blog/best-ssh-clients) — how Android, mobile, terminal and desktop clients compare
+- [The Best Mobile IDEs in 2026](/blog/best-ssh-clients) — how workspace and terminal-first approaches fit different tasks
 - [SSH IDE for remote development](/ssh-ide)
 - [Mobile AI coding](/mobile-ai-coding)
 - [Features and availability](/features)

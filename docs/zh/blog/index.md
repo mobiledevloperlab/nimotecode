@@ -10,7 +10,7 @@ description: "来自 NimoteCode 团队的移动编程、AI 编程、远程开发
 ## 精选文章
 
 <div class="product-card-grid blog-index-cards">
-  <a class="product-card product-card-featured" href="/zh/blog/best-mobile-ides"><strong>2026 年最好的移动 IDE：应该看什么(以及 NimoteCode 如何契合)</strong><span>移动 IDE 全景指南——SSH 客户端、云 IDE、纯编辑器与完整移动工作区如何取舍。从这里开始了解整个品类。</span></a>
+  <a class="product-card product-card-featured" href="/zh/blog/best-ssh-clients"><strong>2026 年最好的移动 IDE：应该看什么(以及 NimoteCode 如何契合)</strong><span>移动 IDE 全景指南——SSH 客户端、云 IDE、纯编辑器与完整移动工作区如何取舍。从这里开始了解整个品类。</span></a>
 </div>
 
 ## 最新指南

@@ -5,6 +5,8 @@ description: 需要面向编程工作的 Termius 替代品？NimoteCode 在同�
 
 # 面向需要修改代码的开发者的 Termius 替代品
 
+<p class="article-meta">最后核实：2026-09-14 · Termius 定位与功能请参阅<a href="https://termius.com/" target="_blank" rel="nofollow noopener noreferrer">Termius 官方网站</a>。</p>
+
 搜索 **Termius 替代品**的人，通常希望从手机或平板获得可靠的 SSH 访问。这是个不错的起点。但只要远程会话经常演变成一次代码改动，纯终端工作流就会让任务的其余部分散落在多个应用里。
 
 NimoteCode 是为这份更大工作而生的移动开发工作区。在 SSH 与终端之外，它还提供 Explorer、Editor、Git、AI Chat 与 Agent，让你可以贯穿一个仓库工作，而不只是与 shell 交互。

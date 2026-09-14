@@ -7,6 +7,21 @@ description: Complete release notes for NimoteCode, including new features, impr
 
 This page contains the complete public release history. NimoteCode is available on Android through Google Play and on iPhone and iPad through the App Store; see the [Download page](/download) for current store links.
 
+## 1.1.8 · September 14, 2026
+
+Version 1.1.8 begins **Early Access Pro**. It is for users who want to try Pro workflows early and help shape the experience as it reaches more people. The newest build is rolling out through [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) and the [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253); store availability can vary by region and rollout status.
+
+### Early Access Pro
+
+- **Try Pro early.** Early Access Pro opens the next phase of Pro availability for users who want to explore the complete mobile development workflow.
+- **Help guide the rollout.** Early users can use the experience in real projects and share feedback as availability expands.
+- **Get the current build from the stores.** The installation package attached to the current GitHub Release is an older build and does not include the major 1.1.6–1.1.7 updates. Download or update through Google Play or the App Store when the latest version appears for your account and region.
+
+### Recent major updates
+
+- **1.1.7:** Android Local Linux, HTML snapshot preview, external ACP agents, and a unified SSH login environment, alongside broad reliability improvements for Editor, AI, and Tasks.
+- **1.1.6:** First-launch onboarding, a code-oriented editor default, clearer subscription and theme presentation, plus fixes for Editor, in-app browser, Git status, and iOS text input.
+
 ## 1.1.7 · September 12, 2026
 
 Released September 12, 2026 (Build 41). This release adds an Android Local Linux development environment, improves HTML and link previews, and makes Editor, AI, and Task operations more reliable. It also brings external ACP agents and a unified SSH login environment.

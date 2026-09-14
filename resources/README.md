@@ -10,5 +10,8 @@ This directory is a small, maintained set of technical notes for developers who 
 | [Mobile AI coding](mobile-ai-coding.md) | keep an AI agent inside a reviewable engineering loop |
 | [SSH development tools](ssh-development-tools.md) | choose the pieces of an SSH-based workflow |
 | [Claude Code on a phone](claude-code-on-phone.md) | operate a host-installed Claude Code session from mobile |
+| [Mobile coding workflows](mobile-coding-workflows.md) | choose an SSH, on-device Linux, cloud, Git, and AI workflow |
+| [Android Linux vs remote development](android-linux-vs-remote-development.md) | compare Termux, PRoot, SSH, and cloud environments |
+| [Mobile AI agent workflows](mobile-ai-agent-workflows.md) | compare built-in, CLI, ACP, and chat-only agent contexts |
 
 For product-specific setup, see the [NimoteCode documentation](https://nimotecode.com/docs/quick-start). For reproducible workflow outlines, see [examples](../examples/README.md). Android Local Linux presets, manifests, and validation live in the separate [NimoteCode Linux Presets repository](https://github.com/mobiledevloperlab/nimote-linux-presets).

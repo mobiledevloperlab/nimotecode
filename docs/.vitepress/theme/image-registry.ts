@@ -27,7 +27,7 @@ const SCREENSHOT_PHONE_HEIGHT = 2780
 
 export const placeholderImages = {
   quickStart: {
-    phone: { src: '/images/placeholders/24_LocalWorkSpace.jpg', width: SCREENSHOT_PHONE_WIDTH, height: SCREENSHOT_PHONE_HEIGHT }
+    phone: { src: '/screenshots/nimote-pro.webp', width: 1440, height: 810 }
   },
   sshWorkspace: {
     phone: {
@@ -171,9 +171,9 @@ export const placeholderImages = {
   },
   bestSshClients: {
     phone: {
-      src: '/images/placeholders/SSH_Workspace_Phone.PNG',
-      width: PHONE_WIDTH,
-      height: PHONE_HEIGHT
+      src: '/screenshots/nimote-pro.webp',
+      width: 1440,
+      height: 810
     }
   },
   gitCommitRecord: {

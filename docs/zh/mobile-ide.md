@@ -72,4 +72,4 @@ NimoteCode 已上架 Google Play（Android）与 App Store（iPhone 与 iPad）�
 - [面向远程开发的 SSH IDE](/zh/ssh-ide)
 - [移动 AI 编程](/zh/mobile-ai-coding)
 - [iPad 编程工作区](/zh/ipad-coding)
-- [2026 年最好的移动 IDE](/zh/blog/best-mobile-ides)
+- [2026 年最好的移动 IDE](/zh/blog/best-ssh-clients)
