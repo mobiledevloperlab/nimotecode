@@ -1,0 +1,36 @@
+node_modules
+merge.sh
+merged_docs.md
+docs/.vitepress/cache
+docs/.vitepress/dist
+opencode.json
+.serena
+
+# Complete corresponding-source archives are published to Cloudflare R2, never
+# committed: a Local Linux source bundle is several hundred megabytes and must
+# not enter the Git repository or the Pages build artifact.
+*.tar
+*.tar.gz
+*.tgz
+*.tar.xz
+*.tar.zst
+source-bundles/
+
+# Exception: PRoot/talloc corresponding source is small and is published
+# alongside the Ubuntu bundle metadata, so it stays version controlled.
+!docs/public/opensource/local-linux/**/licenses/proot-corresponding-source.tgz
+
+# Working directories used by scripts/publish-local-linux-source.sh.
+.local-linux-source-staging/
+.local-linux-source-backup/
+
+# Cloudflare credentials and CLI state. The release credentials live outside the
+# repository (~/.config/nimotecode/cloudflare.env, mode 600) and are read with
+# --credentials; nothing here may ever be committed.
+.env
+.env.*
+*.env
+.dev.vars
+.dev.vars.*
+.wrangler/
+wrangler-*.log

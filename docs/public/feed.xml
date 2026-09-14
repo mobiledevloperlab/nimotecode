@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NimoteCode Blog</title>
+    <link>https://nimotecode.com/blog/</link>
+    <description>NimoteCode is a mobile-first IDE built with Flutter and Rust. Personal notes on building a mobile IDE and the state of mobile software development.</description>
+    <language>en</language>
+    <atom:link href="https://nimotecode.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Can an AI Agent Really Code From a Phone?</title>
+      <link>https://nimotecode.com/blog/can-an-ai-agent-really-code-from-a-phone</link>
+      <guid>https://nimotecode.com/blog/can-an-ai-agent-really-code-from-a-phone</guid>
+      <description>A real AI Agent demo inside NimoteCode: plan a task, create and edit code, run commands, verify results and commit changes from a phone over SSH.</description>
+      <pubDate>Sat, 30 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Agent Design is Bounded Optimization, Not Intelligence</title>
+      <link>https://nimotecode.com/blog/agent-design-is-bounded-optimization-not-intelligence</link>
+      <guid>https://nimotecode.com/blog/agent-design-is-bounded-optimization-not-intelligence</guid>
+      <description>A practitioner's view on AI agents: an agent is not intelligence but a bounded optimization process operating over partial information—and knowing when to stop.</description>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>I Built a Mobile IDE With ~90% AI-Generated Code — It Still Took 6 Months</title>
+      <link>https://nimotecode.com/blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me-6-months</link>
+      <guid>https://nimotecode.com/blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me-6-months</guid>
+      <description>A mobile IDE shipping story: ~90% AI-generated code still took six months. What AI accelerated, what it didn't, and what really took the time.</description>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Is Local Heavy Compilation Dead? The Rise of AI-Agentic Mobile IDEs</title>
+      <link>https://nimotecode.com/blog/is-local-heavy-compilation-dead-the-rise-of-2026-ai-agentic-mobile-ides</link>
+      <guid>https://nimotecode.com/blog/is-local-heavy-compilation-dead-the-rise-of-2026-ai-agentic-mobile-ides</guid>
+      <description>In 2026, mobile IDEs move past &quot;code editors on a tablet&quot; toward thin-client workspaces driven by AI agents and remote execution. A look at the shift.</description>
+      <pubDate>Fri, 12 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>SSH + Mobile Coding Is Still Broken, So I Built My Own IDE</title>
+      <link>https://nimotecode.com/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide</link>
+      <guid>https://nimotecode.com/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide</guid>
+      <description>Most mobile coding tools only edit code or only give you a terminal. Real dev work needs SSH, files, terminal and Git together—so I built a mobile IDE.</description>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Why Existing Flutter Code Editors Broke Down When I Built a Mobile IDE</title>
+      <link>https://nimotecode.com/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide</link>
+      <guid>https://nimotecode.com/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide</guid>
+      <description>I built a mobile IDE and discovered existing Flutter code editor packages break down once you add SSH, LSP, Git diff and remote files. Why I rebuilt the editor core.</description>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Why I Decided to Build a Mobile IDE Instead of Another AI App</title>
+      <link>https://nimotecode.com/blog/why-i-decided-to-build-a-mobile-ide-instead-of-another-ai-app</link>
+      <guid>https://nimotecode.com/blog/why-i-decided-to-build-a-mobile-ide-instead-of-another-ai-app</guid>
+      <description>AI apps on mobile are mostly chat interfaces. A mobile IDE can own the whole loop—intent, generation, execution, iteration—instead of only producing a response.</description>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

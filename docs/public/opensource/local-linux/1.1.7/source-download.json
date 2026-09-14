@@ -1,0 +1,24 @@
+{
+  "product": "NimoteCode Local Linux",
+  "version": "1.1.7",
+  "distribution": "Ubuntu 24.04 LTS",
+  "architectures": [
+    "arm64",
+    "amd64"
+  ],
+  "filename": "nimotecode-local-linux-sources-1.1.7.tar.zst",
+  "size": 338435534,
+  "sha256": "5425bacb9685099f99e7be9b1eb212c10ddcbf20762740559547970f7b950b15",
+  "downloadUrl": "https://opensource-downloads.nimotecode.com/local-linux/1.1.7/nimotecode-local-linux-sources-1.1.7.tar.zst",
+  "sourceAvailable": true,
+  "published": true,
+  "objectKey": "local-linux/1.1.7/nimotecode-local-linux-sources-1.1.7.tar.zst",
+  "releaseUrl": "https://nimotecode.com/opensource/local-linux/1.1.7",
+  "checksumsUrl": "https://nimotecode.com/opensource/local-linux/1.1.7/SHA256SUMS",
+  "manifestUrl": "https://nimotecode.com/opensource/local-linux/1.1.7/source-manifest.json",
+  "licensesUrl": "https://nimotecode.com/opensource/local-linux/1.1.7/licenses/",
+  "provenanceUrl": "https://nimotecode.com/opensource/local-linux/1.1.7/provenance/",
+  "repositoryUrl": "https://github.com/mobiledevloperlab/nimotecode",
+  "metadataRepositoryUrl": "https://github.com/mobiledevloperlab/nimotecode/tree/main/docs/public/opensource/local-linux/1.1.7",
+  "buildScriptUrl": "https://github.com/mobiledevloperlab/nimotecode/blob/main/scripts/publish-local-linux-source.sh"
+}

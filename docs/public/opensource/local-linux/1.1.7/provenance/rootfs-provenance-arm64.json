@@ -1,0 +1,1353 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-14T02:03:35.748325+00:00",
+  "architecture": "arm64",
+  "rootfs": {
+    "sha256": "8bdb7c5991831f8999ef83f3777dcea6b338dc3d83d48e3bad898da660b437ee",
+    "size": 53455740
+  },
+  "baseImage": {
+    "url": "https://cdimage.ubuntu.com/ubuntu-base/releases/noble/release/ubuntu-base-24.04.3-base-arm64.tar.gz",
+    "sha256": "7b2dced6dd56ad5e4a813fa25c8de307b655fdabc6ea9213175a92c48dabb048",
+    "timestamp": "2025-08-06T00:00:00Z"
+  },
+  "releaseMetadata": [
+    {
+      "file": "noble-InRelease",
+      "sha256": "cdb2f31d809f589719a53c6ad15f255b27569c4059542ada282aaa21b8e164b0",
+      "size": 255850
+    },
+    {
+      "file": "noble-main-binary-arm64-Packages.gz",
+      "sha256": "86d8c27108110e8ebceb4b8548e2995c422cff642666b4ca0307be7358c68b21",
+      "size": 1775784
+    },
+    {
+      "file": "noble-multiverse-binary-arm64-Packages.gz",
+      "sha256": "3bc86fa589e1a3809dcd76fb2a8d7865013defdc92a1ac664fd715ffd883255d",
+      "size": 273513
+    },
+    {
+      "file": "noble-restricted-binary-arm64-Packages.gz",
+      "sha256": "2d6dd5e0280dfe6cdd758949e8142d3a378ff6f162533e085097fe37dd71e77f",
+      "size": 113288
+    },
+    {
+      "file": "noble-security-InRelease",
+      "sha256": "65e46f2a73c2e47cc10498a361955f07ec036141df626d5b57ef343599089cf1",
+      "size": 126127
+    },
+    {
+      "file": "noble-security-main-binary-arm64-Packages.gz",
+      "sha256": "2b8e16115f600b286b247973d629f4ad900dc937445aacb88ef2a9226d1b91bb",
+      "size": 1305776
+    },
+    {
+      "file": "noble-security-multiverse-binary-arm64-Packages.gz",
+      "sha256": "3fdfda62915cb5faf6963d260deaeb705c7a893c0973bfc969edfe3bf4789209",
+      "size": 87689
+    },
+    {
+      "file": "noble-security-restricted-binary-arm64-Packages.gz",
+      "sha256": "5fdaf748205648db338b6da71f9a9952ac0c0a950b5e63c0e79ae6d835698633",
+      "size": 2693112
+    },
+    {
+      "file": "noble-security-universe-binary-arm64-Packages.gz",
+      "sha256": "5dbca41baa035f98cae4ce815f6f861e422a817482c4d2b796d07800f107c8f3",
+      "size": 1616499
+    },
+    {
+      "file": "noble-universe-binary-arm64-Packages.gz",
+      "sha256": "b8408fe3d33d80c5f9b958ae19dc20f2a19ff65b0d1522e1e86d44316f552307",
+      "size": 19026623
+    },
+    {
+      "file": "noble-updates-InRelease",
+      "sha256": "17ae7e2b95ebd0907edf9249ff04cc4789146f15754df75c1f7579e1ea769a64",
+      "size": 126125
+    },
+    {
+      "file": "noble-updates-main-binary-arm64-Packages.gz",
+      "sha256": "9d8f517d2d29ed3e120b1bd67c612188794f0f58730a0cfadf49e8fdbf40da79",
+      "size": 1623789
+    },
+    {
+      "file": "noble-updates-multiverse-binary-arm64-Packages.gz",
+      "sha256": "e987adebed5a7204068481b49ecc8918a65e038529599c9346f31a8ac779a4ae",
+      "size": 92159
+    },
+    {
+      "file": "noble-updates-restricted-binary-arm64-Packages.gz",
+      "sha256": "757671c950b9851cea5b10602e0e9ad567168ee4018c9a9f83ec683fd66d2551",
+      "size": 2821834
+    },
+    {
+      "file": "noble-updates-universe-binary-arm64-Packages.gz",
+      "sha256": "574c010933726081d6a722e083581e6caab1ee0b65abff50ea34d84ad1a715bf",
+      "size": 2194580
+    }
+  ],
+  "debs": [
+    {
+      "package": "adduser",
+      "version": "3.137ubuntu1",
+      "architecture": "all",
+      "sourcePackage": "adduser",
+      "sourceVersion": "3.137ubuntu1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/adduser/adduser_3.137ubuntu1_all.deb",
+      "sha256": "542aff2395eb912a56833e11a78076342779689d8fede7adcf08d1d6b0d0cd8b",
+      "size": 100872
+    },
+    {
+      "package": "apt",
+      "version": "2.8.3",
+      "architecture": "arm64",
+      "sourcePackage": "apt",
+      "sourceVersion": "2.8.3",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/apt/apt_2.8.3_arm64.deb",
+      "sha256": "564786b3f42d88e2007c7a72616f3223ead68adbe0d4c39529599cb6cfb82ad7",
+      "size": 1335690
+    },
+    {
+      "package": "base-files",
+      "version": "13ubuntu10.4",
+      "architecture": "arm64",
+      "sourcePackage": "base-files",
+      "sourceVersion": "13ubuntu10.4",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/b/base-files/base-files_13ubuntu10.4_arm64.deb",
+      "sha256": "1b22f149ae67c1995615be284899e7b6bb1eed32884944905ab8414f44bbcf0a",
+      "size": 73410
+    },
+    {
+      "package": "base-passwd",
+      "version": "3.6.3build1",
+      "architecture": "arm64",
+      "sourcePackage": "base-passwd",
+      "sourceVersion": "3.6.3build1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/b/base-passwd/base-passwd_3.6.3build1_arm64.deb",
+      "sha256": "d9bbc2cfb535ee6f177df8ef685be8932a24c3ec46269183dc78319770e78caf",
+      "size": 51144
+    },
+    {
+      "package": "bash",
+      "version": "5.2.21-2ubuntu4",
+      "architecture": "arm64",
+      "sourcePackage": "bash",
+      "sourceVersion": "5.2.21-2ubuntu4",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/b/bash/bash_5.2.21-2ubuntu4_arm64.deb",
+      "sha256": "1cb8aa182b8124a5304b5d5cf24300e295c9f6ff22a2565fcecae686c0492f09",
+      "size": 780262
+    },
+    {
+      "package": "bsdutils",
+      "version": "1:2.39.3-9ubuntu6.6",
+      "architecture": "arm64",
+      "sourcePackage": "util-linux",
+      "sourceVersion": "2.39.3-9ubuntu6.6",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/u/util-linux/bsdutils_2.39.3-9ubuntu6.6_arm64.deb",
+      "sha256": "72af29010e8f5240dc3e68686fd079819cd79df4deeff5b0e6aa53f2e9ba6a4f",
+      "size": 99102
+    },
+    {
+      "package": "ca-certificates",
+      "version": "20260601~24.04.1",
+      "architecture": "all",
+      "sourcePackage": "ca-certificates",
+      "sourceVersion": "20260601~24.04.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/c/ca-certificates/ca-certificates_20260601~24.04.1_all.deb",
+      "sha256": "6bac2a01979e210d9eac1d4d56747ec709ea60654744d66705dc3c36e7629e50",
+      "size": 139430
+    },
+    {
+      "package": "coreutils",
+      "version": "9.4-3ubuntu6.3",
+      "architecture": "arm64",
+      "sourcePackage": "coreutils",
+      "sourceVersion": "9.4-3ubuntu6.3",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.3_arm64.deb",
+      "sha256": "1a0b163febf032934ecc3c7a71769c90a9b68cdbdd8c3afa7f3ef985b4c962da",
+      "size": 1363982
+    },
+    {
+      "package": "dash",
+      "version": "0.5.12-6ubuntu5",
+      "architecture": "arm64",
+      "sourcePackage": "dash",
+      "sourceVersion": "0.5.12-6ubuntu5",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/dash/dash_0.5.12-6ubuntu5_arm64.deb",
+      "sha256": "ff6f0bbd178f02160f3b1de49650b2d9686aace1ac7bf14f85201f8502f1df20",
+      "size": 90376
+    },
+    {
+      "package": "debconf",
+      "version": "1.5.86ubuntu1",
+      "architecture": "all",
+      "sourcePackage": "debconf",
+      "sourceVersion": "1.5.86ubuntu1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/debconf/debconf_1.5.86ubuntu1_all.deb",
+      "sha256": "bb390da466a7461bfc87aa3e6b7cd145dae84af3e26bf437f2c0c218ba226294",
+      "size": 124096
+    },
+    {
+      "package": "debianutils",
+      "version": "5.17build1",
+      "architecture": "arm64",
+      "sourcePackage": "debianutils",
+      "sourceVersion": "5.17build1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/debianutils/debianutils_5.17build1_arm64.deb",
+      "sha256": "7419da04f9c467986b2176e799f3683b9403c643966084d0f6054f2a5b8919e9",
+      "size": 90236
+    },
+    {
+      "package": "diffutils",
+      "version": "1:3.10-1ubuntu0.1",
+      "architecture": "arm64",
+      "sourcePackage": "diffutils",
+      "sourceVersion": "1:3.10-1ubuntu0.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/diffutils/diffutils_3.10-1ubuntu0.1_arm64.deb",
+      "sha256": "ff3729fe2ae35a0861566a11255cc5d7e2fd2e4a6e2dd0d389507307d084614d",
+      "size": 174878
+    },
+    {
+      "package": "dpkg",
+      "version": "1.22.6ubuntu6.6",
+      "architecture": "arm64",
+      "sourcePackage": "dpkg",
+      "sourceVersion": "1.22.6ubuntu6.6",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.6_arm64.deb",
+      "sha256": "c34117a1f62fe8a2026cfba7bde0ec3fedd5d39abad7515bdd45fffcec764288",
+      "size": 1264616
+    },
+    {
+      "package": "e2fsprogs",
+      "version": "1.47.0-2.4~exp1ubuntu4.1",
+      "architecture": "arm64",
+      "sourcePackage": "e2fsprogs",
+      "sourceVersion": "1.47.0-2.4~exp1ubuntu4.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/e/e2fsprogs/e2fsprogs_1.47.0-2.4~exp1ubuntu4.1_arm64.deb",
+      "sha256": "95f305751689654f41813818f9d4f029880072657d2ee7a1a27b7d19e02a53e6",
+      "size": 594152
+    },
+    {
+      "package": "findutils",
+      "version": "4.9.0-5build1",
+      "architecture": "arm64",
+      "sourcePackage": "findutils",
+      "sourceVersion": "4.9.0-5build1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/f/findutils/findutils_4.9.0-5build1_arm64.deb",
+      "sha256": "260f15b1da771ce33c9179970aab3fbc0104620628d1826b8b9de19ea4483fe4",
+      "size": 300282
+    },
+    {
+      "package": "gcc-14-base",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "architecture": "arm64",
+      "sourcePackage": "gcc-14",
+      "sourceVersion": "14.2.0-4ubuntu2~24.04.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gcc-14/gcc-14-base_14.2.0-4ubuntu2~24.04.1_arm64.deb",
+      "sha256": "bddbe21061fdc73a23e7de79ece91693bf61aa22d634d1c69c5048385c114968",
+      "size": 50984
+    },
+    {
+      "package": "git",
+      "version": "1:2.43.0-1ubuntu7.3",
+      "architecture": "arm64",
+      "sourcePackage": "git",
+      "sourceVersion": "1:2.43.0-1ubuntu7.3",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/git/git_2.43.0-1ubuntu7.3_arm64.deb",
+      "sha256": "db7f9a9a06a5dd6d6d5bd4bc3b14a2a0f0aaf0cc48f6e096e7ba3f4db63503ee",
+      "size": 3773542
+    },
+    {
+      "package": "git-man",
+      "version": "1:2.43.0-1ubuntu7.3",
+      "architecture": "all",
+      "sourcePackage": "git",
+      "sourceVersion": "1:2.43.0-1ubuntu7.3",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/git/git-man_2.43.0-1ubuntu7.3_all.deb",
+      "sha256": "5701f931ed2cd30644700b0fc1cda7c2214f93a63ef84c0c80e43ce40d2cf1d2",
+      "size": 1100178
+    },
+    {
+      "package": "gpgv",
+      "version": "2.4.4-2ubuntu17.6",
+      "architecture": "arm64",
+      "sourcePackage": "gnupg2",
+      "sourceVersion": "2.4.4-2ubuntu17.6",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gnupg2/gpgv_2.4.4-2ubuntu17.6_arm64.deb",
+      "sha256": "38b5965d0eba9d75ea1c946127f3df8ef66cf0b26801df766ef1c9c481b2bb15",
+      "size": 151008
+    },
+    {
+      "package": "grep",
+      "version": "3.11-4build1",
+      "architecture": "arm64",
+      "sourcePackage": "grep",
+      "sourceVersion": "3.11-4build1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/grep/grep_3.11-4build1_arm64.deb",
+      "sha256": "275938cc6b1e4ab16f803bcc62961ee88312298d9d36b5b1e7a3590d795e3921",
+      "size": 158728
+    },
+    {
+      "package": "gzip",
+      "version": "1.12-1ubuntu3.2",
+      "architecture": "arm64",
+      "sourcePackage": "gzip",
+      "sourceVersion": "1.12-1ubuntu3.2",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gzip/gzip_1.12-1ubuntu3.2_arm64.deb",
+      "sha256": "2b9d72b48c5fb2bf266295a87a73cf69646b34f24f0249c04d051ee765a6b72b",
+      "size": 97552
+    },
+    {
+      "package": "hostname",
+      "version": "3.23+nmu2ubuntu2",
+      "architecture": "arm64",
+      "sourcePackage": "hostname",
+      "sourceVersion": "3.23+nmu2ubuntu2",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/h/hostname/hostname_3.23+nmu2ubuntu2_arm64.deb",
+      "sha256": "a93ebcd0000a9653fd386a5e7bb3f0bd008babc4311454bfe88f531a53b8ea20",
+      "size": 10990
+    },
+    {
+      "package": "init-system-helpers",
+      "version": "1.66ubuntu1",
+      "architecture": "all",
+      "sourcePackage": "init-system-helpers",
+      "sourceVersion": "1.66ubuntu1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/i/init-system-helpers/init-system-helpers_1.66ubuntu1_all.deb",
+      "sha256": "8eb801f9ce084dab9bf4cbc3ec0ee5ac75516a4cc1f25e3f92298c632e75b700",
+      "size": 39402
+    },
+    {
+      "package": "libacl1",
+      "version": "2.3.2-1build1.1",
+      "architecture": "arm64",
+      "sourcePackage": "acl",
+      "sourceVersion": "2.3.2-1build1.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/acl/libacl1_2.3.2-1build1.1_arm64.deb",
+      "sha256": "ebc53ded654fcf4449df250cb563ff05f10d851e904e638f698dc7e921ffa47b",
+      "size": 17050
+    },
+    {
+      "package": "libapt-pkg6.0t64",
+      "version": "2.8.3",
+      "architecture": "arm64",
+      "sourcePackage": "apt",
+      "sourceVersion": "2.8.3",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/apt/libapt-pkg6.0t64_2.8.3_arm64.deb",
+      "sha256": "595f828459f4b1ae98a5f2bb29346141d92a8f0e7f4c621aec664f42f0fbf38e",
+      "size": 936590
+    },
+    {
+      "package": "libassuan0",
+      "version": "2.5.6-1build1",
+      "architecture": "arm64",
+      "sourcePackage": "libassuan",
+      "sourceVersion": "2.5.6-1build1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/liba/libassuan/libassuan0_2.5.6-1build1_arm64.deb",
+      "sha256": "7d6c7b49d63422d3cb813406d0b5f698439b4619d6491ef6a73c09bbf30ba625",
+      "size": 36750
+    },
+    {
+      "package": "libattr1",
+      "version": "1:2.5.2-1ubuntu0.1",
+      "architecture": "arm64",
+      "sourcePackage": "attr",
+      "sourceVersion": "1:2.5.2-1ubuntu0.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/attr/libattr1_2.5.2-1ubuntu0.1_arm64.deb",
+      "sha256": "750d0f25a7e4cfbcb16efffb9ef83c099b8af75db38f77675dd8d0ad88db5ec0",
+      "size": 11428
+    },
+    {
+      "package": "libaudit-common",
+      "version": "1:3.1.2-2.1build1.1",
+      "architecture": "all",
+      "sourcePackage": "audit",
+      "sourceVersion": "1:3.1.2-2.1build1.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/audit/libaudit-common_3.1.2-2.1build1.1_all.deb",
+      "sha256": "c8ab5bed96f9781daab7c36fcbe4b12c3f3247a37256c0e341dc827db1e9a010",
+      "size": 5824
+    },
+    {
+      "package": "libaudit1",
+      "version": "1:3.1.2-2.1build1.1",
+      "architecture": "arm64",
+      "sourcePackage": "audit",
+      "sourceVersion": "1:3.1.2-2.1build1.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/a/audit/libaudit1_3.1.2-2.1build1.1_arm64.deb",
+      "sha256": "6cca04d5483a634ff2ed78a31897bad1941226b8b6fc13030d8bb1d688ef2583",
+      "size": 47524
+    },
+    {
+      "package": "libblkid1",
+      "version": "2.39.3-9ubuntu6.6",
+      "architecture": "arm64",
+      "sourcePackage": "util-linux",
+      "sourceVersion": "2.39.3-9ubuntu6.6",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/u/util-linux/libblkid1_2.39.3-9ubuntu6.6_arm64.deb",
+      "sha256": "a1750e39d8e446267f6334562e993795c25030c320852fba2fb589a0dc9e52d3",
+      "size": 124240
+    },
+    {
+      "package": "libbrotli1",
+      "version": "1.1.0-2build2",
+      "architecture": "arm64",
+      "sourcePackage": "brotli",
+      "sourceVersion": "1.1.0-2build2",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/b/brotli/libbrotli1_1.1.0-2build2_arm64.deb",
+      "sha256": "cabf3462d908e72f2e594f19ae87c581c4614f099947e38fbd865bf8eae27014",
+      "size": 339424
+    },
+    {
+      "package": "libbsd0",
+      "version": "0.12.1-1build1.1",
+      "architecture": "arm64",
+      "sourcePackage": "libbsd",
+      "sourceVersion": "0.12.1-1build1.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libb/libbsd/libbsd0_0.12.1-1build1.1_arm64.deb",
+      "sha256": "cdf9ff601244e64482584d9d9b98aa54a573c081ab5956227c737307196c1ce3",
+      "size": 40970
+    },
+    {
+      "package": "libbz2-1.0",
+      "version": "1.0.8-5.1ubuntu0.1",
+      "architecture": "arm64",
+      "sourcePackage": "bzip2",
+      "sourceVersion": "1.0.8-5.1ubuntu0.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/b/bzip2/libbz2-1.0_1.0.8-5.1ubuntu0.1_arm64.deb",
+      "sha256": "1a92811105f89bf948a629de99715ef23941ef93c901e0942883029069db3f94",
+      "size": 35936
+    },
+    {
+      "package": "libc-bin",
+      "version": "2.39-0ubuntu8.8",
+      "architecture": "arm64",
+      "sourcePackage": "glibc",
+      "sourceVersion": "2.39-0ubuntu8.8",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/glibc/libc-bin_2.39-0ubuntu8.8_arm64.deb",
+      "sha256": "c0221a695bc9cfc7c24de9b6a92eb56621444402c2de1797793f818dad8e0174",
+      "size": 590914
+    },
+    {
+      "package": "libc6",
+      "version": "2.39-0ubuntu8.8",
+      "architecture": "arm64",
+      "sourcePackage": "glibc",
+      "sourceVersion": "2.39-0ubuntu8.8",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/glibc/libc6_2.39-0ubuntu8.8_arm64.deb",
+      "sha256": "2c6010da71b668e210aedaaac2b71fca3eef810e331710dd7c02b8c40ea16de8",
+      "size": 2775342
+    },
+    {
+      "package": "libcap-ng0",
+      "version": "0.8.4-2build2",
+      "architecture": "arm64",
+      "sourcePackage": "libcap-ng",
+      "sourceVersion": "0.8.4-2build2",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libc/libcap-ng/libcap-ng0_0.8.4-2build2_arm64.deb",
+      "sha256": "ffaaedcfab1d1cc48997f09e88b6664f2cc7cba1c7e15bf1078084f512697d4d",
+      "size": 14850
+    },
+    {
+      "package": "libcap2",
+      "version": "1:2.66-5ubuntu2.4",
+      "architecture": "arm64",
+      "sourcePackage": "libcap2",
+      "sourceVersion": "1:2.66-5ubuntu2.4",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libc/libcap2/libcap2_2.66-5ubuntu2.4_arm64.deb",
+      "sha256": "3c4459762b9ee61c773209bc45db1ca7cf34e1254cc047260d309a8db11b3490",
+      "size": 30676
+    },
+    {
+      "package": "libcbor0.10",
+      "version": "0.10.2-1.2ubuntu2",
+      "architecture": "arm64",
+      "sourcePackage": "libcbor",
+      "sourceVersion": "0.10.2-1.2ubuntu2",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libc/libcbor/libcbor0.10_0.10.2-1.2ubuntu2_arm64.deb",
+      "sha256": "5350436244647ec206f27e040f71756eb95d44bf79759a54b11f63ea15f87e25",
+      "size": 26022
+    },
+    {
+      "package": "libcom-err2",
+      "version": "1.47.0-2.4~exp1ubuntu4.1",
+      "architecture": "arm64",
+      "sourcePackage": "e2fsprogs",
+      "sourceVersion": "1.47.0-2.4~exp1ubuntu4.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/e/e2fsprogs/libcom-err2_1.47.0-2.4~exp1ubuntu4.1_arm64.deb",
+      "sha256": "7bc569801d708551dd1eb8bf41feaadbc6191344e65d17f26ecf73a6f5b701dd",
+      "size": 22554
+    },
+    {
+      "package": "libcrypt1",
+      "version": "1:4.4.36-4build1",
+      "architecture": "arm64",
+      "sourcePackage": "libxcrypt",
+      "sourceVersion": "1:4.4.36-4build1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libx/libxcrypt/libcrypt1_4.4.36-4build1_arm64.deb",
+      "sha256": "5cd73ba112507dabd8e43b528ca9f530719a370e014b8e3e797770e6e940cccf",
+      "size": 85888
+    },
+    {
+      "package": "libcurl3t64-gnutls",
+      "version": "8.5.0-2ubuntu10.13",
+      "architecture": "arm64",
+      "sourcePackage": "curl",
+      "sourceVersion": "8.5.0-2ubuntu10.13",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/c/curl/libcurl3t64-gnutls_8.5.0-2ubuntu10.13_arm64.deb",
+      "sha256": "124fd75efab0338c58c329e8ec21d35ae461b8bf763a950ab1d0d5511f6f964f",
+      "size": 329604
+    },
+    {
+      "package": "libdb5.3t64",
+      "version": "5.3.28+dfsg2-7",
+      "architecture": "arm64",
+      "sourcePackage": "db5.3",
+      "sourceVersion": "5.3.28+dfsg2-7",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/d/db5.3/libdb5.3t64_5.3.28+dfsg2-7_arm64.deb",
+      "sha256": "b04d246b871e2e745538fa71ce2d1a127dfd65e7b1438bc6b8e2bb86538f519e",
+      "size": 732284
+    },
+    {
+      "package": "libdebconfclient0",
+      "version": "0.271ubuntu3",
+      "architecture": "arm64",
+      "sourcePackage": "cdebconf",
+      "sourceVersion": "0.271ubuntu3",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/c/cdebconf/libdebconfclient0_0.271ubuntu3_arm64.deb",
+      "sha256": "643c8461a9a1ff3a14bccfabe68ec6dac03645d393cc39f3c06c9bba423d7d60",
+      "size": 11280
+    },
+    {
+      "package": "libedit2",
+      "version": "3.1-20230828-1build1",
+      "architecture": "arm64",
+      "sourcePackage": "libedit",
+      "sourceVersion": "3.1-20230828-1build1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libe/libedit/libedit2_3.1-20230828-1build1_arm64.deb",
+      "sha256": "cf642fec16d86517e0e715520c3a7cdaee650e7ae8a4993f82d0e1e7a5883efb",
+      "size": 97526
+    },
+    {
+      "package": "liberror-perl",
+      "version": "0.17029-2",
+      "architecture": "all",
+      "sourcePackage": "liberror-perl",
+      "sourceVersion": "0.17029-2",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libe/liberror-perl/liberror-perl_0.17029-2_all.deb",
+      "sha256": "1907af6bf33dd8684447c09f216c675d2b8559fadd8ddace29fbf83c6fb2a636",
+      "size": 25632
+    },
+    {
+      "package": "libexpat1",
+      "version": "2.6.1-2ubuntu0.4",
+      "architecture": "arm64",
+      "sourcePackage": "expat",
+      "sourceVersion": "2.6.1-2ubuntu0.4",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/e/expat/libexpat1_2.6.1-2ubuntu0.4_arm64.deb",
+      "sha256": "284f48567ba2abe026e12ae351f5f4c3a489ce723f725eacfa51bf715aa94609",
+      "size": 77506
+    },
+    {
+      "package": "libext2fs2t64",
+      "version": "1.47.0-2.4~exp1ubuntu4.1",
+      "architecture": "arm64",
+      "sourcePackage": "e2fsprogs",
+      "sourceVersion": "1.47.0-2.4~exp1ubuntu4.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/e/e2fsprogs/libext2fs2t64_1.47.0-2.4~exp1ubuntu4.1_arm64.deb",
+      "sha256": "f32a0f3298b60aa158c3bae59ba5ebef9de600901bb1918d3ee133ba58cd4648",
+      "size": 224882
+    },
+    {
+      "package": "libffi8",
+      "version": "3.4.6-1build1",
+      "architecture": "arm64",
+      "sourcePackage": "libffi",
+      "sourceVersion": "3.4.6-1build1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libf/libffi/libffi8_3.4.6-1build1_arm64.deb",
+      "sha256": "a4d4607144bc599328a913d7312761fd8f4a650d67c7d5058f1f3667d771d37c",
+      "size": 22716
+    },
+    {
+      "package": "libfido2-1",
+      "version": "1.14.0-1build3",
+      "architecture": "arm64",
+      "sourcePackage": "libfido2",
+      "sourceVersion": "1.14.0-1build3",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libf/libfido2/libfido2-1_1.14.0-1build3_arm64.deb",
+      "sha256": "3436c52f2f6b1fe5dbaf16b03c022b90a5ee94fffab4e6475d18b025411a4956",
+      "size": 82486
+    },
+    {
+      "package": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "architecture": "arm64",
+      "sourcePackage": "gcc-14",
+      "sourceVersion": "14.2.0-4ubuntu2~24.04.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gcc-14/libgcc-s1_14.2.0-4ubuntu2~24.04.1_arm64.deb",
+      "sha256": "5b191f79ad985a9a653dbba45214619f729f9178a9bdf92f7c68db06c50d070b",
+      "size": 61884
+    },
+    {
+      "package": "libgcrypt20",
+      "version": "1.10.3-2ubuntu0.2",
+      "architecture": "arm64",
+      "sourcePackage": "libgcrypt20",
+      "sourceVersion": "1.10.3-2ubuntu0.2",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libg/libgcrypt20/libgcrypt20_1.10.3-2ubuntu0.2_arm64.deb",
+      "sha256": "ee18187ed456e97171adbbf116c9ddc303134e2dc4183d89dec44dcad75c80fe",
+      "size": 475664
+    },
+    {
+      "package": "libgdbm-compat4t64",
+      "version": "1.23-5.1build1",
+      "architecture": "arm64",
+      "sourcePackage": "gdbm",
+      "sourceVersion": "1.23-5.1build1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gdbm/libgdbm-compat4t64_1.23-5.1build1_arm64.deb",
+      "sha256": "e5788a4d0477e0b5bf5cad8950cbd591698828836818c180c20da6f86d68bd37",
+      "size": 6578
+    },
+    {
+      "package": "libgdbm6t64",
+      "version": "1.23-5.1build1",
+      "architecture": "arm64",
+      "sourcePackage": "gdbm",
+      "sourceVersion": "1.23-5.1build1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gdbm/libgdbm6t64_1.23-5.1build1_arm64.deb",
+      "sha256": "acc12af7e644ac336024c5d24028b20814fadd272588be30fb792982217e2dd4",
+      "size": 34352
+    },
+    {
+      "package": "libgmp10",
+      "version": "2:6.3.0+dfsg-2ubuntu6.1",
+      "architecture": "arm64",
+      "sourcePackage": "gmp",
+      "sourceVersion": "2:6.3.0+dfsg-2ubuntu6.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gmp/libgmp10_6.3.0+dfsg-2ubuntu6.1_arm64.deb",
+      "sha256": "5a783429ec1a29fb74a9a59c1699579dd9742bd35722280b9ce10e1f3916b003",
+      "size": 243166
+    },
+    {
+      "package": "libgnutls30t64",
+      "version": "3.8.3-1.1ubuntu3.6",
+      "architecture": "arm64",
+      "sourcePackage": "gnutls28",
+      "sourceVersion": "3.8.3-1.1ubuntu3.6",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gnutls28/libgnutls30t64_3.8.3-1.1ubuntu3.6_arm64.deb",
+      "sha256": "18482c85067bcc8e2b3802d7c3bb87bd54acf4da228e760054e88ef1e125d80a",
+      "size": 941922
+    },
+    {
+      "package": "libgpg-error0",
+      "version": "1.47-3build2.1",
+      "architecture": "arm64",
+      "sourcePackage": "libgpg-error",
+      "sourceVersion": "1.47-3build2.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libg/libgpg-error/libgpg-error0_1.47-3build2.1_arm64.deb",
+      "sha256": "cb14ae76d098421ee58c0b6796ce836a9fd386fa4824894a029089062b485b09",
+      "size": 70050
+    },
+    {
+      "package": "libgssapi-krb5-2",
+      "version": "1.20.1-6ubuntu2.8",
+      "architecture": "arm64",
+      "sourcePackage": "krb5",
+      "sourceVersion": "1.20.1-6ubuntu2.8",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/k/krb5/libgssapi-krb5-2_1.20.1-6ubuntu2.8_arm64.deb",
+      "sha256": "3f2aea0bbe7aa2dfc9a525c5bde7bcb6d035cd99975b80a24a09eadcfe5d7503",
+      "size": 141678
+    },
+    {
+      "package": "libhogweed6t64",
+      "version": "3.9.1-2.2build1.1",
+      "architecture": "arm64",
+      "sourcePackage": "nettle",
+      "sourceVersion": "3.9.1-2.2build1.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/nettle/libhogweed6t64_3.9.1-2.2build1.1_arm64.deb",
+      "sha256": "1c252dfe2c1e458c47c6e674285c043e7940555581574a96c49defae26126883",
+      "size": 198784
+    },
+    {
+      "package": "libidn2-0",
+      "version": "2.3.7-2build1.1",
+      "architecture": "arm64",
+      "sourcePackage": "libidn2",
+      "sourceVersion": "2.3.7-2build1.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libi/libidn2/libidn2-0_2.3.7-2build1.1_arm64.deb",
+      "sha256": "5d21e1ff26d44b762efc8f94df2e1e1944c1d288a29059b3cf5e76e3bfdf2968",
+      "size": 67242
+    },
+    {
+      "package": "libk5crypto3",
+      "version": "1.20.1-6ubuntu2.8",
+      "architecture": "arm64",
+      "sourcePackage": "krb5",
+      "sourceVersion": "1.20.1-6ubuntu2.8",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/k/krb5/libk5crypto3_1.20.1-6ubuntu2.8_arm64.deb",
+      "sha256": "989dd6b8e5707c73a8982f8e97080fc7a0f359a912d7a1d7e4a8b9185442a696",
+      "size": 85794
+    },
+    {
+      "package": "libkeyutils1",
+      "version": "1.6.3-3build1",
+      "architecture": "arm64",
+      "sourcePackage": "keyutils",
+      "sourceVersion": "1.6.3-3build1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/k/keyutils/libkeyutils1_1.6.3-3build1_arm64.deb",
+      "sha256": "d141e94ed3b32ea6540f2e927a83b3d42cd4378256a1aad60cda583ffdbd78af",
+      "size": 9654
+    },
+    {
+      "package": "libkrb5-3",
+      "version": "1.20.1-6ubuntu2.8",
+      "architecture": "arm64",
+      "sourcePackage": "krb5",
+      "sourceVersion": "1.20.1-6ubuntu2.8",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/k/krb5/libkrb5-3_1.20.1-6ubuntu2.8_arm64.deb",
+      "sha256": "ef9bcb4f46d80022072741af30df1b6b08a80a8c3c3bbb06e0e710f99e4dab44",
+      "size": 349476
+    },
+    {
+      "package": "libkrb5support0",
+      "version": "1.20.1-6ubuntu2.8",
+      "architecture": "arm64",
+      "sourcePackage": "krb5",
+      "sourceVersion": "1.20.1-6ubuntu2.8",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/k/krb5/libkrb5support0_1.20.1-6ubuntu2.8_arm64.deb",
+      "sha256": "ee2327c5501eec9d31f696cdd7a332509f90f130cde6180a5b99337deb7c39fe",
+      "size": 35090
+    },
+    {
+      "package": "libldap2",
+      "version": "2.6.10+dfsg-0ubuntu0.24.04.1",
+      "architecture": "arm64",
+      "sourcePackage": "openldap",
+      "sourceVersion": "2.6.10+dfsg-0ubuntu0.24.04.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/o/openldap/libldap2_2.6.10+dfsg-0ubuntu0.24.04.1_arm64.deb",
+      "sha256": "60893ca2782c2e52dc3b7b192be0169228beb91f7c87e93abaeca5871c5f16ee",
+      "size": 195858
+    },
+    {
+      "package": "liblz4-1",
+      "version": "1.9.4-1build1.1",
+      "architecture": "arm64",
+      "sourcePackage": "lz4",
+      "sourceVersion": "1.9.4-1build1.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/l/lz4/liblz4-1_1.9.4-1build1.1_arm64.deb",
+      "sha256": "65ab8cfe4aeb8205ef4f980500d2c8cb397cb49901ef12efad59f4ed7685cbe0",
+      "size": 64172
+    },
+    {
+      "package": "liblzma5",
+      "version": "5.6.1+really5.4.5-1ubuntu0.3",
+      "architecture": "arm64",
+      "sourcePackage": "xz-utils",
+      "sourceVersion": "5.6.1+really5.4.5-1ubuntu0.3",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/x/xz-utils/liblzma5_5.6.1+really5.4.5-1ubuntu0.3_arm64.deb",
+      "sha256": "2f58fd7de725efd0dbebe9d4442049fdacd7c2e8242f4288a13a688d50507245",
+      "size": 125976
+    },
+    {
+      "package": "libmd0",
+      "version": "1.1.0-2build1.1",
+      "architecture": "arm64",
+      "sourcePackage": "libmd",
+      "sourceVersion": "1.1.0-2build1.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libm/libmd/libmd0_1.1.0-2build1.1_arm64.deb",
+      "sha256": "c28583825f7191cdc8b6b71c6150e2cbfc29616d6570680e5284fabc19765ea5",
+      "size": 24616
+    },
+    {
+      "package": "libmount1",
+      "version": "2.39.3-9ubuntu6.6",
+      "architecture": "arm64",
+      "sourcePackage": "util-linux",
+      "sourceVersion": "2.39.3-9ubuntu6.6",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/u/util-linux/libmount1_2.39.3-9ubuntu6.6_arm64.deb",
+      "sha256": "7c1a65b7f2b61e8bb4fa48ece49f065a88d2f1559a1b1b5be85f4898a2d818fe",
+      "size": 133662
+    },
+    {
+      "package": "libncursesw6",
+      "version": "6.4+20240113-1ubuntu2.2",
+      "architecture": "arm64",
+      "sourcePackage": "ncurses",
+      "sourceVersion": "6.4+20240113-1ubuntu2.2",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/ncurses/libncursesw6_6.4+20240113-1ubuntu2.2_arm64.deb",
+      "sha256": "70c7edddf49520a7d0e620ad7d82da8e4b8c2ba7bd8caf156d5666ea19836e94",
+      "size": 145566
+    },
+    {
+      "package": "libnettle8t64",
+      "version": "3.9.1-2.2build1.1",
+      "architecture": "arm64",
+      "sourcePackage": "nettle",
+      "sourceVersion": "3.9.1-2.2build1.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/nettle/libnettle8t64_3.9.1-2.2build1.1_arm64.deb",
+      "sha256": "c2943b87811fe1f35b7e67869810226652caf43a31bd32c8d3ce1b331700b008",
+      "size": 192300
+    },
+    {
+      "package": "libnghttp2-14",
+      "version": "1.59.0-1ubuntu0.4",
+      "architecture": "arm64",
+      "sourcePackage": "nghttp2",
+      "sourceVersion": "1.59.0-1ubuntu0.4",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/nghttp2/libnghttp2-14_1.59.0-1ubuntu0.4_arm64.deb",
+      "sha256": "ec812e0b82dfb315b140020f4c8434191a89cf42c49dbb82605d0892b6783b59",
+      "size": 74758
+    },
+    {
+      "package": "libnpth0t64",
+      "version": "1.6-3.1build1",
+      "architecture": "arm64",
+      "sourcePackage": "npth",
+      "sourceVersion": "1.6-3.1build1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/npth/libnpth0t64_1.6-3.1build1_arm64.deb",
+      "sha256": "a3d40edb1295a8c7a6074a1f4a4fa23f52a8f682014da965cd7d7a020729428d",
+      "size": 8144
+    },
+    {
+      "package": "libp11-kit0",
+      "version": "0.25.3-4ubuntu2.2",
+      "architecture": "arm64",
+      "sourcePackage": "p11-kit",
+      "sourceVersion": "0.25.3-4ubuntu2.2",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/p11-kit/libp11-kit0_0.25.3-4ubuntu2.2_arm64.deb",
+      "sha256": "5c325f0354b6d347cbc97bce69e4efafacb11a685a0ac6fc271c1d52e6e8590c",
+      "size": 276136
+    },
+    {
+      "package": "libpam-modules",
+      "version": "1.5.3-5ubuntu5.7",
+      "architecture": "arm64",
+      "sourcePackage": "pam",
+      "sourceVersion": "1.5.3-5ubuntu5.7",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/pam/libpam-modules_1.5.3-5ubuntu5.7_arm64.deb",
+      "sha256": "65c9f9f35135778db47b2fb811bb2a3528e67343d392fdd8ab021d9debf5460b",
+      "size": 285996
+    },
+    {
+      "package": "libpam-modules-bin",
+      "version": "1.5.3-5ubuntu5.7",
+      "architecture": "arm64",
+      "sourcePackage": "pam",
+      "sourceVersion": "1.5.3-5ubuntu5.7",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/pam/libpam-modules-bin_1.5.3-5ubuntu5.7_arm64.deb",
+      "sha256": "ec3e3e42a6bcaf8bd5434d2b21c28d24e723a89a10a8871ad6aaa8c80a2942b9",
+      "size": 50432
+    },
+    {
+      "package": "libpam-runtime",
+      "version": "1.5.3-5ubuntu5.7",
+      "architecture": "all",
+      "sourcePackage": "pam",
+      "sourceVersion": "1.5.3-5ubuntu5.7",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/pam/libpam-runtime_1.5.3-5ubuntu5.7_all.deb",
+      "sha256": "879a23df25b1ba28801c9caf73f1ac36724bdff9834b5a0db7d0ac5ba6f8e191",
+      "size": 40754
+    },
+    {
+      "package": "libpam0g",
+      "version": "1.5.3-5ubuntu5.7",
+      "architecture": "arm64",
+      "sourcePackage": "pam",
+      "sourceVersion": "1.5.3-5ubuntu5.7",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/pam/libpam0g_1.5.3-5ubuntu5.7_arm64.deb",
+      "sha256": "00c9618121e9b040748db3b1ad2e42c08898c567044a7f6ccde3627e3650588c",
+      "size": 68430
+    },
+    {
+      "package": "libpcre2-8-0",
+      "version": "10.42-4ubuntu2.1",
+      "architecture": "arm64",
+      "sourcePackage": "pcre2",
+      "sourceVersion": "10.42-4ubuntu2.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/pcre2/libpcre2-8-0_10.42-4ubuntu2.1_arm64.deb",
+      "sha256": "7581764969752953aa1f991ce143bea594d2c5d0c36c2cc98c3c614c172aba93",
+      "size": 211856
+    },
+    {
+      "package": "libperl5.38t64",
+      "version": "5.38.2-3.2ubuntu0.4",
+      "architecture": "arm64",
+      "sourcePackage": "perl",
+      "sourceVersion": "5.38.2-3.2ubuntu0.4",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/perl/libperl5.38t64_5.38.2-3.2ubuntu0.4_arm64.deb",
+      "sha256": "d539297e7d903e6358430bbf25e8574d077a7f7de7a673d6360b5a6f7f87d67e",
+      "size": 4784520
+    },
+    {
+      "package": "libproc2-0",
+      "version": "2:4.0.4-4ubuntu3.3",
+      "architecture": "arm64",
+      "sourcePackage": "procps",
+      "sourceVersion": "2:4.0.4-4ubuntu3.3",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/procps/libproc2-0_4.0.4-4ubuntu3.3_arm64.deb",
+      "sha256": "670adcf3084f58d5d81045f6edba8c47c5b13a9cbd7fdfb00f25946bec7cf0de",
+      "size": 58470
+    },
+    {
+      "package": "libpsl5t64",
+      "version": "0.21.2-1.1build1",
+      "architecture": "arm64",
+      "sourcePackage": "libpsl",
+      "sourceVersion": "0.21.2-1.1build1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libp/libpsl/libpsl5t64_0.21.2-1.1build1_arm64.deb",
+      "sha256": "886d485c74567b855bcd19b6f353a769a08b58c111b2d8275a908a469c15d4bf",
+      "size": 57436
+    },
+    {
+      "package": "librtmp1",
+      "version": "2.4+20151223.gitfa8646d.1-2build7",
+      "architecture": "arm64",
+      "sourcePackage": "rtmpdump",
+      "sourceVersion": "2.4+20151223.gitfa8646d.1-2build7",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/r/rtmpdump/librtmp1_2.4+20151223.gitfa8646d.1-2build7_arm64.deb",
+      "sha256": "fb771b2743120d9d44ee9989fd485205680976f7bf89f2f1ac5df50238ea1db7",
+      "size": 57804
+    },
+    {
+      "package": "libsasl2-2",
+      "version": "2.1.28+dfsg1-5ubuntu3.1",
+      "architecture": "arm64",
+      "sourcePackage": "cyrus-sasl2",
+      "sourceVersion": "2.1.28+dfsg1-5ubuntu3.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/c/cyrus-sasl2/libsasl2-2_2.1.28+dfsg1-5ubuntu3.1_arm64.deb",
+      "sha256": "05da24adf2b95285ce7eaf9a2ea902fbf4f756a796c8adbfd221d746035df44b",
+      "size": 54660
+    },
+    {
+      "package": "libsasl2-modules-db",
+      "version": "2.1.28+dfsg1-5ubuntu3.1",
+      "architecture": "arm64",
+      "sourcePackage": "cyrus-sasl2",
+      "sourceVersion": "2.1.28+dfsg1-5ubuntu3.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/c/cyrus-sasl2/libsasl2-modules-db_2.1.28+dfsg1-5ubuntu3.1_arm64.deb",
+      "sha256": "ee8237dfd0d26df4d5fbfd3a9b132ae9f34f05b4508176b8bd1839f12739d94c",
+      "size": 21552
+    },
+    {
+      "package": "libseccomp2",
+      "version": "2.5.5-1ubuntu3.1",
+      "architecture": "arm64",
+      "sourcePackage": "libseccomp",
+      "sourceVersion": "2.5.5-1ubuntu3.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libseccomp/libseccomp2_2.5.5-1ubuntu3.1_arm64.deb",
+      "sha256": "2feac77a129e336960734586ccdb16eefb040adfe7b662369549e41b82ba0a1b",
+      "size": 51170
+    },
+    {
+      "package": "libselinux1",
+      "version": "3.5-2ubuntu2.1",
+      "architecture": "arm64",
+      "sourcePackage": "libselinux",
+      "sourceVersion": "3.5-2ubuntu2.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libselinux/libselinux1_3.5-2ubuntu2.1_arm64.deb",
+      "sha256": "56630c4f009754e76808bf755072e634f8785a4dfbc8b1445213149e682f1502",
+      "size": 79946
+    },
+    {
+      "package": "libsemanage-common",
+      "version": "3.5-1build5",
+      "architecture": "all",
+      "sourcePackage": "libsemanage",
+      "sourceVersion": "3.5-1build5",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libsemanage/libsemanage-common_3.5-1build5_all.deb",
+      "sha256": "e10cd93f0b6941566de04b860b723df57ca3fe4a9255a73b2be0d1dc7df2850e",
+      "size": 10144
+    },
+    {
+      "package": "libsemanage2",
+      "version": "3.5-1build5",
+      "architecture": "arm64",
+      "sourcePackage": "libsemanage",
+      "sourceVersion": "3.5-1build5",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libsemanage/libsemanage2_3.5-1build5_arm64.deb",
+      "sha256": "d353aa63f68f7ef84e43d6d032535a6f3a2aaeb48d5dfb22fa8ab480dc52922d",
+      "size": 90806
+    },
+    {
+      "package": "libsepol2",
+      "version": "3.5-2build1",
+      "architecture": "arm64",
+      "sourcePackage": "libsepol",
+      "sourceVersion": "3.5-2build1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libsepol/libsepol2_3.5-2build1_arm64.deb",
+      "sha256": "43339b502a91d0900b2e96ba9c30a3cc0175797a916d4d91dae26870f6d4655a",
+      "size": 290818
+    },
+    {
+      "package": "libsmartcols1",
+      "version": "2.39.3-9ubuntu6.6",
+      "architecture": "arm64",
+      "sourcePackage": "util-linux",
+      "sourceVersion": "2.39.3-9ubuntu6.6",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/u/util-linux/libsmartcols1_2.39.3-9ubuntu6.6_arm64.deb",
+      "sha256": "d2bfce4187247cbad75031f8bf9a116ed34d506ae6d71fb39220eca8694dfb94",
+      "size": 65774
+    },
+    {
+      "package": "libss2",
+      "version": "1.47.0-2.4~exp1ubuntu4.1",
+      "architecture": "arm64",
+      "sourcePackage": "e2fsprogs",
+      "sourceVersion": "1.47.0-2.4~exp1ubuntu4.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/e/e2fsprogs/libss2_1.47.0-2.4~exp1ubuntu4.1_arm64.deb",
+      "sha256": "277b4ca7dfdde038f4ae8f98d2d54b152e4444b8d1ed814c8b9caa1a02a21ae2",
+      "size": 16470
+    },
+    {
+      "package": "libssh-4",
+      "version": "0.10.6-2ubuntu0.5",
+      "architecture": "arm64",
+      "sourcePackage": "libssh",
+      "sourceVersion": "0.10.6-2ubuntu0.5",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libs/libssh/libssh-4_0.10.6-2ubuntu0.5_arm64.deb",
+      "sha256": "f1b8da917a3d65ca77918027206b55b69d62795df2676c39828d4439bc97e68f",
+      "size": 192306
+    },
+    {
+      "package": "libssl3t64",
+      "version": "3.0.13-0ubuntu3.15",
+      "architecture": "arm64",
+      "sourcePackage": "openssl",
+      "sourceVersion": "3.0.13-0ubuntu3.15",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/o/openssl/libssl3t64_3.0.13-0ubuntu3.15_arm64.deb",
+      "sha256": "bf0b51fb18187c4e1b03900e1049dc219047080ff511aa3bf691dbe24e14d24a",
+      "size": 1836826
+    },
+    {
+      "package": "libstdc++6",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "architecture": "arm64",
+      "sourcePackage": "gcc-14",
+      "sourceVersion": "14.2.0-4ubuntu2~24.04.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/g/gcc-14/libstdc++6_14.2.0-4ubuntu2~24.04.1_arm64.deb",
+      "sha256": "f84a05ac45a6884109b6527e911081a38263b89e042fc94a338cf975f61a330c",
+      "size": 750976
+    },
+    {
+      "package": "libsystemd0",
+      "version": "255.4-1ubuntu8.17",
+      "architecture": "arm64",
+      "sourcePackage": "systemd",
+      "sourceVersion": "255.4-1ubuntu8.17",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/systemd/libsystemd0_255.4-1ubuntu8.17_arm64.deb",
+      "sha256": "7d05888a58f8c0fab22e0e66ab76791c0037df2135835b7589e74cfbef082932",
+      "size": 427526
+    },
+    {
+      "package": "libtasn1-6",
+      "version": "4.19.0-3ubuntu0.24.04.2",
+      "architecture": "arm64",
+      "sourcePackage": "libtasn1-6",
+      "sourceVersion": "4.19.0-3ubuntu0.24.04.2",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0-3ubuntu0.24.04.2_arm64.deb",
+      "sha256": "6ba0aeb2649f462519fbff8080fc10585c7f368f2162622e526e77e95c98dc96",
+      "size": 43746
+    },
+    {
+      "package": "libtinfo6",
+      "version": "6.4+20240113-1ubuntu2.2",
+      "architecture": "arm64",
+      "sourcePackage": "ncurses",
+      "sourceVersion": "6.4+20240113-1ubuntu2.2",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/ncurses/libtinfo6_6.4+20240113-1ubuntu2.2_arm64.deb",
+      "sha256": "00570dce13bd89b31e4f433001fb0a55436e57a76370afbae6c5ac491b3dd3e9",
+      "size": 104652
+    },
+    {
+      "package": "libudev1",
+      "version": "255.4-1ubuntu8.17",
+      "architecture": "arm64",
+      "sourcePackage": "systemd",
+      "sourceVersion": "255.4-1ubuntu8.17",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/systemd/libudev1_255.4-1ubuntu8.17_arm64.deb",
+      "sha256": "7d8fe738721ffa1fe389209819cafe136157e818ac275ab0c6f17d16da150bf5",
+      "size": 176082
+    },
+    {
+      "package": "libunistring5",
+      "version": "1.1-2build1.1",
+      "architecture": "arm64",
+      "sourcePackage": "libunistring",
+      "sourceVersion": "1.1-2build1.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libu/libunistring/libunistring5_1.1-2build1.1_arm64.deb",
+      "sha256": "faa0cea6bf19c57cace839f7184c070f2f0f4efc41258b39625b0ed988f68100",
+      "size": 529552
+    },
+    {
+      "package": "libuuid1",
+      "version": "2.39.3-9ubuntu6.6",
+      "architecture": "arm64",
+      "sourcePackage": "util-linux",
+      "sourceVersion": "2.39.3-9ubuntu6.6",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/u/util-linux/libuuid1_2.39.3-9ubuntu6.6_arm64.deb",
+      "sha256": "5b567480e96bd683e3d03609d9129ba57ece4b486ce67b81a06aee28e4a87146",
+      "size": 36754
+    },
+    {
+      "package": "libwrap0",
+      "version": "7.6.q-33",
+      "architecture": "arm64",
+      "sourcePackage": "tcp-wrappers",
+      "sourceVersion": "7.6.q-33",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/t/tcp-wrappers/libwrap0_7.6.q-33_arm64.deb",
+      "sha256": "cb7aec6dd9e6e26df584d2e33f3c00b2d9c17430251f41bdf2a2878098b70db6",
+      "size": 48456
+    },
+    {
+      "package": "libxxhash0",
+      "version": "0.8.2-2build1",
+      "architecture": "arm64",
+      "sourcePackage": "xxhash",
+      "sourceVersion": "0.8.2-2build1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/x/xxhash/libxxhash0_0.8.2-2build1_arm64.deb",
+      "sha256": "a69cf89fe33b386e63c26f6992be1e20bfa2ea2dd30c3619af8b1174612c4525",
+      "size": 21684
+    },
+    {
+      "package": "libzstd1",
+      "version": "1.5.5+dfsg2-2build1.1",
+      "architecture": "arm64",
+      "sourcePackage": "libzstd",
+      "sourceVersion": "1.5.5+dfsg2-2build1.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/libz/libzstd/libzstd1_1.5.5+dfsg2-2build1.1_arm64.deb",
+      "sha256": "ea7d6e9fde577ea14dbf07fdfb74d6287eb09c6cba4a9d63abdcb87b0ec54bcc",
+      "size": 271278
+    },
+    {
+      "package": "login",
+      "version": "1:4.13+dfsg1-4ubuntu3.2",
+      "architecture": "arm64",
+      "sourcePackage": "shadow",
+      "sourceVersion": "1:4.13+dfsg1-4ubuntu3.2",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/shadow/login_4.13+dfsg1-4ubuntu3.2_arm64.deb",
+      "sha256": "952c8adeadb03dd8a837b17de6b47c22b96a468d6ca3b44231ef821270fed978",
+      "size": 200432
+    },
+    {
+      "package": "logsave",
+      "version": "1.47.0-2.4~exp1ubuntu4.1",
+      "architecture": "arm64",
+      "sourcePackage": "e2fsprogs",
+      "sourceVersion": "1.47.0-2.4~exp1ubuntu4.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/e/e2fsprogs/logsave_1.47.0-2.4~exp1ubuntu4.1_arm64.deb",
+      "sha256": "c1ab7c7109dbeef8c40005549b5bad8ea771158d7107411f535115d9d3383bb2",
+      "size": 22344
+    },
+    {
+      "package": "mawk",
+      "version": "1.3.4.20240123-1build1",
+      "architecture": "arm64",
+      "sourcePackage": "mawk",
+      "sourceVersion": "1.3.4.20240123-1build1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/m/mawk/mawk_1.3.4.20240123-1build1_arm64.deb",
+      "sha256": "a6fa75e49de6327ccdbf664e905cde229df77116a966c310e81c778eba756dca",
+      "size": 123594
+    },
+    {
+      "package": "mount",
+      "version": "2.39.3-9ubuntu6.6",
+      "architecture": "arm64",
+      "sourcePackage": "util-linux",
+      "sourceVersion": "2.39.3-9ubuntu6.6",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/u/util-linux/mount_2.39.3-9ubuntu6.6_arm64.deb",
+      "sha256": "be0f2c049886b7378090fc5d3b8453d5ef9826b25074011cad04b46852e62d11",
+      "size": 115750
+    },
+    {
+      "package": "ncurses-base",
+      "version": "6.4+20240113-1ubuntu2.2",
+      "architecture": "all",
+      "sourcePackage": "ncurses",
+      "sourceVersion": "6.4+20240113-1ubuntu2.2",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/ncurses/ncurses-base_6.4+20240113-1ubuntu2.2_all.deb",
+      "sha256": "7a00fc1174fbc32ce68bfd2038ca4b8275dc2851f78e911180c0928534682b05",
+      "size": 25810
+    },
+    {
+      "package": "ncurses-bin",
+      "version": "6.4+20240113-1ubuntu2.2",
+      "architecture": "arm64",
+      "sourcePackage": "ncurses",
+      "sourceVersion": "6.4+20240113-1ubuntu2.2",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/n/ncurses/ncurses-bin_6.4+20240113-1ubuntu2.2_arm64.deb",
+      "sha256": "3ffea795394f5aaa99c12809a186e514865a0935759e2e05aba8a93c29b54590",
+      "size": 186194
+    },
+    {
+      "package": "openssh-client",
+      "version": "1:9.6p1-3ubuntu13.19",
+      "architecture": "arm64",
+      "sourcePackage": "openssh",
+      "sourceVersion": "1:9.6p1-3ubuntu13.19",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/o/openssh/openssh-client_9.6p1-3ubuntu13.19_arm64.deb",
+      "sha256": "86e6f8b847293b7e9d8895f5fc698b72dea1cf58ecc9312e588b64cf73e6f247",
+      "size": 890282
+    },
+    {
+      "package": "openssh-server",
+      "version": "1:9.6p1-3ubuntu13.19",
+      "architecture": "arm64",
+      "sourcePackage": "openssh",
+      "sourceVersion": "1:9.6p1-3ubuntu13.19",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/o/openssh/openssh-server_9.6p1-3ubuntu13.19_arm64.deb",
+      "sha256": "66aa97ba542be76703764b7e311fc0b29f820f32e16d503a0d084b125acd094a",
+      "size": 502066
+    },
+    {
+      "package": "openssh-sftp-server",
+      "version": "1:9.6p1-3ubuntu13.19",
+      "architecture": "arm64",
+      "sourcePackage": "openssh",
+      "sourceVersion": "1:9.6p1-3ubuntu13.19",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/o/openssh/openssh-sftp-server_9.6p1-3ubuntu13.19_arm64.deb",
+      "sha256": "5776107878705a9c30f64c3d498d2f0deea374bb47cb8b9650f9e04069d311f8",
+      "size": 36832
+    },
+    {
+      "package": "openssl",
+      "version": "3.0.13-0ubuntu3.15",
+      "architecture": "arm64",
+      "sourcePackage": "openssl",
+      "sourceVersion": "3.0.13-0ubuntu3.15",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.15_arm64.deb",
+      "sha256": "818b4ab7092eb3365358ce41896ad08206b30cdb67445d7ec0503262893a0d95",
+      "size": 984680
+    },
+    {
+      "package": "passwd",
+      "version": "1:4.13+dfsg1-4ubuntu3.2",
+      "architecture": "arm64",
+      "sourcePackage": "shadow",
+      "sourceVersion": "1:4.13+dfsg1-4ubuntu3.2",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/shadow/passwd_4.13+dfsg1-4ubuntu3.2_arm64.deb",
+      "sha256": "c9a84e67f4f84e7c6a24787e81e124fb76c829eec35c3ec46f609e1937073816",
+      "size": 838406
+    },
+    {
+      "package": "perl",
+      "version": "5.38.2-3.2ubuntu0.4",
+      "architecture": "arm64",
+      "sourcePackage": "perl",
+      "sourceVersion": "5.38.2-3.2ubuntu0.4",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.4_arm64.deb",
+      "sha256": "585e0229427b1897c6718fd30e7be725f7beb762432460e0b1788646955b3094",
+      "size": 231440
+    },
+    {
+      "package": "perl-base",
+      "version": "5.38.2-3.2ubuntu0.4",
+      "architecture": "arm64",
+      "sourcePackage": "perl",
+      "sourceVersion": "5.38.2-3.2ubuntu0.4",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/perl/perl-base_5.38.2-3.2ubuntu0.4_arm64.deb",
+      "sha256": "ef46aa2535744a298e6a3406d7440a66a2b369d56a09acf2110bce95e7aac73a",
+      "size": 1780926
+    },
+    {
+      "package": "perl-modules-5.38",
+      "version": "5.38.2-3.2ubuntu0.4",
+      "architecture": "all",
+      "sourcePackage": "perl",
+      "sourceVersion": "5.38.2-3.2ubuntu0.4",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/perl/perl-modules-5.38_5.38.2-3.2ubuntu0.4_all.deb",
+      "sha256": "14e3fb89fdc5e154f0f442f8ed5d2b5e07d98fe4b883b97793df459ff265e866",
+      "size": 3110104
+    },
+    {
+      "package": "procps",
+      "version": "2:4.0.4-4ubuntu3.3",
+      "architecture": "arm64",
+      "sourcePackage": "procps",
+      "sourceVersion": "2:4.0.4-4ubuntu3.3",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/p/procps/procps_4.0.4-4ubuntu3.3_arm64.deb",
+      "sha256": "3469d8c55aea7e0b2df478b33ff14423c2f0c7ef11f0db28b243a0f14eb8072a",
+      "size": 707418
+    },
+    {
+      "package": "sed",
+      "version": "4.9-2ubuntu0.24.04.1",
+      "architecture": "arm64",
+      "sourcePackage": "sed",
+      "sourceVersion": "4.9-2ubuntu0.24.04.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/sed/sed_4.9-2ubuntu0.24.04.1_arm64.deb",
+      "sha256": "b1c2453ed3616c1f0ab948db0aacceb213205182e108df6bec1278378ade39a9",
+      "size": 191430
+    },
+    {
+      "package": "sensible-utils",
+      "version": "0.0.22",
+      "architecture": "all",
+      "sourcePackage": "sensible-utils",
+      "sourceVersion": "0.0.22",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/sensible-utils/sensible-utils_0.0.22_all.deb",
+      "sha256": "410c29ff82c6916d14e235b511287e67a45cb78d509b19aab48608acdc941254",
+      "size": 22462
+    },
+    {
+      "package": "sysvinit-utils",
+      "version": "3.08-6ubuntu3",
+      "architecture": "arm64",
+      "sourcePackage": "sysvinit",
+      "sourceVersion": "3.08-6ubuntu3",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/s/sysvinit/sysvinit-utils_3.08-6ubuntu3_arm64.deb",
+      "sha256": "7a29cd884b9cf3e787745e7453c170728e794266bf2af9391488068246dc4666",
+      "size": 33828
+    },
+    {
+      "package": "tar",
+      "version": "1.35+dfsg-3ubuntu0.4",
+      "architecture": "arm64",
+      "sourcePackage": "tar",
+      "sourceVersion": "1.35+dfsg-3ubuntu0.4",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/t/tar/tar_1.35+dfsg-3ubuntu0.4_arm64.deb",
+      "sha256": "3302932e6125f1be306a9be67cf58a81f94911d92a99c9eeb0aff59c2c457fd7",
+      "size": 252352
+    },
+    {
+      "package": "ubuntu-keyring",
+      "version": "2023.11.28.1",
+      "architecture": "all",
+      "sourcePackage": "ubuntu-keyring",
+      "sourceVersion": "2023.11.28.1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/u/ubuntu-keyring/ubuntu-keyring_2023.11.28.1_all.deb",
+      "sha256": "36de43b15853ccae0028e9a767613770c704833f82586f28eb262f0311adb8a8",
+      "size": 11124
+    },
+    {
+      "package": "ucf",
+      "version": "3.0043+nmu1",
+      "architecture": "all",
+      "sourcePackage": "ucf",
+      "sourceVersion": "3.0043+nmu1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/u/ucf/ucf_3.0043+nmu1_all.deb",
+      "sha256": "397e541af11db776ed7facf1674ee37b56e7de51348c9f077d7a283912c4b458",
+      "size": 56522
+    },
+    {
+      "package": "util-linux",
+      "version": "2.39.3-9ubuntu6.6",
+      "architecture": "arm64",
+      "sourcePackage": "util-linux",
+      "sourceVersion": "2.39.3-9ubuntu6.6",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.6_arm64.deb",
+      "sha256": "35fe3704515c63e08da036e218426d8609a6c1c470482c8784644edc4c8ea59d",
+      "size": 1115824
+    },
+    {
+      "package": "zlib1g",
+      "version": "1:1.3.dfsg-3.1ubuntu2.2",
+      "architecture": "arm64",
+      "sourcePackage": "zlib",
+      "sourceVersion": "1:1.3.dfsg-3.1ubuntu2.2",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260905T000000Z/pool/main/z/zlib/zlib1g_1.3.dfsg-3.1ubuntu2.2_arm64.deb",
+      "sha256": "e55ab3b4fb7b6edc4a628e28ec13f8780b08abe427d33ae148f030d8586d0e9a",
+      "size": 61898
+    }
+  ]
+}
