@@ -37,14 +37,8 @@ const copy = computed(() => isChinese.value ? {
   exploreLinks: [
     { text: '移动 IDE', href: '/mobile-ide' },
     { text: '工具对比', href: '/compare/mobile-ai-development-tools' },
-    { text: 'Android IDE', href: '/android-ide' },
     { text: 'SSH IDE', href: '/ssh-ide' },
-    { text: '远程编程', href: '/remote-coding' },
-    { text: '用手机写代码', href: '/code-from-phone' },
-    { text: '移动 AI 编程', href: '/mobile-ai-coding' },
-    { text: '技术资源', href: '/resources/' },
-    { text: '使用指南', href: '/blog/' },
-    { text: '观看演示', href: '/demo?utm_source=footer&utm_medium=website&utm_campaign=demo' }
+    { text: '移动 AI 编程', href: '/mobile-ai-coding' }
   ]
 } : {
   positioning: 'Mobile AI Development Workspace: Editor + Explorer + SSH + Terminal + Git + AI Agent.',
@@ -72,14 +66,8 @@ const copy = computed(() => isChinese.value ? {
   exploreLinks: [
     { text: 'Mobile IDE', href: '/mobile-ide' },
     { text: 'Compare Tools', href: '/compare/mobile-ai-development-tools' },
-    { text: 'Android IDE', href: '/android-ide' },
     { text: 'SSH IDE', href: '/ssh-ide' },
-    { text: 'Remote Coding', href: '/remote-coding' },
-    { text: 'Code from a Phone', href: '/code-from-phone' },
-    { text: 'Mobile AI Coding', href: '/mobile-ai-coding' },
-    { text: 'Mobile Development Resources', href: '/resources/' },
-    { text: 'Guides', href: '/blog/' },
-    { text: 'Watch demo', href: '/demo?utm_source=footer&utm_medium=website&utm_campaign=demo' }
+    { text: 'Mobile AI Coding', href: '/mobile-ai-coding' }
   ]
 })
 
