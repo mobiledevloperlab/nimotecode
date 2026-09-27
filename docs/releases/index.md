@@ -7,6 +7,44 @@ description: Complete release notes for NimoteCode, including new features, impr
 
 This page contains the complete public release history. NimoteCode is available on Android through Google Play and on iPhone and iPad through the App Store; see the [Download page](/download) for current store links.
 
+## 1.1.9 · September 27, 2026 · Build 48
+
+Version 1.1.9 rebuilds the interface on one design system — a layout chosen by available space, one density and status language, an IDE-style AI timeline, and a new interface scale — adds PHP debugging and wider syntax highlighting, and makes agent sessions, agent search, access checks, and startup more reliable.
+
+**Platform availability:** the Local Linux search improvements are Android-only and are not available on iOS.
+
+### New
+
+- **PHP debugging.** Debug PHP scripts in a remote workspace through Xdebug and the PHP Debug adapter: set breakpoints, launch from the Debug panel, and let the editor configure the Xdebug environment. The adapter runs on the same remote host as the script; details are in `docs/php-debugging.md`.
+- **Broader syntax highlighting.** Added grammars for C#, CSS, HTML, Ruby, Lua, Kotlin, XML, PowerShell, SQL and INI, JSX/TSX mapping, and PHP highlighting — including `<?php` auto-detection — inside Markdown code fences.
+- **Provider model lists.** The AI chat header and the profile editor now read the models an endpoint actually offers (OpenAI-compatible `/models` and Ollama `/api/tags`), refresh on demand, and remember the last choice. A profile is named after its model until you name it yourself.
+- **Agent session settings.** Agents that report their configurable options during the handshake now expose model and session choices in the AI header, remembered per launch command.
+- **Interface scale.** Settings → Appearance → Interface scale (100%–150%) enlarges the whole app — chrome, icons, panels, dialogs, editor and terminal — as one zoom. iOS starts one step up to match Apple's type sizes; 100% opts out.
+
+### Improved
+
+- **Layout by available space.** The workspace now chooses its structure from the space it has instead of the device orientation. A window with room splits into a rail, a resizable and collapsible panel and the editor; one without gets the single-surface phone shell. Split View, resizable windows, portrait tablets and landscape phones now land on the right layout.
+- **One panel design system.** Panels were rebuilt on one density scale and one status language. A phone Explorer shows 13 rows where it used to show 9, and running, waiting, success, warning, error and cancelled read the same in the AI panel, Git, Debug, LSP and Tasks.
+- **The AI conversation as an IDE timeline.** Turns are no longer chat bubbles: the user's message is a quoted block, plan steps carry real state, each tool call is one compact row with a monospace command line and `+n −m` per changed file, and reviewing a change lists one row per file.
+- **One scale for buttons, icons and controls.** Buttons, empty states, icons, the composer and the middle-panel controls all share one control size, UI text uses the platform font, and code and terminal use a real monospace chain across all eight themes.
+- **Neutral light and dark palettes.** Light and dark were rebuilt around neutral grays with the brand accent reserved for state, radii and hairlines converged on one ladder, and every Git panel section now shares one header.
+- **One menu surface.** Anchored popups and bottom sheets draw the same row, icon size and alignment, a menu hugs its widest entry, and panel-header commands become a command bar from tablet width up.
+- **Explorer refinements.** Long file and directory names can be reached by scrolling the tree sideways, and rows use a touch-sized 44px band shared by files and directories instead of a raw Material list tile.
+- **Refined workspace chrome.** Portrait bottom navigation height and icon-label spacing were tuned, and the floating agent status marker on the workspace edge is now a round ball, sized and positioned as before.
+- **Faster, bounded agent search.** Workspace grep runs through ripgrep with global result budgets, and Local Linux/PRoot searches stream over `find` and `grep` instead of one remote read per candidate file — about 3s to 0.2s on the reference 1000-file fixture.
+- **Clearer Pro access presentation.** The Pro access card and the subscription page describe trial, Early Access, paid and free from one source, with clearer wording for remaining trial time, restore, and a subscription linked to another account.
+
+### Fixed
+
+- Fixed SSH private-key connections losing pasted or imported key credentials after reopening a saved connection; imported keys are now retained securely instead of relying on temporary file-picker paths.
+- Fixed Android Local Linux Explorer being unable to navigate up from `/workspace` to the guest root and directories such as `/home`.
+- Fixed the phone "more" menus and popups: the Git, editor and terminal menus now open the same anchored popup the rest of the app uses, hug their widest row instead of filling the screen, stay usable while the soft keyboard is up, and no longer leave their own page on screen after an entry opens one.
+- Reworked the terminal header into one VS Code-style band with tabs at the leading edge and commands at the trailing edge, and fixed iOS submitting a single Return press twice.
+- Fixed the Android and iOS launch screen so one native startup layer holds the brand mark, slogan and loading bar in the app's own theme and language until the workspace is drawn.
+- Fixed Early Access and paid Pro being denied to signed-in users by a missing or unreachable kill switch, a failed RevenueCat identity realignment, or server or device clock skew.
+- Fixed the AI transcript losing the reader's place while scrolling history, the editor showing a stray divider and a duplicate Open Browser button with no file open, and a crash after closing modal sheets in the SSH, editor search, Git, settings and explorer file-search sheets.
+- Fixed Git Commit Detail and Diff top spacing and readability, the sidebar selection animation, the LSP command clashing with the browser button, and inconsistent URL prompt, agent parameter row and Git history header styling.
+
 ## 1.1.8 · September 14, 2026 · Build 45
 
 Version 1.1.8 begins **Early Access Pro** while making switching workspaces more flexible, strengthening Android Local Linux installation, file operations, and Git reliability, and refining Source Control and the overall visual hierarchy.
@@ -31,11 +69,9 @@ Early Access Pro opens advanced mobile workflows to more users over time: AI Age
 
 ### Fixed
 
+- Fixed an issue that prevented input from an external physical keyboard on iPad from responding.
 - Fixed Source Control not refreshing promptly after a branch switch and inconsistent commit-history styling.
 - Fixed cases where incomplete Local Linux temporary-directory setup caused commands or installation flows to fail.
-- Fixed SSH private-key connections losing pasted or imported key credentials after reopening a saved connection. Imported keys are now retained securely instead of relying on temporary file-picker paths on Android and iOS.
-- Fixed Android Local Linux Explorer being unable to navigate up from `/workspace` to the guest root and directories such as `/home`.
-- Fixed duplicate system inset space at the top of Git Commit Detail and Diff pages, and improved readability of filenames, diff headers, line numbers, and content across themes.
 
 ## 1.1.7 · September 12, 2026
 
