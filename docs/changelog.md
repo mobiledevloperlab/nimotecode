@@ -11,6 +11,12 @@ This is the public record of notable product updates. For setup help, use the [d
 
 ## 2026
 
+### Version 1.1.9 · September 27, 2026
+
+This release (Build 48) rebuilds the interface on one design system — a layout chosen by available space, one density and status language, an IDE-style AI timeline, and a new interface scale — and adds PHP debugging and broader syntax highlighting, while making agent sessions, agent search, access checks and startup more reliable.
+
+[Read the complete 1.1.9 release notes →](/releases/)
+
 ### Version 1.1.8 · September 14, 2026
 
 This release (Build 45) begins Early Access Pro for advanced mobile workflows and lets you switch directories in local and SSH workspaces. It also strengthens Android Local Linux installation, file operations, and Git reliability, and refines Source Control and the overall visual hierarchy. Local Linux improvements are Android-only.
