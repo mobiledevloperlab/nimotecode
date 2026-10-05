@@ -7,6 +7,35 @@ description: Complete release notes for NimoteCode, including new features, impr
 
 This page contains the complete public release history. NimoteCode is available on Android through Google Play and on iPhone and iPad through the App Store; see the [Download page](/download) for current store links.
 
+## 1.2.0 · October 5, 2026 · Build 49
+
+Version 1.2.0 brings the Monaco editor to desktop and tablet workspaces, adds a one-click Windows build, and gives you more control over Explorer density. It also improves editing, keyboard input, selection, terminal layout, and theme consistency across device classes.
+
+### New
+
+- **Monaco on desktop and tablets.** NimoteCode automatically uses Monaco on Windows, macOS, Android tablets, and iPad; phones continue to use the native Nimote Editor. You can keep the automatic choice or explicitly select either engine, with a safe fallback to Nimote Editor if Monaco cannot start.
+- **Full Monaco workspace integration.** The bundled Monaco runtime supports workspace files, tabs, themes, language detection, diffs, clipboard, selection, keyboard focus, and document synchronization.
+- **Windows build entry points.** Build a runnable Windows desktop bundle with `scripts/build_windows.ps1`, or double-click `scripts/build_windows.bat` for a release build and ZIP. The build flow generates or reuses compatible Flutter/Rust bindings and places the required Rust DLL beside the app executable.
+- **Explorer display preferences.** Adjust Explorer font size (11–20) and row height (28–48) in Settings. The current file remains visibly selected when opened from a tab, search, or another panel.
+
+### Improved
+
+- **A device-appropriate editor.** Editor selection is based on the active window's available size, so split-screen, foldable, resized, tablet, and desktop windows receive the appropriate engine without relying on a fixed device model.
+- **Desktop editing behavior.** Monaco receives keyboard focus and owns desktop/tablet clipboard operations, with selection, context actions, scrolling, code folding, line decoration, and diff highlights integrated into the workspace.
+- **Hardware-keyboard workflow.** Save and undo/redo shortcuts are more reliable on mobile; CJK composition, IME newline handling, programming-keyboard focus, and modifier-key routing are preserved through editing operations.
+- **Consistent editor and terminal presentation.** Editor surfaces, dividers, search fields, typography, terminal colors, scrollbars, selection handles, and gutter decoration follow the active theme more closely.
+- **Better terminal layout.** Landscape terminal commands, tabs, search controls, and content padding remain aligned; Windows keyboard input follows the same predictable input pipeline.
+- **Clearer Explorer hierarchy.** File and directory rows use stronger selected-state contrast, more consistent text sizing, and a persistent active-file highlight.
+
+### Fixed
+
+- Fixed tablet Monaco sessions that could not receive keyboard input or reliably use the system clipboard.
+- Fixed editor selection, touch handles, and context-menu interactions regressing while switching or restoring the editor presentation.
+- Fixed editor keyboard configuration and text sizing inconsistencies across mobile, hardware-keyboard, and IME input paths.
+- Fixed editor and terminal theme mismatches, including dividers, search fields, and Explorer selection colors in bundled light and dark themes.
+- Fixed terminal layout and input issues in landscape and Windows environments.
+- Fixed the Windows build flow so the generated desktop bundle can be launched directly, including a double-click-friendly batch entry point.
+
 ## 1.1.9 · September 27, 2026 · Build 48
 
 Version 1.1.9 rebuilds the interface on one design system — a layout chosen by available space, one density and status language, an IDE-style AI timeline, and a new interface scale — adds PHP debugging and wider syntax highlighting, and makes agent sessions, agent search, access checks, and startup more reliable.

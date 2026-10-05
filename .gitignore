@@ -34,3 +34,4 @@ source-bundles/
 .dev.vars.*
 .wrangler/
 wrangler-*.log
+.nimote
