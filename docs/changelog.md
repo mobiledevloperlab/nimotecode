@@ -13,7 +13,7 @@ This is the public record of notable product updates. For setup help, use the [d
 
 ### Version 1.2.0 · October 5, 2026
 
-This release (Build 49) brings the Monaco editor to desktop and tablet workspaces, adds a one-click Windows build, and gives you more control over Explorer density. It also improves editing, keyboard input, selection, terminal layout, and theme consistency across device classes.
+This release brings the Monaco editor to desktop and tablet workspaces, improves Windows desktop support, and gives you more control over Explorer density. It also improves editing, keyboard input, selection, terminal layout, and theme consistency across device classes.
 
 [Read the complete 1.2.0 release notes →](/releases/)
 
