@@ -8,7 +8,7 @@
 
 <p align="center">为真实开发打造的移动 IDE<br>项目、终端、Git、调试器与 AI Agent —— 都在同一移动工作区。</p>
 
-<p align="center"><b>Early Access Pro —— 登录免费获得</b><br>登录即可在 Early Access 期间解锁 Pro 功能。</p>
+<p align="center"><b>Early Access Pro —— 登录后所有功能免费</b><br>登录即可在 Early Access 期间免费解锁全部 Pro 功能。</p>
 
 <p align="center">
   <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-安装-34A853?style=flat-square&logo=googleplay&logoColor=white" alt="从 Google Play 安装 NimoteCode"></a>
@@ -86,11 +86,11 @@
 | 预览 | 预览网页输出，包括 HTML 快照。 |
 | AI | 使用内置 Agent、ACP Agent，或经 SSH 使用 Claude Code / Codex。 |
 
-## 立即体验 NimoteCode
+## 立即体验 NimoteCode 1.2.0
 
-NimoteCode 目前处于 Early Access。
+NimoteCode 1.2.0 已上线。推荐直接通过 Google Play 或 App Store 安装，以获得最新版本。
 
-登录即可解锁 Early Access Pro，在 Early Access 期间无需额外费用，体验完整的开发流程。
+当前为 **Early Access Pro**：登录即可在 Early Access 期间免费使用全部功能。
 
 <p>
   <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-安装-34A853?style=flat-square&logo=googleplay&logoColor=white" alt="从 Google Play 安装 NimoteCode"></a>
@@ -113,9 +113,17 @@ Android 本地 Linux 的可选环境预设（含版本化清单与校验脚本�
 
 ## 最新更新
 
-近期版本新增首次启动引导、Android 本地 Linux、HTML 快照预览、外部 ACP Agent 与灵活的工作区目录；并修复了 SSH 凭据、Tasks、Source Control 与 Diff、Git 刷新、终端、AI 和 Local Linux 的可靠性问题。1.1.8 同时开启 **Early Access Pro**。
+### 1.1.5–1.2.0 重点更新
 
-商店版本即为当前版本，GitHub Release 附带的构建可能较旧。
+从 1.1.5 到 1.2.0，NimoteCode 围绕 Android 与 iOS 的移动开发体验完成了多项重要更新：
+
+- **更完整的移动工作区：** 支持编辑器双栏分屏、应用内浏览器与媒体预览、Git 历史和 Diff 审查，并提升终端与 SSH 工作流的可靠性。
+- **AI 与 Agent 工作流：** AI 工作区提供更丰富的上下文和最近任务、全局 Agent 状态提示、外部 ACP Agent、斜杠命令，并让 Claude Code、Codex 等工具共享一致的远程环境。
+- **Android 本地 Linux：** 在支持的 Android 设备上，可免 root 使用包含 Bash、Git 和 SSH 的 Ubuntu 环境；iOS 暂不支持此功能。
+- **更精细的移动界面：** 布局会根据可用空间自适应；界面缩放、Explorer 显示偏好、主题与 AI 时间线让信息更清晰、操作更可控。
+- **更好的触控与键盘编辑：** Android 平板和 iPad 可使用 Monaco；手机继续使用 Nimote Editor，文本选择、剪贴板、Diff、外接键盘、CJK 输入与软键盘处理均有提升。
+
+请通过商店安装 1.2.0 并接收后续更新；GitHub Release 附带的构建可能较旧。
 
 🗒️ [查看发布说明](https://github.com/mobiledevloperlab/nimotecode/releases)
 
