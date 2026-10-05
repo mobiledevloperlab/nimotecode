@@ -8,7 +8,7 @@
 
 <p align="center">Mobile IDE for Real Development<br>Your project, terminal, Git, debugger and AI agents — in one mobile workspace.</p>
 
-<p align="center"><b>Early Access Pro — Free with sign-in</b><br>Sign in to unlock Pro features during Early Access.</p>
+<p align="center"><b>Early Access Pro — All features free with sign-in</b><br>Sign in to unlock every Pro feature during Early Access.</p>
 
 <p align="center">
   <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-Install-34A853?style=flat-square&logo=googleplay&logoColor=white" alt="Get NimoteCode on Google Play"></a>
@@ -86,11 +86,11 @@ Switch between them without changing how you browse, edit, run, or review a proj
 | Preview | Preview web output, including HTML snapshots. |
 | AI | Use the built-in agent, an ACP agent, or Claude Code / Codex on your own host. |
 
-## Try NimoteCode
+## Try NimoteCode 1.2.0
 
-NimoteCode is currently in Early Access.
+NimoteCode 1.2.0 is now available. We recommend installing directly from Google Play or the App Store to get the current build.
 
-Sign in to unlock Early Access Pro and try the full development workflow at no additional cost during the Early Access period.
+It is currently **Early Access Pro**: sign in to unlock all features at no cost during the Early Access period.
 
 <p>
   <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-Install-34A853?style=flat-square&logo=googleplay&logoColor=white" alt="Get NimoteCode on Google Play"></a>
@@ -113,9 +113,17 @@ Optional Android Local Linux environments, with versioned manifests and verifica
 
 ## What's New
 
-Recent releases add first-launch onboarding, Android Local Linux, HTML snapshot preview, external ACP agents, and flexible workspace directories, plus reliability fixes for SSH credentials, Tasks, Source Control and Diff, Git refresh, Terminal, AI, and Local Linux. Version 1.1.8 also begins **Early Access Pro**.
+### 1.1.5–1.2.0 highlights
 
-Store builds are the current release, and the GitHub Release package can be an older build.
+From 1.1.5 through 1.2.0, NimoteCode has added major mobile-development capabilities across Android and iOS:
+
+- **A more complete mobile workspace:** split editor panes, in-app browser and media preview, Git history and Diff review, plus more dependable Terminal and SSH workflows.
+- **AI and agent workflows:** richer workspace context and recent tasks, a persistent agent-status indicator, external ACP agents, slash commands, and consistent remote-environment support for tools such as Claude Code and Codex.
+- **Android Local Linux:** on supported Android devices, run a root-free Ubuntu environment with Bash, Git, and SSH directly from the workspace. This feature is not available on iOS.
+- **A refined mobile interface:** layouts adapt to the available space; interface scale, Explorer display preferences, themes, and the AI timeline make work easier to scan and control.
+- **Better touch and keyboard editing:** Android tablets and iPad can use Monaco; phones retain Nimote Editor, with stronger selection, clipboard, Diff, external-keyboard, CJK-input, and soft-keyboard handling.
+
+Install from the store for version 1.2.0 and future updates; the GitHub Release package may be an older build.
 
 🗒️ [Read the release notes](https://github.com/mobiledevloperlab/nimotecode/releases)
 
