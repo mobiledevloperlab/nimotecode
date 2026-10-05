@@ -11,6 +11,12 @@ This is the public record of notable product updates. For setup help, use the [d
 
 ## 2026
 
+### Version 1.2.0 · October 5, 2026
+
+This release (Build 49) brings the Monaco editor to desktop and tablet workspaces, adds a one-click Windows build, and gives you more control over Explorer density. It also improves editing, keyboard input, selection, terminal layout, and theme consistency across device classes.
+
+[Read the complete 1.2.0 release notes →](/releases/)
+
 ### Version 1.1.9 · September 27, 2026
 
 This release (Build 48) rebuilds the interface on one design system — a layout chosen by available space, one density and status language, an IDE-style AI timeline, and a new interface scale — and adds PHP debugging and broader syntax highlighting, while making agent sessions, agent search, access checks and startup more reliable.
