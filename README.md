@@ -86,9 +86,9 @@ Switch between them without changing how you browse, edit, run, or review a proj
 | Preview | Preview web output, including HTML snapshots. |
 | AI | Use the built-in agent, an ACP agent, or Claude Code / Codex on your own host. |
 
-## Try NimoteCode 1.2.0
+## Try NimoteCode 1.2.2
 
-NimoteCode 1.2.0 is now available. We recommend installing directly from Google Play or the App Store to get the current build.
+NimoteCode 1.2.2 is now available. We recommend installing directly from Google Play or the App Store to get the current build.
 
 It is currently **Early Access Pro**: sign in to unlock all features at no cost during the Early Access period.
 
@@ -113,9 +113,17 @@ Optional Android Local Linux environments, with versioned manifests and verifica
 
 ## What's New
 
+### 1.2.1–1.2.2 highlights
+
+- **Open project folders outside the app sandbox:** on Android and iPadOS/iPhone, open a project directory outside the app's own documents folder with the system picker. NimoteCode remembers the grant across relaunches and reads and writes through the secure file provider.
+- **Git in the landscape editor:** Git diffs, commit diffs, and conflict resolution now open in the editor area of a docked landscape workspace, in the same place as Settings and Markdown preview.
+- **Near real-time Git status:** Explorer decorations and Source Control update as files change from the terminal, Explorer, or external tools, instead of waiting for the next poll.
+- **A calmer, more focused IDE:** panels, tabs, editor chrome, terminal surfaces, and AI views now share one visual system, with a more focused landscape workspace and better large-screen readability.
+- **Refined defaults and reliability:** denser Explorer defaults, a "/" terminal preset that no longer dismisses the soft keyboard, SSH sessions that survive short interruptions, and new installs that default to English.
+
 ### 1.1.5–1.2.0 highlights
 
-From 1.1.5 through 1.2.0, NimoteCode has added major mobile-development capabilities across Android and iOS:
+From 1.1.5 through 1.2.0, NimoteCode added major mobile-development capabilities across Android and iOS:
 
 - **A more complete mobile workspace:** split editor panes, in-app browser and media preview, Git history and Diff review, plus more dependable Terminal and SSH workflows.
 - **AI and agent workflows:** richer workspace context and recent tasks, a persistent agent-status indicator, external ACP agents, slash commands, and consistent remote-environment support for tools such as Claude Code and Codex.
@@ -123,7 +131,7 @@ From 1.1.5 through 1.2.0, NimoteCode has added major mobile-development capabili
 - **A refined mobile interface:** layouts adapt to the available space; interface scale, Explorer display preferences, themes, and the AI timeline make work easier to scan and control.
 - **Better touch and keyboard editing:** Android tablets and iPad can use Monaco; phones retain Nimote Editor, with stronger selection, clipboard, Diff, external-keyboard, CJK-input, and soft-keyboard handling.
 
-Install from the store for version 1.2.0 and future updates; the GitHub Release package may be an older build.
+Install from the store for version 1.2.2 and future updates; the GitHub Release package may be an older build.
 
 🗒️ [Read the release notes](https://github.com/mobiledevloperlab/nimotecode/releases)
 
