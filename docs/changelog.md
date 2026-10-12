@@ -11,6 +11,18 @@ This is the public record of notable product updates. For setup help, use the [d
 
 ## 2026
 
+### Version 1.2.2 · October 9, 2026
+
+This release (Build 52) opens project folders outside the app sandbox, brings Git diffs and conflict resolution into the landscape editor, and keeps Git status and terminal sessions current while you work. It also adds denser Explorer defaults, friendly names for external workspaces and a set of fixes, and new installs now default to English.
+
+[Read the complete 1.2.2 release notes →](/releases/)
+
+### Version 1.2.1 · October 6, 2026
+
+This release (Build 51) refines the desktop and tablet IDE with one calmer visual system: a more focused landscape workspace, a compact inset editor, better large-screen readability, and more natural modal sheets across themes and screen sizes.
+
+[Read the complete 1.2.1 release notes →](/releases/)
+
 ### Version 1.2.0 · October 5, 2026
 
 This release brings the Monaco editor to desktop and tablet workspaces, improves Windows desktop support, and gives you more control over Explorer density. It also improves editing, keyboard input, selection, terminal layout, and theme consistency across device classes.

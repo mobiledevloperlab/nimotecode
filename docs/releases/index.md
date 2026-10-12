@@ -7,6 +7,54 @@ description: Complete release notes for NimoteCode, including new features, impr
 
 This page contains the complete public release history. NimoteCode is available on Android through Google Play and on iPhone and iPad through the App Store; see the [Download page](/download) for current store links.
 
+## 1.2.2 · October 9, 2026 · Build 52
+
+Version 1.2.2 opens project folders outside the app sandbox, brings Git into the landscape editor, and keeps Git status and terminal sessions current while you work.
+
+### New
+
+- **Open external project folders.** On Android and iPadOS/iPhone, you can open a project directory outside the app's own documents folder with the system folder picker. NimoteCode requests access through the platform grant, remembers it across relaunches, and reads and writes through the secure file provider. These workspaces show a friendly location instead of a raw URI, and features that need a native filesystem path (Git, LSP, debug, tasks, the file watcher and the Agent) are reported up front.
+- **Git pages in the landscape editor.** On a docked landscape workspace, Git diffs, commit diffs and conflict-resolution pages now open in the editor area — the same place Settings appears — so you can review changes without leaving your IDE context. Portrait keeps the existing full-screen page.
+- **Near real-time Git status.** Explorer decorations and the Source Control panel now update as files change from the terminal, Explorer operations or external tools, instead of waiting for the next poll.
+
+### Improved
+
+- **Landscape directory pickers use the full width.** Opening a local or remote folder in a docked landscape workspace splits the picker into two panes: browse folders on the left, edit the path and see the folder the picker points at on the right. Portrait and narrow windows keep the single column. The landscape empty state also places its illustration beside the action list.
+- **Friendly names for external workspaces.** In an external workspace, the Explorer, editor tabs, breadcrumbs, Markdown preview titles and Search results show the provider's folder and file names instead of a raw `content://` address.
+- **A card-based landscape panel.** The landscape middle panel now matches the editor card: it shares the editor's surface and rounded corners, the activity rail runs the full height, and the drag strip between the panel and editor stays centred.
+- **Denser Explorer defaults.** New installs default Explorer directory text to 14 and row height to 35, so phones and tablets show more items at once. Your saved preferences still win.
+- **Terminal presets that stay out of the way.** Added a "/" quick-access preset, and tapping a preset no longer dismisses the soft keyboard; presets write to the active terminal and only restore focus when the terminal already owned the keyboard.
+- **SSH sessions survive short interruptions.** After a brief background cycle, NimoteCode re-checks the transport before declaring the connection lost, so a live session keeps its scrollback. A genuinely dead session still reconnects.
+
+### Fixed
+
+- New installs default to English instead of following the device language or falling back to Chinese; an explicit language choice is still remembered.
+- Fixed the duplicate divider under the Local Explorer header so local and remote explorers draw a single hairline.
+- Fixed Explorer session-history and remote directory-picker pages not repainting when the theme changes.
+- Fixed local Git status missing subdirectory changes and untracked files.
+- Fixed an Android crash after writing or deleting a file in an external workspace.
+
+## 1.2.1 · October 6, 2026 · Build 51
+
+Version 1.2.1 refines NimoteCode's desktop and tablet IDE experience with a unified visual system, a more focused landscape workspace, and more consistent presentation across themes and screen sizes.
+
+### New
+
+- **Settings in the landscape workspace.** On a docked landscape workspace, Settings can now open in the editor area, so you can adjust the app without leaving your current IDE context. Markdown previews follow the same integrated presentation.
+
+### Improved
+
+- **One calmer visual system.** Panels, controls, menus, lists, tabs, editor chrome, terminal surfaces and AI views now share clearer surface hierarchy, interaction states, typography, spacing and radius language across the app's themes.
+- **A more focused landscape IDE.** Tablet and desktop workspaces now give the editor more visual priority: the Explorer is better bounded, the activity rail and file tree are more compact, and toolbar and tab spacing is more deliberate.
+- **Compact inset workspace.** The landscape editor now sits as a subtle inset surface within the IDE shell, with restrained tonal separation and corners that feel embedded rather than card-like.
+- **Better large-screen readability.** iPad typography and landscape header bands are more consistent, helping tabs, panel headers, breadcrumbs and controls align at a glance.
+- **More natural landscape sheets.** Modal sheets adapt more reliably to wide tablet windows while preserving their established phone presentation.
+
+### Fixed
+
+- Fixed mismatched header-band heights between landscape panels, editor tabs and shared workspace chrome.
+- Fixed visual inconsistencies across interactive states and theme surfaces in panels, Explorer, editor, terminal and AI workflows.
+
 ## 1.2.0 · October 5, 2026
 
 Version 1.2.0 brings the Monaco editor to desktop and tablet workspaces, improves Windows desktop support, and gives you more control over Explorer density. It also improves editing, keyboard input, selection, terminal layout, and theme consistency across device classes.
