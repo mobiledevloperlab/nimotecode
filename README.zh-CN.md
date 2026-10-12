@@ -86,9 +86,9 @@
 | 预览 | 预览网页输出，包括 HTML 快照。 |
 | AI | 使用内置 Agent、ACP Agent，或经 SSH 使用 Claude Code / Codex。 |
 
-## 立即体验 NimoteCode 1.2.0
+## 立即体验 NimoteCode 1.2.2
 
-NimoteCode 1.2.0 已上线。推荐直接通过 Google Play 或 App Store 安装，以获得最新版本。
+NimoteCode 1.2.2 已上线。推荐直接通过 Google Play 或 App Store 安装，以获得最新版本。
 
 当前为 **Early Access Pro**：登录即可在 Early Access 期间免费使用全部功能。
 
@@ -113,6 +113,14 @@ Android 本地 Linux 的可选环境预设（含版本化清单与校验脚本�
 
 ## 最新更新
 
+### 1.2.1–1.2.2 重点更新
+
+- **打开应用沙盒外的项目目录：** 在 Android 和 iPadOS/iPhone 上，可通过系统选择器打开应用自身文档目录之外的项目目录；NimoteCode 会记住授权，并通过安全的文件 Provider 读写。
+- **横屏编辑器内的 Git 页面：** 在停靠式横屏工作区中，Git Diff、提交 Diff 与冲突解决页面直接在编辑器区域打开，与设置页、Markdown 预览位置一致。
+- **近乎实时的 Git 状态：** Explorer 装饰与源代码管理会随终端、Explorer 或外部工具引起的文件变化即时更新，而不再等待轮询。
+- **更统一、更聚焦的 IDE：** 面板、标签页、编辑器 Chrome、终端表面与 AI 视图共享统一的视觉系统，横屏工作区更聚焦，大屏可读性更好。
+- **更精细的默认值与可靠性：** 更紧凑的 Explorer 默认值、点击不再收起键盘的 “/” 终端预置、可承受短暂中断的 SSH 会话，新安装默认使用英文。
+
 ### 1.1.5–1.2.0 重点更新
 
 从 1.1.5 到 1.2.0，NimoteCode 围绕 Android 与 iOS 的移动开发体验完成了多项重要更新：
@@ -123,7 +131,7 @@ Android 本地 Linux 的可选环境预设（含版本化清单与校验脚本�
 - **更精细的移动界面：** 布局会根据可用空间自适应；界面缩放、Explorer 显示偏好、主题与 AI 时间线让信息更清晰、操作更可控。
 - **更好的触控与键盘编辑：** Android 平板和 iPad 可使用 Monaco；手机继续使用 Nimote Editor，文本选择、剪贴板、Diff、外接键盘、CJK 输入与软键盘处理均有提升。
 
-请通过商店安装 1.2.0 并接收后续更新；GitHub Release 附带的构建可能较旧。
+请通过商店安装 1.2.2 并接收后续更新；GitHub Release 附带的构建可能较旧。
 
 🗒️ [查看发布说明](https://github.com/mobiledevloperlab/nimotecode/releases)
 
