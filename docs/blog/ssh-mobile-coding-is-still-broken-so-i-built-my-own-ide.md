@@ -35,7 +35,7 @@ So I started building a mobile-first IDE called **NimoteCode**. The idea is simp
 
 Instead of replicating a desktop tool, the workspace keeps the essential loop together: connect over [SSH Workspace](/docs/ssh), inspect the project in the Explorer, edit a file in the [Editor](/docs/editor), run and verify commands in the [Terminal](/docs/terminal), and review the result in [Source Control](/docs/source-control).
 
-It's not a terminal-only client and it's not a separate editor—it's a workspace built for the focused, reviewable work developers actually do away from a desk. See the full model in [SSH IDE](/ssh-ide) and [Remote Hotfix from Mobile](/use-cases/remote-hotfix).
+It's not a terminal-only client and it's not a separate editor—it's a workspace built for the focused, reviewable work developers actually do away from a desk. See the full model in [SSH IDE](/ssh-ide) and [SSH remote development workflow](/docs/ssh).
 
 ## Try it
 

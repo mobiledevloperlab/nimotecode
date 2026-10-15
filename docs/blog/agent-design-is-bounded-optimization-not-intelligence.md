@@ -83,13 +83,13 @@ Improving reasoning alone often increases instability, because stronger reasonin
 
 An agent is not a system that "thinks better". It is a system that optimizes under constraints and knows when to stop optimizing.
 
-In practice this is exactly why agent workflows need guardrails: a controlled multi-step agent can inspect files, run commands and propose changes, but it still needs boundaries and review. See how that plays out in a real workspace in [AI Agent Workflows](/use-cases/ai-agent) and the [AI Chat & Agent](/docs/ai) guide, and read a live demo in [Can an AI Agent Really Code From a Phone?](/blog/can-an-ai-agent-really-code-from-a-phone). For the wider product view, start with [Mobile AI Coding](/mobile-ai-coding).
+In practice this is exactly why agent workflows need guardrails: a controlled multi-step agent can inspect files, run commands and propose changes, but it still needs boundaries and review. See how that plays out in a real workspace in [AI Agent demo](/use-cases/) and the [AI Chat & Agent](/docs/ai) guide, and read a live demo in [Can an AI Agent Really Code From a Phone?](/blog/can-an-ai-agent-really-code-from-a-phone). For the wider product view, start with [Mobile AI Coding](/mobile-ai-coding).
 
 ## Related content
 
 - [Mobile AI coding workspace](/mobile-ai-coding) — guardrails and review in a real mobile workspace
 - [Can an AI Agent Really Code From a Phone?](/blog/can-an-ai-agent-really-code-from-a-phone) — a live agent demo over SSH
-- [AI Agent Workflows](/use-cases/ai-agent) — inspect, plan, execute and verify on mobile
+- [AI Agent demo](/use-cases/) — inspect, plan, execute and verify on mobile
 
 <div class="seo-cta">
   <p><strong>About the author</strong> · Building <a href="/">NimoteCode</a>, a mobile-first IDE built with Flutter and Rust. Follow the project on <a href="https://dev.to/ma_dev">DEV.to</a> · <a href="https://github.com/mobiledevloperlab">GitHub</a> · <a href="https://x.com/mobiledevlab">X</a>.</p>

@@ -64,5 +64,5 @@ Yes. NimoteCode has its own AI Chat and Agent workflows with provider configurat
 
 - [Mobile AI coding workspace](/mobile-ai-coding)
 - [Claude Code from phone](/claude-code-from-phone)
-- [Remote hotfix workflow](/use-cases/remote-hotfix)
+- [SSH remote development workflow](/docs/ssh)
 - [Can an AI Agent Really Code From a Phone?](/blog/can-an-ai-agent-really-code-from-a-phone)

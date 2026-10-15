@@ -81,5 +81,5 @@ Choose an SSH IDE when the task includes locating files, editing code, running v
 - [Android SSH client](/android-ssh-client)
 - [The Best Mobile IDEs in 2026](/blog/best-ssh-clients)
 - [iPhone SSH client](/iphone-ssh-client)
-- [On-call diagnostics from mobile](/use-cases/on-call-diagnostics)
+- [Terminal diagnostics](/docs/terminal)
 - [How to Use Android as a Remote IDE with Tailscale](/blog/tailscale-ssh-android-mac-linux)

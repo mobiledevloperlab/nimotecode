@@ -28,7 +28,7 @@ The point of running an agent inside a workspace rather than a standalone chat w
 
 NimoteCode is available now on Google Play, with the App Store version coming soon. Search for NimoteCode and start coding anywhere.
 
-If you want to see how a controlled agent fits into a reviewable delivery loop, read [AI Agent Workflows](/use-cases/ai-agent) and the [AI Chat & Agent](/docs/ai) guide. For a broader look at where this approach is going, see [Mobile AI Coding](/mobile-ai-coding).
+If you want to see how a controlled agent fits into a reviewable delivery loop, read [AI Agent demo](/use-cases/) and the [AI Chat & Agent](/docs/ai) guide. For a broader look at where this approach is going, see [Mobile AI Coding](/mobile-ai-coding).
 
 ## Related content
 

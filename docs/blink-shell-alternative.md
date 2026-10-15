@@ -26,7 +26,7 @@ NimoteCode keeps the terminal available for the commands you already use, while 
 - Inspect Git diffs, history and branches before a commit or push.
 - Use workspace-aware AI assistance for explanation, planning and controlled multi-step work.
 
-The result is useful for mobile on-call work, a quick configuration correction, a review after a CI alert or a small remote fix. Read [Remote Hotfix from Mobile](/use-cases/remote-hotfix) for the complete flow.
+The result is useful for mobile on-call work, a quick configuration correction, a review after a CI alert or a small remote fix. Read [SSH remote development workflow](/docs/ssh) for the complete flow.
 
 ## Choose by the work you need to complete
 

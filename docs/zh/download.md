@@ -17,7 +17,7 @@ NimoteCode 将本地或 SSH 项目、Android 本地 Linux 的双栏文件编辑�
 <p class="seo-cta-actions">
   <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=website&utm_campaign=zh_download_page" class="home-page-btn primary" target="_blank" rel="noreferrer">下载 Android 版</a>
   <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn primary" target="_blank" rel="noreferrer">下载 iOS 版</a>
-  <a href="/demo?utm_source=zh_download&utm_medium=website&utm_campaign=watch_demo" class="home-page-btn secondary">观看演示</a>
+  <a href="/zh/demo" class="home-page-btn secondary">观看演示</a>
 </p>
 
 ## 安装后的前五分钟

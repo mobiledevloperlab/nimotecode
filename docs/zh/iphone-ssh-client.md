@@ -26,7 +26,7 @@ NimoteCode 在 iPhone 与 iPad 上提供这条更宽的流程：**Explorer + SSH
 - 在改动离开设备前审查结果的 Git 工具。
 - 能基于当前文件和任务工作的 AI 辅助。
 
-这些拼起来可以形成一个紧凑却负责的闭环：连接、检查、编辑、验证、审查。完整的远程工作流见 [SSH IDE 页面](/zh/ssh-ide)，面向事故的场景见[值班排障](/zh/use-cases/on-call-diagnostics)。
+这些拼起来可以形成一个紧凑却负责的闭环：连接、检查、编辑、验证、审查。完整的远程工作流见 [SSH IDE 页面](/zh/ssh-ide)，命令执行与故障排查见[终端诊断](/zh/docs/terminal)。
 
 ## iPhone 与 iPad 产品可用性
 

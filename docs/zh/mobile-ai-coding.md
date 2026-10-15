@@ -75,6 +75,6 @@ AI Agent 可以协助多步骤任务，但远程及靠近生产的操作应在�
 
 - [用手机使用 Claude Code](/zh/claude-code-from-phone)
 - [用手机使用 Codex](/zh/codex-from-phone)
-- [AI Agent 工作流](/zh/use-cases/ai-agent)
+- [AI Agent 演示](/zh/use-cases/)
 - [移动 IDE 总览](/zh/mobile-ide)
 - [AI Agent 真的能在手机上编程吗？](/zh/blog/can-an-ai-agent-really-code-from-a-phone)

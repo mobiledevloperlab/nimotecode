@@ -44,4 +44,4 @@ For an SSH workspace, Terminal, external ACP agents, Tasks, Debug, language serv
 
 > Review commands and file changes before applying them, particularly in a remote or production-adjacent workspace. The app’s validation and locking layers support controlled work; they do not transfer operational responsibility away from the user.
 
-Continue with [AI Agent Workflows](/use-cases/ai-agent) · [Security and Safety](/docs/security) · [Mobile AI Coding](/mobile-ai-coding)
+Continue with [AI Agent demo](/use-cases/) · [Security and Safety](/docs/security) · [Mobile AI Coding](/mobile-ai-coding)

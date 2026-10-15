@@ -12,21 +12,16 @@ Use a host-installed Claude Code session while keeping the project, commands, te
 - Claude Code installed and authenticated on that host according to its official documentation.
 - A documented project check to run after the change.
 
-## Setup
+## Run the workflow
 
-Connect to the host in NimoteCode, open the intended repository, and inspect the branch and existing diff before starting a CLI session.
+Follow [Claude Code on a Phone](../../resources/claude-code-on-phone.md) for host preparation, authentication and the terminal commands. Use this checklist to finish a bounded task:
 
-## Workflow
+- Confirm the SSH host, repository, branch and existing changes before opening Claude Code.
+- Review proposed commands and inspect edited files in NimoteCode.
+- Run the project's documented check on the host and record its command and exit status.
+- Inspect `git diff --check`, `git diff` and `git status --short`; open untracked files separately before handoff.
 
-1. Install and authenticate Claude Code on the host according to its official documentation.
-2. Connect to that host in NimoteCode and open the intended repository.
-3. Inspect the branch and current diff before starting or continuing the CLI session in Terminal.
-4. Ask for a bounded task, inspect changed files in the editor, and review every command with the host and directory in mind.
-5. Run the repository's relevant checks, then review the Git diff before committing or handing off the change.
-
-## Verify
-
-Run the repository's relevant check on the host, then inspect the Git diff before committing or handing off the change.
+A useful handoff states the host environment (without private addresses or credentials), changed files, exact verification command, result and remaining limitations. A successful agent response alone is not verification.
 
 ## Troubleshooting
 
