@@ -38,7 +38,7 @@ When a task needs more context, [AI Chat and Agent](/docs/ai) can explain code o
 
 Good mobile development is not desktop UI squeezed onto a small screen. NimoteCode is designed around touch, mobile keyboards, focused panels and reconnect-aware remote work. The current release also makes long sessions steadier with more resilient SSH handling, bounded preview resources, and more reliable mobile terminal input. On a tablet, the larger display gives you more room for split editing, project navigation and terminal output; on a phone, the same workspace stays focused on the next action.
 
-For feature details, see [Features](/features). For a concrete production scenario, see [Remote Hotfix from Mobile](/use-cases/remote-hotfix). For setup instructions, start with [Quick Start](/docs/quick-start).
+For feature details, see [Features](/features). For SSH setup and project access, see [SSH remote development workflow](/docs/ssh). For setup instructions, start with [Quick Start](/docs/quick-start).
 
 ## Where the desktop still wins
 

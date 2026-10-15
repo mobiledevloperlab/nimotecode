@@ -68,5 +68,5 @@ NimoteCode 自身的 AI 提供商配置见 [AI Chat 与 Agent](/zh/docs/ai)。�
 
 - [用手机使用 Codex](/zh/codex-from-phone)
 - [面向远程开发的 SSH IDE](/zh/ssh-ide)
-- [AI Agent 工作流](/zh/use-cases/ai-agent)
+- [AI Agent 演示](/zh/use-cases/)
 - [AI Agent 真的能在手机上编程吗？](/zh/blog/can-an-ai-agent-really-code-from-a-phone)

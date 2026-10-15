@@ -38,4 +38,4 @@ Source Control 将 Git 中最需要审查的部分带回刚刚编辑和验证过
 
 AI 可以加快审查，但无法替代对环境与业务意图的验证。该执行的 CI、分支保护和人工评审仍应保留。
 
-相关：[手机远程热修](/zh/use-cases/remote-hotfix) · [AI Chat 与 Agent](/zh/docs/ai)
+相关：[SSH 远程开发工作流](/zh/docs/ssh) · [AI Chat 与 Agent](/zh/docs/ai)

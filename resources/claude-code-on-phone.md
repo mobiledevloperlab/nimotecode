@@ -37,34 +37,12 @@ Install and authenticate on the **host**, following the [official quickstart](ht
 
 The phone needs SSH connectivity and the host needs provider connectivity. A CLI conversation is not proof that tests passed. iOS does not provide NimoteCode Local Linux.
 
-## When to use it
-
-Use this workflow when Claude Code is already installed and authenticated on a development host and you need to work from a phone.
-
-## Main approaches
-
-Prepare the remote host using Claude Code's official installation and authentication instructions. Confirm that the account, repository, branch, and permissions are appropriate for the task. Do not paste credentials into chat transcripts or shell history unnecessarily.
-
-## Trade-offs
-
-The host keeps provider authentication and the full repository toolchain, while the mobile client depends on SSH connectivity and must protect terminal output.
-
-## Recommended workflow
-
-1. Connect over SSH and change to the intended project directory.
-2. Inspect the repository state and tests before asking for an edit.
-3. Start or continue the Claude Code session on the host.
-4. Read proposed commands and changes in context; use the editor to inspect affected files.
-5. Run the repository's relevant checks, then review the Git diff before delivery.
-
-## Example
-
-Start in the intended repository, ask for a bounded task, inspect each changed file, run the relevant check, and review the resulting diff before committing.
-
 ## Related resources
 
 NimoteCode does not install, proxy, or authenticate Claude Code. It provides the mobile SSH workspace around it: remote Explorer, editor, terminal, and Git review. See the [Claude Code over SSH example](../examples/claude-code-over-ssh/README.md), [mobile AI coding guide](mobile-ai-coding.md), and [remote development workflow](remote-development-from-phone.md).
 
 ## Try this workflow in NimoteCode
+
+Check [platform requirements and download instructions](https://nimotecode.com/download?utm_source=github&utm_medium=referral&utm_campaign=developer_workflows&utm_content=guide_claude_code).
 
 Install NimoteCode from [Google Play for Android](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) or the [App Store for iPhone and iPad](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253), then connect your own development host.

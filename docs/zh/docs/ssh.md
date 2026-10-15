@@ -59,4 +59,4 @@ Explorer 是 SSH 项目的起点。连接后选择 **Remote Explorer**，再确�
 
 为每个环境设置独立配置档；敏感主机优先使用低权限账号与私钥认证；工作区根目录应明确。断线重连感知与连接复用让远程命令和预览隧道更可靠，但在执行写入操作前，始终重新确认当前主机和目录。
 
-下一步：[终端](/zh/docs/terminal) · [手机远程热修](/zh/use-cases/remote-hotfix)
+下一步：[终端](/zh/docs/terminal) · [SSH 远程开发工作流](/zh/docs/ssh)

@@ -39,7 +39,7 @@ Short, task-oriented guides for working in a local project, Android Local Linux,
 
 ## Scenario guides
 
-If you are evaluating NimoteCode before setup, start with [Mobile IDE](/mobile-ide), [SSH IDE](/ssh-ide), [Mobile AI Coding](/mobile-ai-coding), or the technical [Mobile Development Resources](/resources/). For concrete workflows, read [Remote Hotfix from Mobile](/use-cases/remote-hotfix), [On-call Diagnostics](/use-cases/on-call-diagnostics), and [AI Agent Workflows](/use-cases/ai-agent).
+If you are evaluating NimoteCode before setup, start with [Mobile IDE](/mobile-ide), [SSH IDE](/ssh-ide), [Mobile AI Coding](/mobile-ai-coding), or the technical [Mobile Development Resources](/resources/). For concrete workflows, read [SSH remote development workflow](/docs/ssh), [Terminal diagnostics](/docs/terminal), and [AI Agent demo](/use-cases/).
 
 <div class="seo-cta">
   <p><strong>Prefer a visual overview first?</strong> The demo follows one project from SSH connection to AI-assisted, reviewable work.</p>

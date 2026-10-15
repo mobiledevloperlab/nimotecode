@@ -41,13 +41,14 @@ NimoteCode Local Linux uses a bundled Ubuntu environment through PRoot on suppor
 3. For a small Bash exercise, create a new directory and run a script:
 
    ```bash
-   mkdir -p /workspace/hello-mobile
-   cd /workspace/hello-mobile
+   mobile_demo_dir=$(mktemp -d /workspace/hello-mobile.XXXXXX)
+   cd "$mobile_demo_dir" || exit
+   pwd
    printf '%s\n' 'printf "Hello from Android Linux\n"' > hello.sh
    bash hello.sh
    ```
 
-   Expect `Hello from Android Linux`. Open `hello.sh` in Explorer, edit the message, and rerun it in Terminal. This example overwrites `hello.sh`; use a fresh directory.
+   Expect `Hello from Android Linux`. Open `hello.sh` in Explorer, edit the message, and rerun it in Terminal. Each run creates a fresh directory, so it does not overwrite an earlier exercise. `pwd` prints the directory to open in Explorer.
 4. Install only the tools your project needs, following their Ubuntu instructions and the [compatibility guide](https://nimotecode.com/docs/local-linux/compatibility). Back up project files before resetting or deleting the environment.
 
 ## Troubleshooting and limits
@@ -62,14 +63,6 @@ NimoteCode Local Linux uses a bundled Ubuntu environment through PRoot on suppor
 
 See [Local Linux troubleshooting](https://nimotecode.com/docs/local-linux/troubleshooting). Offline use applies only after the required files and tools are present; cloud AI services still need connectivity.
 
-## Recommended workflow
-
-Use local Android Linux when a self-contained script, learning environment, or compact toolchain is valuable offline. Use remote SSH when the work already depends on a desktop repository, containers, private network, long-running service, or powerful build machine. A common hybrid is to inspect and edit from mobile while the test suite and build continue on the remote host.
-
-## Example
-
-For a self-contained Python experiment, install only the required toolchain in a PRoot environment and run a small verification command. For a production repository, retain the project on its existing host and use SSH for edit, test, and review.
-
 ## Related resources
 
 - Treat downloaded rootfs archives, runtime bundles, manifests, and installers as release artifacts: verify the published SHA-256 before use.
@@ -80,5 +73,7 @@ For a self-contained Python experiment, install only the required toolchain in a
 Continue with [remote development from a phone](remote-development-from-phone.md), [SSH tools](ssh-development-tools.md), the [Android Local Linux example](../examples/android-local-linux/README.md), and the [Android Local Linux documentation](https://nimotecode.com/docs/local-linux).
 
 ## Try this workflow in NimoteCode
+
+Check [platform requirements and download instructions](https://nimotecode.com/download?utm_source=github&utm_medium=referral&utm_campaign=developer_workflows&utm_content=guide_android_linux).
 
 Install NimoteCode for [Android on Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode). Local Linux is Android-only; for [iPhone and iPad on the App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253), use a remote SSH workspace.

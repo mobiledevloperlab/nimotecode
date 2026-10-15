@@ -44,4 +44,4 @@ Provider 配置档包含端点、API 凭据、模型、流式和上下文行为�
 
 > 面对远程或生产相关工作区，应在应用前审查每条命令和每处文件修改。应用内的校验与锁定机制用于让流程更可控，而不是取代使用者的责任。
 
-继续了解：[AI Agent 工作流](/zh/use-cases/ai-agent) · [手机 AI 编程](/zh/mobile-ai-coding)
+继续了解：[AI Agent 演示](/zh/use-cases/) · [手机 AI 编程](/zh/mobile-ai-coding)

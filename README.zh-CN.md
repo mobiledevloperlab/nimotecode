@@ -17,7 +17,7 @@
   <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-下载-0D96F6?style=for-the-badge&logo=appstore&logoColor=white" alt="从 App Store 下载 NimoteCode"></a>
 </p>
 
-<p align="center"><a href="#演示">观看演示</a> · <a href="https://nimotecode.com/zh/docs/quick-start">快速开始</a> · <a href="https://nimotecode.com/zh/">官网</a><br>Early Access Pro：登录后可在 Early Access 期间免费使用全部功能。</p>
+<p align="center"><a href="#演示">观看演示</a> · <a href="https://nimotecode.com/zh/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=developer_workflows&amp;utm_content=readme_zh_quick_start">快速开始</a> · <a href="https://nimotecode.com/zh/?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=developer_workflows&amp;utm_content=readme_zh_website">官网</a><br>Early Access Pro：登录后可在 Early Access 期间免费使用全部功能。</p>
 
 <p align="center">
   <img src="docs/public/screenshots/nimote-pro.webp" alt="NimoteCode 移动 IDE，在平板和手机上展示本地与 SSH 工作区" width="1000">
@@ -35,7 +35,7 @@
 
 ## 为什么选择 NimoteCode？
 
-NimoteCode 将 SSH、代码编辑、终端、Git 审查与 AI Agent 放在同一个移动工作区中，方便从查看项目一路完成修改、验证与审查。结合 [1.2.1–1.2.2 发布说明](https://github.com/mobiledevloperlab/nimotecode/releases)，它进一步支持沙盒外项目目录、横屏编辑器内的 Git 审查，以及随文件变化刷新的 Git 状态。下表比较常见工作流；具体能力取决于客户端及主机工具配置，已有能力不代表本版本新增。
+NimoteCode 将 SSH、代码编辑、终端、Git 审查与 AI Agent 放在同一个移动工作区中，方便从查看项目一路完成修改、验证与审查。结合 [1.2.1–1.2.2 发布说明](https://github.com/mobiledevloperlab/nimotecode/releases)，它进一步支持沙盒外项目目录、横屏编辑器内的 Git 审查，以及随文件变化刷新的 Git 状态。下表比较常见工作流；具体能力取决于客户端及主机工具配置，已有能力不代表本版本新增。窄屏可横向滑动表格查看完整对比。
 
 | 能力 | SSH 终端工作流 | AI Agent 终端工作流 | NimoteCode |
 | --- | --- | --- | --- |
@@ -48,15 +48,23 @@ NimoteCode 将 SSH、代码编辑、终端、Git 审查与 AI Agent 放在同一
 | 调试 | 使用主机调试器或配套工具 | 可辅助排查，交互调试依赖其他工具 | 工作区内调试，需相应运行时与调试工具 |
 | 网页预览 | 使用浏览器及所需网络配置 | 启动服务后通过浏览器检查 | 应用内网页预览，包括 HTML 快照 |
 
-## 选择你的第一个开发任务
+<a id="选择你的第一个开发任务"></a>
+
+## Real Workflows：三个实际开发案例
 
 **打开项目 → 编辑 → 运行检查 → 审查 Git diff**
 
-| 你想做什么 | 从哪里开始 | 适用条件 |
-| --- | --- | --- |
-| 修改远程项目并验证结果 | [SSH 远程开发](resources/remote-development-from-phone.md)：连接主机，编辑文件、运行测试并审查 diff | Android / iOS；需要可访问的开发主机 |
-| 在手机上使用 AI 编程 CLI | [Claude Code on Phone](resources/claude-code-on-phone.md) 或 [Codex on Mobile](examples/codex-over-ssh/README.md)：通过 SSH 操作主机上的 CLI | CLI 需单独安装和认证，并非内置；服务访问权限与费用另计 |
-| 在 Android 本机运行 Linux 工具 | [Android 免 root Linux](resources/android-linux-development.md)：打开 Ubuntu 环境并运行脚本 | 支持的 Android 8+ ARM64 / x86_64 设备；基于 PRoot，iOS 不支持 |
+1. **远程 SSH：修复一个失败测试**
+
+   按[SSH 远程开发教程](resources/remote-development-from-phone.md)连接主机，先运行原有测试，再编辑、重跑并审查 diff。**适用：Android / iOS，需要可访问的开发主机。**
+
+2. **AI Coding：检查并修复一个问题**
+
+   使用[Claude Code on Phone](resources/claude-code-on-phone.md)或[Codex on Mobile](examples/codex-over-ssh/README.md)，让主机上的 CLI 先检查问题，再审查修改并运行项目检查。**CLI 并非内置，需单独安装和认证；服务访问权限与费用另计。**
+
+3. **Android Local Linux：运行第一个脚本**
+
+   按[Android 免 root Linux 教程](resources/android-linux-development.md)，在新目录中运行 Bash 示例，检查输出后编辑并重跑。**适用：Android 8+ ARM64 / x86_64 支持设备；基于 PRoot，iOS 不支持。**
 
 文件已在设备上？也可以从本地工作区开始编辑。语言工具链、LSP 和调试器所需工具取决于所选环境。
 
@@ -87,6 +95,8 @@ NimoteCode 将 SSH、代码编辑、终端、Git 审查与 AI Agent 放在同一
 ## 开始使用 NimoteCode
 
 [**Android — Google Play 下载**](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) · [**iPhone / iPad — App Store 下载**](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253)
+
+查看[平台要求与下载说明](https://nimotecode.com/zh/download?utm_source=github&utm_medium=referral&utm_campaign=developer_workflows&utm_content=readme_zh_download)。
 
 安装后，按[快速开始](https://nimotecode.com/zh/docs/quick-start)打开本地项目或连接 SSH 主机；支持的 Android 设备也可以选择 Local Linux。
 

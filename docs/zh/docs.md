@@ -37,7 +37,7 @@ description: 面向真实任务的 NimoteCode 中文指南：本地、Android �
 
 ## 场景指南
 
-还在评估产品时，可先阅读 [移动 IDE](/zh/mobile-ide)、[SSH IDE](/zh/ssh-ide)、[手机 AI 编程](/zh/mobile-ai-coding) 或[移动开发技术资源](/zh/resources/)。希望看到真实流程，可进入 [手机远程热修](/zh/use-cases/remote-hotfix)、[移动值班诊断](/zh/use-cases/on-call-diagnostics) 与 [AI Agent 工作流](/zh/use-cases/ai-agent)。
+还在评估产品时，可先阅读 [移动 IDE](/zh/mobile-ide)、[SSH IDE](/zh/ssh-ide)、[手机 AI 编程](/zh/mobile-ai-coding) 或[移动开发技术资源](/zh/resources/)。希望看到真实流程，可进入 [SSH 远程开发工作流](/zh/docs/ssh)、[终端诊断](/zh/docs/terminal) 与 [AI Agent 演示](/zh/use-cases/)。
 
 <div class="seo-cta">
   <p><strong>想先看可视化流程？</strong> 演示页面会从 SSH 连接一直讲到 AI 辅助与可审查的改动。</p>

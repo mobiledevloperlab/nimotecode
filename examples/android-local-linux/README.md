@@ -12,21 +12,17 @@ Prepare and verify a compact Linux-based workflow on a supported Android device.
 - Network access when installing packages.
 - A task compatible with a PRoot userspace rather than a VM or rooted Android environment.
 
-## Setup
+## Run the workflow
 
-In NimoteCode, choose **Local Linux**, install the bundled environment, then start and open it.
+Follow [Android Linux without root](../../resources/android-linux-development.md) to install and open the environment, inspect Ubuntu and the device architecture, then create and run a Bash exercise in a fresh directory.
 
-## Workflow
+## Verify before adding a toolchain
 
-1. In NimoteCode, choose **Local Linux**, install the bundled environment, then start and open it.
-2. Work in the default workspace and use Terminal to inspect the environment before adding packages.
-3. Install only the project tools needed for the current task; package installation may require network access and changes the environment.
-4. Use Explorer, Editor, Terminal, and Source Control around the same workspace.
-5. Stop the environment when finished; use reset or delete only after reading the destructive-action confirmation.
-
-## Verify
-
-Inspect the environment and run the project's smallest relevant command before adding more packages or assuming a toolchain is compatible.
+- `bash hello.sh` in the exercise directory prints `Hello from Android Linux`.
+- Edit the message in Explorer and rerun the script to confirm the editor and Terminal use the same directory.
+- Check `df -h /workspace` before installing packages; package installation may need network access.
+- Run the project's smallest check in the Android PRoot runtime. A container-only test is not proof of Android compatibility.
+- Back up project files before reset or delete; stop the environment when finished.
 
 ## Troubleshooting
 

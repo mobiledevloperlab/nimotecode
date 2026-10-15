@@ -80,5 +80,5 @@ SSH IDE 在 SSH 连接之上增加项目浏览、代码编辑、终端命令与 
 - [移动 IDE 总览](/zh/mobile-ide)
 - [Android SSH 客户端](/zh/android-ssh-client)
 - [iPhone SSH 客户端](/zh/iphone-ssh-client)
-- [移动端值班排障](/zh/use-cases/on-call-diagnostics)
+- [终端诊断](/zh/docs/terminal)
 - [如何用 Tailscale 把 Android 用作远程 IDE](/zh/blog/tailscale-ssh-android-mac-linux)
