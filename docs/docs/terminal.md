@@ -31,4 +31,4 @@ Pro provides advanced multi-terminal workflows for parallel contexts—such as o
   <strong>Terminal actions and session controls</strong>
 </ImagePlaceholder>
 
-Next: [SSH Workspace](/docs/ssh) · [Tasks](/docs/tasks) · [On-call Diagnostics](/use-cases/on-call-diagnostics)
+Next: [SSH Workspace](/docs/ssh) · [Tasks](/docs/tasks) · [Terminal diagnostics](/docs/terminal)

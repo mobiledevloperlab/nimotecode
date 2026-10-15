@@ -17,7 +17,7 @@
   <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-Download-0D96F6?style=for-the-badge&logo=appstore&logoColor=white" alt="Get NimoteCode on the App Store"></a>
 </p>
 
-<p align="center"><a href="#demo">Watch demo</a> · <a href="https://nimotecode.com/docs/quick-start">Quick start</a> · <a href="https://nimotecode.com">Website</a><br>Early Access Pro: sign in to use all features free during Early Access.</p>
+<p align="center"><a href="#demo">Watch demo</a> · <a href="https://nimotecode.com/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=developer_workflows&amp;utm_content=readme_en_quick_start">Quick start</a> · <a href="https://nimotecode.com?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=developer_workflows&amp;utm_content=readme_en_website">Website</a><br>Early Access Pro: sign in to use all features free during Early Access.</p>
 
 <p align="center">
   <img src="docs/public/screenshots/nimote-pro.webp" alt="NimoteCode mobile IDE with local and SSH workspaces on tablet and phone" width="1000">
@@ -35,7 +35,7 @@
 
 ## Why NimoteCode?
 
-NimoteCode brings SSH, code editing, Terminal, Git review and AI agents into one mobile workspace, so you can inspect a project, make a change, run checks and review the result. The [1.2.1–1.2.2 release notes](https://github.com/mobiledevloperlab/nimotecode/releases) add access to folders outside the app sandbox, Git review in the landscape editor and Git status updates as files change. The table compares common workflows; capabilities depend on the client and host tools, and existing features are not all new in this release.
+NimoteCode brings SSH, code editing, Terminal, Git review and AI agents into one mobile workspace, so you can inspect a project, make a change, run checks and review the result. The [1.2.1–1.2.2 release notes](https://github.com/mobiledevloperlab/nimotecode/releases) add access to folders outside the app sandbox, Git review in the landscape editor and Git status updates as files change. The table compares common workflows; capabilities depend on the client and host tools, and existing features are not all new in this release. On narrow screens, swipe the table horizontally to see all columns.
 
 | Capability | SSH terminal workflow | AI agent terminal workflow | NimoteCode |
 | --- | --- | --- | --- |
@@ -48,15 +48,23 @@ NimoteCode brings SSH, code editing, Terminal, Git review and AI agents into one
 | Debugging | Host debugger or supporting tools | Can help investigate; interactive debugging needs other tools | Debug within the workspace with the required runtime and debugger tools |
 | Web preview | Browser with the required network setup | Start a service, then inspect it in a browser | In-app web preview, including HTML snapshots |
 
-## Choose your first development task
+<a id="choose-your-first-development-task"></a>
+
+## Real Workflows
 
 **Open a project → Edit → Run checks → Review the Git diff**
 
-| What you want to do | Start here | What you need |
-| --- | --- | --- |
-| Change a remote project and verify the result | [SSH remote development](resources/remote-development-from-phone.md): connect, edit files, run tests and review the diff | Android / iOS and a reachable development host |
-| Use an AI coding CLI from your phone | [Claude Code on Phone](resources/claude-code-on-phone.md) or [Codex on Mobile](examples/codex-over-ssh/README.md): work with the host-installed CLI over SSH | Separate CLI installation and authentication; not bundled. Provider access and charges are separate. |
-| Run Linux tools on your Android device | [Android Linux without root](resources/android-linux-development.md): open Ubuntu and run a script | Supported Android 8+ ARM64 / x86_64 device; uses PRoot, unavailable on iOS |
+1. **Remote SSH: fix a failing test**
+
+   Follow [SSH remote development](resources/remote-development-from-phone.md): run the existing check on your host, edit, rerun and review the diff. **Android / iOS; requires a reachable development host.**
+
+2. **AI Coding: investigate a bounded issue**
+
+   Use [Claude Code on Phone](resources/claude-code-on-phone.md) or [Codex on Mobile](examples/codex-over-ssh/README.md): ask the host-installed CLI to inspect first, then review changes and run checks. **CLIs are not bundled; separate installation, authentication and provider access are required. Provider charges are separate.**
+
+3. **Android Local Linux: run a first script**
+
+   Follow [Android Linux without root](resources/android-linux-development.md): run the Bash exercise in a fresh directory, inspect its output, edit and rerun. **Supported Android 8+ ARM64 / x86_64 devices only; uses PRoot, unavailable on iOS.**
 
 Files already on your device? Start editing in a local workspace. Language toolchains, LSP and debugger tools depend on the selected environment.
 
@@ -87,6 +95,8 @@ Files already on your device? Start editing in a local workspace. Language toolc
 ## Start using NimoteCode
 
 [**Android — Get it on Google Play**](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) · [**iPhone / iPad — Download on the App Store**](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253)
+
+See [platform requirements and download instructions](https://nimotecode.com/download?utm_source=github&utm_medium=referral&utm_campaign=developer_workflows&utm_content=readme_en_download).
 
 After installing, follow the [quick start](https://nimotecode.com/docs/quick-start) to open a local project or connect an SSH host. Supported Android devices can also choose Local Linux.
 

@@ -38,4 +38,4 @@ Source Control brings the reviewable part of Git into the workspace where you ed
 
 AI assistance can make a review faster, but it cannot validate environment-specific intent. Keep branch protection, CI and human review in the workflow where your team requires them.
 
-See [Remote Hotfix from Mobile](/use-cases/remote-hotfix), [AI Chat and Agent](/docs/ai), and [Compare Free and Pro](/pro).
+See [SSH remote development workflow](/docs/ssh), [AI Chat and Agent](/docs/ai), and [Compare Free and Pro](/pro).

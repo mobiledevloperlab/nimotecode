@@ -17,7 +17,7 @@ NimoteCode lets you open a local or SSH project, or use bundled Ubuntu through A
 <p class="seo-cta-actions">
   <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=website&utm_campaign=download_page" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for Android</a>
   <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for iOS</a>
-  <a href="/demo?utm_source=download&utm_medium=website&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
+  <a href="/demo" class="home-page-btn secondary">Watch Demo</a>
 </p>
 
 ## Your first five minutes

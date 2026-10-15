@@ -58,7 +58,7 @@ The metadata this page renders from is available as machine-readable JSON: [`sou
 
 The archive holds the corresponding source for the third-party components of the bundled Ubuntu root filesystem: the exact `.dsc`, `.orig.tar` and `.debian.tar` artifacts for every source package the root filesystem requires source delivery for, together with the package inventories that tie them to the binaries shipped in the app.
 
-It does **not** contain NimoteCode proprietary application source, so it is not a build input for the app itself. The PRoot and talloc executables that ship separately are covered by their own corresponding-source delivery in the app's license files; their license texts are mirrored in <a :href="release.licensesUrl">the release's `licenses/` directory</a>.
+It does **not** contain NimoteCode proprietary application source, so it is not a build input for the app itself. The PRoot and talloc executables that ship separately are covered by their own corresponding-source delivery in the app's license files; their license texts are mirrored in <a :href="release.metadataRepositoryUrl + '/licenses'">the release's `licenses/` directory</a>.
 
 ## Build scripts, manifests and licenses
 

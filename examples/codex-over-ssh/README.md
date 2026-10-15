@@ -38,22 +38,6 @@ Follow the [official Codex CLI installation instructions](https://developers.ope
 
 The mobile client needs SSH connectivity. This example does not claim native iOS or Android PRoot support for Codex CLI; keep it on the supported host.
 
-## Setup
-
-Connect through NimoteCode, confirm the repository root and branch, and inspect the current Git state.
-
-## Workflow
-
-1. Follow Codex's official installation and authentication instructions on the host that owns the project.
-2. Connect to the host through NimoteCode and confirm the repository root and branch.
-3. Inspect the task and repository state before starting a Codex session in Terminal.
-4. Keep requests scoped, review proposed writes and commands, and inspect changed files in the editor.
-5. Run the project checks on the host and review the Git diff before delivery.
-
-## Verify
-
-Run the project check on the host and review the complete Git diff before delivery.
-
 ## Troubleshooting
 
 If a command or proposed write targets an unexpected directory, stop and verify the session context. For production access, use a least-privilege host account and the team's approval process.
@@ -70,5 +54,7 @@ If a command or proposed write targets an unexpected directory, stop and verify 
 See [Mobile AI Coding](../../resources/mobile-ai-coding.md) and [Remote Development From a Phone](../../resources/remote-development-from-phone.md).
 
 ## Try this workflow in NimoteCode
+
+Check [platform requirements and download instructions](https://nimotecode.com/download?utm_source=github&utm_medium=referral&utm_campaign=developer_workflows&utm_content=guide_codex).
 
 Install NimoteCode from [Google Play for Android](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) or the [App Store for iPhone and iPad](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253), then connect your own development host.

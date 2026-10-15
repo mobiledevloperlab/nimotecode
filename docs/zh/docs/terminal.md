@@ -31,4 +31,4 @@ Pro 提供进阶多终端工作流，适合并行保留日志、测试、服务�
   <strong>终端操作与会话控制</strong>
 </ImagePlaceholder>
 
-下一步：[SSH 工作区](/zh/docs/ssh) · [Tasks](/zh/docs/tasks) · [移动值班诊断](/zh/use-cases/on-call-diagnostics)
+下一步：[SSH 工作区](/zh/docs/ssh) · [Tasks](/zh/docs/tasks) · [终端诊断](/zh/docs/terminal)

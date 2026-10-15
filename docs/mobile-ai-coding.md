@@ -75,6 +75,6 @@ No. AI can help explain, plan and assist a task; Git review and appropriate test
 
 - [Claude Code from phone](/claude-code-from-phone)
 - [Codex from phone](/codex-from-phone)
-- [AI Agent workflows](/use-cases/ai-agent)
+- [AI Agent demo](/use-cases/)
 - [Mobile IDE overview](/mobile-ide)
 - [Can an AI Agent Really Code From a Phone?](/blog/can-an-ai-agent-really-code-from-a-phone)

@@ -68,5 +68,5 @@ Not with this workflow. Claude Code runs on a host you reach by SSH, so a phone 
 
 - [Codex from phone](/codex-from-phone)
 - [SSH IDE for remote development](/ssh-ide)
-- [AI Agent workflows](/use-cases/ai-agent)
+- [AI Agent demo](/use-cases/)
 - [Can an AI Agent Really Code From a Phone?](/blog/can-an-ai-agent-really-code-from-a-phone)

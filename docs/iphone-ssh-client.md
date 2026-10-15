@@ -26,7 +26,7 @@ For a coding task, look for more than host profiles and a terminal:
 - Git tooling to review the result before it leaves your device.
 - AI assistance that can work from the current file and workspace task.
 
-These pieces let you follow a compact but responsible loop: connect, inspect, edit, verify and review. See the [SSH IDE page](/ssh-ide) for the full remote workflow and [On-call Diagnostics](/use-cases/on-call-diagnostics) for an incident-oriented example.
+These pieces let you follow a compact but responsible loop: connect, inspect, edit, verify and review. See the [SSH IDE page](/ssh-ide) for the full remote workflow and [Terminal diagnostics](/docs/terminal) for command execution and troubleshooting.
 
 ## iPhone and iPad product availability
 

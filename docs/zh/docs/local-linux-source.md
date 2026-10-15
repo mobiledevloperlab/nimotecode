@@ -57,7 +57,7 @@ sha256sum {{ release.filename }}</code></pre>
 
 压缩包内含内置 Ubuntu 根文件系统中第三方组件的对应源码：对于每个需要交付源码的源码包，都包含其精确的 `.dsc`、`.orig.tar` 和 `.debian.tar` 构件，并附上将这些源码与随应用分发的二进制对应起来的软件包清单。
 
-源码包**不包含** NimoteCode 专有应用源码，因此它不是应用本身的构建输入。单独随应用分发的 PRoot 与 talloc 可执行文件另有对应的源码交付方式，位于应用内许可证文件；其许可证文本也镜像在 <a :href="release.licensesUrl">本版本的 `licenses/` 目录</a>中。
+源码包**不包含** NimoteCode 专有应用源码，因此它不是应用本身的构建输入。单独随应用分发的 PRoot 与 talloc 可执行文件另有对应的源码交付方式，位于应用内许可证文件；其许可证文本也镜像在 <a :href="release.metadataRepositoryUrl + '/licenses'">本版本的 `licenses/` 目录</a>中。
 
 ## 构建脚本、清单与许可证
 

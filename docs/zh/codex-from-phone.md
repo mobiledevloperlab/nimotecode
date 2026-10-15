@@ -64,5 +64,5 @@ Codex 必须已经在你可通过 SSH 访问的主机上配置好；手机不会
 
 - [移动 AI 编程工作区](/zh/mobile-ai-coding)
 - [用手机使用 Claude Code](/zh/claude-code-from-phone)
-- [远程热修工作流](/zh/use-cases/remote-hotfix)
+- [SSH 远程开发工作流](/zh/docs/ssh)
 - [AI Agent 真的能在手机上编程吗？](/zh/blog/can-an-ai-agent-really-code-from-a-phone)
