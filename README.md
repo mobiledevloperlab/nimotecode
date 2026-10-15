@@ -35,7 +35,7 @@
 
 ## Why NimoteCode?
 
-NimoteCode brings SSH, code editing, Terminal, Git review and AI agents into one mobile workspace, so you can inspect a project, make a change, run checks and review the result. The [1.2.1–1.2.2 release notes](https://github.com/mobiledevloperlab/nimotecode/releases) add access to folders outside the app sandbox, Git review in the landscape editor and Git status updates as files change. The table compares common workflows; capabilities depend on the client and host tools, and existing features are not all new in this release. On narrow screens, swipe the table horizontally to see all columns.
+NimoteCode brings SSH, code editing, Terminal, Git review and AI agents into one mobile workspace, so you can inspect a project, make a change, run checks and review the result. The [1.2.3 release notes](https://github.com/mobiledevloperlab/nimotecode/releases) add shared Local Linux projects, task-status surfaces outside the app, configurable terminal controls and more resilient SSH sessions. The table compares common workflows; capabilities depend on the client and host tools, and existing features are not all new in this release. On narrow screens, swipe the table horizontally to see all columns.
 
 | Capability | SSH terminal workflow | AI agent terminal workflow | NimoteCode |
 | --- | --- | --- | --- |
@@ -98,6 +98,8 @@ Files already on your device? Start editing in a local workspace. Language toolc
 
 See [platform requirements and download instructions](https://nimotecode.com/download?utm_source=github&utm_medium=referral&utm_campaign=developer_workflows&utm_content=readme_en_download).
 
+**Release availability:** Android releases first. Because of App Store review, the iPhone and iPad version is usually one release behind Android.
+
 After installing, follow the [quick start](https://nimotecode.com/docs/quick-start) to open a local project or connect an SSH host. Supported Android devices can also choose Local Linux.
 
 ## Mobile Development Guides
@@ -116,14 +118,21 @@ Optional Android Local Linux environments, with versioned manifests and verifica
 
 ## What's New
 
-**1.2.2 highlights**
+**1.2.3 highlights**
 
-- Open project folders outside the app sandbox with the system picker.
-- Review Git diffs, commits and conflicts in the landscape editor.
-- See Git status refresh in Explorer and Source Control as files change.
+- Share an app-local project with Android Local Linux at `/mnt/local`.
+- See observed AI and terminal task status in an iPhone/iPad Live Activity or an optional Android notification.
+- Choose compact or expanded terminal extra-key rows, use focus mode, and keep SSH sessions through short interruptions.
 
 <details>
-<summary>More updates from 1.1.5–1.2.2</summary>
+<summary>More updates from 1.1.5–1.2.3</summary>
+
+### 1.2.3 highlights
+
+- **Shared Local Linux projects (Android):** enable Shared Local Projects from Local Linux, then open the same app-local project at `/mnt/local` in the Linux workspace. You can also import a phone directory as a shared project or export a project copy.
+- **Task status beyond the app:** iPhone and iPad can show observed AI and terminal work in a Live Activity; Android can show an optional, dismissible notification. These surfaces report the last known state and do not keep tasks running in the background.
+- **Mobile terminal controls:** choose compact or expanded extra-key rows, use one-shot or locked modifiers, and switch on focus mode for more terminal space.
+- **More resilient SSH and a deeper Dark theme:** backgrounding no longer immediately discards a live SSH session or Explorer state, while the default Dark theme now uses an AMOLED black canvas with tuned surfaces and contrast.
 
 ### 1.2.1–1.2.2 highlights
 
