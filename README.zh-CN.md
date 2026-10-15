@@ -25,23 +25,28 @@
 
 ## 演示
 
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6"><img src="docs/public/videos/nimotecode-poster.jpg" alt="观看 AI Agent 产品演示" width="300"></a>
-</p>
+<div align="center" style="padding: 24px 16px; background: radial-gradient(ellipse at center, rgba(56, 139, 253, 0.16) 0%, rgba(56, 139, 253, 0) 72%);">
+  <video src="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6" controls muted playsinline width="420" poster="docs/public/videos/nimotecode-poster.jpg" style="display: block; max-width: 100%; margin: 0 auto; border: 1px solid rgba(56, 139, 253, 0.28); border-radius: 16px; box-shadow: 0 12px 32px rgba(27, 31, 35, 0.18);">
+    打开 <a href="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6">AI Agent 演示视频</a>。
+  </video>
+</div>
 
 [观看 AI Agent 产品演示](https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6) · [备用 MP4 视频](https://nimotecode.com/videos/ai-agent-demo-small.mp4)
 
 ## 为什么选择 NimoteCode？
 
-**围绕已有项目继续工作。** 打开本地文件，或通过 SSH 连接开发主机。1.2.1–1.2.2 更新还支持通过系统选择器打开应用沙盒外的项目目录，并在重新启动后保留访问授权。
+NimoteCode 将 SSH、代码编辑、终端、Git 审查与 AI Agent 放在同一个移动工作区中，方便从查看项目一路完成修改、验证与审查。结合 [1.2.1–1.2.2 发布说明](https://github.com/mobiledevloperlab/nimotecode/releases)，它进一步支持沙盒外项目目录、横屏编辑器内的 Git 审查，以及随文件变化刷新的 Git 状态。下表比较常见工作流；具体能力取决于客户端及主机工具配置，已有能力不代表本版本新增。
 
-**修改之后，方便审查。** Git Diff、提交 Diff 与冲突可在横屏编辑器内打开；Explorer 与源代码管理会随文件变化刷新 Git 状态，便于在提交前检查结果。
-
-**适应手机和平板上的操作。** 近期版本优化了面板布局、大屏可读性和终端键盘行为，并改善 SSH 在短暂中断时的连接韧性。长时间运行的任务仍建议使用主机上的持久会话。
-
-**按任务选择运行环境与 AI 工具。** 将重型工具链留在 SSH 主机上，或在支持的 Android 设备上使用免 root 的 Local Linux；iOS 不支持 Local Linux。可以使用内置 Agent、接入兼容的 ACP Agent，或访问自己主机上的 Claude Code / Codex CLI；这些 CLI 并非内置，需要单独安装和认证。
-
-具体版本变化见[发布说明](https://github.com/mobiledevloperlab/nimotecode/releases)。工作区与 AI 选项也包含早于 1.2.2 已提供的能力。
+| 能力 | SSH 终端工作流 | AI Agent 终端工作流 | NimoteCode |
+| --- | --- | --- | --- |
+| 远程 SSH | 连接主机并运行命令 | 经 SSH 使用主机上的 Agent | SSH Explorer、编辑器与终端共享项目上下文 |
+| 代码编辑与项目目录 | 使用主机编辑器或客户端文件工具 | Agent 修改文件，人工检查依赖配套工具 | 内置编辑器；支持通过系统选择器打开沙盒外项目目录 |
+| Git 审查 | 使用 Git 命令或配套界面 | Agent 可调用 Git，仍需人工审查 | 横屏编辑器内查看 Diff、提交与冲突；Git 状态随文件变化刷新 |
+| AI Agent | 单独安装并认证 CLI | 使用已配置的 Agent CLI | 内置 Agent、兼容 ACP Agent；Claude Code / Codex CLI 需在自己的主机上单独安装和认证，并非内置 |
+| Android Local Linux | 取决于客户端是否提供本地运行环境 | 取决于 CLI 与本地环境兼容性 | 支持的 Android 设备上通过 PRoot 运行免 root Ubuntu；iOS 不支持 |
+| LSP / 诊断 | 取决于编辑器与语言工具 | 通过配套编辑器或检查命令 | 支持语言的编辑器诊断，需配置相应语言工具 |
+| 调试 | 使用主机调试器或配套工具 | 可辅助排查，交互调试依赖其他工具 | 工作区内调试，需相应运行时与调试工具 |
+| 网页预览 | 使用浏览器及所需网络配置 | 启动服务后通过浏览器检查 | 应用内网页预览，包括 HTML 快照 |
 
 ## 选择你的第一个开发任务
 

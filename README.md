@@ -25,23 +25,28 @@
 
 ## Demo
 
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6"><img src="docs/public/videos/nimotecode-poster.jpg" alt="Watch the AI Agent product demo" width="300"></a>
-</p>
+<div align="center" style="padding: 24px 16px; background: radial-gradient(ellipse at center, rgba(56, 139, 253, 0.16) 0%, rgba(56, 139, 253, 0) 72%);">
+  <video src="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6" controls muted playsinline width="420" poster="docs/public/videos/nimotecode-poster.jpg" style="display: block; max-width: 100%; margin: 0 auto; border: 1px solid rgba(56, 139, 253, 0.28); border-radius: 16px; box-shadow: 0 12px 32px rgba(27, 31, 35, 0.18);">
+    Open the <a href="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6">AI Agent demo video</a>.
+  </video>
+</div>
 
 [Watch the AI Agent product demo](https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6) · [Alternative MP4 video](https://nimotecode.com/videos/ai-agent-demo-small.mp4)
 
 ## Why NimoteCode?
 
-**Work with your existing projects.** Open local files or connect to a development host over SSH. The 1.2.1–1.2.2 updates also let you open project folders outside the app sandbox through the system picker, with access remembered across relaunches.
+NimoteCode brings SSH, code editing, Terminal, Git review and AI agents into one mobile workspace, so you can inspect a project, make a change, run checks and review the result. The [1.2.1–1.2.2 release notes](https://github.com/mobiledevloperlab/nimotecode/releases) add access to folders outside the app sandbox, Git review in the landscape editor and Git status updates as files change. The table compares common workflows; capabilities depend on the client and host tools, and existing features are not all new in this release.
 
-**Keep changes easy to review.** Git diffs, commit diffs and conflicts open in the landscape editor. Explorer and Source Control refresh Git status as files change, so you can inspect the result before committing.
-
-**Use a workspace designed for phones and tablets.** Recent releases refine panel layouts, large-screen readability and terminal keyboard behavior, and improve SSH resilience during short interruptions. Long-running work still benefits from a persistent session on the host.
-
-**Choose where your tools run.** Keep heavy toolchains on an SSH host, or use root-free Local Linux on supported Android devices; Local Linux is unavailable on iOS. Use the built-in Agent, connect a compatible ACP agent, or access Claude Code / Codex CLI on your own host with separate installation and authentication; those CLIs are not bundled.
-
-See the [release notes](https://github.com/mobiledevloperlab/nimotecode/releases) for version-specific changes. Workspace and AI options include capabilities introduced before 1.2.2.
+| Capability | SSH terminal workflow | AI agent terminal workflow | NimoteCode |
+| --- | --- | --- | --- |
+| Remote SSH | Connect to a host and run commands | Access a host-installed agent over SSH | SSH Explorer, editor and terminal share project context |
+| Code editing and project folders | Use a host editor or client file tools | Agent edits files; manual inspection needs supporting tools | Built-in editor; open folders outside the app sandbox with the system picker |
+| Git review | Git commands or a separate interface | Agent can invoke Git; human review still needed | Diffs, commits and conflicts in the landscape editor; Git status refreshes as files change |
+| AI Agent | Install and authenticate a CLI separately | Use a configured agent CLI | Built-in Agent and compatible ACP agents; Claude Code / Codex CLI require separate host installation and authentication and are not bundled |
+| Android Local Linux | Depends on the client's local runtime | Depends on CLI and local runtime compatibility | Root-free Ubuntu through PRoot on supported Android devices; unavailable on iOS |
+| LSP / diagnostics | Depends on editor and language tools | Use a supporting editor or check commands | Editor diagnostics for supported languages with the required tools configured |
+| Debugging | Host debugger or supporting tools | Can help investigate; interactive debugging needs other tools | Debug within the workspace with the required runtime and debugger tools |
+| Web preview | Browser with the required network setup | Start a service, then inspect it in a browser | In-app web preview, including HTML snapshots |
 
 ## Choose your first development task
 
