@@ -35,7 +35,7 @@
 
 ## 为什么选择 NimoteCode？
 
-NimoteCode 将 SSH、代码编辑、终端、Git 审查与 AI Agent 放在同一个移动工作区中，方便从查看项目一路完成修改、验证与审查。结合 [1.2.1–1.2.2 发布说明](https://github.com/mobiledevloperlab/nimotecode/releases)，它进一步支持沙盒外项目目录、横屏编辑器内的 Git 审查，以及随文件变化刷新的 Git 状态。下表比较常见工作流；具体能力取决于客户端及主机工具配置，已有能力不代表本版本新增。窄屏可横向滑动表格查看完整对比。
+NimoteCode 将 SSH、代码编辑、终端、Git 审查与 AI Agent 放在同一个移动工作区中，方便从查看项目一路完成修改、验证与审查。结合 [1.2.3 发布说明](https://github.com/mobiledevloperlab/nimotecode/releases)，它进一步支持与 Local Linux 共享本地项目、在应用外显示任务状态、可配置终端控制与更具韧性的 SSH 会话。下表比较常见工作流；具体能力取决于客户端及主机工具配置，已有能力不代表本版本新增。窄屏可横向滑动表格查看完整对比。
 
 | 能力 | SSH 终端工作流 | AI Agent 终端工作流 | NimoteCode |
 | --- | --- | --- | --- |
@@ -98,6 +98,8 @@ NimoteCode 将 SSH、代码编辑、终端、Git 审查与 AI Agent 放在同一
 
 查看[平台要求与下载说明](https://nimotecode.com/zh/download?utm_source=github&utm_medium=referral&utm_campaign=developer_workflows&utm_content=readme_zh_download)。
 
+**版本发布节奏：**Android 会先发布。受 App Store 审核影响，iPhone 和 iPad 版本通常会比 Android 晚一个版本。
+
 安装后，按[快速开始](https://nimotecode.com/zh/docs/quick-start)打开本地项目或连接 SSH 主机；支持的 Android 设备也可以选择 Local Linux。
 
 ## 移动开发指南
@@ -116,14 +118,21 @@ Android 本地 Linux 的可选环境预设（含版本化清单与校验脚本�
 
 ## 最新更新
 
-**1.2.2 亮点**
+**1.2.3 亮点**
 
-- 通过系统选择器打开应用沙盒外的项目目录。
-- 在横屏编辑器内审查 Git diff、提交和冲突。
-- 文件变化后自动刷新 Explorer 与源代码管理中的 Git 状态。
+- 在 Android Local Linux 的 `/mnt/local` 与应用本地项目共享同一份文件。
+- 在 iPhone/iPad 实时活动或可关闭的 Android 通知中查看已观测到的 AI 与终端任务状态。
+- 选择紧凑或扩展终端扩展按键行，使用专注模式，并在短暂中断后保留 SSH 会话。
 
 <details>
-<summary>查看 1.1.5–1.2.2 的更多更新</summary>
+<summary>查看 1.1.5–1.2.3 的更多更新</summary>
+
+### 1.2.3 重点更新
+
+- **共享 Local Linux 项目（Android）：** 在 Local Linux 中开启「共享本地项目」后，可在 Linux 工作区的 `/mnt/local` 打开与应用本地项目完全相同的文件；也可将手机目录导入为共享项目，或导出项目副本。
+- **应用外的任务状态：** iPhone 和 iPad 可通过实时活动显示已观测到的 AI 与终端任务；Android 可通过可关闭的通知显示。它们只展示最近一次状态，不会让任务在后台持续运行。
+- **移动端终端控制：** 可选择紧凑或扩展的扩展按键行，使用单次或锁定修饰键，并通过专注模式为终端腾出更多空间。
+- **更具韧性的 SSH 与更深邃的深色主题：** 进入后台不再立即丢弃仍存活的 SSH 会话或 Explorer 状态；默认深色主题现采用 AMOLED 纯黑画布，并调整表面与对比度颜色。
 
 ### 1.2.1–1.2.2 重点更新
 

@@ -7,6 +7,30 @@ description: Complete release notes for NimoteCode, including new features, impr
 
 This page contains the complete public release history. NimoteCode is available on Android through Google Play and on iPhone and iPad through the App Store; see the [Download page](/download) for current store links.
 
+## 1.2.3 · October 15, 2026
+
+Version 1.2.3 improves mobile development workflows with shared Local Linux projects, more resilient SSH sessions, task-status updates outside the app, a configurable terminal, and a refined dark appearance.
+
+### New
+
+- **Share local projects with Local Linux (Android).** Enable Shared Local Projects from Local Linux, then open the same app-local project at `/mnt/local` in the Linux workspace. You can also import a phone directory as a new shared project or export a project copy when you are finished.
+- **Task status beyond the app.** iPhone and iPad can show observed AI and terminal work in a Live Activity. Android can show an optional, dismissible notification for observed AI and terminal task status. These surfaces report the last known state; they do not keep a task running in the background.
+- **Mobile terminal controls.** Choose compact or expanded extra-key rows, with one-shot and locked modifiers. A new focus mode gives the terminal more room when you need it.
+- **Optional SSH background support (Android).** An open SSH workspace can use an Android foreground-service notification, with controls to stop support or view system guidance.
+
+### Improved
+
+- **Projects imported into Local Linux open reliably.** Imported projects now open directly in their shared Linux location. New SSH workspaces also start in the remote home directory by default.
+- **SSH recovers more gracefully.** Backgrounding no longer immediately discards a live SSH session or Explorer state. iOS pauses probes while backgrounded and validates the transport when you return.
+- **A deeper dark theme.** The default Dark theme now uses an AMOLED black canvas with tuned surface, field, overlay, and contrast colors. Startup screens use the same palette.
+- **A cleaner terminal header and launch screen.** Terminal actions are grouped into a simpler overflow menu, and the launch animation and colors now better match the app.
+
+### Fixed
+
+- Fixed workspace-specific editor, AI history, authentication, Git-history, and SSH state leaking into another workspace.
+- Fixed SSH EOF probes causing unnecessary recovery, and preserved the Explorer during connection recovery.
+- Fixed background SSH guidance so it follows the app's dialog design.
+
 ## 1.2.2 · October 9, 2026 · Build 52
 
 Version 1.2.2 opens project folders outside the app sandbox, brings Git into the landscape editor, and keeps Git status and terminal sessions current while you work.

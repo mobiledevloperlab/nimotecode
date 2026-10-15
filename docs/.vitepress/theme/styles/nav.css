@@ -46,12 +46,12 @@
   transition: background-color 0.22s var(--nimote-ease), box-shadow 0.22s var(--nimote-ease);
 }
 
-/* At the very top of a marketing page the header opens up: let the Hero's
-   ambient light bleed through so the chrome never reads as a floating bar. */
+/* At the very top of a marketing page the header keeps its transparent
+   treatment, but retains the same bottom separator as every other page. */
 .VPNavBar.top {
   background: var(--nimote-nav-bg) !important; /* fallback */
   background: color-mix(in srgb, var(--nimote-bg) 66%, transparent) !important;
-  border-bottom-color: transparent;
+  border-bottom-color: var(--border-subtle);
 }
 
 .VPNavBar:not(.top) {

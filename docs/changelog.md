@@ -11,6 +11,12 @@ This is the public record of notable product updates. For setup help, use the [d
 
 ## 2026
 
+### Version 1.2.3 · October 15, 2026
+
+This release shares app-local projects with Android Local Linux, adds task-status updates outside the app and configurable terminal controls, and makes SSH sessions more resilient. It also refines the default Dark theme and fixes workspace-state isolation and SSH recovery issues.
+
+[Read the complete 1.2.3 release notes →](/releases/)
+
 ### Version 1.2.2 · October 9, 2026
 
 This release (Build 52) opens project folders outside the app sandbox, brings Git diffs and conflict resolution into the landscape editor, and keeps Git status and terminal sessions current while you work. It also adds denser Explorer defaults, friendly names for external workspaces and a set of fixes, and new installs now default to English.
