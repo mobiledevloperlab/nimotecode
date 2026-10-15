@@ -15,7 +15,7 @@ Read the full APT error first. Common causes are unavailable storage, unavailabl
 
 ## A tool works in a container but not on Android
 
-PRoot is not a VM. Re-check the architecture, package availability, and assumptions around ptrace, `/proc`, process creation, symlinks, and executable bits. Prefer the Presets repository's [runtime compatibility and test records](https://github.com/mobiledevloperlab/nimote-linux-presets/tree/main/docs) when a toolset is supplied as a preset.
+PRoot is not a VM. Re-check the architecture, package availability, and assumptions around ptrace, `/proc`, process creation, symlinks, and executable bits. Prefer the Presets repository's [runtime compatibility and test records](https://github.com/mobiledevloperlab/nimote-linux-presets/tree/master/docs) when a toolset is supplied as a preset.
 
 ## The environment stopped after the app was backgrounded
 
