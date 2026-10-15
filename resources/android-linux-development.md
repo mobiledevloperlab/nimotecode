@@ -22,6 +22,46 @@ PRoot lets a process see an alternate root directory without giving an app Andro
 
 NimoteCode Local Linux uses a bundled Ubuntu environment through PRoot on supported Android 8+ ARM64 and x86_64 devices. Its Local Linux base includes Bash, Git, and SSH foundations; language toolchains are installed when needed. The independent [Linux Presets repository](https://github.com/mobiledevloperlab/nimote-linux-presets) records the Ubuntu 24.04 targets, manifests, installer hashes, and PRoot compatibility checks for optional development presets.
 
+## Android Linux without root: first working command
+
+**Platform:** Android 8+ with a 64-bit ARM64 or x86_64 app. **Not supported:** iOS, iPadOS or 32-bit ARM devices. Have storage available for the environment and packages; additional package downloads need network access. Bash, Git and SSH are included, but language toolchains, debug adapters and external agent CLIs are not.
+
+1. In NimoteCode's workspace chooser, select **Local Linux → Install → Start → Open**. The initial Ubuntu image is bundled with the app.
+2. In that workspace's Terminal, inspect the environment:
+
+   ```bash
+   pwd
+   cat /etc/os-release
+   uname -m
+   git --version
+   df -h /workspace
+   ```
+
+   The default project directory is `/workspace`. `/etc/os-release` identifies the Ubuntu userspace; the kernel still belongs to Android.
+3. For a small Bash exercise, create a new directory and run a script:
+
+   ```bash
+   mkdir -p /workspace/hello-mobile
+   cd /workspace/hello-mobile
+   printf '%s\n' 'printf "Hello from Android Linux\n"' > hello.sh
+   bash hello.sh
+   ```
+
+   Expect `Hello from Android Linux`. Open `hello.sh` in Explorer, edit the message, and rerun it in Terminal. This example overwrites `hello.sh`; use a fresh directory.
+4. Install only the tools your project needs, following their Ubuntu instructions and the [compatibility guide](https://nimotecode.com/docs/local-linux/compatibility). Back up project files before resetting or deleting the environment.
+
+## Troubleshooting and limits
+
+| Symptom | Check or next step |
+| --- | --- |
+| Local Linux unavailable | Confirm Android version and a supported 64-bit app/device architecture; use SSH on iOS. |
+| Installation or packages run out of space | Check free device storage and `df -h /workspace`; preserve project files before removing data. |
+| Environment stops after backgrounding | Return to Local Linux and select Start, then Open; Android may stop background processes. |
+| Package downloads fail | Check network and package-source errors before retrying; initial bundled installation and later package downloads are separate steps. |
+| Docker, privileged operations or debugger tracing fail | PRoot is not a VM or an Android root grant. Move workloads needing kernel features to a suitable SSH host. |
+
+See [Local Linux troubleshooting](https://nimotecode.com/docs/local-linux/troubleshooting). Offline use applies only after the required files and tools are present; cloud AI services still need connectivity.
+
 ## Recommended workflow
 
 Use local Android Linux when a self-contained script, learning environment, or compact toolchain is valuable offline. Use remote SSH when the work already depends on a desktop repository, containers, private network, long-running service, or powerful build machine. A common hybrid is to inspect and edit from mobile while the test suite and build continue on the remote host.
@@ -38,3 +78,7 @@ For a self-contained Python experiment, install only the required toolchain in a
 - Review package sources and run only documented installers; package installation changes the local environment.
 
 Continue with [remote development from a phone](remote-development-from-phone.md), [SSH tools](ssh-development-tools.md), the [Android Local Linux example](../examples/android-local-linux/README.md), and the [Android Local Linux documentation](https://nimotecode.com/docs/local-linux).
+
+## Try this workflow in NimoteCode
+
+Install NimoteCode for [Android on Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode). Local Linux is Android-only; for [iPhone and iPad on the App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253), use a remote SSH workspace.

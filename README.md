@@ -6,64 +6,54 @@
 
 <p align="center"><a href="README.zh-CN.md">简体中文</a> · English</p>
 
-<p align="center">Mobile IDE for Real Development<br>Your project, terminal, Git, debugger and AI agents — in one mobile workspace.</p>
+<p align="center"><b>Mobile IDE for Android / iOS</b><br>Connect to your development host, edit code, run tests and review changes from your phone or tablet.</p>
 
-<p align="center"><b>Early Access Pro — All features free with sign-in</b><br>Sign in to unlock every Pro feature during Early Access.</p>
+<p align="center">SSH · Code Editor · Terminal · Git · Debug · AI Agent<br>Root-free Local Linux on Android only</p>
+
+<p align="center">Commercial, closed-source app · This repository provides official docs, tutorials and community resources, not app source.</p>
 
 <p align="center">
-  <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-Install-34A853?style=flat-square&logo=googleplay&logoColor=white" alt="Get NimoteCode on Google Play"></a>
-  <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-Download-0D96F6?style=flat-square&logo=appstore&logoColor=white" alt="Get NimoteCode on the App Store"></a>
-  <a href="https://nimotecode.com"><img src="https://img.shields.io/badge/Website-nimotecode.com-4f46e5?style=flat-square" alt="NimoteCode website"></a>
-  <a href="https://nimotecode.com/docs/quick-start"><img src="https://img.shields.io/badge/Docs-Quick_Start-24292f?style=flat-square&logo=readthedocs&logoColor=white" alt="NimoteCode documentation"></a>
+  <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-Install-34A853?style=for-the-badge&logo=googleplay&logoColor=white" alt="Get NimoteCode on Google Play"></a>
+  <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-Download-0D96F6?style=for-the-badge&logo=appstore&logoColor=white" alt="Get NimoteCode on the App Store"></a>
 </p>
+
+<p align="center"><a href="#demo">Watch demo</a> · <a href="https://nimotecode.com/docs/quick-start">Quick start</a> · <a href="https://nimotecode.com">Website</a><br>Early Access Pro: sign in to use all features free during Early Access.</p>
 
 <p align="center">
   <img src="docs/public/screenshots/nimote-pro.webp" alt="NimoteCode mobile IDE with local and SSH workspaces on tablet and phone" width="1000">
 </p>
 
-## One workspace. The whole development loop.
-
-**Explore → Edit → Run → AI → Debug → Review → Ship**
-
-Pick a workspace, make the edit, run the check, review the diff, and ship when the change is ready — without leaving the app.
-
 ## Demo
 
-> [!TIP]
-> **NimoteCode is actively developed and shaped by developer feedback.** Share ideas, questions, or bugs in [GitHub Issues](https://github.com/mobiledevloperlab/nimote_issues/issues); we read and reply to every report.
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6"><img src="docs/public/videos/nimotecode-poster.jpg" alt="Watch the AI Agent product demo" width="300"></a>
+</p>
 
-<div align="center" style="padding: 24px 16px; background: radial-gradient(ellipse at center, rgba(56, 139, 253, 0.16) 0%, rgba(56, 139, 253, 0) 72%);">
-  <video src="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6" controls muted playsinline width="420" poster="docs/public/videos/nimotecode-poster.jpg" style="display: block; max-width: 100%; margin: 0 auto; border: 1px solid rgba(56, 139, 253, 0.28); border-radius: 16px; box-shadow: 0 12px 32px rgba(27, 31, 35, 0.18);">
-    Open the <a href="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6">AI Agent demo video</a>.
-  </video>
-</div>
+[Watch the AI Agent product demo](https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6) · [Alternative MP4 video](https://nimotecode.com/videos/ai-agent-demo-small.mp4)
 
 ## Why NimoteCode?
 
-**More than a remote terminal.**
+**Work with your existing projects.** Open local files or connect to a development host over SSH. The 1.2.1–1.2.2 updates also let you open project folders outside the app sandbox through the system picker, with access remembered across relaunches.
 
-| Capability | SSH Client | AI Agent Terminal | NimoteCode |
-| --- | :---: | :---: | :---: |
-| Remote SSH | ✅ | ✅ | ✅ |
-| Code Editor | — | — | ✅ |
-| Git Workflow | — | — | ✅ |
-| AI Agent | — | ✅ | ✅ |
-| Android Local Linux | — | — | ✅ |
-| LSP / Diagnostics | — | — | ✅ |
-| Debugging | — | — | ✅ |
-| Web Preview | — | — | ✅ |
+**Keep changes easy to review.** Git diffs, commit diffs and conflicts open in the landscape editor. Explorer and Source Control refresh Git status as files change, so you can inspect the result before committing.
 
-This compares typical setups; what you get depends on the tools you already use.
+**Use a workspace designed for phones and tablets.** Recent releases refine panel layouts, large-screen readability and terminal keyboard behavior, and improve SSH resilience during short interruptions. Long-running work still benefits from a persistent session on the host.
 
-## Three ways to develop
+**Choose where your tools run.** Keep heavy toolchains on an SSH host, or use root-free Local Linux on supported Android devices; Local Linux is unavailable on iOS. Use the built-in Agent, connect a compatible ACP agent, or access Claude Code / Codex CLI on your own host with separate installation and authentication; those CLIs are not bundled.
 
-| Way | Use it when | What you get |
+See the [release notes](https://github.com/mobiledevloperlab/nimotecode/releases) for version-specific changes. Workspace and AI options include capabilities introduced before 1.2.2.
+
+## Choose your first development task
+
+**Open a project → Edit → Run checks → Review the Git diff**
+
+| What you want to do | Start here | What you need |
 | --- | --- | --- |
-| **Remote SSH** | The project lives on your Mac, Linux host, or VPS. | You work against the real host and keep heavy toolchains and services there. |
-| **Android Local Linux** | You want Linux tools on the device itself. | Root-free Ubuntu through PRoot on supported ARM64 and x86_64 Android devices. |
-| **Local Workspace** | Your files are already on the phone or tablet. | Fast editing with the same editor, terminal, Git, and AI workflow. |
+| Change a remote project and verify the result | [SSH remote development](resources/remote-development-from-phone.md): connect, edit files, run tests and review the diff | Android / iOS and a reachable development host |
+| Use an AI coding CLI from your phone | [Claude Code on Phone](resources/claude-code-on-phone.md) or [Codex on Mobile](examples/codex-over-ssh/README.md): work with the host-installed CLI over SSH | Separate CLI installation and authentication; not bundled. Provider access and charges are separate. |
+| Run Linux tools on your Android device | [Android Linux without root](resources/android-linux-development.md): open Ubuntu and run a script | Supported Android 8+ ARM64 / x86_64 device; uses PRoot, unavailable on iOS |
 
-Switch between them without changing how you browse, edit, run, or review a project.
+Files already on your device? Start editing in a local workspace. Language toolchains, LSP and debugger tools depend on the selected environment.
 
 ## AI, your way
 
@@ -73,7 +63,8 @@ Switch between them without changing how you browse, edit, run, or review a proj
 | **ACP Agent** | Connect a compatible external agent in an SSH workspace and follow permissions and progress in one timeline. |
 | **Claude Code / Codex** | Run them on your own host and work with them through the terminal. |
 
-## Core capabilities
+<details>
+<summary>Explore all core capabilities</summary>
 
 | Area | What you can do |
 | --- | --- |
@@ -86,16 +77,13 @@ Switch between them without changing how you browse, edit, run, or review a proj
 | Preview | Preview web output, including HTML snapshots. |
 | AI | Use the built-in agent, an ACP agent, or Claude Code / Codex on your own host. |
 
-## Try NimoteCode 1.2.2
+</details>
 
-NimoteCode 1.2.2 is now available. We recommend installing directly from Google Play or the App Store to get the current build.
+## Start using NimoteCode
 
-It is currently **Early Access Pro**: sign in to unlock all features at no cost during the Early Access period.
+[**Android — Get it on Google Play**](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) · [**iPhone / iPad — Download on the App Store**](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253)
 
-<p>
-  <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-Install-34A853?style=flat-square&logo=googleplay&logoColor=white" alt="Get NimoteCode on Google Play"></a>
-  <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-Download-0D96F6?style=flat-square&logo=appstore&logoColor=white" alt="Get NimoteCode on the App Store"></a>
-</p>
+After installing, follow the [quick start](https://nimotecode.com/docs/quick-start) to open a local project or connect an SSH host. Supported Android devices can also choose Local Linux.
 
 ## Mobile Development Guides
 
@@ -112,6 +100,15 @@ Optional Android Local Linux environments, with versioned manifests and verifica
 [Linux Presets](https://github.com/mobiledevloperlab/nimote-linux-presets) · [Preset overview](presets/README.md) · [Android Local Linux docs](https://nimotecode.com/docs/local-linux)
 
 ## What's New
+
+**1.2.2 highlights**
+
+- Open project folders outside the app sandbox with the system picker.
+- Review Git diffs, commits and conflicts in the landscape editor.
+- See Git status refresh in Explorer and Source Control as files change.
+
+<details>
+<summary>More updates from 1.1.5–1.2.2</summary>
 
 ### 1.2.1–1.2.2 highlights
 
@@ -131,13 +128,13 @@ From 1.1.5 through 1.2.0, NimoteCode added major mobile-development capabilities
 - **A refined mobile interface:** layouts adapt to the available space; interface scale, Explorer display preferences, themes, and the AI timeline make work easier to scan and control.
 - **Better touch and keyboard editing:** Android tablets and iPad can use Monaco; phones retain Nimote Editor, with stronger selection, clipboard, Diff, external-keyboard, CJK-input, and soft-keyboard handling.
 
-Install from the store for version 1.2.2 and future updates; the GitHub Release package may be an older build.
+</details>
 
 🗒️ [Read the release notes](https://github.com/mobiledevloperlab/nimotecode/releases)
 
 ## Community
 
-Questions, bugs, and ideas are welcome — every report gets read.
+NimoteCode is actively developed. Share questions, bugs or ideas to help shape the next improvements.
 
 💬 [Discord](https://discord.gg/tTxbpqYmhR) · [GitHub Issues](https://github.com/mobiledevloperlab/nimote_issues/issues) · [X](https://x.com/mobiledevlab)
 
@@ -156,7 +153,10 @@ NimoteCode is a commercial, closed-source application. This public repository is
 - Release notes
 - Community issues and feedback
 
-The NimoteCode application source code is not published in this repository.
+The NimoteCode application source code is not published in this repository. Published Local Linux source bundles and license notices cover third-party components; they do not make the NimoteCode app open source.
+
+<details>
+<summary>Maintain the website and docs</summary>
 
 Build the website and docs locally:
 
@@ -167,6 +167,8 @@ npm run docs:check
 ```
 
 Use `npm run docs:dev` to preview locally.
+
+</details>
 
 ## License
 
