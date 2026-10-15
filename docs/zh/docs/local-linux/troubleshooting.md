@@ -15,7 +15,7 @@ description: 排查 Android 上 NimoteCode 本地 Linux 常见的安装、软件
 
 ## container 能运行、Android 上不能运行
 
-PRoot 不是虚拟机。重新检查架构、软件包可用性，以及 ptrace、`/proc`、进程创建、符号链接和可执行位等假设。若工具以 preset 提供，优先参考 [Presets 仓库的 runtime 兼容性与测试记录](https://github.com/mobiledevloperlab/nimote-linux-presets/tree/main/docs)。
+PRoot 不是虚拟机。重新检查架构、软件包可用性，以及 ptrace、`/proc`、进程创建、符号链接和可执行位等假设。若工具以 preset 提供，优先参考 [Presets 仓库的 runtime 兼容性与测试记录](https://github.com/mobiledevloperlab/nimote-linux-presets/tree/master/docs)。
 
 ## 应用切到后台后环境停止
 
