@@ -117,7 +117,7 @@
 
 .home-page-hero .home-page-subtitle {
   color: var(--nimote-text-secondary);
-  opacity: 0.82;
+  opacity: 1;
   text-shadow: none;
 }
 
@@ -151,29 +151,29 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: var(--nimote-space-1);
   width: fit-content;
   border-radius: var(--nimote-radius-pill);
   border: 1px solid var(--nimote-border);
-  background: rgba(255, 255, 255, 0.04);
+  background: color-mix(in srgb, var(--nimote-bg-elevated) 72%, transparent);
   color: var(--nimote-text-muted);
-  font-size: 0.74rem;
-  font-weight: 500;
-  letter-spacing: 0.09em;
+  font-size: 0.69rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 8px 14px;
+  padding: 6px 11px;
 }
 
 .home-page-badge {
-  margin: 0 0 18px;
+  margin: 0 0 var(--nimote-space-4);
 }
 
 .home-page-logo-lockup {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  margin-bottom: 22px;
+  gap: var(--nimote-space-3);
+  margin-bottom: var(--nimote-space-6);
   padding: 0;
 }
 
@@ -190,20 +190,19 @@
 }
 
 .home-page-brand {
-  position: relative;
-  top: -1px;
+  position: static;
   font-size: clamp(1.2rem, 1vw + 0.7rem, 1.5rem);
-  font-weight: 600;
-  letter-spacing: -0.025em;
+  font-weight: 650;
+  letter-spacing: -0.03em;
   color: var(--nimote-text-primary);
 }
 
 .home-page-title {
   margin: 0;
-  font-size: clamp(2.6rem, 4vw, 4rem);
-  line-height: 1.06;
-  letter-spacing: -0.04em;
-  font-weight: 600;
+  font-size: clamp(2.7rem, 4vw, 4.05rem);
+  line-height: 1.03;
+  letter-spacing: -0.045em;
+  font-weight: 650;
   color: var(--nimote-text-primary);
   text-wrap: balance;
   overflow-wrap: anywhere;
@@ -219,54 +218,57 @@
 
 .home-page-subtitle {
   max-width: 520px;
-  margin: 20px 0 0;
+  margin: var(--nimote-space-4) 0 0;
   color: var(--nimote-text-secondary);
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 1.02rem;
+  font-weight: 450;
+  line-height: 1.65;
   text-wrap: balance;
 }
 
 .home-page-release-note {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 104px minmax(0, 1fr) auto;
+  grid-template-rows: auto auto;
   align-items: center;
-  column-gap: 10px;
+  column-gap: var(--nimote-space-3);
   max-width: 540px;
-  margin-top: 20px;
-  padding: 11px 14px;
-  border: 1px solid var(--nimote-border-accent);
+  margin-top: var(--nimote-space-6);
+  padding: var(--nimote-space-3) var(--nimote-space-4);
+  border: 1px solid color-mix(in srgb, var(--nimote-border) 78%, var(--nimote-border-accent));
   border-radius: var(--nimote-radius-md);
-  background: color-mix(in srgb, var(--nimote-link) 9%, transparent);
+  background: color-mix(in srgb, var(--nimote-bg-elevated) 76%, transparent);
   color: var(--nimote-text-primary);
   text-decoration: none;
-  transition: border-color 0.2s var(--nimote-ease), background 0.2s var(--nimote-ease), transform 0.2s var(--nimote-ease);
+  box-shadow: inset 0 1px 0 var(--nimote-inset-highlight);
+  transition: border-color 0.2s var(--nimote-ease), background-color 0.2s var(--nimote-ease);
 }
 
 .home-page-release-note:hover {
-  border-color: var(--nimote-link);
-  background: color-mix(in srgb, var(--nimote-link) 14%, transparent);
-  transform: translateY(-1px);
+  border-color: var(--nimote-border-strong);
+  background: var(--nimote-card-hover);
 }
 
 .home-page-release-note span {
-  grid-row: span 2;
+  grid-column: 1;
+  grid-row: 1 / -1;
   color: var(--nimote-link);
-  font-size: 0.68rem;
+  font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.home-page-release-note strong { font-size: 0.92rem; }
-.home-page-release-note em { color: var(--nimote-text-secondary); font-size: 0.78rem; font-style: normal; line-height: 1.45; }
-.home-page-release-note b { grid-row: span 2; color: var(--nimote-link); font-size: 1.1rem; }
+.home-page-release-note strong { grid-column: 2; grid-row: 1; min-width: 0; font-size: 0.9rem; font-weight: 650; line-height: 1.3; }
+.home-page-release-note em { grid-column: 2; grid-row: 2; min-width: 0; color: var(--nimote-text-secondary); font-size: 0.78rem; font-style: normal; line-height: 1.45; }
+.home-page-release-note b { grid-column: 3; grid-row: 1 / -1; align-self: center; color: var(--nimote-link); font-size: 1rem; font-weight: 500; }
 
 .home-page-actions {
   display: flex;
-  gap: 12px;
+  gap: var(--nimote-space-3);
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-top: 28px;
+  margin-top: var(--nimote-space-6);
 }
 
 .home-page-video-shell::before,
@@ -276,7 +278,7 @@
 
 .home-page-actions-hero {
   max-width: 540px;
-  gap: 14px;
+  gap: var(--nimote-space-3);
 }
 
 .home-page-feature-card {
@@ -360,16 +362,16 @@ html:not(.dark) .home-page-feature-icon {
   align-items: center;
   justify-content: center;
   min-height: 48px;
-  padding: 0.85rem 1.5rem;
+  padding: 0 18px;
   border-radius: var(--nimote-radius-sm);
   border: 1px solid transparent;
-  font-weight: 500;
-  font-size: 0.95rem;
+  font-weight: 600;
+  font-size: 0.92rem;
   letter-spacing: -0.01em;
   text-decoration: none;
   cursor: pointer;
-  transition: transform 0.2s var(--nimote-ease), box-shadow 0.2s var(--nimote-ease),
-    border-color 0.2s var(--nimote-ease), background-color 0.2s var(--nimote-ease);
+  transition: transform 0.16s var(--nimote-ease), box-shadow 0.16s var(--nimote-ease),
+    border-color 0.16s var(--nimote-ease), background-color 0.16s var(--nimote-ease);
   white-space: nowrap;
   -webkit-tap-highlight-color: transparent;
 }
@@ -385,16 +387,15 @@ html:not(.dark) .home-page-feature-icon {
     border-color 0.2s var(--nimote-ease), filter 0.2s var(--nimote-ease);
 }
 .home-page-btn.primary:hover {
-  transform: translateY(-1px);
   background: var(--nimote-action-hover);
   border-color: var(--nimote-action-hover);
   filter: none;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.2),
-    0 4px 12px rgba(var(--nimote-accent-rgb), 0.2);
+    0 2px 8px rgba(var(--nimote-accent-rgb), 0.16);
 }
 .home-page-btn.primary:active {
-  transform: translateY(0);
+  transform: translateY(1px);
   filter: brightness(0.97);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.12),
@@ -402,15 +403,14 @@ html:not(.dark) .home-page-feature-icon {
 }
 
 .home-page-btn.secondary {
-  background: var(--nimote-bg-elevated);
+  background: color-mix(in srgb, var(--nimote-bg-elevated) 88%, transparent);
   color: var(--nimote-text-primary);
   border-color: var(--nimote-border);
   box-shadow: none;
 }
 .home-page-btn.secondary:hover {
-  transform: translateY(-1px);
   border-color: var(--nimote-border-strong);
-  background: var(--nimote-bg-elevated);
+  background: var(--nimote-card-hover);
 }
 
 .home-page-btn:focus-visible,
@@ -777,7 +777,7 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
 .home-page-availability-link {
   display: inline-flex;
   gap: 8px;
-  margin-top: 18px;
+  margin-top: var(--nimote-space-4);
   color: var(--nimote-text-secondary);
   font-size: 0.88rem;
   font-weight: 600;
@@ -990,16 +990,15 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
 /* Hero: keep the two primary CTAs as buttons, render the weak link as a quieter
    text-style button that still shares the button shape for consistency. */
 .home-page-btn-weak {
-  background: transparent;
+  background: color-mix(in srgb, var(--nimote-bg-elevated) 72%, transparent);
   color: var(--nimote-text-secondary);
-  border-color: transparent;
+  border-color: var(--nimote-border);
   box-shadow: none;
 }
 .home-page-btn-weak:hover {
-  transform: translateY(-1px);
   color: var(--nimote-link);
-  border-color: var(--nimote-border);
-  background: rgba(var(--nimote-accent-rgb), 0.04);
+  border-color: var(--nimote-border-strong);
+  background: var(--nimote-card-hover);
 }
 
 /* Trust / product-facts bar — intentionally lighter than the hero. */
@@ -1510,6 +1509,357 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
   }
 }
 
+/* Homepage information hierarchy: keep the substantial product and workflow
+   content as cards; present supporting destinations as compact link groups. */
+.home-page-use-case-grid--focused {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-page-community-section {
+  padding-top: var(--nimote-section-space-compact);
+  padding-bottom: var(--nimote-section-space-compact);
+}
+
+.home-page-community-grid,
+.home-page-guide-grid {
+  gap: 12px;
+}
+
+.home-page-community-card,
+.home-page-guide-card {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.home-page-community-card:hover,
+.home-page-guide-card:hover {
+  transform: none;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.home-page-community-icon {
+  display: none;
+}
+
+.home-page-community-card h3,
+.home-page-guide-card h3 {
+  margin: 0;
+  color: var(--nimote-link);
+  font-size: 0.96rem;
+}
+
+.home-page-community-card p,
+.home-page-guide-card p {
+  margin-top: 6px;
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+.home-page-community-cta {
+  margin-top: 8px;
+  padding-top: 0;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 700px) {
+  .home-page-use-case-grid--focused {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* The core workflow needs a shared introduction; its comparison message is a
+   supporting proof point, not a separate sparse section. */
+.home-page-pillars-section .home-page-section-head {
+  max-width: 760px;
+  margin: 0 auto 32px;
+}
+
+.home-page-difference {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.65fr) minmax(0, 2fr) auto;
+  align-items: center;
+  gap: 22px;
+  width: 100%;
+  max-width: var(--nimote-container);
+  margin: 22px auto 0;
+  padding: 20px 0;
+  border-top: 1px solid var(--nimote-border);
+  color: var(--nimote-text-secondary);
+}
+
+.home-page-difference strong {
+  color: var(--nimote-text-primary);
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.home-page-difference p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.home-page-difference a {
+  color: var(--nimote-link);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.home-page-difference a:hover {
+  color: var(--nimote-link-hover);
+}
+
+.home-page-quick-compare {
+  padding-top: var(--nimote-section-space-compact);
+  padding-bottom: var(--nimote-section-space-compact);
+}
+
+.home-page-quick-compare .home-page-section-head {
+  max-width: 720px;
+  margin: 0 auto 28px;
+}
+
+.home-tool-comparison {
+  width: 100%;
+  max-width: var(--nimote-container);
+  margin: 0 auto;
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-md);
+  background: var(--nimote-card);
+  overflow: hidden;
+  box-shadow: var(--nimote-shadow-xs);
+}
+
+.home-tool-comparison-picker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--nimote-border);
+  background: var(--nimote-bg-subtle);
+}
+.home-tool-comparison-picker p { max-width: 600px; margin: 0; color: var(--nimote-text-secondary); font-size: 0.87rem; }
+.home-tool-comparison-picker label { display: flex; align-items: center; gap: 9px; color: var(--nimote-text-primary); font-size: 0.82rem; font-weight: 600; }
+.home-tool-comparison-picker select {
+  min-width: 150px;
+  padding: 8px 10px;
+  border: 1px solid var(--nimote-border);
+  border-radius: 8px;
+  background: var(--nimote-card);
+  color: var(--nimote-text-primary);
+  font: inherit;
+}
+.home-tool-comparison-picker select:focus-visible { outline: 2px solid var(--nimote-accent); outline-offset: 2px; }
+.home-tool-comparison-row { display: grid; grid-template-columns: minmax(145px, 210px) minmax(0, 1fr); border-bottom: 1px solid var(--nimote-border); }
+.home-tool-comparison-row:last-child { border-bottom: 0; }
+.home-tool-comparison-row h3 { margin: 0; padding: 17px 18px; background: var(--nimote-bg-subtle); color: var(--nimote-text-primary); font-size: 0.88rem; line-height: 1.45; }
+.home-tool-comparison-results { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.home-tool-comparison-result { min-width: 0; padding: 13px 18px; border-left: 1px solid var(--nimote-border); overflow-wrap: anywhere; }
+.home-tool-comparison-result.is-nimote { background: color-mix(in srgb, var(--nimote-accent) 8%, transparent); }
+.home-tool-comparison-result-head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 5px 10px; }
+.home-tool-comparison-result-head strong { color: var(--nimote-text-primary); font-size: 0.84rem; }
+.home-tool-comparison-result p { margin: 6px 0 0; color: var(--nimote-text-muted); font-size: 0.78rem; line-height: 1.45; }
+.home-tool-comparison-result a { display: inline-block; margin-top: 4px; font-size: 0.75rem; }
+.home-tool-status { display: inline-flex; gap: 5px; align-items: center; font-size: 0.78rem; font-weight: 650; white-space: nowrap; }
+.home-tool-comparison .status-Native,
+.home-tool-comparison .status-Integrated { color: var(--nimote-success, #35a06f); }
+.home-tool-comparison .status-CLI-only,
+.home-tool-comparison .status-Conditional { color: var(--nimote-warning, #b78103); }
+.home-tool-comparison .status-Not-verified,
+.home-tool-comparison .status-Not-supported { color: var(--nimote-text-muted); }
+
+.home-tool-comparison-note {
+  margin: 0;
+  padding: 12px 16px;
+  border-top: 1px solid var(--nimote-border);
+  color: var(--nimote-text-secondary);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.home-tool-comparison-note a {
+  margin-left: 6px;
+  color: var(--nimote-link);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .home-tool-comparison-row { grid-template-columns: 1fr; }
+  .home-tool-comparison-row h3 { padding: 11px 14px; border-bottom: 1px solid var(--nimote-border); }
+  .home-tool-comparison-result:first-child { border-left: 0; }
+}
+
+@media (max-width: 560px) {
+  .home-tool-comparison-picker label { width: 100%; justify-content: space-between; }
+  .home-tool-comparison-picker select { min-width: 0; width: min(60%, 230px); }
+  .home-tool-comparison-results { grid-template-columns: 1fr; }
+  .home-tool-comparison-result { border-left: 0; border-bottom: 1px solid var(--nimote-border); }
+  .home-tool-comparison-result:last-child { border-bottom: 0; }
+}
+
+/* Supporting destinations read as a grouped resource list rather than another
+   run of large cards. */
+.home-page-community-grid--compact {
+  gap: 16px;
+  margin-top: 24px;
+  border: 0;
+}
+
+.home-page-community-grid--compact .home-page-community-card {
+  min-height: 176px;
+  padding: 18px 20px;
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-md);
+  background: var(--nimote-card);
+  box-shadow: var(--nimote-shadow-xs);
+}
+
+.home-page-community-grid--compact .home-page-community-card:last-child {
+  border-right: 1px solid var(--nimote-border);
+}
+
+.home-page-community-grid--compact .home-page-community-card h3 {
+  color: var(--nimote-text-primary);
+  font-size: 0.95rem;
+}
+
+.home-page-community-grid--compact .home-page-community-card:hover {
+  background: var(--nimote-card-hover);
+  border-color: var(--nimote-border-accent);
+  box-shadow: var(--nimote-panel-shadow-hover);
+}
+
+.home-page-community-grid--compact .home-page-community-cta {
+  display: inline-flex;
+}
+
+.home-page-community-grid--compact .home-page-community-icon {
+  display: inline-flex;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 14px;
+}
+
+.home-page-community-grid--compact .home-page-community-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.home-page-resource-guides {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--nimote-border);
+}
+
+.home-page-resource-guides > .home-page-eyebrow,
+.home-page-resource-copy {
+  display: flex;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-page-resource-copy {
+  max-width: 620px;
+  margin-top: 12px;
+  margin-bottom: 0;
+  color: var(--nimote-text-secondary);
+  font-size: 0.94rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.home-page-guide-grid--editorial {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.home-page-guide-grid--editorial .home-page-guide-card {
+  min-height: 210px;
+  padding: 24px;
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-md);
+  background: var(--nimote-card);
+  box-shadow: var(--nimote-shadow-xs);
+}
+
+.home-page-guide-grid--editorial .home-page-guide-card--featured {
+  grid-row: auto;
+}
+
+.home-page-guide-grid--editorial .home-page-guide-card--featured h3 {
+  margin-top: 26px;
+  color: var(--nimote-text-primary);
+  font-size: 1.12rem;
+}
+
+.home-page-guide-grid--editorial .home-page-guide-card--featured p {
+  margin-top: 10px;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.home-page-guide-grid--editorial .home-page-guide-card:not(.home-page-guide-card--featured) h3 {
+  margin-top: 26px;
+}
+
+.home-page-guide-grid--editorial .home-page-guide-card:hover {
+  border-color: var(--nimote-border-accent);
+  background: var(--nimote-card-hover);
+  box-shadow: var(--nimote-panel-shadow-hover);
+}
+
+@media (max-width: 700px) {
+  .home-page-difference {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .home-page-community-grid--compact .home-page-community-card {
+    min-height: 0;
+    padding: 20px;
+    border-right: 1px solid var(--nimote-border);
+    border-bottom: 1px solid var(--nimote-border);
+  }
+
+  .home-page-community-grid--compact .home-page-community-card:last-child {
+    border-bottom: 1px solid var(--nimote-border);
+  }
+
+  .home-page-guide-grid--editorial {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .home-page-guide-grid--editorial .home-page-guide-card--featured {
+    grid-row: auto;
+    margin-bottom: 0;
+  }
+
+  .home-page-resource-guides {
+    margin-top: 32px;
+    padding-top: 28px;
+  }
+
+  .home-tool-comparison {
+    border-radius: var(--nimote-radius-sm);
+  }
+}
+
 /* ==========================================================================
    Motion
    - Scroll reveal (gated on html.js so content stays visible without JS)
@@ -1536,23 +1886,7 @@ html.js [data-reveal]:nth-child(3) { --reveal-delay: 160ms; }
 html.js [data-reveal]:nth-child(4) { --reveal-delay: 240ms; }
 html.js [data-reveal]:nth-child(5) { --reveal-delay: 320ms; }
 
-/* Primary CTA sheen — a light sweep across the button on hover. */
+/* Primary CTA stays deliberately still; surface and border states carry feedback. */
 .home-page-btn.primary {
-  position: relative;
-  overflow: hidden;
-}
-.home-page-btn.primary::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -70%;
-  width: 45%;
-  height: 100%;
-  background: linear-gradient(105deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  transform: skewX(-18deg);
-  transition: left 0.55s var(--nimote-ease);
-  pointer-events: none;
-}
-.home-page-btn.primary:hover::after {
-  left: 130%;
+  position: static;
 }
