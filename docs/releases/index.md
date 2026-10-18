@@ -5,14 +5,13 @@ description: Browse NimoteCode release notes by version, including new features,
 
 # NimoteCode Release Notes
 
-::: tip Latest release
-The current release is [NimoteCode 1.2.3](/releases/1.2.3).
-:::
+<LatestReleaseLink />
 
 Choose a version to read its complete release notes. NimoteCode is available through Google Play on Android and the App Store on iPhone and iPad; see the [Download page](/download) for current store links.
 
 ## All releases
 
+<LatestReleaseLink variant="list" />
 - [1.2.3 · October 15, 2026](/releases/1.2.3)
 - [1.2.2 · October 9, 2026 · Build 52](/releases/1.2.2)
 - [1.2.1 · October 6, 2026 · Build 51](/releases/1.2.1)
