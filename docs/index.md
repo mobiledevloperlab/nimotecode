@@ -12,6 +12,9 @@ description: "NimoteCode is a mobile development workspace with Android Local Li
       <div class="home-page-logo-lockup"><img src="/app_icon.png" alt="NimoteCode" class="home-page-logo" width="1024" height="1024" decoding="async"><span class="home-page-brand">NimoteCode</span></div>
       <h1 class="home-page-title">A real mobile SSH IDE for<br><em>remote development.</em></h1>
       <p class="home-page-subtitle">Android Local Linux, Editor, SSH, Terminal, Git, Preview and AI Agent — built for real development on phones and tablets.</p>
+      <a class="home-page-release-note" href="/releases/1.2.3?utm_source=homepage&utm_medium=website&utm_campaign=latest_release">
+        <span>Latest release</span><strong>NimoteCode 1.2.3</strong><em>Shared Local Linux projects, task status, terminal controls and stronger SSH.</em><b aria-hidden="true">→</b>
+      </a>
       <div class="home-page-actions home-page-actions-hero">
         <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=website&utm_campaign=homepage_hero" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for Android</a>
         <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for iOS</a>
