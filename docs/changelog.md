@@ -15,49 +15,49 @@ This is the public record of notable product updates. For setup help, use the [d
 
 This release shares app-local projects with Android Local Linux, adds task-status updates outside the app and configurable terminal controls, and makes SSH sessions more resilient. It also refines the default Dark theme and fixes workspace-state isolation and SSH recovery issues.
 
-[Read the complete 1.2.3 release notes →](/releases/)
+[Read the complete 1.2.3 release notes →](/releases/1.2.3)
 
 ### Version 1.2.2 · October 9, 2026
 
 This release (Build 52) opens project folders outside the app sandbox, brings Git diffs and conflict resolution into the landscape editor, and keeps Git status and terminal sessions current while you work. It also adds denser Explorer defaults, friendly names for external workspaces and a set of fixes, and new installs now default to English.
 
-[Read the complete 1.2.2 release notes →](/releases/)
+[Read the complete 1.2.2 release notes →](/releases/1.2.2)
 
 ### Version 1.2.1 · October 6, 2026
 
 This release (Build 51) refines the desktop and tablet IDE with one calmer visual system: a more focused landscape workspace, a compact inset editor, better large-screen readability, and more natural modal sheets across themes and screen sizes.
 
-[Read the complete 1.2.1 release notes →](/releases/)
+[Read the complete 1.2.1 release notes →](/releases/1.2.1)
 
 ### Version 1.2.0 · October 5, 2026
 
 This release brings the Monaco editor to desktop and tablet workspaces, improves Windows desktop support, and gives you more control over Explorer density. It also improves editing, keyboard input, selection, terminal layout, and theme consistency across device classes.
 
-[Read the complete 1.2.0 release notes →](/releases/)
+[Read the complete 1.2.0 release notes →](/releases/1.2.0)
 
 ### Version 1.1.9 · September 27, 2026
 
 This release (Build 48) rebuilds the interface on one design system — a layout chosen by available space, one density and status language, an IDE-style AI timeline, and a new interface scale — and adds PHP debugging and broader syntax highlighting, while making agent sessions, agent search, access checks and startup more reliable.
 
-[Read the complete 1.1.9 release notes →](/releases/)
+[Read the complete 1.1.9 release notes →](/releases/1.1.9)
 
 ### Version 1.1.8 · September 14, 2026
 
 This release (Build 45) begins Early Access Pro for advanced mobile workflows and lets you switch directories in local and SSH workspaces. It also strengthens Android Local Linux installation, file operations, and Git reliability, and refines Source Control and the overall visual hierarchy. Local Linux improvements are Android-only.
 
-[Read the complete 1.1.8 release notes →](/releases/)
+[Read the complete 1.1.8 release notes →](/releases/1.1.8)
 
 ### Version 1.1.7 · September 12, 2026
 
 This release adds an Android Local Linux development environment, improves HTML and link previews, and makes Editor, AI, and Task operations more reliable. It also brings external ACP agents and a unified SSH login environment.
 
-[Read the complete 1.1.7 release notes →](/releases/)
+[Read the complete 1.1.7 release notes →](/releases/1.1.7)
 
 ### Version 1.1.6 · September 9, 2026
 
 This release makes getting started clearer with first-launch onboarding, defaults the editor to a code-oriented monospace font, refines subscription and theme presentation, and fixes editor, in-app browser, Git status, and iOS keyboard-input issues.
 
-[Read the complete 1.1.6 release notes →](/releases/)
+[Read the complete 1.1.6 release notes →](/releases/1.1.6)
 
 ### Current release channel
 
