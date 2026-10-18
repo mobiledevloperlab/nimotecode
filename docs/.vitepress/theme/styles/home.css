@@ -226,6 +226,41 @@
   text-wrap: balance;
 }
 
+.home-page-release-note {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  column-gap: 10px;
+  max-width: 540px;
+  margin-top: 20px;
+  padding: 11px 14px;
+  border: 1px solid var(--nimote-border-accent);
+  border-radius: var(--nimote-radius-md);
+  background: color-mix(in srgb, var(--nimote-link) 9%, transparent);
+  color: var(--nimote-text-primary);
+  text-decoration: none;
+  transition: border-color 0.2s var(--nimote-ease), background 0.2s var(--nimote-ease), transform 0.2s var(--nimote-ease);
+}
+
+.home-page-release-note:hover {
+  border-color: var(--nimote-link);
+  background: color-mix(in srgb, var(--nimote-link) 14%, transparent);
+  transform: translateY(-1px);
+}
+
+.home-page-release-note span {
+  grid-row: span 2;
+  color: var(--nimote-link);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-page-release-note strong { font-size: 0.92rem; }
+.home-page-release-note em { color: var(--nimote-text-secondary); font-size: 0.78rem; font-style: normal; line-height: 1.45; }
+.home-page-release-note b { grid-row: span 2; color: var(--nimote-link); font-size: 1.1rem; }
+
 .home-page-actions {
   display: flex;
   gap: 12px;
@@ -811,6 +846,7 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
   .home-page-hero-shell.home-page-hero-shell-product { gap: 36px; padding: 46px 18px 44px; }
   .home-page-title { font-size: clamp(2.35rem, 11vw, 3.25rem); }
   .home-page-subtitle { margin-top: 18px; font-size: 0.98rem; }
+  .home-page-release-note { width: 100%; }
   .home-page-actions-hero { width: 100%; }
 
   .home-page-demo-media { width: min(100%, 440px); margin-top: 34px; padding: 14px; }

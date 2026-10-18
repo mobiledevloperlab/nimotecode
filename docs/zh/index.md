@@ -12,6 +12,9 @@ description: NimoteCode 是移动开发工作区：Android 本地 Linux、Editor
       <div class="home-page-logo-lockup"><img src="/app_icon.png" alt="NimoteCode" class="home-page-logo" width="1024" height="1024" decoding="async"><span class="home-page-brand">NimoteCode</span></div>
       <h1 class="home-page-title">面向远程开发的<br><em>真实移动 IDE。</em></h1>
       <p class="home-page-subtitle">Android 本地 Linux、Editor、SSH、Terminal、Git、Preview 与 AI Agent —— 为手机和平板上的真实开发而打造。</p>
+      <a class="home-page-release-note" href="/zh/releases/1.2.3?utm_source=homepage&utm_medium=website&utm_campaign=latest_release">
+        <span>最新版本</span><strong>NimoteCode 1.2.3</strong><em>共享本地 Linux 项目、应用外任务状态、终端控制与更稳定的 SSH。</em><b aria-hidden="true">→</b>
+      </a>
       <div class="home-page-actions home-page-actions-hero"><a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=website&utm_campaign=homepage_hero" class="home-page-btn primary" target="_blank" rel="noreferrer">下载 Android 版</a><a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn primary" target="_blank" rel="noreferrer">下载 iOS 版</a><a href="#product-demo" class="home-page-btn secondary">观看演示</a><a href="https://github.com/mobiledevloperlab/nimotecode" class="home-page-btn secondary home-page-btn-weak" target="_blank" rel="noreferrer">在 GitHub 上 Star</a></div>
       <a class="home-page-availability-link" href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" target="_blank" rel="noreferrer">现已上架 App Store <span aria-hidden="true">→</span></a>
     </div>
