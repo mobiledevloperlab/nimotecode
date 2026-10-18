@@ -4,15 +4,14 @@
    All colours come from the shared tokens so light and dark stay in sync.
    ========================================================================== */
 
-/* Give the comparison page a slightly wider shell than a normal article while
-   keeping prose readable. The table itself owns its own horizontal scroll. */
+/* Give the comparison page a slightly wider shell while keeping prose readable. */
 .compare-page .nimote-marketing-doc {
   width: min(100% - 48px, 1120px);
 }
 .compare-page .nimote-marketing-doc .vp-doc {
   max-width: 100%;
 }
-/* Keep prose to a comfortable measure while the table and grids use the
+/* Keep prose to a comfortable measure while the comparison grids use the
    wider shell. Text blocks are centred so the layout reads deliberately. */
 .compare-page .vp-doc > h1,
 .compare-page .vp-doc > h2,
@@ -98,113 +97,182 @@
   line-height: 1;
 }
 
-/* Table ------------------------------------------------------------------ */
-.vp-doc .cmp-table-scroll {
-  width: 100%;
-  margin: 20px 0 8px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  border: 1px solid var(--nimote-border);
-  border-radius: var(--nimote-radius-lg);
-  background: var(--nimote-card);
-  box-shadow: var(--nimote-shadow-sm);
-  scrollbar-width: thin;
+/* Product picker and side-by-side comparison ----------------------------- */
+.vp-doc .cmp-picker {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 18px 0 28px;
 }
-.vp-doc .cmp-table-scroll:focus-visible {
+.vp-doc .cmp-picker-fixed,
+.vp-doc .cmp-picker-field {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-md);
+  background: var(--nimote-bg-subtle);
+  color: var(--nimote-text-primary);
+  font-size: 0.82rem;
+}
+.vp-doc .cmp-picker-fixed {
+  border-color: var(--nimote-accent);
+  background: rgba(var(--nimote-accent-rgb), 0.08);
+}
+.vp-doc .cmp-picker-kicker,
+.vp-doc .cmp-picker-field > span {
+  color: var(--nimote-text-muted);
+  font-size: 0.73rem;
+  font-weight: 600;
+}
+.vp-doc .cmp-picker-fixed strong { font-size: 1rem; }
+.vp-doc .cmp-picker-field select {
+  width: 100%;
+  min-width: 0;
+  padding: 7px 9px;
+  border: 1px solid var(--nimote-border);
+  border-radius: 7px;
+  background: var(--nimote-card);
+  color: var(--nimote-text-primary);
+  font: inherit;
+}
+.vp-doc .cmp-picker-field select:focus-visible,
+.vp-doc .cmp-jump a:focus-visible,
+.vp-doc .cmp-profile summary:focus-visible {
   outline: 2px solid var(--nimote-accent);
   outline-offset: 2px;
 }
-
-/* Reset the .vp-doc table defaults so this renders as a real table. */
-.vp-doc .cmp-table {
-  display: table;
-  width: 100%;
-  min-width: 760px;
-  margin: 0;
-  border: 0;
-  border-radius: 0;
-  border-collapse: separate;
-  border-spacing: 0;
-  box-shadow: none;
-  font-size: 0.86rem;
+.vp-doc .cmp-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 28px;
 }
-.vp-doc .cmp-table th,
-.vp-doc .cmp-table td {
-  padding: 11px 14px;
-  border: 0;
+.vp-doc .cmp-jump a {
+  padding: 7px 11px;
+  border: 1px solid var(--nimote-border);
+  border-radius: 999px;
+  background: var(--nimote-bg-subtle);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.vp-doc .cmp-jump a:hover { background: var(--nimote-card-hover); }
+.vp-doc .cmp-feature-section {
+  min-width: 0;
+  margin: 34px 0 40px;
+  scroll-margin-top: 88px;
+}
+.vp-doc .cmp-feature-section h3 {
+  margin: 0 0 16px;
+  font-size: 1.22rem;
+}
+.vp-doc .cmp-compare-list {
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-lg);
+  background: var(--nimote-card);
+  overflow: hidden;
+}
+.vp-doc .cmp-compare-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 180px) repeat(3, minmax(0, 1fr));
+  min-width: 0;
   border-bottom: 1px solid var(--nimote-border);
-  text-align: center;
-  vertical-align: top;
-  white-space: normal;
-  background: transparent;
-  color: var(--nimote-text-secondary);
-  font-size: 0.84rem;
-  line-height: 1.45;
 }
-.vp-doc .cmp-table thead th {
+.vp-doc .cmp-compare-row:last-child { border-bottom: 0; }
+.vp-doc .cmp-compare-row h4 {
+  margin: 0;
+  padding: 14px;
   background: var(--nimote-bg-subtle);
   color: var(--nimote-text-primary);
-  font-weight: 600;
+  font-size: 0.86rem;
+  line-height: 1.4;
+}
+.vp-doc .cmp-result {
+  min-width: 0;
+  padding: 11px 13px;
+  border-left: 1px solid var(--nimote-border);
+  overflow-wrap: anywhere;
+}
+.vp-doc .cmp-result-nimote { background: rgba(var(--nimote-accent-rgb), 0.06); }
+.vp-doc .cmp-product-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+}
+.vp-doc .cmp-product-name {
+  color: var(--nimote-text-primary);
+  font-size: 0.86rem;
+  font-weight: 650;
+}
+.vp-doc .cmp-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--nimote-text-secondary);
+  font-size: 0.78rem;
+  font-weight: 650;
   white-space: nowrap;
 }
-.vp-doc .cmp-table tbody tr:last-child th,
-.vp-doc .cmp-table tbody tr:last-child td {
-  border-bottom: 0;
-}
-.vp-doc .cmp-table .cmp-feature-col {
-  position: sticky;
-  left: 0;
-  z-index: 3;
-  min-width: 172px;
-  text-align: left;
-  font-weight: 500;
-  color: var(--nimote-text-primary);
-  background: var(--nimote-bg-elevated);
-}
-.vp-doc .cmp-table thead .cmp-feature-col {
-  z-index: 4;
-  background: var(--nimote-bg-subtle);
-}
-.vp-doc .cmp-table tbody tr:hover td {
-  background: var(--nimote-card-hover);
-}
-/* Keep the highlighted column readable on hover. */
-.vp-doc .cmp-table .cmp-col-highlight {
-  background: rgba(var(--nimote-accent-rgb), 0.07);
-}
-.vp-doc .cmp-table thead th.cmp-col-highlight {
-  color: var(--nimote-link);
-  background: rgba(var(--nimote-accent-rgb), 0.12);
-}
-
-/* Cell values ------------------------------------------------------------ */
-.vp-doc .cmp-symbol {
-  display: block;
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.2;
-}
-.vp-doc .cmp-cell-yes .cmp-symbol {
-  color: var(--nimote-accent-3);
-}
-.vp-doc .cmp-cell-partial .cmp-symbol {
-  color: var(--nimote-accent);
-}
-.vp-doc .cmp-cell-no .cmp-symbol,
-.vp-doc .cmp-cell-unknown .cmp-symbol {
-  color: var(--nimote-text-muted);
-}
+.vp-doc .cmp-status-Native,
+.vp-doc .cmp-status-Integrated { color: var(--nimote-accent-3); }
+.vp-doc .cmp-status-Conditional,
+.vp-doc .cmp-status-CLI-only { color: var(--nimote-accent); }
+.vp-doc .cmp-symbol { font-size: 0.95rem; line-height: 1; }
 .vp-doc .cmp-note {
-  display: block;
-  margin-top: 3px;
+  margin: 5px 0 0;
   color: var(--nimote-text-muted);
-  font-size: 0.72rem;
-  line-height: 1.3;
-}
-.vp-doc .cmp-text {
-  font-size: 0.8rem;
+  font-size: 0.76rem;
   line-height: 1.45;
 }
+.vp-doc .cmp-evidence {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.73rem;
+}
+.vp-doc .cmp-product-meta {
+  display: block;
+  margin-top: 4px;
+  color: var(--nimote-text-muted);
+  font-size: 0.77rem;
+}
+
+/* Complete records remain available without requiring JavaScript. */
+.vp-doc .cmp-profiles { display: grid; gap: 9px; margin: 17px 0 30px; }
+.vp-doc .cmp-profile {
+  min-width: 0;
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-md);
+  background: var(--nimote-card);
+  overflow: hidden;
+}
+.vp-doc .cmp-profile summary {
+  padding: 13px 16px;
+  color: var(--nimote-text-primary);
+  cursor: pointer;
+}
+.vp-doc .cmp-profile summary span {
+  margin-left: 9px;
+  color: var(--nimote-text-muted);
+  font-size: 0.82rem;
+}
+.vp-doc .cmp-profile-body { padding: 3px 16px 17px; }
+.vp-doc .cmp-profile-body section h3 { margin: 17px 0 7px; font-size: 0.92rem; }
+.vp-doc .cmp-profile-body dl { margin: 0; }
+.vp-doc .cmp-profile-body dl > div {
+  display: grid;
+  grid-template-columns: minmax(150px, 210px) minmax(0, 1fr);
+  gap: 10px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--nimote-border);
+}
+.vp-doc .cmp-profile-body dt { color: var(--nimote-text-primary); font-size: 0.82rem; font-weight: 600; }
+.vp-doc .cmp-profile-body dd { min-width: 0; margin: 0; overflow-wrap: anywhere; }
+.vp-doc .cmp-profile-body dd .cmp-note { display: block; }
 
 /* "Which tool is right for you?" ----------------------------------------- */
 .vp-doc .cmp-picks {
@@ -299,6 +367,13 @@
   }
 }
 
+@media (max-width: 980px) {
+  .vp-doc .cmp-picker { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .vp-doc .cmp-picker-extra,
+  .vp-doc .cmp-result-extra { display: none; }
+  .vp-doc .cmp-compare-row { grid-template-columns: minmax(145px, 180px) repeat(2, minmax(0, 1fr)); }
+}
+
 @media (max-width: 767px) {
   .compare-page .nimote-marketing-doc {
     width: min(100% - 32px, 1120px);
@@ -306,9 +381,13 @@
 }
 
 @media (max-width: 560px) {
-  .vp-doc .cmp-table {
-    min-width: 700px;
-  }
+  .vp-doc .cmp-picker { grid-template-columns: 1fr; }
+  .vp-doc .cmp-compare-row { display: block; }
+  .vp-doc .cmp-compare-row h4 { border-bottom: 1px solid var(--nimote-border); }
+  .vp-doc .cmp-result { border-left: 0; border-bottom: 1px solid var(--nimote-border); }
+  .vp-doc .cmp-result:nth-child(3) { border-bottom: 0; }
+  .vp-doc .cmp-profile summary span { display: block; margin: 3px 0 0 17px; }
+  .vp-doc .cmp-profile-body dl > div { grid-template-columns: 1fr; gap: 3px; }
   .vp-doc .cmp-cta .seo-cta-actions .home-page-btn {
     width: 100%;
   }

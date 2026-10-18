@@ -260,11 +260,13 @@ function videoSchema(context: TransformContext): object | null {
 function compareItemListSchema(context: TransformContext): object | null {
   const normalized = normalizePath(context.pageData.relativePath)
   if (!/^\/(?:zh\/)?compare\/mobile-ai-development-tools$/.test(normalized)) return null
+  const isChinese = normalized.startsWith('/zh/')
 
   return {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'Mobile development tools compared',
+    name: isChinese ? '移动开发工具对比' : 'Mobile development tools compared',
+    inLanguage: isChinese ? 'zh-CN' : 'en-US',
     itemListElement: allCompetitors.map((competitor, index) => ({
       '@type': 'ListItem',
       position: index + 1,

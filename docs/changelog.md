@@ -11,6 +11,12 @@ This is the public record of notable product updates. For setup help, use the [d
 
 ## 2026
 
+### Version 1.2.4 · October 18, 2026
+
+This release makes it faster to start and resume work: recent local and SSH workspaces are easier to continue, optional AI setup no longer blocks coding, and in-app update notices now include localized release notes. It also improves Settings, AI configuration, terminal search, and SSH validation.
+
+[Read the complete 1.2.4 release notes →](/releases/1.2.4)
+
 ### Version 1.2.3 · October 15, 2026
 
 This release shares app-local projects with Android Local Linux, adds task-status updates outside the app and configurable terminal controls, and makes SSH sessions more resilient. It also refines the default Dark theme and fixes workspace-state isolation and SSH recovery issues.

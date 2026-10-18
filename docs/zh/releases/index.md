@@ -5,14 +5,13 @@ description: 按版本查看 NimoteCode 的新增功能、改进与修复。
 
 # NimoteCode 发布说明
 
-::: tip 最新版本
-当前最新版本是 [NimoteCode 1.2.3](/zh/releases/1.2.3)。
-:::
+<LatestReleaseLink />
 
 选择一个版本查看完整更新说明。NimoteCode 可通过 Google Play（Android）以及 App Store（iPhone 与 iPad）获取；当前商店链接请见[下载页面](/zh/download)。
 
 ## 全部版本
 
+<LatestReleaseLink variant="list" />
 - [1.2.3 · 2026 年 10 月 15 日](/zh/releases/1.2.3)
 - [1.2.2 · 2026 年 10 月 9 日 · Build 52](/zh/releases/1.2.2)
 - [1.2.1 · 2026 年 10 月 6 日 · Build 51](/zh/releases/1.2.1)

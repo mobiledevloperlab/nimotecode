@@ -1,27 +1,25 @@
 ---
 layout: home
-title: NimoteCode – Mobile SSH IDE & AI Coding Workspace
+title: NimoteCode – Mobile SSH IDE & AI Coding for Android & iOS
 titleTemplate: false
-description: "NimoteCode is a mobile development workspace with Android Local Linux, SSH, Editor, Terminal, Git, Preview and AI Agent for coding on phones and tablets."
+description: "NimoteCode is a mobile SSH IDE and AI coding workspace for Android and iOS. Open local projects, connect to Mac, Linux and servers over SSH, or use Android Local Linux to edit, run, review and continue real development from a phone or tablet."
 ---
 
 <section class="home-page-hero">
   <div class="home-page-hero-shell home-page-hero-shell-product">
     <div class="home-page-hero-copy">
-      <p class="home-page-badge">Mobile Development Workspace</p>
+      <p class="home-page-badge">Mobile SSH IDE for Android &amp; iOS</p>
       <div class="home-page-logo-lockup"><img src="/app_icon.png" alt="NimoteCode" class="home-page-logo" width="1024" height="1024" decoding="async"><span class="home-page-brand">NimoteCode</span></div>
       <h1 class="home-page-title">A real mobile SSH IDE for<br><em>remote development.</em></h1>
-      <p class="home-page-subtitle">Android Local Linux, Editor, SSH, Terminal, Git, Preview and AI Agent — built for real development on phones and tablets.</p>
-      <a class="home-page-release-note" href="/releases/1.2.3?utm_source=homepage&utm_medium=website&utm_campaign=latest_release">
-        <span>Latest release</span><strong>NimoteCode 1.2.3</strong><em>Shared Local Linux projects, task status, terminal controls and stronger SSH.</em><b aria-hidden="true">→</b>
-      </a>
+      <p class="home-page-subtitle">An AI coding workspace for Android and iOS: open local projects, connect to Mac, Linux and servers over SSH, or use Android Local Linux — then edit, run, review and continue real development from your phone or tablet.</p>
+      <LatestReleaseLink variant="home" />
       <div class="home-page-actions home-page-actions-hero">
         <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=website&utm_campaign=homepage_hero" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for Android</a>
         <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for iOS</a>
         <a href="#product-demo" class="home-page-btn secondary">Watch Demo</a>
         <a href="https://github.com/mobiledevloperlab/nimotecode" class="home-page-btn secondary home-page-btn-weak" target="_blank" rel="noreferrer">Star on GitHub</a>
       </div>
-      <a class="home-page-availability-link" href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" target="_blank" rel="noreferrer">Now available on the App Store <span aria-hidden="true">→</span></a>
+      <span class="home-page-availability-link">Available for Android and iPhone &amp; iPad</span>
     </div>
     <!-- 暂时不上线：App 界面 mockup，代码保留在 components/AppMockup.vue，需要时取消注释 -->
     <!-- <AppMockup /> -->
@@ -48,59 +46,48 @@ description: "NimoteCode is a mobile development workspace with Android Local Li
     <div class="home-page-trust-item" data-reveal><span class="home-page-trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8l1.7 4.5 4.5 1.7-4.5 1.7-1.7 4.5-1.7-4.5-4.5-1.7 4.5-1.7 1.7-4.5z"/><path d="M19.4 2.6l.9 2.4 2.4.9-2.4.9-.9 2.4-.9-2.4-2.4-.9 2.4-.9.9-2.4z"/></svg></span>AI Chat &amp; Agent</div>
   </div>
 </section>
-<section class="home-page-section home-page-strip-section">
-  <div class="home-page-section-head home-page-section-head-centered" data-reveal>
-    <p class="home-page-eyebrow">Everything in one workspace</p>
-    <h2 class="home-page-section-title">From remote workspace to AI, in one mobile IDE.</h2>
-    <p class="home-page-section-copy">NimoteCode is a mobile development workspace where you can inspect code, edit files, run commands, review Git changes and continue working when an agent needs human judgment — on an SSH host or in Android Local Linux.</p>
-  </div>
-  <ul class="home-page-cap-strip" data-reveal>
-    <li>Local Linux / SSH Workspace</li>
-    <li>Real Code Editor</li>
-    <li>Terminal &amp; SSH</li>
-    <li>Git Workflow</li>
-    <li>AI Chat &amp; Agent</li>
-    <li>Preview</li>
-    <li>LSP / Debugging</li>
-  </ul>
-</section>
 <section class="home-page-section home-page-pillars-section">
+  <div class="home-page-section-head home-page-section-head-centered" data-reveal>
+    <p class="home-page-eyebrow">Complete mobile development workflow</p>
+    <h2 class="home-page-section-title">Connect the project, make the change, verify the result.</h2>
+    <p class="home-page-section-copy">NimoteCode brings the working context together on Android and iOS: choose where the project lives, use the tools it needs, and stay close enough to inspect the result yourself.</p>
+  </div>
   <div class="home-page-pillars">
     <article class="home-page-pillar home-page-pillar-accent" data-reveal>
       <div class="home-page-pillar-head">
         <span class="home-page-pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2.5"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 9.5c2.8-2.2 7.2-2.2 10 0"/></svg></span>
-        <p class="home-page-eyebrow">Remote Workspace</p>
+        <p class="home-page-eyebrow">Your workspace</p>
       </div>
-      <h2 class="home-page-pillar-title">Your development machine, anywhere.</h2>
-      <p class="home-page-pillar-copy">Open the real project on your Mac, Linux box or server over SSH, or start in bundled Ubuntu on supported Android devices — with a real code editor on your phone or tablet.</p>
+      <h2 class="home-page-pillar-title">Start local. Go remote when you need to.</h2>
+      <p class="home-page-pillar-copy">Open a local project on Android or iOS, including a folder selected outside the app. Connect to the real project on a Mac, Linux machine or server over SSH, or use bundled Ubuntu on supported Android devices.</p>
       <ul class="home-page-pillar-points">
-        <li>Remote files</li>
-        <li>Code editor</li>
-        <li>Web preview</li>
+        <li>Local and remote projects</li>
+        <li>SSH workspaces</li>
+        <li>Android Local Linux</li>
       </ul>
-      <a href="/ssh-ide" class="home-page-pillar-link">Explore Remote Development <span aria-hidden="true">→</span></a>
+      <a href="/ssh-ide" class="home-page-pillar-link">Explore Workspaces <span aria-hidden="true">→</span></a>
     </article>
     <article class="home-page-pillar" data-reveal>
       <div class="home-page-pillar-head">
         <span class="home-page-pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M6.5 9.5l3 3-3 3"/><path d="M13 15.5h4"/></svg></span>
-        <p class="home-page-eyebrow">Terminal &amp; SSH</p>
+        <p class="home-page-eyebrow">Stay in flow</p>
       </div>
-      <h2 class="home-page-pillar-title">Run commands where the project lives.</h2>
-      <p class="home-page-pillar-copy">A terminal, secure SSH and reconnect-aware sessions in the same workspace as the code.</p>
+      <h2 class="home-page-pillar-title">Return to work without losing your place.</h2>
+      <p class="home-page-pillar-copy">Use a terminal and secure SSH in the same workspace as the code. Recent workspaces and reconnect-aware sessions make returning safe; observed AI and terminal tasks can surface in iOS Live Activities or Android notifications.</p>
       <ul class="home-page-pillar-points">
         <li>Integrated terminal</li>
         <li>Secure SSH</li>
-        <li>Persistent sessions</li>
+        <li>Recent workspaces &amp; task status</li>
       </ul>
       <a href="/docs/terminal" class="home-page-pillar-link">Explore Terminal &amp; SSH <span aria-hidden="true">→</span></a>
     </article>
     <article class="home-page-pillar" data-reveal>
       <div class="home-page-pillar-head">
         <span class="home-page-pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></span>
-        <p class="home-page-eyebrow">Git, AI &amp; Diagnostics</p>
+        <p class="home-page-eyebrow">Build and verify</p>
       </div>
-      <h2 class="home-page-pillar-title">Review changes, get help, debug.</h2>
-      <p class="home-page-pillar-copy">Review Git diffs, work with AI Chat and Agent, and use LSP, debugging and preview without leaving the workspace.</p>
+      <h2 class="home-page-pillar-title">Edit, verify and bring in AI when it helps.</h2>
+      <p class="home-page-pillar-copy">Review Git diffs, run commands and preview the result; use LSP and debugging when the workspace supports them. AI Chat and Agent can help plan and execute work without taking you out of the project.</p>
       <ul class="home-page-cap-grid">
         <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="5" r="2.3"/><circle cx="6" cy="19" r="2.3"/><circle cx="18" cy="7" r="2.3"/><path d="M6 7.3v9.4"/><path d="M8.4 6.1c3 .4 5.1 2 6.6 4.3.8 1.3 1.5 2 2.9 2.2"/></svg></span>Git</li>
         <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.7L19.7 10.5l-5.8 1.8L12 18l-1.9-5.7L4.3 10.5l5.8-1.8L12 3z"/></svg></span>AI Chat &amp; Agent</li>
@@ -112,44 +99,27 @@ description: "NimoteCode is a mobile development workspace with Android Local Li
       <a href="/features" class="home-page-pillar-link">Explore All Features <span aria-hidden="true">→</span></a>
     </article>
   </div>
-</section>
-<section class="home-page-section home-page-compare-section">
-  <div class="home-page-section-head home-page-section-head-centered" data-reveal>
-    <p class="home-page-eyebrow">Why NimoteCode</p>
-    <h2 class="home-page-section-title">More than a remote terminal.</h2>
-    <p class="home-page-section-copy">Some mobile developer tools focus on SSH access. Others focus on monitoring AI coding agents. NimoteCode brings the editor, remote workspace, Terminal, Git, Preview and AI workflow together in one mobile development environment.</p>
-  </div>
-  <div class="home-page-compare-cards" data-reveal>
-    <article class="home-page-compare-card"><p class="home-page-compare-card-kicker">SSH CLIENT</p><h3>Access a remote shell.</h3><p>Best when you only need commands and server access.</p></article>
-    <article class="home-page-compare-card"><p class="home-page-compare-card-kicker">AI AGENT TERMINAL</p><h3>Drive an agent from the terminal.</h3><p>Best when the primary workflow stays in a remote CLI.</p></article>
-    <article class="home-page-compare-card home-page-compare-card--nimote"><p class="home-page-compare-card-kicker">NIMOTECODE</p><h3>Finish work in one workspace.</h3><p>Editor, Local Linux, SSH, Terminal, Git, Preview and AI stay connected.</p></article>
-  </div>
-  <div class="home-page-section-cta" data-reveal>
-    <a href="/compare/mobile-ai-development-tools" class="home-page-btn primary">See the detailed comparison <span aria-hidden="true">→</span></a>
+  <div class="home-page-difference" data-reveal>
+    <strong>More than an SSH terminal.</strong>
+    <p>A terminal offers server access and an AI agent terminal runs an agent from the CLI. NimoteCode keeps the project, editor, terminal, Git review, preview and AI workflow together, so mobile work can end with a verified change.</p>
+    <a href="/compare/mobile-ai-development-tools">Compare mobile development tools <span aria-hidden="true">→</span></a>
   </div>
 </section>
-<section class="home-page-section home-page-use-case-section">
+<section class="home-page-section home-page-quick-compare">
   <div class="home-page-section-head home-page-section-head-centered" data-reveal>
-    <p class="home-page-eyebrow">Real Development Workflows</p>
-    <h2 class="home-page-section-title">Built for real moments.</h2>
-    <p class="home-page-section-copy">Three ways NimoteCode fits into the way you already work.</p>
+    <p class="home-page-eyebrow">Quick tool comparison</p>
+    <h2 class="home-page-section-title">Compare the workflow, not just the terminal.</h2>
+    <p class="home-page-section-copy">A compact view of the capabilities that matter when mobile work includes code, Git, AI and verification—not only an SSH session.</p>
   </div>
-  <div class="home-page-use-case-grid">
-    <a href="/use-cases/mobile-workspace-demo" class="home-page-use-case-card" data-reveal><span>REMOTE CODING</span><h3>Continue development away from your desk.</h3><p>Open the same project on your Mac or Linux machine through SSH.</p></a>
-    <a href="/use-cases/" class="home-page-use-case-card" data-reveal><span>AI CODING AGENT</span><h3>Run AI coding workflows from mobile.</h3><p>Inspect, plan, execute and verify changes without returning to your laptop.</p></a>
-    <a href="/use-cases/terminal-ai-tools" class="home-page-use-case-card" data-reveal><span>ON-CALL / QUICK FIX</span><h3>Fix an issue when you're away from your desk.</h3><p>Inspect logs, edit a file, run tests and review the diff from your phone.</p></a>
-  </div>
-  <div class="home-page-section-cta">
-    <a href="/use-cases/" class="home-page-btn secondary">Explore Workflows</a>
-  </div>
+  <HomeToolComparison lang="en" />
 </section>
 <section class="home-page-section home-page-community-section">
   <div class="home-page-section-head home-page-section-head-centered" data-reveal>
-    <p class="home-page-eyebrow">Community</p>
-    <h2 class="home-page-section-title">Join the community.</h2>
-    <p class="home-page-section-copy">Questions, workflow ideas or a bug to report — the fastest way to get answers is where NimoteCode developers already talk.</p>
+    <p class="home-page-eyebrow">Resources</p>
+    <h2 class="home-page-section-title">Guides, community and product updates.</h2>
+    <p class="home-page-section-copy">Read practical mobile development guidance, get support from other developers and follow what ships next.</p>
   </div>
-  <div class="home-page-community-grid">
+  <div class="home-page-community-grid home-page-community-grid--compact">
     <a href="https://discord.gg/tTxbpqYmhR" class="home-page-community-card" data-reveal target="_blank" rel="noreferrer">
       <span class="home-page-community-icon home-page-community-icon-discord" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.058a.082.082 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.873-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.099.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.891.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.06.06 0 0 0-.031-.03zM8.02 15.331c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></span>
       <h3>Discord</h3>
@@ -169,16 +139,13 @@ description: "NimoteCode is a mobile development workspace with Android Local Li
       <span class="home-page-community-cta">Follow on X <span aria-hidden="true">→</span></span>
     </a>
   </div>
-</section>
-<section class="home-page-section home-page-guide-section">
-  <div class="home-page-section-head home-page-section-head-centered" data-reveal>
+  <div class="home-page-resource-guides" data-reveal>
     <p class="home-page-eyebrow">Latest Guides</p>
-    <h2 class="home-page-section-title">From our blog.</h2>
-    <p class="home-page-section-copy">Practical write-ups on coding from a phone, remote development and AI workflows.</p>
-  </div>
-  <div class="home-page-guide-grid">
-    <a href="/blog/best-ssh-clients" class="home-page-guide-card" data-reveal><span>MOBILE IDE GUIDE</span><h3>The Best Mobile IDEs in 2026</h3><p>Compare terminal-first, cloud, editor-first and workspace-first approaches by the work you need to complete.</p></a>
+    <p class="home-page-resource-copy">Practical write-ups on coding from a phone, remote development and AI workflows.</p>
+    <div class="home-page-guide-grid home-page-guide-grid--editorial">
+    <a href="/blog/best-ssh-clients" class="home-page-guide-card home-page-guide-card--featured" data-reveal><span>MOBILE IDE GUIDE</span><h3>The Best Mobile IDEs in 2026</h3><p>Compare terminal-first, cloud, editor-first and workspace-first approaches by the work you need to complete.</p></a>
     <a href="/blog/can-an-ai-agent-really-code-from-a-phone" class="home-page-guide-card" data-reveal><span>AI CODING</span><h3>Can an AI Agent Really Code From a Phone?</h3><p>Plan, edit, run and commit real changes from a phone over SSH.</p></a>
     <a href="/blog/tailscale-ssh-android-mac-linux" class="home-page-guide-card" data-reveal><span>REMOTE DEVELOPMENT</span><h3>Android as a Remote IDE with Tailscale</h3><p>Free SSH access to Mac and Linux without a public IP or port forwarding.</p></a>
+    </div>
   </div>
 </section>
