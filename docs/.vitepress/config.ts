@@ -810,7 +810,7 @@ export default defineConfig({
           { text: 'Workflows', link: '/use-cases/' },
           { text: 'Resources', link: '/resources/' },
           { text: 'Docs', link: '/docs/quick-start' },
-          { text: 'Updates', link: '/changelog' },
+          { text: 'Updates', link: '/releases/' },
           { text: 'Mobile Developer Lab', link: '/blog/' },
           { text: 'Download', link: '/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ],
@@ -930,7 +930,7 @@ export default defineConfig({
           { text: '工作流', link: '/zh/use-cases/' },
           { text: '技术资源', link: '/zh/resources/' },
           { text: '文档', link: '/zh/docs/quick-start' },
-          { text: '更新日志', link: '/zh/changelog' },
+          { text: '更新日志', link: '/zh/releases/' },
           { text: '移动开发实验室', link: '/zh/blog/' },
           { text: '下载', link: '/zh/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ],

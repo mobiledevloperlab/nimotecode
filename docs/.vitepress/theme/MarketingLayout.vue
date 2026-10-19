@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { nextTick, onBeforeUnmount, onMounted, watch } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, watch } from 'vue'
 import { useData, useRoute } from 'vitepress'
 import NotFound from 'vitepress/dist/client/theme-default/NotFound.vue'
 import VPHome from 'vitepress/dist/client/theme-default/components/VPHome.vue'
@@ -51,6 +51,8 @@ function setupReveal(): void {
 }
 
 const route = useRoute()
+const isReleaseRoute = computed(() => /^\/(?:zh\/)?releases(?:\/|$)/.test(route.path))
+const isReleaseIndex = computed(() => /^\/(?:zh\/)?releases\/?$/.test(route.path))
 onMounted(() => {
   setupReveal()
   watch(
@@ -63,7 +65,7 @@ onBeforeUnmount(() => revealObserver?.disconnect())
 
 <template>
   <SiteAnalytics />
-  <div v-if="frontmatter.layout !== false" class="Layout nimote-marketing-layout" :class="frontmatter.pageClass">
+  <div v-if="frontmatter.layout !== false" class="Layout nimote-marketing-layout" :class="[frontmatter.pageClass, { 'release-page': isReleaseRoute, 'release-index': isReleaseIndex, 'release-detail': isReleaseRoute && !isReleaseIndex }]">
     <VPSkipLink />
     <VPNav />
     <main id="VPContent" class="nimote-marketing-main">
