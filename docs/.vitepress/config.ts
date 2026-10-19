@@ -10,9 +10,7 @@ const brandLogo = `${siteUrl}/app_icon.png`
 const socialImage = `${siteUrl}/screenshots/NimoteCode_Promotion.jpg`
 const localeConfig = {
   root: { lang: 'en-US', path: '' },
-  zh: { lang: 'zh-CN', path: '/zh' },
-  ja: { lang: 'ja-JP', path: '/ja' },
-  ko: { lang: 'ko-KR', path: '/ko' }
+  zh: { lang: 'zh-CN', path: '/zh' }
 } as const
 
 function normalizePath(path: string): string {
@@ -54,7 +52,7 @@ function pageDescription(context: TransformContext, title: string): string {
 }
 
 function stripLocalePrefix(path: string): string {
-  return path.replace(/^\/(?:zh|ja|ko)(?=\/|$)/, '') || '/'
+  return path.replace(/^\/zh(?=\/|$)/, '') || '/'
 }
 
 function titleCase(value: string): string {
@@ -67,8 +65,6 @@ function titleCase(value: string): string {
 function languageForPath(path: string): string {
   const localeKey = pageLocaleKey(path)
   if (localeKey === 'zh') return 'zh-CN'
-  if (localeKey === 'ja') return 'ja-JP'
-  if (localeKey === 'ko') return 'ko-KR'
   return 'en-US'
 }
 
@@ -79,7 +75,7 @@ function openGraphLocale(path: string): string {
 function localeAlternates(path: string): HeadConfig[] {
   const normalized = normalizePath(path)
   const suffix = normalized === '/' ? '' : normalized
-  const stripped = suffix.replace(/^\/(?:zh|ja|ko)(\/|$)/, '/')
+  const stripped = suffix.replace(/^\/zh(\/|$)/, '/')
   const entries = Object.values(localeConfig).flatMap((locale) => {
     const localePath = `${locale.path}${stripped}` || '/'
     const href = localePath === '/' ? siteUrl : `${siteUrl}${localePath}`
@@ -682,20 +678,16 @@ function faqSchema(context: TransformContext): object | null {
 // swaps in once the stylesheet finishes loading.
 const FONT_LATIN = 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap'
 const FONT_ZH = 'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap'
-const FONT_JA = 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap'
-const FONT_KO = 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap'
 
 function fontByLocale(lang: string): string {
   if (lang.startsWith('zh')) return FONT_ZH
-  if (lang.startsWith('ja')) return FONT_JA
-  if (lang.startsWith('ko')) return FONT_KO
   return FONT_LATIN
 }
 
 function fontLinks(path: string): HeadConfig[] {
   const normalized = normalizePath(path)
   const stripped = suffixToLocaleKey(normalized)
-  const lang = stripped === 'zh' ? 'zh-CN' : stripped === 'ja' ? 'ja-JP' : stripped === 'ko' ? 'ko-KR' : 'en-US'
+  const lang = stripped === 'zh' ? 'zh-CN' : 'en-US'
   const href = fontByLocale(lang)
   return [
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
@@ -710,7 +702,7 @@ function fontLinks(path: string): HeadConfig[] {
 }
 
 function suffixToLocaleKey(normalized: string): string {
-  const m = normalized.match(/^\/(zh|ja|ko)(?:\/|$)/)
+  const m = normalized.match(/^\/(zh)(?:\/|$)/)
   return m ? m[1] : ''
 }
 
@@ -792,10 +784,6 @@ export default defineConfig({
 
   themeConfig: {
     siteTitle: 'NimoteCode',
-    // Japanese and Korean currently cover the conversion pages. Send visitors
-    // from an untranslated route to that locale's landing page rather than
-    // generating a same-path URL that does not exist yet.
-    i18nRouting: false,
     logo: {
       light: '/app_icon.png',
       dark: '/app_icon.png'
@@ -928,38 +916,6 @@ export default defineConfig({
         search: {
           provider: 'local'
         }
-      }
-    },
-
-    ja: {
-      label: '日本語',
-      lang: 'ja-JP',
-      link: '/ja/',
-      themeConfig: {
-        nav: [
-          { text: 'ホーム', link: '/ja/' },
-          { text: '機能', link: '/ja/features' },
-          { text: 'Pro', link: '/ja/pro' },
-          { text: 'ダウンロード', link: '/ja/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' },
-          { text: 'サポート', link: '/ja/support' }
-        ],
-        search: { provider: 'local' }
-      }
-    },
-
-    ko: {
-      label: '한국어',
-      lang: 'ko-KR',
-      link: '/ko/',
-      themeConfig: {
-        nav: [
-          { text: '홈', link: '/ko/' },
-          { text: '기능', link: '/ko/features' },
-          { text: 'Pro', link: '/ko/pro' },
-          { text: '다운로드', link: '/ko/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' },
-          { text: '지원', link: '/ko/support' }
-        ],
-        search: { provider: 'local' }
       }
     },
 
