@@ -98,8 +98,9 @@ export const competitors:Competitor[] = [
     sftp:['Native','SFTP file access','','',R+'/','Files: SFTP.'], gitCli:['CLI-only','Remote terminal','Host Git','主机 Git',R+'/','Saved actions can run git status.',false,true],
     externalCli:['CLI-only','Host CLI agent','Claude Code, Codex and OpenCode run on host','Claude Code、Codex、OpenCode 在主机运行',R+'/faq/','Coding agents run in your development environment.',false,true],
     agentUi:['Integrated','Agent chat / notifications','Host agent process','需主机 Agent 进程',R+'/','Agent Chat View and Agent Notifications.',false,true],
-    autoReconnect:['Integrated','Connection recovery','Reopens session entry points','可恢复会话入口',R+'/','Activity and tmux entry points bring users back after disconnect.'],
-    hostPersistence:['Conditional','tmux / herdr / psmux','Requires host multiplexer','需主机复用器',R+'/','Session persistence: tmux / herdr / psmux.',false,true],
+    autoReconnect:['Integrated','Connection recovery','Returns to saved sessions after interruption','中断后可返回已保存会话',R+'/','Recovery and session-history controls return users to a session after disconnect.'],
+    hostPersistence:['Conditional','tmux / herdr / psmux','Host tmux keeps jobs running after Redock disconnects','Redock 断开后，主机 tmux 仍可保持任务运行','https://redock.dev/features/tmux/','Agents and long-running jobs keep going after Redock disconnects.',false,true],
+    webPreview:['Integrated','SSH port forward','Forwards a host development port into an in-app preview','将主机开发端口转发到应用内预览','https://redock.dev/features/web-preview/','Forward a development port and open the local web service inside Redock.',false,true],
     desktopRequired:['Not supported','Mobile SSH client','A development host is required, not a desktop companion app','需开发主机，但不需专用桌面 Companion',R+'/','Connect to Mac, Linux or Windows hosts over SSH or Mosh.']
   }),
   product('orca','Orca',O,enzh('Desktop agent environment with mobile companion','桌面 Agent 环境与移动 Companion'),enzh('Desktop-hosted worktrees and agents with mobile control, file browsing, Source Control and browser view; mobile is in beta.','桌面托管 worktree 与 Agent；移动端可控制、浏览文件、操作 Source Control 和查看网页；移动端处于 Beta。'),'Desktop + iOS / Android beta companion','Version not verified',{
@@ -108,6 +109,8 @@ export const competitors:Competitor[] = [
     gitUi:['Integrated','Mobile Source Control','Review, stage/unstage, commit on paired host','在配对主机上审查、暂存和提交',O+'/docs/mobile','Mobile Source Control can inspect paths, stage or unstage and commit.',false,true,'Mobile beta'],
     externalCli:['Integrated','Desktop agent orchestration','Agent runs on host','Agent 在主机运行',O+'/docs/mobile','Start an agent from the phone; its tab appears on desktop.',false,true],
     agentUi:['Integrated','Mobile companion','Status, chat and terminal scrollback','状态、对话与终端滚动记录',O+'/docs/mobile','Mobile shows agent status and recent terminal scrollback.',false,true],
+    nativeEditor:['Not supported','Mobile companion','Mobile is a remote control, not a full editor','移动端是远程控制端，并非完整编辑器',O+'/docs/mobile','The mobile app is intentionally not a full editor.',false,false,'Mobile beta'],
+    autoReconnect:['Integrated','Paired desktop recovery','Phone reconnects when the desktop app reopens','桌面端重新打开后，手机会自动重连',O+'/docs/mobile','Closing the desktop app drops the connection; reopen desktop and the phone reconnects automatically.',false,true,'Mobile beta'],
     hostPersistence:['Conditional','Desktop/remote runtime','Host must keep running','主机需持续运行',O+'/docs/mobile','Closing desktop app drops the connection.',false,true],
     webPreview:['Integrated','Paired browser session','Web/Mobile view from desktop browser','桌面浏览器提供 Web/Mobile 视图',O+'/docs/mobile','Open a browser session in Web or Mobile view.',false,true],
     desktopRequired:['Native','Paired desktop / server','Desktop is source of truth','桌面端是事实来源',O+'/docs/mobile','The desktop is always the source of truth.',false,true],
@@ -121,6 +124,7 @@ export const competitors:Competitor[] = [
     agentUi:['Integrated','Agent View / notifications','Running, idle and background state','运行、空闲与后台状态',S+'/docs/running','Notifications fire for launched, tmux and takeover sessions.',false,true],
     acpMcp:['Integrated','Agent MCP configuration','MCP belongs to host agents; ACP not verified','MCP 属于主机 Agent；ACP 未核实',S+'/docs','Configure MCP servers for Claude Code/Codex.',false,true],
     hostPersistence:['Conditional','tmux / supervisor','Server-side process continues','服务端进程持续运行',S+'/docs','Persistent Sessions powered by tmux; supervisor-managed bg sessions.',false,true],
+    autoReconnect:['Integrated','Connection pooling and heartbeat','Dropped SSH connections are automatically re-established','断开的 SSH 连接会自动重新建立',S+'/docs/servers','A 30-second heartbeat keeps connections alive; dropped connections are automatically re-established.'],
     webPreview:['Integrated','SSH port preview','Host dev server required','需主机开发服务器',S+'/docs','Open a listening server port over HTTP on iPhone.',false,true],
     desktopPreview:['Integrated','VNC client','Pro, with limited trial; VNC host required','需 Pro，有限试用；主机需 VNC',S+'/docs/vnc','VNC Remote Desktop is Pro; non-subscribers get two limited sessions per day.',true,true,'iPhone / iPad documented'],
     desktopRequired:['Not supported','Mobile SSH client','Remote server required','需远程服务器',S+'/','App connects directly to servers over SSH.']
@@ -136,6 +140,7 @@ export const competitors:Competitor[] = [
     autoReconnect:['Integrated','SSH / Mosh recovery','Automatic tmux reattach requires Pro','自动重附着 tmux 需 Pro',M+'/docs/subscription','Pro unlocks automatic tmux and Herdr reattach.',true,true],
     hostPersistence:['Conditional','Host tmux / Herdr','Pro automatic pairing; host process','自动配对需 Pro；进程在主机',M+'/docs/subscription','Pro unlocks multiplexer pairing and automatic reattach.',true,true],
     webPreview:['Integrated','Hook gateway / SSH tunnel','Pro and moshi-hook','需 Pro 与 moshi-hook',M+'/docs/browser-preview','Browser preview requires moshi-hook and Pro.',true,true],
+    desktopPreview:['Conditional','Simulator / emulator stream','Pro; a Mac host runs iOS Simulator or Android Emulator through moshi-hook','需 Pro；Mac 主机经 moshi-hook 运行 iOS 模拟器或 Android 模拟器','https://getmoshi.app/docs/simulator-preview','Open iOS Simulators and Android emulators on your Mac inside Moshi.',true,true,'Mac host; Moshi 4.0.1+'],
     desktopRequired:['Not supported','Mobile SSH terminal','Existing machine required; no special companion app','需已有主机；不需专用 Companion',M+'/docs/introduction','Moshi connects to a machine you already control.']
   })
 ]
