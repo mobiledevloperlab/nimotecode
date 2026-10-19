@@ -5,35 +5,13 @@ import { useRoute } from 'vitepress'
 const route = useRoute()
 
 const localePrefix = computed(() => {
-  const match = route.path.match(/^\/(zh|ja|ko)(?=\/|$)/)
+  const match = route.path.match(/^\/zh(?=\/|$)/)
   return match?.[0] ?? ''
 })
 
 const isChinese = computed(() => localePrefix.value === '/zh')
-const isJapanese = computed(() => localePrefix.value === '/ja')
-const isKorean = computed(() => localePrefix.value === '/ko')
 
-const copy = computed(() => isJapanese.value ? {
-  positioning: 'モバイル AI 開発ワークスペース：Editor + Explorer + SSH + Terminal + Git + AI Agent。',
-  product: '製品', features: '機能', workflows: 'ワークフロー', resources: 'リソース', docs: 'ドキュメント', download: 'ダウンロード',
-  explore: '見る', guides: 'ガイド', changelog: '更新情報', social: 'フォロー', youtube: 'YouTube', x: 'X / Twitter', github: 'GitHub', demo: 'デモを見る',
-  company: 'サポートとプライバシー', support: 'サポート', privacy: 'プライバシー', terms: '利用規約', deletion: 'アカウント削除', openSource: 'オープンソース',
-  note: '移動中の開発者のために。',
-  exploreLinks: [
-    { text: 'モバイル IDE', href: '/mobile-ide' }, { text: 'ツール比較', href: '/compare/mobile-ai-development-tools' },
-    { text: 'SSH IDE', href: '/ssh-ide' }, { text: 'モバイル AI コーディング', href: '/mobile-ai-coding' }
-  ]
-} : isKorean.value ? {
-  positioning: '모바일 AI 개발 워크스페이스: Editor + Explorer + SSH + Terminal + Git + AI Agent.',
-  product: '제품', features: '기능', workflows: '워크플로', resources: '리소스', docs: '문서', download: '다운로드',
-  explore: '살펴보기', guides: '가이드', changelog: '새로운 기능', social: '팔로우', youtube: 'YouTube', x: 'X / Twitter', github: 'GitHub', demo: '데모 보기',
-  company: '지원 및 개인정보', support: '지원', privacy: '개인정보 처리방침', terms: '이용약관', deletion: '계정 삭제', openSource: '오픈 소스',
-  note: '이동 중인 개발자를 위해 만들었습니다.',
-  exploreLinks: [
-    { text: '모바일 IDE', href: '/mobile-ide' }, { text: '도구 비교', href: '/compare/mobile-ai-development-tools' },
-    { text: 'SSH IDE', href: '/ssh-ide' }, { text: '모바일 AI 코딩', href: '/mobile-ai-coding' }
-  ]
-} : isChinese.value ? {
+const copy = computed(() => isChinese.value ? {
   positioning: '移动 AI 开发工作台：Editor + Explorer + SSH + Terminal + Git + AI Agent。',
   product: '产品',
   features: '功能特性',
@@ -94,9 +72,6 @@ const copy = computed(() => isJapanese.value ? {
 })
 
 function localized(path: string) {
-  // Japanese and Korean launch with the conversion pages. Links without a
-  // localized counterpart deliberately lead to the maintained English source.
-  if ((isJapanese.value || isKorean.value) && !['/', '/features', '/pro', '/download', '/support'].includes(path.split('?')[0])) return path
   return `${localePrefix.value}${path}` || '/'
 }
 </script>
