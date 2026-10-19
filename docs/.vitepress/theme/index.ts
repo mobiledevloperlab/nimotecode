@@ -8,6 +8,7 @@ import MarketingLayout from './MarketingLayout.vue'
 import ImagePlaceholder from './components/ImagePlaceholder.vue'
 import HomeToolComparison from './components/HomeToolComparison.vue'
 import LatestReleaseLink from './components/LatestReleaseLink.vue'
+import ReleaseArchive from './components/ReleaseArchive.vue'
 import MobileDevToolComparison from './components/MobileDevToolComparison.vue'
 import PricingFeatureSystem from './components/PricingFeatureSystem.vue'
 import SocialProof from './components/SocialProof.vue'
@@ -25,6 +26,7 @@ const theme: Theme = {
     app.component('ImagePlaceholder', ImagePlaceholder)
     app.component('HomeToolComparison', HomeToolComparison)
     app.component('LatestReleaseLink', LatestReleaseLink)
+    app.component('ReleaseArchive', ReleaseArchive)
     app.component('MobileDevToolComparison', MobileDevToolComparison)
     app.component('PricingFeatureSystem', PricingFeatureSystem)
     app.component('SocialProof', SocialProof)

@@ -1,0 +1,313 @@
+/* ==========================================================================
+   Release notes
+   A dedicated product-update surface: latest release first, archive second.
+   All release URLs stay stable; this only changes presentation.
+   ========================================================================== */
+
+.release-page .nimote-marketing-doc {
+  width: min(100% - 48px, 960px);
+}
+
+.release-page .vp-doc {
+  max-width: 100%;
+}
+
+.release-index .vp-doc > h1 {
+  margin: 4px 0 10px;
+  font-size: clamp(2.25rem, 1.8rem + 1.7vw, 3.25rem);
+  letter-spacing: -0.045em;
+}
+
+.release-index .vp-doc > h1 + p {
+  max-width: 620px;
+  margin-bottom: 40px;
+  font-size: 1.08rem;
+}
+
+.release-eyebrow {
+  margin: 0 0 10px !important;
+  color: var(--nimote-accent) !important;
+  font-size: 0.72rem !important;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.2 !important;
+  text-transform: uppercase;
+}
+
+.release-hero-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(220px, 0.75fr);
+  gap: 32px;
+  overflow: hidden;
+  padding: clamp(24px, 4vw, 40px);
+  border: 1px solid var(--nimote-border-accent);
+  border-radius: var(--nimote-radius-lg);
+  background: linear-gradient(135deg, rgba(var(--nimote-accent-rgb), 0.12), rgba(var(--nimote-accent-2-rgb), 0.045) 62%, transparent), var(--nimote-card);
+  box-shadow: var(--nimote-shadow-md);
+}
+
+.release-version-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.release-version-row h2,
+.release-archive-heading h2 {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color: var(--nimote-text-primary);
+  font-size: clamp(1.65rem, 1.35rem + 1vw, 2.15rem);
+  letter-spacing: -0.035em;
+}
+
+.release-status {
+  padding: 5px 9px;
+  border: 1px solid rgba(var(--nimote-accent-rgb), 0.24);
+  border-radius: var(--nimote-radius-pill);
+  background: rgba(var(--nimote-accent-rgb), 0.1);
+  color: var(--nimote-link);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.release-date {
+  margin: 10px 0 0 !important;
+  color: var(--nimote-text-muted) !important;
+  font-size: 0.86rem !important;
+}
+
+.release-summary {
+  max-width: 510px;
+  margin: 22px 0 !important;
+  color: var(--nimote-text-primary) !important;
+  font-size: 1.08rem !important;
+  line-height: 1.65 !important;
+}
+
+.release-primary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid var(--nimote-action) !important;
+  border-radius: var(--nimote-radius-sm);
+  background: var(--nimote-action);
+  color: var(--nimote-on-action) !important;
+  font-size: 0.9rem;
+  font-weight: 650 !important;
+  text-decoration: none;
+}
+
+.release-primary-link:hover {
+  border-color: var(--nimote-action-hover) !important;
+  background: var(--nimote-action-hover);
+}
+
+.release-highlights {
+  display: grid;
+  align-content: center;
+  gap: 10px;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+
+.release-highlights li {
+  position: relative;
+  margin: 0 !important;
+  padding: 12px 12px 12px 32px;
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-sm);
+  background: color-mix(in srgb, var(--nimote-card) 76%, transparent);
+  color: var(--nimote-text-primary) !important;
+  font-size: 0.86rem !important;
+  font-weight: 600;
+  line-height: 1.35 !important;
+}
+
+.release-highlights li::before {
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--nimote-accent);
+  box-shadow: 0 0 0 4px rgba(var(--nimote-accent-rgb), 0.12);
+  content: '';
+}
+
+.release-archive {
+  margin-top: 64px;
+}
+
+.release-archive-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.release-archive-heading > span {
+  padding-bottom: 4px;
+  color: var(--nimote-text-muted);
+  font-size: 0.82rem;
+}
+
+.release-list {
+  margin: 0 !important;
+  padding: 0 !important;
+  border-top: 1px solid var(--nimote-border);
+  list-style: none;
+}
+
+.release-list li {
+  margin: 0 !important;
+  border-bottom: 1px solid var(--nimote-border);
+}
+
+.release-list a {
+  display: grid;
+  grid-template-columns: 82px minmax(170px, 0.75fr) minmax(0, 1.5fr) 20px;
+  align-items: center;
+  gap: 16px;
+  min-height: 64px;
+  padding: 12px 10px;
+  border: 0 !important;
+  border-radius: var(--nimote-radius-sm);
+  color: var(--nimote-text-secondary) !important;
+  text-decoration: none;
+  transition: background-color 0.18s var(--nimote-ease), color 0.18s var(--nimote-ease);
+}
+
+.release-list a:hover {
+  background: var(--nimote-bg-subtle);
+  color: var(--nimote-text-primary) !important;
+}
+
+.release-list strong {
+  color: var(--nimote-text-primary);
+  font-size: 0.96rem;
+}
+
+.release-list span,
+.release-list em {
+  color: var(--nimote-text-muted);
+  font-size: 0.84rem;
+  font-style: normal;
+}
+
+.release-list b {
+  color: var(--nimote-text-muted);
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: right;
+  transition: transform 0.18s var(--nimote-ease), color 0.18s var(--nimote-ease);
+}
+
+.release-list a:hover b {
+  color: var(--nimote-link);
+  transform: translateX(3px);
+}
+
+.release-earlier {
+  margin-top: 18px;
+  color: var(--nimote-text-secondary);
+  font-size: 0.875rem;
+}
+
+.release-earlier summary {
+  width: fit-content;
+  cursor: pointer;
+  color: var(--nimote-link);
+  font-weight: 600;
+}
+
+.release-earlier > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 14px;
+}
+
+.release-earlier a { font-size: 0.82rem; }
+
+/* Detail pages retain their Markdown content but gain a release-specific
+   hierarchy. The first callout becomes a small status strip rather than a
+   dominant documentation alert. */
+.release-detail .vp-doc {
+  max-width: 760px;
+}
+
+.release-detail .vp-doc > h1 {
+  margin-bottom: 18px;
+}
+
+.release-detail .vp-doc > .custom-block.tip {
+  margin: 0 0 14px;
+  padding: 10px 14px;
+  border-color: var(--nimote-border);
+  border-left: 3px solid var(--nimote-accent);
+  border-radius: 0 var(--nimote-radius-sm) var(--nimote-radius-sm) 0;
+  background: transparent;
+}
+
+.release-detail .vp-doc > .custom-block.tip p,
+.release-detail .vp-doc > .custom-block.tip .custom-block-title {
+  margin: 0;
+  font-size: 0.82rem;
+}
+
+.release-detail .vp-doc > .custom-block.tip .custom-block-title { display: none; }
+
+.release-detail .vp-doc > p:has(a[href$="/releases/"]) {
+  margin-bottom: 34px;
+  font-size: 0.85rem;
+}
+
+.release-detail .vp-doc > h2:first-of-type {
+  margin-top: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+  font-size: 1.05rem;
+  color: var(--nimote-text-muted);
+}
+
+.release-detail .vp-doc > h2:first-of-type + p {
+  margin-top: 16px;
+  color: var(--nimote-text-primary);
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.release-detail .vp-doc > h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 38px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--nimote-border);
+}
+
+.release-detail .vp-doc > h3::before {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--nimote-accent);
+  content: '';
+}
+
+@media (max-width: 700px) {
+  .release-page .nimote-marketing-doc { width: min(100% - 32px, 960px); }
+  .release-index .vp-doc > h1 + p { margin-bottom: 30px; }
+  .release-hero-card { grid-template-columns: 1fr; gap: 24px; padding: 24px 20px; }
+  .release-archive { margin-top: 48px; }
+  .release-list a { grid-template-columns: 72px minmax(0, 1fr) 18px; gap: 10px; min-height: 58px; }
+  .release-list em { display: none; }
+  .release-list span { font-size: 0.78rem; }
+}
