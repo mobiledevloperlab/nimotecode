@@ -2,8 +2,6 @@
 # that support the standard _redirects format (Netlify, Cloudflare adapters).
 /introduction / 301
 /zh/introduction /zh/ 301
-/ja/* /:splat 301
-/ko/* /:splat 301
 /es/* /:splat 301
 /ru/* /:splat 301
 /best-mobile-ide /mobile-ide 301
