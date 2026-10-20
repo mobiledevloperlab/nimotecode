@@ -16,6 +16,13 @@
   padding-top: var(--vp-nav-height);
 }
 
+@media (max-width: 959px) {
+  /* VitePress's mobile header is in normal flow, so no second spacer. */
+  .nimote-marketing-main {
+    padding-top: 0;
+  }
+}
+
 .nimote-marketing-doc {
   width: min(100% - 48px, 860px);
   margin: 0 auto;
@@ -658,22 +665,30 @@
 /* The full marketing menu no longer fits at the tablet boundary. Keep the
    existing navigation structure and screen-menu interaction, but expose its
    compact control before labels can be clipped. */
-@media (max-width: 800px) {
+@media (max-width: 1279px) {
   .VPNavBar .VPNavBarMenu,
   .VPNavBar .VPNavBarAppearance,
   .VPNavBar .VPNavBarSocialLinks,
   .VPNavBar .VPNavBarTranslations,
+  .VPNavBar .VPNavBarExtra,
   .VPNavBar .VPNavBarSearch {
     display: none;
   }
 
   .VPNavBar .VPNavBarHamburger {
     display: flex;
+    min-width: 44px;
+    min-height: 44px;
     align-items: center;
     justify-content: center;
   }
 
   .VPNavScreen.VPNavScreen {
     display: block;
+    background: var(--nimote-bg-elevated);
+  }
+
+  .VPNavScreen .container {
+    max-width: 560px;
   }
 }

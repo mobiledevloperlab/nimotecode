@@ -1,0 +1,82 @@
+/* Developer-tool details. All effects sit on UI surfaces, never on hero art. */
+.VPHome .home-page-badge::before {
+  content: ">_";
+  margin-right: 6px;
+  color: var(--nimote-link);
+  font-family: var(--vp-font-family-mono);
+}
+
+.VPHome .home-page-hero-copy > * {
+  animation: developer-enter 650ms var(--nimote-ease-out) both;
+}
+.VPHome .home-page-hero-copy > :nth-child(3) { animation-delay: 90ms; }
+.VPHome .home-page-hero-copy > :nth-child(4) { animation-delay: 160ms; }
+.VPHome .home-page-hero-copy > :nth-child(n+5) { animation-delay: 220ms; }
+
+.home-page-actions-hero .home-page-btn.primary {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.home-page-actions-hero .home-page-btn.primary::after {
+  content: "";
+  position: absolute;
+  inset: -100% -60%;
+  pointer-events: none;
+  background: linear-gradient(115deg, transparent 38%, #ffffff30 50%, transparent 62%);
+  transform: translateX(-65%);
+}
+@media (hover: hover) and (pointer: fine) {
+  .home-page-actions-hero .home-page-btn.primary:hover::after,
+  .home-page-actions-hero .home-page-btn.primary:focus-visible::after {
+    animation: developer-sheen 700ms ease-out;
+  }
+  .home-page-pillar,
+  .home-page-community-card,
+  .home-page-guide-card {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+  }
+  .home-page-pillar::after,
+  .home-page-community-card::after,
+  .home-page-guide-card::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    pointer-events: none;
+    border-radius: inherit;
+    background: radial-gradient(360px circle at var(--pointer-x, 50%) var(--pointer-y, 0%), rgba(var(--nimote-accent-rgb), 0.13), transparent 75%);
+    opacity: 0;
+    transition: opacity 240ms ease;
+  }
+  .home-page-pillar:hover::after,
+  .home-page-community-card:hover::after,
+  .home-page-guide-card:hover::after,
+  .home-page-pillar:focus-within::after,
+  .home-page-community-card:focus-visible::after,
+  .home-page-guide-card:focus-visible::after { opacity: 1; }
+}
+
+.home-page-pillars { counter-reset: capability; }
+.home-page-pillar { counter-increment: capability; }
+.home-page-pillar-head::after {
+  content: "0" counter(capability);
+  margin-left: auto;
+  color: var(--nimote-text-muted);
+  font: 11px var(--vp-font-family-mono);
+  letter-spacing: 0.08em;
+}
+.home-page-pillar-head { width: 100%; }
+
+@keyframes developer-enter { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+@keyframes developer-sheen { to { transform: translateX(65%); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .VPHome .home-page-hero-copy > *,
+  .home-page-actions-hero .home-page-btn.primary::after { animation: none !important; }
+  .home-page-pillar::after,
+  .home-page-community-card::after,
+  .home-page-guide-card::after { display: none; }
+}

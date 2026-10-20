@@ -291,7 +291,8 @@
   text-align: center;
 }
 
-.vp-doc .feature-showcase:hover .feature-showcase__track {
+.vp-doc .feature-showcase:hover .feature-showcase__track,
+.vp-doc .feature-showcase:focus-within .feature-showcase__track {
   animation-play-state: paused;
 }
 
@@ -307,6 +308,39 @@
 
   .vp-doc .feature-showcase__track {
     animation: none;
+  }
+
+  .vp-doc .feature-showcase__item[aria-hidden="true"] {
+    display: none;
+  }
+}
+
+/* Touch users can inspect each screenshot at their own pace. */
+@media (max-width: 768px), (pointer: coarse) {
+  .vp-doc .feature-showcase {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+  }
+
+  .vp-doc .feature-showcase__track {
+    animation: none;
+  }
+
+  .vp-doc .feature-showcase__item {
+    flex-basis: min(78vw, 620px);
+    scroll-snap-align: start;
+  }
+
+  .vp-doc .feature-showcase__item[aria-hidden="true"] {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .vp-doc .header-anchor {
+    margin-left: -16px;
+    font-size: 16px;
   }
 }
 

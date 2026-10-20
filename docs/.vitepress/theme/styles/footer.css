@@ -118,6 +118,17 @@
   font-size: 0.8125rem;
 }
 
+@media (max-width: 1100px) {
+  .nimote-site-footer-inner {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 28px 20px;
+  }
+
+  .nimote-footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
 @media (max-width: 760px) {
   .nimote-site-footer-content {
     padding: 40px 24px 22px;
@@ -136,5 +147,17 @@
     flex-direction: column;
     gap: 6px;
     margin-top: 30px;
+  }
+}
+
+@media (pointer: coarse) {
+  .nimote-site-footer nav {
+    gap: 2px;
+  }
+
+  .nimote-site-footer nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
   }
 }

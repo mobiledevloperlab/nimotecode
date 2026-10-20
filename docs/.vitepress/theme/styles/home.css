@@ -1009,10 +1009,12 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
 .home-page-trust {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
+  gap: 0;
   width: 100%;
   max-width: var(--nimote-container);
   margin: 0 auto;
+  padding-block: 12px;
+  border-block: 1px solid var(--nimote-border);
 }
 .home-page-trust-item {
   display: inline-flex;
@@ -1020,10 +1022,10 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
   justify-content: flex-start;
   gap: 10px;
   padding: 14px 16px;
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--nimote-radius-md);
-  background: var(--nimote-card);
-  box-shadow: var(--nimote-shadow-xs);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
   color: var(--nimote-text-secondary);
   font-size: 0.9rem;
   font-weight: 500;
@@ -1078,29 +1080,23 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
 }
 .home-page-pillar-accent {
   position: relative;
-  border: 1px solid rgba(165, 180, 252, 0.18);
-  background:
-    radial-gradient(ellipse 120% 70% at 110% -10%, rgba(139, 92, 246, 0.38), transparent 52%),
-    radial-gradient(ellipse 80% 60% at -20% 110%, rgba(99, 102, 241, 0.3), transparent 55%),
-    linear-gradient(155deg, #1e1b4b 0%, #2a2a7a 55%, #3b3491 100%);
-  box-shadow: 0 20px 44px rgba(37, 32, 102, 0.32);
+  border-color: var(--nimote-border-accent);
+  background: color-mix(in srgb, var(--nimote-action) 5%, var(--nimote-card));
+  box-shadow: var(--nimote-panel-shadow);
 }
 .home-page-pillar-accent:hover {
-  border-color: rgba(165, 180, 252, 0.32);
-  box-shadow: 0 26px 54px rgba(37, 32, 102, 0.4);
+  border-color: var(--nimote-link);
+  box-shadow: var(--nimote-panel-shadow-hover);
 }
-/* The AI pillar is the page's one dark, gradient moment. Every child needs an
-   explicit light-on-indigo override so the panel reads as a deliberate hero. */
+/* Workspace emphasis follows the active app theme instead of a fixed gradient. */
 .home-page-pillars .home-page-pillar-accent .home-page-eyebrow {
-  border-color: rgba(199, 210, 254, 0.22);
-  background: rgba(199, 210, 254, 0.08);
-  color: #c7d2fe;
+  color: var(--nimote-link);
 }
 .home-page-pillars .home-page-pillar-accent .home-page-pillar-title {
-  color: #f5f7ff;
+  color: var(--nimote-text-primary);
 }
 .home-page-pillars .home-page-pillar-accent .home-page-pillar-copy {
-  color: #c7d2fe;
+  color: var(--nimote-text-secondary);
 }
 .home-page-pillars .home-page-pillar-accent .home-page-pillar-flow {
   border-color: rgba(199, 210, 254, 0.24);
@@ -1108,15 +1104,15 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
   color: #e0e7ff;
 }
 .home-page-pillars .home-page-pillar-accent .home-page-pillar-points li {
-  border-color: rgba(199, 210, 254, 0.18);
-  background: rgba(255, 255, 255, 0.06);
-  color: #dbe3ff;
+  border-color: var(--nimote-border);
+  background: var(--nimote-bg-elevated);
+  color: var(--nimote-text-secondary);
 }
 .home-page-pillars .home-page-pillar-accent .home-page-pillar-link {
-  color: #a5b4fc;
+  color: var(--nimote-link);
 }
 .home-page-pillars .home-page-pillar-accent:hover .home-page-pillar-link {
-  color: #c7d2fe;
+  color: var(--nimote-link-hover);
 }
 .home-page-pillars .home-page-pillar-accent .home-page-cap-grid li {
   border-color: rgba(199, 210, 254, 0.16);
@@ -1153,12 +1149,12 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
   height: 22px;
 }
 .home-page-pillars .home-page-pillar-accent .home-page-pillar-icon {
-  border-color: rgba(199, 210, 254, 0.24);
-  background: rgba(199, 210, 254, 0.1);
-  color: #e0e7ff;
+  border-color: var(--nimote-border-accent);
+  background: var(--nimote-bg-elevated);
+  color: var(--nimote-link);
 }
 .home-page-pillars .home-page-pillar-accent:hover .home-page-pillar-icon {
-  color: #ffffff;
+  color: var(--nimote-link-hover);
 }
 .home-page-pillar:hover .home-page-pillar-icon {
   color: var(--nimote-accent);
@@ -1862,7 +1858,7 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
 
 /* ==========================================================================
    Motion
-   - Scroll reveal (gated on html.js so content stays visible without JS)
+   - Scroll reveal (only observed elements enter the pending state)
    - Button sheen sweep
    - Staggered reveal delays for sibling grids
    ========================================================================== */
@@ -1873,18 +1869,24 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
     transform 0.6s var(--nimote-ease-out);
   transition-delay: var(--reveal-delay, 0ms);
 }
-html.js [data-reveal] {
+[data-reveal].reveal-pending {
   opacity: 0;
   transform: translateY(18px);
 }
-html.js [data-reveal].is-revealed {
+[data-reveal].is-revealed,
+[data-reveal]:focus-within {
   opacity: 1;
   transform: none;
 }
-html.js [data-reveal]:nth-child(2) { --reveal-delay: 80ms; }
-html.js [data-reveal]:nth-child(3) { --reveal-delay: 160ms; }
-html.js [data-reveal]:nth-child(4) { --reveal-delay: 240ms; }
-html.js [data-reveal]:nth-child(5) { --reveal-delay: 320ms; }
+[data-reveal]:nth-child(2) { --reveal-delay: 60ms; }
+[data-reveal]:nth-child(3) { --reveal-delay: 120ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal].reveal-pending {
+    opacity: 1;
+    transform: none;
+  }
+}
 
 /* Primary CTA stays deliberately still; surface and border states carry feedback. */
 .home-page-btn.primary {
