@@ -9,7 +9,7 @@ NimoteCode 将核心开发闭环收敛到一个移动工作区：**Explorer → 
 
 > **Android 本地 Linux 仅支持 Android。** 在支持 ARM64 或 x86_64 的 Android 8+ 设备上，可免 root 使用带 Bash、Git 和 SSH 的 Ubuntu 工作区；iPhone 和 iPad 可使用本地与 SSH 工作区。
 
-<div class="feature-showcase" role="region" aria-label="NimoteCode 功能亮点">
+<div class="feature-showcase" role="region" tabindex="0" aria-label="NimoteCode 功能亮点">
   <div class="feature-showcase__track">
     <figure class="feature-showcase__item"><img src="/screenshots/p1.png" alt="NimoteCode 中的本地文件、SSH、代码编辑与 AI Agent" width="1604" height="901" loading="eager"><figcaption>工作区、编辑与 AI Agent</figcaption></figure>
     <figure class="feature-showcase__item"><img src="/screenshots/p2.png" alt="NimoteCode 中的 SSH 终端、Source Control 与代码诊断" width="1597" height="896" loading="lazy"><figcaption>终端、Git 与诊断</figcaption></figure>

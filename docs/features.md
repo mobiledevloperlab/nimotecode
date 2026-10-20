@@ -9,7 +9,7 @@ NimoteCode keeps the essential development loop in one mobile workspace: **Explo
 
 > **Android Local Linux is Android-only.** On supported Android 8+ ARM64 and x86_64 devices, it provides a rootless Ubuntu workspace with Bash, Git, and SSH. iPhone and iPad use local and SSH workspaces instead.
 
-<div class="feature-showcase" role="region" aria-label="NimoteCode feature highlights">
+<div class="feature-showcase" role="region" tabindex="0" aria-label="NimoteCode feature highlights">
   <div class="feature-showcase__track">
     <figure class="feature-showcase__item"><img src="/screenshots/p1.png" alt="Local files, SSH, code editing and AI Agent in NimoteCode" width="1604" height="901" loading="eager"><figcaption>Workspaces, editing and AI Agent</figcaption></figure>
     <figure class="feature-showcase__item"><img src="/screenshots/p2.png" alt="SSH terminal, Source Control and code diagnostics in NimoteCode" width="1597" height="896" loading="lazy"><figcaption>Terminal, Git and diagnostics</figcaption></figure>
