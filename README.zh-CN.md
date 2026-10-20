@@ -15,7 +15,7 @@
   <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-下载-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="从 App Store 下载 iPhone 和 iPad 版 NimoteCode"></a>
 </p>
 
-<p align="center"><a href="#演示">观看演示</a> · <a href="#与其他移动开发工具对比">工具对比</a> · <a href="https://nimotecode.com/zh/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=zh_quick_start">快速开始</a> · <a href="#124-更新亮点">1.2.4 更新亮点</a></p>
+<p align="center"><a href="#演示">观看演示</a> · <a href="#与其他移动开发工具对比">工具对比</a> · <a href="https://nimotecode.com/zh/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=zh_quick_start">快速开始</a> · <a href="#125-更新亮点">1.2.5 更新亮点</a></p>
 
 <p align="center">免费开始使用，无需先配置 AI。<br><small>商业闭源应用 · 本仓库提供官方文档与社区资源</small></p>
 
@@ -121,16 +121,16 @@ Orca 的移动端依赖桌面 Companion；Moshi 的 Diff 和网页预览需要 P
 
 商店可用性与版本上线时间可能因平台和地区不同。查看[下载与平台要求](https://nimotecode.com/zh/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_download)；商店实际提供的版本可能与下方介绍的版本不同。
 
-## 1.2.4 更新亮点
+## 1.2.5 更新亮点
 
-**更快开始，也更容易继续上次的工作。**
+**更高效地管理项目，让工作区体验更一致。**
 
-- **直接进入工作区：**打开本地项目、远程工作区或 Demo 时，可选的 AI 配置不再打断首次使用。
-- **继续最近工作：**快速重开最近的本地项目，或返回已保存的 SSH 连接重新连接。
-- **应用内更新提醒：**查看可用更新和本地化发布说明。
-- **操作更顺畅：**工具入口匹配当前工作区能力，终端搜索高亮与内容保持一致，SSH 在连接前校验连接信息。
+- **批量处理文件：**在资源管理器中选择多个文件或目录，即可统一复制、移动或删除；工作区会按其能力提供操作。
+- **更易浏览项目：**资源管理器现显示文件大小和已展开目录的已加载项目数量。
+- **更快开始 AI 工作：**可从空白对话直接新建 AI 聊天或打开 AI 配置。
+- **反馈更清晰：**SSH 连接会立即显示进度并避免重复尝试，面板、工具栏、Markdown 预览、通知与移动端导航也更一致。
 
-[阅读完整 1.2.4 发布说明](https://nimotecode.com/zh/releases/1.2.4?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_release) · [历史版本](https://nimotecode.com/zh/releases/)
+[阅读完整 1.2.5 发布说明](https://nimotecode.com/zh/releases/1.2.5?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_release) · [历史版本](https://nimotecode.com/zh/releases/)
 
 ## 教程与资源
 
