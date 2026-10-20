@@ -121,16 +121,16 @@ AI model access and tokens are not included. Provider charges are separate. Exte
 
 Store availability and release timing may differ by platform and region. See [download and platform requirements](https://nimotecode.com/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_download); the version offered by your store may differ from the release documented below.
 
-## What's new in 1.2.4
+## What's new in 1.2.5
 
-**Start faster. Pick up where you left off.**
+**Manage projects more efficiently. Keep every workspace in sync.**
 
-- **Go straight to your workspace:** optional AI setup no longer interrupts opening a local project, remote workspace or demo.
-- **Continue recent work:** reopen recent local projects or return to a saved SSH connection to reconnect.
-- **See updates in the app:** view available updates and localized release notes.
-- **Find your way more easily:** workspace tools reflect available capabilities, terminal search highlights stay aligned, and SSH checks connection details before connecting.
+- **Work with several files at once:** select files or folders in Explorer to copy, move, or delete them together, wherever the workspace supports it.
+- **Scan projects more easily:** Explorer shows file sizes and loaded-item counts for expanded folders.
+- **Start AI work faster:** begin a conversation or open AI configuration directly from an empty chat.
+- **See clearer feedback:** SSH connects with immediate progress and blocks duplicate attempts, while panels, toolbars, Markdown preview, notifications, and mobile navigation are more consistent.
 
-[Read the full 1.2.4 release notes](https://nimotecode.com/releases/1.2.4?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_release) · [Earlier releases](https://nimotecode.com/releases/)
+[Read the full 1.2.5 release notes](https://nimotecode.com/releases/1.2.5?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_release) · [Earlier releases](https://nimotecode.com/releases/)
 
 ## Guides and resources
 

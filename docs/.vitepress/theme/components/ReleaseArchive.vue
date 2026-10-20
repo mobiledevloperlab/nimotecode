@@ -10,6 +10,7 @@ type Release = {
 }
 
 const releases: Release[] = [
+  { version: '1.2.5', date: { en: 'October 20, 2026', zh: '2026 年 10 月 20 日' }, build: '56', summary: { en: 'Batch Explorer actions and a more consistent IDE.', zh: '资源管理器批量操作与更一致的 IDE。' } },
   { version: '1.2.4', date: { en: 'October 18, 2026', zh: '2026 年 10 月 18 日' }, summary: { en: 'Start faster, resume recent work, and update with confidence.', zh: '更快开始、继续最近工作，并安心更新。' } },
   { version: '1.2.3', date: { en: 'October 15, 2026', zh: '2026 年 10 月 15 日' }, summary: { en: 'Shared Local Linux projects and more resilient SSH sessions.', zh: '共享 Local Linux 项目与更稳定的 SSH 会话。' } },
   { version: '1.2.2', date: { en: 'October 9, 2026', zh: '2026 年 10 月 9 日' }, build: '52' },
@@ -60,9 +61,9 @@ const urlFor = (release: Release) => `${localePath.value}/releases/${release.ver
         <a class="release-primary-link" :href="urlFor(latest)">{{ copy.view }} <span aria-hidden="true">→</span></a>
       </div>
       <ul class="release-highlights">
-        <li>{{ isChinese ? '最近工作区' : 'Recent workspaces' }}</li>
-        <li>{{ isChinese ? '应用内更新提醒' : 'In-app update notices' }}</li>
-        <li>{{ isChinese ? '更可靠的终端搜索' : 'More dependable terminal search' }}</li>
+        <li>{{ isChinese ? '资源管理器批量操作' : 'Batch Explorer actions' }}</li>
+        <li>{{ isChinese ? '文件大小与目录项目数量' : 'File sizes and folder item counts' }}</li>
+        <li>{{ isChinese ? '更清晰的 SSH 连接反馈' : 'Clearer SSH connection feedback' }}</li>
       </ul>
     </div>
   </section>

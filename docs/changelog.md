@@ -11,6 +11,12 @@ This is the public record of notable product updates. For setup help, use the [d
 
 ## 2026
 
+### Version 1.2.5 · October 20, 2026
+
+This release makes everyday project management more efficient: Explorer adds batch file actions, file sizes, and loaded-directory counts; empty AI chats offer direct shortcuts; and SSH connections provide immediate progress while blocking duplicate attempts. It also unifies the IDE across phones, tablets, and desktop.
+
+[Read the complete 1.2.5 release notes →](/releases/1.2.5)
+
 ### Version 1.2.4 · October 18, 2026
 
 This release makes it faster to start and resume work: recent local and SSH workspaces are easier to continue, optional AI setup no longer blocks coding, and in-app update notices now include localized release notes. It also improves Settings, AI configuration, terminal search, and SSH validation.

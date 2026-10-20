@@ -1,11 +1,11 @@
 export const latestRelease = {
-  version: '1.2.4',
+  version: '1.2.5',
   date: {
-    en: 'October 18, 2026',
-    zh: '2026 年 10 月 18 日'
+    en: 'October 20, 2026',
+    zh: '2026 年 10 月 20 日'
   },
   homeSummary: {
-    en: 'Start faster, resume recent work, and update with confidence.',
-    zh: '更快开始、继续最近工作，并安心更新。'
+    en: 'Manage projects more efficiently with a more consistent IDE.',
+    zh: '更高效地管理项目，获得更一致的 IDE 体验。'
   }
 } as const
