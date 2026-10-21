@@ -2,7 +2,7 @@
 layout: home
 title: NimoteCode | 移动 SSH IDE 与 AI 编程工作区，支持 Android 和 iOS
 titleTemplate: false
-description: NimoteCode 是仅支持 Android 与 iOS 的移动 SSH IDE 和 AI 编程工作区：打开本地项目、通过 SSH 连接 Mac、Linux 与服务器，或使用 Android 本地 Linux，在手机和平板上完成远程开发。
+description: NimoteCode 是支持 Android 与 iOS 的移动 SSH IDE 和 AI 编程工作区，集 SFTP、LSP 诊断、终端与远程开发工作流于一体。
 ---
 
 <section class="home-page-hero">

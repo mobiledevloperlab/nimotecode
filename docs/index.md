@@ -1,8 +1,8 @@
 ---
 layout: home
-title: NimoteCode – Mobile SSH IDE & AI Coding for Android & iOS
+title: "NimoteCode: Mobile SSH IDE and AI Coding Workspace"
 titleTemplate: false
-description: "NimoteCode is a mobile SSH IDE and AI coding workspace for Android and iOS. Open local projects, connect to Mac, Linux and servers over SSH, or use Android Local Linux to edit, run, review and continue real development from a phone or tablet."
+description: "NimoteCode is a Mobile SSH IDE for Android and iOS with SFTP, LSP diagnostics, terminal tools and remote development workflows built for daily development."
 ---
 
 <section class="home-page-hero">
@@ -10,8 +10,8 @@ description: "NimoteCode is a mobile SSH IDE and AI coding workspace for Android
     <div class="home-page-hero-copy">
       <p class="home-page-badge">Mobile SSH IDE for Android &amp; iOS</p>
       <div class="home-page-logo-lockup"><img src="/app_icon.png" alt="NimoteCode" class="home-page-logo" width="1024" height="1024" decoding="async"><span class="home-page-brand">NimoteCode</span></div>
-      <h1 class="home-page-title">A real mobile SSH IDE for<br><em>remote development.</em></h1>
-      <p class="home-page-subtitle">An AI coding workspace for Android and iOS: open local projects, connect to Mac, Linux and servers over SSH, or use Android Local Linux — then edit, run, review and continue real development from your phone or tablet.</p>
+      <h1 class="home-page-title">A full-featured Mobile SSH IDE for<br><em>remote development.</em></h1>
+      <p class="home-page-subtitle">Code on Android/iOS with an AI Coding Workspace: open local projects, connect to Mac, Linux and servers over SSH, or use Android Local Linux — then edit, run, review and continue real development from your phone or tablet.</p>
       <LatestReleaseLink variant="home" />
       <div class="home-page-actions home-page-actions-hero">
         <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=website&utm_campaign=homepage_hero" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for Android</a>
@@ -58,8 +58,8 @@ description: "NimoteCode is a mobile SSH IDE and AI coding workspace for Android
         <span class="home-page-pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2.5"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 9.5c2.8-2.2 7.2-2.2 10 0"/></svg></span>
         <p class="home-page-eyebrow">Your workspace</p>
       </div>
-      <h2 class="home-page-pillar-title">Start local. Go remote when you need to.</h2>
-      <p class="home-page-pillar-copy">Open a local project on Android or iOS, including a folder selected outside the app. Connect to the real project on a Mac, Linux machine or server over SSH, or use bundled Ubuntu on supported Android devices.</p>
+      <h2 class="home-page-pillar-title">A Mobile SSH Client when you need remote development.</h2>
+      <p class="home-page-pillar-copy">Open a local project on Android or iOS, including a folder selected outside the app. Connect to the real project on a Mac, Linux machine or server over SSH, or use bundled Ubuntu on supported Android devices. For SFTP file synchronization workflows, keep remote file access and deliberate Sync/Cache transfers in the same workspace.</p>
       <ul class="home-page-pillar-points">
         <li>Local and remote projects</li>
         <li>SSH workspaces</li>
@@ -73,7 +73,7 @@ description: "NimoteCode is a mobile SSH IDE and AI coding workspace for Android
         <p class="home-page-eyebrow">Stay in flow</p>
       </div>
       <h2 class="home-page-pillar-title">Return to work without losing your place.</h2>
-      <p class="home-page-pillar-copy">Use a terminal and secure SSH in the same workspace as the code. Recent workspaces and reconnect-aware sessions make returning safe; observed AI and terminal tasks can surface in iOS Live Activities or Android notifications.</p>
+      <p class="home-page-pillar-copy">Use a terminal emulator and secure SSH in the same workspace as the code. Recent workspaces and reconnect-aware sessions make returning safe; observed AI and terminal tasks can surface in iOS Live Activities or Android notifications.</p>
       <ul class="home-page-pillar-points">
         <li>Integrated terminal</li>
         <li>Secure SSH</li>
@@ -87,7 +87,7 @@ description: "NimoteCode is a mobile SSH IDE and AI coding workspace for Android
         <p class="home-page-eyebrow">Build and verify</p>
       </div>
       <h2 class="home-page-pillar-title">Edit, verify and bring in AI when it helps.</h2>
-      <p class="home-page-pillar-copy">Review Git diffs, run commands and preview the result; use LSP and debugging when the workspace supports them. AI Chat and Agent can help plan and execute work without taking you out of the project.</p>
+      <p class="home-page-pillar-copy">Review Git diffs, run commands and preview the result; use project-wide code search, LSP diagnostics and debugging when the workspace supports them. AI Chat and Agent can help plan and execute work without taking you out of the project.</p>
       <ul class="home-page-cap-grid">
         <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="5" r="2.3"/><circle cx="6" cy="19" r="2.3"/><circle cx="18" cy="7" r="2.3"/><path d="M6 7.3v9.4"/><path d="M8.4 6.1c3 .4 5.1 2 6.6 4.3.8 1.3 1.5 2 2.9 2.2"/></svg></span>Git</li>
         <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.7L19.7 10.5l-5.8 1.8L12 18l-1.9-5.7L4.3 10.5l5.8-1.8L12 3z"/></svg></span>AI Chat &amp; Agent</li>
