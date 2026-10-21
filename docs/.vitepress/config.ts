@@ -144,8 +144,26 @@ function asContent(value: unknown, fallback: string): string {
   return fallback
 }
 
+const localizedSeo = {
+  ja: { title: '日本語', description: '日本語版。' },
+  ko: { title: '한국어', description: '한국어 버전입니다.' },
+  es: { title: 'Español', description: 'Disponible en español.' }
+} as const
+
+function localizedSeoValue(path: string, value: string, kind: 'title' | 'description'): string {
+  const locale = pageLocaleKey(path)
+  const translation = localizedSeo[locale as keyof typeof localizedSeo]
+  if (!translation || !value) return value
+
+  const suffix = translation[kind]
+  // Page data can pass through this helper more than once in dev mode. Keep
+  // the operation idempotent so the locale marker never accumulates.
+  if (value.endsWith(suffix)) return value
+  return kind === 'title' ? `${value} | ${suffix}` : `${value} ${suffix}`
+}
+
 function pageDescription(context: TransformContext, title: string): string {
-  const explicit = asContent(context.pageData.frontmatter.description, '')
+  const explicit = asContent(context.pageData.description, '')
   if (explicit) return explicit
 
   const normalizedTitle = title.trim()
@@ -213,7 +231,7 @@ function localeAlternates(path: string): HeadConfig[] {
 
 function pageSchemas(context: TransformContext): object[] {
   const url = pageCanonicalUrl(context)
-  const title = asContent(context.pageData.frontmatter.title, asContent(context.pageData.title, 'NimoteCode'))
+  const title = asContent(context.pageData.title, 'NimoteCode')
   const description = pageDescription(context, title)
   const inLanguage = languageForPath(context.pageData.relativePath)
   const normalizedPath = normalizePath(context.pageData.relativePath)
@@ -860,9 +878,17 @@ export default defineConfig({
   sitemap: {
     hostname: siteUrl
   },
+  // Locale copies share the English source frontmatter. Scope their rendered
+  // metadata to the locale at build time, so localized URLs do not compete
+  // with their canonical English counterparts in search results.
+  transformPageData(pageData) {
+    const title = localizedSeoValue(pageData.relativePath, pageData.title, 'title')
+    const description = localizedSeoValue(pageData.relativePath, pageData.description, 'description')
+    return { title, description }
+  },
   transformHead(context) {
     const url = pageCanonicalUrl(context)
-    const title = asContent(context.pageData.frontmatter.title, asContent(context.pageData.title, 'NimoteCode'))
+    const title = asContent(context.pageData.title, 'NimoteCode')
     const description = pageDescription(context, title)
     const image = asContent(context.pageData.frontmatter.image, socialImage)
     const isPageNotFound = normalizePath(context.pageData.relativePath) === '/404'

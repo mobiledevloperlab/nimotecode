@@ -1,6 +1,6 @@
 ---
 title: Run AI Coding Tools in Terminal | NimoteCode Workflows
-description: Run Codex, Claude, Kimi and other AI coding tools directly from the NimoteCode terminal on mobile.
+description: Ejecute Codex, Claude, Kimi y otras herramientas de programación con IA desde la terminal móvil de NimoteCode.
 ---
 
 # Ejecute herramientas de codificación de IA directamente en la terminal

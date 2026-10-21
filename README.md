@@ -1,27 +1,38 @@
 <p align="center">
-  <img src="docs/public/app_icon_round.png" alt="NimoteCode logo" width="72" height="72">
+  <img src="docs/public/app_icon_round.png" alt="NimoteCode logo" width="88" height="88">
 </p>
 
 <h1 align="center">NimoteCode — Mobile IDE for Android &amp; iOS</h1>
 
 <p align="center"><a href="README.zh-CN.md">简体中文</a> · English</p>
 
-<p align="center"><b>Your projects, on your phone or tablet.</b><br>Edit local projects or connect over SSH. Write code, run commands, review Git diffs,<br>and work with AI in one mobile workspace.</p>
+<p align="center">
+  <strong>Your projects, on your phone or tablet.</strong><br>
+  Edit local projects or connect over SSH. Write code, run commands, review Git diffs,<br>
+  and work with AI in one mobile workspace.
+</p>
 
-<p align="center">Code Editor · SSH Terminal · Git · AI Coding<br>Root-free Ubuntu on supported Android devices</p>
+<p align="center"><sub>Code Editor&nbsp;&nbsp;•&nbsp;&nbsp;SSH Terminal&nbsp;&nbsp;•&nbsp;&nbsp;Git&nbsp;&nbsp;•&nbsp;&nbsp;AI Coding<br>Root-free Ubuntu on supported Android devices</sub></p>
 
 <p align="center">
   <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-Install-34A853?style=for-the-badge&amp;logo=googleplay&amp;logoColor=white" alt="Install NimoteCode for Android from Google Play"></a>
   <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-Download-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="Download NimoteCode for iPhone and iPad from the App Store"></a>
 </p>
 
-<p align="center"><a href="#demo">Watch demo</a> · <a href="#compare-mobile-development-tools">Compare tools</a> · <a href="https://nimotecode.com/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=en_quick_start">Quick start</a> · <a href="#whats-new-in-124">What's new in 1.2.4</a></p>
+<p align="center"><sub>
+  <a href="#demo">Watch demo</a> ·
+  <a href="#compare-mobile-development-tools">Compare tools</a> ·
+  <a href="https://nimotecode.com/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=en_quick_start">Quick start</a> ·
+  <a href="#whats-new-in-125">What's new in 1.2.5</a>
+</sub></p>
 
-<p align="center">Free to start. AI setup is optional.<br><small>Commercial, closed-source app · Official documentation and community resources</small></p>
+<p align="center"><sub>Free to start. AI setup is optional.<br>Commercial, closed-source app · Official documentation and community resources</sub></p>
 
 <p align="center">
   <img src="docs/public/screenshots/nimote-pro.webp" alt="NimoteCode code editor, project explorer and AI workspace on a tablet and phone" width="1000">
 </p>
+
+---
 
 ## Demo
 
@@ -31,7 +42,10 @@
   </video>
 </div>
 
-[Watch the AI Agent product demo](https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6) · [Alternative MP4 video](https://nimotecode.com/videos/ai-agent-demo-small.mp4)
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6">Watch the AI Agent product demo</a> ·
+  <a href="https://nimotecode.com/videos/ai-agent-demo-small.mp4">Alternative MP4 video</a>
+</p>
 
 ## Develop wherever your project lives
 
@@ -43,7 +57,7 @@ NimoteCode brings a code editor, SSH terminal, Git review and AI workflows to An
 - **Connect to your development host over SSH.** Work with remote project files, use the host's terminal and inspect Git changes. Follow the [SSH remote development guide](resources/remote-development-from-phone.md) to edit and verify a change. Requires a reachable, configured SSH host.
 - **Run Linux on Android without root.** Use bundled Ubuntu through PRoot, with Bash, Git and SSH, on supported Android 8+ ARM64 / x86_64 devices. Share app-local projects with Linux at `/mnt/local`. [Try your first Linux script](resources/android-linux-development.md). Local Linux is unavailable on iPhone and iPad.
 
-⭐ **Useful for your mobile workflow? Star this repository to keep the guides and examples handy.**
+> ⭐ **Useful for your mobile workflow? Star this repository to keep the guides and examples handy.**
 
 ## Compare mobile development tools
 
@@ -84,7 +98,7 @@ Orca mobile requires its desktop companion. Moshi's diff and web preview require
 
 A check does not mean free, setup-free or available on every platform. Blink integrates editing through Blink Code; Git / LSP depend on repository or remote IDE configuration. Termius Mosh is verified here for Android only. See the full comparison for each product's setup and plan requirements.
 
-[**See all seven tools and feature-by-feature official evidence →**](https://nimotecode.com/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_comparison) · Evidence baseline: 2026-10-19; NimoteCode 1.2.4.
+> [**See all seven tools and feature-by-feature official evidence →**](https://nimotecode.com/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_comparison) · Evidence baseline: 2026-10-19; NimoteCode 1.2.5.
 
 **Try the workflow yourself:** [install NimoteCode](https://nimotecode.com/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_compare_download) and open a demo or local project. No AI setup needed to start.
 
@@ -115,7 +129,7 @@ AI model access and tokens are not included. Provider charges are separate. Exte
 2. **Open a workspace:** choose a local project, connect an SSH host, or explore the Demo workspace. Supported Android devices can also use Local Linux. You can start without configuring AI.
 3. **Make one small change:** open a file, edit it, run a check if your environment supports it, then inspect the Git diff in a Git repository.
 
-[**Follow the quick start →**](https://nimotecode.com/docs/quick-start?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_get_started)
+> [**Follow the quick start →**](https://nimotecode.com/docs/quick-start?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_get_started)
 
 **Free to start, with advanced workflows through Early Access:** Free includes local, SSH and Android Local Linux workspaces, the editor, baseline terminal, Git review, AI Chat and basic Tasks. Advanced workflows such as AI Agent, remote content search, multiple terminals, Git writes, LSP and debugging are available through Early Access. Check [Early Access details](https://nimotecode.com/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_plans) and the app for current availability and terms.
 
@@ -130,7 +144,7 @@ Store availability and release timing may differ by platform and region. See [do
 - **Start AI work faster:** begin a conversation or open AI configuration directly from an empty chat.
 - **See clearer feedback:** SSH connects with immediate progress and blocks duplicate attempts, while panels, toolbars, Markdown preview, notifications, and mobile navigation are more consistent.
 
-[Read the full 1.2.5 release notes](https://nimotecode.com/releases/1.2.5?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_release) · [Earlier releases](https://nimotecode.com/releases/)
+> [Read the full 1.2.5 release notes](https://nimotecode.com/releases/1.2.5?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_release) · [Earlier releases](https://nimotecode.com/releases/)
 
 ## Guides and resources
 
@@ -144,11 +158,16 @@ Store availability and release timing may differ by platform and region. See [do
 
 Share a bug, ask a question or suggest a workflow you would like to see supported.
 
-[Discord](https://discord.gg/tTxbpqYmhR) · [Report an issue](https://github.com/mobiledevloperlab/nimote_issues/issues) · [X](https://x.com/mobiledevlab)
+<p align="center">
+  <a href="https://discord.gg/tTxbpqYmhR">Discord</a> ·
+  <a href="https://github.com/mobiledevloperlab/nimote_issues/issues">Report an issue</a> ·
+  <a href="https://x.com/mobiledevlab">X</a>
+</p>
 
-**Star to bookmark these mobile development resources and support NimoteCode.**
-
-[![Star NimoteCode](https://img.shields.io/github/stars/mobiledevloperlab/nimotecode?style=social)](https://github.com/mobiledevloperlab/nimotecode)
+<p align="center">
+  <b>Star to bookmark these mobile development resources and support NimoteCode.</b><br>
+  <a href="https://github.com/mobiledevloperlab/nimotecode"><img src="https://img.shields.io/github/stars/mobiledevloperlab/nimotecode?style=social" alt="Star NimoteCode"></a>
+</p>
 
 ## About this repository
 
