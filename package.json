@@ -10,7 +10,10 @@
     "compare:check": "node scripts/check-mobile-comparison.mjs"
   },
   "devDependencies": {
+    "remark-gfm": "^4.0.1",
+    "remark-parse": "^11.0.0",
     "sharp": "^0.35.2",
+    "unified": "^11.0.5",
     "vite-plugin-image-optimizer": "^2.0.3",
     "vitepress": "^1.6.4",
     "vitepress-plugin-google-analytics": "^1.0.2",

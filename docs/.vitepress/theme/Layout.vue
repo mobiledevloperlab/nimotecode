@@ -29,9 +29,13 @@ const { frontmatter } = useData()
 const slots = useSlots()
 const heroImageSlotExists = computed(() => !!slots['home-hero-image'])
 provide('hero-image-slot-exists', heroImageSlotExists)
-const isDocsRoute = computed(() => /^\/(?:zh\/)?docs(?:\/|$)/.test(route.path))
-const isBlogRoute = computed(() => /^\/(?:zh\/)?blog(?:\/|$)/.test(route.path))
-const isWorkflowRoute = computed(() => /^\/(?:zh\/)?use-cases(?:\/|$)/.test(route.path))
+// All translated documentation routes must use the documentation layout.
+// Previously this only recognized the root and Chinese routes, so /ja/docs,
+// /ko/docs and /es/docs were rendered with MarketingLayout (which has no
+// sidebar) even when their locale sidebar configuration was present.
+const isDocsRoute = computed(() => /^\/(?:(?:zh|ja|ko|es)\/)?docs(?:\/|$)/.test(route.path))
+const isBlogRoute = computed(() => /^\/(?:(?:zh|ja|ko|es)\/)?blog(?:\/|$)/.test(route.path))
+const isWorkflowRoute = computed(() => /^\/(?:(?:zh|ja|ko|es)\/)?use-cases(?:\/|$)/.test(route.path))
 </script>
 
 <template>
