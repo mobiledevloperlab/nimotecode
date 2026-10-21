@@ -9,6 +9,25 @@ const redirectRules = readFileSync(resolve(process.cwd(), 'docs/public/_redirect
   .map((line) => line.split(/\s+/))
 const redirects = new Map(redirectRules.filter(([source]) => !source.includes('*'))
   .map(([source, target]) => [source, target]))
+const wildcardRedirects = redirectRules
+  .filter(([source]) => source.includes('*'))
+  .map(([source, target]) => ({ source, target }))
+
+function redirectTarget(pathname) {
+  const exact = redirects.get(pathname)
+  if (exact) return exact
+
+  for (const { source, target } of wildcardRedirects) {
+    // The standard _redirects syntax supports a single splat. Keep the
+    // checker aligned with the host so valid locale fallbacks are not
+    // reported as missing static files.
+    const [prefix, suffix] = source.split('*')
+    if (!pathname.startsWith(prefix) || !pathname.endsWith(suffix)) continue
+    const splat = pathname.slice(prefix.length, pathname.length - suffix.length || undefined)
+    return target.replaceAll(':splat', splat)
+  }
+  return null
+}
 
 function files(directory) {
   return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
@@ -33,7 +52,8 @@ function targetExists(href, from = '/', seen = new Set()) {
   if (url.origin !== site) return true
   if (seen.has(url.pathname)) return false
   seen.add(url.pathname)
-  if (redirects.has(url.pathname)) return targetExists(redirects.get(url.pathname), '/', seen)
+  const redirect = redirectTarget(url.pathname)
+  if (redirect) return targetExists(redirect, '/', seen)
   return Boolean(outputFile(url.href))
 }
 
@@ -69,7 +89,7 @@ for (const file of htmlFiles) {
   const title = html.match(/<title>([^<]+)<\/title>/)
   const description = html.match(/<meta name="description" content="([^"]*)"/)
   const isNoindex = /<meta name="robots" content="noindex, follow"/.test(html)
-  const isDocs = /^(?:zh\/)?(?:docs|blog|use-cases)(?:\/|\.html|$)/.test(name)
+  const isDocs = /^(?:(?:zh|ja|ko|es)\/)?(?:docs|blog|use-cases)(?:\/|\.html|$)/.test(name)
 
   if (!isDocs && /(?:VPSidebar|VPDocAside|VPDocFooter)/.test(html)) {
     failures.push(`Marketing page contains content-layout chrome: ${name}`)
