@@ -10,8 +10,113 @@ const brandLogo = `${siteUrl}/app_icon.png`
 const socialImage = `${siteUrl}/screenshots/NimoteCode_Promotion.jpg`
 const localeConfig = {
   root: { lang: 'en-US', path: '' },
-  zh: { lang: 'zh-CN', path: '/zh' }
+  zh: { lang: 'zh-CN', path: '/zh' },
+  ja: { lang: 'ja-JP', path: '/ja' },
+  ko: { lang: 'ko-KR', path: '/ko' },
+  es: { lang: 'es-ES', path: '/es' }
 } as const
+
+const localePathPattern = /^\/(?:zh|ja|ko|es)(?=\/|$)/
+
+type DocsSidebarLabels = {
+  start: string
+  quickStart: string
+  workflow: string
+  ssh: string
+  localLinux: string
+  ai: string
+  editor: string
+  terminal: string
+  search: string
+  sourceControl: string
+  lsp: string
+  debug: string
+  syncCache: string
+  tasks: string
+  overview: string
+  gettingStarted: string
+  architecture: string
+  compatibility: string
+  securityIntegrity: string
+  presets: string
+  troubleshooting: string
+  reference: string
+  account: string
+  security: string
+  settings: string
+  notifications: string
+  configuration: string
+  sourceLicenses: string
+  faq: string
+}
+
+function docsSidebar(prefix: string, labels: DocsSidebarLabels) {
+  const docs = `${prefix}/docs`
+  return {
+    [`${docs}/`]: [
+      { text: labels.start, items: [{ text: labels.quickStart, link: `${docs}/quick-start` }] },
+      {
+        text: labels.workflow,
+        collapsed: false,
+        items: [
+          { text: labels.ssh, link: `${docs}/ssh` },
+          { text: labels.localLinux, link: `${docs}/local-linux` },
+          { text: labels.ai, link: `${docs}/ai` },
+          { text: labels.editor, link: `${docs}/editor` },
+          { text: labels.terminal, link: `${docs}/terminal` },
+          { text: labels.search, link: `${docs}/search` },
+          { text: labels.sourceControl, link: `${docs}/source-control` },
+          { text: labels.lsp, link: `${docs}/lsp` },
+          { text: labels.debug, link: `${docs}/debug` },
+          { text: labels.syncCache, link: `${docs}/sync-cache` },
+          { text: labels.tasks, link: `${docs}/tasks` }
+        ]
+      },
+      {
+        text: labels.localLinux,
+        collapsed: false,
+        items: [
+          { text: labels.overview, link: `${docs}/local-linux` },
+          { text: labels.gettingStarted, link: `${docs}/local-linux/getting-started` },
+          { text: labels.architecture, link: `${docs}/local-linux/architecture` },
+          { text: labels.compatibility, link: `${docs}/local-linux/compatibility` },
+          { text: labels.securityIntegrity, link: `${docs}/local-linux/security-integrity` },
+          { text: labels.presets, link: `${docs}/local-linux/presets` },
+          { text: labels.troubleshooting, link: `${docs}/local-linux/troubleshooting` }
+        ]
+      },
+      {
+        text: labels.reference,
+        collapsed: false,
+        items: [
+          { text: labels.account, link: `${docs}/account-subscription` },
+          { text: labels.security, link: `${docs}/security` },
+          { text: labels.settings, link: `${docs}/settings` },
+          { text: labels.notifications, link: `${docs}/notifications` },
+          { text: labels.configuration, link: `${docs}/configuration` },
+          { text: labels.sourceLicenses, link: `${docs}/local-linux-source` },
+          { text: labels.faq, link: `${docs}/faq` }
+        ]
+      }
+    ]
+  }
+}
+
+function useCasesSidebar(prefix: string, labels: { heading: string, agentDemo: string, workspaceDemo: string, terminalTools: string }) {
+  return {
+    [`${prefix}/use-cases/`]: [
+      {
+        text: labels.heading,
+        collapsed: false,
+        items: [
+          { text: labels.agentDemo, link: `${prefix}/use-cases/` },
+          { text: labels.workspaceDemo, link: `${prefix}/use-cases/mobile-workspace-demo` },
+          { text: labels.terminalTools, link: `${prefix}/use-cases/terminal-ai-tools` }
+        ]
+      }
+    ]
+  }
+}
 
 function normalizePath(path: string): string {
   if (!path || path === 'index.md' || path === '/index.md') return '/'
@@ -52,7 +157,7 @@ function pageDescription(context: TransformContext, title: string): string {
 }
 
 function stripLocalePrefix(path: string): string {
-  return path.replace(/^\/zh(?=\/|$)/, '') || '/'
+  return path.replace(localePathPattern, '') || '/'
 }
 
 function titleCase(value: string): string {
@@ -65,6 +170,9 @@ function titleCase(value: string): string {
 function languageForPath(path: string): string {
   const localeKey = pageLocaleKey(path)
   if (localeKey === 'zh') return 'zh-CN'
+  if (localeKey === 'ja') return 'ja-JP'
+  if (localeKey === 'ko') return 'ko-KR'
+  if (localeKey === 'es') return 'es-ES'
   return 'en-US'
 }
 
@@ -75,7 +183,8 @@ function openGraphLocale(path: string): string {
 function localeAlternates(path: string): HeadConfig[] {
   const normalized = normalizePath(path)
   const suffix = normalized === '/' ? '' : normalized
-  const stripped = suffix.replace(/^\/zh(\/|$)/, '/')
+  const strippedPath = suffix.replace(localePathPattern, '')
+  const stripped = strippedPath === '/' ? '' : strippedPath
   const entries = Object.values(localeConfig).flatMap((locale) => {
     const localePath = `${locale.path}${stripped}` || '/'
     const sourceRelativePath = localePath.replace(/^\//, '').replace(/\/$/, '')
@@ -685,16 +794,20 @@ function faqSchema(context: TransformContext): object | null {
 // swaps in once the stylesheet finishes loading.
 const FONT_LATIN = 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap'
 const FONT_ZH = 'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap'
+const FONT_JA = 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap'
+const FONT_KO = 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap'
 
 function fontByLocale(lang: string): string {
   if (lang.startsWith('zh')) return FONT_ZH
+  if (lang.startsWith('ja')) return FONT_JA
+  if (lang.startsWith('ko')) return FONT_KO
   return FONT_LATIN
 }
 
 function fontLinks(path: string): HeadConfig[] {
   const normalized = normalizePath(path)
   const stripped = suffixToLocaleKey(normalized)
-  const lang = stripped === 'zh' ? 'zh-CN' : 'en-US'
+  const lang = stripped === 'zh' ? 'zh-CN' : stripped === 'ja' ? 'ja-JP' : stripped === 'ko' ? 'ko-KR' : stripped === 'es' ? 'es-ES' : 'en-US'
   const href = fontByLocale(lang)
   return [
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
@@ -709,7 +822,7 @@ function fontLinks(path: string): HeadConfig[] {
 }
 
 function suffixToLocaleKey(normalized: string): string {
-  const m = normalized.match(/^\/(zh)(?:\/|$)/)
+  const m = normalized.match(/^\/(zh|ja|ko|es)(?:\/|$)/)
   return m ? m[1] : ''
 }
 
@@ -722,6 +835,9 @@ function websiteDescription(inLanguage: string): string {
   if (inLanguage === 'zh-CN') {
     return 'NimoteCode 是面向移动场景的 AI 开发工作区：集代码编辑器、SSH 终端、Git、AI Chat 与 Agent、LSP、调试器、任务与同步/缓存于一体。'
   }
+  if (inLanguage === 'ja-JP') return 'NimoteCode は、コードエディタ、SSH ターミナル、Git、AI Chat と Agent を備えたモバイル AI 開発ワークスペースです。'
+  if (inLanguage === 'ko-KR') return 'NimoteCode는 코드 편집기, SSH 터미널, Git, AI Chat 및 Agent를 제공하는 모바일 AI 개발 워크스페이스입니다.'
+  if (inLanguage === 'es-ES') return 'NimoteCode es un espacio de trabajo de desarrollo con IA móvil con editor de código, terminal SSH, Git, AI Chat y Agent.'
   return 'NimoteCode is a Mobile AI Development Workspace for Android: code editor, SSH terminal, Git, AI Chat and Agent, LSP, debugger, tasks and sync/cache.'
 }
 
@@ -1044,6 +1160,52 @@ export default defineConfig({
           provider: 'local'
         }
       }
+    },
+
+    ja: {
+      label: '日本語', lang: 'ja-JP', link: '/ja/',
+      themeConfig: { nav: [
+        { text: '製品', link: '/ja/features' }, { text: '比較', link: '/ja/compare/mobile-ai-development-tools' },
+        { text: 'ワークフロー', link: '/ja/use-cases/' }, { text: 'リソース', link: '/ja/resources/' },
+        { text: 'ドキュメント', link: '/ja/docs/quick-start' }, { text: 'ダウンロード', link: '/ja/download' },
+        { text: 'Blog (English)', link: '/blog/' }
+      ], sidebar: { ...docsSidebar('/ja', {
+        start: 'はじめに', quickStart: 'クイックスタート', workflow: '開発ワークフロー',
+        ssh: 'ローカルおよびリモート SSH ワークスペース', localLinux: 'Android ローカル Linux', ai: 'AI チャットとエージェント',
+        editor: 'エディター', terminal: 'ターミナル', search: '検索', sourceControl: 'ソース管理', lsp: 'LSP', debug: 'デバッグ', syncCache: '同期 / キャッシュ', tasks: 'タスク',
+        overview: '概要', gettingStarted: 'はじめる', architecture: 'アーキテクチャ', compatibility: '互換性', securityIntegrity: 'セキュリティと整合性', presets: 'Linux プリセット', troubleshooting: 'トラブルシューティング',
+        reference: 'リファレンス', account: 'アカウントとサブスクリプション', security: 'セキュリティと安全性', settings: '設定', notifications: '通知', configuration: '構成', sourceLicenses: 'ローカル Linux のソースとライセンス', faq: 'よくある質問'
+      }), ...useCasesSidebar('/ja', { heading: 'ワークフロー', agentDemo: 'AI エージェントのビルドデモ', workspaceDemo: 'モバイルワークスペースのデモ', terminalTools: 'ターミナル AI ツール' }) } }
+    },
+    ko: {
+      label: '한국어', lang: 'ko-KR', link: '/ko/',
+      themeConfig: { nav: [
+        { text: '제품', link: '/ko/features' }, { text: '비교', link: '/ko/compare/mobile-ai-development-tools' },
+        { text: '워크플로', link: '/ko/use-cases/' }, { text: '리소스', link: '/ko/resources/' },
+        { text: '문서', link: '/ko/docs/quick-start' }, { text: '다운로드', link: '/ko/download' },
+        { text: 'Blog (English)', link: '/blog/' }
+      ], sidebar: { ...docsSidebar('/ko', {
+        start: '시작하기', quickStart: '빠른 시작', workflow: '개발 워크플로',
+        ssh: '로컬 및 원격 SSH 워크스페이스', localLinux: 'Android 로컬 Linux', ai: 'AI 채팅 및 에이전트',
+        editor: '에디터', terminal: '터미널', search: '검색', sourceControl: '소스 제어', lsp: 'LSP', debug: '디버그', syncCache: '동기화 / 캐시', tasks: '작업',
+        overview: '개요', gettingStarted: '시작하기', architecture: '아키텍처', compatibility: '호환성', securityIntegrity: '보안 및 무결성', presets: 'Linux 프리셋', troubleshooting: '문제 해결',
+        reference: '참조', account: '계정 및 구독', security: '보안 및 안전', settings: '설정', notifications: '알림', configuration: '구성', sourceLicenses: '로컬 Linux 소스 및 라이선스', faq: '자주 묻는 질문'
+      }), ...useCasesSidebar('/ko', { heading: '워크플로', agentDemo: 'AI 에이전트 빌드 데모', workspaceDemo: '모바일 워크스페이스 데모', terminalTools: '터미널 AI 도구' }) } }
+    },
+    es: {
+      label: 'Español', lang: 'es-ES', link: '/es/',
+      themeConfig: { nav: [
+        { text: 'Producto', link: '/es/features' }, { text: 'Comparar', link: '/es/compare/mobile-ai-development-tools' },
+        { text: 'Flujos', link: '/es/use-cases/' }, { text: 'Recursos', link: '/es/resources/' },
+        { text: 'Documentación', link: '/es/docs/quick-start' }, { text: 'Descargar', link: '/es/download' },
+        { text: 'Blog (English)', link: '/blog/' }
+      ], sidebar: { ...docsSidebar('/es', {
+        start: 'Primeros pasos', quickStart: 'Inicio rápido', workflow: 'Flujo de desarrollo',
+        ssh: 'Espacios de trabajo SSH locales y remotos', localLinux: 'Linux local en Android', ai: 'Chat y agente de IA',
+        editor: 'Editor', terminal: 'Terminal', search: 'Búsqueda', sourceControl: 'Control de código fuente', lsp: 'LSP', debug: 'Depuración', syncCache: 'Sincronización / caché', tasks: 'Tareas',
+        overview: 'Descripción general', gettingStarted: 'Primeros pasos', architecture: 'Arquitectura', compatibility: 'Compatibilidad', securityIntegrity: 'Seguridad e integridad', presets: 'Preajustes de Linux', troubleshooting: 'Resolución de problemas',
+        reference: 'Referencia', account: 'Cuenta y suscripción', security: 'Seguridad y protección', settings: 'Configuración', notifications: 'Notificaciones', configuration: 'Configuración avanzada', sourceLicenses: 'Código fuente y licencias de Linux local', faq: 'Preguntas frecuentes'
+      }), ...useCasesSidebar('/es', { heading: 'Flujos de trabajo', agentDemo: 'Demo de compilación con agente de IA', workspaceDemo: 'Demo de espacio de trabajo móvil', terminalTools: 'Herramientas de IA en terminal' }) } }
     }
   },
 

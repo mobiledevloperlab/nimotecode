@@ -12,6 +12,7 @@ import ReleaseArchive from './components/ReleaseArchive.vue'
 import MobileDevToolComparison from './components/MobileDevToolComparison.vue'
 import PricingFeatureSystem from './components/PricingFeatureSystem.vue'
 import SocialProof from './components/SocialProof.vue'
+import LocalizedLandingPage from './components/LocalizedLandingPage.vue'
 import { type Theme } from 'vitepress'
 import './custom.css'
 // @ts-ignore - The package does not ship TypeScript types.
@@ -30,6 +31,7 @@ const theme: Theme = {
     app.component('MobileDevToolComparison', MobileDevToolComparison)
     app.component('PricingFeatureSystem', PricingFeatureSystem)
     app.component('SocialProof', SocialProof)
+    app.component('LocalizedLandingPage', LocalizedLandingPage)
     app.component('MarketingLayout', MarketingLayout)
 
     if (import.meta.env.PROD) {
