@@ -78,15 +78,22 @@ function localeAlternates(path: string): HeadConfig[] {
   const stripped = suffix.replace(/^\/zh(\/|$)/, '/')
   const entries = Object.values(localeConfig).flatMap((locale) => {
     const localePath = `${locale.path}${stripped}` || '/'
-    const href = localePath === '/' ? siteUrl : `${siteUrl}${localePath}`
-    const sourceRelativePath = localePath.replace(/^\//, '')
-    const sourcePath = !sourceRelativePath || sourceRelativePath.endsWith('/')
-      ? `${sourceRelativePath}index.md`
-      : `${sourceRelativePath}.md`
+    const sourceRelativePath = localePath.replace(/^\//, '').replace(/\/$/, '')
+    // A locale root such as /zh maps to zh/index.md, whereas most routes map
+    // to a sibling markdown file (for example, /zh/ssh-ide -> zh/ssh-ide.md).
+    // Check both forms so homepage alternates are not accidentally omitted.
+    const sourcePaths = sourceRelativePath
+      ? [`${sourceRelativePath}.md`, `${sourceRelativePath}/index.md`]
+      : ['index.md']
 
     // Do not advertise a translated URL unless the page actually exists.
     // This matters for English-only SEO landing pages and avoids hreflang 404s.
-    if (!existsSync(resolve(process.cwd(), 'docs', sourcePath))) return []
+    if (!sourcePaths.some((sourcePath) => existsSync(resolve(process.cwd(), 'docs', sourcePath)))) return []
+    const isDirectoryIndex = sourceRelativePath
+      && existsSync(resolve(process.cwd(), 'docs', `${sourceRelativePath}/index.md`))
+      && !existsSync(resolve(process.cwd(), 'docs', `${sourceRelativePath}.md`))
+    const hrefPath = isDirectoryIndex ? `${localePath}/` : localePath
+    const href = hrefPath === '/' ? siteUrl : `${siteUrl}${hrefPath}`
     return [['link', { rel: 'alternate', hreflang: locale.lang, href }] as HeadConfig]
   })
   const englishPath = stripped || '/'
@@ -134,10 +141,10 @@ function pageSchemas(context: TransformContext): object[] {
         '@type': 'SoftwareApplication',
         name: 'NimoteCode',
         applicationCategory: 'DeveloperApplication',
-        operatingSystem: 'Android',
+        operatingSystem: 'Android, iOS',
         url: siteUrl,
         image: socialImage,
-        description: 'Mobile SSH IDE and AI development workspace with code editor, SSH terminal, Git, AI Chat and Agent, LSP, debugger, tasks and sync/cache.',
+        description: 'Mobile SSH IDE and AI Coding Workspace for Android and iOS with an editor, SSH terminal, Git, AI Chat and Agent, LSP diagnostics, debugger, tasks and sync/cache.',
         offers: {
           '@type': 'Offer',
           price: '0',
