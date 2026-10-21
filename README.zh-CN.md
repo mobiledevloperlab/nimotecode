@@ -1,27 +1,33 @@
 <p align="center">
-  <img src="docs/public/app_icon_round.png" alt="NimoteCode 标志" width="72" height="72">
+  <img src="docs/public/app_icon_round.png" alt="NimoteCode 标志" width="88" height="88">
 </p>
 
 <h1 align="center">NimoteCode — Android / iOS 移动 IDE</h1>
 
 <p align="center">简体中文 · <a href="README.md">English</a></p>
 
-<p align="center"><b>在手机和平板上，继续你的开发工作。</b><br>打开本地项目，或通过 SSH 连接开发主机。<br>在同一个移动工作区中编辑代码、运行命令、审查 Git 改动，并使用 AI 辅助开发。</p>
+<p align="center">
+  <strong>在手机和平板上，继续你的开发工作。</strong><br>
+  打开本地项目，或通过 SSH 连接开发主机。<br>
+  在同一个移动工作区中编辑代码、运行命令、审查 Git 改动，并使用 AI 辅助开发。
+</p>
 
-<p align="center">代码编辑器 · SSH 终端 · Git · AI 编码<br>支持的 Android 设备还可运行免 root Ubuntu</p>
+<p align="center"><sub>代码编辑器&nbsp;&nbsp;•&nbsp;&nbsp;SSH 终端&nbsp;&nbsp;•&nbsp;&nbsp;Git&nbsp;&nbsp;•&nbsp;&nbsp;AI 编码<br>支持的 Android 设备还可运行免 root Ubuntu</sub></p>
 
 <p align="center">
   <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-安装-34A853?style=for-the-badge&amp;logo=googleplay&amp;logoColor=white" alt="从 Google Play 安装 Android 版 NimoteCode"></a>
   <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-下载-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="从 App Store 下载 iPhone 和 iPad 版 NimoteCode"></a>
 </p>
 
-<p align="center"><a href="#演示">观看演示</a> · <a href="#与其他移动开发工具对比">工具对比</a> · <a href="https://nimotecode.com/zh/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=zh_quick_start">快速开始</a> · <a href="#125-更新亮点">1.2.5 更新亮点</a></p>
+<p align="center"><sub><a href="#演示">观看演示</a> · <a href="#与其他移动开发工具对比">工具对比</a> · <a href="https://nimotecode.com/zh/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=zh_quick_start">快速开始</a> · <a href="#125-更新亮点">1.2.5 更新亮点</a></sub></p>
 
-<p align="center">免费开始使用，无需先配置 AI。<br><small>商业闭源应用 · 本仓库提供官方文档与社区资源</small></p>
+<p align="center"><sub>免费开始使用，无需先配置 AI。<br>商业闭源应用 · 本仓库提供官方文档与社区资源</sub></p>
 
 <p align="center">
   <img src="docs/public/screenshots/nimote-pro.webp" alt="NimoteCode 在平板和手机上展示代码编辑器、项目文件与 AI 工作区" width="1000">
 </p>
+
+---
 
 ## 演示
 
@@ -31,7 +37,10 @@
   </video>
 </div>
 
-[观看 AI Agent 产品演示](https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6) · [备用 MP4 视频](https://nimotecode.com/videos/ai-agent-demo-small.mp4)
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6">观看 AI Agent 产品演示</a> ·
+  <a href="https://nimotecode.com/videos/ai-agent-demo-small.mp4">备用 MP4 视频</a>
+</p>
 
 ## 项目在哪里，就在哪里继续开发
 
@@ -43,7 +52,7 @@ NimoteCode 将代码编辑器、SSH 终端、Git 审查与 AI 工作流带到 An
 - **通过 SSH 连接开发主机。** 编辑远程项目文件，使用主机终端，检查 Git 改动。按 [SSH 远程开发教程](resources/remote-development-from-phone.md)完成一次修改与验证；需要已配置且可访问的 SSH 主机。
 - **在 Android 上免 root 运行 Linux。** 在受支持的 Android 8+ ARM64 / x86_64 设备上，通过 PRoot 使用内置 Ubuntu、Bash、Git 和 SSH，并在 `/mnt/local` 与应用本地项目共享文件。[运行你的第一个 Linux 脚本](resources/android-linux-development.md)。iPhone 和 iPad 不支持 Local Linux。
 
-⭐ **这些工作流对你有帮助？欢迎 Star 收藏，方便再次找到教程与示例。**
+> ⭐ **这些工作流对你有帮助？欢迎 Star 收藏，方便再次找到教程与示例。**
 
 ## 与其他移动开发工具对比
 
@@ -84,7 +93,7 @@ Orca 的移动端依赖桌面 Companion；Moshi 的 Diff 和网页预览需要 P
 
 勾选不代表免费、无需配置或所有平台均支持。Blink 的编辑能力通过 Blink Code 集成，Git / LSP 取决于仓库或远程 IDE 配置；Termius 的 Mosh 此处仅核实 Android。各产品的配置与付费要求见完整对比。
 
-[**查看七款工具的完整对比与逐项官方依据 →**](https://nimotecode.com/zh/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_comparison) · 资料基准：2026-10-19，NimoteCode 1.2.4。
+> [**查看七款工具的完整对比与逐项官方依据 →**](https://nimotecode.com/zh/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_comparison) · 资料基准：2026-10-19，NimoteCode 1.2.5。
 
 **想亲自试试？** [安装 NimoteCode](https://nimotecode.com/zh/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_compare_download)，先打开 Demo 或本地项目，无需先配置 AI。
 
@@ -115,7 +124,7 @@ Orca 的移动端依赖桌面 Companion；Moshi 的 Diff 和网页预览需要 P
 2. **打开工作区：**选择本地项目、连接 SSH 主机，或先体验 Demo 工作区；支持的 Android 设备也可使用 Local Linux。无需先配置 AI。
 3. **完成一处小修改：**打开文件并编辑，在环境支持时运行检查，再在 Git 仓库中审查 Diff。
 
-[**跟随快速开始教程 →**](https://nimotecode.com/zh/docs/quick-start?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_get_started)
+> [**跟随快速开始教程 →**](https://nimotecode.com/zh/docs/quick-start?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_get_started)
 
 **免费开始，Early Access 体验进阶功能：**免费版包含本地、SSH 与 Android Local Linux 工作区、编辑器、基础终端、Git 审查、AI Chat 和基础 Tasks。AI Agent、远程内容搜索、多终端、Git 写操作、LSP 和调试等进阶工作流通过 Early Access 开放。当前可用性与权益以[Early Access 权益说明](https://nimotecode.com/zh/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_plans)及应用内显示为准。
 
@@ -130,7 +139,7 @@ Orca 的移动端依赖桌面 Companion；Moshi 的 Diff 和网页预览需要 P
 - **更快开始 AI 工作：**可从空白对话直接新建 AI 聊天或打开 AI 配置。
 - **反馈更清晰：**SSH 连接会立即显示进度并避免重复尝试，面板、工具栏、Markdown 预览、通知与移动端导航也更一致。
 
-[阅读完整 1.2.5 发布说明](https://nimotecode.com/zh/releases/1.2.5?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_release) · [历史版本](https://nimotecode.com/zh/releases/)
+> [阅读完整 1.2.5 发布说明](https://nimotecode.com/zh/releases/1.2.5?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_release) · [历史版本](https://nimotecode.com/zh/releases/)
 
 ## 教程与资源
 
@@ -144,11 +153,16 @@ Orca 的移动端依赖桌面 Companion；Moshi 的 Diff 和网页预览需要 P
 
 欢迎反馈 Bug、提出问题，或分享你希望支持的移动开发场景。
 
-[Discord](https://discord.gg/tTxbpqYmhR) · [报告问题](https://github.com/mobiledevloperlab/nimote_issues/issues) · [X](https://x.com/mobiledevlab)
+<p align="center">
+  <a href="https://discord.gg/tTxbpqYmhR">Discord</a> ·
+  <a href="https://github.com/mobiledevloperlab/nimote_issues/issues">报告问题</a> ·
+  <a href="https://x.com/mobiledevlab">X</a>
+</p>
 
-**欢迎 Star 收藏这些移动开发资源，也支持 NimoteCode 持续改进。**
-
-[![Star NimoteCode](https://img.shields.io/github/stars/mobiledevloperlab/nimotecode?style=social)](https://github.com/mobiledevloperlab/nimotecode)
+<p align="center">
+  <b>欢迎 Star 收藏这些移动开发资源，也支持 NimoteCode 持续改进。</b><br>
+  <a href="https://github.com/mobiledevloperlab/nimotecode"><img src="https://img.shields.io/github/stars/mobiledevloperlab/nimotecode?style=social" alt="Star NimoteCode"></a>
+</p>
 
 ## 关于本仓库
 
