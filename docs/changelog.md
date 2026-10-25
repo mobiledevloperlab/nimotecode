@@ -11,6 +11,12 @@ This is the public record of notable product updates. For setup help, use the [d
 
 ## 2026
 
+### Version 2.0.0 · October 25, 2026
+
+NimoteCode 2.0 is a major release that turns the IDE into a safely customizable workspace: create and run plugins, keep AI Agent work moving with follow-ups and interactive questions, and work more directly with Git branches, terminal output, and proxy-enabled SSH connections. It also refreshes the visual system, makes Nimote Editor the default across devices, and improves performance and reliability for long-running work.
+
+[Read the complete 2.0.0 release notes →](/releases/2.0.0)
+
 ### Version 1.2.5 · October 20, 2026
 
 This release makes everyday project management more efficient: Explorer adds batch file actions, file sizes, and loaded-directory counts; empty AI chats offer direct shortcuts; and SSH connections provide immediate progress while blocking duplicate attempts. It also unifies the IDE across phones, tablets, and desktop.

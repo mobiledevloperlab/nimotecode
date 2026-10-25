@@ -14,6 +14,12 @@ description: Product updates, new capabilities, fixes and compatibility notes fo
 
 ## 2026
 
+### バージョン 2.0.0 · 2026 年 10 月 25 日
+
+NimoteCode 2.0 は、IDE を安全にカスタマイズできるワークスペースへ進化させる大型アップデートです。プラグインの作成と実行、追加指示や対話式の質問による AI Agent 作業の継続、Git ブランチ、ターミナル出力、プロキシ経由の SSH 接続をより直接的に扱えます。
+
+[完全な 2.0.0 リリースノートを読む →](/ja/releases/2.0.0)
+
 ### バージョン 1.2.5 · 2026 年 10 月 20 日
 
 

@@ -23,7 +23,7 @@
   <a href="#demo">Watch demo</a> ·
   <a href="#compare-mobile-development-tools">Compare tools</a> ·
   <a href="https://nimotecode.com/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=en_quick_start">Quick start</a> ·
-  <a href="#whats-new-in-125">What's new in 1.2.5</a>
+  <a href="#whats-new-in-200">What's new in 2.0.0</a>
 </sub></p>
 
 <p align="center"><sub>Free to start. AI setup is optional.<br>Commercial, closed-source app · Official documentation and community resources</sub></p>
@@ -61,7 +61,7 @@ NimoteCode brings a code editor, SSH terminal, Git review and AI workflows to An
 
 ## Compare mobile development tools
 
-**Edit → Run checks → Review the diff, in one mobile workspace.** These selected capabilities from our detailed comparison help you choose the right tool for your workflow.
+**Edit → Run checks → Review the diff → extend the workspace, in one mobile IDE.** These selected capabilities from our detailed comparison help you choose the right tool for your workflow. The NimoteCode column reflects 2.0.0; question marks mean the corresponding capability has not been verified for that product.
 
 ✅ Documented built-in or integrated capability · ◐ Conditional · ? Not verified, **not an absence claim** · — Explicitly unsupported
 
@@ -69,10 +69,15 @@ NimoteCode brings a code editor, SSH terminal, Git review and AI workflows to An
 | --- | :---: | :---: | :---: | :---: |
 | SSH connection | ✅ | ✅ | ✅ | ✅ |
 | Code editor | ✅ | ? | ✅ | ? |
+| Custom plugins / workspace panels | ✅ ¹ | ? | ? | ? |
 | Git / diff UI | ✅ ¹ | ? | ◐ | ✅ |
+| Git branch search / create / checkout | ✅ ¹ | ? | ? | ? |
 | Built-in AI agent | ✅ ¹ | ? | ? | ? |
+| Continue an active AI Agent run | ✅ ¹ | ? | ? | ? |
+| Built-in MCP tool servers | ✅ ¹ | ? | ? | ? |
 | LSP diagnostics | ✅ ¹ | ? | ◐ | ? |
 | Web / app preview | ✅ | ? | ? | ✅ |
+| SSH via SOCKS5 / HTTP CONNECT proxy | ✅ | ? | ? | ? |
 | Android Local Linux | ✅ ² | ? | ? | ? |
 | Mosh transport | ? | ✅ | ✅ | ? |
 
@@ -83,10 +88,15 @@ NimoteCode brings a code editor, SSH terminal, Git review and AI workflows to An
 | --- | :---: | :---: | :---: | :---: |
 | SSH connection | ✅ | ✅ | ◐ | ✅ |
 | Code editor | ✅ | ? | — | ? |
+| Custom plugins / workspace panels | ✅ ¹ | ? | ? | ? |
 | Git / diff UI | ✅ ¹ | ? | ✅ | ✅ |
+| Git branch search / create / checkout | ✅ ¹ | ? | ? | ? |
 | Built-in AI agent | ✅ ¹ | ? | ? | ? |
+| Continue an active AI Agent run | ✅ ¹ | ? | ? | ? |
+| Built-in MCP tool servers | ✅ ¹ | ? | ? | ? |
 | LSP diagnostics | ✅ ¹ | ? | ? | ? |
 | Web / app preview | ✅ | ✅ | ✅ | ✅ |
+| SSH via SOCKS5 / HTTP CONNECT proxy | ✅ | ? | ? | ? |
 | Android Local Linux | ✅ ² | ? | ? | ? |
 | Mosh transport | ? | ✅ | ? | ✅ |
 
@@ -94,19 +104,20 @@ Orca mobile requires its desktop companion. Moshi's diff and web preview require
 
 </details>
 
-¹ **Early Access:** NimoteCode’s built-in Agent, Git writes and LSP are available through Early Access; Git status, diffs and history are free. Check the app for current availability. ² Local Linux requires supported Android 8+ ARM64 / x86_64 devices. The built-in Agent needs your own AI provider; LSP needs a configured host language server.
+¹ **Early Access:** NimoteCode’s Plugin Center, built-in Agent (including active-run follow-ups and configured MCP tool servers), Git writes and LSP are available through Early Access; Git status, diffs and history are free. Check the app for current availability. ² Local Linux requires supported Android 8+ ARM64 / x86_64 devices. The built-in Agent needs your own AI provider; LSP needs a configured host language server.
 
 A check does not mean free, setup-free or available on every platform. Blink integrates editing through Blink Code; Git / LSP depend on repository or remote IDE configuration. Termius Mosh is verified here for Android only. See the full comparison for each product's setup and plan requirements.
 
-> [**See all seven tools and feature-by-feature official evidence →**](https://nimotecode.com/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_comparison) · Evidence baseline: 2026-10-19; NimoteCode 1.2.5.
+> [**See all seven tools and feature-by-feature official evidence →**](https://nimotecode.com/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_comparison) · Competitor evidence baseline: 2026-10-19; NimoteCode capabilities: 2.0.0.
 
 **Try the workflow yourself:** [install NimoteCode](https://nimotecode.com/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_compare_download) and open a demo or local project. No AI setup needed to start.
 
 ## Why try NimoteCode?
 
-- **Edit and navigate:** browse and search project files, use split editor panes, and preview Markdown and web output.
-- **Run and inspect:** use the terminal and project tasks in a compatible workspace, with mobile extra keys and terminal focus mode.
-- **Review with Git:** inspect status, diffs and history; use Early Access workflows to commit, pull, push and resolve conflicts.
+- **Edit and navigate:** use the same Nimote Editor on phone, tablet, and desktop; browse and search project files, use split editor panes, and preview Markdown and web output.
+- **Run and inspect:** use the terminal and project tasks in a compatible workspace, with mobile extra keys, terminal focus mode, configurable color palettes, and SOCKS5 or HTTP CONNECT SSH proxies when needed.
+- **Review with Git:** inspect status, diffs and history; search for, create, and check out branches from the Git header; use Early Access workflows to commit, pull, push and resolve conflicts.
+- **Extend the workspace:** use Early Access Plugin Center to create custom panels, forms, workflows, artifact views, and local or SSH script jobs, with permission changes reviewed before installation or updates.
 - **Use language tools:** connect supported language servers for editor diagnostics and configured remote debug adapters for debugging. LSP and debugging are available through Early Access and require the appropriate environment tools.
 - **Work with AI:** ask about code, delegate a bounded task to the built-in Agent, or use compatible agents on your SSH host.
 
@@ -117,7 +128,8 @@ System-granted external folders support browsing and editing; Git, LSP, debuggin
 | Workflow | How to use it |
 | --- | --- |
 | **AI Chat** | Explain code and terminal output with workspace context. Connect your own AI provider and API key. |
-| **Built-in Agent** | Inspect files, plan changes, edit and run checks in a supported workspace. Available through Early Access. |
+| **Built-in Agent** | Inspect files, plan changes, edit and run checks in a supported workspace; continue an active run with follow-up instructions and answer its interactive questions. Available through Early Access. |
+| **MCP tool servers** | Configure verified MCP servers for the built-in Agent on a local or SSH workspace; every tool call requires explicit approval. Available through Early Access. |
 | **External ACP agent** | Connect a compatible runtime on your SSH host; review permissions and progress in the app's conversation view. |
 | **Claude Code / Codex over SSH** | Run a CLI installed on your own host through the terminal. Follow the [Claude Code on phone](resources/claude-code-on-phone.md) or [Codex on mobile](examples/codex-over-ssh/README.md) guide. |
 
@@ -135,16 +147,16 @@ AI model access and tokens are not included. Provider charges are separate. Exte
 
 Store availability and release timing may differ by platform and region. See [download and platform requirements](https://nimotecode.com/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_download); the version offered by your store may differ from the release documented below.
 
-## What's new in 1.2.5
+## What's new in 2.0.0
 
-**Manage projects more efficiently. Keep every workspace in sync.**
+**A major release: build a workspace that fits your workflow, and keep AI work moving.**
 
-- **Work with several files at once:** select files or folders in Explorer to copy, move, or delete them together, wherever the workspace supports it.
-- **Scan projects more easily:** Explorer shows file sizes and loaded-item counts for expanded folders.
-- **Start AI work faster:** begin a conversation or open AI configuration directly from an empty chat.
-- **See clearer feedback:** SSH connects with immediate progress and blocks duplicate attempts, while panels, toolbars, Markdown preview, notifications, and mobile navigation are more consistent.
+- **Create custom plugins and panels:** use forms, workflows, artifact views, and local or SSH script jobs; review permission changes before an install or update proceeds.
+- **Collaborate continuously with AI Agents:** add follow-up instructions to an active run, answer interactive questions, and use redesigned context, history, prompt editing, and timelines for longer work.
+- **Work with Git more directly:** search for, create, and check out branches from the Git header; clearer editor change markers and syntax-highlighted diffs make reviews easier.
+- **Make terminal and remote work more flexible:** send terminal output straight to AI, connect through SOCKS5 or HTTP CONNECT proxies, and choose terminal color palettes that match your workspace.
 
-> [Read the full 1.2.5 release notes](https://nimotecode.com/releases/1.2.5?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_release) · [Earlier releases](https://nimotecode.com/releases/)
+> [Read the full 2.0.0 release notes](https://nimotecode.com/releases/2.0.0?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_release) · [Earlier releases](https://nimotecode.com/releases/)
 
 ## Guides and resources
 

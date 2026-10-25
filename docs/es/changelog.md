@@ -14,6 +14,12 @@ Este es el registro público de actualizaciones notables de productos. Para obte
 
 ## 2026
 
+### Versión 2.0.0 · 25 de octubre de 2026
+
+NimoteCode 2.0 es una actualización principal que convierte el IDE en un espacio de trabajo personalizable y seguro: crea y ejecuta plugins, mantiene en marcha el trabajo del Agente de IA con instrucciones de seguimiento y preguntas interactivas, y permite trabajar más directamente con ramas de Git, salida de terminal y conexiones SSH mediante proxy.
+
+[Lea las notas completas de la versión 2.0.0 →](/es/releases/2.0.0)
+
 ### Versión 1.2.5 · 20 de octubre de 2026
 
 
