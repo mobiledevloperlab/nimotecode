@@ -4,7 +4,7 @@
 
 <h1 align="center">NimoteCode — Android / iOS 移动 IDE</h1>
 
-<p align="center">简体中文 · <a href="README.md">English</a></p>
+<p align="center"><a href="README.md">English</a> · 简体中文 · <a href="README.es.md">Español</a> · <a href="README.ja.md">日本語</a> · <a href="README.ko.md">한국어</a></p>
 
 <p align="center">
   <strong>在手机和平板上，继续你的开发工作。</strong><br>
@@ -19,7 +19,7 @@
   <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-下载-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="从 App Store 下载 iPhone 和 iPad 版 NimoteCode"></a>
 </p>
 
-<p align="center"><sub><a href="#演示">观看演示</a> · <a href="#与其他移动开发工具对比">工具对比</a> · <a href="https://nimotecode.com/zh/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=zh_quick_start">快速开始</a> · <a href="#200-更新亮点">2.0.0 更新亮点</a></sub></p>
+<p align="center"><sub><a href="#演示">观看演示</a> · <a href="#与其他移动开发工具对比">工具对比</a> · <a href="https://nimotecode.com/zh/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=zh_quick_start">快速开始</a> · <a href="#latest-release">2.0.0 更新亮点</a></sub></p>
 
 <p align="center"><sub>免费开始使用，无需先配置 AI。<br>商业闭源应用 · 本仓库提供官方文档与社区资源</sub></p>
 
@@ -142,9 +142,15 @@ Orca 的移动端依赖桌面 Companion；Moshi 的 Diff 和网页预览需要 P
 
 商店可用性与版本上线时间可能因平台和地区不同。查看[下载与平台要求](https://nimotecode.com/zh/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_download)；商店实际提供的版本可能与下方介绍的版本不同。
 
-## 2.0.0 更新亮点
+<a id="latest-release"></a>
 
-**一次重大版本更新：定制适合自己的工作台，持续推进 AI 工作。**
+## NimoteCode 2.0.0 · 重大版本更新
+
+| Build | 发布日期 | 平台 |
+| --- | --- | --- |
+| 58 | 2026 年 10 月 25 日 | Android · iPhone · iPad · 桌面端 |
+
+**可定制工作台、连续的 AI 协作，以及更完整的移动 IDE。**
 
 - **创建自定义插件与面板：**可使用表单、工作流、产物视图及本机或 SSH 脚本任务；安装或更新前会先展示权限变更供你审查。
 - **更连续地协作 AI Agent：**可向正在执行的 Agent 追加指令、回答交互式问题，并借助重构的上下文、历史、提示词编辑和时间线处理长时间任务。
