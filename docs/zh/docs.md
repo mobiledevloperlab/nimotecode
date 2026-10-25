@@ -1,6 +1,6 @@
 ---
 title: NimoteCode 中文文档 | 移动 IDE 使用指南
-description: 面向真实任务的 NimoteCode 中文指南：本地、Android 本地 Linux 与 SSH 工作区、手机代码编辑、终端、Git、AI Chat、LSP、调试、Tasks 与 Sync/Cache。
+description: 面向真实任务的 NimoteCode 中文指南：可定制的本地、Android 本地 Linux 与 SSH 工作区、手机代码编辑、终端、Git、AI Chat 与 Agent、插件、LSP、调试、Tasks 与 Sync/Cache。
 ---
 
 # NimoteCode 中文文档
@@ -13,6 +13,7 @@ description: 面向真实任务的 NimoteCode 中文指南：本地、Android �
   <div class="product-card"><strong>Android 开发环境</strong><span>在受支持的 Android 设备上免 root 使用内置 Ubuntu，请查看 <a href="/zh/docs/local-linux">本地 Linux</a>。</span></div>
   <div class="product-card"><strong>安全交付</strong><span>通过 <a href="/zh/docs/source-control">Source Control</a> 审查变更，再根据团队流程提交或同步。</span></div>
   <div class="product-card"><strong>AI 辅助</strong><span>在开始多步骤任务前，先理解 <a href="/zh/docs/ai">AI Chat 与 Agent</a> 的使用边界。</span></div>
+  <div class="product-card"><strong>自定义工作区</strong><span>使用 <a href="/zh/features">插件中心</a> 添加经过审查的面板、表单、工作流、产物视图与脚本任务。</span></div>
   <div class="product-card"><strong>技术资源</strong><span>在选择环境前，先比较<a href="/zh/resources/">移动开发、Android Linux、SSH 与 AI 编程工作流</a>。</span></div>
 </div>
 
@@ -26,6 +27,7 @@ description: 面向真实任务的 NimoteCode 中文指南：本地、Android �
 | 操作远程主机上的项目 | [SSH 工作区](/zh/docs/ssh) | [搜索](/zh/docs/search) · [Tasks](/zh/docs/tasks) |
 | 完成一次聚焦改动 | [编辑器](/zh/docs/editor) | [Source Control](/zh/docs/source-control) |
 | 在项目上下文中使用 AI | [AI Chat 与 Agent](/zh/docs/ai) | [配置指南](/zh/docs/configuration) |
+| 扩展受支持的工作区 | [功能特性](/zh/features) | [终端](/zh/docs/terminal) · [AI Chat 与 Agent](/zh/docs/ai) |
 | 诊断一个问题 | [LSP](/zh/docs/lsp) | [调试](/zh/docs/debug) · [终端](/zh/docs/terminal) |
 | 在本地与远程间移动内容 | [Sync / Cache](/zh/docs/sync-cache) | [SSH 工作区](/zh/docs/ssh) |
 

@@ -1,6 +1,6 @@
 ---
 title: Mobile Git Source Control | NimoteCode
-description: "Use NimoteCode for mobile Git review: repository status, diffs and history are available to all users; Pro unlocks gated Git write workflows."
+description: "Use NimoteCode for mobile Git review: repository status, syntax-highlighted diffs, history, and change markers are available to all users; Pro unlocks gated branch and Git write workflows."
 ---
 
 # Mobile Git Source Control
@@ -17,6 +17,7 @@ Source Control brings the reviewable part of Git into the workspace where you ed
 - Review staged, unstaged and conflicted files.
 - Inspect file diffs and repository history.
 - Refresh local and remote repository status in the active workspace, including first-commit repositories.
+- Search for, create, and check out branches from the Git header.
 - Stage selected work and prepare a commit after reviewing the diff.
 - With Pro, use gated Git write actions such as commit, push and stash when repository and host permissions allow it.
 - Use Git AI to help explain a change, draft a commit message or prompt a risk-oriented review.

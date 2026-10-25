@@ -1,6 +1,6 @@
 ---
 title: Local and Remote SSH Workspaces | NimoteCode Mobile IDE
-description: Open a local project or connect to a remote project with SSH in NimoteCode, then work from one clear project root.
+description: Open a local project or connect to a remote project with SSH in NimoteCode, including SOCKS5 and HTTP CONNECT proxy support, then work from one clear project root.
 ---
 
 # Local and Remote SSH Workspaces
@@ -27,7 +27,7 @@ Connect in four steps:
 
 1. Create or select an SSH profile.
 2. Enter the host, port and username.
-3. Authenticate with a password, private-key file or pasted private key.
+3. Authenticate with a password, private-key file or pasted private key. When your network requires it, connect through a SOCKS5 or HTTP CONNECT proxy.
 4. Confirm the remote project root, then open it in Remote Explorer.
 
 ## Choose and confirm the remote directory
@@ -57,6 +57,6 @@ Choose the project root—not merely the server home directory. This gives Edito
 
 ## Safer remote habits
 
-Use a separate profile for each environment, prefer a least-privilege account and key-based authentication for sensitive hosts, and choose a deliberate project root. Reconnect-aware behavior and connection reuse make remote commands and preview tunnels more resilient, but you should always verify the active host and directory before running a write command.
+Use a separate profile for each environment, prefer a least-privilege account and key-based authentication for sensitive hosts, and choose a deliberate project root. If you use a proxy, verify its address and trust boundary as carefully as the destination host. Reconnect-aware behavior and connection reuse make remote commands and preview tunnels more resilient, but you should always verify the active host and directory before running a write command.
 
 Next: [Terminal](/docs/terminal) · [SSH remote development workflow](/docs/ssh) · [Security and Safety](/docs/security)

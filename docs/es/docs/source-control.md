@@ -23,6 +23,8 @@ Source Control trae la parte revisable de Git al espacio de trabajo donde editó
 
 - Actualice el estado de los repositorios locales y remotos en el espacio de trabajo activo, incluidos los repositorios de primera confirmación.
 
+- Busque, cree y cambie ramas desde el encabezado de Git.
+
 - Organiza el trabajo seleccionado y prepara una confirmación después de revisar la diferencia.
 
 - Con Pro, use acciones de escritura Git cerradas, como confirmar, enviar y guardar, cuando los permisos del repositorio y del host lo permitan.

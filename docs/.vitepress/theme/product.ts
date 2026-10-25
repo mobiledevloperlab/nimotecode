@@ -11,6 +11,7 @@ export const product = {
     'Create and run terminal-backed Tasks'
   ],
   pro: [
+    'Plugin Center and custom workspace plugins',
     'AI Agent and remote content search',
     'Git write workflows',
     'Multiple terminal sessions',

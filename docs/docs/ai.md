@@ -1,6 +1,6 @@
 ---
 title: AI Chat and Agent | NimoteCode
-description: Use NimoteCode AI Chat for code and error explanations, and AI Agent for controlled multi-step work with provider profiles and workspace context.
+description: Use NimoteCode AI Chat for code and error explanations, and AI Agent for controlled multi-step work, follow-ups, and interactive questions with workspace context.
 ---
 
 # AI Chat and Agent
@@ -18,7 +18,11 @@ Ask Chat to explain unfamiliar code, interpret terminal output, outline a refact
 
 ## Use AI Agent for a controlled sequence
 
-Agent is appropriate when a task needs to inspect files, propose a plan, make an edit, run a check and summarize the result. It is available through Early Access Pro as availability expands; it does not use a free usage quota.
+Agent is appropriate when a task needs to inspect files, propose a plan, make an edit, run a check and summarize the result. While it runs, add a follow-up instruction or answer an interactive question when the work needs your direction. Its rebuilt context, history, prompt editing, and timeline views are designed to make longer work easier to follow. It is available through Early Access Pro as availability expands; it does not use a free usage quota.
+
+## Keep control as work continues
+
+An active Agent run is a collaboration, not a background promise. Review its plan, commands, permission requests, file changes, and compacted output as it proceeds. Use a follow-up for a changed requirement; answer a question only after confirming the host, project, and intended effect. When a configured step budget is reached, review the state before choosing whether to continue.
 
 ## Use an external ACP agent in an SSH workspace
 

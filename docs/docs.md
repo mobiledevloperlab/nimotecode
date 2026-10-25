@@ -1,6 +1,6 @@
 ---
 title: NimoteCode Documentation | Mobile IDE Guides
-description: Practical NimoteCode guides for local, Android Local Linux and SSH workspaces, mobile code editing, terminal, Git, AI Chat and Agent, LSP, debugging, tasks and sync/cache.
+description: Practical NimoteCode guides for customizable local, Android Local Linux and SSH workspaces, mobile code editing, terminal, Git, AI Chat and Agent, plugins, LSP, debugging, tasks and sync/cache.
 ---
 
 # NimoteCode Documentation
@@ -13,6 +13,7 @@ Short, task-oriented guides for working in a local project, Android Local Linux,
   <div class="product-card"><strong>Android development environment</strong><span>Use <a href="/docs/local-linux">Local Linux</a> for bundled Ubuntu without root on supported Android devices.</span></div>
   <div class="product-card"><strong>Safe delivery</strong><span>Review changes with <a href="/docs/source-control">Source Control</a> before you commit or sync.</span></div>
   <div class="product-card"><strong>AI assistance</strong><span>Understand the boundary between <a href="/docs/ai">AI Chat and Agent</a> before running a multi-step task.</span></div>
+  <div class="product-card"><strong>Custom workspace</strong><span>Use <a href="/features">Plugin Center</a> to add reviewed panels, forms, workflows, artifact views, and script jobs.</span></div>
   <div class="product-card"><strong>Technical resources</strong><span>Compare <a href="/resources/">mobile, Android Linux, SSH, and AI coding workflows</a> before choosing an environment.</span></div>
 </div>
 
@@ -26,6 +27,7 @@ Short, task-oriented guides for working in a local project, Android Local Linux,
 | Work on a remote host | [SSH Workspace](/docs/ssh) | [Search](/docs/search) · [Tasks](/docs/tasks) |
 | Prepare a focused change | [Editor](/docs/editor) | [Source Control](/docs/source-control) |
 | Get AI help in context | [AI Chat and Agent](/docs/ai) | [Configuration](/docs/configuration) |
+| Extend a supported workspace | [Features](/features) | [Terminal](/docs/terminal) · [AI Chat and Agent](/docs/ai) |
 | Diagnose a problem | [LSP](/docs/lsp) | [Debug](/docs/debug) · [Terminal](/docs/terminal) |
 | Move project content deliberately | [Sync / Cache](/docs/sync-cache) | [SSH Workspace](/docs/ssh) |
 

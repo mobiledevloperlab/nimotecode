@@ -35,7 +35,7 @@ Conéctese en cuatro pasos:
 
 2. Ingrese el host, el puerto y el nombre de usuario.
 
-3. Autenticar con una contraseña, un archivo de clave privada o una clave privada pegada.
+3. Autenticar con una contraseña, un archivo de clave privada o una clave privada pegada. Cuando la red lo requiera, conéctese mediante un proxy SOCKS5 o HTTP CONNECT.
 
 4. Confirme la raíz del proyecto remoto y luego ábralo en Remote Explorer.
 
@@ -76,7 +76,7 @@ Elija la raíz del proyecto, no simplemente el directorio de inicio del servidor
 ## Hábitos remotos más seguros
 
 
-Utilice un perfil separado para cada entorno, prefiera una cuenta con privilegios mínimos y autenticación basada en claves para hosts confidenciales y elija una raíz de proyecto deliberada. El comportamiento consciente de la reconexión y la reutilización de la conexión hacen que los comandos remotos y los túneles de vista previa sean más resistentes, pero siempre debe verificar el host y el directorio activos antes de ejecutar un comando de escritura.
+Utilice un perfil separado para cada entorno, prefiera una cuenta con privilegios mínimos y autenticación basada en claves para hosts confidenciales y elija una raíz de proyecto deliberada. Si usa un proxy, verifique su dirección y límite de confianza con el mismo cuidado que el host de destino. El comportamiento consciente de la reconexión y la reutilización de la conexión hacen que los comandos remotos y los túneles de vista previa sean más resistentes, pero siempre debe verificar el host y el directorio activos antes de ejecutar un comando de escritura.
 
 
 Siguiente: [Terminal](/docs/terminal) · [Flujo de trabajo de desarrollo remoto SSH](/docs/ssh) · [Seguridad y protección](/docs/security)

@@ -1,11 +1,11 @@
 ---
 title: 功能特性 | NimoteCode 移动 AI 开发工作台
-description: 浏览 NimoteCode 的移动开发能力：Android 本地 Linux、可灵活切换目录的本地与 SSH 工作区、双栏编辑、HTML 与媒体预览、终端、Git、AI Chat 和外部 Agent、LSP、调试、Tasks 与 Sync/Cache。
+description: 浏览 NimoteCode 的移动开发能力：可定制插件、本地与 SSH 工作区、Android 本地 Linux、编辑器、终端、Git、AI Chat 与 Agent、LSP、调试、Tasks 与 Sync/Cache。
 ---
 
 # 功能特性
 
-NimoteCode 将核心开发闭环收敛到一个移动工作区：**Explorer → Editor → Preview → Terminal → Git → AI**。项目可以位于设备、SSH 主机，或受支持 Android 设备上的内置 Ubuntu。本页列出每个功能的用途，以及它属于免费版还是 Pro。
+NimoteCode 将核心开发闭环收敛到一个工作区：**Explorer → Editor → Preview → Terminal → Git → AI → 插件**。项目可以位于设备、SSH 主机，或受支持 Android 设备上的内置 Ubuntu。可通过面板、表单、工作流、产物视图与脚本任务扩展受支持的工作区。本页列出每个功能的用途，以及它属于免费版还是 Pro。
 
 > **Android 本地 Linux 仅支持 Android。** 在支持 ARM64 或 x86_64 的 Android 8+ 设备上，可免 root 使用带 Bash、Git 和 SSH 的 Ubuntu 工作区；iPhone 和 iPad 可使用本地与 SSH 工作区。
 
@@ -40,8 +40,9 @@ NimoteCode 将核心开发闭环收敛到一个移动工作区：**Explorer → 
 
 | 功能 | 能解决什么 | 可用性 |
 | --- | --- | --- |
-| **AI Agent 与外部 ACP Agent** | 在文件、终端与 Git 工具之间完成受控的多步骤任务；在 SSH 工作区中完成配置后，可选择兼容 ACP 的 Claude Code、Codex CLI 等运行时，在统一时间线中审查权限和进度，并通过 `/` 菜单或键盘补全调用命令。 | Early Access Pro |
-| **Git 写入** | 提交、推送、stash，以及分支/切换/合并等操作——执行前可先审查。 | Early Access Pro |
+| **插件中心与自定义工作区** | 管理工作区能力，或创建带有声明式面板、表单、工作流、产物视图以及本地或 SSH 脚本任务的自定义插件。安装或更新前可审查权限变更。 | Early Access Pro |
+| **AI Agent 与外部 ACP Agent** | 在文件、终端与 Git 工具之间完成受控的多步骤任务；可向运行中的 Agent 添加后续指令，或在不丢失上下文的情况下回答交互问题。在 SSH 工作区中完成配置后，可选择兼容 ACP 的 Claude Code、Codex CLI 等运行时，并在统一时间线中审查权限和进度。 | Early Access Pro |
+| **Git 写入** | 提交、推送、stash，以及搜索、创建或切换分支——执行前可先审查。 | Early Access Pro |
 | **远程搜索** | 在整个远程工作区中进行全局内容搜索。 | Early Access Pro |
 | **多终端** | 为日志、测试、服务与部署保留并行会话。 | Early Access Pro |
 | **LSP** | 使用已配置的远程语言服务器提供诊断、代码动作与导航。 | Early Access Pro |
@@ -50,6 +51,10 @@ NimoteCode 将核心开发闭环收敛到一个移动工作区：**Explorer → 
 
 ## 最近加入工作区的能力
 
+- **可定制的工作区。** 插件中心可管理能力，并创建用于面板、表单、工作流、产物视图以及本地或 SSH 脚本任务的自定义插件。安装或更新前可审查权限变更。
+- **持续的 Agent 协作。** 可向运行中的 Agent 添加后续指令、回答其交互问题，并借助重构的上下文、历史、提示词编辑与时间线视图理解更长的任务。
+- **更直接的 Git 与终端辅助。** 从 Git 标题栏搜索、创建和切换分支；更克制的编辑器变更标记与更清晰的语法高亮 diff 改善审查体验。需要解释时可将终端输出发送给 AI。
+- **更灵活的远程连接。** 当网络需要时，SSH 工作区可通过 SOCKS5 或 HTTP CONNECT 代理连接。
 - **灵活切换工作区目录。** 本地与 SSH 项目可选择其他目录作为当前工作区，并保留最近访问位置以便快速返回。
 - **更可靠的 Android 本地 Linux。** Ubuntu 环境的安装、文件访问边界、Git 与 Task 文件处理均得到强化；这些改进仅适用于 Android。
 - **更完整的预览闭环。** 双栏编辑、HTML 快照、内置媒体预览与统一链接打开，让你在离开工作区前就能检查结果。
@@ -60,7 +65,7 @@ NimoteCode 将核心开发闭环收敛到一个移动工作区：**Explorer → 
 1. 使用 [SSH 工作区](/zh/docs/ssh) 连接远程项目、打开本地项目，或在受支持的 Android 设备中使用 [Android 本地 Linux](/zh/docs/local-linux)。
 2. 在 [编辑器](/zh/docs/editor) 中定位并修改文件。
 3. 在 [终端](/zh/docs/terminal) 中验证；需要时搜索输出或远程内容。
-4. 让 [AI Chat 与 Agent](/zh/docs/ai) 协助理解错误或规划改动。
-5. 使用 [Source Control](/zh/docs/source-control) 审查结果；交付需要受限 Git 写入操作时再使用 Pro。
+4. 让 [AI Chat 与 Agent](/zh/docs/ai) 协助理解错误、规划改动或继续正在进行的任务。
+5. 使用 [Source Control](/zh/docs/source-control) 审查结果；交付需要受限 Git 写入操作时再使用 Pro。工作流需要自定义面板、表单、工作流、产物视图或脚本任务时，可使用插件中心。
 
 > 功能会遵循权限与环境前置条件。例如 LSP、Debug 需要远程主机配置相应语言服务或调试适配器；面对敏感系统时，仍应审查每个 AI 结果与执行动作。

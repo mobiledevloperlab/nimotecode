@@ -2,7 +2,7 @@
 layout: home
 title: NimoteCode | 移动 SSH IDE 与 AI 编程工作区，支持 Android 和 iOS
 titleTemplate: false
-description: NimoteCode 是支持 Android 与 iOS 的移动 SSH IDE 和 AI 编程工作区，集 SFTP、LSP 诊断、终端与远程开发工作流于一体。
+description: NimoteCode 是支持 Android 与 iOS 的可定制移动 IDE：可通过本地项目、SSH 或 Android 本地 Linux 使用编辑器、终端、Git、AI Agent 与插件。
 ---
 
 <section class="home-page-hero">
@@ -10,8 +10,8 @@ description: NimoteCode 是支持 Android 与 iOS 的移动 SSH IDE 和 AI 编�
     <div class="home-page-hero-copy">
       <p class="home-page-badge">Android 与 iOS 移动 SSH IDE</p>
       <div class="home-page-logo-lockup"><img src="/app_icon.png" alt="NimoteCode" class="home-page-logo" width="1024" height="1024" decoding="async"><span class="home-page-brand">NimoteCode</span></div>
-      <h1 class="home-page-title">面向远程开发的<br><em>真实移动 SSH IDE。</em></h1>
-      <p class="home-page-subtitle">面向 Android 与 iOS 的 AI 编程工作区：打开本地项目、通过 SSH 连接 Mac、Linux 与服务器，或使用 Android 本地 Linux；在手机和平板上编辑、运行、审查并继续真实开发。</p>
+      <h1 class="home-page-title">面向真实开发的<br><em>可定制移动 IDE。</em></h1>
+      <p class="home-page-subtitle">可在 Android、iPhone、iPad 或桌面设备上开发：打开本地项目、通过 SSH 连接 Mac、Linux 与服务器，或使用 Android 本地 Linux；编辑、运行、审查、扩展工作区，并持续推进真实工作。</p>
       <LatestReleaseLink variant="home" />
       <div class="home-page-actions home-page-actions-hero"><a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=website&utm_campaign=homepage_hero" class="home-page-btn primary" target="_blank" rel="noreferrer">下载 Android 版</a><a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn primary" target="_blank" rel="noreferrer">下载 iOS 版</a><a href="#product-demo" class="home-page-btn secondary">观看演示</a><a href="https://github.com/mobiledevloperlab/nimotecode" class="home-page-btn secondary home-page-btn-weak" target="_blank" rel="noreferrer">在 GitHub 上 Star</a></div>
       <span class="home-page-availability-link">现已支持 Android、iPhone 与 iPad</span>
@@ -79,8 +79,8 @@ description: NimoteCode 是支持 Android 与 iOS 的移动 SSH IDE 和 AI 编�
         <span class="home-page-pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></span>
         <p class="home-page-eyebrow">构建与验证</p>
       </div>
-      <h2 class="home-page-pillar-title">编辑、验证，并在需要时使用 AI。</h2>
-      <p class="home-page-pillar-copy">无需离开工作区，即可审查 Git diff、运行命令和预览结果；在工作区支持时使用 LSP 与调试。AI Chat 和 Agent 可以协助规划和执行，同时始终围绕项目工作。</p>
+      <h2 class="home-page-pillar-title">编辑、验证、扩展，并在需要时使用 AI。</h2>
+      <p class="home-page-pillar-copy">无需离开工作区，即可审查 Git diff、运行命令和预览结果；在工作区支持时使用 LSP 与调试。可创建用于面板、表单、工作流、产物与脚本任务的插件；AI Chat 和 Agent 让规划和执行始终围绕项目进行。</p>
       <ul class="home-page-cap-grid">
         <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="5" r="2.3"/><circle cx="6" cy="19" r="2.3"/><circle cx="18" cy="7" r="2.3"/><path d="M6 7.3v9.4"/><path d="M8.4 6.1c3 .4 5.1 2 6.6 4.3.8 1.3 1.5 2 2.9 2.2"/></svg></span>Git</li>
         <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.7L19.7 10.5l-5.8 1.8L12 18l-1.9-5.7L4.3 10.5l5.8-1.8L12 3z"/></svg></span>AI Chat 与 Agent</li>

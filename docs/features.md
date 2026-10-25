@@ -1,11 +1,11 @@
 ---
 title: NimoteCode Features | Mobile AI Development Workspace
-description: "Explore NimoteCode’s mobile development capabilities: Android Local Linux, flexible local and SSH workspaces, split editing, live HTML and media preview, terminal, Git, AI Chat and external agents, LSP, debugging, tasks and sync/cache."
+description: "Explore NimoteCode’s mobile development capabilities: customizable plugins, local and SSH workspaces, Android Local Linux, editor, terminal, Git, AI Chat and Agent, LSP, debugging, tasks and sync/cache."
 ---
 
 # NimoteCode Features
 
-NimoteCode keeps the essential development loop in one mobile workspace: **Explorer → Editor → Preview → Terminal → Git → AI**. Start with a project on your device, an SSH host, or bundled Ubuntu through Android Local Linux. This page lists what every feature does and whether it is included in the free tier or requires Pro.
+NimoteCode keeps the essential development loop in one workspace: **Explorer → Editor → Preview → Terminal → Git → AI → Plugins**. Start with a project on your device, an SSH host, or bundled Ubuntu through Android Local Linux. Extend a supported workspace with panels, forms, workflows, artifact views, and script jobs. This page lists what every feature does and whether it is included in the free tier or requires Pro.
 
 > **Android Local Linux is Android-only.** On supported Android 8+ ARM64 and x86_64 devices, it provides a rootless Ubuntu workspace with Bash, Git, and SSH. iPhone and iPad use local and SSH workspaces instead.
 
@@ -40,8 +40,9 @@ With version 1.1.8, **Early Access Pro** opens the workflows below as availabili
 
 | Feature | What it gives you | Access |
 | --- | --- | --- |
-| **AI Agent & external ACP agents** | Run controlled multi-step workflows across files, Terminal, and Git tools. In an SSH workspace, choose a compatible ACP runtime—such as Claude Code or Codex CLI when configured—review permissions and progress in one timeline, and use `/` commands with touch or keyboard completion. | Early Access Pro |
-| **Git write** | Commit, push and stash, plus branch/checkout/merge actions — with review before you act. | Early Access Pro |
+| **Plugin Center & custom workspaces** | Install and manage workspace capabilities, or build custom plugins with declarative panels, forms, workflows, artifact views, and local or SSH script jobs. Review permission changes before installing or updating. | Early Access Pro |
+| **AI Agent & external ACP agents** | Run controlled multi-step workflows across files, Terminal, and Git tools. Add follow-up instructions to an active Agent run or answer its interactive questions without losing context. In an SSH workspace, choose a compatible ACP runtime—such as Claude Code or Codex CLI when configured—and review permissions and progress in one timeline. | Early Access Pro |
+| **Git write** | Commit, push and stash, and search for, create, or check out branches—with review before you act. | Early Access Pro |
 | **Remote search** | Global content search across a remote workspace. | Early Access Pro |
 | **Multi-terminal** | Keep parallel sessions for logs, tests, services and deployments. | Early Access Pro |
 | **LSP** | Configured remote language-server diagnostics, code actions and navigation. | Early Access Pro |
@@ -50,6 +51,10 @@ With version 1.1.8, **Early Access Pro** opens the workflows below as availabili
 
 ## Recently added to the workspace
 
+- **A workspace you can customize.** Plugin Center lets you manage capabilities and create custom plugins for panels, forms, workflows, artifact views, and local or SSH script jobs. Permission changes are visible for review before an install or update.
+- **Continuous Agent collaboration.** Give a running Agent follow-up instructions, answer its interactive questions, and keep longer work understandable with rebuilt context, history, prompt editing, and timeline views.
+- **More direct Git and terminal assistance.** Search, create, and check out branches from the Git header; quieter editor change markers and clearer syntax-highlighted diffs improve review. Send terminal output to AI when you want help interpreting it.
+- **Flexible remote connections.** SSH workspaces can connect through SOCKS5 or HTTP CONNECT proxies when a network requires one.
 - **Flexible workspace directories.** Local and SSH projects can switch to another directory and retain recent locations for quick return.
 - **Android Local Linux reliability.** The Ubuntu environment now has clearer file-access boundaries and more dependable setup, Git, and Task file handling. These improvements apply only to Android.
 - **A more complete preview loop.** Split editing, live HTML snapshots, built-in media preview, and shared link opening make it practical to inspect a result before leaving the workspace.
@@ -60,8 +65,8 @@ With version 1.1.8, **Early Access Pro** opens the workflows below as availabili
 1. Connect through [SSH Workspace](/docs/ssh), open a local project, or use [Android Local Linux](/docs/local-linux) on a supported device.
 2. Locate and edit the file in [Editor](/docs/editor).
 3. Verify it in [Terminal](/docs/terminal); search output or remote content when needed.
-4. Ask [AI Chat and Agent](/docs/ai) to explain an error or plan a change.
-5. Use [Source Control](/docs/source-control) to review the result; Pro is required when the delivery step needs a gated Git write action.
+4. Ask [AI Chat and Agent](/docs/ai) to explain an error, plan a change, or continue an active task.
+5. Use [Source Control](/docs/source-control) to review the result; Pro is required when the delivery step needs a gated Git write action. Use Plugin Center when your workflow needs a custom panel, form, workflow, artifact view, or script job.
 
 > Features are deliberately permission- and environment-aware. For example, LSP and Debug depend on the language server or debug adapter being set up on the remote host, and AI output should be reviewed before use on sensitive systems.
 

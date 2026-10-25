@@ -1,6 +1,6 @@
 ---
 title: AI Chat 与 Agent | NimoteCode
-description: 使用 NimoteCode AI Chat 理解代码与错误，使用 AI Agent 在 Provider 配置和工作区上下文中完成受控的多步骤工作。
+description: 使用 NimoteCode AI Chat 理解代码与错误，使用 AI Agent 在工作区上下文中完成受控的多步骤工作、后续指令与交互问题。
 ---
 
 # AI Chat 与 Agent
@@ -18,7 +18,11 @@ NimoteCode 将直接的 AI 问答与 AI 辅助执行分开。**AI Chat** 适合�
 
 ## 用 AI Agent 推进受控步骤
 
-当工作需要检查文件、提出计划、执行编辑、运行检查并汇总结果时，Agent 更适合。它会随 Early Access Pro 逐步开放；并非按量提供的免费额度。
+当工作需要检查文件、提出计划、执行编辑、运行检查并汇总结果时，Agent 更适合。运行期间，可在工作需要你的方向时添加后续指令或回答交互问题；重构后的上下文、历史、提示词编辑和时间线视图让较长任务更易跟进。它会随 Early Access Pro 逐步开放；并非按量提供的免费额度。
+
+## 让持续协作保持可控
+
+正在运行的 Agent 是协作过程，而不是后台承诺。执行中应审查计划、命令、权限请求、文件改动与压缩输出；需求变化时添加后续指令，回答问题前确认主机、项目与预期效果。达到已配置的步骤预算后，应先审查当前状态，再决定是否继续。
 
 ## 在 SSH 工作区使用外部 ACP Agent
 

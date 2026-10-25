@@ -3,7 +3,7 @@
     "features": {
       "eyebrow": "Mobile development system",
       "title": "Free gives you the foundation. Early Access Pro opens the full workflow.",
-      "summary": "NimoteCode 1.1.8 begins an Early Access rollout for Pro workflows. Availability and displayed prices can vary by store, account, and region.",
+      "summary": "Early Access Pro adds customizable plugins and advanced workflows. Availability and displayed prices can vary by store, account, and region.",
       "groups": [
         {
           "name": "Foundation",
@@ -18,11 +18,20 @@
           ]
         },
         {
+          "name": "Custom workspace",
+          "badge": "Pro",
+          "items": [
+            "Plugin Center and custom workspace plugins",
+            "Panels, forms, workflows, and artifact views",
+            "Local or SSH script jobs with reviewed permission changes"
+          ]
+        },
+        {
           "name": "AI",
           "badge": "Pro",
           "items": [
             "AI Agent in Early Access Pro",
-            "Controlled multi-step tasks",
+            "Controlled multi-step tasks with follow-ups and interactive questions",
             "Remote content search"
           ]
         },
@@ -31,6 +40,7 @@
           "badge": "Pro",
           "items": [
             "Gated Git writes: commit, push, and stash",
+            "Search, create, and check out branches",
             "Free status, diff, and history review",
             "AI Git assistant",
             "Safer review before shipping"
@@ -86,7 +96,7 @@
     "pricing": {
       "eyebrow": "Pricing",
       "title": "Early Access Pro for the complete mobile workflow.",
-      "summary": "Early Access Pro is rolling out with 1.1.8. Check Google Play or the App Store for availability and the price shown for your account and region.",
+      "summary": "Early Access Pro includes customizable plugins and advanced IDE workflows. Check Google Play or the App Store for availability and the price shown for your account and region.",
       "trustLine": "No ads. No model credits. Store terms and regional availability apply.",
       "billing": {
         "label": "Billing period",
@@ -129,8 +139,9 @@
           "link": "/download",
           "highlight": true,
           "features": [
-            "AI Agent and remote search",
-            "Gated Git write workflows and AI Git assistant",
+            "Plugin Center and custom workspace plugins",
+            "AI Agent follow-ups, interactive questions, and remote search",
+            "Gated Git write and branch workflows with AI Git assistant",
             "Multiple concurrent terminal sessions",
             "LSP diagnostics, completion, navigation, and code actions",
             "Debugger with breakpoints, stack, variables, and watches",
@@ -144,7 +155,7 @@
     "features": {
       "eyebrow": "移动开发系统",
       "title": "免费版提供完整基础，Early Access Pro 开启完整工作流。",
-      "summary": "NimoteCode 1.1.8 开始逐步开放 Pro 工作流的 Early Access。具体可用性与商店显示价格会因地区和账号而异。",
+      "summary": "Early Access Pro 新增可定制插件与进阶工作流。具体可用性与商店显示价格会因地区和账号而异。",
       "groups": [
         {
           "name": "基础能力",
@@ -159,11 +170,20 @@
           ]
         },
         {
+          "name": "自定义工作区",
+          "badge": "Pro",
+          "items": [
+            "插件中心与自定义工作区插件",
+            "面板、表单、工作流与产物视图",
+            "本地或 SSH 脚本任务，并在权限变更时审查"
+          ]
+        },
+        {
           "name": "AI",
           "badge": "Pro",
           "items": [
             "在 Early Access Pro 中使用 AI Agent",
-            "受控多步骤任务",
+            "支持后续指令和交互问题的受控多步骤任务",
             "远程内容搜索"
           ]
         },
@@ -172,6 +192,7 @@
           "badge": "Pro",
           "items": [
             "受限 Git 写入：commit、push 与 stash",
+            "搜索、创建和切换分支",
             "免费查看状态、diff 与历史",
             "AI Git 助手",
             "发布前更安全的审查"
@@ -227,7 +248,7 @@
     "pricing": {
       "eyebrow": "价格",
       "title": "通过 Early Access Pro 使用完整移动工作流。",
-      "summary": "Early Access Pro 正随 1.1.8 逐步开放。请在 Google Play 或 App Store 查看你的账号和地区可用性及显示价格。",
+      "summary": "Early Access Pro 包含可定制插件与进阶 IDE 工作流。请在 Google Play 或 App Store 查看你的账号和地区可用性及显示价格。",
       "trustLine": "无广告、无模型额度；以商店条款和地区可用性为准。",
       "billing": {
         "label": "计费周期",
@@ -270,8 +291,9 @@
           "link": "/zh/download",
           "highlight": true,
           "features": [
-            "AI Agent 与远程搜索",
-            "受限 Git 写入工作流和 AI Git 助手",
+            "插件中心与自定义工作区插件",
+            "AI Agent 后续指令、交互问题与远程搜索",
+            "受限 Git 写入、分支工作流和 AI Git 助手",
             "多个并发终端会话",
             "LSP 诊断、补全、导航与代码动作",
             "带断点、调用栈、变量和 Watch 的调试器",
@@ -369,7 +391,7 @@
     "pricing": {
       "eyebrow": "料金",
       "title": "Early Access Pro で完全なモバイルワークフローを利用。",
-      "summary": "Early Access Pro は 1.1.8 とともに段階的に提供されます。対象のアカウントと地域に表示される利用可否と価格をストアで確認してください。",
+      "summary": "Early Access Pro にはカスタマイズ可能なプラグインと高度な IDE ワークフローが含まれます。対象のアカウントと地域に表示される利用可否と価格をストアで確認してください。",
       "trustLine": "広告なし。モデルクレジットなし。ストアの条件と地域ごとの提供状況が適用されます。",
       "billing": {
         "label": "支払い期間",
@@ -511,7 +533,7 @@
     "pricing": {
       "eyebrow": "가격",
       "title": "Early Access Pro로 완전한 모바일 워크플로를 이용하세요.",
-      "summary": "Early Access Pro는 1.1.8과 함께 단계적으로 제공됩니다. 스토어에서 계정과 지역에 표시되는 이용 가능 여부 및 가격을 확인하세요.",
+      "summary": "Early Access Pro에는 사용자 지정 플러그인과 고급 IDE 워크플로가 포함됩니다. 스토어에서 계정과 지역에 표시되는 이용 가능 여부 및 가격을 확인하세요.",
       "trustLine": "광고 없음. 모델 크레딧 없음. 스토어 약관과 지역별 이용 가능 여부가 적용됩니다.",
       "billing": {
         "label": "결제 주기",

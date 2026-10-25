@@ -1,6 +1,6 @@
 ---
 title: 移动 Git Source Control | NimoteCode
-description: 使用 NimoteCode 在移动端审查 Git：所有用户均可查看状态、diff 与历史；Pro 解锁受限 Git 写入工作流。
+description: 使用 NimoteCode 在移动端审查 Git：所有用户均可查看状态、语法高亮 diff、历史与变更标记；Pro 解锁受限分支与 Git 写入工作流。
 ---
 
 # 移动 Git Source Control
@@ -17,6 +17,7 @@ Source Control 将 Git 中最需要审查的部分带回刚刚编辑和验证过
 - 查看已暂存、未暂存和有冲突的文件。
 - 检查文件 diff 与仓库历史。
 - 在当前工作区刷新本地与远程仓库状态，也支持首次提交的仓库。
+- 从 Git 标题栏搜索、创建和切换分支。
 - 选择性暂存，并在审查 diff 后准备提交。
 - 有 Pro 时，可在仓库与远程权限允许时使用提交、推送和 stash 等受限 Git 写入操作。
 - 通过 Git AI 辅助解释改动、起草提交信息或进行风险导向审查。
