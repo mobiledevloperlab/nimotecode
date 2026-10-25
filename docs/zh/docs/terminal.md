@@ -1,6 +1,6 @@
 ---
 title: 移动终端 | NimoteCode SSH 工作区
-description: 在 NimoteCode 工作区中执行命令、从项目 URL 打开应用内预览、搜索终端输出、使用快捷命令，并通过 Pro 保持进阶多终端上下文。
+description: 在 NimoteCode 工作区中执行命令、将终端输出发送给 AI、从项目 URL 打开应用内预览、搜索输出、使用快捷命令，并通过 Pro 保持进阶多终端上下文。
 ---
 
 # 移动终端
@@ -18,10 +18,10 @@ Terminal 是 NimoteCode 工作区的验证层。在正在编辑的项目中执�
 - 查看实时输出，并在长日志中搜索错误和警告。
 - 用快捷或自定义命令复用已知流程。
 - 本地或远程 Web 项目输出 URL 时，可直接在应用内浏览器预览中打开；AI 回复和工具输出中的网页链接也使用同一入口。
-- 将关键输出交给 [AI Chat 与 Agent](/zh/docs/ai) 协助理解。
+- 可直接将关键终端输出发送给 [AI Chat 与 Agent](/zh/docs/ai) 协助理解，无需手动重输或复制冗长错误。
 - 远程重连后继续工作，但先确认主机和目录。移动端终端输入支持组合输入法文本、按键重复和实体键盘快捷键的可靠处理。
 
-SSH 工作区可从 Terminal 菜单刷新远程账户的登录环境。Terminal、Tasks、Debug、语言服务、Git、外部 CLI 与 ACP Agent 会使用同一套解析后的 Shell 环境，包括其中的 `PATH`、语言区域与 SSH Agent 配置。
+SSH 工作区可从 Terminal 菜单刷新远程账户的登录环境。Terminal、Tasks、Debug、语言服务、Git、外部 CLI 与 ACP Agent 会使用同一套解析后的 Shell 环境，包括其中的 `PATH`、语言区域与 SSH Agent 配置。还可选择与当前工作区主题匹配的终端配色。
 
 ## 多个 Shell 同时重要时
 

@@ -23,7 +23,11 @@ Pídale a Chat que le explique un código desconocido, interprete la salida del 
 ## Utilice AI Agent para una secuencia controlada
 
 
-Agent es apropiado cuando una tarea necesita inspeccionar archivos, proponer un plan, realizar una edición, ejecutar una verificación y resumir el resultado. Está disponible a través de Early Access Pro a medida que se amplía la disponibilidad; no utiliza una cuota de uso gratuito.
+Agent es apropiado cuando una tarea necesita inspeccionar archivos, proponer un plan, realizar una edición, ejecutar una verificación y resumir el resultado. Mientras se ejecuta, añada una instrucción de seguimiento o responda una pregunta interactiva cuando el trabajo necesite su dirección. Las vistas renovadas de contexto, historial, edición de prompts y cronología ayudan a seguir trabajos largos. Está disponible a través de Early Access Pro a medida que se amplía la disponibilidad; no utiliza una cuota de uso gratuito.
+
+## Mantenga el control mientras el trabajo continúa
+
+Una ejecución activa de Agent es una colaboración, no una promesa en segundo plano. Revise su plan, comandos, solicitudes de permisos, cambios de archivos y salida compactada; cuando se alcance el presupuesto de pasos configurado, revise el estado antes de decidir si continúa.
 
 
 ## Utilice un agente ACP externo en un espacio de trabajo SSH

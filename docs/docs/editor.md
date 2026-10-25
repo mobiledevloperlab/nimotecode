@@ -1,11 +1,11 @@
 ---
 title: Mobile Code Editor | NimoteCode
-description: Use NimoteCode’s mobile code editor with tabs, split panes, image and media preview, clipboard operations, undo/redo, cursor tracking, outline navigation and linked Terminal and AI panels.
+description: Use NimoteCode’s consistent editor on phones, tablets and desktop with tabs, split panes, image and media preview, Git change markers, clipboard operations, undo/redo, outline navigation and linked Terminal and AI panels.
 ---
 
 # Mobile Code Editor
 
-The editor is where a workspace becomes a change. Open files from a local project, an SSH workspace or a search result; then keep the file connected to Terminal, AI and Source Control rather than moving between separate apps.
+The editor is where a workspace becomes a change. The same Nimote Editor is the default on phones, tablets, and desktop, so editing, selection, keyboard and IME behavior stay consistent as your screen changes. Open files from a local project, an SSH workspace or a search result; then keep the file connected to Terminal, AI and Source Control rather than moving between separate apps.
 
 <ImagePlaceholder image-key="editor" alt="NimoteCode mobile code editor">
   <strong>Image placeholder — editing a remote project</strong>
@@ -21,6 +21,7 @@ The editor is where a workspace becomes a change. Open files from a local projec
 - Track the current line and column while working through an error or review comment.
 - Use an outline when symbol information is available.
 - Keep the active file available as context for [AI Chat and Agent](/docs/ai).
+- Read quiet gutter markers for Git changes, then open a syntax-highlighted diff to review the actual patch.
 
 <ImagePlaceholder image-key="editorOutline" alt="Code editor outline on NimoteCode for phone">
   <strong>Navigate code with the editor outline</strong>

@@ -1,16 +1,16 @@
 ---
 title: NimoteCode Early Access Pro | Mobile IDE Workflows
-description: NimoteCode 1.1.8 introduces Early Access Pro for advanced mobile IDE workflows. Availability and pricing are shown in Google Play or the App Store for your account and region.
+description: NimoteCode Early Access Pro는 사용자 지정 플러그인, AI Agent, 고급 Git 및 기타 모바일 IDE 워크플로를 제공합니다. 이용 가능 여부와 가격은 Google Play 또는 App Store에서 확인할 수 있습니다.
 pageClass: pricing-page
 ---
 
 # NimoteCode Pro
 
 
-NimoteCode는 무료로 시작할 수 있습니다. 로컬 또는 SSH 프로젝트를 열거나 지원되는 장치에서 Android Local Linux를 사용합니다. 무료 플랜에서 파일을 편집하고, 명령을 실행하고, AI Chat을 사용하세요. **NimoteCode 1.1.8에는 AI 에이전트, 원격 검색, 다중 터미널, Git 쓰기, LSP, 디버깅 및 동기화/캐시를 위한 Early Access Pro**가 도입되었습니다. 가용성 및 표시 가격은 매장, 계정 및 지역에 따라 다릅니다.
+NimoteCode는 무료로 시작할 수 있습니다. 로컬 또는 SSH 프로젝트를 열거나 지원되는 장치에서 Android Local Linux를 사용합니다. 무료 플랜에서 파일을 편집하고, 명령을 실행하고, AI Chat을 사용하세요. **Early Access Pro**는 Plugin Center와 사용자 지정 작업 공간 플러그인, 지속적인 AI Agent 협업, 원격 검색, 다중 터미널, Git 쓰기와 분기 워크플로, LSP, 디버깅 및 동기화/캐시를 추가합니다. 가용성 및 표시 가격은 매장, 계정 및 지역에 따라 다릅니다.
 
 
-<PricingFeatureSystem lang="en" mode="full" />
+<PricingFeatureSystem lang="ko" mode="full" />
 
 ## 왜 프로인가
 
