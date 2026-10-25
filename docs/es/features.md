@@ -57,6 +57,10 @@ Con la versión 1.1.8, **Early Access Pro** abre los flujos de trabajo a continu
 
 ## Agregado recientemente al espacio de trabajo
 
+- **Un espacio de trabajo personalizable.** Plugin Center permite gestionar capacidades y crear complementos con paneles, formularios, flujos de trabajo, vistas de artefactos y trabajos de script locales o SSH. Revise los cambios de permisos antes de instalar o actualizar.
+- **Colaboración continua con Agent.** Añada instrucciones de seguimiento a un Agent activo, responda preguntas interactivas y siga trabajos largos con vistas renovadas de contexto, historial, edición de prompts y cronología.
+- **Git, terminal y conexiones más directos.** Busque, cree y cambie ramas desde el encabezado de Git; envíe salida de terminal a AI cuando necesite interpretarla. Los espacios SSH también admiten proxies SOCKS5 y HTTP CONNECT.
+
 
 - **Directorios de espacio de trabajo flexibles.** Los proyectos locales y SSH pueden cambiar a otro directorio y conservar ubicaciones recientes para un retorno rápido.
 

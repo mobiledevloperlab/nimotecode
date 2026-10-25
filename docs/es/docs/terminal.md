@@ -25,12 +25,12 @@ Terminal es la capa de verificación de un espacio de trabajo de NimoteCode. Eje
 
 - Abra una URL emitida por un proyecto web local o remoto directamente en la vista previa del navegador en la aplicación; Los enlaces web en las respuestas de IA y la salida de la herramienta utilizan la misma acción.
 
-- Enviar resultados relevantes a [AI Chat and Agent](/docs/ai) cuando la interpretación sea útil.
+- Envíe la salida relevante del terminal directamente a [AI Chat and Agent](/docs/ai) cuando sea útil interpretarla, sin volver a escribir ni copiar manualmente un error largo.
 
 - Reanude el trabajo remoto después de la reconexión, luego verifique el host y el directorio antes de continuar. La entrada de terminal está diseñada para preservar el texto del teclado de composición, la repetición de teclas y los atajos de teclado físico durante el trabajo móvil.
 
 
-Para espacios de trabajo SSH, el menú Terminal puede actualizar el entorno de inicio de sesión de la cuenta remota. Terminal, Tareas, Depuración, servidores de idiomas, Git, CLI externas y agentes ACP utilizan el mismo entorno de shell resuelto, incluida su configuración `PATH`, configuración regional y agente SSH.
+Para espacios de trabajo SSH, el menú Terminal puede actualizar el entorno de inicio de sesión de la cuenta remota. Terminal, Tareas, Depuración, servidores de idiomas, Git, CLI externas y agentes ACP utilizan el mismo entorno de shell resuelto, incluida su configuración `PATH`, configuración regional y agente SSH. Elija también una paleta de terminal que coincida con el tema del espacio de trabajo.
 
 
 ## Cuando más de un caparazón importa

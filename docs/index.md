@@ -2,7 +2,7 @@
 layout: home
 title: "NimoteCode: Mobile SSH IDE and AI Coding Workspace"
 titleTemplate: false
-description: "NimoteCode is a Mobile SSH IDE for Android and iOS with SFTP, LSP diagnostics, terminal tools and remote development workflows built for daily development."
+description: "NimoteCode is a customizable mobile IDE for Android and iOS: work locally, over SSH, or in Android Local Linux with an editor, terminal, Git, AI Agent and plugins."
 ---
 
 <section class="home-page-hero">
@@ -10,8 +10,8 @@ description: "NimoteCode is a Mobile SSH IDE for Android and iOS with SFTP, LSP 
     <div class="home-page-hero-copy">
       <p class="home-page-badge">Mobile SSH IDE for Android &amp; iOS</p>
       <div class="home-page-logo-lockup"><img src="/app_icon.png" alt="NimoteCode" class="home-page-logo" width="1024" height="1024" decoding="async"><span class="home-page-brand">NimoteCode</span></div>
-      <h1 class="home-page-title">A full-featured Mobile SSH IDE for<br><em>remote development.</em></h1>
-      <p class="home-page-subtitle">Code on Android/iOS with an AI Coding Workspace: open local projects, connect to Mac, Linux and servers over SSH, or use Android Local Linux — then edit, run, review and continue real development from your phone or tablet.</p>
+      <h1 class="home-page-title">A customizable mobile IDE for<br><em>real development.</em></h1>
+      <p class="home-page-subtitle">Code on Android, iPhone, iPad, or desktop: open local projects, connect to Mac, Linux and servers over SSH, or use Android Local Linux — then edit, run, review, extend the workspace, and keep real work moving.</p>
       <LatestReleaseLink variant="home" />
       <div class="home-page-actions home-page-actions-hero">
         <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=website&utm_campaign=homepage_hero" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for Android</a>
@@ -86,8 +86,8 @@ description: "NimoteCode is a Mobile SSH IDE for Android and iOS with SFTP, LSP 
         <span class="home-page-pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></span>
         <p class="home-page-eyebrow">Build and verify</p>
       </div>
-      <h2 class="home-page-pillar-title">Edit, verify and bring in AI when it helps.</h2>
-      <p class="home-page-pillar-copy">Review Git diffs, run commands and preview the result; use project-wide code search, LSP diagnostics and debugging when the workspace supports them. AI Chat and Agent can help plan and execute work without taking you out of the project.</p>
+      <h2 class="home-page-pillar-title">Edit, verify, extend, and bring in AI when it helps.</h2>
+      <p class="home-page-pillar-copy">Review Git diffs, run commands and preview the result; use project-wide code search, LSP diagnostics and debugging when the workspace supports them. Create plugins for panels, forms, workflows, artifacts, and script jobs; AI Chat and Agent keep planning and execution in the project.</p>
       <ul class="home-page-cap-grid">
         <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="5" r="2.3"/><circle cx="6" cy="19" r="2.3"/><circle cx="18" cy="7" r="2.3"/><path d="M6 7.3v9.4"/><path d="M8.4 6.1c3 .4 5.1 2 6.6 4.3.8 1.3 1.5 2 2.9 2.2"/></svg></span>Git</li>
         <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.7L19.7 10.5l-5.8 1.8L12 18l-1.9-5.7L4.3 10.5l5.8-1.8L12 3z"/></svg></span>AI Chat &amp; Agent</li>
