@@ -19,7 +19,7 @@
   <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-下载-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="从 App Store 下载 iPhone 和 iPad 版 NimoteCode"></a>
 </p>
 
-<p align="center"><sub><a href="#演示">观看演示</a> · <a href="#与其他移动开发工具对比">工具对比</a> · <a href="https://nimotecode.com/zh/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=zh_quick_start">快速开始</a> · <a href="#125-更新亮点">1.2.5 更新亮点</a></sub></p>
+<p align="center"><sub><a href="#演示">观看演示</a> · <a href="#与其他移动开发工具对比">工具对比</a> · <a href="https://nimotecode.com/zh/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=zh_quick_start">快速开始</a> · <a href="#200-更新亮点">2.0.0 更新亮点</a></sub></p>
 
 <p align="center"><sub>免费开始使用，无需先配置 AI。<br>商业闭源应用 · 本仓库提供官方文档与社区资源</sub></p>
 
@@ -56,7 +56,7 @@ NimoteCode 将代码编辑器、SSH 终端、Git 审查与 AI 工作流带到 An
 
 ## 与其他移动开发工具对比
 
-**编辑代码 → 运行检查 → 审查 Diff，在一个移动工作区衔接完成。** 以下精选官网对比中的关键能力，帮助你选择适合自己的工具。
+**编辑代码 → 运行检查 → 审查 Diff → 扩展工作台，在一个移动 IDE 中衔接完成。** 以下精选官网对比中的关键能力，帮助你选择适合自己的工具。NimoteCode 一列反映 2.0.0；问号表示尚未核实该产品是否具备对应能力。
 
 ✅ 已有文档确认的内置或集成能力 · ◐ 有条件支持 · ? 未核实，**不代表不支持** · — 明确不支持
 
@@ -64,10 +64,15 @@ NimoteCode 将代码编辑器、SSH 终端、Git 审查与 AI 工作流带到 An
 | --- | :---: | :---: | :---: | :---: |
 | SSH 连接 | ✅ | ✅ | ✅ | ✅ |
 | 代码编辑器 | ✅ | ? | ✅ | ? |
+| 自定义插件 / 工作区面板 | ✅ ¹ | ? | ? | ? |
 | Git / Diff 界面 | ✅ ¹ | ? | ◐ | ✅ |
+| Git 分支搜索 / 创建 / 切换 | ✅ ¹ | ? | ? | ? |
 | 内置 AI Agent | ✅ ¹ | ? | ? | ? |
+| 持续推进正在运行的 AI Agent | ✅ ¹ | ? | ? | ? |
+| 内置 MCP 工具服务器 | ✅ ¹ | ? | ? | ? |
 | LSP 诊断 | ✅ ¹ | ? | ◐ | ? |
 | Web / App 预览 | ✅ | ? | ? | ✅ |
+| SOCKS5 / HTTP CONNECT 代理 SSH | ✅ | ? | ? | ? |
 | Android 本地 Linux | ✅ ² | ? | ? | ? |
 | Mosh 传输 | ? | ✅ | ✅ | ? |
 
@@ -78,10 +83,15 @@ NimoteCode 将代码编辑器、SSH 终端、Git 审查与 AI 工作流带到 An
 | --- | :---: | :---: | :---: | :---: |
 | SSH 连接 | ✅ | ✅ | ◐ | ✅ |
 | 代码编辑器 | ✅ | ? | — | ? |
+| 自定义插件 / 工作区面板 | ✅ ¹ | ? | ? | ? |
 | Git / Diff 界面 | ✅ ¹ | ? | ✅ | ✅ |
+| Git 分支搜索 / 创建 / 切换 | ✅ ¹ | ? | ? | ? |
 | 内置 AI Agent | ✅ ¹ | ? | ? | ? |
+| 持续推进正在运行的 AI Agent | ✅ ¹ | ? | ? | ? |
+| 内置 MCP 工具服务器 | ✅ ¹ | ? | ? | ? |
 | LSP 诊断 | ✅ ¹ | ? | ? | ? |
 | Web / App 预览 | ✅ | ✅ | ✅ | ✅ |
+| SOCKS5 / HTTP CONNECT 代理 SSH | ✅ | ? | ? | ? |
 | Android 本地 Linux | ✅ ² | ? | ? | ? |
 | Mosh 传输 | ? | ✅ | ? | ✅ |
 
@@ -89,19 +99,20 @@ Orca 的移动端依赖桌面 Companion；Moshi 的 Diff 和网页预览需要 P
 
 </details>
 
-¹ **Early Access：**NimoteCode 的内置 Agent、Git 写操作与 LSP 属于 Early Access 权益；Git 状态、Diff 与历史可免费使用。具体开放情况以应用内显示为准。² Local Linux 仅限受支持的 Android 8+ ARM64 / x86_64 设备。内置 Agent 需要自有 AI Provider；LSP 需要配置主机语言服务器。
+¹ **Early Access：**NimoteCode 的插件中心、内置 Agent（包括运行中追加指令和已配置的 MCP 工具服务器）、Git 写操作与 LSP 属于 Early Access 权益；Git 状态、Diff 与历史可免费使用。具体开放情况以应用内显示为准。² Local Linux 仅限受支持的 Android 8+ ARM64 / x86_64 设备。内置 Agent 需要自有 AI Provider；LSP 需要配置主机语言服务器。
 
 勾选不代表免费、无需配置或所有平台均支持。Blink 的编辑能力通过 Blink Code 集成，Git / LSP 取决于仓库或远程 IDE 配置；Termius 的 Mosh 此处仅核实 Android。各产品的配置与付费要求见完整对比。
 
-> [**查看七款工具的完整对比与逐项官方依据 →**](https://nimotecode.com/zh/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_comparison) · 资料基准：2026-10-19，NimoteCode 1.2.5。
+> [**查看七款工具的完整对比与逐项官方依据 →**](https://nimotecode.com/zh/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_comparison) · 竞品资料基准：2026-10-19；NimoteCode 能力版本：2.0.0。
 
 **想亲自试试？** [安装 NimoteCode](https://nimotecode.com/zh/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_compare_download)，先打开 Demo 或本地项目，无需先配置 AI。
 
 ## 为什么值得一试
 
-- **编辑与浏览：**浏览和搜索项目文件，使用编辑器分屏，预览 Markdown 与网页内容。
-- **运行与检查：**在兼容的工作区中使用终端和项目任务，配合移动端扩展按键与终端专注模式。
-- **Git 审查：**查看状态、Diff 和历史；通过 Early Access 工作流提交、拉取、推送及解决冲突。
+- **编辑与浏览：**在手机、平板与桌面统一使用 Nimote Editor；浏览和搜索项目文件，使用编辑器分屏，预览 Markdown 与网页内容。
+- **运行与检查：**在兼容的工作区中使用终端和项目任务，配合移动端扩展按键、终端专注模式、可配置配色，以及按需使用 SOCKS5 或 HTTP CONNECT SSH 代理。
+- **Git 审查：**查看状态、Diff 和历史；可在 Git 标题栏搜索、创建和切换分支；通过 Early Access 工作流提交、拉取、推送及解决冲突。
+- **扩展工作台：**通过 Early Access 插件中心创建自定义面板、表单、工作流、产物视图及本机或 SSH 脚本任务；安装或更新前会先审查权限变更。
 - **语言工具：**接入受支持的语言服务器查看编辑器诊断，配置远程调试适配器进行调试。LSP 与调试通过 Early Access 开放，并需要相应环境工具。
 - **AI 辅助开发：**询问代码问题、让内置 Agent 完成范围明确的任务，或使用 SSH 主机上的兼容 Agent。
 
@@ -112,7 +123,8 @@ Orca 的移动端依赖桌面 Companion；Moshi 的 Diff 和网页预览需要 P
 | 工作流 | 使用方式 |
 | --- | --- |
 | **AI Chat** | 结合工作区上下文解释代码与终端输出；连接自己的 AI Provider 和 API Key。 |
-| **内置 Agent** | 在支持的工作区中检查文件、规划修改、编辑与运行检查，通过 Early Access 开放。 |
+| **内置 Agent** | 在支持的工作区中检查文件、规划修改、编辑与运行检查；可向正在执行的任务追加指令，并回答其交互式问题。通过 Early Access 开放。 |
+| **MCP 工具服务器** | 可在本地或 SSH 工作区为内置 Agent 配置经验证的 MCP 服务器；每次工具调用均需明确批准。通过 Early Access 开放。 |
 | **外部 ACP Agent** | 连接 SSH 主机上的兼容运行时，在应用对话界面查看权限请求与执行进度。 |
 | **通过 SSH 使用 Claude Code / Codex** | 在自己的主机上安装 CLI，通过终端使用；参考 [Claude Code 手机使用指南](resources/claude-code-on-phone.md)或 [Codex 移动端示例](examples/codex-over-ssh/README.md)。 |
 
@@ -130,16 +142,16 @@ Orca 的移动端依赖桌面 Companion；Moshi 的 Diff 和网页预览需要 P
 
 商店可用性与版本上线时间可能因平台和地区不同。查看[下载与平台要求](https://nimotecode.com/zh/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_download)；商店实际提供的版本可能与下方介绍的版本不同。
 
-## 1.2.5 更新亮点
+## 2.0.0 更新亮点
 
-**更高效地管理项目，让工作区体验更一致。**
+**一次重大版本更新：定制适合自己的工作台，持续推进 AI 工作。**
 
-- **批量处理文件：**在资源管理器中选择多个文件或目录，即可统一复制、移动或删除；工作区会按其能力提供操作。
-- **更易浏览项目：**资源管理器现显示文件大小和已展开目录的已加载项目数量。
-- **更快开始 AI 工作：**可从空白对话直接新建 AI 聊天或打开 AI 配置。
-- **反馈更清晰：**SSH 连接会立即显示进度并避免重复尝试，面板、工具栏、Markdown 预览、通知与移动端导航也更一致。
+- **创建自定义插件与面板：**可使用表单、工作流、产物视图及本机或 SSH 脚本任务；安装或更新前会先展示权限变更供你审查。
+- **更连续地协作 AI Agent：**可向正在执行的 Agent 追加指令、回答交互式问题，并借助重构的上下文、历史、提示词编辑和时间线处理长时间任务。
+- **更直接地使用 Git：**可在 Git 标题栏搜索、创建和切换分支；编辑器改动标记与差异语法高亮更加清晰。
+- **让终端与远程连接更灵活：**可将终端输出直接交给 AI 分析，通过 SOCKS5 或 HTTP CONNECT 代理连接，并选择贴合工作区的终端配色。
 
-> [阅读完整 1.2.5 发布说明](https://nimotecode.com/zh/releases/1.2.5?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_release) · [历史版本](https://nimotecode.com/zh/releases/)
+> [阅读完整 2.0.0 发布说明](https://nimotecode.com/zh/releases/2.0.0?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_release) · [历史版本](https://nimotecode.com/zh/releases/)
 
 ## 教程与资源
 
