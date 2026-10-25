@@ -4,7 +4,7 @@
 
 <h1 align="center">NimoteCode — Mobile IDE for Android &amp; iOS</h1>
 
-<p align="center"><a href="README.zh-CN.md">简体中文</a> · English</p>
+<p align="center">English · <a href="README.zh-CN.md">简体中文</a> · <a href="README.es.md">Español</a> · <a href="README.ja.md">日本語</a> · <a href="README.ko.md">한국어</a></p>
 
 <p align="center">
   <strong>Your projects, on your phone or tablet.</strong><br>
@@ -23,7 +23,7 @@
   <a href="#demo">Watch demo</a> ·
   <a href="#compare-mobile-development-tools">Compare tools</a> ·
   <a href="https://nimotecode.com/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=en_quick_start">Quick start</a> ·
-  <a href="#whats-new-in-200">What's new in 2.0.0</a>
+  <a href="#latest-release">What's new in 2.0.0</a>
 </sub></p>
 
 <p align="center"><sub>Free to start. AI setup is optional.<br>Commercial, closed-source app · Official documentation and community resources</sub></p>
@@ -147,9 +147,15 @@ AI model access and tokens are not included. Provider charges are separate. Exte
 
 Store availability and release timing may differ by platform and region. See [download and platform requirements](https://nimotecode.com/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_download); the version offered by your store may differ from the release documented below.
 
-## What's new in 2.0.0
+<a id="latest-release"></a>
 
-**A major release: build a workspace that fits your workflow, and keep AI work moving.**
+## NimoteCode 2.0.0 · Major release
+
+| Build | Released | Platforms |
+| --- | --- | --- |
+| 58 | October 25, 2026 | Android · iPhone · iPad · Desktop |
+
+**A customizable workspace, continuous AI collaboration, and a more complete mobile IDE.**
 
 - **Create custom plugins and panels:** use forms, workflows, artifact views, and local or SSH script jobs; review permission changes before an install or update proceeds.
 - **Collaborate continuously with AI Agents:** add follow-up instructions to an active run, answer interactive questions, and use redesigned context, history, prompt editing, and timelines for longer work.
