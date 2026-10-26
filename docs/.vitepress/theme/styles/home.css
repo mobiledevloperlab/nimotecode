@@ -39,9 +39,7 @@
   padding-right: var(--nimote-home-gutter);
 }
 
-/* Hero — product-led, with a restrained ambient grid behind the supplied art.
-   It is a true full-bleed band: the wrapper above is full-width, so width:100%
-   spans edge to edge with no vw math and no negative margins. */
+/* Hero — product-led, with a hand-built device mockup instead of baked art. */
 .home-page-hero {
   position: relative;
   width: 100%;
@@ -51,10 +49,9 @@
   isolation: isolate;
   overflow: hidden;
   background:
-    radial-gradient(circle at 82% 20%, rgba(var(--nimote-accent-2-rgb), 0.08), transparent 28%),
-    radial-gradient(circle at 14% 8%, rgba(var(--nimote-accent-rgb), 0.07), transparent 34%),
-    var(--hero-ambient),
-    var(--nimote-bg);
+    radial-gradient(circle at 80% 26%, rgba(var(--nimote-accent-2-rgb), 0.13), transparent 30%),
+    radial-gradient(circle at 14% 8%, rgba(var(--nimote-accent-rgb), 0.08), transparent 34%),
+    var(--hero-ambient), var(--nimote-bg);
   border: 0;
   box-shadow: none;
   min-height: 0;
@@ -68,12 +65,11 @@
   z-index: 1;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(var(--nimote-accent-rgb), 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(var(--nimote-accent-rgb), 0.04) 1px, transparent 1px),
-    url("/screenshots/homepage_bk.jpg");
-  background-size: 42px 42px, 42px 42px, cover;
-  background-position: center, center, right center;
-  background-repeat: repeat, repeat, no-repeat;
+    linear-gradient(rgba(var(--nimote-accent-rgb), 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--nimote-accent-rgb), 0.045) 1px, transparent 1px);
+  background-size: 42px 42px;
+  background-position: center;
+  background-repeat: repeat;
   transform: none;
   filter: none;
   will-change: opacity;
@@ -139,10 +135,7 @@
   padding: 0;
 }
 
-/* Hero device mockup — the hand-built app mockup lives in its own standalone
-   component file `components/AppMockup.vue`, including its own layout, glow and
-   float animation. It is intentionally NOT referenced by the homepage right now;
-   see `docs/index.md` for the commented-out mount point. */
+/* Hero device mockup is a CSS/HTML reconstruction in AppMockup.vue. */
 
 /* Eyebrows / labels — uppercase kept only as a short hierarchy marker. */
 .home-page-badge,
@@ -829,14 +822,6 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
 }
 
 @media (max-width: 700px) {
-  .home-page-hero::before {
-    background-image:
-      linear-gradient(rgba(var(--nimote-accent-rgb), 0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(var(--nimote-accent-rgb), 0.04) 1px, transparent 1px),
-      url("/screenshots/nimote-pro.webp");
-    background-position: center, center, center top;
-  }
-
   .home-page-hero::after {
     background:
       linear-gradient(180deg, rgba(var(--nimote-bg-rgb), 0.62) 0%, rgba(var(--nimote-bg-rgb), 0.74) 60%, var(--nimote-bg) 100%),
@@ -865,14 +850,9 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
   .home-page-community-card { padding: 22px; }
 }
 
-/* Wide-screen hero balance -------------------------------------------------
-   The product image is part of the supplied Hero background. On large
-   displays, constrain its rendering independently from the copy so it reads
-   as a deliberate right-hand visual rather than an oversized page backdrop. */
+/* Wide-screen hero: copy and the device composition use independent columns. */
 @media (min-width: 1025px) {
-  /* The supplied artwork carries its visual weight on the right. Reserve the
-     quieter left portion for the message so the copy and the product read as
-     one intentional composition instead of competing at the centre. */
+  /* Reserve a stable text column while the device canvas scales proportionally. */
   .home-page-hero-shell.home-page-hero-shell-product {
     grid-template-columns: minmax(0, 510px) minmax(0, 1fr);
     justify-items: start;
@@ -915,35 +895,6 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
     margin-top: 22px;
   }
 
-  /* At 1920px this renders the product layer at 1728px instead of 1920px
-     (10% smaller), then leaves a quiet edge on the right instead of pushing
-     the iPad to the viewport boundary. */
-  .home-page-hero::before {
-    /* Fill the full-bleed Hero edge to edge — no exposed page background on
-       either side. cover crops the JPG and centre keeps it balanced. */
-    background-size: 42px 42px, 42px 42px, cover;
-    background-position: center, center, center;
-    /* The supplied product image is intentionally larger than its visible
-       device artwork. Intersected masks keep the centre crisp, then dissolve
-       the image before its own rectangular bounds can become perceptible. */
-    -webkit-mask-image:
-      radial-gradient(ellipse 65% 78% at 56% 54%, #000 0%, #000 42%, rgba(0, 0, 0, 0.9) 58%, rgba(0, 0, 0, 0.46) 76%, transparent 100%),
-      linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.68) 16%, #000 34%, #000 70%, rgba(0, 0, 0, 0.7) 76%, rgba(0, 0, 0, 0.28) 84%, transparent 91%),
-      linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.66) 13%, #000 28%, #000 72%, rgba(0, 0, 0, 0.6) 87%, transparent 100%);
-    -webkit-mask-composite: source-in, source-in;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: 100% 100%;
-    mask-image:
-      radial-gradient(ellipse 65% 78% at 56% 54%, #000 0%, #000 42%, rgba(0, 0, 0, 0.9) 58%, rgba(0, 0, 0, 0.46) 76%, transparent 100%),
-      linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.68) 16%, #000 34%, #000 70%, rgba(0, 0, 0, 0.7) 76%, rgba(0, 0, 0, 0.28) 84%, transparent 91%),
-      linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.66) 13%, #000 28%, #000 72%, rgba(0, 0, 0, 0.6) 87%, transparent 100%);
-    mask-composite: intersect, intersect;
-    mask-repeat: no-repeat;
-    mask-size: 100% 100%;
-  }
-
-  /* The product layer now does its own edge fade. Keep this layer radial only
-     so no full-width linear wash can introduce a new rectangular boundary. */
   .home-page-hero::after {
     background:
       radial-gradient(ellipse 52% 88% at 17% 48%, rgba(var(--nimote-bg-rgb), 0.96) 0%, rgba(var(--nimote-bg-rgb), 0.84) 44%, rgba(var(--nimote-bg-rgb), 0.42) 67%, transparent 100%),

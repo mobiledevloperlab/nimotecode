@@ -3,8 +3,7 @@
 import DefaultTheme from 'vitepress/theme'
 import Layout from './Layout.vue'
 import MarketingLayout from './MarketingLayout.vue'
-// 暂时不上线：App 界面 mockup（代码保留在 ./components/AppMockup.vue）
-// import AppMockup from './components/AppMockup.vue'
+import AppMockup from './components/AppMockup.vue'
 import ImagePlaceholder from './components/ImagePlaceholder.vue'
 import DocScreenshot from './components/DocScreenshot.vue'
 import HomeToolComparison from './components/HomeToolComparison.vue'
@@ -25,7 +24,7 @@ const theme: Theme = {
   Layout,
 
   enhanceApp({ app }) {
-    // app.component('AppMockup', AppMockup) // 暂时不上线
+    app.component('AppMockup', AppMockup)
     app.component('ImagePlaceholder', ImagePlaceholder)
     app.component('DocScreenshot', DocScreenshot)
     app.component('HomeToolComparison', HomeToolComparison)

@@ -31,8 +31,7 @@ AI コーディング ワークスペースを使用した Android/iOS 上の </
       <span class="home-page-availability-link">Android、iPhone、iPad で利用可能
 </span>
     </div>
-    <!-- 暂时不上线：App 界面 mockup，代码保留在 components/AppMockup.vue，需要时取消注释 -->
-    <!-- <AppMockup /> -->
+    <AppMockup />
   </div>
 </section>
 <section id="product-demo" class="home-page-section home-page-video-section">

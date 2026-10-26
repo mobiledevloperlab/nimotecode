@@ -21,8 +21,7 @@ description: "NimoteCode is a customizable mobile IDE for Android and iOS: work 
       </div>
       <span class="home-page-availability-link">Available for Android and iPhone &amp; iPad</span>
     </div>
-    <!-- 暂时不上线：App 界面 mockup，代码保留在 components/AppMockup.vue，需要时取消注释 -->
-    <!-- <AppMockup /> -->
+    <AppMockup />
   </div>
 </section>
 <section id="product-demo" class="home-page-section home-page-video-section">

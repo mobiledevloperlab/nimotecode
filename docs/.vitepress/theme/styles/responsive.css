@@ -8,7 +8,7 @@
    ========================================================================== */
 
 @media (max-width: 1024px) {
-  /* Hero — collapse to single column, image goes on top */
+  /* Hero — copy followed by the proportional device composition. */
   .home-page-hero {
     padding: 0 0 24px;
     min-height: 0;
@@ -66,14 +66,6 @@
   .home-page-hero {
     padding: 0 0 18px;
     min-height: clamp(560px, 100svh - var(--nimote-nav-height), 760px);
-  }
-  .home-page-hero::before {
-    background-image: url("/screenshots/nimote-pro.webp");
-    /* The single mobile image must not inherit the desktop grid's 42px tile. */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
-    filter: saturate(1.02) contrast(0.98) brightness(0.78);
   }
   .home-page-hero::after {
     background:
@@ -412,7 +404,7 @@
     width: 100%;
     max-width: 640px;
   }
-  /* Centre-aligned copy needs even contrast over the original image. */
+  /* Keep the ambient background quiet beneath centre-aligned copy. */
   html:not(.dark) .home-page-hero::after {
     background: linear-gradient(180deg, rgba(var(--nimote-bg-rgb), 0.9), rgba(var(--nimote-bg-rgb), 0.88) 65%, var(--nimote-bg));
   }
