@@ -1,34 +1,49 @@
 ---
-title: Mobile Terminal | NimoteCode SSH Workspace
-description: Run workspace commands in NimoteCode, send terminal output to AI, open project URLs in in-app preview, search output, use quick commands and keep advanced multi-terminal contexts with Pro.
+title: Terminal | NimoteCode
+description: "Configuration, procedures, and interface reference for terminal."
 ---
 
-# Mobile Terminal
+# Terminal
 
-Terminal is the verification layer of a NimoteCode workspace. Run commands where you are editing, search the output, and keep the result connected to the files and the next decision.
+<div class="doc-section">
+<div class="doc-section__copy">
 
-<ImagePlaceholder image-key="terminal" alt="NimoteCode mobile terminal">
-  <strong>Image placeholder — Terminal in the active workspace</strong>
-  <span>Replace with a screenshot of terminal output, search and a nearby editor tab in a real SSH project.</span>
-</ImagePlaceholder>
+## Run workspace commands
 
-## Core terminal workflow
+Open Terminal in the active SSH or Local Linux workspace. Run `pwd` to confirm the directory, then execute the project command. Terminal output belongs to that session; changing an editor tab does not change the shell’s directory.
 
-- Run commands in the active local or SSH workspace.
-- Inspect streaming output and search long logs for an error or warning.
-- Use quick or custom commands for known routines.
-- Open a URL emitted by a local or remote web project directly in the in-app browser preview; web links in AI replies and tool output use the same action.
-- Send relevant terminal output straight to [AI Chat and Agent](/docs/ai) when interpretation would help, without retyping or copying a long error manually.
-- Resume remote work after reconnection, then verify host and directory before continuing. Terminal input is designed to preserve composing-keyboard text, key repeat and physical-keyboard shortcuts during mobile work.
+</div>
 
-For SSH workspaces, the Terminal menu can refresh the remote account's login environment. Terminal, Tasks, Debug, language servers, Git, external CLIs, and ACP agents then use the same resolved shell environment, including its `PATH`, locale, and SSH-agent configuration. Choose a terminal color palette that fits the active workspace theme.
+<div class="doc-screenshots">
+  <DocScreenshot file="terminal-command-output.png" caption="Terminal displaying the output of ls." />
+</div>
 
-## When more than one shell matters
+</div>
 
-Pro provides advanced multi-terminal workflows for parallel contexts—such as one terminal following logs while another runs tests or a deployment command. Keep high-risk commands explicit and avoid treating a restored terminal as proof that the remote state is unchanged.
+<div class="doc-section">
+<div class="doc-section__copy">
 
-<ImagePlaceholder image-key="terminalMenu" alt="Terminal menu on NimoteCode for phone">
-  <strong>Terminal actions and session controls</strong>
-</ImagePlaceholder>
+## Search, copy, and analyze output
 
-Next: [SSH Workspace](/docs/ssh) · [Tasks](/docs/tasks) · [Terminal diagnostics](/docs/terminal)
+The session menu includes output search, clipboard actions, **Analyze with AI**, clearing output, and closing the session. Analyze with AI sends terminal context for explanation. Review the selected content before using it with a provider.
+
+</div>
+
+<div class="doc-screenshots">
+  <DocScreenshot file="terminal-actions-menu.jpg" caption="Terminal session actions, including Analyze with AI and Refresh Remote Environment." />
+</div>
+
+</div>
+
+## Refresh the remote environment
+
+After updating the remote account’s shell configuration, select **Refresh Remote Environment** or reconnect. The resolved login environment is shared by remote tools such as Tasks, Git, language servers, debug adapters, and external agents.
+
+## Customize terminal tabs
+
+Open the tab customization menu to rename a tab, change its color, or reset its customization. **Customize Terminal Tab** lets you set the title, color, and icon together. These settings identify sessions; they do not change the host or command environment.
+
+<div class="doc-screenshots">
+  <DocScreenshot file="terminal-customize-menu.jpg" caption="Tab customization menu." />
+  <DocScreenshot file="terminal-tab-style-form.jpg" caption="Tab title, color, and icon settings." />
+</div>

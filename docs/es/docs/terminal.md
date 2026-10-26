@@ -1,46 +1,49 @@
 ---
-title: Mobile Terminal | NimoteCode SSH Workspace
-description: Run workspace commands in NimoteCode, open project URLs in in-app preview, search terminal output, use quick commands and keep advanced multi-terminal contexts with Pro.
+title: Terminal | NimoteCode
+description: "Configuración, procedimientos y referencia de la interfaz: Terminal."
 ---
 
-# Terminal móvil
+# Terminal
 
+<div class="doc-section">
+<div class="doc-section__copy">
 
-Terminal es la capa de verificación de un espacio de trabajo de NimoteCode. Ejecute comandos donde esté editando, busque el resultado y mantenga el resultado conectado a los archivos y a la siguiente decisión.
+## Ejecutar comandos del espacio de trabajo
 
+Abra Terminal en el espacio SSH o Local Linux activo. Ejecute `pwd` para confirmar el directorio y después el comando del proyecto. La salida pertenece a esa sesión; cambiar de pestaña del editor no cambia el directorio del shell.
 
-<ImagePlaceholder image-key="terminal" alt="NimoteCode mobile terminal">
-  <strong>Image placeholder — Terminal in the active workspace</strong>
-  <span>Replace with a screenshot of terminal output, search and a nearby editor tab in a real SSH project.</span>
-</ImagePlaceholder>
+</div>
 
-## Flujo de trabajo del terminal central
+<div class="doc-screenshots">
+  <DocScreenshot file="terminal-command-output.png" caption="Terminal con la salida de ls." />
+</div>
 
+</div>
 
-- Ejecute comandos en el espacio de trabajo local o SSH activo.
+<div class="doc-section">
+<div class="doc-section__copy">
 
-- Inspeccione la salida de streaming y busque registros largos en busca de errores o advertencias.
+## Buscar, copiar y analizar la salida
 
-- Utilice comandos rápidos o personalizados para rutinas conocidas.
+El menú de sesión incluye búsqueda, portapapeles, **Analyze with AI**, borrado de salida y cierre de sesión. Analyze with AI envía el contexto del terminal para obtener una explicación. Revise el contenido seleccionado antes de enviarlo al proveedor.
 
-- Abra una URL emitida por un proyecto web local o remoto directamente en la vista previa del navegador en la aplicación; Los enlaces web en las respuestas de IA y la salida de la herramienta utilizan la misma acción.
+</div>
 
-- Envíe la salida relevante del terminal directamente a [AI Chat and Agent](/docs/ai) cuando sea útil interpretarla, sin volver a escribir ni copiar manualmente un error largo.
+<div class="doc-screenshots">
+  <DocScreenshot file="terminal-actions-menu.jpg" caption="Acciones de sesión, incluidas Analyze with AI y Refresh Remote Environment." />
+</div>
 
-- Reanude el trabajo remoto después de la reconexión, luego verifique el host y el directorio antes de continuar. La entrada de terminal está diseñada para preservar el texto del teclado de composición, la repetición de teclas y los atajos de teclado físico durante el trabajo móvil.
+</div>
 
+## Actualizar el entorno remoto
 
-Para espacios de trabajo SSH, el menú Terminal puede actualizar el entorno de inicio de sesión de la cuenta remota. Terminal, Tareas, Depuración, servidores de idiomas, Git, CLI externas y agentes ACP utilizan el mismo entorno de shell resuelto, incluida su configuración `PATH`, configuración regional y agente SSH. Elija también una paleta de terminal que coincida con el tema del espacio de trabajo.
+Tras cambiar la configuración del shell de la cuenta remota, seleccione **Refresh Remote Environment** o reconecte. Las herramientas remotas, como Tasks, Git, servidores de lenguaje, adaptadores de depuración y agentes externos, comparten el entorno de inicio de sesión obtenido.
 
+## Personalizar pestañas del terminal
 
-## Cuando más de un caparazón importa
+Abra el menú de personalización para cambiar el nombre o color de una pestaña, o restablecer sus ajustes. **Customize Terminal Tab** permite definir título, color e icono juntos. Estos ajustes identifican sesiones; no cambian el host ni el entorno de los comandos.
 
-
-Pro proporciona flujos de trabajo avanzados de múltiples terminales para contextos paralelos, como un terminal que sigue registros mientras otro ejecuta pruebas o un comando de implementación. Mantenga explícitos los comandos de alto riesgo y evite tratar un terminal restaurado como prueba de que el estado remoto no ha cambiado.
-
-
-<ImagePlaceholder image-key="terminalMenu" alt="Terminal menu on NimoteCode for phone">
-  <strong>Terminal actions and session controls</strong>
-</ImagePlaceholder>
-
-Siguiente: [Espacio de trabajo SSH](/docs/ssh) · [Tareas](/docs/tasks) · [Diagnóstico de terminal](/docs/terminal)
+<div class="doc-screenshots">
+  <DocScreenshot file="terminal-customize-menu.jpg" caption="Menú de personalización de pestañas." />
+  <DocScreenshot file="terminal-tab-style-form.jpg" caption="Ajustes de título, color e icono de la pestaña." />
+</div>

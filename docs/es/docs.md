@@ -1,60 +1,35 @@
 ---
-title: NimoteCode Documentation | Mobile IDE Guides
-description: Practical NimoteCode guides for local, Android Local Linux and SSH workspaces, mobile code editing, terminal, Git, AI Chat and Agent, LSP, debugging, tasks and sync/cache.
+title: Documentación de NimoteCode
+description: "Guías de espacios de trabajo, edición, terminal, Git, IA, plugins y diagnóstico."
 ---
 
 # Documentación de NimoteCode
 
+Empiece por [Inicio rápido](/es/docs/quick-start) para abrir un espacio, editar un archivo, ejecutar comandos y usar AI Agent. Consulte las referencias siguientes para los ajustes y procedimientos de cada función.
 
-Guías breves y orientadas a tareas para trabajar en un proyecto local, Android Local Linux o un proyecto SSH desde un dispositivo móvil. Comience con el flujo de trabajo que necesita, no con un manual de funciones extenso.
+| Tema | Contenido |
+| --- | --- |
+| [Inicio rápido](/es/docs/quick-start) | Abrir un espacio de trabajo · Abrir y editar un archivo · Ejecutar un comando · Ejecutar AI Agent |
+| [Espacios de trabajo locales y SSH](/es/docs/ssh) | Elegir un espacio de trabajo · Abrir una carpeta local · Configurar una conexión SSH |
+| [Editor de código](/es/docs/editor) | Abrir archivos y cambiar de pestaña · Seleccionar y editar texto · Navegar por símbolos e historial |
+| [AI Chat y Agent](/es/docs/ai) | Iniciar una conversación · Elegir un agente · Revisar el plan y seguir la ejecución |
+| [Configuración de IA y conexiones](/es/docs/configuration) | Añadir una configuración de modelo · Probar la conexión de chat · Ajustes generales |
+| [Terminal](/es/docs/terminal) | Ejecutar comandos del espacio de trabajo · Buscar, copiar y analizar la salida · Actualizar el entorno remoto |
+| [Control de código fuente](/es/docs/source-control) | Consultar el estado del repositorio · Revisar diferencias y commits · Cambiar de rama |
+| [Ajustes](/es/docs/settings) | Apariencia e idioma · Preferencias de paneles y editor · Crear un plugin personalizado |
+| [Plugins personalizados](/es/docs/plugins) | Crear el primer plugin · Vista previa, permisos y ejecución · Trabajos en segundo plano y programación |
+| [Servicios de lenguaje (LSP)](/es/docs/lsp) | Comprobar la configuración del servidor de lenguaje · Usar diagnósticos y acciones de código |
+| [Depuración](/es/docs/debug) | Preparar una sesión de depuración · Inspeccionar un programa en pausa |
+| [Búsqueda en el espacio de trabajo](/es/docs/search) | Buscar en el contenido de archivos · Si no aparecen resultados |
+| [Sincronización y caché](/es/docs/sync-cache) | Elegir la dirección de transferencia · Iniciar y verificar una transferencia |
+| [Tareas](/es/docs/tasks) | Crear un comando reutilizable · Ejecutar e inspeccionar la salida |
+| [Local Linux en Android](/es/docs/local-linux) | Requisitos · Instalar y abrir · Verificar el entorno |
 
+## Cuenta y referencias
 
-<div class="product-card-grid">
-  <div class="product-card"><strong>New workspace</strong><span><a href="/docs/quick-start">Quick Start</a> takes you from connection to a verified edit.</span></div>
-  <div class="product-card"><strong>Remote work</strong><span>Set up <a href="/docs/ssh">SSH Workspace</a>, then use <a href="/docs/terminal">Terminal</a> in the same project context.</span></div>
-  <div class="product-card"><strong>Android development environment</strong><span>Use <a href="/docs/local-linux">Local Linux</a> for bundled Ubuntu without root on supported Android devices.</span></div>
-  <div class="product-card"><strong>Safe delivery</strong><span>Review changes with <a href="/docs/source-control">Source Control</a> before you commit or sync.</span></div>
-  <div class="product-card"><strong>AI assistance</strong><span>Understand the boundary between <a href="/docs/ai">AI Chat and Agent</a> before running a multi-step task.</span></div>
-  <div class="product-card"><strong>Technical resources</strong><span>Compare <a href="/resources/">mobile, Android Linux, SSH, and AI coding workflows</a> before choosing an environment.</span></div>
-</div>
-
-## Guías de flujo de trabajo principales
-
-
-| Goal | Start here | Then continue with |
-| --- | --- | --- |
-| Open a project and make a verified edit | [Quick Start](/docs/quick-start) | [Editor](/docs/editor) · [Terminal](/docs/terminal) |
-| Run a Linux environment on Android | [Android Local Linux](/docs/local-linux) | [Terminal](/docs/terminal) · [Source Control](/docs/source-control) |
-| Verify an optional Local Linux toolset | [Linux Presets](/docs/local-linux/presets) | [Compatibility](/docs/local-linux/compatibility) · [Security and Integrity](/docs/local-linux/security-integrity) |
-| Work on a remote host | [SSH Workspace](/docs/ssh) | [Search](/docs/search) · [Tasks](/docs/tasks) |
-| Prepare a focused change | [Editor](/docs/editor) | [Source Control](/docs/source-control) |
-| Get AI help in context | [AI Chat and Agent](/docs/ai) | [Configuration](/docs/configuration) |
-| Diagnose a problem | [LSP](/docs/lsp) | [Debug](/docs/debug) · [Terminal](/docs/terminal) |
-| Move project content deliberately | [Sync / Cache](/docs/sync-cache) | [SSH Workspace](/docs/ssh) |
-
-## Configure una vez, trabaje con confianza
-
-
-- [Configuración](/docs/settings): preferencias de tema, idioma, editor y teclado.
-
-- [Configuración](/docs/configuration) — Lista de verificación de configuración de tareas, AI y SSH.
-
-- [Cuenta y suscripción](/docs/account-subscription) — Acceso profesional y restauración de compra.
-
-- [Seguridad y protección](/docs/security): credenciales, acceso remoto y prácticas de revisión del agente AI.
-
-- [FAQ](/docs/faq): respuestas concisas a preguntas comunes sobre productos.
-
-
-## Guías de escenarios
-
-
-Si está evaluando NimoteCode antes de la configuración, comience con [Mobile IDE](/mobile-ide), [SSH IDE](/ssh-ide), [Mobile AI Coding](/mobile-ai-coding), o los técnicos [Mobile Development Resources](/resources/). Para flujos de trabajo concretos, lea [Flujo de trabajo de desarrollo remoto SSH](/docs/ssh), [Diagnóstico de terminal](/docs/terminal) y [Demostración del agente AI](/use-cases/).
-
-<div class="seo-cta">
-  <p><strong>Prefer a visual overview first?</strong> The demo follows one project from SSH connection to AI-assisted, reviewable work.</p>
-  <p class="seo-cta-actions">
-    <a href="/demo?utm_source=docs_hub&utm_medium=website&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
-    <a href="/download?utm_source=docs_hub&utm_medium=website&utm_campaign=download" class="home-page-btn primary">Download NimoteCode</a>
-  </p>
-</div>
+- [Notificaciones](/es/docs/notifications)
+- [Cuenta y suscripción](/es/docs/account-subscription)
+- [Credenciales y revisión de operaciones](/es/docs/security)
+- [Preguntas frecuentes de NimoteCode](/es/docs/faq)
+- [Referencia de la interfaz](/es/docs/screenshot-guide)
+- [Código fuente y licencias de Local Linux](/es/docs/local-linux-source)

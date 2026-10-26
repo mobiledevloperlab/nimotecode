@@ -92,3 +92,5 @@ NimoteCode는 **Explorer → Editor → Preview → Terminal → Git → AI**와
 
 
  이러한 기능이 SSH 세션에 어떻게 적합한지 평가하는 경우 [Android SSH 클라이언트](/android-ssh-client) 워크플로를 참조하거나, [모바일 IDE 가이드](/blog/best-ssh-clients)를 읽거나, 전체 원격 개발 루프에 대한 [SSH IDE 개요](/ssh-ide)를 엽니다.
+
+화면과 사용 절차는 [화면 및 작업 안내](/ko/docs/screenshot-guide)를 참고하세요.

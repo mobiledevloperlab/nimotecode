@@ -1,34 +1,25 @@
 ---
-title: Remote Tasks | NimoteCode
-description: Save, group and run repeatable SSH terminal commands in NimoteCode Tasks.
+title: タスク | NimoteCode
+description: "タスクの設定、操作手順、画面の説明。"
 ---
 
-# リモートタスク
+# タスク
 
+<div class="doc-section">
+<div class="doc-section__copy">
 
-タスクは、既知のリモート コマンド プロシージャを名前付きの再利用可能なアクションに変換します。これは、小さな画面で再入力する必要のないビルド チェック、テスト、フォーマット、ヘルス チェック、ログ ルーチンに役立ちます。
+## 再利用するコマンドを作成する
 
+Tasks はコマンドを名前付きで保存し、用途別にグループ化します。**+** で追加し、コマンドと設定を入力して、必要に応じてグループを指定します。タスクは接続済みの SSH 環境で実行されます。ローカル SSH 接続を使う Android Local Linux も対象です。
 
-<ImagePlaceholder image-key="tasksPage" alt="Tasks page on NimoteCode for phone">
-<strong>再利用可能なリモート タスク カタログ</strong>
-</ImagePlaceholder>
+</div>
 
-## 成果に基づいたタスクカタログを構築する
+<div class="doc-screenshots">
+  <DocScreenshot file="task-runner.png" caption="All、Test グループと Run Tests 項目を表示する Tasks。例のコマンドは echo で、テストの完了結果ではありません。" />
+</div>
 
+</div>
 
-- グループ関連の **ビルドとテスト** コマンド。
+## 実行して出力を確認する
 
-- **lint および format** ルーチンをデプロイ作業から分離してください。
-
-- **再起動、ヘルスチェック、およびログ**のタスクに名前を付けて、その効果が明らかになるようにします。
-
--  SSH 端末コンテキストでタスクを実行し、その出力とステータスに従います。
-
-
-## タスクを安全に使用する
-
-
-タスクは SSH ワークフローを通じて実行されるため、タスク名とコマンドでアクティブな環境を明確にします。読み取り専用または低リスクのルーチンから始めて、前提条件を文書化し、あいまいなラベルの背後に破壊的なアクションを隠すことを避けます。タスクの作成と実行は、別の Pro レベルなしで利用できます。
-
-
-関連: [SSHワーク​​スペース](/docs/ssh) · [ターミナル](/docs/terminal) · [構成](/docs/configuration)
+タスク横の実行ボタンを押し、ターミナル出力を確認します。タスク名はラベルであり、コマンドの正しさを保証しません。使用前にコマンドと作業ディレクトリを確認してください。基本的なタスクの作成と実行に Pro は不要です。

@@ -1,31 +1,25 @@
 ---
-title: LSP Diagnostics and Code Actions | NimoteCode Pro
-description: Configure language-server support on a remote workspace, view diagnostics, jump to source locations and apply available code actions in NimoteCode Pro.
+title: 언어 서비스(LSP) | NimoteCode
+description: "언어 서비스(LSP) 설정, 사용 절차 및 화면 안내."
 ---
 
-# LSP 진단 및 코드 작업
+# 언어 서비스(LSP)
 
+<div class="doc-section">
+<div class="doc-section__copy">
 
-LSP 패널은 활성 원격 작업 공간에 언어 인식 피드백을 추가합니다. 호스트에 호환되는 언어 서버가 구성되어 있으면 진단에서 관련 소스 줄로 이동하고 사용 가능한 코드 작업을 적용할 수 있습니다. LSP는 **프로** 워크플로우입니다.
+## 언어 서버 설정 확인
 
+소스 파일을 연 뒤 LSP 패널을 엽니다. **LSP Setup**과 해당 언어의 서버를 확인합니다. 예시에는 Python용 pyright-langserver가 설치되어 있고 보고된 오류와 경고가 모두 0개입니다. 설치됨 상태가 모든 프로젝트 의존성이나 코드 작업의 사용 가능 여부를 보장하지는 않습니다.
 
-<ImagePlaceholder image-key="lsp" alt="NimoteCode LSP diagnostics">
-  <strong>Image placeholder — diagnose and navigate with LSP</strong>
-  <span>Replace with a screenshot of the diagnostics list, a selected source line and an available code action.</span>
-</ImagePlaceholder>
+</div>
 
-## 실용적인 LSP 루프
+<div class="doc-screenshots">
+  <DocScreenshot file="lsp-python-status.png" caption="Python 언어 서버 설정과 Problems 및 Code Actions 영역." />
+</div>
 
+</div>
 
-1. 원격 프로젝트에 대한 언어 서버를 설정하고 확인합니다.
+## 진단 및 코드 작업 사용
 
-2. LSP를 열고 가장 중요한 오류에 대한 진단을 필터링합니다.
-
-3. 소스 위치로 이동하고 코드 작업이 제공되는 경우 해당 작업을 적용합니다.
-
-4. [터미널](/docs/terminal)에서 해당 검사를 다시 실행하세요.
-
-5.  문제에 추가 컨텍스트가 필요한 경우 [디버그](/docs/debug) 또는 [AI 채팅 및 에이전트](/docs/ai)를 사용하세요.
-
-
-언어 지원은 원격 호스트에 설치 및 구성된 도구에 따라 다릅니다. 일부 진단에서는 사용할 수 없는 코드 작업이 정상입니다. AI나 LSP가 모든 문제를 자동으로 해결할 수 있다고 약속하는 것은 아닙니다.
+**Problems**를 펼치고 진단 항목을 선택하면 해당 소스 위치가 열립니다. **Code Actions**에서 현재 커서 위치에 제공되는 작업을 확인합니다. 사용 가능한 작업은 언어 서버에 따라 다릅니다. 작업을 적용한 뒤 파일을 저장하고 관련 프로젝트 검사를 다시 실행하세요. LSP에는 Pro 권한이 필요합니다.

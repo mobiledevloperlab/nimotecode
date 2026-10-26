@@ -1,0 +1,85 @@
+/* Documentation in every locale: a consistent reading and illustration rhythm. */
+.nimote-docs .vp-doc {
+  container-type: inline-size;
+  overflow-wrap: break-word;
+}
+
+.nimote-docs .vp-doc h1 {
+  margin-bottom: 28px;
+  line-height: 1.25;
+}
+
+.nimote-docs .vp-doc h2 {
+  margin: 48px 0 16px;
+  padding: 24px 0 0;
+  border-top: 1px solid var(--nimote-border);
+  border-bottom: 0;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+
+.nimote-docs .vp-doc h3 {
+  margin: 28px 0 12px;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.nimote-docs .vp-doc :is(p, li) {
+  line-height: 1.8;
+}
+
+.nimote-docs .vp-doc :is(ul, ol) {
+  margin: 16px 0 24px;
+  padding-left: 24px;
+}
+
+.nimote-docs .vp-doc li + li { margin-top: 8px; }
+.nimote-docs .vp-doc li > :is(ul, ol) { margin: 8px 0; }
+.nimote-docs .vp-doc li > p { margin: 8px 0; }
+
+.nimote-docs .vp-doc .doc-screenshots {
+  gap: 28px 24px;
+  margin: 24px 0 32px;
+}
+
+.nimote-docs .vp-doc .doc-screenshot figcaption {
+  margin-top: 12px;
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
+/* A single portrait sits beside its explanation when the article has room.
+   DOM order remains heading, instructions, then illustration on narrow screens. */
+.nimote-docs .doc-section {
+  margin: 48px 0 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--nimote-border);
+}
+
+.nimote-docs .vp-doc .doc-section__copy > h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.nimote-docs .doc-section__copy { min-width: 0; }
+.nimote-docs .doc-section__copy > :last-child { margin-bottom: 0; }
+.nimote-docs .vp-doc .doc-section > .doc-screenshots { margin-bottom: 0; }
+
+@container (min-width: 620px) {
+  .nimote-docs .doc-section {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 246px;
+    align-items: start;
+    gap: 32px;
+  }
+  .nimote-docs .vp-doc .doc-section > .doc-screenshots { margin: 0; }
+}
+
+@media (max-width: 639px) {
+  .nimote-docs .vp-doc h1 { margin-bottom: 24px; }
+  .nimote-docs .vp-doc h2 { margin-top: 36px; font-size: 1.25rem; }
+  .nimote-docs .doc-section { margin-top: 36px; }
+  .nimote-docs .vp-doc .doc-screenshots { margin-top: 20px; gap: 24px; }
+}

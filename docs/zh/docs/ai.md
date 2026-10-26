@@ -1,51 +1,55 @@
 ---
 title: AI Chat 与 Agent | NimoteCode
-description: 使用 NimoteCode AI Chat 理解代码与错误，使用 AI Agent 在工作区上下文中完成受控的多步骤工作、后续指令与交互问题。
+description: "AI Chat 与 Agent 的配置、操作步骤与界面说明。"
 ---
 
 # AI Chat 与 Agent
 
-NimoteCode 将直接的 AI 问答与 AI 辅助执行分开。**AI Chat** 适合在上下文中得到答案；**AI Agent** 适合跨文件、终端或 Git 工具的明确步骤。
+<div class="doc-section">
+<div class="doc-section__copy">
 
-<ImagePlaceholder image-key="aiAssistant" alt="NimoteCode AI 面板">
-  <strong>图片占位符 —— 带工作区上下文的 AI 协助</strong>
-  <span>请替换为 AI 面板解释当前文件或规划小范围可审查改动的截图。</span>
-</ImagePlaceholder>
+## 开始对话
 
-## 用 AI Chat 做下一步决策
+在 AI 面板选择已配置的模型并输入问题。询问项目相关问题前，先打开对应工作区。Provider 凭据和模型访问请参阅[配置指南](/zh/docs/configuration)。
 
-可让 Chat 解释陌生代码、分析终端输出、列出重构方案，或在修改前提供审查清单。保持相关文件激活，能让对话使用合适的工作区上下文。Chat 会展示最近任务和工作区上下文；切换面板时，全局紧凑状态条会持续显示正在运行的 Agent。
+</div>
 
-## 用 AI Agent 推进受控步骤
+<div class="doc-screenshots">
+  <DocScreenshot file="ai-chat-welcome.png" caption="尚未打开工作区的 AI 面板。" />
+</div>
 
-当工作需要检查文件、提出计划、执行编辑、运行检查并汇总结果时，Agent 更适合。运行期间，可在工作需要你的方向时添加后续指令或回答交互问题；重构后的上下文、历史、提示词编辑和时间线视图让较长任务更易跟进。它会随 Early Access Pro 逐步开放；并非按量提供的免费额度。
+</div>
 
-## 让持续协作保持可控
+<div class="doc-section">
+<div class="doc-section__copy">
 
-正在运行的 Agent 是协作过程，而不是后台承诺。执行中应审查计划、命令、权限请求、文件改动与压缩输出；需求变化时添加后续指令，回答问题前确认主机、项目与预期效果。达到已配置的步骤预算后，应先审查当前状态，再决定是否继续。
+## 选择 Agent
 
-## 在 SSH 工作区使用外部 ACP Agent
+Agent 选择器提供 Nimote Agent 和外部 Agent。外部 Agent 在 SSH 主机上运行，需要先安装并配置兼容的 ACP 运行时。运行时提供的会话命令可通过斜杠命令补全使用。
 
-当 SSH 主机上已有兼容的 ACP 运行时，可与内置 Agent 一起选择使用。NimoteCode 会在同一套对话体验中呈现它的能力、权限请求、会话状态和运行进度。在输入框键入 `/`，即可使用内置会话操作以及当前 ACP 会话上报的命令。运行时仍位于 SSH 主机上，请先在主机中配置好命令和环境。
+</div>
 
-<ImagePlaceholder image-key="agentRunLog" alt="NimoteCode 手机上的 AI Agent 执行日志">
-  <strong>Agent 执行日志</strong>
-</ImagePlaceholder>
+<div class="doc-screenshots">
+  <DocScreenshot file="ai-agent-selector.jpg" caption="Agent 选择器：当前选择 Nimote Agent，外部 Agent 已关闭。" />
+</div>
 
-<ImagePlaceholder image-key="agentRunPythonBenchmark" alt="NimoteCode 手机上的 AI Agent Python 基准测试">
-  <strong>Agent 执行 Python 基准测试</strong>
-</ImagePlaceholder>
+</div>
 
-<ImagePlaceholder image-key="agentAlgorithmBenchmarkResults" alt="NimoteCode 手机上的 AI Agent 基准测试结果">
-  <strong>Agent 基准测试结果</strong>
-</ImagePlaceholder>
+## 审批计划与查看执行过程
 
-## 谨慎配置 Provider
+在 **Confirm** 模式下，先审查计划，再选择 **Approve this run** 允许工具执行。时间线显示当前步骤、已完成的工具调用和输出。运行中可追加指令或回答问题；达到步骤上限时，可检查已有结果后决定是否继续。
 
-Provider 配置档包含端点、API 凭据、模型、流式和上下文行为等设置。你需要连接自己的 AI 提供商与 API key；NimoteCode 不捆绑模型访问或额度。保留一个稳定主配置与一个已测试的备选配置。实用设置方法见 [配置指南](/zh/docs/configuration)。
+<div class="doc-screenshots">
+  <DocScreenshot file="ai-plan-approval.jpg" caption="Confirm 模式下等待审批的项目检查计划。" />
+  <DocScreenshot file="ai-plan-running.jpg" caption="获批后读取文件的任务，时间线记录已完成的检查步骤。" />
+</div>
 
-在 SSH 工作区中，Terminal、外部 ACP Agent、Tasks、Debug、语言服务、Git 与外部 CLI 共享远程账户的登录环境。更改 Shell 配置后，可从 Terminal 菜单使用“刷新远程环境”；SSH 重连后也会自动刷新。诊断输出会隐藏 API Key、Token、Secret 和密码。
+## 阅读执行结果
 
-> 面对远程或生产相关工作区，应在应用前审查每条命令和每处文件修改。应用内的校验与锁定机制用于让流程更可控，而不是取代使用者的责任。
+下列截图展示同一次“解释项目”请求的回答：项目概览、示例命令，以及缺失文件和基准测试方法的注意事项。这些是生成回答的不同部分，并非独立的分析模式。使用结果前，应结合当前项目核对引用的文件与命令。
 
-继续了解：[AI Agent 演示](/zh/use-cases/) · [手机 AI 编程](/zh/mobile-ai-coding)
+<div class="doc-screenshots">
+  <DocScreenshot file="ai-analysis-overview.jpg" caption="AI 回答中的项目概览与主要组件。" />
+  <DocScreenshot file="ai-analysis-workflow.jpg" caption="同一回答中的项目命令示例。" />
+  <DocScreenshot file="ai-analysis-caveats.jpg" caption="针对当前检出文件和基准测试结果的注意事项。" />
+</div>

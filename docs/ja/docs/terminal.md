@@ -1,46 +1,49 @@
 ---
-title: Mobile Terminal | NimoteCode SSH Workspace
-description: Run workspace commands in NimoteCode, open project URLs in in-app preview, search terminal output, use quick commands and keep advanced multi-terminal contexts with Pro.
+title: ターミナル | NimoteCode
+description: "ターミナルの設定、操作手順、画面の説明。"
 ---
 
-# モバイル端末
+# ターミナル
 
+<div class="doc-section">
+<div class="doc-section__copy">
 
-ターミナルは、NimoteCode ワークスペースの検証レイヤーです。編集している場所でコマンドを実行し、出力を検索し、結果をファイルと次の決定に結び付けたままにします。
+## ワークスペースのコマンドを実行する
 
+現在の SSH または Local Linux ワークスペースで Terminal を開きます。`pwd` でディレクトリを確認してからプロジェクトのコマンドを実行してください。出力はそのセッションに属し、エディターのタブを切り替えてもシェルの作業ディレクトリは変わりません。
 
-<ImagePlaceholder image-key="terminal" alt="NimoteCode mobile terminal">
-<strong>Image プレースホルダー — アクティブなワークスペースのターミナル</strong>
-<span>実際の SSH プロジェクトのターミナル出力、検索、および近くのエディター タブのスクリーンショットに置き換えます。</span>
-</ImagePlaceholder>
+</div>
 
-## コアターミナルのワークフロー
+<div class="doc-screenshots">
+  <DocScreenshot file="terminal-command-output.png" caption="ls の出力を表示するターミナル。" />
+</div>
 
+</div>
 
-- アクティブなローカルまたは SSH ワークスペースでコマンドを実行します。
+<div class="doc-section">
+<div class="doc-section__copy">
 
-- ストリーミング出力を検査し、長いログでエラーまたは警告を検索します。
+## 出力を検索・コピー・分析する
 
-- 既知のルーチンに対してクイック コマンドまたはカスタム コマンドを使用します。
+セッションメニューには出力検索、クリップボード操作、**Analyze with AI**、出力の消去、セッションの終了があります。Analyze with AI は説明のためにターミナルのコンテキストを送信します。プロバイダーに渡す前に選択内容を確認してください。
 
-- ローカルまたはリモートの Web プロジェクトによって発行された URL をアプリ内ブラウザのプレビューで直接開きます。 AI 応答内の Web リンクとツール出力では、同じアクションが使用されます。
+</div>
 
-- 解釈が役立つ場合は、関連する出力を[AIチャットおよびエージェント](/docs/ai)に送信します。
+<div class="doc-screenshots">
+  <DocScreenshot file="terminal-actions-menu.jpg" caption="Analyze with AI と Refresh Remote Environment を含むセッションメニュー。" />
+</div>
 
-- 再接続後にリモート作業を再開し、続行する前にホストとディレクトリを確認します。ターミナル入力は、モバイル作業中にキーボード テキストの作成、キー リピート、物理キーボード ショートカットを保持するように設計されています。
+</div>
 
+## リモート環境を更新する
 
-SSH ワークスペースの場合、[ターミナル] メニューでリモート アカウントのログイン環境を更新できます。ターミナル、タスク、デバッグ、言語サーバー、Git、外部 CLI、および ACP エージェントは、その  、ロケール、SSH エージェント構成を含む、同じ解決されたシェル環境を使用します。
+リモートアカウントのシェル設定を変更したら **Refresh Remote Environment** を選ぶか、再接続します。取得したログイン環境は Tasks、Git、言語サーバー、デバッグアダプター、外部 Agent などのリモートツールで共有されます。
 
+## ターミナルのタブをカスタマイズする
 
-## 複数のシェルが重要な場合
+タブのカスタマイズメニューでは名前と色の変更、設定のリセットができます。**Customize Terminal Tab** ではタイトル、色、アイコンをまとめて設定できます。これらはセッションを識別するための設定で、ホストやコマンドの実行環境は変わりません。
 
-
-Pro は、ある端末がログを追跡している間に別の端末がテストや展開コマンドを実行するなど、並列コンテキスト向けの高度なマルチ端末ワークフローを提供します。リスクの高いコマンドは明示的に保ち、復元された端末をリモート状態が変化していない証拠として扱うことは避けてください。
-
-
-<ImagePlaceholder image-key="terminalMenu" alt="Terminal menu on NimoteCode for phone">
-<strong>端末アクションとセッション制御</strong>
-</ImagePlaceholder>
-
-次へ: [SSHワーク​​スペース](/docs/ssh) · [タスク](/docs/tasks) · [端末診断](/docs/terminal)
+<div class="doc-screenshots">
+  <DocScreenshot file="terminal-customize-menu.jpg" caption="タブのカスタマイズメニュー。" />
+  <DocScreenshot file="terminal-tab-style-form.jpg" caption="タブのタイトル、色、アイコンの設定。" />
+</div>

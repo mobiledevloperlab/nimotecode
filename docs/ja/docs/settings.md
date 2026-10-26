@@ -1,36 +1,34 @@
 ---
-title: Settings | NimoteCode Mobile IDE
-description: Personalize NimoteCode with account, subscription, theme, language, editor and mobile keyboard settings for a comfortable development workspace.
+title: 設定 | NimoteCode
+description: "設定の設定、操作手順、画面の説明。"
 ---
 
 # 設定
 
+## 外観と言語
 
-設定は、実際に使用するデバイス上でワークスペースを予測しやすくするのに役立ちます。読みやすさと入力から始めて、Pro 機能が必要なときにアカウントとサブスクリプションのステータスを確認します。
+**Settings** でアプリのテーマ、エディターの配色、表示倍率、言語を変更できます。**Follow app** はエディターの配色をアプリのテーマに合わせます。アカウントと購入の操作もここにあります。画面例は異なるアカウント状態を示しています。
 
-
-<ImagePlaceholder image-key="appSettings" alt="App settings on NimoteCode for phone">
-  <strong>Settings on phone</strong>
-</ImagePlaceholder>
-
-<div class="product-card-grid">
-<div class="product-card"><strong>外観</strong><span>アプリと IDE テーマを選択し、必要に応じてインターフェイス言語を切り替えます。</span></div>
-<div class="product-card"><strong>エディタ</strong><span>画面上で読み取るコードの量に応じて、フォント ファミリー、サイズ、行の高さを調整します。</span></div>
-<div class="product-card"><strong>Keyboard</strong><span>ソフト キーボードの動作、フィードバック、番号/機能行、ジェスチャ、およびファンクション キー マッピングを構成します。</span></div>
-<div class="product-card"><strong>Account</strong><span>サインイン、サブスクリプション状態、購入管理、および購入の復元オプションを確認します。</span></div>
-<div class="product-card"><strong>オープンソースに関する通知</strong><span>Codex、xterm、Flutter パッケージ、およびその他のバンドルされたオープンソース ソフトウェアのライセンスと帰属を確認してください。</span></div>
+<div class="doc-screenshots">
+  <DocScreenshot file="app-settings-light.png" caption="White テーマでサインイン済みの設定画面。" />
+  <DocScreenshot file="app-setting-dark.jpg" caption="Black テーマでサインイン操作を表示する設定画面。" />
 </div>
 
-## 推奨される最初のセットアップ
+<div class="doc-section">
+<div class="doc-section__copy">
 
+## パネルとエディターの設定 {#panel-and-editor-preferences}
 
-1. 一定のズームを行わずにコードを読みやすい状態に保つテーマと文字サイズを選択します。
+**Plugins** 設定ページでは LSP、Debug、Sync / Cache、Tasks パネルの表示を切り替えられます。折り返し、エディターの文字サイズ、行の高さ、フォントも設定できます。パネルを有効にしても、言語サーバーやデバッグアダプターなどの実行依存関係はインストールされません。
 
-2. 通常の言語とシェルのワークフローに役立つキーボード コントロールのみを有効にします。
+</div>
 
-3. 時間制限のある Pro ワークフローの前に、アカウントとサブスクリプションのステータスを確認します。
+<div class="doc-screenshots">
+  <DocScreenshot file="plugin-settings.png" caption="Plugins ページのパネル表示切り替えとエディターの文字設定。" />
+</div>
 
-4.  [構成](/docs/configuration) から AI および SSH 接続の詳細を追加します。インシデント発生中に急いではいけません。
+</div>
 
+## カスタムプラグインを作成する
 
-ポリシーとアカウントリクエストのリンクについては、アプリ内またはサイトのフッター内にあるエントリを使用します。
+作成、プレビュー、インストール、管理の手順は[カスタムプラグイン](/ja/docs/plugins)を参照してください。権限、スクリプトの要件、バックグラウンドジョブも説明しています。

@@ -1,37 +1,50 @@
 ---
-title: 移动代码编辑器 | NimoteCode
-description: 使用 NimoteCode 在手机、平板与桌面设备上保持一致的编辑器：支持标签页、双栏分屏、媒体预览、Git 变更标记、剪贴板、撤销/重做、大纲导航，以及与 Terminal 和 AI 面板联动的工作流。
+title: 代码编辑器 | NimoteCode
+description: "代码编辑器的配置、操作步骤与界面说明。"
 ---
 
-# 移动代码编辑器
+# 代码编辑器
 
-编辑器让工作区真正进入修改阶段。Nimote Editor 现在是手机、平板与桌面的默认编辑器，因此编辑、选择、键盘与输入法行为会随屏幕变化保持一致。文件可以来自本地项目、SSH 工作区或搜索结果，并且始终与 Terminal、AI 和 Source Control 保持连接，而不是被拆散到不同应用里。
+## 打开文件与切换标签页
 
-<ImagePlaceholder image-key="editor" alt="NimoteCode 移动代码编辑器">
-  <strong>图片占位符 —— 编辑远程项目</strong>
-  <span>请替换为展示代码标签页、当前文件与停靠 Terminal 或 AI 面板的手机或平板截图。</span>
-</ImagePlaceholder>
+从 Explorer 或搜索结果打开文件，已打开的文件显示在标签栏中。编辑器支持本地与远程文件，也可使用分栏同时查看两个文件。执行读取磁盘文件的外部工具前，请先保存修改。
 
-## 为聚焦修改而准备
+<div class="doc-screenshots">
+  <DocScreenshot file="editor-empty-state.png" caption="没有打开文件时，可通过 Browse files 选择文件。" />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="多个文件标签页，当前激活文件为 webapp.py。" />
+</div>
 
-- 用多个标签页跟进一次小范围改动。
-- 需要对照或同时修改相关代码时，可通过双栏分屏并排打开两个文件。
-- 可直接在编辑器中查看图片和播放支持的音频或视频。
-- 使用复制、剪切、粘贴、全选、撤销和重做。
-- 在排查错误或处理 review 时查看当前行列位置。
-- 符号数据可用时，通过大纲了解代码结构。
-- 让 [AI Chat 与 Agent](/zh/docs/ai) 结合当前激活文件理解问题。
-- 通过低干扰的 Git 变更标记了解修改，再打开语法高亮的 diff 审查实际补丁。
+## 选择与编辑文本
 
-<ImagePlaceholder image-key="editorOutline" alt="NimoteCode 手机上的代码编辑器大纲">
-  <strong>使用编辑器大纲定位代码</strong>
-</ImagePlaceholder>
+选择文本后可复制、剪切或替换，选区菜单也提供 **Ask AI**。更多菜单包含撤销、重做和剪贴板操作。手机、平板和桌面使用同一编辑器实现，支持键盘与输入法输入。
 
-## 一条好的移动编辑路径
+<div class="doc-screenshots">
+  <DocScreenshot file="editor-code-selection.png" caption="编辑器中的 Python 源码，显示行号和语法高亮。" />
+  <DocScreenshot file="editor-context-menu.jpg" caption="文本选区菜单：复制、剪切、粘贴、全选和 Ask AI。" />
+  <DocScreenshot file="editor-overflow-menu.jpg" caption="编辑器更多菜单中的撤销、重做和剪贴板命令。" />
+</div>
 
-1. 在 Explorer 中定位文件。
-2. 完成最小可行的修改并保存。
-3. 项目提供 URL 时，可在应用内预览本地或远程 Web 改动，再在[终端](/zh/docs/terminal)运行验证命令。
-4. 在 [Source Control](/zh/docs/source-control) 查看产生的 diff；交付需要受限 Git 写入操作时再使用 Pro。
+<div class="doc-section">
+<div class="doc-section__copy">
 
-长时间探索性开发仍可能更适合桌面设备；编辑器的重点是让眼前这项明确任务可以被认真完成。
+## 符号导航与历史记录
+
+符号菜单包含 **Go To Definition**、**References**、**Rename Symbol**、**Outline** 和 Git 历史入口。语言导航依赖已配置的语言服务；Git 历史操作需要当前项目是 Git 仓库。
+
+</div>
+
+<div class="doc-screenshots">
+  <DocScreenshot file="editor-symbol-menu.jpg" caption="当前文件的符号导航与历史操作。" />
+</div>
+
+</div>
+
+## 预览 Markdown 与 HTML
+
+编辑 Markdown 源文件后，可通过预览查看标题、代码块和表格的渲染结果。HTML 预览使用当前编辑内容的快照，包含未保存的修改，并从工作区读取引用的资源。静态 HTML 预览无需在 SSH 主机上启动 Web 服务器；服务端应用逻辑仍需要项目自身的运行环境。
+
+<div class="doc-screenshots">
+  <DocScreenshot file="markdown-source-editor.jpg" caption="README.md 源码编辑视图。" />
+  <DocScreenshot file="markdown-preview.jpg" caption="README.md 渲染预览，包含目录树和表格。" />
+  <DocScreenshot file="html-report-preview.jpg" caption="编辑器预览标签页中的 HTML 基准测试报告。" />
+</div>

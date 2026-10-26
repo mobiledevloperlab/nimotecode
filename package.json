@@ -6,8 +6,9 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs && node scripts/filter-sitemap.mjs",
     "docs:preview": "vitepress preview docs",
-    "docs:check": "node scripts/check-site.mjs",
-    "compare:check": "node scripts/check-mobile-comparison.mjs"
+    "docs:check": "node scripts/check-site.mjs && node scripts/check-doc-translations.mjs",
+    "compare:check": "node scripts/check-mobile-comparison.mjs",
+    "images:thumbnails": "node scripts/generate-screenshot-thumbnails.mjs"
   },
   "devDependencies": {
     "remark-gfm": "^4.0.1",

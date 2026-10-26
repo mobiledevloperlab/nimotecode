@@ -1,44 +1,18 @@
 ---
-title: Security and Safety | NimoteCode
-description: Practical security guidance for NimoteCode SSH workspaces, provider credentials, AI Agent review, terminal commands, Git changes and subscription verification.
+title: Credenciales y revisión de operaciones | NimoteCode
+description: "Configuración, procedimientos y referencia de la interfaz: Credenciales y revisión de operaciones."
 ---
 
-# Seguridad y protección
+# Credenciales y revisión de operaciones
 
+## Acceso SSH
 
-NimoteCode puede funcionar con acceso SSH, credenciales de proveedor, comandos de terminal y cambios de archivos. La aplicación proporciona mecanismos de almacenamiento seguro y flujo de trabajo controlado, pero el desarrollo remoto seguro aún depende de las elecciones que haga para cada host y acción.
+Use una cuenta SSH con permisos adecuados para el proyecto. Al abrir una sesión, compruebe el host, el usuario y la raíz del espacio de trabajo. El proxy cambia la ruta de conexión al host, pero no los permisos de la cuenta.
 
+## Credenciales del proveedor
 
-## Credenciales y acceso
+Introduzca las claves API en el formulario del proveedor. No incluya credenciales en instrucciones, archivos del proyecto ni registros compartidos. Revoque y sustituya cualquier clave expuesta a través del proveedor.
 
+## Planes y cambios en archivos
 
-- Utilice cuentas SSH separadas y con privilegios mínimos para entornos sensibles.
-
-- Prefiera la autenticación de clave privada para hosts críticos y confirme el host y la raíz del proyecto en cada sesión.
-
-- Trate las credenciales del proveedor de IA como confidenciales; configúrelos en el flujo de almacenamiento protegido de la aplicación y rótelos con el proveedor cuando sea necesario.
-
-- Mantenga la verificación de suscripción vinculada a su cuenta deseada y a su identidad de tienda de plataforma.
-
-
-## AI Agente y acciones de escritura
-
-
-AI Agent separa la ejecución de la herramienta de una simple respuesta de chat y aplica capas de validación y bloqueo alrededor del trabajo de archivos y comandos. Aún así, revise cada comando y cambio propuesto, especialmente cuando el espacio de trabajo tiene acceso de producción. Utilice la revisión de diferencias de [Control de fuente](/docs/source-control) antes de confirmar o presionar.
-
-
-## Una rutina remota más segura
-
-
-1. Verifique el host SSH, el usuario y la raíz del espacio de trabajo.
-
-2. Comience con una inspección o un comando de bajo riesgo.
-
-3. Lea el resultado del terminal y la propuesta de IA en contexto.
-
-4. Haz el cambio más pequeño necesario.
-
-5. Pruébelo y revise la diferencia de Git antes de la entrega.
-
-
-Relacionado: [Espacio de trabajo SSH](/docs/ssh) · [Chat AI y Agente](/docs/ai) · [Configuración](/docs/configuration)
+Revise el plan de Agent antes de aprobar herramientas en modo Confirm. Compruebe los permisos solicitados al instalar o actualizar plugins. Antes de crear un commit, examine el [diff de Git](/es/docs/source-control) y ejecute las comprobaciones pertinentes del proyecto.

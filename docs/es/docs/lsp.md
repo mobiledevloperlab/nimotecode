@@ -1,31 +1,25 @@
 ---
-title: LSP Diagnostics and Code Actions | NimoteCode Pro
-description: Configure language-server support on a remote workspace, view diagnostics, jump to source locations and apply available code actions in NimoteCode Pro.
+title: Servicios de lenguaje (LSP) | NimoteCode
+description: "Configuración, procedimientos y referencia de la interfaz: Servicios de lenguaje (LSP)."
 ---
 
-# LSP Diagnóstico y acciones de código
+# Servicios de lenguaje (LSP)
 
+<div class="doc-section">
+<div class="doc-section__copy">
 
-El panel LSP agrega comentarios sensibles al idioma a un espacio de trabajo remoto activo. Con un servidor de idioma compatible configurado en el host, puede pasar de un diagnóstico a la línea fuente relevante y aplicar acciones de código disponibles. LSP es un flujo de trabajo **Pro**.
+## Comprobar la configuración del servidor de lenguaje
 
+Abra un archivo fuente y después el panel LSP. Compruebe **LSP Setup** y el servidor de su lenguaje. El ejemplo muestra pyright-langserver instalado para Python, sin errores ni advertencias notificados. El estado instalado no garantiza que estén disponibles todas las dependencias del proyecto o las acciones de código.
 
-<ImagePlaceholder image-key="lsp" alt="NimoteCode LSP diagnostics">
-  <strong>Image placeholder — diagnose and navigate with LSP</strong>
-  <span>Replace with a screenshot of the diagnostics list, a selected source line and an available code action.</span>
-</ImagePlaceholder>
+</div>
 
-## Un práctico bucle LSP
+<div class="doc-screenshots">
+  <DocScreenshot file="lsp-python-status.png" caption="Configuración del servidor de Python con las secciones Problems y Code Actions." />
+</div>
 
+</div>
 
-1. Configure y verifique el servidor de idioma para el proyecto remoto.
+## Usar diagnósticos y acciones de código
 
-2. Abra LSP y filtre los diagnósticos según los errores más importantes.
-
-3. Salte a la ubicación de origen y aplique una acción de código si se ofrece alguna.
-
-4. Vuelva a ejecutar la verificación correspondiente en [Terminal](/docs/terminal).
-
-5. Utilice [Depurar](/docs/debug) o [Chat y agente AI](/docs/ai) si el problema necesita más contexto.
-
-
-La compatibilidad con el idioma depende de las herramientas instaladas y configuradas en su host remoto. Una acción de código no disponible es normal para algunos diagnósticos; No es una promesa de que la IA o el LSP puedan solucionar automáticamente todos los problemas.
+Despliegue **Problems** y seleccione un diagnóstico para abrir su ubicación en el código. Revise en **Code Actions** las acciones para la posición del cursor. Las opciones dependen del servidor de lenguaje. Tras aplicar una acción, guarde el archivo y repita la comprobación pertinente del proyecto. LSP requiere acceso Pro.

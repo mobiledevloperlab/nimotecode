@@ -1,57 +1,69 @@
 ---
-title: Quick Start | NimoteCode Mobile IDE
-description: Open a local, Android Local Linux, or SSH workspace in NimoteCode, edit a file, run a verification command and choose the next mobile development workflow.
+title: Inicio rápido | NimoteCode
+description: "Configuración, procedimientos y referencia de la interfaz: Inicio rápido."
 ---
 
 # Inicio rápido
 
-
-Utilice esta guía para probar el flujo de trabajo primero: abra un proyecto, realice una pequeña edición y verifíquelo en la terminal. Funciona con un proyecto local, un espacio de trabajo SSH o Android Local Linux en un dispositivo compatible.
-
-
 <figure class="quick-start-hero">
-  <img src="/images/placeholders/Start_Overview.png" width="1400" height="900" alt="NimoteCode overview showing the welcome screen and options for demo, Local Linux, remote SSH, and local workspaces" loading="lazy" decoding="async">
-  <figcaption>Start with a demo, Local Linux, a remote SSH host, or files already on your device.</figcaption>
+  <img src="/screenshots/nimote-pro.webp" width="1440" height="810" alt="NimoteCode en una tableta y un teléfono, con espacios locales y SSH, edición de código, Git, terminal, IA, depuración y sincronización." decoding="async" fetchpriority="high">
 </figure>
 
-## 1. Abrir un espacio de trabajo
+## Abrir un espacio de trabajo
 
+Elija un espacio en la pantalla de bienvenida. **Open Local Workspace** abre archivos del dispositivo; **Connect Remote Workspace** conecta con un host SSH. **Local Linux** instala Ubuntu en dispositivos Android compatibles. Para explorar la interfaz sin configurar un host, elija **Try Demo Workspace**.
 
-Elija **Abrir espacio de trabajo local** para un proyecto en su dispositivo, **Conectar espacio de trabajo remoto** para un host remoto o **Linux local** para Ubuntu incluido en un dispositivo Android 8+ ARM64/x86_64 compatible. También puede utilizar **Pruebe el espacio de trabajo de demostración** para explorar un proyecto de muestra inmediatamente. Linux local no necesita acceso de root y no está disponible en iOS; consulte [Android Local Linux](/docs/local-linux) para conocer su configuración y ciclo de vida. Para un espacio de trabajo SSH, ingrese el host, el puerto y el nombre de usuario; luego elija contraseña, archivo de clave o autenticación de clave privada pegada. Confirme la raíz del proyecto antes de comenzar a trabajar.
-
-
-<figure class="seo-media-placeholder seo-media-placeholder--device-pair has-image has-single-device-image">
-  <div class="seo-media-placeholder__device-pair">
-    <div class="seo-media-placeholder__device seo-media-placeholder__device--phone">
-      <img class="seo-media-placeholder__image" src="/images/placeholders/Getting_Started.jpg" width="930" height="2048" alt="NimoteCode welcome screen with options to open a demo, Local Linux, remote, or local workspace" loading="lazy" decoding="async">
-    </div>
-  </div>
-  <figcaption class="seo-media-placeholder__caption">Choose the workspace that matches where your project runs; AI configuration can be changed later.</figcaption>
-</figure>
-
-## 2. Abrir, editar y guardar un archivo
-
-
-Seleccione un archivo en el Explorador o desde [Buscar](/docs/search). Se abre en el editor de pestañas. Realice un pequeño cambio, guárdelo y mantenga el archivo activo si planea preguntarle a AI al respecto.
-
-
-## 3. Verificar en la terminal
-
-
-Abra [Terminal](/docs/terminal) en el mismo espacio de trabajo y ejecute un comando inofensivo como `pwd`, `ls` o el comando de prueba de su proyecto. Utilice la búsqueda de resultados si el resultado es largo.
-
-
-## 4. Elige el siguiente paso
-
-
-<div class="product-card-grid">
-  <div class="product-card"><strong>Review a change</strong><span>Open <a href="/docs/source-control">Source Control</a> to inspect the diff and stage it; committing or pushing needs Pro access.</span></div>
-  <div class="product-card"><strong>Ask for help</strong><span>Use <a href="/docs/ai">AI Chat or Agent</a> to explain code, plan a change or assist controlled multi-step work.</span></div>
-  <div class="product-card"><strong>Diagnose more deeply · Pro</strong><span>Use configured <a href="/docs/lsp">LSP</a>, <a href="/docs/debug">Debug</a> and <a href="/docs/terminal">Terminal</a> workflows.</span></div>
-  <div class="product-card"><strong>Reuse a command</strong><span>Save an established remote procedure in <a href="/docs/tasks">Tasks</a>.</span></div>
+<div class="doc-screenshots">
+  <DocScreenshot file="startup-light.jpg" caption="Pantalla de bienvenida con tema claro." />
+  <DocScreenshot file="startup-dark.jpg" caption="Pantalla de bienvenida con tema oscuro." />
 </div>
 
-> Para entornos de producción remotos, comience con una inspección de solo lectura y revise cada comando, sugerencia de IA y cambio de Git antes de aplicarlos.
+<div class="doc-section">
+<div class="doc-section__copy">
 
+## Abrir y editar un archivo
 
-Continúe con [SSH Workspace](/docs/ssh), [Editor](/docs/editor) o [Ver demostración](/demo?utm_source=quick_start&utm_medium=website&utm_campaign=watch_demo).
+Seleccione el directorio del proyecto y abra un archivo en Explorer. Edítelo y guárdelo antes de ejecutar un comando que lo lea del disco. Consulte [Editor](/es/docs/editor) para las funciones de selección, navegación y vista previa.
+
+</div>
+
+<div class="doc-screenshots">
+  <DocScreenshot file="editor-multiple-files.jpg" caption="Los archivos abiertos aparecen en pestañas; webapp.py está activo en este ejemplo." />
+</div>
+
+</div>
+
+<div class="doc-section">
+<div class="doc-section__copy">
+
+## Ejecutar un comando
+
+En un espacio SSH o Local Linux, abra Terminal y ejecute `pwd` para comprobar el directorio de trabajo. Ejecute las pruebas o la compilación del proyecto y revise los archivos modificados en [Control de código fuente](/es/docs/source-control). Abrir una carpeta local por sí solo no proporciona un entorno Linux.
+
+</div>
+
+<div class="doc-screenshots">
+  <DocScreenshot file="terminal-command-output.png" caption="Terminal con los archivos del proyecto enumerados por el comando ls." />
+</div>
+
+</div>
+
+## Ejecutar AI Agent
+
+Use AI Agent para inspeccionar el proyecto y explicar la relación entre sus archivos.
+
+1. Añada un proveedor y configure el acceso al modelo en [Configuración](/es/docs/configuration).
+2. Con el espacio del proyecto abierto, abra el panel de IA, elija un modelo configurado y seleccione **Nimote Agent**.
+3. Seleccione el modo **Confirm** y envíe una petición como «Explica este proyecto». La petición de las capturas es «Explain this project».
+4. Revise el plan y seleccione **Approve this run** para permitir la ejecución de herramientas. Siga la lectura de archivos y los resultados en la cronología.
+
+<div class="doc-screenshots">
+  <DocScreenshot file="ai-plan-approval.jpg" caption="Modo Confirm: revise el plan de inspección del proyecto antes de aprobar la ejecución." />
+  <DocScreenshot file="ai-plan-running.jpg" caption="Tras la aprobación, el agente lee los archivos y registra el progreso." />
+</div>
+
+Lea la respuesta junto con las limitaciones indicadas, como archivos que no se pudieron inspeccionar. Puede enviar instrucciones adicionales durante la ejecución. Consulte [AI Chat y Agent](/es/docs/ai) para la selección y los controles del agente.
+
+## Configurar herramientas opcionales
+
+Los servidores de lenguaje y los adaptadores de depuración se configuran por separado; consulte [LSP](/es/docs/lsp) y [Depuración](/es/docs/debug).

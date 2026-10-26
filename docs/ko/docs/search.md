@@ -1,31 +1,25 @@
 ---
-title: Remote Code Search | NimoteCode
-description: Search remote workspace file contents in NimoteCode by keyword or regex, narrow matches with case sensitivity and open results at the matching line.
+title: 작업 공간 검색 | NimoteCode
+description: "작업 공간 검색 설정, 사용 절차 및 화면 안내."
 ---
 
-# 원격 코드 검색
+# 작업 공간 검색
 
+<div class="doc-section">
+<div class="doc-section__copy">
 
-검색은 SSH 프로젝트에서 집중적인 질문에 답하는 데 도움이 됩니다. 이 구성 값, 오류 문자열 또는 함수는 어디에 사용됩니까? 원격 작업 공간 콘텐츠를 검색하고 편집기에서 직접 일치 항목을 엽니다.
+## 파일 내용 검색
 
+SSH 작업 공간에서 Search를 열고 **Search file content**에 텍스트를 입력합니다. 대소문자를 구분해야 하면 해당 옵션을 사용하고, 패턴 검색에는 정규식을 활성화합니다. 결과를 선택하면 일치하는 줄에서 파일이 열립니다. 원격 내용 검색에는 Pro 권한이 필요합니다.
 
-<ImagePlaceholder image-key="codeGlobalSearch" alt="Global code search on NimoteCode for phone">
-  <strong>Search the remote workspace</strong>
-</ImagePlaceholder>
+</div>
 
-## 올바른 라인을 빠르게 찾으세요
+<div class="doc-screenshots">
+  <DocScreenshot file="search-global.png" caption="검색어 입력 전의 패널. 대소문자 구분 및 정규식 옵션이 표시됩니다." />
+</div>
 
+</div>
 
-1.  [SSH 작업 공간](/docs/ssh)에 연결합니다.
+## 검색 결과가 없을 때
 
-2. 키워드를 입력하거나 의도적인 패턴에 대한 정규식을 활성화합니다.
-
-3. 필요한 경우 대소문자를 구분하여 검색 결과를 좁힙니다.
-
-4. 일치 결과를 열고 [에디터](/docs/editor)에서 계속하세요.
-
-
- 가용성이 확대됨에 따라 Early Access Pro를 통해 원격 콘텐츠 검색이 가능합니다. 무료 사용 할당량을 사용하지 않습니다. 모바일 조사를 더 쉽게 스캔할 수 있도록 대규모 저장소에 특정한 패턴을 유지하세요.
-
-
-관련: [편집기](/docs/editor) · [터미널](/docs/terminal) · [프로](/pro)
+현재 작업 공간을 확인하고 짧은 일반 문자열부터 검색합니다. 검색 범위를 넓히기 전에 대소문자 구분과 정규식 문법을 확인하세요.

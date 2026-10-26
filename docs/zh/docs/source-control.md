@@ -1,42 +1,60 @@
 ---
-title: 移动 Git Source Control | NimoteCode
-description: 使用 NimoteCode 在移动端审查 Git：所有用户均可查看状态、语法高亮 diff、历史与变更标记；Pro 解锁受限分支与 Git 写入工作流。
+title: 源代码管理 | NimoteCode
+description: "源代码管理的配置、操作步骤与界面说明。"
 ---
 
-# 移动 Git Source Control
+# 源代码管理
 
-Source Control 将 Git 中最需要审查的部分带回刚刚编辑和验证过的工作区。所有用户均可查看仓库状态、diff 与历史；只有交付步骤需要受限 Git 写入操作时才需要 **Pro**，它也不替代团队的分支与评审规范。
+<div class="doc-section">
+<div class="doc-section__copy">
 
-<ImagePlaceholder image-key="sourceControl" alt="NimoteCode 移动 Git 审查">
-  <strong>图片占位符 —— 在移动端审查 Git diff</strong>
-  <span>请替换为展示改动文件、可读 diff 与提交操作的 Source Control 面板截图。</span>
-</ImagePlaceholder>
+## 查看仓库状态
 
-## 可以完成的操作
+在 Git 工作区打开 Source Control。**Changes** 列出已修改、已删除和未跟踪的文件；**Staged Changes** 列出待提交的已暂存文件。在应用外执行 Git 操作后，可刷新状态。
 
-- 查看已暂存、未暂存和有冲突的文件。
-- 检查文件 diff 与仓库历史。
-- 在当前工作区刷新本地与远程仓库状态，也支持首次提交的仓库。
-- 从 Git 标题栏搜索、创建和切换分支。
-- 选择性暂存，并在审查 diff 后准备提交。
-- 有 Pro 时，可在仓库与远程权限允许时使用提交、推送和 stash 等受限 Git 写入操作。
-- 通过 Git AI 辅助解释改动、起草提交信息或进行风险导向审查。
+</div>
 
-## 一条审慎的移动提交流程
+<div class="doc-screenshots">
+  <DocScreenshot file="source-control-changes.png" caption="修改与未跟踪文件列表，下方分别提供暂存区和提交历史。" />
+</div>
 
-1. 保存修改，并在 [终端](/zh/docs/terminal) 中验证。
-2. 打开 Source Control，阅读真实 diff，而不只看自动生成的摘要。
-3. 暂存目标改动，编写或生成提交信息。
-4. 有 Pro 时，仅在符合仓库流程的前提下提交、拉取或推送。
+</div>
 
-<ImagePlaceholder image-key="gitCommitRecord" alt="NimoteCode 手机上的 Git 提交记录">
-  <strong>Git 提交记录</strong>
-</ImagePlaceholder>
+## 审查差异与提交
 
-<ImagePlaceholder image-key="localWorkspaceGitPanel" alt="NimoteCode 手机上的本地工作区 Source Control 面板">
-  <strong>审查本地工作区改动</strong>
-</ImagePlaceholder>
+打开变更文件可比较修改前后的内容。在 **Commit History** 中打开提交，可按文件检查该次提交的改动。截图中的 diff 包含临时文本修改，仅用于展示审查界面，并非代码修改建议。
 
-AI 可以加快审查，但无法替代对环境与业务意图的验证。该执行的 CI、分支保护和人工评审仍应保留。
+<div class="doc-screenshots">
+  <DocScreenshot file="git-diff-view.jpg" caption="文件修改前后的内容，新增与删除以不同颜色标记。" />
+  <DocScreenshot file="git-commit-details.jpg" caption="提交详情及按文件展开的补丁。" />
+</div>
 
-相关：[SSH 远程开发工作流](/zh/docs/ssh) · [AI Chat 与 Agent](/zh/docs/ai)
+<div class="doc-section">
+<div class="doc-section__copy">
+
+## 切换分支
+
+点击顶部的分支名，可搜索分支、创建分支或检出已有分支。切换前检查未提交的修改。Git 写入操作需要相应 Pro 权益及仓库权限。
+
+</div>
+
+<div class="doc-screenshots">
+  <DocScreenshot file="git-branch-checkout.jpg" caption="Checkout Branch 对话框，提供搜索与 Create New Branch。" />
+</div>
+
+</div>
+
+<div class="doc-section">
+<div class="doc-section__copy">
+
+## 使用 Git AI 工具
+
+打开 **AI Tools**，选择 Provider 和文件，再选择 **Commit Message**、**Explanation** 或 **Risk Analysis**。解释改动时点击 **Explain Changes**。生成文本用于辅助阅读 diff，提交或审查前仍需核对其准确性。
+
+</div>
+
+<div class="doc-screenshots">
+  <DocScreenshot file="git-ai-explanation.jpg" caption="Explanation 标签页中针对选定改动生成的解释。" />
+</div>
+
+</div>

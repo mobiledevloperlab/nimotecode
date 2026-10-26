@@ -60,6 +60,8 @@ With version 1.1.8, **Early Access Pro** opens the workflows below as availabili
 - **A more complete preview loop.** Split editing, live HTML snapshots, built-in media preview, and shared link opening make it practical to inspect a result before leaving the workspace.
 - **Agent workflows that fit your environment.** External ACP runtimes, slash-command completion, shared SSH login-environment handling, and safe environment diagnostics keep Terminal, Tasks, Debug, language servers, Git, and agents aligned.
 
+
+
 ## A practical way to use the features
 
 1. Connect through [SSH Workspace](/docs/ssh), open a local project, or use [Android Local Linux](/docs/local-linux) on a supported device.
@@ -73,3 +75,5 @@ With version 1.1.8, **Early Access Pro** opens the workflows below as availabili
 ## Explore the SSH workflow
 
 If you are evaluating how these features fit an SSH session, see the [Android SSH client](/android-ssh-client) workflow, read [the mobile IDE guide](/blog/best-ssh-clients), or open the [SSH IDE overview](/ssh-ide) for the full remote development loop.
+
+See the [interface reference](/docs/screenshot-guide) for screenshots and procedures.

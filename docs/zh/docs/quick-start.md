@@ -1,47 +1,69 @@
 ---
-title: 快速开始 | NimoteCode 移动 IDE
-description: 在 NimoteCode 打开本地、Android 本地 Linux 或 SSH 工作区，编辑文件、运行验证命令，并选择下一条移动开发工作流。
+title: 快速开始 | NimoteCode
+description: "快速开始的配置、操作步骤与界面说明。"
 ---
 
 # 快速开始
 
-先跑通核心流程：打开一个项目、完成一处小修改，再通过终端验证。项目可以在设备、远程 SSH 主机，或受支持 Android 设备上的本地 Linux 中。
-
 <figure class="quick-start-hero">
-  <img src="/images/placeholders/Start_Overview.png" width="1400" height="900" alt="NimoteCode 概览，展示欢迎页以及演示、本地 Linux、远程 SSH 和本地工作区入口" loading="lazy" decoding="async">
-  <figcaption>可从演示工作区、本地 Linux、远程 SSH 主机或设备上的文件开始。</figcaption>
+  <img src="/screenshots/nimote-pro.webp" width="1440" height="810" alt="平板与手机上的 NimoteCode，展示本地与 SSH 工作区、代码编辑、Git、终端、AI、调试和同步功能。" decoding="async" fetchpriority="high">
 </figure>
 
-## 1. 打开工作区
+## 打开工作区
 
-项目位于设备时，选择 **Open Local Workspace**；项目位于远程主机时，选择 **Connect Remote Workspace**；在支持 Android 8+ ARM64/x86_64 的设备上，可选择 **Local Linux** 使用内置 Ubuntu。也可以通过 **Try Demo Workspace** 立即体验示例项目。本地 Linux 无需 root，iOS 不提供此功能；其安装和生命周期请查看 [Android 本地 Linux](/zh/docs/local-linux)。SSH 模式下填写主机、端口和用户名，再选择密码、私钥文件或粘贴私钥认证。开始前务必确认项目根路径。
+在欢迎页选择项目所在位置。**Open Local Workspace** 打开设备文件，**Connect Remote Workspace** 连接 SSH 主机，**Local Linux** 在受支持的 Android 设备上安装 Ubuntu。首次体验可选择 **Try Demo Workspace** 打开示例项目。
 
-<figure class="seo-media-placeholder seo-media-placeholder--device-pair has-image has-single-device-image">
-  <div class="seo-media-placeholder__device-pair">
-    <div class="seo-media-placeholder__device seo-media-placeholder__device--phone">
-      <img class="seo-media-placeholder__image" src="/images/placeholders/Getting_Started.jpg" width="930" height="2048" alt="NimoteCode 欢迎页，提供演示、本地 Linux、远程和本地工作区入口" loading="lazy" decoding="async">
-    </div>
-  </div>
-  <figcaption class="seo-media-placeholder__caption">根据项目运行位置选择工作区；AI 配置可随时修改。</figcaption>
-</figure>
-
-## 2. 打开、编辑并保存文件
-
-在 Explorer 中选择文件。它会在标签式编辑器中打开。完成小范围修改并保存；计划向 AI 提问时，保持目标文件处于激活状态。
-
-## 3. 在终端验证
-
-在同一工作区打开 [终端](/zh/docs/terminal)，运行 `pwd`、`ls` 或项目自己的测试命令。输出较长时使用终端搜索。
-
-## 4. 选择下一步
-
-<div class="product-card-grid">
-  <div class="product-card"><strong>审查改动</strong><span>进入 <a href="/zh/docs/source-control">Source Control</a> 查看 diff 并暂存；提交或推送需要 Pro 权益。</span></div>
-  <div class="product-card"><strong>寻求 AI 协助</strong><span>使用 <a href="/zh/docs/ai">AI Chat 或 Agent</a> 解释代码、规划改动或辅助多步骤工作。</span></div>
-  <div class="product-card"><strong>深入诊断 · Pro</strong><span>在准备好的环境中使用 <a href="/zh/docs/lsp">LSP</a>、<a href="/zh/docs/debug">调试</a> 与 <a href="/zh/docs/terminal">终端</a>。</span></div>
-  <div class="product-card"><strong>复用命令</strong><span>把已验证的远程流程保存到 <a href="/zh/docs/tasks">Tasks</a>。</span></div>
+<div class="doc-screenshots">
+  <DocScreenshot file="startup-light.jpg" caption="欢迎页，浅色主题。" />
+  <DocScreenshot file="startup-dark.jpg" caption="欢迎页，深色主题。" />
 </div>
 
-> 面对远程生产环境，建议先只读检查，并在应用前审查每条命令、每项 AI 建议和每处 Git 改动。
+<div class="doc-section">
+<div class="doc-section__copy">
 
-接下来阅读 [SSH 工作区](/zh/docs/ssh)、[编辑器](/zh/docs/editor)，或[观看演示](/zh/demo?utm_source=zh_quick_start&utm_medium=website&utm_campaign=watch_demo)。
+## 打开并编辑文件
+
+选择项目目录后，在 Explorer 中打开文件。完成编辑并保存后，再运行需要读取磁盘文件的命令。选择、导航和预览操作见[编辑器](/zh/docs/editor)。
+
+</div>
+
+<div class="doc-screenshots">
+  <DocScreenshot file="editor-multiple-files.jpg" caption="已打开的文件显示在标签栏中，示例当前编辑 webapp.py。" />
+</div>
+
+</div>
+
+<div class="doc-section">
+<div class="doc-section__copy">
+
+## 运行命令
+
+在 SSH 或 Local Linux 工作区打开终端，运行 `pwd` 确认当前目录，再执行项目的测试或构建命令。完成后通过[源代码管理](/zh/docs/source-control)检查文件改动。仅打开本地文件夹并不提供 Linux 运行环境。
+
+</div>
+
+<div class="doc-screenshots">
+  <DocScreenshot file="terminal-command-output.png" caption="终端显示 ls 命令列出的项目文件。" />
+</div>
+
+</div>
+
+## 运行 AI Agent
+
+使用 AI Agent 阅读项目文件，了解目录结构、主要模块及其关系。
+
+1. 在[配置指南](/zh/docs/configuration)中完成 Provider 和模型访问设置。
+2. 打开项目工作区后，进入 AI 面板，选择已配置的模型，并在 Agent 选择器中选择 **Nimote Agent**。
+3. 选择 **Confirm** 模式，发送“解释这个项目”等请求。截图中的示例请求为 “Explain this project”。
+4. 检查 Agent 提出的计划，点击 **Approve this run** 允许执行工具。运行过程中，可在执行时间线中查看文件读取进度和工具结果。
+
+<div class="doc-screenshots">
+  <DocScreenshot file="ai-plan-approval.jpg" caption="Confirm 模式：检查项目分析计划，确认后批准运行。" />
+  <DocScreenshot file="ai-plan-running.jpg" caption="批准后，Agent 读取项目文件并记录执行进度。" />
+</div>
+
+阅读结果时，同时检查 Agent 标注的限制，例如未能读取的文件。运行期间也可以发送补充说明。Agent 选择与执行控制详见 [AI Chat 与 Agent](/zh/docs/ai)。
+
+## 配置辅助工具
+
+语言服务与调试适配器需要单独配置，详见 [LSP](/zh/docs/lsp) 和[调试](/zh/docs/debug)。

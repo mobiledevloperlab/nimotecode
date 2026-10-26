@@ -1,28 +1,14 @@
 ---
-title: Notifications | NimoteCode
-description: Review NimoteCode notifications on phone and use them to return to the relevant workspace task without losing context.
+title: 通知 | NimoteCode
+description: "通知の設定、操作手順、画面の説明。"
 ---
 
 # 通知
 
+## 関連する処理を開く
 
-通知は、デバイス上の完了したワークスペース アクティビティまたは注目に値するワークスペース アクティビティを表示します。通知を合図として関連するワークスペースに戻り、アクティブなホスト、ディレクトリ、結果を確認してから次のアクションを実行します。
+通知は、完了した処理や対応が必要なワークスペースの処理を知らせます。該当するワークスペースを開き、タスク、Agent のタイムライン、ターミナル出力で詳細を確認してください。通知はリモートホストの現在の状態を確認するものではありません。
 
+## セッションを識別する
 
-<ImagePlaceholder image-key="notifications" alt="Notifications on NimoteCode for phone">
-  <strong>Workspace notifications</strong>
-</ImagePlaceholder>
-
-## 安全な通知ワークフロー
-
-
-1. 通知が現在のリモート状態を反映していると想定するのではなく、関連するワークスペースを開きます。
-
-2. アクティブなホストとプロジェクトディレクトリを確認します。
-
-3. コンテキスト内の端末、タスク、またはエージェントの結果を読み取ります。
-
-4. 提案されたコマンドまたはファイルの変更を適用する前に確認してください。
-
-
-日常的な作業の場合、[タスク](/docs/tasks)と[端末](/docs/terminal)の名前を明示的にしておき、小さな画面でも通知が解釈しやすいようにします。
+[ターミナルのタブ](/ja/docs/terminal)と[タスク](/ja/docs/tasks)に分かりやすい名前を付け、処理がどのプロジェクトに属するか識別できるようにします。再接続後はホストとディレクトリを確認してから作業を続けてください。

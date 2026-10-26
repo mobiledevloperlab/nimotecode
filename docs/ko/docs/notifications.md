@@ -1,28 +1,14 @@
 ---
-title: Notifications | NimoteCode
-description: Review NimoteCode notifications on phone and use them to return to the relevant workspace task without losing context.
+title: 알림 | NimoteCode
+description: "알림 설정, 사용 절차 및 화면 안내."
 ---
 
 # 알림
 
+## 관련 작업 열기
 
-알림은 완료되었거나 주목할 만한 작업 공간 활동을 장치에 표시합니다. 알림을 신호로 사용하여 관련 작업 공간으로 돌아가고 다음 작업을 수행하기 전에 활성 호스트, 디렉터리 및 결과를 확인하세요.
+알림은 완료되었거나 확인이 필요한 작업 공간 활동을 알려 줍니다. 해당 작업 공간에서 작업, Agent 타임라인 또는 터미널 출력을 열어 자세한 내용을 확인하세요. 알림은 원격 호스트의 실시간 상태를 확인하는 기능이 아닙니다.
 
+## 세션 식별
 
-<ImagePlaceholder image-key="notifications" alt="Notifications on NimoteCode for phone">
-  <strong>Workspace notifications</strong>
-</ImagePlaceholder>
-
-## 안전한 알림 워크플로
-
-
-1. 알림에 현재 원격 상태가 반영된다고 가정하지 말고 관련 작업 공간을 엽니다.
-
-2. 활성 호스트와 프로젝트 디렉터리를 확인하세요.
-
-3. 컨텍스트에 따라 터미널, 작업 또는 에이전트 결과를 읽습니다.
-
-4. 제안된 명령이나 파일 변경 사항을 적용하기 전에 검토하세요.
-
-
-일상적인 작업의 경우 [작업](/docs/tasks) 및 [터미널](/docs/terminal) 이름을 명시적으로 유지하여 작은 화면에서 알림을 쉽게 해석할 수 있도록 합니다.
+[터미널 탭](/ko/docs/terminal)과 [작업](/ko/docs/tasks)에 알아보기 쉬운 이름을 지정해 어느 프로젝트의 활동인지 구분합니다. 다시 연결한 뒤에는 호스트와 디렉터리를 확인하고 계속 진행하세요.

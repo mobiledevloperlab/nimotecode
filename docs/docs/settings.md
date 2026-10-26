@@ -1,29 +1,34 @@
 ---
-title: Settings | NimoteCode Mobile IDE
-description: Personalize NimoteCode with account, subscription, theme, language, editor and mobile keyboard settings for a comfortable development workspace.
+title: Settings | NimoteCode
+description: "Configuration, procedures, and interface reference for settings."
 ---
 
 # Settings
 
-Settings helps the workspace feel predictable on the device you actually use. Start with readability and input, then verify account and subscription status when you need Pro features.
+## Appearance and language
 
-<ImagePlaceholder image-key="appSettings" alt="App settings on NimoteCode for phone">
-  <strong>Settings on phone</strong>
-</ImagePlaceholder>
+Open **Settings** to change the app theme, editor colors, interface scale, and language. **Follow app** keeps editor colors aligned with the application theme. Account and purchase controls are also available here; the screenshots show different account states.
 
-<div class="product-card-grid">
-  <div class="product-card"><strong>Appearance</strong><span>Choose the app and IDE theme, then switch the interface language where needed.</span></div>
-  <div class="product-card"><strong>Editor</strong><span>Adjust font family, size and line height for the amount of code you read on your screen.</span></div>
-  <div class="product-card"><strong>Keyboard</strong><span>Configure soft-keyboard behavior, feedback, number/function rows, gestures and function-key mappings.</span></div>
-  <div class="product-card"><strong>Account</strong><span>Review sign-in, subscription state, purchase management and restore-purchase options.</span></div>
-  <div class="product-card"><strong>Open-source notices</strong><span>Review licenses and attribution for Codex, xterm, Flutter packages and other bundled open-source software.</span></div>
+<div class="doc-screenshots">
+  <DocScreenshot file="app-settings-light.png" caption="Settings with the White theme and a signed-in account." />
+  <DocScreenshot file="app-setting-dark.jpg" caption="Settings with the Black theme and sign-in controls." />
 </div>
 
-## Recommended first setup
+<div class="doc-section">
+<div class="doc-section__copy">
 
-1. Choose a theme and type size that keeps code readable without constant zooming.
-2. Enable only the keyboard controls that help your normal language and shell workflow.
-3. Confirm the account and subscription status before a time-sensitive Pro workflow.
-4. Add AI and SSH connection details from [Configuration](/docs/configuration), not in a hurry during an incident.
+## Panel and editor preferences {#panel-and-editor-preferences}
 
-For policy and account-request links, use the entries provided inside the app or the site footer.
+The **Plugins** settings page controls visibility of LSP, Debug, Sync / Cache, and Tasks panels. It also provides word wrap, editor font size, line height, and font selection. Enabling a panel does not install its language server, debug adapter, or other runtime dependencies.
+
+</div>
+
+<div class="doc-screenshots">
+  <DocScreenshot file="plugin-settings.png" caption="Panel toggles and editor typography settings on the Plugins page." />
+</div>
+
+</div>
+
+## Create a custom plugin
+
+See [Custom plugins](/docs/plugins) for creation, preview, installation, and management. The guide also covers permissions, script requirements, and background jobs.
