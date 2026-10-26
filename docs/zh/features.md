@@ -60,6 +60,8 @@ NimoteCode 将核心开发闭环收敛到一个工作区：**Explorer → Editor
 - **更完整的预览闭环。** 双栏编辑、HTML 快照、内置媒体预览与统一链接打开，让你在离开工作区前就能检查结果。
 - **与真实环境衔接的 Agent 工作流。** 外部 ACP 运行时、斜杠命令补全、统一 SSH 登录环境和安全诊断，让 Terminal、Tasks、Debug、语言服务、Git 与 Agent 保持一致。
 
+
+
 ## 一条实用工作路径
 
 1. 使用 [SSH 工作区](/zh/docs/ssh) 连接远程项目、打开本地项目，或在受支持的 Android 设备中使用 [Android 本地 Linux](/zh/docs/local-linux)。
@@ -69,3 +71,5 @@ NimoteCode 将核心开发闭环收敛到一个工作区：**Explorer → Editor
 5. 使用 [Source Control](/zh/docs/source-control) 审查结果；交付需要受限 Git 写入操作时再使用 Pro。工作流需要自定义面板、表单、工作流、产物视图或脚本任务时，可使用插件中心。
 
 > 功能会遵循权限与环境前置条件。例如 LSP、Debug 需要远程主机配置相应语言服务或调试适配器；面对敏感系统时，仍应审查每个 AI 结果与执行动作。
+
+界面及操作说明见[文档索引](/zh/docs/screenshot-guide)。

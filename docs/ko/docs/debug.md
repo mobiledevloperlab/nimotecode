@@ -1,34 +1,25 @@
 ---
-title: Remote Debugging | NimoteCode Pro
-description: Use configured remote debug-adapter workflows in NimoteCode Pro for breakpoints, execution controls, call stacks, variables, watch expressions and output.
+title: 디버깅 | NimoteCode
+description: "디버깅 설정, 사용 절차 및 화면 안내."
 ---
 
-# 원격 디버깅
+# 디버깅
 
+<div class="doc-section">
+<div class="doc-section__copy">
 
-디버그 패널은 모바일 작업 공간 구조화된 런타임 가시성을 제공합니다. 구성된 세션을 시작 또는 제어하고, 일시 중지 지점을 검사하고, 증거를 코드 및 터미널에 다시 연결합니다. 디버그는 **Pro** 워크플로입니다.
+## 디버그 세션 준비
 
+대상 호스트에 호환되는 디버그 어댑터와 프로젝트 실행 구성이 필요합니다. 준비를 마치면 Debug 패널을 열고 **Start Debug**를 선택합니다. 디버깅에는 Pro 권한이 필요합니다.
 
-<ImagePlaceholder image-key="debugging" alt="NimoteCode debugging workspace">
-  <strong>Image placeholder — inspect a paused debug session</strong>
-  <span>Replace with a screenshot showing a breakpoint, call stack, variables and the corresponding source line.</span>
-</ImagePlaceholder>
+</div>
 
-## 구성된 세션이 노출할 수 있는 것
+<div class="doc-screenshots">
+  <DocScreenshot file="debugger-standby.png" caption="세션이 시작되지 않아 변수나 호출 스택이 로드되지 않은 Debug 패널." />
+</div>
 
+</div>
 
-- 시작, 일시 중지, 계속, 단계 및 중지 제어.
+## 일시 중지된 프로그램 확인
 
-- 중단점 및 실행 위치.
-
-- 스레드 및 호출 스택 탐색.
-
-- 변수, 범위 및 조사식.
-
-- 식 평가 및 디버그 출력.
-
-
-## 시작하기 전에
-
-
-디버깅은 언어, 프로젝트 시작 구성 및 원격 호스트의 호환되는 디버그 어댑터에 따라 달라집니다. 사고 발생 시 모바일 UI를 사용하기 전에 이러한 전제 조건을 확인하세요. 더 빠른 첫 번째 패스를 위해서는 [터미널](/docs/terminal) 및 [LSP](/docs/lsp)를 사용하여 질문 범위를 좁힙니다.
+중단점을 설정하고 구성된 세션을 실행합니다. 실행이 멈추면 **Variables**, **Watch**, **Call Stack**을 확인합니다. 세션 컨트롤로 계속 실행하거나 단계별로 실행할 수 있습니다. 세션이 시작되지 않으면 중단점을 변경하기 전에 호스트의 어댑터와 실행 명령을 확인하세요.

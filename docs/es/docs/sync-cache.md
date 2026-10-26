@@ -1,36 +1,25 @@
 ---
-title: Sync and Cache | NimoteCode Pro
-description: Move project content between local and remote NimoteCode workspaces with Pro Sync and Cache workflows, explicit direction, workspace path checks and transfer history.
+title: Sincronización y caché | NimoteCode
+description: "Configuración, procedimientos y referencia de la interfaz: Sincronización y caché."
 ---
 
 # Sincronización y caché
 
+<div class="doc-section">
+<div class="doc-section__copy">
 
-Sync/Cache es un flujo de trabajo **Pro** para mover deliberadamente el contenido del proyecto entre un espacio de trabajo local y remoto. Le da a la transferencia una dirección visible y mantiene el objetivo dentro de los límites del espacio de trabajo activo.
+## Elegir la dirección de transferencia
 
+**Sync** transfiere el contenido del proyecto local al espacio remoto. **Cache** trae el contenido remoto al almacenamiento local. Confirme la conexión y la ruta mostrada antes de empezar. Sync / Cache requiere Pro.
 
-<ImagePlaceholder image-key="syncCache" alt="NimoteCode Sync and Cache">
-  <strong>Image placeholder — choose a safe transfer direction</strong>
-  <span>Replace with a screenshot showing Sync or Cache direction, selected workspace path and transfer history.</span>
-</ImagePlaceholder>
+</div>
 
-## Dos direcciones claras
+<div class="doc-screenshots">
+  <DocScreenshot file="sync-cache-status.png" caption="Vista Cache conectada, con Start Cache y Recent History vacío; en este ejemplo aún no ha terminado ninguna transferencia." />
+</div>
 
+</div>
 
-- **Sync** mueve un proyecto local a un espacio de trabajo remoto.
+## Iniciar y verificar una transferencia
 
-- **Caché** devuelve el contenido del proyecto remoto a un espacio de trabajo local.
-
-
-<ImagePlaceholder image-key="cacheToLocalWorkspace" alt="Caching a remote project to a local workspace on NimoteCode for phone">
-  <strong>Cache a remote project to a local workspace</strong>
-</ImagePlaceholder>
-
-<ImagePlaceholder image-key="cacheToLocalWorkspaceComplete" alt="Completed cache transfer to a local workspace on NimoteCode for phone">
-  <strong>Completed local workspace cache transfer</strong>
-</ImagePlaceholder>
-
-Antes de una transferencia, lea la dirección y la ruta de destino, verifique qué versión es autorizada y luego revise el resultado registrado. Sync/Cache es útil para una transferencia controlada o una inspección fuera de línea; no debe reemplazar las prácticas normales de revisión y respaldo de Git de un repositorio.
-
-
-Relacionado: [Espacio de trabajo SSH](/docs/ssh) · [Control de fuente](/docs/source-control) · [Pro](/pro)
+Si la ubicación no corresponde al proyecto deseado, use **Change** antes de iniciar la operación. Al terminar, revise el resultado y el historial reciente. Decida qué copia debe prevalecer antes de transferir archivos; el historial de caché no sustituye al control de versiones ni a las copias de seguridad.

@@ -1,51 +1,50 @@
 ---
-title: Mobile Code Editor | NimoteCode
-description: Use NimoteCode’s mobile code editor with tabs, split panes, image and media preview, clipboard operations, undo/redo, cursor tracking, outline navigation and linked Terminal and AI panels.
+title: Editor de código | NimoteCode
+description: "Configuración, procedimientos y referencia de la interfaz: Editor de código."
 ---
 
-# Editor de código móvil
+# Editor de código
 
+## Abrir archivos y cambiar de pestaña
 
-El editor es donde un espacio de trabajo se convierte en un cambio. Abra archivos de un proyecto local, un espacio de trabajo SSH o un resultado de búsqueda; luego mantenga el archivo conectado a Terminal, AI y Source Control en lugar de moverlo entre aplicaciones separadas.
+Abra un archivo desde Explorer o Search. Cada archivo abierto aparece en una pestaña. El editor admite archivos locales y remotos; los paneles divididos permiten trabajar con dos archivos en paralelo. Guarde los cambios antes de ejecutar herramientas externas que lean el archivo del disco.
 
+<div class="doc-screenshots">
+  <DocScreenshot file="editor-empty-state.png" caption="Browse files permite seleccionar un archivo cuando no hay pestañas abiertas." />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="Varias pestañas de archivos con webapp.py activo." />
+</div>
 
-<ImagePlaceholder image-key="editor" alt="NimoteCode mobile code editor">
-  <strong>Image placeholder — editing a remote project</strong>
-  <span>Replace with a clean phone or tablet screenshot showing code tabs, the active file and a docked Terminal or AI panel.</span>
-</ImagePlaceholder>
+## Seleccionar y editar texto
 
-## Diseñado para ediciones enfocadas
+Seleccione un fragmento para copiarlo, cortarlo o sustituirlo. El menú de selección incluye **Ask AI**. El menú de más opciones permite deshacer, rehacer y usar el portapapeles. Teléfonos, tabletas y equipos de escritorio comparten la misma implementación del editor para teclado e IME.
 
+<div class="doc-screenshots">
+  <DocScreenshot file="editor-code-selection.png" caption="Código Python abierto con números de línea y resaltado de sintaxis." />
+  <DocScreenshot file="editor-context-menu.jpg" caption="Menú de selección con Copy, Cut, Paste, Select All y Ask AI." />
+  <DocScreenshot file="editor-overflow-menu.jpg" caption="Menú de más opciones con Undo, Redo y comandos del portapapeles." />
+</div>
 
-- Mantenga varios archivos abiertos en pestañas mientras realiza un pequeño cambio.
+<div class="doc-section">
+<div class="doc-section__copy">
 
-- Abra dos archivos en paneles divididos cuando necesite comparar o editar código relacionado uno al lado del otro.
+## Navegar por símbolos e historial
 
-- Inspecciona imágenes y reproduce audio o video compatible directamente en el editor.
+El menú de símbolos reúne **Go To Definition**, **References**, **Rename Symbol**, **Outline** y acciones del historial de Git. La navegación de código depende del servidor de lenguaje configurado; el historial requiere un repositorio Git.
 
-- Utilice copiar, cortar, pegar, seleccionar todo, deshacer y rehacer desde el editor móvil.
+</div>
 
-- Realice un seguimiento de la línea y columna actuales mientras resuelve un error o revisa un comentario.
+<div class="doc-screenshots">
+  <DocScreenshot file="editor-symbol-menu.jpg" caption="Acciones de símbolos e historial para el archivo activo." />
+</div>
 
-- Utilice un contorno cuando la información del símbolo esté disponible.
+</div>
 
-- Mantenga el archivo activo disponible como contexto para [Chat AI y Agente](/docs/ai).
+## Previsualizar Markdown y HTML
 
+Edite el código Markdown y use la vista previa para leer los títulos, bloques de código y tablas renderizados. La vista HTML muestra una instantánea del contenido actual, incluidos cambios sin guardar, y lee los recursos referenciados del espacio de trabajo. El HTML estático no necesita un servidor web en el host SSH. El comportamiento del lado del servidor sí requiere el entorno de ejecución del proyecto.
 
-<ImagePlaceholder image-key="editorOutline" alt="Code editor outline on NimoteCode for phone">
-  <strong>Navigate code with the editor outline</strong>
-</ImagePlaceholder>
-
-## Un buen bucle de edición móvil
-
-
-1. Localice un archivo en el Explorador o [Buscar](/docs/search).
-
-2. Realice la edición útil más pequeña y guárdela.
-
-3. Obtenga una vista previa de un cambio web local o remoto en la aplicación cuando el proyecto proporciona una URL, luego ejecute un comando de verificación en [Terminal](/docs/terminal).
-
-4. Inspeccione la diferencia resultante en [Control de fuente](/docs/source-control); use Pro si la entrega necesita una acción de escritura Git cerrada.
-
-
-Para un trabajo exploratorio prolongado, una computadora de escritorio puede seguir siendo la mejor herramienta. El editor está optimizado para la tarea específica que debe realizarse ahora.
+<div class="doc-screenshots">
+  <DocScreenshot file="markdown-source-editor.jpg" caption="README.md en modo de edición de código fuente." />
+  <DocScreenshot file="markdown-preview.jpg" caption="Vista de README.md con un árbol de directorios y una tabla." />
+  <DocScreenshot file="html-report-preview.jpg" caption="Informe de rendimiento HTML en una pestaña de vista previa del editor." />
+</div>

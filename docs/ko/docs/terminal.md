@@ -1,34 +1,49 @@
 ---
-title: Mobile Terminal | NimoteCode SSH Workspace
-description: Run workspace commands in NimoteCode, open project URLs in in-app preview, search terminal output, use quick commands and keep advanced multi-terminal contexts with Pro.
+title: 터미널 | NimoteCode
+description: "터미널 설정, 사용 절차 및 화면 안내."
 ---
 
-# 모바일 단말기
+# 터미널
 
-터미널은 NimoteCode 작업공간의 검증 레이어입니다. 편집 중인 명령을 실행하고, 출력을 검색하고, 결과를 파일 및 다음 결정에 연결해 두세요.
+<div class="doc-section">
+<div class="doc-section__copy">
 
-<ImagePlaceholder image-key="terminal" alt="NimoteCode mobile terminal">
-  <strong>Image placeholder — Terminal in the active workspace</strong>
-  <span>Replace with a screenshot of terminal output, search and a nearby editor tab in a real SSH project.</span>
-</ImagePlaceholder>
+## 작업 공간 명령 실행
 
-## 핵심 터미널 작업 흐름
+현재 SSH 또는 Local Linux 작업 공간에서 Terminal을 엽니다. `pwd`로 디렉터리를 확인한 뒤 프로젝트 명령을 실행합니다. 출력은 해당 세션에 속하며 편집기 탭을 바꿔도 셸의 작업 디렉터리는 바뀌지 않습니다.
 
-- 활성 로컬 또는 SSH 작업 영역에서 명령을 실행합니다.
-- 스트리밍 출력을 검사하고 긴 로그에서 오류나 경고를 검색합니다.
-- 알려진 루틴에 대해 빠른 명령이나 사용자 정의 명령을 사용하십시오.
-- 인앱 브라우저 미리보기에서 직접 로컬 또는 원격 웹 프로젝트에서 생성된 URL을 엽니다. AI 응답과 도구 출력의 웹 링크는 동일한 작업을 사용합니다.
-- 통역이 도움이 될 경우 관련 출력을 [AI 채팅 및 에이전트](/docs/ai)로 보냅니다.
-- 다시 연결한 후 원격 작업을 재개한 다음 계속하기 전에 호스트와 디렉터리를 확인하세요. 터미널 입력은 모바일 작업 중에 작성 키보드 텍스트, 키 반복 및 실제 키보드 단축키를 보존하도록 설계되었습니다.
+</div>
 
-SSH 작업 영역의 경우 터미널 메뉴에서 원격 계정의 로그인 환경을 새로 고칠 수 있습니다. 그런 다음 터미널, 작업, 디버그, 언어 서버, Git, 외부 CLI 및 ACP 에이전트는 `PATH`, 로케일 및 SSH 에이전트 구성을 포함하여 동일한 확인된 셸 환경을 사용합니다.
+<div class="doc-screenshots">
+  <DocScreenshot file="terminal-command-output.png" caption="ls 출력을 표시하는 터미널." />
+</div>
 
-## 둘 이상의 쉘이 중요한 경우
+</div>
 
-Pro는 하나의 터미널이 로그를 따르는 동안 다른 터미널은 테스트나 배포 명령을 실행하는 등 병렬 컨텍스트를 위한 고급 다중 터미널 워크플로를 제공합니다. 고위험 명령을 명시적으로 유지하고 복원된 터미널을 원격 상태가 변경되지 않았다는 증거로 취급하지 마십시오.
+<div class="doc-section">
+<div class="doc-section__copy">
 
-<ImagePlaceholder image-key="terminalMenu" alt="Terminal menu on NimoteCode for phone">
-  <strong>Terminal actions and session controls</strong>
-</ImagePlaceholder>
+## 출력 검색, 복사 및 분석
 
-다음: [SSH 작업 영역](/docs/ssh) · [작업](/docs/tasks) · [터미널 진단](/docs/terminal)
+세션 메뉴에는 출력 검색, 클립보드 작업, **Analyze with AI**, 출력 지우기, 세션 닫기가 있습니다. Analyze with AI는 설명을 위해 터미널 컨텍스트를 전송합니다. 제공업체에 보내기 전에 선택된 내용을 확인하세요.
+
+</div>
+
+<div class="doc-screenshots">
+  <DocScreenshot file="terminal-actions-menu.jpg" caption="Analyze with AI와 Refresh Remote Environment가 포함된 세션 메뉴." />
+</div>
+
+</div>
+
+## 원격 환경 새로 고침
+
+원격 계정의 셸 구성을 변경한 뒤 **Refresh Remote Environment**를 선택하거나 다시 연결합니다. 확인된 로그인 환경은 Tasks, Git, 언어 서버, 디버그 어댑터 및 외부 Agent 등 원격 도구가 공유합니다.
+
+## 터미널 탭 사용자 지정
+
+탭 사용자 지정 메뉴에서 이름이나 색상을 바꾸고 설정을 초기화할 수 있습니다. **Customize Terminal Tab**에서는 제목, 색상, 아이콘을 함께 설정합니다. 이 설정은 세션을 구분하기 위한 것으로 호스트나 명령 실행 환경을 변경하지 않습니다.
+
+<div class="doc-screenshots">
+  <DocScreenshot file="terminal-customize-menu.jpg" caption="탭 사용자 지정 메뉴." />
+  <DocScreenshot file="terminal-tab-style-form.jpg" caption="탭 제목, 색상 및 아이콘 설정." />
+</div>

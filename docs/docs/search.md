@@ -1,23 +1,25 @@
 ---
-title: Remote Code Search | NimoteCode
-description: Search remote workspace file contents in NimoteCode by keyword or regex, narrow matches with case sensitivity and open results at the matching line.
+title: Workspace search | NimoteCode
+description: "Configuration, procedures, and interface reference for workspace search."
 ---
 
-# Remote Code Search
+# Workspace search
 
-Search helps you answer a focused question in an SSH project: where is this configuration value, error string or function used? It searches remote workspace content and opens matches directly in the editor.
+<div class="doc-section">
+<div class="doc-section__copy">
 
-<ImagePlaceholder image-key="codeGlobalSearch" alt="Global code search on NimoteCode for phone">
-  <strong>Search the remote workspace</strong>
-</ImagePlaceholder>
+## Search file contents
 
-## Find the right line quickly
+In an SSH workspace, open Search and enter text in **Search file content**. Use the case-sensitivity control when capitalization matters; enable regular expressions for pattern matching. Select a result to open the file at the matching line. Remote content search requires Pro access.
 
-1. Connect to an [SSH Workspace](/docs/ssh).
-2. Enter a keyword, or enable regex for a deliberate pattern.
-3. Narrow results with case-sensitive matching when needed.
-4. Open the matching result and continue in [Editor](/docs/editor).
+</div>
 
-Remote content search is available through Early Access Pro as availability expands; it does not use a free usage quota. Keep patterns specific on large repositories to make a mobile investigation easier to scan.
+<div class="doc-screenshots">
+  <DocScreenshot file="search-global.png" caption="Search panel before a query, with case-sensitivity and regular-expression controls." />
+</div>
 
-Related: [Editor](/docs/editor) · [Terminal](/docs/terminal) · [Pro](/pro)
+</div>
+
+## If no results appear
+
+Confirm the active workspace and try a short literal string first. Check case sensitivity and regular-expression syntax before broadening the query.

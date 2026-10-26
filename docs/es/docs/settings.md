@@ -1,36 +1,34 @@
 ---
-title: Settings | NimoteCode Mobile IDE
-description: Personalize NimoteCode with account, subscription, theme, language, editor and mobile keyboard settings for a comfortable development workspace.
+title: Ajustes | NimoteCode
+description: "Configuración, procedimientos y referencia de la interfaz: Ajustes."
 ---
 
-# Configuración
+# Ajustes
 
+## Apariencia e idioma
 
-Configuración ayuda a que el espacio de trabajo se sienta predecible en el dispositivo que realmente utiliza. Comience con legibilidad y entrada, luego verifique el estado de la cuenta y la suscripción cuando necesite funciones Pro.
+Abra **Settings** para cambiar el tema, los colores del editor, la escala de la interfaz y el idioma. **Follow app** adapta los colores del editor al tema de la aplicación. Aquí también se gestionan la cuenta y las compras; las capturas muestran estados de cuenta distintos.
 
-
-<ImagePlaceholder image-key="appSettings" alt="App settings on NimoteCode for phone">
-  <strong>Settings on phone</strong>
-</ImagePlaceholder>
-
-<div class="product-card-grid">
-  <div class="product-card"><strong>Appearance</strong><span>Choose the app and IDE theme, then switch the interface language where needed.</span></div>
-  <div class="product-card"><strong>Editor</strong><span>Adjust font family, size and line height for the amount of code you read on your screen.</span></div>
-  <div class="product-card"><strong>Keyboard</strong><span>Configure soft-keyboard behavior, feedback, number/function rows, gestures and function-key mappings.</span></div>
-  <div class="product-card"><strong>Account</strong><span>Review sign-in, subscription state, purchase management and restore-purchase options.</span></div>
-  <div class="product-card"><strong>Open-source notices</strong><span>Review licenses and attribution for Codex, xterm, Flutter packages and other bundled open-source software.</span></div>
+<div class="doc-screenshots">
+  <DocScreenshot file="app-settings-light.png" caption="Ajustes con tema White y una cuenta con sesión iniciada." />
+  <DocScreenshot file="app-setting-dark.jpg" caption="Ajustes con tema Black y controles de inicio de sesión." />
 </div>
 
-## Primera configuración recomendada
+<div class="doc-section">
+<div class="doc-section__copy">
 
+## Preferencias de paneles y editor {#panel-and-editor-preferences}
 
-1. Elija un tema y un tamaño de letra que mantenga el código legible sin necesidad de hacer zoom constantemente.
+La página **Plugins** controla la visibilidad de LSP, Debug, Sync / Cache y Tasks. También permite ajustar el salto de línea, el tamaño de letra, la altura de línea y la fuente. Activar un panel no instala su servidor de lenguaje, adaptador de depuración ni otras dependencias.
 
-2. Habilite solo los controles de teclado que ayudan a su idioma normal y flujo de trabajo de shell.
+</div>
 
-3. Confirme la cuenta y el estado de la suscripción antes de un flujo de trabajo Pro urgente.
+<div class="doc-screenshots">
+  <DocScreenshot file="plugin-settings.png" caption="Controles de paneles y tipografía del editor en la página Plugins." />
+</div>
 
-4. Agregue detalles de conexión AI y SSH desde [Configuración](/docs/configuration), sin prisa durante un incidente.
+</div>
 
+## Crear un plugin personalizado
 
-Para enlaces de solicitud de cuentas y políticas, utilice las entradas proporcionadas dentro de la aplicación o en el pie de página del sitio.
+Consulte [Plugins personalizados](/es/docs/plugins) para crear, previsualizar, instalar y gestionar plugins. La guía también explica los permisos, los requisitos de scripts y los trabajos en segundo plano.

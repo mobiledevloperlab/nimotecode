@@ -1,34 +1,25 @@
 ---
-title: Remote Debugging | NimoteCode Pro
-description: Use configured remote debug-adapter workflows in NimoteCode Pro for breakpoints, execution controls, call stacks, variables, watch expressions and output.
+title: Depuración | NimoteCode
+description: "Configuración, procedimientos y referencia de la interfaz: Depuración."
 ---
 
-# Depuración remota
+# Depuración
 
+<div class="doc-section">
+<div class="doc-section__copy">
 
-El panel Depuración brinda visibilidad del tiempo de ejecución estructurado en un espacio de trabajo móvil: inicie o controle una sesión configurada, inspeccione un punto de pausa y conecte la evidencia nuevamente al código y al terminal. La depuración es un flujo de trabajo **Pro**.
+## Preparar una sesión de depuración
 
+El host de destino necesita un adaptador compatible y una configuración de inicio para el proyecto. Una vez preparados, abra el panel Debug y seleccione **Start Debug**. La depuración requiere acceso Pro.
 
-<ImagePlaceholder image-key="debugging" alt="NimoteCode debugging workspace">
-  <strong>Image placeholder — inspect a paused debug session</strong>
-  <span>Replace with a screenshot showing a breakpoint, call stack, variables and the corresponding source line.</span>
-</ImagePlaceholder>
+</div>
 
-## Qué puede exponer una sesión configurada
+<div class="doc-screenshots">
+  <DocScreenshot file="debugger-standby.png" caption="Panel Debug inactivo, sin sesión, variables ni pila de llamadas cargadas." />
+</div>
 
+</div>
 
-- Controles de inicio, pausa, continuación, paso y parada.
+## Inspeccionar un programa en pausa
 
-- Puntos de interrupción y posición de ejecución.
-
-- Hilos y navegación de pila de llamadas.
-
-- Variables, alcances y expresiones de observación.
-
-- Evaluación de expresiones y salida de depuración.
-
-
-## Antes de comenzar
-
-
-La depuración depende del idioma, la configuración de inicio del proyecto y un adaptador de depuración compatible en el host remoto. Confirme esos requisitos previos antes de confiar en la interfaz de usuario móvil durante un incidente. Para una primera pasada más rápida, utilice [Terminal](/docs/terminal) y [LSP](/docs/lsp) para limitar la pregunta.
+Establezca un punto de interrupción y ejecute la sesión configurada. Cuando se detenga, examine **Variables**, **Watch** y **Call Stack**. Use los controles para continuar o avanzar paso a paso. Si la sesión no se inicia, compruebe el adaptador y el comando de inicio del host antes de cambiar los puntos de interrupción.

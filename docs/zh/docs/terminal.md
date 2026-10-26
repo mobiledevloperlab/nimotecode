@@ -1,34 +1,49 @@
 ---
-title: 移动终端 | NimoteCode SSH 工作区
-description: 在 NimoteCode 工作区中执行命令、将终端输出发送给 AI、从项目 URL 打开应用内预览、搜索输出、使用快捷命令，并通过 Pro 保持进阶多终端上下文。
+title: 终端 | NimoteCode
+description: "终端的配置、操作步骤与界面说明。"
 ---
 
-# 移动终端
+# 终端
 
-Terminal 是 NimoteCode 工作区的验证层。在正在编辑的项目中执行命令、搜索输出，并让结果继续服务于下一次决策。
+<div class="doc-section">
+<div class="doc-section__copy">
 
-<ImagePlaceholder image-key="terminal" alt="NimoteCode 移动终端">
-  <strong>图片占位符 —— 当前工作区中的 Terminal</strong>
-  <span>请替换为真实 SSH 项目的终端输出、搜索及相邻编辑器标签截图。</span>
-</ImagePlaceholder>
+## 执行工作区命令
 
-## 核心终端流程
+在当前 SSH 或 Local Linux 工作区打开终端。运行 `pwd` 确认目录后，再执行项目命令。终端输出属于当前会话；切换编辑器标签页不会改变 Shell 的工作目录。
 
-- 在当前本地或 SSH 工作区执行命令。
-- 查看实时输出，并在长日志中搜索错误和警告。
-- 用快捷或自定义命令复用已知流程。
-- 本地或远程 Web 项目输出 URL 时，可直接在应用内浏览器预览中打开；AI 回复和工具输出中的网页链接也使用同一入口。
-- 可直接将关键终端输出发送给 [AI Chat 与 Agent](/zh/docs/ai) 协助理解，无需手动重输或复制冗长错误。
-- 远程重连后继续工作，但先确认主机和目录。移动端终端输入支持组合输入法文本、按键重复和实体键盘快捷键的可靠处理。
+</div>
 
-SSH 工作区可从 Terminal 菜单刷新远程账户的登录环境。Terminal、Tasks、Debug、语言服务、Git、外部 CLI 与 ACP Agent 会使用同一套解析后的 Shell 环境，包括其中的 `PATH`、语言区域与 SSH Agent 配置。还可选择与当前工作区主题匹配的终端配色。
+<div class="doc-screenshots">
+  <DocScreenshot file="terminal-command-output.png" caption="终端显示 ls 命令的输出。" />
+</div>
 
-## 多个 Shell 同时重要时
+</div>
 
-Pro 提供进阶多终端工作流，适合并行保留日志、测试、服务与部署等上下文。高风险命令应保持清晰可见；已恢复的终端会话并不代表远程状态没有变化。
+<div class="doc-section">
+<div class="doc-section__copy">
 
-<ImagePlaceholder image-key="terminalMenu" alt="NimoteCode 手机上的终端菜单">
-  <strong>终端操作与会话控制</strong>
-</ImagePlaceholder>
+## 搜索、复制与分析输出
 
-下一步：[SSH 工作区](/zh/docs/ssh) · [Tasks](/zh/docs/tasks) · [终端诊断](/zh/docs/terminal)
+会话菜单提供输出搜索、剪贴板操作、**Analyze with AI**、清空输出和关闭会话。Analyze with AI 可将终端上下文用于 AI 解释；使用前请检查要交给 Provider 的内容。
+
+</div>
+
+<div class="doc-screenshots">
+  <DocScreenshot file="terminal-actions-menu.jpg" caption="终端会话菜单，包含 Analyze with AI 与 Refresh Remote Environment。" />
+</div>
+
+</div>
+
+## 刷新远程环境
+
+更新远程账户的 Shell 配置后，选择 **Refresh Remote Environment** 或重新连接。解析后的登录环境供 Tasks、Git、语言服务、调试适配器及外部 Agent 等远程工具使用。
+
+## 自定义终端标签页
+
+打开标签页自定义菜单，可修改名称、颜色或重置自定义设置。**Customize Terminal Tab** 支持同时设置标题、颜色和图标。这些设置用于识别会话，不会改变主机或命令执行环境。
+
+<div class="doc-screenshots">
+  <DocScreenshot file="terminal-customize-menu.jpg" caption="终端标签页自定义菜单。" />
+  <DocScreenshot file="terminal-tab-style-form.jpg" caption="标签页标题、颜色和图标设置。" />
+</div>

@@ -1,56 +1,60 @@
 ---
-title: Mobile Git Source Control | NimoteCode
-description: "Use NimoteCode for mobile Git review: repository status, diffs and history are available to all users; Pro unlocks gated Git write workflows."
+title: ソース管理 | NimoteCode
+description: "ソース管理の設定、操作手順、画面の説明。"
 ---
 
-# モバイル Git ソース管理
+# ソース管理
 
+<div class="doc-section">
+<div class="doc-section__copy">
 
-ソース管理は、Git のレビュー可能な部分を、編集して変更を検証したワークスペースに取り込みます。リポジトリのステータス、差分、履歴はすべてのユーザーが利用できます。 **Pro** は、配信ステップでゲート制御された Git 書き込みワークフローが必要な場合にのみ必要であり、チームのレビューおよびブランチ ポリシーの代替としてではありません。
+## リポジトリの状態を確認する
 
+Git ワークスペースで Source Control を開きます。**Changes** には変更済み、削除済み、未追跡のファイル、**Staged Changes** にはコミットに備えてステージしたファイルが表示されます。アプリ外で操作した後は更新してください。
 
-<ImagePlaceholder image-key="sourceControl" alt="NimoteCode mobile Git source control">
-<strong>Image プレースホルダー — mobile</strong> で Git diff を確認する
-<span>変更されたファイル、読み取り可能な差分、およびソース コントロール パネルのコミット コントロールを示すスクリーンショットに置き換えます。</span>
-</ImagePlaceholder>
+</div>
 
-## できること
+<div class="doc-screenshots">
+  <DocScreenshot file="source-control-changes.png" caption="変更済み・未追跡ファイルと、独立したステージ済み変更・履歴の領域。" />
+</div>
 
+</div>
 
-- ステージングされたファイル、ステージングされていないファイル、および競合したファイルを確認します。
+## 差分とコミットを確認する
 
-- ファイルの差分とリポジトリ履歴を検査します。
+変更ファイルを開くと変更前後を比較できます。**Commit History** でコミットを開くと、ファイル別に変更を確認できます。画面の差分は一時的なテキスト編集を含む操作例であり、推奨するコード変更ではありません。
 
-- 最初のコミットリポジトリを含む、アクティブなワークスペースのローカルおよびリモートリポジトリのステータスを更新します。
+<div class="doc-screenshots">
+  <DocScreenshot file="git-diff-view.jpg" caption="追加と削除を強調表示した変更前後の内容。" />
+  <DocScreenshot file="git-commit-details.jpg" caption="ファイル別のパッチを表示するコミット詳細。" />
+</div>
 
-- 選択した作業をステージングし、差分を確認した後にコミットを準備します。
+<div class="doc-section">
+<div class="doc-section__copy">
 
-- Pro では、リポジトリとホストの権限で許可されている場合、コミット、プッシュ、スタッシュなどのゲート付き Git 書き込みアクションを使用します。
+## ブランチを切り替える
 
-- Git AI を使用して、変更の説明、コミット メッセージの下書き、またはリスク指向のレビューの促進を支援します。
+上部のブランチ名から検索、新規作成、既存ブランチのチェックアウトを行います。切り替える前に未コミットの変更を確認してください。Git の書き込み操作には対応する Pro の利用権限とリポジトリの権限が必要です。
 
+</div>
 
-## 意図的なモバイルコミットフロー
+<div class="doc-screenshots">
+  <DocScreenshot file="git-branch-checkout.jpg" caption="検索と Create New Branch を備えた Checkout Branch ダイアログ。" />
+</div>
 
+</div>
 
-1. 編集内容を保存し、[ターミナル](/docs/terminal)で確認します。
+<div class="doc-section">
+<div class="doc-section__copy">
 
-2. ソース管理を開いて、生成された概要だけでなく差分を読み取ります。
+## Git の AI ツールを使う
 
-3. 意図した変更をステージングし、コミットメッセージを作成または生成します。
+**AI Tools** を開き、プロバイダーとファイルを選択して **Commit Message**、**Explanation**、**Risk Analysis** を選びます。変更の説明には **Explain Changes** を使います。生成テキストは差分の確認を補助するもので、コミットやレビューに使う前に検証してください。
 
-4. Pro アクセスでは、リポジトリ ワークフローに適切な場合にのみ、コミットしてプルまたはプッシュします。
+</div>
 
+<div class="doc-screenshots">
+  <DocScreenshot file="git-ai-explanation.jpg" caption="選択した変更に対する AI の要約を表示する Explanation タブ。" />
+</div>
 
-<ImagePlaceholder image-key="gitCommitRecord" alt="Git commit record on NimoteCode for phone">
-  <strong>Git commit record</strong>
-</ImagePlaceholder>
-
-<ImagePlaceholder image-key="localWorkspaceGitPanel" alt="Source Control panel for a local workspace on NimoteCode for phone">
-<strong>ローカル ワークスペースの変更を確認</strong>
-</ImagePlaceholder>
-
-AI 支援によりレビューを迅速化できますが、環境固有の意図を検証することはできません。チームが必要とするワークフローにブランチ保護、CI、人間によるレビューを組み込みます。
-
-
-[SSH リモート開発ワークフロー](/docs/ssh)、[AI チャットとエージェント](/docs/ai)、および [無料とプロの比較](/pro)を参照してください。
+</div>

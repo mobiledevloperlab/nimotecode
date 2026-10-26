@@ -1,51 +1,50 @@
 ---
-title: Mobile Code Editor | NimoteCode
-description: Use NimoteCode’s mobile code editor with tabs, split panes, image and media preview, clipboard operations, undo/redo, cursor tracking, outline navigation and linked Terminal and AI panels.
+title: 코드 편집기 | NimoteCode
+description: "코드 편집기 설정, 사용 절차 및 화면 안내."
 ---
 
-# 모바일 코드 편집기
+# 코드 편집기
 
+## 파일 열기 및 탭 전환
 
-편집기는 작업 공간이 변화되는 곳입니다. 로컬 프로젝트, SSH 작업공간 또는 검색 결과에서 파일을 엽니다. 그런 다음 별도의 앱 간에 이동하는 대신 파일을 터미널, AI 및 소스 제어에 연결된 상태로 유지하세요.
+Explorer 또는 Search에서 파일을 열면 각각 탭으로 표시됩니다. 로컬 및 원격 파일을 지원하며, 분할 창으로 두 파일을 나란히 편집할 수 있습니다. 디스크의 파일을 읽는 외부 도구를 실행하기 전에 변경 사항을 저장하세요.
 
+<div class="doc-screenshots">
+  <DocScreenshot file="editor-empty-state.png" caption="열린 탭이 없을 때 Browse files로 파일을 선택할 수 있습니다." />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="여러 파일 탭이 열려 있고 webapp.py가 활성화되어 있습니다." />
+</div>
 
-<ImagePlaceholder image-key="editor" alt="NimoteCode mobile code editor">
-  <strong>Image placeholder — editing a remote project</strong>
-  <span>Replace with a clean phone or tablet screenshot showing code tabs, the active file and a docked Terminal or AI panel.</span>
-</ImagePlaceholder>
+## 텍스트 선택 및 편집
 
-## 집중 편집을 위해 설계됨
+텍스트 범위를 선택해 복사, 잘라내기 또는 바꾸기를 할 수 있습니다. 선택 메뉴에는 **Ask AI**도 있습니다. 더보기 메뉴에는 실행 취소, 다시 실행 및 클립보드 작업이 있습니다. 휴대폰, 태블릿, 데스크톱에서 동일한 편집기 구현을 사용하며 키보드 및 IME 입력을 지원합니다.
 
+<div class="doc-screenshots">
+  <DocScreenshot file="editor-code-selection.png" caption="줄 번호와 구문 강조가 표시된 Python 소스 편집 화면." />
+  <DocScreenshot file="editor-context-menu.jpg" caption="Copy, Cut, Paste, Select All, Ask AI가 있는 텍스트 선택 메뉴." />
+  <DocScreenshot file="editor-overflow-menu.jpg" caption="Undo, Redo 및 클립보드 명령이 있는 편집기 더보기 메뉴." />
+</div>
 
-- 작은 변경을 수행하는 동안 여러 파일을 탭에 열어 두세요.
+<div class="doc-section">
+<div class="doc-section__copy">
 
-- 관련 코드를 나란히 비교하거나 편집해야 하는 경우 분할 창에서 두 개의 파일을 엽니다.
+## 심볼 및 기록 탐색
 
-- 이미지를 검사하고 지원되는 오디오 또는 비디오를 편집기에서 직접 재생합니다.
+심볼 메뉴에는 **Go To Definition**, **References**, **Rename Symbol**, **Outline** 및 Git 기록 작업이 있습니다. 코드 탐색에는 설정된 언어 서버가 필요하며 기록 작업에는 Git 저장소가 필요합니다.
 
-- 모바일 편집기에서 복사, 잘라내기, 붙여넣기, 모두 선택, 실행 취소 및 다시 실행을 사용하세요.
+</div>
 
-- 오류를 처리하거나 댓글을 검토하면서 현재 줄과 열을 추적합니다.
+<div class="doc-screenshots">
+  <DocScreenshot file="editor-symbol-menu.jpg" caption="현재 파일의 심볼 및 기록 작업." />
+</div>
 
-- 기호 정보가 있는 경우 개요를 사용합니다.
+</div>
 
-- 활성 파일을 [AI 채팅 및 에이전트](/docs/ai)의 컨텍스트로 사용할 수 있도록 유지합니다.
+## Markdown 및 HTML 미리보기
 
+Markdown 소스를 편집한 뒤 미리보기에서 렌더링된 제목, 코드 블록 및 표를 확인합니다. HTML 미리보기는 저장하지 않은 변경 사항을 포함한 현재 편집 내용의 스냅샷을 표시하고 참조 리소스를 작업 공간에서 읽습니다. 정적 HTML 미리보기에는 SSH 호스트의 웹 서버가 필요하지 않습니다. 서버 측 동작에는 프로젝트의 실행 환경이 필요합니다.
 
-<ImagePlaceholder image-key="editorOutline" alt="Code editor outline on NimoteCode for phone">
-  <strong>Navigate code with the editor outline</strong>
-</ImagePlaceholder>
-
-## 좋은 모바일 편집 루프
-
-
-1. 탐색기 또는 [검색](/docs/search)에서 파일을 찾습니다.
-
-2. 가장 작은 유용한 편집을 하고 저장하세요.
-
-3. 프로젝트에서 URL을 제공하면 앱에서 로컬 또는 원격 웹 변경 사항을 미리 본 후 [터미널](/docs/terminal)에서 확인 명령을 실행하세요.
-
-4. [소스 제어](/docs/source-control)에서 결과 diff를 검사합니다. 배달에 게이트 Git 쓰기 작업이 필요한 경우 Pro를 사용하세요.
-
-
-장기간의 탐색 작업에는 여전히 데스크톱이 더 나은 도구일 수 있습니다. 편집기는 지금 수행해야 하는 집중적인 작업에 최적화되어 있습니다.
+<div class="doc-screenshots">
+  <DocScreenshot file="markdown-source-editor.jpg" caption="README.md 소스 편집 화면." />
+  <DocScreenshot file="markdown-preview.jpg" caption="디렉터리 트리와 표가 포함된 README.md 미리보기." />
+  <DocScreenshot file="html-report-preview.jpg" caption="편집기 미리보기 탭에 표시된 HTML 벤치마크 보고서." />
+</div>

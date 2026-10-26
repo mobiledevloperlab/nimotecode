@@ -1,25 +1,25 @@
 ---
-title: 远程 Tasks | NimoteCode
-description: 在 NimoteCode Tasks 中保存、分组和运行可复用的 SSH 终端命令。
+title: 任务 | NimoteCode
+description: "任务的配置、操作步骤与界面说明。"
 ---
 
-# 远程 Tasks
+# 任务
 
-Tasks 将已经验证过的远程命令流程保存为可命名、可复用的操作。它适合构建检查、测试、格式化、健康检查和日志查询等不应在小屏幕上反复输入的工作。
+<div class="doc-section">
+<div class="doc-section__copy">
 
-<ImagePlaceholder image-key="tasksPage" alt="NimoteCode 手机上的 Tasks 页面">
-  <strong>可复用的远程任务目录</strong>
-</ImagePlaceholder>
+## 创建可复用命令
 
-## 围绕结果组织任务
+Tasks 将命令保存为命名任务，并支持按用途分组。点击 **+** 添加任务，填写命令及配置，按需指定分组。任务通过已连接的 SSH 环境执行，也包括通过本地 SSH 连接的 Android Local Linux。
 
-- 将 **构建与测试** 命令放到一个清晰分组。
-- 将 **检查与格式化** 与部署操作分开。
-- 让 **重启、健康检查、日志** 任务的影响一眼可见。
-- 在 SSH 终端上下文中运行，并跟踪输出和状态。
+</div>
 
-## 安全使用 Tasks
+<div class="doc-screenshots">
+  <DocScreenshot file="task-runner.png" caption="Tasks 中的 All、Test 分组及 Run Tests 条目；示例命令为 echo，并非已完成的测试结果。" />
+</div>
 
-Tasks 运行在 SSH 工作流中，因此应在任务名称和命令里清晰体现环境。先从只读或低风险流程开始，记录前置条件，不要用模糊名称隐藏破坏性操作。创建和运行任务不区分单独的 Pro 档位。
+</div>
 
-相关：[SSH 工作区](/zh/docs/ssh) · [终端](/zh/docs/terminal) · [配置指南](/zh/docs/configuration)
+## 运行并检查输出
+
+点击任务旁的运行按钮，在终端检查输出。任务名称只是标签，并不能说明命令实际完成了什么；执行前检查命令和工作目录。基础任务创建与执行无需额外 Pro 权益。

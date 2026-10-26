@@ -1,34 +1,25 @@
 ---
-title: Remote Tasks | NimoteCode
-description: Save, group and run repeatable SSH terminal commands in NimoteCode Tasks.
+title: 작업 | NimoteCode
+description: "작업 설정, 사용 절차 및 화면 안내."
 ---
 
-# 원격 작업
+# 작업
 
+<div class="doc-section">
+<div class="doc-section__copy">
 
-작업은 알려진 원격 명령 절차를 재사용 가능한 명명된 작업으로 전환합니다. 작은 화면에 다시 입력하면 안 되는 빌드 확인, 테스트, 포맷팅, 상태 확인 및 로그 루틴에 유용합니다.
+## 재사용할 명령 만들기
 
+Tasks는 명령에 이름을 붙여 저장하고 용도별로 그룹화합니다. **+**로 작업을 추가하고 명령과 구성을 입력한 뒤 필요한 경우 그룹을 지정합니다. 작업은 연결된 SSH 환경에서 실행되며, 로컬 SSH 연결을 사용하는 Android Local Linux도 포함됩니다.
 
-<ImagePlaceholder image-key="tasksPage" alt="Tasks page on NimoteCode for phone">
-  <strong>Reusable remote task catalog</strong>
-</ImagePlaceholder>
+</div>
 
-## 결과 중심의 작업 카탈로그 구축
+<div class="doc-screenshots">
+  <DocScreenshot file="task-runner.png" caption="All, Test 그룹과 Run Tests 항목이 있는 Tasks. 예시 명령은 echo이며 완료된 테스트 결과가 아닙니다." />
+</div>
 
+</div>
 
-- 관련 **빌드 및 테스트** 명령을 그룹화합니다.
+## 실행 및 출력 확인
 
--  **린트 및 형식** 루틴을 배포 작업과 별도로 유지하세요.
-
--  **다시 시작, 상태 확인 및 로그** 작업의 이름을 지정하여 효과가 명확하도록 합니다.
-
-- SSH 터미널 컨텍스트에서 작업을 실행하고 출력 및 상태를 따릅니다.
-
-
-## 작업을 안전하게 사용하세요
-
-
-작업은 SSH 워크플로를 통해 실행되므로 작업 이름과 명령에서 활성 환경을 명확하게 만드세요. 읽기 전용 또는 위험도가 낮은 루틴으로 시작하고 전제 조건을 문서화하고 모호한 레이블 뒤에 파괴적인 작업을 숨기지 마십시오. 별도의 Pro Tier 없이 태스크 생성 및 실행이 가능합니다.
-
-
-관련: [SSH 작업 영역](/docs/ssh) · [터미널](/docs/terminal) · [구성](/docs/configuration)
+작업 옆의 실행 버튼을 누르고 터미널 출력을 확인합니다. 작업 이름은 레이블일 뿐 명령을 검증하지 않습니다. 실행 전에 명령과 작업 디렉터리를 확인하세요. 기본 작업 생성 및 실행에는 Pro가 필요하지 않습니다.

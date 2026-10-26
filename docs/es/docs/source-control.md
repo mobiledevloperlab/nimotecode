@@ -1,58 +1,60 @@
 ---
-title: Mobile Git Source Control | NimoteCode
-description: "Use NimoteCode for mobile Git review: repository status, diffs and history are available to all users; Pro unlocks gated Git write workflows."
+title: Control de código fuente | NimoteCode
+description: "Configuración, procedimientos y referencia de la interfaz: Control de código fuente."
 ---
 
-# Control de fuente Git móvil
+# Control de código fuente
 
+<div class="doc-section">
+<div class="doc-section__copy">
 
-Source Control trae la parte revisable de Git al espacio de trabajo donde editó y verificó el cambio. El estado del repositorio, las diferencias y el historial están disponibles para todos los usuarios. **Pro** se requiere solo cuando un paso de entrega necesita un flujo de trabajo de escritura Git cerrado, no como sustituto de las políticas de revisión y sucursales de su equipo.
+## Consultar el estado del repositorio
 
+Abra Source Control en un espacio Git. **Changes** enumera archivos modificados, eliminados y sin seguimiento; **Staged Changes** muestra los preparados para un commit. Actualice el estado después de realizar operaciones fuera de la aplicación.
 
-<ImagePlaceholder image-key="sourceControl" alt="NimoteCode mobile Git source control">
-  <strong>Image placeholder — review a Git diff on mobile</strong>
-  <span>Replace with a screenshot showing changed files, a readable diff and commit controls in the Source Control panel.</span>
-</ImagePlaceholder>
+</div>
 
-## Qué puedes hacer
+<div class="doc-screenshots">
+  <DocScreenshot file="source-control-changes.png" caption="Archivos modificados y sin seguimiento, con secciones separadas de cambios preparados e historial." />
+</div>
 
+</div>
 
-- Revise archivos preparados, no preparados y en conflicto.
+## Revisar diferencias y commits
 
-- Inspecciona las diferencias de archivos y el historial del repositorio.
+Abra un archivo modificado para comparar su contenido anterior y nuevo. Abra un commit en **Commit History** para inspeccionar los cambios por archivo. El diff de la captura contiene una edición temporal de texto: ilustra la revisión, no recomienda ese cambio de código.
 
-- Actualice el estado de los repositorios locales y remotos en el espacio de trabajo activo, incluidos los repositorios de primera confirmación.
+<div class="doc-screenshots">
+  <DocScreenshot file="git-diff-view.jpg" caption="Contenido anterior y nuevo con adiciones y eliminaciones resaltadas." />
+  <DocScreenshot file="git-commit-details.jpg" caption="Detalles del commit con parches por archivo." />
+</div>
 
-- Busque, cree y cambie ramas desde el encabezado de Git.
+<div class="doc-section">
+<div class="doc-section__copy">
 
-- Organiza el trabajo seleccionado y prepara una confirmación después de revisar la diferencia.
+## Cambiar de rama
 
-- Con Pro, use acciones de escritura Git cerradas, como confirmar, enviar y guardar, cuando los permisos del repositorio y del host lo permitan.
+Seleccione el nombre de la rama en la cabecera para buscar, crear o hacer checkout de una rama existente. Revise el trabajo sin confirmar antes de cambiar. Las operaciones de escritura de Git requieren los permisos de repositorio y el acceso Pro correspondientes.
 
-- Utilice Git AI para ayudar a explicar un cambio, redactar un mensaje de confirmación o solicitar una revisión orientada al riesgo.
+</div>
 
+<div class="doc-screenshots">
+  <DocScreenshot file="git-branch-checkout.jpg" caption="Diálogo Checkout Branch con búsqueda y Create New Branch." />
+</div>
 
-## Un flujo de confirmación móvil deliberado
+</div>
 
+<div class="doc-section">
+<div class="doc-section__copy">
 
-1. Guarde la edición y verifíquela en [Terminal](/docs/terminal).
+## Usar las herramientas de IA de Git
 
-2. Abra Source Control y lea la diferencia, no solo el resumen generado.
+Abra **AI Tools**, elija proveedor y archivos, y seleccione **Commit Message**, **Explanation** o **Risk Analysis**. Para explicar los cambios, seleccione **Explain Changes**. El texto generado complementa el diff; verifíquelo antes de usarlo en un commit o una revisión.
 
-3. Organiza los cambios previstos y escribe o genera un mensaje de confirmación.
+</div>
 
-4. Con acceso Pro, confirme, luego extraiga o envíe solo si es apropiado para el flujo de trabajo de su repositorio.
+<div class="doc-screenshots">
+  <DocScreenshot file="git-ai-explanation.jpg" caption="Pestaña Explanation con un resumen de IA de los cambios seleccionados." />
+</div>
 
-
-<ImagePlaceholder image-key="gitCommitRecord" alt="Git commit record on NimoteCode for phone">
-  <strong>Git commit record</strong>
-</ImagePlaceholder>
-
-<ImagePlaceholder image-key="localWorkspaceGitPanel" alt="Source Control panel for a local workspace on NimoteCode for phone">
-  <strong>Review local workspace changes</strong>
-</ImagePlaceholder>
-
-La asistencia de IA puede hacer que una revisión sea más rápida, pero no puede validar la intención específica del entorno. Mantenga la protección de sucursales, la CI y la revisión humana en el flujo de trabajo donde su equipo los requiera.
-
-
-Consulte [flujo de trabajo de desarrollo remoto SSH](/docs/ssh), [Chat y agente AI](/docs/ai) y [Comparar gratis y profesional](/pro).
+</div>

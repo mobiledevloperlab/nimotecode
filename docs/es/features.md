@@ -92,3 +92,5 @@ Con la versión 1.1.8, **Early Access Pro** abre los flujos de trabajo a continu
 
 
 Si está evaluando cómo estas funciones se adaptan a una sesión SSH, consulte el flujo de trabajo [cliente SSH de Android](/android-ssh-client), lea [la guía de IDE móvil](/blog/best-ssh-clients) o abra la [descripción general de SSH IDE](/ssh-ide) para ver el ciclo completo de desarrollo remoto.
+
+Consulte la [referencia de la interfaz](/es/docs/screenshot-guide) para ver capturas y procedimientos.

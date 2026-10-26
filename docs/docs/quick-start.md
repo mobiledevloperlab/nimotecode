@@ -1,47 +1,69 @@
 ---
-title: Quick Start | NimoteCode Mobile IDE
-description: Open a local, Android Local Linux, or SSH workspace in NimoteCode, edit a file, run a verification command and choose the next mobile development workflow.
+title: Quick start | NimoteCode
+description: "Configuration, procedures, and interface reference for quick start."
 ---
 
-# Quick Start
-
-Use this guide to prove the workflow first: open a project, make one small edit and verify it in the terminal. It works with a local project, an SSH workspace, or Android Local Linux on a supported device.
+# Quick start
 
 <figure class="quick-start-hero">
-  <img src="/images/placeholders/Start_Overview.png" width="1400" height="900" alt="NimoteCode overview showing the welcome screen and options for demo, Local Linux, remote SSH, and local workspaces" loading="lazy" decoding="async">
-  <figcaption>Start with a demo, Local Linux, a remote SSH host, or files already on your device.</figcaption>
+  <img src="/screenshots/nimote-pro.webp" width="1440" height="810" alt="NimoteCode on tablet and phone, with local and SSH workspaces, code editing, Git, Terminal, AI, debugging, and sync." decoding="async" fetchpriority="high">
 </figure>
 
-## 1. Open a workspace
+## Open a workspace
 
-Choose **Open Local Workspace** for a project on your device, **Connect Remote Workspace** for a remote host, or **Local Linux** for bundled Ubuntu on a supported Android 8+ ARM64/x86_64 device. You can also use **Try Demo Workspace** to explore a sample project immediately. Local Linux needs no root access and is not available on iOS; see [Android Local Linux](/docs/local-linux) for its setup and lifecycle. For an SSH workspace, enter the host, port and username; then choose password, key file or pasted private key authentication. Confirm the project root before you start working.
+Choose a workspace from the welcome screen. **Open Local Workspace** opens files on the device; **Connect Remote Workspace** connects to an SSH host. **Local Linux** installs Ubuntu on supported Android devices. To explore the interface without configuring a host, choose **Try Demo Workspace**.
 
-<figure class="seo-media-placeholder seo-media-placeholder--device-pair has-image has-single-device-image">
-  <div class="seo-media-placeholder__device-pair">
-    <div class="seo-media-placeholder__device seo-media-placeholder__device--phone">
-      <img class="seo-media-placeholder__image" src="/images/placeholders/Getting_Started.jpg" width="930" height="2048" alt="NimoteCode welcome screen with options to open a demo, Local Linux, remote, or local workspace" loading="lazy" decoding="async">
-    </div>
-  </div>
-  <figcaption class="seo-media-placeholder__caption">Choose the workspace that matches where your project runs; AI configuration can be changed later.</figcaption>
-</figure>
-
-## 2. Open, edit and save a file
-
-Select a file in Explorer or from [Search](/docs/search). It opens in the tabbed editor. Make a small change, save it, and keep the file active if you plan to ask AI about it.
-
-## 3. Verify in Terminal
-
-Open [Terminal](/docs/terminal) in the same workspace and run a harmless command such as `pwd`, `ls`, or your project’s test command. Use output search if the result is long.
-
-## 4. Choose the next step
-
-<div class="product-card-grid">
-  <div class="product-card"><strong>Review a change</strong><span>Open <a href="/docs/source-control">Source Control</a> to inspect the diff and stage it; committing or pushing needs Pro access.</span></div>
-  <div class="product-card"><strong>Ask for help</strong><span>Use <a href="/docs/ai">AI Chat or Agent</a> to explain code, plan a change or assist controlled multi-step work.</span></div>
-  <div class="product-card"><strong>Diagnose more deeply · Pro</strong><span>Use configured <a href="/docs/lsp">LSP</a>, <a href="/docs/debug">Debug</a> and <a href="/docs/terminal">Terminal</a> workflows.</span></div>
-  <div class="product-card"><strong>Reuse a command</strong><span>Save an established remote procedure in <a href="/docs/tasks">Tasks</a>.</span></div>
+<div class="doc-screenshots">
+  <DocScreenshot file="startup-light.jpg" caption="Welcome screen, light theme." />
+  <DocScreenshot file="startup-dark.jpg" caption="Welcome screen, dark theme." />
 </div>
 
-> For remote production environments, begin with read-only inspection and review every command, AI suggestion and Git change before it is applied.
+<div class="doc-section">
+<div class="doc-section__copy">
 
-Continue with [SSH Workspace](/docs/ssh), [Editor](/docs/editor), or [Watch Demo](/demo?utm_source=quick_start&utm_medium=website&utm_campaign=watch_demo).
+## Open and edit a file
+
+Select a project directory, then open a file in Explorer. Edit the file and save it before running a command that reads it from disk. See [Editor](/docs/editor) for selection, navigation, and preview controls.
+
+</div>
+
+<div class="doc-screenshots">
+  <DocScreenshot file="editor-multiple-files.jpg" caption="Open files appear in tabs; webapp.py is active in this example." />
+</div>
+
+</div>
+
+<div class="doc-section">
+<div class="doc-section__copy">
+
+## Run a command
+
+In an SSH or Local Linux workspace, open Terminal and run `pwd` to check the working directory. Run the project’s test or build command, then inspect changed files in [Source Control](/docs/source-control). A local folder alone does not provide a Linux runtime.
+
+</div>
+
+<div class="doc-screenshots">
+  <DocScreenshot file="terminal-command-output.png" caption="Terminal displaying project files listed by the ls command." />
+</div>
+
+</div>
+
+## Run AI Agent
+
+Use AI Agent to inspect the project and explain how its files fit together.
+
+1. Add a provider and configure model access in [Configuration](/docs/configuration).
+2. With the project workspace open, open the AI panel, select a configured model, and choose **Nimote Agent** from the agent selector.
+3. Select **Confirm** mode and send a request such as “Explain this project.”
+4. Review the proposed plan, then select **Approve this run** to allow the agent to execute its tools. Follow the file reads and tool results in the execution timeline.
+
+<div class="doc-screenshots">
+  <DocScreenshot file="ai-plan-approval.jpg" caption="Confirm mode: review the project-inspection plan before approving the run." />
+  <DocScreenshot file="ai-plan-running.jpg" caption="After approval, the agent reads project files and records its progress." />
+</div>
+
+Read the response alongside any limitations it identifies, such as files it could not inspect. You can send follow-up instructions during the run. See [AI Chat and Agent](/docs/ai) for agent selection and execution controls.
+
+## Configure optional tools
+
+Language servers and debug adapters require separate setup; see [LSP](/docs/lsp) and [Debugging](/docs/debug).

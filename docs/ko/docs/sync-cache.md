@@ -1,36 +1,25 @@
 ---
-title: Sync and Cache | NimoteCode Pro
-description: Move project content between local and remote NimoteCode workspaces with Pro Sync and Cache workflows, explicit direction, workspace path checks and transfer history.
+title: 동기화 및 캐시 | NimoteCode
+description: "동기화 및 캐시 설정, 사용 절차 및 화면 안내."
 ---
 
 # 동기화 및 캐시
 
+<div class="doc-section">
+<div class="doc-section__copy">
 
-동기화/캐시는 로컬 작업 공간과 원격 작업 공간 간에 프로젝트 콘텐츠를 의도적으로 이동하기 위한 **Pro** 워크플로입니다. 이는 전송에 가시적인 방향을 제공하고 대상을 활성 작업 공간 경계 내부에 유지합니다.
+## 전송 방향 선택
 
+**Sync**는 로컬 프로젝트 내용을 원격 작업 공간으로 전송합니다. **Cache**는 원격 내용을 로컬 저장소로 가져옵니다. 시작 전에 연결 상태와 표시된 경로를 확인하세요. Sync / Cache에는 Pro 권한이 필요합니다.
 
-<ImagePlaceholder image-key="syncCache" alt="NimoteCode Sync and Cache">
-  <strong>Image placeholder — choose a safe transfer direction</strong>
-  <span>Replace with a screenshot showing Sync or Cache direction, selected workspace path and transfer history.</span>
-</ImagePlaceholder>
+</div>
 
-## 두 가지 명확한 방향
+<div class="doc-screenshots">
+  <DocScreenshot file="sync-cache-status.png" caption="연결된 Cache 화면. Start Cache와 빈 Recent History가 표시되며, 이 예시에서는 전송이 아직 완료되지 않았습니다." />
+</div>
 
+</div>
 
-- **동기화**는 로컬 프로젝트를 원격 작업 공간으로 이동합니다.
+## 전송 시작 및 확인
 
-- **캐시**는 원격 프로젝트 콘텐츠를 로컬 작업 공간으로 다시 가져옵니다.
-
-
-<ImagePlaceholder image-key="cacheToLocalWorkspace" alt="Caching a remote project to a local workspace on NimoteCode for phone">
-  <strong>Cache a remote project to a local workspace</strong>
-</ImagePlaceholder>
-
-<ImagePlaceholder image-key="cacheToLocalWorkspaceComplete" alt="Completed cache transfer to a local workspace on NimoteCode for phone">
-  <strong>Completed local workspace cache transfer</strong>
-</ImagePlaceholder>
-
-전송 전 방향과 대상 경로를 읽고 어떤 버전이 신뢰할 수 있는지 확인한 후 기록된 결과를 검토하세요. 동기화/캐시는 제어된 핸드오프 또는 오프라인 검사에 유용합니다. 저장소의 일반적인 Git 검토 및 백업 방식을 대체해서는 안 됩니다.
-
-
-관련: [SSH 작업 공간](/docs/ssh) · [소스 제어](/docs/source-control) · [프로](/pro)
+표시된 위치가 원하는 프로젝트가 아니면 **Change**로 변경한 뒤 시작합니다. 완료 후 결과와 최근 기록을 확인합니다. 전송 전에 어느 복사본을 기준으로 할지 결정하세요. 캐시 기록은 버전 관리나 백업을 대신하지 않습니다.

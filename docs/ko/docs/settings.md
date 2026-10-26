@@ -1,36 +1,34 @@
 ---
-title: Settings | NimoteCode Mobile IDE
-description: Personalize NimoteCode with account, subscription, theme, language, editor and mobile keyboard settings for a comfortable development workspace.
+title: 설정 | NimoteCode
+description: "설정 설정, 사용 절차 및 화면 안내."
 ---
 
 # 설정
 
+## 모양 및 언어
 
-설정은 실제로 사용하는 장치에서 작업 공간을 예측할 수 있도록 도와줍니다. 가독성과 입력부터 시작한 다음 Pro 기능이 필요할 때 계정 및 구독 상태를 확인하세요.
+**Settings**에서 앱 테마, 편집기 색상, 인터페이스 배율 및 언어를 변경합니다. **Follow app**은 편집기 색상을 앱 테마에 맞춥니다. 계정 및 구매 관리도 이곳에 있습니다. 화면 예시는 서로 다른 계정 상태를 보여 줍니다.
 
-
-<ImagePlaceholder image-key="appSettings" alt="App settings on NimoteCode for phone">
-  <strong>Settings on phone</strong>
-</ImagePlaceholder>
-
-<div class="product-card-grid">
-  <div class="product-card"><strong>Appearance</strong><span>Choose the app and IDE theme, then switch the interface language where needed.</span></div>
-  <div class="product-card"><strong>Editor</strong><span>Adjust font family, size and line height for the amount of code you read on your screen.</span></div>
-  <div class="product-card"><strong>Keyboard</strong><span>Configure soft-keyboard behavior, feedback, number/function rows, gestures and function-key mappings.</span></div>
-  <div class="product-card"><strong>Account</strong><span>Review sign-in, subscription state, purchase management and restore-purchase options.</span></div>
-  <div class="product-card"><strong>Open-source notices</strong><span>Review licenses and attribution for Codex, xterm, Flutter packages and other bundled open-source software.</span></div>
+<div class="doc-screenshots">
+  <DocScreenshot file="app-settings-light.png" caption="White 테마에서 로그인된 계정의 설정 화면." />
+  <DocScreenshot file="app-setting-dark.jpg" caption="Black 테마에서 로그인 항목이 표시된 설정 화면." />
 </div>
 
-## 권장되는 첫 번째 설정
+<div class="doc-section">
+<div class="doc-section__copy">
 
+## 패널 및 편집기 설정 {#panel-and-editor-preferences}
 
-1. 지속적으로 확대/축소하지 않고도 코드를 계속 읽을 수 있는 테마와 유형 크기를 선택하세요.
+**Plugins** 설정 페이지에서 LSP, Debug, Sync / Cache, Tasks 패널 표시를 제어합니다. 자동 줄 바꿈, 편집기 글자 크기, 줄 높이 및 글꼴도 설정합니다. 패널을 활성화해도 언어 서버, 디버그 어댑터 또는 실행 의존성이 설치되지는 않습니다.
 
-2. 일반적인 언어 및 셸 작업 흐름에 도움이 되는 키보드 컨트롤만 활성화합니다.
+</div>
 
-3. 시간에 민감한 Pro 워크플로 전에 계정 및 구독 상태를 확인하세요.
+<div class="doc-screenshots">
+  <DocScreenshot file="plugin-settings.png" caption="Plugins 페이지의 패널 표시 옵션과 편집기 글꼴 설정." />
+</div>
 
-4. 사고 발생 시 서두르지 말고 [구성](/docs/configuration)에서 AI 및 SSH 연결 세부 정보를 추가하세요.
+</div>
 
+## 사용자 지정 플러그인 만들기
 
-정책 및 계정 요청 링크의 경우 앱 또는 사이트 바닥글 내에 제공된 항목을 사용하세요.
+생성, 미리보기, 설치 및 관리는 [사용자 지정 플러그인](/ko/docs/plugins)을 참고하세요. 권한, 스크립트 요구 사항 및 백그라운드 작업도 안내합니다.

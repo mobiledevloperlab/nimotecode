@@ -1,30 +1,25 @@
 ---
-title: Sync 与 Cache | NimoteCode Pro
-description: 使用 NimoteCode Pro 的 Sync 与 Cache 在本地和远程工作区之间移动项目内容，并明确传输方向、工作区路径检查与操作历史。
+title: 同步与缓存 | NimoteCode
+description: "同步与缓存的配置、操作步骤与界面说明。"
 ---
 
-# Sync 与 Cache
+# 同步与缓存
 
-Sync / Cache 是用于在本地与远程工作区之间主动移动项目内容的 **Pro** 工作流。它会明确传输方向，并将目标路径限制在当前工作区边界内。
+<div class="doc-section">
+<div class="doc-section__copy">
 
-<ImagePlaceholder image-key="syncCache" alt="NimoteCode Sync 与 Cache">
-  <strong>图片占位符 —— 选择安全的传输方向</strong>
-  <span>请替换为展示 Sync 或 Cache 方向、工作区路径和传输历史的截图。</span>
-</ImagePlaceholder>
+## 选择传输方向
 
-## 两个清晰方向
+**Sync** 将本地项目内容传输到远程工作区；**Cache** 将远程内容缓存到本地存储。开始前确认连接状态及页面显示的路径。Sync / Cache 需要 Pro 权益。
 
-- **Sync**：从本地项目向远程工作区传输。
-- **Cache**：将远程项目内容带回本地工作区。
+</div>
 
-<ImagePlaceholder image-key="cacheToLocalWorkspace" alt="NimoteCode 手机上的远程项目缓存至本地工作区">
-  <strong>将远程项目缓存到本地工作区</strong>
-</ImagePlaceholder>
+<div class="doc-screenshots">
+  <DocScreenshot file="sync-cache-status.png" caption="已连接的 Cache 视图，提供 Start Cache；Recent History 为空，示例未显示已完成的传输。" />
+</div>
 
-<ImagePlaceholder image-key="cacheToLocalWorkspaceComplete" alt="NimoteCode 手机上的本地工作区缓存传输完成">
-  <strong>本地工作区缓存传输完成</strong>
-</ImagePlaceholder>
+</div>
 
-传输前请阅读方向和目标路径、明确哪一份内容是权威版本，并在结束后检查记录结果。Sync / Cache 适合受控交接或离线检查，不应替代仓库正常的 Git 审查与备份策略。
+## 开始并检查传输
 
-相关：[SSH 工作区](/zh/docs/ssh) · [Source Control](/zh/docs/source-control)
+显示的位置不是目标项目时，先通过 **Change** 修改，再启动传输。完成后检查结果及最近记录。传输前应明确以哪一份文件为准；缓存记录不能替代版本控制或备份。

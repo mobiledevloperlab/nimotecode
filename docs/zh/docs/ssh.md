@@ -1,62 +1,49 @@
 ---
-title: 本地与远程 SSH 工作区 | NimoteCode 移动 IDE
-description: 在 NimoteCode 中打开本地项目或通过 SSH 连接远程项目，支持 SOCKS5 与 HTTP CONNECT 代理，并在明确的项目根路径中完成工作。
+title: 本地与 SSH 工作区 | NimoteCode
+description: "本地与 SSH 工作区的配置、操作步骤与界面说明。"
 ---
 
-# 本地与远程 SSH 工作区
+# 本地与 SSH 工作区
 
-NimoteCode 从工作区开始：可以是在设备中保存的本地项目，也可以是通过 SSH 访问的远程项目。Explorer、编辑器和终端都会保持指向同一项目根路径，让任务从检查到验证始终可理解。要在 Android 中使用内置 Ubuntu，请查看 [Android 本地 Linux](/zh/docs/local-linux)。
+## 选择工作区
 
-<ImagePlaceholder image-key="localWorkspace" alt="NimoteCode 手机上的本地工作区">
-  <strong>本地工作区</strong>
-  <span>通过 Local Explorer 打开保存在设备中的项目。</span>
-</ImagePlaceholder>
+Explorer 提供本地、远程 SSH、Local Linux 和演示入口，Recent History 列出最近打开的位置。当前工作区决定文件访问范围及可用工具。
 
-## 打开本地工作区
+<div class="doc-screenshots">
+  <DocScreenshot file="workspace-start-light.png" caption="尚未打开工作区的 Explorer，浅色主题。" />
+  <DocScreenshot file="workspace-start-dark.jpg" caption="尚未打开工作区的 Explorer，深色主题。" />
+</div>
 
-选择 **Local Explorer** 浏览保存在设备中的项目。编辑文件、执行命令或使用 Source Control 审查改动前，先确认当前文件夹。
+## 打开本地目录
 
-## 连接 SSH 工作区
+选择 **Open Local Workspace**，通过系统选择器选择存储位置并授权访问项目目录。该目录将作为 Local Explorer 的根目录。选择器外观和可用位置由操作系统决定。
 
-<ImagePlaceholder image-key="sshWorkspace" alt="NimoteCode SSH 工作区配置">
-  <strong>SSH 工作区配置</strong>
-  <span>连接远程主机后，在 Remote Explorer 中打开项目根目录。</span>
-</ImagePlaceholder>
+<div class="doc-screenshots">
+  <DocScreenshot file="local-storage-picker.png" caption="Android 存储位置选择器。" />
+  <DocScreenshot file="local-file-browser.png" caption="Android 目录选择器及 Use this folder 授权按钮。" />
+  <DocScreenshot file="local-workspace-files.png" caption="选定目录后的 Local Explorer；示例目录未列出项目文件。" />
+</div>
 
-通过以下四步连接：
+## 配置 SSH 连接
 
-1. 新建或选择 SSH 配置档。
-2. 填写主机、端口和用户名。
-3. 使用密码、私钥文件或粘贴私钥认证；网络需要时可通过 SOCKS5 或 HTTP CONNECT 代理连接。
-4. 确认远程项目根路径，然后在 Remote Explorer 中打开它。
+1. 选择 **Connect Remote Workspace**，再通过 **Connect** 添加连接配置。
+2. 填写主机、端口、用户名和认证方式。
+3. 网络需要代理时，在 **Proxy Settings** 中选择 SOCKS5 或 HTTP CONNECT。
+4. 连接成功后选择远程项目目录。
 
-## 选择并确认远程目录
+**Ping / test SSH port** 仅检查主机与端口的直接 TCP 连通性，不经过代理，也不验证登录凭据。端口测试成功不代表 SSH 登录成功。
 
-Explorer 是 SSH 项目的起点。连接后选择 **Remote Explorer**，再确认主机和项目根路径，之后再打开文件或执行命令。
+<div class="doc-screenshots">
+  <DocScreenshot file="remote-connection-form.jpg" caption="SSH 连接表单，包括端口测试、代理和认证设置。" />
+  <DocScreenshot file="remote-connection-history.png" caption="Recent History 中保存的 SSH 连接。" />
+</div>
 
-<ImagePlaceholder image-key="explorerPage" alt="NimoteCode 手机上的 Explorer 选择页面">
-  <strong>选择工作区 Explorer</strong>
-</ImagePlaceholder>
+## 选择项目根目录
 
-<ImagePlaceholder image-key="explorerPopup" alt="NimoteCode 手机上的 Explorer 选择弹窗">
-  <strong>Explorer 选择控件</strong>
-</ImagePlaceholder>
+在远程目录选择器中输入路径或逐级浏览到项目目录。打开后，检查 Explorer 显示的服务器、用户、端口和根路径。点击 **Select** 进入文件选择模式。切换目录会改变项目工具使用的工作区。
 
-应选择项目根目录，而不是服务器的主目录。这样编辑器、终端、搜索和 Source Control 才会共享明确边界，也能降低在错误位置执行命令的风险。
-
-<ImagePlaceholder image-key="remoteDirectory" alt="NimoteCode 手机上的远程目录选择对话框">
-  <strong>选择远程项目目录</strong>
-</ImagePlaceholder>
-
-## 保持在同一上下文中的操作
-
-- 在远程项目中浏览文件并用 [编辑器](/zh/docs/editor) 打开。
-- 在对应项目中使用 [终端](/zh/docs/terminal) 执行命令。
-- 使用[远程代码搜索](/zh/docs/search)定位配置、报错或函数引用。
-- 在 [Source Control](/zh/docs/source-control) 中审查聚焦补丁；交付需要受限 Git 写入操作时再使用 Pro。
-
-## 更稳妥的远程习惯
-
-为每个环境设置独立配置档；敏感主机优先使用低权限账号与私钥认证；工作区根目录应明确。使用代理时，也应像核验目标主机一样核验其地址与信任边界。断线重连感知与连接复用让远程命令和预览隧道更可靠，但在执行写入操作前，始终重新确认当前主机和目录。
-
-下一步：[终端](/zh/docs/terminal) · [SSH 远程开发工作流](/zh/docs/ssh)
+<div class="doc-screenshots">
+  <DocScreenshot file="remote-directory-picker.jpg" caption="Remote Directory 对话框，用于选择工作区根目录。" />
+  <DocScreenshot file="remote-workspace-connected.jpg" caption="已连接的 Remote Explorer，显示当前主机与根路径。" />
+  <DocScreenshot file="remote-file-selection.jpg" caption="Remote Explorer 的文件选择模式。" />
+</div>
