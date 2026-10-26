@@ -1,6 +1,5 @@
 /* ==========================================================================
    Pricing Feature System
-   - Pricing page shell (.pricing-page) widens the marketing doc track
    - Billing toggle (.pf-billing-toggle)
    - Pricing plan grid (.pf-pricing-grid / .pf-plan-card)
    - Free-trial banner (.pf-trial-banner)
@@ -8,22 +7,6 @@
    - Trust lines
    - Light-mode overrides + responsive behaviour
    ========================================================================== */
-
-/* The pricing page borrows the comparison page's wider shell so the plan
-   cards and feature grid can breathe instead of squeezing into the 760px
-   article column. Prose inside the page stays capped by .vp-doc. */
-.pricing-page .nimote-marketing-doc {
-  width: min(100% - 48px, 1120px);
-}
-.pricing-page .nimote-marketing-doc .vp-doc {
-  max-width: 100%;
-}
-.pricing-page .vp-doc > h1,
-.pricing-page .vp-doc > p {
-  max-width: 760px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .pricing-feature-system {
   width: 100%;
@@ -109,7 +92,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.8rem;
-  max-width: 860px;
+  width: 100%;
   margin: 2.4rem auto 0;
 }
 
@@ -242,7 +225,7 @@
   display: flex;
   align-items: center;
   gap: 22px;
-  max-width: 860px;
+  width: 100%;
   margin: 2.6rem auto 0;
   padding: 22px 28px;
   border-radius: var(--nimote-radius-lg);
@@ -393,9 +376,6 @@ html:not(.dark) .pf-billing-toggle button.active {
 }
 
 @media (max-width: 767px) {
-  .pricing-page .nimote-marketing-doc {
-    width: min(100% - 40px, 1120px);
-  }
 
   .pf-pricing-grid {
     grid-template-columns: minmax(0, 1fr);

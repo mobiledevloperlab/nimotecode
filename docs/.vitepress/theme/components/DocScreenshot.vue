@@ -94,16 +94,16 @@ onBeforeUnmount(unlockScroll)
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 12px 12px 30px;
+  padding: 0 0 28px;
   overflow: hidden;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 28px;
-  background: var(--nimote-bg-subtle);
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
   text-decoration: none;
   cursor: zoom-in;
   transition: border-color 160ms ease, background-color 160ms ease;
 }
-.vp-doc .doc-screenshot__stage:hover { border-color: var(--vp-c-text-3); }
+.vp-doc .doc-screenshot__stage:hover .doc-screenshot__zoom { color: var(--vp-c-brand-1); }
 .vp-doc .doc-screenshot__stage:focus-visible { outline: 2px solid var(--vp-c-brand-1); outline-offset: 4px; }
 .vp-doc .doc-screenshot img {
   display: block;
@@ -111,13 +111,13 @@ onBeforeUnmount(unlockScroll)
   max-width: 100%;
   height: auto;
   margin: 0;
-  border: 0;
+  /* A hairline follows the image itself, with no padded outer frame. */
+  border: 1px solid var(--nimote-border-strong);
   object-fit: contain;
-  border-radius: 20px;
-  box-shadow: 0 0 0 1px rgb(0 0 0 / 7%), 0 3px 6px rgb(0 0 0 / 5%), 0 14px 32px -12px rgb(0 0 0 / 24%);
+  border-radius: 12px;
+  box-shadow: none;
 }
-.dark .vp-doc .doc-screenshot img { box-shadow: 0 0 0 1px rgb(255 255 255 / 12%), 0 14px 32px -12px rgb(0 0 0 / 65%); }
-.doc-screenshot__zoom { position: absolute; right: 16px; bottom: 8px; display: flex; align-items: center; gap: 6px; font-size: 11px; line-height: 16px; color: var(--vp-c-text-2); }
+.doc-screenshot__zoom { position: absolute; right: 0; bottom: 2px; display: flex; align-items: center; gap: 6px; font-size: 11px; line-height: 16px; color: var(--vp-c-text-2); }
 .doc-screenshot__zoom svg { width: 14px; height: 14px; }
 .vp-doc .doc-screenshot figcaption {
   padding: 0 4px;

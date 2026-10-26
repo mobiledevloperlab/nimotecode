@@ -1,0 +1,130 @@
+/* One outer track for navigation, marketing, articles and documentation.
+   Only prose has a separate measure; cards and tables use the whole track. */
+.nimote-marketing-doc {
+  width: min(100%, var(--nimote-container));
+  padding-inline: var(--nimote-page-gutter);
+}
+
+.nimote-marketing-doc .vp-doc {
+  width: 100%;
+  max-width: none;
+  padding-bottom: 0;
+}
+
+.nimote-marketing-doc .home-page-section {
+  padding-inline: 0;
+}
+
+.nimote-marketing-doc .vp-doc > div > :is(p, ul, ol, blockquote) {
+  max-width: var(--nimote-reading-width);
+}
+
+.pricing-page .vp-doc > div > :is(h1, p) {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.nimote-marketing-doc .vp-doc > div > h1 {
+  max-width: 960px;
+  font-size: clamp(2rem, 3.6vw, 3rem);
+  line-height: 1.2;
+  letter-spacing: -.035em;
+  margin-bottom: 24px;
+}
+
+.nimote-marketing-doc .vp-doc > div > h2 {
+  margin-top: 56px;
+  padding-top: 28px;
+  padding-bottom: 0;
+  border-top: 1px solid var(--nimote-border);
+  border-bottom: 0;
+}
+
+/* VitePress otherwise assigns different geometry to sidebar-free articles. */
+.nimote-main-layout:not(.has-sidebar) > .VPContent > .VPDoc {
+  width: min(100%, var(--nimote-container));
+  margin-inline: auto;
+  padding: 56px var(--nimote-page-gutter) 80px;
+}
+.nimote-main-layout:not(.has-sidebar) .VPDoc :is(.container, .content, .content-container) {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  padding-inline: 0;
+}
+.nimote-main-layout:not(.has-sidebar) .VPDoc .vp-doc {
+  max-width: none;
+}
+.nimote-main-layout:not(.has-sidebar) .VPDoc .vp-doc > div > :is(p, ul, ol, blockquote) {
+  max-width: var(--nimote-reading-width);
+}
+
+.VPNavBar:not(.has-sidebar) .wrapper { padding-inline: 0; }
+.VPNavBar:not(.has-sidebar) > .wrapper > .container {
+  max-width: var(--nimote-container);
+  padding-inline: var(--nimote-page-gutter);
+}
+
+@media (max-width: 959px) {
+  .VPNavBar.has-sidebar .wrapper { padding-inline: 0; }
+  .VPNavBar.has-sidebar > .wrapper > .container {
+    width: 100%;
+    max-width: var(--nimote-container);
+    padding-inline: var(--nimote-page-gutter);
+  }
+}
+
+@media (min-width: 960px) {
+  .Layout {
+    --sidebar-width: 232px;
+    --sidebar-content-padding: var(--nimote-page-gutter);
+    --sidebar-shell-padding: 0px;
+  }
+  .nimote-main-layout.has-sidebar {
+    width: min(100%, var(--nimote-container));
+    margin-inline: auto;
+    padding-inline: var(--nimote-page-gutter);
+    gap: 32px;
+  }
+  .VPNavBar.has-sidebar > .wrapper > .container {
+    max-width: var(--nimote-container) !important;
+    margin-inline: auto !important;
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+  .VPNavBar.has-sidebar > .wrapper > .container > .title {
+    padding-inline: var(--nimote-page-gutter);
+    background: transparent !important;
+  }
+  .VPNavBar.has-sidebar .content {
+    padding-right: var(--nimote-page-gutter) !important;
+  }
+  .VPContent.has-sidebar { padding-right: 0 !important; }
+  .VPContent.has-sidebar .VPDoc { padding: 48px 0 64px; }
+  .VPContent.has-sidebar .VPDoc .container {
+    max-width: none;
+    gap: 24px;
+  }
+  .VPContent.has-sidebar .VPDoc .content {
+    padding: 0;
+    flex: 1;
+  }
+  .VPContent.has-sidebar .VPDoc .aside {
+    flex: 0 0 168px;
+    width: 168px;
+    padding-left: 0;
+  }
+  .VPContent.has-sidebar .VPDoc .aside-container { width: 168px; }
+}
+
+@media (max-width: 767px) {
+  .nimote-marketing-doc { padding-block: 36px 64px; }
+  .nimote-marketing-doc .vp-doc > div > h2 { margin-top: 40px; padding-top: 24px; }
+  .nimote-main-layout:not(.has-sidebar) > .VPContent > .VPDoc {
+    padding-block: 36px 64px;
+  }
+}
+
+/* Match reduced-motion settings across all pages, including native anchors. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

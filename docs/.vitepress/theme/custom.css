@@ -5,6 +5,7 @@
    ========================================================================== */
 
 @import "./styles/tokens.css";
+@import "./styles/app-palette.css";
 @import "./styles/base.css";
 @import "./styles/animations.css";
 @import "./styles/nav.css";
@@ -17,3 +18,6 @@
 @import "./styles/responsive.css";
 @import "./styles/developer.css";
 @import "./styles/documentation.css";
+
+/* Shared page geometry is owned here, never by individual page types. */
+@import "./styles/layout.css";

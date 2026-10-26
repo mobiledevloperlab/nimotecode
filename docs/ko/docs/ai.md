@@ -48,8 +48,26 @@ AI 패널에서 설정된 모델을 선택하고 질문을 입력합니다. 프�
 
 다음 화면은 “explain this project” 요청에 대한 하나의 응답을 보여 줍니다. 프로젝트 개요, 명령 예시, 누락된 파일 및 벤치마크 방법에 관한 주의 사항입니다. 별도의 분석 모드가 아니라 생성된 답변의 각 부분입니다. 사용 전에 참조된 파일과 명령을 현재 프로젝트와 대조하세요.
 
+### 프로젝트 구조부터 읽기
+
+개요에서 주요 구성 요소와 관계를 파악한 뒤 참조된 파일을 현재 작업 공간과 대조합니다.
+
 <div class="doc-screenshots">
   <DocScreenshot file="ai-analysis-overview.jpg" caption="AI 응답의 프로젝트 개요와 주요 구성 요소." />
+</div>
+
+### 명령 예시 확인
+
+같은 답변의 명령 예시를 읽고 현재 프로젝트와 실행 환경에 적합한지 확인한 뒤 실행 여부를 결정합니다.
+
+<div class="doc-screenshots">
   <DocScreenshot file="ai-analysis-workflow.jpg" caption="같은 응답에 포함된 프로젝트 명령 예시." />
+</div>
+
+### 제한 사항과 주의점 확인
+
+누락된 파일, 체크아웃 범위, 벤치마크 방법 등의 제한을 확인합니다. 이 결론이 다른 버전이나 환경에도 적용된다고 가정하지 마세요.
+
+<div class="doc-screenshots">
   <DocScreenshot file="ai-analysis-caveats.jpg" caption="확인한 체크아웃과 벤치마크 결과에 관한 주의 사항." />
 </div>

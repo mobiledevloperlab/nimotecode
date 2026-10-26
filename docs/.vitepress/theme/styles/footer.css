@@ -28,38 +28,46 @@
   position: relative;
   z-index: var(--vp-z-index-footer);
   margin-top: auto;
-  border-top: 1px solid var(--nimote-border);
-  background:
-    radial-gradient(circle at 10% 0%, rgba(var(--nimote-accent-rgb), 0.05), transparent 24%),
-    var(--nimote-bg-elevated);
+  /* The footer continues the page surface; hierarchy comes from the rule,
+     spacing, and type rather than a separate, card-like background. */
+  background: var(--nimote-bg);
 }
 
 .nimote-site-footer-content {
   /* 100% (not 100vw) so the symmetric gutter tracks the visible width even
      when a vertical scrollbar is present — the inner block keeps centering. */
-  padding: 52px max(24px, calc((100% - var(--nimote-container)) / 2)) 24px;
+  margin: 0 auto;
+  padding: 0 max(var(--nimote-page-gutter), calc((100% - var(--nimote-container)) / 2 + var(--nimote-page-gutter))) var(--nimote-space-6);
+}
+
+.nimote-site-footer-content::before {
+  content: '';
+  display: block;
+  height: 1px;
+  margin-bottom: var(--nimote-space-12);
+  background: var(--nimote-border);
 }
 
 .nimote-site-footer-inner {
   display: grid;
-  grid-template-columns: minmax(230px, 1.6fr) repeat(4, minmax(130px, 1fr));
-  gap: 36px;
+  grid-template-columns: minmax(260px, 1.8fr) repeat(3, minmax(136px, 1fr));
+  gap: clamp(28px, 4vw, 64px);
   max-width: var(--nimote-container);
   margin: 0 auto;
 }
 
 .nimote-footer-brand p {
-  max-width: 300px;
-  margin: 16px 0 0;
+  max-width: 320px;
+  margin: 14px 0 0;
   color: var(--nimote-text-secondary);
-  font-size: 0.9375rem;
+  font-size: var(--nimote-fs-sm);
   line-height: 1.65;
 }
 
 .nimote-footer-logo {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--nimote-space-3);
   color: var(--nimote-text-primary);
   font-size: 1.125rem;
   font-weight: 700;
@@ -75,13 +83,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 7px;
 }
 
 .nimote-site-footer h2 {
-  margin: 3px 0 4px;
+  margin: 4px 0 7px;
   color: var(--nimote-text-primary);
-  font-size: 0.9rem;
+  font-size: var(--nimote-fs-sm);
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -89,8 +97,23 @@
 
 .nimote-site-footer nav a {
   color: var(--nimote-text-secondary);
-  font-size: 0.875rem;
+  font-size: var(--nimote-fs-sm);
   text-decoration: none;
+}
+
+.nimote-footer-follow {
+  margin-top: 10px;
+  color: var(--nimote-text-muted);
+  font-size: var(--nimote-fs-xs);
+  font-weight: 650;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.nimote-footer-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
 }
 
 .nimote-site-footer nav a {
@@ -111,16 +134,16 @@
   justify-content: space-between;
   gap: 16px;
   max-width: var(--nimote-container);
-  margin: 38px auto 0;
-  padding-top: 18px;
+  margin: 44px auto 0;
+  padding-top: 16px;
   border-top: 1px solid var(--nimote-border);
   color: var(--nimote-text-muted);
-  font-size: 0.8125rem;
+  font-size: var(--nimote-fs-xs);
 }
 
 @media (max-width: 1100px) {
   .nimote-site-footer-inner {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 28px 20px;
   }
 
@@ -131,15 +154,23 @@
 
 @media (max-width: 760px) {
   .nimote-site-footer-content {
-    padding: 40px 24px 22px;
+    padding: 0 var(--nimote-page-gutter) var(--nimote-space-6);
+  }
+
+  .nimote-site-footer-content::before {
+    margin-bottom: var(--nimote-space-10);
   }
 
   .nimote-site-footer-inner {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 30px 22px;
+    gap: 32px 22px;
   }
 
   .nimote-footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .nimote-site-footer nav:last-child {
     grid-column: 1 / -1;
   }
 

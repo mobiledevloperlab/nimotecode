@@ -38,6 +38,7 @@ const hasSingleDeviceImage = computed(
       <figure v-if="image.phone?.src" class="seo-media-placeholder__device seo-media-placeholder__device--phone">
         <img
           class="seo-media-placeholder__image"
+          :class="{ 'nimote-pro-screenshot': image.phone?.src?.startsWith('/screenshots/nimote-pro.webp') }"
           :src="image.phone?.src"
           :alt="`${alt} — phone`"
           :width="image.phone?.width"

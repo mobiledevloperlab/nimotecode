@@ -5,7 +5,7 @@ author: "NimoteCode Team"
 date: "2026-09-09"
 lastUpdated: "2026-09-14"
 tags: ["mobile ide", "ssh", "ai agent", "mobile development", "2026"]
-image: https://nimotecode.com/screenshots/nimote-pro.webp
+image: https://nimotecode.com/screenshots/nimote-pro.webp?v=8692016c
 ---
 
 # The Best Mobile IDEs in 2026: What to Look For (and How NimoteCode Fits)
@@ -17,7 +17,7 @@ Coding from a phone stopped being a novelty a long time ago. The real question i
 Most "mobile coding" apps fall into a few familiar categories. Each one solves a real problem, and each one stops short of being a complete workspace. This guide walks through the current landscape, the criteria that actually matter, and where **NimoteCode** sits in it.
 
 <figure class="article-hero">
-  <img src="https://nimotecode.com/screenshots/nimote-pro.webp" width="1440" height="810" alt="NimoteCode mobile IDE on tablet and phone, showing a remote project explorer, editor, and AI chat" loading="lazy" decoding="async">
+  <img class="nimote-pro-screenshot" src="https://nimotecode.com/screenshots/nimote-pro.webp?v=8692016c" width="1440" height="810" alt="NimoteCode mobile IDE on tablet and phone, showing a remote project explorer, editor, and AI chat" loading="lazy" decoding="async">
   <figcaption>Project browsing, code editing, terminal work, Git, and AI assistance are visible in one mobile workspace.</figcaption>
 </figure>
 

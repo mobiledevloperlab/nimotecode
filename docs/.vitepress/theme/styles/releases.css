@@ -4,10 +4,6 @@
    All release URLs stay stable; this only changes presentation.
    ========================================================================== */
 
-.release-page .nimote-marketing-doc {
-  width: min(100% - 48px, 960px);
-}
-
 .release-page .vp-doc {
   max-width: 100%;
 }
@@ -405,7 +401,7 @@
 }
 
 @media (max-width: 700px) {
-  .release-page .nimote-marketing-doc { width: min(100% - 32px, 960px); }
+
   .release-index .vp-doc > h1 + p { margin-bottom: 30px; }
   .release-hero-card { grid-template-columns: 1fr; gap: 24px; padding: 24px 20px; }
   .release-archive { margin-top: 48px; }

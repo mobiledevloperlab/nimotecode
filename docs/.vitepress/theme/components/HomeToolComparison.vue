@@ -2,7 +2,7 @@
 import { computed, ref } from 'vue'
 import { competitors, featureDetail, featureRows, REVIEW_DATE, statusLabels, statusSymbols, type Locale } from '../data/mobileDevelopmentCompetitors'
 
-const props = withDefaults(defineProps<{lang?:Locale}>(),{lang:'en'})
+const props = withDefaults(defineProps<{lang?:Locale; compareUrl?:string}>(),{lang:'en'})
 const zh = computed(()=>props.lang==='zh')
 const nimote = competitors.find(product=>product.id==='nimotecode')!
 const alternatives = competitors.filter(product=>product.id!=='nimotecode')
@@ -10,11 +10,11 @@ const selectedId = ref('termius')
 const selected = computed(()=>alternatives.find(product=>product.id===selectedId.value)!)
 const featureKeys = ['nativeSsh','sshIde','nativeEditor','gitUi','builtInAgent','androidLinux']
 const rows = featureRows.filter(row=>featureKeys.includes(row.key))
-const compareUrl = computed(()=>zh.value?'/zh/compare/mobile-ai-development-tools':'/compare/mobile-ai-development-tools')
+const compareUrl = computed(()=>props.compareUrl || (zh.value?'/zh/compare/mobile-ai-development-tools':'/compare/mobile-ai-development-tools'))
 </script>
 
 <template>
-  <div class="home-tool-comparison">
+  <div class="home-tool-comparison" :lang="lang">
     <div class="home-tool-comparison-picker">
       <p>{{ zh?'NimoteCode 与一款工具并排查看；功能条件来自完整对比资料。':'Compare NimoteCode with one tool; conditions come from the full evidence matrix.' }}</p>
       <label><span>{{ zh?'选择工具':'Compare with' }}</span><select v-model="selectedId"><option v-for="product in alternatives" :key="product.id" :value="product.id">{{ product.name }}</option></select></label>

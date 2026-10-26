@@ -4,8 +4,10 @@ import DefaultTheme from 'vitepress/theme'
 import Layout from './Layout.vue'
 import MarketingLayout from './MarketingLayout.vue'
 import AppMockup from './components/AppMockup.vue'
+import ProductHome from './components/ProductHome.vue'
 import ImagePlaceholder from './components/ImagePlaceholder.vue'
 import DocScreenshot from './components/DocScreenshot.vue'
+import DownloadPage from './components/DownloadPage.vue'
 import HomeToolComparison from './components/HomeToolComparison.vue'
 import LatestReleaseLink from './components/LatestReleaseLink.vue'
 import ReleaseArchive from './components/ReleaseArchive.vue'
@@ -25,8 +27,10 @@ const theme: Theme = {
 
   enhanceApp({ app }) {
     app.component('AppMockup', AppMockup)
+    app.component('ProductHome', ProductHome)
     app.component('ImagePlaceholder', ImagePlaceholder)
     app.component('DocScreenshot', DocScreenshot)
+    app.component('DownloadPage', DownloadPage)
     app.component('HomeToolComparison', HomeToolComparison)
     app.component('LatestReleaseLink', LatestReleaseLink)
     app.component('ReleaseArchive', ReleaseArchive)
