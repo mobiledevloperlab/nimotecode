@@ -5,9 +5,12 @@ description: "快速开始的配置、操作步骤与界面说明。"
 
 # 快速开始
 
-<figure class="quick-start-hero">
-  <img src="/screenshots/nimote-pro.webp" width="1440" height="810" alt="平板与手机上的 NimoteCode，展示本地与 SSH 工作区、代码编辑、Git、终端、AI、调试和同步功能。" decoding="async" fetchpriority="high">
-</figure>
+从打开工作区开始，完成文件编辑和第一次命令运行。按下面的步骤操作；需要使用 AI Agent 时，再配置模型连接。
+
+- [打开工作区](#打开工作区)
+- [打开并编辑文件](#打开并编辑文件)
+- [运行命令](#运行命令)
+- [运行 AI Agent](#运行-ai-agent)
 
 ## 打开工作区
 

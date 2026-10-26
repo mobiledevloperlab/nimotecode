@@ -1,0 +1,817 @@
+{
+  "en": {
+    "badge": "A mobile IDE for Android & iOS",
+    "title": "Code from your phone.",
+    "accent": "Keep your project moving.",
+    "intro": "NimoteCode brings a code editor, SSH terminal, Git review and AI coding to Android, iPhone and iPad. Open a local project or connect to your development machine and pick up where you left off.",
+    "android": "Get for Android",
+    "ios": "Get for iOS",
+    "watch": "Watch the demo",
+    "available": "Android · iPhone · iPad",
+    "release": "What’s new",
+    "caption": "Phone-first development. More room to work on a tablet.",
+    "facts": [
+      "Local & SSH workspaces",
+      "Local Linux on Android",
+      "BYOK AI · Your own API key"
+    ],
+    "eyebrow": "Made for real development",
+    "heading": "Edit. Run. Review.\nFrom your phone.",
+    "description": "Make a focused change, run checks in a supported workspace and inspect the diff before you commit.",
+    "features": [
+      [
+        "Connect",
+        "Your projects, within reach.",
+        "Open local files or connect to your Mac, Linux machine or server over SSH. Android adds an on-device Linux environment.",
+        "Explore workspaces"
+      ],
+      [
+        "Build",
+        "From a change to a result.",
+        "Edit code, run commands and review Git diffs in one workspace. Check your work before moving on. Recent workspaces and connection recovery help you pick up where you left off.",
+        "Explore the editor"
+      ],
+      [
+        "Collaborate",
+        "AI with project context.",
+        "Bring your own AI provider and API key (BYOK). Ask about code in Chat, or plan changes and run checks with the Early Access Agent. Model usage is billed separately by your provider.",
+        "Explore AI workflows"
+      ]
+    ],
+    "demoLabel": "See it in action",
+    "demoTitle": "See the whole workspace in motion.",
+    "demoCopy": "Explore the editor, terminal and project tools, then watch an AI Agent work through a real task.",
+    "demoSteps": [
+      "Inspect",
+      "Plan",
+      "Execute",
+      "Verify",
+      "Preview"
+    ],
+    "compareTitle": "More than a connection.",
+    "compareCopy": "An SSH terminal gets you to the server. NimoteCode brings the editor, terminal, Git and AI into the same workspace.",
+    "compareLink": "Compare mobile tools",
+    "resourcesTitle": "Keep exploring.",
+    "resources": [
+      [
+        "Quick start",
+        "Your first workspace, step by step."
+      ],
+      [
+        "Workflows",
+        "Practical ways to develop on mobile."
+      ],
+      [
+        "Technical resources",
+        "Guides, tools and development references."
+      ]
+    ],
+    "ctaTitle": "Your next code change starts on your phone.",
+    "ctaCopy": "Install NimoteCode, open a demo or local project, and explore the workspace. Connect SSH when you are ready.",
+    "allDownloads": "All download options",
+    "illustration": "Illustrative product interface",
+    "blogHeading": "From the blog",
+    "blogAll": "All articles",
+    "blogArticles": [
+      [
+        "MOBILE DEVELOPMENT",
+        "The Best Mobile IDEs in 2026",
+        "Compare mobile development tools by the work you need to get done."
+      ],
+      [
+        "AI CODING",
+        "Can an AI Agent Really Code From a Phone?",
+        "Plan, edit, run and commit real changes from a phone over SSH."
+      ],
+      [
+        "REMOTE DEVELOPMENT",
+        "Android as a Remote IDE with Tailscale",
+        "Connect to Mac and Linux without a public IP or port forwarding."
+      ]
+    ],
+    "demoTabs": [
+      "AI Agent demo",
+      "Workspace demo"
+    ],
+    "demoContext": "From the project to the result",
+    "demoDetails": [
+      "Inspect the project and its files.",
+      "Define the task and review the plan.",
+      "Let the agent work with project tools.",
+      "Check commands, changes and results.",
+      "Open the result and review it yourself."
+    ],
+    "capabilityTitle": "A complete toolkit, in the same workspace.",
+    "capabilityNote": "Agent, Git writes, LSP, debugging and plugins are Early Access features. Language tools require workspace setup; Local Linux is Android-only.",
+    "allFeatures": "Explore all features",
+    "capabilities": [
+      [
+        "Git review",
+        "Inspect changes before you commit."
+      ],
+      [
+        "LSP",
+        "Code intelligence with project context."
+      ],
+      [
+        "Debugging",
+        "Inspect your code as it runs."
+      ],
+      [
+        "Preview",
+        "Open and check the result."
+      ],
+      [
+        "Tasks",
+        "Keep recurring commands close."
+      ],
+      [
+        "Plugins",
+        "Extend your workspace your way."
+      ]
+    ],
+    "community": [
+      "Talk with the team and other developers.",
+      "Follow releases, report issues and star the project.",
+      "Product news and notes from building NimoteCode."
+    ],
+    "resourceLabel": "Technical resources",
+    "resourceCopy": "Guides, tools and development references.",
+    "startNote": "Free to start. No AI setup needed to open your first project.",
+    "startLink": "Set up your first workspace",
+    "byok": "AI models use BYOK (Bring Your Own Key). Add your own provider API key; model usage is billed separately by your provider. No model credits are included.",
+    "faqTitle": "Before you start",
+    "planLink": "See free features and Early Access",
+    "faqs": [
+      [
+        "Can I start using NimoteCode for free?",
+        "Yes. The free tier includes local and SSH workspaces, the editor, a basic terminal and Git status, diffs and history. Open a demo or local project without configuring AI. Advanced workflows are available through Early Access; see the plan details for current terms."
+      ],
+      [
+        "How do AI models work? Is NimoteCode BYOK?",
+        "Yes. AI Chat and the built-in Agent use BYOK (Bring Your Own Key): configure your own AI provider and API key. The provider bills model usage separately; NimoteCode does not include AI models or token credits. The built-in Agent is an Early Access feature."
+      ],
+      [
+        "Can I run Claude Code or Codex from my phone?",
+        "You can use a CLI installed and authenticated on your own SSH host through the terminal. Claude Code and Codex are not bundled with NimoteCode and require their own service access."
+      ],
+      [
+        "Can I run Linux on Android, iPhone or iPad?",
+        "Local Linux runs Ubuntu without root on supported Android 8+ ARM64 and x86_64 devices. It is not available on iPhone or iPad. All three platforms can connect to a configured, reachable SSH host."
+      ]
+    ],
+    "byokLabel": "AI models: BYOK · Your API key · Provider fees apply"
+  },
+  "zh": {
+    "badge": "Android 与 iOS 移动 IDE",
+    "title": "在手机上写代码，",
+    "accent": "让项目继续向前。",
+    "intro": "NimoteCode 将代码编辑器、SSH 终端、Git 审查与 AI 编程带到 Android、iPhone 和 iPad。打开本地项目，或连接你的开发主机，随时接着工作。",
+    "android": "下载 Android 版",
+    "ios": "下载 iOS 版",
+    "watch": "观看产品演示",
+    "available": "Android · iPhone · iPad",
+    "release": "查看最新更新",
+    "caption": "以手机为中心的开发体验，平板带来更宽阔的工作空间。",
+    "facts": [
+      "本地与 SSH 工作区",
+      "Android 本地 Linux",
+      "BYOK 模型 · 自备 API Key"
+    ],
+    "eyebrow": "为真实开发而设计",
+    "heading": "编辑、运行、审查，\n在手机上完成。",
+    "description": "完成一次具体修改，在支持的工作区运行检查，再审查 Git Diff，让移动开发有始有终。",
+    "features": [
+      [
+        "连接项目",
+        "你的项目，触手可及。",
+        "打开本地文件，或通过 SSH 连接 Mac、Linux 和服务器。Android 还支持设备内的本地 Linux 环境。",
+        "了解工作区"
+      ],
+      [
+        "构建与验证",
+        "从修改，到看见结果。",
+        "编辑代码、运行命令、审查 Git diff，在同一工作区检查修改，继续推进开发。通过最近工作区与连接恢复接着工作，随时查看任务状态。",
+        "了解编辑器"
+      ],
+      [
+        "AI 协作",
+        "让 AI 理解你的项目。",
+        "通过 BYOK 接入自己的 AI 模型服务商和 API Key。用 Chat 理解代码，或用 Early Access Agent 规划修改、执行检查。模型调用费用由服务商另行收取。",
+        "了解 AI 工作流"
+      ]
+    ],
+    "demoLabel": "真实操作演示",
+    "demoTitle": "看看完整工作区如何运转。",
+    "demoCopy": "从编辑器、终端与项目工具开始，再看看 AI Agent 如何推进一个真实任务。",
+    "demoSteps": [
+      "检查",
+      "规划",
+      "执行",
+      "验证",
+      "预览"
+    ],
+    "compareTitle": "连接之后，还有完整的工作区。",
+    "compareCopy": "SSH 终端让你访问服务器。NimoteCode 将编辑器、终端、Git 和 AI 放在一起，让移动开发走得更远。",
+    "compareLink": "对比移动开发工具",
+    "resourcesTitle": "继续探索。",
+    "resources": [
+      [
+        "快速开始",
+        "一步步创建你的第一个工作区。"
+      ],
+      [
+        "使用场景",
+        "找到适合你的移动开发方式。"
+      ],
+      [
+        "技术资源",
+        "查找移动开发指南、工具与技术资料。"
+      ]
+    ],
+    "ctaTitle": "下一次代码修改，从手机上开始。",
+    "ctaCopy": "安装 NimoteCode，打开演示或本地项目，先体验工作区；准备好后再连接你的 SSH 开发环境。",
+    "allDownloads": "查看全部下载方式",
+    "illustration": "产品界面示意",
+    "blogHeading": "博客与开发指南",
+    "blogAll": "查看全部文章",
+    "blogArticles": [
+      [
+        "移动开发",
+        "2026 年最好的移动 IDE：应该看什么",
+        "从实际开发需求出发，比较不同移动开发工具与工作方式。"
+      ],
+      [
+        "AI 编程",
+        "AI Agent 真的能在手机上编程吗？",
+        "通过 SSH 在手机上规划、编辑、运行并提交真实的代码修改。"
+      ],
+      [
+        "远程开发",
+        "借助 Tailscale，把 Android 变成远程 IDE",
+        "无需公网 IP 或端口转发，连接你的 Mac 和 Linux 开发环境。"
+      ]
+    ],
+    "demoTabs": [
+      "AI Agent 演示",
+      "工作区演示"
+    ],
+    "demoContext": "从理解项目，到验证结果",
+    "demoDetails": [
+      "检查项目结构，读取相关文件。",
+      "明确任务目标，审查执行计划。",
+      "使用项目工具，逐步执行任务。",
+      "检查命令输出、代码修改与结果。",
+      "打开产物，亲自确认实际效果。"
+    ],
+    "capabilityTitle": "完整的工具，都在同一个工作区。",
+    "capabilityNote": "Agent、Git 写操作、LSP、调试与插件属于 Early Access 功能。语言工具需配置工作区环境；本地 Linux 仅支持 Android。",
+    "allFeatures": "了解全部功能",
+    "capabilities": [
+      [
+        "Git 审查",
+        "查看改动，在提交前确认差异。"
+      ],
+      [
+        "LSP",
+        "结合项目上下文提供代码智能。"
+      ],
+      [
+        "调试",
+        "运行代码，检查程序状态。"
+      ],
+      [
+        "预览",
+        "打开产物，直观看到结果。"
+      ],
+      [
+        "任务",
+        "保存并复用常用工作区命令。"
+      ],
+      [
+        "插件",
+        "按自己的工作方式扩展工作区。"
+      ]
+    ],
+    "community": [
+      "与团队和其他开发者交流，提问并分享经验。",
+      "关注版本发布、提交问题，为项目点亮 Star。",
+      "了解产品动态与移动 IDE 背后的构建故事。"
+    ],
+    "resourceLabel": "技术资源",
+    "resourceCopy": "查找移动开发指南、工具与技术资料。",
+    "startNote": "免费开始使用。打开第一个项目，无需先配置 AI。",
+    "startLink": "创建你的第一个工作区",
+    "byok": "AI 模型采用 BYOK（自备 API Key）方式。需配置自己的模型服务商与 API Key，模型调用费用由服务商另行收取；NimoteCode 不包含模型额度。",
+    "faqTitle": "开始使用前，你可能想了解",
+    "planLink": "查看免费功能与 Early Access 权益",
+    "faqs": [
+      [
+        "NimoteCode 可以免费开始使用吗？",
+        "可以。免费版包含本地与 SSH 工作区、代码编辑器、基础终端，以及 Git 状态、Diff 和历史查看。无需配置 AI，就能打开演示或本地项目。进阶工作流通过 Early Access 开放，当前权益以权益说明和应用内显示为准。"
+      ],
+      [
+        "AI 模型采用 BYOK 方式吗？费用如何计算？",
+        "是的。AI Chat 与内置 Agent 采用 BYOK（Bring Your Own Key，自备 API Key）：你需要配置自己的 AI 模型服务商和 API Key。模型调用费用由所选服务商另行收取，NimoteCode 不提供模型额度或 Token 包。内置 Agent 属于 Early Access 功能。"
+      ],
+      [
+        "可以在手机上使用 Claude Code 或 Codex 吗？",
+        "可以通过 SSH 终端使用已安装并完成认证的主机端 CLI。Claude Code 和 Codex 并非 NimoteCode 内置工具，需要你自行安装、认证并具备相应服务权限。"
+      ],
+      [
+        "Android、iPhone 和 iPad 都能运行本地 Linux 吗？",
+        "本地 Linux 仅适用于受支持的 Android 8+ ARM64 / x86_64 设备，可免 root 运行 Ubuntu。iPhone 和 iPad 不支持本地 Linux；三个平台均可连接已配置且可访问的 SSH 主机。"
+      ]
+    ],
+    "byokLabel": "AI 模型：BYOK · 自备 API Key · 模型费用另计"
+  },
+  "ja": {
+    "badge": "Android・iOS 向けモバイル IDE",
+    "title": "スマートフォンでコードを。",
+    "accent": "プロジェクトを前へ。",
+    "intro": "NimoteCode は Android、iPhone、iPad 向けのモバイル IDE。コード編集、SSH ターミナル、Git レビュー、AI コーディングをひとつに。ローカルプロジェクトを開くか、開発マシンに接続して作業を再開できます。",
+    "android": "Android 版を入手",
+    "ios": "iOS 版を入手",
+    "watch": "デモを見る",
+    "available": "Android · iPhone · iPad",
+    "release": "最新のアップデート",
+    "caption": "スマートフォンを中心に。タブレットなら、もっと広い作業スペース。",
+    "facts": [
+      "ローカル・SSH ワークスペース",
+      "Android のローカル Linux",
+      "BYOK AI · 自分の API キー"
+    ],
+    "eyebrow": "実際の開発のために",
+    "heading": "必要なツールを、\nひとつの場所に。",
+    "description": "プロジェクト、ツール、コンテキストをまとめて、作業を最後まで進められます。",
+    "features": [
+      [
+        "接続",
+        "プロジェクトを、手元に。",
+        "ローカルファイルを開いたり、SSH で Mac、Linux、サーバーに接続できます。Android ではローカル Linux も利用できます。",
+        "ワークスペースを見る"
+      ],
+      [
+        "開発と確認",
+        "変更から、結果へ。",
+        "コードの編集、コマンドの実行、Git diff の確認を、同じワークスペースで行えます。最近のワークスペースと接続の復旧で、作業を再開できます。",
+        "エディターを見る"
+      ],
+      [
+        "AI との協働",
+        "プロジェクトを理解する AI。",
+        "BYOK で自分の AI プロバイダーと API キーを接続。Chat でコードを相談したり、Early Access Agent で変更を計画・検証できます。モデル利用料は別途かかります。",
+        "AI ワークフローを見る"
+      ]
+    ],
+    "demoLabel": "操作デモ",
+    "demoTitle": "ワークスペースの動きを見てみよう。",
+    "demoCopy": "エディター、ターミナル、プロジェクトツールから、AI Agent による実際の作業まで。",
+    "demoSteps": [
+      "調査",
+      "計画",
+      "実行",
+      "検証",
+      "プレビュー"
+    ],
+    "compareTitle": "接続の先に、開発環境を。",
+    "compareCopy": "SSH ターミナルでサーバーにアクセス。NimoteCode ならエディター、ターミナル、Git、AI を同じ場所で使えます。",
+    "compareLink": "モバイル開発ツールを比較",
+    "resourcesTitle": "もっと詳しく。",
+    "resources": [
+      [
+        "クイックスタート",
+        "最初のワークスペースを作成。"
+      ],
+      [
+        "ワークフロー",
+        "モバイル開発の実践的な使い方。"
+      ],
+      [
+        "技術リソース",
+        "開発ガイド、ツール、技術資料。"
+      ]
+    ],
+    "ctaTitle": "次のコード変更を、スマートフォンから。",
+    "ctaCopy": "NimoteCode をインストールし、デモやローカルプロジェクトで試しましょう。準備ができたら SSH 開発環境に接続できます。",
+    "allDownloads": "すべてのダウンロード方法",
+    "illustration": "製品インターフェースのイメージ",
+    "blogHeading": "ブログと開発ガイド",
+    "blogAll": "すべての記事（英語）",
+    "blogArticles": [
+      [
+        "モバイル開発 · English",
+        "2026 年のモバイル IDE を比較",
+        "実際の作業に合わせてモバイル開発ツールを選びましょう。"
+      ],
+      [
+        "AI コーディング · English",
+        "AI Agent はスマートフォンで開発できる？",
+        "SSH 経由で計画、編集、実行、コミットまで。"
+      ],
+      [
+        "リモート開発 · English",
+        "Tailscale で Android をリモート IDE に",
+        "公開 IP やポート転送なしで Mac と Linux に接続。"
+      ]
+    ],
+    "demoTabs": [
+      "AI Agent",
+      "ワークスペース"
+    ],
+    "demoContext": "プロジェクトの理解から結果の確認まで",
+    "demoDetails": [
+      "プロジェクトとファイルを調べます。",
+      "目標を決め、計画を確認します。",
+      "ツールを使って作業を進めます。",
+      "コマンドと変更内容を検証します。",
+      "結果を開き、自分で確認します。"
+    ],
+    "capabilityTitle": "必要なツールを同じワークスペースに。",
+    "capabilityNote": "LSP とデバッグはワークスペースの対応状況によります。ローカル Linux は Android のみです。",
+    "allFeatures": "すべての機能を見る",
+    "capabilities": [
+      [
+        "Git レビュー",
+        "コミット前に差分を確認。"
+      ],
+      [
+        "LSP",
+        "プロジェクトに沿ったコード支援。"
+      ],
+      [
+        "デバッグ",
+        "実行中の状態を確認。"
+      ],
+      [
+        "プレビュー",
+        "成果物を開いて確認。"
+      ],
+      [
+        "タスク",
+        "よく使うコマンドを保存。"
+      ],
+      [
+        "プラグイン",
+        "自分に合った開発環境に拡張。"
+      ]
+    ],
+    "community": [
+      "開発者やチームと質問や経験を共有。",
+      "リリースを確認し、問題を報告。",
+      "製品ニュースと開発の舞台裏。"
+    ],
+    "resourceLabel": "技術リソース",
+    "resourceCopy": "開発ガイド、ツール、技術資料。",
+    "startNote": "無料で始められます。最初のプロジェクトに AI 設定は不要です。",
+    "startLink": "最初のワークスペースを作成",
+    "byok": "AI モデルは BYOK（API キー持ち込み）方式です。自分のプロバイダーと API キーを設定してください。モデル利用料はプロバイダーから別途請求され、利用枠は含まれません。",
+    "faqTitle": "始める前によくある質問",
+    "planLink": "無料機能と Early Access を確認",
+    "faqs": [
+      [
+        "無料で利用を始められますか？",
+        "はい。ローカル・SSH ワークスペース、エディター、基本ターミナル、Git の状態・差分・履歴を無料で利用できます。AI の設定なしでデモやローカルプロジェクトを開けます。高度な機能は Early Access で提供されます。"
+      ],
+      [
+        "AI モデルは BYOK 方式ですか？",
+        "はい。AI Chat と内蔵 Agent は BYOK（API キー持ち込み）方式です。自分の AI プロバイダーと API キーを設定し、モデル利用料はプロバイダーに別途支払います。モデル利用枠やトークンは含まれません。内蔵 Agent は Early Access 機能です。"
+      ],
+      [
+        "Claude Code や Codex は使えますか？",
+        "SSH ホストにインストールして認証した CLI をターミナルから利用できます。NimoteCode には同梱されておらず、各サービスの利用権限が必要です。"
+      ],
+      [
+        "iPhone や iPad でもローカル Linux は動きますか？",
+        "ローカル Linux は対応する Android 8 以降の ARM64・x86_64 端末専用で、root 不要の Ubuntu を利用できます。iPhone・iPad では利用できませんが、各プラットフォームから設定済みの SSH ホストに接続できます。"
+      ]
+    ],
+    "byokLabel": "AI モデル：BYOK · 自分の API キー · 利用料別途"
+  },
+  "ko": {
+    "badge": "Android 및 iOS용 모바일 IDE",
+    "title": "휴대폰에서 코딩하고,",
+    "accent": "프로젝트를 이어가세요.",
+    "intro": "NimoteCode는 Android, iPhone, iPad용 모바일 IDE입니다. 코드 편집기, SSH 터미널, Git 검토, AI 코딩을 한곳에서 사용하세요. 로컬 프로젝트를 열거나 개발 컴퓨터에 연결해 작업을 이어가세요.",
+    "android": "Android 다운로드",
+    "ios": "iOS 다운로드",
+    "watch": "데모 보기",
+    "available": "Android · iPhone · iPad",
+    "release": "최신 업데이트",
+    "caption": "휴대폰 중심의 개발 경험. 태블릿에서는 더 넓은 작업 공간.",
+    "facts": [
+      "로컬 및 SSH 작업 공간",
+      "Android 로컬 Linux",
+      "BYOK AI · 자신의 API 키"
+    ],
+    "eyebrow": "실제 개발을 위한 도구",
+    "heading": "필요한 도구를,\n하나의 작업 공간에.",
+    "description": "프로젝트와 도구, 맥락을 한곳에 모아 작업을 끝까지 이어가세요.",
+    "features": [
+      [
+        "연결",
+        "내 프로젝트를 가까이.",
+        "로컬 파일을 열거나 SSH로 Mac, Linux, 서버에 연결하세요. Android에서는 기기 내 Linux 환경도 사용할 수 있습니다.",
+        "작업 공간 살펴보기"
+      ],
+      [
+        "개발과 검증",
+        "수정에서 결과까지.",
+        "하나의 작업 공간에서 코드를 편집하고 명령을 실행하며 Git diff를 검토하세요.최근 작업 공간과 연결 복구로 이전 작업을 이어가세요.",
+        "편집기 살펴보기"
+      ],
+      [
+        "AI 협업",
+        "프로젝트를 이해하는 AI.",
+        "BYOK로 자신의 AI 제공업체와 API 키를 연결하세요. Chat으로 코드를 이해하거나 Early Access Agent로 변경을 계획하고 검증하세요. 모델 사용료는 별도입니다.",
+        "AI 워크플로 살펴보기"
+      ]
+    ],
+    "demoLabel": "실제 사용 데모",
+    "demoTitle": "작업 공간의 실제 동작을 살펴보세요.",
+    "demoCopy": "편집기, 터미널, 프로젝트 도구부터 AI Agent의 실제 작업까지 확인하세요.",
+    "demoSteps": [
+      "확인",
+      "계획",
+      "실행",
+      "검증",
+      "미리보기"
+    ],
+    "compareTitle": "연결을 넘어, 완전한 작업 공간으로.",
+    "compareCopy": "SSH 터미널로 서버에 접속하세요. NimoteCode는 편집기, 터미널, Git, AI를 하나의 작업 공간에 모아줍니다.",
+    "compareLink": "모바일 개발 도구 비교",
+    "resourcesTitle": "더 알아보기.",
+    "resources": [
+      [
+        "빠른 시작",
+        "첫 작업 공간을 단계별로 만들어 보세요."
+      ],
+      [
+        "워크플로",
+        "모바일 개발의 실용적인 활용법."
+      ],
+      [
+        "기술 자료",
+        "개발 가이드, 도구 및 참고 자료."
+      ]
+    ],
+    "ctaTitle": "다음 코드 수정을 휴대폰에서 시작하세요.",
+    "ctaCopy": "NimoteCode를 설치하고 데모나 로컬 프로젝트를 열어 보세요. 준비가 되면 SSH 개발 환경에 연결하세요.",
+    "allDownloads": "모든 다운로드 방법",
+    "illustration": "제품 인터페이스 예시",
+    "blogHeading": "블로그와 개발 가이드",
+    "blogAll": "전체 글 보기 (영어)",
+    "blogArticles": [
+      [
+        "모바일 개발 · English",
+        "2026년 모바일 IDE 비교",
+        "실제 작업에 맞는 모바일 개발 도구를 살펴보세요."
+      ],
+      [
+        "AI 코딩 · English",
+        "AI Agent는 휴대폰에서 코딩할 수 있을까?",
+        "SSH로 계획부터 편집, 실행, 커밋까지 진행하세요."
+      ],
+      [
+        "원격 개발 · English",
+        "Tailscale로 Android를 원격 IDE로 활용하기",
+        "공인 IP나 포트 포워딩 없이 Mac과 Linux에 연결하세요."
+      ]
+    ],
+    "demoTabs": [
+      "AI Agent 데모",
+      "작업 공간 데모"
+    ],
+    "demoContext": "프로젝트 이해부터 결과 확인까지",
+    "demoDetails": [
+      "프로젝트와 관련 파일을 확인합니다.",
+      "목표와 실행 계획을 검토합니다.",
+      "프로젝트 도구로 작업을 실행합니다.",
+      "명령 출력과 변경 사항을 검증합니다.",
+      "결과를 열고 직접 확인합니다."
+    ],
+    "capabilityTitle": "완전한 도구를 하나의 작업 공간에.",
+    "capabilityNote": "LSP와 디버깅은 작업 공간 지원에 따라 달라집니다. 로컬 Linux는 Android 전용입니다.",
+    "allFeatures": "모든 기능 보기",
+    "capabilities": [
+      [
+        "Git 검토",
+        "커밋 전에 변경 사항을 확인하세요."
+      ],
+      [
+        "LSP",
+        "프로젝트 맥락에 맞는 코드 지원."
+      ],
+      [
+        "디버깅",
+        "실행 중인 프로그램 상태 확인."
+      ],
+      [
+        "미리보기",
+        "결과물을 열어 확인하세요."
+      ],
+      [
+        "작업",
+        "자주 쓰는 명령을 저장하세요."
+      ],
+      [
+        "플러그인",
+        "작업 공간을 원하는 대로 확장하세요."
+      ]
+    ],
+    "community": [
+      "팀과 개발자들에게 질문하고 경험을 공유하세요.",
+      "릴리스를 확인하고 문제를 보고하세요.",
+      "제품 소식과 개발 이야기를 만나세요."
+    ],
+    "resourceLabel": "기술 자료",
+    "resourceCopy": "개발 가이드, 도구 및 참고 자료.",
+    "startNote": "무료로 시작하세요. 첫 프로젝트에 AI 설정은 필요하지 않습니다.",
+    "startLink": "첫 작업 공간 만들기",
+    "byok": "AI 모델은 BYOK(자신의 API 키 사용) 방식입니다. AI 제공업체와 API 키를 직접 설정하며, 모델 사용료는 해당 제공업체가 별도로 청구합니다. 모델 크레딧은 포함되지 않습니다.",
+    "faqTitle": "시작하기 전에",
+    "planLink": "무료 기능 및 Early Access 확인",
+    "faqs": [
+      [
+        "무료로 시작할 수 있나요?",
+        "네. 로컬 및 SSH 작업 공간, 편집기, 기본 터미널, Git 상태·차이·기록 확인을 무료로 이용할 수 있습니다. AI 설정 없이 데모나 로컬 프로젝트를 열 수 있습니다. 고급 기능은 Early Access로 제공됩니다."
+      ],
+      [
+        "AI 모델은 BYOK 방식인가요?",
+        "네. AI Chat과 내장 Agent는 BYOK(자신의 API 키 사용) 방식입니다. AI 제공업체와 API 키를 직접 설정하고 모델 사용료는 제공업체에 별도로 지불합니다. 모델 크레딧이나 토큰은 포함되지 않습니다. 내장 Agent는 Early Access 기능입니다."
+      ],
+      [
+        "Claude Code나 Codex를 사용할 수 있나요?",
+        "SSH 호스트에 설치하고 인증한 CLI를 터미널에서 사용할 수 있습니다. NimoteCode에 번들로 포함되지 않으며 각 서비스의 이용 권한이 필요합니다."
+      ],
+      [
+        "iPhone이나 iPad에서도 로컬 Linux가 실행되나요?",
+        "로컬 Linux는 지원되는 Android 8 이상 ARM64 및 x86_64 기기에서만 루팅 없이 Ubuntu를 실행합니다. iPhone과 iPad에서는 사용할 수 없지만, 모든 플랫폼에서 설정된 SSH 호스트에 연결할 수 있습니다."
+      ]
+    ],
+    "byokLabel": "AI 모델: BYOK · 자신의 API 키 · 모델 요금 별도"
+  },
+  "es": {
+    "badge": "Un IDE móvil para Android e iOS",
+    "title": "Programa desde tu móvil.",
+    "accent": "Haz avanzar tu proyecto.",
+    "intro": "NimoteCode reúne editor de código, terminal SSH, revisión de Git y programación con IA en Android, iPhone y iPad. Abre un proyecto local o conecta tu equipo de desarrollo y retoma el trabajo.",
+    "android": "Para Android",
+    "ios": "Para iOS",
+    "watch": "Ver la demo",
+    "available": "Android · iPhone · iPad",
+    "release": "Novedades",
+    "caption": "Pensado para el móvil. Más espacio para trabajar en la tablet.",
+    "facts": [
+      "Proyectos locales y SSH",
+      "Linux local en Android",
+      "IA BYOK · Tu propia clave API"
+    ],
+    "eyebrow": "Para desarrollar de verdad",
+    "heading": "Tus herramientas.\nEn un mismo lugar.",
+    "description": "Mantén tu proyecto, tus herramientas y el contexto juntos para completar cada tarea.",
+    "features": [
+      [
+        "Conecta",
+        "Tus proyectos, a tu alcance.",
+        "Abre archivos locales o conecta con tu Mac, Linux o servidor por SSH. Android también ofrece un entorno Linux local.",
+        "Explorar espacios de trabajo"
+      ],
+      [
+        "Desarrolla",
+        "De un cambio a un resultado.",
+        "Edita código, ejecuta comandos y revisa los diffs de Git en el mismo espacio de trabajo. Los espacios recientes y la recuperación de conexiones te ayudan a retomar el trabajo.",
+        "Explorar el editor"
+      ],
+      [
+        "Colabora",
+        "IA con el contexto del proyecto.",
+        "Conecta tu proveedor de IA y tu clave API (BYOK). Consulta código en Chat o planifica cambios y ejecuta comprobaciones con el Agent de Early Access. El uso del modelo se cobra aparte.",
+        "Explorar flujos con IA"
+      ]
+    ],
+    "demoLabel": "Míralo en acción",
+    "demoTitle": "Mira el espacio de trabajo en acción.",
+    "demoCopy": "Explora el editor, la terminal y las herramientas del proyecto, y observa cómo trabaja un agente de IA.",
+    "demoSteps": [
+      "Inspecciona",
+      "Planifica",
+      "Ejecuta",
+      "Verifica",
+      "Previsualiza"
+    ],
+    "compareTitle": "Mucho más que una conexión.",
+    "compareCopy": "Una terminal SSH te conecta al servidor. NimoteCode reúne editor, terminal, Git e IA en un mismo espacio.",
+    "compareLink": "Comparar herramientas móviles",
+    "resourcesTitle": "Sigue explorando.",
+    "resources": [
+      [
+        "Inicio rápido",
+        "Tu primer espacio de trabajo, paso a paso."
+      ],
+      [
+        "Flujos de trabajo",
+        "Formas prácticas de desarrollar en el móvil."
+      ],
+      [
+        "Recursos técnicos",
+        "Guías, herramientas y referencias de desarrollo."
+      ]
+    ],
+    "ctaTitle": "Tu próximo cambio de código empieza en el móvil.",
+    "ctaCopy": "Instala NimoteCode, abre una demo o un proyecto local y explora el espacio de trabajo. Conecta tu entorno SSH cuando estés listo.",
+    "allDownloads": "Todas las opciones de descarga",
+    "illustration": "Interfaz ilustrativa del producto",
+    "blogHeading": "Blog y guías de desarrollo",
+    "blogAll": "Todos los artículos (inglés)",
+    "blogArticles": [
+      [
+        "DESARROLLO MÓVIL · English",
+        "Los mejores IDE móviles de 2026",
+        "Compara herramientas según el trabajo que necesitas realizar."
+      ],
+      [
+        "PROGRAMACIÓN CON IA · English",
+        "¿Puede un agente de IA programar desde el móvil?",
+        "Planifica, edita, ejecuta y confirma cambios reales por SSH."
+      ],
+      [
+        "DESARROLLO REMOTO · English",
+        "Android como IDE remoto con Tailscale",
+        "Conecta con Mac y Linux sin una IP pública ni redirección de puertos."
+      ]
+    ],
+    "demoTabs": [
+      "Agente de IA",
+      "Espacio de trabajo"
+    ],
+    "demoContext": "Del proyecto al resultado",
+    "demoDetails": [
+      "Inspecciona el proyecto y sus archivos.",
+      "Define la tarea y revisa el plan.",
+      "Ejecuta con las herramientas del proyecto.",
+      "Verifica comandos, cambios y resultados.",
+      "Abre el resultado y revísalo."
+    ],
+    "capabilityTitle": "Todas las herramientas en un mismo espacio.",
+    "capabilityNote": "LSP y depuración dependen del espacio de trabajo. Linux local solo está disponible en Android.",
+    "allFeatures": "Explorar todas las funciones",
+    "capabilities": [
+      [
+        "Revisión Git",
+        "Comprueba los cambios antes del commit."
+      ],
+      [
+        "LSP",
+        "Asistencia con el contexto del proyecto."
+      ],
+      [
+        "Depuración",
+        "Inspecciona el código en ejecución."
+      ],
+      [
+        "Vista previa",
+        "Abre y comprueba el resultado."
+      ],
+      [
+        "Tareas",
+        "Guarda tus comandos habituales."
+      ],
+      [
+        "Plugins",
+        "Amplía tu espacio a tu manera."
+      ]
+    ],
+    "community": [
+      "Habla con el equipo y otros desarrolladores.",
+      "Sigue las versiones, informa de problemas y deja una estrella.",
+      "Novedades y notas sobre el desarrollo del producto."
+    ],
+    "resourceLabel": "Recursos técnicos",
+    "resourceCopy": "Guías, herramientas y referencias de desarrollo.",
+    "startNote": "Empieza gratis. No necesitas configurar IA para abrir tu primer proyecto.",
+    "startLink": "Crea tu primer espacio de trabajo",
+    "byok": "Los modelos de IA usan BYOK (tu propia clave API). Configura tu proveedor y tu clave; el proveedor cobra el uso del modelo por separado. No se incluyen créditos de IA.",
+    "faqTitle": "Antes de empezar",
+    "planLink": "Ver funciones gratuitas y Early Access",
+    "faqs": [
+      [
+        "¿Puedo empezar gratis?",
+        "Sí. El plan gratuito incluye espacios locales y SSH, editor, terminal básico y consulta del estado, diferencias e historial de Git. Puedes abrir una demo o un proyecto local sin configurar IA. Las funciones avanzadas están disponibles mediante Early Access."
+      ],
+      [
+        "¿Los modelos de IA usan BYOK?",
+        "Sí. AI Chat y el Agent integrado usan BYOK: configura tu propio proveedor de IA y tu clave API. El proveedor cobra el uso del modelo por separado. NimoteCode no incluye créditos ni tokens de IA. El Agent integrado es una función Early Access."
+      ],
+      [
+        "¿Puedo usar Claude Code o Codex desde el móvil?",
+        "Puedes usar por el terminal una CLI instalada y autenticada en tu propio host SSH. No vienen incluidos con NimoteCode y requieren acceso a sus respectivos servicios."
+      ],
+      [
+        "¿Linux local funciona en iPhone y iPad?",
+        "Linux local ejecuta Ubuntu sin root solo en dispositivos Android 8 o posterior compatibles con ARM64 o x86_64. No está disponible en iPhone ni iPad. Todas las plataformas pueden conectarse a un host SSH configurado y accesible."
+      ]
+    ],
+    "byokLabel": "Modelos de IA: BYOK · Tu clave API · Uso facturado aparte"
+  }
+}

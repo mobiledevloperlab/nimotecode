@@ -7,6 +7,7 @@ import VPNav from 'vitepress/dist/client/theme-default/components/VPNav.vue'
 import VPSkipLink from 'vitepress/dist/client/theme-default/components/VPSkipLink.vue'
 import SiteAnalytics from './SiteAnalytics.vue'
 import SiteFooter from './SiteFooter.vue'
+import NavDownload from './components/NavDownload.vue'
 
 const { frontmatter, page } = useData()
 
@@ -78,8 +79,8 @@ function setupReveal(): void {
 }
 
 const route = useRoute()
-const isReleaseRoute = computed(() => /^\/(?:zh\/)?releases(?:\/|$)/.test(route.path))
-const isReleaseIndex = computed(() => /^\/(?:zh\/)?releases\/?$/.test(route.path))
+const isReleaseRoute = computed(() => /^\/(?:(?:zh|ja|ko|es)\/)?releases(?:\/|$)/.test(route.path))
+const isReleaseIndex = computed(() => /^\/(?:(?:zh|ja|ko|es)\/)?releases\/?$/.test(route.path))
 onMounted(() => {
   motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)')
   motionPreference.addEventListener('change', setupReveal)
@@ -102,7 +103,7 @@ onBeforeUnmount(() => {
   <SiteAnalytics />
   <div v-if="frontmatter.layout !== false" class="Layout nimote-marketing-layout" :class="[frontmatter.pageClass, { 'release-page': isReleaseRoute, 'release-index': isReleaseIndex, 'release-detail': isReleaseRoute && !isReleaseIndex }]" @pointermove="moveSpotlight">
     <VPSkipLink />
-    <VPNav />
+    <VPNav><template #nav-bar-content-before><NavDownload /></template></VPNav>
     <main id="VPContent" class="nimote-marketing-main">
       <NotFound v-if="page.isNotFound" />
       <VPHome v-else-if="frontmatter.layout === 'home'" />

@@ -5,9 +5,12 @@ description: "빠른 시작 설정, 사용 절차 및 화면 안내."
 
 # 빠른 시작
 
-<figure class="quick-start-hero">
-  <img src="/screenshots/nimote-pro.webp" width="1440" height="810" alt="태블릿과 휴대폰의 NimoteCode. 로컬 및 SSH 작업 공간, 코드 편집, Git, 터미널, AI, 디버깅, 동기화 기능을 보여 줍니다." decoding="async" fetchpriority="high">
-</figure>
+작업 공간을 열고 파일을 편집한 다음 첫 명령을 실행해 보세요. 아래 순서대로 진행하고, AI Agent가 필요할 때 모델 연결을 설정하세요.
+
+- [작업 공간 열기](#작업-공간-열기)
+- [파일 열기 및 편집](#파일-열기-및-편집)
+- [명령 실행](#명령-실행)
+- [AI Agent 실행](#ai-agent-실행)
 
 ## 작업 공간 열기
 

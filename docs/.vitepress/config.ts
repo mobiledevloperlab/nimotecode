@@ -1,4 +1,4 @@
-import { defineConfig, type HeadConfig, type TransformContext } from 'vitepress'
+import { defineConfig, type HeadConfig, type TransformContext, type DefaultTheme } from 'vitepress'
 import { existsSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
@@ -7,7 +7,7 @@ import { allCompetitors } from './theme/data/mobileDevelopmentCompetitors'
 
 const siteUrl = 'https://nimotecode.com'
 const brandLogo = `${siteUrl}/app_icon.png`
-const socialImage = `${siteUrl}/screenshots/NimoteCode_Promotion.jpg`
+const socialImage = `${siteUrl}/screenshots/nimote-pro.webp?v=8692016c`
 const localeConfig = {
   root: { lang: 'en-US', path: '' },
   zh: { lang: 'zh-CN', path: '/zh' },
@@ -20,10 +20,10 @@ const localePathPattern = /^\/(?:zh|ja|ko|es)(?=\/|$)/
 
 function docsUi(locale: 'zh' | 'ja' | 'ko' | 'es') {
   const [outline, previous, next, menu, top, languages] = {
-    zh: ['本页目录', '上一页', '下一页', '菜单', '返回顶部', '选择语言'],
-    ja: ['このページの内容', '前のページ', '次のページ', 'メニュー', 'ページ上部へ', '言語を選択'],
-    ko: ['이 페이지의 내용', '이전 페이지', '다음 페이지', '메뉴', '맨 위로', '언어 선택'],
-    es: ['En esta página', 'Página anterior', 'Página siguiente', 'Menú', 'Volver arriba', 'Seleccionar idioma']
+    zh: ['本页目录', '上一页', '下一页', '文档目录', '返回顶部', '选择语言'],
+    ja: ['このページの内容', '前のページ', '次のページ', 'ドキュメント一覧', 'ページ上部へ', '言語を選択'],
+    ko: ['이 페이지의 내용', '이전 페이지', '다음 페이지', '문서 목록', '맨 위로', '언어 선택'],
+    es: ['En esta página', 'Página anterior', 'Página siguiente', 'Documentación', 'Volver arriba', 'Seleccionar idioma']
   }[locale]
   return {
     outline: { label: outline },
@@ -67,10 +67,44 @@ type DocsSidebarLabels = {
   faq: string
 }
 
+function organizeDocsGroups(groups: DefaultTheme.SidebarItem[], prefix: string): DefaultTheme.SidebarItem[] {
+  const locale = prefix.slice(1) || 'en'
+  const names: Record<string, string[]> = {
+    en: ['Getting started', 'Everyday development', 'AI and extensions', 'Environment', 'Reference'],
+    zh: ['入门', '日常开发', 'AI 与扩展', '环境配置', '参考资料'],
+    ja: ['はじめに', '日常の開発', 'AI と拡張機能', '環境設定', 'リファレンス'],
+    ko: ['시작하기', '일상 개발', 'AI 및 확장', '환경 설정', '참고 자료'],
+    es: ['Primeros pasos', 'Desarrollo diario', 'IA y extensiones', 'Entorno', 'Referencia']
+  }
+  const items = groups.flatMap(group => group.items ?? [])
+  const labels: Record<string, string> = locale === 'zh' ? {
+    ssh: '本地与 SSH 工作区', ai: 'AI 对话与 Agent', editor: '代码编辑器',
+    terminal: '终端', search: '工作区搜索', 'source-control': '源代码管理',
+    lsp: '语言服务（LSP）', debug: '调试', 'sync-cache': '同步与缓存',
+    tasks: '任务', configuration: '模型与连接配置', plugins: '自定义插件'
+  } : {}
+  const group = (text: string, routes: string[], collapsed = false) => ({
+    text, collapsed,
+    items: routes.map(route => {
+      const item = items.find(item => item.link === `${prefix}/docs/${route}`)
+      if (!item) throw new Error(`Missing documentation navigation: ${prefix}/${route}`)
+      return { ...item, text: labels[route] ?? item.text }
+    })
+  })
+  return [
+    group(names[locale][0], ['quick-start', 'ssh']),
+    group(names[locale][1], ['editor', 'terminal', 'search', 'source-control', 'tasks']),
+    group(names[locale][2], ['ai', 'configuration', 'plugins']),
+    group(names[locale][3], ['lsp', 'debug', 'sync-cache']),
+    { ...groups[2], collapsed: true },
+    group(names[locale][4], ['settings', 'account-subscription', 'security', 'notifications', 'local-linux-source', 'faq'], true)
+  ]
+}
+
 function docsSidebar(prefix: string, labels: DocsSidebarLabels) {
   const docs = `${prefix}/docs`
   return {
-    [`${docs}/`]: [
+    [`${docs}/`]: organizeDocsGroups([
       { text: labels.start, items: [{ text: labels.quickStart, link: `${docs}/quick-start` }] },
       {
         text: labels.workflow,
@@ -116,7 +150,7 @@ function docsSidebar(prefix: string, labels: DocsSidebarLabels) {
           { text: labels.faq, link: `${docs}/faq` }
         ]
       }
-    ]
+    ], prefix)
   }
 }
 
@@ -170,6 +204,8 @@ const localizedSeo = {
 
 function localizedSeoValue(path: string, value: string, kind: 'title' | 'description'): string {
   const locale = pageLocaleKey(path)
+  // Homepages have fully translated metadata, rather than English fallbacks.
+  if (/^(?:ja|ko|es)\/index\.md$/.test(path)) return value
   const translation = localizedSeo[locale as keyof typeof localizedSeo]
   if (!translation || !value) return value
 
@@ -289,7 +325,8 @@ function pageSchemas(context: TransformContext): object[] {
         operatingSystem: 'Android, iOS',
         url: siteUrl,
         image: socialImage,
-        description: 'Mobile SSH IDE and AI Coding Workspace for Android and iOS with an editor, SSH terminal, Git, AI Chat and Agent, LSP diagnostics, debugger, tasks and sync/cache.',
+        description,
+        featureList: ['Code editor', 'SSH terminal', 'Git review', 'BYOK AI with your own provider API key', 'Root-free Local Linux on supported Android devices'],
         offers: {
           '@type': 'Offer',
           price: '0',
@@ -878,6 +915,8 @@ function websiteDescription(inLanguage: string): string {
 }
 
 export default defineConfig({
+  // Start with the product's dark canvas; keep the visitor's saved preference.
+  appearance: 'dark',
   title: 'NimoteCode',
   titleTemplate: false,
   description: 'NimoteCode is a mobile AI development workspace: an SSH-enabled code editor with terminal, Git, AI Agent, LSP, debugger, tasks and sync/cache.',
@@ -950,6 +989,18 @@ export default defineConfig({
   ],
 
   themeConfig: {
+    sidebarMenuLabel: 'Docs menu',
+    search: {
+      provider: 'local',
+      options: {
+        locales: {
+          zh: { translations: { button: { buttonText: '搜索文档', buttonAriaLabel: '搜索文档' }, modal: { displayDetails: '显示详情', resetButtonTitle: '清除搜索', backButtonTitle: '返回', noResultsText: '没有找到相关结果', footer: { selectText: '选择', navigateText: '切换', closeText: '关闭' } } } },
+          ja: { translations: { button: { buttonText: 'ドキュメントを検索', buttonAriaLabel: 'ドキュメントを検索' } } },
+          ko: { translations: { button: { buttonText: '문서 검색', buttonAriaLabel: '문서 검색' } } },
+          es: { translations: { button: { buttonText: 'Buscar documentación', buttonAriaLabel: 'Buscar documentación' } } }
+        }
+      }
+    },
     siteTitle: 'NimoteCode',
     logo: {
       light: '/app_icon.png',
@@ -973,12 +1024,9 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Product', link: '/features' },
-          { text: 'Compare', link: '/compare/mobile-ai-development-tools' },
           { text: 'Workflows', link: '/use-cases/' },
-          { text: 'Resources', link: '/resources/' },
           { text: 'Docs', link: '/docs/quick-start' },
-          { text: 'Updates', link: '/releases/' },
-          { text: 'Mobile Developer Lab', link: '/blog/' },
+          { text: 'Resources', items: [{ text: 'Resources', link: '/resources/' }, { text: 'Compare', link: '/compare/mobile-ai-development-tools' }, { text: 'Blog', link: '/blog/' }, { text: 'Updates', link: '/releases/' }] },
           { text: 'Download', link: '/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ],
         sidebar: {
@@ -1006,7 +1054,7 @@ export default defineConfig({
               ]
             }
           ],
-          '/docs/': [
+          '/docs/': organizeDocsGroups([
             {
               text: 'Start',
               items: [
@@ -1057,7 +1105,7 @@ export default defineConfig({
                 { text: 'FAQ', link: '/docs/faq' }
               ]
             }
-          ],
+          ], ''),
           '/use-cases/': [
             {
               text: 'Workflows',
@@ -1080,9 +1128,6 @@ export default defineConfig({
               ]
             }
           ]
-        },
-        search: {
-          provider: 'local'
         }
       }
     },
@@ -1095,12 +1140,9 @@ export default defineConfig({
         ...docsUi('zh'),
         nav: [
           { text: '产品', link: '/zh/features' },
-          { text: '对比', link: '/zh/compare/mobile-ai-development-tools' },
           { text: '工作流', link: '/zh/use-cases/' },
-          { text: '技术资源', link: '/zh/resources/' },
           { text: '文档', link: '/zh/docs/quick-start' },
-          { text: '更新日志', link: '/zh/releases/' },
-          { text: '移动开发实验室', link: '/zh/blog/' },
+          { text: '资源', items: [{ text: '资源', link: '/zh/resources/' }, { text: '对比', link: '/zh/compare/mobile-ai-development-tools' }, { text: '博客', link: '/zh/blog/' }, { text: '更新日志', link: '/zh/releases/' }] },
           { text: '下载', link: '/zh/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ],
         sidebar: {
@@ -1128,7 +1170,7 @@ export default defineConfig({
               ]
             }
           ],
-          '/zh/docs/': [
+          '/zh/docs/': organizeDocsGroups([
             {
               text: '开始使用',
               items: [
@@ -1179,7 +1221,7 @@ export default defineConfig({
                 { text: '常见问题', link: '/zh/docs/faq' }
               ]
             }
-          ],
+          ], '/zh'),
           '/zh/use-cases/': [
             {
               text: '工作流',
@@ -1202,9 +1244,6 @@ export default defineConfig({
               ]
             }
           ]
-        },
-        search: {
-          provider: 'local'
         }
       }
     },
@@ -1212,11 +1251,12 @@ export default defineConfig({
     ja: {
       label: '日本語', lang: 'ja-JP', link: '/ja/',
       themeConfig: { ...docsUi('ja'), nav: [
-        { text: '製品', link: '/ja/features' }, { text: '比較', link: '/ja/compare/mobile-ai-development-tools' },
-        { text: 'ワークフロー', link: '/ja/use-cases/' }, { text: 'リソース', link: '/ja/resources/' },
-        { text: 'ドキュメント', link: '/ja/docs/quick-start' }, { text: 'ダウンロード', link: '/ja/download' },
-        { text: 'Blog (English)', link: '/blog/' }
-      ], sidebar: { ...docsSidebar('/ja', {
+          { text: '製品', link: '/ja/features' },
+          { text: 'ワークフロー', link: '/ja/use-cases/' },
+          { text: 'ドキュメント', link: '/ja/docs/quick-start' },
+          { text: 'リソース', items: [{ text: 'リソース', link: '/ja/resources/' }, { text: '比較', link: '/ja/compare/mobile-ai-development-tools' }, { text: 'ブログ (English)', link: '/blog/' }, { text: 'アップデート', link: '/ja/releases/' }] },
+          { text: 'ダウンロード', link: '/ja/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
+        ], sidebar: { ...docsSidebar('/ja', {
         start: 'はじめに', quickStart: 'クイックスタート', workflow: '開発ワークフロー',
         ssh: 'ローカルと SSH のワークスペース', localLinux: 'Android Local Linux', ai: 'AI Chat と Agent', plugins: 'カスタムプラグイン',
         editor: 'エディター', terminal: 'ターミナル', search: '検索', sourceControl: 'ソース管理', lsp: 'LSP', debug: 'デバッグ', syncCache: '同期 / キャッシュ', tasks: 'タスク',
@@ -1227,11 +1267,12 @@ export default defineConfig({
     ko: {
       label: '한국어', lang: 'ko-KR', link: '/ko/',
       themeConfig: { ...docsUi('ko'), nav: [
-        { text: '제품', link: '/ko/features' }, { text: '비교', link: '/ko/compare/mobile-ai-development-tools' },
-        { text: '워크플로', link: '/ko/use-cases/' }, { text: '리소스', link: '/ko/resources/' },
-        { text: '문서', link: '/ko/docs/quick-start' }, { text: '다운로드', link: '/ko/download' },
-        { text: 'Blog (English)', link: '/blog/' }
-      ], sidebar: { ...docsSidebar('/ko', {
+          { text: '제품', link: '/ko/features' },
+          { text: '워크플로', link: '/ko/use-cases/' },
+          { text: '문서', link: '/ko/docs/quick-start' },
+          { text: '리소스', items: [{ text: '리소스', link: '/ko/resources/' }, { text: '비교', link: '/ko/compare/mobile-ai-development-tools' }, { text: '블로그 (English)', link: '/blog/' }, { text: '업데이트', link: '/ko/releases/' }] },
+          { text: '다운로드', link: '/ko/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
+        ], sidebar: { ...docsSidebar('/ko', {
         start: '시작하기', quickStart: '빠른 시작', workflow: '개발 워크플로',
         ssh: '로컬 및 SSH 작업 공간', localLinux: 'Android Local Linux', ai: 'AI Chat 및 Agent', plugins: '사용자 지정 플러그인',
         editor: '편집기', terminal: '터미널', search: '검색', sourceControl: '소스 제어', lsp: 'LSP', debug: '디버깅', syncCache: '동기화 / 캐시', tasks: '작업',
@@ -1242,11 +1283,12 @@ export default defineConfig({
     es: {
       label: 'Español', lang: 'es-ES', link: '/es/',
       themeConfig: { ...docsUi('es'), nav: [
-        { text: 'Producto', link: '/es/features' }, { text: 'Comparar', link: '/es/compare/mobile-ai-development-tools' },
-        { text: 'Flujos', link: '/es/use-cases/' }, { text: 'Recursos', link: '/es/resources/' },
-        { text: 'Documentación', link: '/es/docs/quick-start' }, { text: 'Descargar', link: '/es/download' },
-        { text: 'Blog (English)', link: '/blog/' }
-      ], sidebar: { ...docsSidebar('/es', {
+          { text: 'Producto', link: '/es/features' },
+          { text: 'Flujos', link: '/es/use-cases/' },
+          { text: 'Documentación', link: '/es/docs/quick-start' },
+          { text: 'Recursos', items: [{ text: 'Recursos', link: '/es/resources/' }, { text: 'Comparar', link: '/es/compare/mobile-ai-development-tools' }, { text: 'Blog (English)', link: '/blog/' }, { text: 'Novedades', link: '/es/releases/' }] },
+          { text: 'Descargar', link: '/es/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
+        ], sidebar: { ...docsSidebar('/es', {
         start: 'Primeros pasos', quickStart: 'Inicio rápido', workflow: 'Flujo de desarrollo',
         ssh: 'Espacios de trabajo locales y SSH', localLinux: 'Local Linux en Android', ai: 'AI Chat y Agent', plugins: 'Plugins personalizados',
         editor: 'Editor', terminal: 'Terminal', search: 'Búsqueda', sourceControl: 'Control de código fuente', lsp: 'LSP', debug: 'Depuración', syncCache: 'Sincronización / caché', tasks: 'Tareas',

@@ -4,25 +4,8 @@
    All colours come from the shared tokens so light and dark stay in sync.
    ========================================================================== */
 
-/* Give the comparison page a slightly wider shell while keeping prose readable. */
-.compare-page .nimote-marketing-doc {
-  width: min(100% - 48px, 1120px);
-}
-.compare-page .nimote-marketing-doc .vp-doc {
-  max-width: 100%;
-}
-/* Keep prose to a comfortable measure while the comparison grids use the
-   wider shell. Text blocks are centred so the layout reads deliberately. */
-.compare-page .vp-doc > h1,
-.compare-page .vp-doc > h2,
-.compare-page .vp-doc > p,
-.compare-page .vp-doc > ul,
-.compare-page .cmp > h2,
-.compare-page .cmp > p {
-  max-width: 820px;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* Introductory copy follows the shared reading measure. */
+.compare-page .cmp > p { max-width: var(--nimote-reading-width); }
 
 /* Categories ------------------------------------------------------------- */
 .vp-doc .cmp-categories {
@@ -372,12 +355,6 @@
   .vp-doc .cmp-picker-extra,
   .vp-doc .cmp-result-extra { display: none; }
   .vp-doc .cmp-compare-row { grid-template-columns: minmax(145px, 180px) repeat(2, minmax(0, 1fr)); }
-}
-
-@media (max-width: 767px) {
-  .compare-page .nimote-marketing-doc {
-    width: min(100% - 32px, 1120px);
-  }
 }
 
 @media (max-width: 560px) {

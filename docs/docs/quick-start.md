@@ -5,9 +5,12 @@ description: "Configuration, procedures, and interface reference for quick start
 
 # Quick start
 
-<figure class="quick-start-hero">
-  <img src="/screenshots/nimote-pro.webp" width="1440" height="810" alt="NimoteCode on tablet and phone, with local and SSH workspaces, code editing, Git, Terminal, AI, debugging, and sync." decoding="async" fetchpriority="high">
-</figure>
+Open a workspace, edit a file, and run your first command. Follow the steps below; AI setup is only needed when you reach the Agent step.
+
+- [Open a workspace](#open-a-workspace)
+- [Open and edit a file](#open-and-edit-a-file)
+- [Run a command](#run-a-command)
+- [Run AI Agent](#run-ai-agent)
 
 ## Open a workspace
 

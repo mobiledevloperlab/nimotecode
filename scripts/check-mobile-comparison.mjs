@@ -43,7 +43,15 @@ for (const product of competitors) {
 const en = readFileSync('docs/compare/mobile-ai-development-tools.md','utf8')
 const zh = readFileSync('docs/zh/compare/mobile-ai-development-tools.md','utf8')
 assert.ok(en.includes('<MobileDevToolComparison lang="en" />') && zh.includes('<MobileDevToolComparison lang="zh" />'))
-assert.ok(en.includes('1.2.4') && zh.includes('1.2.4'))
+// Comparison pages describe a reviewed snapshot, which need not be the latest
+// release. Validate that snapshot against the data and its actual release notes.
+const nimoteVersion = competitors.find(product => product.id === 'nimotecode')?.version
+assert.match(nimoteVersion ?? '', /^\d+\.\d+\.\d+$/, 'NimoteCode: invalid comparison version')
+for (const [locale, source] of [['', en], ['zh/', zh]]) {
+  assert.ok(source.includes(`**${nimoteVersion}**`), `${locale || 'en/'}comparison: version must match data (${nimoteVersion})`)
+  assert.ok(source.includes(`/${locale}releases/${nimoteVersion}`), `${locale || 'en/'}comparison: missing version evidence link`)
+  assert.ok(existsSync(`docs/${locale}releases/${nimoteVersion}.md`), `${locale || 'en/'}comparison: release notes missing`)
+}
 for (const locale of ['','zh/']) {
   const path = `docs/.vitepress/dist/${locale}compare/mobile-ai-development-tools.html`
   assert.ok(existsSync(path), `${path}: build first`)
@@ -61,7 +69,7 @@ for (const locale of ['','zh/']) {
   const html = readFileSync(path,'utf8')
   assert.ok(html.includes('home-tool-comparison-row') && !html.includes('home-tool-comparison-scroll'), `${path}: homepage comparison layout is stale`)
   assert.ok(html.includes('NimoteCode') && html.includes('Termius') && (html.includes('Evidence ↗') || html.includes('官方依据 ↗')), `${path}: homepage comparison content missing`)
-  assert.ok(html.includes('2026-10-19'), `${path}: evidence date missing`)
+  assert.ok(html.includes(REVIEW_DATE), `${path}: evidence date missing`)
 }
 console.log(`Comparison data passed: ${competitors.length} products, ${featureRows.length} features, ${urls.size} unique evidence URLs; English and Chinese SSR verified.`)
 

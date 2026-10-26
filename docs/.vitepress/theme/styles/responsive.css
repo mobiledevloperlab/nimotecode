@@ -463,7 +463,7 @@
      container safe-area padding shifts the first grid track, while the fixed
      sidebar remains at x=0. Keep this padding for the marketing header only;
      mobile docs retain VitePress's own responsive chrome spacing. */
-  .VPNavBar:not(.has-sidebar) .container,
+  .VPNavBar:not(.has-sidebar) > .wrapper > .container,
   .home-page-section,
   .VPFooter .container {
     padding-left: max(var(--nimote-home-gutter), env(safe-area-inset-left));

@@ -5,7 +5,7 @@ author: "NimoteCode 团队"
 date: "2026-09-09"
 lastUpdated: "2026-09-14"
 tags: ["移动 ide", "ssh", "ai agent", "移动开发", "2026"]
-image: https://nimotecode.com/screenshots/nimote-pro.webp
+image: https://nimotecode.com/screenshots/nimote-pro.webp?v=8692016c
 ---
 
 # 2026 年最好的移动 IDE：应该看什么(以及 NimoteCode 如何契合)
@@ -17,7 +17,7 @@ image: https://nimotecode.com/screenshots/nimote-pro.webp
 市面上大多数"移动编程"应用都可以归入几类常见形态。每一类都解决了一个真实问题,但也都止步于"完整工作区"之前。这篇指南会梳理当前的产品形态、真正值得关注的评估标准,以及 **NimoteCode** 所处的位置。
 
 <figure class="article-hero">
-  <img src="https://nimotecode.com/screenshots/nimote-pro.webp" width="1440" height="810" alt="平板和手机上的 NimoteCode 移动 IDE，展示远程项目资源管理器、编辑器与 AI Chat" loading="lazy" decoding="async">
+  <img class="nimote-pro-screenshot" src="https://nimotecode.com/screenshots/nimote-pro.webp?v=8692016c" width="1440" height="810" alt="平板和手机上的 NimoteCode 移动 IDE，展示远程项目资源管理器、编辑器与 AI Chat" loading="lazy" decoding="async">
   <figcaption>在同一个移动工作区中查看项目、编辑代码、使用终端、Git 和 AI 协助。</figcaption>
 </figure>
 

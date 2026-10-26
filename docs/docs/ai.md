@@ -48,8 +48,26 @@ In **Confirm** mode, review the proposed plan and select **Approve this run** to
 
 The following screenshots show one response to “explain this project”: a project overview, example commands, and caveats about missing files and benchmark methodology. These are parts of a generated answer, not separate analysis modes. Check referenced files and commands against the current project before using the result.
 
+### Start with the project structure
+
+Read the overview to understand the main components and their relationships, then verify the referenced files against the current workspace.
+
 <div class="doc-screenshots">
   <DocScreenshot file="ai-analysis-overview.jpg" caption="Project overview and main components in an AI response." />
+</div>
+
+### Check the example commands
+
+Review the command examples in the same response. Confirm that they apply to the current project and environment before deciding to run them.
+
+<div class="doc-screenshots">
   <DocScreenshot file="ai-analysis-workflow.jpg" caption="Example project commands in the same response." />
+</div>
+
+### Review limitations and caveats
+
+Look for missing files, checkout scope, and benchmark methodology limitations. Do not assume the conclusions also apply to other versions or environments.
+
+<div class="doc-screenshots">
   <DocScreenshot file="ai-analysis-caveats.jpg" caption="Caveats about the inspected checkout and benchmark results." />
 </div>

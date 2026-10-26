@@ -48,8 +48,26 @@ En modo **Confirm**, revise el plan y seleccione **Approve this run** para permi
 
 Las capturas muestran una respuesta a «explain this project»: una descripción del proyecto, ejemplos de comandos y observaciones sobre archivos ausentes y metodología de pruebas de rendimiento. Son partes de una respuesta generada, no modos de análisis distintos. Contraste los archivos y comandos citados con el proyecto actual antes de usar el resultado.
 
+### Empezar por la estructura del proyecto
+
+Lee el resumen para entender los componentes principales y sus relaciones, y contrasta los archivos citados con el espacio de trabajo actual.
+
 <div class="doc-screenshots">
   <DocScreenshot file="ai-analysis-overview.jpg" caption="Descripción del proyecto y sus componentes principales en una respuesta de IA." />
+</div>
+
+### Comprobar los comandos de ejemplo
+
+Revisa los comandos de la misma respuesta y confirma que se aplican al proyecto y al entorno actuales antes de decidir ejecutarlos.
+
+<div class="doc-screenshots">
   <DocScreenshot file="ai-analysis-workflow.jpg" caption="Ejemplos de comandos del proyecto en la misma respuesta." />
+</div>
+
+### Revisar las limitaciones
+
+Presta atención a los archivos ausentes, al alcance de la copia de trabajo y al método de las pruebas de rendimiento. No supongas que las conclusiones se aplican a otras versiones o entornos.
+
+<div class="doc-screenshots">
   <DocScreenshot file="ai-analysis-caveats.jpg" caption="Observaciones sobre la copia del repositorio inspeccionada y los resultados de rendimiento." />
 </div>

@@ -24,7 +24,7 @@
 <p align="center"><sub>免费开始使用，无需先配置 AI。<br>商业闭源应用 · 本仓库提供官方文档与社区资源</sub></p>
 
 <p align="center">
-  <img src="docs/public/screenshots/nimote-pro.webp" alt="NimoteCode 在平板和手机上展示代码编辑器、项目文件与 AI 工作区" width="1000">
+  <img src="docs/public/screenshots/nimote-pro.webp?v=8692016c" alt="NimoteCode 在平板和手机上展示代码编辑器、项目文件与 AI 工作区" width="1000" style="border: 1px solid rgba(99, 102, 241, 0.28); border-radius: 12px; box-shadow: 0 18px 48px rgba(15, 23, 42, 0.22);">
 </p>
 
 ---

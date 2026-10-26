@@ -5,9 +5,12 @@ description: "クイックスタートの設定、操作手順、画面の説明
 
 # クイックスタート
 
-<figure class="quick-start-hero">
-  <img src="/screenshots/nimote-pro.webp" width="1440" height="810" alt="タブレットとスマートフォン上の NimoteCode。ローカルと SSH のワークスペース、コード編集、Git、ターミナル、AI、デバッグ、同期を表示。" decoding="async" fetchpriority="high">
-</figure>
+ワークスペースを開き、ファイルを編集して、最初のコマンドを実行します。以下の順に進めてください。モデル接続の設定は AI Agent を使う段階で行います。
+
+- [ワークスペースを開く](#ワークスペースを開く)
+- [ファイルを開いて編集する](#ファイルを開いて編集する)
+- [コマンドを実行する](#コマンドを実行する)
+- [AI Agent を実行する](#ai-agent-を実行する)
 
 ## ワークスペースを開く
 

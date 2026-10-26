@@ -48,8 +48,26 @@ Agent 选择器提供 Nimote Agent 和外部 Agent。外部 Agent 在 SSH 主机
 
 下列截图展示同一次“解释项目”请求的回答：项目概览、示例命令，以及缺失文件和基准测试方法的注意事项。这些是生成回答的不同部分，并非独立的分析模式。使用结果前，应结合当前项目核对引用的文件与命令。
 
+### 先了解项目结构
+
+先阅读项目概览，了解回答归纳的主要组件及其关系，再与当前工作区中的文件对应核对。
+
 <div class="doc-screenshots">
   <DocScreenshot file="ai-analysis-overview.jpg" caption="AI 回答中的项目概览与主要组件。" />
+</div>
+
+### 再核对示例命令
+
+阅读同一回答中的命令示例，确认它们适用于当前项目和运行环境，再决定是否执行。
+
+<div class="doc-screenshots">
   <DocScreenshot file="ai-analysis-workflow.jpg" caption="同一回答中的项目命令示例。" />
+</div>
+
+### 最后检查限制与注意事项
+
+留意缺失文件、当前检出范围和基准测试方法等限制。不要将这次回答的结论直接套用到其他版本或环境。
+
+<div class="doc-screenshots">
   <DocScreenshot file="ai-analysis-caveats.jpg" caption="针对当前检出文件和基准测试结果的注意事项。" />
 </div>
