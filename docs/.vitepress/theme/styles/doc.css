@@ -502,6 +502,31 @@
   text-align: center;
 }
 
+.mobile-ide-article .vp-doc .mobile-ide-screenshot {
+  width: min(100%, 360px);
+  margin: 28px auto 36px;
+}
+
+.mobile-ide-article .vp-doc .mobile-ide-screenshot a {
+  display: block;
+}
+
+.mobile-ide-article .vp-doc .mobile-ide-screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid var(--nimote-border);
+  border-radius: 12px;
+}
+
+.mobile-ide-article .vp-doc .mobile-ide-screenshot figcaption {
+  margin-top: 10px;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
 /* The combined tablet-and-phone product capture has a dark rectangular
    canvas. A restrained frame lets it sit cleanly on either page theme. */
 .vp-doc img.nimote-pro-screenshot {

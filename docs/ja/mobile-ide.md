@@ -1,102 +1,152 @@
 ---
-title: "Mobile IDE for SSH, Git and AI Coding | NimoteCode"
-description: "NimoteCode is a Mobile AI Development Workspace for Android and iOS, with Android Local Linux, SSH, split editing, HTML preview, Git and AI-assisted coding in one environment."
+title: "モバイルIDEの選び方：スマホで編集から変更の確認まで | NimoteCode"
+description: "ローカル編集、SSH、リモートAIエージェントを用途で比較。NimoteCodeを例に、小さな修正を編集、プレビュー、Git差分の確認まで進めます。"
+pageClass: mobile-ide-article
 ---
 
-# SSH、Git、AIコーディング用モバイルIDE
+# モバイルIDEの選び方：スマホで編集から変更の確認まで
 
+プロジェクトのREADMEに、間違ったコマンドを見つけた。リポジトリは開発用マシンにあるけれど、今は手元にパソコンがない。1行直すだけなら簡単そうです。ただ、表示を確認し、プロジェクトのチェックを実行し、差分に余計な変更がないか確かめる作業も残っています。
 
-ほとんどのモバイル コーディング ツールは、ファイルを開く、サーバーに接続する、またはコマンドを実行するなど、ジョブの一部を解決します。 **モバイル IDE** は、プロジェクトを探索し、コードを理解し、変更を加え、検証し、何がリリースされるかをレビューするなど、開発ループ全体をまとめておく必要があります。
+こうした小さな修正は、モバイルIDEの使い勝手を試すのに向いています。ファイルを開くだけでなく、スマホに開発環境を一から作り直さずに、作業を最後まで進められるでしょうか。
 
+私たちはAndroid、iPhone、iPad向けのエディターと開発ワークスペース、NimoteCodeを開発しています。この記事ではNimoteCodeを使って説明しますが、どのアプリを選ぶ場合も、最初に考えたいことは同じです。**コードと開発ツールを、どこで動かしますか？**
 
-NimoteCode は、そのループの **モバイル AI 開発ワークスペース**です。 Android および iOS のリリースでは、エディター、エクスプローラー、SSH、アプリ内 Web およびメディア プレビュー、ターミナル、Git、AI チャット、エージェントが 1 つのワークスペースに組み込まれています。サポートされている Android デバイスでは、Local Linux は、root アクセスなしで Bash、Git、SSH を備えたバンドルされた Ubuntu 環境も提供します。
+<figure class="article-hero">
+  <a href="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" target="_blank" rel="noopener">
+    <img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" width="1414" height="878" alt="タブレット上のNimoteCode。ソース管理とコードエディターを並べて表示しています。" loading="eager" decoding="async">
+  </a>
+  <figcaption>タブレット上のNimoteCode。ソース管理とコードエディターを並べて表示しています。</figcaption>
+</figure>
 
+## アプリより先に作業の進め方を選ぶ
 
-<ImagePlaceholder image-key="mobileIde" alt="NimoteCode mobile IDE">
-  <strong>Image placeholder — Mobile IDE overview</strong>
-  <span>Replace with a polished product screenshot showing Explorer, editor, Terminal, Git and AI Agent in the same workspace.</span>
-</ImagePlaceholder>
+スマホでコードを書くといっても、ローカルファイルの編集、開発用マシンへの接続、AIエージェントの作業確認では、必要な道具が違います。
 
-## モバイル IDE が実際の作業に役立つのはなぜですか?
+| やりたいこと | 検討する選択肢 | 確認したいこと |
+| --- | --- | --- |
+| Markdown、設定、静的HTMLの編集 | 必要なプレビューを備えたローカルエディター | 編集したファイルをリポジトリへ戻す方法 |
+| Android上でスクリプトやCLIツールを実行 | [Termux](https://termux.dev/en/)や互換性のあるローカルLinux環境 | 依存パッケージが端末で動くか |
+| サーバー管理やリモートシェルでの作業 | [Termius](https://termius.com/)や[Blink Shell](https://docs.blink.sh/advanced/code) | キーボード操作、ファイルアクセス、普段使うターミナルツール |
+| 別のマシンで動くエージェントの作業を続ける | [Redock](https://redock.dev/)、[ServerCC](https://servercc.app/)、[Moshi](https://getmoshi.app/docs/introduction)。Orcaのデスクトップ環境を使うなら[Orca](https://www.onorca.dev/) | ホストの設定と、エージェントによる変更の確認方法 |
+| スマホの画面でプロジェクトを開き、編集してGit差分を確認 | NimoteCodeのようなワークスペース | 実行環境とProが必要な機能 |
 
+これらの用途には重なりがあります。Blink Codeはローカルとリモートのファイルを編集できます。TermuxにはエディターやGitを導入でき、SSHターミナルではホスト側のツールを使えます。差分表示やプレビューを備えたエージェント用クライアントもあります。機能の数より、自分の作業に合う操作方法かどうかで選ぶと判断しやすくなります。
 
-| Need | A single-purpose app | NimoteCode workspace |
-|---|---|---|
-| Understand a project | Open individual files | Browse the project in Explorer and keep files in tabs |
-| Work remotely | Switch between an SSH app and editor | Connect to an SSH workspace and work on its files |
-| Validate a change | Copy commands into another app | Run commands in the workspace terminal |
-| Preview a web change | Switch to a separate browser | Open a local or remote web project from the workspace or a Terminal URL |
-| Compare related code | Flip between files | Keep two files visible in split editor panes |
-| Ship carefully | View a raw diff elsewhere | Review Git changes next to the edited code |
-| Get help | Paste snippets into a separate AI chat | Use AI Chat or AI Agent with workspace context |
+個別の機能や制限、公式の根拠は[ツール比較](/ja/compare/mobile-ai-development-tools)にまとめています。実行場所を決めたい場合は、[開発方式の比較](/ja/compare/mobile-development-approaches)を参照してください。
 
-目標は、長時間のコーディング セッションごとにデスクトップを置き換えることではありません。それは、電話やタブレットしか持っていない瞬間を生産的なものにするためです。たとえば、オンコール調査、ちょっとした制作修正、旅行中のレビュー、すでに進行中の作業の AI 支援によるフォローアップなどです。
+## すでに動く開発環境があるなら、そのまま使う
 
+既存のプロジェクトなら、SSHを使うと依存関係やテストコマンドを元のマシンに残せます。スマホでファイルを開いて編集し、コマンドはリモートホストで実行します。接続可能なホストとネットワークが必要です。
 
-## アプリホッピングのない完全なワークフロー
+NimoteCodeで **Connect Remote Workspace** を選び、SSH接続情報を入力してリポジトリのルートを選択します。設定手順は[SSHガイド](/ja/docs/ssh)にあります。編集前にExplorerのホスト名とパスを確認し、ターミナルも別に確認します。
 
+```sh
+pwd
+git status --short --branch
+```
 
-プロジェクトがデバイス上にある場合はローカル エクスプローラーで開始し、サポートされている Android デバイスにバンドルされた Ubuntu が必要な場合はローカル Linux を使用するか、[SSH ワークスペース](/docs/ssh) 経由でリモート開発マシンまたはサーバーに接続します。そこから、エディターでファイルを並べて開き、保存する前に現在の HTML コンテンツをプレビューするか、必要に応じてローカルまたはリモートの Web プロジェクトを開き、[ターミナル](/docs/terminal) でテストまたは検査コマンドを実行し、[ソース管理](/docs/source-control) を使用して結果の差分を検査します。
+シェルが目的のリポジトリにいることを確認してください。エディターのタブを切り替えても、シェルの作業ディレクトリは変わりません。既存の変更があれば、今回の修正と区別しておきます。
 
+<figure class="mobile-ide-screenshot">
+  <a href="/images/placeholders/remote-workspace-connected.jpg" target="_blank" rel="noopener">
+    <img src="/images/placeholders/remote-workspace-connected.jpg" width="1080" height="2376" alt="SSH接続後のワークスペース。ファイルを開く前に、ホストとプロジェクトのルートを確認します。" loading="lazy" decoding="async">
+  </a>
+  <figcaption>SSH接続後のワークスペース。ファイルを開く前に、ホストとプロジェクトのルートを確認します。</figcaption>
+</figure>
 
-タスクにさらにコンテキストが必要な場合、[AI チャットとエージェント](/docs/ai) はコードを説明したり、変更を計画したりできます。 AI エージェントは、制御された複数ステップの作業向けに設計されています。 SSH ワークスペースでは、構成された互換性のある外部 ACP ランタイムを使用することもできます。提案内容を確認し、最終決定を自分の手に委ねることができます。
+## 小さな修正を最後まで進める
 
+最初はREADMEのコマンド修正を試してみてください。スマホでも差分を追いやすく、ファイルアクセス、編集、プレビュー、Git確認を一通り試せます。以下の画像は各機能の画面例で、この修正の実施前後を記録したものではありません。
 
-## モバイルの制約に合わせて構築
+### 1. ファイルを開いて修正する
 
+Explorerで `README.md` を開き、前後の説明を読んでからコマンドを直します。最初の変更はその箇所だけに絞りましょう。文書全体の整形まで同時に行うと、小さな画面で差分を確認しづらくなります。
 
-優れたモバイル開発とは、デスクトップ UI を小さな画面に押し込むことではありません。 NimoteCode は、タッチ、モバイル キーボード、集中パネル、再接続を意識したリモート作業を中心に設計されています。現在のリリースでは、より復元性の高い SSH 処理、制限されたプレビュー リソース、およびより信頼性の高いモバイル端末入力により、長時間のセッションも安定します。タブレットでは、ディスプレイが大きいため、分割編集、プロジェクト ナビゲーション、ターミナル出力のためのスペースがさらに広がります。電話では、同じワークスペースが次のアクションに集中し続けます。
+<figure class="mobile-ide-screenshot">
+  <a href="/images/placeholders/markdown-source-editor.jpg" target="_blank" rel="noopener">
+    <img src="/images/placeholders/markdown-source-editor.jpg" width="1080" height="2376" alt="モバイルエディターで開いたREADME.md。プレビューと見比べられるMarkdownのソース画面です。" loading="lazy" decoding="async">
+  </a>
+  <figcaption>モバイルエディターで開いたREADME.md。プレビューと見比べられるMarkdownのソース画面です。</figcaption>
+</figure>
 
+### 2. プレビューを確認して保存する
 
-機能の詳細については、[機能](/features)を参照してください。 SSH のセットアップとプロジェクトへのアクセスについては、[SSH リモート開発ワークフロー](/docs/ssh) を参照してください。セットアップ手順については、[クイックスタート](/docs/quick-start)から始めてください。
+Markdownプレビューで、コマンドがコードブロック内に収まり、前後のリストが正しく表示されるか確認します。静的HTMLでは、未保存の変更を含む編集中の内容をプレビューできます。サーバー処理が必要なアプリには、その実行環境が別途必要です。詳しくは[エディターガイド](/ja/docs/editor)を参照してください。
 
+<figure class="mobile-ide-screenshot">
+  <a href="/images/placeholders/markdown-preview.jpg" target="_blank" rel="noopener">
+    <img src="/images/placeholders/markdown-preview.jpg" width="1080" height="2376" alt="Markdownプレビューでは、見出し、コードブロック、表が実際にどう表示されるか確認できます。" loading="lazy" decoding="async">
+  </a>
+  <figcaption>Markdownプレビューでは、見出し、コードブロック、表が実際にどう表示されるか確認できます。</figcaption>
+</figure>
 
-## デスクトップが依然として勝つ場所
+チェックを実行する前に保存してください。ターミナルのコマンドが読むのは保存済みのファイルで、エディター内の未保存の内容ではありません。
 
+### 3. プロジェクトで決められたチェックを実行する
 
-モバイル IDE は補完的なものであり、完全に置き換えるものではありません。長時間の中断のない機能作業、大量のローカル コンパイル、広範なマルチファイル リファクタリング、およびマルチモニター デバッグは、デスクトップの方が優れています。電話では、検査、編集、検証、レビューという次の具体的なステップに自然と焦点が絞られます。この分業のおかげで、スマートフォン上でローカルに大規模なプロジェクトをコンパイルしようとするのではなく、SSH を介したリモート開発 (すでに所有しているコンピューティング能力を再利用する) が通常生産的な方法となります。
+リポジトリの手順に従い、文書チェック、リンクチェック、ビルドなどをSSHホストで実行します。すべてのプロジェクトに共通するテストコマンドはありません。プレビューで表示を確認できても、書いたコマンド自体が正しいとは限りません。
 
+空白文字の問題は、追加で次のように確認できます。
+
+```sh
+git diff --check
+```
+
+このコマンドで分かるのは一部の空白文字のエラーです。文書の手順やアプリの動作を検証するものではありません。
+
+<figure class="mobile-ide-screenshot">
+  <a href="/images/placeholders/terminal-command-output.png" target="_blank" rel="noopener">
+    <img src="/images/placeholders/terminal-command-output.png" width="1080" height="2376" alt="ワークスペースのターミナルに表示されたlsのディレクトリ一覧。コマンド出力の画面例であり、テスト成功の記録ではありません。" loading="lazy" decoding="async">
+  </a>
+  <figcaption>ワークスペースのターミナルに表示されたlsのディレクトリ一覧。コマンド出力の画面例であり、テスト成功の記録ではありません。</figcaption>
+</figure>
+
+### 4. コミット前に差分を読む
+
+**Source Control** で変更したファイルを開き、差分を確認します。ファイル名、修正した行、意図しないファイルがないかを見てください。NimoteCodeの無料版ではGitの状態、差分、履歴を確認できます。Gitの書き込みとブランチ操作にはProが必要です。[無料版とProの違い](/ja/pro)で範囲を確認できます。
+
+<figure class="mobile-ide-screenshot">
+  <a href="/images/placeholders/git-diff-view.jpg" target="_blank" rel="noopener">
+    <img src="/images/placeholders/git-diff-view.jpg" width="1080" height="2376" alt="差分画面は追加と削除を色分けします。この既存の画像にはデモ用の変更が含まれており、上のREADME修正の結果ではありません。" loading="lazy" decoding="async">
+  </a>
+  <figcaption>差分画面は追加と削除を色分けします。この既存の画像にはデモ用の変更が含まれており、上のREADME修正の結果ではありません。</figcaption>
+</figure>
+
+保存して確認した状態で作業を止め、パソコンに戻ってから続けても構いません。アプリからコミットする場合も、普段のレビューとリリースの手順に従ってください。
+
+## この作業でAIが役立つ場面
+
+READMEに知らないスクリプトが登場したら、「このコマンドが呼び出すスクリプトを探して、引数を説明して。ファイルは変更しないで」と具体的に尋ねられます。回答をリポジトリと照合しやすい質問です。
+
+NimoteCodeにはAI Chatがあり、ProではAI Agentも利用できます。モデルへのアクセス設定が必要です。外部ACPエージェントには、SSHホスト上の互換ランタイムも必要です。[AIガイド](/ja/docs/ai)では設定方法と、実行前に計画を確認するConfirmモードを説明しています。
+
+1行の修正なら、自分で直すほうが早いかもしれません。知らないプロジェクトでは、修正案の生成より関連ファイルを探す手助けが役立つこともあります。どちらの場合も、差分と必要なチェックは自分で確認します。
+
+## スマホ上で実行する場合は？
+
+対応するAndroid端末では、NimoteCodeのLocal LinuxがPRootによるUbuntu環境をroot権限なしで提供します。Android 8以降と、ARM64またはx86_64の64ビットアプリが必要です。言語ツールチェーンは別途インストールし、互換性はプロジェクトごとに確認します。iOSでは利用できません。ビルドに使う前に[Local Linuxの説明](/ja/docs/local-linux)を確認してください。
+
+システムのファイル選択画面で開いたフォルダーは、別の扱いになります。閲覧と編集はできますが、Git、言語サービス、Tasks、Agentなどにはネイティブのファイルシステムパスが必要です。フォルダーが開けることと、すべての開発ツールが使えることは同じではありません。
+
+スマホは、小さな修正や範囲を絞ったレビュー、外出中のエラー確認に向いています。長いリファクタリングは小さな画面では追いづらくなります。リモート作業はネットワークに依存し、アプリが再接続できてもホストのプロセスが動き続けているとは限りません。最初は、最後まで確認できる作業を選びましょう。
 
 ## よくある質問
 
+### NimoteCodeはSSHクライアントですか？
 
-### NimoteCode は単なる SSH クライアントですか?
+SSHに加えて、エディター、Explorer、ターミナル、Git、AI Agentを備えたモバイル開発ワークスペースです。
 
+### スマホやタブレットからリモートプロジェクトを扱えますか？
 
-いいえ。 NimoteCode は、エディター、エクスプローラー、SSH、ターミナル、Git、AI チャット、エージェントを 1 つのモバイル開発ワークスペースに組み合わせています。
+はい。SSH接続したワークスペースで、ファイルの確認、編集、コマンド実行、Git差分の確認ができます。
 
+### AndroidとiOSに対応していますか？
 
-### 携帯電話やタブレットからリモート プロジェクトで作業できますか?
+Android版はGoogle Play、iPhone・iPad版はApp Storeで配信しています。
 
-はい。 SSH 経由で接続し、ファイルを検査し、コードを編集し、ターミナル コマンドを実行し、同じワークスペースで Git の変更を確認します。
+## よく知っているプロジェクトで試す
 
+内容を把握しているリポジトリで、ひと言で説明できる修正を選んでください。開いて、編集して、検証して、差分を読む。一度試すと、機能一覧を眺めるより自分の作業に合うか判断しやすくなります。
 
-### NimoteCode は Android と iOS で利用できますか?
-
-
-NimoteCode は、Android では Google Play で、iPhone および iPad では App Store で入手できます。
-
-
-<div class="seo-cta">
-  <p><strong>Carry the real workflow, not just a terminal.</strong> See the mobile IDE in action or choose your platform.</p>
-  <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=mobile_ide" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for Android</a>
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noreferrer">Download for iOS</a>
-    <a href="/demo?utm_source=mobile_ide&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
-  </p>
-</div>
-
-## 関連するワークフローを調べる
-
-
-- [リモート開発用のSSH IDE](/ssh-ide)
-
-- [Android SSHクライアント](/android-ssh-client)
-
-- [モバイルAIコーディング](/mobile-ai-coding)
-
-- [iPadコーディングワークスペース](/ipad-coding)
-
-- [2026 年のベストモバイル IDE](/blog/best-ssh-clients)
-
-- [2026 年のベストモバイル IDE](/blog/best-ssh-clients)
+まず[ワークスペースのデモ](/ja/use-cases/mobile-workspace-demo)を見るか、[NimoteCodeをダウンロード](/ja/download?utm_source=mobile_ide&utm_medium=organic&utm_campaign=project_workflow)して[クイックスタート](/ja/docs/quick-start)から始めてください。
