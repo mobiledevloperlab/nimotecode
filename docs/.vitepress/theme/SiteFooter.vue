@@ -118,13 +118,6 @@ function localized(path: string) {
         <nav :aria-label="copy.explore">
           <h2>{{ copy.explore }}</h2>
           <a v-for="link in copy.exploreLinks" :key="link.href" :href="localized(link.href)">{{ link.text }}</a>
-        </nav>
-
-        <nav :aria-label="copy.social">
-          <h2>{{ copy.social }}</h2>
-          <a href="https://www.youtube.com/watch?v=gW2wFNIBNws" target="_blank" rel="noreferrer">{{ copy.youtube }}</a>
-          <a href="https://x.com/mobiledevlab" target="_blank" rel="noreferrer">{{ copy.x }}</a>
-          <a href="https://github.com/mobiledevloperlab" target="_blank" rel="noreferrer">{{ copy.github }}</a>
           <a :href="localized('/blog/')">{{ copy.guides }}</a>
           <a :href="localized('/changelog')">{{ copy.changelog }}</a>
         </nav>
@@ -136,6 +129,12 @@ function localized(path: string) {
           <a :href="localized('/terms')">{{ copy.terms }}</a>
           <a :href="localized('/docs/local-linux-source')">{{ copy.openSource }}</a>
           <a :href="localized('/account-delete')">{{ copy.deletion }}</a>
+          <span class="nimote-footer-follow">{{ copy.social }}</span>
+          <span class="nimote-footer-social-links">
+            <a href="https://www.youtube.com/watch?v=gW2wFNIBNws" target="_blank" rel="noreferrer">{{ copy.youtube }}</a>
+            <a href="https://x.com/mobiledevlab" target="_blank" rel="noreferrer">{{ copy.x }}</a>
+            <a href="https://github.com/mobiledevloperlab" target="_blank" rel="noreferrer">{{ copy.github }}</a>
+          </span>
         </nav>
       </div>
       <div class="nimote-site-footer-meta">

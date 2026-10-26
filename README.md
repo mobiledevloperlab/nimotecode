@@ -29,7 +29,7 @@
 <p align="center"><sub>Free to start. AI setup is optional.<br>Commercial, closed-source app · Official documentation and community resources</sub></p>
 
 <p align="center">
-  <img src="docs/public/screenshots/nimote-pro.webp" alt="NimoteCode code editor, project explorer and AI workspace on a tablet and phone" width="1000">
+  <img src="docs/public/screenshots/nimote-pro.webp?v=8692016c" alt="NimoteCode code editor, project explorer and AI workspace on a tablet and phone" width="1000" style="border: 1px solid rgba(99, 102, 241, 0.28); border-radius: 12px; box-shadow: 0 18px 48px rgba(15, 23, 42, 0.22);">
 </p>
 
 ---

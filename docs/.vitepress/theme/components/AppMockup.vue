@@ -43,6 +43,15 @@ const nav = [
 <template>
   <div ref="showcase" class="app-showcase" :class="{ 'is-running': visible && pageVisible }" aria-hidden="true">
     <div class="mock-stage">
+      <div class="mock-phone mock-device">
+        <div class="device-screen phone-screen">
+          <div class="phone-status"><b>9:41</b><span><MockIcon name="wifi" /><MockIcon name="battery" /></span></div>
+          <MockAgent :running="visible && pageVisible" />
+          <div class="phone-navigation"><span v-for="item in nav" :key="item.label" :class="{ active: item.label === 'AI' }"><MockIcon :name="item.icon" /><span>{{ item.label }}</span></span></div>
+          <div class="phone-home-indicator"></div>
+        </div>
+      </div>
+
       <div class="mock-tablet mock-device">
         <div class="device-screen tablet-screen">
           <div class="tablet-status"><span>9:41 &nbsp; Mon, Oct 26</span><span class="camera"></span><span><MockIcon name="wifi" /><MockIcon name="battery" /></span></div>
@@ -85,37 +94,15 @@ const nav = [
         </div>
       </div>
 
-      <div class="mock-phone mock-device">
-        <div class="device-screen phone-screen">
-          <div class="phone-status"><b>9:41</b><span><MockIcon name="wifi" /><MockIcon name="battery" /></span></div>
-          <MockAgent :running="visible && pageVisible" />
-          <div class="phone-navigation"><span v-for="item in nav" :key="item.label" :class="{ active: item.label === 'AI' }"><MockIcon :name="item.icon" /><span>{{ item.label }}</span></span></div>
-          <div class="phone-home-indicator"></div>
-        </div>
-      </div>
+
     </div>
   </div>
 </template>
 
 <style scoped>
-/* All device geometry uses the same canvas unit: resizing never reflows the
-   app UI. Ratios and overlap follow public/screenshots/homepage_bk.jpg. */
+/* Equal-height devices share one scale and top edge on wide screens.
+   Theme colors are shared with workflow previews through app-palette.css. */
 .app-showcase {
-  /* Light-app palette matched to editor-multiple-files, remote-workspace-
-     connected and ai-plan-approval in public/images/placeholders. The device
-     keeps its real light theme even when the surrounding website is dark. */
-  --mock-surface: #f3f3f9;
-  --mock-editor: #f7f7f9;
-  --mock-panel: #ececf2;
-  --mock-line: #e3e3eb;
-  --mock-ink: #24252b;
-  --mock-secondary: #65666f;
-  --mock-muted: #84858e;
-  --mock-accent: #536398;
-  --mock-selected: #e4e5f0;
-  --mock-selection: #dfe5f8;
-  --mock-green: #218447;
-  --mock-amber: #926527;
   --mock-motion: paused;
   width: 100%;
   min-width: 0;
@@ -128,8 +115,8 @@ const nav = [
 .mock-stage {
   position: relative;
   width: 100%;
-  height: 80em;
-  font-size: 1cqw;
+  height: 67em;
+  font-size: .76cqw;
   line-height: 1.5;
   font-family: var(--vp-font-family-base);
   color: var(--mock-ink);
@@ -144,16 +131,22 @@ const nav = [
 .mock-device {
   position: absolute;
   padding: .55em;
-  background: linear-gradient(135deg, #ffffff 0%, #f5f5f8 38%, #d8dce5 75%, #fff 100%);
-  border: .12em solid #dfe2e9;
-  box-shadow: 0 .2em .4em #4f567319, 0 2em 3em -1em #303d5d26, 0 5em 7em -3em #303d5d33, inset 0 0 0 .13em #fff;
+  background: var(--mock-device-frame);
+  border: .12em solid var(--mock-device-border);
+  box-shadow: 0 3em 6em -2em var(--mock-device-shadow), inset 0 0 0 .1em var(--mock-device-highlight);
 }
 .device-screen { height: 100%; overflow: hidden; background: var(--mock-surface); border: .1em solid var(--mock-line); }
-.mock-tablet { width: 97em; height: 62em; top: 3em; left: 0; border-radius: 3.5em; }
+.mock-tablet {
+  width: 97em;
+  height: 63em;
+  top: 2em;
+  left: 33em;
+  border-radius: 3.5em;
+}
 .tablet-screen { display: flex; flex-direction: column; border-radius: 2.9em; }
 .tablet-status { height: 2.6em; flex: none; display: flex; justify-content: space-between; align-items: center; padding: 0 2em; position: relative; font-size: .9em; color: var(--mock-muted); }
 .tablet-status > span:last-child, .phone-status > span { display: flex; gap: .65em; }
-.camera { position: absolute; width: 5.6em; height: .32em; background: #81838a; border-radius: 1em; top: .9em; left: 50%; transform: translateX(-50%); }
+.camera { position: absolute; width: 5.6em; height: .32em; background: var(--mock-hardware); border-radius: 1em; top: .9em; left: 50%; transform: translateX(-50%); }
 .tablet-toolbar { display: flex; height: 4em; align-items: center; border-bottom: .1em solid var(--mock-line); padding: 0 1.7em 0 3.8em; gap: 1.2em; }
 .remote-search { display: flex; gap: .65em; align-items: center; width: 23%; font-size: 1.1em; color: var(--mock-muted); }
 .remote-search svg { width: 1.35em; height: 1.35em; }
@@ -167,43 +160,44 @@ const nav = [
 .tablet-workspace { display: grid; grid-template-columns: 3.6em 23% minmax(0, 1fr) 30%; min-height: 0; flex: 1; }
 .activity-rail { display: flex; flex-direction: column; align-items: center; padding: 1.3em 0; gap: 2.4em; border-right: .1em solid var(--mock-line); color: var(--mock-muted); }
 .activity-rail > span { display: grid; place-items: center; width: 2.6em; height: 2.6em; }
-.activity-rail > .selected { border-radius: 50%; background: var(--mock-selected); color: var(--mock-accent); }
+.activity-rail > .selected { border-radius: 50%; background: var(--mock-selected); color: var(--mock-accent-text); }
 .activity-rail .rail-settings { margin-top: auto; }
 .explorer { border-right: .1em solid var(--mock-line); overflow: hidden; padding: 0 1.1em; }
 .panel-heading { display: flex; align-items: center; justify-content: space-between; height: 4.2em; font-size: 1.15em; font-weight: 600; color: var(--mock-secondary); }
 .project-heading { display: flex; align-items: center; gap: .6em; font-size: 1.15em; margin: .7em 0; }
 .project-heading svg { width: 1em; height: 1em; color: var(--mock-muted); }
-.connected { display: flex; gap: .5em; align-items: center; width: fit-content; padding: .35em .65em; margin: .6em 0 1em 1.7em; border-radius: 2em; background: var(--mock-selected); color: var(--mock-accent); font-size: .95em; }
+.connected { display: flex; gap: .5em; align-items: center; width: fit-content; padding: .35em .65em; margin: .6em 0 1em 1.7em; border-radius: 2em; background: var(--mock-selected); color: var(--mock-accent-text); font-size: .95em; }
 .connected i { width: .55em; height: .55em; background: var(--mock-green); border-radius: 50%; }.connected svg { width: 1em; height: 1em; }
 .explorer-tools { display: flex; gap: 1.6em; padding: .8em .7em 1.4em; border-bottom: .1em solid var(--mock-line); color: var(--mock-muted); }.explorer-tools svg { width: 1.35em; height: 1.35em; }
-.files { padding-top: .8em; }.file-row { display: flex; align-items: center; gap: .8em; padding: .75em .7em; font-size: 1.12em; white-space: nowrap; }.file-row svg { width: 1.1em; height: 1.1em; color: #7db2df; }.file-row b { margin-left: auto; font-size: .85em; color: var(--mock-amber); }.folder-chevron { color: var(--mock-muted); width: 1.2em; }.file-row.active { background: var(--mock-selection); color: var(--mock-secondary); border-radius: .8em; box-shadow: inset .2em 0 var(--mock-accent); font-weight: 600; }
+.files { padding-top: .8em; }.file-row { display: flex; align-items: center; gap: .8em; padding: .75em .7em; font-size: 1.12em; white-space: nowrap; }.file-row svg { width: 1.1em; height: 1.1em; color: var(--mock-function); }.file-row b { margin-left: auto; font-size: .85em; color: var(--mock-amber); }.folder-chevron { color: var(--mock-muted); width: 1.2em; }.file-row.active { background: var(--mock-selection); color: var(--mock-secondary); border-radius: .8em; box-shadow: inset .2em 0 var(--mock-accent); font-weight: 600; }
 .tablet-editor { display: flex; flex-direction: column; min-width: 0; overflow: hidden; }
 .editor-tabs, .phone-tabs { display: flex; align-items: center; gap: .45em; height: 4em; flex: none; padding: 0 .7em; font-size: 1.05em; white-space: nowrap; color: var(--mock-muted); }
 .editor-tabs > span, .phone-tabs > span { display: flex; gap: .6em; align-items: center; padding: .7em .6em; }.editor-tabs > .active { border: .1em solid var(--mock-line); border-radius: 1.3em; background: var(--mock-selected); color: var(--mock-secondary); }
 .editor-tabs i, .phone-tabs i { font-style: normal; color: var(--mock-muted); }
 .editor-breadcrumb, .phone-breadcrumb { display: flex; gap: .6em; align-items: center; padding: .5em 1.4em; font-size: .95em; color: var(--mock-muted); }
 .ai-panel { display: flex; flex-direction: column; border-left: .1em solid var(--mock-line); padding: 0 1.1em 1em; box-shadow: -.4em 0 1.2em #4b527007; overflow: hidden; }
-.ai-toolbar { height: 4.2em; display: flex; align-items: center; justify-content: space-between; font-size: 1.05em; color: var(--mock-muted); }.ai-toolbar > span { display: flex; align-items: center; gap: .6em; }.ai-toolbar svg { width: 1em; height: 1em; }.ai-switch { padding: .3em; border-radius: 2em; }.ai-switch b { padding: .35em 1em; border-radius: 2em; border: .1em solid var(--mock-line); color: var(--mock-accent); }
+.ai-toolbar { height: 4.2em; display: flex; align-items: center; justify-content: space-between; font-size: 1.05em; color: var(--mock-muted); }.ai-toolbar > span { display: flex; align-items: center; gap: .6em; }.ai-toolbar svg { width: 1em; height: 1em; }.ai-switch { padding: .3em; border-radius: 2em; }.ai-switch b { padding: .35em 1em; border-radius: 2em; border: .1em solid var(--mock-line); color: var(--mock-accent-text); }
 .chat-content { flex: 1; padding: .5em .3em; font-size: 1.13em; overflow: hidden; }
 .user-message { background: var(--mock-panel); border: .1em solid var(--mock-line); border-radius: 1.4em 1.4em .4em 1.4em; padding: .9em 1em; margin-bottom: 1.8em; font-size: .95em; }
-.assistant-heading { display: flex; gap: .6em; align-items: center; margin-bottom: 1em; color: var(--mock-secondary); }.assistant-heading svg { color: var(--mock-accent); width: 1.4em; height: 1.4em; }
-.chat-content > p { color: var(--mock-secondary); }.explanation { display: flex; gap: .8em; margin-top: 1.6em; }.explanation > span { color: var(--mock-accent); font: .85em/1.8 var(--vp-font-family-mono); }.explanation b { font-size: .95em; color: var(--mock-secondary); }.explanation p { font-size: .9em; color: var(--mock-muted); margin-top: .35em; }
+.assistant-heading { display: flex; gap: .6em; align-items: center; margin-bottom: 1em; color: var(--mock-secondary); }.assistant-heading svg { color: var(--mock-accent-text); width: 1.4em; height: 1.4em; }
+.chat-content > p { color: var(--mock-secondary); }.explanation { display: flex; gap: .8em; margin-top: 1.6em; }.explanation > span { color: var(--mock-accent-text); font: .85em/1.8 var(--vp-font-family-mono); }.explanation b { font-size: .95em; color: var(--mock-secondary); }.explanation p { font-size: .9em; color: var(--mock-muted); margin-top: .35em; }
 .complexity { display: flex; justify-content: space-between; padding: .9em; margin-top: 1.8em; border: .1em solid var(--mock-line); border-radius: .7em; font-size: .85em; color: var(--mock-muted); }.complexity code { padding: 0; background: transparent; font-size: 1em; color: var(--mock-amber); }
-.chat-composer { flex: none; padding: 1em; border: .1em solid var(--mock-line); border-radius: 1.5em; background: var(--mock-panel); font-size: 1.05em; color: var(--mock-muted); }.chat-composer > div { display: flex; align-items: center; gap: 1.2em; margin-top: 1.2em; }.chat-composer > div > span { display: flex; align-items: center; gap: .4em; font-size: .9em; }.chat-composer > div > svg:last-child { margin-left: auto; color: var(--mock-accent); }
-.tablet-footer { display: flex; align-items: center; gap: 1.8em; height: 2.4em; flex: none; padding: 0 1.3em; border-top: .1em solid var(--mock-line); font-size: .95em; color: var(--mock-muted); }.tablet-footer > span { display: flex; align-items: center; gap: .5em; }.tablet-footer > span:first-child { color: var(--mock-accent); font-weight: 600; }.tablet-footer svg { width: 1.2em; height: 1.2em; }.footer-end { margin-left: auto; }
-.mock-phone { width: 28.5em; height: 63em; top: 15em; left: 50em; border-radius: 3em; padding: .5em; z-index: 2; box-shadow: 0 .2em .5em #58617d1a, 0 2em 4em -1em #303d5d26, 0 5em 7em -2em #303d5d38, inset 0 0 0 .15em #fff; }
+.chat-composer { flex: none; padding: 1em; border: .1em solid var(--mock-line); border-radius: 1.5em; background: var(--mock-panel); font-size: 1.05em; color: var(--mock-muted); }.chat-composer > div { display: flex; align-items: center; gap: 1.2em; margin-top: 1.2em; }.chat-composer > div > span { display: flex; align-items: center; gap: .4em; font-size: .9em; }.chat-composer > div > svg:last-child { margin-left: auto; color: var(--mock-accent-text); }
+.tablet-footer { display: flex; align-items: center; gap: 1.8em; height: 2.4em; flex: none; padding: 0 1.3em; border-top: .1em solid var(--mock-line); font-size: .95em; color: var(--mock-muted); }.tablet-footer > span { display: flex; align-items: center; gap: .5em; }.tablet-footer > span:first-child { color: var(--mock-accent-text); font-weight: 600; }.tablet-footer svg { width: 1.2em; height: 1.2em; }.footer-end { margin-left: auto; }
+.mock-phone { width: 28.5em; height: 63em; top: 2em; left: 1em; border-radius: 3em; padding: .5em; z-index: 2; border-color: var(--mock-device-border); box-shadow: 0 2em 5em -1em var(--mock-device-shadow), inset 0 0 0 .1em var(--mock-device-highlight); }
 .phone-screen { display: flex; flex-direction: column; border-radius: 2.45em; }
 .phone-status { display: flex; align-items: center; justify-content: space-between; flex: none; height: 3.5em; padding: 0 1.25em; font-size: 1.05em; color: var(--mock-ink); }.phone-status svg { width: 1.5em; height: 1.5em; }
 .phone-toolbar { display: flex; justify-content: space-between; align-items: center; height: 3.6em; flex: none; padding: 0 1.1em; color: var(--mock-secondary); }.phone-toolbar > span { display: flex; gap: 1.7em; }.phone-toolbar svg { width: 1.65em; height: 1.65em; }
 .phone-tabs { gap: .5em; height: 3.5em; padding: 0 .5em; font-size: 1.05em; border-top: .1em solid var(--mock-line); }.phone-tabs > span { height: 100%; }.phone-tabs > .active { border-bottom: .2em solid var(--mock-accent); color: var(--mock-ink); }.phone-tabs b { color: var(--mock-amber); font-size: .9em; }
 .phone-breadcrumb { font-size: .88em; padding: .8em 1em .1em; color: var(--mock-secondary); }
-.phone-navigation { display: flex; margin: .3em .6em 0; padding: .45em .3em; border: .15em solid var(--mock-line); border-radius: 3em; background: var(--mock-surface); flex: none; }.phone-navigation > span { display: flex; flex: 1; flex-direction: column; align-items: center; gap: .35em; padding: .45em .1em; color: var(--mock-secondary); }.phone-navigation svg { width: 1.9em; height: 1.9em; }.phone-navigation > span > span { font-size: .85em; }.phone-navigation > .active { border-radius: 2em; background: var(--mock-selected); color: var(--mock-accent); }
-.phone-home-indicator { width: 9em; height: .35em; flex: none; margin: .9em auto .6em; border-radius: 1em; background: #b7b7c0; }
-@media (max-width: 1024px) { .app-showcase { width: min(100%, 780px); margin-inline: auto; } }
-@media (max-width: 600px) {
-  .mock-stage { height: 88em; }
-  .mock-tablet { top: 6em; }
-  .mock-phone { width: 32em; height: 70.5em; left: 55em; top: 15em; }
+.phone-navigation { display: flex; margin: .3em .6em 0; padding: .45em .3em; border: .15em solid var(--mock-line); border-radius: 3em; background: var(--mock-surface); flex: none; }.phone-navigation > span { display: flex; flex: 1; flex-direction: column; align-items: center; gap: .35em; padding: .45em .1em; color: var(--mock-secondary); }.phone-navigation svg { width: 1.9em; height: 1.9em; }.phone-navigation > span > span { font-size: .85em; }.phone-navigation > .active { border-radius: 2em; background: var(--mock-selected); color: var(--mock-accent-text); }
+.phone-home-indicator { width: 9em; height: .35em; flex: none; margin: .9em auto .6em; border-radius: 1em; background: var(--mock-hardware); }
+/* A readable phone composition on portrait screens, not a miniature tablet. */
+@media (max-width: 760px) {
+  .app-showcase { max-width: 320px; }
+  .mock-stage { font-size: 3.50877cqw; height: 63em; }
+  .mock-tablet { display: none; }
+  .mock-phone { width: 28.5em; height: 63em; left: 0; top: 0; }
 }
 
 /* Composite-only motion. Each device floats independently, while the shared
@@ -214,11 +208,11 @@ const nav = [
     animation-play-state: var(--mock-motion);
   }
   .mock-tablet {
-    animation: tablet-float 9s ease-in-out 1.2s infinite;
+    animation: none;
     animation-play-state: var(--mock-motion);
   }
   .mock-phone {
-    animation: phone-float 7s ease-in-out 1.5s infinite;
+    animation: none;
     animation-play-state: var(--mock-motion);
   }
   .connected i { position: relative; }

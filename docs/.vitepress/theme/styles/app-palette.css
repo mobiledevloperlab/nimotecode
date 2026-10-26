@@ -1,0 +1,82 @@
+/* Theme roles shared by the hero and workflow illustrations.
+   Light surfaces follow the application's assets/themes/light.json. */
+.app-showcase,
+.product-feature-visual {
+  --mock-surface: #ffffff;
+  --mock-editor: #ffffff;
+  --mock-panel: #f6f7f9;
+  --mock-line: #d3d7de;
+  --mock-ink: #111827;
+  --mock-secondary: #596271;
+  --mock-muted: #5f6874;
+  --mock-accent: #5e6ad2;
+  --mock-accent-text: #515ebf;
+  --mock-selected: #e4e7fa;
+  --mock-selection: #e4e7fa;
+  --mock-green: #167839;
+  --mock-amber: #8d5d1b;
+  --mock-elevated: #eff1f4;
+  --mock-keyword: #8a3775;
+  --mock-function: #235f9a;
+  --mock-string: #227148;
+  --mock-number: #89541b;
+  --mock-error: #b53b4f;
+  --mock-error-soft: #f8e2e6;
+  --mock-success-soft: #e1f2e9;
+  --mock-on-accent: #ffffff;
+  --mock-color-scheme: light;
+  --mock-device-frame: linear-gradient(145deg, #e3e5eb, #c4c8d2 45%, #eef0f4);
+  --mock-device-border: #a4aab6;
+  --mock-device-shadow: #19223b26;
+  --mock-device-highlight: #ffffffb3;
+  --mock-hardware: #596271;
+  color-scheme: var(--mock-color-scheme);
+}
+
+.dark .app-showcase,
+.dark .product-feature-visual {
+  --mock-surface: #000000;
+  --mock-editor: #000000;
+  --mock-panel: #0d0d0d;
+  --mock-line: #202020;
+  --mock-ink: #e6e6e6;
+  --mock-secondary: #aaaaaa;
+  --mock-muted: #8c8c8c;
+  --mock-accent: #6d61c9;
+  --mock-accent-text: #b4acf0;
+  --mock-selected: #18151f;
+  --mock-selection: #18151f;
+  --mock-green: #63b58a;
+  --mock-amber: #c39a5b;
+  --mock-elevated: #161616;
+  --mock-color-scheme: dark;
+  --mock-device-frame: linear-gradient(145deg, #34343a, #171719 45%, #29292d);
+  --mock-device-border: #77717f;
+  --mock-device-shadow: #00000066;
+  --mock-device-highlight: #ffffff18;
+  --mock-hardware: #b7b7c0;
+  --mock-keyword: #c792b9;
+  --mock-function: #82a9d8;
+  --mock-string: #7bc498;
+  --mock-number: #d4a574;
+  --mock-error: #d8787f;
+  --mock-error-soft: #241214;
+  --mock-success-soft: #101c15;
+}
+
+/* The tablet retains its softer charcoal appearance in dark mode only. */
+.dark .mock-tablet {
+  --mock-surface: #1c1e23;
+  --mock-editor: #1c1e23;
+  --mock-panel: #24262c;
+  --mock-elevated: #292c33;
+  --mock-line: #383b43;
+  --mock-ink: #d4d5d9;
+  --mock-secondary: #b2b4bc;
+  --mock-muted: #9296a1;
+  --mock-selected: #2d2c37;
+  --mock-selection: #2d2c37;
+  --mock-accent-text: #aaa6cb;
+  --mock-device-frame: linear-gradient(145deg, #454850, #2c2f35 45%, #3c3f46);
+  --mock-device-border: #555962;
+}

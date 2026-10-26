@@ -5,9 +5,12 @@ description: "Configuración, procedimientos y referencia de la interfaz: Inicio
 
 # Inicio rápido
 
-<figure class="quick-start-hero">
-  <img src="/screenshots/nimote-pro.webp" width="1440" height="810" alt="NimoteCode en una tableta y un teléfono, con espacios locales y SSH, edición de código, Git, terminal, IA, depuración y sincronización." decoding="async" fetchpriority="high">
-</figure>
+Abre un espacio de trabajo, edita un archivo y ejecuta tu primer comando. Sigue los pasos siguientes; configura la conexión del modelo cuando vayas a usar el Agent.
+
+- [Abrir un espacio de trabajo](#abrir-un-espacio-de-trabajo)
+- [Abrir y editar un archivo](#abrir-y-editar-un-archivo)
+- [Ejecutar un comando](#ejecutar-un-comando)
+- [Ejecutar AI Agent](#ejecutar-ai-agent)
 
 ## Abrir un espacio de trabajo
 

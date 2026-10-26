@@ -6,7 +6,7 @@
 
 /* Header ---------------------------------------------------------------- */
 .nimote-marketing-layout .VPNavBar.has-sidebar,
-.nimote-marketing-layout .VPNavBar.has-sidebar .container {
+.nimote-marketing-layout .VPNavBar.has-sidebar > .wrapper > .container {
   /* Marketing routes deliberately never inherit the docs sidebar chrome. */
   grid-template-columns: none !important;
 }
@@ -24,24 +24,8 @@
 }
 
 .nimote-marketing-doc {
-  width: min(100% - 48px, 860px);
   margin: 0 auto;
   padding: 56px 0 96px;
-}
-
-/* Marketing pages use an 860px shell for conversion blocks, while prose is
-   intentionally capped at 760px. Centre that narrower reading column inside
-   its shell; otherwise it starts at the shell's left edge on desktop. */
-.nimote-marketing-doc .vp-doc {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (max-width: 767px) {
-  .nimote-marketing-doc {
-    width: min(100% - 40px, 860px);
-    padding: 36px 0 64px;
-  }
 }
 
 .VPNavBar {
@@ -145,8 +129,8 @@
   .VPNavBar.has-sidebar,
   .VPNavBar.has-sidebar::before,
   .VPNavBar.has-sidebar::after,
-  .VPNavBar.has-sidebar .container,
-  .VPNavBar.has-sidebar .container > .title,
+  .VPNavBar.has-sidebar > .wrapper > .container,
+  .VPNavBar.has-sidebar > .wrapper > .container > .title,
   .VPNavBar.has-sidebar .content,
   .VPNavBar.has-sidebar .content-body,
   .VPSidebar,
@@ -169,7 +153,7 @@
     height: calc(var(--vp-nav-height) - 1px);
   }
 
-  .VPNavBar.has-sidebar .container {
+  .VPNavBar.has-sidebar > .wrapper > .container {
     display: grid !important;
     grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
     align-items: stretch;
@@ -181,7 +165,7 @@
 
   /* The direct child is the left grid cell. Do not use `.title` broadly:
      VPNavBarTitle contains a second, nested `.title` for the logo link. */
-  .VPNavBar.has-sidebar .container > .title {
+  .VPNavBar.has-sidebar > .wrapper > .container > .title {
     position: static !important;
     display: flex;
     grid-column: 1;
@@ -197,8 +181,8 @@
     background: var(--nimote-bg-elevated) !important;
   }
 
-  .VPNavBar.has-sidebar .container > .title .VPNavBarTitle,
-  .VPNavBar.has-sidebar .container > .title .VPNavBarTitle > .title {
+  .VPNavBar.has-sidebar > .wrapper > .container > .title .VPNavBarTitle,
+  .VPNavBar.has-sidebar > .wrapper > .container > .title .VPNavBarTitle > .title {
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -207,7 +191,7 @@
     height: 100% !important;
   }
 
-  .VPNavBar.has-sidebar .container > .title .VPNavBarTitle > .title {
+  .VPNavBar.has-sidebar > .wrapper > .container > .title .VPNavBarTitle > .title {
     position: static !important;
     padding: 0 !important;
     border: 0 !important;
@@ -345,7 +329,7 @@
     --sidebar-content-padding: max(32px, calc((100vw - var(--vp-layout-max-width)) / 2 + 32px));
   }
 
-  .VPNavBar.has-sidebar .container > .title {
+  .VPNavBar.has-sidebar > .wrapper > .container > .title {
     padding-left: var(--sidebar-content-padding);
   }
 }
@@ -465,9 +449,11 @@
 }
 
 .VPSidebar .group + .group {
-  margin-top: 16px;
-  padding-top: 16px !important;
-  border-top: 1px solid var(--nimote-border);
+  /* Whitespace keeps sections distinct without turning the sidebar into a
+     stack of ruled panels. */
+  margin-top: 20px;
+  padding-top: 0 !important;
+  border-top: 0;
 }
 
 .VPSidebar .VPSidebarItem.level-0 {
@@ -475,7 +461,7 @@
 }
 
 .VPSidebar .VPSidebarItem.level-0 > .item {
-  min-height: 36px;
+  min-height: 32px;
   padding: 0 var(--sidebar-item-inset, 8px);
   border-radius: var(--nimote-radius-sm);
 }
@@ -483,11 +469,11 @@
 .VPSidebar .VPSidebarItem.level-0 > .item > .text,
 .VPSidebar .VPSidebarItem.level-0 > .item > .link > .text {
   padding: 0;
-  color: var(--nimote-text-secondary);
-  font-size: 0.925rem;
+  color: var(--nimote-text-muted);
+  font-size: 0.8125rem;
   font-weight: 600;
-  letter-spacing: -0.005em;
-  line-height: 36px;
+  letter-spacing: 0.01em;
+  line-height: 32px;
   text-transform: none;
 }
 
@@ -497,15 +483,16 @@
 }
 
 .VPSidebar .VPSidebarItem.level-0 > .items {
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 .VPSidebarItem.level-1 > .item > .link {
   display: flex;
   align-items: center;
-  min-height: 36px;
-  padding: 6px var(--sidebar-item-inset, 8px);
-  border: 1px solid transparent;
+  min-height: 34px;
+  padding: 6px var(--sidebar-item-inset, 8px) 6px calc(var(--sidebar-item-inset, 8px) + 8px);
+  border: 0;
+  border-left: 2px solid transparent;
   border-radius: var(--nimote-radius-sm);
   color: var(--nimote-text-secondary);
   transition: color 0.18s var(--nimote-ease), background-color 0.18s var(--nimote-ease), border-color 0.18s var(--nimote-ease), transform 0.18s var(--nimote-ease);
@@ -520,15 +507,13 @@
 }
 
 .VPSidebarItem.level-1 > .item > .link:hover {
-  border-color: var(--nimote-border);
   background: rgba(var(--nimote-accent-rgb), 0.05);
   color: var(--nimote-text-primary);
 }
 
 .VPSidebarItem.level-1.is-active > .item > .link {
-  border-color: rgba(var(--nimote-accent-rgb), 0.16);
+  border-left-color: var(--nimote-accent);
   background: rgba(var(--nimote-accent-rgb), 0.08);
-  box-shadow: inset 2px 0 0 var(--nimote-accent);
   color: var(--nimote-link);
 }
 
@@ -540,7 +525,7 @@
 .VPSidebarItem.level-0 .caret {
   margin-right: -3px;
   width: 28px;
-  height: 36px;
+  height: 32px;
   color: var(--nimote-text-muted);
 }
 
@@ -665,13 +650,12 @@
 /* The full marketing menu no longer fits at the tablet boundary. Keep the
    existing navigation structure and screen-menu interaction, but expose its
    compact control before labels can be clipped. */
-@media (max-width: 1279px) {
+@media (max-width: 1100px) {
   .VPNavBar .VPNavBarMenu,
   .VPNavBar .VPNavBarAppearance,
   .VPNavBar .VPNavBarSocialLinks,
   .VPNavBar .VPNavBarTranslations,
-  .VPNavBar .VPNavBarExtra,
-  .VPNavBar .VPNavBarSearch {
+  .VPNavBar .VPNavBarExtra {
     display: none;
   }
 
@@ -690,5 +674,62 @@
 
   .VPNavScreen .container {
     max-width: 560px;
+  }
+}
+
+/* Keep the primary action visible alongside the compact menu. */
+.nimote-nav-download { display: none; }
+@media (max-width: 1100px) {
+  .nimote-nav-download {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding-inline: var(--nimote-space-3);
+    margin-right: var(--nimote-space-2);
+    border-radius: var(--nimote-radius-sm);
+    color: var(--nimote-link);
+    font-size: var(--nimote-fs-sm);
+    font-weight: 600;
+  }
+  .nimote-nav-download:hover { background: var(--nimote-bg-subtle); }
+}
+
+/* Preserve the primary destinations as direct links; secondary social icons
+   yield space before the full navigation becomes compact. */
+@media (min-width: 1101px) and (max-width: 1439px) {
+  .VPNavBar .VPNavBarSocialLinks { display: none; }
+}
+
+/* Search stays reachable at every breakpoint; utility icons yield first. */
+.VPNavBar .VPNavBarSearch { display: flex; align-items: center; min-width: 0; }
+.VPNavBarSearch .DocSearch-Button { min-height: 40px; }
+.nimote-docs .VPNavBarMenu > .VPNavBarMenuLink:last-child {
+  border-color: var(--nimote-border);
+  background: transparent;
+  box-shadow: none;
+  color: var(--nimote-text-secondary);
+}
+.nimote-docs .VPNavBarMenu > .VPNavBarMenuLink:last-child:hover {
+  background: var(--nimote-bg-subtle);
+  color: var(--nimote-text-primary);
+}
+@media (max-width: 1100px) {
+  .VPNavBar .VPNavBarSearch { padding-left: 0; justify-content: flex-end; }
+  .VPNavBar .content-body { align-items: center; }
+  .VPNavBar .VPNavBarHamburger { flex: 0 0 44px; height: var(--vp-nav-height); }
+  .VPNavBar .nimote-nav-download { order: 1; margin-right: 0; padding-inline: 8px; }
+  .VPNavBar .VPNavBarHamburger { order: 2; }
+}
+@media (max-width: 767px) {
+  .VPNavBarSearch .DocSearch-Button { width: 40px; height: 40px; border: 0; background: transparent; }
+  .VPNavBar .content-body { gap: 0; }
+}
+
+/* Tablet pages have a second, 48px local-navigation row. */
+@media (min-width: 960px) and (max-width: 1279px) {
+  .nimote-main-layout.has-sidebar .VPSidebar {
+    top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) !important;
+    max-height: calc(100dvh - var(--vp-nav-height) - var(--vp-layout-top-height, 0px) - 48px);
   }
 }
