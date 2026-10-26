@@ -31,8 +31,7 @@ description: "NimoteCode is a Mobile SSH IDE for Android and iOS with SFTP, LSP 
       <span class="home-page-availability-link">Disponible para Android, iPhone y iPad
 </span>
     </div>
-    <!-- 暂时不上线：App 界面 mockup，代码保留在 components/AppMockup.vue，需要时取消注释 -->
-    <!-- <AppMockup /> -->
+    <AppMockup />
   </div>
 </section>
 <section id="product-demo" class="home-page-section home-page-video-section">
