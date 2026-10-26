@@ -18,6 +18,22 @@ const localeConfig = {
 
 const localePathPattern = /^\/(?:zh|ja|ko|es)(?=\/|$)/
 
+function docsUi(locale: 'zh' | 'ja' | 'ko' | 'es') {
+  const [outline, previous, next, menu, top, languages] = {
+    zh: ['本页目录', '上一页', '下一页', '菜单', '返回顶部', '选择语言'],
+    ja: ['このページの内容', '前のページ', '次のページ', 'メニュー', 'ページ上部へ', '言語を選択'],
+    ko: ['이 페이지의 내용', '이전 페이지', '다음 페이지', '메뉴', '맨 위로', '언어 선택'],
+    es: ['En esta página', 'Página anterior', 'Página siguiente', 'Menú', 'Volver arriba', 'Seleccionar idioma']
+  }[locale]
+  return {
+    outline: { label: outline },
+    docFooter: { prev: previous, next },
+    sidebarMenuLabel: menu,
+    returnToTopLabel: top,
+    langMenuLabel: languages
+  }
+}
+
 type DocsSidebarLabels = {
   start: string
   quickStart: string
@@ -25,6 +41,7 @@ type DocsSidebarLabels = {
   ssh: string
   localLinux: string
   ai: string
+  plugins: string
   editor: string
   terminal: string
   search: string
@@ -62,6 +79,7 @@ function docsSidebar(prefix: string, labels: DocsSidebarLabels) {
           { text: labels.ssh, link: `${docs}/ssh` },
           { text: labels.localLinux, link: `${docs}/local-linux` },
           { text: labels.ai, link: `${docs}/ai` },
+          { text: labels.plugins, link: `${docs}/plugins` },
           { text: labels.editor, link: `${docs}/editor` },
           { text: labels.terminal, link: `${docs}/terminal` },
           { text: labels.search, link: `${docs}/search` },
@@ -1002,6 +1020,7 @@ export default defineConfig({
                 { text: 'Local and Remote Workspaces', link: '/docs/ssh' },
                 { text: 'Android Local Linux', link: '/docs/local-linux' },
                 { text: 'AI Chat and Agent', link: '/docs/ai' },
+                { text: 'Custom Plugins', link: '/docs/plugins' },
                 { text: 'Editor', link: '/docs/editor' },
                 { text: 'Terminal', link: '/docs/terminal' },
                 { text: 'Search', link: '/docs/search' },
@@ -1073,6 +1092,7 @@ export default defineConfig({
       lang: 'zh-CN',
       link: '/zh/',
       themeConfig: {
+        ...docsUi('zh'),
         nav: [
           { text: '产品', link: '/zh/features' },
           { text: '对比', link: '/zh/compare/mobile-ai-development-tools' },
@@ -1122,6 +1142,7 @@ export default defineConfig({
                 { text: '本地与远程 SSH 工作区', link: '/zh/docs/ssh' },
                 { text: 'Android 本地 Linux', link: '/zh/docs/local-linux' },
                 { text: 'AI Chat 与 Agent', link: '/zh/docs/ai' },
+                { text: '自定义插件', link: '/zh/docs/plugins' },
                 { text: '编辑器', link: '/zh/docs/editor' },
                 { text: '终端使用', link: '/zh/docs/terminal' },
                 { text: '远程搜索', link: '/zh/docs/search' },
@@ -1190,14 +1211,14 @@ export default defineConfig({
 
     ja: {
       label: '日本語', lang: 'ja-JP', link: '/ja/',
-      themeConfig: { nav: [
+      themeConfig: { ...docsUi('ja'), nav: [
         { text: '製品', link: '/ja/features' }, { text: '比較', link: '/ja/compare/mobile-ai-development-tools' },
         { text: 'ワークフロー', link: '/ja/use-cases/' }, { text: 'リソース', link: '/ja/resources/' },
         { text: 'ドキュメント', link: '/ja/docs/quick-start' }, { text: 'ダウンロード', link: '/ja/download' },
         { text: 'Blog (English)', link: '/blog/' }
       ], sidebar: { ...docsSidebar('/ja', {
         start: 'はじめに', quickStart: 'クイックスタート', workflow: '開発ワークフロー',
-        ssh: 'ローカルおよびリモート SSH ワークスペース', localLinux: 'Android ローカル Linux', ai: 'AI チャットとエージェント',
+        ssh: 'ローカルと SSH のワークスペース', localLinux: 'Android Local Linux', ai: 'AI Chat と Agent', plugins: 'カスタムプラグイン',
         editor: 'エディター', terminal: 'ターミナル', search: '検索', sourceControl: 'ソース管理', lsp: 'LSP', debug: 'デバッグ', syncCache: '同期 / キャッシュ', tasks: 'タスク',
         overview: '概要', gettingStarted: 'はじめる', architecture: 'アーキテクチャ', compatibility: '互換性', securityIntegrity: 'セキュリティと整合性', presets: 'Linux プリセット', troubleshooting: 'トラブルシューティング',
         reference: 'リファレンス', account: 'アカウントとサブスクリプション', security: 'セキュリティと安全性', settings: '設定', notifications: '通知', configuration: '構成', sourceLicenses: 'ローカル Linux のソースとライセンス', faq: 'よくある質問'
@@ -1205,32 +1226,32 @@ export default defineConfig({
     },
     ko: {
       label: '한국어', lang: 'ko-KR', link: '/ko/',
-      themeConfig: { nav: [
+      themeConfig: { ...docsUi('ko'), nav: [
         { text: '제품', link: '/ko/features' }, { text: '비교', link: '/ko/compare/mobile-ai-development-tools' },
         { text: '워크플로', link: '/ko/use-cases/' }, { text: '리소스', link: '/ko/resources/' },
         { text: '문서', link: '/ko/docs/quick-start' }, { text: '다운로드', link: '/ko/download' },
         { text: 'Blog (English)', link: '/blog/' }
       ], sidebar: { ...docsSidebar('/ko', {
         start: '시작하기', quickStart: '빠른 시작', workflow: '개발 워크플로',
-        ssh: '로컬 및 원격 SSH 워크스페이스', localLinux: 'Android 로컬 Linux', ai: 'AI 채팅 및 에이전트',
-        editor: '에디터', terminal: '터미널', search: '검색', sourceControl: '소스 제어', lsp: 'LSP', debug: '디버그', syncCache: '동기화 / 캐시', tasks: '작업',
+        ssh: '로컬 및 SSH 작업 공간', localLinux: 'Android Local Linux', ai: 'AI Chat 및 Agent', plugins: '사용자 지정 플러그인',
+        editor: '편집기', terminal: '터미널', search: '검색', sourceControl: '소스 제어', lsp: 'LSP', debug: '디버깅', syncCache: '동기화 / 캐시', tasks: '작업',
         overview: '개요', gettingStarted: '시작하기', architecture: '아키텍처', compatibility: '호환성', securityIntegrity: '보안 및 무결성', presets: 'Linux 프리셋', troubleshooting: '문제 해결',
         reference: '참조', account: '계정 및 구독', security: '보안 및 안전', settings: '설정', notifications: '알림', configuration: '구성', sourceLicenses: '로컬 Linux 소스 및 라이선스', faq: '자주 묻는 질문'
       }), ...useCasesSidebar('/ko', { heading: '워크플로', agentDemo: 'AI 에이전트 빌드 데모', workspaceDemo: '모바일 워크스페이스 데모', terminalTools: '터미널 AI 도구' }) } }
     },
     es: {
       label: 'Español', lang: 'es-ES', link: '/es/',
-      themeConfig: { nav: [
+      themeConfig: { ...docsUi('es'), nav: [
         { text: 'Producto', link: '/es/features' }, { text: 'Comparar', link: '/es/compare/mobile-ai-development-tools' },
         { text: 'Flujos', link: '/es/use-cases/' }, { text: 'Recursos', link: '/es/resources/' },
         { text: 'Documentación', link: '/es/docs/quick-start' }, { text: 'Descargar', link: '/es/download' },
         { text: 'Blog (English)', link: '/blog/' }
       ], sidebar: { ...docsSidebar('/es', {
         start: 'Primeros pasos', quickStart: 'Inicio rápido', workflow: 'Flujo de desarrollo',
-        ssh: 'Espacios de trabajo SSH locales y remotos', localLinux: 'Linux local en Android', ai: 'Chat y agente de IA',
+        ssh: 'Espacios de trabajo locales y SSH', localLinux: 'Local Linux en Android', ai: 'AI Chat y Agent', plugins: 'Plugins personalizados',
         editor: 'Editor', terminal: 'Terminal', search: 'Búsqueda', sourceControl: 'Control de código fuente', lsp: 'LSP', debug: 'Depuración', syncCache: 'Sincronización / caché', tasks: 'Tareas',
         overview: 'Descripción general', gettingStarted: 'Primeros pasos', architecture: 'Arquitectura', compatibility: 'Compatibilidad', securityIntegrity: 'Seguridad e integridad', presets: 'Preajustes de Linux', troubleshooting: 'Resolución de problemas',
-        reference: 'Referencia', account: 'Cuenta y suscripción', security: 'Seguridad y protección', settings: 'Configuración', notifications: 'Notificaciones', configuration: 'Configuración avanzada', sourceLicenses: 'Código fuente y licencias de Linux local', faq: 'Preguntas frecuentes'
+        reference: 'Referencia', account: 'Cuenta y suscripción', security: 'Seguridad y protección', settings: 'Ajustes', notifications: 'Notificaciones', configuration: 'Configuración de IA y conexiones', sourceLicenses: 'Código fuente y licencias de Local Linux', faq: 'Preguntas frecuentes'
       }), ...useCasesSidebar('/es', { heading: 'Flujos de trabajo', agentDemo: 'Demo de compilación con agente de IA', workspaceDemo: 'Demo de espacio de trabajo móvil', terminalTools: 'Herramientas de IA en terminal' }) } }
     }
   },

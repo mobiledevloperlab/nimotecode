@@ -1,57 +1,69 @@
 ---
-title: Quick Start | NimoteCode Mobile IDE
-description: Open a local, Android Local Linux, or SSH workspace in NimoteCode, edit a file, run a verification command and choose the next mobile development workflow.
+title: クイックスタート | NimoteCode
+description: "クイックスタートの設定、操作手順、画面の説明。"
 ---
 
 # クイックスタート
 
-
-このガイドを使用して、最初にワークフローを証明します。プロジェクトを開いて小さな編集を 1 つ行い、ターミナルでそれを確認します。サポートされているデバイス上のローカル プロジェクト、SSH ワークスペース、または Android Local Linux で動作します。
-
-
 <figure class="quick-start-hero">
-  <img src="/images/placeholders/Start_Overview.png" width="1400" height="900" alt="NimoteCode overview showing the welcome screen and options for demo, Local Linux, remote SSH, and local workspaces" loading="lazy" decoding="async">
-<figcaption>デモ、ローカル Linux、リモート SSH ホスト、またはデバイス上に既にあるファイルから始めてください。</figcaption>
+  <img src="/screenshots/nimote-pro.webp" width="1440" height="810" alt="タブレットとスマートフォン上の NimoteCode。ローカルと SSH のワークスペース、コード編集、Git、ターミナル、AI、デバッグ、同期を表示。" decoding="async" fetchpriority="high">
 </figure>
 
-## 1.ワークスペースを開く
+## ワークスペースを開く
 
+ようこそ画面でワークスペースを選びます。**Open Local Workspace** は端末のファイルを開き、**Connect Remote Workspace** は SSH ホストに接続します。**Local Linux** は対応する Android 端末に Ubuntu をインストールします。ホストを設定せずに試すには **Try Demo Workspace** を選択します。
 
-デバイス上のプロジェクトの場合は**ローカル ワークスペースを開く**、リモート ホストの場合は**リモート ワークスペースに接続**、サポートされている Android 8 以降の ARM64/x86_64 デバイス上のバンドルされた Ubuntu の場合は **ローカル Linux** を選択します。 **デモ ワークスペースを試す** を使用して、サンプル プロジェクトをすぐに探索することもできます。ローカル Linux は root アクセスを必要とせず、iOS では使用できません。セットアップとライフサイクルについては、[Android Local Linux](/docs/local-linux)を参照してください。 SSH ワークスペースの場合は、ホスト、ポート、ユーザー名を入力します。次に、パスワード、キー ファイル、または貼り付けた秘密キー認証を選択します。作業を開始する前に、プロジェクトのルートを確認してください。
-
-
-<figure class="seo-media-placeholder seo-media-placeholder--device-pair has-image has-single-device-image">
-  <div class="seo-media-placeholder__device-pair">
-    <div class="seo-media-placeholder__device seo-media-placeholder__device--phone">
-      <img class="seo-media-placeholder__image" src="/images/placeholders/Getting_Started.jpg" width="930" height="2048" alt="NimoteCode welcome screen with options to open a demo, Local Linux, remote, or local workspace" loading="lazy" decoding="async">
-    </div>
-  </div>
-<figcaption class="seo-media-placeholder__caption">プロジェクトを実行する場所に一致するワークスペースを選択してください。 AI 構成は後で変更できます。</figcaption>
-</figure>
-
-## 2.ファイルを開いて編集し、保存する
-
-
-エクスプローラーまたは[検索](/docs/search)からファイルを選択します。タブ付きエディターで開きます。 AI に質問する予定がある場合は、小さな変更を加えて保存し、ファイルをアクティブなままにしておきます。
-
-
-## 3.ターミナルで確認する
-
-
-同じワークスペースで[ターミナル](/docs/terminal)を開き、`pwd`、`ls`、またはプロジェクトのテストコマンドなどの無害なコマンドを実行します。結果が長い場合は、出力検索を使用します。
-
-
-## 4.次のステップを選択してください
-
-
-<div class="product-card-grid">
-<div class="product-card"><strong>変更を確認します</strong><span><a href="/docs/source-control">ソース コントロール</a>を開いて差分を検査し、ステージングします。コミットまたはプッシュには Pro アクセスが必要です。</span></div>
-<div class="product-card"><strong>助けを求めてください</strong><span><a href="/docs/ai">AI チャットまたはエージェント</a> を使用して、コードの説明、変更の計画、制御された複数ステップの作業の支援を行います。</span></div>
-<div class="product-card"><strong>さらに詳しく診断する · Pro</strong><span>構成された <a href="/docs/lsp">LSP</a>、<a href="/docs/debug">Debug</a>、および <a href="/docs/terminal">ターミナル</a> ワークフローを使用します。</span></div>
-<div class="product-card"><strong>コマンドを再使用する</strong><span>確立されたリモート プロシージャを <a href="/docs/tasks">Tasks</a>.</span></div> に保存する
+<div class="doc-screenshots">
+  <DocScreenshot file="startup-light.jpg" caption="ようこそ画面、ライトテーマ。" />
+  <DocScreenshot file="startup-dark.jpg" caption="ようこそ画面、ダークテーマ。" />
 </div>
 
-> リモート運用環境の場合は、読み取り専用検査から始めて、すべてのコマンド、AI の提案、Git の変更を適用前に確認します。
+<div class="doc-section">
+<div class="doc-section__copy">
 
+## ファイルを開いて編集する
 
- [SSH ワークスペース](/docs/ssh)、[エディタ](/docs/editor)、または [デモを見る](/demo?utm_source=quick_start&utm_medium=website&utm_campaign=watch_demo) に進みます。
+プロジェクトディレクトリを選択し、Explorer でファイルを開きます。編集後、ディスク上のファイルを読み込むコマンドを実行する前に保存してください。選択、移動、プレビューの操作は[エディター](/ja/docs/editor)を参照してください。
+
+</div>
+
+<div class="doc-screenshots">
+  <DocScreenshot file="editor-multiple-files.jpg" caption="開いているファイルはタブに表示されます。この例では webapp.py が選択されています。" />
+</div>
+
+</div>
+
+<div class="doc-section">
+<div class="doc-section__copy">
+
+## コマンドを実行する
+
+SSH または Local Linux ワークスペースで Terminal を開き、`pwd` で作業ディレクトリを確認します。プロジェクトのテストやビルドコマンドを実行し、[ソース管理](/ja/docs/source-control)で変更ファイルを確認します。ローカルフォルダーを開くだけでは Linux 実行環境は提供されません。
+
+</div>
+
+<div class="doc-screenshots">
+  <DocScreenshot file="terminal-command-output.png" caption="ls コマンドで列挙したプロジェクトファイルを表示するターミナル。" />
+</div>
+
+</div>
+
+## AI Agent を実行する
+
+AI Agent でプロジェクトを調べ、ファイル間の関係を確認できます。
+
+1. [設定ガイド](/ja/docs/configuration)でプロバイダーを追加し、モデルへのアクセスを設定します。
+2. プロジェクトのワークスペースを開いた状態で AI パネルを開き、設定済みのモデルと **Nimote Agent** を選択します。
+3. **Confirm** モードを選び、「このプロジェクトを説明して」などと依頼します。画面例の依頼は「Explain this project」です。
+4. 提案された計画を確認し、**Approve this run** でツールの実行を許可します。タイムラインでファイルの読み込みとツールの結果を確認できます。
+
+<div class="doc-screenshots">
+  <DocScreenshot file="ai-plan-approval.jpg" caption="Confirm モードでプロジェクトの調査計画を確認してから実行を承認します。" />
+  <DocScreenshot file="ai-plan-running.jpg" caption="承認後、Agent がプロジェクトファイルを読み込み、進捗を記録します。" />
+</div>
+
+回答とともに、読み取れなかったファイルなどの制約も確認してください。実行中に追加の指示を送ることもできます。Agent の選択と実行操作は [AI Chat と Agent](/ja/docs/ai)を参照してください。
+
+## 補助ツールを設定する
+
+言語サーバーとデバッグアダプターは別途設定が必要です。[LSP](/ja/docs/lsp) と[デバッグ](/ja/docs/debug)を参照してください。

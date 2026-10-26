@@ -15,7 +15,7 @@ Yes. Free includes local, Android Local Linux and SSH workspaces, the editor, ba
 
 ## Which AI providers can I configure?
 
-The app includes 14 built-in provider templates and supports compatible custom endpoints. Provider availability, model access and cost are determined by your own provider account and settings. See [Configuration](/docs/configuration).
+The app provides provider templates and supports compatible custom endpoints. Provider availability, model access and cost are determined by your own provider account and settings. See [Configuration](/docs/configuration).
 
 ## What does Source Control support?
 
@@ -23,7 +23,7 @@ Source Control lets every user inspect repository status, diffs and history. Pro
 
 ## Are Tasks local or remote?
 
-Tasks are designed for repeatable command workflows in an SSH workspace. Make the host, project root and risk of each command clear before running it.
+Tasks are designed for repeatable command workflows in an SSH workspace. Commands run in the connected workspace. The default working directory is the workspace root unless the task specifies another directory.
 
 ## Do LSP and Debug work for every project?
 

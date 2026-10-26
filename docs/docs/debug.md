@@ -1,25 +1,25 @@
 ---
-title: Remote Debugging | NimoteCode Pro
-description: Use configured remote debug-adapter workflows in NimoteCode Pro for breakpoints, execution controls, call stacks, variables, watch expressions and output.
+title: Debugging | NimoteCode
+description: "Configuration, procedures, and interface reference for debugging."
 ---
 
-# Remote Debugging
+# Debugging
 
-The Debug panel gives a mobile workspace structured runtime visibility: start or control a configured session, inspect a pause point, and connect the evidence back to the code and terminal. Debug is a **Pro** workflow.
+<div class="doc-section">
+<div class="doc-section__copy">
 
-<ImagePlaceholder image-key="debugging" alt="NimoteCode debugging workspace">
-  <strong>Image placeholder — inspect a paused debug session</strong>
-  <span>Replace with a screenshot showing a breakpoint, call stack, variables and the corresponding source line.</span>
-</ImagePlaceholder>
+## Prepare a debug session
 
-## What a configured session can expose
+Debugging requires a compatible adapter and a launch configuration for the project on the target host. Open the Debug panel and select **Start Debug** after configuring these prerequisites. Debugging requires Pro access.
 
-- Start, pause, continue, step and stop controls.
-- Breakpoints and execution position.
-- Threads and call-stack navigation.
-- Variables, scopes and watch expressions.
-- Expression evaluation and debug output.
+</div>
 
-## Before you begin
+<div class="doc-screenshots">
+  <DocScreenshot file="debugger-standby.png" caption="Inactive Debug panel; no session, variables, or call stack has been loaded." />
+</div>
 
-Debugging depends on the language, project launch configuration and a compatible debug adapter on the remote host. Confirm those prerequisites before relying on the mobile UI during an incident. For a faster first pass, use [Terminal](/docs/terminal) and [LSP](/docs/lsp) to narrow the question.
+</div>
+
+## Inspect a paused program
+
+Set a breakpoint and run the configured session. When execution pauses, inspect **Variables**, **Watch**, and **Call Stack**. Continue or step through code using the session controls. If the session cannot start, check the adapter and launch command on the host before changing breakpoints.

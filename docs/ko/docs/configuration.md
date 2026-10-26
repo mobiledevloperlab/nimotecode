@@ -1,52 +1,23 @@
 ---
-title: Configuration Guide | NimoteCode
-description: Configure NimoteCode for reliable mobile work with practical AI provider, SSH workspace and remote task setup checklists.
+title: AI 및 연결 설정 | NimoteCode
+description: "AI 및 연결 설정 설정, 사용 절차 및 화면 안내."
 ---
 
-# 구성 가이드
+# AI 및 연결 설정
 
+## 모델 설정 추가
 
-실제 작업에 맞춰 NimoteCode를 설정하세요. 테스트를 거친 소규모 구성은 압박감 속에서도 인식하지 못하는 대규모 프로파일 카탈로그보다 더 안전하고 유용합니다.
+**AI Configuration**을 열고 **Add Model**을 선택한 다음 제공업체를 선택합니다. 표시 이름, API 키, Base URL, 모델 이름을 입력하고 저장합니다. 해당 모델을 제공업체 계정에서 사용할 수 있어야 합니다. NimoteCode에는 제공업체의 토큰 사용량이 포함되지 않습니다.
 
+<div class="doc-screenshots">
+  <DocScreenshot file="ai-provider-overview.png" caption="저장된 모델과 일반 설정을 표시하는 AI Configuration." />
+  <DocScreenshot file="ai-provider-settings.jpg" caption="API 키가 마스킹되어 있고 연결 테스트를 제공하는 모델 설정 양식." />
+</div>
 
-## AI: 기본 프로필과 백업 프로필 유지
+## 채팅 연결 테스트
 
+**Test chat connection**을 선택하면 짧은 테스트 프롬프트를 전송합니다. 작업 공간 파일이나 설정된 시스템 프롬프트는 보내지 않으며 출력은 최대 1024 토큰입니다. 제공업체 요금이 발생할 수 있습니다. 성공은 텍스트 응답만 확인하며, Agent 도구 지원이나 모델의 컨텍스트 용량을 검증하지 않습니다.
 
-사용하려는 공급자 엔드포인트, 자격 증명 및 모델을 추가합니다. 그런 다음 에이전트에 의존하기 전에 AI Chat에서 확인하세요. 기본 프로필과 테스트된 폴백은 안정성과 비용의 균형을 맞추는 데 도움이 됩니다. 정확한 코드 작업을 위해 낮은 무작위성을 선택하고, 응답성이 향상되면 스트리밍을 사용하고, 컨텍스트 동작을 의도적으로 설정하십시오.
+## 일반 설정
 
-
-<ImagePlaceholder image-key="aiModelConfig" alt="AI model configuration on NimoteCode for phone">
-  <strong>AI model configuration</strong>
-</ImagePlaceholder>
-
-<ImagePlaceholder image-key="aiEditConfig" alt="AI edit configuration on NimoteCode for phone">
-  <strong>AI editing configuration</strong>
-</ImagePlaceholder>
-
-## SSH: 환경 이름을 지정한 다음 경계를 설정합니다.
-
-
-식별 가능한 이름, 호스트, 포트, 사용자 및 인증 방법을 사용하여 환경당 하나의 프로필을 생성합니다. 연결 후 워크스페이스 루트를 확인하세요. 민감한 호스트에 대해서는 키 기반 액세스 및 최소 권한 계정을 선호합니다. 익숙한 프로필이 여전히 안전한 환경을 가리킨다고 가정하지 마십시오.
-
-
-## 작업: 추측이 아닌 알려진 절차를 기록합니다.
-
-
-빌드/테스트, 형식/린트, 상태 확인 및 로그 검사를 위한 명확한 작업을 생성합니다. 목적별로 그룹화하고 재시작, 배포 또는 데이터 변경 명령을 명확하게 만듭니다. 작업은 SSH 워크플로를 통해 실행되므로 실행하기 전에 액세스 및 현재 디렉터리를 확인하세요.
-
-
-## 작업 준비 체크리스트
-
-
-1. AI Chat은 의도한 프로필의 응답을 반환합니다.
-
-2. SSH 프로필이 의도한 호스트 및 프로젝트 루트에 도달합니다.
-
-3. 작업 공간에서는 하나의 저위험 터미널 명령이 작동합니다.
-
-4. 잘 이해된 하나의 작업이 성공적으로 실행됩니다.
-
-5. Pro Git 워크플로를 사용하는 경우 소스 제어는 쓰기 전에 저장소 상태를 읽을 수 있습니다.
-
-
-계속 [설정](/docs/settings) · [AI 채팅 및 에이전트](/docs/ai) · [보안 및 안전](/docs/security)
+AI Configuration에는 MCP 도구 서버, 채팅 기록 자동 저장, AI 개인정보 설정이 있습니다. 모델의 샘플링 및 출력 설정과 별도로 확인하세요. SSH 호스트 설정은 [로컬 및 SSH 작업 공간](/ko/docs/ssh)을 참고하세요.

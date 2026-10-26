@@ -833,7 +833,7 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
     background-image:
       linear-gradient(rgba(var(--nimote-accent-rgb), 0.04) 1px, transparent 1px),
       linear-gradient(90deg, rgba(var(--nimote-accent-rgb), 0.04) 1px, transparent 1px),
-      url("/screenshots/homepage_bk_mobile.jpg");
+      url("/screenshots/nimote-pro.webp");
     background-position: center, center, center top;
   }
 

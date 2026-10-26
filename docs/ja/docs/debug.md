@@ -1,34 +1,25 @@
 ---
-title: Remote Debugging | NimoteCode Pro
-description: Use configured remote debug-adapter workflows in NimoteCode Pro for breakpoints, execution controls, call stacks, variables, watch expressions and output.
+title: デバッグ | NimoteCode
+description: "デバッグの設定、操作手順、画面の説明。"
 ---
 
-# リモートデバッグ
+# デバッグ
 
+<div class="doc-section">
+<div class="doc-section__copy">
 
- [デバッグ] パネルは、モバイル ワークスペースに構造化されたランタイムの可視性を提供します。構成されたセッションを開始または制御し、一時停止ポイントを検査し、証拠をコードと端末に接続します。デバッグは **Pro** ワークフローです。
+## デバッグセッションを準備する
 
+対象ホストに互換性のあるデバッグアダプターとプロジェクトの起動設定が必要です。準備ができたら Debug パネルを開き、**Start Debug** を選択します。デバッグには Pro の利用権限が必要です。
 
-<ImagePlaceholder image-key="debugging" alt="NimoteCode debugging workspace">
-<strong>Image プレースホルダー — 一時停止したデバッグ セッションを検査する</strong>
-<span>ブレークポイント、コールスタック、変数、および対応するソース行を示すスクリーンショットに置き換えます。</span>
-</ImagePlaceholder>
+</div>
 
-## 設定されたセッションによって公開される内容
+<div class="doc-screenshots">
+  <DocScreenshot file="debugger-standby.png" caption="セッションが開始されておらず、変数やコールスタックも読み込まれていない Debug パネル。" />
+</div>
 
+</div>
 
-- 開始、一時停止、継続、ステップ、および停止のコントロール。
+## 一時停止したプログラムを調べる
 
-- ブレークポイントと実行位置。
-
-- スレッドとコールスタックのナビゲーション。
-
-- 変数、スコープおよび監視式。
-
-- 式の評価とデバッグ出力。
-
-
-## 始める前に
-
-
-デバッグは、言語、プロジェクト起動構成、およびリモートホスト上の互換性のあるデバッグアダプタによって異なります。インシデント中にモバイル UI に依存する前に、これらの前提条件を確認してください。最初のパスを速くするには、[ターミナル](/docs/terminal) と [LSP](/docs/lsp) を使用して質問を絞り込みます。
+ブレークポイントを設定し、構成済みのセッションを実行します。停止したら **Variables**、**Watch**、**Call Stack** を確認します。セッションの操作ボタンで実行を再開したり、ステップ実行したりできます。開始できない場合は、ブレークポイントを変更する前にホスト上のアダプターと起動コマンドを確認してください。

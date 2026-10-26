@@ -1,63 +1,55 @@
 ---
-title: AI Chat and Agent | NimoteCode
-description: Use NimoteCode AI Chat for code and error explanations, and AI Agent for controlled multi-step work with provider profiles and workspace context.
+title: AI Chat y Agent | NimoteCode
+description: "Configuración, procedimientos y referencia de la interfaz: AI Chat y Agent."
 ---
 
-# Chat AI y agente
+# AI Chat y Agent
 
+<div class="doc-section">
+<div class="doc-section__copy">
 
-NimoteCode separa la ayuda directa de IA de la ejecución asistida por IA. **AI Chat** es para una respuesta rápida en contexto; **AI Agent** es para trabajos que necesitan varios pasos deliberados en archivos, terminales o herramientas Git.
+## Iniciar una conversación
 
+Seleccione un modelo configurado en el panel de IA e introduzca una pregunta. Para peticiones sobre un proyecto, abra primero su espacio de trabajo. Las credenciales y el acceso al modelo se ajustan por separado en [Configuración](/es/docs/configuration).
 
-<ImagePlaceholder image-key="aiAssistant" alt="NimoteCode AI panel">
-  <strong>Image placeholder — AI assistance with workspace context</strong>
-  <span>Replace with a screenshot of the AI panel explaining an active file or planning a small, reviewable change.</span>
-</ImagePlaceholder>
+</div>
 
-## Usa AI Chat para la siguiente decisión
+<div class="doc-screenshots">
+  <DocScreenshot file="ai-chat-welcome.png" caption="Panel de IA antes de abrir un espacio de trabajo." />
+</div>
 
+</div>
 
-Pídale a Chat que le explique un código desconocido, interprete la salida del terminal, describa una refactorización o revise una idea antes de cambiar un archivo. Mantener activo el archivo relevante le da a la conversación un contexto de espacio de trabajo útil. Las tareas recientes y el contexto del espacio de trabajo permanecen visibles en Chat, mientras que un indicador global compacto mantiene visible el trabajo activo del agente a medida que se mueve entre los paneles.
+<div class="doc-section">
+<div class="doc-section__copy">
 
+## Elegir un agente
 
-## Utilice AI Agent para una secuencia controlada
+El selector ofrece Nimote Agent y agentes externos. Los externos se ejecutan en el host SSH y requieren un entorno ACP compatible instalado y configurado allí. Los comandos de sesión anunciados por ese entorno están disponibles mediante el autocompletado de comandos con barra.
 
+</div>
 
-Agent es apropiado cuando una tarea necesita inspeccionar archivos, proponer un plan, realizar una edición, ejecutar una verificación y resumir el resultado. Mientras se ejecuta, añada una instrucción de seguimiento o responda una pregunta interactiva cuando el trabajo necesite su dirección. Las vistas renovadas de contexto, historial, edición de prompts y cronología ayudan a seguir trabajos largos. Está disponible a través de Early Access Pro a medida que se amplía la disponibilidad; no utiliza una cuota de uso gratuito.
+<div class="doc-screenshots">
+  <DocScreenshot file="ai-agent-selector.jpg" caption="Selector con Nimote Agent seleccionado y agentes externos desactivados." />
+</div>
 
-## Mantenga el control mientras el trabajo continúa
+</div>
 
-Una ejecución activa de Agent es una colaboración, no una promesa en segundo plano. Revise su plan, comandos, solicitudes de permisos, cambios de archivos y salida compactada; cuando se alcance el presupuesto de pasos configurado, revise el estado antes de decidir si continúa.
+## Revisar el plan y seguir la ejecución
 
+En modo **Confirm**, revise el plan y seleccione **Approve this run** para permitir las herramientas. La cronología muestra el paso actual, las llamadas completadas y su salida. Puede enviar instrucciones adicionales o responder preguntas durante la ejecución. Si se alcanza el límite de pasos, revise el resultado antes de continuar.
 
-## Utilice un agente ACP externo en un espacio de trabajo SSH
+<div class="doc-screenshots">
+  <DocScreenshot file="ai-plan-approval.jpg" caption="Plan de inspección del proyecto pendiente de aprobación en modo Confirm." />
+  <DocScreenshot file="ai-plan-running.jpg" caption="Ejecución aprobada que lee archivos y registra los pasos de inspección completados." />
+</div>
 
+## Leer el resultado
 
-Cuando un tiempo de ejecución ACP compatible esté disponible en el host SSH, selecciónelo junto con el Agente integrado. NimoteCode presenta sus capacidades, solicitudes de permiso, estado de la sesión y progreso de ejecución en la misma experiencia de conversación. Escriba `/` en el compositor para acciones y comandos de sesión integrados informados por la sesión ACP activa. El tiempo de ejecución permanece en su host SSH; asegúrese de que su comando y entorno estén configurados allí antes de comenzar.
+Las capturas muestran una respuesta a «explain this project»: una descripción del proyecto, ejemplos de comandos y observaciones sobre archivos ausentes y metodología de pruebas de rendimiento. Son partes de una respuesta generada, no modos de análisis distintos. Contraste los archivos y comandos citados con el proyecto actual antes de usar el resultado.
 
-
-<ImagePlaceholder image-key="agentRunLog" alt="AI Agent run log on NimoteCode for phone">
-  <strong>Agent execution log</strong>
-</ImagePlaceholder>
-
-<ImagePlaceholder image-key="agentRunPythonBenchmark" alt="AI Agent running a Python benchmark on phone">
-  <strong>Agent runs a Python benchmark</strong>
-</ImagePlaceholder>
-
-<ImagePlaceholder image-key="agentAlgorithmBenchmarkResults" alt="AI Agent benchmark results on phone">
-  <strong>Agent benchmark results</strong>
-</ImagePlaceholder>
-
-## Configurar proveedores deliberadamente
-
-
-Los perfiles de proveedor contienen configuraciones de conexión y modelo, como punto final, credencial API, modelo, transmisión y comportamiento de contexto. Conecta su propio proveedor de IA y clave API; NimoteCode no incluye acceso al modelo ni tokens. Mantenga un perfil principal funcional y un perfil de respaldo probado. Consulte [Configuración](/docs/configuration) para obtener una lista de verificación práctica.
-
-
-Para un espacio de trabajo SSH, Terminal, agentes ACP externos, Tareas, Depuración, servidores de idiomas, Git y CLI externas comparten el entorno de inicio de sesión de la cuenta remota. Utilice **Actualizar entorno remoto** desde el menú Terminal después de cambiar la configuración del shell; la reconexión también lo actualiza. La salida de diagnóstico enmascara claves API, tokens, secretos y contraseñas.
-
-
-> Revise los comandos y los cambios de archivos antes de aplicarlos, especialmente en un espacio de trabajo remoto o adyacente a la producción. Las capas de validación y bloqueo de la aplicación admiten el trabajo controlado; no transfieren la responsabilidad operativa del usuario.
-
-
-Continuar con [Demostración del agente AI](/use-cases/) · [Seguridad y protección](/docs/security) · [Codificación AI móvil](/mobile-ai-coding)
+<div class="doc-screenshots">
+  <DocScreenshot file="ai-analysis-overview.jpg" caption="Descripción del proyecto y sus componentes principales en una respuesta de IA." />
+  <DocScreenshot file="ai-analysis-workflow.jpg" caption="Ejemplos de comandos del proyecto en la misma respuesta." />
+  <DocScreenshot file="ai-analysis-caveats.jpg" caption="Observaciones sobre la copia del repositorio inspeccionada y los resultados de rendimiento." />
+</div>

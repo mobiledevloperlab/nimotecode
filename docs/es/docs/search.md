@@ -1,31 +1,25 @@
 ---
-title: Remote Code Search | NimoteCode
-description: Search remote workspace file contents in NimoteCode by keyword or regex, narrow matches with case sensitivity and open results at the matching line.
+title: Búsqueda en el espacio de trabajo | NimoteCode
+description: "Configuración, procedimientos y referencia de la interfaz: Búsqueda en el espacio de trabajo."
 ---
 
-# Búsqueda de código remoto
+# Búsqueda en el espacio de trabajo
 
+<div class="doc-section">
+<div class="doc-section__copy">
 
-Search le ayuda a responder una pregunta específica en un proyecto SSH: ¿dónde se utiliza este valor de configuración, cadena de error o función? Busca contenido del espacio de trabajo remoto y abre coincidencias directamente en el editor.
+## Buscar en el contenido de archivos
 
+En un espacio SSH, abra Search e introduzca texto en **Search file content**. Active la distinción entre mayúsculas y minúsculas cuando corresponda, o las expresiones regulares para buscar patrones. Seleccione un resultado para abrir el archivo en la línea coincidente. La búsqueda de contenido remoto requiere Pro.
 
-<ImagePlaceholder image-key="codeGlobalSearch" alt="Global code search on NimoteCode for phone">
-  <strong>Search the remote workspace</strong>
-</ImagePlaceholder>
+</div>
 
-## Encuentra la línea correcta rápidamente
+<div class="doc-screenshots">
+  <DocScreenshot file="search-global.png" caption="Panel antes de realizar una búsqueda, con opciones de mayúsculas y minúsculas y expresiones regulares." />
+</div>
 
+</div>
 
-1. Conéctese a un [Espacio de trabajo SSH](/docs/ssh).
+## Si no aparecen resultados
 
-2. Ingrese una palabra clave o habilite expresiones regulares para un patrón deliberado.
-
-3. Restringe los resultados con coincidencias que distinguen entre mayúsculas y minúsculas cuando sea necesario.
-
-4. Abre el resultado coincidente y continúa en [Editor](/docs/editor).
-
-
-La búsqueda remota de contenido está disponible a través de Early Access Pro a medida que se expande la disponibilidad; no utiliza una cuota de uso gratuito. Mantenga patrones específicos en repositorios grandes para que una investigación móvil sea más fácil de escanear.
-
-
-Relacionado: [Editor](/docs/editor) · [Terminal](/docs/terminal) · [Pro](/pro)
+Confirme el espacio activo y pruebe primero con una cadena literal corta. Revise la distinción entre mayúsculas y minúsculas y la sintaxis de la expresión regular antes de ampliar la búsqueda.

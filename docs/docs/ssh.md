@@ -1,62 +1,49 @@
 ---
-title: Local and Remote SSH Workspaces | NimoteCode Mobile IDE
-description: Open a local project or connect to a remote project with SSH in NimoteCode, including SOCKS5 and HTTP CONNECT proxy support, then work from one clear project root.
+title: Local and SSH workspaces | NimoteCode
+description: "Configuration, procedures, and interface reference for local and ssh workspaces."
 ---
 
-# Local and Remote SSH Workspaces
+# Local and SSH workspaces
 
-NimoteCode starts with a workspace: a local project stored on your device or a remote project reached through SSH. Explorer, Editor and Terminal stay connected to the same project root, so a task remains understandable from first inspection through verification. For bundled Ubuntu on Android, see [Android Local Linux](/docs/local-linux).
+## Choose a workspace
 
-<ImagePlaceholder image-key="localWorkspace" alt="Local workspace in NimoteCode on phone">
-  <strong>Local workspace</strong>
-  <span>Open a project stored on the device with Local Explorer.</span>
-</ImagePlaceholder>
+Explorer provides local, remote SSH, Local Linux, and demo entry points. Recent History lists previously opened locations. The connected workspace determines which files and tools are available.
 
-## Open a local workspace
+<div class="doc-screenshots">
+  <DocScreenshot file="workspace-start-light.png" caption="Explorer before opening a workspace, light theme." />
+  <DocScreenshot file="workspace-start-dark.jpg" caption="Explorer before opening a workspace, dark theme." />
+</div>
 
-Choose **Local Explorer** to browse a project stored on your device. Confirm the folder before editing files, running commands or reviewing changes in Source Control.
+## Open a local folder
 
-## Connect an SSH workspace
+Select **Open Local Workspace**, choose a storage location in the system picker, and grant access to the project folder. The selected directory becomes the Local Explorer root. Picker appearance and available locations depend on the operating system.
 
-<ImagePlaceholder image-key="sshWorkspace" alt="NimoteCode SSH workspace setup">
-  <strong>SSH workspace setup</strong>
-  <span>Connect to a remote host, then open its project root in Remote Explorer.</span>
-</ImagePlaceholder>
+<div class="doc-screenshots">
+  <DocScreenshot file="local-storage-picker.png" caption="Android storage-location picker." />
+  <DocScreenshot file="local-file-browser.png" caption="Android folder picker with the Use this folder action." />
+  <DocScreenshot file="local-workspace-files.png" caption="Local Explorer after selecting a folder; this example has no listed project files." />
+</div>
 
-Connect in four steps:
+## Configure an SSH connection
 
-1. Create or select an SSH profile.
-2. Enter the host, port and username.
-3. Authenticate with a password, private-key file or pasted private key. When your network requires it, connect through a SOCKS5 or HTTP CONNECT proxy.
-4. Confirm the remote project root, then open it in Remote Explorer.
+1. Select **Connect Remote Workspace**, then **Connect** to add a profile.
+2. Enter the host, port, username, and authentication method.
+3. If required, select SOCKS5 or HTTP CONNECT under **Proxy Settings**.
+4. Connect and select the remote project directory.
 
-## Choose and confirm the remote directory
+**Ping / test SSH port** checks a direct TCP connection to the host and port. It does not test the proxy or authenticate your credentials. A successful port test does not establish an SSH workspace.
 
-Explorer is the starting point for an SSH-backed project. After connecting, select **Remote Explorer**, then confirm both the host and the project root before opening files or running commands.
+<div class="doc-screenshots">
+  <DocScreenshot file="remote-connection-form.jpg" caption="SSH profile form with port test, proxy, and authentication settings." />
+  <DocScreenshot file="remote-connection-history.png" caption="Recent History with a saved SSH profile." />
+</div>
 
-<ImagePlaceholder image-key="explorerPage" alt="Explorer selection page on NimoteCode for phone">
-  <strong>Select a workspace explorer</strong>
-</ImagePlaceholder>
+## Select the project root
 
-<ImagePlaceholder image-key="explorerPopup" alt="Explorer selection popup on NimoteCode for phone">
-  <strong>Explorer selection controls</strong>
-</ImagePlaceholder>
+Use the remote directory picker to enter or browse to the project folder. After opening it, check the server, user, port, and root shown in Explorer. Use **Select** to enter file-selection mode. Switching directories changes the workspace used by project tools.
 
-Choose the project root—not merely the server home directory. This gives Editor, Terminal, Search and Source Control a shared boundary and reduces the chance of running a command in the wrong location.
-
-<ImagePlaceholder image-key="remoteDirectory" alt="Remote directory selection dialog on NimoteCode for phone">
-  <strong>Select the remote project directory</strong>
-</ImagePlaceholder>
-
-## What stays in context
-
-- Browse the remote project and open files in [Editor](/docs/editor).
-- Run shell commands in [Terminal](/docs/terminal) for that workspace.
-- Search remote file content with [Search](/docs/search).
-- Review a focused patch in [Source Control](/docs/source-control); use Pro only if the delivery needs a gated Git write action.
-
-## Safer remote habits
-
-Use a separate profile for each environment, prefer a least-privilege account and key-based authentication for sensitive hosts, and choose a deliberate project root. If you use a proxy, verify its address and trust boundary as carefully as the destination host. Reconnect-aware behavior and connection reuse make remote commands and preview tunnels more resilient, but you should always verify the active host and directory before running a write command.
-
-Next: [Terminal](/docs/terminal) · [SSH remote development workflow](/docs/ssh) · [Security and Safety](/docs/security)
+<div class="doc-screenshots">
+  <DocScreenshot file="remote-directory-picker.jpg" caption="Remote Directory dialog for selecting the workspace root." />
+  <DocScreenshot file="remote-workspace-connected.jpg" caption="Connected Remote Explorer with the active host and root path." />
+  <DocScreenshot file="remote-file-selection.jpg" caption="Remote Explorer in file-selection mode." />
+</div>

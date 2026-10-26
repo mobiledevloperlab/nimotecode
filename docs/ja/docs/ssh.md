@@ -1,82 +1,49 @@
 ---
-title: Local and Remote SSH Workspaces | NimoteCode Mobile IDE
-description: Open a local project or connect to a remote project with SSH in NimoteCode, then work from one clear project root.
+title: ローカルと SSH のワークスペース | NimoteCode
+description: "ローカルと SSH のワークスペースの設定、操作手順、画面の説明。"
 ---
 
-# ローカルおよびリモートの SSH ワークスペース
+# ローカルと SSH のワークスペース
 
+## ワークスペースを選ぶ
 
-NimoteCode starts with a workspace: a local project stored on your device or a remote project reached through SSH.エクスプローラー、エディター、およびターミナルは同じプロジェクト ルートに接続されたままとなるため、最初の検査から検証までタスクを理解できる状態が保たれます。 Android にバンドルされている Ubuntu については、[Android Local Linux](/docs/local-linux) を参照してください。
+Explorer にはローカル、リモート SSH、Local Linux、デモへの入口があります。Recent History には以前開いた場所が表示されます。接続中のワークスペースによって利用できるファイルとツールが決まります。
 
+<div class="doc-screenshots">
+  <DocScreenshot file="workspace-start-light.png" caption="ワークスペースを開く前の Explorer、ライトテーマ。" />
+  <DocScreenshot file="workspace-start-dark.jpg" caption="ワークスペースを開く前の Explorer、ダークテーマ。" />
+</div>
 
-<ImagePlaceholder image-key="localWorkspace" alt="Local workspace in NimoteCode on phone">
-  <strong>Local workspace</strong>
-<span>ローカル エクスプローラーを使用して、デバイスに保存されているプロジェクトを開きます。</span>
-</ImagePlaceholder>
+## ローカルフォルダーを開く
 
-## ローカルワークスペースを開く
+**Open Local Workspace** を選び、システムの選択画面で保存場所を指定してプロジェクトフォルダーへのアクセスを許可します。選択したディレクトリが Local Explorer のルートになります。選択画面の外観と利用できる場所は OS によって異なります。
 
+<div class="doc-screenshots">
+  <DocScreenshot file="local-storage-picker.png" caption="Android の保存場所の選択画面。" />
+  <DocScreenshot file="local-file-browser.png" caption="Use this folder 操作を備えた Android のフォルダー選択画面。" />
+  <DocScreenshot file="local-workspace-files.png" caption="フォルダー選択後の Local Explorer。この例ではプロジェクトファイルが表示されていません。" />
+</div>
 
-[**ローカル エクスプローラー**] を選択して、デバイスに保存されているプロジェクトを参照します。ファイルを編集したり、コマンドを実行したり、ソース管理での変更を確認したりする前に、フォルダーを確認してください。
+## SSH 接続を設定する
 
+1. **Connect Remote Workspace**、続いて **Connect** を選び、接続設定を追加します。
+2. ホスト、ポート、ユーザー名、認証方式を入力します。
+3. 必要に応じて **Proxy Settings** で SOCKS5 または HTTP CONNECT を選択します。
+4. 接続してリモートのプロジェクトディレクトリを選択します。
 
-## SSHワークスペースに接続する
+**Ping / test SSH port** はホストとポートへの直接 TCP 接続を確認します。プロキシや認証情報は検証しません。ポートテストに成功しても SSH ワークスペースへの接続は確立されません。
 
+<div class="doc-screenshots">
+  <DocScreenshot file="remote-connection-form.jpg" caption="ポートテスト、プロキシ、認証設定を備えた SSH 接続フォーム。" />
+  <DocScreenshot file="remote-connection-history.png" caption="保存済み SSH 接続を表示する Recent History。" />
+</div>
 
-<ImagePlaceholder image-key="sshWorkspace" alt="NimoteCode SSH workspace setup">
-  <strong>SSH workspace setup</strong>
-<span>リモート ホストに接続し、リモート エクスプローラーでそのプロジェクト ルートを開きます。</span>
-</ImagePlaceholder>
+## プロジェクトのルートを選ぶ
 
-4 つの手順で接続します。
+リモートディレクトリ選択画面でパスを入力するか、目的のフォルダーまで移動します。開いたら Explorer のサーバー、ユーザー、ポート、ルートを確認します。**Select** でファイル選択モードに入ります。ディレクトリを切り替えると、プロジェクトツールが使うワークスペースも変わります。
 
-
-1. SSH プロファイルを作成または選択します。
-
-2. ホスト、ポート、およびユーザー名を入力します。
-
-3. パスワード、秘密キーファイル、または貼り付けた秘密キーを使用して認証します。
-
-4. リモート プロジェクトのルートを確認し、リモート エクスプローラーで開きます。
-
-
-## リモート ディレクトリを選択して確認します
-
-
-Explorer は、SSH を利用したプロジェクトの開始点です。接続後、**リモート エクスプローラー**を選択し、ファイルを開いたりコマンドを実行したりする前に、ホストとプロジェクト ルートの両方を確認します。
-
-
-<ImagePlaceholder image-key="explorerPage" alt="Explorer selection page on NimoteCode for phone">
-  <strong>Select a workspace explorer</strong>
-</ImagePlaceholder>
-
-<ImagePlaceholder image-key="explorerPopup" alt="Explorer selection popup on NimoteCode for phone">
-  <strong>Explorer selection controls</strong>
-</ImagePlaceholder>
-
-Choose the project root—not merely the server home directory.これにより、エディター、ターミナル、検索、およびソース管理に共有境界が与えられ、間違った場所でコマンドが実行される可能性が減ります。
-
-
-<ImagePlaceholder image-key="remoteDirectory" alt="Remote directory selection dialog on NimoteCode for phone">
-<strong>リモート プロジェクト ディレクトリを選択します</strong>
-</ImagePlaceholder>
-
-## コンテキストに残るもの
-
-
-- リモートプロジェクトを参照し、[エディタ](/docs/editor)でファイルを開きます。
-
-- そのワークスペースの[ターミナル](/docs/terminal)でシェルコマンドを実行します。
-
-- [検索](/docs/search)でリモートファイルの内容を検索します。
-
-- [ソース管理](/docs/source-control)でフォーカスされたパッチを確認します。 Pro は、配信にゲートされた Git 書き込みアクションが必要な場合にのみ使用してください。
-
-
-## より安全なリモート習慣
-
-
-環境ごとに個別のプロファイルを使用し、機密性の高いホストには最小権限のアカウントとキーベースの認証を優先し、意図的なプロジェクトルートを選択します。再接続を認識する動作と接続の再利用により、リモート コマンドとプレビュー トンネルの回復力が高まりますが、書き込みコマンドを実行する前に、アクティブなホストとディレクトリを必ず確認する必要があります。
-
-
-次へ: [ターミナル](/docs/terminal) · [SSHリモート開発ワークフロー](/docs/ssh) · [セキュリティと安全](/docs/security)
+<div class="doc-screenshots">
+  <DocScreenshot file="remote-directory-picker.jpg" caption="ワークスペースのルートを選ぶ Remote Directory ダイアログ。" />
+  <DocScreenshot file="remote-workspace-connected.jpg" caption="接続中のホストとルートパスを表示する Remote Explorer。" />
+  <DocScreenshot file="remote-file-selection.jpg" caption="ファイル選択モードの Remote Explorer。" />
+</div>

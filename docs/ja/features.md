@@ -92,3 +92,5 @@ NimoteCode は、重要な開発ループを 1 つのモバイル ワークス�
 
 
 これらの機能が SSH セッションにどのように適合するかを評価している場合は、[Android SSH クライアント](/android-ssh-client) ワークフローを参照するか、[モバイル IDE ガイド](/blog/best-ssh-clients) を読むか、完全なリモート開発ループについては [SSH IDE の概要](/ssh-ide) を開いてください。
+
+画面と操作手順は[画面と操作の索引](/ja/docs/screenshot-guide)を参照してください。

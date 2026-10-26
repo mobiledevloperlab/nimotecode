@@ -42,7 +42,7 @@ const isWorkflowRoute = computed(() => /^\/(?:(?:zh|ja|ko|es)\/)?use-cases(?:\/|
   <MarketingLayout v-if="!isDocsRoute && !isBlogRoute && !isWorkflowRoute" />
   <template v-else>
   <SiteAnalytics />
-  <div v-if="frontmatter.layout !== false" class="Layout" :class="[frontmatter.pageClass, { 'has-sidebar': hasSidebar }]">
+  <div v-if="frontmatter.layout !== false" class="Layout" :class="[frontmatter.pageClass, { 'has-sidebar': hasSidebar, 'nimote-docs': isDocsRoute }]">
     <slot name="layout-top" />
     <VPSkipLink />
     <VPBackdrop class="backdrop" :show="isSidebarOpen" @click="closeSidebar" />

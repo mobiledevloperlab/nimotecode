@@ -1,51 +1,55 @@
 ---
 title: AI Chat and Agent | NimoteCode
-description: Use NimoteCode AI Chat for code and error explanations, and AI Agent for controlled multi-step work, follow-ups, and interactive questions with workspace context.
+description: "Configuration, procedures, and interface reference for ai chat and agent."
 ---
 
 # AI Chat and Agent
 
-NimoteCode separates direct AI help from AI-assisted execution. **AI Chat** is for a fast answer in context; **AI Agent** is for work that needs several deliberate steps across files, terminal or Git tools.
+<div class="doc-section">
+<div class="doc-section__copy">
 
-<ImagePlaceholder image-key="aiAssistant" alt="NimoteCode AI panel">
-  <strong>Image placeholder — AI assistance with workspace context</strong>
-  <span>Replace with a screenshot of the AI panel explaining an active file or planning a small, reviewable change.</span>
-</ImagePlaceholder>
+## Start a conversation
 
-## Use AI Chat for the next decision
+Select a configured model in the AI panel and enter a question. For project-specific requests, open the relevant workspace first. Provider credentials and model access are configured separately in [Configuration](/docs/configuration).
 
-Ask Chat to explain unfamiliar code, interpret terminal output, outline a refactor, or review an idea before you change a file. Keeping the relevant file active gives the conversation useful workspace context. Recent tasks and workspace context stay visible in Chat, while a compact global indicator keeps active Agent work visible as you move between panels.
+</div>
 
-## Use AI Agent for a controlled sequence
+<div class="doc-screenshots">
+  <DocScreenshot file="ai-chat-welcome.png" caption="AI panel before a workspace is opened." />
+</div>
 
-Agent is appropriate when a task needs to inspect files, propose a plan, make an edit, run a check and summarize the result. While it runs, add a follow-up instruction or answer an interactive question when the work needs your direction. Its rebuilt context, history, prompt editing, and timeline views are designed to make longer work easier to follow. It is available through Early Access Pro as availability expands; it does not use a free usage quota.
+</div>
 
-## Keep control as work continues
+<div class="doc-section">
+<div class="doc-section__copy">
 
-An active Agent run is a collaboration, not a background promise. Review its plan, commands, permission requests, file changes, and compacted output as it proceeds. Use a follow-up for a changed requirement; answer a question only after confirming the host, project, and intended effect. When a configured step budget is reached, review the state before choosing whether to continue.
+## Choose an agent
 
-## Use an external ACP agent in an SSH workspace
+The agent selector provides Nimote Agent and external agents. External agents run on the SSH host and require a compatible ACP runtime installed and configured there. Session commands reported by the runtime are available through slash-command completion.
 
-When a compatible ACP runtime is available on the SSH host, choose it alongside the built-in Agent. NimoteCode presents its capabilities, permission requests, session state, and running progress in the same conversation experience. Type `/` in the composer for built-in session actions and commands reported by the active ACP session. The runtime stays on your SSH host; make sure its command and environment are configured there before starting.
+</div>
 
-<ImagePlaceholder image-key="agentRunLog" alt="AI Agent run log on NimoteCode for phone">
-  <strong>Agent execution log</strong>
-</ImagePlaceholder>
+<div class="doc-screenshots">
+  <DocScreenshot file="ai-agent-selector.jpg" caption="Agent selector with Nimote Agent selected and external agents disabled." />
+</div>
 
-<ImagePlaceholder image-key="agentRunPythonBenchmark" alt="AI Agent running a Python benchmark on phone">
-  <strong>Agent runs a Python benchmark</strong>
-</ImagePlaceholder>
+</div>
 
-<ImagePlaceholder image-key="agentAlgorithmBenchmarkResults" alt="AI Agent benchmark results on phone">
-  <strong>Agent benchmark results</strong>
-</ImagePlaceholder>
+## Review the plan and follow execution
 
-## Configure providers deliberately
+In **Confirm** mode, review the proposed plan and select **Approve this run** to permit tool execution. The timeline shows the current step, completed tool calls, and output. You can provide follow-up instructions or answer questions during a run. If a step budget is reached, inspect the result before continuing.
 
-Provider profiles hold connection and model settings such as endpoint, API credential, model, streaming and context behavior. You connect your own AI provider and API key; NimoteCode does not bundle model access or tokens. Keep a working primary profile and a tested backup profile. See [Configuration](/docs/configuration) for a practical checklist.
+<div class="doc-screenshots">
+  <DocScreenshot file="ai-plan-approval.jpg" caption="A project-inspection plan waiting for approval in Confirm mode." />
+  <DocScreenshot file="ai-plan-running.jpg" caption="The approved run reading files and recording completed inspection steps." />
+</div>
 
-For an SSH workspace, Terminal, external ACP agents, Tasks, Debug, language servers, Git, and external CLIs share the remote account's login environment. Use **Refresh Remote Environment** from the Terminal menu after changing shell configuration; reconnection also refreshes it. Diagnostic output masks API keys, tokens, secrets, and passwords.
+## Read the result
 
-> Review commands and file changes before applying them, particularly in a remote or production-adjacent workspace. The app’s validation and locking layers support controlled work; they do not transfer operational responsibility away from the user.
+The following screenshots show one response to “explain this project”: a project overview, example commands, and caveats about missing files and benchmark methodology. These are parts of a generated answer, not separate analysis modes. Check referenced files and commands against the current project before using the result.
 
-Continue with [AI Agent demo](/use-cases/) · [Security and Safety](/docs/security) · [Mobile AI Coding](/mobile-ai-coding)
+<div class="doc-screenshots">
+  <DocScreenshot file="ai-analysis-overview.jpg" caption="Project overview and main components in an AI response." />
+  <DocScreenshot file="ai-analysis-workflow.jpg" caption="Example project commands in the same response." />
+  <DocScreenshot file="ai-analysis-caveats.jpg" caption="Caveats about the inspected checkout and benchmark results." />
+</div>

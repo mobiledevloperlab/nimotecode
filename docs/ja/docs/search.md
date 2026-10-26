@@ -1,31 +1,25 @@
 ---
-title: Remote Code Search | NimoteCode
-description: Search remote workspace file contents in NimoteCode by keyword or regex, narrow matches with case sensitivity and open results at the matching line.
+title: ワークスペース内の検索 | NimoteCode
+description: "ワークスペース内の検索の設定、操作手順、画面の説明。"
 ---
 
-# リモートコード検索
+# ワークスペース内の検索
 
+<div class="doc-section">
+<div class="doc-section__copy">
 
-検索は、SSH プロジェクトでの重点的な質問、つまりこの設定値、エラー文字列、または関数がどこで使用されているのかに答えるのに役立ちます。リモート ワークスペースのコンテンツを検索し、一致する内容をエディターで直接開きます。
+## ファイルの内容を検索する
 
+SSH ワークスペースで Search を開き、**Search file content** に文字列を入力します。必要に応じて大文字と小文字の区別や、パターン検索用の正規表現を有効にします。結果を選択すると一致した行でファイルが開きます。リモートの内容検索には Pro の利用権限が必要です。
 
-<ImagePlaceholder image-key="codeGlobalSearch" alt="Global code search on NimoteCode for phone">
-<strong>リモート ワークスペースを検索</strong>
-</ImagePlaceholder>
+</div>
 
-## 適切な行を素早く見つける
+<div class="doc-screenshots">
+  <DocScreenshot file="search-global.png" caption="検索前のパネル。大文字と小文字の区別と正規表現の設定を表示。" />
+</div>
 
+</div>
 
-1. [SSHワークスペース](/docs/ssh)に接続します。
+## 結果が表示されない場合
 
-2. キーワードを入力するか、意図的なパターンの正規表現を有効にします。
-
-3. 必要に応じて大文字と小文字を区別して一致させて結果を絞り込みます。
-
-4. 一致結果を開いて[エディタ](/docs/editor)で続行します。
-
-
-リモート コンテンツ検索は、可用性が拡大するにつれて早期アクセス プロを通じて利用できるようになります。無料の使用量割り当ては使用しません。モバイル調査のスキャンを容易にするために、大規模なリポジトリに固有のパターンを保持します。
-
-
-関連: [エディタ](/docs/editor) · [ターミナル](/docs/terminal) · [プロ](/pro)
+現在のワークスペースを確認し、まず短い通常の文字列で試します。検索条件を広げる前に、大文字と小文字の設定や正規表現の構文を確認してください。

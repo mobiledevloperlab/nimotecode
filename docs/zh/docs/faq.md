@@ -15,7 +15,7 @@ description: 快速了解 NimoteCode 的本地、Android 本地 Linux 与 SSH �
 
 ## 可配置哪些 AI Provider？
 
-应用提供 14 个内置 Provider 模板，也支持兼容的自定义端点。具体模型访问与费用由你的 Provider 账户和配置决定，建议参考 [配置指南](/zh/docs/configuration)。
+应用提供 Provider 模板，也支持兼容的自定义端点。具体模型访问与费用由你的 Provider 账户和配置决定，建议参考 [配置指南](/zh/docs/configuration)。
 
 ## Source Control 支持什么？
 
@@ -23,7 +23,7 @@ description: 快速了解 NimoteCode 的本地、Android 本地 Linux 与 SSH �
 
 ## Tasks 是本地还是远程运行？
 
-Tasks 面向 SSH 工作区中的可复用命令流程。运行前请在任务名称中明确主机、项目根目录和风险等级。
+Tasks 面向 SSH 工作区中的可复用命令流程。命令在已连接的工作区执行；未单独指定目录时，使用当前工作区根目录。
 
 ## LSP 和 Debug 所有项目都能用吗？
 

@@ -6,6 +6,7 @@ import MarketingLayout from './MarketingLayout.vue'
 // 暂时不上线：App 界面 mockup（代码保留在 ./components/AppMockup.vue）
 // import AppMockup from './components/AppMockup.vue'
 import ImagePlaceholder from './components/ImagePlaceholder.vue'
+import DocScreenshot from './components/DocScreenshot.vue'
 import HomeToolComparison from './components/HomeToolComparison.vue'
 import LatestReleaseLink from './components/LatestReleaseLink.vue'
 import ReleaseArchive from './components/ReleaseArchive.vue'
@@ -26,6 +27,7 @@ const theme: Theme = {
   enhanceApp({ app }) {
     // app.component('AppMockup', AppMockup) // 暂时不上线
     app.component('ImagePlaceholder', ImagePlaceholder)
+    app.component('DocScreenshot', DocScreenshot)
     app.component('HomeToolComparison', HomeToolComparison)
     app.component('LatestReleaseLink', LatestReleaseLink)
     app.component('ReleaseArchive', ReleaseArchive)

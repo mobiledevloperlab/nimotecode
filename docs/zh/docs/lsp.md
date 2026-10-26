@@ -1,23 +1,25 @@
 ---
-title: LSP 诊断与代码动作 | NimoteCode Pro
-description: 在远程工作区配置语言服务后，使用 NimoteCode Pro 查看诊断、跳转源码位置并应用可用的代码动作。
+title: 语言服务（LSP） | NimoteCode
+description: "语言服务（LSP）的配置、操作步骤与界面说明。"
 ---
 
-# LSP 诊断与代码动作
+# 语言服务（LSP）
 
-LSP 面板为活跃的远程工作区提供语言感知反馈。远程主机配置好兼容的语言服务后，你可以从诊断项跳转到源码位置，并应用可用的代码动作。LSP 属于 **Pro** 工作流。
+<div class="doc-section">
+<div class="doc-section__copy">
 
-<ImagePlaceholder image-key="lsp" alt="NimoteCode LSP 诊断">
-  <strong>图片占位符 —— 使用 LSP 诊断并定位源码</strong>
-  <span>请替换为诊断列表、选中的源码行与可用代码动作同屏的截图。</span>
-</ImagePlaceholder>
+## 检查语言服务配置
 
-## 一条实用 LSP 路径
+打开源码文件后进入 LSP 面板，检查 **LSP Setup** 以及当前语言对应的服务。截图显示 Python 的 pyright-langserver 已安装，错误与警告均为零。安装状态并不代表项目依赖全部就绪，也不保证每项代码动作均可用。
 
-1. 在远程项目中设置并验证语言服务。
-2. 打开 LSP，优先筛选重要错误。
-3. 跳转到源码位置；若存在可用代码动作则应用。
-4. 回到 [终端](/zh/docs/terminal) 运行相关检查。
-5. 问题仍复杂时，继续使用 [调试](/zh/docs/debug) 或 [AI Chat 与 Agent](/zh/docs/ai)。
+</div>
 
-语言支持取决于远程主机已安装与配置的工具。某项诊断没有代码动作是正常情况，并不代表 LSP 或 AI 能自动修复每一个问题。
+<div class="doc-screenshots">
+  <DocScreenshot file="lsp-python-status.png" caption="Python 语言服务配置状态，以及 Problems 和 Code Actions 区域。" />
+</div>
+
+</div>
+
+## 使用诊断与代码动作
+
+展开 **Problems**，选择诊断项跳转到对应源码位置。在 **Code Actions** 中检查当前光标位置可用的操作，具体能力由语言服务决定。应用操作后保存文件，并重新执行项目检查。LSP 需要 Pro 权益。

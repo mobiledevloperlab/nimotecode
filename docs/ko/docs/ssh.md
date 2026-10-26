@@ -1,82 +1,49 @@
 ---
-title: Local and Remote SSH Workspaces | NimoteCode Mobile IDE
-description: Open a local project or connect to a remote project with SSH in NimoteCode, then work from one clear project root.
+title: 로컬 및 SSH 작업 공간 | NimoteCode
+description: "로컬 및 SSH 작업 공간 설정, 사용 절차 및 화면 안내."
 ---
 
-# 로컬 및 원격 SSH 작업 공간
+# 로컬 및 SSH 작업 공간
 
+## 작업 공간 선택
 
-NimoteCode는 작업 공간, 즉 장치에 저장된 로컬 프로젝트 또는 SSH를 통해 연결되는 원격 프로젝트로 시작합니다. Explorer, Editor 및 Terminal은 동일한 프로젝트 루트에 연결되어 있으므로 첫 번째 검사부터 검증까지 작업을 계속 이해할 수 있습니다. Android에 번들로 제공되는 Ubuntu에 대해서는 [Android 로컬 Linux](/docs/local-linux)를 참조하세요.
+Explorer에는 로컬, 원격 SSH, Local Linux 및 데모 진입점이 있습니다. Recent History에는 이전에 연 위치가 표시됩니다. 연결된 작업 공간에 따라 사용 가능한 파일과 도구가 결정됩니다.
 
+<div class="doc-screenshots">
+  <DocScreenshot file="workspace-start-light.png" caption="작업 공간을 열기 전의 Explorer, 밝은 테마." />
+  <DocScreenshot file="workspace-start-dark.jpg" caption="작업 공간을 열기 전의 Explorer, 어두운 테마." />
+</div>
 
-<ImagePlaceholder image-key="localWorkspace" alt="Local workspace in NimoteCode on phone">
-  <strong>Local workspace</strong>
-  <span>Open a project stored on the device with Local Explorer.</span>
-</ImagePlaceholder>
+## 로컬 폴더 열기
 
-## 로컬 작업 공간 열기
+**Open Local Workspace**를 선택하고 시스템 선택기에서 저장 위치를 고른 뒤 프로젝트 폴더 접근을 허용합니다. 선택한 디렉터리는 Local Explorer의 루트가 됩니다. 선택기의 모양과 사용 가능한 위치는 운영체제에 따라 다릅니다.
 
+<div class="doc-screenshots">
+  <DocScreenshot file="local-storage-picker.png" caption="Android 저장 위치 선택기." />
+  <DocScreenshot file="local-file-browser.png" caption="Use this folder 작업이 있는 Android 폴더 선택기." />
+  <DocScreenshot file="local-workspace-files.png" caption="폴더 선택 후의 Local Explorer. 예시에는 프로젝트 파일이 나열되어 있지 않습니다." />
+</div>
 
- **로컬 탐색기**를 선택하여 기기에 저장된 프로젝트를 찾아보세요. 파일을 편집하거나, 명령을 실행하거나, 소스 제어에서 변경 사항을 검토하기 전에 폴더를 확인하세요.
+## SSH 연결 설정
 
+1. **Connect Remote Workspace**를 선택한 뒤 **Connect**로 연결 프로필을 추가합니다.
+2. 호스트, 포트, 사용자 이름 및 인증 방식을 입력합니다.
+3. 필요하면 **Proxy Settings**에서 SOCKS5 또는 HTTP CONNECT를 선택합니다.
+4. 연결한 뒤 원격 프로젝트 디렉터리를 선택합니다.
 
-## SSH 작업 공간 연결
+**Ping / test SSH port**는 호스트와 포트의 직접 TCP 연결을 확인합니다. 프록시를 테스트하거나 인증 정보를 검증하지 않습니다. 포트 테스트가 성공해도 SSH 작업 공간 연결이 설정되는 것은 아닙니다.
 
+<div class="doc-screenshots">
+  <DocScreenshot file="remote-connection-form.jpg" caption="포트 테스트, 프록시 및 인증 설정이 있는 SSH 연결 양식." />
+  <DocScreenshot file="remote-connection-history.png" caption="저장된 SSH 프로필이 있는 Recent History." />
+</div>
 
-<ImagePlaceholder image-key="sshWorkspace" alt="NimoteCode SSH workspace setup">
-  <strong>SSH workspace setup</strong>
-  <span>Connect to a remote host, then open its project root in Remote Explorer.</span>
-</ImagePlaceholder>
+## 프로젝트 루트 선택
 
-4단계로 연결:
+원격 디렉터리 선택기에서 프로젝트 경로를 입력하거나 폴더를 탐색합니다. 연 뒤 Explorer에 표시된 서버, 사용자, 포트 및 루트를 확인합니다. **Select**로 파일 선택 모드에 들어갑니다. 디렉터리를 변경하면 프로젝트 도구가 사용하는 작업 공간도 바뀝니다.
 
-
-1. SSH 프로필을 생성하거나 선택합니다.
-
-2. 호스트, 포트 및 사용자 이름을 입력합니다.
-
-3. 비밀번호, 개인 키 파일 또는 붙여넣은 개인 키를 사용하여 인증합니다.
-
-4. 원격 프로젝트 루트를 확인한 후 Remote Explorer에서 엽니다.
-
-
-## 원격 디렉터리 선택 및 확인
-
-
-Explorer는 SSH 지원 프로젝트의 시작점입니다. 연결 후 **원격 탐색기**를 선택한 후 파일을 열거나 명령을 실행하기 전에 호스트와 프로젝트 루트를 모두 확인하세요.
-
-
-<ImagePlaceholder image-key="explorerPage" alt="Explorer selection page on NimoteCode for phone">
-  <strong>Select a workspace explorer</strong>
-</ImagePlaceholder>
-
-<ImagePlaceholder image-key="explorerPopup" alt="Explorer selection popup on NimoteCode for phone">
-  <strong>Explorer selection controls</strong>
-</ImagePlaceholder>
-
-단순히 서버 홈 디렉터리가 아닌 프로젝트 루트를 선택합니다. 이는 편집기, 터미널, 검색 및 소스 제어에 공유 경계를 제공하고 잘못된 위치에서 명령을 실행할 가능성을 줄입니다.
-
-
-<ImagePlaceholder image-key="remoteDirectory" alt="Remote directory selection dialog on NimoteCode for phone">
-  <strong>Select the remote project directory</strong>
-</ImagePlaceholder>
-
-## 맥락에 머무르는 것
-
-
-- 원격 프로젝트를 탐색하고 [편집기](/docs/editor)에서 파일을 엽니다.
-
-- 해당 작업공간에 대한 [터미널](/docs/terminal)에서 셸 명령을 실행합니다.
-
-- [검색](/docs/search)으로 원격 파일 콘텐츠를 검색합니다.
-
-- [소스 제어](/docs/source-control)에서 집중된 패치를 검토합니다. 배달에 게이트 Git 쓰기 작업이 필요한 경우에만 Pro를 사용하세요.
-
-
-## 더 안전한 원격 습관
-
-
-각 환경에 대해 별도의 프로필을 사용하고, 민감한 호스트에 대해 최소 권한 계정 및 키 기반 인증을 선호하고, 의도적인 프로젝트 루트를 선택합니다. 재연결 인식 동작과 연결 재사용으로 인해 원격 명령과 미리보기 터널의 복원력이 향상되지만 쓰기 명령을 실행하기 전에 항상 활성 호스트와 디렉터리를 확인해야 합니다.
-
-
-다음: [터미널](/docs/terminal) · [SSH 원격 개발 워크플로](/docs/ssh) · [보안 및 안전](/docs/security)
+<div class="doc-screenshots">
+  <DocScreenshot file="remote-directory-picker.jpg" caption="작업 공간 루트를 선택하는 Remote Directory 대화 상자." />
+  <DocScreenshot file="remote-workspace-connected.jpg" caption="현재 호스트와 루트 경로가 표시된 연결 상태의 Remote Explorer." />
+  <DocScreenshot file="remote-file-selection.jpg" caption="파일 선택 모드의 Remote Explorer." />
+</div>

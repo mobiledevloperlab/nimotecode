@@ -1,21 +1,14 @@
 ---
 title: Notifications | NimoteCode
-description: Review NimoteCode notifications on phone and use them to return to the relevant workspace task without losing context.
+description: "Configuration, procedures, and interface reference for notifications."
 ---
 
 # Notifications
 
-Notifications surface completed or attention-worthy workspace activity on the device. Use the notification as a cue to return to the relevant workspace, then verify the active host, directory and result before taking the next action.
+## Open the related activity
 
-<ImagePlaceholder image-key="notifications" alt="Notifications on NimoteCode for phone">
-  <strong>Workspace notifications</strong>
-</ImagePlaceholder>
+Notifications indicate workspace activity that has completed or needs attention. Open the related workspace and inspect the task, Agent timeline, or terminal output for details. A notification is not a live status check of the remote host.
 
-## A safe notification workflow
+## Identify sessions
 
-1. Open the related workspace rather than assuming the notification reflects the current remote state.
-2. Check the active host and project directory.
-3. Read the terminal, task or agent result in context.
-4. Review any proposed command or file change before applying it.
-
-For routine work, keep [Tasks](/docs/tasks) and [Terminal](/docs/terminal) names explicit so a notification is easy to interpret on a small screen.
+Use descriptive names for [terminal tabs](/docs/terminal) and [Tasks](/docs/tasks) so that activity can be associated with the correct project. After reconnecting, confirm the host and directory before continuing.
