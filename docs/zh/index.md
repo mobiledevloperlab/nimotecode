@@ -16,6 +16,7 @@ description: NimoteCode 是支持 Android 与 iOS 的可定制移动 IDE：可�
       <div class="home-page-actions home-page-actions-hero"><a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=website&utm_campaign=homepage_hero" class="home-page-btn primary" target="_blank" rel="noreferrer">下载 Android 版</a><a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn primary" target="_blank" rel="noreferrer">下载 iOS 版</a><a href="#product-demo" class="home-page-btn secondary">观看演示</a><a href="https://github.com/mobiledevloperlab/nimotecode" class="home-page-btn secondary home-page-btn-weak" target="_blank" rel="noreferrer">在 GitHub 上 Star</a></div>
       <span class="home-page-availability-link">现已支持 Android、iPhone 与 iPad</span>
     </div>
+    <AppMockup />
   </div>
 </section>
 <section id="product-demo" class="home-page-section home-page-video-section">
