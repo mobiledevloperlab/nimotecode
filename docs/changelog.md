@@ -11,6 +11,12 @@ This is the public record of notable product updates. For setup help, use the [d
 
 ## 2026
 
+### Version 2.1.0 · October 27, 2026
+
+This release makes the workspace more consistent across phones, tablets, and desktop: appearance mode and accent color can be chosen independently, landscape workspace pages and Git history open as editor tabs, and editing, search, remote status, and mobile controls are smoother. The built-in Agent now searches large or minified files and summarizes long files more efficiently.
+
+[Read the complete 2.1.0 release notes →](/releases/2.1.0)
+
 ### Version 2.0.0 · October 25, 2026
 
 NimoteCode 2.0 is a major release that turns the IDE into a safely customizable workspace: create and run plugins, keep AI Agent work moving with follow-ups and interactive questions, and work more directly with Git branches, terminal output, and proxy-enabled SSH connections. It also refreshes the visual system, makes Nimote Editor the default across devices, and improves performance and reliability for long-running work.

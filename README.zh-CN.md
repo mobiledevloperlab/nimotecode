@@ -19,7 +19,7 @@
   <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-下载-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="从 App Store 下载 iPhone 和 iPad 版 NimoteCode"></a>
 </p>
 
-<p align="center"><sub><a href="#演示">观看演示</a> · <a href="#与其他移动开发工具对比">工具对比</a> · <a href="https://nimotecode.com/zh/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=zh_quick_start">快速开始</a> · <a href="#latest-release">2.0.0 更新亮点</a></sub></p>
+<p align="center"><sub><a href="#演示">观看演示</a> · <a href="#与其他移动开发工具对比">工具对比</a> · <a href="https://nimotecode.com/zh/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=zh_quick_start">快速开始</a> · <a href="#latest-release">2.1.0 更新亮点</a></sub></p>
 
 <p align="center"><sub>免费开始使用，无需先配置 AI。<br>商业闭源应用 · 本仓库提供官方文档与社区资源</sub></p>
 
@@ -56,7 +56,7 @@ NimoteCode 将代码编辑器、SSH 终端、Git 审查与 AI 工作流带到 An
 
 ## 与其他移动开发工具对比
 
-**编辑代码 → 运行检查 → 审查 Diff → 扩展工作台，在一个移动 IDE 中衔接完成。** 以下精选官网对比中的关键能力，帮助你选择适合自己的工具。NimoteCode 一列反映 2.0.0；问号表示尚未核实该产品是否具备对应能力。
+**编辑代码 → 运行检查 → 审查 Diff → 扩展工作台，在一个移动 IDE 中衔接完成。** 以下精选官网对比中的关键能力，帮助你选择适合自己的工具。NimoteCode 一列反映 2.1.0；问号表示尚未核实该产品是否具备对应能力。
 
 ✅ 已有文档确认的内置或集成能力 · ◐ 有条件支持 · ? 未核实，**不代表不支持** · — 明确不支持
 
@@ -103,7 +103,7 @@ Orca 的移动端依赖桌面 Companion；Moshi 的 Diff 和网页预览需要 P
 
 勾选不代表免费、无需配置或所有平台均支持。Blink 的编辑能力通过 Blink Code 集成，Git / LSP 取决于仓库或远程 IDE 配置；Termius 的 Mosh 此处仅核实 Android。各产品的配置与付费要求见完整对比。
 
-> [**查看七款工具的完整对比与逐项官方依据 →**](https://nimotecode.com/zh/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_comparison) · 竞品资料基准：2026-10-19；NimoteCode 能力版本：2.0.0。
+> [**查看七款工具的完整对比与逐项官方依据 →**](https://nimotecode.com/zh/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_comparison) · 竞品资料基准：2026-10-19；NimoteCode 能力版本：2.1.0。
 
 **想亲自试试？** [安装 NimoteCode](https://nimotecode.com/zh/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_compare_download)，先打开 Demo 或本地项目，无需先配置 AI。
 
@@ -144,20 +144,20 @@ Orca 的移动端依赖桌面 Companion；Moshi 的 Diff 和网页预览需要 P
 
 <a id="latest-release"></a>
 
-## NimoteCode 2.0.0 · 重大版本更新
+## NimoteCode 2.1.0 · 工作区与 Agent 改进
 
 | Build | 发布日期 | 平台 |
 | --- | --- | --- |
-| 58 | 2026 年 10 月 25 日 | Android · iPhone · iPad · 桌面端 |
+| 59 | 2026 年 10 月 27 日 | Android · iPhone · iPad · 桌面端 |
 
-**可定制工作台、连续的 AI 协作，以及更完整的移动 IDE。**
+**更统一的跨设备工作区，以及更高效处理大型代码库的 Agent。**
 
-- **创建自定义插件与面板：**可使用表单、工作流、产物视图及本机或 SSH 脚本任务；安装或更新前会先展示权限变更供你审查。
-- **更连续地协作 AI Agent：**可向正在执行的 Agent 追加指令、回答交互式问题，并借助重构的上下文、历史、提示词编辑和时间线处理长时间任务。
-- **更直接地使用 Git：**可在 Git 标题栏搜索、创建和切换分支；编辑器改动标记与差异语法高亮更加清晰。
-- **让终端与远程连接更灵活：**可将终端输出直接交给 AI 分析，通过 SOCKS5 或 HTTP CONNECT 代理连接，并选择贴合工作区的终端配色。
+- **更高效地搜索和摘要大型文件：**内置 Agent 会限制搜索结果的上下文范围，并在处理长文件或压缩文件时保留最相关的代码片段。
+- **让各设备的工作区保持一致：**外观模式与强调色可独立选择，手机、平板和桌面端的布局、控件与排版更加统一。
+- **横屏工作更自然：**工作区页面和 Git 历史可作为编辑器标签打开；退出全屏终端后会保留编辑器标题栏，编辑器渲染、语法高亮和 Git 差异排版也得到改进。
+- **移动端查找和操作更直接：**文件搜索可直接打开，远程状态显示在目录旁，Agent 和终端的拖动、键盘选择与复制操作更加顺畅。
 
-> [阅读完整 2.0.0 发布说明](https://nimotecode.com/zh/releases/2.0.0?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_release) · [历史版本](https://nimotecode.com/zh/releases/)
+> [阅读完整 2.1.0 发布说明](https://nimotecode.com/zh/releases/2.1.0?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_release) · [历史版本](https://nimotecode.com/zh/releases/)
 
 ## 教程与资源
 

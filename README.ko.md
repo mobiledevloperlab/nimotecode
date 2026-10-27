@@ -41,7 +41,7 @@
 
 ## 모바일 개발 도구 비교
 
-**편집 → 검사 실행 → diff 검토 → 작업 공간 확장을 하나의 모바일 IDE에서.** NimoteCode 열은 2.0.0을 반영합니다. `?`는 해당 제품의 기능이 확인되지 않았음을 뜻합니다.
+**편집 → 검사 실행 → diff 검토 → 작업 공간 확장을 하나의 모바일 IDE에서.** NimoteCode 열은 2.1.0을 반영합니다. `?`는 해당 제품의 기능이 확인되지 않았음을 뜻합니다.
 
 | 주요 기능 | **NimoteCode** | Termius | Blink Shell | ServerCC |
 | --- | :---: | :---: | :---: | :---: |
@@ -92,19 +92,20 @@ Orca 모바일에는 데스크톱 Companion이 필요합니다. Moshi의 diff와
 - **외부 폴더:** 시스템에서 권한을 부여한 외부 폴더는 탐색과 편집을 지원하지만 Git, LSP, 디버깅, Tasks, 파일 감시 및 Agent에는 네이티브 파일 시스템 경로가 필요합니다.
 - **가용성:** 도구는 작업 공간, 설치된 도구 및 플랜에 따라 달라집니다. [기능 참조](https://nimotecode.com/ko/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_features)를 확인하세요.
 
-## NimoteCode 2.0.0 · 대규모 업데이트
+## NimoteCode 2.1.0 · 작업 공간 및 Agent 개선
 
 | Build | 출시일 | 플랫폼 |
 | --- | --- | --- |
-| 58 | 2026년 10월 25일 | Android · iPhone · iPad · 데스크톱 |
+| 59 | 2026년 10월 27일 | Android · iPhone · iPad · 데스크톱 |
 
-**사용자 지정 작업 공간, 연속적인 AI 협업, 더 완전한 모바일 IDE.**
+**기기 전반에서 더 일관된 작업 공간과 대규모 코드베이스에 더 효율적인 Agent.**
 
-- 양식, 워크플로, 결과 보기, 로컬 또는 SSH 작업을 갖춘 플러그인과 패널을 만드세요.
-- 후속 지시, 대화형 질문, 새로워진 기록과 타임라인으로 AI Agent 작업을 계속 진행하세요.
-- Git 브랜치와 diff를 더 명확하게 다루고, 터미널 출력을 AI에 보내며, 프록시를 통해 SSH로 연결하세요.
+- 내장 Agent는 검색 결과 컨텍스트를 제한하고 긴 파일이나 압축 파일에서 가장 관련성 높은 코드를 유지하여 검색과 요약을 더 효율적으로 처리합니다.
+- 외관 모드와 강조 색상을 따로 선택할 수 있으며 휴대폰, 태블릿, 데스크톱에서 레이아웃, 컨트롤, 타이포그래피가 더 일관됩니다.
+- 가로 방향 작업 공간 페이지와 Git 기록을 편집기 탭으로 열 수 있습니다. 전체 화면 터미널 후에도 헤더가 유지되고 렌더링, 구문 강조, Git diff가 개선되었습니다.
+- 파일 검색을 바로 열고 디렉터리 옆에서 원격 상태를 확인할 수 있습니다. 모바일 Agent와 터미널의 드래그, 키보드 선택, 복사도 더 부드러워졌습니다.
 
-> [2.0.0 전체 릴리스 노트 읽기 →](https://nimotecode.com/ko/releases/2.0.0?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_release) · [이전 릴리스](https://nimotecode.com/ko/releases/)
+> [2.1.0 전체 릴리스 노트 읽기 →](https://nimotecode.com/ko/releases/2.1.0?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_release) · [이전 릴리스](https://nimotecode.com/ko/releases/)
 
 ## 시작하기
 
