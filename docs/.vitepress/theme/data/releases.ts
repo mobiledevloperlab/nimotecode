@@ -1,17 +1,17 @@
 export const latestRelease = {
-  version: '2.0.0',
+  version: '2.1.0',
   date: {
-    en: 'October 25, 2026',
-    zh: '2026 年 10 月 25 日',
-    es: '25 de octubre de 2026',
-    ja: '2026 年 10 月 25 日',
-    ko: '2026년 10월 25일'
+    en: 'October 27, 2026',
+    zh: '2026 年 10 月 27 日',
+    es: '27 de octubre de 2026',
+    ja: '2026 年 10 月 27 日',
+    ko: '2026년 10월 27일'
   },
   homeSummary: {
-    en: 'Major release: build a customizable workspace and keep AI work moving.',
-    zh: '重大版本更新：构建可定制工作台，持续推进 AI 工作。',
-    es: 'Actualización principal: crea un espacio de trabajo personalizable y mantén el trabajo de IA en marcha.',
-    ja: '大型アップデート：カスタマイズ可能なワークスペースで、AI 作業を継続できます。',
-    ko: '대규모 업데이트: 사용자 지정 작업 공간에서 AI 작업을 계속 진행하세요.'
+    en: 'A more consistent workspace and a more efficient Agent for large codebases.',
+    zh: '更统一的工作区，以及更高效处理大型代码库的 Agent。',
+    es: 'Un espacio de trabajo más coherente y un Agente más eficiente para grandes bases de código.',
+    ja: 'より一貫したワークスペースと、大規模コードベース向けに効率化された Agent。',
+    ko: '더 일관된 작업 공간과 대규모 코드베이스에 더 효율적인 Agent.'
   }
 } as const
