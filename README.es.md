@@ -41,7 +41,7 @@ El acceso a modelos y los tokens no están incluidos. Revisa comandos y diferenc
 
 ## Compara herramientas móviles
 
-**Editar → ejecutar verificaciones → revisar diferencias → ampliar el espacio de trabajo, en un solo IDE móvil.** La columna de NimoteCode refleja 2.0.0; `?` significa que la capacidad no se ha verificado para ese producto.
+**Editar → ejecutar verificaciones → revisar diferencias → ampliar el espacio de trabajo, en un solo IDE móvil.** La columna de NimoteCode refleja 2.1.0; `?` significa que la capacidad no se ha verificado para ese producto.
 
 | Capacidad | **NimoteCode** | Termius | Blink Shell | ServerCC |
 | --- | :---: | :---: | :---: | :---: |
@@ -92,19 +92,20 @@ Una marca no significa que la función sea gratuita, no requiera configuración 
 - **Carpetas externas:** las carpetas autorizadas por el sistema permiten explorar y editar; Git, LSP, depuración, tareas, vigilancia de archivos y Agent requieren una ruta nativa.
 - **Disponibilidad:** las herramientas dependen del espacio de trabajo, las herramientas instaladas y el plan. Consulta la [referencia de funciones](https://nimotecode.com/es/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_features).
 
-## NimoteCode 2.0.0 · Actualización principal
+## NimoteCode 2.1.0 · Mejoras del espacio de trabajo y del Agente
 
 | Build | Publicado | Plataformas |
 | --- | --- | --- |
-| 58 | 25 de octubre de 2026 | Android · iPhone · iPad · Escritorio |
+| 59 | 27 de octubre de 2026 | Android · iPhone · iPad · Escritorio |
 
-**Un espacio de trabajo personalizable, colaboración continua con IA y un IDE móvil más completo.**
+**Un espacio de trabajo más coherente entre dispositivos y un Agente más eficiente para grandes bases de código.**
 
-- Crea plugins y paneles con formularios, flujos, vistas de resultados y tareas locales o SSH.
-- Mantén el trabajo del Agente de IA con instrucciones de seguimiento, preguntas interactivas, historial y cronología renovados.
-- Gestiona ramas y diferencias de Git con mayor claridad; envía la salida del terminal a IA y usa conexiones SSH mediante proxy.
+- El Agente integrado limita el contexto de los resultados y conserva el código más relevante de archivos largos o minimizados para buscar y resumir con mayor eficiencia.
+- Elige por separado el modo de apariencia y el color de acento, con diseño, controles y tipografía más coherentes en teléfono, tableta y escritorio.
+- Abre en horizontal las páginas del espacio de trabajo y el historial de Git como pestañas del editor; los encabezados se conservan tras el terminal a pantalla completa, con mejoras en renderizado, resaltado y diferencias de Git.
+- Abre la búsqueda de archivos directamente, consulta el estado remoto junto al directorio y usa controles de arrastre, selección con teclado y copia más fluidos en el móvil.
 
-> [Leer las notas completas de 2.0.0 →](https://nimotecode.com/es/releases/2.0.0?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_release) · [Versiones anteriores](https://nimotecode.com/es/releases/)
+> [Leer las notas completas de 2.1.0 →](https://nimotecode.com/es/releases/2.1.0?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_release) · [Versiones anteriores](https://nimotecode.com/es/releases/)
 
 ## Empezar
 

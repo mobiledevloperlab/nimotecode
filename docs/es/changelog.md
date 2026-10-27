@@ -14,6 +14,12 @@ Este es el registro público de actualizaciones notables de productos. Para obte
 
 ## 2026
 
+### Versión 2.1.0 · 27 de octubre de 2026
+
+Esta versión hace que el espacio de trabajo sea más coherente en teléfono, tableta y escritorio: el modo de apariencia y el color de acento se eligen por separado, las páginas en horizontal y el historial de Git se abren como pestañas del editor, y la edición, búsqueda, estado remoto y controles móviles son más fluidos. El Agente integrado ahora busca archivos grandes o minimizados y resume archivos largos con mayor eficiencia.
+
+[Lea las notas completas de la versión 2.1.0 →](/es/releases/2.1.0)
+
 ### Versión 2.0.0 · 25 de octubre de 2026
 
 NimoteCode 2.0 es una actualización principal que convierte el IDE en un espacio de trabajo personalizable y seguro: crea y ejecuta plugins, mantiene en marcha el trabajo del Agente de IA con instrucciones de seguimiento y preguntas interactivas, y permite trabajar más directamente con ramas de Git, salida de terminal y conexiones SSH mediante proxy.
