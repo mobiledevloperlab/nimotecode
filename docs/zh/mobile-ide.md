@@ -63,23 +63,9 @@ git status --short --branch
 
 在 Explorer 中找到 `README.md`，打开后先读一遍前后的说明，再修改命令。第一次尝试只处理这个问题。顺手重排整篇文档，会让小屏幕上的 diff 难读很多。
 
-<figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/markdown-source-editor.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/markdown-source-editor.jpg" width="1080" height="2376" alt="在手机编辑器中打开 README.md。这是文档源码视图，可与渲染预览对照查看。" loading="lazy" decoding="async">
-  </a>
-  <figcaption>在手机编辑器中打开 README.md。这是文档源码视图，可与渲染预览对照查看。</figcaption>
-</figure>
-
 ### 2. 看预览，再保存
 
 打开 Markdown 预览，确认命令仍在代码块里，前后的列表也没有排乱。如果改的是静态 HTML，NimoteCode 可以预览当前编辑内容，包括未保存的修改。需要服务端执行的应用仍要有自己的运行环境，[编辑器指南](/zh/docs/editor)解释了这一区别。
-
-<figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/markdown-preview.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/markdown-preview.jpg" width="1080" height="2376" alt="Markdown 预览会渲染标题、代码块和表格，便于检查源码之外的阅读效果。" loading="lazy" decoding="async">
-  </a>
-  <figcaption>Markdown 预览会渲染标题、代码块和表格，便于检查源码之外的阅读效果。</figcaption>
-</figure>
 
 跑检查前记得保存。终端命令读取的是文件里已经保存的内容，编辑器里还没落盘的修改不会自动参与检查。
 
@@ -95,25 +81,40 @@ git diff --check
 
 这条命令只能发现部分空白字符错误，不能验证文档中的操作步骤或应用行为。
 
-<figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/terminal-command-output.png" target="_blank" rel="noopener">
-    <img src="/images/placeholders/terminal-command-output.png" width="1080" height="2376" alt="工作区终端中的 ls 目录列表。此图展示命令输出界面，不代表测试已通过。" loading="lazy" decoding="async">
-  </a>
-  <figcaption>工作区终端中的 ls 目录列表。此图展示命令输出界面，不代表测试已通过。</figcaption>
-</figure>
-
 ### 4. 提交前，自己读一遍 diff
 
 打开 **Source Control**，找到修改过的文件，查看差异。核对文件名、刚改的那一行，以及有没有意外出现的其他文件。NimoteCode 免费版可以查看 Git 状态、diff 和历史；Git 写入与分支操作需要 Pro，具体见[免费与 Pro](/zh/pro)。
 
-<figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/git-diff-view.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/git-diff-view.jpg" width="1080" height="2376" alt="Diff 界面用颜色区分新增和删除。这张已有截图包含演示性修改，不是上文 README 示例的结果。" loading="lazy" decoding="async">
-  </a>
-  <figcaption>Diff 界面用颜色区分新增和删除。这张已有截图包含演示性修改，不是上文 README 示例的结果。</figcaption>
-</figure>
-
 到这里，也可以先保留已保存、已检查的修改，回电脑前再继续。如果在应用中提交，仍按项目原有的评审和交付方式处理。
+
+下面四张图把这套流程放在一起看：从编辑到审查，始终在同一个工作区内完成。
+
+<div class="mobile-ide-workflow-gallery">
+  <figure class="mobile-ide-screenshot">
+    <a href="/images/placeholders/markdown-source-editor.jpg" target="_blank" rel="noopener">
+      <img src="/images/placeholders/markdown-source-editor.jpg" width="1080" height="2376" alt="在手机编辑器中打开 README.md。这是文档源码视图，可与渲染预览对照查看。" loading="lazy" decoding="async">
+    </a>
+    <figcaption>1. 在编辑器中完成这次聚焦的修改。</figcaption>
+  </figure>
+  <figure class="mobile-ide-screenshot">
+    <a href="/images/placeholders/markdown-preview.jpg" target="_blank" rel="noopener">
+      <img src="/images/placeholders/markdown-preview.jpg" width="1080" height="2376" alt="Markdown 预览会渲染标题、代码块和表格，便于检查源码之外的阅读效果。" loading="lazy" decoding="async">
+    </a>
+    <figcaption>2. 继续之前，先确认渲染结果。</figcaption>
+  </figure>
+  <figure class="mobile-ide-screenshot">
+    <a href="/images/placeholders/terminal-command-output.png" target="_blank" rel="noopener">
+      <img src="/images/placeholders/terminal-command-output.png" width="1080" height="2376" alt="工作区终端中的 ls 目录列表。此图展示命令输出界面，不代表测试已通过。" loading="lazy" decoding="async">
+    </a>
+    <figcaption>3. 在终端中运行项目自己的命令。</figcaption>
+  </figure>
+  <figure class="mobile-ide-screenshot">
+    <a href="/images/placeholders/git-diff-view.jpg" target="_blank" rel="noopener">
+      <img src="/images/placeholders/git-diff-view.jpg" width="1080" height="2376" alt="Diff 界面用颜色区分新增和删除。这张已有截图包含演示性修改，不是上文 README 示例的结果。" loading="lazy" decoding="async">
+    </a>
+    <figcaption>4. 交接前，把 diff 自己读一遍。</figcaption>
+  </figure>
+</div>
 
 ## 这件事里，AI 能帮什么忙？
 

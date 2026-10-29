@@ -63,23 +63,9 @@ Use the README correction as a first task. It is small enough to review on a pho
 
 Find `README.md` in Explorer and open it in the editor. Check the surrounding instructions before changing the command. Keep this first patch to the correction; unrelated formatting makes the result harder to inspect on a small screen.
 
-<figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/markdown-source-editor.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/markdown-source-editor.jpg" width="1080" height="2376" alt="Editing README.md in the mobile editor. This is the source view before opening the rendered preview." loading="lazy" decoding="async">
-  </a>
-  <figcaption>Editing README.md in the mobile editor. This is the source view before opening the rendered preview.</figcaption>
-</figure>
-
 ### 2. Preview the page, then save
 
 Open Markdown preview to check that the command remains inside its code block and that the surrounding lists render correctly. For static HTML, NimoteCode can preview the current editor contents, including unsaved changes. A server-rendered application still needs its own runtime. The [editor guide](/docs/editor) explains the distinction.
-
-<figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/markdown-preview.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/markdown-preview.jpg" width="1080" height="2376" alt="Markdown preview renders headings, code blocks and tables so you can inspect the document beyond its source text." loading="lazy" decoding="async">
-  </a>
-  <figcaption>Markdown preview renders headings, code blocks and tables so you can inspect the document beyond its source text.</figcaption>
-</figure>
 
 Save the file before running checks: terminal commands read the saved files, not the unsaved editor buffer.
 
@@ -95,25 +81,40 @@ git diff --check
 
 That command catches certain whitespace errors. It does not test the instructions or the application's behavior.
 
-<figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/terminal-command-output.png" target="_blank" rel="noopener">
-    <img src="/images/placeholders/terminal-command-output.png" width="1080" height="2376" alt="The workspace terminal showing an ls directory listing. This illustrates command output, not a successful test run." loading="lazy" decoding="async">
-  </a>
-  <figcaption>The workspace terminal showing an ls directory listing. This illustrates command output, not a successful test run.</figcaption>
-</figure>
-
 ### 4. Read the diff before committing
 
 Open **Source Control**, find the changed file and inspect the diff. Check the filename, the exact line you changed and any unexpected files. NimoteCode provides Git status, diff and history viewing in the free tier; Git write and branch workflows require Pro. The [free and Pro breakdown](/pro) explains the boundary.
 
-<figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/git-diff-view.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/git-diff-view.jpg" width="1080" height="2376" alt="The diff view marks additions and deletions. This existing screenshot contains demonstration edits, not the README correction above." loading="lazy" decoding="async">
-  </a>
-  <figcaption>The diff view marks additions and deletions. This existing screenshot contains demonstration edits, not the README correction above.</figcaption>
-</figure>
-
 You can stop with a reviewed, saved change and return to it on your computer. If you commit from the app, use your project's normal review and delivery process.
+
+Here is that same loop in the workspace, from edit to review:
+
+<div class="mobile-ide-workflow-gallery">
+  <figure class="mobile-ide-screenshot">
+    <a href="/images/placeholders/markdown-source-editor.jpg" target="_blank" rel="noopener">
+      <img src="/images/placeholders/markdown-source-editor.jpg" width="1080" height="2376" alt="Editing README.md in the mobile editor. This is the source view before opening the rendered preview." loading="lazy" decoding="async">
+    </a>
+    <figcaption>1. Make the focused change in the editor.</figcaption>
+  </figure>
+  <figure class="mobile-ide-screenshot">
+    <a href="/images/placeholders/markdown-preview.jpg" target="_blank" rel="noopener">
+      <img src="/images/placeholders/markdown-preview.jpg" width="1080" height="2376" alt="Markdown preview renders headings, code blocks and tables so you can inspect the document beyond its source text." loading="lazy" decoding="async">
+    </a>
+    <figcaption>2. Check the rendered result before moving on.</figcaption>
+  </figure>
+  <figure class="mobile-ide-screenshot">
+    <a href="/images/placeholders/terminal-command-output.png" target="_blank" rel="noopener">
+      <img src="/images/placeholders/terminal-command-output.png" width="1080" height="2376" alt="The workspace terminal showing an ls directory listing. This illustrates command output, not a successful test run." loading="lazy" decoding="async">
+    </a>
+    <figcaption>3. Run the project’s own command in Terminal.</figcaption>
+  </figure>
+  <figure class="mobile-ide-screenshot">
+    <a href="/images/placeholders/git-diff-view.jpg" target="_blank" rel="noopener">
+      <img src="/images/placeholders/git-diff-view.jpg" width="1080" height="2376" alt="The diff view marks additions and deletions. This existing screenshot contains demonstration edits, not the README correction above." loading="lazy" decoding="async">
+    </a>
+    <figcaption>4. Read the diff before you hand the change over.</figcaption>
+  </figure>
+</div>
 
 ## Where AI helps with this task
 
