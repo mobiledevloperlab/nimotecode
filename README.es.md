@@ -41,7 +41,7 @@ El acceso a modelos y los tokens no están incluidos. Revisa comandos y diferenc
 
 ## Compara herramientas móviles
 
-**Editar → ejecutar verificaciones → revisar diferencias → ampliar el espacio de trabajo, en un solo IDE móvil.** La columna de NimoteCode refleja 2.1.0; `?` significa que la capacidad no se ha verificado para ese producto.
+**Editar → ejecutar verificaciones → revisar diferencias → ampliar el espacio de trabajo, en un solo IDE móvil.** La columna de NimoteCode refleja 2.2.0; `?` significa que la capacidad no se ha verificado para ese producto.
 
 | Capacidad | **NimoteCode** | Termius | Blink Shell | ServerCC |
 | --- | :---: | :---: | :---: | :---: |
@@ -92,20 +92,20 @@ Una marca no significa que la función sea gratuita, no requiera configuración 
 - **Carpetas externas:** las carpetas autorizadas por el sistema permiten explorar y editar; Git, LSP, depuración, tareas, vigilancia de archivos y Agent requieren una ruta nativa.
 - **Disponibilidad:** las herramientas dependen del espacio de trabajo, las herramientas instaladas y el plan. Consulta la [referencia de funciones](https://nimotecode.com/es/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_features).
 
-## NimoteCode 2.1.0 · Mejoras del espacio de trabajo y del Agente
+## NimoteCode 2.2.0 · Flujos de GitHub y herramientas de Android Local Linux
 
 | Build | Publicado | Plataformas |
 | --- | --- | --- |
-| 59 | 27 de octubre de 2026 | Android · iPhone · iPad · Escritorio |
+| 60 | 2 de noviembre de 2026 | Android · iPhone · iPad |
 
-**Un espacio de trabajo más coherente entre dispositivos y un Agente más eficiente para grandes bases de código.**
+**Flujos nativos de GitHub, búsqueda más fiable y herramientas de desarrollo experimentales para Android Local Linux.**
 
-- El Agente integrado limita el contexto de los resultados y conserva el código más relevante de archivos largos o minimizados para buscar y resumir con mayor eficiencia.
-- Elige por separado el modo de apariencia y el color de acento, con diseño, controles y tipografía más coherentes en teléfono, tableta y escritorio.
-- Abre en horizontal las páginas del espacio de trabajo y el historial de Git como pestañas del editor; los encabezados se conservan tras el terminal a pantalla completa, con mejoras en renderizado, resaltado y diferencias de Git.
-- Abre la búsqueda de archivos directamente, consulta el estado remoto junto al directorio y usa controles de arrastre, selección con teclado y copia más fluidos en el móvil.
+- **Usa GitHub sin salir de NimoteCode:** inicia sesión con autorización del navegador o un token, explora repositorios y ramas, clona en espacios locales o SSH y colabora mediante incidencias, pull requests, revisiones y CI.
+- **Usa herramientas experimentales de Android Local Linux cuando las necesites:** instala bajo demanda herramientas esenciales de línea de comandos, Python o Web y crea, ejecuta y abre un proyecto de ejemplo sin reinstalar Linux ni sobrescribir un proyecto existente. La instalación inicial requiere acceso a Internet.
+- **Recupérate con más confianza:** el inicio de sesión, la clonación, los espacios Local Linux y la recuperación tras un envío o publicación fallidos son más fiables; los resultados y el resaltado de búsqueda del espacio de trabajo también mejoran.
+- **Navega por un entorno de trabajo más coherente:** Configuración, control de código fuente, GitHub, búsqueda y paneles de conversación comparten controles, tipografía y comportamiento en pantallas estrechas más claros; las acciones de copia comunes también ofrecen comentarios coherentes.
 
-> [Leer las notas completas de 2.1.0 →](https://nimotecode.com/es/releases/2.1.0?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_release) · [Versiones anteriores](https://nimotecode.com/es/releases/)
+> [Leer las notas completas de 2.2.0 →](https://nimotecode.com/es/releases/2.2.0?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_release) · [Versiones anteriores](https://nimotecode.com/es/releases/)
 
 ## Empezar
 

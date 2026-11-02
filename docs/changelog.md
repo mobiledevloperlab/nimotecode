@@ -11,6 +11,12 @@ This is the public record of notable product updates. For setup help, use the [d
 
 ## 2026
 
+### Version 2.2.0 · November 2, 2026
+
+NimoteCode now includes native GitHub workflows: sign in, browse repositories and branches, clone projects into local or SSH workspaces, and collaborate through issues, pull requests, reviews, and CI. This release also adds experimental command-line, Python, and Web toolkits for Android Local Linux, makes GitHub and search operations more dependable, and unifies workbench panels and conversations.
+
+[Read the complete 2.2.0 release notes →](/releases/2.2.0)
+
 ### Version 2.1.0 · October 27, 2026
 
 This release makes the workspace more consistent across phones, tablets, and desktop: appearance mode and accent color can be chosen independently, landscape workspace pages and Git history open as editor tabs, and editing, search, remote status, and mobile controls are smoother. The built-in Agent now searches large or minified files and summarizes long files more efficiently.

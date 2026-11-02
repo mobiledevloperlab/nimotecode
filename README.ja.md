@@ -41,7 +41,7 @@
 
 ## モバイル開発ツールの比較
 
-**編集 → チェック実行 → 差分確認 → ワークスペース拡張を、一つのモバイル IDE で。** NimoteCode 列は 2.1.0 を反映しています。`?` は、その製品の機能が未確認であることを示します。
+**編集 → チェック実行 → 差分確認 → ワークスペース拡張を、一つのモバイル IDE で。** NimoteCode 列は 2.2.0 を反映しています。`?` は、その製品の機能が未確認であることを示します。
 
 | 主な機能 | **NimoteCode** | Termius | Blink Shell | ServerCC |
 | --- | :---: | :---: | :---: | :---: |
@@ -92,20 +92,20 @@ Orca モバイルにはデスクトップ Companion が必要です。Moshi の�
 - **外部フォルダー:** システムに許可された外部フォルダーは閲覧と編集に対応しますが、Git、LSP、デバッグ、Tasks、ファイル監視、Agent はネイティブファイルパスが必要です。
 - **利用可能性:** ツールはワークスペース、インストール済みツール、プランに依存します。[機能リファレンス](https://nimotecode.com/ja/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_features)を確認してください。
 
-## NimoteCode 2.1.0 · ワークスペースと Agent の改善
+## NimoteCode 2.2.0 · GitHub ワークフローと Android Local Linux ツールキット
 
 | Build | リリース日 | プラットフォーム |
 | --- | --- | --- |
-| 59 | 2026 年 10 月 27 日 | Android · iPhone · iPad · デスクトップ |
+| 60 | 2026 年 11 月 2 日 | Android · iPhone · iPad |
 
-**デバイス間でより一貫したワークスペースと、大規模コードベース向けに効率化された Agent。**
+**ネイティブ GitHub ワークフロー、より安定した検索、実験的な Android Local Linux 開発ツールキット。**
 
-- 内蔵 Agent は、検索結果のコンテキストを絞り、長いファイルや圧縮ファイルの最も関連性の高いコードを保持して、検索と要約を効率化します。
-- 外観モードとアクセントカラーを個別に選べ、スマートフォン、タブレット、デスクトップでレイアウト、コントロール、文字組みがより一貫しました。
-- 横向きのワークスペースページと Git 履歴をエディタータブとして開けます。全画面ターミナル後もヘッダーを保持し、描画、ハイライト、Git 差分を改善しました。
-- ファイル検索を直接開け、リモート状態をディレクトリの横で確認できます。モバイルの Agent とターミナルのドラッグ、キーボード選択、コピーもよりスムーズです。
+- **NimoteCode 内で GitHub を利用：** ブラウザー認証またはトークンでサインインし、リポジトリとブランチを参照、ローカルまたは SSH ワークスペースにクローンして、Issue、プルリクエスト、レビュー、CI で共同作業できます。
+- **実験的な Android Local Linux ツールキットを必要に応じて利用：** コマンドラインの基本ツール、Python、Web ツールをオンデマンドでインストールし、Linux の再インストールや既存プロジェクトの上書きをせずにサンプルプロジェクトを作成、実行、オープンできます。初回インストールにはインターネット接続が必要です。
+- **より安心して復旧：** GitHub のサインイン、クローン、Local Linux ワークスペース、失敗した push や公開からの復旧がより安定し、ワークスペース検索の結果とハイライトも改善しました。
+- **より一貫したワークベンチを操作：** 設定、ソース管理、GitHub、検索、会話パネルで、コントロール、文字組み、狭い画面での動作を統一し、共通のコピー操作でも一貫したフィードバックを表示します。
 
-> [2.1.0 の完全なリリースノートを読む →](https://nimotecode.com/ja/releases/2.1.0?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_release) · [以前のリリース](https://nimotecode.com/ja/releases/)
+> [2.2.0 の完全なリリースノートを読む →](https://nimotecode.com/ja/releases/2.2.0?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_release) · [以前のリリース](https://nimotecode.com/ja/releases/)
 
 ## はじめる
 
