@@ -41,7 +41,7 @@
 
 ## 모바일 개발 도구 비교
 
-**편집 → 검사 실행 → diff 검토 → 작업 공간 확장을 하나의 모바일 IDE에서.** NimoteCode 열은 2.1.0을 반영합니다. `?`는 해당 제품의 기능이 확인되지 않았음을 뜻합니다.
+**편집 → 검사 실행 → diff 검토 → 작업 공간 확장을 하나의 모바일 IDE에서.** NimoteCode 열은 2.2.0을 반영합니다. `?`는 해당 제품의 기능이 확인되지 않았음을 뜻합니다.
 
 | 주요 기능 | **NimoteCode** | Termius | Blink Shell | ServerCC |
 | --- | :---: | :---: | :---: | :---: |
@@ -92,20 +92,20 @@ Orca 모바일에는 데스크톱 Companion이 필요합니다. Moshi의 diff와
 - **외부 폴더:** 시스템에서 권한을 부여한 외부 폴더는 탐색과 편집을 지원하지만 Git, LSP, 디버깅, Tasks, 파일 감시 및 Agent에는 네이티브 파일 시스템 경로가 필요합니다.
 - **가용성:** 도구는 작업 공간, 설치된 도구 및 플랜에 따라 달라집니다. [기능 참조](https://nimotecode.com/ko/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_features)를 확인하세요.
 
-## NimoteCode 2.1.0 · 작업 공간 및 Agent 개선
+## NimoteCode 2.2.0 · GitHub 워크플로 및 Android Local Linux 도구 키트
 
 | Build | 출시일 | 플랫폼 |
 | --- | --- | --- |
-| 59 | 2026년 10월 27일 | Android · iPhone · iPad · 데스크톱 |
+| 60 | 2026년 11월 2일 | Android · iPhone · iPad |
 
-**기기 전반에서 더 일관된 작업 공간과 대규모 코드베이스에 더 효율적인 Agent.**
+**네이티브 GitHub 워크플로, 더 안정적인 검색 및 실험적인 Android Local Linux 개발 도구 키트.**
 
-- 내장 Agent는 검색 결과 컨텍스트를 제한하고 긴 파일이나 압축 파일에서 가장 관련성 높은 코드를 유지하여 검색과 요약을 더 효율적으로 처리합니다.
-- 외관 모드와 강조 색상을 따로 선택할 수 있으며 휴대폰, 태블릿, 데스크톱에서 레이아웃, 컨트롤, 타이포그래피가 더 일관됩니다.
-- 가로 방향 작업 공간 페이지와 Git 기록을 편집기 탭으로 열 수 있습니다. 전체 화면 터미널 후에도 헤더가 유지되고 렌더링, 구문 강조, Git diff가 개선되었습니다.
-- 파일 검색을 바로 열고 디렉터리 옆에서 원격 상태를 확인할 수 있습니다. 모바일 Agent와 터미널의 드래그, 키보드 선택, 복사도 더 부드러워졌습니다.
+- **NimoteCode를 떠나지 않고 GitHub 사용:** 브라우저 인증 또는 토큰으로 로그인하고 저장소와 브랜치를 탐색하여 로컬 또는 SSH 작업 공간으로 복제한 뒤, 이슈, 풀 리퀘스트, 리뷰 및 CI를 통해 협업할 수 있습니다.
+- **필요할 때 실험적인 Android Local Linux 도구 키트 사용:** 명령줄 필수 도구, Python 또는 Web 도구를 필요에 따라 설치한 후 Linux를 다시 설치하거나 기존 프로젝트를 덮어쓰지 않고 예제 프로젝트를 만들고 실행하여 열 수 있습니다. 최초 설치에는 인터넷 연결이 필요합니다.
+- **더 안심하고 복구:** GitHub 로그인, 복제, Local Linux 작업 공간, 실패한 push 또는 게시 복구가 더 안정적이며 작업 공간 검색 결과와 강조 표시도 더 안정적입니다.
+- **더 일관된 워크벤치 탐색:** 설정, 소스 제어, GitHub, 검색 및 대화 패널은 더 명확한 컨트롤, 타이포그래피 및 좁은 화면 동작을 공유하고, 일반 복사 작업도 일관된 피드백을 제공합니다.
 
-> [2.1.0 전체 릴리스 노트 읽기 →](https://nimotecode.com/ko/releases/2.1.0?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_release) · [이전 릴리스](https://nimotecode.com/ko/releases/)
+> [2.2.0 전체 릴리스 노트 읽기 →](https://nimotecode.com/ko/releases/2.2.0?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_release) · [이전 릴리스](https://nimotecode.com/ko/releases/)
 
 ## 시작하기
 

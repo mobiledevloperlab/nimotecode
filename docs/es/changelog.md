@@ -14,6 +14,12 @@ Este es el registro público de actualizaciones notables de productos. Para obte
 
 ## 2026
 
+### Versión 2.2.0 · 2 de noviembre de 2026
+
+NimoteCode ahora incluye flujos nativos de GitHub: inicia sesión, explora repositorios y ramas, clona proyectos en espacios de trabajo locales o SSH y colabora mediante incidencias, pull requests, revisiones y CI. Esta versión también añade herramientas experimentales de línea de comandos, Python y Web para Android Local Linux, hace que las operaciones de GitHub y búsqueda sean más fiables y unifica los paneles y las conversaciones del entorno de trabajo.
+
+[Lea las notas completas de la versión 2.2.0 →](/es/releases/2.2.0)
+
 ### Versión 2.1.0 · 27 de octubre de 2026
 
 Esta versión hace que el espacio de trabajo sea más coherente en teléfono, tableta y escritorio: el modo de apariencia y el color de acento se eligen por separado, las páginas en horizontal y el historial de Git se abren como pestañas del editor, y la edición, búsqueda, estado remoto y controles móviles son más fluidos. El Agente integrado ahora busca archivos grandes o minimizados y resume archivos largos con mayor eficiencia.
