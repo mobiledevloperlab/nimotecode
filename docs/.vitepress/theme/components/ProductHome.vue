@@ -43,6 +43,7 @@ const communityLinks = ['https://discord.gg/tTxbpqYmhR', 'https://github.com/mob
           <p class="product-eyebrow"><span class="product-live-dot" aria-hidden="true"></span>{{ copy.badge }}</p>
           <h1>{{ copy.title }} <span>{{ copy.accent }}</span></h1>
           <p class="product-intro">{{ copy.intro }}</p>
+          <p class="product-deadline"><a :href="local('/pro')">{{ copy.earlyAccessDeadline }} <span aria-hidden="true">→</span></a></p>
           <div class="product-actions">
             <a class="product-button" :href="android" target="_blank" rel="noopener noreferrer"><MockIcon name="android" />{{ copy.android }}</a>
             <a class="product-button product-button-secondary" :href="ios" target="_blank" rel="noopener noreferrer"><MockIcon name="apple" />{{ copy.ios }}</a>

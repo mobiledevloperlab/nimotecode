@@ -1,6 +1,6 @@
 ---
 title: Quick start | NimoteCode
-description: "Configuration, procedures, and interface reference for quick start."
+description: "Get started with NimoteCode: open a local, SSH or Android Local Linux workspace, edit files, run commands and configure AI Agent."
 ---
 
 # Quick start

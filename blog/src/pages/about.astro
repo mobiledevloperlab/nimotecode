@@ -1,0 +1,127 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import config from "@/config";
+
+const zh = config.site.lang === "zh";
+const copy = zh ? {
+  title: "关于我",
+  description: "认识 Ma.dev，了解移动开发者实验室、NimoteCode 和 NimoteShot。",
+  eyebrow: "开发者 · 创造者",
+  headline: "你好，我是 Ma.dev。",
+  lead: "我喜欢把日常开发中的不便，变成真正有用的工具。",
+  intro: "我是移动开发者实验室的创建者，正在探索移动开发、远程工作和 AI 能为创造带来什么。我相信好的工具应该让人更自由地工作，也让复杂的事情变得简单。",
+  projectsLabel: "SELECTED WORK",
+  projectsTitle: "我在做的项目",
+  codeType: "移动开发工作区",
+  codeDesc: "面向手机和平板的移动 IDE，把编辑器、终端、Git 和 AI 工作流带到同一个工作区。",
+  shotType: "开源工具",
+  shotDesc: "为 App Store 和 Google Play 制作多语言截图的开源工具，从真实界面出发，在本地渲染导出。",
+  writingLabel: "THE LAB NOTES",
+  writingTitle: "关于这个博客",
+  writingText: "这里记录构建产品时的思考、踩过的坑和实践经验。话题从移动开发、SSH 到 AI 和独立开发，都是一路探索留下的笔记。",
+  writingLink: "阅读实验室笔记",
+  connectTitle: "保持联系",
+  connectText: "欢迎交流想法、分享使用体验，或一起讨论开发者工具。",
+  github: "GitHub 主页",
+} : {
+  title: "About",
+  description: "Meet Ma.dev and learn about Mobile Developer Lab, NimoteCode, and NimoteShot.",
+  eyebrow: "DEVELOPER · BUILDER",
+  headline: "Hi, I'm Ma.dev.",
+  lead: "I like turning everyday frustrations into useful tools.",
+  intro: "I created Mobile Developer Lab to explore what mobile development, remote work, and AI can make possible. I believe good tools give people more freedom to work and make complex things feel simpler.",
+  projectsLabel: "SELECTED WORK",
+  projectsTitle: "Things I'm building",
+  codeType: "MOBILE DEVELOPMENT WORKSPACE",
+  codeDesc: "A mobile IDE that brings editing, terminal, Git, and AI workflows together on phones and tablets.",
+  shotType: "OPEN SOURCE TOOL",
+  shotDesc: "An open-source tool for creating localized App Store and Google Play screenshots from real app captures, rendered locally.",
+  writingLabel: "THE LAB NOTES",
+  writingTitle: "About this blog",
+  writingText: "This is where I share the ideas, mistakes, and lessons behind building products—from mobile development and SSH to AI and independent development.",
+  writingLink: "Read the lab notes",
+  connectTitle: "Let's connect",
+  connectText: "Ideas, feedback, and conversations about developer tools are always welcome.",
+  github: "GitHub profile",
+};
+const home = zh ? "/zh/blog/" : "/blog/";
+---
+
+<Layout title={`${copy.title} | ${config.site.title}`} description={copy.description}>
+  <Header />
+  <main id="main-content" class="about-page app-layout">
+    <section class="about-intro" aria-labelledby="about-heading">
+      <div class="about-intro-top"><span class="about-avatar" aria-hidden="true">M<span>.</span></span><span class="about-eyebrow">{copy.eyebrow}</span></div>
+      <h1 id="about-heading">{copy.headline}</h1>
+      <p class="about-lead">{copy.lead}</p>
+      <p class="about-bio">{copy.intro}</p>
+      <a class="about-profile-link" href="https://github.com/mobiledevloperlab">{copy.github} <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="about-section" aria-labelledby="projects-heading">
+      <p class="about-kicker">{copy.projectsLabel}</p>
+      <h2 id="projects-heading">{copy.projectsTitle}</h2>
+      <div class="project-list">
+        <a class="project" href="https://nimotecode.com/">
+          <span class="project-icon project-icon-code" aria-hidden="true">&lt;/&gt;</span>
+          <span class="project-content"><span class="project-type">{copy.codeType}</span><span class="project-name">NimoteCode</span><span class="project-description">{copy.codeDesc}</span></span>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="project" href="https://github.com/mobiledevloperlab/nimoteshot">
+          <span class="project-icon project-icon-shot" aria-hidden="true">▧</span>
+          <span class="project-content"><span class="project-type">{copy.shotType}</span><span class="project-name">NimoteShot</span><span class="project-description">{copy.shotDesc}</span></span>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="about-section about-writing" aria-labelledby="writing-heading">
+      <p class="about-kicker">{copy.writingLabel}</p>
+      <h2 id="writing-heading">{copy.writingTitle}</h2>
+      <p>{copy.writingText}</p>
+      <a class="about-profile-link" href={home}>{copy.writingLink} <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="about-contact" aria-labelledby="contact-heading">
+      <div><h2 id="contact-heading">{copy.connectTitle}</h2><p>{copy.connectText}</p></div>
+      <div class="about-socials"><a href="https://github.com/mobiledevloperlab">GitHub ↗</a><a href="https://x.com/mobiledevlab">X ↗</a><a href="https://www.youtube.com/@mobiledevloperlab">YouTube ↗</a><a href="https://space.bilibili.com/304254420">Bilibili ↗</a></div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .about-page { padding-top: 5rem; padding-bottom: 3rem; }
+  .about-intro { max-width: 650px; }
+  .about-intro-top { display: flex; align-items: center; gap: 1rem; margin-bottom: 2.2rem; }
+  .about-avatar { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; border: 1px solid var(--border); border-radius: 18px; background: var(--muted); color: var(--foreground); font-size: 1.55rem; font-weight: 750; letter-spacing: -.08em; }
+  .about-avatar span { color: var(--accent); }
+  .about-eyebrow, .about-kicker, .project-type { color: var(--accent); font-size: .68rem; font-weight: 700; letter-spacing: .12em; line-height: 1.5; }
+  .about-intro h1 { margin: 0; font-size: clamp(2.45rem, 6vw, 3.7rem); font-weight: 750; line-height: 1.14; letter-spacing: -.05em; }
+  .about-lead { margin-top: 1.2rem; font-size: clamp(1.15rem, 2.5vw, 1.4rem); font-weight: 550; line-height: 1.55; letter-spacing: -.02em; }
+  .about-bio, .about-writing > p:not(.about-kicker) { max-width: 625px; margin-top: 1.1rem; color: var(--muted-foreground); font-size: 1rem; line-height: 1.9; }
+  .about-profile-link { display: inline-flex; align-items: center; gap: .6rem; margin-top: 1.5rem; color: var(--accent); font-size: .88rem; font-weight: 700; text-decoration: none; }
+  .about-profile-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .about-section { margin-top: 5.5rem; }
+  .about-section h2, .about-contact h2 { margin: .55rem 0 0; font-size: 1.55rem; font-weight: 700; letter-spacing: -.035em; }
+  .project-list { display: grid; gap: .8rem; margin-top: 1.5rem; }
+  .project { display: grid; grid-template-columns: 48px 1fr 20px; align-items: start; gap: 1rem; padding: 1.35rem; border: 1px solid var(--border); border-radius: 16px; text-decoration: none; transition: border-color .2s, transform .2s; }
+  .project:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .project-icon { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 14px; background: color-mix(in srgb, var(--accent) 12%, var(--background)); color: var(--accent); font-family: ui-monospace, monospace; font-size: 1rem; font-weight: 700; }
+  .project-icon-shot { font-size: 1.6rem; }
+  .project-content { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
+  .project-type { font-size: .62rem; }
+  .project-name { margin-top: .22rem; color: var(--foreground); font-size: 1.15rem; font-weight: 700; letter-spacing: -.025em; }
+  .project-description { margin-top: .45rem; color: var(--muted-foreground); font-size: .9rem; line-height: 1.75; }
+  .project-arrow { color: var(--muted-foreground); font-size: 1.15rem; }
+  .about-contact { margin-top: 5.5rem; padding: 1.8rem 0 0; border-top: 1px solid var(--border); }
+  .about-contact h2 { margin: 0; font-size: 1.2rem; }
+  .about-contact p { margin-top: .55rem; color: var(--muted-foreground); font-size: .9rem; line-height: 1.7; }
+  .about-socials { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1.3rem; }
+  .about-socials a { padding: .55rem .8rem; border: 1px solid var(--border); border-radius: 9px; color: var(--foreground); font-size: .78rem; font-weight: 650; text-decoration: none; }
+  .about-socials a:hover { border-color: var(--accent); color: var(--accent); }
+  @media (max-width: 600px) { .about-page { padding-top: 3.5rem; } .about-section, .about-contact { margin-top: 4rem; } .project { grid-template-columns: 42px 1fr 16px; gap: .8rem; padding: 1rem; } .project-icon { width: 42px; height: 42px; border-radius: 12px; } }
+  @media (prefers-reduced-motion: reduce) { .project { transition: none; } }
+</style>

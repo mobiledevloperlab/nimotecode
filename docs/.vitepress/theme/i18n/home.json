@@ -160,7 +160,8 @@
         "Local Linux runs Ubuntu without root on supported Android 8+ ARM64 and x86_64 devices. It is not available on iPhone or iPad. All three platforms can connect to a configured, reachable SSH host."
       ]
     ],
-    "byokLabel": "AI models: BYOK · Your API key · Provider fees apply"
+    "byokLabel": "AI models: BYOK · Your API key · Provider fees apply",
+    "earlyAccessDeadline": "Early Access ends December 30"
   },
   "zh": {
     "badge": "Android 与 iOS 移动 IDE",
@@ -323,7 +324,8 @@
         "本地 Linux 仅适用于受支持的 Android 8+ ARM64 / x86_64 设备，可免 root 运行 Ubuntu。iPhone 和 iPad 不支持本地 Linux；三个平台均可连接已配置且可访问的 SSH 主机。"
       ]
     ],
-    "byokLabel": "AI 模型：BYOK · 自备 API Key · 模型费用另计"
+    "byokLabel": "AI 模型：BYOK · 自备 API Key · 模型费用另计",
+    "earlyAccessDeadline": "Early Access 截止至 12 月 30 日"
   },
   "ja": {
     "badge": "Android・iOS 向けモバイル IDE",
@@ -486,7 +488,8 @@
         "ローカル Linux は対応する Android 8 以降の ARM64・x86_64 端末専用で、root 不要の Ubuntu を利用できます。iPhone・iPad では利用できませんが、各プラットフォームから設定済みの SSH ホストに接続できます。"
       ]
     ],
-    "byokLabel": "AI モデル：BYOK · 自分の API キー · 利用料別途"
+    "byokLabel": "AI モデル：BYOK · 自分の API キー · 利用料別途",
+    "earlyAccessDeadline": "Early Access は12月30日まで"
   },
   "ko": {
     "badge": "Android 및 iOS용 모바일 IDE",
@@ -649,7 +652,8 @@
         "로컬 Linux는 지원되는 Android 8 이상 ARM64 및 x86_64 기기에서만 루팅 없이 Ubuntu를 실행합니다. iPhone과 iPad에서는 사용할 수 없지만, 모든 플랫폼에서 설정된 SSH 호스트에 연결할 수 있습니다."
       ]
     ],
-    "byokLabel": "AI 모델: BYOK · 자신의 API 키 · 모델 요금 별도"
+    "byokLabel": "AI 모델: BYOK · 자신의 API 키 · 모델 요금 별도",
+    "earlyAccessDeadline": "Early Access는 12월 30일까지"
   },
   "es": {
     "badge": "Un IDE móvil para Android e iOS",
@@ -812,6 +816,7 @@
         "Linux local ejecuta Ubuntu sin root solo en dispositivos Android 8 o posterior compatibles con ARM64 o x86_64. No está disponible en iPhone ni iPad. Todas las plataformas pueden conectarse a un host SSH configurado y accesible."
       ]
     ],
-    "byokLabel": "Modelos de IA: BYOK · Tu clave API · Uso facturado aparte"
+    "byokLabel": "Modelos de IA: BYOK · Tu clave API · Uso facturado aparte",
+    "earlyAccessDeadline": "Early Access termina el 30 de diciembre"
   }
 }

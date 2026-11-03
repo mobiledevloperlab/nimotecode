@@ -1,0 +1,38 @@
+/* Reading styles shared by the archive and article pages. */
+body { font-family: var(--font-app); -webkit-font-smoothing: antialiased; }
+.app-layout { max-width: 760px; padding-inline: 24px; }
+#hero { padding-top: 4.5rem; padding-bottom: 3.5rem; }
+#hero h1 { max-width: 660px; margin: 0 0 1.4rem; font-size: clamp(2.35rem, 6vw, 3.6rem); line-height: 1.12; letter-spacing: -.045em; }
+#hero > p { max-width: 590px; color: var(--muted-foreground); font-size: 1.05rem; line-height: 1.85; }
+#hero > a { margin-left: 10px; vertical-align: middle; }
+#recent-posts h2, #featured h2 { font-size: 1.35rem; letter-spacing: -.025em; }
+#recent-posts li, #featured li { margin: 0; padding: 1.5rem 0; border-bottom: 1px solid var(--border); }
+#recent-posts li > a, #featured li > a { color: var(--foreground); font-size: 1.17rem; font-weight: 700; line-height: 1.45; letter-spacing: -.015em; }
+#recent-posts li > a:hover, #featured li > a:hover { color: var(--accent); }
+#recent-posts li > p, #featured li > p { margin-top: .6rem; color: var(--muted-foreground); font-size: .92rem; line-height: 1.75; }
+#main-content > h1 { color: var(--foreground); font-size: clamp(2rem, 4.5vw, 2.8rem); line-height: 1.23; letter-spacing: -.04em; }
+.app-prose { max-width: none; color: var(--foreground); font-size: 1.06rem; line-height: 1.9; overflow-wrap: anywhere; }
+.app-prose :where(p, ul, ol) { line-height: 1.9; }
+.app-prose :where(h2, h3, h4) { color: var(--foreground); font-style: normal; line-height: 1.4; letter-spacing: -.025em; }
+.app-prose h2 { margin-top: 2.8em; margin-bottom: .8em; font-size: 1.55em; }
+.app-prose h3 { margin-top: 2em; font-size: 1.2em; }
+.app-prose a { color: var(--accent); text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent); text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.app-prose code, .astro-code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+.app-prose blockquote { border-color: var(--accent); color: var(--muted-foreground); font-style: normal; }
+.app-prose :where(img) { display: block; width: auto; max-width: 100%; height: auto; margin: 2rem auto; border: 1px solid var(--border); border-radius: 10px; }
+.app-prose img[data-blog-portrait="true"] { max-width: min(100%, 330px); max-height: 620px; width: auto; height: auto; object-fit: contain; }
+.app-prose figure { margin: 2rem 0; }
+.app-prose figure img { margin: 0 auto; }
+.app-prose figcaption { margin-top: .75rem; color: var(--muted-foreground); font-size: .82rem; line-height: 1.6; text-align: center; }
+.app-prose .mobile-ide-workflow-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; margin: 2rem 0; }
+.app-prose .mobile-ide-workflow-gallery figure { margin: 0; }
+.app-prose .mobile-ide-workflow-gallery img[data-blog-portrait="true"] { max-height: 500px; }
+.app-prose iframe, .app-prose video { max-width: 100%; }
+@media (max-width: 600px) {
+  .app-layout { padding-inline: 20px; }
+  #hero { padding-top: 3.2rem; padding-bottom: 2.8rem; }
+  .app-prose { font-size: 1rem; line-height: 1.85; }
+  .app-prose img[data-blog-portrait="true"] { max-width: min(82%, 300px); max-height: 560px; }
+  .app-prose .mobile-ide-workflow-gallery { gap: .65rem; }
+  .app-prose .mobile-ide-workflow-gallery img[data-blog-portrait="true"] { max-width: 100%; max-height: 420px; }
+}
