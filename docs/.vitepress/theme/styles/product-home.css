@@ -314,3 +314,7 @@
 
 .product-hero-copy .product-actions { margin-top: 24px; }
 .product-hero-copy .product-hero-links > a { margin: 0; }
+
+.product-deadline { margin: 16px 0; font-size: 0.9rem; font-weight: 600; }
+.product-deadline a { color: var(--vp-c-brand-1); text-decoration: underline; text-underline-offset: 3px; }
+.product-deadline a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }

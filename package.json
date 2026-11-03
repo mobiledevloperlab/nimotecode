@@ -4,16 +4,19 @@
   "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs && node scripts/filter-sitemap.mjs",
+    "docs:build": "vitepress build docs && node scripts/filter-sitemap.mjs && node scripts/build-blog.mjs",
     "docs:preview": "vitepress preview docs",
     "docs:check": "node scripts/check-site.mjs && node scripts/check-doc-translations.mjs",
     "compare:check": "node scripts/check-mobile-comparison.mjs",
-    "images:thumbnails": "node scripts/generate-screenshot-thumbnails.mjs"
+    "images:thumbnails": "node scripts/generate-screenshot-thumbnails.mjs",
+    "blog:dev": "npm --prefix blog run dev"
   },
   "devDependencies": {
+    "@types/node": "^22.20.5",
     "remark-gfm": "^4.0.1",
     "remark-parse": "^11.0.0",
     "sharp": "^0.35.2",
+    "typescript": "^5.9.3",
     "unified": "^11.0.5",
     "vite-plugin-image-optimizer": "^2.0.3",
     "vitepress": "^1.6.4",

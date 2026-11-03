@@ -25,7 +25,15 @@ const theme: Theme = {
   extends: DefaultTheme,
   Layout,
 
-  enhanceApp({ app }) {
+  enhanceApp({ app, router }) {
+    if (typeof window !== 'undefined') {
+      router.onBeforeRouteChange = (to) => {
+        if (/^\/(?:zh\/)?blog(?:\/|$)/.test(new URL(to, window.location.href).pathname)) {
+          window.location.assign(to)
+          return false
+        }
+      }
+    }
     app.component('AppMockup', AppMockup)
     app.component('ProductHome', ProductHome)
     app.component('ImagePlaceholder', ImagePlaceholder)

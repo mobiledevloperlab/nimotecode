@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": ["node", "vite/client"],
+    "noEmit": true,
+    "skipLibCheck": true
+  },
+  "include": ["./**/*.ts", "./**/*.d.ts"],
+  "exclude": ["./cache", "./dist"]
+}

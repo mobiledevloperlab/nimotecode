@@ -273,7 +273,7 @@ function localeAlternates(path: string): HeadConfig[] {
     const isDirectoryIndex = sourceRelativePath
       && existsSync(resolve(process.cwd(), 'docs', `${sourceRelativePath}/index.md`))
       && !existsSync(resolve(process.cwd(), 'docs', `${sourceRelativePath}.md`))
-    const hrefPath = isDirectoryIndex ? `${localePath}/` : localePath
+    const hrefPath = isDirectoryIndex ? `${localePath.replace(/\/$/, '')}/` : localePath
     const href = hrefPath === '/' ? siteUrl : `${siteUrl}${hrefPath}`
     return [['link', { rel: 'alternate', hreflang: locale.lang, href }] as HeadConfig]
   })
@@ -348,7 +348,7 @@ function pageSchemas(context: TransformContext): object[] {
   })
 
   if (!isHome) {
-    const isBlogPost = normalizedPath.startsWith('/blog/') && normalizedPath !== '/blog/'
+    const isBlogPost = /^\/(?:zh\/)?blog\/.+/.test(normalizedPath)
     const datePublished = asContent(context.pageData.frontmatter.date, '')
     const dateModified = asContent(context.pageData.frontmatter.lastUpdated, datePublished)
     const authorName = asContent(context.pageData.frontmatter.author, 'NimoteCode Team')
@@ -1246,51 +1246,63 @@ export default defineConfig({
 
     ja: {
       label: '日本語', lang: 'ja-JP', link: '/ja/',
-      themeConfig: { ...docsUi('ja'), nav: [
+      themeConfig: {
+        ...docsUi('ja'), nav: [
           { text: '製品', link: '/ja/features' },
           { text: 'ワークフロー', link: '/ja/use-cases/' },
           { text: 'ドキュメント', link: '/ja/docs/quick-start' },
           { text: 'リソース', items: [{ text: 'リソース', link: '/ja/resources/' }, { text: '比較', link: '/ja/compare/mobile-ai-development-tools' }, { text: 'ブログ (English)', link: '/blog/' }, { text: 'アップデート', link: '/ja/releases/' }] },
           { text: 'ダウンロード', link: '/ja/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
-        ], sidebar: { ...docsSidebar('/ja', {
-        start: 'はじめに', quickStart: 'クイックスタート', workflow: '開発ワークフロー',
-        ssh: 'ローカルと SSH のワークスペース', localLinux: 'Android Local Linux', ai: 'AI Chat と Agent', plugins: 'カスタムプラグイン',
-        editor: 'エディター', terminal: 'ターミナル', search: '検索', sourceControl: 'ソース管理', lsp: 'LSP', debug: 'デバッグ', syncCache: '同期 / キャッシュ', tasks: 'タスク',
-        overview: '概要', gettingStarted: 'はじめる', architecture: 'アーキテクチャ', compatibility: '互換性', securityIntegrity: 'セキュリティと整合性', presets: 'Linux プリセット', troubleshooting: 'トラブルシューティング',
-        reference: 'リファレンス', account: 'アカウントとサブスクリプション', security: 'セキュリティと安全性', settings: '設定', notifications: '通知', configuration: '構成', sourceLicenses: 'ローカル Linux のソースとライセンス', faq: 'よくある質問'
-      }), ...useCasesSidebar('/ja', { heading: 'ワークフロー', agentDemo: 'AI エージェントのビルドデモ', workspaceDemo: 'モバイルワークスペースのデモ', terminalTools: 'ターミナル AI ツール' }) } }
+        ], sidebar: {
+          ...docsSidebar('/ja', {
+            start: 'はじめに', quickStart: 'クイックスタート', workflow: '開発ワークフロー',
+            ssh: 'ローカルと SSH のワークスペース', localLinux: 'Android Local Linux', ai: 'AI Chat と Agent', plugins: 'カスタムプラグイン',
+            editor: 'エディター', terminal: 'ターミナル', search: '検索', sourceControl: 'ソース管理', lsp: 'LSP', debug: 'デバッグ', syncCache: '同期 / キャッシュ', tasks: 'タスク',
+            overview: '概要', gettingStarted: 'はじめる', architecture: 'アーキテクチャ', compatibility: '互換性', securityIntegrity: 'セキュリティと整合性', presets: 'Linux プリセット', troubleshooting: 'トラブルシューティング',
+            reference: 'リファレンス', account: 'アカウントとサブスクリプション', security: 'セキュリティと安全性', settings: '設定', notifications: '通知', configuration: '構成', sourceLicenses: 'ローカル Linux のソースとライセンス', faq: 'よくある質問'
+          }), ...useCasesSidebar('/ja', { heading: 'ワークフロー', agentDemo: 'AI エージェントのビルドデモ', workspaceDemo: 'モバイルワークスペースのデモ', terminalTools: 'ターミナル AI ツール' })
+        }
+      }
     },
     ko: {
       label: '한국어', lang: 'ko-KR', link: '/ko/',
-      themeConfig: { ...docsUi('ko'), nav: [
+      themeConfig: {
+        ...docsUi('ko'), nav: [
           { text: '제품', link: '/ko/features' },
           { text: '워크플로', link: '/ko/use-cases/' },
           { text: '문서', link: '/ko/docs/quick-start' },
           { text: '리소스', items: [{ text: '리소스', link: '/ko/resources/' }, { text: '비교', link: '/ko/compare/mobile-ai-development-tools' }, { text: '블로그 (English)', link: '/blog/' }, { text: '업데이트', link: '/ko/releases/' }] },
           { text: '다운로드', link: '/ko/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
-        ], sidebar: { ...docsSidebar('/ko', {
-        start: '시작하기', quickStart: '빠른 시작', workflow: '개발 워크플로',
-        ssh: '로컬 및 SSH 작업 공간', localLinux: 'Android Local Linux', ai: 'AI Chat 및 Agent', plugins: '사용자 지정 플러그인',
-        editor: '편집기', terminal: '터미널', search: '검색', sourceControl: '소스 제어', lsp: 'LSP', debug: '디버깅', syncCache: '동기화 / 캐시', tasks: '작업',
-        overview: '개요', gettingStarted: '시작하기', architecture: '아키텍처', compatibility: '호환성', securityIntegrity: '보안 및 무결성', presets: 'Linux 프리셋', troubleshooting: '문제 해결',
-        reference: '참조', account: '계정 및 구독', security: '보안 및 안전', settings: '설정', notifications: '알림', configuration: '구성', sourceLicenses: '로컬 Linux 소스 및 라이선스', faq: '자주 묻는 질문'
-      }), ...useCasesSidebar('/ko', { heading: '워크플로', agentDemo: 'AI 에이전트 빌드 데모', workspaceDemo: '모바일 워크스페이스 데모', terminalTools: '터미널 AI 도구' }) } }
+        ], sidebar: {
+          ...docsSidebar('/ko', {
+            start: '시작하기', quickStart: '빠른 시작', workflow: '개발 워크플로',
+            ssh: '로컬 및 SSH 작업 공간', localLinux: 'Android Local Linux', ai: 'AI Chat 및 Agent', plugins: '사용자 지정 플러그인',
+            editor: '편집기', terminal: '터미널', search: '검색', sourceControl: '소스 제어', lsp: 'LSP', debug: '디버깅', syncCache: '동기화 / 캐시', tasks: '작업',
+            overview: '개요', gettingStarted: '시작하기', architecture: '아키텍처', compatibility: '호환성', securityIntegrity: '보안 및 무결성', presets: 'Linux 프리셋', troubleshooting: '문제 해결',
+            reference: '참조', account: '계정 및 구독', security: '보안 및 안전', settings: '설정', notifications: '알림', configuration: '구성', sourceLicenses: '로컬 Linux 소스 및 라이선스', faq: '자주 묻는 질문'
+          }), ...useCasesSidebar('/ko', { heading: '워크플로', agentDemo: 'AI 에이전트 빌드 데모', workspaceDemo: '모바일 워크스페이스 데모', terminalTools: '터미널 AI 도구' })
+        }
+      }
     },
     es: {
       label: 'Español', lang: 'es-ES', link: '/es/',
-      themeConfig: { ...docsUi('es'), nav: [
+      themeConfig: {
+        ...docsUi('es'), nav: [
           { text: 'Producto', link: '/es/features' },
           { text: 'Flujos', link: '/es/use-cases/' },
           { text: 'Documentación', link: '/es/docs/quick-start' },
           { text: 'Recursos', items: [{ text: 'Recursos', link: '/es/resources/' }, { text: 'Comparar', link: '/es/compare/mobile-ai-development-tools' }, { text: 'Blog (English)', link: '/blog/' }, { text: 'Novedades', link: '/es/releases/' }] },
           { text: 'Descargar', link: '/es/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
-        ], sidebar: { ...docsSidebar('/es', {
-        start: 'Primeros pasos', quickStart: 'Inicio rápido', workflow: 'Flujo de desarrollo',
-        ssh: 'Espacios de trabajo locales y SSH', localLinux: 'Local Linux en Android', ai: 'AI Chat y Agent', plugins: 'Plugins personalizados',
-        editor: 'Editor', terminal: 'Terminal', search: 'Búsqueda', sourceControl: 'Control de código fuente', lsp: 'LSP', debug: 'Depuración', syncCache: 'Sincronización / caché', tasks: 'Tareas',
-        overview: 'Descripción general', gettingStarted: 'Primeros pasos', architecture: 'Arquitectura', compatibility: 'Compatibilidad', securityIntegrity: 'Seguridad e integridad', presets: 'Preajustes de Linux', troubleshooting: 'Resolución de problemas',
-        reference: 'Referencia', account: 'Cuenta y suscripción', security: 'Seguridad y protección', settings: 'Ajustes', notifications: 'Notificaciones', configuration: 'Configuración de IA y conexiones', sourceLicenses: 'Código fuente y licencias de Local Linux', faq: 'Preguntas frecuentes'
-      }), ...useCasesSidebar('/es', { heading: 'Flujos de trabajo', agentDemo: 'Demo de compilación con agente de IA', workspaceDemo: 'Demo de espacio de trabajo móvil', terminalTools: 'Herramientas de IA en terminal' }) } }
+        ], sidebar: {
+          ...docsSidebar('/es', {
+            start: 'Primeros pasos', quickStart: 'Inicio rápido', workflow: 'Flujo de desarrollo',
+            ssh: 'Espacios de trabajo locales y SSH', localLinux: 'Local Linux en Android', ai: 'AI Chat y Agent', plugins: 'Plugins personalizados',
+            editor: 'Editor', terminal: 'Terminal', search: 'Búsqueda', sourceControl: 'Control de código fuente', lsp: 'LSP', debug: 'Depuración', syncCache: 'Sincronización / caché', tasks: 'Tareas',
+            overview: 'Descripción general', gettingStarted: 'Primeros pasos', architecture: 'Arquitectura', compatibility: 'Compatibilidad', securityIntegrity: 'Seguridad e integridad', presets: 'Preajustes de Linux', troubleshooting: 'Resolución de problemas',
+            reference: 'Referencia', account: 'Cuenta y suscripción', security: 'Seguridad y protección', settings: 'Ajustes', notifications: 'Notificaciones', configuration: 'Configuración de IA y conexiones', sourceLicenses: 'Código fuente y licencias de Local Linux', faq: 'Preguntas frecuentes'
+          }), ...useCasesSidebar('/es', { heading: 'Flujos de trabajo', agentDemo: 'Demo de compilación con agente de IA', workspaceDemo: 'Demo de espacio de trabajo móvil', terminalTools: 'Herramientas de IA en terminal' })
+        }
+      }
     }
   },
 

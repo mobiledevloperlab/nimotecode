@@ -13,6 +13,7 @@ import SiteAnalytics from './SiteAnalytics.vue'
 import SiteFooter from './SiteFooter.vue'
 import NavDownload from './components/NavDownload.vue'
 import MarketingLayout from './MarketingLayout.vue'
+import BlogLayout from './BlogLayout.vue'
 import './custom.css'
 
 const {
@@ -40,7 +41,8 @@ const isWorkflowRoute = computed(() => /^\/(?:(?:zh|ja|ko|es)\/)?use-cases(?:\/|
 </script>
 
 <template>
-  <MarketingLayout v-if="!isDocsRoute && !isBlogRoute && !isWorkflowRoute" />
+  <BlogLayout v-if="isBlogRoute" />
+  <MarketingLayout v-else-if="!isDocsRoute && !isWorkflowRoute" />
   <template v-else>
   <SiteAnalytics />
   <div v-if="frontmatter.layout !== false" class="Layout" :class="[frontmatter.pageClass, { 'has-sidebar': hasSidebar, 'nimote-docs': isDocsRoute }]">
