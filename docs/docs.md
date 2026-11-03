@@ -16,6 +16,7 @@ Start with [Quick start](/docs/quick-start) to open a workspace and edit a file.
 | [AI and connection configuration](/docs/configuration) | Add a model configuration; Test the chat connection; General settings |
 | [Terminal](/docs/terminal) | Run workspace commands; Search, copy, and analyze output; Refresh the remote environment |
 | [Source Control](/docs/source-control) | Inspect repository status; Review diffs and commits; Switch branches |
+| [GitHub workflows](/docs/source-control) | Available from 2.2.0; Sign in, clone to this device or SSH, and work with issues, pull requests, and checks |
 | [Settings](/docs/settings) | Appearance and language; Panel and editor preferences |
 | [Custom plugins](/docs/plugins) | Create and install; Data and actions; Permissions; Background jobs |
 | [Language services (LSP)](/docs/lsp) | Check language-server setup; Use diagnostics and code actions |

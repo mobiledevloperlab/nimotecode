@@ -16,6 +16,7 @@ description: NimoteCode 工作区、编辑器、终端、Git、AI、插件及诊
 | [AI 与连接配置](/zh/docs/configuration) | 添加模型配置、测试对话连接、通用设置 |
 | [终端](/zh/docs/terminal) | 执行工作区命令、搜索、复制与分析输出、刷新远程环境 |
 | [源代码管理](/zh/docs/source-control) | 查看仓库状态、审查差异与提交、切换分支 |
+| [GitHub 工作流](/zh/docs/source-control) | 2.2.0 起支持；登录、克隆到本机或 SSH 主机，处理 Issue、拉取请求与检查状态 |
 | [设置](/zh/docs/settings) | 外观与语言、面板与编辑器偏好 |
 | [自定义插件](/zh/docs/plugins) | 创建与安装、数据与操作、权限、后台任务 |
 | [语言服务（LSP）](/zh/docs/lsp) | 检查语言服务配置、使用诊断与代码动作 |

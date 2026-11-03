@@ -20,6 +20,30 @@ Open Source Control in a Git workspace. **Changes** lists modified, deleted, and
 
 </div>
 
+## Use GitHub from your workspace
+
+GitHub workflows are available on Android, iPhone, and iPad starting with **NimoteCode 2.2.0**. Open the **GitHub** page to sign in with browser device authorization or a personal access token, then choose a repository you can access. Select **This device** to clone into local storage, or **SSH host** to clone on the selected remote machine. The host runs project commands and Git operations; NimoteCode keeps the repository browser and workspace together on your mobile device.
+
+<div class="doc-screenshots">
+  <DocScreenshot file="github_entry.png" caption="The GitHub repository picker, with local-device and SSH-host clone targets." />
+</div>
+
+## Open a repository and collaborate
+
+Choose a repository to inspect its default branch, branches, issues, pull requests, reviews, and checks before opening the code. You can filter issues and pull requests, create an issue, or start an Agent task with issue context. When a change is ready, create or switch branches, push with the repository permissions granted to your account, and open a pull request. Review the diff and run the project checks before publishing; GitHub status is collaboration context, not a replacement for repository review.
+
+<div class="doc-screenshots">
+  <DocScreenshot file="github.png" caption="A repository view with Issues, Pull requests, and Branches available from the GitHub page." />
+</div>
+
+## Choose a safe clone target
+
+Before cloning, confirm the target workspace, destination folder, and branch. For a private repository on an SSH host, configure that host's GitHub SSH key and known-hosts entry; the app does not send an app-held token to the host. Use a shallow clone only when the project's workflow does not need full history. A clone opens the selected workspace and does not configure or install project dependencies automatically.
+
+<div class="doc-screenshots">
+  <DocScreenshot file="github_conf.png" caption="Clone options for an SSH workspace, including destination, branch, shallow clone, and SSH-key authentication." />
+</div>
+
 ## Review diffs and commits
 
 Open a changed file to compare its old and new contents. Open a commit in **Commit History** to inspect changes grouped by file. The diff in the screenshot includes a temporary text edit; it illustrates review and is not a recommended code change.
