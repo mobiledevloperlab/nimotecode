@@ -5,6 +5,15 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 import { productCopy } from './theme/product'
 import { allCompetitors } from './theme/data/mobileDevelopmentCompetitors'
 
+function communityLinks(zh: boolean): DefaultTheme.SocialLink[] {
+  return [
+    { icon: { svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M5 2h14a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm1 3v14h2V5H6Zm5 1v2h7V6h-7Zm0 5v2h7v-2h-7Zm0 5v2h5v-2h-5Z"/></svg>' }, link: zh ? '/zh/blog/' : '/blog/', ariaLabel: zh ? '博客：移动开发者实验室' : 'Blog: Mobile Developer Lab' },
+    { icon: 'github', link: 'https://github.com/mobiledevloperlab' },
+    { icon: 'twitter', link: 'https://x.com/mobiledevlab' },
+    { icon: 'discord', link: 'https://discord.gg/tTxbpqYmhR' }
+  ]
+}
+
 const siteUrl = 'https://nimotecode.com'
 const brandLogo = `${siteUrl}/app_icon.png`
 const socialImage = `${siteUrl}/screenshots/nimote-pro.webp?v=8692016c`
@@ -1006,11 +1015,7 @@ export default defineConfig({
       light: '/app_icon.png',
       dark: '/app_icon.png'
     },
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/mobiledevloperlab' },
-      { icon: 'twitter', link: 'https://x.com/mobiledevlab' },
-      { icon: 'discord', link: 'https://discord.gg/tTxbpqYmhR' }
-    ],
+    socialLinks: communityLinks(false),
     editLink: {
       pattern: 'https://github.com/mobiledevloperlab/nimote_issues/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
@@ -1026,7 +1031,7 @@ export default defineConfig({
           { text: 'Product', link: '/features' },
           { text: 'Workflows', link: '/use-cases/' },
           { text: 'Docs', link: '/docs/quick-start' },
-          { text: 'Resources', items: [{ text: 'Resources', link: '/resources/' }, { text: 'Compare', link: '/compare/mobile-ai-development-tools' }, { text: 'Blog', link: '/blog/' }, { text: 'Updates', link: '/releases/' }] },
+          { text: 'Resources', items: [{ text: 'Resources', link: '/resources/' }, { text: 'Compare', link: '/compare/mobile-ai-development-tools' }, { text: 'Updates', link: '/releases/' }] },
           { text: 'Download', link: '/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ],
         sidebar: {
@@ -1136,11 +1141,12 @@ export default defineConfig({
       link: '/zh/',
       themeConfig: {
         ...docsUi('zh'),
+        socialLinks: communityLinks(true),
         nav: [
           { text: '产品', link: '/zh/features' },
           { text: '工作流', link: '/zh/use-cases/' },
           { text: '文档', link: '/zh/docs/quick-start' },
-          { text: '资源', items: [{ text: '资源', link: '/zh/resources/' }, { text: '对比', link: '/zh/compare/mobile-ai-development-tools' }, { text: '博客', link: '/zh/blog/' }, { text: '更新日志', link: '/zh/releases/' }] },
+          { text: '资源', items: [{ text: '资源', link: '/zh/resources/' }, { text: '对比', link: '/zh/compare/mobile-ai-development-tools' }, { text: '更新日志', link: '/zh/releases/' }] },
           { text: '下载', link: '/zh/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ],
         sidebar: {
@@ -1291,7 +1297,7 @@ export default defineConfig({
           { text: 'Producto', link: '/es/features' },
           { text: 'Flujos', link: '/es/use-cases/' },
           { text: 'Documentación', link: '/es/docs/quick-start' },
-          { text: 'Recursos', items: [{ text: 'Recursos', link: '/es/resources/' }, { text: 'Comparar', link: '/es/compare/mobile-ai-development-tools' }, { text: 'Blog (English)', link: '/blog/' }, { text: 'Novedades', link: '/es/releases/' }] },
+          { text: 'Recursos', items: [{ text: 'Recursos', link: '/es/resources/' }, { text: 'Comparar', link: '/es/compare/mobile-ai-development-tools' }, { text: 'Novedades', link: '/es/releases/' }] },
           { text: 'Descargar', link: '/es/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ], sidebar: {
           ...docsSidebar('/es', {

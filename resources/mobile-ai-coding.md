@@ -30,4 +30,4 @@ Ask an agent to inspect a failing test and propose a narrow change, then inspect
 
 ## Related resources
 
-NimoteCode provides its own AI Chat and Agent workflows with user-configured providers. It can also sit around a remote terminal session for externally installed agents. Read [Claude Code on a phone](claude-code-on-phone.md), [mobile AI agent workflows](mobile-ai-agent-workflows.md), the [Claude Code SSH example](../examples/claude-code-over-ssh/README.md), and the [Codex SSH example](../examples/codex-over-ssh/README.md).
+NimoteCode provides its own AI Chat and Agent workflows with user-configured providers. It can also sit around a remote terminal session for externally installed agents. Read [Claude Code on a phone](claude-code-on-phone.md) and [mobile AI agent workflows](mobile-ai-agent-workflows.md).

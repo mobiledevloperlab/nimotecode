@@ -31,10 +31,12 @@ const t = useTranslations(Astro.currentLocale);
 const isModified = modDatetime && modDatetime > pubDatetime;
 
 const datetime = dayjs(isModified ? modDatetime : pubDatetime).tz(
-  resolveTimezone(postTimezone ?? config.site.timezone)
+  resolveTimezone(postTimezone ?? config.site.timezone),
 );
 
-const date = datetime.format("D MMM, YYYY");
+const date = datetime.format(
+  Astro.currentLocale === "zh" ? "YYYY年M月D日" : "D MMM, YYYY",
+);
 ---
 
 <div

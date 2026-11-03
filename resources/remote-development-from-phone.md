@@ -51,7 +51,7 @@ Builds and debugging depend on tools installed on the host. SSH needs connectivi
 
 ## Related resources
 
-NimoteCode keeps an SSH Explorer, editor, terminal, Git review, and AI assistance in a single mobile project context. See its [SSH workspace guide](https://nimotecode.com/docs/ssh), the [SSH remote development example](../examples/ssh-remote-development/README.md), and [SSH development tools](ssh-development-tools.md).
+NimoteCode keeps an SSH Explorer, editor, terminal, Git review, and AI assistance in a single mobile project context. See its [SSH workspace guide](https://nimotecode.com/docs/ssh) and [SSH development tools](ssh-development-tools.md).
 
 ## Try this workflow in NimoteCode
 

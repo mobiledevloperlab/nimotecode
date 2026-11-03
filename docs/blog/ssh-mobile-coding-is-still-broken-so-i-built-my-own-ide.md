@@ -1,16 +1,15 @@
 ---
+answer: "A useful remote development workflow preserves project context across files, commands and Git review. Test saving and reconnection, not just whether SSH login succeeds."
 title: "SSH + Mobile Coding Is Still Broken, So I Built My Own IDE"
 description: "Most mobile coding tools only edit code or only give you a terminal. Real dev work needs SSH, files, terminal and Git together—so I built a mobile IDE."
 author: "NimoteCode Team"
 date: "2026-06-11"
-lastUpdated: "2026-06-11"
+lastUpdated: "2026-11-03"
 tags: ["ssh", "flutter", "mobile ide", "devops"]
 image: /blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-1.png
 ---
 
 # SSH + Mobile Coding Is Still Broken, So I Built My Own IDE
-
-<p class="article-meta">Published June 11, 2026 · By NimoteCode Team</p>
 
 I've tried a lot of mobile coding tools—SSH apps, code editors, cloud IDEs. Most of them feel useful but incomplete. They either only edit code, only provide a terminal, or feel like a desktop tool squeezed into a phone.
 
@@ -25,11 +24,26 @@ So I started building a mobile-first IDE called **NimoteCode**. The idea is simp
 - Code and project structure in one place
 - Mobile-first UX, not a desktop copy
 
-<img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-1.png" width="1604" height="901" alt="NimoteCode SSH workspace connecting a remote project on Android" loading="lazy" decoding="async">
+<figure>
+  <img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-1.png" width="1604" height="901" alt="Product composite: file browsing, code editing and AI chat" loading="lazy" decoding="async">
+  <figcaption>Product composite: file browsing, code editing and AI chat. Source: NimoteCode team.</figcaption>
+</figure>
 
-<img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-2.png" width="1597" height="896" alt="NimoteCode remote file explorer and code editor on mobile" loading="lazy" decoding="async">
+<figure>
+  <img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-2.png" width="1597" height="896" alt="Product composite: terminal, Git review and code diagnostics" loading="lazy" decoding="async">
+  <figcaption>Product composite: terminal, Git review and code diagnostics. Source: NimoteCode team.</figcaption>
+</figure>
 
-<img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-3.png" width="1598" height="893" alt="NimoteCode integrated terminal and Git view on mobile" loading="lazy" decoding="async">
+<figure>
+  <img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-3.png" width="1598" height="893" alt="Product composite: debugging and workspace synchronization" loading="lazy" decoding="async">
+  <figcaption>Product composite: debugging and workspace synchronization. Source: NimoteCode team.</figcaption>
+</figure>
+
+## Test the handoff, not just the connection
+
+A successful SSH login is only the first acceptance check. Open a disposable branch, edit a small file, save it, confirm the host sees the change, run the project’s check and inspect the diff. Then interrupt the connection and reconnect: confirm the working directory, branch and saved content before continuing.
+
+Long-running commands need their own persistence strategy; an SSH workspace alone does not promise that a process survives disconnection. Keep deployment separate from editing, and use the host’s normal review and release procedure. The [SSH guide](/docs/ssh) and [terminal guide](/docs/terminal) describe the supported workflow.
 
 ## Where the design landed
 
@@ -39,7 +53,7 @@ It's not a terminal-only client and it's not a separate editor—it's a workspac
 
 ## Try it
 
-NimoteCode is available now on Google Play for Android, with the App Store version coming soon. Get it from the [Download](/download) page.
+NimoteCode is available now on Google Play for Android, with current iOS availability listed on the Download page. Get it from the [Download](/download) page.
 
 > What do you think—is mobile development actually usable today, or still fundamentally fragmented?
 

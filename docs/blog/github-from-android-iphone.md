@@ -1,4 +1,5 @@
 ---
+answer: "NimoteCode 2.2.0 connects GitHub repository selection with local or SSH workspaces. Clone, edit, test and review before pushing; remote private repositories need host-side authentication."
 title: "GitHub from Android and iPhone: A Mobile Workflow That Reaches the Pull Request | NimoteCode"
 description: "NimoteCode 2.2.0 brings native GitHub workflows to Android and iOS: sign in, clone to a local or SSH workspace, follow issues and pull requests, then review and publish with care."
 date: "2026-11-03"
@@ -9,13 +10,17 @@ tags: ["github", "mobile development", "android", "ios", "git"]
 
 # GitHub from Android and iPhone: from repository to pull request
 
-<p class="article-meta">Published November 3, 2026 · By NimoteCode Team</p>
-
 GitHub work on a phone used to mean checking a notification, leaving the app, then finding another tool to clone, edit, test, and push. That handoff is where small fixes tend to stall.
 
 Starting with **NimoteCode 2.2.0**, native GitHub workflows are available on **Android, iPhone, and iPad**. You can sign in, find a repository, open it in a local or SSH workspace, follow the work around it, and return to the same workspace to make a reviewed change.
 
 The aim is not to turn a phone into a smaller desktop. It is to preserve the parts of a delivery loop that matter: the repository context, a real execution environment, a readable diff, and a deliberate handoff.
+
+## Check the evidence before opening the pull request
+
+Record the exact check command and its result in the pull request, including checks you could not run. Confirm the base branch and inspect the final diff after pushing. A green status is scoped to the commit and workflow that produced it; it does not cover later local edits.
+
+The product-specific claims in this article come from the [2.2.0 release notes](/releases/2.2.0) and [Source Control guide](/docs/source-control). Screenshots illustrate the interface, not the outcome of a completed build.
 
 ## Start with the repository, not a URL
 

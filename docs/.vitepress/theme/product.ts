@@ -13,7 +13,8 @@ export const product = {
   pro: [
     'Plugin Center and custom workspace plugins',
     'AI Agent and remote content search',
-    'Git write workflows',
+    'Git write workflows and GitHub integration',
+    'Android Local Linux on supported devices',
     'Multiple terminal sessions',
     'LSP and debugging workflows',
     'Sync / Cache workflows'

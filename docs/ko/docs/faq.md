@@ -11,7 +11,7 @@ description: "NimoteCode 자주 묻는 질문 설정, 사용 절차 및 화면 �
 
 ## Pro 없이 사용할 수 있나요?
 
-네. 무료 버전에는 로컬, Android Local Linux, SSH 작업 공간, 편집기, 기본 터미널, AI Chat 및 기본 Tasks가 포함됩니다. Local Linux에는 Android 8 이상의 64비트 ARM64 또는 x86_64 기기가 필요하며 iOS에서는 사용할 수 없습니다. AI Agent와 원격 검색은 제공 범위가 확대 중인 Early Access Pro로 이용할 수 있습니다. 해당 기능은 [Pro](/ko/pro)를 참고하세요.
+네. 무료 플랜에는 로컬 및 SSH 작업 공간, 편집기, 기본 터미널, AI Chat과 기본 Tasks가 포함됩니다. GitHub 연동과 Android Local Linux는 Early Access Pro가 필요합니다. Local Linux는 Android 8+ ARM64 또는 x86_64 기기에서 지원되며 iOS에서는 사용할 수 없습니다. [Pro](/ko/pro)를 참고하세요.
 
 ## 어떤 AI 제공업체를 설정할 수 있나요?
 

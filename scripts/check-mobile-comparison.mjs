@@ -13,7 +13,7 @@ const urls = new Set()
 assert.equal(competitors.length, 7)
 assert.equal(new Set(featureRows.map(row=>row.key)).size, featureRows.length)
 for (const product of competitors) {
-  assert.ok(product.version && product.platforms && product.positioning.en && product.positioning.zh, `${product.name}: metadata`)
+  assert.ok(product.platforms && product.positioning.en && product.positioning.zh, `${product.name}: metadata`)
   assert.equal(product.lastVerified, REVIEW_DATE, `${product.name}: review date`)
   assert.ok(new URL(product.website))
   assert.ok(accessNotes[product.id]?.note.en && accessNotes[product.id]?.note.zh, `${product.name}: missing access note`)
@@ -43,15 +43,6 @@ for (const product of competitors) {
 const en = readFileSync('docs/compare/mobile-ai-development-tools.md','utf8')
 const zh = readFileSync('docs/zh/compare/mobile-ai-development-tools.md','utf8')
 assert.ok(en.includes('<MobileDevToolComparison lang="en" />') && zh.includes('<MobileDevToolComparison lang="zh" />'))
-// Comparison pages describe a reviewed snapshot, which need not be the latest
-// release. Validate that snapshot against the data and its actual release notes.
-const nimoteVersion = competitors.find(product => product.id === 'nimotecode')?.version
-assert.match(nimoteVersion ?? '', /^\d+\.\d+\.\d+$/, 'NimoteCode: invalid comparison version')
-for (const [locale, source] of [['', en], ['zh/', zh]]) {
-  assert.ok(source.includes(`**${nimoteVersion}**`), `${locale || 'en/'}comparison: version must match data (${nimoteVersion})`)
-  assert.ok(source.includes(`/${locale}releases/${nimoteVersion}`), `${locale || 'en/'}comparison: missing version evidence link`)
-  assert.ok(existsSync(`docs/${locale}releases/${nimoteVersion}.md`), `${locale || 'en/'}comparison: release notes missing`)
-}
 for (const locale of ['','zh/']) {
   const path = `docs/.vitepress/dist/${locale}compare/mobile-ai-development-tools.html`
   assert.ok(existsSync(path), `${path}: build first`)

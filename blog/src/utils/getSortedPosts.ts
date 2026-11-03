@@ -17,6 +17,6 @@ export function getSortedPosts(posts: CollectionEntry<"posts">[]) {
         ) -
         Math.floor(
           new Date(a.data.modDatetime ?? a.data.pubDatetime).getTime() / 1000
-        )
+        ) || b.data.pubDatetime.getTime() - a.data.pubDatetime.getTime()
     );
 }

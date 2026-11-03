@@ -11,7 +11,7 @@ No. Puede abrir un proyecto local, usar Android Local Linux o conectar con un es
 
 ## ¿Puedo usarlo sin Pro?
 
-Sí. Gratis incluye espacios locales, Android Local Linux y SSH, editor, terminal básico, AI Chat y Tasks básicas. Local Linux requiere Android 8 o posterior en un dispositivo ARM64 o x86_64 de 64 bits y no está disponible en iOS. AI Agent y la búsqueda remota se ofrecen mediante Early Access Pro conforme se amplía su disponibilidad. Consulte [Pro](/es/pro) para las funciones restringidas.
+Sí. El plan gratuito incluye espacios locales y SSH, editor, terminal básico, AI Chat y Tasks básicas. La integración con GitHub y Android Local Linux requieren Early Access Pro. Local Linux necesita Android 8+ en ARM64 o x86_64 y no está disponible en iOS. Consulta [Pro](/es/pro).
 
 ## ¿Qué proveedores de IA puedo configurar?
 

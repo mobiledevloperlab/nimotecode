@@ -1,0 +1,58 @@
+---
+import type { MarkdownHeading } from "astro";
+type Props = { headings: MarkdownHeading[]; locale: string };
+const { headings, locale } = Astro.props;
+const entries = headings.filter(h => h.depth === 2 || h.depth === 3);
+const label = locale.startsWith("zh") ? "文章目录" : "On this page";
+---
+{entries.length > 1 && (
+  <aside class="article-toc" data-pagefind-ignore>
+    <details open>
+      <summary>{label}</summary>
+      <nav aria-label={label}>
+        <ol>
+          {entries.map(h => (
+            <li class:list={{ "toc-subheading": h.depth === 3 }}>
+              <a href={`#${h.slug}`} data-heading-id={h.slug}>{h.text}</a>
+            </li>
+          ))}
+        </ol>
+      </nav>
+    </details>
+  </aside>
+)}
+<script>
+  function setupToc() {
+    const toc = document.querySelector<HTMLElement>(".article-toc");
+    if (!toc) return;
+    const details = toc.querySelector("details")!;
+    const desktop = matchMedia("(min-width: 1280px)");
+    const resize = () => { details.open = desktop.matches; };
+    resize();
+    desktop.addEventListener("change", resize);
+    const links = Array.from(toc.querySelectorAll<HTMLAnchorElement>("a[data-heading-id]"));
+    const sections = links.map(link => document.getElementById(link.dataset.headingId!));
+    let pending = false;
+    const update = () => {
+      pending = false;
+      let active = 0;
+      sections.forEach((section, i) => {
+        if (section && section.getBoundingClientRect().top <= 140) active = i;
+      });
+      links.forEach((link, i) => {
+        if (i === active) link.setAttribute("aria-current", "location");
+        else link.removeAttribute("aria-current");
+      });
+    };
+    const scroll = () => {
+      if (!pending) { pending = true; requestAnimationFrame(update); }
+    };
+    update();
+    window.addEventListener("scroll", scroll, { passive: true });
+    document.addEventListener("astro:before-swap", () => {
+      window.removeEventListener("scroll", scroll);
+      desktop.removeEventListener("change", resize);
+    }, { once: true });
+  }
+  document.addEventListener("astro:page-load", setupToc);
+</script>

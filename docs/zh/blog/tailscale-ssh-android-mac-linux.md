@@ -1,192 +1,78 @@
 ---
-title: "如何使用 Android 作为远程 IDE：借助 Tailscale 和 NimoteCode 免费 SSH 访问 Mac 与 Linux"
-description: "学习如何将 Android 用作远程 IDE，借助 Tailscale 和 NimoteCode 免费 SSH 访问 Mac 与 Linux；无需公网 IP 或路由器端口映射。"
+answer: "将 Android 与开发主机接入同一 tailnet，开启主机 SSH 服务，再使用主机地址和本地账号连接。这是 Tailscale 网络上的普通 SSH。"
+title: "Android 远程开发：通过 Tailscale 与 SSH 连接 Mac 或 Linux"
+description: "通过 Tailscale 与普通 SSH 将 Android 连接到 Mac 或 Linux，并验证编辑、检查与重连。"
 date: "2026-09-04"
-lastUpdated: "2026-09-04"
+lastUpdated: "2026-11-03"
 author: "NimoteCode 团队"
 ---
 
-# 如何使用 Android 作为远程 IDE：借助 Tailscale 和 NimoteCode 免费 SSH 访问 Mac 与 Linux
+# Android 远程开发：通过 Tailscale 与 SSH 连接 Mac 或 Linux
 
-<p class="article-meta">发布于 2026-09-04 · NimoteCode 团队</p>
+本文使用 Tailscale 网络上的普通 SSH，将 Android 连接到 Mac 或 Linux 开发主机，不启用单独的 [Tailscale SSH 服务端功能](https://tailscale.com/docs/features/tailscale-ssh)。你需要一台保持唤醒的主机、同一 tailnet 的访问权限、SSH 账号，以及允许连接的网络策略。
 
-这是一套最短可执行的教程：通过 Tailscale 和 SSH，让 Android 上的 NimoteCode 连接到 Mac 或 Linux。你不需要公网 IP，也不需要配置路由器端口映射。
+## 1. 将两台设备接入网络
 
-<div class="home-page-video blog-post-video">
-  <figure class="home-page-video-shell blog-post-video-shell">
-    <video class="home-page-video-player blog-post-video-player" controls preload="metadata" playsinline aria-label="如何使用 Android 作为远程 IDE 的 SSH 指南">
-      <source src="/videos/android_ssh_public_guide.mp4" type="video/mp4">
-      您的浏览器不支持内嵌视频。
-    </video>
-    <figcaption>Android SSH 远程 IDE 指南演示</figcaption>
-  </figure>
-</div>
-
-<style>
-.blog-post-video,
-.blog-post-video-shell {
-  width: 100%;
-}
-
-.blog-post-video {
-  margin-top: 24px;
-}
-
-.blog-post-video-shell {
-  max-width: 960px;
-  padding: 0;
-  aspect-ratio: auto;
-  min-height: 0;
-}
-
-.blog-post-video-player {
-  width: 100%;
-  height: auto;
-  max-height: none;
-  display: block;
-  object-fit: contain;
-}
-</style>
-
-## macOS：用命令安装 Tailscale
-
-先确认是否已安装 Homebrew：
-
-```bash
-brew --version
-```
-
-如果没有 Homebrew，先安装：
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-然后安装 Tailscale：
-
-```bash
-brew install --cask tailscale
-```
-
-启动 Tailscale：
-
-```bash
-open -a Tailscale
-```
-
-首次启动会打开登录页面。登录你的 Tailscale 账号后，查看本机 Tailscale IPv4 地址：
-
-```bash
-tailscale ip -4
-```
-
-通常会得到类似地址：
-
-```text
-100.80.12.34
-```
-
-确认连接状态：
-
-```bash
-tailscale status
-```
-
-## macOS：确认 SSH 已开启
-
-打开“远程登录”：
-
-```bash
-sudo systemsetup -setremotelogin on
-```
-
-确认状态：
-
-```bash
-sudo systemsetup -getremotelogin
-```
-
-应该看到：
-
-```text
-Remote Login: On
-```
-
-你也可以测试本机 SSH。请将 `your_username` 替换为你的 macOS 用户名：
-
-```bash
-ssh your_username@localhost
-```
-
-## Linux：只需命令行
-
-Linux 不需要图形界面。安装一次 Tailscale 客户端和后台服务后，它会持续在后台运行。以 Ubuntu 或 Debian 为例：
-
-```bash
-curl -fsSL https://tailscale.com/install.sh | sh
-```
-
-启动并登录 Tailscale：
-
-```bash
-sudo tailscale up
-```
-
-命令会给出一个登录链接；在浏览器中完成授权后，查看 Tailscale IP 和连接状态：
+通过[官方下载入口](https://tailscale.com/download)在 Android 与主机上安装 Tailscale，登录同一 tailnet 并开启连接。从应用中复制主机的 Tailscale IPv4 地址。如果命令行工具可用，也可以运行：
 
 ```bash
 tailscale ip -4
 tailscale status
 ```
 
-Linux 服务器尤其适合这种方式：**安装一次 → 后台运行 → 之后基本不用管理**。随后在 NimoteCode 中使用该 `100.x.x.x` 地址、端口 `22`、Linux 用户名以及密码或 SSH 密钥即可。
+这里需要主机地址，不是手机地址。能看到设备，不代表 SSH 流量一定被允许。
 
-## Android：安装 Tailscale 并连接 NimoteCode
+## 2. 开启主机 SSH 服务
 
-在 Google Play 搜索并安装 **Tailscale**，然后：
+macOS 打开“系统设置 → 通用 → 共享 → 远程登录”，仅允许预期用户访问。登录时使用主机的本地账号名，它可能与 Tailscale 身份不同。
 
-1. 打开 Tailscale。
-2. 使用与 Mac 相同的账号登录。
-3. 点击开启连接。
-4. 确认设备列表中可以看到你的 Mac。
+在使用 systemd 的 Ubuntu/Debian 系统上，安装并启动 OpenSSH：
 
-接着在 Android 上打开 NimoteCode，新建 SSH 连接：
-
-```text
-Host: 100.x.x.x
-Port: 22
-Username: 你的 macOS 用户名
-Auth: Password 或 SSH Key
+```bash
+sudo apt update
+sudo apt install openssh-server
+sudo systemctl enable --now ssh
+sudo systemctl status ssh
 ```
 
-其中 `100.x.x.x` 就是 Mac 上执行 `tailscale ip -4` 得到的地址。
+[Ubuntu OpenSSH 指南](https://ubuntu.com/server/docs/how-to/security/openssh-server/)介绍服务安装与认证配置。其他发行版的包名或服务名可能不同。主机防火墙需允许预期的 tailnet 流量；本教程不要求在路由器上开放 22 端口。
 
-最后建议关闭手机 Wi-Fi，使用 **4G/5G** 再测试一次。如果 NimoteCode 仍能 SSH 连接 Mac，就说明已成功实现：
+## 3. 在 NimoteCode 中创建连接
 
-**Android 手机 → Tailscale → 家里/办公室 Mac → SSH**
+按照 [SSH 工作区指南](/zh/docs/ssh)创建连接，填写以下信息：
 
-## 在 NimoteCode 中使用 Tailscale 连接
+| 字段 | 内容 |
+| --- | --- |
+| Host | 主机的 Tailscale 地址 |
+| Port | SSH 服务配置的端口，通常为 22 |
+| Username | Mac 或 Linux 主机上的本地账号 |
+| Authentication | 主机接受的密钥或密码 |
 
-Tailscale 为 Android 设备与 Mac 或 Linux 提供一条私有网络路径；NimoteCode 则将这条私有 SSH 连接变成完整的移动开发工作区。
+首次接受连接前，将显示的主机密钥指纹与从主机获得的可信信息核对。不要关闭验证来绕过不匹配问题。Tailscale 连通性与 SSH 认证是两个独立检查环节。
 
-在 NimoteCode 创建连接后，你可以：
+## 4. 验证一个完整开发步骤
 
-- 打开远程项目根目录，通过 Explorer 浏览文件，无需记忆路径。
-- 在手机或平板上直接编辑 Mac 或 Linux 机器上的源代码。
-- 在内置 SSH 终端中运行测试、构建、Git 命令与诊断命令。
-- 在发布改动前审查 Git diff、分支和提交记录。
-- 在同一项目上下文中使用 AI Chat 与 Agent，结合远程文件、终端输出和代码进行工作。
+打开仓库根目录，确认当前分支，在临时分支上修改一个小文件，运行项目的常规检查。提交前审查 diff。编译发生在主机上，因此主机需要预先安装项目依赖。
 
-这就是“能远程访问”和“能在外完成真实开发工作”之间的区别。Tailscale 负责安全的私有网络通路，NimoteCode 则把文件、编辑器、终端、Git 审查和 AI 辅助放在同一个工作区。
+随后关闭 Wi-Fi，改用移动数据测试。重连后确认工作目录与已保存内容。长时间运行的进程可能需要独立的会话保持策略；SSH 能连接不代表进程一定能在断线后存活。
 
-<div class="seo-cta">
-  <p><strong>将你的 Tailscale 设备连接到 NimoteCode，在 Android 上把远程代码、终端和 Git 工作流放在一起。</strong></p>
-  <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=tailscale_ssh_guide" class="home-page-btn primary" target="_blank" rel="noreferrer">下载 NimoteCode Android 版</a>
-    <a href="/zh/demo?utm_source=tailscale_ssh_guide&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">观看演示</a>
-  </p>
-</div>
+## 5. 按失败层次排查
 
-## 这套方案能带来什么
+| 现象 | 优先检查 |
+| --- | --- |
+| 超时 | 主机休眠、tailnet 连通性、策略与防火墙 |
+| 连接被拒绝 | SSH 服务与端口 |
+| 权限被拒绝 | 主机用户名、授权公钥与允许的登录方式 |
+| 登录后命令失败 | 工作目录、依赖与主机权限 |
 
-有了 Tailscale 和 NimoteCode，即使 Android 与 Mac 或 Linux 位于不同网络，你也能安全地在移动端完成开发工作，无需将 SSH 直接暴露到公网，也无需配置路由器端口映射。
+配置完成后，仍需维护主机更新与访问权限。网络通路让机器可达，不会代替你维护开发环境。
+
+## 操作演示
+
+<figure>
+  <video controls playsinline preload="metadata" aria-label="Android SSH 配置演示">
+    <source src="/videos/android_ssh_public_guide.mp4" type="video/mp4">
+    当前浏览器不支持内嵌视频。
+  </video>
+  <figcaption>NimoteCode 团队提供的 Android SSH 工作流演示。即使录制时已完成前置配置，也请按文字步骤核对。</figcaption>
+</figure>

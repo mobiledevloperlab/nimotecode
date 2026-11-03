@@ -26,7 +26,7 @@ NimoteCode 将核心开发闭环收敛到一个工作区：**Explorer → Editor
 
 | 功能 | 能解决什么 | 可用性 |
 | --- | --- | --- |
-| **本地、[本地 Linux](/zh/docs/local-linux) 与 SSH 工作区** | 打开本地项目、已保存的 SSH 工作区，或在支持的 Android 设备中免 root 使用内置 Ubuntu。工作重心变化时可切换当前目录，并快速返回最近位置；Local Linux 可在工作区入口安装、启动、停止、重置或删除。 | 免费 |
+| **本地与 SSH 工作区** | 打开本地项目和已保存的 SSH 工作区。 | 免费 |
 | **代码编辑器** | 标签页或两个彼此独立的双栏分屏、保存、剪贴板、撤销/重做、光标定位与结构化上下文；无需离开应用即可查看图片和支持的音频/视频。 | 免费 |
 | **Web 与媒体预览** | 在应用内打开本地或远程 Web 项目，直接预览当前未保存的 HTML 内容及工作区内的 CSS、JavaScript 和图片资源；也可从 Terminal、AI 回复和工具输出中的链接打开。 | 免费 |
 | **终端与 SSH 环境** | 在当前工作区执行命令、搜索输出、使用快捷命令，并在远程重连后可靠恢复。SSH 会加载账户正常的 Shell 登录环境，使 PATH、语言区域、SSH Agent 与自定义变量能被远程工具一致使用。 | 免费 |
@@ -42,6 +42,8 @@ NimoteCode 将核心开发闭环收敛到一个工作区：**Explorer → Editor
 | --- | --- | --- |
 | **插件中心与自定义工作区** | 管理工作区能力，或创建带有声明式面板、表单、工作流、产物视图以及本地或 SSH 脚本任务的自定义插件。安装或更新前可审查权限变更。 | Early Access Pro |
 | **AI Agent 与外部 ACP Agent** | 在文件、终端与 Git 工具之间完成受控的多步骤任务；可向运行中的 Agent 添加后续指令，或在不丢失上下文的情况下回答交互问题。在 SSH 工作区中完成配置后，可选择兼容 ACP 的 Claude Code、Codex CLI 等运行时，并在统一时间线中审查权限和进度。 | Early Access Pro |
+| **GitHub 集成** | 浏览和克隆仓库，协作处理 Issue 与 Pull Request。 | Early Access Pro |
+| **[Android 本地 Linux](/zh/docs/local-linux)** | 在受支持的 Android 设备上使用免 root 的内置 Ubuntu。 | Early Access Pro |
 | **Git 写入** | 提交、推送、stash，以及搜索、创建或切换分支——执行前可先审查。 | Early Access Pro |
 | **远程搜索** | 在整个远程工作区中进行全局内容搜索。 | Early Access Pro |
 | **多终端** | 为日志、测试、服务与部署保留并行会话。 | Early Access Pro |

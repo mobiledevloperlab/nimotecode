@@ -219,7 +219,7 @@
 .vp-doc .product-comparison-section .home-tool-comparison-result p { margin-top: var(--nimote-space-2); font-size: var(--nimote-fs-xs); line-height: 1.6; }
 .vp-doc .product-comparison-section .home-tool-comparison-picker p { font-size: var(--nimote-fs-sm); }
 .vp-doc .product-comparison-section .home-tool-comparison-note { padding: var(--nimote-space-4); font-size: var(--nimote-fs-xs); }
-.product-community-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--nimote-space-6); margin-top: var(--nimote-space-6); }
+.product-community-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--nimote-space-6); margin-top: var(--nimote-space-6); }
 .product-community-grid > a { display: flex; padding: var(--nimote-space-5); border: 1px solid var(--nimote-border); border-radius: var(--nimote-radius-md); background: var(--nimote-card); }
 .product-community-grid > a:hover { border-color: var(--nimote-border-accent); background: var(--nimote-card-hover); }
 .product-community-grid > a > div { width: 100%; }

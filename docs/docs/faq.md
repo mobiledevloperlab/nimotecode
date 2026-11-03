@@ -11,7 +11,7 @@ No. NimoteCode can open a local project, use Android Local Linux, or connect to 
 
 ## Can I use it without Pro?
 
-Yes. Free includes local, Android Local Linux and SSH workspaces, the editor, baseline terminal, AI Chat and basic Tasks. Local Linux requires Android 8+ on a 64-bit ARM64 or x86_64 device and is not available on iOS. AI Agent and remote search are available through Early Access Pro as availability expands. See [Pro](/pro) for the gated workflows.
+Yes. Free includes local and SSH workspaces, the editor, basic terminal, AI Chat and basic Tasks. GitHub integration and Android Local Linux require Early Access Pro. Local Linux requires Android 8+ on an ARM64 or x86_64 device and is unavailable on iOS. See [Pro](/pro) for details.
 
 ## Which AI providers can I configure?
 

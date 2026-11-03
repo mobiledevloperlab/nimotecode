@@ -5,6 +5,8 @@ description: "Android Local Linux 설정, 사용 절차 및 화면 안내."
 
 # Android Local Linux
 
+> GitHub 연동과 Android Local Linux는 Early Access Pro가 필요합니다. Local Linux는 Android 전용입니다.
+
 ## 요구 사항
 
 Local Linux는 Android 8 이상의 ARM64 또는 x86_64 64비트 앱에서 Ubuntu, Bash, Git, SSH를 제공합니다. PRoot를 사용하며 Android 루트 권한이 필요하지 않습니다. iOS와 32비트 ARM 기기는 지원하지 않습니다. 언어 도구 모음, 언어 서버, 디버그 어댑터 및 외부 Agent CLI는 별도로 설치해야 합니다.

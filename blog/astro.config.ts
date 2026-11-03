@@ -29,7 +29,8 @@ export default defineConfig({
     mdx(),
     sitemap({
       filter: page =>
-        config.features?.showArchives !== false || !page.endsWith("/archives/"),
+        !/(?:search|404)(?:\.html)?\/?$/.test(page) &&
+        (config.features?.showArchives !== false || !/archives(?:\.html)?\/?$/.test(page)),
     }),
   ],
   i18n: {

@@ -1,6 +1,7 @@
 ---
 import { type CollectionEntry, getCollection, render } from "astro:content";
 import PostLayout from "@/layouts/PostLayout.astro";
+import ArticleToc from "@/components/ArticleToc.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import Datetime from "@/components/Datetime.astro";
@@ -63,6 +64,8 @@ const locale = Astro.currentLocale ?? config.site.lang;
 
 const {
   title,
+  author,
+  answer,
   description,
   ogImage: initOgImage,
   canonicalURL,
@@ -73,7 +76,7 @@ const {
   hideEditPost,
 } = post.data;
 
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
 
 let ogImageUrl: string | undefined;
 
@@ -97,6 +100,8 @@ const ogImage = ogImageUrl
 ---
 
 <PostLayout
+  headline={title}
+  {author}
   title={`${title} | ${config.site.title}`}
   description={description}
   ogImage={ogImage}
@@ -110,9 +115,11 @@ const ogImage = ogImageUrl
 
   <main
     id="main-content"
-    class:list={["app-layout", { "mt-8": !config.features.showBackButton }]}
+    class:list={["app-layout article-layout", { "mt-8": !config.features.showBackButton }]}
     data-pagefind-body
   >
+    <div class="article-column">
+    <header class="article-header">
     <h1
       style={{ viewTransitionName: toTransitionName(post.id) }}
       class="text-accent inline-block text-2xl font-bold sm:text-3xl"
@@ -134,6 +141,10 @@ const ogImage = ogImageUrl
       <EditPost {hideEditPost} {post} class="max-sm:hidden" />
     </div>
 
+    <p class="article-byline"><a href={`${import.meta.env.BASE_URL.replace(/\/$/, "")}/about`}>{author}</a></p>
+    <p class="article-summary"><strong>{locale === "zh" ? "核心结论：" : "Key takeaway: "}</strong>{answer ?? description}</p>
+    </header>
+    <ArticleToc {headings} {locale} />
     <article
       id="article"
       class:list={[
@@ -160,6 +171,7 @@ const ogImage = ogImageUrl
     <hr class="my-8 border-dashed" />
 
     <AdjacentPostNav {prevPost} {nextPost} />
+    </div>
   </main>
   <Footer />
 </PostLayout>
@@ -199,7 +211,7 @@ const ogImage = ogImageUrl
 
   function addHeadingLinks() {
     const headings = Array.from(
-      document.querySelectorAll("h2, h3, h4, h5, h6")
+      document.querySelectorAll("#article h2, #article h3, #article h4, #article h5, #article h6")
     );
     for (const heading of headings) {
       heading.classList.add("group");

@@ -115,7 +115,7 @@ Una marca no significa que la función sea gratuita, no requiera configuración 
 
 > [Guía de inicio rápido →](https://nimotecode.com/es/docs/quick-start?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_quick_start)
 
-**Gratis para empezar, con flujos avanzados en Early Access:** Gratis incluye espacios locales, SSH y Android Local Linux, editor, terminal básico, revisión de Git, AI Chat y tareas básicas. Agent, búsqueda remota, varios terminales, escritura Git, LSP y depuración se ofrecen mediante Early Access. Consulta [Early Access](https://nimotecode.com/es/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_plans) y la aplicación para la disponibilidad y condiciones actuales.
+**Gratis para empezar, con flujos avanzados en Early Access:** Gratis incluye espacios locales y SSH, editor, terminal básico, revisión de Git, AI Chat y tareas básicas. integración con GitHub, Android Local Linux, Agent, búsqueda remota, varios terminales, escritura Git, LSP y depuración se ofrecen mediante Early Access. Consulta [Early Access](https://nimotecode.com/es/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_plans) y la aplicación para la disponibilidad y condiciones actuales.
 
 La disponibilidad en tiendas y el momento de lanzamiento pueden variar por plataforma y región. Consulta [descargas y requisitos de plataforma](https://nimotecode.com/es/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_download).
 
@@ -125,7 +125,6 @@ La disponibilidad en tiendas y el momento de lanzamiento pueden variar por plata
 - [Funciones](https://nimotecode.com/es/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_features)
 - [Documentación de Linux local](https://nimotecode.com/es/docs/local-linux)
 - [Guías de desarrollo móvil](resources/README.md) — edición local, desarrollo remoto, Git y flujos de IA (en inglés).
-- [Ejemplos de flujo de trabajo](examples/README.md) — SSH, Claude Code, Codex y Android Local Linux (en inglés).
 - [Preajustes de Linux](https://github.com/mobiledevloperlab/nimote-linux-presets) — entornos opcionales con manifiestos versionados y scripts de verificación.
 
 ## Comunidad

@@ -70,7 +70,7 @@ See [Local Linux troubleshooting](https://nimotecode.com/docs/local-linux/troubl
 - Do not confuse PRoot's apparent root user inside the rootfs with Android root access.
 - Review package sources and run only documented installers; package installation changes the local environment.
 
-Continue with [remote development from a phone](remote-development-from-phone.md), [SSH tools](ssh-development-tools.md), the [Android Local Linux example](../examples/android-local-linux/README.md), and the [Android Local Linux documentation](https://nimotecode.com/docs/local-linux).
+Continue with [remote development from a phone](remote-development-from-phone.md), [SSH tools](ssh-development-tools.md), and the [Android Local Linux documentation](https://nimotecode.com/docs/local-linux).
 
 ## Try this workflow in NimoteCode
 

@@ -27,4 +27,4 @@ A small Python utility can be developed in Android Local Linux and verified loca
 
 ## Related resources
 
-Read [Android Linux development](android-linux-development.md), [remote development from a phone](remote-development-from-phone.md), and the [Android Local Linux example](../examples/android-local-linux/README.md).
+Read [Android Linux development](android-linux-development.md) and [remote development from a phone](remote-development-from-phone.md).

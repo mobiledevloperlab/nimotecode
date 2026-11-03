@@ -6,7 +6,7 @@ pageClass: pricing-page
 
 # NimoteCode Pro
 
-NimoteCode 可免费开始使用：在免费版中打开本地或 SSH 项目，或在受支持 Android 设备上使用本地 Linux；编辑文件、运行命令并使用 AI Chat。**Early Access Pro** 新增插件中心与自定义工作区插件、持续 AI Agent 协作、远程搜索、多终端、Git 写入与分支工作流、LSP、调试以及 Sync / Cache。具体可用性和显示价格因商店、账号和地区而异。
+免费版包含本地和 SSH 工作区、编辑器、基础终端与 AI Chat。**Early Access Pro** 包含 GitHub 集成、受支持设备上的 Android 本地 Linux、插件中心、AI Agent、Git 写入、远程搜索、多终端、LSP、调试和 Sync / Cache。具体可用性与价格以商店、账号和地区显示为准。
 
 <PricingFeatureSystem lang="zh" mode="full" />
 

@@ -27,7 +27,7 @@ const filteredPosts = posts.filter(postFilter);
 const monthFormatter = new Intl.DateTimeFormat(locale, { month: "long" });
 ---
 
-<Layout title={`${t.pages.archivesTitle} | ${config.site.title}`}>
+<Layout description={t.pages.archivesDesc} title={`${t.pages.archivesTitle} | ${config.site.title}`}>
   <Header />
 
   <Breadcrumb />
@@ -52,7 +52,7 @@ const monthFormatter = new Intl.DateTimeFormat(locale, { month: "long" });
             )
               .sort(([monthA], [monthB]) => Number(monthB) - Number(monthA))
               .map(([month, monthGroup]) => (
-                <div class="flex flex-col sm:flex-row">
+                <div class="archive-month flex flex-col sm:flex-row">
                   <div class="mt-6 min-w-36 text-lg sm:my-6">
                     <span class="font-bold">
                       {monthFormatter.format(

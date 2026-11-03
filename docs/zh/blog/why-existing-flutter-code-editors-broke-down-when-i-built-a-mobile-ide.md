@@ -1,22 +1,27 @@
 ---
+answer: "集成难点在于让编辑、远程文件、LSP 与 Git 审查共享文档状态。自建核心可以集中规则，但也带来长期维护成本。"
 title: "在构建移动 IDE 时，为什么现有 Flutter 代码编辑器会失效"
 description: "我在构建移动 IDE 时发现：一旦加入 SSH、LSP、Git diff 和远程文件，现有 Flutter 代码编辑器包便会失效。本文解释为何我重建了编辑器核心。"
 author: "NimoteCode 团队"
 date: "2026-06-11"
-lastUpdated: "2026-06-11"
+lastUpdated: "2026-11-03"
 tags: ["flutter", "rust", "ide", "工程"]
 image: /blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png
 ---
 
 # 在构建移动 IDE 时，为什么现有 Flutter 代码编辑器会失效
 
-<p class="article-meta">发布于 2026-06-11 · NimoteCode 团队</p>
-
 开始构建 NimoteCode 时，我没有打算自己写代码编辑器。我的假设很简单：Flutter 已经有代码编辑器包，选一个用就好。
 
 有几个很不错的选择：`code_text_field`、`flutter_code_editor`、`re_editor`。它们都很好地解决了类似的问题：如何在 Flutter 内显示和编辑代码。
 
 于是我做了大多数人都会做的事：尝试集成其中一个，把重心放在「真正的产品」——SSH、终端、Git 和 AI 工作流上。这个假设很快就破灭了。
+
+## 一个具体的文档一致性检查
+
+本文记录的是我们的集成约束，并不是对所有编辑器包或其当前版本的性能评测。决定重写之前，可以让两个面板打开同一文档：在一个面板编辑，在另一个撤销，接收诊断，再模拟远程文件变更后的重连。两个面板的内容与版本应保持一致，旧诊断不应覆盖新状态。
+
+[Language Server Protocol 3.17 规范](https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/) 将文档同步与渲染区分开来。这提示了一种职责划分：组件显示文档，应用负责同步与持久化。自建核心也意味着长期维护输入法组合文本、Unicode 位置、无障碍与撤销行为。已有组件若能满足这些契约，复用仍是合理选择。
 
 ## 问题不在于编辑代码
 
@@ -36,15 +41,18 @@ image: /blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-
 
 ## 关键的架构差异
 
-大多数编辑器包围绕**文本渲染**构建。移动 IDE 需要的是**编辑器核心**，这个差异会改变一切。
+我的集成需要一个供渲染、同步与审查共享的文档模型。如果让组件拥有全部文档状态，这些职责就很难协调。
 
 与其拥有一个「编辑文本的 Widget」，你需要的是文档模型、布局系统、状态引擎，以及和外部系统同步的层。当多个系统依赖编辑器状态时，它就不能再是被动的，必须成为单一事实来源。
 
-<img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-1.png" width="1344" height="2992" alt="移动设备上的 NimoteCode 代码编辑器" loading="lazy" decoding="async">
+<figure>
+  <img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-1.png" width="1344" height="2992" alt="移动设备上的 NimoteCode 代码编辑器" loading="lazy" decoding="async">
+  <figcaption>移动设备上的 NimoteCode 代码编辑器。 来源：NimoteCode 团队。</figcaption>
+</figure>
 
 ## 为什么最终自己构建编辑器
 
-这个决定与性能或缺少功能无关，而是为了掌控模型。现有编辑器假定本地文本、单文件上下文和 UI 驱动更新；我的需求不同：统一的本地与 SSH 远程文件、与编辑器状态紧密绑定的 LSP 生命周期、按标签页跟踪 Git diff、分块流式读取大文件，以及移动优先的选择与交互模型。
+这个决定与性能或缺少功能无关，而是为了掌控模型。我当时尝试的集成方式围绕本地文本、单文件上下文和 UI 驱动更新；我的需求不同：统一的本地与 SSH 远程文件、与编辑器状态紧密绑定的 LSP 生命周期、按标签页跟踪 Git diff、分块流式读取大文件，以及移动优先的选择与交互模型。
 
 这些约束与 Widget 层架构冲突。因此，与其扩展一个编辑器，我重建了核心抽象。
 
@@ -61,7 +69,10 @@ image: /blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-
 
 关键理念是：一切都依赖同一个文档模型，而不是 UI。
 
-<img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" width="1414" height="878" alt="平板上的 NimoteCode 代码编辑器" loading="lazy" decoding="async">
+<figure>
+  <img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" width="1414" height="878" alt="平板上的 NimoteCode 代码编辑器" loading="lazy" decoding="async">
+  <figcaption>平板上的 NimoteCode 代码编辑器。 来源：NimoteCode 团队。</figcaption>
+</figure>
 
 ## 自建的真正优势
 
@@ -69,11 +80,11 @@ image: /blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-
 
 1. **远程优先是原生能力，而非补丁** —— SSH 文件是一等文档，不是适配器。
 2. **LSP 成为生命周期的一部分** —— 它与编辑器状态同步，而不是一个独立服务。
-3. **Git diff 感知状态** —— 按标签页感知，而不是基于快照。
+3. **Git diff 感知状态** —— 明确区分编辑缓冲区与 Git 快照。
 4. **移动编辑经过专门设计，而非简单适配** —— 选择、拖拽手柄和滚动采用自定义坐标系统。
-5. **所有 IDE 功能共享一个模型** —— 面板之间没有重复状态。
+5. **所有 IDE 功能共享一个模型** —— 面板从共享文档派生视图。
 
-这正是长期来看实际降低复杂度的地方。
+这种方式集中了一致性规则，但核心的维护仍是长期成本。
 
 ## 一个意料之外的结论
 
