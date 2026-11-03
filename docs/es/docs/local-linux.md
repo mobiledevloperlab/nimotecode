@@ -5,6 +5,8 @@ description: "Configuración, procedimientos y referencia de la interfaz: Local 
 
 # Local Linux en Android
 
+> La integración con GitHub y Android Local Linux requieren Early Access Pro. Local Linux solo está disponible en Android.
+
 ## Requisitos
 
 Local Linux proporciona Ubuntu, Bash, Git y SSH en Android 8 o posterior con la aplicación de 64 bits para ARM64 o x86_64. Usa PRoot y no requiere acceso root. No está disponible en iOS ni en dispositivos ARM de 32 bits. Las herramientas de lenguaje, servidores de lenguaje, adaptadores de depuración y CLI de agentes externos se instalan por separado.

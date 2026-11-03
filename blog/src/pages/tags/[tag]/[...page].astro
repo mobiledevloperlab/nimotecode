@@ -37,7 +37,7 @@ const locale = Astro.currentLocale ?? config.site.lang;
 const t = useTranslations(locale);
 ---
 
-<Layout title={`${t.pages.tagTitle}: ${tagName}${page.currentPage > 1 ? ` — ${page.currentPage}` : ""} | ${config.site.title}`}>
+<Layout description={`${t.pages.tagDesc} "${tagName}". ${t.pages.postsDesc} ${locale === "zh" ? "第" : "Page"} ${page.currentPage} / ${page.lastPage}.`} title={`${t.pages.tagTitle}: ${tagName}${page.currentPage > 1 ? ` — ${page.currentPage}` : ""} | ${config.site.title}`}>
   <Header />
 
   <Breadcrumb />

@@ -1,22 +1,27 @@
 ---
+answer: "The integration challenge was sharing document state across editing, remote files, LSP and Git review. A custom core centralizes those rules but adds long-term maintenance costs."
 title: "Why Existing Flutter Code Editors Broke Down When I Built a Mobile IDE"
 description: "I built a mobile IDE and discovered existing Flutter code editor packages break down once you add SSH, LSP, Git diff and remote files. Why I rebuilt the editor core."
 author: "NimoteCode Team"
 date: "2026-06-11"
-lastUpdated: "2026-06-11"
+lastUpdated: "2026-11-03"
 tags: ["flutter", "rust", "ide", "engineering"]
 image: /blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png
 ---
 
 # Why Existing Flutter Code Editors Broke Down When I Built a Mobile IDE
 
-<p class="article-meta">Published June 11, 2026 · By NimoteCode Team</p>
-
 When I started building NimoteCode, I didn't plan to write a code editor. My assumption was simple: Flutter already has code editor packages, so I would just pick one and move on.
 
 There are several solid options—`code_text_field`, `flutter_code_editor`, `re_editor`. They all solve a similar problem well: how to display and edit code inside Flutter.
 
 So I did what most people would do: try to integrate one of them and focus on the "real product"—SSH, terminal, Git and AI workflows. That assumption broke quickly.
+
+## A concrete document-consistency test
+
+This is an account of our integration constraints, not a benchmark of every editor package or its current release. Before replacing an editor, test one document opened in two panes: edit in one pane, undo in the other, receive a diagnostic, then reconnect after a remote change. Both panes should agree on content and version; stale diagnostics should not overwrite newer state.
+
+The [Language Server Protocol 3.17 specification](https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/) defines document synchronization separately from rendering. That separation is useful here: the widget displays a document, while the application owns synchronization and persistence. A custom core also creates maintenance work—IME composition, Unicode positions, accessibility and undo behavior need regression coverage. Reuse remains sensible when an existing package can satisfy those contracts.
 
 ## The problem wasn't editing code
 
@@ -36,15 +41,18 @@ At that point, the editor is no longer a component. It becomes shared infrastruc
 
 ## The key architectural difference
 
-Most editor packages are built around **text rendering**. A mobile IDE needs an **editor core**. That difference changes everything.
+My integration needed a document model shared by rendering, synchronization and review. Treating the widget as the owner of all document state made those responsibilities difficult to coordinate.
 
 Instead of "a widget that edits text", you need a document model, a layout system, a state engine, and a sync layer for external systems. Once multiple systems depend on the editor state, it can't be passive anymore. It must become the source of truth.
 
-<img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-1.png" width="1344" height="2992" alt="NimoteCode code editor on a mobile device" loading="lazy" decoding="async">
+<figure>
+  <img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-1.png" width="1344" height="2992" alt="NimoteCode code editor on a mobile device" loading="lazy" decoding="async">
+  <figcaption>NimoteCode code editor on a mobile device. Source: NimoteCode team.</figcaption>
+</figure>
 
 ## Why I eventually built my own editor
 
-The decision wasn't about performance or missing features. It was about control over the model. Existing editors assume local text, single-file context and UI-driven updates. My requirements were different: local and SSH remote files unified, LSP lifecycle tightly bound to editor state, Git diff tracking per tab, large files streamed in chunks, and a mobile-first selection and interaction model.
+The decision wasn't about performance or missing features. It was about control over the model. The integrations I tried were built around local text, single-file context and UI-driven updates. My requirements were different: local and SSH remote files unified, LSP lifecycle tightly bound to editor state, Git diff tracking per tab, large files streamed in chunks, and a mobile-first selection and interaction model.
 
 These constraints conflict with widget-level architecture. So instead of extending an editor, I rebuilt the core abstraction.
 
@@ -61,7 +69,10 @@ The editor is built around a shared core:
 
 The key idea: everything depends on the same document model—not the UI.
 
-<img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" width="1414" height="878" alt="NimoteCode code editor on a tablet" loading="lazy" decoding="async">
+<figure>
+  <img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" width="1414" height="878" alt="NimoteCode code editor on a tablet" loading="lazy" decoding="async">
+  <figcaption>NimoteCode code editor on a tablet. Source: NimoteCode team.</figcaption>
+</figure>
 
 ## The real advantage of self-building
 
@@ -69,11 +80,11 @@ Rewriting the editor wasn't about adding features. It unlocked structural advant
 
 1. **Remote-first is native, not patched** — SSH files are first-class documents, not adapters.
 2. **LSP becomes part of the lifecycle** — synchronized with editor state, not a separate service.
-3. **Git diff becomes state-aware** — tab-aware instead of snapshot-based.
+3. **Git diff becomes state-aware** — with explicit distinction between the working buffer and Git snapshots.
 4. **Mobile editing is designed, not adapted** — selection, handles and scrolling use a custom coordinate system.
-5. **All IDE features share one model** — no duplicated state between panels.
+5. **All IDE features share one model** — panels derive their views from a shared document.
 
-This is where complexity actually decreases long-term.
+This centralizes consistency rules, but maintaining the core remains an ongoing cost.
 
 ## The conclusion I didn't expect
 

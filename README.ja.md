@@ -115,7 +115,7 @@ Orca モバイルにはデスクトップ Companion が必要です。Moshi の�
 
 > [クイックスタート →](https://nimotecode.com/ja/docs/quick-start?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_quick_start)
 
-**無料で開始し、Early Access で高度なワークフローを利用:** 無料版にはローカル、SSH、Android Local Linux のワークスペース、エディター、基本ターミナル、Git レビュー、AI Chat、基本 Tasks が含まれます。AI Agent、リモートコンテンツ検索、複数ターミナル、Git 書き込み、LSP、デバッグは Early Access で利用できます。現在の利用条件は[Early Access の詳細](https://nimotecode.com/ja/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_plans)とアプリで確認してください。
+**無料で開始し、Early Access で高度なワークフローを利用:** 無料版にはローカルと SSH のワークスペース、エディター、基本ターミナル、Git レビュー、AI Chat、基本 Tasks が含まれます。GitHub 連携、Android Local Linux、AI Agent、リモートコンテンツ検索、複数ターミナル、Git 書き込み、LSP、デバッグは Early Access で利用できます。現在の利用条件は[Early Access の詳細](https://nimotecode.com/ja/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_plans)とアプリで確認してください。
 
 ストアでの提供状況とリリース時期はプラットフォームや地域により異なる場合があります。[ダウンロードとプラットフォーム要件](https://nimotecode.com/ja/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_download)を確認してください。
 
@@ -124,7 +124,6 @@ Orca モバイルにはデスクトップ Companion が必要です。Moshi の�
 - [公式サイト](https://nimotecode.com/ja/?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_website)
 - [機能](https://nimotecode.com/ja/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_features)
 - [モバイル開発ガイド](resources/README.md) — ローカル編集、リモート開発、Git、AI ワークフロー（英語）。
-- [ワークフロー例](examples/README.md) — SSH、Claude Code、Codex、Android Local Linux（英語）。
 - [Linux プリセット](https://github.com/mobiledevloperlab/nimote-linux-presets) — バージョン管理されたマニフェストと検証スクリプトを含む任意の環境。
 
 ## コミュニティ

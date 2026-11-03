@@ -1,16 +1,15 @@
 ---
+answer: "有用的远程开发工作流应在文件、命令与 Git 审查之间保持项目上下文。除了 SSH 登录，还应测试保存与重连。"
 title: "SSH + 移动编程仍然支离破碎，所以我自己做了一款 IDE"
 description: "多数移动编程工具只能编辑代码或只提供终端；真实开发需要 SSH、文件、终端与 Git 协同，因此我做了一款移动 IDE。"
 author: "NimoteCode 团队"
 date: "2026-06-11"
-lastUpdated: "2026-06-11"
+lastUpdated: "2026-11-03"
 tags: ["ssh", "flutter", "移动 ide", "devops"]
 image: /blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-1.png
 ---
 
 # SSH + 移动编程仍然支离破碎，所以我自己做了一款 IDE
-
-<p class="article-meta">发布于 2026-06-11 · NimoteCode 团队</p>
 
 我试过很多移动编程工具——SSH 应用、代码编辑器、云 IDE。它们大多有用却并不完整：要么只能编辑代码，要么只提供终端，要么像是把桌面工具硬塞进手机。
 
@@ -25,11 +24,26 @@ image: /blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-1.png
 - 在同一位置查看代码与项目结构
 - 移动优先的体验，而非桌面端的复制品
 
-<img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-1.png" width="1604" height="901" alt="Android 上连接远程项目的 NimoteCode SSH 工作区" loading="lazy" decoding="async">
+<figure>
+  <img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-1.png" width="1604" height="901" alt="文件浏览、代码编辑与 AI 对话的产品展示拼图" loading="lazy" decoding="async">
+  <figcaption>文件浏览、代码编辑与 AI 对话的产品展示拼图。 来源：NimoteCode 团队。</figcaption>
+</figure>
 
-<img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-2.png" width="1597" height="896" alt="移动端 NimoteCode 远程文件资源管理器与代码编辑器" loading="lazy" decoding="async">
+<figure>
+  <img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-2.png" width="1597" height="896" alt="终端、Git 变更审查与代码诊断的产品展示拼图" loading="lazy" decoding="async">
+  <figcaption>终端、Git 变更审查与代码诊断的产品展示拼图。 来源：NimoteCode 团队。</figcaption>
+</figure>
 
-<img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-3.png" width="1598" height="893" alt="移动端 NimoteCode 内置终端与 Git 视图" loading="lazy" decoding="async">
+<figure>
+  <img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-3.png" width="1598" height="893" alt="调试与工作区同步的产品展示拼图" loading="lazy" decoding="async">
+  <figcaption>调试与工作区同步的产品展示拼图。 来源：NimoteCode 团队。</figcaption>
+</figure>
+
+## 测试工作交接，而不只是连接
+
+成功登录 SSH 只是第一项验收。创建临时分支，编辑一个小文件并保存，确认主机上可以看到改动，运行项目检查，再审查 diff。随后中断连接并重新连接：继续操作前，确认工作目录、分支与已保存的内容。
+
+长时间运行的命令需要独立的会话保持策略；SSH 工作区本身并不保证进程在断线后存活。把发布与编辑分开，并沿用主机项目的审查与发布流程。[SSH 指南](/zh/docs/ssh)和[终端指南](/zh/docs/terminal)说明支持的工作方式。
 
 ## 设计最终落点
 
@@ -39,7 +53,7 @@ image: /blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-1.png
 
 ## 试试看
 
-NimoteCode 已在 Google Play 面向 Android 上线，App Store 版本也即将推出。请从[下载](/zh/download)页面获取。
+NimoteCode 已在 Google Play 面向 Android 上线，iOS 下载入口请见下载页。请从[下载](/zh/download)页面获取。
 
 > 你怎么看：今天的移动开发已经实用，还是本质上仍然碎片化？
 

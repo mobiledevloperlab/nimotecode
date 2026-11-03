@@ -18,6 +18,14 @@
           ]
         },
         {
+          "name": "GitHub integration / Android Local Linux (supported devices)",
+          "badge": "Pro",
+          "items": [
+            "GitHub integration",
+            "Android Local Linux (supported devices)"
+          ]
+        },
+        {
           "name": "Custom workspace",
           "badge": "Pro",
           "items": [
@@ -140,6 +148,8 @@
           "highlight": true,
           "features": [
             "Plugin Center and custom workspace plugins",
+            "GitHub integration",
+            "Android Local Linux (supported devices)",
             "AI Agent follow-ups, interactive questions, and remote search",
             "Gated Git write and branch workflows with AI Git assistant",
             "Multiple concurrent terminal sessions",
@@ -167,6 +177,14 @@
             "AI Chat 支持",
             "14 个内置 Provider 模板和兼容自定义端点",
             "创建和运行基于终端的 Tasks"
+          ]
+        },
+        {
+          "name": "GitHub 集成 / Android 本地 Linux（受支持设备）",
+          "badge": "Pro",
+          "items": [
+            "GitHub 集成",
+            "Android 本地 Linux（受支持设备）"
           ]
         },
         {
@@ -292,6 +310,8 @@
           "highlight": true,
           "features": [
             "插件中心与自定义工作区插件",
+            "GitHub 集成",
+            "Android 本地 Linux（受支持设备）",
             "AI Agent 后续指令、交互问题与远程搜索",
             "受限 Git 写入、分支工作流和 AI Git 助手",
             "多个并发终端会话",
@@ -320,6 +340,14 @@
             "持ち込み AI プロバイダ：OpenAI、Claude、Gemini",
             "14 の組み込みプロバイダーテンプレートと互換エンドポイント",
             "ターミナルベースのタスクを作成・実行"
+          ]
+        },
+        {
+          "name": "GitHub 連携 / Android Local Linux（対応端末）",
+          "badge": "Pro",
+          "items": [
+            "GitHub 連携",
+            "Android Local Linux（対応端末）"
           ]
         },
         {
@@ -435,6 +463,8 @@
           "highlight": true,
           "features": [
             "AI Agent とリモート検索",
+            "GitHub 連携",
+            "Android Local Linux（対応端末）",
             "制限付き Git 書き込みと AI Git アシスタント",
             "複数の同時ターミナルセッション",
             "LSP 診断、補完、ナビゲーション、コードアクション",
@@ -462,6 +492,14 @@
             "직접 연결하는 AI 제공자: OpenAI, Claude, Gemini",
             "14개의 내장 AI 제공자 템플릿 및 호환 엔드포인트 연결",
             "터미널 기반 작업 생성 및 실행"
+          ]
+        },
+        {
+          "name": "GitHub 연동 / Android Local Linux (지원 기기)",
+          "badge": "Pro",
+          "items": [
+            "GitHub 연동",
+            "Android Local Linux (지원 기기)"
           ]
         },
         {
@@ -577,6 +615,8 @@
           "highlight": true,
           "features": [
             "AI Agent 및 원격 검색",
+            "GitHub 연동",
+            "Android Local Linux (지원 기기)",
             "제한된 Git 쓰기와 AI Git 어시스턴트",
             "여러 동시 터미널 세션",
             "LSP 진단, 완성, 탐색 및 코드 작업",

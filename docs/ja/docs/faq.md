@@ -11,7 +11,7 @@ description: "NimoteCode よくある質問の設定、操作手順、画面の�
 
 ## Pro なしでも使えますか？
 
-はい。無料版にはローカル、Android Local Linux、SSH のワークスペース、エディター、基本ターミナル、AI Chat、基本的な Tasks が含まれます。Local Linux は Android 8 以降の 64 ビット ARM64 または x86_64 端末が必要で、iOS では使えません。AI Agent とリモート検索は、提供範囲を拡大中の Early Access Pro で利用できます。対象機能は [Pro](/ja/pro)をご覧ください。
+はい。無料版にはローカルと SSH のワークスペース、エディター、基本ターミナル、AI Chat、基本 Tasks が含まれます。GitHub 連携と Android Local Linux は Early Access Pro が必要です。Local Linux は Android 8 以降の ARM64 または x86_64 端末に対応し、iOS では利用できません。詳しくは [Pro](/ja/pro) をご覧ください。
 
 ## どの AI プロバイダーを設定できますか？
 

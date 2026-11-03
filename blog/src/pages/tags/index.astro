@@ -17,7 +17,7 @@ const locale = Astro.currentLocale ?? config.site.lang;
 const t = useTranslations(locale);
 ---
 
-<Layout title={`${t.pages.tagsTitle} | ${config.site.title}`}>
+<Layout description={t.pages.tagsDesc} title={`${t.pages.tagsTitle} | ${config.site.title}`}>
   <Header />
 
   <Breadcrumb />

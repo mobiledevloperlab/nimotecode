@@ -5,6 +5,8 @@ description: "Android 本地 Linux 的配置、操作步骤与界面说明。"
 
 # Android 本地 Linux
 
+> GitHub 集成和 Android 本地 Linux 需要 Early Access Pro。本地 Linux 仅支持 Android；语言工具需要配置工作区环境。
+
 ## 使用条件
 
 Local Linux 在 Android 8+ 的 ARM64 或 x86_64 64 位应用中提供 Ubuntu、Bash、Git 和 SSH。它使用 PRoot，无需 Android root 权限。不支持 iOS 或 32 位 ARM 设备。语言工具链、语言服务、调试适配器及外部 Agent CLI 需要另行安装。

@@ -31,4 +31,4 @@ For an on-call web fix, connect to the normal staging host over SSH, inspect the
 
 ## Related resources
 
-Compare [Android Linux and remote development](android-linux-vs-remote-development.md), follow the [safe mobile workflow example](../examples/mobile-dev-workflow/README.md), or read about [mobile AI agent workflows](mobile-ai-agent-workflows.md).
+Compare [Android Linux and remote development](android-linux-vs-remote-development.md), or read about [mobile AI agent workflows](mobile-ai-agent-workflows.md).

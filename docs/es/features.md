@@ -31,7 +31,7 @@ Funciones de
 
 | Feature | What it gives you | Access |
 | --- | --- | --- |
-| **Local, [Local Linux](/docs/local-linux) & SSH workspaces** | Open local projects, saved SSH workspaces, or rootless bundled Ubuntu on supported Android devices. Switch the current directory when work moves, then return to recently used folders. Install, start, stop, reset, or delete Local Linux from the workspace flow. | Free |
+| **Espacios locales y SSH** | Abre proyectos locales y espacios SSH guardados. | Gratis |
 | **Code editor** | Work in tabs or two independent split panes; save, use clipboard and undo/redo, follow cursor context, and inspect images or supported audio/video without leaving the app. | Free |
 | **Web & media preview** | Open local or remote web projects in-app, preview the current HTML contents—including unsaved changes—with workspace CSS, JavaScript, and image assets, or open links from Terminal, AI replies, and tool output. | Free |
 | **Terminal & SSH environment** | Run commands in the active workspace, search output, use shortcuts, and reconnect reliably. SSH workspaces load the account’s normal shell environment, so PATH, locale, SSH agent, and custom variables are available consistently to remote tools. | Free |
@@ -48,6 +48,8 @@ Con la versión 1.1.8, **Early Access Pro** abre los flujos de trabajo a continu
 | Feature | What it gives you | Access |
 | --- | --- | --- |
 | **AI Agent & external ACP agents** | Run controlled multi-step workflows across files, Terminal, and Git tools. In an SSH workspace, choose a compatible ACP runtime—such as Claude Code or Codex CLI when configured—review permissions and progress in one timeline, and use `/` commands with touch or keyboard completion. | Early Access Pro |
+| **Integración con GitHub** | Explora y clona repositorios y colabora en incidencias y pull requests. | Early Access Pro |
+| **Android Local Linux** | Usa Ubuntu sin root en dispositivos Android compatibles. | Early Access Pro |
 | **Git write** | Commit, push and stash, plus branch/checkout/merge actions — with review before you act. | Early Access Pro |
 | **Remote search** | Global content search across a remote workspace. | Early Access Pro |
 | **Multi-terminal** | Keep parallel sessions for logs, tests, services and deployments. | Early Access Pro |

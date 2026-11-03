@@ -1,26 +1,34 @@
 ---
+answer: "AI helped generate implementation code, but architecture, integration and acceptance still required sustained work. The reported 90% is a retrospective estimate, not a measured productivity gain."
 title: "I Built a Mobile IDE With ~90% AI-Generated Code — It Still Took 6 Months"
 description: "A mobile IDE shipping story: ~90% AI-generated code still took six months. What AI accelerated, what it didn't, and what really took the time."
 author: "NimoteCode Team"
 date: "2026-06-20"
-lastUpdated: "2026-06-20"
+lastUpdated: "2026-11-03"
 tags: ["ai coding", "indie", "mobile ide", "engineering"]
 image: /blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me-6-months/image-1.png
 ---
 
 # I Built a Mobile IDE With ~90% AI-Generated Code — It Still Took 6 Months
 
-<p class="article-meta">Published June 20, 2026 · By NimoteCode Team</p>
-
 I recently shipped a mobile IDE on Google Play. **~90% of the code was generated with AI tools. I handled architecture, product decisions, testing and iteration.**
 
 From the outside, that sounds like it should be fast. In reality, it still took around **6 months of continuous work**.
 
-<img src="/blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me-6-months/image-1.png" width="968" height="605" alt="NimoteCode mobile IDE interface during development" loading="lazy" decoding="async">
+<figure>
+  <img src="/blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me-6-months/image-1.png" width="968" height="605" alt="NimoteCode promotional composite showing several interface views, not one continuous session" loading="lazy" decoding="async">
+  <figcaption>NimoteCode promotional composite showing several interface views, not one continuous session. Source: NimoteCode team.</figcaption>
+</figure>
+
+## How to interpret the 90% figure
+
+“About 90%” is the author’s retrospective estimate of AI-assisted code generation, not a measured share of shipped lines or a controlled productivity study. Six months is elapsed project time, not a comparison against a human-only baseline. Neither figure establishes how much time AI saved.
+
+A useful way to evaluate the workflow is to record the task, generated change, review corrections, test result and time to acceptance. Track rework as well as initial generation: code that appears quickly can still take a long time to integrate. For this project, the practical lesson is to keep changes small enough that architecture, error handling and cross-feature behavior remain reviewable.
 
 ## What AI actually helped with
 
-AI significantly accelerated boilerplate code, UI implementation, feature scaffolding, refactoring suggestions and debugging assistance. It reduced the time spent on writing code line by line.
+In my experience, AI accelerated boilerplate code, UI implementation, feature scaffolding, refactoring suggestions and debugging assistance. It reduced the time spent on writing code line by line.
 
 ## But what still took time
 
@@ -40,7 +48,7 @@ The result is a mobile IDE with SSH remote development environments, Git workflo
 
 ## Final thought
 
-AI didn't reduce the need for developers. It changed what developers spend time on.
+In this project, AI changed where I spent my effort; architecture, integration and acceptance remained my responsibility.
 
 This is the origin story behind why the editor, SSH, terminal and Git had to be built as one system. Read [Why Existing Flutter Code Editors Broke Down](/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide) and [Why I Decided to Build a Mobile IDE Instead of Another AI App](/blog/why-i-decided-to-build-a-mobile-ide-instead-of-another-ai-app). For the product overview, see [NimoteCode Features](/features) and [Mobile IDE](/mobile-ide).
 

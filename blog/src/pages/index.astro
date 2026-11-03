@@ -6,14 +6,13 @@ import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
-import Socials from "@/components/Socials.astro";
 import Card from "@/components/Card.astro";
 import LinkButton from "@/components/LinkButton.astro";
 import { getSortedPosts } from "@/utils/getSortedPosts";
 import { useTranslations } from "@/i18n";
 import config from "@/config";
 
-const { socials, posts: postsConfig } = config;
+const { posts: postsConfig } = config;
 
 const locale = Astro.currentLocale ?? config.site.lang;
 const t = useTranslations(locale);
@@ -31,38 +30,55 @@ const homePath = getRelativeLocaleUrl(locale, "");
     id="main-content"
     data-layout="index"
     data-home-path={homePath}
-    class="app-layout my-1"
+    class="app-layout blog-home my-1"
   >
-    <section id="hero" class="border-border border-b pt-8 pb-6">
-      <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        {locale === "zh" ? "移动开发者实验室" : "Mobile Developer Lab"}
-      </h1>{" "}
-      <a
-        target="_blank"
-        href={`${import.meta.env.BASE_URL.replace(/\/?$/, "/")}rss.xml`}
-        class="inline-block"
-        aria-label="RSS Feed"
-        title="RSS Feed"
-      >
-        <IconRss
-          width={20}
-          height={20}
-          class="stroke-accent scale-125 stroke-3 rtl:-rotate-90"
-        />
-        <span class="sr-only">RSS Feed</span>
-      </a>
-
-      <p>{locale === "zh" ? "关于移动开发、远程工作与 AI 的实践笔记。记录实验、想法，以及创造过程中的经验。" : "Notes and experiments on mobile development, remote work, and AI. Building, learning, and sharing along the way."}</p>
-      {
-        socials.length > 0 && (
-          <div class="mt-4 flex max-sm:flex-col sm:items-center">
-            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">
-              {t.home.socialLinks}:
-            </div>
-            <Socials />
-          </div>
-        )
-      }
+    <section id="hero" aria-labelledby="home-title">
+      <p class="hero-eyebrow">
+        {
+          locale === "zh"
+            ? "开发手记 · MOBILE DEVELOPER LAB"
+            : "MOBILE DEVELOPER LAB · FIELD NOTES"
+        }
+      </p>
+      <h1 id="home-title">
+        {
+          locale === "zh" ? (
+            <>
+              在移动中构建，
+              <br />
+              在实践中思考。
+            </>
+          ) : (
+            <>
+              Build on the move.
+              <br />
+              Learn by doing.
+            </>
+          )
+        }
+      </h1>
+      <p class="hero-description">
+        {
+          locale === "zh"
+            ? "关于移动开发、远程工作与 AI 的实践笔记。记录真实的问题，也记录解决它们的过程。"
+            : "Notes on mobile development, remote work, and AI. Real problems, small experiments, and lessons from building."
+        }
+      </p>
+      <div class="hero-actions">
+        <a href="#recent-posts" class="hero-read"
+          >{locale === "zh" ? "阅读最新文章" : "Read the latest"}<IconArrowRight
+            width={18}
+            height={18}
+          /></a
+        >
+        <a
+          href={`${import.meta.env.BASE_URL.replace(/\/?$/, "/")}rss.xml`}
+          class="hero-rss"
+          ><IconRss width={16} height={16} />{
+            locale === "zh" ? "订阅 RSS" : "Subscribe via RSS"
+          }</a
+        >
+      </div>
     </section>
 
     {
@@ -78,7 +94,7 @@ const homePath = getRelativeLocaleUrl(locale, "");
             {t.home.featured}
           </h2>
           <ul>
-            {featuredPosts.map(data => (
+            {featuredPosts.map((data) => (
               <Card variant="h3" {...data} />
             ))}
           </ul>
@@ -89,11 +105,18 @@ const homePath = getRelativeLocaleUrl(locale, "");
     {
       recentPosts.length > 0 && (
         <section id="recent-posts" class="pt-12 pb-6">
-          <h2 class="text-2xl font-semibold tracking-wide">
-            {t.home.recentPosts}
-          </h2>
+          <div class="section-heading">
+            <>
+              <h2>{t.home.recentPosts}</h2>
+              <span>
+                {locale === "zh"
+                  ? "记录 · 探索 · 分享"
+                  : "IDEAS, EXPERIMENTS & STORIES"}
+              </span>
+            </>
+          </div>
           <ul>
-            {recentPosts.slice(0, postsConfig.perIndex).map(data => (
+            {recentPosts.slice(0, postsConfig.perIndex).map((data) => (
               <Card variant="h3" {...data} />
             ))}
           </ul>
@@ -101,7 +124,7 @@ const homePath = getRelativeLocaleUrl(locale, "");
       )
     }
 
-    <div class="my-8 text-center">
+    <div class="all-posts-link">
       <LinkButton href={getRelativeLocaleUrl(locale, "posts")}>
         {t.home.allPosts}
         <IconArrowRight class="inline-block rtl:-rotate-180" />

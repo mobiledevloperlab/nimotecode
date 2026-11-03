@@ -26,7 +26,7 @@ The free tier is a full workspace, not a preview. Everything below works without
 
 | Feature | What it gives you | Access |
 | --- | --- | --- |
-| **Local, [Local Linux](/docs/local-linux) & SSH workspaces** | Open local projects, saved SSH workspaces, or rootless bundled Ubuntu on supported Android devices. Switch the current directory when work moves, then return to recently used folders. Install, start, stop, reset, or delete Local Linux from the workspace flow. | Free |
+| **Local & SSH workspaces** | Open local projects and saved SSH workspaces. | Free |
 | **Code editor** | Work in tabs or two independent split panes; save, use clipboard and undo/redo, follow cursor context, and inspect images or supported audio/video without leaving the app. | Free |
 | **Web & media preview** | Open local or remote web projects in-app, preview the current HTML contents—including unsaved changes—with workspace CSS, JavaScript, and image assets, or open links from Terminal, AI replies, and tool output. | Free |
 | **Terminal & SSH environment** | Run commands in the active workspace, search output, use shortcuts, and reconnect reliably. SSH workspaces load the account’s normal shell environment, so PATH, locale, SSH agent, and custom variables are available consistently to remote tools. | Free |
@@ -42,6 +42,8 @@ With version 1.1.8, **Early Access Pro** opens the workflows below as availabili
 | --- | --- | --- |
 | **Plugin Center & custom workspaces** | Install and manage workspace capabilities, or build custom plugins with declarative panels, forms, workflows, artifact views, and local or SSH script jobs. Review permission changes before installing or updating. | Early Access Pro |
 | **AI Agent & external ACP agents** | Run controlled multi-step workflows across files, Terminal, and Git tools. Add follow-up instructions to an active Agent run or answer its interactive questions without losing context. In an SSH workspace, choose a compatible ACP runtime—such as Claude Code or Codex CLI when configured—and review permissions and progress in one timeline. | Early Access Pro |
+| **GitHub integration** | Browse and clone repositories and collaborate on issues and pull requests. | Early Access Pro |
+| **[Android Local Linux](/docs/local-linux)** | Use bundled rootless Ubuntu on supported Android devices. | Early Access Pro |
 | **Git write** | Commit, push and stash, and search for, create, or check out branches—with review before you act. | Early Access Pro |
 | **Remote search** | Global content search across a remote workspace. | Early Access Pro |
 | **Multi-terminal** | Keep parallel sessions for logs, tests, services and deployments. | Early Access Pro |

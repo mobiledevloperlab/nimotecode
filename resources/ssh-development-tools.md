@@ -33,4 +33,4 @@ For a one-command diagnosis, a terminal may be sufficient. For a bug fix, open t
 
 A terminal-first SSH client can be ideal for diagnostics and command-only work. A mobile IDE is useful when a task includes files, edits, test output, and diff review. A browser-based cloud IDE can be best when the project already runs in that provider. Keep credentials and the host's security policy central to the choice.
 
-NimoteCode is a mobile IDE and SSH client aimed at the editor-terminal-Git loop. See [Remote Development From a Phone](remote-development-from-phone.md), the [SSH example](../examples/ssh-remote-development/README.md), and [SSH workspace documentation](https://nimotecode.com/docs/ssh).
+NimoteCode is a mobile IDE and SSH client aimed at the editor-terminal-Git loop. See [Remote Development From a Phone](remote-development-from-phone.md) and [SSH workspace documentation](https://nimotecode.com/docs/ssh).

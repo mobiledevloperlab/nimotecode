@@ -1,4 +1,5 @@
 ---
+answer: "NimoteCode 2.2.0 将 GitHub 仓库选择与本地或 SSH 工作区连接起来。克隆后编辑、测试、审查，再推送；远程私有仓库需要主机侧认证。"
 title: "用 Android 和 iPhone 跑通 GitHub 工作流：从仓库到 Pull Request | NimoteCode"
 description: "NimoteCode 2.2.0 为 Android 与 iOS 带来原生 GitHub 工作流：登录、克隆到本机或 SSH 工作区、处理 Issue 和 PR，并以可审查的方式完成发布。"
 date: "2026-11-03"
@@ -9,13 +10,17 @@ tags: ["github", "移动开发", "android", "ios", "git"]
 
 # 用 Android 和 iPhone 跑通 GitHub 工作流：从仓库到 Pull Request
 
-<p class="article-meta">发布于 2026-11-03 · NimoteCode 团队</p>
-
 过去在手机上处理 GitHub，往往只能看一眼通知；接着切到别的应用找仓库、克隆、编辑、跑命令、推送。一次小修改，常常就卡在这些工具之间的交接上。
 
 从 **NimoteCode 2.2.0** 开始，**Android、iPhone 和 iPad** 都可以使用原生 GitHub 工作流：登录、找到仓库、在本机或 SSH 工作区中打开它、查看围绕它的协作信息，再回到同一个工作区完成一处经过审查的改动。
 
 目标不是把手机变成缩小的桌面电脑，而是保留交付闭环中真正重要的部分：仓库上下文、真实的运行环境、可读的 diff，以及有意识的交付动作。
+
+## 创建拉取请求前核对证据
+
+在拉取请求中记录实际执行的检查命令与结果，也说明未能运行的检查。确认目标分支，并在推送后再次查看最终 diff。绿色状态只对应产生它的提交与工作流，不覆盖后续的本地编辑。
+
+本文产品能力依据[2.2.0 发布说明](/zh/releases/2.2.0)与[源代码管理指南](/zh/docs/source-control)。截图用于说明界面，不代表已经完成构建验证。
 
 ## 从仓库开始，而不是从一条 URL 开始
 

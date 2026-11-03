@@ -11,7 +11,7 @@ description: 快速了解 NimoteCode 的本地、Android 本地 Linux 与 SSH �
 
 ## 不购买 Pro 能使用吗？
 
-可以。免费版包含本地、Android 本地 Linux 与 SSH 工作区、编辑器、基础终端、AI Chat 和基础 Tasks。本地 Linux 需要 Android 8+ 的 ARM64 或 x86_64 64 位设备，iOS 不提供此功能。AI Agent 与远程内容搜索会随 Early Access Pro 逐步开放；详见 [Pro](/zh/pro)。
+可以。免费版包含本地和 SSH 工作区、编辑器、基础终端、AI Chat 和基础 Tasks。GitHub 集成与 Android 本地 Linux 需要 Early Access Pro。本地 Linux 需要 Android 8+ ARM64 或 x86_64 设备，iOS 不支持。详见 [Pro](/zh/pro)。
 
 ## 可配置哪些 AI Provider？
 

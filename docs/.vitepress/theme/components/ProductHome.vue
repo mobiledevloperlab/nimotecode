@@ -139,7 +139,7 @@ const communityLinks = ['https://discord.gg/tTxbpqYmhR', 'https://github.com/mob
     <section class="product-container product-resources" aria-labelledby="resources-title">
       <h2 id="resources-title">{{ copy.resourcesTitle }}</h2>
       <div class="product-resource-grid"><a v-for="(resource, index) in copy.resources" :key="resource[0]" :href="resourceLinks[index]" ><MockIcon :name="['book', 'code', 'globe'][index]" /><div><h3>{{ resource[0] }}</h3><p>{{ resource[1] }}</p></div><span aria-hidden="true">↗</span></a></div>
-      <div class="product-community-grid"><a v-for="(name, index) in ['Discord', 'GitHub', 'X / Twitter']" :key="name" :href="communityLinks[index]" target="_blank" rel="noopener noreferrer"><div><h3>{{ name }}<span aria-hidden="true">↗</span></h3><p>{{ copy.community[index] }}</p></div></a></div>
+      <div class="product-community-grid"><a :href="blogRoot"><div><h3>{{ locale === 'zh' ? '博客' : 'Blog' }}<span aria-hidden="true">→</span></h3><p>{{ locale === 'zh' ? '移动开发、远程工作与 AI 的实践笔记。' : 'Notes on mobile development, remote work, and AI.' }}</p></div></a><a v-for="(name, index) in ['Discord', 'GitHub', 'X / Twitter']" :key="name" :href="communityLinks[index]" target="_blank" rel="noopener noreferrer"><div><h3>{{ name }}<span aria-hidden="true">↗</span></h3><p>{{ copy.community[index] }}</p></div></a></div>
     </section>
 
     <section class="product-container product-faq" aria-labelledby="faq-title">

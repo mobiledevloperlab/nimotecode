@@ -131,7 +131,7 @@ System-granted external folders support browsing and editing; Git, LSP, debuggin
 | **Built-in Agent** | Inspect files, plan changes, edit and run checks in a supported workspace; continue an active run with follow-up instructions and answer its interactive questions. Available through Early Access. |
 | **MCP tool servers** | Configure verified MCP servers for the built-in Agent on a local or SSH workspace; every tool call requires explicit approval. Available through Early Access. |
 | **External ACP agent** | Connect a compatible runtime on your SSH host; review permissions and progress in the app's conversation view. |
-| **Claude Code / Codex over SSH** | Run a CLI installed on your own host through the terminal. Follow the [Claude Code on phone](resources/claude-code-on-phone.md) or [Codex on mobile](examples/codex-over-ssh/README.md) guide. |
+| **Claude Code / Codex over SSH** | Run a CLI installed on your own host through the terminal. Follow the [Claude Code on phone](resources/claude-code-on-phone.md) guide. |
 
 AI model access and tokens are not included. Provider charges are separate. External agents and CLIs require their own installation, authentication and service access; Claude Code and Codex are not bundled with NimoteCode. Review commands and diffs before accepting AI-generated changes.
 
@@ -143,7 +143,7 @@ AI model access and tokens are not included. Provider charges are separate. Exte
 
 > [**Follow the quick start →**](https://nimotecode.com/docs/quick-start?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_get_started)
 
-**Free to start, with advanced workflows through Early Access:** Free includes local, SSH and Android Local Linux workspaces, the editor, baseline terminal, Git review, AI Chat and basic Tasks. Advanced workflows such as AI Agent, remote content search, multiple terminals, Git writes, LSP and debugging are available through Early Access. Check [Early Access details](https://nimotecode.com/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_plans) and the app for current availability and terms.
+**Free to start, with advanced workflows through Early Access:** Free includes local and SSH workspaces, the editor, baseline terminal, Git review, AI Chat and basic Tasks. Advanced workflows such as GitHub integration, Android Local Linux, AI Agent, remote content search, multiple terminals, Git writes, LSP and debugging are available through Early Access. Check [Early Access details](https://nimotecode.com/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_plans) and the app for current availability and terms.
 
 Store availability and release timing may differ by platform and region. See [download and platform requirements](https://nimotecode.com/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_download); the version offered by your store may differ from the release documented below.
 
@@ -167,7 +167,6 @@ Store availability and release timing may differ by platform and region. See [do
 ## Guides and resources
 
 - [Mobile development guides](resources/README.md) — local editing, remote development, Git and AI workflows.
-- [Workflow examples](examples/README.md) — SSH, Claude Code, Codex and Android Local Linux.
 - [Android Local Linux documentation](https://nimotecode.com/docs/local-linux) — setup, compatibility and troubleshooting.
 - [Linux Presets](https://github.com/mobiledevloperlab/nimote-linux-presets) — optional environments with versioned manifests and verification scripts; see the [preset overview](presets/README.md).
 - [Official website](https://nimotecode.com?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_website) — product details and documentation.

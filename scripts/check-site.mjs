@@ -124,7 +124,7 @@ for (const url of canonicalUrls) {
 // GitHub tutorials live outside the VitePress build. Check their relative links
 // and media here as well. Fragment navigation is checked in the browser review.
 const repoDocs = [resolve('README.md'), resolve('README.zh-CN.md'),
-  ...files(resolve('resources')), ...files(resolve('examples'))].filter((file) => file.endsWith('.md'))
+  ...files(resolve('resources'))].filter((file) => file.endsWith('.md'))
 const bodies = new Map()
 for (const file of repoDocs) {
   const source = readFileSync(file, 'utf8')

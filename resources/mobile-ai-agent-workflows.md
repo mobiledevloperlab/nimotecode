@@ -33,4 +33,4 @@ From a phone connected over SSH, ask a host-installed agent to identify the sour
 
 ## Related resources
 
-Continue with [mobile AI coding](mobile-ai-coding.md), [Claude Code on a phone](claude-code-on-phone.md), [Claude Code over SSH](../examples/claude-code-over-ssh/README.md), and [Codex over SSH](../examples/codex-over-ssh/README.md).
+Continue with [mobile AI coding](mobile-ai-coding.md) and [Claude Code on a phone](claude-code-on-phone.md).

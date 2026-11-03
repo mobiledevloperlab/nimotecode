@@ -6,7 +6,7 @@ pageClass: pricing-page
 
 # NimoteCode Pro
 
-NimoteCode is free to start: open local or SSH projects, or use Android Local Linux on a supported device; edit files, run commands and use AI Chat on the Free plan. **Early Access Pro** adds Plugin Center and custom workspace plugins, continuous AI Agent collaboration, remote search, multi-terminal, Git writes and branch workflows, LSP, debugging, and Sync / Cache. Availability and displayed pricing vary by store, account, and region.
+Free includes local and SSH workspaces, editing, the basic terminal and AI Chat. **Early Access Pro** includes GitHub integration, Android Local Linux on supported devices, Plugin Center, AI Agent, Git writes, remote search, multiple terminals, LSP, debugging and Sync / Cache. Availability and pricing depend on the store, account and region.
 
 <PricingFeatureSystem lang="en" mode="full" />
 

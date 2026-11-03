@@ -33,4 +33,4 @@ An on-call fix normally stays on the existing host: connect over SSH, reproduce 
 
 ## Related resources
 
-NimoteCode is designed around this loop: it combines a mobile editor, terminal, Git review, and local or SSH workspaces. Continue with the [remote workflow](remote-development-from-phone.md), [Android Linux guide](android-linux-development.md), [workflow comparison](android-linux-vs-remote-development.md), and [mobile development example](../examples/mobile-dev-workflow/README.md).
+NimoteCode is designed around this loop: it combines a mobile editor, terminal, Git review, and local or SSH workspaces. Continue with the [remote workflow](remote-development-from-phone.md), [Android Linux guide](android-linux-development.md), and [workflow comparison](android-linux-vs-remote-development.md).

@@ -18,6 +18,7 @@ const posts = defineCollection({
       tags: z.array(z.string()).default(["others"]),
       ogImage: image().or(z.string()).optional(),
       description: z.string(),
+      answer: z.string().optional(),
       canonicalURL: z.string().optional(),
       hideEditPost: z.boolean().optional(),
       // An empty value means "not set", so the site timezone applies.

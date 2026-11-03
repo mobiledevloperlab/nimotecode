@@ -10,16 +10,35 @@ type Props = {
   description?: string;
   ogImage?: string;
   canonicalURL?: string;
+  article?: boolean;
 };
 
 const { site } = config;
 
 const {
+  article = false,
   title = site.title,
-  description = title === site.title ? site.description : `${title} — ${site.description}`,
+  description = site.description,
   ogImage = resolveDefaultOgImagePath(config),
   canonicalURL = new URL(Astro.url.pathname.replace(/\/index\.html$/, "/").replace(/\.html$/, ""), Astro.site).href,
 } = Astro.props;
+
+const canonicalPath = new URL(canonicalURL).pathname;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const suffix = canonicalPath.slice(base.length).replace(/\/$/, "");
+const noindex = ["/search", "/404"].includes(suffix);
+// Tag slugs are translated; do not invent counterpart URLs for them.
+const paired = !noindex && !suffix.startsWith("/tags/");
+const enURL = `https://nimotecode.com/blog${suffix || "/"}`;
+const zhURL = `https://nimotecode.com/zh/blog${suffix || "/"}`;
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@type": suffix === "/about" ? "AboutPage" : article ? "WebPage" : "CollectionPage",
+  "@id": canonicalURL + "#webpage",
+  url: canonicalURL, name: title, description,
+  inLanguage: site.lang,
+  isPartOf: { "@type": "Blog", "@id": `https://nimotecode.com${base}/#blog`, name: site.title, url: `https://nimotecode.com${base}/` },
+};
 
 const socialImageURL = new URL(ogImage, Astro.site ?? Astro.url);
 const rssHref = getAssetPath("rss.xml");
@@ -37,8 +56,13 @@ const rssHref = getAssetPath("rss.xml");
     <link rel="icon" type="image/svg+xml" href={getAssetPath("favicon.svg")} />
     <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
-    {Astro.url.pathname.endsWith("/404.html") && <meta name="robots" content="noindex, follow" />}
-    {(() => { const path = new URL(canonicalURL).pathname; const base = import.meta.env.BASE_URL.replace(/\/$/, ""); const suffix = path.slice(base.length); return suffix === "" || suffix === "/" || /^\/[^/]+$/.test(suffix) && !["/about", "/archives", "/posts", "/search", "/tags", "/404"].includes(suffix) ? <><link rel="alternate" hreflang="en-US" href={`https://nimotecode.com/blog${suffix || "/"}`} /><link rel="alternate" hreflang="zh-CN" href={`https://nimotecode.com/zh/blog${suffix || "/"}`} /></> : null })()}
+    {noindex ? <meta name="robots" content="noindex, follow" /> : <meta name="robots" content="index, follow, max-image-preview:large" />}
+    {paired && <>
+      <link rel="alternate" hreflang="en-US" href={enURL} />
+      <link rel="alternate" hreflang="zh-CN" href={zhURL} />
+      <link rel="alternate" hreflang="x-default" href={enURL} />
+    </>}
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(pageSchema).replaceAll("<", "\\u003c")} />
 
 
     <!-- Primary meta -->
@@ -49,7 +73,7 @@ const rssHref = getAssetPath("rss.xml");
     <link rel="sitemap" href={getAssetPath("sitemap-index.xml")} />
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={article ? "article" : "website"} />
     <meta property="og:site_name" content={site.title} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />

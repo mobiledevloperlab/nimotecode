@@ -115,7 +115,7 @@ Orca 모바일에는 데스크톱 Companion이 필요합니다. Moshi의 diff와
 
 > [빠른 시작 →](https://nimotecode.com/ko/docs/quick-start?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_quick_start)
 
-**무료로 시작하고 Early Access에서 고급 워크플로를 사용하세요:** 무료에는 로컬, SSH, Android 로컬 Linux 작업 공간, 편집기, 기본 터미널, Git 검토, AI Chat 및 기본 Tasks가 포함됩니다. AI Agent, 원격 콘텐츠 검색, 다중 터미널, Git 쓰기, LSP 및 디버깅은 Early Access로 제공됩니다. 현재 제공 여부와 조건은 [Early Access 세부 정보](https://nimotecode.com/ko/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_plans) 및 앱에서 확인하세요.
+**무료로 시작하고 Early Access에서 고급 워크플로를 사용하세요:** 무료에는 로컬 및 SSH 작업 공간, 편집기, 기본 터미널, Git 검토, AI Chat 및 기본 Tasks가 포함됩니다. GitHub 연동, Android Local Linux, AI Agent, 원격 콘텐츠 검색, 다중 터미널, Git 쓰기, LSP 및 디버깅은 Early Access로 제공됩니다. 현재 제공 여부와 조건은 [Early Access 세부 정보](https://nimotecode.com/ko/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_plans) 및 앱에서 확인하세요.
 
 스토어 제공 여부와 출시 시점은 플랫폼과 지역에 따라 다를 수 있습니다. [다운로드 및 플랫폼 요구 사항](https://nimotecode.com/ko/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_download)을 확인하세요.
 
@@ -124,7 +124,6 @@ Orca 모바일에는 데스크톱 Companion이 필요합니다. Moshi의 diff와
 - [공식 웹사이트](https://nimotecode.com/ko/?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_website)
 - [기능](https://nimotecode.com/ko/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_features)
 - [모바일 개발 가이드](resources/README.md) — 로컬 편집, 원격 개발, Git 및 AI 워크플로(영어).
-- [워크플로 예제](examples/README.md) — SSH, Claude Code, Codex 및 Android 로컬 Linux(영어).
 - [Linux 프리셋](https://github.com/mobiledevloperlab/nimote-linux-presets) — 버전이 지정된 매니페스트와 검증 스크립트를 포함하는 선택적 환경.
 
 ## 커뮤니티

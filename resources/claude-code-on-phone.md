@@ -39,7 +39,7 @@ The phone needs SSH connectivity and the host needs provider connectivity. A CLI
 
 ## Related resources
 
-NimoteCode does not install, proxy, or authenticate Claude Code. It provides the mobile SSH workspace around it: remote Explorer, editor, terminal, and Git review. See the [Claude Code over SSH example](../examples/claude-code-over-ssh/README.md), [mobile AI coding guide](mobile-ai-coding.md), and [remote development workflow](remote-development-from-phone.md).
+NimoteCode does not install, proxy, or authenticate Claude Code. It provides the mobile SSH workspace around it: remote Explorer, editor, terminal, and Git review. See [mobile AI coding guide](mobile-ai-coding.md) and [remote development workflow](remote-development-from-phone.md).
 
 ## Try this workflow in NimoteCode
 
