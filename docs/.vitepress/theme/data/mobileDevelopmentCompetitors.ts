@@ -20,7 +20,7 @@ export interface Competitor {
   platforms: string; version: string; lastVerified: string
   features: Record<FeatureKey, FeatureCell>
 }
-export const REVIEW_DATE = '2026-10-19'
+export const REVIEW_DATE = '2026-11-05'
 const enzh = (en: string, zh: string): Localized => ({ en, zh })
 const row = (key: FeatureKey, en: string, zh: string, group: Localized): FeatureRow => ({ key, label: enzh(en, zh), group })
 const connection = enzh('Connection and files', '连接与文件')
@@ -39,7 +39,7 @@ export const featureRows: FeatureRow[] = [
   row('autoReconnect','Connection recovery','连接恢复',runtime), row('hostPersistence','Persistent host processes','主机进程持续运行',runtime),
   row('webPreview','Web / app preview','Web / App 预览',runtime), row('desktopPreview','Remote desktop preview','远程桌面预览',runtime),
   row('androidLinux','Android Local Linux','Android 本地 Linux',access), row('externalFolders','External device folders','设备外部目录',access),
-  row('desktopRequired','Desktop companion required','需要桌面 Companion',access), row('openSource','Open-source license','开源许可证',access)
+  row('desktopRequired','Companion / app server required','需要 Companion / 应用服务端',access), row('openSource','Open-source license','开源许可证',access)
 ]
 const unknown = (): FeatureCell => ({ status:'Not verified', implementation:'Not verified', note:enzh('',''), requiresPro:null, requiresHostSetup:null, platformRestriction:'Not verified', evidence:null })
 type Claim = [CellStatus, string, string, string, string, string, boolean?, boolean?, string?, ('high'|'medium')?]
@@ -64,56 +64,56 @@ export const competitors:Competitor[] = [
     builtInAgent:['Native','Built-in Agent','Pro; active-run follow-ups and interactive questions; own AI provider account','需 Pro；支持运行中追加指令与交互式问题；需自有 AI 服务账号',N+'/releases/2.0.0','Add follow-up instructions to an active Agent run and answer its interactive questions when needed.',true],
     externalCli:['CLI-only','SSH terminal','CLI installed on host','需在主机安装 CLI',N+'/docs/ai','External CLIs share the remote account login environment.',false,true,'SSH / Local Linux'],
     agentUi:['Integrated','Built-in and ACP conversation UI','Permissions and progress in workspace','工作区显示权限与进度',N+'/docs/ai','External ACP agents appear in the same conversation experience.',true,true,'SSH workspace for ACP'],
-    acpMcp:['Integrated','ACP client / MCP tool servers','ACP runtime on SSH host; configure verified MCP servers for the built-in Agent','SSH 主机可使用 ACP 运行时；可为内置 Agent 配置经验证的 MCP 服务器',N+'/docs/ai','Configure verified MCP servers for the built-in Agent; each tool call requires explicit approval.',true,true,'SSH workspace for ACP; local or SSH workspace for MCP'],
+    acpMcp:['Integrated','ACP client','Compatible ACP runtime installed and configured on the SSH host','需在 SSH 主机安装并配置兼容的 ACP 运行时',N+'/docs/ai','External agents require a compatible ACP runtime installed and configured on the SSH host.',true,true,'SSH workspace for ACP'],
     autoReconnect:['Integrated','SSH recovery','Checks transport after brief interruption','短暂中断后检查传输状态',N+'/releases/1.2.2','A genuinely dead session reconnects.'],
     webPreview:['Integrated','HTML snapshot / development server','Unsaved HTML snapshot; app URL preview','未保存 HTML 快照；应用 URL 预览',N+'/releases/1.1.7','Preview the current HTML editor contents, including unsaved changes, with workspace assets.'],
-    androidLinux:['Native','Bundled PRoot Ubuntu','Pro; Android only; no root; toolchains installed separately','需 Pro；仅 Android；免 root；工具链需另装',N+'/docs/local-linux','Local Linux provides bundled Ubuntu through PRoot; language toolchains are not bundled.',true,false,'Android'],
+    androidLinux:['Native','Bundled PRoot Ubuntu','Early Access Pro; Android 8+ ARM64 / x86_64; optional development toolkits','Early Access Pro；Android 8+ ARM64 / x86_64；可选开发工具包',N+'/docs/local-linux','Ubuntu uses PRoot without root access; language tools require separate installation.',true,false,'Android'],
     externalFolders:['Conditional','System file provider','Edit granted folders; Git, LSP, Debug, Tasks, watcher and Agent need native path','可编辑授权目录；Git、LSP、调试、Tasks、监听器及 Agent 需原生路径',N+'/releases/1.2.2','Features that need a native filesystem path are reported up front.',false,false,'Android / iOS / iPadOS'],
     desktopRequired:['Not supported','Standalone mobile app','SSH requires a reachable host; Local Linux runs on Android','SSH 需要可访问主机；Android Local Linux 在设备运行',N+'/docs/local-linux','Android Local Linux is a third workspace choice alongside local and SSH.'],
     openSource:['Not verified','Application license','','',N+'/docs/local-linux-source','The bundled Linux environment components have their own licenses; this does not establish an app-wide license.']
   }),
   product('termius','Termius',T,enzh('SSH and infrastructure access','SSH 与基础设施访问'),enzh('SSH/SFTP client with host management and AI command autocomplete; CLI tools can run on the host.','支持主机管理与 AI 命令补全的 SSH/SFTP 客户端；可运行主机 CLI。'),'iOS / Android / desktop','Version not verified',{
     nativeSsh:['Native','SSH client','SSH in free Starter','免费 Starter 含 SSH',T+'/pricing','Starter includes SSH and SFTP.'],
-    mosh:['Native','Mosh client','','',T+'/free-ssh-client-for-android','Connect with SSH, SFTP, Mosh, Telnet and Serial.',false,false,'Android page; other platforms not verified'],
+    mosh:['Native','Mosh client','','',T+'/free-ssh-client-for-android','Connect with SSH, SFTP, Mosh, Telnet and Serial.',undefined,true,'Android page; other platforms not verified'],
     sftp:['Native','SFTP browser','Free Starter','免费 Starter',T+'/pricing','Starter includes SSH and SFTP.'],
     gitCli:['CLI-only','Remote shell','Host Git installation','主机需安装 Git',T+'/','Terminal offers remote shell access.',false,true,'All listed platforms','medium'],
     externalCli:['CLI-only','Remote shell','Host agent CLI and account','主机需 Agent CLI 与账号',T+'/','SSH terminal reaches programs installed on a host.',false,true,'All listed platforms','medium'],
     desktopRequired:['Not supported','Mobile SSH client','','',T+'/free-ssh-client-for-android','Android app can connect directly to a host.']
   }),
   product('blink-shell','Blink Shell','https://blink.sh',enzh('iPhone/iPad terminal and Blink Code','iPhone/iPad 终端与 Blink Code'),enzh('SSH/Mosh terminal plus Blink Code for local/remote files and remote VS Code services.','SSH/Mosh 终端，Blink Code 可编辑本地/远程文件并接入远程 VS Code 服务。'),'iOS / iPadOS','Version not verified',{
-    nativeSsh:['Native','SSH client','','',B+'/','Blink supports SSH.'], mosh:['Native','Mosh client','Host mosh server required','主机需 Mosh 服务',B+'/','Install mosh on the destination before connecting.',false,true],
+    nativeSsh:['Native','SSH client','','',B+'/','Blink supports SSH.'], mosh:['Native','Mosh client','Host mosh server required','主机需 Mosh 服务',B+'/','Install mosh on the destination before connecting.',undefined,true],
     sftp:['Native','Blink Files / SFTP','','',B+'/advanced/code','Blink Code edits remote files using Blink Files and SFTP paths.'],
     nativeEditor:['Integrated','Blink Code','Edits local or remote files; not a desktop-native IDE','可编辑本地或远程文件；并非桌面原生 IDE',B+'/advanced/code','Work on local projects, or edit remote files as if on-device.'],
-    remoteIde:['Integrated','VS Code web / code-server','Remote service required','需远程服务',B+'/advanced/code','Connects to VSCode web, Codespaces, GitPod or code-server.',false,true],
-    lsp:['Conditional','Remote VS Code service','Depends on remote IDE extensions','取决于远程 IDE 扩展',B+'/advanced/code','Blink Code connects to an existing remote VS Code environment.',false,true],
-    gitCli:['CLI-only','Remote terminal','Host Git installation','主机需 Git',B+'/','SSH terminal connects to a remote host.',false,true,'All listed platforms','medium'],
-    gitUi:['Conditional','Blink Code / remote IDE','GitHub repository editing documented; native Git UI not established','文档有 GitHub 仓库编辑；原生 Git UI 未确认',B+'/advanced/code','Blink Code can edit GitHub repositories and commit changes.',false,true],
-    externalCli:['CLI-only','Remote terminal','Host agent CLI','主机需 Agent CLI',B+'/','SSH terminal exposes the remote shell.',false,true,'All listed platforms','medium'],
-    autoReconnect:['Conditional','Mosh roaming','Network roaming is distinct from process persistence','网络漫游不等于进程持续运行',B+'/','Mosh handles intermittent connectivity.',false,true],
+    remoteIde:['Integrated','VS Code web / code-server','Remote service required','需远程服务',B+'/advanced/code','Connects to VSCode web, Codespaces, GitPod or code-server.',undefined,true],
+    lsp:['Conditional','Remote VS Code service','Depends on remote IDE extensions','取决于远程 IDE 扩展',B+'/advanced/code','Blink Code connects to an existing remote VS Code environment.',undefined,true],
+    gitCli:['CLI-only','Remote terminal','Host Git installation','主机需 Git',B+'/','SSH terminal connects to a remote host.',undefined,true,'All listed platforms','medium'],
+    gitUi:['Conditional','Blink Code / remote IDE','GitHub repository editing documented; native Git UI not established','文档有 GitHub 仓库编辑；原生 Git UI 未确认',B+'/advanced/code','Blink Code can edit GitHub repositories and commit changes.',undefined,true],
+    externalCli:['CLI-only','Remote terminal','Host agent CLI','主机需 Agent CLI',B+'/','SSH terminal exposes the remote shell.',undefined,true,'All listed platforms','medium'],
+    autoReconnect:['Conditional','Mosh roaming','Network roaming is distinct from process persistence','网络漫游不等于进程持续运行',B+'/','Mosh handles intermittent connectivity.',undefined,true],
     desktopRequired:['Not supported','Standalone iOS client','','',B+'/','Blink runs on iPhone and iPad.'],
     openSource:['Native','GPL-3.0 source repository','','','https://github.com/blinksh/blink','Official repository declares GPL-3.0 license.']
   }),
   product('redock','Redock',R,enzh('Mobile SSH terminal for host agents','面向主机 Agent 的移动 SSH 终端'),enzh('Project-aware SSH/Mosh terminal for host-side agents, with SFTP and tmux entry points.','面向主机 Agent 的项目感知 SSH/Mosh 终端，提供 SFTP 与 tmux 入口。'),'iOS / iPadOS / Android','Version not verified',{
-    nativeSsh:['Native','SSH client','','',R+'/','Connect over SSH or Mosh.'], mosh:['Native','Mosh client','Host setup','主机配置',R+'/','Connections: SSH / Mosh.',false,true],
-    sftp:['Native','SFTP file access','','',R+'/','Files: SFTP.'], gitCli:['CLI-only','Remote terminal','Host Git','主机 Git',R+'/','Saved actions can run git status.',false,true],
-    externalCli:['CLI-only','Host CLI agent','Claude Code, Codex and OpenCode run on host','Claude Code、Codex、OpenCode 在主机运行',R+'/faq/','Coding agents run in your development environment.',false,true],
-    agentUi:['Integrated','Agent chat / notifications','Host agent process','需主机 Agent 进程',R+'/','Agent Chat View and Agent Notifications.',false,true],
+    nativeSsh:['Native','SSH client','','',R+'/','Connect over SSH or Mosh.'], mosh:['Native','Mosh client','Host setup','主机配置',R+'/','Connections: SSH / Mosh.',undefined,true],
+    sftp:['Native','SFTP file access','','',R+'/','Files: SFTP.'], gitCli:['CLI-only','Remote terminal','Host Git','主机 Git',R+'/','Saved actions can run git status.',undefined,true],
+    externalCli:['CLI-only','Host CLI agent','Claude Code, Codex and OpenCode run on host','Claude Code、Codex、OpenCode 在主机运行',R+'/faq/','Coding agents run in your development environment.',undefined,true],
+    agentUi:['Integrated','Agent chat / notifications','Host agent process','需主机 Agent 进程',R+'/','Agent Chat View and Agent Notifications.',undefined,true],
     autoReconnect:['Integrated','Connection recovery','Returns to saved sessions after interruption','中断后可返回已保存会话',R+'/','Recovery and session-history controls return users to a session after disconnect.'],
-    hostPersistence:['Conditional','tmux / herdr / psmux','Host tmux keeps jobs running after Redock disconnects','Redock 断开后，主机 tmux 仍可保持任务运行','https://redock.dev/features/tmux/','Agents and long-running jobs keep going after Redock disconnects.',false,true],
-    webPreview:['Integrated','SSH port forward','Forwards a host development port into an in-app preview','将主机开发端口转发到应用内预览','https://redock.dev/features/web-preview/','Forward a development port and open the local web service inside Redock.',false,true],
+    hostPersistence:['Conditional','tmux / herdr / psmux','Host tmux keeps jobs running after Redock disconnects','Redock 断开后，主机 tmux 仍可保持任务运行','https://redock.dev/features/tmux/','Agents and long-running jobs keep going after Redock disconnects.',undefined,true],
+    webPreview:['Integrated','SSH port forward','Forwards a host development port into an in-app preview','将主机开发端口转发到应用内预览','https://redock.dev/features/web-preview/','Forward a development port and open the local web service inside Redock.',undefined,true],
     desktopRequired:['Not supported','Mobile SSH client','A development host is required, not a desktop companion app','需开发主机，但不需专用桌面 Companion',R+'/','Connect to Mac, Linux or Windows hosts over SSH or Mosh.']
   }),
-  product('orca','Orca',O,enzh('Desktop agent environment with mobile companion','桌面 Agent 环境与移动 Companion'),enzh('Desktop-hosted worktrees and agents with mobile control, file browsing, Source Control and browser view; mobile is in beta.','桌面托管 worktree 与 Agent；移动端可控制、浏览文件、操作 Source Control 和查看网页；移动端处于 Beta。'),'Desktop + iOS / Android beta companion','Version not verified',{
+  product('orca','Orca',O,enzh('Desktop/server agent environment with mobile companion','桌面或服务端 Agent 环境与移动 Companion'),enzh('Mobile beta controls worktrees, agents, Source Control and browser views on a paired Orca desktop or remote server.','移动 Beta 可在配对的 Orca 桌面端或远程服务端上控制 worktree、Agent、Source Control 与网页视图。'),'Desktop / remote Orca server + iOS / Android beta companion','Version not verified',{
     nativeSsh:['Conditional','Desktop SSH targets','SSH target configured on desktop; mobile pairs to Orca','SSH 目标在桌面配置；移动端配对 Orca',O+'/docs/ways-to-run','Editor, diff and UI stay on the laptop when worktrees run on SSH hosts.',false,true,'Desktop'],
-    sftp:['Integrated','Mobile file tree','Via paired desktop','通过配对桌面端',O+'/docs/mobile','Browse the workspace full file tree from mobile.',false,true,'Mobile beta'],
+    sftp:['Integrated','Mobile file tree','Via paired Orca runtime','通过配对的 Orca 运行时',O+'/docs/mobile','Browse the workspace full file tree from mobile.',false,true,'Mobile beta'],
     gitUi:['Integrated','Mobile Source Control','Review, stage/unstage, commit on paired host','在配对主机上审查、暂存和提交',O+'/docs/mobile','Mobile Source Control can inspect paths, stage or unstage and commit.',false,true,'Mobile beta'],
     externalCli:['Integrated','Desktop agent orchestration','Agent runs on host','Agent 在主机运行',O+'/docs/mobile','Start an agent from the phone; its tab appears on desktop.',false,true],
     agentUi:['Integrated','Mobile companion','Status, chat and terminal scrollback','状态、对话与终端滚动记录',O+'/docs/mobile','Mobile shows agent status and recent terminal scrollback.',false,true],
-    nativeEditor:['Not supported','Mobile companion','Mobile is a remote control, not a full editor','移动端是远程控制端，并非完整编辑器',O+'/docs/mobile','The mobile app is intentionally not a full editor.',false,false,'Mobile beta'],
+    nativeEditor:['Not supported','Mobile companion','Mobile is not a full editor; desktop editing features are not mobile features','移动端并非完整编辑器；桌面编辑功能不等于移动端能力',O+'/docs/mobile','The mobile app is intentionally not a full editor.',false,false,'Mobile beta'],
     autoReconnect:['Integrated','Paired desktop recovery','Phone reconnects when the desktop app reopens','桌面端重新打开后，手机会自动重连',O+'/docs/mobile','Closing the desktop app drops the connection; reopen desktop and the phone reconnects automatically.',false,true,'Mobile beta'],
-    hostPersistence:['Conditional','Desktop/remote runtime','Host must keep running','主机需持续运行',O+'/docs/mobile','Closing desktop app drops the connection.',false,true],
+    hostPersistence:['Conditional','Desktop or remote Orca server','A desktop or headless orca serve runtime must keep running','需持续运行桌面端或无界面的 orca serve 服务',O+'/docs/ways-to-run','Remote Orca Servers own projects, worktrees, terminals and agent processes; clients provide the UI.',false,true],
     webPreview:['Integrated','Paired browser session','Web/Mobile view from desktop browser','桌面浏览器提供 Web/Mobile 视图',O+'/docs/mobile','Open a browser session in Web or Mobile view.',false,true],
-    desktopRequired:['Native','Paired desktop / server','Desktop is source of truth','桌面端是事实来源',O+'/docs/mobile','The desktop is always the source of truth.',false,true],
+    desktopRequired:['Conditional','Paired Orca desktop or server','Requires an Orca runtime, but not necessarily an open desktop app','需要 Orca 运行时，不一定需要打开桌面应用',O+'/docs/ways-to-run','A phone can pair to Orca desktop or a headless orca serve runtime.',false,true],
     openSource:['Native','MIT repository','','','https://github.com/stablyai/orca','Official repository lists MIT license.']
   }),
   product('servercc','ServerCC',S,enzh('Mobile SSH workspace for host agents','面向主机 Agent 的移动 SSH 工作区'),enzh('SSH coding-agent control with SFTP, Git diff, persistent tmux sessions, port preview and VNC.','支持 SFTP、Git Diff、tmux 持续会话、端口预览和 VNC 的 SSH Agent 控制工具。'),'iOS / iPadOS / Android','Version not verified',{
@@ -122,7 +122,7 @@ export const competitors:Competitor[] = [
     gitUi:['Native','Git diff viewer','Compare against HEAD or a branch','对比 HEAD 或分支',S+'/docs','Review agent changes GitHub-style.'],
     externalCli:['Integrated','Host CLI agent launcher','Seven documented agents; host installation','文档列出七种 Agent；需主机安装',S+'/docs/agents','ServerCC runs seven coding agents on your own server over SSH.',false,true],
     agentUi:['Integrated','Agent View / notifications','Running, idle and background state','运行、空闲与后台状态',S+'/docs/running','Notifications fire for launched, tmux and takeover sessions.',false,true],
-    acpMcp:['Integrated','Agent MCP configuration','MCP belongs to host agents; ACP not verified','MCP 属于主机 Agent；ACP 未核实',S+'/docs','Configure MCP servers for Claude Code/Codex.',false,true],
+    acpMcp:['Integrated','Host-agent MCP configuration','MCP config for five agents; Pi unsupported, OMP not wired up; ACP unverified','可配置五种主机 Agent 的 MCP；Pi 不支持、OMP 未接入；ACP 未核实',S+'/docs/agents','MCP browser supports Claude Code, Codex, Grok Build, OpenCode and Kimi Code; Pi and OMP are excluded.',false,true],
     hostPersistence:['Conditional','tmux / supervisor','Server-side process continues','服务端进程持续运行',S+'/docs','Persistent Sessions powered by tmux; supervisor-managed bg sessions.',false,true],
     autoReconnect:['Integrated','Connection pooling and heartbeat','Dropped SSH connections are automatically re-established','断开的 SSH 连接会自动重新建立',S+'/docs/servers','A 30-second heartbeat keeps connections alive; dropped connections are automatically re-established.'],
     webPreview:['Integrated','SSH port preview','Host dev server required','需主机开发服务器',S+'/docs','Open a listening server port over HTTP on iPhone.',false,true],
@@ -136,7 +136,7 @@ export const competitors:Competitor[] = [
     gitCli:['CLI-only','Host terminal','Host Git','主机 Git',M+'/docs/introduction','Git credentials and processes remain on the host.',false,true],
     gitUi:['Integrated','Host-served diff viewer','Pro and moshi-hook; read-only diff','需 Pro 和 moshi-hook；只读 Diff',M+'/docs/diff-viewer','Diff viewer is served by moshi-hook and requires Pro.',true,true,'iOS documented'],
     externalCli:['CLI-only','Host CLI agents','Agents and subscriptions stay on host','Agent 与订阅留在主机',M+'/docs/introduction','Moshi does not run agent CLI on the phone.',false,true],
-    agentUi:['Integrated','Hook inbox / approvals','Free monitoring; host hook needed','免费监控；需主机 hook',M+'/docs/introduction','moshi-hook feeds approvals, tool activity and turn completion to inbox.',false,true],
+    agentUi:['Integrated','Hook inbox / approvals','Free monitoring; first 5 inbox actions are a trial, then Pro; host hook needed','免费监控；收件箱操作前 5 次试用，之后需 Pro；需主机 hook',M+'/docs/subscription','Inbox actions have a five-action free trial; unlimited actions require Pro.',true,true],
     autoReconnect:['Integrated','SSH / Mosh recovery','Automatic tmux reattach requires Pro','自动重附着 tmux 需 Pro',M+'/docs/subscription','Pro unlocks automatic tmux and Herdr reattach.',true,true],
     hostPersistence:['Conditional','Host tmux / Herdr','Pro automatic pairing; host process','自动配对需 Pro；进程在主机',M+'/docs/subscription','Pro unlocks multiplexer pairing and automatic reattach.',true,true],
     webPreview:['Integrated','Hook gateway / SSH tunnel','Pro and moshi-hook','需 Pro 与 moshi-hook',M+'/docs/browser-preview','Browser preview requires moshi-hook and Pro.',true,true],
@@ -146,13 +146,13 @@ export const competitors:Competitor[] = [
 ]
 export const allCompetitors = competitors
 export const accessNotes:Record<string,{note:Localized;evidence:Evidence}> = {
-  nimotecode:{note:enzh('Free: local/SSH workspace, editor, terminal, Git review and AI Chat. Early Access Pro: Agent, Git writes, LSP, Debug and multi-terminal. Bring your own AI provider.','免费：本地/SSH 工作区、编辑器、终端、Git 审查与 AI Chat。Early Access Pro：Agent、Git 写入、LSP、调试与多终端。AI 服务账号自备。'),evidence:{url:N+'/pro',excerpt:'Free workspace and Early Access Pro workflow boundaries.',date:REVIEW_DATE,confidence:'high'}},
-  termius:{note:enzh('Starter includes SSH/SFTP; Pro adds cloud vault, cross-device sync, session logs and snippets.','Starter 含 SSH/SFTP；Pro 增加云保险库、跨设备同步、会话日志和代码片段。'),evidence:{url:T+'/pricing',excerpt:'Starter includes SSH and SFTP; Pro adds personal cloud vault and sync.',date:REVIEW_DATE,confidence:'high'}},
+  nimotecode:{note:enzh('Free: local/SSH workspace, editor, basic terminal, Git review and AI Chat. Early Access Pro: Agent, plugins, GitHub, Local Linux, Git writes, LSP and debugging. Bring your own AI provider.','免费：本地/SSH 工作区、编辑器、基础终端、Git 审查与 AI Chat。Early Access Pro：Agent、插件、GitHub、Local Linux、Git 写入、LSP 与调试。AI 服务账号自备。'),evidence:{url:N+'/pro',excerpt:'Free workspace and Early Access Pro workflow boundaries.',date:REVIEW_DATE,confidence:'high'}},
+  termius:{note:enzh('Starter includes SSH/SFTP, local vault, AI autocomplete and port forwarding. Pro adds cloud vault, cross-device sync, logs and snippets.','Starter 含 SSH/SFTP、本地保险库、AI 补全与端口转发；Pro 增加云保险库、跨设备同步、日志和代码片段。'),evidence:{url:T+'/pricing',excerpt:'Starter includes SSH and SFTP; Pro adds personal cloud vault and sync.',date:REVIEW_DATE,confidence:'high'}},
   'blink-shell':{note:enzh('Blink+ is paid with a trial; limited-seat Community Edition is available separately. Exact feature entitlement by tier was not verified.','Blink+ 为付费产品并提供试用；另有限席位 Community Edition。各层具体功能权限未核实。'),evidence:{url:B+'/faq',excerpt:'Free trial and limited-seat Community Edition; prior freemium phased out.',date:REVIEW_DATE,confidence:'high'}},
-  redock:{note:enzh('Free tier covers everyday use; Pro adds advanced features including Apple iCloud sync and agent-usage tracking. Exact entitlement of other rows is unverified.','免费层覆盖日常使用；Pro 增加包括 Apple iCloud 同步与 Agent 用量跟踪在内的高级功能。其他行的权限未核实。'),evidence:{url:R+'/faq/',excerpt:'Free version covers most everyday workflows; Pro unlocks advanced features.',date:REVIEW_DATE,confidence:'high'}},
-  orca:{note:enzh('Desktop is described as free and open source; mobile companion is beta. Host and agent-provider accounts remain separate requirements.','桌面端官方称免费开源；移动 Companion 处于 Beta。主机和 Agent 服务账号仍需自备。'),evidence:{url:O+'/download',excerpt:'Free and open source for macOS, Windows and Linux; mobile companion downloads.',date:REVIEW_DATE,confidence:'high'}},
+  redock:{note:enzh('Free tier covers everyday use; Pro adds advanced features including Apple iCloud sync. Exact entitlement of other rows is unverified.','免费层覆盖日常使用；Pro 增加包括 Apple iCloud 同步在内的高级功能。其他行的权限未核实。'),evidence:{url:R+'/faq/',excerpt:'Free version covers most everyday workflows; Pro unlocks advanced features.',date:REVIEW_DATE,confidence:'high'}},
+  orca:{note:enzh('Desktop is free and open source; mobile companion is beta (iOS App Store / Android APK). A desktop or server runtime and agent-provider access are separate requirements.','桌面端免费开源；移动 Companion 为 Beta（iOS App Store / Android APK）。需另备桌面或服务端运行时及 Agent 服务权限。'),evidence:{url:O+'/download',excerpt:'Free and open source for macOS, Windows and Linux; mobile companion downloads.',date:REVIEW_DATE,confidence:'high'}},
   servercc:{note:enzh('Free: one server, five workspaces, SSH, all seven agents, files, MCP and persistent tmux. Pro: more servers/workspaces, Background Run, worktrees, takeover and unlimited VNC.','免费：一台服务器、五个工作区、SSH、七种 Agent、文件、MCP 和 tmux 持续会话。Pro：更多主机/工作区、后台运行、worktree、接管与无限 VNC。'),evidence:{url:S+'/',excerpt:'FAQ lists free limits and Pro unlocks.',date:REVIEW_DATE,confidence:'high'}},
-  moshi:{note:enzh('Free: SSH terminal, monitoring, push and inbox. Pro: Mosh, multiplexer pairing/reattach, diff viewer and browser preview.','免费：SSH 终端、监控、推送和收件箱。Pro：Mosh、复用器配对/重附着、Diff 查看器和浏览器预览。'),evidence:{url:M+'/docs/subscription',excerpt:'Free SSH and inbox; Pro unlocks Mosh, multiplexer pairing, diff and preview.',date:REVIEW_DATE,confidence:'high'}}
+  moshi:{note:enzh('Free: SSH, monitoring, push and two saved connections; inbox actions have a five-action trial. Pro: unlimited inbox actions, Mosh, multiplexer pairing/reattach, diff and browser preview.','免费：SSH、监控、推送和两个已保存连接；收件箱操作可试用 5 次。Pro：无限收件箱操作、Mosh、复用器配对/重附着、Diff 和网页预览。'),evidence:{url:M+'/docs/subscription',excerpt:'Free SSH and two saved hosts; inbox actions limited to five trial actions. Pro includes unlimited actions, Mosh, pairing, diff and preview.',date:REVIEW_DATE,confidence:'high'}}
 }
 export const statusSymbols:Record<CellStatus,string> = {Native:'✓',Integrated:'◎','CLI-only':'⌘',Conditional:'◐','Not verified':'?','Not supported':'—'}
 export const statusLabels:Record<Locale,Record<CellStatus,string>> = {

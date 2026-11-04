@@ -596,36 +596,6 @@ function faqSchema(context: TransformContext): object | null {
         answer: 'Choose an SSH IDE when the task includes locating files, editing code, running verification commands and reviewing a diff. A terminal-only client may be enough for command-only work.'
       }
     ],
-    '/blog/best-ssh-clients': [
-      {
-        question: 'What is the best SSH client for Android?',
-        answer: 'There is no single answer. For command-line work, ConnectBot and Termux are free, open-source options. For a development workflow that includes files, editing, terminal and Git, NimoteCode is an Android SSH client built for that broader job.'
-      },
-      {
-        question: 'What is the best mobile SSH client?',
-        answer: 'The best mobile SSH client is the one that matches your task. Termius is a strong terminal-first choice across iOS, Android and desktop, and Blink Shell is a leading terminal for iOS and iPadOS. NimoteCode is designed for developers who need to edit code and review a diff, not just run commands.'
-      },
-      {
-        question: 'Is SSH available on Android?',
-        answer: 'Yes. Android clients such as ConnectBot, Termux (with the OpenSSH package) and NimoteCode all provide SSH access from a phone or tablet.'
-      },
-      {
-        question: 'What is the difference between an SSH client and an SSH terminal?',
-        answer: 'An SSH client is the software that opens and manages the secure connection. An SSH terminal is the interface where you type commands into that connection. Many clients are terminal-first; a developer-focused client adds an editor, file browser and Git around the terminal.'
-      },
-      {
-        question: 'Can I edit remote files over SSH?',
-        answer: 'Yes. Some clients transfer files over SFTP, and others like NimoteCode open a remote file explorer and editor directly over the SSH connection, so you can edit in place without copying the project to your device.'
-      },
-      {
-        question: 'Can I use SSH for remote development?',
-        answer: 'Yes. Remote development over SSH means the project and its tooling stay on your host while you edit and run commands from another device. This is the model covered in the NimoteCode remote coding guide.'
-      },
-      {
-        question: 'Is NimoteCode an SSH client or a mobile IDE?',
-        answer: 'NimoteCode is an Android SSH client that extends into a mobile development workspace. It opens an SSH connection, then keeps the remote Explorer, code editor, terminal, Git review and AI assistance in the same project context, which is what makes it a mobile IDE rather than a terminal alone.'
-      }
-    ],
     '/android-ssh-client': [
       {
         question: 'Is NimoteCode a good SSH client for Android?',
@@ -1031,7 +1001,9 @@ export default defineConfig({
           { text: 'Product', link: '/features' },
           { text: 'Workflows', link: '/use-cases/' },
           { text: 'Docs', link: '/docs/quick-start' },
-          { text: 'Resources', items: [{ text: 'Resources', link: '/resources/' }, { text: 'Compare', link: '/compare/mobile-ai-development-tools' }, { text: 'Updates', link: '/releases/' }] },
+          { text: 'Resources', link: '/resources/' },
+          { text: 'Compare', link: '/compare/mobile-ai-development-tools' },
+          { text: 'Updates', link: '/releases/' },
           { text: 'Download', link: '/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ],
         sidebar: {
@@ -1041,7 +1013,7 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: 'All Guides', link: '/blog/' },
-                { text: 'The Best Mobile IDEs in 2026', link: '/blog/best-ssh-clients' },
+                { text: 'Mobile SSH & AI Tools Compared', link: '/blog/best-ssh-clients' },
                 { text: 'How to Use Android as a Remote IDE with Tailscale and NimoteCode: Free SSH Access to Mac and Linux', link: '/blog/tailscale-ssh-android-mac-linux' }
               ]
             },
@@ -1146,7 +1118,9 @@ export default defineConfig({
           { text: '产品', link: '/zh/features' },
           { text: '工作流', link: '/zh/use-cases/' },
           { text: '文档', link: '/zh/docs/quick-start' },
-          { text: '资源', items: [{ text: '资源', link: '/zh/resources/' }, { text: '对比', link: '/zh/compare/mobile-ai-development-tools' }, { text: '更新日志', link: '/zh/releases/' }] },
+          { text: '资源', link: '/zh/resources/' },
+          { text: '对比', link: '/zh/compare/mobile-ai-development-tools' },
+          { text: '更新日志', link: '/zh/releases/' },
           { text: '下载', link: '/zh/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ],
         sidebar: {
@@ -1156,7 +1130,7 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: '全部指南', link: '/zh/blog/' },
-                { text: '2026 年最好的移动 IDE：应该看什么', link: '/zh/blog/best-ssh-clients' },
+                { text: '手机 SSH 与 AI 开发工具怎么选', link: '/zh/blog/best-ssh-clients' },
                 { text: '如何使用 Android 作为远程 IDE：借助 Tailscale 和 NimoteCode 免费 SSH 访问 Mac 与 Linux', link: '/zh/blog/tailscale-ssh-android-mac-linux' }
               ]
             },
@@ -1257,7 +1231,10 @@ export default defineConfig({
           { text: '製品', link: '/ja/features' },
           { text: 'ワークフロー', link: '/ja/use-cases/' },
           { text: 'ドキュメント', link: '/ja/docs/quick-start' },
-          { text: 'リソース', items: [{ text: 'リソース', link: '/ja/resources/' }, { text: '比較', link: '/ja/compare/mobile-ai-development-tools' }, { text: 'ブログ (English)', link: '/blog/' }, { text: 'アップデート', link: '/ja/releases/' }] },
+          { text: 'リソース', link: '/ja/resources/' },
+          { text: '比較', link: '/ja/compare/mobile-ai-development-tools' },
+          { text: 'ブログ (English)', link: '/blog/' },
+          { text: 'アップデート', link: '/ja/releases/' },
           { text: 'ダウンロード', link: '/ja/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ], sidebar: {
           ...docsSidebar('/ja', {
@@ -1277,7 +1254,10 @@ export default defineConfig({
           { text: '제품', link: '/ko/features' },
           { text: '워크플로', link: '/ko/use-cases/' },
           { text: '문서', link: '/ko/docs/quick-start' },
-          { text: '리소스', items: [{ text: '리소스', link: '/ko/resources/' }, { text: '비교', link: '/ko/compare/mobile-ai-development-tools' }, { text: '블로그 (English)', link: '/blog/' }, { text: '업데이트', link: '/ko/releases/' }] },
+          { text: '리소스', link: '/ko/resources/' },
+          { text: '비교', link: '/ko/compare/mobile-ai-development-tools' },
+          { text: '블로그 (English)', link: '/blog/' },
+          { text: '업데이트', link: '/ko/releases/' },
           { text: '다운로드', link: '/ko/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ], sidebar: {
           ...docsSidebar('/ko', {
@@ -1297,7 +1277,9 @@ export default defineConfig({
           { text: 'Producto', link: '/es/features' },
           { text: 'Flujos', link: '/es/use-cases/' },
           { text: 'Documentación', link: '/es/docs/quick-start' },
-          { text: 'Recursos', items: [{ text: 'Recursos', link: '/es/resources/' }, { text: 'Comparar', link: '/es/compare/mobile-ai-development-tools' }, { text: 'Novedades', link: '/es/releases/' }] },
+          { text: 'Recursos', link: '/es/resources/' },
+          { text: 'Comparar', link: '/es/compare/mobile-ai-development-tools' },
+          { text: 'Novedades', link: '/es/releases/' },
           { text: 'Descargar', link: '/es/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ], sidebar: {
           ...docsSidebar('/es', {

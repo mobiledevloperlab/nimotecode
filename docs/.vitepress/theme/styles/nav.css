@@ -650,7 +650,7 @@
 /* The full marketing menu no longer fits at the tablet boundary. Keep the
    existing navigation structure and screen-menu interaction, but expose its
    compact control before labels can be clipped. */
-@media (max-width: 1100px) {
+@media (max-width: 1279px) {
   .VPNavBar .VPNavBarMenu,
   .VPNavBar .VPNavBarAppearance,
   .VPNavBar .VPNavBarSocialLinks,
@@ -679,7 +679,7 @@
 
 /* Keep the primary action visible alongside the compact menu. */
 .nimote-nav-download { display: none; }
-@media (max-width: 1100px) {
+@media (max-width: 1279px) {
   .nimote-nav-download {
     display: inline-flex;
     align-items: center;
@@ -697,7 +697,7 @@
 
 /* Preserve the primary destinations as direct links; secondary social icons
    yield space before the full navigation becomes compact. */
-@media (min-width: 1101px) and (max-width: 1439px) {
+@media (min-width: 1280px) and (max-width: 1439px) {
   .VPNavBar .VPNavBarSocialLinks { display: none; }
 }
 
@@ -714,7 +714,7 @@
   background: var(--nimote-bg-subtle);
   color: var(--nimote-text-primary);
 }
-@media (max-width: 1100px) {
+@media (max-width: 1279px) {
   .VPNavBar .VPNavBarSearch { padding-left: 0; justify-content: flex-end; }
   .VPNavBar .content-body { align-items: center; }
   .VPNavBar .VPNavBarHamburger { flex: 0 0 44px; height: var(--vp-nav-height); }
@@ -732,4 +732,12 @@
     top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) !important;
     max-height: calc(100dvh - var(--vp-nav-height) - var(--vp-layout-top-height, 0px) - 48px);
   }
+}
+
+/* Flat localized menus take priority over the full search-field label. */
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .VPNavBar .VPNavBarSocialLinks { display: none; }
+  .VPNavBarSearch .DocSearch-Button-Placeholder,
+  .VPNavBarSearch .DocSearch-Button-Keys { display: none; }
+  .VPNavBarSearch .DocSearch-Button { width: 40px; padding: 0; justify-content: center; }
 }

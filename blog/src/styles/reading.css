@@ -479,3 +479,37 @@ ul:has(> .post-card) {
     letter-spacing: 0.1em;
   }
 }
+
+/* Comparison matrices keep product columns readable on a narrow screen. */
+.app-prose .tool-comparison .table-wrapper {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  isolation: isolate;
+}
+.app-prose .tool-comparison table {
+  width: 100%;
+  min-width: 720px;
+  margin: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+.app-prose .tool-comparison-matrix table { min-width: 1180px; }
+.app-prose .tool-comparison :is(th, td) { padding: 14px 16px; vertical-align: top; }
+.app-prose .tool-comparison th { background: var(--muted); }
+.app-prose .tool-comparison :is(th, td):first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  min-width: 132px;
+  max-width: 180px;
+  background: var(--background);
+  border-right: 1px solid var(--border);
+  font-weight: 600;
+}
+.app-prose .tool-comparison th:first-child { background: var(--muted); }
+.app-prose .tool-comparison-matrix :is(th, td):not(:first-child) { min-width: 145px; }
+.app-prose .tool-comparison tbody tr:nth-child(even) td:not(:first-child) {
+  background: color-mix(in srgb, var(--muted) 35%, var(--background));
+}

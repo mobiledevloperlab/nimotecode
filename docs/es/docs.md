@@ -5,7 +5,16 @@ description: "Guías de espacios de trabajo, edición, terminal, Git, IA, plugin
 
 # Documentación de NimoteCode
 
-Empiece por [Inicio rápido](/es/docs/quick-start) para abrir un espacio, editar un archivo, ejecutar comandos y usar AI Agent. Consulte las referencias siguientes para los ajustes y procedimientos de cada función.
+Empieza con [Inicio rápido](/es/docs/quick-start) para abrir un espacio, editar un archivo y ejecutar un comando. Consulta las guías siguientes para configurar funciones y resolver problemas.
+
+## Elige tu primera tarea
+
+- [Editar sin configurar IA](/es/docs/quick-start)
+- [Conectar a mi equipo de desarrollo](/es/docs/ssh)
+- [Configurar Linux en Android](/es/docs/local-linux)
+- [Configurar mi proveedor y modelo de IA](/es/docs/configuration)
+
+## Todas las guías de funciones
 
 | Tema | Contenido |
 | --- | --- |

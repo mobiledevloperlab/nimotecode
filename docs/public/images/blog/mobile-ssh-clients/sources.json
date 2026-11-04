@@ -1,0 +1,35 @@
+[
+  {
+    "file": "blink-code.webp",
+    "sourcePage": "https://docs.blink.sh/advanced/code",
+    "sourceAsset": "https://docs.blink.sh/_next/static/media/code-general.f166e889.png",
+    "owner": "Blink Shell",
+    "retrieved": "2026-11-05",
+    "usage": "Official product screenshot reproduced for editorial comparison; copyright remains with its owner. Not covered by a site-wide open-source license.",
+    "processing": "Resized without cropping and converted to WebP.",
+    "width": 1200,
+    "height": 904
+  },
+  {
+    "file": "redock-terminal.webp",
+    "sourcePage": "https://redock.dev/",
+    "sourceAsset": "https://pub-67182ce616084f099079541a6f5e921d.r2.dev/workflow/opencode_recompressed.webp",
+    "owner": "Redock",
+    "retrieved": "2026-11-05",
+    "usage": "Official product screenshot reproduced for editorial comparison; copyright remains with its owner. Not covered by a site-wide open-source license.",
+    "processing": "Resized without cropping and converted to WebP.",
+    "width": 941,
+    "height": 2048
+  },
+  {
+    "file": "orca-mobile.webp",
+    "sourcePage": "https://www.onorca.dev/docs/mobile",
+    "sourceAsset": "https://www.onorca.dev/whats-new/posters/orca-mobile.jpg",
+    "owner": "Orca / Stably",
+    "retrieved": "2026-11-05",
+    "usage": "Official product screenshot reproduced for editorial comparison; copyright remains with its owner. Not covered by a site-wide open-source license.",
+    "processing": "Resized without cropping and converted to WebP.",
+    "width": 540,
+    "height": 1170
+  }
+]

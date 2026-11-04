@@ -5,7 +5,16 @@ description: User documentation for NimoteCode workspaces, editing, terminal, Gi
 
 # NimoteCode documentation
 
-Start with [Quick start](/docs/quick-start) to open a workspace and edit a file. Use the references below for feature setup and procedures.
+Start with [Quick start](/docs/quick-start) to open a workspace, edit a file and run your first command. Use the guides below for setup, procedures and troubleshooting.
+
+## Choose your first task
+
+- [Try a first edit without configuring AI](/docs/quick-start)
+- [Connect to my development machine](/docs/ssh)
+- [Set up Linux on my Android device](/docs/local-linux)
+- [Configure my AI provider and model](/docs/configuration)
+
+## All feature guides
 
 | Topic | Contents |
 | --- | --- |

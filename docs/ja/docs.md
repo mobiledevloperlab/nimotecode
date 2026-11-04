@@ -5,7 +5,16 @@ description: "ワークスペース、編集、ターミナル、Git、AI、プ�
 
 # NimoteCode ドキュメント
 
-[クイックスタート](/ja/docs/quick-start)からワークスペースを開き、ファイル編集、コマンド実行、AI Agent を試せます。機能ごとの設定と操作は以下を参照してください。
+[クイックスタート](/ja/docs/quick-start)でワークスペースを開き、ファイル編集とコマンド実行を始めましょう。設定、操作、トラブルシューティングは以下のガイドを参照してください。
+
+## 最初の作業を選ぶ
+
+- [AI の設定なしで編集を試す](/ja/docs/quick-start)
+- [開発ホストに接続する](/ja/docs/ssh)
+- [Android に Linux を設定する](/ja/docs/local-linux)
+- [AI Provider とモデルを設定する](/ja/docs/configuration)
+
+## 機能別の操作ガイド
 
 | 項目 | 内容 |
 | --- | --- |
