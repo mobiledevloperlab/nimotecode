@@ -58,3 +58,7 @@ El cliente Android admite flujos en segundo plano y ejecuciones programadas en d
 Describa el flujo y el calendario en la conversación. Revise el plan, los datos de entrada y la programación antes de desplegarlo. Abra **Background jobs & schedules** para consultar la salida, actualizar, pausar, reanudar o cancelar un trabajo. Puede continuar tras desconectar la aplicación mientras el destino siga activo; si este se reinicia, puede ser necesario reconectar para recuperarlo.
 
 La navegación entre paneles, las operaciones LSP y las tareas nativas configuradas siguen siendo operaciones en primer plano. Use credenciales del destino para trabajos sin supervisión, ya que los campos secretos del formulario no se conservan para la ejecución en segundo plano.
+
+## Capacidades públicas y seguridad
+
+Un plugin puede combinar paneles, formularios, datos del espacio, acciones confirmadas de archivos/HTTP/comandos, Agent Tools, Markdown Skills, flujos y referencias MCP; no carga extensiones ejecutables arbitrarias en el dispositivo. Actualizar, desactivar o desinstalar no sustituye silenciosamente un trabajo existente. Si se interrumpe durante un efecto externo, revise el resultado y elija explícitamente reintentar u omitir.

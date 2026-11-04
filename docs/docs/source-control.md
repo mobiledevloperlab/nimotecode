@@ -1,16 +1,16 @@
 ---
-title: Source Control | NimoteCode
-description: "Configuration, procedures, and interface reference for source control."
+title: Source Control and GitHub | NimoteCode
+description: Use Git status, diffs, branches, history, AI review tools, and GitHub repositories, pull requests, reviews, checks, workflows, and artifacts from NimoteCode.
 ---
 
-# Source Control
+# Source Control and GitHub
 
 <div class="doc-section">
 <div class="doc-section__copy">
 
 ## Inspect repository status
 
-Open Source Control in a Git workspace. **Changes** lists modified, deleted, and untracked files; **Staged Changes** lists files prepared for a commit. Refresh after operations performed outside the app.
+Open Source Control in a Git workspace. **Changes** lists modified, deleted, and untracked files; **Staged Changes** lists files prepared for a commit. Refresh after operations performed outside the app. Git actions use the repository and account available in the active workspace, so confirm the repository root and current branch before a write operation.
 
 </div>
 
@@ -22,15 +22,17 @@ Open Source Control in a Git workspace. **Changes** lists modified, deleted, and
 
 ## Use GitHub from your workspace
 
-GitHub workflows are available on Android, iPhone, and iPad starting with **NimoteCode 2.2.0**. Open the **GitHub** page to sign in with browser device authorization or a personal access token, then choose a repository you can access. Select **This device** to clone into local storage, or **SSH host** to clone on the selected remote machine. The host runs project commands and Git operations; NimoteCode keeps the repository browser and workspace together on your mobile device.
+Open the **GitHub** page to sign in with browser device authorization or a personal access token, then choose a repository you can access. Clone to **This device**, **Local Linux**, or an **SSH host**. The selected target holds the checkout and runs its Git commands; NimoteCode keeps the repository browser and workspace together on your mobile device.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="github_entry.png" caption="The GitHub repository picker, with local-device and SSH-host clone targets." />
+  <DocScreenshot file="github_entry.png" caption="The GitHub repository picker with available clone targets." />
 </div>
 
 ## Open a repository and collaborate
 
-Choose a repository to inspect its default branch, branches, issues, pull requests, reviews, and checks before opening the code. You can filter issues and pull requests, create an issue, or start an Agent task with issue context. When a change is ready, create or switch branches, push with the repository permissions granted to your account, and open a pull request. Review the diff and run the project checks before publishing; GitHub status is collaboration context, not a replacement for repository review.
+Choose a repository to inspect its default branch, branches, issues, pull requests, reviews, checks, workflow runs, and available artifacts before opening the code. You can filter, create, edit, close, or reopen issues; inspect and check out a pull request; comment on a review; request reviewers; and, when the repository permits it, update or merge a pull request. Workflow operations—including starting a run, rerunning jobs, cancelling a run, and downloading artifacts—are governed by the GitHub permissions of the signed-in account.
+
+When a change is ready, create or switch branches, push with the repository permissions granted to your account, and open a pull request. Review the diff and run the project checks before publishing. GitHub status and patches are collaboration context, not a replacement for reviewing the repository; large or binary changes may require opening GitHub to inspect the complete content.
 
 <div class="doc-screenshots">
   <DocScreenshot file="github.png" caption="A repository view with Issues, Pull requests, and Branches available from the GitHub page." />
@@ -38,7 +40,7 @@ Choose a repository to inspect its default branch, branches, issues, pull reques
 
 ## Choose a safe clone target
 
-Before cloning, confirm the target workspace, destination folder, and branch. For a private repository on an SSH host, configure that host's GitHub SSH key and known-hosts entry; the app does not send an app-held token to the host. Use a shallow clone only when the project's workflow does not need full history. A clone opens the selected workspace and does not configure or install project dependencies automatically.
+Before cloning, confirm the target workspace, destination folder, and branch. For a private repository on an SSH host, configure that host's GitHub SSH key and known-hosts entry; the app does not send an app-held token to the host. Local Linux can use the signed-in GitHub account for HTTPS cloning. Use a shallow clone only when the project's workflow does not need full history. A clone opens the selected workspace and does not configure or install project dependencies, submodules, or Git LFS content automatically.
 
 <div class="doc-screenshots">
   <DocScreenshot file="github_conf.png" caption="Clone options for an SSH workspace, including destination, branch, shallow clone, and SSH-key authentication." />
@@ -58,7 +60,7 @@ Open a changed file to compare its old and new contents. Open a commit in **Comm
 
 ## Switch branches
 
-Select the branch name in the header to search for a branch, create one, or check out an existing branch. Check uncommitted work before switching. Git write operations require the applicable Pro access and repository permissions.
+Select the branch name in the header to search for a branch, create one, or check out an existing branch. Check uncommitted work before switching. Git write availability and remote permissions are shown in the app for the current account and workspace.
 
 </div>
 

@@ -14,6 +14,10 @@ Seleccione un modelo configurado en el panel de IA e introduzca una pregunta. Pa
 
 </div>
 
+## MCP y agentes ACP externos
+
+Un agente externo se ejecuta solo cuando configura un runtime ACP compatible en el entorno objetivo y lo habilita deliberadamente. NimoteCode no aporta sus credenciales, red ni política de herramientas. MCP admite stdio —un comando en local, SSH o Local Linux elegido— o Streamable HTTP. Añada solo servidores de confianza y revise cada inicio y llamada de herramienta.
+
 <div class="doc-screenshots">
   <DocScreenshot file="ai-chat-welcome.png" caption="Panel de IA antes de abrir un espacio de trabajo." />
 </div>
