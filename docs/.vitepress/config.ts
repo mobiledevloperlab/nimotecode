@@ -79,11 +79,11 @@ type DocsSidebarLabels = {
 function organizeDocsGroups(groups: DefaultTheme.SidebarItem[], prefix: string): DefaultTheme.SidebarItem[] {
   const locale = prefix.slice(1) || 'en'
   const names: Record<string, string[]> = {
-    en: ['Getting started', 'Everyday development', 'AI and extensions', 'Environment', 'Reference'],
-    zh: ['入门', '日常开发', 'AI 与扩展', '环境配置', '参考资料'],
-    ja: ['はじめに', '日常の開発', 'AI と拡張機能', '環境設定', 'リファレンス'],
-    ko: ['시작하기', '일상 개발', 'AI 및 확장', '환경 설정', '참고 자료'],
-    es: ['Primeros pasos', 'Desarrollo diario', 'IA y extensiones', 'Entorno', 'Referencia']
+    en: ['Getting started', 'Workspaces', 'Core development', 'AI and automation', 'Code intelligence and delivery', 'Android Local Linux', 'Settings and help'],
+    zh: ['开始使用', '工作区', '核心开发', 'AI 与自动化', '代码智能与交付', 'Android 本地 Linux', '设置与帮助'],
+    ja: ['はじめに', 'ワークスペース', 'コア開発', 'AI と自動化', 'コードインテリジェンスとデリバリー', 'Android Local Linux', '設定とヘルプ'],
+    ko: ['시작하기', '작업 공간', '핵심 개발', 'AI 및 자동화', '코드 인텔리전스 및 배포', 'Android Local Linux', '설정 및 도움말'],
+    es: ['Primeros pasos', 'Espacios de trabajo', 'Desarrollo principal', 'IA y automatización', 'Inteligencia de código y entrega', 'Android Local Linux', 'Ajustes y ayuda']
   }
   const items = groups.flatMap(group => group.items ?? [])
   const labels: Record<string, string> = locale === 'zh' ? {
@@ -101,12 +101,13 @@ function organizeDocsGroups(groups: DefaultTheme.SidebarItem[], prefix: string):
     })
   })
   return [
-    group(names[locale][0], ['quick-start', 'ssh']),
-    group(names[locale][1], ['editor', 'terminal', 'search', 'source-control', 'tasks']),
-    group(names[locale][2], ['ai', 'configuration', 'plugins']),
-    group(names[locale][3], ['lsp', 'debug', 'sync-cache']),
-    { ...groups[2], collapsed: true },
-    group(names[locale][4], ['settings', 'account-subscription', 'security', 'notifications', 'local-linux-source', 'faq'], true)
+    group(names[locale][0], ['quick-start']),
+    group(names[locale][1], ['ssh']),
+    group(names[locale][2], ['editor', 'terminal', 'search', 'source-control', 'tasks']),
+    group(names[locale][3], ['ai', 'configuration', 'plugins']),
+    group(names[locale][4], ['lsp', 'debug', 'sync-cache']),
+    { ...groups[2], text: names[locale][5], collapsed: false },
+    group(names[locale][6], ['settings', 'account-subscription', 'security', 'notifications', 'local-linux-source', 'faq'], true)
   ]
 }
 

@@ -5,7 +5,7 @@ description: "Configuration, procedures, and interface reference for android loc
 
 # Android Local Linux
 
-> GitHub integration and Android Local Linux require Early Access Pro. Local Linux is Android-only; language tools require workspace setup.
+> Android Local Linux is Android-only. Its availability, and access to GitHub workflows, are shown in the app for the current account. Language tools require workspace setup.
 
 ## Requirements
 

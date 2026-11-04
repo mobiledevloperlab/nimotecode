@@ -14,6 +14,10 @@ AI 패널에서 설정된 모델을 선택하고 질문을 입력합니다. 프�
 
 </div>
 
+## MCP 및 외부 ACP Agent
+
+외부 Agent는 호환 ACP 런타임을 대상 환경에 구성하고 의도적으로 활성화한 경우에만 실행됩니다. 자격 증명, 네트워크, 도구 정책은 NimoteCode가 제공하지 않습니다. MCP는 stdio(선택한 로컬/SSH/Local Linux 명령) 또는 Streamable HTTP를 사용합니다. 신뢰하는 서버만 추가하고 시작 및 각 도구 호출을 검토하세요.
+
 <div class="doc-screenshots">
   <DocScreenshot file="ai-chat-welcome.png" caption="작업 공간을 열기 전의 AI 패널." />
 </div>

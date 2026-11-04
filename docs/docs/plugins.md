@@ -1,60 +1,70 @@
 ---
 title: Custom plugins | NimoteCode
-description: Create custom workspace panels with AI, preview and install plugins, and manage permissions and execution requirements.
+description: "Create, test, install, and manage NimoteCode custom plugins: workspace panels, Agent tools, workflows, MCP references, event handlers, and Android background jobs."
 ---
 
 # Custom plugins
 
-Custom plugins combine workspace data, forms, and actions into a reusable panel. Use them to bring together information from Git, LSP, Tasks, Terminal, and Agent, or to open the native panels you use most often.
+Custom plugins turn a repeated project workflow into a small, reusable tool inside NimoteCode. A plugin can combine workspace information, forms, shortcuts to native panels, and approved actions. It extends the existing editor, terminal, Git, Tasks, language-service, and Agent workflows; it does not create a separate unrestricted runtime on your device.
 
-<div class="doc-section">
-<div class="doc-section__copy">
+## What a plugin can include
 
-## Create your first plugin
+One plugin can contribute one or more of the following, depending on its design and the active workspace:
+
+| Component | Purpose |
+| --- | --- |
+| **Panel and forms** | Show project information and collect the input needed for an action. |
+| **Workspace data** | Use available workspace, Git, LSP, Tasks, terminal, or Agent context. |
+| **Native shortcuts** | Open the built-in editor, AI, Terminal, Tasks, or Source Control panel. |
+| **Confirmed actions** | Read or write a workspace file, send an HTTP request, run an existing task, execute a terminal command, or run a Python, JavaScript, or Shell script. |
+| **Agent tool or Markdown skill** | Make an eligible plugin capability available to the built-in Agent or provide on-demand guidance. |
+| **Workflow or event handler** | Compose reads and actions with values passed between steps, conditions, loops, and explicit retries while the app is active. |
+| **MCP reference** | Reference a configured MCP integration when the workflow needs it. |
+
+The available data always belongs to the active workspace. Switching workspaces does not reuse context from the previous one. File-opening shortcuts need a stable native file path, so they are unavailable in document-provider workspaces.
+
+## Create and test a plugin
 
 Configure a model in [AI configuration](/docs/configuration), then open the workspace the plugin will use.
 
-1. Open **AI custom plugins** and select **Create plugin**.
-2. Describe the information and actions you need. For example: “Show the current branch, changed files, and LSP error count, with a shortcut to Source Control.”
-3. Refine the result in the same conversation. Specify the fields, labels, and actions that need to change.
-4. Preview the panel, then save and install it when it matches your requirements. Review the requested permissions before approving installation.
-
-</div>
+1. Open **AI custom plugins** and choose **Create plugin**.
+2. Describe the outcome and the inputs it needs. For example: “Show the current branch, changed files, and LSP error count, with a shortcut to Source Control.”
+3. Continue the same conversation to refine labels, fields, data, and actions.
+4. Preview the result. Preview validates the panel and does not run file writes, network requests, commands, or scripts.
+5. Select **Test plugin** when available, review the resolved inputs and permissions, then save and install only the version you intend to use.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="ai-plugin-builder.png" caption="AI custom plugins before a plugin is created. Choose Create plugin to start describing a panel." />
+  <DocScreenshot file="ai-plugin-builder.png" caption="AI custom plugins before a plugin is created. Choose Create plugin to describe the panel or workflow you need." />
 </div>
 
-</div>
+## Understand permissions and execution
 
-## Choose data and actions
+Plugins use registered capabilities rather than loading executable app extensions. Before installation, update, or an action, inspect what the plugin requests.
 
-| Need | Plugin capability |
-| --- | --- |
-| Inspect the current project | Display workspace, Git, LSP, Tasks, terminal, or Agent data. |
-| Open a tool | Provide shortcuts to native Git, Tasks, Terminal, AI, and editor panels. |
-| Collect input | Add form fields and use their values in supported actions. |
-| Run a workflow | Combine reads and actions, pass results between steps, and define conditions or retries. |
-| Run a script | Execute Python, JavaScript, or Shell on the selected SSH or Local Linux target. |
+- File reads and writes are limited to the open workspace. A write shows the target path and content for confirmation.
+- HTTP requests, terminal commands, existing task runs, file opens, and scripts require confirmation when invoked.
+- Python, JavaScript, and Shell scripts run only on the connected SSH or Android Local Linux target, using the installed `python3`, `node`, or shell interpreter and that account’s permissions.
+- Plugins do not download language runtimes, install dependencies, or grant access that the selected target account does not already have.
+- Bound arguments supplied by a plugin cannot be silently replaced by an Agent call.
 
-Data follows the active workspace. Switching workspaces changes the context available to the plugin. File shortcuts require a stable native file path and are unavailable in document-provider workspaces.
+Treat a plugin command or script like any other command from an untrusted source: read it, confirm its target and input, and inspect its result. Do not store secrets in generated defaults or share them in a plugin description.
 
-## Preview, permissions, and execution
+## Install, update, disable, and recover
 
-Preview checks the panel without executing operations that change files, send requests, or run commands. Before installation or an update, review the permissions the plugin requests. File writes, network requests, terminal commands, task runs, and file opens require confirmation when invoked.
+Open Plugin Center to inspect a plugin’s details, capabilities, and permissions; **Open plugin** opens its panel. **Discover** starts a new AI-assisted creation flow, while **My Plugins** lists locally managed plugins.
 
-Script actions use interpreters already installed on the selected target and run with that account’s permissions. Install the required Python, Node.js, or shell environment there before using those actions. A plugin does not install a language server or debug adapter; configure those through [LSP](/docs/lsp) and [Debugging](/docs/debug).
+Plugin definitions and form configuration are retained separately so you can revise a plugin without rebuilding the whole panel. Preview a revision before saving it, review any changed permissions, and enable or disable the plugin as appropriate. You can restore a recent version. If one enabled plugin depends on another, disable dependents before disabling or removing the dependency.
 
-## Edit and manage a plugin
+The built-in Agent can discover eligible plugin capabilities through the app’s MCP integration and records tool results in its timeline. External ACP agents keep their own behavior and may not support the same integration.
 
-Continue the plugin conversation to change an existing panel. Preview the revision before saving it, and review any permission changes when updating. The plugin definition and form configuration are stored separately. You can enable or disable a plugin, or restore a recent version.
+## Background jobs and schedules (Android)
 
-For built-in panel visibility and editor typography, use [Settings](/docs/settings#panel-and-editor-preferences).
+Android supports durable background plugin workflows for SSH and Android Local Linux targets. iPhone and iPad support foreground plugin actions but do not provide these background workflows or schedules.
 
-## Background jobs and schedules
+To use a background job, the target must remain available and provide Python 3.9 or later with SQLite. Review the exact plan, inputs, retries, and schedule before deployment. Jobs may run once or on a non-overlapping interval; they do not replay every missed interval after a disconnection.
 
-The Android client supports background workflows and schedules on SSH or Local Linux targets. The target needs Python 3.9 or later with SQLite. iOS supports foreground plugin actions but does not provide background workflows or schedules.
+Open **Background jobs & schedules** to inspect output, refresh state, pause, resume, or cancel a job. A job can continue after the app disconnects if its target stays running. A target reboot or worker interruption can require reconnecting and recovery. If an interruption occurs during an external side effect—such as a write, deployment, or network call—inspect the result and explicitly retry or skip it; the system does not claim exactly-once delivery.
 
-Describe the workflow and schedule in the plugin conversation. Review the execution plan, inputs, and schedule before deployment. Open **Background jobs & schedules** to inspect output and refresh, pause, resume, or cancel a job. A background job can continue after the app disconnects while its target remains running; a target reboot may require reconnecting to recover it.
+Background jobs retain the approved definition. Updating, disabling, or uninstalling a plugin does not silently replace a job already deployed; stop an old job before deploying a replacement. Secret form fields are not retained for unattended work, so use appropriately secured target-side credentials instead.
 
-Panel navigation, LSP operations, and native configured tasks remain foreground operations. Use target-side credentials for unattended jobs because secret form fields are not retained for background execution.
+Panel navigation, LSP operations, and native configured Tasks remain foreground actions. See [Security](/docs/security) before giving a plugin access to a production workspace.

@@ -451,7 +451,7 @@
 .VPSidebar .group + .group {
   /* Whitespace keeps sections distinct without turning the sidebar into a
      stack of ruled panels. */
-  margin-top: 20px;
+  margin-top: 24px;
   padding-top: 0 !important;
   border-top: 0;
 }
@@ -461,19 +461,21 @@
 }
 
 .VPSidebar .VPSidebarItem.level-0 > .item {
-  min-height: 32px;
+  min-height: 34px;
   padding: 0 var(--sidebar-item-inset, 8px);
-  border-radius: var(--nimote-radius-sm);
+  border-radius: 6px;
+  background: linear-gradient(90deg, rgba(var(--nimote-accent-rgb), 0.08), transparent 72%);
 }
 
 .VPSidebar .VPSidebarItem.level-0 > .item > .text,
 .VPSidebar .VPSidebarItem.level-0 > .item > .link > .text {
   padding: 0;
-  color: var(--nimote-text-muted);
-  font-size: 0.8125rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  line-height: 32px;
+  color: var(--nimote-text-secondary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.055em;
+  line-height: 34px;
+  text-transform: uppercase;
   text-transform: none;
 }
 
@@ -483,19 +485,32 @@
 }
 
 .VPSidebar .VPSidebarItem.level-0 > .items {
-  margin-top: 8px;
+  margin-top: 7px;
 }
 
 .VPSidebarItem.level-1 > .item > .link {
   display: flex;
   align-items: center;
-  min-height: 34px;
-  padding: 6px var(--sidebar-item-inset, 8px) 6px calc(var(--sidebar-item-inset, 8px) + 8px);
+  min-height: 36px;
+  position: relative;
+  padding: 7px var(--sidebar-item-inset, 8px) 7px calc(var(--sidebar-item-inset, 8px) + 12px);
   border: 0;
-  border-left: 2px solid transparent;
-  border-radius: var(--nimote-radius-sm);
+  border-radius: 6px;
   color: var(--nimote-text-secondary);
   transition: color 0.18s var(--nimote-ease), background-color 0.18s var(--nimote-ease), border-color 0.18s var(--nimote-ease), transform 0.18s var(--nimote-ease);
+}
+
+.VPSidebarItem.level-1 > .item > .link::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 0;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: var(--nimote-accent);
+  opacity: 0;
+  transition: opacity 0.18s var(--nimote-ease);
 }
 
 .VPSidebarItem.level-1 > .item > .link > .text {
@@ -507,19 +522,34 @@
 }
 
 .VPSidebarItem.level-1 > .item > .link:hover {
-  background: rgba(var(--nimote-accent-rgb), 0.05);
+  background: rgba(var(--nimote-accent-rgb), 0.055);
   color: var(--nimote-text-primary);
 }
 
 .VPSidebarItem.level-1.is-active > .item > .link {
-  border-left-color: var(--nimote-accent);
-  background: rgba(var(--nimote-accent-rgb), 0.08);
-  color: var(--nimote-link);
+  background: rgba(var(--nimote-accent-rgb), 0.09) !important;
+  box-shadow: none;
+  color: var(--nimote-link) !important;
 }
 
 .VPSidebarItem.level-1.is-active > .item > .link > .text {
   color: inherit;
   font-weight: 600;
+}
+
+.VPSidebarItem.level-1.is-active > .item > .link::before {
+  opacity: 1;
+}
+
+/* Nested sidebar entries use the same state treatment. This keeps an active
+   Local Linux subpage as clear as a top-level document without changing the
+   row's geometry or making the navigation jump on route changes. */
+.VPSidebarItem.level-2.is-active > .item > .link,
+.VPSidebarItem.level-3.is-active > .item > .link,
+.VPSidebarItem.level-4.is-active > .item > .link,
+.VPSidebarItem.level-5.is-active > .item > .link {
+  background: rgba(var(--nimote-accent-rgb), 0.09) !important;
+  color: var(--nimote-link) !important;
 }
 
 .VPSidebarItem.level-0 .caret {

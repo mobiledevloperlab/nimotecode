@@ -15,4 +15,4 @@ If a previous purchase is not recognized, confirm the platform-store account and
 
 ## Feature access
 
-Pro features include AI Agent, plugin workflows, Git write actions, remote search, multiple terminals, LSP, Debug, and Sync / Cache. Model-provider usage is billed separately by your provider. See [Free and Pro](/pro) for the feature comparison.
+Some capabilities may require Pro access, depending on platform, app version, release channel, store region, and account entitlement. The app shows the access state for your account at the relevant operation. Model-provider usage is billed separately by your provider. See [Free and Pro](/pro) for the current comparison.
