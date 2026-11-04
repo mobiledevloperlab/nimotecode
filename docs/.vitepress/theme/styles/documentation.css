@@ -111,3 +111,40 @@
   .nimote-docs .vp-doc .doc-screenshots { gap: 28px; }
   .nimote-docs .vp-doc :is(th, td) { padding: 10px 12px; }
 }
+
+/* Task-led entry points shared by documentation and the resources library. */
+.vp-doc .guide-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 24px 0;
+}
+.vp-doc a.guide-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--nimote-border);
+  border-radius: 12px;
+  background: var(--nimote-bg-subtle);
+  text-decoration: none;
+  transition: border-color 0.18s ease;
+}
+.vp-doc a.guide-card:hover { border-color: var(--vp-c-brand-1); }
+.vp-doc a.guide-card:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 4px;
+}
+.vp-doc .guide-card strong { font-size: 1.0625rem; line-height: 1.5; }
+.vp-doc .guide-card span { color: var(--nimote-text-secondary); font-size: 0.9375rem; line-height: 1.7; font-weight: 400; }
+.vp-doc .guide-card .guide-card-arrow { margin-top: auto; color: var(--vp-c-brand-1); }
+.vp-doc .guide-actions { padding: 16px 20px; border-left: 3px solid var(--vp-c-brand-1); background: var(--nimote-bg-subtle); }
+.vp-doc .guide-actions p { margin: 0; }
+@media (max-width: 639px) {
+  .vp-doc .guide-card-grid { grid-template-columns: minmax(0, 1fr); }
+  .vp-doc a.guide-card { padding: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .vp-doc a.guide-card { transition: none; }
+}

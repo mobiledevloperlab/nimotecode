@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { accessNotes, competitors, featureDetail, featureRows, statusLabels, statusSymbols, type FeatureCell, type Locale } from '../data/mobileDevelopmentCompetitors'
+import { accessNotes, REVIEW_DATE, competitors, featureDetail, featureRows, statusLabels, statusSymbols, type FeatureCell, type Locale } from '../data/mobileDevelopmentCompetitors'
 const props = withDefaults(defineProps<{lang?:Locale}>(),{lang:'en'})
 const zh = computed(()=>props.lang==='zh')
 const groups = [...new Set(featureRows.map(row=>row.group.en))]
@@ -32,7 +32,7 @@ const detail = (cell:FeatureCell)=>featureDetail(cell,props.lang)
     </div>
     <h2>{{ zh ? '按工作流分类的功能对比' : 'Feature comparison by workflow' }}</h2>
     <p>{{ zh ? '每一行将同一能力并排对照。状态、限制和官方依据均来自共享数据；问号表示未核实，不代表不支持。' : 'Each row compares the same capability side by side. Status, limitations and evidence come from shared data; a question mark means unverified, not unsupported.' }}</p>
-    <p class="cmp-methodology-reviewed">{{ zh ? '资料核实日期' : 'Evidence reviewed' }}: 2026-10-19 · {{ zh ? '版本或资料范围见产品表头' : 'Version or documentation scope appears in each product heading' }}</p>
+    <p class="cmp-methodology-reviewed">{{ zh ? '资料核实日期' : 'Evidence reviewed' }}: {{ REVIEW_DATE }} · {{ zh ? '版本或资料范围见产品表头' : 'Version or documentation scope appears in each product heading' }}</p>
     <div class="cmp-legend" role="group" :aria-label="zh?'状态说明':'Status legend'"><ul class="cmp-legend-list"><li v-for="(label,status) in statusLabels[lang]" :key="status"><span class="cmp-legend-symbol" aria-hidden="true">{{ statusSymbols[status] }}</span>{{ label }}</li></ul></div>
     <nav class="cmp-jump" :aria-label="zh?'功能分类导航':'Feature categories'">
       <a v-for="(group,index) in groups" :key="group" :href="`#cmp-group-${index}`">{{ featureRows.find(row=>row.group.en===group)?.group[lang] }}</a>
@@ -54,7 +54,7 @@ const detail = (cell:FeatureCell)=>featureDetail(cell,props.lang)
       </div>
     </section>
     <h2>{{ zh?'全部产品的逐项依据':'Full evidence for every product' }}</h2>
-    <p>{{ zh?'选择产品展开其 23 项能力记录。展开内容已包含在页面的静态 HTML 中。':'Open a product to inspect all 23 feature records. These records are included in the static HTML.' }}</p>
+    <p>{{ zh?'展开产品，查看全部能力、适用条件与官方依据。':'Open a product to inspect its capabilities, requirements and official evidence.' }}</p>
     <div class="cmp-profiles">
       <details v-for="product in alternatives" :key="product.id" class="cmp-profile">
         <summary><strong>{{ product.name }}</strong><span>{{ product.positioning[lang] }}</span></summary>

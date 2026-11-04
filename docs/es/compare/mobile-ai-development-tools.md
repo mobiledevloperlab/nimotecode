@@ -1,20 +1,21 @@
 ---
-title: "Mobile Development Tools Compared: NimoteCode, Termius, Blink, Redock, Orca, ServerCC, Moshi"
-description: "Evidence-linked comparison of seven mobile developer tools: SSH, editors, Git, coding agents, sessions, previews, platform limits and Pro requirements. Reviewed October 19, 2026."
+title: "Comparativa de siete herramientas móviles de SSH e IA"
+description: "Compara SSH, edición, Git, agentes, entornos y acceso Pro mediante fuentes oficiales. Revisión: 5 de noviembre de 2026."
 pageClass: compare-page
 ---
 
-# IDEs móviles, clientes SSH y herramientas de codificación de IA comparados
+# Comparativa de siete herramientas móviles de SSH e IA
 
+<p class="article-meta">2026-11-05 · NimoteCode Team</p>
 
-<p class="article-meta">Evidence reviewed: October 19, 2026 · NimoteCode Team</p>
+Termius y Blink Shell se centran en acceso remoto; Redock, ServerCC y Moshi ayudan a manejar agentes en el host; Orca conecta el móvil a su entorno de escritorio o servidor remoto. NimoteCode reúne edición, revisión de Git, SSH y Local Linux en dispositivos Android compatibles.
 
-Estos productos sirven para diferentes flujos de trabajo móviles. Termius y Blink Shell enfatizan el acceso remoto; Redock, ServerCC y Moshi ayudan a dirigir a los agentes hacia un host; Orca extiende un entorno de agente de escritorio a dispositivos móviles. NimoteCode combina un editor móvil, un explorador de proyectos, revisión de Git, un espacio de trabajo SSH y, en dispositivos Android compatibles, Linux local. La siguiente comparación describe cómo funciona cada característica y enlaza con evidencia específica del producto.
-La versión documentada de 
+La versión de NimoteCode considerada es **2.2.0**. [2.0.0](/es/releases/2.0.0) añadió Nimote Editor, plugins, instrucciones durante la ejecución de Agent y operaciones de ramas. [2.2.0](/es/releases/2.2.0) incorpora flujos de GitHub y herramientas experimentales de desarrollo para Local Linux.
 
-NimoteCode es **1.2.4**. [Versión 1.2.0](/releases/1.2.0) agregó Mónaco en tabletas y computadoras de escritorio; [1.2.1](/releases/1.2.1) refinó el diseño del paisaje; [1.2.2](/releases/1.2.2) agregó carpetas otorgadas por el sistema, páginas de conflictos y diferencias de Git horizontales y estado de Git reactivo. [1.2.3](/releases/1.2.3) agregó el estado de las tareas observadas fuera de la aplicación y compatibilidad opcional con SSH en primer plano de Android; [1.2.4](/releases/1.2.4) recuperación mejorada del espacio de trabajo reciente. Una notificación o una conexión SSH restaurada no garantiza que un proceso de host todavía se esté ejecutando.
+Esta actualización refleja la prueba de cinco acciones de bandeja de entrada en Moshi, las opciones de escritorio o Orca Server y la configuración MCP de cinco agentes de host en ServerCC.
 
+Las carpetas autorizadas por el sistema permiten explorar y editar; Git, LSP, Debug, Tasks, vigilancia de archivos y Agent necesitan una ruta nativa. Consulta [Gratis y Pro](/es/pro). Recuperar SSH no garantiza que un proceso siga ejecutándose en el host.
 
-Las carpetas externas otorgadas por el sistema son un tipo de espacio de trabajo más limitado: admiten la exploración y edición de archivos, mientras que Git, LSP, Debug, Tasks, el observador de archivos y los flujos de trabajo del Agente necesitan una ruta de sistema de archivos nativa. Consulte [Gratis y Pro](/pro) para conocer los límites de acceso de NimoteCode.
+La tabla detallada está en inglés. Consulta la [guía de selección por tareas (en inglés)](/blog/best-ssh-clients).
 
 <MobileDevToolComparison lang="en" />

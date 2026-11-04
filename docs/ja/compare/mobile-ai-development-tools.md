@@ -1,20 +1,21 @@
 ---
-title: "Mobile Development Tools Compared: NimoteCode, Termius, Blink, Redock, Orca, ServerCC, Moshi"
-description: "Evidence-linked comparison of seven mobile developer tools: SSH, editors, Git, coding agents, sessions, previews, platform limits and Pro requirements. Reviewed October 19, 2026."
+title: "モバイル SSH・AI 開発ツール 7 製品の比較"
+description: "SSH、編集、Git、AI Agent、実行環境と料金条件を公式資料から比較。2026 年 11 月 5 日確認。"
 pageClass: compare-page
 ---
 
-# モバイルIDE、SSHクライアント、AIコーディングツールの比較
+# モバイル SSH・AI 開発ツール 7 製品の比較
 
+<p class="article-meta">2026-11-05 · NimoteCode Team</p>
 
-<p class="article-meta">証拠のレビュー日: 2026 年 10 月 19 日 · NimoteCode Team</p>
+Termius と Blink Shell はリモートアクセス、Redock・ServerCC・Moshi はホスト上の Agent 操作、Orca はデスクトップまたはリモートサーバー環境のモバイル利用に重点があります。NimoteCode は編集、Git レビュー、SSH と、対応 Android 端末での Local Linux を一つのワークスペースにまとめます。
 
-これらの製品は、さまざまなモバイル ワークフローに対応します。 Termius と Blink Shell はリモート アクセスを重視しています。 Redock、ServerCC、および Moshi は、ホスト上のエージェントの操作に役立ちます。 Orca はデスクトップ エージェント環境をモバイルに拡張します。 NimoteCode は、モバイル エディター、プロジェクト エクスプローラー、Git レビュー、SSH ワークスペース、およびサポートされている Android デバイス上のローカル Linux を組み合わせています。以下の比較では、各機能がどのように機能するかについて説明し、製品固有の証拠とリンクしています。
+NimoteCode の対象バージョンは **2.2.0** です。[2.0.0](/ja/releases/2.0.0) で Nimote Editor、プラグイン、実行中の Agent への追加指示、Git ブランチ操作を追加。[2.2.0](/ja/releases/2.2.0) は GitHub ワークフローと実験的な Local Linux 開発ツールキットを追加しています。
 
+今回の更新では、Moshi の受信箱操作が無料で試せるのは最初の 5 回であること、Orca がデスクトップまたは Orca Server を利用できること、ServerCC の MCP 設定が 5 種のホスト Agent に対応することを反映しました。
 
-NimoteCode の文書化されたリリースは **1.2.4** です。 [バージョン 1.2.0](/releases/1.2.0) タブレットとデスクトップにモナコを追加しました。 [1.2.1](/releases/1.2.1) ランドスケープ レイアウトを改良しました。 [1.2.2](/releases/1.2.2) は、システム許可フォルダー、ランドスケープ Git 差分および競合ページ、およびリアクティブ Git ステータスを追加しました。 [1.2.3](/releases/1.2.3) は、アプリの外部で監視されるタスク ステータスと、オプションの Android SSH フォアグラウンド サポートを追加しました。 [1.2.4](/releases/1.2.4) は、最近のワークスペースのリカバリを改善しました。通知または SSH 接続が復元されても、ホスト プロセスがまだ実行中であることは保証されません。
+システムで許可した外部フォルダーは閲覧・編集が可能ですが、Git、LSP、Debug、Tasks、ファイル監視と Agent にはネイティブパスが必要です。[無料と Pro](/ja/pro) を確認してください。SSH 再接続はホストプロセスの存続を保証しません。
 
-
-システムによって許可された外部フォルダーは、より狭いワークスペース タイプです。これらはファイルの参照と編集をサポートしますが、Git、LSP、デバッグ、タスク、ファイル ウォッチャー、エージェント ワークフローにはネイティブ ファイルシステム パスが必要です。 NimoteCode のアクセス境界については、[無料およびプロ](/pro) を参照してください。
+詳細表は英語です。用途別の解説は[選び方ガイド（英語）](/blog/best-ssh-clients)をご覧ください。
 
 <MobileDevToolComparison lang="en" />

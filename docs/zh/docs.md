@@ -5,7 +5,16 @@ description: NimoteCode 工作区、编辑器、终端、Git、AI、插件及诊
 
 # NimoteCode 文档
 
-首次使用请阅读[快速开始](/zh/docs/quick-start)。下表按功能列出配置与操作文档。
+首次使用请从[快速开始](/zh/docs/quick-start)进入，完成打开工作区、编辑文件和运行命令。下方按任务和功能整理配置、操作与排查指南。
+
+## 从你要完成的任务开始
+
+- [不配置 AI，先完成一次编辑](/zh/docs/quick-start)
+- [连接我已有的开发主机](/zh/docs/ssh)
+- [在 Android 上安装 Linux 环境](/zh/docs/local-linux)
+- [接入自己的 AI Provider 与模型](/zh/docs/configuration)
+
+## 完整功能与操作指南
 
 | 主题 | 内容 |
 | --- | --- |

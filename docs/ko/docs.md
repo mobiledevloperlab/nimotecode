@@ -5,7 +5,16 @@ description: "작업 공간, 편집, 터미널, Git, AI, 플러그인 및 진단
 
 # NimoteCode 문서
 
-[빠른 시작](/ko/docs/quick-start)에서 작업 공간을 열고 파일 편집, 명령 실행 및 AI Agent를 사용해 보세요. 기능별 설정과 사용 절차는 아래를 참고하세요.
+[빠른 시작](/ko/docs/quick-start)에서 작업 공간 열기, 파일 편집, 명령 실행을 시작하세요. 설정, 사용 방법, 문제 해결은 아래 가이드를 참고하세요.
+
+## 첫 작업 선택
+
+- [AI 설정 없이 편집 시작](/ko/docs/quick-start)
+- [개발 호스트에 연결](/ko/docs/ssh)
+- [Android에 Linux 설정](/ko/docs/local-linux)
+- [AI Provider와 모델 설정](/ko/docs/configuration)
+
+## 전체 기능 가이드
 
 | 주제 | 내용 |
 | --- | --- |
