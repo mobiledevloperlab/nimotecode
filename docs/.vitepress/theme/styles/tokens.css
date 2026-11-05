@@ -51,6 +51,7 @@
   --nimote-home-gutter: var(--nimote-page-gutter);
   --nimote-section-space: 64px;
   --nimote-section-space-compact: 40px;
+  --nimote-page-end-space: clamp(64px, 7vw, 96px);
 
   /* Radii — one deliberate 4-tier system.
      Small (8px) for buttons/inputs/nav items, Card (12px) for surfaces,

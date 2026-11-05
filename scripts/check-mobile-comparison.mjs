@@ -58,9 +58,8 @@ for (const locale of ['','zh/']) {
   const path = `docs/.vitepress/dist/${locale}index.html`
   assert.ok(existsSync(path), `${path}: build first`)
   const html = readFileSync(path,'utf8')
-  assert.ok(html.includes('home-tool-comparison-row') && !html.includes('home-tool-comparison-scroll'), `${path}: homepage comparison layout is stale`)
-  assert.ok(html.includes('NimoteCode') && html.includes('Termius') && (html.includes('Evidence ↗') || html.includes('官方依据 ↗')), `${path}: homepage comparison content missing`)
-  assert.ok(html.includes(REVIEW_DATE), `${path}: evidence date missing`)
+  assert.ok(html.includes(`href="/${locale}compare/mobile-ai-development-tools"`), `${path}: full comparison link missing`)
+  assert.ok(!html.includes('home-tool-comparison-row'), `${path}: homepage should link to the detailed comparison`)
 }
 console.log(`Comparison data passed: ${competitors.length} products, ${featureRows.length} features, ${urls.size} unique evidence URLs; English and Chinese SSR verified.`)
 

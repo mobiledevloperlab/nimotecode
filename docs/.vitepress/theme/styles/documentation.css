@@ -2,10 +2,13 @@
    Keep a single reading order at every width: heading, instructions, media. */
 .nimote-docs .vp-doc {
   --doc-section-space: 48px;
-  padding-bottom: 48px;
+  padding-bottom: 0;
   overflow-wrap: break-word;
   font-size: 1rem;
 }
+
+/* The article pager owns the end spacing; avoid stacking prose padding. */
+.nimote-docs .VPDocFooter { margin-top: 48px; }
 
 .nimote-docs .vp-doc h1 {
   margin: 0 0 24px;

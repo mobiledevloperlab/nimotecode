@@ -28,30 +28,20 @@
   position: relative;
   z-index: var(--vp-z-index-footer);
   margin-top: auto;
-  /* The footer continues the page surface; hierarchy comes from the rule,
-     spacing, and type rather than a separate, card-like background. */
-  background: var(--nimote-bg);
+  border-top: 1px solid var(--nimote-border);
+  background: var(--nimote-bg-elevated);
 }
 
 .nimote-site-footer-content {
-  /* 100% (not 100vw) so the symmetric gutter tracks the visible width even
-     when a vertical scrollbar is present — the inner block keeps centering. */
-  margin: 0 auto;
-  padding: 0 max(var(--nimote-page-gutter), calc((100% - var(--nimote-container)) / 2 + var(--nimote-page-gutter))) var(--nimote-space-6);
-}
-
-.nimote-site-footer-content::before {
-  content: '';
-  display: block;
-  height: 1px;
-  margin-bottom: var(--nimote-space-12);
-  background: var(--nimote-border);
+  width: min(100%, var(--nimote-container));
+  margin-inline: auto;
+  padding: clamp(40px, 4vw, 64px) var(--nimote-page-gutter) 32px;
 }
 
 .nimote-site-footer-inner {
   display: grid;
-  grid-template-columns: minmax(260px, 1.8fr) repeat(3, minmax(136px, 1fr));
-  gap: clamp(28px, 4vw, 64px);
+  grid-template-columns: minmax(240px, 1.4fr) repeat(3, minmax(0, 1fr));
+  gap: clamp(24px, 3vw, 48px);
   max-width: var(--nimote-container);
   margin: 0 auto;
 }
@@ -83,7 +73,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 7px;
+  gap: 10px;
 }
 
 .nimote-site-footer h2 {
@@ -98,6 +88,8 @@
 .nimote-site-footer nav a {
   color: var(--nimote-text-secondary);
   font-size: var(--nimote-fs-sm);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
   text-decoration: none;
 }
 
@@ -154,11 +146,7 @@
 
 @media (max-width: 760px) {
   .nimote-site-footer-content {
-    padding: 0 var(--nimote-page-gutter) var(--nimote-space-6);
-  }
-
-  .nimote-site-footer-content::before {
-    margin-bottom: var(--nimote-space-10);
+    padding-block: 40px 28px;
   }
 
   .nimote-site-footer-inner {
@@ -171,6 +159,13 @@
   }
 
   .nimote-site-footer nav:last-child {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 22px;
+  }
+
+  .nimote-site-footer nav:last-child :is(h2, .nimote-footer-follow, .nimote-footer-social-links) {
     grid-column: 1 / -1;
   }
 
@@ -191,4 +186,49 @@
     align-items: center;
     min-height: 44px;
   }
+}
+
+/* Documentation and guides end in the reading column, after the pager.
+   Keep utility links accessible without inserting a marketing footer below
+   the sidebar. Privacy controls retain their existing dialog behavior. */
+.nimote-doc-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--nimote-border);
+  color: var(--nimote-text-muted);
+  font-size: var(--nimote-fs-xs);
+  line-height: 1.6;
+}
+.nimote-doc-footer nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+.nimote-doc-footer nav a { color: var(--nimote-text-secondary); }
+.nimote-doc-footer nav a:hover { color: var(--nimote-link); }
+.nimote-doc-footer nav a:focus-visible { outline: 2px solid var(--nimote-link); outline-offset: 4px; }
+.nimote-doc-footer-copyright { margin-left: auto; }
+.nimote-doc-footer .website-privacy {
+  flex-basis: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.nimote-doc-footer .privacy-launcher { padding: 8px 0; }
+@media (pointer: coarse) {
+  .nimote-doc-footer nav a, .nimote-doc-footer .privacy-launcher {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}
+@media (max-width: 600px) {
+  .nimote-doc-footer { gap: 8px 16px; margin-top: 32px; }
+  .nimote-doc-footer-copyright { margin-left: 0; }
 }

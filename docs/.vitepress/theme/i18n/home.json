@@ -3,7 +3,7 @@
     "badge": "A mobile IDE for Android & iOS",
     "title": "Your projects,",
     "accent": "on your phone and tablet.",
-    "intro": "NimoteCode is a mobile development workspace for Android, iPhone and iPad. Open local code or connect to your development machine over SSH. Edit files, run project commands, review Git changes and work with an optional AI Agent in one app.",
+    "intro": "Open local projects or connect over SSH. Edit code, review Git changes and work with optional AI — from your phone or tablet.",
     "android": "Get for Android",
     "ios": "Get for iOS",
     "watch": "Watch the demo",
@@ -33,8 +33,8 @@
       ],
       [
         "Work with AI",
-        "Give the Agent a task. Stay involved.",
-        "Let Nimote Agent read the project, plan changes and run checks. Approve the plan in Confirm mode, follow execution steps, add instructions while it runs and review the changes. The built-in Agent requires Early Access and your own model API key; provider fees apply.",
+        "Built-in Agent. Your choice of tools.",
+        "Use the built-in Nimote Agent, customized from the Codex core, or connect compatible external agents through ACP. Nimote Agent is available through Early Access and uses BYOK (Bring Your Own Key): add your own model API key; provider fees apply and model credits are not included. External ACP agents require their own runtime setup and authentication.",
         "Explore Agents and model setup"
       ]
     ],
@@ -140,45 +140,23 @@
     "startNote": "Free to start. No AI setup needed to open your first project.",
     "startLink": "Set up your first workspace",
     "byok": "AI models use BYOK (Bring Your Own Key). Add your own provider API key; model usage is billed separately by your provider. No model credits are included.",
-    "faqTitle": "Before you start",
     "planLink": "See free features and Early Access",
-    "faqs": [
-      [
-        "What is NimoteCode?",
-        "NimoteCode is a mobile IDE and project development workspace for Android, iPhone and iPad. It combines local file editing, SSH development, Git and GitHub workflows, and optional AI. Supported Android devices can also run root-free Linux."
-      ],
-      [
-        "Can I start using NimoteCode for free?",
-        "Yes. The free tier includes local and SSH workspaces, the editor, a basic terminal and Git status, diffs and history. Open a demo or local project without configuring AI. Advanced workflows are available through Early Access; see the plan details for current terms."
-      ],
-      [
-        "How do AI models work? Is NimoteCode BYOK?",
-        "Yes. AI Chat and the built-in Agent use BYOK (Bring Your Own Key): configure your own AI provider and API key. The provider bills model usage separately; NimoteCode does not include AI models or token credits. The built-in Agent is an Early Access feature."
-      ],
-      [
-        "Can I run Claude Code or Codex from my phone?",
-        "You can use a CLI installed and authenticated on your own SSH host through the terminal. Claude Code and Codex are not bundled with NimoteCode and require their own service access."
-      ],
-      [
-        "Can I run Linux on Android, iPhone or iPad?",
-        "Local Linux runs Ubuntu without root on supported Android 8+ ARM64 and x86_64 devices. It is not available on iPhone or iPad. All three platforms can connect to a configured, reachable SSH host."
-      ],
-      [
-        "Can I run code after opening a local project?",
-        "A local folder supports browsing and editing files; it does not supply a Linux shell or compiler. Project commands require a configured SSH host or supported Android Local Linux environment with the tools and dependencies your project needs."
-      ]
-    ],
     "byokLabel": "Project commands require SSH or supported Android Local Linux.",
     "earlyAccessDeadline": "Early Access ends December 30",
     "communityBlogTitle": "Blog",
     "communityBlogCopy": "Notes on mobile development, remote work, and AI.",
-    "fullComparisonLink": "See full comparison"
+    "fullComparisonLink": "See full comparison",
+    "reviewsTitle": "What people are saying",
+    "reviewsLink": "Read reviews on Google Play",
+    "reviewsNote": "Full reviews in their original language. Feedback reflects the version reviewed.",
+    "reviewsUpdated": "Checked",
+    "reviewOriginal": "Original review"
   },
   "zh": {
     "badge": "Android 与 iOS 移动 IDE",
     "title": "在手机和平板上，",
     "accent": "继续开发你的项目。",
-    "intro": "NimoteCode 是 Android、iPhone 和 iPad 上的移动开发工作区。打开本地代码，或通过 SSH 连接开发主机，在同一个应用中编辑文件、运行项目命令、审查 Git 改动，也可以让 AI Agent 参与任务。",
+    "intro": "打开本地项目，或通过 SSH 连接开发电脑。在手机和平板上编辑代码、查看 Git 变更，也可选择 AI 协作。",
     "android": "下载 Android 版",
     "ios": "下载 iOS 版",
     "watch": "观看产品演示",
@@ -208,8 +186,8 @@
       ],
       [
         "AI 协作",
-        "让 Agent 处理任务，也能随时参与。",
-        "让 Nimote Agent 读取项目、规划修改并执行检查。在 Confirm 模式先审批计划，执行中查看步骤、补充要求，完成后审查改动。内置 Agent 通过 Early Access 开放，需自备模型 API Key，模型费用另计。",
+        "内置 Agent，也能接入你的常用工具。",
+        "使用基于 Codex 核心定制的内置 Nimote Agent，或通过 ACP 接入兼容的外部 Agent。Nimote Agent 通过 Early Access 开放，采用 BYOK（自备 API Key）方式：配置自己的模型 API Key，模型调用费用由服务商另行收取，不包含模型额度。外部 ACP Agent 需单独配置运行环境与认证。",
         "了解 Agent 与模型配置"
       ]
     ],
@@ -315,45 +293,23 @@
     "startNote": "免费开始使用。打开第一个项目，无需先配置 AI。",
     "startLink": "创建你的第一个工作区",
     "byok": "AI 模型采用 BYOK（自备 API Key）方式。需配置自己的模型服务商与 API Key，模型调用费用由服务商另行收取；NimoteCode 不包含模型额度。",
-    "faqTitle": "开始使用前，你可能想了解",
     "planLink": "查看免费功能与 Early Access 权益",
-    "faqs": [
-      [
-        "NimoteCode 是什么？",
-        "NimoteCode 是面向 Android、iPhone 和 iPad 的移动 IDE 与项目开发工作区，整合本地文件编辑、SSH 远程开发、Git 与 GitHub 工作流和可选 AI。受支持的 Android 设备还可运行免 root Linux。"
-      ],
-      [
-        "NimoteCode 可以免费开始使用吗？",
-        "可以。免费版包含本地与 SSH 工作区、代码编辑器、基础终端，以及 Git 状态、Diff 和历史查看。无需配置 AI，就能打开演示或本地项目。进阶工作流通过 Early Access 开放，当前权益以权益说明和应用内显示为准。"
-      ],
-      [
-        "AI 模型采用 BYOK 方式吗？费用如何计算？",
-        "是的。AI Chat 与内置 Agent 采用 BYOK（Bring Your Own Key，自备 API Key）：你需要配置自己的 AI 模型服务商和 API Key。模型调用费用由所选服务商另行收取，NimoteCode 不提供模型额度或 Token 包。内置 Agent 属于 Early Access 功能。"
-      ],
-      [
-        "可以在手机上使用 Claude Code 或 Codex 吗？",
-        "可以通过 SSH 终端使用已安装并完成认证的主机端 CLI。Claude Code 和 Codex 并非 NimoteCode 内置工具，需要你自行安装、认证并具备相应服务权限。"
-      ],
-      [
-        "Android、iPhone 和 iPad 都能运行本地 Linux 吗？",
-        "本地 Linux 仅适用于受支持的 Android 8+ ARM64 / x86_64 设备，可免 root 运行 Ubuntu。iPhone 和 iPad 不支持本地 Linux；三个平台均可连接已配置且可访问的 SSH 主机。"
-      ],
-      [
-        "打开本地项目后，可以直接运行代码吗？",
-        "本地文件夹支持文件浏览与编辑，本身不提供 Linux Shell 或编译器。运行项目命令需要已配置的 SSH 主机，或受支持的 Android Local Linux 环境，并安装项目所需的工具和依赖。"
-      ]
-    ],
     "byokLabel": "运行项目命令需 SSH 或受支持的 Android Local Linux 环境。",
     "earlyAccessDeadline": "Early Access 截止至 12 月 30 日",
     "communityBlogTitle": "博客",
     "communityBlogCopy": "移动开发、远程工作与 AI 的实践笔记。",
-    "fullComparisonLink": "查看完整对比"
+    "fullComparisonLink": "查看完整对比",
+    "reviewsTitle": "用户怎么说",
+    "reviewsLink": "在 Google Play 查看评价",
+    "reviewsNote": "以下为完整评价原文，反馈对应用户当时使用的版本。",
+    "reviewsUpdated": "核对日期",
+    "reviewOriginal": "查看原评"
   },
   "ja": {
     "badge": "Android・iOS 向けモバイル IDE",
     "title": "スマートフォンやタブレットで、",
     "accent": "プロジェクトの開発を続けよう。",
-    "intro": "NimoteCode は Android、iPhone、iPad 向けのモバイル開発ワークスペースです。ローカルのコードを開くか、SSH で開発マシンに接続。ひとつのアプリでファイルの編集、プロジェクトのコマンド実行、Git の変更確認を行えます。必要に応じて AI Agent も利用できます。",
+    "intro": "ローカルプロジェクトを開くか、SSH で接続。スマートフォンやタブレットでコード編集、Git の変更確認、必要に応じた AI との作業を。",
     "android": "Android 版を入手",
     "ios": "iOS 版を入手",
     "watch": "デモを見る",
@@ -383,8 +339,8 @@
       ],
       [
         "AI と作業する",
-        "Agent に任せながら、作業に参加できる。",
-        "Nimote Agent がプロジェクトを読み取り、変更を計画してチェックを実行します。Confirm モードでは先に計画を承認し、実行中は手順を確認して指示を追加、完了後は変更を確認できます。内蔵 Agent には Early Access と自分のモデル API キーが必要です。モデル利用料は別途かかります。",
+        "内蔵 Agent と、使い慣れたツール。",
+        "Codex コアをベースにカスタマイズした内蔵 Nimote Agent を使うか、ACP 経由で互換性のある外部 Agent に接続できます。Nimote Agent は Early Access で提供され、BYOK（API キー持ち込み）方式です。自分のモデル API キーを設定し、利用料はプロバイダーに別途支払います。モデルの利用枠は含まれません。外部 ACP Agent は実行環境の設定と認証が別途必要です。",
         "Agent とモデル設定について"
       ]
     ],
@@ -490,45 +446,23 @@
     "startNote": "無料で始められます。最初のプロジェクトに AI 設定は不要です。",
     "startLink": "最初のワークスペースを作成",
     "byok": "AI モデルは BYOK（API キー持ち込み）方式です。自分のプロバイダーと API キーを設定してください。モデル利用料はプロバイダーから別途請求され、利用枠は含まれません。",
-    "faqTitle": "始める前によくある質問",
     "planLink": "無料機能と Early Access を確認",
-    "faqs": [
-      [
-        "NimoteCode とは何ですか？",
-        "NimoteCode は Android、iPhone、iPad 向けのモバイル IDE・開発ワークスペースです。ローカルファイルの編集、SSH リモート開発、Git・GitHub ワークフロー、オプションの AI を統合しています。対応する Android 端末では root 不要の Linux も実行できます。"
-      ],
-      [
-        "無料で利用を始められますか？",
-        "はい。ローカル・SSH ワークスペース、エディター、基本ターミナル、Git の状態・差分・履歴を無料で利用できます。AI の設定なしでデモやローカルプロジェクトを開けます。高度な機能は Early Access で提供されます。"
-      ],
-      [
-        "AI モデルは BYOK 方式ですか？",
-        "はい。AI Chat と内蔵 Agent は BYOK（API キー持ち込み）方式です。自分の AI プロバイダーと API キーを設定し、モデル利用料はプロバイダーに別途支払います。モデル利用枠やトークンは含まれません。内蔵 Agent は Early Access 機能です。"
-      ],
-      [
-        "Claude Code や Codex は使えますか？",
-        "SSH ホストにインストールして認証した CLI をターミナルから利用できます。NimoteCode には同梱されておらず、各サービスの利用権限が必要です。"
-      ],
-      [
-        "iPhone や iPad でもローカル Linux は動きますか？",
-        "ローカル Linux は対応する Android 8 以降の ARM64・x86_64 端末専用で、root 不要の Ubuntu を利用できます。iPhone・iPad では利用できませんが、各プラットフォームから設定済みの SSH ホストに接続できます。"
-      ],
-      [
-        "ローカルプロジェクトを開けば、すぐにコードを実行できますか？",
-        "ローカルフォルダーではファイルの閲覧と編集ができますが、Linux シェルやコンパイラーは提供されません。プロジェクトのコマンドを実行するには、設定済みの SSH ホストまたは対応する Android Local Linux 環境に、必要なツールと依存関係をインストールしてください。"
-      ]
-    ],
     "byokLabel": "プロジェクトのコマンド実行には SSH または対応する Android Local Linux 環境が必要です。",
     "earlyAccessDeadline": "Early Access は12月30日まで",
     "communityBlogTitle": "ブログ",
     "communityBlogCopy": "モバイル開発、リモート作業、AI の実践ノート。",
-    "fullComparisonLink": "詳しい比較を見る（英語）"
+    "fullComparisonLink": "詳しい比較を見る（英語）",
+    "reviewsTitle": "ユーザーの声",
+    "reviewsLink": "Google Play でレビューを見る",
+    "reviewsNote": "レビューは原文の全文を掲載しています。内容は投稿時のバージョンに関するものです。",
+    "reviewsUpdated": "確認日",
+    "reviewOriginal": "元のレビュー"
   },
   "ko": {
     "badge": "Android 및 iOS용 모바일 IDE",
     "title": "휴대폰과 태블릿에서,",
     "accent": "프로젝트 개발을 이어가세요.",
-    "intro": "NimoteCode는 Android, iPhone, iPad용 모바일 개발 작업 공간입니다. 로컬 코드를 열거나 SSH로 개발 컴퓨터에 연결하세요. 하나의 앱에서 파일 편집, 프로젝트 명령 실행, Git 변경 검토를 진행하고, 필요할 때 AI Agent와 함께 작업할 수 있습니다.",
+    "intro": "로컬 프로젝트를 열거나 SSH로 연결하세요. 휴대폰과 태블릿에서 코드 편집, Git 변경 검토, 선택형 AI와의 작업을 이어가세요.",
     "android": "Android 다운로드",
     "ios": "iOS 다운로드",
     "watch": "데모 보기",
@@ -558,8 +492,8 @@
       ],
       [
         "AI와 작업",
-        "Agent에게 맡기고, 실행 중에도 참여하세요.",
-        "Nimote Agent가 프로젝트를 읽고 변경을 계획하며 검사를 실행합니다. Confirm 모드에서 계획을 먼저 승인하고, 실행 단계를 확인하거나 지시를 추가한 뒤 완료된 변경 사항을 검토하세요. 내장 Agent에는 Early Access와 직접 준비한 모델 API 키가 필요하며, 모델 사용료는 별도입니다.",
+        "내장 Agent와 익숙한 도구를 함께.",
+        "Codex 코어를 기반으로 맞춤 개발한 내장 Nimote Agent를 사용하거나 ACP로 호환되는 외부 Agent에 연결하세요. Nimote Agent는 Early Access로 제공되며 BYOK(자신의 API 키 사용) 방식입니다. 모델 API 키를 직접 설정하고 사용료는 제공업체에 별도로 지불하며, 모델 크레딧은 포함되지 않습니다. 외부 ACP Agent는 별도의 실행 환경 설정과 인증이 필요합니다.",
         "Agent 및 모델 설정 알아보기"
       ]
     ],
@@ -665,45 +599,23 @@
     "startNote": "무료로 시작하세요. 첫 프로젝트에 AI 설정은 필요하지 않습니다.",
     "startLink": "첫 작업 공간 만들기",
     "byok": "AI 모델은 BYOK(자신의 API 키 사용) 방식입니다. AI 제공업체와 API 키를 직접 설정하며, 모델 사용료는 해당 제공업체가 별도로 청구합니다. 모델 크레딧은 포함되지 않습니다.",
-    "faqTitle": "시작하기 전에",
     "planLink": "무료 기능 및 Early Access 확인",
-    "faqs": [
-      [
-        "NimoteCode는 무엇인가요?",
-        "NimoteCode는 Android, iPhone, iPad용 모바일 IDE이자 프로젝트 개발 작업 공간입니다. 로컬 파일 편집, SSH 원격 개발, Git 및 GitHub 워크플로와 선택형 AI 기능을 제공합니다. 지원되는 Android 기기에서는 루팅 없이 Linux를 실행할 수도 있습니다."
-      ],
-      [
-        "무료로 시작할 수 있나요?",
-        "네. 로컬 및 SSH 작업 공간, 편집기, 기본 터미널, Git 상태·차이·기록 확인을 무료로 이용할 수 있습니다. AI 설정 없이 데모나 로컬 프로젝트를 열 수 있습니다. 고급 기능은 Early Access로 제공됩니다."
-      ],
-      [
-        "AI 모델은 BYOK 방식인가요?",
-        "네. AI Chat과 내장 Agent는 BYOK(자신의 API 키 사용) 방식입니다. AI 제공업체와 API 키를 직접 설정하고 모델 사용료는 제공업체에 별도로 지불합니다. 모델 크레딧이나 토큰은 포함되지 않습니다. 내장 Agent는 Early Access 기능입니다."
-      ],
-      [
-        "Claude Code나 Codex를 사용할 수 있나요?",
-        "SSH 호스트에 설치하고 인증한 CLI를 터미널에서 사용할 수 있습니다. NimoteCode에 번들로 포함되지 않으며 각 서비스의 이용 권한이 필요합니다."
-      ],
-      [
-        "iPhone이나 iPad에서도 로컬 Linux가 실행되나요?",
-        "로컬 Linux는 지원되는 Android 8 이상 ARM64 및 x86_64 기기에서만 루팅 없이 Ubuntu를 실행합니다. iPhone과 iPad에서는 사용할 수 없지만, 모든 플랫폼에서 설정된 SSH 호스트에 연결할 수 있습니다."
-      ],
-      [
-        "로컬 프로젝트를 열면 바로 코드를 실행할 수 있나요?",
-        "로컬 폴더에서는 파일을 탐색하고 편집할 수 있지만 Linux 셸이나 컴파일러는 제공되지 않습니다. 프로젝트 명령을 실행하려면 구성된 SSH 호스트 또는 지원되는 Android Local Linux 환경에 프로젝트에 필요한 도구와 의존성을 설치해야 합니다."
-      ]
-    ],
     "byokLabel": "프로젝트 명령 실행에는 SSH 또는 지원되는 Android Local Linux 환경이 필요합니다.",
     "earlyAccessDeadline": "Early Access는 12월 30일까지",
     "communityBlogTitle": "블로그",
     "communityBlogCopy": "모바일 개발, 원격 작업, AI 활용에 관한 실용적인 글.",
-    "fullComparisonLink": "전체 비교 보기 (영어)"
+    "fullComparisonLink": "전체 비교 보기 (영어)",
+    "reviewsTitle": "사용자 후기",
+    "reviewsLink": "Google Play에서 후기 보기",
+    "reviewsNote": "후기 원문 전체입니다. 내용은 작성 당시 사용한 버전에 대한 의견입니다.",
+    "reviewsUpdated": "확인 날짜",
+    "reviewOriginal": "원문 보기"
   },
   "es": {
     "badge": "Un IDE móvil para Android e iOS",
     "title": "Tus proyectos,",
     "accent": "en tu móvil y tu tablet.",
-    "intro": "NimoteCode es un espacio de desarrollo móvil para Android, iPhone y iPad. Abre código local o conecta tu equipo de desarrollo por SSH. Edita archivos, ejecuta comandos del proyecto, revisa cambios de Git y, si lo necesitas, trabaja con un agente de IA desde una misma aplicación.",
+    "intro": "Abre proyectos locales o conecta por SSH. Edita código, revisa cambios de Git y trabaja con IA opcional desde tu móvil o tablet.",
     "android": "Para Android",
     "ios": "Para iOS",
     "watch": "Ver la demo",
@@ -733,8 +645,8 @@
       ],
       [
         "Trabaja con IA",
-        "Asigna una tarea al agente y sigue participando.",
-        "Nimote Agent puede leer el proyecto, planificar cambios y ejecutar comprobaciones. En modo Confirm, aprueba primero el plan, sigue los pasos de ejecución, añade instrucciones mientras trabaja y revisa los cambios al terminar. El agente integrado requiere Early Access y tu propia clave API del modelo; el proveedor cobra el uso por separado.",
+        "Agente integrado. Tus herramientas favoritas.",
+        "Usa Nimote Agent, integrado y adaptado a partir del núcleo de Codex, o conecta agentes externos compatibles mediante ACP. Nimote Agent está disponible con Early Access y usa BYOK (tu propia clave API): configura la clave de tu modelo; el proveedor cobra el uso por separado y no se incluyen créditos. Los agentes ACP externos requieren configurar su entorno de ejecución y autenticación.",
         "Explorar agentes y configuración de modelos"
       ]
     ],
@@ -840,38 +752,16 @@
     "startNote": "Empieza gratis. No necesitas configurar IA para abrir tu primer proyecto.",
     "startLink": "Crea tu primer espacio de trabajo",
     "byok": "Los modelos de IA usan BYOK (tu propia clave API). Configura tu proveedor y tu clave; el proveedor cobra el uso del modelo por separado. No se incluyen créditos de IA.",
-    "faqTitle": "Antes de empezar",
     "planLink": "Ver funciones gratuitas y Early Access",
-    "faqs": [
-      [
-        "¿Qué es NimoteCode?",
-        "NimoteCode es un IDE móvil y un espacio de desarrollo de proyectos para Android, iPhone y iPad. Integra edición de archivos locales, desarrollo por SSH, flujos de Git y GitHub e IA opcional. Los dispositivos Android compatibles también pueden ejecutar Linux sin root."
-      ],
-      [
-        "¿Puedo empezar gratis?",
-        "Sí. El plan gratuito incluye espacios locales y SSH, editor, terminal básico y consulta del estado, diferencias e historial de Git. Puedes abrir una demo o un proyecto local sin configurar IA. Las funciones avanzadas están disponibles mediante Early Access."
-      ],
-      [
-        "¿Los modelos de IA usan BYOK?",
-        "Sí. AI Chat y el Agent integrado usan BYOK: configura tu propio proveedor de IA y tu clave API. El proveedor cobra el uso del modelo por separado. NimoteCode no incluye créditos ni tokens de IA. El Agent integrado es una función Early Access."
-      ],
-      [
-        "¿Puedo usar Claude Code o Codex desde el móvil?",
-        "Puedes usar por el terminal una CLI instalada y autenticada en tu propio host SSH. No vienen incluidos con NimoteCode y requieren acceso a sus respectivos servicios."
-      ],
-      [
-        "¿Linux local funciona en iPhone y iPad?",
-        "Linux local ejecuta Ubuntu sin root solo en dispositivos Android 8 o posterior compatibles con ARM64 o x86_64. No está disponible en iPhone ni iPad. Todas las plataformas pueden conectarse a un host SSH configurado y accesible."
-      ],
-      [
-        "¿Puedo ejecutar código al abrir un proyecto local?",
-        "Una carpeta local permite explorar y editar archivos, pero no proporciona una shell de Linux ni un compilador. Para ejecutar comandos necesitas un host SSH configurado o un entorno Android Local Linux compatible, con las herramientas y dependencias de tu proyecto instaladas."
-      ]
-    ],
     "byokLabel": "Los comandos del proyecto requieren SSH o un entorno Android Local Linux compatible.",
     "earlyAccessDeadline": "Early Access termina el 30 de diciembre",
     "communityBlogTitle": "Blog",
     "communityBlogCopy": "Notas sobre desarrollo móvil, trabajo remoto e IA.",
-    "fullComparisonLink": "Ver la comparación completa (en inglés)"
+    "fullComparisonLink": "Ver la comparación completa (en inglés)",
+    "reviewsTitle": "Lo que dicen los usuarios",
+    "reviewsLink": "Ver reseñas en Google Play",
+    "reviewsNote": "Reseñas completas en su idioma original. Los comentarios corresponden a la versión reseñada.",
+    "reviewsUpdated": "Comprobado",
+    "reviewOriginal": "Reseña original"
   }
 }

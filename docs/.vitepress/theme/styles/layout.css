@@ -1,6 +1,12 @@
 /* One outer track for navigation, marketing, articles and documentation.
    Only prose has a separate measure; cards and tables use the whole track. */
+/* One owner for the gap between marketing content and the shared footer. */
+.nimote-marketing-main {
+  padding-bottom: var(--nimote-page-end-space);
+}
+
 .nimote-marketing-doc {
+  padding-bottom: 0;
   width: min(100%, var(--nimote-container));
   padding-inline: var(--nimote-page-gutter);
 }
@@ -117,7 +123,7 @@
 }
 
 @media (max-width: 767px) {
-  .nimote-marketing-doc { padding-block: 36px 64px; }
+  .nimote-marketing-doc { padding-block: 36px 0; }
   .nimote-marketing-doc .vp-doc > div > h2 { margin-top: 40px; padding-top: 24px; }
   .nimote-main-layout:not(.has-sidebar) > .VPContent > .VPDoc {
     padding-block: 36px 64px;

@@ -91,6 +91,12 @@ for (const file of htmlFiles) {
   const isNoindex = /<meta name="robots" content="noindex, follow"/.test(html)
   const isDocs = /^(?:(?:zh|ja|ko|es)\/)?(?:docs|blog|use-cases)(?:\/|\.html|$)/.test(name)
 
+  const isReadingPage = /^(?:(?:zh|ja|ko|es)\/)?(?:docs|use-cases)(?:\/|\.html|$)/.test(name)
+  if (isReadingPage) {
+    if (html.includes('class="nimote-site-footer"')) failures.push(`Reading page has a marketing footer: ${name}`)
+    if ((html.match(/class="nimote-doc-footer"/g) || []).length !== 1) failures.push(`Reading page must have one compact footer: ${name}`)
+  }
+
   if (!isDocs && /(?:VPSidebar|VPDocAside|VPDocFooter)/.test(html)) {
     failures.push(`Marketing page contains content-layout chrome: ${name}`)
   }
