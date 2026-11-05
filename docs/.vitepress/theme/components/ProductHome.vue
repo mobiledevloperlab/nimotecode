@@ -19,7 +19,7 @@ const blogRoot = computed(() => locale.value === 'zh' ? '/zh/blog/' : '/blog/')
 const blogSlugs = ['best-ssh-clients', 'can-an-ai-agent-really-code-from-a-phone', 'tailscale-ssh-android-mac-linux']
 const android = 'https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=website&utm_campaign=homepage'
 const ios = 'https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253'
-const featureLinks = ['/docs/ssh', '/docs/editor', '/docs/ai']
+const featureLinks = ['/docs/ssh', '/docs/source-control', '/docs/ai']
 const resourceLinks = computed(() => [local('/docs/quick-start'), local('/use-cases/'), local('/resources/')])
 // Explicit codec hints let browsers without H.264 select the WebM fallback.
 const demoMimeTypes = ['video/mp4; codecs="avc1.64001F"', 'video/mp4; codecs="avc1.640032, mp4a.40.2"']
@@ -66,6 +66,20 @@ const communityLinks = ['https://discord.gg/tTxbpqYmhR', 'https://github.com/mob
       </div>
     </section>
 
+    <section id="product-demo" class="product-demo-section" aria-labelledby="demo-title">
+      <div class="product-container product-section">
+        <div class="product-demo-heading"><p class="product-eyebrow">{{ copy.demoLabel }}</p><h2 id="demo-title">{{ copy.demoTitle }}</h2><p>{{ copy.demoCopy }}</p></div>
+        <div class="product-demo-panel">
+          <div class="product-demo-tabs" role="group" :aria-label="copy.demoLabel"><button v-for="(tab, index) in copy.demoTabs" :key="tab" type="button" :aria-pressed="activeDemo === index" aria-controls="demo-player" @click="selectDemo(index)"><MockIcon :name="index === 0 ? 'spark' : 'code'" />{{ tab }}</button></div>
+          <div id="demo-player" class="product-demo-stage" :class="{ 'is-portrait': activeDemo === 0 }">
+            <video :key="activeDemo" ref="demoVideo" controls playsinline preload="none" :poster="activeDemo === 0 ? '/videos/nimotecode-poster.jpg' : '/videos/workspace-demo-poster.jpg'" :aria-label="copy.demoTabs[activeDemo]"><source :src="activeDemo === 0 ? '/videos/nimotecode.mp4' : '/videos/pad_workflow.mp4'" :type="demoMimeTypes[activeDemo]"><source :src="activeDemo === 0 ? '/videos/ai-agent-demo.webm' : '/videos/workspace-demo.webm'" type="video/webm"><a :href="activeDemo === 0 ? '/videos/nimotecode.mp4' : '/videos/pad_workflow.mp4'">{{ copy.watch }}</a></video>
+            <div v-if="activeDemo === 0" class="product-demo-guide"><h3>{{ copy.demoContext }}</h3><ol><li v-for="(step, index) in copy.demoSteps" :key="step"><span>0{{ index + 1 }}</span><div><strong>{{ step }}</strong><p>{{ copy.demoDetails[index] }}</p></div></li></ol></div>
+          </div>
+          <div class="product-demo-footer"><span>{{ copy.caption }}</span><a class="product-text-link" :href="local('/use-cases/')">{{ copy.resources[1][0] }}<span aria-hidden="true">→</span></a></div>
+        </div>
+      </div>
+    </section>
+
     <section class="product-container product-section" aria-labelledby="workflow-title">
       <div class="product-section-heading">
         <div><p class="product-eyebrow">{{ copy.eyebrow }}</p><h2 id="workflow-title">{{ copy.heading }}</h2></div>
@@ -108,25 +122,6 @@ const communityLinks = ['https://discord.gg/tTxbpqYmhR', 'https://github.com/mob
       </div>
     </section>
 
-    <section id="product-demo" class="product-demo-section" aria-labelledby="demo-title">
-      <div class="product-container product-section">
-        <div class="product-demo-heading"><p class="product-eyebrow">{{ copy.demoLabel }}</p><h2 id="demo-title">{{ copy.demoTitle }}</h2><p>{{ copy.demoCopy }}</p></div>
-        <div class="product-demo-panel">
-          <div class="product-demo-tabs" role="group" :aria-label="copy.demoLabel"><button v-for="(tab, index) in copy.demoTabs" :key="tab" type="button" :aria-pressed="activeDemo === index" aria-controls="demo-player" @click="selectDemo(index)"><MockIcon :name="index === 0 ? 'spark' : 'code'" />{{ tab }}</button></div>
-          <div id="demo-player" class="product-demo-stage" :class="{ 'is-portrait': activeDemo === 0 }">
-            <video :key="activeDemo" ref="demoVideo" controls playsinline preload="none" :poster="activeDemo === 0 ? '/videos/nimotecode-poster.jpg' : '/videos/workspace-demo-poster.jpg'" :aria-label="copy.demoTabs[activeDemo]"><source :src="activeDemo === 0 ? '/videos/nimotecode.mp4' : '/videos/pad_workflow.mp4'" :type="demoMimeTypes[activeDemo]"><source :src="activeDemo === 0 ? '/videos/ai-agent-demo.webm' : '/videos/workspace-demo.webm'" type="video/webm"><a :href="activeDemo === 0 ? '/videos/nimotecode.mp4' : '/videos/pad_workflow.mp4'">{{ copy.watch }}</a></video>
-            <div v-if="activeDemo === 0" class="product-demo-guide"><h3>{{ copy.demoContext }}</h3><ol><li v-for="(step, index) in copy.demoSteps" :key="step"><span>0{{ index + 1 }}</span><div><strong>{{ step }}</strong><p>{{ copy.demoDetails[index] }}</p></div></li></ol></div>
-          </div>
-          <div class="product-demo-footer"><span>{{ copy.caption }}</span><a class="product-text-link" :href="local('/use-cases/')">{{ copy.resources[1][0] }}<span aria-hidden="true">→</span></a></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="product-container product-section product-comparison-section" aria-labelledby="compare-title">
-      <div class="product-section-heading"><div><p class="product-eyebrow">{{ copy.compareLink }}</p><h2 id="compare-title">{{ copy.compareTitle }}</h2></div><p class="product-section-description">{{ copy.compareCopy }}</p></div>
-      <HomeToolComparison :lang="locale === 'zh' ? 'zh' : 'en'" :compare-url="local('/compare/mobile-ai-development-tools')" />
-    </section>
-
     <section class="product-container product-blog" aria-labelledby="blog-title">
       <div class="product-blog-heading"><h2 id="blog-title">{{ copy.blogHeading }}</h2><a class="product-text-link" :href="blogRoot">{{ copy.blogAll }}<span aria-hidden="true">→</span></a></div>
       <div class="product-blog-grid">
@@ -139,7 +134,7 @@ const communityLinks = ['https://discord.gg/tTxbpqYmhR', 'https://github.com/mob
     <section class="product-container product-resources" aria-labelledby="resources-title">
       <h2 id="resources-title">{{ copy.resourcesTitle }}</h2>
       <div class="product-resource-grid"><a v-for="(resource, index) in copy.resources" :key="resource[0]" :href="resourceLinks[index]" ><MockIcon :name="['book', 'code', 'globe'][index]" /><div><h3>{{ resource[0] }}</h3><p>{{ resource[1] }}</p></div><span aria-hidden="true">↗</span></a></div>
-      <div class="product-community-grid"><a :href="blogRoot"><div><h3>{{ locale === 'zh' ? '博客' : 'Blog' }}<span aria-hidden="true">→</span></h3><p>{{ locale === 'zh' ? '移动开发、远程工作与 AI 的实践笔记。' : 'Notes on mobile development, remote work, and AI.' }}</p></div></a><a v-for="(name, index) in ['Discord', 'GitHub', 'X / Twitter']" :key="name" :href="communityLinks[index]" target="_blank" rel="noopener noreferrer"><div><h3>{{ name }}<span aria-hidden="true">↗</span></h3><p>{{ copy.community[index] }}</p></div></a></div>
+      <div class="product-community-grid"><a :href="blogRoot"><div><h3>{{ copy.communityBlogTitle }}<span aria-hidden="true">→</span></h3><p>{{ copy.communityBlogCopy }}</p></div></a><a v-for="(name, index) in ['Discord', 'GitHub', 'X / Twitter']" :key="name" :href="communityLinks[index]" target="_blank" rel="noopener noreferrer"><div><h3>{{ name }}<span aria-hidden="true">↗</span></h3><p>{{ copy.community[index] }}</p></div></a></div>
     </section>
 
     <section class="product-container product-faq" aria-labelledby="faq-title">
@@ -149,6 +144,12 @@ const communityLinks = ['https://discord.gg/tTxbpqYmhR', 'https://github.com/mob
         <p>{{ faq[1] }}</p>
       </details>
       <a class="product-text-link" :href="local('/docs/quick-start')">{{ copy.startLink }}<span aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="product-container product-section product-comparison-section" aria-labelledby="compare-title">
+      <div class="product-section-heading"><div><p class="product-eyebrow">{{ copy.compareLink }}</p><h2 id="compare-title">{{ copy.compareTitle }}</h2></div><p class="product-section-description">{{ copy.compareCopy }}</p></div>
+      <HomeToolComparison v-if="locale === 'en' || locale === 'zh'" :lang="locale === 'zh' ? 'zh' : 'en'" :compare-url="local('/compare/mobile-ai-development-tools')" />
+      <a v-else class="product-text-link" href="/compare/mobile-ai-development-tools" hreflang="en">{{ copy.fullComparisonLink }} <span aria-hidden="true">→</span></a>
     </section>
 
     <section class="product-container product-download-section" aria-labelledby="download-title">

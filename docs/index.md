@@ -1,8 +1,8 @@
 ---
 layout: home
-title: "NimoteCode: Mobile IDE, SSH & AI Coding for Android and iOS"
+title: "NimoteCode | Mobile IDE & SSH Workspace for Android, iPhone and iPad"
 titleTemplate: false
-description: "Code on your phone with NimoteCode: editor, SSH terminal, Git review and BYOK AI for Android, iPhone and iPad. Start free; no AI setup needed."
+description: "Continue your projects on your phone or tablet with NimoteCode: local and SSH editing, Git and GitHub workflows, optional AI Agents, and Linux on supported Android devices. Start free."
 ---
 
 <ProductHome />

@@ -1,10 +1,27 @@
 # NimoteCode
 
-> NimoteCode is a Mobile AI Development Workspace available for Android and iOS. It combines SSH workspaces, split code editing, in-app web and media preview, terminals, Git workflows, AI Chat and Agent, debugging, tasks, sync/cache, and product support in one app.
+> NimoteCode is a mobile IDE and project development workspace for Android, iPhone and iPad. Open local files or connect to a development host over SSH to edit code, run project commands and review changes. AI is optional.
 
-NimoteCode is organized around a few primary journeys: learn the product, compare Free and Pro, install the app, and move into the documentation for day-to-day workflows.
+## Product capabilities and boundaries
+- Local workspaces support file browsing and editing. Opening a local folder does not provide a Linux shell, compiler or project runtime.
+- SSH workspaces use the connected host’s projects, tools and account permissions.
+- Local Linux provides root-free Ubuntu on supported Android 8+ ARM64 / x86_64 devices. It is not available on iPhone or iPad; project tools and dependencies must be installed separately.
+- Git review includes status, diffs and history. GitHub integration supports repositories, issues, pull requests, reviews and CI workflows subject to account permissions.
+- Nimote Agent can read project files, plan changes and run checks. Confirm mode requires plan approval. Users can follow execution steps, add instructions during a run and review the resulting changes.
+- AI Chat and the built-in Agent require the user’s own provider and API key (BYOK). NimoteCode does not include model credits; provider usage is billed separately.
+- Compatible external ACP Agents require separate runtime setup and credentials. Claude Code and Codex can be used through SSH when installed and authenticated on the host; they are not bundled tools.
+- Free features include local and SSH workspaces, editing, basic terminals and Git review. Agent, Git write operations, GitHub integration, Local Linux, LSP, debugging and plugins are Early Access features. Check the current entitlement page and app for availability.
+- Language services and debugging require compatible tools in the target environment. Custom plugins and saved tasks extend project workflows.
 
-The product is positioned as a Mobile AI Development Workspace: Editor + Explorer + SSH + Web Preview + Terminal + Git + AI Chat and Agent. It is not only an SSH client or a standalone code editor.
+## Authoritative product details
+- [Features and environment boundaries](https://nimotecode.com/features)
+- [Android Local Linux](https://nimotecode.com/docs/local-linux)
+- [Git and GitHub workflows](https://nimotecode.com/docs/source-control)
+- [AI, Agents and MCP](https://nimotecode.com/docs/ai)
+- [Custom plugins](https://nimotecode.com/docs/plugins)
+- [Current free and Early Access entitlements](https://nimotecode.com/pro)
+- [中文产品能力与限制](https://nimotecode.com/zh/features)
+- [中文快速开始](https://nimotecode.com/zh/docs/quick-start)
 
 ## Product
 - [Home](https://nimotecode.com/): Main product overview and demo-led landing page.
@@ -48,3 +65,6 @@ The product is positioned as a Mobile AI Development Workspace: Editor + Explore
 ## Locales
 - [English](https://nimotecode.com/): Default site locale.
 - [Chinese](https://nimotecode.com/zh/): Simplified Chinese locale.
+- [日本語](https://nimotecode.com/ja/): Japanese product overview.
+- [한국어](https://nimotecode.com/ko/): Korean product overview.
+- [Español](https://nimotecode.com/es/): Spanish product overview.
