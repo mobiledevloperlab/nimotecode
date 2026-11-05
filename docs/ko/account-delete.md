@@ -1,64 +1,55 @@
 ---
-title: Account Deletion | NimoteCode
-description: Learn how to delete your NimoteCode account and associated cloud data from the app or by requesting support.
+title: "계정 및 데이터 삭제 | NimoteCode"
+description: "앱 안에서 삭제하거나 로그인 및 재설치 없이 이메일로 삭제를 요청하세요."
+pageClass: trust-page
 ---
 
-# 계정 삭제
+<TrustNav />
 
+# 계정 및 데이터 삭제
 
-**마지막 업데이트:** 2026년 4월 16일
+<p class="trust-meta">최종 수정: 2026-11-05 · NimoteCode</p>
 
+앱 안에서 삭제할 수 있습니다. 로그인할 수 없거나 앱을 제거했어도 이 페이지에서 요청할 수 있으며 재설치가 필요하지 않습니다.
 
-이 페이지에서는 NimoteCode 계정 및 관련 클라우드 데이터를 삭제하는 방법을 설명합니다.
+<div class="trust-summary">
 
+**계정 삭제는 구독 취소가 아닙니다.** 갱신을 원하지 않으면 별도로 취소하세요. 계정 삭제는 구독 만료를 기다릴 필요가 없습니다.
 
-## 인앱 삭제(권장)
+[Apple 구독](https://apps.apple.com/account/subscriptions) · [Google Play 구독](https://play.google.com/store/account/subscriptions)
 
+</div>
 
-아직 로그인할 수 있는 경우:
+## 앱 내 삭제 {#in-app}
 
+1. **설정 → 계정 삭제**를 엽니다.
+2. 안내를 읽고 `DELETE`를 입력합니다.
+3. 필요한 재인증을 완료하고 삭제를 확인합니다.
 
-1.  **설정**을 엽니다.
+성공하면 인증 계정과 기본 사용자 기록을 삭제하고 현재 구독 소유권을 해제합니다. 오류가 발생하거나 성공 안내가 없으면 지원팀에 결과를 확인하세요.
 
-2.  **계정 삭제**를 탭하세요.
+## 웹에서 요청 {#request}
 
-3. 삭제를 확인하세요.
+<a class="trust-action" href="mailto:support@nimotecode.com?subject=NimoteCode%20account%20and%20data%20deletion">삭제 요청 이메일 작성 →</a>
 
+[support@nimotecode.com](mailto:support@nimotecode.com)에 NimoteCode 계정과 관련 개인정보 삭제 요청, 계정 이메일(아는 경우), 로그인 방식, iOS / Android를 적어주세요. Apple 비공개 이메일의 전달 주소도 사용할 수 있습니다. 게스트 이용 또는 계정을 식별할 수 없는 경우 그 상황을 알려주세요.
 
-확인 후 NimoteCode 계정 및 관련 클라우드 사용자 기록이 삭제됩니다.
+버튼은 초안만 엽니다. **메일을 보내야 요청이 제출됩니다.** 메일 앱이 없으면 주소를 복사하세요. 원래 계정·이메일로 신원을 확인할 수 있습니다. 암호, 인증 코드, 개인 키나 전체 결제 정보를 보내지 말고 공개 Issue로 요청하지 마세요.
 
+## 범위와 예외 {#scope}
 
-## 웹 삭제 요청(로그인할 수 없는 경우)
+| 데이터 | 처리 |
+| --- | --- |
+| 인증·기본 사용자 기록 | 정상 삭제 시 제거. |
+| 구독·체험 | 현재 소유권 해제. 거래, 이전 사용자 ID를 포함한 삭제 연결 기록과 남용 방지 해시는 남을 수 있습니다. 체험 자격은 초기화되지 않습니다. |
+| RevenueCat·분석·지원 | 모두 자동 삭제되지 않습니다. 관련 데이터 삭제도 요청할 수 있으며 필요한 법적·목적별 보관을 안내합니다. |
+| 로컬 기록·신고·인증 정보·파일·외부 Agent | 자동 삭제되지 않습니다. 기기·앱·호스트·각 서비스에서 관리하세요. |
+| 스토어·AI·GitHub 계정 | 삭제·취소되지 않습니다. 제공자별로 관리하세요. |
 
+기록 저장 중지, 기존 기록 삭제, 신고 정리와 SSH·AI 설정 삭제는 별도입니다. 로컬 토큰 제거와 제공자에서의 토큰 폐기도 별개입니다.
 
-앱에 로그인할 수 없는 경우 다음 채널 중 하나를 통해 삭제 요청을 보내세요.
+## 처리 진행 {#timing}
 
+자동 처리 결과는 앱에서 표시합니다. 이메일 첫 답변은 보통 2–3 영업일이며 신원 확인 후 범위, 예상 완료와 결과를 안내합니다. 추가 처리에는 시간이 더 필요할 수 있으며 법정 기한이 우선합니다. 보관 기록의 범위, 이유와 보관 방식을 안내합니다.
 
-- 이메일: support@nimotecode.com
-
-- GitHub 문제: https://github.com/mobiledevloperlab/nimote_issues/issues
-
-
-포함:
-
-
-- 귀하의 계정 이메일(사용 가능한 경우)
-
-- 플랫폼(iOS/Android)
-
-- 요청 유형: `account deletion`
-
-
-## 삭제 범위
-
-
-삭제는 NimoteCode 계정 데이터 및 계정/구독 상태에 사용되는 관련 클라우드 기록에 적용됩니다.
-
-
-로컬 작업공간 파일, 원격 서버 파일, 자체 인프라에 저장된 데이터는 귀하가 관리하며 계정 삭제로 인해 자동으로 삭제되지 않습니다.
-
-
-## 처리 시간
-
-
-우리는 법적, 보안, 사기 방지 및 분쟁 처리 의무에 따라 확인된 삭제 요청을 합리적으로 가능한 한 빨리 처리합니다.
+계정을 유지하면서 특정 데이터만 삭제하려면 범위를 명시하세요. [개인정보](/ko/privacy#retention) · [지원](/ko/support).

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useRoute } from 'vitepress'
+import WebsitePrivacy from './components/WebsitePrivacy.vue'
 
 const route = useRoute()
 
@@ -79,7 +80,8 @@ const copy = computed(() => locale.value === 'zh' ? {
 
 function localized(path: string) {
   // Localized primary pages stay in their locale. Long-form articles and
-  // supporting legal pages intentionally retain their English source route.
+  // related product routes use their existing locale mappings.
+  if (['/support', '/privacy', '/terms', '/account-delete'].includes(path)) return `${localePrefix.value}${path}`
   if (['/ja', '/ko', '/es'].includes(localePrefix.value)) {
     if (path.includes('blog')) return '/blog/'
     if (path.includes('download')) return `${localePrefix.value}/download`
@@ -142,5 +144,6 @@ function localized(path: string) {
         <span>Copyright © 2026 NimoteCode. All rights reserved.</span>
       </div>
     </div>
+    <WebsitePrivacy />
   </footer>
 </template>

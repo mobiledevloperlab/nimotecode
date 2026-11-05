@@ -1,64 +1,55 @@
 ---
-title: Account Deletion | NimoteCode
-description: Learn how to delete your NimoteCode account and associated cloud data from the app or by requesting support.
+title: "Eliminar cuenta y datos | NimoteCode"
+description: "Elimina la cuenta NimoteCode desde la app o por correo privado sin iniciar sesión ni reinstalar."
+pageClass: trust-page
 ---
 
-# Eliminación de cuenta
+<TrustNav />
 
+# Eliminar cuenta y datos
 
-**Última actualización:** 16 de abril de 2026
+<p class="trust-meta">Última actualización: 2026-11-05 · NimoteCode</p>
 
+Puedes eliminar tu cuenta en la app. Si no puedes entrar o la has desinstalado, solicita la eliminación desde esta página sin reinstalarla.
 
-Esta página explica cómo eliminar su cuenta NimoteCode y los datos de la nube asociados.
+<div class="trust-summary">
 
+**Eliminar la cuenta no cancela la suscripción.** Cancela por separado si no quieres renovarla. No necesitas esperar a su vencimiento para solicitar la eliminación.
 
-## Eliminación dentro de la aplicación (recomendado)
+[Apple](https://apps.apple.com/account/subscriptions) · [Google Play](https://play.google.com/store/account/subscriptions)
 
+</div>
 
-Si aún puedes iniciar sesión:
+## En la app {#in-app}
 
+1. Abre **Ajustes → Eliminar cuenta**.
+2. Lee la confirmación y escribe `DELETE`.
+3. Completa la autenticación si se solicita y confirma.
 
-1. Abre **Configuración**.
+Al completarse, se borran la cuenta de autenticación y el registro principal y se desvincula la titularidad actual de la suscripción. Si hay un error o no aparece confirmación, consulta el resultado con soporte.
 
-2. Toca **Eliminar cuenta**.
+## Solicitud desde la web {#request}
 
-3. Confirmar eliminación.
+<a class="trust-action" href="mailto:support@nimotecode.com?subject=NimoteCode%20account%20and%20data%20deletion">Escribir solicitud de eliminación →</a>
 
+Envía a [support@nimotecode.com](mailto:support@nimotecode.com) tu solicitud de eliminar la cuenta NimoteCode y datos personales asociados, correo de cuenta si lo conoces, método de acceso y plataforma. Puedes facilitar el correo de retransmisión de Apple. Explica si usaste funciones de invitado o no puedes identificar la cuenta.
 
-Después de la confirmación, su cuenta NimoteCode y el registro de usuario de la nube asociado se eliminan.
+El botón solo abre un borrador: **envía el correo para presentar la solicitud**. Si no hay aplicación de correo, copia la dirección. Podemos verificar la titularidad mediante el acceso o correo existente. No envíes contraseñas, códigos, claves privadas ni datos completos de pago. No uses incidencias públicas de GitHub.
 
+## Alcance y excepciones {#scope}
 
-## Solicitud de eliminación web (cuando no puede iniciar sesión)
+| Datos | Tratamiento |
+| --- | --- |
+| Autenticación y registro principal | Se eliminan al completarse el proceso. |
+| Suscripción y prueba | Se desvincula el propietario actual. Pueden quedar transacciones, registros de desvinculación con antiguo ID y hashes antifraude. No se reinicia la elegibilidad de prueba. |
+| RevenueCat, analítica y soporte | No se borran todos automáticamente. Puedes solicitar su eliminación asociada; explicaremos las excepciones necesarias por finalidad u obligación. |
+| Historial, informes, credenciales, archivos y agentes externos | No se borran automáticamente. Gestiona cada copia en dispositivo, app, servidor o servicio. |
+| Tiendas, IA y GitHub | Sus cuentas y suscripciones no se eliminan ni cancelan; gestiona cada proveedor. |
 
+Desactivar el guardado, borrar el historial, limpiar informes y quitar configuraciones SSH o IA son acciones separadas. Eliminar un token local no lo revoca en el proveedor.
 
-Si no puede iniciar sesión en la aplicación, envíe una solicitud de eliminación a través de uno de estos canales:
+## Plazos y seguimiento {#timing}
 
+La app muestra el resultado del proceso automático. El primer contacto por correo suele llegar en 2–3 días laborables. Tras verificar identidad, informaremos del alcance, fecha estimada y resultado. Los tratamientos adicionales pueden necesitar más tiempo; prevalecen los plazos legales. Explicaremos alcance, motivo y conservación aplicable de los registros que deban mantenerse.
 
-- Correo electrónico: support@nimotecode.com
-
-- Problemas de GitHub: https://github.com/mobiledevloperlab/nimote_issues/issues
-
-
-Incluye:
-
-
-- el correo electrónico de su cuenta (si está disponible)
-Plataforma 
--  (iOS/Android)
-
-- tipo de solicitud: `account deletion`
-
-
-## Alcance de la eliminación
-
-
-La eliminación se aplica a los datos de su cuenta NimoteCode y a los registros de nube asociados utilizados para el estado de cuenta/suscripción.
-
-
-Los archivos del espacio de trabajo local, los archivos del servidor remoto y los datos almacenados en su propia infraestructura están bajo su control y no se eliminan automáticamente al eliminar la cuenta.
-
-
-## Tiempo de procesamiento
-
-
-Procesamos solicitudes de eliminación verificadas tan pronto como sea razonablemente posible, sujeto a obligaciones legales, de seguridad, antifraude y de manejo de disputas.
+Si quieres conservar la cuenta y borrar solo ciertos datos, especifica el alcance. [Privacidad](/es/privacy#retention) · [Soporte](/es/support).

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted } from 'vue'
+import { analyticsChoice } from './websitePrivacy'
 
 type Gtag = (command: 'event', eventName: string, parameters: Record<string, string>) => void
 
@@ -76,6 +77,7 @@ function eventFor(link: HTMLAnchorElement, sourcePath: string): string | null {
 }
 
 function trackClick(event: MouseEvent) {
+  if (analyticsChoice() !== 'allow') return
   const target = event.target
   if (!(target instanceof Element)) return
 

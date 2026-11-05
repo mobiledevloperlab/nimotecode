@@ -1,47 +1,76 @@
 ---
-title: 服务条款 | NimoteCode
-description: 查看 NimoteCode 服务条款，涵盖订阅、AI 功能、远程系统、用户责任、隐私与服务使用约定。
+title: "服务条款 | NimoteCode"
+description: "NimoteCode 使用许可、Pro 与试用、商店订阅、AI 工具和用户权益说明。"
+pageClass: trust-page terms-page
 ---
+
+<TrustNav />
 
 # 服务条款
 
-**生效日期：** 2026年4月16日
+<p class="trust-meta">原始生效日期：2026-04-16 · 最后更新：2026-11-05</p>
 
 本服务条款（以下简称“条款”）适用于您对 NimoteCode（以下简称“本应用”）的使用。
 
 当您安装或使用本应用时，即表示您同意本条款及适用的第三方平台条款，包括：
 
 - Apple 媒体服务条款及 Apple 标准用户协议（EULA）  
-  https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+  <https://www.apple.com/legal/internet-services/itunes/dev/stdeula/>
 
 - Google Play 服务条款  
-  https://play.google.com/about/play-terms/
+  <https://play.google.com/about/play-terms/>
 
 如果您不同意本条款，请勿使用本应用。
 
-## 1. 服务说明
+Apple 媒体服务条款
+
+<https://www.apple.com/legal/internet-services/itunes/>
+
+## 1. 服务说明 {#service}
 
 NimoteCode 是一款移动端集成开发环境（IDE），提供本地与 SSH 远程开发、代码编辑、终端工具、Git 管理、AI 辅助功能、任务自动化与调试工具。
 
-## 2. 使用资格
+NimoteCode 提供代码编辑、本地及 SSH 工作区、终端、Git、AI、插件和其他开发工具。可用功能取决于平台、设备、版本、权限、主机环境和权益；Android Local Linux 不适用于 iOS。详见功能与权益 ([https://nimotecode.com/zh/pro](/zh/pro))。
+
+### 使用许可与内容权利 {#license}
+
+在遵守本条款及商店规则的前提下，你获得使用应用的有限、非独占许可。你的代码、文件、提示词和其他内容的原有权利仍归相应权利人；我们仅在提供你请求的功能和支持所必要的范围内处理这些内容。你应确保有权处理和发送相关内容。
+
+第三方及开源组件适用其各自许可，见开源与源码 ([https://nimotecode.com/zh/docs/local-linux-source](/zh/docs/local-linux-source))。Apple 平台软件许可适用 Apple 标准 EULA (<https://www.apple.com/legal/internet-services/itunes/dev/stdeula/>)；Google Play 分发适用其服务条款 (<https://play.google.com/about/play-terms/>)。本条款不排除开源许可或适用法律明确允许的权利。
+
+## 2. 使用资格 {#eligibility}
 
 您需年满 13 岁（或您所在地区法律规定的最低年龄）方可使用本应用。
 
 您需对账户安全、设备安全、凭证信息以及所有账户操作行为负责。
 
-## 3. 订阅、计费与续费
+你应有权订立相关协议，并符合适用年龄要求。未满 13 岁或所在地更高最低年龄者不得创建账户或提交个人数据；其他未成年人应在适用法律要求下取得监护人同意。商店年龄评级是内容评级，不代替该要求。
+
+## 3. 订阅、计费与续费 {#billing}
 
 部分功能需要付费订阅（例如 NimoteCode Pro）。
 
 - 所有支付由 Apple App Store 或 Google Play 处理
-- 订阅将在未取消的情况下自动续费
-- 系统将在续费前 24 小时内扣费
-- 可通过 Apple ID 或 Google Play 管理或取消订阅
-- 退款由 Apple 或 Google 按其政策处理
-- 可通过“恢复购买”功能恢复权益
-- 不同地区的订阅价格可能不同
 
-## 4. 远程系统与用户责任
+购买前应显示方案名称、所含权益、实际支付金额、币种、计费周期、试用或优惠结束后的价格及自动续费条件。价格和可购买方案以你的商店、账户和地区为准。NimoteCode Pro 不包含 AI Provider 或远程服务器的费用。
+
+- **Apple App Store**: 在系统设置 → Apple 账户 → 订阅，或使用 Apple 订阅管理 (<https://apps.apple.com/account/subscriptions>)。免费或优惠试用如不续订，请按 Apple 要求至少提前 24 小时取消。 通过 Apple 申请退款 (<https://reportaproblem.apple.com/>)。
+
+- **Google Play**: 在 Play 商店 → 付款和订阅 → 订阅，或使用 Google Play 订阅管理 (<https://play.google.com/store/account/subscriptions>)，在下次续费前取消。 按 Google Play 退款流程 (<https://support.google.com/googleplay/answer/2479637>)申请。
+
+自动续费订阅将持续到你取消；具体扣款时间与续费通知遵循购买商店规则。取消后通常可使用至已付费周期结束，退款、即时取消或当地法律另有规定的除外。取消不自动退还已经发生的费用，也不限制你的法定退款权利。
+
+**卸载、退出登录或删除 NimoteCode 账户不会自动取消订阅。** 你可以独立申请账户删除，无需等待订阅到期。恢复购买时请确认原购买商店账户，并使用应用的 **Restore Purchase / 恢复购买**；如果权益绑定存在问题，请联系支持，避免重复购买。
+
+Apple 自动续费订阅按其适用条款在新周期开始前最多 24 小时内扣费；取消期限及通知以对应商店和购买方案为准。此时间规则不统一适用于 Google Play。
+
+### 免费功能、Early Access 与试用 {#access}
+
+免费功能无需购买订阅。Early Access 为符合条件账户提供的阶段性访问，取决于应用内显示的资格和活动状态，不构成永久免费或永久 Pro 承诺。设备试用的资格与到期时间由服务校验。
+
+**应用授予的访问或设备试用，不会仅因到期而自动扣费。** 只有你确认购买商店订阅后，才适用该订阅的付费和续费规则。商店提供的免费试用或优惠则可能在结束后转为付费，期限、价格与取消条件以购买确认前展示的方案为准。
+
+## 4. 远程系统与用户责任 {#execution}
 
 您需自行承担以下责任：
 
@@ -49,10 +78,11 @@ NimoteCode 是一款移动端集成开发环境（IDE），提供本地与 SSH �
 - 通过本应用执行的所有命令
 - 凭证、密钥及敏感信息的安全管理
 
-本应用不会存储您的 SSH 凭证。
+只连接你有权访问的服务器与仓库。你负责核对路径、权限、命令、Git 操作和备份，并遵守所用基础设施规则。应用可以在设备的系统安全存储中保存你选择保存的 SSH 凭据；详细数据处理方式见隐私政策 ([https://nimotecode.com/zh/privacy#storage](/zh/privacy#storage))。
 
+Agent、插件、Tasks 和 MCP 可按你选择的权限或运行模式读取文件、修改代码、运行命令或连接外部服务。自动执行会减少逐步确认；请在启用前了解授权范围，并在部署或提交前验证结果。
 
-## 5. AI 功能（自带 API Key）
+## 5. AI 功能（自带 API Key） {#ai}
 
 本应用可能接入第三方 AI 服务：
 
@@ -61,7 +91,13 @@ NimoteCode 是一款移动端集成开发环境（IDE），提供本地与 SSH �
 - 第三方 API 费用由用户自行承担
 - AI 输出可能存在错误，需用户自行判断与验证
 
-## 6. 使用规范
+NimoteCode 不提供 AI 模型、推理服务或调用额度；第三方 API 费用由用户自行承担。
+
+AI 为可选功能，通常使用你配置的 Provider 与 API Key。模型、MCP、GitHub、外部 Agent、远程主机的账户规则、计费和数据政策分别适用。NimoteCode 不提供模型调用额度，也不保证第三方持续可用。
+
+AI 输出可能不准确、不安全或涉及第三方权利，应在使用前审查和测试。不得利用服务生成或传播儿童性剥削内容、欺诈、恶意软件、非法侵权内容或其他违法有害内容。发现问题请通过支持入口 ([https://nimotecode.com/zh/support#ai-report](/zh/support#ai-report))反馈。
+
+## 6. 使用规范 {#conduct}
 
 用户不得：
 
@@ -70,20 +106,23 @@ NimoteCode 是一款移动端集成开发环境（IDE），提供本地与 SSH �
 - 反向工程、破解或干扰本应用
 - 滥用接口或系统资源
 
-## 7. 第三方服务
+不得未经授权访问、破坏或干扰系统；窃取凭据或个人信息；规避付费或安全控制；滥用资源；侵犯知识产权；或违反适用出口管制和其他法律。对应用的复制、修改或逆向分析应遵守适用许可与法律允许的范围。
+
+## 7. 第三方服务 {#third-party}
 
 本应用可能集成 Git、SSH、AI 等第三方服务。
 
 我们不对第三方服务的可用性、稳定性或内容负责。
 
-## 8. 隐私政策
+本节责任限制不得排除不能依法排除的责任、法定保证、消费者救济或退款权利，也不免除我们依法应承担的数据保护义务。
+
+## 8. 隐私政策 {#privacy}
 
 您的使用同时受隐私政策约束：
 
-https://nimotecode.com/privacy
+[https://nimotecode.com/zh/privacy](/zh/privacy)
 
-
-## 9. 服务暂停与终止
+## 9. 服务暂停与终止 {#termination}
 
 在以下情况下，我们可能暂停或终止服务：
 
@@ -92,32 +131,46 @@ https://nimotecode.com/privacy
 - 防止滥用行为
 - 系统稳定性需求
 
-## 10. 免责声明
+为维护安全、履行法律义务或处理严重滥用，我们可能限制或暂停相关功能；在法律和安全允许时提供原因与通知。你可通过支持邮箱提出异议。服务重大变更应说明对现有付费权益的影响，并遵循商店规则和适用消费者保护要求。
+
+你可以停止使用或删除账户 ([https://nimotecode.com/zh/account-delete](/zh/account-delete))。请提前备份你控制的文件，并独立管理商店订阅、第三方授权和远程资源。
+
+## 10. 免责声明 {#disclaimer}
 
 本应用按“现状”和“可用性”提供。
 
 我们不保证服务持续可用、无错误或数据完全准确。
 
-## 11. 责任限制
+在法律允许范围内，服务按“现状”和“可用性”提供，不保证无错误或不中断。第三方故障、用户配置和 AI 输出可能影响结果。任何责任限制均不排除不能依法排除的责任、法定保证、消费者救济或退款权利，也不免除我们依法应承担的数据保护义务。
+
+## 11. 责任限制 {#liability}
 
 在法律允许范围内，我们不对任何间接、附带或后果性损失承担责任。
 
 包括数据丢失、系统损坏或服务中断。
 
+本节责任限制不得排除不能依法排除的责任、法定保证、消费者救济或退款权利，也不免除我们依法应承担的数据保护义务。
 
-## 12. 出口合规
+## 12. 出口合规 {#export}
 
 用户需遵守所有适用的出口管制法律法规。
 
-## 13. 适用法律
+## 13. 适用法律 {#rights}
 
 本条款适用中华人民共和国法律，不考虑冲突法规则。
 
-## 14. 条款更新
+本条款适用中华人民共和国法律，但不剥夺你居住地适用的强制性消费者保护。争议可先通过支持渠道协商；未解决的，可依法向有管辖权的法院或适用的消费者争议处理机构提出。
 
-我们可能不时更新本条款。继续使用即表示您同意更新后的条款。
+## 14. 条款更新 {#updates}
 
-## 15. 联系方式
+条款更新会显示新日期。重大变更将按适用要求提前或另行通知；需要明确同意的变更会取得相应同意。更新不追溯取消已产生的法定权利。
 
-邮箱：support@nimotecode.com  
-GitHub：https://github.com/mobiledevloperlab/nimote_issues/issues
+在适用法律允许的范围内，收到相应通知后继续使用服务表示接受生效后的更新；法律要求明确同意的变更，不能仅以继续使用代替同意。
+
+## 15. 联系方式 {#contact}
+
+邮箱：<mailto:support@nimotecode.com>
+
+GitHub：<https://github.com/mobiledevloperlab/nimote_issues/issues>
+
+账户、订单、隐私和删除请求请通过邮箱私下提交；不要在公开 GitHub Issues 中发布个人信息或凭据。
