@@ -3,6 +3,7 @@ import { existsSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 import { productCopy } from './theme/product'
+import homeTranslations from './theme/i18n/home.json'
 import { allCompetitors } from './theme/data/mobileDevelopmentCompetitors'
 
 function communityLinks(zh: boolean): DefaultTheme.SocialLink[] {
@@ -299,18 +300,20 @@ function pageSchemas(context: TransformContext): object[] {
   const description = pageDescription(context, title)
   const inLanguage = languageForPath(context.pageData.relativePath)
   const normalizedPath = normalizePath(context.pageData.relativePath)
-  const isHome = normalizedPath === '/'
+  const isHome = stripLocalePrefix(normalizedPath) === '/'
+  const homeLocale = (normalizedPath.split('/')[1] || 'en') as keyof typeof homeTranslations
+  const homeCopy = homeTranslations[homeLocale] || homeTranslations.en
 
   const schemas: object[] = []
 
-  // Site-wide identity nodes are declared once, on the homepage. Repeating
-  // Organization/WebSite/SoftwareApplication on every route adds no signal and
-  // makes the graph harder to read, so other pages only carry their own WebPage.
+  // Homepages describe the application; localized homepages are not articles.
+  // Stable IDs identify the same organization, website and app across locales.
   if (isHome) {
     schemas.push(
       {
         '@context': 'https://schema.org',
         '@type': 'Organization',
+        '@id': `${siteUrl}/#organization`,
         name: 'NimoteCode',
         url: siteUrl,
         logo: brandLogo,
@@ -322,6 +325,7 @@ function pageSchemas(context: TransformContext): object[] {
       {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
+        '@id': `${siteUrl}/#website`,
         name: 'NimoteCode',
         url: siteUrl,
         description: websiteDescription(inLanguage),
@@ -330,13 +334,15 @@ function pageSchemas(context: TransformContext): object[] {
       {
         '@context': 'https://schema.org',
         '@type': 'SoftwareApplication',
+        '@id': `${siteUrl}/#application`,
+        inLanguage,
         name: 'NimoteCode',
         applicationCategory: 'DeveloperApplication',
         operatingSystem: 'Android, iOS',
         url: siteUrl,
         image: socialImage,
         description,
-        featureList: ['Code editor', 'SSH terminal', 'Git review', 'BYOK AI with your own provider API key', 'Root-free Local Linux on supported Android devices'],
+        featureList: [...homeCopy.facts, ...homeCopy.capabilities.map(([name]) => name), homeCopy.capabilityNote, homeCopy.byok],
         offers: {
           '@type': 'Offer',
           price: '0',
@@ -825,7 +831,11 @@ function faqSchema(context: TransformContext): object | null {
     ]
   }
 
-  const entries = faqEntries[normalized]
+  // Use the same source as the visible homepage FAQ to prevent claim drift.
+  const homeLocale = (normalized.split('/')[1] || 'en') as keyof typeof homeTranslations
+  const entries = stripLocalePrefix(normalized) === '/' && homeLocale in homeTranslations
+    ? homeTranslations[homeLocale].faqs.map(([question, answer]) => ({ question, answer }))
+    : faqEntries[normalized]
   if (!entries) return null
 
   return {
