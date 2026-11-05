@@ -21,3 +21,5 @@
 
 /* Shared page geometry is owned here, never by individual page types. */
 @import "./styles/layout.css";
+
+@import "./styles/trust.css";

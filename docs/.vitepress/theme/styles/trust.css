@@ -1,0 +1,50 @@
+/* Readable policy documents and accessible self-service actions. */
+.trust-page .nimote-marketing-doc { max-width: 960px; margin-inline: auto; }
+.trust-page .vp-doc { font-size: 16px; line-height: 1.85; }
+.trust-page .vp-doc h1 { max-width: 24ch; margin-top: 32px; font-size: clamp(2.1rem, 5vw, 3.2rem); line-height: 1.2; letter-spacing: -.035em; }
+.trust-page .vp-doc h2 { margin-top: 48px; padding-top: 28px; font-size: 1.4rem; scroll-margin-top: 110px; }
+.trust-page .vp-doc p { overflow-wrap: anywhere; }
+.trust-page .trust-meta { color: var(--vp-c-text-2); font-size: 14px; margin-bottom: 24px; }
+.trust-page .trust-eyebrow { color: var(--vp-c-text-2); font-size: 12px; font-weight: 650; letter-spacing: .09em; }
+.trust-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 20px; }
+.trust-page .trust-tabs a { border: 1px solid var(--vp-c-divider); border-radius: 100px; padding: 8px 16px; color: var(--vp-c-text-2); text-decoration: none; font-size: 14px; }
+.trust-page .trust-tabs a[aria-current="page"] { color: var(--vp-c-brand-1); background: var(--vp-c-brand-soft); border-color: var(--vp-c-brand-1); }
+.trust-toc { border-bottom: 1px solid var(--vp-c-divider); padding: 8px 0 18px; color: var(--vp-c-text-2); font-size: 14px; }
+.trust-toc summary { cursor: pointer; width: fit-content; }
+.trust-toc nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 24px; margin-top: 16px; }
+.trust-summary { margin: 28px 0; padding: 20px 24px; border: 1px solid var(--vp-c-divider); border-left: 3px solid var(--vp-c-brand-1); border-radius: 12px; background: var(--vp-c-bg-soft); }
+.trust-summary p:first-child { margin-top: 0; }
+.trust-summary p:last-child { margin-bottom: 0; }
+.trust-card-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 28px 0; }
+.trust-page .trust-card { display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 16px; border: 1px solid var(--vp-c-divider); background: var(--vp-c-bg-soft); text-decoration: none; color: var(--vp-c-text-1); }
+.trust-page .trust-card span { color: var(--vp-c-text-2); font-size: 14px; line-height: 1.6; }
+.trust-page .trust-card:hover { border-color: var(--vp-c-brand-1); }
+.trust-page .trust-action { display: inline-block; padding: 12px 20px; border-radius: 10px; background: var(--vp-c-brand-soft); border: 1px solid var(--vp-c-brand-1); text-decoration: none; }
+.trust-page .vp-doc table { display: table; width: 100%; table-layout: fixed; font-size: 14px; line-height: 1.7; }
+.trust-page .vp-doc th, .trust-page .vp-doc td { padding: 14px 16px; overflow-wrap: anywhere; vertical-align: top; }
+.trust-page .vp-doc th { text-align: left; }
+.trust-page .vp-doc th:first-child { width: 24%; }
+.trust-page a:focus-visible, .trust-page summary:focus-visible, .website-privacy button:focus-visible, .website-privacy a:focus-visible { outline: 3px solid var(--vp-c-brand-1); outline-offset: 4px; }
+.website-privacy { max-width: 1200px; margin: 16px auto 0; padding: 0 24px; text-align: center; }
+.privacy-launcher { color: var(--vp-c-text-2); text-decoration: underline; font: inherit; font-size: 13px; cursor: pointer; padding: 10px; }
+.privacy-panel { position: fixed; z-index: 100; bottom: max(18px, env(safe-area-inset-bottom)); right: 20px; width: min(460px, calc(100vw - 40px)); max-height: 70dvh; overflow: auto; padding: 22px; border: 1px solid var(--vp-c-divider); border-radius: 16px; box-shadow: 0 12px 40px #0002; background: var(--vp-c-bg); color: var(--vp-c-text-1); text-align: left; }
+.privacy-panel-heading { display: flex; justify-content: space-between; align-items: center; gap: 14px; }
+.privacy-panel-heading button { min-width: 44px; min-height: 44px; font-size: 24px; cursor: pointer; }
+.privacy-panel p { color: var(--vp-c-text-2); font-size: 14px; line-height: 1.7; margin: 10px 0 18px; }
+.privacy-panel a { color: var(--vp-c-brand-1); text-decoration: underline; }
+.privacy-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.privacy-actions button { cursor: pointer; min-height: 44px; padding: 10px; background: var(--vp-c-bg-soft); color: var(--vp-c-text-1); border: 1px solid var(--vp-c-divider); border-radius: 8px; font-size: 14px; }
+.privacy-actions button:hover { border-color: var(--vp-c-brand-1); }
+@media (max-width: 640px) {
+ .trust-card-grid, .trust-toc nav { grid-template-columns: 1fr; }
+ .trust-page .vp-doc th, .trust-page .vp-doc td { padding: 10px 8px; font-size: 13px; }
+ .trust-page .trust-summary { padding: 18px; }
+ .trust-page .trust-tabs a { padding: 8px 12px; }
+ .privacy-panel { right: 12px; width: calc(100vw - 24px); padding: 16px; }
+}
+.trust-page .vp-doc div[class*='language-'] { margin-inline: 0; border-radius: 12px; }
+.trust-page .vp-doc div[class*='language-'] pre { overflow-x: auto; }
+.trust-page .vp-doc th, .trust-page .vp-doc td { white-space: normal; }
+
+/* Terms share the help/policy layout; long visible URLs must wrap. */
+.terms-page .vp-doc a { overflow-wrap: anywhere; }

@@ -895,6 +895,8 @@ function websiteDescription(inLanguage: string): string {
 }
 
 export default defineConfig({
+  // Policy pages expose a server-rendered, keyboard-accessible contents list.
+  markdown: { headers: { level: [2] } },
   // Start with the product's dark canvas; keep the visitor's saved preference.
   appearance: 'dark',
   title: 'NimoteCode',

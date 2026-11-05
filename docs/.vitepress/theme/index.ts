@@ -18,8 +18,7 @@ import SocialProof from './components/SocialProof.vue'
 import LocalizedLandingPage from './components/LocalizedLandingPage.vue'
 import { type Theme } from 'vitepress'
 import './custom.css'
-// @ts-ignore - The package does not ship TypeScript types.
-import googleAnalytics from 'vitepress-plugin-google-analytics'
+import TrustNav from './components/TrustNav.vue'
 
 const theme: Theme = {
   extends: DefaultTheme,
@@ -49,11 +48,7 @@ const theme: Theme = {
     app.component('LocalizedLandingPage', LocalizedLandingPage)
     app.component('MarketingLayout', MarketingLayout)
 
-    if (import.meta.env.PROD) {
-      googleAnalytics({
-        id: 'G-JML9VGDMXJ'
-      })
-    }
+    app.component('TrustNav', TrustNav)
   }
 }
 
