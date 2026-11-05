@@ -1,18 +1,24 @@
 ---
-title: "带编辑器、Git 与 AI 的 Android SSH 客户端 | NimoteCode"
-description: NimoteCode 是不止于 shell 的 Android SSH 客户端：浏览远程文件、编辑代码、运行终端命令、审查 Git，并获得 AI 编程辅助。
+title: "2026 年如何选择 Android SSH 客户端 | NimoteCode"
+description: 如何为真实开发工作选择 Android SSH 客户端：远程文件、编辑、验证与 Git 审查。
 ---
 
-# 面向真实开发工作的 Android SSH 客户端
+# 当工作以改动代码结束时，如何选择 Android SSH 客户端
 
-当你搜索 **Android SSH 客户端**时，可能只需要重启一个服务或查看一段日志。但当问题需要修改代码时，单独的 shell 会带来摩擦：找文件、在别处编辑、切回来验证，再重建 Git diff。
+Android SSH 客户端首先要把你带到正确的主机，稳定地维持终端会话，并以符合现有安全策略的方式完成认证。若工作只是重启服务或看日志，这已经足够。
 
-NimoteCode 是一个为完整开发流程而生的 Android SSH 客户端。它在同一个移动工作区里结合了远程 Explorer、代码编辑器、SSH 终端、Git 与 AI 辅助。
+但如果告警最终需要一个补丁，事情就不同了：你得确认仓库、阅读上下文、改一个文件、运行项目自己的验证命令，再在提交前看 diff。终端参与这个流程，却不能独自完成它。
 
-<ImagePlaceholder image-key="androidSshClient" alt="Android SSH 工作区">
-  <strong>图片占位 —— Android SSH 工作区</strong>
-  <span>请替换为展示远程项目文件与终端会话的 Android 设备截图。</span>
-</ImagePlaceholder>
+<figure class="article-hero">
+  <a href="/images/placeholders/remote-workspace-connected.jpg" target="_blank" rel="noopener"><img src="/images/placeholders/remote-workspace-connected.jpg" width="1080" height="2376" alt="NimoteCode 中已连接的远程 SSH 工作区" loading="eager" decoding="async"></a>
+  <figcaption>编辑前先确认主机和仓库根目录；在错误机器上执行正确命令，结果仍然是错的。</figcaption>
+</figure>
+
+## 先按任务选，而不是按功能表选
+
+没有放之四海皆准的 Android SSH 客户端。若任务止于命令行，应优先看终端体验、主机配置和认证；若任务要改仓库，则应看文件导航、编辑、验证和 Git 审查是否连在同一上下文里。后者正是 NimoteCode 的适用场景，并不意味着前者不够好。
+
+在手机上，可靠的顺序是：确认目标主机和项目根目录，先读相关文件，做最小改动，运行能证伪判断的检查，再读一遍 Git diff。大型重构、复杂合并或无法在小屏上充分验证的生产操作，应当留给更合适的环境。
 
 ## 在 Android 手机或平板上能做什么
 

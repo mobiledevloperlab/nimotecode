@@ -19,6 +19,10 @@ NimoteCode es un espacio de trabajo de desarrollo móvil para ese trabajo más a
   <span>Replace with an original diagram that compares command-only SSH access with the connect, edit, verify and review workflow.</span>
 </ImagePlaceholder>
 
+## Elige según dónde termina el trabajo
+
+Para trabajo que termina en un comando, un cliente centrado en el terminal suele ser apropiado. Si termina en un cambio de repositorio, necesitas navegación, edición, verificación y revisión de Git juntas. Con cualquier herramienta, confirma primero host y rama.
+
 ## La pregunta que debes hacerte antes de cambiar
 
 

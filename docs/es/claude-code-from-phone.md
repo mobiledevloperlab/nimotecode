@@ -17,6 +17,10 @@ NimoteCode le brinda un espacio de trabajo móvil alrededor de esa sesión remot
   <span>Replace with a redacted remote CLI session, changed file and Git diff. Do not use Claude branding without approval.</span>
 </ImagePlaceholder>
 
+## Devuelve la salida del agente a un proceso revisable
+
+Independientemente de quién proponga el cambio, confirma el host, lee los archivos afectados, ejecuta una comprobación y revisa el diff de Git. En un teléfono, limita el trabajo a cambios pequeños que puedas leer y verificar por completo.
+
 ## Una práctica configuración de host remoto
 
 

@@ -17,6 +17,10 @@ NimoteCode는 편집기, 탐색기, SSH 터미널, Git, AI Chat 및 에이전트
   <span>Replace with a redacted remote agent session, source inspection and validation output. Do not include credentials or private code.</span>
 </ImagePlaceholder>
 
+## Agent가 검증을 대신할 수는 없습니다
+
+원격 저장소에서 Agent를 사용할 때도 호스트와 루트를 확인하고 변경된 파일, 명령, diff를 검토해야 합니다. 모바일에서는 관찰하고 검증할 수 있는 작은 작업이 더 적합합니다.
+
 ## 전화 친화적인 Codex 워크플로
 
 

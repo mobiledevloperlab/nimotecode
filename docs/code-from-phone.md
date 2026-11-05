@@ -9,10 +9,10 @@ Yes — for focused development work, not for replacing a desktop. Investigating
 
 NimoteCode makes **coding from a phone** practical by connecting you over SSH to your own development machine, then putting the project Explorer, editor, terminal, Git and AI in one workspace. Computation and tooling stay on that machine, while the phone works on the same repository.
 
-<ImagePlaceholder image-key="mobileIde" alt="Coding from a phone with a remote project">
-  <strong>Image placeholder — Coding from a phone</strong>
-  <span>Replace with a phone showing the project Explorer, an edited file and a terminal verification command in one workspace.</span>
-</ImagePlaceholder>
+<figure class="article-hero">
+  <a href="/images/placeholders/remote-workspace-connected.jpg" target="_blank" rel="noopener"><img src="/images/placeholders/remote-workspace-connected.jpg" width="1080" height="2376" alt="A phone connected to a remote project workspace" loading="eager" decoding="async"></a>
+  <figcaption>A phone works best for a bounded task with a clear check and a diff you can read before you stop.</figcaption>
+</figure>
 
 ## What coding from a phone really means
 

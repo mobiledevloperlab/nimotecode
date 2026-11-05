@@ -17,6 +17,10 @@ NimoteCode는 원격 SSH 연결을 개발 작업 공간으로 전환합니다. �
   <span>Replace with a remote project Explorer, open source file and terminal validation command from one real workflow.</span>
 </ImagePlaceholder>
 
+## SSH IDE의 가치는 검증 가능한 작업 순환에 있습니다
+
+터미널 출력에서 관련 파일로 이어지고, 변경을 프로젝트 검사로 확인하고, Git diff로 검토할 수 있어야 합니다. 작은 화면에서 충분히 읽거나 시험할 수 없는 작업은 다른 환경을 선택하세요.
+
 ## SSH 연결에서 작업 컨텍스트까지
 
 

@@ -14,6 +14,10 @@ NimoteCode 结合了 Editor、Explorer、SSH 终端、Git、AI Chat 与 Agent，
   <span>请替换为已脱敏的远程 Agent 会话、源码检查与验证输出。请勿包含凭据或私有代码。</span>
 </ImagePlaceholder>
 
+## Agent 不能替代验证
+
+将 Agent 用在远程仓库时，先确认主机和项目根目录，再检查它触及的文件、命令和 diff。一个小而可观察的任务比一次无法在手机上充分验证的大改动更适合移动开发。
+
 ## 一个手机友好的 Codex 工作流
 
 1. 在你方组织的凭据与控制要求下，在远程开发主机上配置 Codex。

@@ -9,10 +9,10 @@ An SSH connection is useful for checking a server. An **SSH IDE** is useful when
 
 NimoteCode turns a remote SSH connection into a development workspace. Instead of treating the remote host as a stream of shell text, you can browse its project tree, open files in an editor, run commands in terminal, review Git changes and bring AI assistance into the same task.
 
-<ImagePlaceholder image-key="sshIde" alt="SSH IDE remote project">
-  <strong>Image placeholder — SSH IDE in action</strong>
-  <span>Replace with a remote project Explorer, open source file and terminal validation command from one real workflow.</span>
-</ImagePlaceholder>
+<figure class="article-hero">
+  <a href="/images/placeholders/remote-workspace-connected.jpg" target="_blank" rel="noopener"><img src="/images/placeholders/remote-workspace-connected.jpg" width="1080" height="2376" alt="A NimoteCode SSH workspace connected to a remote project" loading="eager" decoding="async"></a>
+  <figcaption>An SSH IDE is useful when the terminal output can be traced to a file, verified, and reviewed in the same project.</figcaption>
+</figure>
 
 ## From SSH connection to working context
 

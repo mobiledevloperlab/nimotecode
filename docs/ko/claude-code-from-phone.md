@@ -17,6 +17,10 @@ NimoteCode는 원격 세션 주변에 모바일 작업 공간을 제공합니다
   <span>Replace with a redacted remote CLI session, changed file and Git diff. Do not use Claude branding without approval.</span>
 </ImagePlaceholder>
 
+## Agent의 결과를 검토 가능한 절차로 되돌리기
+
+누가 변경을 제안했든 대상 호스트를 확인하고 영향을 받는 파일을 읽고 검증을 실행한 뒤 Git diff를 검토해야 합니다. 휴대폰에서는 충분히 읽고 검증할 수 있는 작은 작업에 집중하세요.
+
 ## 실용적인 원격 호스트 설정
 
 

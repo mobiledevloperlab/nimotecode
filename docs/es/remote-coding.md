@@ -17,6 +17,10 @@ NimoteCode es un espacio de trabajo móvil creado para ese modelo. En lugar de r
   <span>Replace with the remote project Explorer, an open file and a running command from one SSH workspace.</span>
 </ImagePlaceholder>
 
+## Estar conectado en remoto no permite omitir comprobaciones
+
+Antes de empezar, confirma host, raíz del proyecto y rama. Después del cambio, ejecuta una comprobación que valide tu hipótesis y lee el diff. Una conexión estable resuelve el acceso, no el juicio sobre el cambio.
+
 ## Qué requiere realmente la codificación remota
 
 

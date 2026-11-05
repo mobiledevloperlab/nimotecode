@@ -17,6 +17,10 @@ NimoteCode hace que **codificar desde un teléfono** sea práctico al conectarlo
   <span>Replace with a phone showing the project Explorer, an edited file and a terminal verification command in one workspace.</span>
 </ImagePlaceholder>
 
+## Define primero el trabajo que puedes terminar con seguridad
+
+Un teléfono sirve para tareas con objetivo y verificación claros. Confirma host y rama, aplica el cambio mínimo, ejecuta una comprobación relacionada y lee el diff. Un refactor grande o un conflicto complejo no se vuelve móvil solo porque puedas conectarte por SSH.
+
 ## Qué significa realmente codificar desde un teléfono
 
 

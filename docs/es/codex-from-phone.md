@@ -17,6 +17,10 @@ NimoteCode combina un editor, un explorador, una terminal SSH, Git, AI Chat y un
   <span>Replace with a redacted remote agent session, source inspection and validation output. Do not include credentials or private code.</span>
 </ImagePlaceholder>
 
+## Un agente no sustituye la verificación
+
+Al usar un agente en un repositorio remoto, confirma host y raíz, y revisa los archivos, comandos y diff que toque. En móvil, las tareas pequeñas y observables son más apropiadas que un cambio grande que no puedas validar.
+
 ## Un flujo de trabajo Codex compatible con teléfonos
 
 

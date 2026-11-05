@@ -9,10 +9,10 @@ Remote coding means editing and running the project on one machine while you int
 
 NimoteCode is a mobile workspace built for that model. Instead of reducing remote coding to a stream of shell text, it gives you an Explorer for the project, an editor for the files, a terminal for commands, Git for review and AI assistance for context — all connected to the same remote host.
 
-<ImagePlaceholder image-key="sshIde" alt="Remote coding workspace over SSH">
-  <strong>Image placeholder — Remote coding session</strong>
-  <span>Replace with the remote project Explorer, an open file and a running command from one SSH workspace.</span>
-</ImagePlaceholder>
+<figure class="article-hero">
+  <a href="/images/placeholders/remote-workspace-connected.jpg" target="_blank" rel="noopener"><img src="/images/placeholders/remote-workspace-connected.jpg" width="1080" height="2376" alt="A connected remote workspace in NimoteCode" loading="eager" decoding="async"></a>
+  <figcaption>Remote work starts by confirming the host and project root, not by making the first edit.</figcaption>
+</figure>
 
 ## What remote coding actually requires
 

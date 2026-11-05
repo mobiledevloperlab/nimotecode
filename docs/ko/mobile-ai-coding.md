@@ -17,6 +17,10 @@ NimoteCode는 편집기, 탐색기, SSH, 터미널 및 Git이 포함된 **모바
   <span>Replace with AI Chat or Agent next to the changed file, terminal output and Git diff; redact all private code and credentials.</span>
 </ImagePlaceholder>
 
+## 속도가 가시성을 대신할 수는 없습니다
+
+AI는 설명이나 계획을 도울 수 있지만 호스트, 브랜치, 검증 명령이 맞는지 판단하지 못합니다. 명령, 파일 변경, Git diff를 검토하고 모바일에서는 관찰 가능하고 되돌릴 수 있는 범위로 작업을 제한하세요.
+
 ## AI 이해 및 계획을 위한 채팅
 
 

@@ -17,6 +17,10 @@ NimoteCode reúne esas herramientas en iPad como un **Espacio de trabajo de desa
   <span>Replace with a landscape iPad screenshot that shows the project tree, source file and terminal panel.</span>
 </ImagePlaceholder>
 
+## Más pantalla no cambia la responsabilidad de revisar
+
+Una tableta facilita ver archivo, salida y diff a la vez. El orden sigue siendo el mismo: confirma proyecto y rama, limita el cambio, ejecuta una comprobación y revisa el resultado.
+
 ## Un ciclo de codificación productivo para iPad
 
 

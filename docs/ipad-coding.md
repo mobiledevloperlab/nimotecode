@@ -9,10 +9,10 @@ An iPad gives you more screen space than a phone, but coding from iPad still wor
 
 NimoteCode brings those tools together on iPad as a **Mobile AI Development Workspace**: Editor + Explorer + SSH + Terminal + Git + AI Chat and Agent. It is available on the App Store with the same feature set as the Android release.
 
-<ImagePlaceholder image-key="ipadCoding" alt="iPad coding workspace">
-  <strong>Image placeholder — iPad workspace</strong>
-  <span>Replace with a landscape iPad screenshot that shows the project tree, source file and terminal panel.</span>
-</ImagePlaceholder>
+<figure class="article-hero">
+  <a href="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" target="_blank" rel="noopener"><img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" width="1414" height="878" alt="NimoteCode on a tablet with source control and editor visible" loading="eager" decoding="async"></a>
+  <figcaption>On a tablet, keeping the file, output, and diff in view makes a short task easier to follow.</figcaption>
+</figure>
 
 ## A productive iPad coding loop
 

@@ -19,6 +19,10 @@ NimoteCode는 해당 작업이 하나의 모바일 개발 작업 공간에서 �
   <span>Replace with an original visual that shows terminal, project files and Git review as one mobile flow.</span>
 </ImagePlaceholder>
 
+## 작은 화면에서 안전하게 끝낼 수 있는 작업인지 먼저 판단하기
+
+명령 실행만 필요하다면 터미널 중심 도구가 더 단순합니다. 저장소를 수정한다면 호스트, 프로젝트 루트, 브랜치를 확인하고 최소 변경, 관련 검증, diff 검토 순서를 지키세요. 충분히 검증할 수 없는 병합, 리팩터링, 운영 작업은 다른 환경에서 처리해야 합니다.
+
 ## 터미널 우선 액세스, 작업 공간 우선 제공
 
 

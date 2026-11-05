@@ -9,10 +9,10 @@ Coding agents are most useful when they are close to the repository, terminal an
 
 NimoteCode combines an Editor, Explorer, SSH Terminal, Git, AI Chat and Agent so you can work around a remote Codex session with the same project context: open the source, run the command, inspect the output and review the actual diff.
 
-<ImagePlaceholder image-key="codexFromPhone" alt="Codex from phone remote workflow">
-  <strong>Image placeholder — Remote Codex workflow</strong>
-  <span>Replace with a redacted remote agent session, source inspection and validation output. Do not include credentials or private code.</span>
-</ImagePlaceholder>
+<figure class="article-hero">
+  <a href="/images/placeholders/ai-plan-approval.jpg" target="_blank" rel="noopener"><img src="/images/placeholders/ai-plan-approval.jpg" width="1080" height="2376" alt="An agent plan being reviewed in a mobile workspace" loading="eager" decoding="async"></a>
+  <figcaption>Keep the agent, repository, test command, and diff close enough to review as one task.</figcaption>
+</figure>
 
 ## A phone-friendly Codex workflow
 

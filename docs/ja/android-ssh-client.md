@@ -1,18 +1,19 @@
 ---
-title: "Best SSH Client for Android in 2026 | NimoteCode"
-description: "An Android SSH client built for real development: browse remote files, edit code, run terminal commands, review Git and use AI — not just a shell."
+title: "2026年版 Android SSHクライアントの選び方 | NimoteCode"
+description: "実際の開発作業に合う Android SSH クライアントの選び方。リモートファイル、編集、検証、Git レビューを考えます。"
 ---
 
-# Android 開発者向けのより優れた SSH クライアント
+# コード変更まで行うなら、Android SSH クライアントをどう選ぶか
 
 
-Android に最適な SSH クライアントを探す場合、答えは接続が開いた後に何が起こるかによって異なります。サービスを再起動するか、ログを読み取るだけの場合は、ターミナルのみのクライアントで十分です。しかし、問題の解決策がコードの変更である場合、シェル自体が摩擦を引き起こします。ファイルを見つけて別の場所で編集し、元に戻って検証し、Git の差分を再構築します。 NimoteCode は、完全な開発者ワークフロー (リモート エクスプローラー、コード エディター、SSH ターミナル、Git、AI 支援を 1 つのモバイル ワークスペースで実現) 向けに構築された Android SSH クライアントです。
+サービスの再起動やログ確認で終わるなら、信頼できる端末と認証だけで十分です。ところが、障害対応がパッチで終わるなら、リポジトリを特定し、周辺のコードを読み、変更し、プロジェクトの検証を実行し、diff を確認する必要があります。端末はその流れの一部ですが、全部ではありません。
 
 
-<ImagePlaceholder image-key="androidSshClient" alt="NimoteCode Android SSH workspace showing a remote file explorer and terminal">
-<strong>画像プレースホルダー — Android SSH ワークスペース</strong>
-<span>リモート プロジェクト ファイルとターミナル セッションを示す Android デバイスのスクリーンショットに置き換えます。</span>
-</ImagePlaceholder>
+<figure class="article-hero"><a href="/images/placeholders/remote-workspace-connected.jpg" target="_blank" rel="noopener"><img src="/images/placeholders/remote-workspace-connected.jpg" width="1080" height="2376" alt="NimoteCode のリモート SSH ワークスペース" loading="eager" decoding="async"></a><figcaption>編集前にホストとリポジトリのルートを確認します。間違ったマシンで正しいコマンドを実行しても、正しい作業にはなりません。</figcaption></figure>
+
+## 機能表ではなく、終わらせる仕事で選ぶ
+
+コマンド実行が目的なら端末中心のクライアントが簡潔で適切です。リポジトリを変更するなら、ファイル参照、編集、検証、Git レビューが同じ文脈にあるかを見てください。小さな画面では、対象ホストとブランチを確認し、最小の変更を加え、検証を実行してから diff を読む順序が特に重要です。
 
 ## Android SSH クライアントとは何ですか?
 

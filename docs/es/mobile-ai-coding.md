@@ -17,6 +17,10 @@ NimoteCode coloca AI Chat y AI Agent dentro de un **Espacio de trabajo de desarr
   <span>Replace with AI Chat or Agent next to the changed file, terminal output and Git diff; redact all private code and credentials.</span>
 </ImagePlaceholder>
 
+## La velocidad no sustituye la visibilidad
+
+La IA puede ayudar a explicar o planificar, pero no puede decidir si host, rama y comando de verificación son correctos. Revisa comandos, cambios de archivos y diff de Git; en móvil, limita el trabajo a un alcance observable y reversible.
+
 ## AI Chat para comprensión y planificación
 
 
