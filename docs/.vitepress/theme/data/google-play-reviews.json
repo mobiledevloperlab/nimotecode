@@ -1,0 +1,24 @@
+{
+  "source": "https://play.google.com/store/apps/details?id=com.nimote.nimotecode&hl=en&gl=US",
+  "retrievedAt": "2026-11-05",
+  "language": "en",
+  "country": "us",
+  "reviews": [
+    {
+      "id": "c6bdbab9-ef21-4f15-9299-262a69ebc89c",
+      "author": "Abaid Ur Rehman",
+      "quote": "This is very good app. I was looking something like this for a long time. Terminal is also very smooth to use. Few things that needs to update: 1. Include / in terminal presets. 2. Don't close keyboard when click on terminal preset buttons. 3. Retain the vps session when switch b.w apps just like Termius app. 4. If user is in root then show git changes of all sub directories. Thanks",
+      "rating": 5,
+      "date": "2026-10-08",
+      "version": "1.2.1"
+    },
+    {
+      "id": "c702af6b-e32e-4eb1-a65c-c79d206f2d51",
+      "author": "noah stalker",
+      "quote": "Very good, but cannot access files in data folder. All files access permission could help this.",
+      "rating": 5,
+      "date": "2026-10-08",
+      "version": "1.2.1"
+    }
+  ]
+}

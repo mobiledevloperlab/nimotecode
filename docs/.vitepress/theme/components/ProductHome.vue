@@ -3,7 +3,7 @@ import { computed, ref } from 'vue'
 import { useData } from 'vitepress'
 import AppMockup from './AppMockup.vue'
 import MockIcon from './MockIcon.vue'
-import HomeToolComparison from './HomeToolComparison.vue'
+import reviewSnapshot from '../data/google-play-reviews.json'
 import { latestRelease } from '../data/releases'
 import translations from '../i18n/home.json'
 import '../styles/product-home.css'
@@ -32,7 +32,8 @@ function selectDemo(index: number) {
   activeDemo.value = index
 }
 const capabilityLinks = ['source-control', 'lsp', 'debug', 'editor', 'tasks', 'plugins']
-const communityLinks = ['https://discord.gg/tTxbpqYmhR', 'https://github.com/mobiledevloperlab/nimotecode', 'https://x.com/mobiledevlab']
+const reviewUrl = (id: string) => `https://play.google.com/store/apps/details?id=com.nimote.nimotecode&reviewId=${encodeURIComponent(id)}`
+const formatReviewDate = (date: string) => new Intl.DateTimeFormat(locale.value, { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`))
 </script>
 
 <template>
@@ -122,6 +123,21 @@ const communityLinks = ['https://discord.gg/tTxbpqYmhR', 'https://github.com/mob
       </div>
     </section>
 
+    <section v-if="reviewSnapshot.reviews.length" class="product-container product-reviews" aria-labelledby="reviews-title">
+      <div class="product-section-heading">
+        <div><p class="product-eyebrow">Google Play</p><h2 id="reviews-title">{{ copy.reviewsTitle }}</h2></div>
+        <a class="product-text-link" :href="reviewSnapshot.source" target="_blank" rel="noopener noreferrer">{{ copy.reviewsLink }} <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="product-reviews-note">{{ copy.reviewsNote }} · {{ copy.reviewsUpdated }} {{ formatReviewDate(reviewSnapshot.retrievedAt) }}</p>
+      <div class="product-review-grid">
+        <figure v-for="review in reviewSnapshot.reviews" :key="review.id" class="product-review-card">
+          <div class="product-review-rating"><span aria-hidden="true">{{ '★'.repeat(review.rating) }}{{ '☆'.repeat(5 - review.rating) }}</span><span class="product-review-score">{{ review.rating }}/5 · Google Play</span></div>
+          <blockquote lang="en" dir="ltr">{{ review.quote }}</blockquote>
+          <figcaption><div><strong>{{ review.author }}</strong><time :datetime="review.date">{{ formatReviewDate(review.date) }}</time></div><a :href="reviewUrl(review.id)" target="_blank" rel="noopener noreferrer">{{ copy.reviewOriginal }} <span aria-hidden="true">↗</span></a></figcaption>
+        </figure>
+      </div>
+    </section>
+
     <section class="product-container product-blog" aria-labelledby="blog-title">
       <div class="product-blog-heading"><h2 id="blog-title">{{ copy.blogHeading }}</h2><a class="product-text-link" :href="blogRoot">{{ copy.blogAll }}<span aria-hidden="true">→</span></a></div>
       <div class="product-blog-grid">
@@ -131,26 +147,11 @@ const communityLinks = ['https://discord.gg/tTxbpqYmhR', 'https://github.com/mob
       </div>
     </section>
 
-    <section class="product-container product-resources" aria-labelledby="resources-title">
-      <h2 id="resources-title">{{ copy.resourcesTitle }}</h2>
-      <div class="product-resource-grid"><a v-for="(resource, index) in copy.resources" :key="resource[0]" :href="resourceLinks[index]" ><MockIcon :name="['book', 'code', 'globe'][index]" /><div><h3>{{ resource[0] }}</h3><p>{{ resource[1] }}</p></div><span aria-hidden="true">↗</span></a></div>
-      <div class="product-community-grid"><a :href="blogRoot"><div><h3>{{ copy.communityBlogTitle }}<span aria-hidden="true">→</span></h3><p>{{ copy.communityBlogCopy }}</p></div></a><a v-for="(name, index) in ['Discord', 'GitHub', 'X / Twitter']" :key="name" :href="communityLinks[index]" target="_blank" rel="noopener noreferrer"><div><h3>{{ name }}<span aria-hidden="true">↗</span></h3><p>{{ copy.community[index] }}</p></div></a></div>
-    </section>
-
-    <section class="product-container product-faq" aria-labelledby="faq-title">
-      <h2 id="faq-title">{{ copy.faqTitle }}</h2>
-      <details v-for="faq in copy.faqs" :key="faq[0]">
-        <summary>{{ faq[0] }}</summary>
-        <p>{{ faq[1] }}</p>
-      </details>
-      <a class="product-text-link" :href="local('/docs/quick-start')">{{ copy.startLink }}<span aria-hidden="true">→</span></a>
-    </section>
-
-    <section class="product-container product-section product-comparison-section" aria-labelledby="compare-title">
-      <div class="product-section-heading"><div><p class="product-eyebrow">{{ copy.compareLink }}</p><h2 id="compare-title">{{ copy.compareTitle }}</h2></div><p class="product-section-description">{{ copy.compareCopy }}</p></div>
-      <HomeToolComparison v-if="locale === 'en' || locale === 'zh'" :lang="locale === 'zh' ? 'zh' : 'en'" :compare-url="local('/compare/mobile-ai-development-tools')" />
-      <a v-else class="product-text-link" href="/compare/mobile-ai-development-tools" hreflang="en">{{ copy.fullComparisonLink }} <span aria-hidden="true">→</span></a>
-    </section>
+    <nav class="product-container product-explore-links" :aria-label="copy.resourcesTitle">
+      <a v-for="(resource, index) in copy.resources" :key="resource[0]" :href="resourceLinks[index]">{{ resource[0] }} <span aria-hidden="true">→</span></a>
+      <a :href="locale === 'zh' ? '/zh/compare/mobile-ai-development-tools' : '/compare/mobile-ai-development-tools'" :hreflang="locale === 'zh' ? 'zh' : 'en'">{{ copy.fullComparisonLink }} <span aria-hidden="true">→</span></a>
+      <a href="https://discord.gg/tTxbpqYmhR" target="_blank" rel="noopener noreferrer">Discord <span aria-hidden="true">↗</span></a>
+    </nav>
 
     <section class="product-container product-download-section" aria-labelledby="download-title">
       <div class="product-download"><img src="/app_icon.png" width="64" height="64" alt="" loading="lazy" decoding="async" /><h2 id="download-title">{{ copy.ctaTitle }}</h2><p>{{ copy.ctaCopy }}</p><div class="product-actions"><a class="product-button" :href="android" target="_blank" rel="noopener noreferrer"><MockIcon name="android" />{{ copy.android }}</a><a class="product-button product-button-secondary" :href="ios" target="_blank" rel="noopener noreferrer"><MockIcon name="apple" />{{ copy.ios }}</a></div><p class="product-start-note"><span>{{ copy.startNote }}</span><span>{{ copy.byokLabel }}</span></p><a class="product-text-link" :href="local('/download')">{{ copy.allDownloads }}<span aria-hidden="true">→</span></a></div>

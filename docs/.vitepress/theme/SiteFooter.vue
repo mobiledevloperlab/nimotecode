@@ -3,6 +3,8 @@ import { computed } from 'vue'
 import { useRoute } from 'vitepress'
 import WebsitePrivacy from './components/WebsitePrivacy.vue'
 
+defineProps<{ compact?: boolean }>()
+
 const route = useRoute()
 
 const localePrefix = computed(() => {
@@ -97,7 +99,16 @@ function localized(path: string) {
 </script>
 
 <template>
-  <footer class="nimote-site-footer">
+  <footer v-if="compact" class="nimote-doc-footer">
+    <nav :aria-label="copy.company">
+      <a :href="localized('/support')">{{ copy.support }}</a>
+      <a :href="localized('/privacy')">{{ copy.privacy }}</a>
+      <a :href="localized('/terms')">{{ copy.terms }}</a>
+    </nav>
+    <span class="nimote-doc-footer-copyright">© 2026 NimoteCode</span>
+    <WebsitePrivacy />
+  </footer>
+  <footer v-else class="nimote-site-footer">
     <div class="nimote-site-footer-content">
       <div class="nimote-site-footer-inner">
         <section class="nimote-footer-brand" aria-label="NimoteCode">

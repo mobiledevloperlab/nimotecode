@@ -3,7 +3,6 @@ import { computed, provide, useSlots, watch } from 'vue'
 import { useData, useRoute } from 'vitepress'
 import VPBackdrop from 'vitepress/dist/client/theme-default/components/VPBackdrop.vue'
 import VPContent from 'vitepress/dist/client/theme-default/components/VPContent.vue'
-import VPFooter from 'vitepress/dist/client/theme-default/components/VPFooter.vue'
 import VPLocalNav from 'vitepress/dist/client/theme-default/components/VPLocalNav.vue'
 import VPNav from 'vitepress/dist/client/theme-default/components/VPNav.vue'
 import VPSidebar from 'vitepress/dist/client/theme-default/components/VPSidebar.vue'
@@ -84,7 +83,10 @@ const isWorkflowRoute = computed(() => /^\/(?:(?:zh|ja|ko|es)\/)?use-cases(?:\/|
 
         <template #doc-footer-before><slot name="doc-footer-before" /></template>
         <template #doc-before><slot name="doc-before" /></template>
-        <template #doc-after><slot name="doc-after" /></template>
+        <template #doc-after>
+          <slot name="doc-after" />
+          <SiteFooter compact />
+        </template>
         <template #doc-top><slot name="doc-top" /></template>
         <template #doc-bottom><slot name="doc-bottom" /></template>
 
@@ -97,8 +99,8 @@ const isWorkflowRoute = computed(() => /^\/(?:(?:zh|ja|ko|es)\/)?use-cases(?:\/|
       </VPContent>
     </main>
 
-    <VPFooter />
-    <SiteFooter />
+    <!-- Reading routes end inside the article column. The full site footer
+         belongs to MarketingLayout, not beneath the documentation shell. -->
   </div>
   <Content v-else />
   </template>

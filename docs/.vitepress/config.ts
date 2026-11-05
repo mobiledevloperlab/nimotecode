@@ -831,11 +831,7 @@ function faqSchema(context: TransformContext): object | null {
     ]
   }
 
-  // Use the same source as the visible homepage FAQ to prevent claim drift.
-  const homeLocale = (normalized.split('/')[1] || 'en') as keyof typeof homeTranslations
-  const entries = stripLocalePrefix(normalized) === '/' && homeLocale in homeTranslations
-    ? homeTranslations[homeLocale].faqs.map(([question, answer]) => ({ question, answer }))
-    : faqEntries[normalized]
+  const entries = faqEntries[normalized]
   if (!entries) return null
 
   return {
