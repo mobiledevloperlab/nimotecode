@@ -14,6 +14,10 @@ NimoteCode는 이러한 도구를 iPad에서 **모바일 AI 개발 작업 공간
   <span>Replace with a landscape iPad screenshot that shows the project tree, source file and terminal panel.</span>
 </ImagePlaceholder>
 
+## 화면이 넓어져도 검토 책임은 달라지지 않습니다
+
+태블릿에서는 파일, 출력, diff를 함께 보기 쉬워집니다. 그러나 프로젝트와 브랜치를 확인하고, 변경을 좁히고, 검사를 실행하고, 결과를 검토하는 순서는 같습니다.
+
 ## 생산적인 iPad 코딩 루프
 
 ### 상황에 맞게 더 큰 화면을 사용하세요.

@@ -17,6 +17,10 @@ NimoteCode convierte una conexión SSH remota en un espacio de trabajo de desarr
   <span>Replace with a remote project Explorer, open source file and terminal validation command from one real workflow.</span>
 </ImagePlaceholder>
 
+## El valor de un SSH IDE está en cerrar un ciclo verificable
+
+La salida del terminal debe llevarte al archivo pertinente; el cambio debe pasar una comprobación del proyecto y poder revisarse en el diff de Git. Elige otro entorno para trabajos que no puedas leer o probar bien en una pantalla pequeña.
+
 ## De la conexión SSH al contexto de trabajo
 
 

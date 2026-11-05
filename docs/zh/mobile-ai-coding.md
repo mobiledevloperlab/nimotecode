@@ -14,6 +14,10 @@ NimoteCode 把 AI Chat 与 AI Agent 放进带 Editor、Explorer、SSH、Terminal
   <span>请替换为 AI Chat / Agent 与已改动文件、终端输出和 Git diff 同屏的截图；请脱敏所有私有代码与凭据。</span>
 </ImagePlaceholder>
 
+## 速度不能代替可见性
+
+AI 可以帮助解释、规划或执行受控步骤，却不能替你判断主机、分支和验证命令是否正确。保留对命令、文件改动和 Git diff 的审查；在手机上尤其应把任务限制在可观察、可回退的范围内。
+
 ## 用 AI Chat 理解与规划
 
 当你希望掌控每一步时使用 AI Chat：解释报错、理清函数、规划重构或准备测试计划。当前文件与工作区比粘贴的片段是更好的起点，你也能从解释直接进入编辑器或终端。

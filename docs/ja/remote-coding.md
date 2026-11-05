@@ -17,6 +17,10 @@ NimoteCode は、そのモデル用に構築されたモバイル ワークス�
   <span>Replace with the remote project Explorer, an open file and a running command from one SSH workspace.</span>
 </ImagePlaceholder>
 
+## リモート接続は確認を省く理由にならない
+
+開始前にホスト、プロジェクトのルート、ブランチを確認し、変更後は仮説を確かめるチェックと diff の確認を行います。接続の安定性はアクセスの問題を解決しても、変更の判断までは代替しません。
+
 ## リモートコーディングに実際に必要なもの
 
 

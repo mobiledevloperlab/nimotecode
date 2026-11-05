@@ -17,6 +17,10 @@ NimoteCode는 SSH를 통해 자체 개발 시스템에 연결한 다음 프로�
   <span>Replace with a phone showing the project Explorer, an edited file and a terminal verification command in one workspace.</span>
 </ImagePlaceholder>
 
+## 안전하게 완료할 수 있는 작업을 먼저 정하기
+
+휴대폰에는 목표와 검증 방법이 분명한 작업이 맞습니다. 호스트와 브랜치를 확인하고 최소 변경을 한 다음 관련 검사를 실행하고 diff를 읽으세요. 대규모 리팩터링이나 복잡한 충돌은 SSH에 연결할 수 있어도 모바일 작업에 적합하지 않습니다.
+
 ## 전화기 코딩의 실제 의미
 
 

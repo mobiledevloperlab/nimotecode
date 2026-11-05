@@ -9,10 +9,10 @@ If your development machine already has Claude Code installed, you can use your 
 
 NimoteCode gives you a mobile workspace around that remote session: Explorer for the repository, Editor for the files, SSH Terminal for commands, Git for review and its own AI assistance for code questions and controlled tasks.
 
-<ImagePlaceholder image-key="claudeCodeFromPhone" alt="Claude Code from phone remote workflow">
-  <strong>Image placeholder — Remote Claude Code workflow</strong>
-  <span>Replace with a redacted remote CLI session, changed file and Git diff. Do not use Claude branding without approval.</span>
-</ImagePlaceholder>
+<figure class="article-hero">
+  <a href="/images/placeholders/git-diff-view.jpg" target="_blank" rel="noopener"><img src="/images/placeholders/git-diff-view.jpg" width="1080" height="2376" alt="A Git diff view in NimoteCode" loading="eager" decoding="async"></a>
+  <figcaption>The practical mobile question is not whether an agent can produce a change; it is whether you can inspect and verify that change before it ships.</figcaption>
+</figure>
 
 ## A practical remote-host setup
 

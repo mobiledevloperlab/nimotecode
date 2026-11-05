@@ -19,6 +19,10 @@ NimoteCode es una alternativa a considerar cuando desea que el trabajo se realic
   <span>Replace with an original visual that shows terminal, project files and Git review as one mobile flow.</span>
 </ImagePlaceholder>
 
+## Decide primero si el trabajo puede terminar de forma segura en una pantalla pequeña
+
+Si solo necesitas ejecutar comandos, una herramienta centrada en el terminal suele ser más simple. Para modificar un repositorio, confirma host, raíz y rama; haz el cambio mínimo, ejecuta una comprobación pertinente y revisa el diff. Deja las fusiones, refactorizaciones u operaciones que no puedas verificar bien para otro entorno.
+
 ## Acceso primero al terminal, entrega primero al espacio de trabajo
 
 

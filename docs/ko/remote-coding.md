@@ -17,6 +17,10 @@ NimoteCode는 해당 모델을 위해 구축된 모바일 작업 공간입니다
   <span>Replace with the remote project Explorer, an open file and a running command from one SSH workspace.</span>
 </ImagePlaceholder>
 
+## 원격 연결이 확인 절차를 생략할 이유는 아닙니다
+
+시작 전에 호스트, 프로젝트 루트, 브랜치를 확인하고 변경 후에는 가설을 검증하는 검사와 diff 검토를 하세요. 안정적인 연결은 접근 문제를 해결하지만 변경의 판단까지 대신하지는 않습니다.
+
 ## 원격 코딩에 실제로 필요한 것
 
 

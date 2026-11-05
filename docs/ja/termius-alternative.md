@@ -19,6 +19,10 @@ NimoteCode は、より広範なジョブのためのモバイル開発ワーク
   <span>Replace with an original diagram that compares command-only SSH access with the connect, edit, verify and review workflow.</span>
 </ImagePlaceholder>
 
+## 仕事の終点から選ぶ
+
+コマンドで終わる作業なら端末中心のクライアントが適しています。リポジトリの変更で終わる作業なら、ファイル参照、編集、検証、Git レビューが一続きで必要です。どのツールでも、まずホストとブランチを確認します。
+
 ## 切り替える前に尋ねるべき質問
 
 

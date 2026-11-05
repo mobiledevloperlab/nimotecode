@@ -9,10 +9,10 @@ Mobile AI coding should be more than sending a pasted code snippet to a chatbot.
 
 NimoteCode puts AI Chat and AI Agent inside a **Mobile AI Development Workspace** with Editor, Explorer, SSH, Terminal and Git. That means AI can support the task where it happens, whether the workspace is local or connected to a remote host.
 
-<ImagePlaceholder image-key="mobileAiCoding" alt="AI coding workspace">
-  <strong>Image placeholder — AI coding with workspace context</strong>
-  <span>Replace with AI Chat or Agent next to the changed file, terminal output and Git diff; redact all private code and credentials.</span>
-</ImagePlaceholder>
+<figure class="article-hero">
+  <a href="/images/placeholders/ai-plan-approval.jpg" target="_blank" rel="noopener"><img src="/images/placeholders/ai-plan-approval.jpg" width="1080" height="2376" alt="An AI plan awaiting review in NimoteCode" loading="eager" decoding="async"></a>
+  <figcaption>Useful automation stays observable: review the plan, command, and resulting diff in the project where the work happens.</figcaption>
+</figure>
 
 ## AI Chat for understanding and planning
 

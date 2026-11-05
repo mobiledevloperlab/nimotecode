@@ -19,6 +19,10 @@ NimoteCode ofrece ese flujo de trabajo en iPhone y iPad: **Explorer + SSH + Term
   <span>Replace with an approved iPhone product mockup when available.</span>
 </ImagePlaceholder>
 
+## En iPhone, termina ciclos cortos y verificables
+
+Confirma el host y repositorio correctos, realiza solo el cambio necesario, ejecuta una comprobación conocida y revisa el diff de Git. No trates el teléfono como sustituto del escritorio para cambios grandes o salidas difíciles de leer.
+
 ## Qué esperar de un cliente SSH centrado en desarrolladores
 
 

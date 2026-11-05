@@ -19,6 +19,10 @@ NimoteCode는 iPhone 및 iPad에서 해당 워크플로를 제공합니다. **Ex
   <span>Replace with an approved iPhone product mockup when available.</span>
 </ImagePlaceholder>
 
+## iPhone에서는 짧고 검증 가능한 작업을 끝내기
+
+올바른 호스트와 저장소를 확인한 뒤 필요한 최소 변경을 하고, 알려진 검사를 실행하고, Git diff를 확인하세요. 큰 변경이나 읽기 어려운 출력이 필요한 작업에서는 휴대폰을 데스크톱 대용으로 취급하지 마세요.
+
 ## 개발자 중심 SSH 클라이언트에서 기대할 수 있는 것
 
 

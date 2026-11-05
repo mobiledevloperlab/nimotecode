@@ -11,10 +11,10 @@ Shell access is a powerful way to work from a mobile device. When the job involv
 
 NimoteCode is an alternative to consider when you want that work to happen in one mobile development workspace: **Editor + Explorer + SSH + Terminal + Git + AI Chat and Agent**.
 
-<ImagePlaceholder image-key="blinkShellAlternative" alt="Terminal-first versus workspace-first workflow">
-  <strong>Image placeholder — Workspace-first workflow</strong>
-  <span>Replace with an original visual that shows terminal, project files and Git review as one mobile flow.</span>
-</ImagePlaceholder>
+<figure class="article-hero">
+  <a href="/images/placeholders/git-diff-view.jpg" target="_blank" rel="noopener"><img src="/images/placeholders/git-diff-view.jpg" width="1080" height="2376" alt="A mobile Git diff view in NimoteCode" loading="eager" decoding="async"></a>
+  <figcaption>For a code change, the terminal is only one part of the job; the finished change must still be reviewable.</figcaption>
+</figure>
 
 ## Terminal-first access, workspace-first delivery
 

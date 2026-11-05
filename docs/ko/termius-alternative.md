@@ -19,6 +19,10 @@ NimoteCode는 더 광범위한 작업을 위한 모바일 개발 작업 공간�
   <span>Replace with an original diagram that compares command-only SSH access with the connect, edit, verify and review workflow.</span>
 </ImagePlaceholder>
 
+## 작업의 끝점으로 선택하기
+
+명령으로 끝나는 작업에는 터미널 중심 클라이언트가 적합합니다. 저장소 변경으로 끝나는 작업에는 파일 탐색, 편집, 검증, Git 검토가 함께 필요합니다. 어떤 도구를 쓰든 먼저 호스트와 브랜치를 확인하세요.
+
 ## 전환하기 전에 물어볼 질문
 
 
