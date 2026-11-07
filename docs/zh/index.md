@@ -2,7 +2,7 @@
 layout: home
 title: "NimoteCode｜Android、iPhone 与 iPad 移动 IDE 和 SSH 开发工作区"
 titleTemplate: false
-description: "用 NimoteCode 在手机和平板上继续开发项目：编辑本地与 SSH 文件、运行项目命令、审查 Git 改动、使用 GitHub 与可选 AI Agent。免费开始；受支持的 Android 设备可免 root 运行 Linux。"
+description: 在手机或平板打开项目，编辑文件、运行项目工具并检查改动。你可以从本地文件夹开始，通过 SSH 连接开发电脑，或在受支持的 Android 设备上使用 Local Linux。
 ---
 
 <ProductHome />

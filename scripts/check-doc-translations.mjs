@@ -4,7 +4,7 @@ import { resolve } from 'node:path'
 // Structural parity complements editorial translation review. Keep the core
 // guides synchronized without requiring literal translations of their prose.
 const pages = [
-  'account-subscription', 'ai', 'configuration', 'debug', 'editor', 'faq',
+  'account-subscription', 'ai', 'configuration', 'docker', 'debug', 'editor', 'faq',
   'local-linux', 'lsp', 'notifications', 'plugins', 'quick-start', 'search',
   'security', 'settings', 'source-control', 'ssh', 'sync-cache', 'tasks', 'terminal'
 ]
@@ -16,7 +16,7 @@ const failures = []
 // still validated below; forcing identical heading/div sequences would make
 // localized documentation less natural and repeatedly produces false CI
 // failures during editorial updates.
-const localizedLayouts = new Set(['ai', 'plugins'])
+const localizedLayouts = new Set(['ai', 'plugins', 'docker'])
 const extract = (text, pattern) => [...text.matchAll(pattern)].map(match => match[1] ?? match[0])
 const read = (locale, page) => readFileSync(resolve(root, locale, 'docs', `${page}.md`), 'utf8')
 const structures = {

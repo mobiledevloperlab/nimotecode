@@ -41,7 +41,7 @@ El acceso a modelos y los tokens no están incluidos. Revisa comandos y diferenc
 
 ## Compara herramientas móviles
 
-**Editar → ejecutar verificaciones → revisar diferencias → ampliar el espacio de trabajo, en un solo IDE móvil.** La columna de NimoteCode refleja 2.2.0; `?` significa que la capacidad no se ha verificado para ese producto.
+**Editar → ejecutar verificaciones → revisar diferencias → ampliar el espacio de trabajo, en un solo IDE móvil.** La columna de NimoteCode refleja 2.3.0; `?` significa que la capacidad no se ha verificado para ese producto.
 
 | Capacidad | **NimoteCode** | Termius | Blink Shell | ServerCC |
 | --- | :---: | :---: | :---: | :---: |
@@ -92,21 +92,6 @@ Una marca no significa que la función sea gratuita, no requiera configuración 
 - **Carpetas externas:** las carpetas autorizadas por el sistema permiten explorar y editar; Git, LSP, depuración, tareas, vigilancia de archivos y Agent requieren una ruta nativa.
 - **Disponibilidad:** las herramientas dependen del espacio de trabajo, las herramientas instaladas y el plan. Consulta la [referencia de funciones](https://nimotecode.com/es/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_features).
 
-## NimoteCode 2.2.0 · Flujos de GitHub y herramientas de Android Local Linux
-
-| Build | Publicado | Plataformas |
-| --- | --- | --- |
-| 60 | 2 de noviembre de 2026 | Android · iPhone · iPad |
-
-**Flujos nativos de GitHub, búsqueda más fiable y herramientas de desarrollo experimentales para Android Local Linux.**
-
-- **Usa GitHub sin salir de NimoteCode:** inicia sesión con autorización del navegador o un token, explora repositorios y ramas, clona en espacios locales o SSH y colabora mediante incidencias, pull requests, revisiones y CI.
-- **Usa herramientas experimentales de Android Local Linux cuando las necesites:** instala bajo demanda herramientas esenciales de línea de comandos, Python o Web y crea, ejecuta y abre un proyecto de ejemplo sin reinstalar Linux ni sobrescribir un proyecto existente. La instalación inicial requiere acceso a Internet.
-- **Recupérate con más confianza:** el inicio de sesión, la clonación, los espacios Local Linux y la recuperación tras un envío o publicación fallidos son más fiables; los resultados y el resaltado de búsqueda del espacio de trabajo también mejoran.
-- **Navega por un entorno de trabajo más coherente:** Configuración, control de código fuente, GitHub, búsqueda y paneles de conversación comparten controles, tipografía y comportamiento en pantallas estrechas más claros; las acciones de copia comunes también ofrecen comentarios coherentes.
-
-> [Leer las notas completas de 2.2.0 →](https://nimotecode.com/es/releases/2.2.0?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_release) · [Versiones anteriores](https://nimotecode.com/es/releases/)
-
 ## Empezar
 
 1. Instala NimoteCode desde [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) o la [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253).
@@ -138,3 +123,14 @@ Comparte un error, pregunta o flujo de trabajo que te gustaría ver compatible.
 NimoteCode es una aplicación comercial de código cerrado. Este repositorio contiene documentación oficial, tutoriales, ejemplos de flujo de trabajo y notas de versión; el código fuente de la aplicación no se publica. Los preajustes de Linux se mantienen en un repositorio separado y los informes de errores usan el rastreador enlazado arriba.
 
 Los [paquetes de código fuente y avisos de licencia de Local Linux](https://nimotecode.com/es/docs/local-linux-source) cubren componentes de terceros; no hacen que NimoteCode sea de código abierto.
+
+## NimoteCode 2.3.0 · Modos de espacio, Docker y Dev Containers
+
+Cambia entre IDE, Terminal e IA conservando el proyecto. También incorpora mejoras para Windows SSH, plugins, Agent, terminal y Docker en hosts SSH.
+
+- **Cambia de modo:** alterna entre IDE, Terminal e IA conservando el proyecto y el Explorador.
+- **Docker por SSH:** administra contenedores, imágenes, volúmenes, redes y Compose; consulta registros y estadísticas, abre exec y busca en Docker Hub.
+- **Dev Containers:** crea o reconstruye desde `devcontainer.json` y abre un espacio aislado configurado.
+- **Flujos ampliados:** Windows SSH, plugins validados, instrucciones al Agent en curso, terminal adaptable y revisión móvil de Git.
+
+> [Leer las notas completas de 2.3.0](https://nimotecode.com/es/releases/2.3.0) · [Earlier releases](https://nimotecode.com/releases/)

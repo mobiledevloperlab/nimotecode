@@ -83,3 +83,8 @@ Remote Explorer에 표시된 호스트, 사용자, 포트, 루트 경로를 확�
 <div class="doc-screenshots">
   <DocScreenshot file="remote-file-selection.jpg" caption="파일 선택 모드의 Remote Explorer." />
 </div>
+
+
+## Windows SSH 작업 공간
+
+Windows 호스트에서는 PowerShell과 SFTP를 사용해 원격 프로젝트를 다룹니다. 파일 검색, Git, 터미널 등의 사용에는 호스트에 필요한 도구가 있어야 합니다.

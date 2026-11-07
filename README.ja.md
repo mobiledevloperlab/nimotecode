@@ -41,7 +41,7 @@
 
 ## モバイル開発ツールの比較
 
-**編集 → チェック実行 → 差分確認 → ワークスペース拡張を、一つのモバイル IDE で。** NimoteCode 列は 2.2.0 を反映しています。`?` は、その製品の機能が未確認であることを示します。
+**編集 → チェック実行 → 差分確認 → ワークスペース拡張を、一つのモバイル IDE で。** NimoteCode 列は 2.3.0 を反映しています。`?` は、その製品の機能が未確認であることを示します。
 
 | 主な機能 | **NimoteCode** | Termius | Blink Shell | ServerCC |
 | --- | :---: | :---: | :---: | :---: |
@@ -92,21 +92,6 @@ Orca モバイルにはデスクトップ Companion が必要です。Moshi の�
 - **外部フォルダー:** システムに許可された外部フォルダーは閲覧と編集に対応しますが、Git、LSP、デバッグ、Tasks、ファイル監視、Agent はネイティブファイルパスが必要です。
 - **利用可能性:** ツールはワークスペース、インストール済みツール、プランに依存します。[機能リファレンス](https://nimotecode.com/ja/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_features)を確認してください。
 
-## NimoteCode 2.2.0 · GitHub ワークフローと Android Local Linux ツールキット
-
-| Build | リリース日 | プラットフォーム |
-| --- | --- | --- |
-| 60 | 2026 年 11 月 2 日 | Android · iPhone · iPad |
-
-**ネイティブ GitHub ワークフロー、より安定した検索、実験的な Android Local Linux 開発ツールキット。**
-
-- **NimoteCode 内で GitHub を利用：** ブラウザー認証またはトークンでサインインし、リポジトリとブランチを参照、ローカルまたは SSH ワークスペースにクローンして、Issue、プルリクエスト、レビュー、CI で共同作業できます。
-- **実験的な Android Local Linux ツールキットを必要に応じて利用：** コマンドラインの基本ツール、Python、Web ツールをオンデマンドでインストールし、Linux の再インストールや既存プロジェクトの上書きをせずにサンプルプロジェクトを作成、実行、オープンできます。初回インストールにはインターネット接続が必要です。
-- **より安心して復旧：** GitHub のサインイン、クローン、Local Linux ワークスペース、失敗した push や公開からの復旧がより安定し、ワークスペース検索の結果とハイライトも改善しました。
-- **より一貫したワークベンチを操作：** 設定、ソース管理、GitHub、検索、会話パネルで、コントロール、文字組み、狭い画面での動作を統一し、共通のコピー操作でも一貫したフィードバックを表示します。
-
-> [2.2.0 の完全なリリースノートを読む →](https://nimotecode.com/ja/releases/2.2.0?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_release) · [以前のリリース](https://nimotecode.com/ja/releases/)
-
 ## はじめる
 
 1. [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) または [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253) から NimoteCode をインストールします。
@@ -137,3 +122,14 @@ Orca モバイルにはデスクトップ Companion が必要です。Moshi の�
 NimoteCode は商用のクローズドソースアプリケーションです。このリポジトリには公式ドキュメント、チュートリアル、ワークフロー例、リリースノートが含まれます。アプリケーションのソースコードは公開されません。Linux プリセットは別リポジトリで管理され、バグ報告には上記の Issue トラッカーを使用します。
 
 [Local Linux のソースバンドルとライセンス通知](https://nimotecode.com/ja/docs/local-linux-source)はサードパーティコンポーネントを対象とし、NimoteCode アプリをオープンソース化するものではありません。
+
+## NimoteCode 2.3.0 · ワークスペースモード、Docker、Dev Containers
+
+IDE、ターミナル、AI を切り替えながらプロジェクト状態を維持。Windows SSH、プラグイン、Agent、ターミナル、SSH ホスト上の Docker 開発も強化しました。
+
+- **モード切替：**IDE、ターミナル、AI を切り替えてもプロジェクトと Explorer の状態を維持します。
+- **SSH の Docker：**コンテナ、イメージ、ボリューム、ネットワーク、Compose を管理し、ログ、統計、exec、Docker Hub 検索を利用できます。
+- **Dev Containers：**`devcontainer.json` から作成または再構築し、設定済みの隔離ワークスペースを開けます。
+- **開発フローを強化：**Windows SSH、検証付きプラグイン、Agent への追加指示、適応型ターミナル分割、モバイル Git レビューに対応。
+
+> [2.3.0 のリリースノート全文](https://nimotecode.com/ja/releases/2.3.0) · [Earlier releases](https://nimotecode.com/releases/)

@@ -82,3 +82,8 @@ Abra **AI Tools**, elija proveedor y archivos, y seleccione **Commit Message**, 
 </div>
 
 </div>
+
+
+## Revisión móvil de Git
+
+La vista de diferencias y sus controles se adaptan a teléfonos y tabletas.

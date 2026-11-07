@@ -47,3 +47,8 @@ description: "터미널 설정, 사용 절차 및 화면 안내."
   <DocScreenshot file="terminal-customize-menu.jpg" caption="탭 사용자 지정 메뉴." />
   <DocScreenshot file="terminal-tab-style-form.jpg" caption="탭 제목, 색상 및 아이콘 설정." />
 </div>
+
+
+## 터미널 분할 및 연동
+
+여러 창을 열고 크기를 조정할 수 있습니다. 출력의 파일 위치에서 IDE로 이동하거나 선택한 내용을 AI 분석에 보낼 수 있습니다.

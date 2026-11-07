@@ -62,3 +62,8 @@ La navegación entre paneles, las operaciones LSP y las tareas nativas configura
 ## Capacidades públicas y seguridad
 
 Un plugin puede combinar paneles, formularios, datos del espacio, acciones confirmadas de archivos/HTTP/comandos, Agent Tools, Markdown Skills, flujos y referencias MCP; no carga extensiones ejecutables arbitrarias en el dispositivo. Actualizar, desactivar o desinstalar no sustituye silenciosamente un trabajo existente. Si se interrumpe durante un efecto externo, revise el resultado y elija explícitamente reintentar u omitir.
+
+
+## Validación de plugins e integración con Agent
+
+Las contribuciones y dependencias versionadas de plugins se validan antes de instalar. Las herramientas y flujos aprobados pueden usarse desde el Agent integrado.

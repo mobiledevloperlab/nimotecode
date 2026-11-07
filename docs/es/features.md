@@ -1,6 +1,6 @@
 ---
 title: Funciones de NimoteCode | Espacio de desarrollo móvil
-description: "NimoteCode reúne espacios locales y SSH, Android Local Linux, editor, terminal, Git y GitHub, IA, plugins personalizados, servicios de lenguaje, depuración, búsqueda y tareas."
+description: Abre tu proyecto desde el móvil y conéctate a tu ordenador para editar, ejecutar comandos y revisar cambios de Git en un mismo espacio. Consulta cuándo usar SSH, Docker y Pro.
 ---
 
 # Funciones de NimoteCode
@@ -42,3 +42,15 @@ La salida de IA es ayuda, no garantía de exactitud, seguridad ni éxito. Los pl
 Las imágenes siguientes muestran las superficies de espacio de trabajo, revisión, diagnóstico y transferencia descritas arriba.
 
 <div class="feature-showcase" role="region" tabindex="0" aria-label="NimoteCode feature highlights"><div class="feature-showcase__track"><figure class="feature-showcase__item"><img src="/screenshots/p1.png" alt="Local files, SSH, code editing and AI Agent in NimoteCode" width="1604" height="901" loading="eager"><figcaption>Workspaces, editing and AI Agent</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p2.png" alt="SSH terminal, Source Control and code diagnostics in NimoteCode" width="1597" height="896" loading="lazy"><figcaption>Terminal, Git and diagnostics</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p3.png" alt="NimoteCode debugging, remote workspace sync, and smart caching" width="1598" height="893" loading="lazy"><figcaption>Debugging and workspace sync</figcaption></figure></div></div>
+
+
+## Espacios de trabajo y Docker en 2.3.0
+
+Cambia entre los modos IDE, Terminal e IA dentro del espacio de trabajo, compartiendo el mismo proyecto y el estado del Explorador.
+
+El panel Docker del host SSH muestra contenedores, imágenes, volúmenes, redes y Compose. Las capturas de Debian bookworm-slim muestran la lista y los detalles de una imagen. Dev Containers se configura desde el devcontainer.json del proyecto.
+
+<div class="doc-screenshots">
+  <DocScreenshot file="docker-images.png" caption="Docker image list in the Light theme, including Debian bookworm-slim." />
+  <DocScreenshot file="docker-image-detail.png" caption="Debian bookworm-slim image details in the Light theme." />
+</div>

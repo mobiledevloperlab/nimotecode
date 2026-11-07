@@ -68,3 +68,7 @@ Open **Background jobs & schedules** to inspect output, refresh state, pause, re
 Background jobs retain the approved definition. Updating, disabling, or uninstalling a plugin does not silently replace a job already deployed; stop an old job before deploying a replacement. Secret form fields are not retained for unattended work, so use appropriately secured target-side credentials instead.
 
 Panel navigation, LSP operations, and native configured Tasks remain foreground actions. See [Security](/docs/security) before giving a plugin access to a production workspace.
+
+## Versioned contributions and Agent workflows
+
+Plugins can declare versioned contributions and dependencies. NimoteCode validates them before installation and presents permission changes for review. Approved plugin tools, skills, and workflows can be made available to the embedded Agent; workspace events can start controlled automation workflows.

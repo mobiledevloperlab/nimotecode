@@ -60,6 +60,7 @@ type DocsSidebarLabels = {
   debug: string
   syncCache: string
   tasks: string
+  docker: string
   overview: string
   gettingStarted: string
   architecture: string
@@ -91,7 +92,7 @@ function organizeDocsGroups(groups: DefaultTheme.SidebarItem[], prefix: string):
     ssh: '本地与 SSH 工作区', ai: 'AI 对话与 Agent', editor: '代码编辑器',
     terminal: '终端', search: '工作区搜索', 'source-control': '源代码管理',
     lsp: '语言服务（LSP）', debug: '调试', 'sync-cache': '同步与缓存',
-    tasks: '任务', configuration: '模型与连接配置', plugins: '自定义插件'
+    tasks: '任务', docker: 'Docker 与 Dev Containers', configuration: '模型与连接配置', plugins: '自定义插件'
   } : {}
   const group = (text: string, routes: string[], collapsed = false) => ({
     text, collapsed,
@@ -104,7 +105,7 @@ function organizeDocsGroups(groups: DefaultTheme.SidebarItem[], prefix: string):
   return [
     group(names[locale][0], ['quick-start']),
     group(names[locale][1], ['ssh']),
-    group(names[locale][2], ['editor', 'terminal', 'search', 'source-control', 'tasks']),
+    group(names[locale][2], ['editor', 'terminal', 'search', 'source-control', 'tasks', 'docker']),
     group(names[locale][3], ['ai', 'configuration', 'plugins']),
     group(names[locale][4], ['lsp', 'debug', 'sync-cache']),
     { ...groups[2], text: names[locale][5], collapsed: false },
@@ -132,7 +133,8 @@ function docsSidebar(prefix: string, labels: DocsSidebarLabels) {
           { text: labels.lsp, link: `${docs}/lsp` },
           { text: labels.debug, link: `${docs}/debug` },
           { text: labels.syncCache, link: `${docs}/sync-cache` },
-          { text: labels.tasks, link: `${docs}/tasks` }
+          { text: labels.tasks, link: `${docs}/tasks` },
+          { text: labels.docker, link: `${docs}/docker` }
         ]
       },
       {
@@ -1060,7 +1062,9 @@ export default defineConfig({
                 { text: 'LSP', link: '/docs/lsp' },
                 { text: 'Debug', link: '/docs/debug' },
                 { text: 'Sync / Cache', link: '/docs/sync-cache' },
-                { text: 'Tasks', link: '/docs/tasks' }
+                { text: 'Tasks', link: '/docs/tasks' },
+                { text: 'Docker and Dev Containers', link: '/docs/docker' },
+                { text: 'Docker and Dev Containers', link: '/docs/docker' }
               ]
             },
             {
@@ -1177,7 +1181,8 @@ export default defineConfig({
                 { text: 'LSP 面板', link: '/zh/docs/lsp' },
                 { text: '调试面板', link: '/zh/docs/debug' },
                 { text: 'Sync / Cache 面板', link: '/zh/docs/sync-cache' },
-                { text: 'Tasks 面板', link: '/zh/docs/tasks' }
+                { text: 'Tasks 面板', link: '/zh/docs/tasks' },
+                { text: 'Docker 与 Dev Containers', link: '/zh/docs/docker' }
               ]
             },
             {
@@ -1248,7 +1253,7 @@ export default defineConfig({
         ], sidebar: {
           ...docsSidebar('/ja', {
             start: 'はじめに', quickStart: 'クイックスタート', workflow: '開発ワークフロー',
-            ssh: 'ローカルと SSH のワークスペース', localLinux: 'Android Local Linux', ai: 'AI Chat と Agent', plugins: 'カスタムプラグイン',
+            ssh: 'ローカルと SSH のワークスペース', localLinux: 'Android Local Linux', docker: 'Docker と Dev Containers', ai: 'AI Chat と Agent', plugins: 'カスタムプラグイン',
             editor: 'エディター', terminal: 'ターミナル', search: '検索', sourceControl: 'ソース管理', lsp: 'LSP', debug: 'デバッグ', syncCache: '同期 / キャッシュ', tasks: 'タスク',
             overview: '概要', gettingStarted: 'はじめる', architecture: 'アーキテクチャ', compatibility: '互換性', securityIntegrity: 'セキュリティと整合性', presets: 'Linux プリセット', troubleshooting: 'トラブルシューティング',
             reference: 'リファレンス', account: 'アカウントとサブスクリプション', security: 'セキュリティと安全性', settings: '設定', notifications: '通知', configuration: '構成', sourceLicenses: 'ローカル Linux のソースとライセンス', faq: 'よくある質問'
@@ -1271,7 +1276,7 @@ export default defineConfig({
         ], sidebar: {
           ...docsSidebar('/ko', {
             start: '시작하기', quickStart: '빠른 시작', workflow: '개발 워크플로',
-            ssh: '로컬 및 SSH 작업 공간', localLinux: 'Android Local Linux', ai: 'AI Chat 및 Agent', plugins: '사용자 지정 플러그인',
+            ssh: '로컬 및 SSH 작업 공간', localLinux: 'Android Local Linux', docker: 'Docker 및 Dev Containers', ai: 'AI Chat 및 Agent', plugins: '사용자 지정 플러그인',
             editor: '편집기', terminal: '터미널', search: '검색', sourceControl: '소스 제어', lsp: 'LSP', debug: '디버깅', syncCache: '동기화 / 캐시', tasks: '작업',
             overview: '개요', gettingStarted: '시작하기', architecture: '아키텍처', compatibility: '호환성', securityIntegrity: '보안 및 무결성', presets: 'Linux 프리셋', troubleshooting: '문제 해결',
             reference: '참조', account: '계정 및 구독', security: '보안 및 안전', settings: '설정', notifications: '알림', configuration: '구성', sourceLicenses: '로컬 Linux 소스 및 라이선스', faq: '자주 묻는 질문'
@@ -1293,7 +1298,7 @@ export default defineConfig({
         ], sidebar: {
           ...docsSidebar('/es', {
             start: 'Primeros pasos', quickStart: 'Inicio rápido', workflow: 'Flujo de desarrollo',
-            ssh: 'Espacios de trabajo locales y SSH', localLinux: 'Local Linux en Android', ai: 'AI Chat y Agent', plugins: 'Plugins personalizados',
+            ssh: 'Espacios de trabajo locales y SSH', localLinux: 'Local Linux en Android', docker: 'Docker y Dev Containers', ai: 'AI Chat y Agent', plugins: 'Plugins personalizados',
             editor: 'Editor', terminal: 'Terminal', search: 'Búsqueda', sourceControl: 'Control de código fuente', lsp: 'LSP', debug: 'Depuración', syncCache: 'Sincronización / caché', tasks: 'Tareas',
             overview: 'Descripción general', gettingStarted: 'Primeros pasos', architecture: 'Arquitectura', compatibility: 'Compatibilidad', securityIntegrity: 'Seguridad e integridad', presets: 'Preajustes de Linux', troubleshooting: 'Resolución de problemas',
             reference: 'Referencia', account: 'Cuenta y suscripción', security: 'Seguridad y protección', settings: 'Ajustes', notifications: 'Notificaciones', configuration: 'Configuración de IA y conexiones', sourceLicenses: 'Código fuente y licencias de Local Linux', faq: 'Preguntas frecuentes'

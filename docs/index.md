@@ -2,7 +2,7 @@
 layout: home
 title: "NimoteCode | Mobile IDE & SSH Workspace for Android, iPhone and iPad"
 titleTemplate: false
-description: "Continue your projects on your phone or tablet with NimoteCode: local and SSH editing, Git and GitHub workflows, optional AI Agents, and Linux on supported Android devices. Start free."
+description: Open a project on your phone or tablet, edit it, run its tools, and review the changes. Start with a local folder, connect to your computer over SSH, or use Android Local Linux on a supported device.
 ---
 
 <ProductHome />

@@ -83,3 +83,7 @@ Explorer 提供本地、远程 SSH、Local Linux 和演示入口，Recent Histor
 <div class="doc-screenshots">
   <DocScreenshot file="remote-file-selection.jpg" caption="Remote Explorer 的文件选择模式。" />
 </div>
+
+## Windows SSH 工作区
+
+Windows 主机通过 PowerShell 和 SFTP 提供远程工作区操作。在主机及账户具备所需工具和权限时，可使用文件浏览与搜索、Git、终端、语言服务和 Agent 工作流。

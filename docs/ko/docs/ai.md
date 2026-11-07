@@ -75,3 +75,8 @@ AI 패널에서 설정된 모델을 선택하고 질문을 입력합니다. 프�
 <div class="doc-screenshots">
   <DocScreenshot file="ai-analysis-caveats.jpg" caption="확인한 체크아웃과 벤치마크 결과에 관한 주의 사항." />
 </div>
+
+
+## 실행 중인 Agent에 추가 지시
+
+지원되는 ACP Agent에는 작업 진행 중 추가 지시를 보낼 수 있습니다. 지원 여부는 Agent 런타임에 따라 다릅니다.

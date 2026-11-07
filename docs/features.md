@@ -1,6 +1,6 @@
 ---
 title: NimoteCode features | Mobile development workspace
-description: "NimoteCode brings local and SSH workspaces, Android Local Linux, editing, terminal, Git and GitHub workflows, AI, custom plugins, language services, debugging, search, tasks and project transfer to a mobile development workspace."
+description: Open your project on mobile, connect to your development machine, then edit, run commands, and review Git changes in one workspace. See when you need SSH, Android Local Linux, AI, Docker, or Pro.
 ---
 
 # NimoteCode features
@@ -78,4 +78,13 @@ The screenshots below illustrate the workspace, code review, diagnostics, and pr
     <figure class="feature-showcase__item" aria-hidden="true"><img src="/screenshots/p2.png" alt="" width="1597" height="896" loading="lazy"><figcaption>Terminal, Git and diagnostics</figcaption></figure>
     <figure class="feature-showcase__item" aria-hidden="true"><img src="/screenshots/p3.png" alt="" width="1598" height="893" loading="lazy"><figcaption>Debugging and workspace sync</figcaption></figure>
   </div>
+</div>
+
+## NimoteCode 2.3.0 workspaces and Docker
+
+Switch between IDE, Terminal, and AI modes while keeping the project and Explorer state. The Docker panel on an SSH host lists containers, images, volumes, networks, and Compose projects. These Light theme screenshots show the Docker image list and Debian bookworm-slim image details. Dev Container configuration is read from the project's `devcontainer.json`.
+
+<div class="doc-screenshots">
+  <DocScreenshot file="docker-images.png" caption="Docker image list in the Light theme, including Debian bookworm-slim." />
+  <DocScreenshot file="docker-image-detail.png" caption="Debian bookworm-slim image details in the Light theme." />
 </div>
