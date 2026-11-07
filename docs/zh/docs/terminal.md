@@ -47,3 +47,7 @@ description: "终端的配置、操作步骤与界面说明。"
   <DocScreenshot file="terminal-customize-menu.jpg" caption="终端标签页自定义菜单。" />
   <DocScreenshot file="terminal-tab-style-form.jpg" caption="标签页标题、颜色和图标设置。" />
 </div>
+
+## 分屏并衔接 IDE
+
+在终端工作区打开多个窗格并调整大小，同时查看命令、日志或服务。点击终端输出中的文件位置可在 IDE 打开；也可将选中内容交给 AI 分析。支持的命令会被记录，便于查看和再次使用；终端显示偏好、缩放及连接专属提示符均可自定义。

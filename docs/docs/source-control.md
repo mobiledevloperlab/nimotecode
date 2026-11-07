@@ -84,3 +84,7 @@ Open **AI Tools**, choose a provider and files, then select **Commit Message**, 
 </div>
 
 </div>
+
+## Review Git changes on mobile
+
+Diff views, Source Control headings, and actions adapt to phone and tablet layouts so changes remain readable and review controls stay accessible on narrow screens.

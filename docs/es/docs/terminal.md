@@ -47,3 +47,8 @@ Abra el menú de personalización para cambiar el nombre o color de una pestaña
   <DocScreenshot file="terminal-customize-menu.jpg" caption="Menú de personalización de pestañas." />
   <DocScreenshot file="terminal-tab-style-form.jpg" caption="Ajustes de título, color e icono de la pestaña." />
 </div>
+
+
+## Terminal dividido e integrado
+
+Abre y ajusta varios paneles. Desde una ruta de archivo en la salida puedes abrirla en el IDE o enviar el texto seleccionado a la IA para analizarlo.

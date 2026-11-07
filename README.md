@@ -23,7 +23,7 @@
   <a href="#demo">Watch demo</a> ·
   <a href="#compare-mobile-development-tools">Compare tools</a> ·
   <a href="https://nimotecode.com/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=en_quick_start">Quick start</a> ·
-  <a href="#latest-release">What's new in 2.2.0</a>
+  <a href="#latest-release">What's new in 2.3.0</a>
 </sub></p>
 
 <p align="center"><sub>Free to start. AI setup is optional.<br>Commercial, closed-source app · Official documentation and community resources</sub></p>
@@ -61,7 +61,7 @@ NimoteCode brings a code editor, SSH terminal, Git review and AI workflows to An
 
 ## Compare mobile development tools
 
-**Edit → Run checks → Review the diff → extend the workspace, in one mobile IDE.** These selected capabilities from our detailed comparison help you choose the right tool for your workflow. The NimoteCode column reflects 2.2.0; question marks mean the corresponding capability has not been verified for that product.
+**Edit → Run checks → Review the diff → extend the workspace, in one mobile IDE.** These selected capabilities from our detailed comparison help you choose the right tool for your workflow. The NimoteCode column reflects 2.3.0; question marks mean the corresponding capability has not been verified for that product.
 
 ✅ Documented built-in or integrated capability · ◐ Conditional · ? Not verified, **not an absence claim** · — Explicitly unsupported
 
@@ -108,7 +108,7 @@ Orca mobile requires its desktop companion. Moshi's diff and web preview require
 
 A check does not mean free, setup-free or available on every platform. Blink integrates editing through Blink Code; Git / LSP depend on repository or remote IDE configuration. Termius Mosh is verified here for Android only. See the full comparison for each product's setup and plan requirements.
 
-> [**See all seven tools and feature-by-feature official evidence →**](https://nimotecode.com/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_comparison) · Competitor evidence baseline: 2026-10-19; NimoteCode capabilities: 2.2.0.
+> [**See all seven tools and feature-by-feature official evidence →**](https://nimotecode.com/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_comparison) · Competitor evidence baseline: 2026-10-19; NimoteCode capabilities: 2.3.0.
 
 **Try the workflow yourself:** [install NimoteCode](https://nimotecode.com/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_compare_download) and open a demo or local project. No AI setup needed to start.
 
@@ -149,20 +149,16 @@ Store availability and release timing may differ by platform and region. See [do
 
 <a id="latest-release"></a>
 
-## NimoteCode 2.2.0 · GitHub workflows and Android Local Linux toolkits
+## NimoteCode 2.3.0 · Workspace modes, Docker, and Dev Containers
 
-| Build | Released | Platforms |
-| --- | --- | --- |
-| 60 | November 2, 2026 | Android · iPhone · iPad |
+Workspace modes for IDE, Terminal, and AI, plus Windows SSH, upgraded plugins, interactive Agent follow-ups, terminal improvements, and Docker development on SSH hosts.
 
-**Native GitHub workflows, more dependable search, and experimental development toolkits for Android Local Linux.**
+- **Switch workspace modes:** move between IDE, Terminal, and AI while keeping the current project and Explorer state.
+- **Develop with Docker over SSH:** manage containers, images, volumes, networks, and Compose services; inspect logs and statistics, open exec, and search Docker Hub.
+- **Use Dev Containers:** create or rebuild from `devcontainer.json` and open an isolated, configured workspace.
+- **More capable workflows:** Windows SSH, validated plugin contributions and Agent tools, ACP Agent follow-ups, adaptive terminal panes, and mobile Git review.
 
-- **Work with GitHub without leaving NimoteCode:** sign in with browser authorization or a token, browse repositories and branches, clone to local or SSH workspaces, and collaborate through issues, pull requests, reviews, and CI.
-- **Use experimental Android Local Linux toolkits when you need them:** install command-line essentials, Python, or Web tools on demand, then create, run, and open an example project without reinstalling Linux or overwriting an existing project. Initial installation requires internet access.
-- **Recover more confidently:** GitHub sign-in, cloning, Local Linux workspaces, and failed push or publication recovery are more dependable, while workspace search results and highlighting are more reliable.
-- **Navigate a more consistent workbench:** Settings, Source Control, GitHub, Search, and conversation panels now share clearer controls, typography, and narrow-screen behavior; common copy actions also give consistent feedback.
-
-> [Read the full 2.2.0 release notes](https://nimotecode.com/releases/2.2.0?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_release) · [Earlier releases](https://nimotecode.com/releases/)
+> [Read the full 2.3.0 release notes](https://nimotecode.com/releases/2.3.0) · [Earlier releases](https://nimotecode.com/releases/)
 
 ## Guides and resources
 

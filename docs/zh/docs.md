@@ -33,6 +33,7 @@ description: NimoteCode 工作区、编辑器、终端、Git、AI、插件及诊
 | [工作区搜索](/zh/docs/search) | 搜索文件内容、没有搜索结果时 |
 | [同步与缓存](/zh/docs/sync-cache) | 选择传输方向、开始并检查传输 |
 | [任务](/zh/docs/tasks) | 创建可复用命令、运行并检查输出 |
+| [Docker 与 Dev Containers](/zh/docs/docker) | 管理 SSH 主机资源、控制 Compose 服务、创建隔离工作区 |
 | [Android 本地 Linux](/zh/docs/local-linux) | 使用条件、安装并打开、验证运行环境 |
 
 ## 账户与参考资料

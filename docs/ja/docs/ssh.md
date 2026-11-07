@@ -83,3 +83,8 @@ Remote Explorer のホスト、ユーザー、ポート、ルートパスを確�
 <div class="doc-screenshots">
   <DocScreenshot file="remote-file-selection.jpg" caption="ファイル選択モードの Remote Explorer。" />
 </div>
+
+
+## Windows SSH ワークスペース
+
+Windows ホストでは PowerShell と SFTP を利用してリモートプロジェクトを操作します。ファイル検索、Git、ターミナルなどの利用にはホスト側の対応環境が必要です。

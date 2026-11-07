@@ -47,3 +47,8 @@ description: "ターミナルの設定、操作手順、画面の説明。"
   <DocScreenshot file="terminal-customize-menu.jpg" caption="タブのカスタマイズメニュー。" />
   <DocScreenshot file="terminal-tab-style-form.jpg" caption="タブのタイトル、色、アイコンの設定。" />
 </div>
+
+
+## ターミナルの分割と連携
+
+複数ペインを開いてサイズを調整できます。出力内のファイル位置から IDE に移動したり、選択した内容を AI に送って分析したりできます。

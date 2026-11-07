@@ -75,3 +75,8 @@ Presta atención a los archivos ausentes, al alcance de la copia de trabajo y al
 <div class="doc-screenshots">
   <DocScreenshot file="ai-analysis-caveats.jpg" caption="Observaciones sobre la copia del repositorio inspeccionada y los resultados de rendimiento." />
 </div>
+
+
+## Instrucciones adicionales al Agent en ejecución
+
+Los Agents ACP compatibles aceptan instrucciones durante una tarea. La disponibilidad depende del runtime del Agent.

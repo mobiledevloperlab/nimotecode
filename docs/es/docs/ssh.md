@@ -83,3 +83,8 @@ Haz clic en **Select** para entrar en el modo de selección. Comprueba el espaci
 <div class="doc-screenshots">
   <DocScreenshot file="remote-file-selection.jpg" caption="Remote Explorer en modo de selección de archivos." />
 </div>
+
+
+## Espacios Windows SSH
+
+En hosts Windows, PowerShell y SFTP permiten trabajar con proyectos remotos. La búsqueda de archivos, Git y terminal necesitan las herramientas correspondientes en el host.

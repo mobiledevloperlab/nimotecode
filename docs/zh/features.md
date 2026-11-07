@@ -1,6 +1,6 @@
 ---
 title: NimoteCode 功能 | 移动开发工作区
-description: "NimoteCode 将本地与 SSH 工作区、Android Local Linux、编辑器、终端、Git 与 GitHub 工作流、AI、自定义插件、语言服务、调试、搜索、任务和项目传输汇集到移动开发工作区。"
+description: 在手机或平板打开项目，连接开发电脑，在同一工作区编辑文件、运行命令并检查 Git 改动。了解 SSH、Android Local Linux、AI、Docker 与 Pro 适用场景。
 ---
 
 # NimoteCode 功能
@@ -75,4 +75,13 @@ AI 输出仅供协助，不保证正确性、安全性或执行成功。使用�
     <figure class="feature-showcase__item"><img src="/screenshots/p2.png" alt="NimoteCode 中的 SSH 终端、Source Control 与代码诊断" width="1597" height="896" loading="lazy"><figcaption>终端、Git 与诊断</figcaption></figure>
     <figure class="feature-showcase__item"><img src="/screenshots/p3.png" alt="NimoteCode 的调试、远程工作区同步与智能缓存" width="1598" height="893" loading="lazy"><figcaption>调试与工作区同步</figcaption></figure>
   </div>
+</div>
+
+## 2.3.0 工作区与 Docker
+
+可在 IDE、终端和 AI 模式间切换，同时保留项目与资源管理器状态。SSH 主机上的 Docker 面板可列出容器、镜像、卷、网络和 Compose 项目。以下浅色主题截图展示 Docker 镜像列表及 Debian bookworm-slim 镜像详情。Dev Container 从项目的 `devcontainer.json` 读取配置。
+
+<div class="doc-screenshots">
+  <DocScreenshot file="docker-images.png" caption="浅色主题下的 Docker 镜像列表，包含 Debian bookworm-slim。" />
+  <DocScreenshot file="docker-image-detail.png" caption="浅色主题下的 Debian bookworm-slim 镜像详情。" />
 </div>

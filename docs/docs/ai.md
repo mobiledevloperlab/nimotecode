@@ -68,3 +68,7 @@ These screenshots correspond to the Chat, Agent selection, plan review, executio
   <DocScreenshot file="ai-analysis-workflow.jpg" caption="Example project commands in an AI response." />
   <DocScreenshot file="ai-analysis-caveats.jpg" caption="Caveats about the inspected checkout and benchmark results." />
 </div>
+
+## Continue a running ACP task
+
+ACP Agents that support follow-up prompts can receive additional instructions while a task is running. Check the delivery state in the conversation timeline and answer interactive questions there; support depends on the Agent runtime.

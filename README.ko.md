@@ -41,7 +41,7 @@
 
 ## 모바일 개발 도구 비교
 
-**편집 → 검사 실행 → diff 검토 → 작업 공간 확장을 하나의 모바일 IDE에서.** NimoteCode 열은 2.2.0을 반영합니다. `?`는 해당 제품의 기능이 확인되지 않았음을 뜻합니다.
+**편집 → 검사 실행 → diff 검토 → 작업 공간 확장을 하나의 모바일 IDE에서.** NimoteCode 열은 2.3.0을 반영합니다. `?`는 해당 제품의 기능이 확인되지 않았음을 뜻합니다.
 
 | 주요 기능 | **NimoteCode** | Termius | Blink Shell | ServerCC |
 | --- | :---: | :---: | :---: | :---: |
@@ -92,21 +92,6 @@ Orca 모바일에는 데스크톱 Companion이 필요합니다. Moshi의 diff와
 - **외부 폴더:** 시스템에서 권한을 부여한 외부 폴더는 탐색과 편집을 지원하지만 Git, LSP, 디버깅, Tasks, 파일 감시 및 Agent에는 네이티브 파일 시스템 경로가 필요합니다.
 - **가용성:** 도구는 작업 공간, 설치된 도구 및 플랜에 따라 달라집니다. [기능 참조](https://nimotecode.com/ko/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_features)를 확인하세요.
 
-## NimoteCode 2.2.0 · GitHub 워크플로 및 Android Local Linux 도구 키트
-
-| Build | 출시일 | 플랫폼 |
-| --- | --- | --- |
-| 60 | 2026년 11월 2일 | Android · iPhone · iPad |
-
-**네이티브 GitHub 워크플로, 더 안정적인 검색 및 실험적인 Android Local Linux 개발 도구 키트.**
-
-- **NimoteCode를 떠나지 않고 GitHub 사용:** 브라우저 인증 또는 토큰으로 로그인하고 저장소와 브랜치를 탐색하여 로컬 또는 SSH 작업 공간으로 복제한 뒤, 이슈, 풀 리퀘스트, 리뷰 및 CI를 통해 협업할 수 있습니다.
-- **필요할 때 실험적인 Android Local Linux 도구 키트 사용:** 명령줄 필수 도구, Python 또는 Web 도구를 필요에 따라 설치한 후 Linux를 다시 설치하거나 기존 프로젝트를 덮어쓰지 않고 예제 프로젝트를 만들고 실행하여 열 수 있습니다. 최초 설치에는 인터넷 연결이 필요합니다.
-- **더 안심하고 복구:** GitHub 로그인, 복제, Local Linux 작업 공간, 실패한 push 또는 게시 복구가 더 안정적이며 작업 공간 검색 결과와 강조 표시도 더 안정적입니다.
-- **더 일관된 워크벤치 탐색:** 설정, 소스 제어, GitHub, 검색 및 대화 패널은 더 명확한 컨트롤, 타이포그래피 및 좁은 화면 동작을 공유하고, 일반 복사 작업도 일관된 피드백을 제공합니다.
-
-> [2.2.0 전체 릴리스 노트 읽기 →](https://nimotecode.com/ko/releases/2.2.0?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_release) · [이전 릴리스](https://nimotecode.com/ko/releases/)
-
 ## 시작하기
 
 1. [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) 또는 [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253)에서 NimoteCode를 설치하세요.
@@ -137,3 +122,14 @@ Orca 모바일에는 데스크톱 Companion이 필요합니다. Moshi의 diff와
 NimoteCode는 상용 비공개 소스 애플리케이션입니다. 이 리포지토리에는 공식 문서, 튜토리얼, 워크플로 예제 및 릴리스 노트가 포함되며 애플리케이션 소스 코드는 공개되지 않습니다. Linux 프리셋은 별도 리포지토리에서 관리되고 버그 보고에는 위의 이슈 트래커를 사용합니다.
 
 [Local Linux 소스 번들 및 라이선스 고지](https://nimotecode.com/ko/docs/local-linux-source)는 타사 구성 요소를 다루며 NimoteCode 애플리케이션을 오픈 소스로 만들지 않습니다.
+
+## NimoteCode 2.3.0 · 작업 공간 모드, Docker 및 Dev Containers
+
+IDE, 터미널, AI 모드를 전환하면서 프로젝트 상태를 유지합니다. Windows SSH, 플러그인, Agent, 터미널 및 SSH 호스트 Docker 개발도 향상했습니다.
+
+- **모드 전환:** IDE, 터미널, AI 간 전환 시 프로젝트와 Explorer 상태를 유지합니다.
+- **SSH Docker:** 컨테이너, 이미지, 볼륨, 네트워크, Compose 서비스를 관리하고 로그, 통계, exec, Docker Hub 검색을 사용합니다.
+- **Dev Containers:** `devcontainer.json`에서 만들거나 다시 빌드하고 구성된 격리 작업 공간을 엽니다.
+- **개발 흐름 강화:** Windows SSH, 검증된 플러그인, Agent 후속 지시, 적응형 터미널 분할, 모바일 Git 검토를 지원합니다.
+
+> [2.3.0 전체 출시 노트 읽기](https://nimotecode.com/ko/releases/2.3.0) · [Earlier releases](https://nimotecode.com/releases/)

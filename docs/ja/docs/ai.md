@@ -75,3 +75,8 @@ AI パネルで設定済みのモデルを選び、質問を入力します。�
 <div class="doc-screenshots">
   <DocScreenshot file="ai-analysis-caveats.jpg" caption="調査対象のチェックアウトとベンチマーク結果に関する注意事項。" />
 </div>
+
+
+## 実行中の Agent への追加指示
+
+対応する ACP Agent にはタスクの実行中に追加指示を送れます。利用可否は Agent ランタイムによります。

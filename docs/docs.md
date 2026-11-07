@@ -33,6 +33,7 @@ Start with [Quick start](/docs/quick-start) to open a workspace, edit a file and
 | [Workspace search](/docs/search) | Search file contents; If no results appear |
 | [Sync and Cache](/docs/sync-cache) | Select a transfer direction; Start and verify a transfer |
 | [Tasks](/docs/tasks) | Create a reusable command; Run and inspect output |
+| [Docker and Dev Containers](/docs/docker) | Manage SSH-host resources; Control Compose services; Create an isolated workspace |
 | [Android Local Linux](/docs/local-linux) | Requirements; Install and open; Verify the environment |
 
 ## Account and reference

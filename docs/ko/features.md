@@ -1,6 +1,6 @@
 ---
 title: NimoteCode 기능 | 모바일 개발 작업 공간
-description: "NimoteCode는 로컬 및 SSH 작업 공간, Android Local Linux, 편집기, 터미널, Git과 GitHub, AI, 사용자 지정 플러그인, 언어 서비스, 디버깅, 검색 및 작업을 통합합니다."
+description: 휴대폰에서 프로젝트를 열고 개발 컴퓨터에 연결해 편집, 명령 실행, Git 변경 검토를 한 작업 공간에서 진행하세요. SSH, Docker, Pro 사용 조건도 확인할 수 있습니다.
 ---
 
 # NimoteCode 기능
@@ -42,3 +42,15 @@ AI 출력은 보조 수단이며 정확성, 보안 또는 실행 성공을 보�
 아래 이미지는 위에서 설명한 작업 공간, 코드 검토, 진단 및 전송 화면을 보여 줍니다.
 
 <div class="feature-showcase" role="region" tabindex="0" aria-label="NimoteCode feature highlights"><div class="feature-showcase__track"><figure class="feature-showcase__item"><img src="/screenshots/p1.png" alt="Local files, SSH, code editing and AI Agent in NimoteCode" width="1604" height="901" loading="eager"><figcaption>Workspaces, editing and AI Agent</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p2.png" alt="SSH terminal, Source Control and code diagnostics in NimoteCode" width="1597" height="896" loading="lazy"><figcaption>Terminal, Git and diagnostics</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p3.png" alt="NimoteCode debugging, remote workspace sync, and smart caching" width="1598" height="893" loading="lazy"><figcaption>Debugging and workspace sync</figcaption></figure></div></div>
+
+
+## 2.3.0 작업 공간 및 Docker
+
+작업 공간에서 IDE, 터미널, AI 모드를 전환할 수 있으며 동일한 프로젝트와 Explorer 상태를 공유합니다.
+
+SSH 호스트의 Docker 패널에서 컨테이너, 이미지, 볼륨, 네트워크 및 Compose를 확인할 수 있습니다. Debian bookworm-slim 이미지 화면은 목록과 상세 정보를 보여 줍니다. Dev Containers는 프로젝트의 devcontainer.json으로 구성합니다.
+
+<div class="doc-screenshots">
+  <DocScreenshot file="docker-images.png" caption="Docker image list in the Light theme, including Debian bookworm-slim." />
+  <DocScreenshot file="docker-image-detail.png" caption="Debian bookworm-slim image details in the Light theme." />
+</div>
