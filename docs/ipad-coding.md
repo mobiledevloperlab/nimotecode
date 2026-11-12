@@ -1,48 +1,87 @@
 ---
-title: "iPad Coding Workspace for SSH, Git and AI | NimoteCode"
-description: "Plan an iPad coding workflow for SSH, editor, terminal, Git and AI. NimoteCode runs on iPad via the App Store, with the same features as its Android release."
+title: "Coding on iPad with SSH, Editor, Git & AI | NimoteCode"
+description: "Code on iPad with a project explorer, split editor, SSH terminal and Git review. Learn what runs remotely, what iPadOS permits, and how to start with NimoteCode."
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# iPad Coding with a Real Development Workspace
+# Coding on iPad with your existing development environment
 
-An iPad gives you more screen space than a phone, but coding from iPad still works best when the workspace is designed for it. You need an easy way to move between the project tree, code, terminal output and Git changes without losing the thread of the task.
+A larger screen helps when a task needs both source code and command output. NimoteCode gives iPad users a project explorer, code editor with split panes, SSH terminal, Git tools, and optional AI. It is useful for reviewing a pull request, updating documentation, or making a focused fix while your development machine does the heavy work.
 
-NimoteCode brings those tools together on iPad as a **Mobile AI Development Workspace**: Editor + Explorer + SSH + Terminal + Git + AI Chat and Agent. It is available on the App Store with the same feature set as the Android release.
+If you only need to edit a note, a simpler editor may be enough. For a project change, first decide where its dependencies, checks, and services will run.
 
 <figure class="article-hero">
-  <a href="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" target="_blank" rel="noopener"><img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" width="1414" height="878" alt="NimoteCode on a tablet with source control and editor visible" loading="eager" decoding="async"></a>
-  <figcaption>On a tablet, keeping the file, output, and diff in view makes a short task easier to follow.</figcaption>
+  <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="NimoteCode App Store iPad view with project navigation and code editing." loading="lazy" decoding="async">
+  </a>
+  <figcaption>NimoteCode App Store iPad view with project navigation and code editing. Source: NimoteCode App Store listing. Promotional screenshot, not a continuous recording.</figcaption>
 </figure>
 
-## A productive iPad coding loop
+## Choose local editing or a remote project
 
-### Use the larger screen for context
+| Task | Where it runs | What you need |
+| --- | --- | --- |
+| Edit an accessible local file | iPad, through granted file-provider access | Permission to the project folder |
+| Run project commands and builds | Your SSH host | Host tools, dependencies, and network access |
+| Review Git changes | The active Git workspace | A supported repository and account access |
+| Ask AI about a project | Configured provider and available workspace tools | Provider credentials and applicable feature access |
 
-Start from Explorer to keep the project structure visible, then open related files in editor tabs. On a tablet, that extra visual room makes it easier to follow a code path or compare a configuration change with the command output that motivated it.
+**Android Local Linux is not available on iPadOS.** Opening a local folder does not install Node.js, Python, a compiler, or a local Linux shell. File-provider folders can also restrict tools that require native filesystem paths. Consult [workspace setup](/docs/ssh) before choosing the project location.
 
-### Keep the remote environment close
+## Set up the iPad workflow
 
-Connect to a project with [SSH Workspace](/docs/ssh), then use Terminal for the commands that validate your understanding: tests, log checks, build output or service status. You do not need to turn the iPad into a desktop replacement to make a short, focused task meaningful.
+1. Install NimoteCode from the App Store. Check the listing for device and operating-system requirements.
+2. Configure an SSH connection to an awake Windows, Mac, or Linux machine. Verify its host-key fingerprint and select the repository root.
+3. Open the relevant files. Use split editor panes to compare two files when helpful; confirm the terminal’s working directory separately.
+4. Save, run the repository’s checks on the host, and inspect the diff in Source Control before committing.
 
-### Review before you ship
+The [Windows setup guide](/docs/windows-ssh-sftp) covers PowerShell and SFTP. A remote connection needs a reachable host; use an appropriate secure network path away from your LAN.
 
-Use [Git and Source Control](/docs/source-control) to inspect the diff produced by your edit. This is particularly useful for iPad coding because it closes the loop inside the same workspace instead of making review an afterthought.
+## Use the tablet screen for review
 
-## Where AI fits
+Keep related files open in tabs and compare the implementation with its configuration or tests. [Source Control](/docs/source-control) provides changed files, diffs, and history; GitHub workflows depend on account and repository permissions. A wider screen helps with reading, but the host still supplies the project’s runtime.
 
-AI is most useful when it has a clear job: explain an unfamiliar module, turn an error into a debugging plan, or propose the next small change. [AI Chat and Agent](/docs/ai) are integrated with the development workspace so the conversation can stay connected to the actual file and task. Keep command and change review enabled for remote or production work.
+<figure class="article-hero">
+  <a href="/images/ios/ipad-git.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-git.webp" width="1200" height="899" alt="NimoteCode App Store iPad view showing Git AI tools and change analysis." loading="lazy" decoding="async">
+  </a>
+  <figcaption>NimoteCode App Store iPad view showing Git AI tools and change analysis. Source: NimoteCode App Store listing. Promotional screenshot, not a continuous recording.</figcaption>
+</figure>
+
+## Add AI when it helps the task
+
+Start with an explanation of unfamiliar code or a focused error. Nimote Agent can use available workspace tools; in Confirm mode, inspect the plan before approving the run. External ACP agents need a compatible runtime and their own credentials. See the [AI guide](/docs/ai).
+
+## Plan for iPadOS background behavior
+
+Switching apps or locking the iPad can interrupt a connection. Host-side tools such as a terminal multiplexer can help with persistent shell sessions; they do not keep a sleeping or rebooted host running. Reconnect and check saved files and job state before continuing. Large refactors and long interactive debugging may still be more comfortable on a desktop.
+
+## Frequently asked questions
+
+<!-- faq:start -->
+
+### Can iPad run NimoteCode Local Linux?
+
+No. Local Linux is Android-only. On iPad, use an SSH host for the project runtime, terminal tools, and builds.
+
+### Can I open local files on iPad?
+
+Yes, where iPadOS and the selected file provider grant access. Opening a local folder does not guarantee availability of tools that need a native filesystem path.
+
+### Do iPad and Android have identical features?
+
+They share core editing and SSH workflows, but environment support differs. Android Local Linux is unavailable on iPad, and file permissions and background execution depend on the platform.
+
+<!-- faq:end -->
+
+Start with local or SSH editing and the basic terminal. Some capabilities require Pro access; check [Free and Pro](/pro) and the access shown in the app. AI requires your own model provider, whose usage is billed separately.
 
 <div class="seo-cta">
-  <p><strong>See how an iPad-friendly workspace handles a real remote change.</strong></p>
+  <p><strong>Download NimoteCode</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for iOS</a>
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=ipad_coding" class="home-page-btn tertiary" target="_blank" rel="noreferrer">Download for Android</a>
-    <a href="/demo?utm_source=ipad_coding&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="/docs/quick-start" class="home-page-btn secondary">Quick start</a>
   </p>
 </div>
-
-## Useful next reads
-
-- [Mobile IDE overview](/mobile-ide)
-- [iPhone SSH client workflow](/iphone-ssh-client)
-- [Mobile AI coding](/mobile-ai-coding)

@@ -1,84 +1,54 @@
 ---
-title: "带 SSH、Git 与 Agent 的移动 AI 编程工作区 | NimoteCode"
-description: NimoteCode 是把 AI Chat 与 Agent 放在编辑器、SSH 终端、Explorer 与 Git 工作流旁边的移动 AI 编程工作区，用于手机或平板上的真实开发工作。
+title: "移动 AI 编程：Chat、Agent 与 ACP 工作流 | NimoteCode"
+description: "在 NimoteCode 中按任务选择 AI Chat、Nimote Agent 或外部 ACP，了解模型配置、工具审批、执行环境与 Git 验证，避免混淆对话和实际执行。"
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# 始终连接真实工作的移动 AI 编程
+# 移动 AI 编程：先选模式，再选执行环境
 
-移动 AI 编程应该不只是把一段粘贴的代码发给聊天机器人。当你能在不丢失上下文的情况下检查项目、应用一处聚焦改动、运行命令并审查 diff 时，答案才真正有用。
+需要解释一个函数，还是让 Agent 读文件并运行检查？两者需要不同工具。NimoteCode 将 AI Chat、内置 Nimote Agent 和兼容的外部 ACP Agent 放在编辑器、终端和 Git 旁边，使用前应明确任务模式和执行位置。
 
-NimoteCode 把 AI Chat 与 AI Agent 放进带 Editor、Explorer、SSH、Terminal 与 Git 的**移动 AI 开发工作台**。无论工作区是本地还是连接远程主机，AI 都能在任务发生的地方提供支持。
+## 区分 Chat 与 Agent
 
-<ImagePlaceholder image-key="mobileAiCoding" alt="AI 编程工作区">
-  <strong>图片占位 —— 带工作区上下文的 AI 编程</strong>
-  <span>请替换为 AI Chat / Agent 与已改动文件、终端输出和 Git diff 同屏的截图；请脱敏所有私有代码与凭据。</span>
-</ImagePlaceholder>
+| 模式 | 用途 | 配置与控制 |
+| --- | --- | --- |
+| Chat | 解释选中代码、分析错误、讨论计划 | 配置模型提供商；Chat 本身不执行工作区修改 |
+| Nimote Agent | 检查文件、提出修改、调用可用工具 | 提供商配置及功能权限；Confirm 模式先审查计划再执行 |
+| 外部 ACP Agent | 使用单独安装的兼容代理 | 执行目标上的运行时、凭据与代理自己的工具策略 |
 
-## 速度不能代替可见性
+明确知道怎么修改时，普通编辑器或终端已经可以完成任务。AI 是可选功能，打开项目和使用 SSH 不需要先配置模型。
 
-AI 可以帮助解释、规划或执行受控步骤，却不能替你判断主机、分支和验证命令是否正确。保留对命令、文件改动和 Git diff 的审查；在手机上尤其应把任务限制在可观察、可回退的范围内。
+## 配置模型和工作区
 
-## 用 AI Chat 理解与规划
+按[模型配置](/zh/docs/configuration)添加提供商并测试访问，打开目标工作区并确认根目录。本地文件夹不会自动提供命令执行环境。SSH 使用主机环境，受支持的 Android 设备可以使用[本地 Linux](/zh/docs/local-linux)，iPhone 和 iPad 不提供 NimoteCode 本地 Linux。
 
-当你希望掌控每一步时使用 AI Chat：解释报错、理清函数、规划重构或准备测试计划。当前文件与工作区比粘贴的片段是更好的起点，你也能从解释直接进入编辑器或终端。
+<figure class="seo-phone-capture">
+  <a href="/images/ios/iphone-agents.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-agents.webp" width="660" height="1433" alt="iPhone 上的 NimoteCode，展示内置与外部 Agent 选择。" loading="lazy" decoding="async">
+  </a>
+  <figcaption>iPhone 上的 NimoteCode，展示内置与外部 Agent 选择。 来源：NimoteCode App Store 页面。此图为宣传截图，不是连续操作录屏。</figcaption>
+</figure>
 
-## 用 AI Agent 做受控多步骤工作
+## 先用只读任务验证
 
-AI Agent 面向天然跨越多个动作的任务：检查相关文件、提出修改、运行检查并总结结果。它不是跳过审查的理由。NimoteCode 内置受控执行与确认导向的工作流，让你可以检查命令与改动——尤其是在远程 SSH 工作区。
+可以提问：“找到入口文件，解释这个配置如何加载，先不要修改文件。”在编辑器中核对引用路径。需要工具时，选择 Nimote Agent，在 Confirm 模式下查看计划再批准执行。回答是否正确仍需对照真实文件。
 
-功能可用性与提供商配置见 [AI Chat 与 Agent](/zh/docs/ai) 与[安全与防护](/zh/docs/security)。
+## 跟进执行，检查实际结果
 
-## 为什么周边工作区很重要
+通过时间线查看输出，发现范围不对时补充指令或停止运行。修改后检查保存结果，运行项目检查，再在[源代码管理](/zh/docs/source-control)阅读 diff。外部代理有自己的权限；内置 Agent 的 Confirm 模式不会控制手动在终端启动的 CLI。
 
-| AI 编程需求 | 移动工作区优势 |
-|---|---|
-| 理解报错 | 一处读代码、看终端输出并提问 |
-| 准备小修复 | 从 AI 方案直达精确文件并立即测试 |
-| 在远程项目上工作 | 把 SSH、远程文件与 Agent 上下文放在一起 |
-| 审查生成改动 | 提交或推送前检查 Git diff |
-| 移动中继续 | 保留当前任务，而不是跨应用重新拼装 |
+## 按需要接入外部运行时
 
-当 AI 降低了上下文切换的成本时，它让移动工作更有用。工作区仍然给你工程上的控制：源文件、shell 输出、Git 历史与刻意的验证。
+[AI 与 ACP 文档](/zh/docs/ai)介绍兼容运行时命令和 MCP 配置。想直接访问 CLI 而不是 ACP 对话时，可阅读 [Claude Code](/zh/claude-code-from-phone)和 [Codex](/zh/codex-from-phone)的 SSH 教程。密钥应保存在配置中，不要写入提示词；NimoteCode 不包含模型额度。
 
-## 适合移动 AI 编程的场景
-
-- 值班时解释一个陌生服务。
-- 编辑前规划一处范围很小的生产修复。
-- 解读一条失败命令或诊断信息。
-- 审查一处小改动并写出清晰的提交信息。
-- 没有电脑时，从手机或平板继续基于 SSH 的任务。
-
-## 移动 AI 编程的局限
-
-手机上的 AI 不会改变工程底线。跨模块的大范围重构在小屏幕上更难把握，长时间运行的 Agent 任务也仍更适合桌面视口。AI 建议必须在真实项目里验证——LLM 看不到你正在运行的服务。对远程、靠近生产的工作，应保持命令与变更确认开启。移动 AI 编程适合范围清晰的小任务，大的设计工作请留给桌面。
-
-## 常见问题
-
-### 移动 AI 编程与独立 AI 聊天有何不同？
-
-NimoteCode 把 AI Chat 与 Agent 放在编辑器、项目 Explorer、SSH 终端与 Git 上下文旁边，让建议能在真实工作区中被检查与验证。
-
-### AI Agent 能在远程工作区做改动吗？
-
-AI Agent 可以协助多步骤任务，但远程及靠近生产的操作应在开启命令与改动控制的情况下审查。
-
-### AI 会取代 Git 审查吗？
-
-不会。AI 能帮助解释、规划并协助任务；Git 审查以及合适的测试或验证命令仍然是交付工作流的一部分。
+可以从本地或 SSH 编辑及基础终端开始。部分功能需要 Pro，参见[免费版与 Pro](/zh/pro)及应用内显示的访问状态。AI 需要配置自己的模型提供商，模型使用费用由提供商另行收取。
 
 <div class="seo-cta">
-  <p><strong>在编辑器、终端与 Git 上下文旁使用 AI，让它的答案可执行。</strong></p>
+  <p><strong>下载 NimoteCode</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=mobile_ai_coding" class="home-page-btn primary" target="_blank" rel="noreferrer">下载 Android 版</a>
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noreferrer">下载 iOS 版</a>
-    <a href="/zh/demo?utm_source=mobile_ai_coding&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">观看演示</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="/zh/docs/quick-start" class="home-page-btn secondary">快速入门</a>
   </p>
 </div>
-
-## 相关指南
-
-- [用手机使用 Claude Code](/zh/claude-code-from-phone)
-- [用手机使用 Codex](/zh/codex-from-phone)
-- [AI Agent 演示](/zh/use-cases/)
-- [移动 IDE 总览](/zh/mobile-ide)
-- [AI Agent 真的能在手机上编程吗？](/zh/blog/can-an-ai-agent-really-code-from-a-phone)

@@ -1,114 +1,54 @@
 ---
-title: "Mobile AI Coding Workspace with SSH, Git and Agent | NimoteCode"
-description: "NimoteCode is a mobile AI coding workspace that keeps AI Chat and Agent next to your editor, SSH terminal, Explorer and Git workflow for real development work from phone or tablet."
+title: "モバイル AI 開発：Chat・Agent・ACP | NimoteCode"
+description: "NimoteCode の AI Chat、Nimote Agent、外部 ACP を作業に応じて選択。モデル設定、実行環境、計画承認と Git 検証を説明します。"
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# 仕事とのつながりを保つモバイル AI コーディング
+# モバイル AI 開発のモードと実行環境
 
+関数の説明と、ファイルを調べて検証を実行する作業は異なります。NimoteCode はエディター、ターミナル、Git と共に Chat、内蔵 Nimote Agent、互換性のある外部 ACP Agent を提供します。依頼前にモードと実行場所を選びます。
 
-モバイル AI コーディングは、貼り付けたコード スニペットをチャットボットに送信するだけではありません。この答えは、コンテキストを失うことなくプロジェクトを検査し、焦点を当てた変更を適用し、コマンドを実行して差分を確認できるときに役立ちます。
+## Chat と Agent を選ぶ
 
+| モード | 用途 | 設定と制御 |
+| --- | --- | --- |
+| Chat | 選択コードの説明、エラー分析、計画 | モデル提供元。Chat 自体はファイル変更を実行しない |
+| Nimote Agent | ファイル調査、編集提案、利用可能なツール | 提供元とアクセス条件。Confirm では計画承認後に実行 |
+| 外部 ACP | 別途導入した互換 Agent | 実行先のランタイム、認証情報、独自のツール方針 |
 
-NimoteCode は、エディター、エクスプローラー、SSH、ターミナル、Git を備えた **モバイル AI 開発ワークスペース**内に AI チャットと AI エージェントを配置します。つまり、ワークスペースがローカルであるか、リモート ホストに接続されているかに関係なく、タスクが発生する場所で AI がタスクをサポートできるということです。
+変更内容が分かっているなら通常の編集やターミナルで十分です。AI は任意で、SSH にモデル設定は必要ありません。
 
+## 提供元とワークスペースを設定する
 
-<ImagePlaceholder image-key="mobileAiCoding" alt="AI coding workspace">
-<strong>画像プレースホルダー — ワークスペースコンテキストを使用した AI コーディング</strong>
-<span>変更されたファイル、ターミナル出力、Git diff の隣にある AI Chat または Agent に置き換えます。すべてのプライベート コードと資格情報を編集します。</span>
-</ImagePlaceholder>
+[モデル設定](/ja/docs/configuration)で接続を試し、ワークスペースのルートを確認します。ローカルフォルダーだけではコマンド実行環境は用意されません。SSH はホスト、対応 Android は [Local Linux](/ja/docs/local-linux) を利用できます。iPhone と iPad に Local Linux はありません。
 
-## 速さは可視性の代わりにならない
+<figure class="seo-phone-capture">
+  <a href="/images/ios/iphone-agents.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-agents.webp" width="660" height="1433" alt="iPhone の NimoteCode に表示された内蔵・外部 Agent の選択。" loading="lazy" decoding="async">
+  </a>
+  <figcaption>iPhone の NimoteCode に表示された内蔵・外部 Agent の選択。 出典：NimoteCode の App Store 掲載画像。宣伝用スクリーンショットであり、連続した操作の記録ではありません。</figcaption>
+</figure>
 
-AI は説明や計画を助けられますが、ホスト、ブランチ、検証コマンドが正しいかは判断できません。コマンド、ファイル変更、Git diff を確認し、モバイルでは可観測で戻せる範囲に作業を限定します。
+## 読み取りだけの依頼から始める
 
-## AI チャットによる理解と計画
+「入口と設定の読み込み方を説明し、まだ変更しないでください」と依頼し、参照パスをエディターで確認します。ツールが必要なら Nimote Agent の Confirm モードで計画を読んで承認します。回答は実際のファイルで検証してください。
 
+## 実行と結果を確認する
 
-AI チャットは、エラーの説明、関数の明確化、リファクタリングの計画、テスト計画の準備など、手順を常に管理したいときに使用します。アクティブなファイルとワークスペースは、コピーされたフラグメントよりも優れた開始点となり、説明からエディターまたはターミナルに直接移動できます。
+タイムラインの出力を読み、必要なら指示を追加するか停止します。保存ファイル、プロジェクトの検証、[Git 差分](/ja/docs/source-control)を確認します。内蔵 Agent の Confirm は、手動で起動した外部 CLI の権限を制御しません。
 
+## 外部ランタイムを使う
 
-## 制御された複数ステップの作業のための AI エージェント
+[AI／ACP ガイド](/ja/docs/ai)でランタイムや MCP を設定します。直接 CLI を使う場合は [Claude Code](/ja/claude-code-from-phone) または [Codex](/ja/codex-from-phone) の SSH 手順を参照してください。鍵はプロンプトではなく設定に保存します。モデル利用枠は含まれません。
 
-
-AI エージェントは、関連ファイルの検査、編集の提案、チェックの実行、結果の要約など、複数のアクションに自然にまたがるタスクを対象としています。レビューをスキップする理由にはなりません。 NimoteCode は、制御された実行と確認指向のワークフローで構築されているため、特にリモート SSH ワークスペースでコマンドと変更を検査できます。
-
-
-機能の可用性とプロバイダーの構成については、[AI チャットとエージェント](/docs/ai) および [セキュリティと安全性](/docs/security)を参照してください。
-
-
-## 周囲のワークスペースが重要な理由
-
-
-| AIコーディングの必要性 |モバイル ワークスペースの利点 |
-|---|---|
-|エラーを理解する |コードを読み、ターミナル出力を検査し、1 か所で質問する |
-|小さな修正を準備する | AI 計画から正確なファイルに移動して、すぐにテストします。
-|リモート プロジェクトに取り組む | SSH、リモート ファイル、エージェント コンテキストをまとめて保持する |
-|生成された変更を確認する |コミットまたはプッシュの前に Git diff を検査する |
-|モバイルでも続行 |複数のアプリ間でタスクを再構築するのではなく、現在のタスクを保持します。
-
-AI により、コンテキスト切り替えのコストが削減され、モバイル作業がより便利になります。ワークスペースでは引き続き、ソース ファイル、シェル出力、Git 履歴、意図的な検証などのエンジニアリング コントロールを提供します。
-
-
-## モバイル AI コーディングの良い使用例
-
-
-- 通話中に馴染みのないサービスについて説明します。
-
-- 編集する前に、狭い本番環境の修正を計画します。
-
-- 失敗したコマンドまたは診断メッセージを解釈します。
-
-- 小さな変更を確認し、明確なコミット メッセージを作成します。
-
-- ラップトップが使用できない場合は、電話またはタブレットから SSH ベースのタスクを続行します。
-
-
-## モバイル AI コーディングが制限される場所
-
-
-電話の AI によってエンジニアリングの基礎が変わるわけではありません。大規模で横断的なリファクタリングは、小さな画面では推論するのが難しくなりますが、エージェントを長時間実行する場合でもデスクトップ ビューポートの恩恵を受けられます。 AI の提案は実際のプロジェクトに対して検証する必要があります。LLM は実行中のサービスを確認できません。また、リモートの本番環境に隣接した作業の場合は、コマンドと変更の確認をオンにしておく必要があります。モバイル AI コーディングを狭い範囲のタスクに使用します。大きなデザイン作業はデスクトップ上で行います。
-
-
-## よくある質問
-
-
-### モバイル AI コーディングはスタンドアロン AI チャットとどう違うのですか?
-
-
-NimoteCode は、AI Chat と Agent をエディタ、プロジェクト エクスプローラー、SSH ターミナル、Git コンテキストと並行して保持するため、提案を実際のワークスペースで検査および検証できます。
-
-
-### AI エージェントはリモート ワークスペースで変更を加えることができますか?
-
-
-AI エージェントは複数ステップのタスクを支援できますが、リモートおよび本番に隣接した作業は、コマンドと変更の制御を有効にしてレビューする必要があります。
-
-
-### AI は Git レビューを置き換えますか?
-
-
-いいえ。 AI はタスクの説明、計画、支援に役立ちます。 Git レビューと適切なテストまたは検証コマンドは、配信ワークフローの一部として残ります。
-
+ローカル／SSH ファイルの編集と基本ターミナルから始められます。一部機能には Pro が必要です。[無料版と Pro](/ja/pro)およびアプリ内の利用状態を確認してください。AI にはモデル提供元の設定が必要で、利用料は提供元が別途請求します。
 
 <div class="seo-cta">
-<p><strong>AI をエディター、ターミナル、Git コンテキストと併用して、答えを実用的なものにします。</strong></p>
+  <p><strong>NimoteCode をダウンロード</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=mobile_ai_coding" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for Android</a>
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noreferrer">Download for iOS</a>
-    <a href="/demo?utm_source=mobile_ai_coding&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="/ja/docs/quick-start" class="home-page-btn secondary">クイックスタート</a>
   </p>
 </div>
-
-## 関連ガイド
-
-
-- [電話からのクロード コード](/claude-code-from-phone)
-
-- [電話からのコーデックス](/codex-from-phone)
-
-- [AIエージェントデモ](/use-cases/)
-
-- [モバイルIDEの概要](/mobile-ide)
-
-- [AI エージェントは本当に電話からコーディングできるのか?](/blog/can-an-ai-agent-really-code-from-a-phone)

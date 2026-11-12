@@ -1,71 +1,77 @@
 ---
-title: "Termius Alternative for Mobile Development Workflows | NimoteCode"
-description: "Looking for a Termius alternative for coding work? NimoteCode pairs SSH and terminal access with remote Explorer, editor, Git, AI Chat and Agent in one mobile development workspace."
+title: "Termius の代替：編集と Git のワークフロー | NimoteCode"
+description: "NimoteCode と Termius の SSH、SFTP、コード編集、Git、AI を比較。プラットフォーム、利用条件、移行前の確認手順を紹介します。"
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# コードを変更する必要がある開発者向けのTermiusの代替手段
+# Termius の代替：編集と Git のワークフロー
 
+Termius を使っているなら、乗り換える価値は実際の仕事が改善するかで判断します。Termius は SSH、SFTP、ポート転送、ホスト管理、プランに応じた同期やチーム機能を提供します。コード編集、Git レビュー、AI の作業を同じアプリで進めたい場合に NimoteCode を検討できます。
 
-<p class="article-meta">Last verified: 2026-09-14 · Termius positioning and feature references: <a href="https://termius.com/" target="_blank" rel="nofollow noopener noreferrer">official Termius website</a>.</p>
+公式資料の確認日：2026-11-13。製品文書に基づく比較であり、性能のベンチマークは実施していません。
 
-**Termius の代替**を探しているユーザーは、多くの場合、携帯電話やタブレットからの信頼できる SSH アクセスを望んでいます。それは良い出発点です。ただし、リモート セッションが定期的にコード変更になる場合、ターミナルのみのワークフローでは残りのタスクがアプリ全体に分散したままになります。
+## 接続だけでなく作業の流れを比較する
 
+| 機能 | Termius | NimoteCode |
+| --- | --- | --- |
+| 対応環境 | Android、iOS、デスクトップ | Android、iPhone、iPad |
+| ファイル | Starter に SSH と SFTP | SSH ワークスペースで SFTP 参照と編集 |
+| 編集 | 利用するクライアントとプランで確認 | アプリのエディター、タブ、分割表示 |
+| Git | ホストの CLI。専用レビュー UI は引用資料では未確認 | 変更、差分、履歴、権限に応じた GitHub |
+| AI | コマンド補完。プロジェクト Agent と同一ではない | Chat と Nimote Agent。提供元の設定が必要 |
+| 利用条件 | Starter と有料プラン。同期やチーム機能はプラン別 | 基本の利用から開始。一部は Pro が必要 |
 
-NimoteCode は、より広範なジョブのためのモバイル開発ワークスペースです。 SSH とターミナルに加えて、エクスプローラー、エディター、Git、AI チャット、エージェントが提供されるため、シェルと対話するだけでなく、リポジトリを介して作業することができます。
+## 現在のクライアントを使い続ける場合
 
+端末間のホスト管理、慣れたターミナル、チームアクセスで目的を満たせるなら Termius を使い続ける選択が合理的です。ログ確認やコマンド一つのために乗り換える必要はありません。組織の認証情報とアクセス方針も確認してください。
 
-<ImagePlaceholder image-key="termiusAlternative" alt="Terminal versus mobile workspace comparison">
-  <strong>Image placeholder — Terminal versus workspace</strong>
-  <span>Replace with an original diagram that compares command-only SSH access with the connect, edit, verify and review workflow.</span>
-</ImagePlaceholder>
+## NimoteCode を試す場面
 
-## 仕事の終点から選ぶ
+小さなリポジトリ作業で評価します。ファイルを探し、編集・保存し、ホストで検証を実行して差分を読む流れです。機能の一覧だけで速度や信頼性を判断しないでください。言語サーバー、デバッガー、Git、外部 Agent は実行環境に対応ツールが必要です。
 
-コマンドで終わる作業なら端末中心のクライアントが適しています。リポジトリの変更で終わる作業なら、ファイル参照、編集、検証、Git レビューが一続きで必要です。どのツールでも、まずホストとブランチを確認します。
+<figure class="seo-phone-capture">
+  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone の NimoteCode エディターに表示されたタブとキーボード。" loading="lazy" decoding="async">
+  </a>
+  <figcaption>iPhone の NimoteCode エディターに表示されたタブとキーボード。 出典：NimoteCode の App Store 掲載画像。宣伝用スクリーンショットであり、連続した操作の記録ではありません。</figcaption>
+</figure>
 
-## 切り替える前に尋ねるべき質問
+## 移行前に一つの接続を検証する
 
+1. ホスト、ポート、アカウント、認証方針、パスを控えて新しい接続を設定します。自動インポートは前提にしません。
+2. ホストが許可する認証を使い、秘密鍵を保護します。AI や問い合わせに貼り付けないでください。
+3. ホスト鍵を照合し、同じルートを開いて書き込み可能な場所で一覧と保存を確認します。
+4. プロジェクトを検証して差分を読み、外出前に再接続も試します。
+5. アプリ内の利用条件と料金を確認し、移行先を検証してから既存の契約を変更します。
 
-最適なツールは、タスクがどこで終了するかによって異なります。
+## 設定と根拠
 
+[Termius](https://termius.com/) · [プラン](https://termius.com/pricing)
 
-| If you mainly need to… | Look for… |
-|---|---|
-| Run commands on servers | Fast, reliable SSH sessions and host management |
-| Transfer or inspect remote files | A file browser that fits your remote workflow |
-| Patch a project from mobile | Explorer, editor, terminal and Git in one workspace |
-| Work with an AI coding agent | Workspace context plus command and change review controls |
-| Handle on-call investigations | Output search, code navigation and a clear verification loop |
+[SSH](/ja/docs/ssh) · [Git](/ja/docs/source-control) · [AI](/ja/docs/ai)
 
-NimoteCode は、最後の 3 つのケースで最も説得力があります。すべての端末ユーザーにツールを変更させようとしているわけではありません。これは、SSH セッションがコード、構成、Git、および AI 支援による意思決定につながる開発者と運用エンジニア向けに設計されています。
+## よくある質問
 
+<!-- faq:start -->
 
-## 全ループに 1 つのモバイル ワークスペース
+### ホストと鍵は自動で移行されますか？
 
+自動インポートは保証していません。ホストが対応する認証方法で接続を設定し、プロジェクトと権限を検証してください。
 
-[SSHワークスペース](/docs/ssh)を使用してリモートプロジェクトに接続し、エディタで関連ファイルを検査し、[ターミナル](/docs/terminal)でコマンドを実行し、[ソース管理](/docs/source-control)を使用して正確な変更を確認します。馴染みのないコードを読んだり、狭い修正を計画したりする際にサポートが必要な場合は、[AI チャットとエージェント](/docs/ai) が同じワークスペースに留まります。
+### 誰にとっても NimoteCode の方が安いですか？
 
+必ずしもそうではありません。必要な機能と現在のストア・アカウント料金を比べます。モデル利用料は別で、無料ダウンロードでもすべての高度な機能が無料とは限りません。
 
-このレイアウトは、ホットフィックスまたはオンコールタスク中に違いをもたらします。ログ行からソースファイル、検証コマンド、差分までのスレッドを保存できます。
+<!-- faq:end -->
 
-
-Termius は、それぞれの所有者の商標です。このページはワークフローの比較であり、機能の同等性を主張したり主張したりするものではありません。
-
+ローカル／SSH ファイルの編集と基本ターミナルから始められます。一部機能には Pro が必要です。[無料版と Pro](/ja/pro)およびアプリ内の利用状態を確認してください。AI にはモデル提供元の設定が必要で、利用料は提供元が別途請求します。
 
 <div class="seo-cta">
-  <p><strong>When your SSH task becomes a coding task, keep the whole workflow together.</strong></p>
+  <p><strong>NimoteCode をダウンロード</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=termius_alternative" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for Android</a>
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noreferrer">Download for iOS</a>
-    <a href="/demo?utm_source=termius_alternative&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="/ja/docs/quick-start" class="home-page-btn secondary">クイックスタート</a>
   </p>
 </div>
-
-## ワークフローを探索する
-
-
-- [リモート開発用のSSH IDE](/ssh-ide)
-
-- [モバイルIDEの概要](/mobile-ide)
-
-- [ブリンクシェル代替](/blink-shell-alternative)

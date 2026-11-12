@@ -1,106 +1,128 @@
 ---
-title: "Use Claude Code From Your Phone with SSH | NimoteCode"
-description: "Learn a practical way to use Claude Code from your phone: connect to a development host over SSH, work in the project files, validate in terminal and review Git changes in NimoteCode."
+title: "スマートフォンから SSH で Claude Code を使う | NimoteCode"
+description: "開発ホストで Claude Code を動かし、Android や iPhone の NimoteCode から操作。設定、再接続、Git レビュー、トラブル対処を説明します。"
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# 携帯電話からクロードコードを使用する方法
+# スマートフォンから SSH で Claude Code を使う
 
+リポジトリを開発マシンに置いたまま、スマートフォンから Claude Code の作業を続けたい場合の手順です。Linux または macOS ホストの CLI に SSH で接続し、NimoteCode でファイル参照、編集、ターミナル、Git レビューを行います。
 
-開発マシンにすでにクロード コードがインストールされている場合は、電話を使用して SSH 経由でそのワークフローに接続したままにすることができます。課題は、CLI 出力を確認することだけではありません。また、議論されているファイルを検査し、提案を検証し、結果として生じる変更を確認する必要もあります。
+SSH は選択肢の一つです。Agent の作業を追うだけなら、提供元の最新の Web、モバイル、リモート機能も確認してください。ホストのファイルとプロジェクトコマンドを直接扱う場合に NimoteCode が役立ちます。
 
+## 1. ホストとアカウントを準備する
 
-NimoteCode は、リモート セッションに関するモバイル ワークスペースを提供します。リポジトリ用のエクスプローラー、ファイル用のエディター、コマンド用の SSH ターミナル、レビュー用の Git、およびコードの質問や制御されたタスク用の独自の AI 支援です。
+起動中の SSH ホスト、アクセスできるリポジトリ、依存関係を用意します。先に公式手順でホストへ Agent をインストールし認証してください。Agent のアカウント、制限、権限、認証情報は NimoteCode とは別です。
 
+ホストに合った Claude Code の公式インストール方法を使います。例：
 
-<ImagePlaceholder image-key="claudeCodeFromPhone" alt="Claude Code from phone remote workflow">
-<strong>画像プレースホルダー — リモート クロード コード ワークフロー</strong>
-<span>編集されたリモート CLI セッション、変更されたファイル、および Git diff に置き換えます。承認なしにクロードのブランドを使用しないでください。</span>
-</ImagePlaceholder>
+```sh
+curl -fsSL https://claude.ai/install.sh | bash
+claude --version
+```
 
-## Agent の出力をレビュー可能な工程に戻す
+[Claude Code quickstart](https://code.claude.com/docs/en/quickstart) · [Remote Control](https://code.claude.com/docs/en/remote-control)
 
-変更案を誰が出したとしても、対象ホストを確認し、影響するファイルを読み、検証を実行し、Git diff を確認する必要があります。電話では、十分に読んで検証できる範囲の小さな作業に絞ります。
+## 2. スマートフォンでリポジトリを開く
 
-## 実用的なリモートホスト設定
+[SSH ワークスペース](/ja/docs/ssh)を作り、ホスト鍵を照合してルートを選びます。ターミナルでも同じパスへ移動し、既存の変更を確認します。以下のパスは例で、自動作成されるものではありません。
 
+以下は Linux または macOS の SSH ホスト向けの例です。プロジェクトのパスを置き換えてください。Windows では PowerShell 用のコマンドが必要です。[Windows SSH と SFTP](/ja/docs/windows-ssh-sftp)を参照してください。
 
-1. 独自のドキュメントに従って、リモート開発ホストにクロード コードをインストールして認証します。
+```sh
+cd /path/to/project
+pwd
+git status --short --branch
+```
 
-2. NimoteCode で、[SSH ワークスペース](/docs/ssh) プロファイルを使用してそのホストに接続し、プロジェクト ルートを選択します。
+<figure class="seo-phone-capture">
+  <a href="/images/ios/iphone-terminal.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-terminal.webp" width="660" height="1433" alt="iPhone の NimoteCode SSH ターミナル。Claude Code の実行記録ではなく Shell の画面例です。" loading="lazy" decoding="async">
+  </a>
+  <figcaption>iPhone の NimoteCode SSH ターミナル。Claude Code の実行記録ではなく Shell の画面例です。 出典：NimoteCode の App Store 掲載画像。宣伝用スクリーンショットであり、連続した操作の記録ではありません。</figcaption>
+</figure>
 
-3. エクスプローラーでプロジェクトを開き、SSH ターミナルを使用してクロード コード セッションを開始または継続します。
+## 3. ホスト側のセッションで開始する
 
-4. エディタを使用して、議論中のファイルと変更を検査します。
+Linux または macOS に tmux があれば、通信が切れてもホスト上のターミナルを保持できます。名前付きセッションを作成または接続し、その中で Agent を開始します。再接続後に Agent が動いていれば、二つ目を起動せず続けてください。
 
-5. ターミナルでプロジェクトのチェックを実行し、コミットする前に[ソース管理](/docs/source-control)で差分を確認します。
+```sh
+tmux new-session -A -s mobile-claude
+claude
+```
 
+最初は範囲を絞って依頼します。
 
-これはリモート端末のワークフローです。NimoteCode は、Claude Code 製品であることを主張したり、Claude Code 自身のセットアップを置き換えたりするものではありません。これにより、周囲のプロジェクトの作業を携帯電話やタブレットからより管理しやすくなります。
+> この設定値を読む場所を探し、関連ファイルと確認方法を説明してください。まだファイルを変更しないでください。
 
+## 4. 再接続と会話の再開を分ける
 
-## エージェントが常に検証に集中できるようにする
+Ctrl+B、続いて D で tmux から離れます。SSH 再接続後は同じセッションに接続します。Agent が終了し会話だけ残っている場合は、同じリポジトリで再開コマンドを使います。保存された会話と実行中のプロセスは別です。
 
+```sh
+tmux attach-session -t mobile-claude
+```
 
-エージェントは狭いタスクを高速化できますが、環境を理解する必要性を取り除くことはできません。モバイルでは、各ループを小さく保つのが良い習慣です。つまり、計画を尋ね、タッチされたファイルを検査し、関連するチェックを実行し、出荷前に Git をレビューします。タスクが本番環境に隣接している場合は、確認を使用し、チームの展開プロセスに従います。
+```sh
+claude -r
+```
 
+[tmux](https://github.com/tmux/tmux/wiki/Getting-Started)
 
-## NimoteCodeがClaude Codeとともに役立つ場合
+## 5. 会話の外で検証する
 
+NimoteCode で変更ファイルを開き、保存して、所定のテストやビルドを実行し差分を読みます。以下はパッチの確認であり、プロジェクトのテストを置き換えません。
 
-- 旅行中または通話中にリポジトリを調査する必要があります。
+```sh
+git diff --check
+git diff --stat
+git diff
+```
 
-- Claude コードは、SSH でアクセスできる Linux 開発ホスト上で実行されています。
+Nimote Agent の Confirm は内蔵 Agent の制御です。手入力の SSH コマンドや外部 CLI の権限は制御しません。CLI 自身の設定を使い、モバイル入力を減らすためだけに確認を無効にしないでください。
 
-- プロジェクト エクスプローラーと Git レビュー ビューをターミナル セッションの横に表示したいとします。
+## 失敗している層を調べる
 
-- エージェントの提案を検証済みのレビュー可能な変更に変える必要があります。
+| 症状 | 最初の確認 |
+| --- | --- |
+| SSH タイムアウト | ホストの休止、アドレス、VPN、ファイアウォール、経路 |
+| コマンドがない | SSH Shell のインストール先と PATH |
+| 認証失敗 | Agent のアカウントと公式のヘッドレス認証手順 |
+| セッションがない | tmux、再起動、プロセス終了、会話の再開 |
+| 検証できない | リポジトリ、依存関係、実行権限 |
 
+## 公式設定と関連ガイド
 
-NimoteCode 自体内の AI プロバイダーの設定については、[AI チャットとエージェント](/docs/ai) を参照してください。より広範なガイダンスについては、[モバイル AI コーディング](/mobile-ai-coding) をお読みください。
+[Claude Code quickstart](https://code.claude.com/docs/en/quickstart) · [Remote Control](https://code.claude.com/docs/en/remote-control)
 
-
-## このワークフローの制限事項
-
-
-この設定では、SSH でアクセスできるホスト上でクロード コードがすでに実行されていることを前提としているため、エージェントをローカルで実行するのではなく、電話機がそのホストに接続します。これは、リモート開発が常に行うことと同じもの、つまり、到達可能なホスト、安定した接続、および独自のクロード コード資格情報に依存します。長時間実行されるエージェント セッションは、デスクトップ上で監視するのがさらに簡単です。電話では、短くて範囲が狭いループを好みます。 NimoteCode は Claude Code ではないため、Claude Code 自体の構成内の問題を修正できません。
-
+[SSH](/ja/docs/ssh) · [Git](/ja/docs/source-control) · [AI / ACP](/ja/docs/ai)
 
 ## よくある質問
 
+<!-- faq:start -->
 
-### 携帯電話でクロード コードを使用するには NimoteCode が必要ですか?
+### Claude Code の契約は含まれますか？
 
+含まれません。Claude Code は別途インストールして認証します。NimoteCode はモバイルワークスペースであり、Agent のアカウントや利用枠は提供しません。
 
-いいえ。 NimoteCode は、Claude Code 自体が独自の開発ホスト上で実行および認証される一方で、周囲のプロジェクト作業 (エクスプローラー、エディター、ターミナル、Git レビュー) を SSH 経由で接続し続けるモバイル ワークスペースです。
+### アプリを閉じても実行は続きますか？
 
+それだけでは保証されません。ホスト側セッション管理は切断対策になりますが、ホストとプロセスが動いている必要があります。再接続時に確認してください。
 
-### NimoteCode はクロード コードを実行しますか?
+### Claude Code 公式のモバイルクライアントですか？
 
+いいえ。NimoteCode を使う独立した SSH ガイドです。提供元のモバイルやリモート機能は別の選択肢です。
 
-いいえ。 NimoteCode は Claude Code 製品ではなく、そのセットアップを置き換えるものではありません。リモート ホストに Claude Code をインストールして認証し、SSH ターミナルを使用してセッションを開始または継続します。
+<!-- faq:end -->
 
-
-### リモート コンピュータを使用せずに電話からクロード コードを実行できますか?
-
-このワークフローでは使用できません。 Claude Code は SSH 経由でアクセスするホスト上で実行されるため、電話機はエージェントをローカルで実行するのではなく、そのホストに接続します。
-
+ローカル／SSH ファイルの編集と基本ターミナルから始められます。一部機能には Pro が必要です。[無料版と Pro](/ja/pro)およびアプリ内の利用状態を確認してください。AI にはモデル提供元の設定が必要で、利用料は提供元が別途請求します。
 
 <div class="seo-cta">
-<p><strong>SSH プロジェクト、ターミナル、ワークフローを電話に接続します。</strong></p>
+  <p><strong>NimoteCode をダウンロード</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=claude_code_from_phone" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for Android</a>
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noreferrer">Download for iOS</a>
-    <a href="/demo?utm_source=claude_code_from_phone&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="/ja/docs/quick-start" class="home-page-btn secondary">クイックスタート</a>
   </p>
 </div>
-
-## 続きを読む
-
-
-- [電話からのコーデックス](/codex-from-phone)
-
-- [リモート開発用のSSH IDE](/ssh-ide)
-
-- [AIエージェントデモ](/use-cases/)
-
-- [AI エージェントは本当に電話からコーディングできるのか?](/blog/can-an-ai-agent-really-code-from-a-phone)

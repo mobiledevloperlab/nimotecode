@@ -1,78 +1,62 @@
 ---
-title: "用手机能写代码吗？哪些能做、哪些做不了 | NimoteCode"
-description: 可以——聚焦的工作可以在手机上完成。了解现实的移动编程方式：SSH 到自己的机器、编辑、运行并审查真实项目，以及桌面仍然更占优的地方。
+title: "用手机写代码：本地文件、Linux 与 SSH 入门 | NimoteCode"
+description: "用 Android 或 iPhone 开始编程：选择本地编辑、Android 本地 Linux 或 SSH，在正确环境运行第一个 Python 脚本，并验证实际结果。"
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# 用手机能写代码吗？
+# 用手机写代码：先决定项目在哪里运行
 
-可以——对聚焦的开发工作而言，而不是替代桌面。排查问题、做一处小修复、运行命令、审查 diff 或驱动 AI Agent 处理你现有项目，在工具链为移动端而设计时都是现实可行的。
+手机可以编写和编辑代码，运行代码还需要支持对应语言和依赖的环境。NimoteCode 提供本地文件编辑、SSH 工作区，以及受支持 Android 设备上的本地 Linux。先选想做的项目，不必一次安装所有工具。
 
-NimoteCode 让**用手机写代码**变得实用：通过 SSH 连接你自己的开发机，然后在同一个工作区里使用项目 Explorer、编辑器、终端、Git 与 AI。算力与工具链留在那台机器上，手机直接操作同一个仓库。
+## 选择一种起步方式
 
-<ImagePlaceholder image-key="mobileIde" alt="用手机写代码，连接远程项目">
-  <strong>图片占位 —— 用手机写代码</strong>
-  <span>请替换为手机在一个工作区中展示项目 Explorer、被编辑的文件与一条终端验证命令的截图。</span>
-</ImagePlaceholder>
+| 当前需求 | 从哪里开始 | 执行条件 |
+| --- | --- | --- |
+| 改文字、HTML 或配置 | 已授权的本地文件夹 | 单纯编辑不会提供运行时 |
+| 在 Android 学 Shell 或运行兼容脚本 | Android 8+ ARM64/x86_64 本地 Linux | 设备上的 Ubuntu 用户空间，需安装语言工具 |
+| 继续电脑上的项目 | 连接 Windows、Mac 或 Linux SSH 主机 | 使用主机工具和依赖 |
 
-## 先界定能安全完成的任务
+本地 Linux 基于 PRoot，无需 root，不支持 iPhone 和 iPad。只改文字时基础编辑器就够了，开始编程也不需要配置 AI。
 
-手机最适合目标明确、验证方式已知的工作：确认主机和分支，做最小改动，运行一项相关检查，然后阅读 diff。大型重构、复杂冲突或需要完整桌面环境的调试，并不会因为能连上 SSH 就变成合适的移动任务。
+<figure class="seo-phone-capture">
+  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="在 iPhone 上编辑源码；运行仍需要配置执行环境。" loading="lazy" decoding="async">
+  </a>
+  <figcaption>在 iPhone 上编辑源码；运行仍需要配置执行环境。 来源：NimoteCode App Store 页面。此图为宣传截图，不是连续操作录屏。</figcaption>
+</figure>
 
-## 用手机写代码真正意味着什么
+## 运行第一个 Python 脚本
 
-当闭环保持短小时，用手机写代码才有效：打开项目、阅读相关代码、做出窄小的改动、运行检查并审查结果。当工具迫使你在应用之间复制文件与代码片段，或试图在手机上本地编译大型项目时，它就失效了。可靠的模式是连接到一台你已经拥有并信任的机器。
+在可写项目目录用编辑器新建 `hello.py`，输入：
 
-## 什么时候值得这么做
+```python
+print("Hello from NimoteCode")
+```
 
-- 你正在值班，需要排查一个报错或做一处快速修复。
-- 你想在离开笔记本时审查一个 PR 或 diff。
-- 你希望在出行途中推进一个小任务。
-- 你想要工作区感知的 AI 帮助处理真实项目，而不是粘贴的代码片段。
+保存后，在已安装 Python 3 的本地 Linux 或 Linux/macOS SSH 主机中，将终端切到该目录并运行：
 
-## NimoteCode 如何契合
+```sh
+python3 hello.py
+```
 
-对已在设备上的项目，用[本地工作区](/zh/docs/ssh)打开；对 Mac、Linux 机器或服务器，则用 SSH 工作区连接。之后你就能浏览文件、在编辑器中修改、在[终端](/zh/docs/terminal)运行命令、审查 [Git 改动](/zh/docs/source-control)并使用 [AI Chat 与 Agent](/zh/docs/ai)——与桌面上相同的工作流，只是针对移动屏幕做了适配。
+预期输出为 `Hello from NimoteCode`。找不到命令时，在执行环境使用其包管理器安装 Python。打开本地文件不等于已安装 Python。Windows 应使用主机实际安装的 Python 命令。准备步骤见[本地 Linux](/zh/docs/local-linux)或[远程编程](/zh/remote-coding)。
 
-## 一次现实的手机编程会话
+## 从示例进入真实项目
 
-1. 通过 SSH 连接你的开发主机并打开项目根目录。
-2. 在 Explorer 中找到相关文件。
-3. 在编辑器中做出最小且安全的改动。
-4. 在终端中运行聚焦的验证命令。
-5. 提交前在源代码管理中审查 diff。
-6. 卡住时用 AI 解释代码或规划下一步。
+打开仓库根目录，阅读配置说明并检查已有修改，在所选运行环境安装依赖。编辑后先保存，再运行项目检查并审查 Git。大范围改动前可以先熟悉[编辑器](/zh/docs/editor)和[源代码管理](/zh/docs/source-control)。
 
-## 用手机写代码的局限
+## 什么时候更换开发环境
 
-手机屏幕更小，因此跨文件的长篇重构与重型设计会话更吃力。大型项目的本地编译在手机上很少可行——请改用你的远程机器。网络质量影响每一次远程会话，AI 建议与 Agent 运行也应保持窄小并经过验证。这些是真实的约束，有用的问题是：哪些任务仍然适合在这样的约束下完成。
+手机可以控制性能强大的主机，但不能自动解决缺少依赖的问题。不兼容 PRoot 的工具或较重构建适合转移到 SSH 主机。大型重构和复杂可视化调试应使用便于清晰审查的屏幕与输入方式。[移动 IDE](/zh/mobile-ide)介绍工作区选择。
 
-## 常见问题
-
-### 用手机写代码现实吗？
-
-对聚焦的工作是现实的：排查问题、做一处小修复、运行命令、审查 diff，或在你的现有项目上驱动 AI Agent。长篇功能开发与重型编译仍然更适合桌面。
-
-### 我到底该怎么用手机写代码？
-
-可靠的模式是用一个移动开发工作区通过 SSH 连接你自己的开发机，然后浏览、编辑、运行并审查项目——而不是在应用之间复制文件或代码片段。
-
-### 哪些手机可以运行 NimoteCode？
-
-NimoteCode 可于 Google Play（Android 手机与平板）与 App Store（iPhone 与 iPad）下载。
+可以从本地或 SSH 编辑及基础终端开始。部分功能需要 Pro，参见[免费版与 Pro](/zh/pro)及应用内显示的访问状态。AI 需要配置自己的模型提供商，模型使用费用由提供商另行收取。
 
 <div class="seo-cta">
-  <p><strong>让只有手机的时刻也保持高效。</strong></p>
+  <p><strong>下载 NimoteCode</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=code_from_phone" class="home-page-btn primary" target="_blank" rel="noreferrer">下载 Android 版</a>
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noreferrer">下载 iOS 版</a>
-    <a href="/zh/demo?utm_source=code_from_phone&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">观看演示</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="/zh/docs/quick-start" class="home-page-btn secondary">快速入门</a>
   </p>
 </div>
-
-## 相关页面
-
-- [移动 IDE 概览](/zh/mobile-ide)
-- [用手机或平板远程编程](/zh/remote-coding)
-- [面向远程开发的 SSH IDE](/zh/ssh-ide)
-- [移动 AI 编程工作区](/zh/mobile-ai-coding)
-- [AI Agent 真的能在手机上编程吗？](/zh/blog/can-an-ai-agent-really-code-from-a-phone)

@@ -17,6 +17,19 @@
   padding-bottom: 0;
 }
 
+/* VitePress code blocks normally bleed into the documentation gutter. These
+   pages use a narrower marketing gutter, so keep the block inside its column
+   and scroll long commands within the code area. */
+.nimote-marketing-doc .vp-doc div[class*='language-'] {
+  margin-inline: 0;
+  border-radius: 12px;
+}
+
+.nimote-marketing-doc .vp-doc div[class*='language-'] pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 .nimote-marketing-doc .home-page-section {
   padding-inline: 0;
 }

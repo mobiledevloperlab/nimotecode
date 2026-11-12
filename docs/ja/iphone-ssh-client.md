@@ -1,71 +1,74 @@
 ---
-title: "iPhone SSH Client for Coding Workflows | NimoteCode"
-description: "Looking for an iPhone SSH client that supports real coding workflows? See how NimoteCode brings remote files, terminal, Git and AI coding context into a mobile development workspace."
-noindex: true
-canonical: https://nimotecode.com/download
+title: "iPhone SSH クライアント：SFTP・編集・Git | NimoteCode"
+description: "NimoteCode の iPhone 版で SSH 接続、SFTP ファイル参照、コード編集、ホストのコマンド実行と Git レビュー。設定手順と App Store へのリンクを紹介。"
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# コーディングワークフロー用のiPhone SSHクライアント
+# iPhone SSH クライアントでプロジェクトを編集する
 
+外出中にサーバーの設定やスクリプト、リポジトリを確認したいとき、NimoteCode では SSH ターミナル、リモートファイル、コード編集、Git レビュー、任意の AI 支援を一つの iPhone ワークスペースで使えます。プロジェクトはホストに置いたまま操作します。
 
-iPhone SSH クライアントは、デスクから離れたリモート ホストに接続する必要がある場合に不可欠です。開発者にとって重要な質問は、接続が開いた後に何が起こるかということです。プロジェクトを検査し、適切なファイルを編集し、結果を確認し、加えた変更を理解できるでしょうか?
+コマンドだけなら専用ターミナルで足りる場合があります。ファイルを探して編集し、検証して差分まで読む作業に NimoteCode が役立ちます。
 
+<figure class="seo-phone-capture">
+  <a href="/images/ios/iphone-ssh.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-ssh.webp" width="660" height="1433" alt="iPhone の NimoteCode Remote Explorer に表示された SSH 接続先とプロジェクト。" loading="lazy" decoding="async">
+  </a>
+  <figcaption>iPhone の NimoteCode Remote Explorer に表示された SSH 接続先とプロジェクト。 出典：NimoteCode の App Store 掲載画像。宣伝用スクリーンショットであり、連続した操作の記録ではありません。</figcaption>
+</figure>
 
-NimoteCode は、コード エディターを中心に、**エクスプローラー + SSH + ターミナル + Git + AI チャットおよびエージェント** というワークフローを iPhone および iPad 上で提供します。 Android リリースと同じ機能セットを備えた App Store で入手できます。
+## 開発ホストに接続する
 
+1. Windows、Mac、Linux ホストの SSH サーバーを有効にし、起動状態と到達性を確認します。Windows は [OpenSSH と SFTP の設定](/ja/docs/windows-ssh-sftp)を参照してください。
+2. **Connect Remote Workspace** でホスト、ポート、ユーザー名、認証方法を入力します。
+3. 初回接続では、ホストから取得した信頼できる値とホスト鍵の指紋を照合します。
+4. リポジトリのルートを選び、Remote Explorer の接続先とパスを確認します。
+5. 書き込み可能なフォルダーでテスト用ファイルを編集・保存し、ホスト側でも結果を確認します。
 
-<ImagePlaceholder image-key="iphoneSshClient" alt="iPhone SSH workflow">
-<strong>画像プレースホルダー — iPhone SSH ワークフロー</strong>
-<span>入手可能な場合は、承認済みの iPhone 製品モックアップと交換してください。</span>
-</ImagePlaceholder>
+プロファイルとディレクトリ選択は [SSH ガイド](/ja/docs/ssh)で説明しています。LAN 外では VPN などの安全な経路が必要です。クライアントをインストールするだけではホストに到達できません。
 
-## iPhone では短く検証可能なループを終える
+## SFTP でファイルを探して編集する
 
-正しいホストとリポジトリを確認してから、必要最小限の変更、既知のチェック、Git diff の確認を行います。大規模な変更や読みにくい出力を伴う作業では、電話をデスクトップの代わりにしないでください。
+プロジェクトツリーからソース、文書、設定を探し、エディターのタブで開きます。外部ツールを実行する前に保存してください。SFTP はホストのアカウント権限に従い、ログインしてもすべての場所に書き込めるわけではありません。
 
-## 開発者向けの SSH クライアントに期待できること
+Windows の SFTP パスはローカル表記と異なる場合があります。サーバーが返すパスを使用してください。[エディターガイド](/ja/docs/editor)でタブ、選択、分割表示を確認できます。
 
+## コマンドを実行して Git を確認する
 
-コーディングタスクの場合は、ホストプロファイルと端末以外のものを探します。
+ターミナルのコマンドはホストで動きます。コンパイラー、Git、言語サーバー、依存関係はホストに用意します。編集前にディレクトリとブランチを、コミット前に差分と所定の検証結果を確認してください。
 
+iOS はバックグラウンドのアプリを停止する場合があります。長時間の処理にはホスト側のセッション管理を用意し、再接続後に状態を確認します。
 
-- リモート エクスプローラー。すべてのパスを入力するのではなく、プロジェクト内を移動できます。
+## iPhone とホストの役割
 
-- ファイルと変更をコンテキスト内に保持するエディタ。
+ローカルフォルダーでは iOS の許可に従ってファイルを編集できますが、コンパイラーや Linux ランタイムが自動で用意されるわけではありません。**Local Linux は Android 専用**です。この iPhone の手順ではプロジェクトのコマンドを SSH ホストで実行します。AI は任意で、提供元の設定が必要です。[AI](/ja/docs/ai)と [iPad 開発](/ja/ipad-coding)も参照してください。
 
-- 実際のコマンド、ログ、テスト、展開チェック用の端末。
+## よくある質問
 
-- デバイスから送信される前に結果を確認するための Git ツール。
+<!-- faq:start -->
 
-- 現在のファイルおよびワークスペースタスクから作業できる AI 支援。
+### iPhone で SFTP を利用できますか？
 
+はい。SSH ワークスペースのファイルアクセスは SFTP を利用し、サーバー設定とアカウント権限に従います。接続後は一覧表示、ファイルを開く操作、保存を個別に確認してください。
 
-これらの部分により、接続、検査、編集、検証、レビューというコンパクトながら責任あるループをたどることができます。完全なリモートワークフローについては[SSH IDEページ](/ssh-ide)を、コマンドの実行とトラブルシューティングについては[端末診断](/docs/terminal)を参照してください。
+### iPhone で Ubuntu を直接動かせますか？
 
+いいえ。NimoteCode Local Linux は対応する Android 端末専用です。iPhone では SSH ホストの Linux Shell とプロジェクトツールを利用します。
 
-## iPhone および iPad 製品の入手可能性
+### SSH の前に AI を設定する必要はありますか？
 
+ありません。モデルを設定せずに接続、ファイル参照、編集、基本ターミナルを利用できます。AI の設定とアクセス条件は別です。
 
-iPhone および iPad 用 NimoteCode は App Store で入手可能になりました。地域の店舗の在庫状況に応じて、以下のリンクからインストールできます。
+<!-- faq:end -->
 
-
-Android も使用している場合は、Google Play から現在の Android リリースをインストールできます。
-
+ローカル／SSH ファイルの編集と基本ターミナルから始められます。一部機能には Pro が必要です。[無料版と Pro](/ja/pro)およびアプリ内の利用状態を確認してください。AI にはモデル提供元の設定が必要で、利用料は提供元が別途請求します。
 
 <div class="seo-cta">
-<p><strong>完全な SSH 編集ワークフローを iPhone または iPad に導入 — App Store で入手可能になりました。</strong></p>
+  <p><strong>NimoteCode をダウンロード</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for iOS</a>
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=iphone_ssh_client" class="home-page-btn tertiary" target="_blank" rel="noreferrer">Download for Android</a>
-    <a href="/demo?utm_source=iphone_ssh_client&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="/ja/docs/quick-start" class="home-page-btn secondary">クイックスタート</a>
   </p>
 </div>
-
-## 探索を続ける
-
-
-- [iPadコーディングワークスペース](/ipad-coding)
-
-- [モバイルIDEの概要](/mobile-ide)
-
-- [クイックスタートドキュメント](/docs/quick-start)

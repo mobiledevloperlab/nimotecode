@@ -1,80 +1,54 @@
 ---
-title: "Mobile AI Coding Workspace with SSH, Git and Agent | NimoteCode"
-description: "NimoteCode is a mobile AI coding workspace that keeps AI Chat and Agent next to your editor, SSH terminal, Explorer and Git workflow for real development work from phone or tablet."
+title: "Mobile AI Coding: Chat, Agent & ACP Workflows | NimoteCode"
+description: "Choose AI Chat, Nimote Agent or an external ACP agent for a mobile project. Learn provider setup, tool approvals, execution environments and Git verification."
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# Mobile AI Coding That Stays Connected to the Work
+# Mobile AI coding with the right mode and runtime
 
-Mobile AI coding should be more than sending a pasted code snippet to a chatbot. The answer becomes useful when you can inspect the project, apply a focused change, run a command and review the diff without losing context.
+Want an explanation of a function, or an agent to inspect files and run checks? These are different tasks. NimoteCode provides AI Chat, a built-in Nimote Agent, and compatible external ACP agents alongside the project editor, terminal, and Git tools. Choose the mode and execution environment before sending a task.
 
-NimoteCode puts AI Chat and AI Agent inside a **Mobile AI Development Workspace** with Editor, Explorer, SSH, Terminal and Git. That means AI can support the task where it happens, whether the workspace is local or connected to a remote host.
+## Choose between Chat and an Agent
 
-<figure class="article-hero">
-  <a href="/images/placeholders/ai-plan-approval.jpg" target="_blank" rel="noopener"><img src="/images/placeholders/ai-plan-approval.jpg" width="1080" height="2376" alt="An AI plan awaiting review in NimoteCode" loading="eager" decoding="async"></a>
-  <figcaption>Useful automation stays observable: review the plan, command, and resulting diff in the project where the work happens.</figcaption>
+| Mode | Use it for | Setup and control |
+| --- | --- | --- |
+| Chat | Explain selected code, interpret an error, discuss a plan | Configure a model provider; Chat does not itself execute workspace changes |
+| Nimote Agent | Inspect files, propose edits, run available workspace tools | Provider setup and feature access; Confirm mode reviews the plan before a run |
+| External ACP agent | Use a compatible separately installed agent runtime | Runtime, credentials, and its own tool policy on the execution target |
+
+A normal editor or terminal is enough when you already know the exact change. AI is optional; opening a project and using SSH does not require configuring a model.
+
+## Configure the provider and workspace
+
+Follow [model configuration](/docs/configuration) to add a provider and test access. Open the intended workspace and confirm its root. A local folder does not automatically provide command execution. SSH uses the host’s environment; supported Android devices can use [Local Linux](/docs/local-linux). iPhone and iPad do not have NimoteCode Local Linux.
+
+<figure class="seo-phone-capture">
+  <a href="/images/ios/iphone-agents.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-agents.webp" width="660" height="1433" alt="NimoteCode on iPhone showing built-in and external agent choices." loading="lazy" decoding="async">
+  </a>
+  <figcaption>NimoteCode on iPhone showing built-in and external agent choices. Source: NimoteCode App Store listing. Promotional screenshot, not a continuous recording.</figcaption>
 </figure>
 
-## AI Chat for understanding and planning
+## Try a read-only task first
 
-Use AI Chat when you want to stay in control of the steps: explain an error, clarify a function, map out a refactor or prepare a test plan. The active file and workspace make a better starting point than a copied fragment, and you can move from the explanation directly into the editor or terminal.
+Ask: “Find the entry point and explain how this configuration is loaded. Do not change files.” Check the referenced paths in the editor. For a task that needs tools, select Nimote Agent and review its plan in Confirm mode before approving. A good answer still needs verification against the actual files.
 
-## AI Agent for controlled multi-step work
+## Review execution and the result
 
-AI Agent is for tasks that naturally span several actions: inspect relevant files, propose edits, run a check and summarize the outcome. It is not a reason to skip review. NimoteCode is built with controlled execution and confirmation-oriented workflows so you can inspect commands and changes—especially in remote SSH workspaces.
+Follow the execution timeline, read outputs, and send a correction or stop the run if its scope changes. After edits, inspect the saved files, run project checks, and review the diff in [Source Control](/docs/source-control). External agents have their own permissions; the built-in Agent’s Confirm mode does not control a CLI started manually in Terminal.
 
-For feature availability and provider configuration, see [AI Chat and Agent](/docs/ai) and [Security and Safety](/docs/security).
+## Connect an external runtime when needed
 
-## Why the surrounding workspace matters
+The [AI and ACP reference](/docs/ai) covers compatible runtime commands and MCP tools. For direct terminal access rather than an ACP conversation, use the separate [Claude Code](/claude-code-from-phone) or [Codex](/codex-from-phone) SSH tutorials. Keep provider keys in configuration rather than prompts; NimoteCode does not include model credits.
 
-| AI coding need | Mobile workspace advantage |
-|---|---|
-| Understand an error | Read the code, inspect terminal output and ask a question in one place |
-| Prepare a small fix | Move from an AI plan to the precise file and test it immediately |
-| Work on a remote project | Keep SSH, remote files and agent context together |
-| Review generated changes | Inspect Git diff before a commit or push |
-| Continue while mobile | Preserve the current task instead of reconstructing it across apps |
-
-AI makes mobile work more useful when it reduces the cost of context switching. The workspace still gives you the engineering controls: source files, shell output, Git history and deliberate verification.
-
-## Good use cases for mobile AI coding
-
-- Explain an unfamiliar service while you are on call.
-- Plan a narrow production fix before you edit.
-- Interpret a failed command or diagnostic message.
-- Review a small change and write a clear commit message.
-- Continue an SSH-based task from a phone or tablet when a laptop is not available.
-
-## Where mobile AI coding is limited
-
-AI on a phone does not change the engineering fundamentals. Large, cross-cutting refactors are harder to reason about on a small screen, and long agent runs still benefit from a desktop viewport. AI suggestions must be verified against the real project — an LLM cannot see your running service. And for remote, production-adjacent work you should keep command and change confirmations on. Use mobile AI coding for narrow, well-scoped tasks; keep the big design work on a desktop.
-
-## Frequently asked questions
-
-### How is mobile AI coding different from a standalone AI chat?
-
-NimoteCode keeps AI Chat and Agent alongside the editor, project Explorer, SSH terminal and Git context, so suggestions can be inspected and verified in the real workspace.
-
-### Can AI Agent make changes in a remote workspace?
-
-AI Agent can assist multi-step tasks, but remote and production-adjacent work should be reviewed with command and change controls enabled.
-
-### Does AI replace Git review?
-
-No. AI can help explain, plan and assist a task; Git review and appropriate test or verification commands remain part of the delivery workflow.
+Start with local or SSH editing and the basic terminal. Some capabilities require Pro access; check [Free and Pro](/pro) and the access shown in the app. AI requires your own model provider, whose usage is billed separately.
 
 <div class="seo-cta">
-  <p><strong>Use AI alongside the editor, terminal and Git context that makes its answer actionable.</strong></p>
+  <p><strong>Download NimoteCode</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=mobile_ai_coding" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for Android</a>
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noreferrer">Download for iOS</a>
-    <a href="/demo?utm_source=mobile_ai_coding&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="/docs/quick-start" class="home-page-btn secondary">Quick start</a>
   </p>
 </div>
-
-## Related guides
-
-- [Claude Code from phone](/claude-code-from-phone)
-- [Codex from phone](/codex-from-phone)
-- [AI Agent demo](/use-cases/)
-- [Mobile IDE overview](/mobile-ide)
-- [Can an AI Agent Really Code From a Phone?](/blog/can-an-ai-agent-really-code-from-a-phone)

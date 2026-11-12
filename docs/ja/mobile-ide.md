@@ -1,6 +1,6 @@
 ---
-title: "モバイルIDEの選び方：スマホで編集から変更の確認まで | NimoteCode"
-description: "ローカル編集、SSH、リモートAIエージェントを用途で比較。NimoteCodeを例に、小さな修正を編集、プレビュー、Git差分の確認まで進めます。"
+title: "モバイル IDE：ローカル・Linux・SSH の選び方 | NimoteCode"
+description: "スマートフォンでプロジェクトを進めるためのモバイル IDE ガイド。ローカル編集、Android Local Linux、SSH を比べ、編集から検証と Git レビューへ進みます。"
 pageClass: mobile-ide-article
 ---
 
