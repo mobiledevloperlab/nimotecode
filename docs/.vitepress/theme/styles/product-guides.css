@@ -1,0 +1,149 @@
+/* A shared reading grid for product guides in every language. */
+:is(.android-ide-page, .seo-product-guide, .mobile-ide-article) .nimote-marketing-doc {
+  max-width: 1080px;
+  padding-block: 48px 0;
+}
+
+.vp-doc .product-guide-section {
+  min-width: 0;
+}
+
+.vp-doc .product-guide-section + .product-guide-section {
+  margin-top: 44px;
+  padding-top: 36px;
+  border-top: 1px solid var(--nimote-border);
+}
+
+.vp-doc .product-guide-copy {
+  min-width: 0;
+  max-width: var(--nimote-reading-width);
+}
+
+.vp-doc .product-guide-copy > :first-child { margin-top: 0; }
+.vp-doc .product-guide-copy > :last-child { margin-bottom: 0; }
+
+.vp-doc .product-guide-copy h1 {
+  font-size: clamp(1.875rem, 2.7vw, 2.625rem);
+  line-height: 1.2;
+  text-wrap: balance;
+  margin-bottom: 24px;
+}
+
+.vp-doc .product-guide-copy h2 {
+  margin: 0 0 20px;
+  padding: 0;
+  border: 0;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.vp-doc .product-guide-copy h3 {
+  margin-top: 28px;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+}
+
+.vp-doc .product-guide-copy :is(p, li) {
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.vp-doc .product-guide-copy table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  max-width: 100%;
+  margin-block: 24px;
+}
+
+.vp-doc .product-guide-copy :is(th, td) {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  padding: 12px 14px;
+  line-height: 1.65;
+}
+
+.vp-doc .product-guide-copy th:first-child { width: 24%; }
+
+.vp-doc .product-guide-copy .seo-cta {
+  margin-block: 28px;
+  padding: 20px;
+}
+
+.vp-doc .product-guide-copy .seo-cta p { margin: 0; }
+.vp-doc .product-guide-copy .seo-cta .seo-cta-actions { margin-top: 16px; }
+
+/* Preserve complete screenshots, with a full-size preview available. */
+.vp-doc .product-guide-capture {
+  min-width: 0;
+  width: min(100%, 248px);
+  margin: 24px auto 0;
+}
+
+.vp-doc .product-guide-capture :is(.android-ide-media, .seo-phone-capture, .mobile-ide-screenshot, .doc-screenshots, .doc-screenshot) {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.vp-doc .product-guide-capture .doc-screenshots > .doc-screenshot {
+  flex-basis: 100%;
+}
+
+.vp-doc .product-guide-capture img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.vp-doc .product-guide-capture figcaption {
+  margin-top: 12px;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  text-align: left;
+  color: var(--nimote-text-secondary);
+}
+
+.vp-doc .product-guide-copy .article-hero {
+  width: 100%;
+  max-width: 100%;
+  margin: 24px 0 32px;
+}
+
+@media (min-width: 960px) {
+  .vp-doc .product-guide-section.has-capture {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 248px;
+    align-items: start;
+    gap: 56px;
+  }
+  .vp-doc .product-guide-capture { margin: 0; }
+  .vp-doc .product-guide-intro .product-guide-capture { padding-top: 4px; }
+  .vp-doc .product-guide-section:not(.product-guide-intro) .product-guide-capture {
+    width: 220px;
+    justify-self: end;
+  }
+}
+
+@media (max-width: 959px) {
+  .vp-doc .product-guide-section {
+    max-width: var(--nimote-reading-width);
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 639px) {
+  :is(.android-ide-page, .seo-product-guide, .mobile-ide-article) .nimote-marketing-doc {
+    padding-top: 28px;
+  }
+  .vp-doc .product-guide-section + .product-guide-section {
+    margin-top: 32px;
+    padding-top: 28px;
+  }
+  .vp-doc .product-guide-copy h2 { font-size: 1.3rem; }
+  .vp-doc .product-guide-copy :is(th, td) {
+    padding: 10px 8px;
+    font-size: 0.8125rem;
+  }
+  .vp-doc .product-guide-copy .seo-cta { padding: 18px; }
+}

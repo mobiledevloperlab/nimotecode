@@ -5,6 +5,7 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 import { productCopy } from './theme/product'
 import homeTranslations from './theme/i18n/home.json'
 import { allCompetitors } from './theme/data/mobileDevelopmentCompetitors'
+import { guideLayout } from './guide-layout'
 
 function communityLinks(zh: boolean): DefaultTheme.SocialLink[] {
   return [
@@ -763,7 +764,10 @@ function websiteDescription(inLanguage: string): string {
 
 export default defineConfig({
   // Policy pages expose a server-rendered, keyboard-accessible contents list.
-  markdown: { headers: { level: [2] } },
+  markdown: {
+    headers: { level: [2] },
+    config(md) { guideLayout(md) }
+  },
   // Start with the product's dark canvas; keep the visitor's saved preference.
   appearance: 'dark',
   title: 'NimoteCode',
