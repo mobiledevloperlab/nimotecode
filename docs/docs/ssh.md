@@ -87,3 +87,5 @@ When you need to select files, click **Select** to enter selection mode. Verify 
 ## Windows SSH workspaces
 
 Windows hosts use PowerShell and SFTP for remote workspace operations. File browsing and search, Git, terminal commands, language services, and Agent workflows are available where the host and account provide the required tools and permissions.
+
+[Windows 11 setup and troubleshooting](/docs/windows-ssh-sftp)

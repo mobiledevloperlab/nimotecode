@@ -14,7 +14,7 @@ for (const page of pages) {
   const source = readFileSync(file, 'utf8')
   if (source.includes('<ImagePlaceholder')) failures.push(`${page}: replace ImagePlaceholder with an approved image before publishing`)
   if (/Replace with|Image placeholder/i.test(source)) failures.push(`${page}: contains unfinished media copy`)
-  if (!/<figcaption>|<ImagePlaceholder/.test(source)) failures.push(`${page}: needs a captioned editorial image`)
+  if (!/<figcaption>|<ImagePlaceholder|<DocScreenshot\b[^>]*\bcaption="[^"]+"/.test(source)) failures.push(`${page}: needs a captioned editorial image`)
   for (const phrase of stockPhrases) if (phrase.test(source)) failures.push(`${page}: contains stock marketing language (${phrase})`)
 }
 
