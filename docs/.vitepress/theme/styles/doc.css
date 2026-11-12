@@ -507,6 +507,25 @@
   margin: 28px auto 36px;
 }
 
+/* Android feature captures retain phone proportions and stay readable without
+   stretching a portrait image across the full marketing-page container. */
+.android-ide-page .vp-doc .android-ide-media {
+  width: min(100%, 280px);
+  margin: 28px auto 36px;
+}
+
+.android-ide-page .vp-doc .android-ide-media .doc-screenshot {
+  width: 100%;
+  margin: 0;
+}
+
+.android-ide-page .vp-doc .android-ide-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .mobile-ide-article .vp-doc .mobile-ide-screenshot a {
   display: block;
 }

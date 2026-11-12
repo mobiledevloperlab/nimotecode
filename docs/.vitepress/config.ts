@@ -88,6 +88,11 @@ function organizeDocsGroups(groups: DefaultTheme.SidebarItem[], prefix: string):
     es: ['Primeros pasos', 'Espacios de trabajo', 'Desarrollo principal', 'IA y automatización', 'Inteligencia de código y entrega', 'Android Local Linux', 'Ajustes y ayuda']
   }
   const items = groups.flatMap(group => group.items ?? [])
+  const windowsLabels: Record<string, string> = {
+    en: 'Windows SSH and SFTP', zh: 'Windows SSH 与 SFTP',
+    ja: 'Windows SSH と SFTP', ko: 'Windows SSH 및 SFTP', es: 'SSH y SFTP en Windows'
+  }
+  items.push({ text: windowsLabels[locale], link: `${prefix}/docs/windows-ssh-sftp` })
   const labels: Record<string, string> = locale === 'zh' ? {
     ssh: '本地与 SSH 工作区', ai: 'AI 对话与 Agent', editor: '代码编辑器',
     terminal: '终端', search: '工作区搜索', 'source-control': '源代码管理',
@@ -104,7 +109,7 @@ function organizeDocsGroups(groups: DefaultTheme.SidebarItem[], prefix: string):
   })
   return [
     group(names[locale][0], ['quick-start']),
-    group(names[locale][1], ['ssh']),
+    group(names[locale][1], ['ssh', 'windows-ssh-sftp']),
     group(names[locale][2], ['editor', 'terminal', 'search', 'source-control', 'tasks', 'docker']),
     group(names[locale][3], ['ai', 'configuration', 'plugins']),
     group(names[locale][4], ['lsp', 'debug', 'sync-cache']),
@@ -217,8 +222,8 @@ const localizedSeo = {
 
 function localizedSeoValue(path: string, value: string, kind: 'title' | 'description'): string {
   const locale = pageLocaleKey(path)
-  // Homepages have fully translated metadata, rather than English fallbacks.
-  if (/^(?:ja|ko|es)\/index\.md$/.test(path)) return value
+  // These pages have fully translated metadata, rather than English fallbacks.
+  if (/^(?:ja|ko|es)\/(?:index|android-ide|docs\/windows-ssh-sftp)\.md$/.test(path)) return value
   const translation = localizedSeo[locale as keyof typeof localizedSeo]
   if (!translation || !value) return value
 
@@ -605,6 +610,60 @@ function faqSchema(context: TransformContext): object | null {
         answer: 'Choose an SSH IDE when the task includes locating files, editing code, running verification commands and reviewing a diff. A terminal-only client may be enough for command-only work.'
       }
     ],
+    "/ja/android-ide": [
+      {
+        "question": "Linux の利用に root は必要ですか？",
+        "answer": "不要です。Local Linux は Android 8 以降の対応端末で、64 ビット ARM64 または x86_64 のアプリから PRoot を使います。ツールチェーンは別途必要で、すべての Linux 処理が動くわけではありません。"
+      },
+      {
+        "question": "リモート PC がなくても開発できますか？",
+        "answer": "はい。対応 Android 端末でローカルファイルを編集し、Local Linux で互換性のあるツールを実行できます。初期設定やパッケージ取得には通信が必要な場合があります。クラウド AI と GitHub には各サービスへの接続が必要です。"
+      },
+      {
+        "question": "Android Studio と同じものですか？",
+        "answer": "いいえ。NimoteCode は編集、ターミナル、Git、AI、Local Linux、SSH プロジェクト向けのモバイル IDE です。完全な Android Studio ツールチェーンや Android エミュレーターは提供しません。必要なビルドは適切に設定したホストで実行してください。"
+      },
+      {
+        "question": "無料でダウンロードできますか？",
+        "answer": "Google Play からダウンロードできます。一部機能には Pro が必要です。利用可否はアカウント、アプリのバージョン、ストアの地域によって異なります。モデル利用料は別途発生します。"
+      }
+    ],
+    "/ko/android-ide": [
+      {
+        "question": "Linux를 사용하려면 루팅이 필요한가요?",
+        "answer": "아니요. Local Linux는 Android 8 이상 지원 기기의 64비트 ARM64 또는 x86_64 앱에서 PRoot를 사용합니다. 도구 체인은 별도로 설치해야 하며 모든 Linux 작업이 호환되는 것은 아닙니다."
+      },
+      {
+        "question": "원격 컴퓨터 없이도 개발할 수 있나요?",
+        "answer": "네. 지원 Android 기기에서 로컬 파일을 편집하고 Local Linux로 호환 도구를 실행할 수 있습니다. 초기 설정과 패키지 다운로드에는 인터넷이 필요할 수 있습니다. 클라우드 AI와 GitHub는 각 서비스 연결이 필요합니다."
+      },
+      {
+        "question": "Android Studio와 같은 도구인가요?",
+        "answer": "아니요. NimoteCode는 편집, 터미널, Git, AI, Local Linux 및 SSH 프로젝트용 모바일 IDE입니다. 전체 Android Studio 도구 체인이나 Android 에뮬레이터를 제공하지 않습니다. 필요한 빌드는 적절하게 구성한 호스트에서 실행하세요."
+      },
+      {
+        "question": "무료로 다운로드할 수 있나요?",
+        "answer": "Google Play에서 다운로드할 수 있으며 일부 기능은 Pro 권한이 필요합니다. 제공 여부는 계정, 앱 버전과 스토어 지역에 따라 다릅니다. 모델 제공업체 사용료는 별도입니다."
+      }
+    ],
+    "/es/android-ide": [
+      {
+        "question": "¿Necesito root para ejecutar Linux?",
+        "answer": "No. Local Linux utiliza PRoot en dispositivos compatibles con Android 8 o posterior y una aplicación de 64 bits ARM64 o x86_64. Las herramientas se instalan por separado y no todas las cargas Linux son compatibles."
+      },
+      {
+        "question": "¿Puedo programar sin un ordenador remoto?",
+        "answer": "Sí. Puedes editar archivos locales y ejecutar herramientas compatibles en Local Linux desde un dispositivo Android compatible. La configuración inicial y las descargas pueden requerir internet; la IA en la nube y GitHub necesitan conexión con sus servicios."
+      },
+      {
+        "question": "¿Es lo mismo que Android Studio?",
+        "answer": "No. NimoteCode es un IDE móvil para edición, terminal, Git, IA y proyectos Linux locales o SSH. No incluye todas las herramientas de Android Studio ni un emulador Android. Ejecuta las compilaciones que las necesiten en un equipo configurado para ello."
+      },
+      {
+        "question": "¿La descarga es gratuita?",
+        "answer": "NimoteCode se puede descargar desde Google Play; algunas funciones requieren acceso Pro. La disponibilidad depende de la cuenta, la versión y la región de la tienda. El proveedor del modelo factura su uso por separado."
+      }
+    ],
     '/android-ssh-client': [
       {
         question: 'Is NimoteCode a good SSH client for Android?',
@@ -719,18 +778,22 @@ function faqSchema(context: TransformContext): object | null {
         answer: 'Yes. NimoteCode has its own AI Chat and Agent workflows with provider configuration, which can be used in addition to, or instead of, a remote Codex session.'
       }
     ],
-    '/android-ide': [
+    "/android-ide": [
       {
-        question: 'Can you do real development on an Android phone or tablet?',
-        answer: 'Yes, for a focused set of tasks. With an Android IDE like NimoteCode you can connect over SSH to a development machine, browse the project, edit files, run terminal commands, review Git changes and use AI assistance — especially for fixes, reviews and small features.'
+        "question": "Do I need root to run Linux in NimoteCode?",
+        "answer": "No. Local Linux uses PRoot on supported Android 8+ devices with a 64-bit ARM64 or x86_64 app. Toolchains are installed separately, and not every Linux workload is compatible."
       },
       {
-        question: 'Is NimoteCode available on iOS too?',
-        answer: 'NimoteCode is available for Android on Google Play and for iPhone and iPad on the App Store.'
+        "question": "Can I code without a remote computer?",
+        "answer": "Yes. You can edit local files and run compatible tools in Local Linux on supported Android devices. Initial setup and package downloads may require internet access; cloud AI and GitHub require their services."
       },
       {
-        question: 'Can Android run heavy local builds or full IDEs?',
-        answer: 'Not the same way a desktop does. Long local compilation and large multi-file refactors are better on a desktop; on Android, remote development over SSH to your existing machine is usually the productive path.'
+        "question": "Is NimoteCode the same as Android Studio?",
+        "answer": "No. NimoteCode is a mobile IDE for editing, terminal work, Git, AI, and local Linux or SSH projects. It does not provide the complete Android Studio toolchain or an Android emulator. Use a suitably configured host for builds that need those tools."
+      },
+      {
+        "question": "Is NimoteCode free to download?",
+        "answer": "NimoteCode is available on Google Play, with some capabilities requiring Pro access. Availability depends on the account, app version, and store region. Model-provider usage is billed separately."
       }
     ],
     '/remote-coding': [
@@ -789,18 +852,22 @@ function faqSchema(context: TransformContext): object | null {
         answer: '可以。NimoteCode 自带 AI Chat 与 Agent 工作流并支持提供商配置，既可以配合远程 Codex 会话使用，也可以单独使用。'
       }
     ],
-    '/zh/android-ide': [
+    "/zh/android-ide": [
       {
-        question: '能在 Android 手机或平板上做真实开发吗？',
-        answer: '可以，针对一组聚焦的任务。使用像 NimoteCode 这样的 Android IDE，你可以通过 SSH 连接开发机、浏览项目、编辑文件、运行终端命令、审查 Git 改动并使用 AI 辅助——尤其是修复、审查与小功能。'
+        "question": "在 NimoteCode 中运行 Linux 需要 root 吗？",
+        "answer": "不需要。本地 Linux 通过 PRoot 运行，支持 Android 8 及以上设备的 64 位 ARM64 或 x86_64 应用。工具链需另外安装，并非所有 Linux 任务都兼容。"
       },
       {
-        question: 'NimoteCode 也支持 iOS 吗？',
-        answer: 'NimoteCode 已上架 Google Play（Android）与 App Store（iPhone 与 iPad）。'
+        "question": "没有远程电脑，也能用手机开发吗？",
+        "answer": "可以。在受支持的 Android 设备上，可以编辑本地文件，并在本地 Linux 中运行兼容的工具。首次配置和下载软件包可能需要联网；云端 AI 和 GitHub 需要连接相应服务。"
       },
       {
-        question: 'Android 能运行重型本地构建或完整 IDE 吗？',
-        answer: '和桌面不一样。长时间的本地编译与大规模跨文件重构更适合桌面；在 Android 上，通过 SSH 远程连接你现有的机器通常是更高效的选择。'
+        "question": "NimoteCode 和 Android Studio 一样吗？",
+        "answer": "不一样。NimoteCode 是面向代码编辑、终端、Git、AI、本地 Linux 和 SSH 项目的移动 IDE，不提供完整的 Android Studio 工具链或 Android 模拟器。需要这些工具的构建应在配置合适的主机上运行。"
+      },
+      {
+        "question": "NimoteCode 可以免费下载吗？",
+        "answer": "NimoteCode 可从 Google Play 下载，部分功能需要 Pro 权限。可用性取决于账号、应用版本及商店地区，模型提供商的使用费用另行计算。"
       }
     ],
     '/zh/remote-coding': [

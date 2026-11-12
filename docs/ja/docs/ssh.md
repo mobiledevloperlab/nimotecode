@@ -88,3 +88,5 @@ Remote Explorer のホスト、ユーザー、ポート、ルートパスを確�
 ## Windows SSH ワークスペース
 
 Windows ホストでは PowerShell と SFTP を利用してリモートプロジェクトを操作します。ファイル検索、Git、ターミナルなどの利用にはホスト側の対応環境が必要です。
+
+[Windows 11 の設定とトラブルシューティング](/ja/docs/windows-ssh-sftp)
