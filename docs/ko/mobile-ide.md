@@ -1,6 +1,6 @@
 ---
-title: "모바일 IDE 고르기: 휴대폰에서 프로젝트 수정과 검증까지 | NimoteCode"
-description: "로컬 편집, SSH, 원격 AI 에이전트를 작업에 맞게 비교합니다. NimoteCode로 작은 수정을 편집, 미리보기, Git 변경 검토까지 진행하는 방법을 살펴보세요."
+title: "모바일 IDE: 로컬, Linux, SSH 작업 공간 선택 | NimoteCode"
+description: "휴대폰 프로젝트 작업을 위한 모바일 IDE 안내. 로컬 편집, Android Local Linux와 SSH를 비교하고 편집, 검증과 Git 검토를 이어 가세요."
 pageClass: mobile-ide-article
 ---
 

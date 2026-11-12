@@ -1,52 +1,87 @@
 ---
-title: "适用于 SSH、Git 与 AI 的 iPad 编程工作区 | NimoteCode"
-description: 规划面向 SSH、编辑器、终端、Git 与 AI 的 iPad 编程工作流。NimoteCode 可经 App Store 在 iPad 上运行，功能与 Android 版一致。
+title: "iPad 编程：SSH、代码编辑、Git 与 AI 工作区 | NimoteCode"
+description: "使用 NimoteCode 在 iPad 上浏览项目、分栏编辑、连接 SSH 终端并审查 Git。了解远程运行方式、iPadOS 限制与 App Store 安装步骤。"
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# 用真实开发工作区在 iPad 上编程
+# 在 iPad 上继续使用已有开发环境
 
-iPad 比手机有更大的屏幕空间，但在 iPad 上编程仍需要为它设计的工作区。你需要一种方式，在项目树、代码、终端输出与 Git 改动之间轻松切换，而不丢失任务脉络。
+需要同时阅读代码和命令输出时，平板的大屏更便于保留上下文。NimoteCode 为 iPad 提供项目浏览、分栏代码编辑、SSH 终端、Git 工具和可选 AI，适合审查 Pull Request、修改文档或完成一次明确的修复，让开发主机承担较重的执行任务。
 
-NimoteCode 在 iPad 上把所有这些工具汇成一个**移动 AI 开发工作台**：Editor + Explorer + SSH + Terminal + Git + AI Chat 与 Agent。现已上架 App Store，功能与 Android 版一致。
+只改一段笔记时，简单编辑器可能就够了。处理项目变更前，先确定依赖、检查和服务在哪里运行。
 
-<ImagePlaceholder image-key="ipadCoding" alt="iPad 编程工作区">
-  <strong>图片占位 —— iPad 工作区</strong>
-  <span>请替换为横向 iPad 截图，展示项目树、源文件与终端面板。</span>
-</ImagePlaceholder>
+<figure class="article-hero">
+  <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="NimoteCode 的 App Store iPad 界面，展示项目导航和代码编辑。" loading="lazy" decoding="async">
+  </a>
+  <figcaption>NimoteCode 的 App Store iPad 界面，展示项目导航和代码编辑。 来源：NimoteCode App Store 页面。此图为宣传截图，不是连续操作录屏。</figcaption>
+</figure>
 
-## 平板增加空间，不改变审查责任
+## 选择本地编辑或远程项目
 
-更大的屏幕有助于同时查看文件、终端输出和 diff，但它不改变工作顺序：确认项目和分支，做聚焦修改，运行合适的检查，并在提交前审查结果。对无法充分验证的任务，桌面环境仍然更合适。
+| 任务 | 运行位置 | 所需条件 |
+| --- | --- | --- |
+| 编辑可访问的本地文件 | iPad，通过授权的文件提供商访问 | 项目文件夹权限 |
+| 执行项目命令和构建 | SSH 主机 | 主机工具、依赖与网络 |
+| 审查 Git 变更 | 当前 Git 工作区 | 受支持的仓库与账号访问权限 |
+| 向 AI 询问项目问题 | 配置的提供商及可用工作区工具 | 提供商凭据及相应功能权限 |
 
-## 高效的 iPad 编程闭环
+**Android 本地 Linux 不支持 iPadOS。** 打开本地文件夹不会安装 Node.js、Python、编译器或本地 Linux Shell。文件提供商目录也可能限制依赖原生文件路径的工具。选择项目位置前请查看[工作区配置](/zh/docs/ssh)。
 
-### 用更大的屏幕承载上下文
+## 配置 iPad 开发工作流
 
-先从 Explorer 保持项目结构可见，再在编辑器标签页打开相关文件。在平板上，额外的视觉空间让你更容易跟随代码路径，或把一项配置改动与促使它的命令输出相互对照。
+1. 从 App Store 安装 NimoteCode，在商店页面核对设备及系统要求。
+2. 配置到 Windows、Mac 或 Linux 主机的 SSH 连接，确认主机唤醒，核对主机指纹并选择仓库根目录。
+3. 打开相关文件，需要对照时使用编辑器分栏；另行确认终端工作目录。
+4. 保存文件，在主机运行仓库检查，提交前用源代码管理审查 diff。
 
-### 让远程环境近在手边
+[Windows 配置指南](/zh/docs/windows-ssh-sftp)介绍 PowerShell 与 SFTP。远程主机必须网络可达，离开局域网后需配置合适的安全网络通路。
 
-用 [SSH 工作区](/zh/docs/ssh) 连接项目，再用终端运行那些验证你理解的命令：测试、日志检查、构建输出或服务状态。你不需要把 iPad 变成电脑的替代品，也能让一次短小聚焦的任务变得有意义。
+## 用平板屏幕审查项目变更
 
-### 发布前先审查
+在标签页中保留相关文件，对照实现、配置和测试。[源代码管理](/zh/docs/source-control)提供变更文件、diff 和历史；GitHub 操作取决于账号及仓库权限。更宽的屏幕改善阅读空间，项目运行环境仍由主机提供。
 
-用 [Git 与源代码管理](/zh/docs/source-control) 检查你的编辑产生的 diff。这对 iPad 编程尤其有价值，因为它让审查在同一工作区内闭环，而不是当作事后补做的事。
+<figure class="article-hero">
+  <a href="/images/ios/ipad-git.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-git.webp" width="1200" height="899" alt="NimoteCode 的 App Store iPad 界面，展示 Git AI 工具与变更分析。" loading="lazy" decoding="async">
+  </a>
+  <figcaption>NimoteCode 的 App Store iPad 界面，展示 Git AI 工具与变更分析。 来源：NimoteCode App Store 页面。此图为宣传截图，不是连续操作录屏。</figcaption>
+</figure>
 
-## AI 的位置
+## 在需要时加入 AI 辅助
 
-AI 在目标清晰时最有价值：解释陌生模块、把报错变成调试计划，或提出下一处小改动。[AI Chat 与 Agent](/zh/docs/ai) 与开发工作区集成，让对话始终连接着真实的文件与任务。远程或生产相关操作要保持命令与改动的审查开启。
+可以先让 AI 解释陌生代码或分析明确的报错。Nimote Agent 可以调用可用的工作区工具；在 Confirm 模式下，应先审查计划再批准执行。外部 ACP Agent 还需要兼容运行时和自己的凭据，详见 [AI 指南](/zh/docs/ai)。
+
+## 考虑 iPadOS 的后台行为
+
+切换应用或锁屏可能中断连接。主机端终端复用工具可以帮助保留 Shell 会话，但无法让休眠或重启的主机持续执行。重连后先确认文件保存结果与任务状态。大型重构和长时间交互调试仍可能更适合桌面。
+
+## 常见问题
+
+<!-- faq:start -->
+
+### iPad 能运行 NimoteCode 本地 Linux 吗？
+
+不能。本地 Linux 仅支持 Android。iPad 通过 SSH 主机使用项目运行时、终端工具和构建环境。
+
+### 能在 iPad 上打开本地文件吗？
+
+可以，前提是 iPadOS 和所选文件提供商授予访问权限。打开文件夹不保证所有需要原生路径的工具均可用。
+
+### iPad 和 Android 功能完全相同吗？
+
+它们共享核心编辑与 SSH 工作流，但运行环境支持不同。本地 Linux 不支持 iPad，文件授权及后台执行行为也因平台而异。
+
+<!-- faq:end -->
+
+可以从本地或 SSH 编辑及基础终端开始。部分功能需要 Pro，参见[免费版与 Pro](/zh/pro)及应用内显示的访问状态。AI 需要配置自己的模型提供商，模型使用费用由提供商另行收取。
 
 <div class="seo-cta">
-  <p><strong>看看面向 iPad 的工作区如何处理一次真实的远程改动。</strong></p>
+  <p><strong>下载 NimoteCode</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn primary" target="_blank" rel="noreferrer">下载 iOS 版</a>
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=ipad_coding" class="home-page-btn tertiary" target="_blank" rel="noreferrer">下载 Android 版</a>
-    <a href="/zh/demo?utm_source=ipad_coding&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">观看演示</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="/zh/docs/quick-start" class="home-page-btn secondary">快速入门</a>
   </p>
 </div>
-
-## 值得继续阅读
-
-- [移动 IDE 总览](/zh/mobile-ide)
-- [iPhone SSH 客户端工作流](/zh/iphone-ssh-client)
-- [移动 AI 编程](/zh/mobile-ai-coding)

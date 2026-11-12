@@ -1,110 +1,62 @@
 ---
-title: "Can You Code From a Phone? What Works and What Doesn't | NimoteCode"
-description: "Yes, you can code from a phone for focused work. Learn what realistic mobile coding looks like — SSH to your own machine, edit, run and review the real project — and where a desktop still wins."
+title: "휴대폰 코딩 입문: 로컬 파일, Linux, SSH | NimoteCode"
+description: "Android 또는 iPhone에서 코딩을 시작하세요. 로컬 편집, Android Local Linux와 SSH를 선택하고 Python 예제를 실행해 결과를 확인합니다."
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# 전화로 코딩할 수 있나요?
+# 휴대폰 코딩: 실행할 위치부터 선택
 
+휴대폰으로 코드를 편집할 수 있지만 실행에는 언어와 의존성을 지원하는 환경이 필요합니다. NimoteCode는 로컬 편집, SSH와 지원 Android의 Local Linux를 제공합니다. 도구를 모두 설치하기 전에 만들 프로젝트를 정하세요.
 
-예 — 데스크탑 교체용이 아닌 집중적인 개발 작업용입니다. 문제 조사, 작은 수정, 명령 실행, 차이점 검토 또는 기존 프로젝트에서 AI 에이전트 구동은 도구가 구축되면 휴대폰에서 모두 현실적으로 가능합니다.
+## 시작할 환경 선택
 
+| 목적 | 시작 위치 | 실행 조건 |
+| --- | --- | --- |
+| 문서, HTML, 설정 편집 | 권한을 부여한 로컬 폴더 | 편집만으로 런타임을 제공하지 않음 |
+| Android에서 스크립트 실행 | Android 8+ ARM64/x86_64 Local Linux | Ubuntu 사용자 공간과 별도 언어 도구 |
+| PC 프로젝트 계속 작업 | Windows, Mac, Linux SSH | 호스트 의존성 |
 
-NimoteCode는 SSH를 통해 자체 개발 시스템에 연결한 다음 프로젝트 탐색기, 편집기, 터미널, Git 및 AI를 하나의 작업 공간에 배치하여 **전화에서 코딩**을 실용화합니다. 계산 및 도구는 해당 시스템에 유지되는 반면 전화기는 동일한 저장소에서 작동합니다.
+Local Linux는 루팅 없는 PRoot를 사용하고 iPhone과 iPad에서는 사용할 수 없습니다. 텍스트만 고친다면 간단한 편집기로 충분하며 AI 설정도 필수는 아닙니다.
 
+<figure class="seo-phone-capture">
+  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone 코드 편집. 실행 환경은 별도로 설정해야 합니다." loading="lazy" decoding="async">
+  </a>
+  <figcaption>iPhone 코드 편집. 실행 환경은 별도로 설정해야 합니다. 출처: NimoteCode App Store 등록 이미지. 연속 작업 기록이 아닌 홍보 스크린샷입니다.</figcaption>
+</figure>
 
-<ImagePlaceholder image-key="mobileIde" alt="Coding from a phone with a remote project">
-  <strong>Image placeholder — Coding from a phone</strong>
-  <span>Replace with a phone showing the project Explorer, an edited file and a terminal verification command in one workspace.</span>
-</ImagePlaceholder>
+## 첫 Python 스크립트
 
-## 안전하게 완료할 수 있는 작업을 먼저 정하기
+쓰기 가능한 폴더에서 `hello.py`를 만드세요.
 
-휴대폰에는 목표와 검증 방법이 분명한 작업이 맞습니다. 호스트와 브랜치를 확인하고 최소 변경을 한 다음 관련 검사를 실행하고 diff를 읽으세요. 대규모 리팩터링이나 복잡한 충돌은 SSH에 연결할 수 있어도 모바일 작업에 적합하지 않습니다.
+```python
+print("Hello from NimoteCode")
+```
 
-## 전화기 코딩의 실제 의미
+저장한 뒤 Python 3가 설치된 Local Linux 또는 Linux/macOS SSH 호스트의 같은 폴더에서 실행하세요.
 
+```sh
+python3 hello.py
+```
 
-루프가 짧게 유지되면 전화 코딩이 작동합니다. 프로젝트를 열고, 관련 코드를 읽고, 세부 사항을 변경하고, 검사를 실행하고, 결과를 검토하세요. 도구로 인해 앱 간에 파일과 조각을 복사해야 하거나 휴대폰에서 로컬로 대규모 프로젝트를 컴파일하려고 하면 작동이 중단됩니다. 안정적인 패턴은 이미 소유하고 신뢰하는 컴퓨터에 연결하는 것입니다.
+`Hello from NimoteCode`가 출력됩니다. 명령이 없다면 실행 환경에 Python을 설치하세요. 파일을 열어도 설치되지는 않습니다. Windows는 호스트의 Python 명령을 사용하세요. [Local Linux](/ko/docs/local-linux) 또는 [원격 개발](/ko/remote-coding)에서 준비하세요.
 
+## 실제 프로젝트로 진행
 
-## 할만한 가치가 있을 때
+루트를 열고 설정 지침과 기존 변경을 확인한 뒤 선택한 환경에 의존성을 준비하세요. 저장 후 검증하고 Git을 확인하세요. [편집기](/ko/docs/editor)와 [소스 제어](/ko/docs/source-control)도 참고하세요.
 
+## 환경을 바꿀 때
 
-- 통화 중이며 오류를 조사하거나 빠른 수정을 적용해야 합니다.
+PRoot 비호환 도구와 무거운 빌드는 SSH 호스트로 옮기세요. 큰 변경과 복잡한 디버깅은 충분히 검토할 수 있는 화면과 입력 수단을 선택하세요. [모바일 IDE](/ko/mobile-ide)가 환경 선택을 설명합니다.
 
-- 노트북을 사용하지 않는 동안 끌어오기 요청이나 차이점을 검토하고 싶습니다.
-
-- 여행 중에 작은 일을 계속 움직여야 합니다.
-
-- 붙여넣은 조각이 아닌 실제 프로젝트에 대한 작업공간 인식 AI 도움말을 원합니다.
-
-
-## NimoteCode가 적합한 방식
-
-
-기기에 이미 있는 프로젝트에 대한 [로컬 작업 공간](/docs/ssh)을 열거나 SSH 작업 공간을 사용하여 Mac, Linux 컴퓨터 또는 서버에 연결하세요. 여기에서 파일을 탐색하고, 편집기에서 편집하고, [터미널](/docs/terminal)에서 명령을 실행하고, [Git 변경 사항](/docs/source-control)을 검토하고, [AI 채팅 및 에이전트](/docs/ai)를 사용할 수 있습니다. 이는 데스크톱에서 실행하는 것과 동일한 워크플로로 모바일 화면에 적합합니다.
-
-
-## 현실적인 전화 코딩 세션
-
-
-1. SSH를 통해 개발 호스트에 연결하고 프로젝트 루트를 엽니다.
-
-2. 탐색기에서 관련 파일을 찾으세요.
-
-3. 편집기에서 최소한의 안전한 변경을 하세요.
-
-4. 터미널에서 집중 확인 명령을 실행합니다.
-
-5. 커밋하기 전에 소스 제어에서 차이점을 검토하세요.
-
-6.  막혔을 때 AI에게 코드를 설명하거나 다음 단계를 계획하도록 요청하세요.
-
-
-## 전화 코딩이 제한되는 곳
-
-
-휴대폰 화면이 더 작으므로 긴 파일 간 리팩터링과 과도한 디자인 세션이 더 어렵습니다. 대규모 프로젝트의 로컬 편집은 휴대폰에서 거의 실용적이지 않습니다. 대신 원격 컴퓨터를 사용하십시오. 네트워크 품질은 모든 원격 세션에 영향을 미치므로 AI 제안 및 에이전트 실행 범위를 좁히고 검증해야 합니다. 이는 실제 제약 사항입니다. 유용한 질문은 어떤 작업이 그 안에 여전히 적합한지입니다.
-
-
-## 자주 묻는 질문
-
-
-### 전화로 코딩하는 것이 현실적인가요?
-
-
- 집중적인 작업에 예: 문제 조사, 작은 수정, 명령 실행, 차이점 검토 또는 기존 프로젝트에서 AI 에이전트 구동. 긴 형식의 기능 작업과 무거운 컴파일은 데스크탑에서 더 편안하게 유지됩니다.
-
-
-### 전화에서 실제로 어떻게 코딩하나요?
-
-
-신뢰할 수 있는 패턴은 앱 간에 파일이나 조각을 복사하는 대신 모바일 개발 작업 공간을 사용하여 SSH를 통해 자체 개발 시스템에 연결한 다음 프로젝트를 탐색, 편집, 실행 및 검토하는 것입니다.
-
-
-### NimoteCode를 실행할 수 있는 휴대폰은 무엇입니까?
-
-
-NimoteCode는 Android 휴대폰 및 태블릿에서는 Google Play에서, iPhone 및 iPad에서는 App Store에서 사용할 수 있습니다.
-
+로컬 또는 SSH 파일 편집과 기본 터미널부터 시작할 수 있습니다. 일부 기능에는 Pro가 필요합니다. [무료 및 Pro](/ko/pro)와 앱에 표시되는 접근 상태를 확인하세요. AI는 모델 제공업체를 직접 설정해야 하며 모델 사용료는 별도로 청구됩니다.
 
 <div class="seo-cta">
-  <p><strong>Make the moments when you only have a phone productive.</strong></p>
+  <p><strong>NimoteCode 다운로드</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=code_from_phone" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for Android</a>
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noreferrer">Download for iOS</a>
-    <a href="/demo?utm_source=code_from_phone&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="/ko/docs/quick-start" class="home-page-btn secondary">빠른 시작</a>
   </p>
 </div>
-
-## 관련 페이지
-
-
-- [모바일 IDE 개요](/mobile-ide)
-
-- [휴대폰이나 태블릿에서 원격 코딩](/remote-coding)
-
-- [원격 개발용 SSH IDE](/ssh-ide)
-
-- [모바일 AI 코딩 작업공간](/mobile-ai-coding)
-- [AI 에이전트가 실제로 전화로 코딩을 할 수 있습니까?](/blog/can-an-ai-agent-really-code-from-a-phone)

@@ -1,118 +1,59 @@
 ---
-title: "Remote Coding from Your Phone or Tablet | NimoteCode"
-description: "Remote coding from a phone or tablet done right: connect over SSH to your development machine, edit the real project, run terminal commands and review Git changes with NimoteCode."
+title: "Desarrollo remoto desde el móvil: configurar SSH | NimoteCode"
+description: "Configura desarrollo remoto en Android, iPhone o iPad: host SSH, acceso SFTP, repositorio, comprobaciones y diagnóstico de red y autenticación."
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# Codificación remota desde su teléfono o tableta
+# Desarrollo remoto: conecta el móvil a tu proyecto
 
+Deja repositorio, dependencias y servicios en el equipo y usa NimoteCode para explorar y editar. Esta guía cubre configuración y verificación; [IDE SSH](/es/ssh-ide) explica las funciones.
 
-Codificación remota significa editar y ejecutar el proyecto en una máquina mientras interactúas desde otra. La configuración más común es un teléfono o tableta que se conecta a través de SSH a su computadora de escritorio, portátil o servidor y trabaja en el repositorio real en lugar de una copia.
+## 1. Prepara equipo y red
 
+Activa SSH, mantén el equipo encendido y confirma acceso al repositorio. Empieza con la dirección LAN real. Fuera de ella necesitas una ruta segura, como VPN. Una regla de firewall no garantiza por sí sola la conexión.
 
-NimoteCode es un espacio de trabajo móvil creado para ese modelo. En lugar de reducir la codificación remota a un flujo de texto de shell, le brinda un Explorador para el proyecto, un editor para los archivos, una terminal para comandos, Git para revisión y asistencia de IA para contexto, todo conectado al mismo host remoto.
+## 2. Comprueba conexión y archivos
 
+1. Configura servidor, puerto, cuenta y autenticación permitida; verifica la huella.
+2. Selecciona la raíz en Remote Explorer y prueba apertura y guardado en una carpeta del usuario para verificar SFTP y escritura.
+3. Confirma carpeta y rama de la terminal por separado. En Linux o macOS puedes usar este ejemplo.
 
-<ImagePlaceholder image-key="sshIde" alt="Remote coding workspace over SSH">
-  <strong>Image placeholder — Remote coding session</strong>
-  <span>Replace with the remote project Explorer, an open file and a running command from one SSH workspace.</span>
-</ImagePlaceholder>
+```sh
+pwd
+git status --short --branch
+```
 
-## Estar conectado en remoto no permite omitir comprobaciones
+<figure class="seo-phone-capture">
+  <a href="/images/ios/iphone-ssh.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-ssh.webp" width="660" height="1433" alt="Remote Explorer en iPhone con el proyecto SSH conectado." loading="lazy" decoding="async">
+  </a>
+  <figcaption>Remote Explorer en iPhone con el proyecto SSH conectado. Fuente: ficha de NimoteCode en App Store. Captura promocional; no es una grabación continua.</figcaption>
+</figure>
 
-Antes de empezar, confirma host, raíz del proyecto y rama. Después del cambio, ejecuta una comprobación que valide tu hipótesis y lee el diff. Una conexión estable resuelve el acceso, no el juicio sobre el cambio.
+## 3. Verifica un cambio real
 
-## Qué requiere realmente la codificación remota
+Guarda, ejecuta las comprobaciones del proyecto en el equipo y revisa Git. Conectar una shell no instala dependencias ni garantiza el mismo checkout que el editor. Gestiona las sesiones largas en el equipo y verifica su estado tras reconectar.
 
+## Diagnostica cada capa
 
-Una configuración remota viable necesita tres cosas: un host en el que confíes y al que puedas acceder a través de SSH, una conexión que sobreviva a los cambios de la red móvil y un espacio de trabajo que mantenga juntos los archivos, el terminal y Git. Las herramientas que solo le brindan uno de esos (un cliente SSH simple o un editor sin conexión) dejan el ciclo roto.
+| Síntoma | Comprobación |
+| --- | --- |
+| Tiempo agotado | Encendido, dirección, VPN, firewall y aislamiento |
+| Conexión rechazada | Servicio SSH y puerto de escucha |
+| Autenticación fallida | Usuario, política, contraseña o clave |
+| Solo funciona shell | SFTP y permisos de carpeta |
+| Comando falla | Ruta, dependencias y permisos |
 
+En Windows sigue [OpenSSH/SFTP](/es/docs/windows-ssh-sftp). Sin equipo remoto, consulta [programar desde el móvil](/es/code-from-phone); los controles están en la [referencia SSH](/es/docs/ssh).
 
-## Cuando la codificación remota es útil
-
-
-- Su código base reside en un servidor o escritorio Mac, Linux y usted está lejos de él.
-
-- Necesitas investigar un incidente, aplicar una pequeña solución o revisar una diferencia de forma remota.
-
-- Viajas con un teléfono o tableta y quieres mantener una tarea en movimiento.
-
-- Prefiere las herramientas y el cálculo completos de la máquina remota a la emulación local.
-
-
-## Cómo encaja NimoteCode
-
-
-Conéctese a través del [espacio de trabajo SSH](/docs/ssh), elija la raíz del proyecto y el repositorio permanecerá en el host. Su teléfono o tableta funciona con archivos reales: navegue en el Explorador, edite en pestañas, ejecute comprobaciones en Terminal e inspeccione el historial de Git sin copiar nada al dispositivo. Para los proyectos que ya están en el dispositivo, el mismo espacio de trabajo los abre localmente.
-
-
-## Una sesión típica de codificación remota
-
-
-1. Abra el perfil SSH y conéctese a su host de desarrollo.
-
-2. Localice el módulo o archivo relevante en el Explorador del proyecto.
-
-3. Edite el cambio más pequeño requerido en el editor.
-
-4. Ejecute el comando de prueba, compilación o registro enfocado en [Terminal](/docs/terminal).
-
-5. Revise el resultado preparado y no preparado en [Control de fuente](/docs/source-control).
-
-6. Utilice [Chat y agente AI](/docs/ai) para explicar un error o planificar el siguiente paso con el contexto completo del proyecto.
-
-
-## La diferencia remota versus local
-
-
-- **Remoto**: el proyecto, las herramientas y el cálculo permanecen en el host; el teléfono lo lee y lo edita a través de SSH. Lo mejor para máquinas, servidores y proyectos pesados ​​existentes.
-
-- **Local**: los archivos del proyecto viven en el dispositivo y se abren sin una red. Lo mejor para experimentos rápidos y trabajo sin conexión, pero limitado por el almacenamiento y la computación del teléfono.
-
-
-## Limitaciones de la codificación remota
-
-
-La codificación remota depende de la red y el host. En una conexión débil, sentirá latencia en las pulsaciones de teclas y en la salida del terminal; El manejo consciente de la reconexión ayuda, pero no lo elimina. Los repositorios muy grandes pueden tardar en explorarse hasta que los índices de búsqueda estén listos. Y el anfitrión hace el trabajo pesado: un teléfono no puede acelerar un servidor con poca potencia. Para ciclos de compilación largos y pesados, un escritorio sigue siendo el lugar más cómodo.
-
-
-## Preguntas frecuentes
-
-
-### ¿Qué significa la codificación remota en la práctica?
-
-
-La codificación remota significa editar y ejecutar el proyecto en una máquina mientras interactúa desde otra. La configuración más común es un teléfono o tableta que se conecta a través de SSH a su computadora de escritorio, portátil o servidor y trabaja en el repositorio real.
-
-
-### ¿Es lenta la codificación remota a través de SSH?
-
-La edición interactiva a través de SSH generalmente responde con una buena conexión. Las operaciones pesadas (compilaciones grandes, reindexación completa o compilaciones de larga duración) están sujetas a su red y al host remoto y, a menudo, es mejor dejarlas en el escritorio.
-
-
-### ¿Necesito los archivos del proyecto en mi teléfono?
-
-
-No. Con un espacio de trabajo SSH, el proyecto permanece en el host remoto. Su teléfono lee y edita los archivos a través de SSH y ve la salida del terminal y los datos de Git de esa máquina, en lugar de duplicar el repositorio.
-
+Puedes empezar con edición local o SSH y la terminal básica. Algunas funciones requieren Pro; consulta [Gratis y Pro](/es/pro) y el acceso mostrado en la aplicación. La IA requiere configurar tu proveedor de modelos, que factura el uso por separado.
 
 <div class="seo-cta">
-  <p><strong>Keep your project, terminal and Git review with you wherever you are.</strong></p>
+  <p><strong>Descargar NimoteCode</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=remote_coding" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for Android</a>
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noreferrer">Download for iOS</a>
-    <a href="/demo?utm_source=remote_coding&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="/es/docs/quick-start" class="home-page-btn secondary">Guía de inicio</a>
   </p>
 </div>
-
-## Páginas relacionadas
-
-
-- [SSH IDE para desarrollo remoto](/ssh-ide)
-
-- [Descripción general del IDE móvil](/mobile-ide)
-
-- [IDE de Android para codificación SSH, Git y AI](/android-ide)
-
-- [Código de un teléfono](/code-from-phone)
-
-- [Cómo usar Android como IDE remoto con Tailscale](/blog/tailscale-ssh-android-mac-linux)

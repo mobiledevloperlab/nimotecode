@@ -1,67 +1,87 @@
 ---
-title: "iPad Coding Workspace for SSH, Git and AI | NimoteCode"
-description: "Plan an iPad coding workflow for SSH, editor, terminal, Git and AI. NimoteCode runs on iPad via the App Store, with the same features as its Android release."
+title: "iPad でプログラミング：SSH・編集・Git・AI | NimoteCode"
+description: "NimoteCode で iPad のプロジェクト参照、分割編集、SSH ターミナル、Git レビューを利用。リモート実行、iPadOS の制約、導入手順を説明します。"
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# 実際の開発ワークスペースを使用した iPad コーディング
+# iPad から既存の開発環境を使う
 
+コードとコマンド出力を読み比べるとき、タブレットの画面が役立ちます。NimoteCode は iPad に Explorer、分割エディター、SSH ターミナル、Git、任意の AI 支援を提供します。Pull Request のレビュー、文書の修正、小さなバグ修正を進め、重い処理は開発ホストで実行できます。
 
-iPad は電話よりも広い画面スペースを提供しますが、ワークスペースが iPad 用に設計されている場合、iPad からのコーディングは依然として最適に機能します。タスクのスレッドを失うことなく、プロジェクト ツリー、コード、ターミナル出力、Git の変更の間を簡単に移動する方法が必要です。
+短いメモなら簡単なエディターで十分です。プロジェクトを変更するなら、まず依存関係、検証、サービスの実行場所を決めます。
 
+<figure class="article-hero">
+  <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="App Store 掲載の NimoteCode iPad 画面。プロジェクトの参照と編集を表示。" loading="lazy" decoding="async">
+  </a>
+  <figcaption>App Store 掲載の NimoteCode iPad 画面。プロジェクトの参照と編集を表示。 出典：NimoteCode の App Store 掲載画像。宣伝用スクリーンショットであり、連続した操作の記録ではありません。</figcaption>
+</figure>
 
-NimoteCode は、これらのツールを **モバイル AI 開発ワークスペース**として iPad 上で統合します: エディター + エクスプローラー + SSH + ターミナル + Git + AI チャットおよびエージェント。 Android リリースと同じ機能セットを備えた App Store で入手できます。
+## ローカル編集かリモートプロジェクトか
 
+| 作業 | 実行場所 | 必要なもの |
+| --- | --- | --- |
+| ローカルファイルの編集 | 許可された iPad のファイルプロバイダー | フォルダーへのアクセス |
+| コマンドとビルド | SSH ホスト | ツール、依存関係、通信 |
+| Git レビュー | 現在の Git ワークスペース | 対応リポジトリと権限 |
+| AI に質問 | 設定した提供元と利用可能なツール | 認証情報と機能へのアクセス |
 
-<ImagePlaceholder image-key="ipadCoding" alt="iPad coding workspace">
-<strong>画像プレースホルダー — iPad ワークスペース</strong>
-<span>プロジェクト ツリー、ソース ファイル、ターミナル パネルを示す横向きの iPad スクリーンショットに置き換えます。</span>
-</ImagePlaceholder>
+**Android Local Linux は iPadOS では利用できません。** フォルダーを開いても Node.js、Python、コンパイラー、Linux Shell は導入されません。ファイルプロバイダーのフォルダーではネイティブパスを必要とするツールも制限される場合があります。[ワークスペース設定](/ja/docs/ssh)を確認してください。
 
-## 画面が広くてもレビューの責任は変わらない
+## iPad の作業環境を設定する
 
-タブレットではファイル、出力、diff を同時に見やすくなります。しかし、プロジェクトとブランチを確認し、変更を絞り、チェックを実行し、結果をレビューする順序は同じです。
+1. App Store からインストールし、端末と OS の要件を確認します。
+2. 起動中の Windows、Mac、Linux へ SSH を設定し、ホスト鍵を照合してリポジトリのルートを選びます。
+3. ファイルを開き、比較には分割編集を使います。ターミナルのディレクトリは別途確認します。
+4. 保存してホストで所定の検証を実行し、コミット前に差分を確認します。
 
-## 生産的な iPad コーディング ループ
+[Windows ガイド](/ja/docs/windows-ssh-sftp)では PowerShell と SFTP を説明しています。LAN 外ではホストへの安全な経路が必要です。
 
+## 大きな画面で変更をレビューする
 
-### 大きな画面を使用して状況を把握する
+関連ファイルをタブに残し、実装、設定、テストを読み比べます。[ソース管理](/ja/docs/source-control)で差分と履歴を確認できます。GitHub 操作はアカウントとリポジトリの権限に従います。実行環境は引き続きホストが提供します。
 
+<figure class="article-hero">
+  <a href="/images/ios/ipad-git.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-git.webp" width="1200" height="899" alt="App Store 掲載の iPad 画面で Git AI ツールと変更分析を表示。" loading="lazy" decoding="async">
+  </a>
+  <figcaption>App Store 掲載の iPad 画面で Git AI ツールと変更分析を表示。 出典：NimoteCode の App Store 掲載画像。宣伝用スクリーンショットであり、連続した操作の記録ではありません。</figcaption>
+</figure>
 
-エクスプローラから開始してプロジェクト構造を表示したままにし、エディタタブで関連ファイルを開きます。タブレットでは、この追加の視覚的なスペースにより、コード パスをたどったり、構成変更をその動機となったコマンド出力と比較したりすることが容易になります。
+## 必要なときに AI を加える
 
+不慣れなコードの説明や具体的なエラーの分析から始めます。Nimote Agent は利用可能なツールを使い、Confirm モードでは計画承認後に実行します。外部 ACP Agent には対応ランタイムと認証情報が必要です。[AI ガイド](/ja/docs/ai)を参照してください。
 
-### リモート環境を近くに保つ
+## iPadOS のバックグラウンド動作に備える
 
+アプリ切替や画面ロックで接続が切れる場合があります。ホスト側のターミナルマルチプレクサーはセッション保持に役立ちますが、ホストの休止や再起動を防ぐものではありません。再接続後は保存内容とジョブの状態を確認します。大規模なリファクタリングや長時間のデバッグにはデスクトップが適する場合があります。
 
-[SSH ワークスペース](/docs/ssh) を使用してプロジェクトに接続し、理解を検証するコマンド (テスト、ログ チェック、ビルド出力、またはサービス ステータス) にターミナルを使用します。短く集中したタスクを意味のあるものにするために、iPad をデスクトップの代わりにする必要はありません。
+## よくある質問
 
+<!-- faq:start -->
 
-### 発送前に確認してください
+### iPad で Local Linux を使えますか？
 
+いいえ。Local Linux は Android 専用です。iPad では SSH ホストのランタイム、ターミナルツール、ビルド環境を使います。
 
-[Git とソース管理](/docs/source-control) を使用して、編集によって生成された差分を検査します。これは、レビューを後回しにするのではなく、同じワークスペース内でループを閉じるため、iPad のコーディングに特に役立ちます。
+### iPad のローカルファイルを開けますか？
 
+はい。iPadOS とファイルプロバイダーの許可に従います。フォルダーを開けてもネイティブパスが必要なすべてのツールが使えるとは限りません。
 
-## AIが適した場所
+### Android とすべて同じ機能ですか？
 
+基本の編集と SSH は共通ですが、実行環境は異なります。Local Linux は iPad では使えず、ファイル権限とバックグラウンド実行もプラットフォームに依存します。
 
-AI は、なじみのないモジュールについて説明したり、エラーをデバッグ計画に変えたり、次の小さな変更を提案したりするなど、明確な役割を担っている場合に最も役立ちます。 [AI チャットおよびエージェント](/docs/ai) は開発ワークスペースと統合されているため、会話を実際のファイルおよびタスクに接続したままにすることができます。リモート作業または実稼働作業では、コマンドと変更のレビューを有効にしておきます。
+<!-- faq:end -->
 
+ローカル／SSH ファイルの編集と基本ターミナルから始められます。一部機能には Pro が必要です。[無料版と Pro](/ja/pro)およびアプリ内の利用状態を確認してください。AI にはモデル提供元の設定が必要で、利用料は提供元が別途請求します。
 
 <div class="seo-cta">
-<p><strong>iPad 対応のワークスペースが実際のリモート変更をどのように処理するかをご覧ください。</strong></p>
+  <p><strong>NimoteCode をダウンロード</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for iOS</a>
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=ipad_coding" class="home-page-btn tertiary" target="_blank" rel="noreferrer">Download for Android</a>
-    <a href="/demo?utm_source=ipad_coding&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="/ja/docs/quick-start" class="home-page-btn secondary">クイックスタート</a>
   </p>
 </div>
-
-## 次に役立つ記事
-
-
-- [モバイルIDEの概要](/mobile-ide)
-
-- [iPhone SSHクライアントワークフロー](/iphone-ssh-client)
-
-- [モバイルAIコーディング](/mobile-ai-coding)

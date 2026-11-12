@@ -526,6 +526,26 @@
   object-fit: contain;
 }
 
+.seo-product-guide .vp-doc .seo-phone-capture {
+  width: min(100%, 300px);
+  margin: 28px auto 36px;
+}
+
+.seo-product-guide .vp-doc .seo-phone-capture img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--nimote-border);
+  border-radius: 12px;
+}
+
+.seo-product-guide .vp-doc .seo-phone-capture figcaption {
+  margin-top: 12px;
+  color: var(--nimote-text-secondary);
+  font-size: 0.8125rem;
+  line-height: 1.65;
+}
+
 .mobile-ide-article .vp-doc .mobile-ide-screenshot a {
   display: block;
 }

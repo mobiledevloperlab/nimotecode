@@ -1,6 +1,6 @@
 ---
-title: "IDE móvil: cómo trabajar en un proyecto desde el teléfono | NimoteCode"
-description: "Elige entre edición local, SSH y agentes de IA remotos según tu tarea. Sigue una pequeña corrección en NimoteCode: edición, vista previa y revisión con Git."
+title: "IDE móvil: elegir entre archivos locales, Linux y SSH | NimoteCode"
+description: "Elige un IDE móvil según el entorno: edición local, Local Linux en Android o SSH. Sigue un cambio de proyecto desde la edición hasta la verificación y Git."
 pageClass: mobile-ide-article
 ---
 

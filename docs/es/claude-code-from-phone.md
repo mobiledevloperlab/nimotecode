@@ -1,106 +1,128 @@
 ---
-title: "Use Claude Code From Your Phone with SSH | NimoteCode"
-description: "Learn a practical way to use Claude Code from your phone: connect to a development host over SSH, work in the project files, validate in terminal and review Git changes in NimoteCode."
+title: "Usar Claude Code desde el móvil por SSH | NimoteCode"
+description: "Ejecuta Claude Code en tu equipo y accede desde Android o iPhone con NimoteCode. Configuración, recuperación de sesiones, revisión Git y diagnóstico paso a paso."
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# Cómo usar Claude Code desde tu teléfono
+# Usar Claude Code desde el móvil por SSH
 
+¿Quieres continuar una tarea de Claude Code desde el móvil sin mover el repositorio? Esta guía accede por SSH a la CLI de un equipo Linux o macOS. NimoteCode añade exploración de archivos, edición, terminal y revisión Git alrededor de esa sesión.
 
-Si su máquina de desarrollo ya tiene instalado Claude Code, puede usar su teléfono para permanecer conectado a ese flujo de trabajo a través de SSH. El desafío no es solo ver el resultado de la CLI. También es necesario inspeccionar los archivos que analiza, validar sus sugerencias y revisar los cambios resultantes.
+SSH es una opción, no la única interfaz móvil. Si solo necesitas seguir al agente, revisa las opciones actuales web, móviles y remotas del proveedor. NimoteCode ayuda cuando también quieres acceso directo a los archivos y comandos del equipo.
 
+## 1. Prepara el equipo y la cuenta
 
-NimoteCode le brinda un espacio de trabajo móvil alrededor de esa sesión remota: Explorador para el repositorio, Editor para los archivos, Terminal SSH para comandos, Git para revisión y su propia asistencia de IA para preguntas de código y tareas controladas.
+Necesitas un equipo encendido con SSH, un repositorio accesible y las dependencias. Instala y autentica el agente allí siguiendo su documentación oficial. Su cuenta, límites, permisos y credenciales son independientes de NimoteCode.
 
+Elige el método oficial de instalación de Claude Code para el equipo. Ejemplo:
 
-<ImagePlaceholder image-key="claudeCodeFromPhone" alt="Claude Code from phone remote workflow">
-  <strong>Image placeholder — Remote Claude Code workflow</strong>
-  <span>Replace with a redacted remote CLI session, changed file and Git diff. Do not use Claude branding without approval.</span>
-</ImagePlaceholder>
+```sh
+curl -fsSL https://claude.ai/install.sh | bash
+claude --version
+```
 
-## Devuelve la salida del agente a un proceso revisable
+[Claude Code quickstart](https://code.claude.com/docs/en/quickstart) · [Remote Control](https://code.claude.com/docs/en/remote-control)
 
-Independientemente de quién proponga el cambio, confirma el host, lee los archivos afectados, ejecuta una comprobación y revisa el diff de Git. En un teléfono, limita el trabajo a cambios pequeños que puedas leer y verificar por completo.
+## 2. Abre el repositorio desde el móvil
 
-## Una práctica configuración de host remoto
+Crea un [espacio SSH](/es/docs/ssh), verifica la huella y selecciona la raíz. En Terminal, cambia a la misma ruta y revisa cambios existentes. La ruta siguiente es un ejemplo; NimoteCode no la crea.
 
+Estos ejemplos de shell son para un equipo SSH Linux o macOS. Sustituye la ruta del proyecto. Windows necesita comandos adecuados para PowerShell; consulta [SSH y SFTP en Windows](/es/docs/windows-ssh-sftp).
 
-1. Instale y autentique Claude Code en el host de desarrollo remoto de acuerdo con su propia documentación.
+```sh
+cd /path/to/project
+pwd
+git status --short --branch
+```
 
-2. En NimoteCode, conéctese a ese host con un perfil [SSH Workspace](/docs/ssh) y seleccione la raíz del proyecto.
+<figure class="seo-phone-capture">
+  <a href="/images/ios/iphone-terminal.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-terminal.webp" width="660" height="1433" alt="Terminal SSH de NimoteCode en iPhone con comandos de shell. No es una grabación de una tarea de Claude Code." loading="lazy" decoding="async">
+  </a>
+  <figcaption>Terminal SSH de NimoteCode en iPhone con comandos de shell. No es una grabación de una tarea de Claude Code. Fuente: ficha de NimoteCode en App Store. Captura promocional; no es una grabación continua.</figcaption>
+</figure>
 
-3. Abra el proyecto en el Explorador y use la terminal SSH para iniciar o continuar su sesión de Claude Code.
+## 3. Inicia la tarea en una sesión del equipo
 
-4. Utilice el editor para inspeccionar los archivos y los cambios en discusión.
+Con tmux instalado en Linux o macOS puedes conservar una terminal en el equipo aunque se desconecte el teléfono. Crea o conecta una sesión con nombre e inicia el agente dentro. Si ya está ejecutándose al reconectar, continúa allí en lugar de abrir otra instancia.
 
-5. Ejecute las comprobaciones del proyecto en Terminal, luego revise la diferencia en [Control de fuente](/docs/source-control) antes de confirmar.
+```sh
+tmux new-session -A -s mobile-claude
+claude
+```
 
+Empieza con una petición concreta:
 
-Este es un flujo de trabajo de terminal remota: NimoteCode no pretende ser el producto de Claude Code ni reemplazar la propia configuración de Claude Code. Hace que el proyecto circundante funcione más manejable desde un teléfono o tableta.
+> Localiza dónde se lee este valor de configuración. Explica los archivos relevantes y propone una comprobación. No modifiques archivos todavía.
 
+## 4. Distingue reconexión y reanudación
 
-## Mantener al agente conectado a tierra en la verificación
+Pulsa Ctrl+B y después D para separar tmux. Al volver por SSH, conecta la misma sesión. Si el agente terminó pero guardó la conversación, utiliza su comando de reanudación desde el mismo repositorio. Una conversación guardada no es un proceso activo.
 
+```sh
+tmux attach-session -t mobile-claude
+```
 
-Un agente puede acelerar una tarea limitada, pero no puede eliminar la necesidad de comprender el entorno. En dispositivos móviles, un buen hábito es mantener cada bucle pequeño: solicite el plan, inspeccione el archivo tocado, ejecute la verificación correspondiente y revise Git antes de enviarlo. Si la tarea es adyacente a la producción, utilice confirmaciones y siga el proceso de implementación de su equipo.
+```sh
+claude -r
+```
 
+[tmux](https://github.com/tmux/tmux/wiki/Getting-Started)
 
-## Cuando NimoteCode es útil junto con Claude Code
+## 5. Verifica fuera de la conversación
 
+Abre los archivos cambiados, guarda, ejecuta las pruebas o compilación del proyecto y lee el diff. Estos comandos inspeccionan el parche, pero no sustituyen sus comprobaciones.
 
-- Necesitas investigar un repositorio mientras viajas o estás de guardia.
+```sh
+git diff --check
+git diff --stat
+git diff
+```
 
-- Claude Code se está ejecutando en un host de desarrollo de Linux al que puede acceder mediante SSH.
+El modo Confirm de Nimote Agent controla el agente integrado. No controla comandos SSH manuales ni sustituye los permisos de una CLI externa. Configura los permisos del agente; no desactives confirmaciones solo para reducir escritura en el móvil.
 
-- Quieres un explorador de proyectos y una vista de revisión de Git junto a la sesión de terminal.
+## Diagnostica la capa que falla
 
-- Debe convertir la sugerencia de un agente en un cambio verificable y revisable.
+| Síntoma | Primera comprobación |
+| --- | --- |
+| SSH agota el tiempo | Suspensión, dirección, VPN, firewall o ruta |
+| Comando no encontrado | Instalación y PATH en esa shell SSH |
+| Falla el acceso | Cuenta del agente y guía oficial de autenticación sin navegador |
+| Desaparece la sesión | tmux, reinicio, salida del proceso y reanudación de conversación |
+| No ejecuta una prueba | Ruta, dependencias y permisos |
 
+## Configuración oficial y guías relacionadas
 
-Para la configuración del proveedor de IA dentro de NimoteCode, consulte [Chat y agente de IA](/docs/ai). Para obtener orientación más amplia, lea [Codificación AI móvil](/mobile-ai-coding).
+[Claude Code quickstart](https://code.claude.com/docs/en/quickstart) · [Remote Control](https://code.claude.com/docs/en/remote-control)
 
-
-## Limitaciones de este flujo de trabajo
-
-
-Esta configuración supone que Claude Code ya se ejecuta en un host al que puede acceder mediante SSH, por lo que un teléfono se conecta a ese host en lugar de ejecutar el agente localmente. Depende de las mismas cosas que siempre depende del desarrollo remoto: un host accesible, una conexión estable y sus propias credenciales de Claude Code. Las sesiones de agente de larga duración son aún más fáciles de supervisar en una computadora de escritorio; en un teléfono, prefiera bucles cortos y de alcance limitado. NimoteCode no es Claude Code y no puede solucionar problemas dentro de la propia configuración de Claude Code.
-
+[SSH](/es/docs/ssh) · [Git](/es/docs/source-control) · [AI / ACP](/es/docs/ai)
 
 ## Preguntas frecuentes
 
+<!-- faq:start -->
 
-### ¿Necesito NimoteCode para usar Claude Code en mi teléfono?
+### ¿Incluye la suscripción de Claude Code?
 
+No. Instala y autentica Claude Code por separado. NimoteCode es el espacio móvil alrededor de la sesión y no incluye la cuenta ni el uso del agente.
 
-No. NimoteCode es un espacio de trabajo móvil que mantiene el trabajo del proyecto circundante conectado a través de SSH (Explorador, editor, terminal y revisión de Git) mientras Claude Code se ejecuta y se autentica en su propio host de desarrollo.
+### ¿Cerrar la aplicación mantiene el agente activo?
 
+No por sí solo. Una herramienta de sesiones ayuda ante desconexiones SSH, pero el equipo y el proceso deben seguir activos. Comprueba el estado al reconectar.
 
-### ¿NimoteCode ejecuta Claude Code por mí?
+### ¿Es un cliente móvil oficial de Claude Code?
 
+No. Es una guía independiente de SSH con NimoteCode. Las interfaces móviles o remotas del proveedor son opciones separadas.
 
-No. NimoteCode no es el producto de Claude Code y no reemplaza su configuración. Usted instala y autentica Claude Code en el host remoto, luego usa el terminal SSH para iniciar o continuar una sesión.
+<!-- faq:end -->
 
-
-### ¿Puedo ejecutar Claude Code desde un teléfono sin una computadora remota?
-
-No con este flujo de trabajo. Claude Code se ejecuta en un host al que se accede mediante SSH, por lo que un teléfono se conecta a ese host en lugar de ejecutar el agente localmente.
-
+Puedes empezar con edición local o SSH y la terminal básica. Algunas funciones requieren Pro; consulta [Gratis y Pro](/es/pro) y el acceso mostrado en la aplicación. La IA requiere configurar tu proveedor de modelos, que factura el uso por separado.
 
 <div class="seo-cta">
-  <p><strong>Bring your SSH project, terminal and review workflow to the phone.</strong></p>
+  <p><strong>Descargar NimoteCode</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=claude_code_from_phone" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for Android</a>
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noreferrer">Download for iOS</a>
-    <a href="/demo?utm_source=claude_code_from_phone&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="/es/docs/quick-start" class="home-page-btn secondary">Guía de inicio</a>
   </p>
 </div>
-
-## Continuar leyendo
-
-
-- [Códex del teléfono](/codex-from-phone)
-
-- [SSH IDE para desarrollo remoto](/ssh-ide)
-
-- [Demostración del agente AI](/use-cases/)
-
-- [¿Puede realmente un agente de IA codificar desde un teléfono?](/blog/can-an-ai-agent-really-code-from-a-phone)

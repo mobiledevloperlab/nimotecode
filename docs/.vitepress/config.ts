@@ -1,5 +1,5 @@
 import { defineConfig, type HeadConfig, type TransformContext, type DefaultTheme } from 'vitepress'
-import { existsSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 import { productCopy } from './theme/product'
@@ -222,8 +222,8 @@ const localizedSeo = {
 
 function localizedSeoValue(path: string, value: string, kind: 'title' | 'description'): string {
   const locale = pageLocaleKey(path)
-  // These pages have fully translated metadata, rather than English fallbacks.
-  if (/^(?:ja|ko|es)\/(?:index|android-ide|docs\/windows-ssh-sftp)\.md$/.test(path)) return value
+  // Fully localized landing pages must keep their own titles and descriptions.
+  if (/^(?:ja|ko|es)\/(?:index|android-ide|android-ssh-client|iphone-ssh-client|ipad-coding|termius-alternative|blink-shell-alternative|claude-code-from-phone|codex-from-phone|mobile-ai-coding|mobile-ide|ssh-ide|remote-coding|code-from-phone|docs\/windows-ssh-sftp)\.md$/.test(path)) return value
   const translation = localizedSeo[locale as keyof typeof localizedSeo]
   if (!translation || !value) return value
 
@@ -529,6 +529,24 @@ function breadcrumbSchema(context: TransformContext): object | null {
 
 function faqSchema(context: TransformContext): object | null {
   const normalized = normalizePath(context.pageData.relativePath)
+  // The marked FAQ is the source of truth for both visible text and JSON-LD,
+  // including translations. Fail the build rather than emit a partial FAQ.
+  const sourcePath = resolve(process.cwd(), 'docs', context.pageData.relativePath)
+  const source = existsSync(sourcePath) ? readFileSync(sourcePath, 'utf8') : ''
+  const visibleFaq = source.match(/<!-- faq:start -->([\s\S]*?)<!-- faq:end -->/)
+  if (visibleFaq) {
+    const entries = [...visibleFaq[1].matchAll(/^### ([^\n]+)\n\n([^\n]+)(?=\n|$)/gm)]
+    if (!entries.length || entries.length !== (visibleFaq[1].match(/^### /gm) || []).length) {
+      throw new Error(`Invalid FAQ content: ${context.pageData.relativePath}`)
+    }
+    return {
+      '@context': 'https://schema.org', '@type': 'FAQPage',
+      mainEntity: entries.map(([, question, answer]) => ({
+        '@type': 'Question', name: question,
+        acceptedAnswer: { '@type': 'Answer', text: answer }
+      }))
+    }
+  }
   const faqEntries: Record<string, Array<{ question: string, answer: string }>> = {
     '/docs/faq': [
       {
@@ -580,34 +598,6 @@ function faqSchema(context: TransformContext): object | null {
       {
         question: 'LSP 和 Debug 所有项目都能用吗？',
         answer: '这取决于远程主机是否已配置兼容的语言服务或调试适配器，以及项目本身的启动设置。两者均属于 Pro 功能。'
-      }
-    ],
-    '/mobile-ide': [
-      {
-        question: 'Is NimoteCode just an SSH client?',
-        answer: 'No. It combines Editor, Explorer, SSH, Terminal, Git and AI Agent in one mobile development workspace.'
-      },
-      {
-        question: 'Can I work on a remote project from a phone or tablet?',
-        answer: 'Yes. Connect to a remote project through SSH, inspect files, edit code, run terminal commands and review Git changes in the same workspace.'
-      },
-      {
-        question: 'Is NimoteCode available for Android and iOS?',
-        answer: 'NimoteCode is available for Android on Google Play and for iPhone and iPad on the App Store.'
-      }
-    ],
-    '/ssh-ide': [
-      {
-        question: 'What is an SSH IDE?',
-        answer: 'An SSH IDE adds project browsing, code editing, terminal commands and Git review around an SSH connection so you can work on a remote codebase, not only run shell commands.'
-      },
-      {
-        question: 'Can I review Git changes after editing over SSH?',
-        answer: 'Yes. NimoteCode keeps Source Control next to the remote workspace so you can inspect diffs and use supported Git workflows before shipping a change.'
-      },
-      {
-        question: 'When is an SSH IDE better than a terminal-only client?',
-        answer: 'Choose an SSH IDE when the task includes locating files, editing code, running verification commands and reviewing a diff. A terminal-only client may be enough for command-only work.'
       }
     ],
     "/ja/android-ide": [
@@ -664,120 +654,6 @@ function faqSchema(context: TransformContext): object | null {
         "answer": "NimoteCode se puede descargar desde Google Play; algunas funciones requieren acceso Pro. La disponibilidad depende de la cuenta, la versión y la región de la tienda. El proveedor del modelo factura su uso por separado."
       }
     ],
-    '/android-ssh-client': [
-      {
-        question: 'Is NimoteCode a good SSH client for Android?',
-        answer: 'NimoteCode is an Android SSH client for developers who need more than a shell. It opens an SSH connection and then keeps the remote Explorer, code editor, terminal, Git review and AI assistance in the same workspace, so an Android device can support a real development loop.'
-      },
-      {
-        question: 'What can you do with an Android SSH client?',
-        answer: 'A basic Android SSH client lets you connect to a remote host and run terminal commands. A developer-oriented client such as NimoteCode also lets you browse remote files, edit code, run tests, review Git changes and use AI assistance without leaving the app.'
-      },
-      {
-        question: 'Does NimoteCode support SFTP or file transfer?',
-        answer: 'NimoteCode provides a remote Explorer with SFTP-oriented file workflows, so you can browse and manage files on the connected host. The project stays on the remote machine and is read and edited over the connection.'
-      },
-      {
-        question: 'Can I edit code over SSH on Android?',
-        answer: 'Yes. NimoteCode opens remote files in its editor over the SSH connection, with tabs, project search and split panes on larger screens, so you can edit on the device without copying the project locally.'
-      },
-      {
-        question: 'Is the Android SSH client free?',
-        answer: 'NimoteCode has a free tier that includes local and SSH workspaces, the editor, baseline terminal, Git status and diff review, AI Chat with your own provider, and terminal-backed Tasks. AI Agent, remote search, multiple terminal sessions, Git write workflows, LSP and debugging are Pro workflows.'
-      },
-      {
-        question: 'Does NimoteCode work with Git over SSH?',
-        answer: 'Yes. Source Control gives you repository status, diffs, history and branches next to the remote workspace. Review is available to all users; write workflows such as commits and pushes require Pro.'
-      },
-      {
-        question: 'Is there an iOS version?',
-        answer: 'NimoteCode is available for Android on Google Play and for iPhone and iPad on the App Store.'
-      }
-    ],
-    '/mobile-ai-coding': [
-      {
-        question: 'How is mobile AI coding different from a standalone AI chat?',
-        answer: 'NimoteCode keeps AI Chat and Agent alongside the editor, project Explorer, SSH terminal and Git context, so suggestions can be inspected and verified in the real workspace.'
-      },
-      {
-        question: 'Can AI Agent make changes in a remote workspace?',
-        answer: 'AI Agent can assist multi-step tasks, but remote and production-adjacent work should be reviewed with command and change controls enabled.'
-      },
-      {
-        question: 'Does AI replace Git review?',
-        answer: 'No. AI can help explain, plan and assist a task; Git review and appropriate test or verification commands remain part of the delivery workflow.'
-      }
-    ],
-    '/zh/mobile-ide': [
-      {
-        question: 'NimoteCode 只是 SSH 客户端吗？',
-        answer: '不是。NimoteCode 把编辑器、Explorer、SSH、终端、Git 与 AI Agent 结合在同一个移动开发工作区中。'
-      },
-      {
-        question: '能用手机或平板处理远程项目吗？',
-        answer: '可以。通过 SSH 连接远程项目，在同一个工作区中检查文件、编辑代码、运行终端命令并审查 Git 改动。'
-      },
-      {
-        question: 'NimoteCode 支持 Android 和 iOS 吗？',
-        answer: 'NimoteCode 已上架 Google Play（Android）与 App Store（iPhone 与 iPad）。'
-      }
-    ],
-    '/zh/ssh-ide': [
-      {
-        question: '什么是 SSH IDE？',
-        answer: 'SSH IDE 在 SSH 连接之上加入项目浏览、代码编辑、终端命令与 Git 审查，让你可以处理远程代码库，而不仅是运行 Shell 命令。'
-      },
-      {
-        question: '通过 SSH 编辑后能审查 Git 改动吗？',
-        answer: '可以。NimoteCode 会把源代码管理与远程工作区放在一起，发布改动前可查看 diff 并使用受支持的 Git 工作流。'
-      },
-      {
-        question: '什么时候 SSH IDE 比纯终端客户端更好？',
-        answer: '当任务包含定位文件、编辑代码、运行验证命令与审查 diff 时，选择 SSH IDE。纯命令类工作用终端客户端也许就够了。'
-      }
-    ],
-    '/zh/mobile-ai-coding': [
-      {
-        question: '移动 AI 编程和独立 AI 聊天有何不同？',
-        answer: 'NimoteCode 把 AI Chat 与 Agent 放在编辑器、项目 Explorer、SSH 终端和 Git 上下文旁边，因此建议可以在真实工作区中被检查和验证。'
-      },
-      {
-        question: 'AI Agent 能在远程工作区中改动吗？',
-        answer: 'AI Agent 可以协助多步骤任务，但远程与接近生产的改动应在开启命令与变更控制的情况下审查后执行。'
-      },
-      {
-        question: 'AI 会取代 Git 审查吗？',
-        answer: '不会。AI 帮助解释、规划与协助任务，而 Git 审查与适当的测试或验证命令仍然是交付流程的一部分。'
-      }
-    ],
-    '/claude-code-from-phone': [
-      {
-        question: 'Do I need NimoteCode to use Claude Code on my phone?',
-        answer: 'No. NimoteCode is a mobile workspace that keeps the surrounding project work connected over SSH — Explorer, editor, terminal and Git review — while Claude Code itself runs and authenticates on your own development host.'
-      },
-      {
-        question: 'Does NimoteCode run Claude Code for me?',
-        answer: 'No. NimoteCode is not the Claude Code product and does not replace its setup. You install and authenticate Claude Code on the remote host, then use the SSH terminal to start or continue a session.'
-      },
-      {
-        question: 'Can I run Claude Code from a phone without a remote computer?',
-        answer: 'Not with this workflow. Claude Code runs on a host you reach by SSH, so a phone connects to that host rather than running the agent locally.'
-      }
-    ],
-    '/codex-from-phone': [
-      {
-        question: 'Do I need NimoteCode to use Codex from my phone?',
-        answer: 'No. NimoteCode is the mobile workspace around a remote Codex session — Explorer, editor, SSH terminal and Git review — while Codex is installed and authenticated on your own development host.'
-      },
-      {
-        question: 'Is Codex an official partner of NimoteCode?',
-        answer: 'No. Codex is an external coding agent. NimoteCode does not claim an official partnership or that it proxies Codex; you run Codex on the remote host and work around it over SSH.'
-      },
-      {
-        question: 'Can I use an AI assistant in NimoteCode instead of Codex?',
-        answer: 'Yes. NimoteCode has its own AI Chat and Agent workflows with provider configuration, which can be used in addition to, or instead of, a remote Codex session.'
-      }
-    ],
     "/android-ide": [
       {
         "question": "Do I need root to run Linux in NimoteCode?",
@@ -794,62 +670,6 @@ function faqSchema(context: TransformContext): object | null {
       {
         "question": "Is NimoteCode free to download?",
         "answer": "NimoteCode is available on Google Play, with some capabilities requiring Pro access. Availability depends on the account, app version, and store region. Model-provider usage is billed separately."
-      }
-    ],
-    '/remote-coding': [
-      {
-        question: 'What does remote coding mean in practice?',
-        answer: 'Remote coding means editing and running the project on one machine while you interact from another. The most common setup is a phone or tablet connecting over SSH to your desktop, laptop or server and working in the real repository.'
-      },
-      {
-        question: 'Is remote coding over SSH slow?',
-        answer: 'Interactive editing over SSH is generally responsive on a good connection. Heavy operations — large builds, full reindexing, or long-running compiles — are subject to your network and the remote host, and are often better left to the desktop.'
-      },
-      {
-        question: 'Do I need the project files on my phone?',
-        answer: 'No. With an SSH workspace the project stays on the remote host. Your phone streams file edits, terminal output and Git data from that machine instead of duplicating the repository.'
-      }
-    ],
-    '/code-from-phone': [
-      {
-        question: 'Is it realistic to code from a phone?',
-        answer: 'Yes for focused work: investigating an issue, making a small fix, running commands, reviewing a diff or driving an AI agent on your existing project. Long-form feature work and heavy compilation remain more comfortable on a desktop.'
-      },
-      {
-        question: 'How do I actually code from a phone?',
-        answer: 'The reliable pattern is to connect to your own development machine over SSH with a mobile development workspace, then browse, edit, run and review the real project — instead of copying files or snippets between apps.'
-      },
-      {
-        question: 'Which phones can run NimoteCode?',
-        answer: 'NimoteCode is available for Android phones and tablets on Google Play, and for iPhone and iPad on the App Store.'
-      }
-    ],
-    '/zh/claude-code-from-phone': [
-      {
-        question: '用手机使用 Claude Code 需要 NimoteCode 吗？',
-        answer: '不需要。NimoteCode 是通过 SSH 把周边项目工作连接起来的移动工作区——Explorer、编辑器、终端与 Git 审查——而 Claude Code 本身在你自己的开发主机上运行并完成认证。'
-      },
-      {
-        question: 'NimoteCode 会替我运行 Claude Code 吗？',
-        answer: '不会。NimoteCode 不是 Claude Code 产品，也不会替代其配置。你需要自行在远程主机上安装并认证 Claude Code，然后用 SSH 终端启动或继续会话。'
-      },
-      {
-        question: '没有远程电脑能在手机上运行 Claude Code 吗？',
-        answer: '这个工作流不行。Claude Code 运行在你通过 SSH 访问的主机上，手机只是连接该主机，而不是在本地运行 Agent。'
-      }
-    ],
-    '/zh/codex-from-phone': [
-      {
-        question: '用手机使用 Codex 需要 NimoteCode 吗？',
-        answer: '不需要。NimoteCode 是远程 Codex 会话周边的移动工作区——Explorer、编辑器、SSH 终端与 Git 审查——而 Codex 在你自己的开发主机上安装并认证。'
-      },
-      {
-        question: 'Codex 是 NimoteCode 的官方合作伙伴吗？',
-        answer: '不是。Codex 是外部编码代理。NimoteCode 不声称与其有官方合作，也不代理 Codex；你在远程主机上运行 Codex，并通过 SSH 围绕它工作。'
-      },
-      {
-        question: '我可以在 NimoteCode 里用它的 AI 助手代替 Codex 吗？',
-        answer: '可以。NimoteCode 自带 AI Chat 与 Agent 工作流并支持提供商配置，既可以配合远程 Codex 会话使用，也可以单独使用。'
       }
     ],
     "/zh/android-ide": [
@@ -870,34 +690,6 @@ function faqSchema(context: TransformContext): object | null {
         "answer": "NimoteCode 可从 Google Play 下载，部分功能需要 Pro 权限。可用性取决于账号、应用版本及商店地区，模型提供商的使用费用另行计算。"
       }
     ],
-    '/zh/remote-coding': [
-      {
-        question: '远程编程在实践中意味着什么？',
-        answer: '远程编程意味着在一台机器上编辑和运行项目，从另一台机器操作。最常见的是手机或平板通过 SSH 连接你的桌面、笔记本或服务器，在真实仓库中工作。'
-      },
-      {
-        question: '通过 SSH 远程编程会卡吗？',
-        answer: '在良好的连接下，SSH 上的交互式编辑通常很流畅。重型操作——大构建、全量重建索引或长时间编译——受网络与远程主机影响，通常更适合留给桌面。'
-      },
-      {
-        question: '手机上需要项目文件吗？',
-        answer: '不需要。使用 SSH 工作区时，项目保留在远程主机上。你的手机从该机器流式获取文件编辑、终端输出与 Git 数据，而不是复制一份仓库。'
-      }
-    ],
-    '/zh/code-from-phone': [
-      {
-        question: '用手机写代码现实吗？',
-        answer: '对聚焦的工作是现实的：排查问题、做一处小修复、运行命令、审查 diff，或在你的现有项目上驱动 AI Agent。长篇功能开发与重型编译仍然更适合桌面。'
-      },
-      {
-        question: '我到底该怎么用手机写代码？',
-        answer: '可靠的模式是用一个移动开发工作区通过 SSH 连接你自己的开发机，然后浏览、编辑、运行并审查真实项目——而不是在应用之间复制文件或代码片段。'
-      },
-      {
-        question: '哪些手机可以运行 NimoteCode？',
-        answer: 'NimoteCode 可于 Google Play（Android 手机与平板）与 App Store（iPhone 与 iPad）下载。'
-      }
-    ]
   }
 
   const entries = faqEntries[normalized]

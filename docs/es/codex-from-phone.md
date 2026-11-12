@@ -1,100 +1,130 @@
 ---
-title: "Use Codex From Your Phone with SSH and Git | NimoteCode"
-description: "Use Codex from your phone in a practical remote development workflow: SSH into your development host, inspect project files, run checks and review Git changes with NimoteCode."
+title: "Usar Codex desde el móvil por SSH | NimoteCode"
+description: "Ejecuta Codex en tu equipo y accede desde Android o iPhone con NimoteCode. Configuración, recuperación de sesiones, revisión Git y diagnóstico paso a paso."
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# Cómo usar Codex desde tu teléfono
+# Usar Codex desde el móvil por SSH
 
+¿Quieres continuar una tarea de Codex desde el móvil sin mover el repositorio? Esta guía accede por SSH a la CLI de un equipo Linux o macOS. NimoteCode añade exploración de archivos, edición, terminal y revisión Git alrededor de esa sesión.
 
-Los agentes codificadores son más útiles cuando están cerca del repositorio, terminal y entorno de prueba que necesitan. Si Codex está configurado en un host de desarrollo remoto, un espacio de trabajo móvil basado en SSH le permite continuar ese trabajo desde su teléfono sin reducir la tarea a fragmentos copiados.
+SSH es una opción, no la única interfaz móvil. Si solo necesitas seguir al agente, revisa las opciones actuales web, móviles y remotas del proveedor. NimoteCode ayuda cuando también quieres acceso directo a los archivos y comandos del equipo.
 
+## 1. Prepara el equipo y la cuenta
 
-NimoteCode combina un editor, un explorador, una terminal SSH, Git, AI Chat y un agente para que pueda solucionar una sesión remota de Codex con el mismo contexto del proyecto: abra el código fuente, ejecute el comando, inspeccione el resultado y revise la diferencia real.
+Necesitas un equipo encendido con SSH, un repositorio accesible y las dependencias. Instala y autentica el agente allí siguiendo su documentación oficial. Su cuenta, límites, permisos y credenciales son independientes de NimoteCode.
 
+Elige el método oficial de instalación de Codex para el equipo. Ejemplo:
 
-<ImagePlaceholder image-key="codexFromPhone" alt="Codex from phone remote workflow">
-  <strong>Image placeholder — Remote Codex workflow</strong>
-  <span>Replace with a redacted remote agent session, source inspection and validation output. Do not include credentials or private code.</span>
-</ImagePlaceholder>
+```sh
+npm install -g @openai/codex
+codex --version
+```
 
-## Un agente no sustituye la verificación
+[Codex CLI](https://learn.chatgpt.com/docs/codex/cli) · [CLI reference](https://learn.chatgpt.com/docs/developer-commands?surface=cli)
 
-Al usar un agente en un repositorio remoto, confirma host y raíz, y revisa los archivos, comandos y diff que toque. En móvil, las tareas pequeñas y observables son más apropiadas que un cambio grande que no puedas validar.
+En un equipo sin navegador, `codex login --device-auth` es una opción oficial cuando está habilitada. Sigue la guía de autenticación; localhost en el móvil no es el equipo remoto.
 
-## Un flujo de trabajo Codex compatible con teléfonos
+## 2. Abre el repositorio desde el móvil
 
+Crea un [espacio SSH](/es/docs/ssh), verifica la huella y selecciona la raíz. En Terminal, cambia a la misma ruta y revisa cambios existentes. La ruta siguiente es un ejemplo; NimoteCode no la crea.
 
-1. Configure Codex en su host de desarrollo remoto con las credenciales y controles requeridos por su organización.
+Estos ejemplos de shell son para un equipo SSH Linux o macOS. Sustituye la ruta del proyecto. Windows necesita comandos adecuados para PowerShell; consulta [SSH y SFTP en Windows](/es/docs/windows-ssh-sftp).
 
-2. Abra el repositorio en NimoteCode a través de [SSH Workspace](/docs/ssh).
+```sh
+cd /path/to/project
+pwd
+git status --short --branch
+```
 
-3. Inicie o reanude la sesión de Codex desde el terminal SSH cuando así esté configurado su host.
+<figure class="seo-phone-capture">
+  <a href="/images/ios/iphone-terminal.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-terminal.webp" width="660" height="1433" alt="Terminal SSH de NimoteCode en iPhone con comandos de shell. No es una grabación de una tarea de Codex." loading="lazy" decoding="async">
+  </a>
+  <figcaption>Terminal SSH de NimoteCode en iPhone con comandos de shell. No es una grabación de una tarea de Codex. Fuente: ficha de NimoteCode en App Store. Captura promocional; no es una grabación continua.</figcaption>
+</figure>
 
-4. Utilice las pestañas del Explorador y del editor para inspeccionar los archivos que se están discutiendo o modificando.
+## 3. Inicia la tarea en una sesión del equipo
 
-5. Ejecute pruebas o comprobaciones enfocadas en la Terminal.
+Con tmux instalado en Linux o macOS puedes conservar una terminal en el equipo aunque se desconecte el teléfono. Crea o conecta una sesión con nombre e inicia el agente dentro. Si ya está ejecutándose al reconectar, continúa allí en lugar de abrir otra instancia.
 
-6. Revise el resultado preparado y no preparado en [Control de fuente](/docs/source-control) antes de confirmar o enviar.
+```sh
+tmux new-session -A -s mobile-codex
+codex
+```
 
+Empieza con una petición concreta:
 
-NimoteCode no se presenta como un reemplazo del Codex ni de su configuración oficial. Es el espacio de trabajo móvil que mantiene conectado y revisable el trabajo de desarrollo circundante.
+> Localiza dónde se lee este valor de configuración. Explica los archivos relevantes y propone una comprobación. No modifiques archivos todavía.
 
+## 4. Distingue reconexión y reanudación
 
-## Utilice IA compatible con OpenAI en el espacio de trabajo
+Pulsa Ctrl+B y después D para separar tmux. Al volver por SSH, conecta la misma sesión. Si el agente terminó pero guardó la conversación, utiliza su comando de reanudación desde el mismo repositorio. Una conversación guardada no es un proceso activo.
 
+```sh
+tmux attach-session -t mobile-codex
+```
 
-NimoteCode también admite la configuración del proveedor de IA para sus flujos de trabajo de agentes y chat de IA dentro de la aplicación. Esto puede resultar útil cuando desee explicaciones, planificación o automatización controlada teniendo en cuenta el espacio de trabajo junto con su sesión SSH. Consulte [Chat AI y Agente](/docs/ai) para la configuración del proveedor y [Seguridad y protección](/docs/security) para los controles de ejecución.
+```sh
+codex resume
+```
 
+[tmux](https://github.com/tmux/tmux/wiki/Getting-Started)
 
-## Mantenga la tarea limitada y observable
+## 5. Verifica fuera de la conversación
 
+Abre los archivos cambiados, guarda, ejecuta las pruebas o compilación del proyecto y lee el diff. Estos comandos inspeccionan el parche, pero no sustituyen sus comprobaciones.
 
-En un teléfono, la velocidad proviene de reducir el cambio de contexto, no de saltarse las medidas de seguridad. Prefiera un objetivo claro a la vez, lea el archivo antes de aceptar una edición, ejecute el comando de verificación más pequeño apropiado e inspeccione la diferencia de Git. Este patrón funciona ya sea que Codex esté ayudando a una función, una refactorización o una respuesta a un incidente.
+```sh
+git diff --check
+git diff --stat
+git diff
+```
 
+El modo Confirm de Nimote Agent controla el agente integrado. No controla comandos SSH manuales ni sustituye los permisos de una CLI externa. Configura los permisos del agente; no desactives confirmaciones solo para reducir escritura en el móvil.
 
-## Limitaciones de este flujo de trabajo
+## Diagnostica la capa que falla
 
+| Síntoma | Primera comprobación |
+| --- | --- |
+| SSH agota el tiempo | Suspensión, dirección, VPN, firewall o ruta |
+| Comando no encontrado | Instalación y PATH en esa shell SSH |
+| Falla el acceso | Cuenta del agente y guía oficial de autenticación sin navegador |
+| Desaparece la sesión | tmux, reinicio, salida del proceso y reanudación de conversación |
+| No ejecuta una prueba | Ruta, dependencias y permisos |
 
-Codex ya debe estar configurado en un host al que pueda acceder mediante SSH; un teléfono no ejecuta Codex localmente. Eso significa que el flujo de trabajo hereda su red, la configuración del host y los límites de la cuenta del Codex. Las sesiones largas o exploratorias de los agentes son más fáciles de supervisar en una computadora de escritorio, por lo que en un teléfono mantenga cada ejecución estrecha y observable. NimoteCode es un espacio de trabajo móvil independiente: no actúa como proxy de Codex y se siguen aplicando la configuración y los controles propios del Codex.
+## Configuración oficial y guías relacionadas
 
+[Codex CLI](https://learn.chatgpt.com/docs/codex/cli) · [CLI reference](https://learn.chatgpt.com/docs/developer-commands?surface=cli)
+
+[SSH](/es/docs/ssh) · [Git](/es/docs/source-control) · [AI / ACP](/es/docs/ai)
 
 ## Preguntas frecuentes
 
+<!-- faq:start -->
 
-### ¿Necesito NimoteCode para usar Codex desde mi teléfono?
+### ¿Incluye la suscripción de Codex?
 
+No. Instala y autentica Codex por separado. NimoteCode es el espacio móvil alrededor de la sesión y no incluye la cuenta ni el uso del agente.
 
-No. NimoteCode es el espacio de trabajo móvil en torno a una sesión remota de Codex (Explorador, editor, terminal SSH y revisión de Git) mientras Codex se instala y autentica en su propio host de desarrollo.
+### ¿Cerrar la aplicación mantiene el agente activo?
 
+No por sí solo. Una herramienta de sesiones ayuda ante desconexiones SSH, pero el equipo y el proceso deben seguir activos. Comprueba el estado al reconectar.
 
-### ¿Es Codex un socio oficial de NimoteCode?
+### ¿Es un cliente móvil oficial de Codex?
 
+No. Es una guía independiente de SSH con NimoteCode. Las interfaces móviles o remotas del proveedor son opciones separadas.
 
-No. Codex es un agente de codificación externo. NimoteCode no afirma ser una asociación oficial ni representa a Codex; ejecuta Codex en el host remoto y lo soluciona a través de SSH.
+<!-- faq:end -->
 
-
-### ¿Puedo usar un asistente de IA en NimoteCode en lugar del Codex?
-
-
-Sí. NimoteCode tiene sus propios flujos de trabajo de agentes y chat AI con configuración de proveedor, que se pueden usar además o en lugar de una sesión remota de Codex.
-
+Puedes empezar con edición local o SSH y la terminal básica. Algunas funciones requieren Pro; consulta [Gratis y Pro](/es/pro) y el acceso mostrado en la aplicación. La IA requiere configurar tu proveedor de modelos, que factura el uso por separado.
 
 <div class="seo-cta">
-  <p><strong>Keep the project, command output and Git review with you when you use Codex remotely.</strong></p>
+  <p><strong>Descargar NimoteCode</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=codex_from_phone" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for Android</a>
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noreferrer">Download for iOS</a>
-    <a href="/demo?utm_source=codex_from_phone&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="/es/docs/quick-start" class="home-page-btn secondary">Guía de inicio</a>
   </p>
 </div>
-
-## Páginas relacionadas
-
-
-- [Espacio de trabajo de codificación de IA móvil](/mobile-ai-coding)
-
-- [Código Claude desde el teléfono](/claude-code-from-phone)
-
-- [flujo de trabajo de desarrollo remoto SSH](/docs/ssh)
-
-- [¿Puede realmente un agente de IA codificar desde un teléfono?](/blog/can-an-ai-agent-really-code-from-a-phone)

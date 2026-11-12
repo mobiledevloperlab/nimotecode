@@ -1,176 +1,41 @@
 ---
-title: "2026年版 Android SSHクライアントの選び方 | NimoteCode"
-description: "実際の開発作業に合う Android SSH クライアントの選び方。リモートファイル、編集、検証、Git レビューを考えます。"
+title: "Android SSH クライアント：SFTP・編集・ターミナル | NimoteCode"
+description: "NimoteCode で Android から Linux、Mac、Windows に SSH 接続。認証、SFTP ファイル参照、コード編集とリモートプロジェクトの検証を説明します。"
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# コード変更まで行うなら、Android SSH クライアントをどう選ぶか
+# Android SSH クライアントでコマンドとファイルを扱う
 
+Android からサーバーのコマンドや設定を扱う場合、NimoteCode は SSH、SFTP 参照、編集、Git レビューを提供します。コマンドだけなら専用ターミナルで十分です。ファイルと変更も扱うならプロジェクトワークスペースを選べます。
 
-サービスの再起動やログ確認で終わるなら、信頼できる端末と認証だけで十分です。ところが、障害対応がパッチで終わるなら、リポジトリを特定し、周辺のコードを読み、変更し、プロジェクトの検証を実行し、diff を確認する必要があります。端末はその流れの一部ですが、全部ではありません。
+## 接続を設定して確認
 
+ホスト、ポート、アカウント、許可された認証を入力し、初回はホスト鍵を照合します。ポートテストは直接 TCP 接続を調べるだけで、認証や SFTP は検証しません。接続後にルートを選びます。
 
-<figure class="article-hero"><a href="/images/placeholders/remote-workspace-connected.jpg" target="_blank" rel="noopener"><img src="/images/placeholders/remote-workspace-connected.jpg" width="1080" height="2376" alt="NimoteCode のリモート SSH ワークスペース" loading="eager" decoding="async"></a><figcaption>編集前にホストとリポジトリのルートを確認します。間違ったマシンで正しいコマンドを実行しても、正しい作業にはなりません。</figcaption></figure>
-
-## 機能表ではなく、終わらせる仕事で選ぶ
-
-コマンド実行が目的なら端末中心のクライアントが簡潔で適切です。リポジトリを変更するなら、ファイル参照、編集、検証、Git レビューが同じ文脈にあるかを見てください。小さな画面では、対象ホストとブランチを確認し、最小の変更を加え、検証を実行してから diff を読む順序が特に重要です。
-
-## Android SSH クライアントとは何ですか?
-
-
-Android SSH クライアントは、Android スマートフォンまたはタブレットからリモート ホスト（Linux サーバー、Mac、または開発マシン）へのセキュア シェル接続を開くアプリです。クライアントは認証、ホスト プロファイル、キー管理、ターミナル セッションを処理するため、デバイスからリモート システム上でコマンドを実行できます。
-
-
-ほとんどの Android SSH クライアントはそこで停止します。これらは接続ツールと端末ツールであり、コマンドのみの作業には適切な範囲です。
-
-
-## ターミナルのみの SSH クライアントでできること
-
-
-ターミナルファーストクライアントは本当に便利であり、多くの人にとって正しい選択です。
-
-
-- 保存されたプロファイルを使用して 1 つ以上のホストに接続します。
-
-- パスワードまたは SSH キーを使用して認証します。
-
-- コマンドを実行し、ログを読み取り、サービスを管理します。
-
-- コマンドラインから`scp`や`sftp`などのツールを使用してファイルを転送します。
-
-
-Android デバイスがサーバーにアクセスする手段である場合、軽量クライアントにより物事がシンプルになります。より広範なモバイル開発コンテキストについては、[モバイル IDE ガイド](/blog/best-ssh-clients) を参照してください。
-
-
-## 開発者向けの SSH クライアントが追加するもの
-
-
-開発者向けの SSH クライアントは、セッションによって出力だけでなくコード変更が生成されることを前提としています。これにより要件が変わります。
-
-
-- **プロジェクト コンテキスト** — シェルだけでなくリポジトリ ルートを開き、ファイル ツリーを参照します。
-
-- **編集** — コードを別のアプリにコピーせずにファイルを開いて変更します。
-
-- **検証** — テストまたは診断コマンドを実行し、コードの横にある結果を読み取ります。
-
-- **レビュー** — コミットする前に、何が変更されたかを正確に検査します。
-
-- **支援** — コマンドや編集を制御しながら、なじみのないコードを理解するための支援が得られます。
-
-
-これが、リモート アクセスと [モバイル IDE](/mobile-ide) の違いです。 NimoteCode は 2 番目のケースを中心に設計されています。
-
-
-## NimoteCode が Android SSH クライアントとして動作する仕組み
-
-
-NimoteCode は SSH 経由でリモート ホストに接続し、周囲の開発ツールを同じプロジェクト コンテキストに保ちます。
-
-
-### SSHワークスペース
-
-
-開発ホストの SSH プロファイルを保存し、接続してプロジェクト ルートを選択します。プロジェクトはリモート マシン上に残ります。携帯電話やタブレットは接続経由でデータを読み取り、編集するため、コピーをデバイスに同期することはありません。再接続を意識した処理により、モバイル ネットワークが変化してもセッションが安定します。
-
-
-### ファイル、SFTP スタイルのブラウズおよびエクスプローラー
-
-
-リモート エクスプローラを使用すると、すべてのパスを入力する代わりにプロジェクト内を移動できます。構成ファイルまたはサービス モジュールを見つけ、近くのファイルをタブに保存し、SFTP 指向のファイル ワークフローを使用して同じアプリからリモート ファイルを検査および管理できます。
-
-
-### ターミナル
-
-
-統合ターミナルは、テスト、ビルド、ログ、パッケージマネージャー、サービスの再起動など、すでに使用しているコマンドを実行します。出力は編集中のファイルの隣に表示されるため、アプリを切り替えることなくスタック トレースからソース行に移動できます。[ターミナルガイド](/docs/terminal)を参照してください。
-
-
-### コードエディタ
-
-ファイルは、タブ、大きな画面での分割ペイン、プロジェクト検索、モバイル キーボード フレンドリーな入力を備えた実際のエディタで開きます。これにより、Android SSH セッションが `cat` コマンドのストリームではなく編集セッションになります。
-
-
-### Git
-
-
-[ソース管理](/docs/source-control) にはリポジトリのステータス、差分、履歴、ブランチが表示されるため、出荷前に正確な変更を確認できます。すべてのユーザーが変更を検査できます。 Pro では、コミットやプッシュなどのゲート書き込みワークフローを利用できます。
-
-
-### AIコーディングツール
-
-
-[AI チャットおよびエージェント](/docs/ai) は、アクティブなワークスペース コンテキストを使用してエラーを説明したり、パッチを計画したり、制御された複数ステップのタスクを支援したりできます。エディター、ターミナル、Git ビューの横に配置されるため、提案を別のチャットに貼り付けるのではなく、実際のプロジェクトで検査および検証できます。
-
-
-## Android SSH クライアントまたはモバイル IDE?
-
-
-作業をコマンド プロンプトで開始および終了する場合は、軽量クライアントを使用します。 SSH セッションが、プロジェクトの編集、Git の使用、テスト結果の確認、AI コーディング アシスタントとの共同作業など、より広範なコーディング タスクの一部である場合は、NimoteCode を選択してください。まず全体像を把握したい場合は、[モバイル IDE ガイド](/blog/best-ssh-clients) または [SSH IDE の概要](/ssh-ide) から始めてください。
-
-
-## よくある質問
-
-
-### NimoteCode は Android 用の優れた SSH クライアントですか?
-
-
-NimoteCode は、シェル以上のものを必要とする開発者向けの Android SSH クライアントです。 SSH 接続を開き、リモート エクスプローラー、コード エディター、ターミナル、Git レビュー、AI アシスタントを同じワークスペースに保持するため、Android デバイスは実際の開発ループをサポートできます。
-
-
-### Android SSH クライアントで何ができるのですか?
-
-
-基本的な Android SSH クライアントを使用すると、リモート ホストに接続し、端末コマンドを実行できます。 NimoteCode などの開発者向けクライアントを使用すると、アプリを離れることなく、リモート ファイルの参照、コードの編集、テストの実行、Git の変更の確認、AI 支援の使用が可能になります。
-
-
-### NimoteCode は SFTP またはファイル転送をサポートしていますか?
-
-
-NimoteCode は、SFTP 指向のファイル ワークフローを備えたリモート エクスプローラーを提供するため、接続されたホスト上のファイルを参照および管理できます。プロジェクトはリモート マシン上に残り、接続経由で読み取られ、編集されます。
-
-
-### Android で SSH 経由でコードを編集できますか?
-
-
-はい。 NimoteCode は、SSH 接続を介してエディターでリモート ファイルを開き、大きな画面でタブ、プロジェクト検索、分割ペインを使用できるため、プロジェクトをローカルにコピーせずにデバイス上で編集できます。
-
-
-### Android SSH クライアントは無料ですか?
-
-
-NimoteCode には、ローカルおよび SSH ワークスペース、エディター、ベースライン ターミナル、Git ステータスと差分レビュー、独自のプロバイダーとの AI チャット、およびターミナル支援タスクを含む無料枠があります。 AI エージェント、リモート検索、複数のターミナル セッション、Git 書き込みワークフロー、LSP、およびデバッグは Pro ワークフローです。
-
-
-### NimoteCode は SSH 経由で Git と連携しますか?
-
-
-はい。ソース管理では、リモート ワークスペースの隣にリポジトリのステータス、差分、履歴、ブランチが表示されます。レビューはすべてのユーザーが利用できます。コミットやプッシュなどの書き込みワークフローには Pro が必要です。
-
-
-### iOS バージョンはありますか?
-
-
-NimoteCode は、Android では Google Play で、iPhone および iPad では App Store で入手できます。
-
-
-<div class="seo-cta">
-<p><strong>Android 用 NimoteCode をインストールし、SSH、コード、Git コンテキストをまとめて維持します。</strong></p>
-  <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=android_ssh_client" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for Android</a>
-    <a href="/demo?utm_source=android_ssh_client&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
-  </p>
+<div class="doc-screenshots">
+  <DocScreenshot file="remote-connection-form.jpg" caption="Android の SSH 接続画面。ポートテストと認証設定を表示。" />
 </div>
 
-## 関連ページ
+## アドレスと権限
 
+LAN では使用中の Wi-Fi／Ethernet アドレスを使い、外部では VPN などの安全な経路を用意します。ホストを起動しておく必要があります。認証はサーバーの方針、SFTP 保存はファイル権限にも従います。
 
-- [2026 年のベストモバイル IDE](/blog/best-ssh-clients) — ワークスペースとターミナルファーストのアプローチがさまざまなタスクにどのように適合するか
+Windows は PowerShell と SFTP を使います。[Windows ガイド](/ja/docs/windows-ssh-sftp)で OpenSSH とファイアウォールを設定します。Mac と Linux はホストの Shell を使います。
 
-- [リモート開発用のSSH IDE](/ssh-ide)
+## ファイル操作まで検証
 
-- [モバイルAIコーディング](/mobile-ai-coding)
+ユーザー所有の場所でファイルを開いて保存し、ターミナルのディレクトリと所定の検証を確認してから Git 差分を読みます。Git、言語サービス、外部 Agent はホスト側の導入と権限が必要です。
 
-- [機能と入手可能性](/features)
+詳細は[リモート開発の設定](/ja/remote-coding)、ホストなしの Android 作業は [Android IDE](/ja/android-ide)、機能一覧は [SSH IDE](/ja/ssh-ide)を参照してください。
 
-- [ダウンロードと最初のステップ](/download?utm_source=android_ssh_client&utm_medium=organic&utm_campaign=related_download)
+ローカル／SSH ファイルの編集と基本ターミナルから始められます。一部機能には Pro が必要です。[無料版と Pro](/ja/pro)およびアプリ内の利用状態を確認してください。AI にはモデル提供元の設定が必要で、利用料は提供元が別途請求します。
+
+<div class="seo-cta">
+  <p><strong>NimoteCode をダウンロード</strong></p>
+  <p class="seo-cta-actions">
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="/ja/docs/quick-start" class="home-page-btn secondary">クイックスタート</a>
+  </p>
+</div>

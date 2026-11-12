@@ -1,79 +1,59 @@
 ---
-title: "Remote Coding from Your Phone or Tablet | NimoteCode"
-description: "Remote coding from a phone or tablet done right: connect over SSH to your development machine, edit the real project, run terminal commands and review Git changes with NimoteCode."
+title: "Remote Coding Setup for Phone & Tablet | NimoteCode"
+description: "Set up remote coding from Android, iPhone or iPad: prepare an SSH host, verify SFTP, select a repository, run checks and troubleshoot the network or account."
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# Remote Coding from Your Phone or Tablet
+# Remote coding: connect your phone to an existing project
 
-Remote coding means editing and running the project on one machine while you interact from another. The most common setup is a phone or tablet connecting over SSH to your desktop, laptop or server, and working in the real repository instead of a copy.
+Keep the repository, dependencies, and services on your development machine, then use NimoteCode to browse and edit from a phone or tablet. This guide covers the connection and verification sequence; the [SSH IDE overview](/ssh-ide) explains the app’s capabilities.
 
-NimoteCode is a mobile workspace built for that model. Instead of reducing remote coding to a stream of shell text, it gives you an Explorer for the project, an editor for the files, a terminal for commands, Git for review and AI assistance for context — all connected to the same remote host.
+## 1. Prepare the host and network
 
-<figure class="article-hero">
-  <a href="/images/placeholders/remote-workspace-connected.jpg" target="_blank" rel="noopener"><img src="/images/placeholders/remote-workspace-connected.jpg" width="1080" height="2376" alt="A connected remote workspace in NimoteCode" loading="eager" decoding="async"></a>
-  <figcaption>Remote work starts by confirming the host and project root, not by making the first edit.</figcaption>
+Enable the host SSH server, keep the machine awake, and confirm the intended account can access the repository. Use the real LAN address for the first test. For access away from home, set up a secure path such as a VPN. Do not assume a firewall rule alone makes the machine reachable.
+
+## 2. Connect and check file access
+
+1. Create an SSH profile with host, port, account, and permitted authentication. Verify the host-key fingerprint.
+2. Choose the project root in Remote Explorer. Open a test file and save it in a user-owned folder to validate SFTP and write permissions.
+3. Open Terminal and confirm its directory and branch independently of the editor. On Linux or macOS, the following commands help.
+
+```sh
+pwd
+git status --short --branch
+```
+
+<figure class="seo-phone-capture">
+  <a href="/images/ios/iphone-ssh.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-ssh.webp" width="660" height="1433" alt="iPhone Remote Explorer showing the connected SSH project." loading="lazy" decoding="async">
+  </a>
+  <figcaption>iPhone Remote Explorer showing the connected SSH project. Source: NimoteCode App Store listing. Promotional screenshot, not a continuous recording.</figcaption>
 </figure>
 
-## What remote coding actually requires
+## 3. Verify a real change
 
-A workable remote setup needs three things: a host you trust and can reach over SSH, a connection that survives mobile network changes, and a workspace that keeps files, terminal and Git together. Tools that only give you one of those — a plain SSH client, or an editor with no connection — leave the loop broken.
+Save an edit, run the repository’s documented check on the host, then inspect Git changes before committing. A shell connection does not install dependencies, and an editor tab does not prove that the terminal uses the same checkout. Use host session management for long jobs; check their state after a disconnect.
 
-## When remote coding is useful
+## Troubleshoot by layer
 
-- Your codebase lives on a Mac, Linux desktop or server and you are away from it.
-- You need to investigate an incident, apply a small fix or review a diff remotely.
-- You travel with a phone or tablet and want to keep a task moving.
-- You prefer the remote machine's full tooling and compute over local emulation.
+| Symptom | Check |
+| --- | --- |
+| Timeout | Host power, address, VPN, firewall, network isolation |
+| Connection refused | SSH service and listening port |
+| Authentication denied | Username, account policy, password or key |
+| Shell works, files fail | SFTP subsystem and directory permissions |
+| Commands fail | Working directory, host dependencies and permissions |
 
-## How NimoteCode fits
+Windows users can follow the [OpenSSH/SFTP walkthrough](/docs/windows-ssh-sftp). For phone-only work without a host, see [coding from a phone](/code-from-phone). Use the [SSH reference](/docs/ssh) for app settings.
 
-Connect through [SSH workspace](/docs/ssh), pick the project root, and the repository stays on the host. Your phone or tablet works with the real files: browse in Explorer, edit in tabs, run checks in Terminal and inspect Git history without copying anything to the device. For projects already on the device, the same workspace opens them locally.
-
-## A typical remote coding session
-
-1. Open the SSH profile and connect to your development host.
-2. Locate the relevant module or file in the project Explorer.
-3. Edit the smallest required change in the editor.
-4. Run the focused test, build or log command in [Terminal](/docs/terminal).
-5. Review the staged and unstaged result in [Source Control](/docs/source-control).
-6. Use [AI Chat and Agent](/docs/ai) to explain an error or plan the next step with full project context.
-
-## The remote versus local difference
-
-- **Remote**: project, tooling and compute stay on the host; the phone reads and edits it over SSH. Best for existing machines, servers and heavy projects.
-- **Local**: project files live on the device and open without a network. Best for quick experiments and offline work, but limited by phone storage and compute.
-
-## Limitations of remote coding
-
-Remote coding depends on the network and the host. On a weak connection you will feel latency in keystrokes and terminal output; reconnect-aware handling helps but does not remove it. Very large repositories can take time to browse until search indexes are ready. And the host does the heavy work — a phone cannot speed up an underpowered server. For long, heavy compile loops, a desktop remains the more comfortable place.
-
-## Frequently asked questions
-
-### What does remote coding mean in practice?
-
-Remote coding means editing and running the project on one machine while you interact from another. The most common setup is a phone or tablet connecting over SSH to your desktop, laptop or server and working in the real repository.
-
-### Is remote coding over SSH slow?
-
-Interactive editing over SSH is generally responsive on a good connection. Heavy operations — large builds, full reindexing or long-running compiles — are subject to your network and the remote host, and are often better left to the desktop.
-
-### Do I need the project files on my phone?
-
-No. With an SSH workspace the project stays on the remote host. Your phone reads and edits the files over SSH and sees the terminal output and Git data from that machine, instead of duplicating the repository.
+Start with local or SSH editing and the basic terminal. Some capabilities require Pro access; check [Free and Pro](/pro) and the access shown in the app. AI requires your own model provider, whose usage is billed separately.
 
 <div class="seo-cta">
-  <p><strong>Keep your project, terminal and Git review with you wherever you are.</strong></p>
+  <p><strong>Download NimoteCode</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=remote_coding" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for Android</a>
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noreferrer">Download for iOS</a>
-    <a href="/demo?utm_source=remote_coding&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="/docs/quick-start" class="home-page-btn secondary">Quick start</a>
   </p>
 </div>
-
-## Related pages
-
-- [SSH IDE for remote development](/ssh-ide)
-- [Mobile IDE overview](/mobile-ide)
-- [Android IDE for SSH, Git and AI Coding](/android-ide)
-- [Code from a phone](/code-from-phone)
-- [How to Use Android as a Remote IDE with Tailscale](/blog/tailscale-ssh-android-mac-linux)

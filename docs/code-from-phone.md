@@ -1,74 +1,62 @@
 ---
-title: "Can You Code From a Phone? What Works and What Doesn't | NimoteCode"
-description: "Yes, you can code from a phone for focused work. Learn what realistic mobile coding looks like — SSH to your own machine, edit, run and review the real project — and where a desktop still wins."
+title: "How to Code From a Phone: Local Files, Linux or SSH | NimoteCode"
+description: "Start coding from Android or iPhone with the right environment. Edit local files, run a first Python script in Android Local Linux or SSH, and verify the result."
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# Can You Code From a Phone?
+# How to code from a phone: choose a place to run the project
 
-Yes — for focused development work, not for replacing a desktop. Investigating an issue, making a small fix, running commands, reviewing a diff or driving an AI agent on your existing project are all realistic from a phone when the tooling is built for it.
+You can write and edit code on a phone. Running it needs an environment that supports its language and dependencies. NimoteCode offers local file editing, SSH workspaces, and Local Linux on supported Android devices. Start with the project you want to use, rather than installing every tool at once.
 
-NimoteCode makes **coding from a phone** practical by connecting you over SSH to your own development machine, then putting the project Explorer, editor, terminal, Git and AI in one workspace. Computation and tooling stay on that machine, while the phone works on the same repository.
+## Choose one route
 
-<figure class="article-hero">
-  <a href="/images/placeholders/remote-workspace-connected.jpg" target="_blank" rel="noopener"><img src="/images/placeholders/remote-workspace-connected.jpg" width="1080" height="2376" alt="A phone connected to a remote project workspace" loading="eager" decoding="async"></a>
-  <figcaption>A phone works best for a bounded task with a clear check and a diff you can read before you stop.</figcaption>
+| Your situation | Start with | Execution |
+| --- | --- | --- |
+| Change text, HTML, or configuration | A local folder with granted access | Editing alone does not provide a runtime |
+| Learn shell or run a compatible script on Android | Local Linux on supported Android 8+ ARM64/x86_64 | Device Ubuntu userspace; install language tools |
+| Continue a project already on a computer | SSH to that Windows, Mac, or Linux host | The host’s tools and dependencies |
+
+Local Linux uses PRoot without root access and is unavailable on iPhone or iPad. A basic editor is enough for text-only tasks; you do not need AI to begin.
+
+<figure class="seo-phone-capture">
+  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="Editing source on iPhone; running it requires a configured runtime." loading="lazy" decoding="async">
+  </a>
+  <figcaption>Editing source on iPhone; running it requires a configured runtime. Source: NimoteCode App Store listing. Promotional screenshot, not a continuous recording.</figcaption>
 </figure>
 
-## What coding from a phone really means
+## Try a first Python script
 
-Coding from a phone works when the loop stays short: open the project, read the relevant code, make a narrow change, run a check and review the result. It breaks when tools force you to copy files and snippets between apps, or when you try to compile a large project locally on the phone. The reliable pattern is to connect to a machine you already own and trust.
+In a writable project folder, create `hello.py` in the editor with this content:
 
-## When it is worth doing
+```python
+print("Hello from NimoteCode")
+```
 
-- You are on call and need to investigate an error or apply a quick fix.
-- You want to review a pull request or diff while away from a laptop.
-- You need to keep a small task moving during travel.
-- You want workspace-aware AI help on a real project, not a pasted fragment.
+Save it. In Local Linux or a Linux/macOS SSH host with Python 3 installed, open Terminal in that folder and run:
 
-## How NimoteCode fits
+```sh
+python3 hello.py
+```
 
-Open a [local workspace](/docs/ssh) for projects already on the device, or connect to your Mac, Linux machine or server with an SSH workspace. From there you browse files, edit in the editor, run commands in [Terminal](/docs/terminal), review [Git changes](/docs/source-control) and use [AI Chat and Agent](/docs/ai) — the same workflow you would run on a desktop, shaped for a mobile screen.
+Expect `Hello from NimoteCode`. If the command is missing, install Python in the execution environment using its package manager. A local file tab is not a Python installation. On Windows, use the Python command installed on that host. See [Local Linux setup](/docs/local-linux) or [remote coding](/remote-coding) for preparation.
 
-## A realistic phone coding session
+## Move from an example to your project
 
-1. Connect to your development host over SSH and open the project root.
-2. Find the relevant file in Explorer.
-3. Make the smallest safe change in the editor.
-4. Run the focused verification command in Terminal.
-5. Review the diff in Source Control before committing.
-6. Ask AI to explain the code or plan the next step when you get stuck.
+Open the real repository root, read its setup instructions, and check existing changes. Install dependencies in the selected runtime. Save edits before tests, run the project’s checks, and review Git changes. Learn [editor navigation](/docs/editor) and [Source Control](/docs/source-control) before a large change.
 
-## Where coding from a phone is limited
+## Know when to change environments
 
-A phone screen is smaller, so long cross-file refactors and heavy design sessions are harder. Local compilation of large projects is rarely practical on a phone — use your remote machine instead. Network quality affects every remote session, and you should keep AI suggestions and agent runs narrow and verified. These are real constraints; the useful question is which tasks still fit within them.
+A phone can control a powerful host, but it cannot make missing dependencies disappear. Move incompatible PRoot tools or heavy builds to a suitable SSH host. For a broad refactor or complicated visual debugging, use the screen and input setup that lets you inspect the work clearly. [Mobile IDE](/mobile-ide) explains how to choose a workspace.
 
-## Frequently asked questions
-
-### Is it realistic to code from a phone?
-
-Yes for focused work: investigating an issue, making a small fix, running commands, reviewing a diff or driving an AI agent on your existing project. Long-form feature work and heavy compilation remain more comfortable on a desktop.
-
-### How do I actually code from a phone?
-
-The reliable pattern is to connect to your own development machine over SSH with a mobile development workspace, then browse, edit, run and review the project — instead of copying files or snippets between apps.
-
-### Which phones can run NimoteCode?
-
-NimoteCode is available for Android phones and tablets on Google Play and for iPhone and iPad on the App Store.
+Start with local or SSH editing and the basic terminal. Some capabilities require Pro access; check [Free and Pro](/pro) and the access shown in the app. AI requires your own model provider, whose usage is billed separately.
 
 <div class="seo-cta">
-  <p><strong>Make the moments when you only have a phone productive.</strong></p>
+  <p><strong>Download NimoteCode</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=code_from_phone" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for Android</a>
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noreferrer">Download for iOS</a>
-    <a href="/demo?utm_source=code_from_phone&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="/docs/quick-start" class="home-page-btn secondary">Quick start</a>
   </p>
 </div>
-
-## Related pages
-
-- [Mobile IDE overview](/mobile-ide)
-- [Remote coding from a phone or tablet](/remote-coding)
-- [SSH IDE for remote development](/ssh-ide)
-- [Mobile AI coding workspace](/mobile-ai-coding)
-- [Can an AI Agent Really Code From a Phone?](/blog/can-an-ai-agent-really-code-from-a-phone)

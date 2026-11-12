@@ -1,71 +1,74 @@
 ---
-title: "iPhone SSH Client for Coding Workflows | NimoteCode"
-description: "Looking for an iPhone SSH client that supports real coding workflows? See how NimoteCode brings remote files, terminal, Git and AI coding context into a mobile development workspace."
-noindex: true
-canonical: https://nimotecode.com/download
+title: "Cliente SSH para iPhone con SFTP, editor y Git | NimoteCode"
+description: "Conecta NimoteCode en iPhone por SSH, explora archivos con SFTP, edita código, ejecuta comandos del equipo remoto y revisa Git. Configuración y descarga en App Store."
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# Cliente SSH de iPhone para flujos de trabajo de codificación
+# Cliente SSH para iPhone: trabaja en tu proyecto
 
+¿Necesitas consultar un archivo del servidor, corregir un script o revisar un repositorio fuera de casa? NimoteCode reúne terminal SSH, explorador remoto, editor, revisión Git e IA opcional en un espacio para iPhone. El proyecto permanece en el equipo remoto y el teléfono proporciona la interfaz.
 
-Un cliente SSH de iPhone es esencial cuando necesitas comunicarte con un host remoto lejos de tu escritorio. Para los desarrolladores, la pregunta importante es qué sucede después de que se abre la conexión: ¿pueden inspeccionar el proyecto, editar el archivo correcto, verificar el resultado y comprender el cambio que realizó?
+Para ejecutar solo comandos puede bastar una terminal dedicada. NimoteCode resulta útil cuando también necesitas encontrar un archivo, editarlo, comprobar el resultado y revisar los cambios.
 
+<figure class="seo-phone-capture">
+  <a href="/images/ios/iphone-ssh.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-ssh.webp" width="660" height="1433" alt="Remote Explorer de NimoteCode en iPhone con el proyecto y la conexión SSH." loading="lazy" decoding="async">
+  </a>
+  <figcaption>Remote Explorer de NimoteCode en iPhone con el proyecto y la conexión SSH. Fuente: ficha de NimoteCode en App Store. Captura promocional; no es una grabación continua.</figcaption>
+</figure>
 
-NimoteCode ofrece ese flujo de trabajo en iPhone y iPad: **Explorer + SSH + Terminal + Git + AI Chat and Agent**, con un editor de código en el centro. Está disponible en la App Store, con las mismas funciones configuradas que la versión de Android.
+## Conecta el iPhone a tu equipo de desarrollo
 
+1. Activa el servidor SSH en Windows, Mac o Linux y confirma que el equipo esté encendido y accesible. En Windows, sigue la [guía de OpenSSH y SFTP](/es/docs/windows-ssh-sftp).
+2. Elige **Connect Remote Workspace** e introduce servidor, puerto, usuario y autenticación.
+3. Antes de aceptar la primera conexión, compara la huella de la clave con un valor fiable obtenido en el equipo.
+4. Selecciona la raíz del repositorio y confirma conexión y ruta en Remote Explorer.
+5. Edita y guarda un archivo de prueba en una carpeta del usuario y comprueba el resultado en el equipo remoto.
 
-<ImagePlaceholder image-key="iphoneSshClient" alt="iPhone SSH workflow">
-  <strong>Image placeholder — iPhone SSH workflow</strong>
-  <span>Replace with an approved iPhone product mockup when available.</span>
-</ImagePlaceholder>
+La [guía SSH](/es/docs/ssh) explica perfiles y selección de carpetas. Fuera de la LAN necesitas una ruta segura, como una VPN. Instalar el cliente no hace accesible el servidor por sí solo.
 
-## En iPhone, termina ciclos cortos y verificables
+## Explora por SFTP y edita en el mismo espacio
 
-Confirma el host y repositorio correctos, realiza solo el cambio necesario, ejecuta una comprobación conocida y revisa el diff de Git. No trates el teléfono como sustituto del escritorio para cambios grandes o salidas difíciles de leer.
+Busca código, documentación y configuración en el árbol del proyecto y abre archivos en pestañas. Guarda antes de ejecutar herramientas externas. SFTP respeta los permisos de la cuenta; iniciar sesión no concede escritura en todas las carpetas.
 
-## Qué esperar de un cliente SSH centrado en desarrolladores
+Las rutas SFTP de Windows pueden diferir de las locales. Utiliza las rutas que devuelve el servidor. La [guía del editor](/es/docs/editor) explica pestañas, selección de texto y paneles divididos.
 
+## Ejecuta comandos y revisa Git
 
-Para una tarea de codificación, busque más que perfiles de host y una terminal:
+Los comandos se ejecutan en el equipo remoto. Allí deben estar los compiladores, Git, servidores de lenguaje y dependencias. Comprueba carpeta y rama antes de editar; lee el diff y ejecuta las comprobaciones del proyecto antes de confirmar.
 
+iOS puede suspender aplicaciones en segundo plano. Para tareas largas, prepara una estrategia de sesiones en el equipo y verifica su estado al reconectar.
 
-- Un explorador remoto para que pueda navegar por el proyecto en lugar de escribir todas las rutas.
+## Qué funciona en iPhone y qué necesita un equipo remoto
 
-- Un editor que mantiene archivos y cambios en contexto.
+Las carpetas locales permiten editar archivos con los permisos de iOS, pero no proporcionan automáticamente compiladores ni Linux. **Local Linux de NimoteCode es exclusivo de Android**. Este flujo para iPhone ejecuta los comandos del proyecto en el equipo SSH. La IA es opcional y requiere configurar el proveedor. Consulta [IA](/es/docs/ai) y [programar con iPad](/es/ipad-coding).
 
-- Una terminal para comandos, registros, pruebas y comprobaciones de implementación reales.
+## Preguntas frecuentes
 
-- Herramientas Git para revisar el resultado antes de que salga de su dispositivo.
+<!-- faq:start -->
 
-- Asistencia de IA que puede funcionar desde el archivo actual y la tarea del espacio de trabajo.
+### ¿Admite SFTP en iPhone?
 
+Sí. El espacio SSH utiliza SFTP para acceder a archivos remotos, según la configuración del servidor y los permisos de la cuenta. Comprueba por separado listado, apertura y guardado de un archivo de prueba.
 
-Estas piezas le permiten seguir un ciclo compacto pero responsable: conectar, inspeccionar, editar, verificar y revisar. Consulte la [página SSH IDE](/ssh-ide) para ver el flujo de trabajo remoto completo y [Diagnóstico de terminal](/docs/terminal) para la ejecución de comandos y la solución de problemas.
+### ¿Puedo ejecutar Ubuntu directamente en iPhone?
 
+No. Local Linux de NimoteCode solo está disponible en dispositivos Android compatibles. En iPhone, un equipo SSH proporciona la shell Linux y las herramientas del proyecto.
 
-## Disponibilidad de productos iPhone y iPad
+### ¿Debo configurar IA antes de usar SSH?
 
+No. Puedes conectar, explorar archivos, editar y usar la terminal básica sin configurar un modelo. La IA tiene requisitos independientes de proveedor y acceso.
 
-NimoteCode para iPhone y iPad ya está disponible en la App Store. Puede instalarlo desde el siguiente enlace, sujeto a disponibilidad de la tienda regional.
+<!-- faq:end -->
 
-
-Si también usas Android, puedes instalar la versión actual de Android desde Google Play.
-
+Puedes empezar con edición local o SSH y la terminal básica. Algunas funciones requieren Pro; consulta [Gratis y Pro](/es/pro) y el acceso mostrado en la aplicación. La IA requiere configurar tu proveedor de modelos, que factura el uso por separado.
 
 <div class="seo-cta">
-  <p><strong>Bring the full SSH editing workflow to your iPhone or iPad — available now on the App Store.</strong></p>
+  <p><strong>Descargar NimoteCode</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for iOS</a>
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=iphone_ssh_client" class="home-page-btn tertiary" target="_blank" rel="noreferrer">Download for Android</a>
-    <a href="/demo?utm_source=iphone_ssh_client&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="/es/docs/quick-start" class="home-page-btn secondary">Guía de inicio</a>
   </p>
 </div>
-
-## Continuar explorando
-
-
-- [espacio de trabajo de codificación de iPad](/ipad-coding)
-
-- [Descripción general del IDE móvil](/mobile-ide)
-
-- [Documentación de inicio rápido](/docs/quick-start)

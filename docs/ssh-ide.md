@@ -1,85 +1,50 @@
 ---
-title: "SSH IDE for Remote Development | NimoteCode"
-description: "Use NimoteCode as an SSH IDE for remote development: connect to a project, browse files, edit code, run terminal commands, review Git changes and use AI assistance from mobile."
+title: "SSH IDE for Remote Files, Terminal & Git | NimoteCode"
+description: "Explore NimoteCode SSH IDE capabilities: SFTP project browsing, code editing, host terminal, Git and configured language tools. Understand host and access requirements."
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# SSH IDE for Remote Development
+# SSH IDE: files, tools, and review around one project
 
-An SSH connection is useful for checking a server. An **SSH IDE** is useful when you need to understand and change the project behind that server.
+An SSH terminal is enough to run a known command. An SSH IDE helps when you need to navigate the repository behind that command, edit a file, and inspect the patch. NimoteCode combines a remote project explorer, code editor, terminal, Git, and optional AI for Android, iPhone, and iPad.
 
-NimoteCode turns a remote SSH connection into a development workspace. Instead of treating the remote host as a stream of shell text, you can browse its project tree, open files in an editor, run commands in terminal, review Git changes and bring AI assistance into the same task.
+## Understand the three layers
 
-<figure class="article-hero">
-  <a href="/images/placeholders/remote-workspace-connected.jpg" target="_blank" rel="noopener"><img src="/images/placeholders/remote-workspace-connected.jpg" width="1080" height="2376" alt="A NimoteCode SSH workspace connected to a remote project" loading="eager" decoding="async"></a>
-  <figcaption>An SSH IDE is useful when the terminal output can be traced to a file, verified, and reviewed in the same project.</figcaption>
+| Layer | Purpose | Requirement |
+| --- | --- | --- |
+| SSH connection | Reach and authenticate to the host | A reachable server and permitted account |
+| SFTP file access | Browse, open, and save remote files | Working server subsystem and file permissions |
+| Host tools | Run Git, checks, language services, or an agent | Installed dependencies, credentials, and execution rights |
+
+A working shell does not prove SFTP works, and opening a file does not install a toolchain. Keep those checks separate.
+
+<figure class="seo-phone-capture">
+  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone code editor with source tabs and keyboard." loading="lazy" decoding="async">
+  </a>
+  <figcaption>iPhone code editor with source tabs and keyboard. Source: NimoteCode App Store listing. Promotional screenshot, not a continuous recording.</figcaption>
 </figure>
 
-## From SSH connection to working context
+## What the workspace provides
 
-The practical order matters:
+Use Explorer to choose a project root and editor tabs or split panes to inspect related files. Save before running commands. Source Control shows changes and history; Git write and GitHub operations depend on feature access and repository permissions. Language servers and debug adapters require compatible configuration on the execution target.
 
-1. Connect with a saved SSH profile and select the remote project root.
-2. Use Explorer to find the relevant files instead of memorising paths.
-3. Open code in tabs and make the smallest safe change.
-4. Run the relevant check, test, log query or build command in Terminal.
-5. Review the diff in Git before you commit or hand off.
+## Match the host environment
 
-That sequence is why NimoteCode is positioned as a mobile development workspace rather than a basic SSH client. The terminal remains central, but it is surrounded by the tools that let you act on what the terminal reveals.
+Windows workspaces use PowerShell and SFTP; see [Windows setup](/docs/windows-ssh-sftp). Mac and Linux hosts use their configured shell and tools. Keep the project on a host with the dependencies it needs, and ensure it stays awake. A network connection does not maintain host processes.
 
-## SSH workflow features
+## Set up or troubleshoot the connection
 
-### Remote Explorer and editing
+For a complete setup sequence, use [remote coding](/remote-coding) and the [SSH reference](/docs/ssh). To decide between on-device and remote execution, start with [Mobile IDE](/mobile-ide). For AI runtime choices, use [mobile AI coding](/mobile-ai-coding).
 
-Use remote file browsing to locate a repository, configuration file or service module. Tabbed editing keeps nearby files available while you trace an issue, and project search helps with larger codebases.
-
-### Terminal with project context
-
-The [Terminal guide](/docs/terminal) covers command sessions, output search and reconnect-aware workflows. The valuable difference is proximity: the active project, changed file and command output are part of one workspace.
-
-### Git and verification
-
-For a real change, command success alone is not enough. [Source Control](/docs/source-control) gives you a place to inspect staged and unstaged changes, commit history, branches and diffs. Advanced Git write workflows are available with Pro.
-
-### AI assistance with controls
-
-Use [AI Chat and Agent](/docs/ai) to explain code, plan an edit or help move through a multi-step task. For remote environments, review commands and changes before they run—especially in production-adjacent workspaces.
-
-## When an SSH IDE is the better fit
-
-Choose this approach when you expect to move from observation to action: a production hotfix, on-call diagnostics, a small remote feature update, or a review while away from your desktop. If you only need a command prompt, a simple SSH client may be enough. If you need to change code responsibly, the editor, Git view and AI context make the difference.
-
-## Limitations of SSH IDE work on mobile
-
-An SSH IDE depends on a stable connection to the remote host. On a weak network you will feel latency in editor keystrokes and terminal output, and the connection should be reconnect-aware. Very large repositories can be slower to browse until search indexes are ready. Finally, the remote host does the heavy work — a phone cannot compensate for an underpowered server — and long, heavy compile loops are still more comfortable on a desktop screen.
-
-## Frequently asked questions
-
-### What is an SSH IDE?
-
-An SSH IDE adds project browsing, code editing, terminal commands and Git review around an SSH connection, so you can work on a remote codebase instead of only running shell commands.
-
-### Can I review Git changes after editing over SSH?
-
-Yes. NimoteCode keeps Source Control next to the remote workspace so you can inspect diffs and use supported Git workflows before shipping a change.
-
-### When is an SSH IDE better than a terminal-only client?
-
-Choose an SSH IDE when the task includes locating files, editing code, running verification commands and reviewing a diff. A terminal-only client may be enough for command-only work.
+Start with local or SSH editing and the basic terminal. Some capabilities require Pro access; check [Free and Pro](/pro) and the access shown in the app. AI requires your own model provider, whose usage is billed separately.
 
 <div class="seo-cta">
-  <p><strong>Turn SSH access into a development workflow.</strong></p>
+  <p><strong>Download NimoteCode</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=ssh_ide" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for Android</a>
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noreferrer">Download for iOS</a>
-    <a href="/demo?utm_source=ssh_ide&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="/docs/quick-start" class="home-page-btn secondary">Quick start</a>
   </p>
 </div>
-
-## Continue exploring
-
-- [Mobile IDE overview](/mobile-ide)
-- [Android SSH client](/android-ssh-client)
-- [The Best Mobile IDEs in 2026](/blog/best-ssh-clients)
-- [iPhone SSH client](/iphone-ssh-client)
-- [Terminal diagnostics](/docs/terminal)
-- [How to Use Android as a Remote IDE with Tailscale](/blog/tailscale-ssh-android-mac-linux)

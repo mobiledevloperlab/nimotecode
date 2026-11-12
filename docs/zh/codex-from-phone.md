@@ -1,72 +1,130 @@
 ---
-title: "通过 SSH 与 Git 用手机使用 Codex | NimoteCode"
-description: 在一个实用的远程开发工作流中用手机使用 Codex：SSH 进入开发主机、检查项目文件、运行检查并用 NimoteCode 审查 Git 改动。
+title: "用手机通过 SSH 使用 Codex | NimoteCode"
+description: "在开发主机运行 Codex，通过 Android 或 iPhone 上的 NimoteCode 访问。包含配置、会话恢复、Git 审查与分层排障步骤。"
+lastUpdated: "2026-11-13"
+pageClass: "seo-product-guide"
 ---
 
-# 如何用手机使用 Codex
+# 用手机通过 SSH 使用 Codex
 
-编码代理在靠近它们需要的仓库、终端与测试环境时最有用。如果 Codex 配置在远程开发主机上，基于 SSH 的移动工作区可以让你在手机上延续这份工作，而不是把它退化成一堆贴来贴去的片段。
+希望项目继续留在开发机上，用手机接着处理 Codex 任务？本文通过 SSH 终端访问 Linux 或 macOS 主机上的 CLI，NimoteCode 在会话周围提供文件浏览、编辑、终端和 Git 审查。
 
-NimoteCode 结合了 Editor、Explorer、SSH 终端、Git、AI Chat 与 Agent，让你在相同的项目上下文中围绕远程 Codex 会话工作：打开源码、运行命令、检查输出并审查真实 diff。
+SSH 是一种方式，不是唯一的移动入口。只需跟进 Agent 任务时，也应查看提供商当前的网页、移动端和远程访问方案。需要直接操作主机文件和项目命令时，NimoteCode 工作区更有价值。
 
-<ImagePlaceholder image-key="codexFromPhone" alt="通过手机远程使用 Codex 的工作流">
-  <strong>图片占位 —— 远程 Codex 工作流</strong>
-  <span>请替换为已脱敏的远程 Agent 会话、源码检查与验证输出。请勿包含凭据或私有代码。</span>
-</ImagePlaceholder>
+## 1. 准备主机与账号
 
-## Agent 不能替代验证
+准备保持唤醒的 SSH 主机、可访问的仓库和项目依赖。先按官方说明在主机安装 Agent 并完成认证，再依赖手机连接。Agent 的账号、额度、权限与凭据独立于 NimoteCode。
 
-将 Agent 用在远程仓库时，先确认主机和项目根目录，再检查它触及的文件、命令和 diff。一个小而可观察的任务比一次无法在手机上充分验证的大改动更适合移动开发。
+请为主机选择 Codex 官方安装方式，例如：
 
-## 一个手机友好的 Codex 工作流
+```sh
+npm install -g @openai/codex
+codex --version
+```
 
-1. 在你方组织的凭据与控制要求下，在远程开发主机上配置 Codex。
-2. 通过 [SSH 工作区](/zh/docs/ssh) 在 NimoteCode 中打开仓库。
-3. 如果你的主机是这样配置的，就从 SSH 终端启动或恢复 Codex 会话。
-4. 用 Explorer 与编辑器标签页检查正在讨论或被改动的文件。
-5. 在终端运行聚焦的测试或检查。
-6. 提交或推送前，在[源代码管理](/zh/docs/source-control)中审查暂存与未暂存的结果。
+[Codex CLI](https://learn.chatgpt.com/docs/codex/cli) · [CLI reference](https://learn.chatgpt.com/docs/developer-commands?surface=cli)
 
-NimoteCode 不是要替代 Codex 或它的官方配置，而是保持周边开发工作连接且可审查的移动工作区。
+无浏览器主机可在允许时使用官方设备码方式 `codex login --device-auth`。按官方指引完成认证，手机浏览器的 localhost 并不是远程主机。
 
-## 在工作区里使用兼容 OpenAI 的 AI
+## 2. 从手机打开仓库
 
-NimoteCode 也支持为其应用内 AI Chat 与 Agent 工作流配置 AI 提供商。当你希望在 SSH 会话旁获得带工作区感知的解释、规划或受控自动化时，这很有用。提供商配置见 [AI Chat 与 Agent](/zh/docs/ai)，执行控制见[安全与防护](/zh/docs/security)。
+创建 [SSH 工作区](/zh/docs/ssh)，核对主机密钥指纹并选择仓库根目录。在终端切换到同一路径，检查已有修改。下面的路径是示例，不是 NimoteCode 自动创建的目录。
 
-## 让任务保持窄小且可观察
+以下 Shell 示例面向 Linux 或 macOS SSH 主机，请替换项目路径。Windows 主机应使用适合 PowerShell 的命令，参见 [Windows SSH 与 SFTP](/zh/docs/windows-ssh-sftp)。
 
-在手机上，速度来自减少上下文切换，而不是跳过安全措施。优先每次一个清晰目标，接受修改前先读文件，运行最小且合适的验证命令，并检查 Git diff。无论 Codex 在协助功能、重构还是事故响应，这套模式都适用。
+```sh
+cd /path/to/project
+pwd
+git status --short --branch
+```
 
-## 该工作流的局限
+<figure class="seo-phone-capture">
+  <a href="/images/ios/iphone-terminal.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-terminal.webp" width="660" height="1433" alt="NimoteCode 的 iPhone SSH 终端显示 Shell 命令。该图说明终端界面，并非 Codex 任务实录。" loading="lazy" decoding="async">
+  </a>
+  <figcaption>NimoteCode 的 iPhone SSH 终端显示 Shell 命令。该图说明终端界面，并非 Codex 任务实录。 来源：NimoteCode App Store 页面。此图为宣传截图，不是连续操作录屏。</figcaption>
+</figure>
 
-Codex 必须已经在你可通过 SSH 访问的主机上配置好；手机不会在本地运行 Codex。这意味着工作流受你的网络、主机配置与 Codex 账户限制影响。长时间或探索性的 Agent 会话更适合在桌面监管，所以在手机上请让每次运行保持窄小且可观察。NimoteCode 是独立的移动工作区——它不代理 Codex，Codex 自身的配置与安全控制仍然适用。
+## 3. 在主机会话中启动任务
+
+Linux 或 macOS 主机安装 tmux 后，可以在手机断线时保留主机上的终端会话。创建或连接命名会话，再在其中启动 Agent。重连时如果 Agent 仍在运行，继续使用该会话，不要重复启动另一个进程。
+
+```sh
+tmux new-session -A -s mobile-codex
+codex
+```
+
+从一个范围明确的请求开始：
+
+> 找到读取这个配置值的位置，说明相关文件并建议一项检查。先不要修改文件。
+
+## 4. 区分重新连接与恢复对话
+
+按 Ctrl+B，再按 D 可脱离 tmux。重新 SSH 登录后，连接同名会话。如果 Agent 已退出但保留了对话记录，可在同一仓库使用其恢复命令。已保存的对话和仍在运行的进程是两回事。
+
+```sh
+tmux attach-session -t mobile-codex
+```
+
+```sh
+codex resume
+```
+
+[tmux](https://github.com/tmux/tmux/wiki/Getting-Started)
+
+## 5. 在 Agent 对话之外验证结果
+
+在 NimoteCode 中打开变更文件，保存编辑器修改，运行仓库约定的测试或构建，并阅读 Git diff。下列命令用于检查补丁，不能替代项目测试。
+
+```sh
+git diff --check
+git diff --stat
+git diff
+```
+
+Nimote Agent 的 Confirm 模式控制内置 Agent 工作流，不控制手动 SSH 命令，也不能代替外部 CLI 的权限设置。应配置 CLI 自己的权限，不要仅为减少手机输入而关闭确认。
+
+## 按失败层次排查
+
+| 现象 | 优先检查 |
+| --- | --- |
+| SSH 超时 | 主机休眠、地址、VPN、防火墙和网络通路 |
+| 找不到 Agent 命令 | 该 SSH Shell 的安装路径和 PATH |
+| 登录失败 | Agent 账号及官方无浏览器认证说明 |
+| 会话消失 | tmux 会话、主机重启、进程退出，再考虑恢复对话 |
+| 无法运行检查 | 仓库目录、主机依赖及执行权限 |
+
+## 官方配置与相关指南
+
+[Codex CLI](https://learn.chatgpt.com/docs/codex/cli) · [CLI reference](https://learn.chatgpt.com/docs/developer-commands?surface=cli)
+
+[SSH](/zh/docs/ssh) · [Git](/zh/docs/source-control) · [AI / ACP](/zh/docs/ai)
 
 ## 常见问题
 
-### 用手机使用 Codex 需要 NimoteCode 吗？
+<!-- faq:start -->
 
-不需要。NimoteCode 是远程 Codex 会话周边的移动工作区——Explorer、编辑器、SSH 终端与 Git 审查——而 Codex 在你自己的开发主机上安装并认证。
+### NimoteCode 包含 Codex 订阅吗？
 
-### Codex 是 NimoteCode 的官方合作伙伴吗？
+不包含。Codex 需单独安装和认证。NimoteCode 提供主机会话周围的移动工作区，不包含该 Agent 的账号或使用额度。
 
-不是。Codex 是外部编码代理。NimoteCode 不声称与其有官方合作，也不代理 Codex；你在远程主机上运行 Codex，并通过 SSH 围绕它工作。
+### 关闭应用会让 Agent 自动继续运行吗？
 
-### 我可以在 NimoteCode 里用它的 AI 助手代替 Codex 吗？
+不会自动保证。主机会话工具可以帮助应对 SSH 断线，但主机和进程需要保持运行。重连时应检查状态。
 
-可以。NimoteCode 自带 AI Chat 与 Agent 工作流并支持提供商配置，既可以配合远程 Codex 会话使用，也可以单独使用。
+### 这是 Codex 官方手机客户端吗？
+
+不是。这是使用 NimoteCode 的独立 SSH 工作流指南。提供商支持的移动端或远程入口是其他可选方式。
+
+<!-- faq:end -->
+
+可以从本地或 SSH 编辑及基础终端开始。部分功能需要 Pro，参见[免费版与 Pro](/zh/pro)及应用内显示的访问状态。AI 需要配置自己的模型提供商，模型使用费用由提供商另行收取。
 
 <div class="seo-cta">
-  <p><strong>远程使用 Codex 时，把项目、命令输出与 Git 审查带在身边。</strong></p>
+  <p><strong>下载 NimoteCode</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=codex_from_phone" class="home-page-btn primary" target="_blank" rel="noreferrer">下载 Android 版</a>
-    <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noreferrer">下载 iOS 版</a>
-    <a href="/zh/demo?utm_source=codex_from_phone&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">观看演示</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="/zh/docs/quick-start" class="home-page-btn secondary">快速入门</a>
   </p>
 </div>
-
-## 相关页面
-
-- [移动 AI 编程工作区](/zh/mobile-ai-coding)
-- [用手机使用 Claude Code](/zh/claude-code-from-phone)
-- [SSH 远程开发工作流](/zh/docs/ssh)
-- [AI Agent 真的能在手机上编程吗？](/zh/blog/can-an-ai-agent-really-code-from-a-phone)
