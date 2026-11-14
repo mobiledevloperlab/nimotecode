@@ -1,3 +1,5 @@
+@import "../../../docs/.vitepress/theme/styles/tokens.css";
+
 /* Register design tokens for Tailwind v4 */
 @theme inline {
   --color-background: var(--background);
@@ -12,25 +14,13 @@
     "Microsoft YaHei", sans-serif;
 }
 
-/* Match the NimoteCode website palette in docs/.vitepress/theme/styles/tokens.css. */
-:root,
-[data-theme="light"] {
-  --background: #f7f8f8;
-  --foreground: #242426;
-  --accent: #6366f1;
-  --accent-foreground: #ffffff;
-  --muted: #f0f1f2;
-  --muted-foreground: #606068;
-  --border: rgba(35, 37, 42, 0.12);
-}
-
-/* Dark theme values */
-[data-theme="dark"] {
-  --background: #08090a;
-  --foreground: #e6e6e6;
-  --accent: #818cf8;
-  --accent-foreground: #08090a;
-  --muted: #161718;
-  --muted-foreground: #aaaaaa;
-  --border: #23252a;
+/* Palette aliases only: values are owned by the website's shared tokens. */
+:root {
+  --background: var(--nimote-bg);
+  --foreground: var(--nimote-text-primary);
+  --accent: var(--nimote-link);
+  --accent-foreground: var(--nimote-text-inverse);
+  --muted: var(--nimote-bg-subtle);
+  --muted-foreground: var(--nimote-text-secondary);
+  --border: var(--nimote-border);
 }

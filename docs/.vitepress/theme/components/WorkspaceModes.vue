@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useData } from 'vitepress'
-import MockIcon from './MockIcon.vue'
 import translations from '../i18n/home.json'
 import '../styles/workspace-modes.css'
 
@@ -21,8 +20,8 @@ const copy = computed(() => translations[locale.value])
     </div>
     <div class="workspace-mode-descriptions">
       <article v-for="(feature, index) in copy.features" :key="feature[0]" class="workspace-mode-description">
-        <MockIcon :name="['code', 'terminal', 'spark'][index]" />
-        <h3>{{ feature[0] }}</h3>
+        <p class="workspace-mode-label"><span>0{{ index + 1 }}</span>{{ feature[0] }}</p>
+        <h3>{{ copy.modeTitles[index] }}</h3>
         <p>{{ copy.modeSummaries[index] }}</p>
       </article>
     </div>

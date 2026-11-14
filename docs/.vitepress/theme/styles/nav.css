@@ -32,26 +32,24 @@
   border-bottom: 1px solid var(--border-subtle);
   background: var(--nimote-nav-bg) !important;
   box-shadow: none;
-  backdrop-filter: saturate(150%) blur(18px);
-  -webkit-backdrop-filter: saturate(150%) blur(18px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   transition: background-color 0.22s var(--nimote-ease), box-shadow 0.22s var(--nimote-ease);
 }
 
-/* At the very top of a marketing page the header keeps its transparent
-   treatment, but retains the same bottom separator as every other page. */
+/* Stable translucent chrome keeps the header consistent across page content. */
 .VPNavBar.top {
   background: var(--nimote-nav-bg) !important; /* fallback */
-  background: color-mix(in srgb, var(--nimote-bg) 66%, transparent) !important;
   border-bottom-color: var(--border-subtle);
 }
 
 .VPNavBar:not(.top) {
   background: var(--nimote-nav-bg-scrolled) !important;
-  box-shadow: 0 1px 0 rgba(8, 9, 10, 0.03), 0 10px 30px rgba(8, 9, 10, 0.035);
+  box-shadow: var(--nimote-shadow-sm);
 }
 
 .dark .VPNavBar:not(.top) {
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.025), 0 12px 32px rgba(0, 0, 0, 0.16);
+  box-shadow: var(--nimote-shadow-sm);
 }
 
 .VPNavBar .wrapper,
@@ -371,18 +369,14 @@
   padding: 0 14px;
   border: 1px solid var(--nimote-action);
   background: var(--nimote-action);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.22),
-    0 1px 2px rgba(8, 9, 10, 0.16);
+  box-shadow: var(--nimote-shadow-xs);
   color: var(--nimote-on-action);
 }
 .VPNavBarMenu .VPNavBarMenuLink:last-child:hover {
   background: var(--nimote-action-hover);
   border-color: var(--nimote-action-hover);
   filter: none;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.28),
-    0 2px 8px rgba(var(--nimote-accent-rgb), 0.18);
+  box-shadow: var(--nimote-shadow-sm);
   color: var(--nimote-on-action);
 }
 
@@ -464,7 +458,7 @@
   min-height: 34px;
   padding: 0 var(--sidebar-item-inset, 8px);
   border-radius: 6px;
-  background: linear-gradient(90deg, rgba(var(--nimote-accent-rgb), 0.08), transparent 72%);
+  background: var(--nimote-bg-subtle);
 }
 
 .VPSidebar .VPSidebarItem.level-0 > .item > .text,
@@ -522,7 +516,7 @@
 }
 
 .VPSidebarItem.level-1 > .item > .link:hover {
-  background: rgba(var(--nimote-accent-rgb), 0.055);
+  background: var(--nimote-bg-subtle);
   color: var(--nimote-text-primary);
 }
 
@@ -610,7 +604,7 @@
 }
 
 .VPDocAside .outline-link:hover {
-  background: rgba(var(--nimote-accent-rgb), 0.055);
+  background: var(--nimote-bg-subtle);
   color: var(--nimote-text-primary);
 }
 

@@ -19,13 +19,20 @@ for (const [locale, content] of Object.entries(copy)) {
   assert.deepEqual(app.featureList, [...content.facts, ...content.capabilities.map(([name]) => name), content.capabilityNote, content.byok], `${path}: app capabilities differ from localized content`)
   assert.ok(!schemas.some(item => ['TechArticle', 'BlogPosting'].includes(item['@type'])), `${path}: homepage classified as article`)
   assert.ok(!schemas.some(item => item['@type'] === 'FAQPage'), `${path}: removed homepage FAQ schema remains`)
+  assert.ok(!html.includes('id="download-title"'), `${path}: repeated final download pitch must not return`)
+  assert.ok(html.includes('id="getting-started-title"'), `${path}: first workspace guidance missing`)
   assert.ok(!html.includes('id="faq-title"'), `${path}: removed homepage FAQ remains`)
-  for (const text of [content.title, content.accent, content.intro, content.capabilityNote, content.byokLabel, content.reviewsTitle, content.reviewsNote, ...content.features.map(feature => feature[0]), ...content.modeSummaries]) {
+  for (const text of [content.title, content.accent, content.intro, content.capabilityNote, content.byokLabel, content.heroTasks, content.gettingStartedTitle, ...content.gettingStartedSteps.flat(), ...content.modeTitles, content.reviewsTitle, content.reviewsNote, ...content.features.map(feature => feature[0]), ...content.modeSummaries]) {
     assert.ok(body.includes(text), `${path}: content missing from static HTML: ${text}`)
   }
   assert.ok(html.includes('app-showcase') && html.includes('mock-phone') && html.includes('mock-tablet'), `${path}: original product mock must remain`)
   assert.ok(html.includes('workspace-mode-descriptions') && !html.includes('workspace-mode-picker'), `${path}: modes must be static descriptions`)
-  assert.ok(!/<video(?:\s|>)/.test(html), `${path}: video must stay unloaded until the demo is opened`)
+  const modes = html.slice(html.indexOf('class="workspace-modes"'), html.indexOf('id="product-demo"'))
+  assert.ok(!/<(?:img|picture|button)(?:\s|>)/.test(modes), `${path}: workspace modes must stay text-only without image switching`)
+  assert.ok(!html.includes('/images/home/'), `${path}: unapproved homepage screenshots must not return`)
+  assert.ok(/<details[^>]*class="product-demo-disclosure"[^>]*\sopen(?:\s|>)/.test(html), `${path}: demo must be expanded by default`)
+  assert.ok(/<video[^>]*preload="none"/.test(html) && html.includes('/videos/nimotecode.mp4'), `${path}: AI Agent demo should be visible first without preloading video data`)
+  assert.ok(/<details[^>]*class="product-technical-details"[^>]*\sopen(?:\s|>)/.test(html), `${path}: development tools and access details must be expanded by default`)
   assert.ok(html.indexOf('id="workflow-title"') < html.indexOf('id="product-demo"'), `${path}: workspace modes should precede the demo`)
   assert.ok(html.indexOf('id="reviews-title"') > html.indexOf('id="workflow-title"'), `${path}: reviews should follow features`)
   const snapshot = JSON.parse(readFileSync('docs/.vitepress/theme/data/google-play-reviews.json', 'utf8'))

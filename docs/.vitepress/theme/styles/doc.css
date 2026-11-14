@@ -229,16 +229,16 @@
   color: var(--nimote-text-primary);
 }
 .vp-doc .custom-block.tip {
-  border-color: rgba(16, 185, 129, 0.3);
-  background: rgba(16, 185, 129, 0.06);
+  border-color: color-mix(in srgb, var(--nimote-success) 30%, var(--nimote-border));
+  background: color-mix(in srgb, var(--nimote-success) 5%, var(--nimote-bg-elevated));
 }
 .vp-doc .custom-block.warning {
-  border-color: rgba(245, 158, 11, 0.35);
-  background: rgba(245, 158, 11, 0.06);
+  border-color: color-mix(in srgb, var(--nimote-warning) 30%, var(--nimote-border));
+  background: color-mix(in srgb, var(--nimote-warning) 5%, var(--nimote-bg-elevated));
 }
 .vp-doc .custom-block.danger {
-  border-color: rgba(239, 68, 68, 0.35);
-  background: rgba(239, 68, 68, 0.06);
+  border-color: color-mix(in srgb, var(--nimote-error) 30%, var(--nimote-border));
+  background: color-mix(in srgb, var(--nimote-error) 5%, var(--nimote-bg-elevated));
 }
 .vp-doc .custom-block.info {
   border-color: var(--nimote-border-accent);
@@ -350,9 +350,7 @@
   padding: 24px;
   border: 1px solid var(--nimote-border);
   border-radius: var(--nimote-radius-lg);
-  background:
-    radial-gradient(circle at top right, rgba(var(--nimote-accent-rgb), 0.08), transparent 46%),
-    var(--nimote-bg-subtle);
+  background: var(--nimote-bg-subtle);
   box-shadow: var(--nimote-shadow-xs);
 }
 
@@ -382,9 +380,7 @@
   padding: 28px;
   border: 1px dashed var(--nimote-border);
   border-radius: var(--nimote-radius-lg);
-  background:
-    linear-gradient(135deg, rgba(var(--nimote-accent-rgb), 0.05), transparent 58%),
-    var(--nimote-bg-subtle);
+  background: var(--nimote-bg-subtle);
   color: var(--nimote-text-secondary);
   text-align: center;
 }
@@ -726,9 +722,7 @@
   overflow: hidden;
   border: 1px solid var(--nimote-border);
   border-radius: var(--nimote-radius-lg);
-  background:
-    radial-gradient(circle at top right, rgba(var(--nimote-accent-rgb), 0.1), transparent 42%),
-    var(--nimote-bg-subtle);
+  background: var(--nimote-bg-subtle);
   box-shadow: var(--nimote-shadow-xs);
 }
 

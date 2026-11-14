@@ -1,9 +1,9 @@
 {
   "en": {
     "badge": "A mobile IDE for Android & iOS",
-    "title": "Your project,",
-    "accent": "ready when you are.",
-    "intro": "Connect to your development machine from your phone or tablet. Edit code, run commands, and review Git changes.",
+    "title": "Away from your desk.",
+    "accent": "Still in your project.",
+    "intro": "NimoteCode brings code editing, SSH terminals, and AI agents to your phone and tablet. Connect to your development machine, make a change, run tests, and review the result.",
     "android": "Get for Android",
     "ios": "Get for iOS",
     "watch": "Watch the demo",
@@ -16,8 +16,8 @@
       "Git, GitHub & optional AI"
     ],
     "eyebrow": "Three modes. One project.",
-    "heading": "One project. Three ways to work.",
-    "description": "Switch modes while keeping your project and Explorer state.",
+    "heading": "From a change to a checked result.",
+    "description": "Your files, commands, and AI share one project. Switch how you work without starting over.",
     "features": [
       [
         "IDE mode",
@@ -39,8 +39,8 @@
       ]
     ],
     "demoLabel": "See it in action",
-    "demoTitle": "See the workflow in action.",
-    "demoCopy": "Choose an AI Agent or workspace walkthrough.",
+    "demoTitle": "See a task through.",
+    "demoCopy": "Watch the AI Agent work through a project, or switch to the workspace walkthrough.",
     "demoSteps": [
       "Inspect",
       "Plan",
@@ -178,16 +178,40 @@
     "reviewExpand": "Read the full review",
     "reviewCollapse": "Collapse review",
     "modeSummaries": [
-      "Browse project files, edit across tabs, and review Git diffs in IDE mode.",
-      "Run commands, builds, and tests over SSH or supported Android Local Linux in Terminal mode.",
-      "Understand code, plan tasks, and work with an agent while reviewing its actions and results in AI mode."
-    ]
+      "Find your files, edit across tabs, and review Git diffs before committing a change.",
+      "Use the tools on your development machine for builds, tests, and scripts over SSH. Supported Android devices can also use Local Linux.",
+      "Let an agent read the project, propose a plan, and help execute it. Inspect the tool output and code changes."
+    ],
+    "heroTasks": "Quick fixes · Remote checks · Working with an agent",
+    "modeTitles": [
+      "Make the change.",
+      "Use your own environment.",
+      "Move a task forward."
+    ],
+    "gettingStartedTitle": "Your first workspace, in three steps.",
+    "gettingStartedCopy": "Start with a project you already know. Add AI when you need it.",
+    "gettingStartedSteps": [
+      [
+        "Choose a workspace",
+        "Connect to a development machine over SSH, or open a local folder to edit files."
+      ],
+      [
+        "Open your project",
+        "Browse its files and open the code you want to change."
+      ],
+      [
+        "Make one small change",
+        "Edit a file, then run a check over SSH and review the result."
+      ]
+    ],
+    "previewLabel": "2.4.0 Preview",
+    "previewMessage": "Major new features are coming soon!"
   },
   "zh": {
     "badge": "Android 与 iOS 移动 IDE",
-    "title": "项目在手边，",
-    "accent": "开发随时继续。",
-    "intro": "在手机和平板上连接开发主机，编辑代码、运行命令并审查 Git 改动。",
+    "title": "离开电脑，",
+    "accent": "继续推进项目。",
+    "intro": "NimoteCode 将代码编辑、SSH 终端和 AI Agent 放进手机与平板。连接开发主机，修改代码、运行测试，再核对结果。",
     "android": "下载 Android 版",
     "ios": "下载 iOS 版",
     "watch": "观看产品演示",
@@ -200,8 +224,8 @@
       "Git、GitHub 与可选 AI"
     ],
     "eyebrow": "三种模式，一个项目",
-    "heading": "一个项目，三种工作方式。",
-    "description": "切换模式，保留项目与资源管理器状态。",
+    "heading": "从修改到验证，都在一个项目里。",
+    "description": "文件、命令与 AI 共用项目上下文。切换工作方式，不必重新开始。",
     "features": [
       [
         "IDE 模式",
@@ -223,8 +247,8 @@
       ]
     ],
     "demoLabel": "真实操作演示",
-    "demoTitle": "看看实际操作。",
-    "demoCopy": "选择 AI Agent 或工作区演示，了解完整操作过程。",
+    "demoTitle": "看一次任务如何完成。",
+    "demoCopy": "先看 AI Agent 如何处理项目，也可以切换到工作区操作演示。",
     "demoSteps": [
       "检查",
       "规划",
@@ -362,16 +386,40 @@
     "reviewExpand": "展开完整评价",
     "reviewCollapse": "收起评价",
     "modeSummaries": [
-      "浏览项目、多文件编辑与 Git Diff 审查，让每次修改更清楚。",
-      "通过 SSH 或受支持的 Android Local Linux 运行命令、构建和测试。",
-      "理解代码、规划任务并协助执行，过程与结果可审查。"
-    ]
+      "找到项目文件，多标签编辑代码，在提交前核对 Git Diff，让修改更清楚。",
+      "通过 SSH 沿用开发主机的工具链，运行构建、测试与脚本；受支持的 Android 设备也可使用 Local Linux。",
+      "让 Agent 读取项目、提出计划并协助执行，工具输出和代码改动都可以检查。"
+    ],
+    "heroTasks": "临时修复 · 远程检查 · Agent 协作",
+    "modeTitles": [
+      "看清项目，完成修改。",
+      "沿用熟悉的开发环境。",
+      "让任务向前推进。"
+    ],
+    "gettingStartedTitle": "三步，开始你的第一个工作区。",
+    "gettingStartedCopy": "从你熟悉的项目开始，需要时再配置 AI。",
+    "gettingStartedSteps": [
+      [
+        "选择工作区",
+        "通过 SSH 连接开发主机，或打开本地文件夹编辑文件。"
+      ],
+      [
+        "打开项目",
+        "浏览目录，找到这次要修改的代码。"
+      ],
+      [
+        "完成一次小修改",
+        "编辑文件，通过 SSH 运行检查，再核对结果。"
+      ]
+    ],
+    "previewLabel": "2.4.0 预告",
+    "previewMessage": "重磅功能即将发布！"
   },
   "ja": {
     "badge": "Android・iOS 向けモバイル IDE",
-    "title": "プロジェクトの続きは、",
-    "accent": "スマートフォンから。",
-    "intro": "スマートフォンやタブレットから開発マシンに接続。コードを編集し、コマンドを実行して Git の変更を確認できます。",
+    "title": "デスクを離れても、",
+    "accent": "プロジェクトは進められる。",
+    "intro": "NimoteCode はコード編集、SSH ターミナル、AI エージェントをスマートフォンとタブレットに。開発マシンに接続し、コードを変更してテストし、結果を確認できます。",
     "android": "Android 版を入手",
     "ios": "iOS 版を入手",
     "watch": "デモを見る",
@@ -384,8 +432,8 @@
       "Git・GitHub・オプションの AI"
     ],
     "eyebrow": "3つのモード、1つのプロジェクト",
-    "heading": "1つのプロジェクト、3つの作業モード。",
-    "description": "モードを切り替えても、プロジェクトと Explorer の状態を維持。",
+    "heading": "変更から検証まで、ひとつのプロジェクトで。",
+    "description": "ファイル、コマンド、AI が同じプロジェクトを共有。作業モードを切り替えても、そのまま続けられます。",
     "features": [
       [
         "IDE モード",
@@ -407,8 +455,8 @@
       ]
     ],
     "demoLabel": "操作デモ",
-    "demoTitle": "実際の操作を見る。",
-    "demoCopy": "AI Agent またはワークスペースの操作デモを選択。",
+    "demoTitle": "タスクが進む様子を確認。",
+    "demoCopy": "AI エージェントの操作を確認するか、ワークスペースのデモに切り替えられます。",
     "demoSteps": [
       "調査",
       "計画",
@@ -546,16 +594,40 @@
     "reviewExpand": "レビュー全文を読む",
     "reviewCollapse": "折りたたむ",
     "modeSummaries": [
-      "IDE モードでファイルを参照し、複数ファイルを編集して Git の差分を確認。",
-      "ターミナルモードで SSH または対応 Android Local Linux のコマンド、ビルド、テストを実行。",
-      "AI モードでコードを理解し、作業を計画。Agent の操作と結果を確認しながら進められます。"
-    ]
+      "ファイルを探し、複数タブで編集。コミット前に Git の差分を確認できます。",
+      "SSH で開発マシンのツールを使い、ビルド、テスト、スクリプトを実行。対応 Android 端末では Local Linux も使えます。",
+      "エージェントがプロジェクトを読み、計画と実行を支援。ツール出力とコード変更を確認できます。"
+    ],
+    "heroTasks": "小さな修正 · リモートで確認 · エージェントと作業",
+    "modeTitles": [
+      "必要な変更に集中。",
+      "いつもの開発環境を使う。",
+      "タスクを一歩先へ。"
+    ],
+    "gettingStartedTitle": "3 ステップで最初のワークスペースを。",
+    "gettingStartedCopy": "使い慣れたプロジェクトから始めて、AI は必要になったときに。",
+    "gettingStartedSteps": [
+      [
+        "ワークスペースを選ぶ",
+        "SSH で開発マシンに接続するか、ローカルフォルダーを開いて編集します。"
+      ],
+      [
+        "プロジェクトを開く",
+        "ファイルをたどり、変更したいコードを開きます。"
+      ],
+      [
+        "小さな変更を加える",
+        "ファイルを編集し、SSH 経由でチェックを実行して結果を確認します。"
+      ]
+    ],
+    "previewLabel": "2.4.0 予告",
+    "previewMessage": "注目の新機能、まもなく登場！"
   },
   "ko": {
     "badge": "Android 및 iOS용 모바일 IDE",
-    "title": "프로젝트 작업을,",
-    "accent": "언제 어디서나 이어가세요.",
-    "intro": "휴대폰과 태블릿에서 개발 컴퓨터에 연결하세요. 코드를 편집하고 명령을 실행하며 Git 변경 사항을 검토하세요.",
+    "title": "컴퓨터 앞이 아니어도,",
+    "accent": "프로젝트는 계속됩니다.",
+    "intro": "NimoteCode는 코드 편집, SSH 터미널, AI 에이전트를 휴대폰과 태블릿에 담았습니다. 개발 컴퓨터에 연결해 코드를 수정하고 테스트를 실행한 뒤 결과를 확인하세요.",
     "android": "Android 다운로드",
     "ios": "iOS 다운로드",
     "watch": "데모 보기",
@@ -568,8 +640,8 @@
       "Git, GitHub 및 선택형 AI"
     ],
     "eyebrow": "세 가지 모드, 하나의 프로젝트",
-    "heading": "하나의 프로젝트, 세 가지 작업 모드.",
-    "description": "모드를 전환해도 프로젝트와 Explorer 상태가 유지됩니다.",
+    "heading": "수정부터 검증까지, 하나의 프로젝트에서.",
+    "description": "파일, 명령, AI가 같은 프로젝트를 공유합니다. 작업 모드를 바꿔도 이어서 진행하세요.",
     "features": [
       [
         "IDE 모드",
@@ -591,8 +663,8 @@
       ]
     ],
     "demoLabel": "실제 사용 데모",
-    "demoTitle": "실제 작업 과정을 확인하세요.",
-    "demoCopy": "AI Agent 또는 작업 공간 데모를 선택하세요.",
+    "demoTitle": "하나의 작업이 진행되는 과정.",
+    "demoCopy": "AI 에이전트의 프로젝트 작업을 보거나 작업 공간 데모로 전환하세요.",
     "demoSteps": [
       "확인",
       "계획",
@@ -730,16 +802,40 @@
     "reviewExpand": "전체 리뷰 읽기",
     "reviewCollapse": "리뷰 접기",
     "modeSummaries": [
-      "IDE 모드에서 파일을 탐색하고 여러 파일을 편집하며 Git Diff를 검토하세요.",
-      "터미널 모드에서 SSH 또는 지원되는 Android Local Linux로 명령, 빌드, 테스트를 실행하세요.",
-      "AI 모드에서 코드를 이해하고 작업을 계획하며 Agent의 실행 과정과 결과를 검토하세요."
-    ]
+      "파일을 찾고 여러 탭에서 코드를 편집한 뒤 커밋 전에 Git Diff를 확인하세요.",
+      "SSH로 개발 컴퓨터의 도구를 사용해 빌드, 테스트, 스크립트를 실행하세요. 지원되는 Android 기기에서는 Local Linux도 사용할 수 있습니다.",
+      "에이전트가 프로젝트를 읽고 계획과 실행을 돕습니다. 도구 출력과 코드 변경을 확인하세요."
+    ],
+    "heroTasks": "작은 수정 · 원격 확인 · 에이전트와 협업",
+    "modeTitles": [
+      "필요한 수정을 완료하세요.",
+      "익숙한 개발 환경을 사용하세요.",
+      "작업을 다음 단계로."
+    ],
+    "gettingStartedTitle": "세 단계로 첫 작업 공간을 시작하세요.",
+    "gettingStartedCopy": "익숙한 프로젝트부터 시작하고 AI는 필요할 때 설정하세요.",
+    "gettingStartedSteps": [
+      [
+        "작업 공간 선택",
+        "SSH로 개발 컴퓨터에 연결하거나 로컬 폴더를 열어 편집하세요."
+      ],
+      [
+        "프로젝트 열기",
+        "디렉터리에서 수정할 코드를 찾으세요."
+      ],
+      [
+        "작은 수정 완료",
+        "파일을 편집하고 SSH로 검사를 실행한 뒤 결과를 확인하세요."
+      ]
+    ],
+    "previewLabel": "2.4.0 미리보기",
+    "previewMessage": "강력한 새 기능이 곧 출시됩니다!"
   },
   "es": {
     "badge": "Un IDE móvil para Android e iOS",
-    "title": "Tu proyecto,",
-    "accent": "a mano cuando lo necesites.",
-    "intro": "Conecta con tu equipo de desarrollo desde el móvil o la tablet. Edita código, ejecuta comandos y revisa cambios de Git.",
+    "title": "Lejos de tu escritorio.",
+    "accent": "Dentro de tu proyecto.",
+    "intro": "NimoteCode reúne edición de código, terminales SSH y agentes de IA en tu móvil y tablet. Conecta con tu equipo, modifica código, ejecuta pruebas y revisa el resultado.",
     "android": "Para Android",
     "ios": "Para iOS",
     "watch": "Ver la demo",
@@ -752,8 +848,8 @@
       "Git, GitHub e IA opcional"
     ],
     "eyebrow": "Tres modos. Un proyecto.",
-    "heading": "Un proyecto. Tres formas de trabajar.",
-    "description": "Cambia de modo conservando el proyecto y el estado de Explorer.",
+    "heading": "Del cambio al resultado, en un proyecto.",
+    "description": "Tus archivos, comandos e IA comparten el proyecto. Cambia de modo sin empezar de nuevo.",
     "features": [
       [
         "Modo IDE",
@@ -775,8 +871,8 @@
       ]
     ],
     "demoLabel": "Míralo en acción",
-    "demoTitle": "Mira el flujo en acción.",
-    "demoCopy": "Elige una demostración del agente o del espacio de trabajo.",
+    "demoTitle": "Mira cómo avanza una tarea.",
+    "demoCopy": "Mira al agente de IA trabajar en un proyecto o cambia a la demo del espacio de trabajo.",
     "demoSteps": [
       "Inspecciona",
       "Planifica",
@@ -914,9 +1010,33 @@
     "reviewExpand": "Leer la reseña completa",
     "reviewCollapse": "Contraer reseña",
     "modeSummaries": [
-      "Explora archivos, edita en varias pestañas y revisa diffs de Git en el modo IDE.",
-      "Ejecuta comandos, compilaciones y pruebas por SSH o Android Local Linux compatible en el modo Terminal.",
-      "Comprende el código, planifica tareas y colabora con un agente revisando sus acciones y resultados en el modo IA."
-    ]
+      "Encuentra archivos, edita en varias pestañas y revisa los diffs de Git antes de confirmar un cambio.",
+      "Usa las herramientas de tu equipo para compilar, probar y ejecutar scripts por SSH. Los dispositivos Android compatibles también pueden usar Local Linux.",
+      "Deja que el agente lea el proyecto, proponga un plan y ayude a ejecutarlo. Revisa las salidas y los cambios."
+    ],
+    "heroTasks": "Pequeños cambios · Revisiones remotas · Trabajo con agentes",
+    "modeTitles": [
+      "Haz el cambio.",
+      "Usa tu propio entorno.",
+      "Avanza con la tarea."
+    ],
+    "gettingStartedTitle": "Tu primer espacio de trabajo en tres pasos.",
+    "gettingStartedCopy": "Empieza con un proyecto que conozcas. Configura la IA cuando la necesites.",
+    "gettingStartedSteps": [
+      [
+        "Elige un espacio",
+        "Conecta con tu equipo por SSH o abre una carpeta local para editar archivos."
+      ],
+      [
+        "Abre tu proyecto",
+        "Explora los archivos y abre el código que quieres modificar."
+      ],
+      [
+        "Haz un pequeño cambio",
+        "Edita un archivo, ejecuta una comprobación por SSH y revisa el resultado."
+      ]
+    ],
+    "previewLabel": "Avance de 2.4.0",
+    "previewMessage": "¡Próximamente, grandes novedades!"
   }
 }

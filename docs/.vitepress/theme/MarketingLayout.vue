@@ -79,7 +79,8 @@ function setupReveal(): void {
 }
 
 const route = useRoute()
-const isReleaseRoute = computed(() => /^\/(?:(?:zh|ja|ko|es)\/)?releases(?:\/|$)/.test(route.path))
+const isReleaseRoute = computed(() => /^\/(?:(?:zh|ja|ko|es)\/)?(?:releases|changelog)(?:\/|$)/.test(route.path))
+const isChangelogRoute = computed(() => /^\/(?:(?:zh|ja|ko|es)\/)?changelog\/?$/.test(route.path))
 const isReleaseIndex = computed(() => /^\/(?:(?:zh|ja|ko|es)\/)?releases\/?$/.test(route.path))
 onMounted(() => {
   motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)')
@@ -101,7 +102,7 @@ onBeforeUnmount(() => {
 
 <template>
   <SiteAnalytics />
-  <div v-if="frontmatter.layout !== false" class="Layout nimote-marketing-layout" :class="[frontmatter.pageClass, { 'release-page': isReleaseRoute, 'release-index': isReleaseIndex, 'release-detail': isReleaseRoute && !isReleaseIndex }]" @pointermove="moveSpotlight">
+  <div v-if="frontmatter.layout !== false" class="Layout nimote-marketing-layout" :class="[frontmatter.pageClass, { 'release-page': isReleaseRoute, 'release-index': isReleaseIndex, 'release-detail': isReleaseRoute && !isReleaseIndex && !isChangelogRoute, 'release-changelog': isChangelogRoute }]" @pointermove="moveSpotlight">
     <VPSkipLink />
     <VPNav><template #nav-bar-content-before><NavDownload /></template></VPNav>
     <main id="VPContent" class="nimote-marketing-main">

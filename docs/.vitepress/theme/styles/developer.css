@@ -23,13 +23,13 @@
   position: absolute;
   inset: -100% -60%;
   pointer-events: none;
-  background: linear-gradient(115deg, transparent 38%, #ffffff30 50%, transparent 62%);
+  background: none;
   transform: translateX(-65%);
 }
 @media (hover: hover) and (pointer: fine) {
   .home-page-actions-hero .home-page-btn.primary:hover::after,
   .home-page-actions-hero .home-page-btn.primary:focus-visible::after {
-    animation: developer-sheen 700ms ease-out;
+    animation: none;
   }
   .home-page-pillar,
   .home-page-community-card,
@@ -47,7 +47,7 @@
     inset: 0;
     pointer-events: none;
     border-radius: inherit;
-    background: radial-gradient(360px circle at var(--pointer-x, 50%) var(--pointer-y, 0%), rgba(var(--nimote-accent-rgb), 0.13), transparent 75%);
+    background: var(--nimote-bg-subtle);
     opacity: 0;
     transition: opacity 240ms ease;
   }

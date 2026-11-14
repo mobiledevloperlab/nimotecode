@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useData } from 'vitepress'
+import { latestRelease } from '../data/releases'
 
 type Release = {
   version: string
@@ -41,20 +42,20 @@ const releases: Release[] = [
 
 const { page } = useData()
 const locale = computed(() => page.value.relativePath.match(/^(zh|es|ja|ko)\//)?.[1] ?? 'en')
-const isChinese = computed(() => locale.value === 'zh')
 const localePath = computed(() => locale.value === 'en' ? '' : `/${locale.value}`)
 const copy = computed(() => ({ zh: {
-  eyebrow: '最新版本', archive: '历史版本', latest: '当前版本', view: '查看发布说明', build: 'Build', more: '查看更早版本', count: '个版本', highlights: ["IDE、终端和 AI 模式，保留项目与资源管理器状态", "Windows SSH：PowerShell 与 SFTP 工作区", "SSH 主机 Docker 管理与 Dev Containers"]
+  eyebrow: '最新版本', archive: '历史版本', latest: '当前版本', view: '查看发布说明', build: 'Build', more: '查看更早版本', count: '个版本'
 }, es: {
-  eyebrow: 'Última versión', archive: 'Archivo de versiones', latest: 'Actual', view: 'Ver notas de la versión', build: 'Build', more: 'Ver versiones anteriores', count: 'versiones', highlights: ["Modos IDE, Terminal e IA con el mismo proyecto", "Windows SSH con PowerShell y SFTP", "Docker y Dev Containers en hosts SSH"]
+  eyebrow: 'Última versión', archive: 'Archivo de versiones', latest: 'Actual', view: 'Ver notas de la versión', build: 'Build', more: 'Ver versiones anteriores', count: 'versiones'
 }, ja: {
-  eyebrow: '最新リリース', archive: 'リリース履歴', latest: '現在', view: 'リリースノートを見る', build: 'Build', more: '以前のリリースを見る', count: '件のリリース', highlights: ["プロジェクト状態を維持する IDE・ターミナル・AI モード", "PowerShell と SFTP による Windows SSH", "SSH ホストの Docker 管理と Dev Containers"]
+  eyebrow: '最新リリース', archive: 'リリース履歴', latest: '現在', view: 'リリースノートを見る', build: 'Build', more: '以前のリリースを見る', count: '件のリリース'
 }, ko: {
-  eyebrow: '최신 릴리스', archive: '릴리스 아카이브', latest: '현재', view: '릴리스 노트 보기', build: 'Build', more: '이전 릴리스 보기', count: '개 릴리스', highlights: ["프로젝트 상태를 유지하는 IDE·터미널·AI 모드", "PowerShell 및 SFTP 기반 Windows SSH", "SSH 호스트의 Docker 관리 및 Dev Containers"]
+  eyebrow: '최신 릴리스', archive: '릴리스 아카이브', latest: '현재', view: '릴리스 노트 보기', build: 'Build', more: '이전 릴리스 보기', count: '개 릴리스'
 }, en: {
-  eyebrow: 'Latest release', archive: 'Release archive', latest: 'Current', view: 'View release notes', build: 'Build', more: 'View earlier releases', count: 'releases', highlights: ["IDE, Terminal, and AI modes with shared project state", "Windows SSH workspaces with PowerShell and SFTP", "Docker management and Dev Containers on SSH hosts"]
+  eyebrow: 'Latest release', archive: 'Release archive', latest: 'Current', view: 'View release notes', build: 'Build', more: 'View earlier releases', count: 'releases'
 } }[locale.value]))
-const latest = releases[0]
+const latest = { ...releases[0], version: latestRelease.version, build: latestRelease.build, date: latestRelease.date, summary: latestRelease.homeSummary }
+const releaseHighlights = computed(() => latestRelease.highlights[locale.value as keyof typeof latestRelease.highlights])
 const archived = releases.slice(1)
 const urlFor = (release: Release) => `${localePath.value}/releases/${release.version}`
 const localized = (values: Record<string, string | undefined>) => values[locale.value] ?? values.en
@@ -74,7 +75,7 @@ const localized = (values: Record<string, string | undefined>) => values[locale.
         <a class="release-primary-link" :href="urlFor(latest)">{{ copy.view }} <span aria-hidden="true">→</span></a>
       </div>
       <ul class="release-highlights">
-        <li v-for="highlight in copy.highlights" :key="highlight">{{ highlight }}</li>
+        <li v-for="highlight in releaseHighlights" :key="highlight">{{ highlight }}</li>
       </ul>
     </div>
   </section>
@@ -92,7 +93,7 @@ const localized = (values: Record<string, string | undefined>) => values[locale.
         <a :href="urlFor(release)">
           <strong>{{ release.version }}</strong>
           <span>{{ localized(release.date) }}<template v-if="release.build"> · {{ copy.build }} {{ release.build }}</template><template v-if="release.level"> · <mark class="release-level">{{ localized(release.level) }}</mark></template></span>
-          <em v-if="release.summary">{{ localized(release.summary) }}</em>
+          <em v-if="release.summary" class="release-list-summary">{{ localized(release.summary) }}</em>
           <b aria-hidden="true">→</b>
         </a>
       </li>

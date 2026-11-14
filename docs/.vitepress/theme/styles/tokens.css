@@ -1,21 +1,15 @@
 /* ==========================================================================
    Design Tokens
-   - CSS custom properties (Linear-inspired, light / dark)
+   - Neutral page surfaces, restrained brand accents and professional editor contrast
    - All other modules read from these variables
    ========================================================================== */
 
 :root {
   /* Typography */
-  --vp-font-family-base: "Plus Jakarta Sans", "Inter Variable", "Inter", "Noto Sans SC", "Noto Sans JP", "Noto Sans KR",
+  --vp-font-family-base: "Inter Variable", "Inter", "Noto Sans SC", "Noto Sans JP", "Noto Sans KR",
     -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI",
     "Helvetica Neue", Arial, sans-serif;
   --vp-font-family-mono: "Berkeley Mono", "JetBrains Mono", "SF Mono", "Fira Code", "Roboto Mono", ui-monospace, monospace;
-
-  /* VitePress brand hooks */
-  --vp-c-brand-1: #505cbe;
-  --vp-c-brand-2: #454fa8;
-  --vp-c-brand-3: #5e6ad2;
-  --vp-c-brand-soft: rgba(99, 102, 241, 0.12);
 
   /* Fluid type scale */
   --nimote-fs-xs: 0.75rem;
@@ -55,134 +49,104 @@
 
   /* Radii — one deliberate 4-tier system.
      Small (8px) for buttons/inputs/nav items, Card (12px) for surfaces,
-     Large (20px) for media & conversion blocks, Pill (9999px) for labels. */
+     Large (16px) for media & conversion blocks, Pill (9999px) for labels. */
   --nimote-radius-sm: 8px;
   --nimote-radius-md: 12px;
-  --nimote-radius-lg: 20px;
-  --nimote-radius-xl: 20px;
-  --nimote-radius-2xl: 20px;
+  --nimote-radius-lg: 16px;
+  --nimote-radius-xl: 16px;
+  --nimote-radius-2xl: 16px;
   --nimote-radius-pill: 9999px;
 
-  /* Accent — indigo-led brand. Indigo is the interactive/expressive colour
-     everywhere; violet is its warmer gradient partner. The old fuchsia is
-     retired so the product reads as a developer tool rather than a social app. */
-  --nimote-accent: #6366f1;
-  --nimote-accent-rgb: 99, 102, 241;
-  --nimote-accent-light: #a5b4fc;
-  --nimote-accent-dark: #4338ca;
-  --nimote-link: #505cbe;
-  --nimote-link-hover: #454fa8;
-  --nimote-action: #5e6ad2;
-  --nimote-action-hover: #505cbe;
+  /* Violet is an accent for links, focus and selected states, never a page surface. */
+  --nimote-accent: #7067a8;
+  --nimote-accent-rgb: 112, 103, 168;
+  --nimote-accent-light: #d9d5e8;
+  --nimote-accent-dark: #574d88;
+  --nimote-link: #62598f;
+  --nimote-link-hover: #4c4378;
+  --nimote-action: #242426;
+  --nimote-action-hover: #3c3c40;
   --nimote-on-action: #ffffff;
-  --nimote-accent-2: #8b5cf6;
-  --nimote-accent-2-rgb: 139, 92, 246;
-  --nimote-accent-3: #10b981;
-  --nimote-accent-3-rgb: 16, 185, 129;
-  --nimote-gold: #6366f1;
-  --nimote-gold-rgb: 99, 102, 241;
+  --nimote-accent-2: var(--nimote-accent);
+  --nimote-accent-2-rgb: var(--nimote-accent-rgb);
+  --nimote-accent-3: #287052;
+  --nimote-accent-3-rgb: 40, 112, 82;
+  --nimote-gold: var(--nimote-accent);
+  --nimote-gold-rgb: var(--nimote-accent-rgb);
+  --nimote-success: #287052;
+  --nimote-warning: #90631d;
+  --nimote-error: #a94d60;
 
-  /* Unified brand/accent surface tokens (single indigo family) */
-  --accent: #6366f1;
-  --accent-hover: #4f46e5;
-  --accent-soft: rgba(99, 102, 241, 0.14);
-  --border-subtle: rgba(35, 37, 42, 0.08);
-  --surface-1: #ffffff;
-  --surface-2: #f7f8f8;
-  --text-muted: #6d727a;
-
-  /* Ambient Hero + body glow — restrained indigo wash, mostly neutral */
-  --hero-ambient:
-    radial-gradient(ellipse 46% 52% at 74% 32%, rgba(99, 102, 241, 0.07), transparent 62%),
-    radial-gradient(ellipse 58% 58% at 88% 64%, rgba(139, 92, 246, 0.05), transparent 66%);
-  --body-ambient:
-    radial-gradient(ellipse 60% 42% at 18% -6%, rgba(99, 102, 241, 0.03), transparent 64%);
-
-  /* Surfaces — Light */
-  --nimote-bg: #f7f8f8;
-  --nimote-bg-rgb: 247, 248, 248;
+  /* Surfaces: page, card and inset have distinct, neutral luminance levels. */
+  --nimote-bg: #fafafa;
+  --nimote-bg-rgb: 250, 250, 250;
   --nimote-bg-elevated: #ffffff;
-  --nimote-bg-subtle: #f0f1f2;
-  --nimote-bg-muted: #e4e7eb;
-  --nimote-card: #ffffff;
-  --nimote-card-hover: #f7f8f8;
-  --nimote-nav-bg: rgba(255, 255, 255, 0.9);
-  --nimote-nav-bg-scrolled: rgba(255, 255, 255, 0.97);
-  --nimote-input-bg: #f0f1f2;
-
-  /* Text — Light */
+  --nimote-bg-subtle: #f2f2f3;
+  --nimote-bg-media: #f6f6f7;
+  --nimote-editor-bg: #101112;
+  --nimote-chrome-bg: #151618;
+  /* Product illustrations retain a neutral dark editor in either site theme. */
+  --nimote-editor-text: #e0e1e3;
+  --nimote-editor-secondary: #b4b5b9;
+  --nimote-editor-muted: #97989e;
+  --nimote-editor-panel: #1a1b1e;
+  --nimote-editor-border: #2a2b2e;
+  --nimote-editor-selection: #242528;
+  --nimote-bg-muted: #e6e6e8;
+  --nimote-card: var(--nimote-bg-elevated);
+  --nimote-card-hover: #f7f7f8;
+  --nimote-nav-bg: rgba(250, 250, 250, .96);
+  --nimote-nav-bg-scrolled: rgba(250, 250, 250, .99);
+  --nimote-input-bg: var(--nimote-bg-subtle);
   --nimote-text-primary: #242426;
-  --nimote-text-secondary: #606068;
-  --nimote-text-muted: #686870;
+  --nimote-text-secondary: #606167;
+  --nimote-text-muted: #6d6e75;
   --nimote-text-inverse: #ffffff;
+  --nimote-border: #e1e2e4;
+  --nimote-border-strong: #c9cacc;
+  --nimote-border-accent: rgba(var(--nimote-accent-rgb), .28);
 
-  /* Borders — Light */
-  --nimote-border: rgba(35, 37, 42, 0.12);
-  --nimote-border-strong: rgba(35, 37, 42, 0.18);
-  --nimote-border-accent: rgba(99, 102, 241, 0.32);
+  /* Depth remains neutral; colored glows do not compete with the content. */
+  --nimote-shadow-xs: 0 1px 2px #00000004;
+  --nimote-shadow-sm: 0 3px 10px -3px #0000000b;
+  --nimote-shadow-md: 0 10px 28px -12px #0000001a;
+  --nimote-shadow-lg: 0 18px 44px -20px #00000024;
+  --nimote-shadow-xl: 0 28px 72px -28px #00000030;
+  --nimote-shadow-brand: var(--nimote-shadow-md);
+  --nimote-shadow-gold: var(--nimote-shadow-md);
+  --nimote-panel-shadow: var(--nimote-shadow-sm);
+  --nimote-panel-shadow-hover: var(--nimote-shadow-md);
+  --nimote-inset-highlight: #ffffffcc;
 
-  /* Shadows — Light (quiet, depth via surface separation not glow) */
-  --nimote-shadow-xs: 0 1px 2px rgba(8, 9, 10, 0.04);
-  --nimote-shadow-sm: 0 2px 4px rgba(8, 9, 10, 0.08);
-  --nimote-shadow-md: 0 12px 28px rgba(8, 9, 10, 0.08);
-  --nimote-shadow-lg: 0 18px 48px rgba(8, 9, 10, 0.12);
-  --nimote-shadow-xl: 0 32px 84px rgba(8, 9, 10, 0.16);
-  --nimote-shadow-brand: 0 8px 24px rgba(99, 102, 241, 0.18);
-  --nimote-shadow-gold: 0 8px 24px rgba(99, 102, 241, 0.14);
+  /* Compatibility roles used by the older marketing components. */
+  --accent: var(--nimote-accent);
+  --accent-hover: var(--nimote-link-hover);
+  --accent-soft: rgba(var(--nimote-accent-rgb), .08);
+  --border-subtle: var(--nimote-border);
+  --surface-1: var(--nimote-bg-elevated);
+  --surface-2: var(--nimote-bg-subtle);
+  --text-muted: var(--nimote-text-muted);
+  --hero-ambient: none;
+  --body-ambient: none;
+  --nimote-gradient: linear-gradient(var(--nimote-action), var(--nimote-action));
+  --nimote-gradient-vivid: var(--nimote-gradient);
+  --nimote-gradient-gold: var(--nimote-gradient);
+  --nimote-gradient-soft: linear-gradient(var(--nimote-bg-subtle), var(--nimote-bg-subtle));
+  --nimote-gradient-bg: none;
+  --nimote-hero-image-filter: saturate(.92) contrast(1.02);
+  --nimote-hero-image-filter-soft: var(--nimote-hero-image-filter);
+  --nimote-hero-image-filter-strong: var(--nimote-hero-image-filter);
+  --nimote-hero-overlay: linear-gradient(90deg, rgba(var(--nimote-bg-rgb), .94), rgba(var(--nimote-bg-rgb), .35));
+  --nimote-hero-overlay-soft: var(--nimote-hero-overlay);
+  --nimote-hero-overlay-strong: var(--nimote-hero-overlay);
+  --nimote-video-shell-bg: linear-gradient(var(--nimote-bg-elevated), var(--nimote-bg-subtle));
+  --nimote-grid-line: #23232708;
 
-  /* Gradients — Light (indigo ramp; accent reserved for interactive moments) */
-  --nimote-gradient: linear-gradient(180deg, #a5b4fc 0%, #6366f1 100%);
-  --nimote-gradient-soft: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(139, 92, 246, 0.05));
-  --nimote-gradient-vivid: linear-gradient(135deg, #818cf8 0%, #6366f1 48%, #4f46e5 100%);
-  --nimote-gradient-gold: linear-gradient(180deg, #a5b4fc 0%, #6366f1 100%);
-  --nimote-gradient-bg:
-    radial-gradient(ellipse 70% 46% at 50% -12%, rgba(99, 102, 241, 0.05) 0%, transparent 72%),
-    radial-gradient(ellipse 54% 36% at 80% 8%, rgba(139, 92, 246, 0.04) 0%, transparent 70%);
-
-  /* Mode-specific visual helpers */
-  --nimote-inset-highlight: rgba(255, 255, 255, 0.8);
-  --nimote-panel-shadow: 0 1px 2px rgba(8, 9, 10, 0.05);
-  --nimote-panel-shadow-hover: 0 10px 24px rgba(8, 9, 10, 0.1);
-  --nimote-hero-image-filter: saturate(1.04) contrast(1.08) brightness(0.92);
-  /* Hero contrast presets (light theme) */
-  --nimote-hero-image-filter-soft: saturate(1.02) contrast(1.05) brightness(0.96);
-  --nimote-hero-image-filter-strong: saturate(1.06) contrast(1.12) brightness(0.88);
-  --nimote-hero-overlay:
-    linear-gradient(90deg, rgba(247, 248, 248, 0.86) 0%, rgba(247, 248, 248, 0.60) 34%, rgba(247, 248, 248, 0.30) 58%, rgba(247, 248, 248, 0.10) 100%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(247, 248, 248, 0.02) 34%, rgba(247, 248, 248, 0.28) 100%),
-    radial-gradient(circle at 16% 18%, rgba(99, 102, 241, 0.08), transparent 28%),
-    radial-gradient(circle at 82% 14%, rgba(139, 92, 246, 0.08), transparent 24%);
-  --nimote-hero-overlay-soft:
-    linear-gradient(90deg, rgba(247, 248, 248, 0.90) 0%, rgba(247, 248, 248, 0.70) 34%, rgba(247, 248, 248, 0.40) 58%, rgba(247, 248, 248, 0.20) 100%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(247, 248, 248, 0.06) 34%, rgba(247, 248, 248, 0.36) 100%),
-    radial-gradient(circle at 16% 18%, rgba(99, 102, 241, 0.10), transparent 28%),
-    radial-gradient(circle at 82% 14%, rgba(139, 92, 246, 0.10), transparent 24%);
-  --nimote-hero-overlay-strong:
-    linear-gradient(90deg, rgba(247, 248, 248, 0.80) 0%, rgba(247, 248, 248, 0.50) 34%, rgba(247, 248, 248, 0.20) 58%, rgba(247, 248, 248, 0.06) 100%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(247, 248, 248, 0.00) 34%, rgba(247, 248, 248, 0.22) 100%),
-    radial-gradient(circle at 16% 18%, rgba(99, 102, 241, 0.06), transparent 28%),
-    radial-gradient(circle at 82% 14%, rgba(139, 92, 246, 0.06), transparent 24%);
-  /* Default hero profile: optimized (balanced). Switch to:
-     --nimote-hero-overlay: var(--nimote-hero-overlay-soft);
-     --nimote-hero-image-filter: var(--nimote-hero-image-filter-soft);
-     for more conservative look,
-     --nimote-hero-overlay: var(--nimote-hero-overlay-strong);
-     --nimote-hero-image-filter: var(--nimote-hero-image-filter-strong);
-     for stronger contrast separation. */
-  --nimote-video-shell-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(240, 241, 242, 0.96)), var(--nimote-bg-elevated);
-  --nimote-grid-line: rgba(8, 9, 10, 0.04);
-
-  /* Motion */
-  --nimote-ease: cubic-bezier(0.22, 1, 0.36, 1);
-  --nimote-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --nimote-transition: 0.25s var(--nimote-ease);
-
-  /* Layout */
-  --nimote-container: 1248px;
-  --nimote-reading-width: 760px;
-  --vp-layout-max-width: var(--nimote-container);
-  --nimote-nav-height: 64px;
-  /* Native VitePress controls and custom pages share the app's surfaces. */
+  /* Native VitePress controls follow the same roles as custom pages. */
+  --vp-c-brand-1: var(--nimote-link);
+  --vp-c-brand-2: var(--nimote-link-hover);
+  --vp-c-brand-3: var(--nimote-accent);
+  --vp-c-brand-soft: rgba(var(--nimote-accent-rgb), .08);
   --vp-c-bg: var(--nimote-bg);
   --vp-c-bg-alt: var(--nimote-bg-subtle);
   --vp-c-bg-elv: var(--nimote-bg-elevated);
@@ -190,91 +154,75 @@
   --vp-c-text-1: var(--nimote-text-primary);
   --vp-c-text-2: var(--nimote-text-secondary);
   --vp-c-text-3: var(--nimote-text-muted);
+  --vp-c-default-1: var(--nimote-text-secondary);
+  --vp-c-default-2: var(--nimote-text-muted);
+  --vp-c-default-3: var(--nimote-border-strong);
+  --vp-c-default-soft: var(--nimote-bg-subtle);
+  --vp-code-bg: var(--nimote-bg-subtle);
+  --vp-code-color: var(--nimote-text-primary);
+  --vp-c-tip-1: var(--nimote-link);
+  --vp-c-tip-2: var(--nimote-link-hover);
+  --vp-c-tip-3: var(--nimote-accent);
+  --vp-c-tip-soft: var(--vp-c-brand-soft);
+  --vp-c-divider: var(--nimote-border);
+  --vp-c-border: var(--nimote-border-strong);
+  --vp-c-gutter: var(--nimote-border);
+  --vp-button-brand-bg: var(--nimote-action);
+  --vp-button-brand-hover-bg: var(--nimote-action-hover);
+  --vp-button-brand-active-bg: var(--nimote-action-hover);
+  --vp-button-brand-text: var(--nimote-on-action);
+  --vp-button-brand-hover-text: var(--nimote-on-action);
+  --vp-button-brand-active-text: var(--nimote-on-action);
 
+  --nimote-ease: cubic-bezier(.22, 1, .36, 1);
+  --nimote-ease-out: cubic-bezier(.16, 1, .3, 1);
+  --nimote-transition: .25s var(--nimote-ease);
+  --nimote-container: 1248px;
+  --nimote-reading-width: 760px;
+  --vp-layout-max-width: var(--nimote-container);
+  --nimote-nav-height: 64px;
   color-scheme: light;
 }
 
 .dark {
-  --vp-c-brand-1: #a5b4fc;
-  --vp-c-brand-2: #818cf8;
-  --vp-c-brand-3: #6366f1;
-  --vp-c-brand-soft: rgba(99, 102, 241, 0.16);
-
-  --nimote-accent: #818cf8;
-  --nimote-accent-rgb: 129, 140, 248;
-  --nimote-accent-light: #c7d2fe;
-  --nimote-accent-dark: #4f46e5;
-  --nimote-link: #b4acf0;
-  --nimote-link-hover: #d2ccff;
-  --nimote-action: #6d61c9;
-  --nimote-action-hover: #6255b7;
-  --nimote-accent-2: #8b5cf6;
-  --nimote-accent-2-rgb: 139, 92, 246;
-  --nimote-gold: #818cf8;
-  --nimote-gold-rgb: 129, 140, 248;
-
-  /* Unified brand/accent surface tokens (single indigo family) */
-  --accent: #818cf8;
-  --accent-hover: #a5b4fc;
-  --accent-soft: rgba(99, 102, 241, 0.16);
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --surface-1: #0f1011;
-  --surface-2: #161718;
-  --text-muted: #8a8f98;
-
-  --hero-ambient:
-    radial-gradient(ellipse 46% 52% at 74% 32%, rgba(99, 102, 241, 0.12), transparent 62%),
-    radial-gradient(ellipse 58% 58% at 88% 64%, rgba(139, 92, 246, 0.08), transparent 66%);
-  --body-ambient:
-    radial-gradient(ellipse 60% 42% at 18% -6%, rgba(99, 102, 241, 0.05), transparent 64%);
-
+  --nimote-accent: #aaa3d1;
+  --nimote-accent-rgb: 170, 163, 209;
+  --nimote-accent-light: #d4d0e5;
+  --nimote-accent-dark: #7067a8;
+  --nimote-link: #b6add4;
+  --nimote-link-hover: #d6d0e8;
+  --nimote-action: #e8e8ea;
+  --nimote-action-hover: #d3d3d8;
+  --nimote-on-action: #151517;
+  --nimote-accent-3: #88b79a;
+  --nimote-accent-3-rgb: 136, 183, 154;
+  --nimote-success: #88b79a;
+  --nimote-warning: #d0b17a;
+  --nimote-error: #d99ba8;
   --nimote-bg: #08090a;
   --nimote-bg-rgb: 8, 9, 10;
   --nimote-bg-elevated: #101112;
   --nimote-bg-subtle: #161718;
-  --nimote-bg-muted: #26282d;
-  --nimote-card: #101112;
-  --nimote-card-hover: #161718;
-  --nimote-nav-bg: rgba(15, 16, 17, 0.94);
-  --nimote-nav-bg-scrolled: rgba(15, 16, 17, 0.98);
-  --nimote-input-bg: #383b3f;
-
-  --nimote-text-primary: #e6e6e6;
-  --nimote-text-secondary: #aaaaaa;
-  --nimote-text-muted: #96969e;
+  --nimote-bg-media: #0c0d0e;
+  --nimote-editor-bg: #101112;
+  --nimote-chrome-bg: #151618;
+  --nimote-bg-muted: #252629;
+  --nimote-card-hover: #1b1c1e;
+  --nimote-nav-bg: rgba(8, 9, 10, .96);
+  --nimote-nav-bg-scrolled: rgba(8, 9, 10, .99);
+  --nimote-text-primary: #f1f2f3;
+  --nimote-text-secondary: #b0b2b8;
+  --nimote-text-muted: #999ba1;
   --nimote-text-inverse: #08090a;
-
-  --nimote-border: #23252a;
-  --nimote-border-strong: #33363d;
-  --nimote-border-accent: rgba(129, 140, 248, 0.38);
-
-  --nimote-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.45);
-  --nimote-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4);
-  --nimote-shadow-md: 0 12px 28px rgba(0, 0, 0, 0.42);
-  --nimote-shadow-lg: 0 18px 48px rgba(0, 0, 0, 0.5);
-  --nimote-shadow-xl: 0 32px 84px rgba(0, 0, 0, 0.62);
-  --nimote-shadow-brand: 0 8px 24px rgba(99, 102, 241, 0.22);
-  --nimote-shadow-gold: 0 8px 24px rgba(99, 102, 241, 0.16);
-
-  --nimote-gradient: linear-gradient(180deg, #a5b4fc 0%, #818cf8 100%);
-  --nimote-gradient-soft: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(139, 92, 246, 0.08));
-  --nimote-gradient-vivid: linear-gradient(135deg, #a5b4fc 0%, #818cf8 48%, #6366f1 100%);
-  --nimote-gradient-gold: linear-gradient(180deg, #a5b4fc 0%, #818cf8 100%);
-  --nimote-gradient-bg:
-    radial-gradient(ellipse 70% 46% at 50% -12%, rgba(99, 102, 241, 0.10) 0%, transparent 72%),
-    radial-gradient(ellipse 54% 36% at 80% 8%, rgba(139, 92, 246, 0.06) 0%, transparent 70%);
-
-  --nimote-inset-highlight: rgba(255, 255, 255, 0.035);
-  --nimote-panel-shadow: 0 1px 2px rgba(0, 0, 0, 0.36);
-  --nimote-panel-shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.46);
-  --nimote-hero-image-filter: saturate(0.84) contrast(1.06) brightness(0.66);
-  --nimote-hero-overlay:
-    linear-gradient(90deg, rgba(8, 9, 10, 0.94) 0%, rgba(8, 9, 10, 0.76) 34%, rgba(8, 9, 10, 0.44) 58%, rgba(8, 9, 10, 0.18) 100%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.025) 0%, rgba(15, 16, 17, 0.1) 34%, rgba(8, 9, 10, 0.46) 100%),
-    radial-gradient(circle at 16% 18%, rgba(99, 102, 241, 0.12), transparent 28%),
-    radial-gradient(circle at 82% 14%, rgba(139, 92, 246, 0.10), transparent 24%);
-  --nimote-video-shell-bg: linear-gradient(180deg, rgba(15, 16, 17, 0.94), rgba(8, 9, 10, 0.98)), var(--nimote-bg);
-  --nimote-grid-line: rgba(255, 255, 255, 0.018);
-
+  --nimote-border: #292a2c;
+  --nimote-border-strong: #414244;
+  --nimote-border-accent: rgba(var(--nimote-accent-rgb), .30);
+  --nimote-shadow-xs: 0 1px 2px #00000018;
+  --nimote-shadow-sm: 0 3px 10px -3px #00000028;
+  --nimote-shadow-md: 0 10px 28px -12px #00000050;
+  --nimote-shadow-lg: 0 18px 44px -20px #00000066;
+  --nimote-shadow-xl: 0 28px 72px -28px #00000080;
+  --nimote-inset-highlight: #ffffff08;
+  --nimote-grid-line: #ffffff08;
   color-scheme: dark;
 }
