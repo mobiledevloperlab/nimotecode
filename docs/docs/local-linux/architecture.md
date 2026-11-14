@@ -1,6 +1,6 @@
 ---
-title: Android Local Linux Architecture | NimoteCode
-description: Learn how Android, PRoot, Ubuntu, and a loopback SSH service form the NimoteCode Local Linux workspace architecture.
+title: "How Android Local Linux works: PRoot, Ubuntu and SSH | NimoteCode"
+description: "Understand how PRoot runs Ubuntu userspace on Android, why Local Linux shares the host kernel, and how loopback SSH connects the workspace."
 ---
 
 # Android Local Linux Architecture

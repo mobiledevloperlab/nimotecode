@@ -147,3 +147,13 @@
   }
   .vp-doc .product-guide-copy .seo-cta { padding: 18px; }
 }
+
+/* Visual product overview before the detailed feature reference. */
+.vp-doc > .workspace-modes, .vp-doc .workspace-modes { margin-block: 48px; }
+.product-home .workspace-modes { margin-block: 0; }
+.workflow-hub { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-block: 28px 48px; }
+.vp-doc .workflow-hub a { display: flex; align-items: center; gap: 16px; min-height: 100px; padding: 20px; border: 1px solid var(--nimote-border); border-radius: var(--nimote-radius-md); background: var(--nimote-card); color: var(--nimote-text-primary); text-decoration: none; }
+.workflow-hub a > span { color: var(--nimote-link); font-size: var(--nimote-fs-xs); }
+.workflow-hub a > span:last-child { margin-left: auto; }
+.workflow-hub a:hover { border-color: var(--nimote-link); }
+@media (max-width: 600px) { .workflow-hub { grid-template-columns: 1fr; } .vp-doc .workflow-hub a { min-height: 76px; } }

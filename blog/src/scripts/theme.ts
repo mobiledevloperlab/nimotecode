@@ -1,69 +1,72 @@
-const THEME_KEY = "theme";
-const LIGHT = "light";
-const DARK = "dark";
+// Share appearance with the main VitePress site, including its dark default.
+const THEME_KEY = "vitepress-theme-appearance";
+const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
-function getPreferredTheme(): string {
-  const stored = localStorage.getItem(THEME_KEY);
-  if (stored) return stored;
-  return window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? DARK
-    : LIGHT;
+let sessionPreference: string | undefined;
+
+function preference(): string {
+  if (sessionPreference) return sessionPreference;
+  try {
+    const saved = localStorage.getItem(THEME_KEY) ?? localStorage.getItem("theme");
+    return saved === "light" || saved === "dark" || saved === "auto" ? saved : "dark";
+  } catch {
+    return "dark";
+  }
 }
 
-// Reuse the value already set by the inline FOUC-prevention script if available.
-let themeValue: string =
-  (window as unknown as { __theme?: { value: string } }).__theme?.value ??
-  getPreferredTheme();
+function resolvedTheme(): string {
+  const saved = preference();
+  return saved === "auto" ? (mediaQuery.matches ? "dark" : "light") : saved;
+}
 
-function persist(): void {
-  localStorage.setItem(THEME_KEY, themeValue);
-  reflect();
+function apply(root: Element, theme: string): void {
+  root.setAttribute("data-theme", theme);
+  root.classList.toggle("dark", theme === "dark");
+  (root as HTMLElement).style.colorScheme = theme;
 }
 
 function reflect(): void {
-  const root = document.firstElementChild;
-  root?.setAttribute("data-theme", themeValue);
-  root?.classList.toggle("dark", themeValue === DARK);
-  document.querySelector("#theme-btn")?.setAttribute("aria-label", themeValue);
+  const theme = resolvedTheme();
+  apply(document.documentElement, theme);
+  document.querySelector("#theme-btn")?.setAttribute("aria-label", theme);
+  document.querySelector("meta[name='theme-color']")?.setAttribute(
+    "content", window.getComputedStyle(document.body).backgroundColor
+  );
+}
 
-  // Fill <meta name="theme-color"> with the computed background colour so
-  // Android's browser chrome matches the page background.
-  const bg = window.getComputedStyle(document.body).backgroundColor;
-  document
-    .querySelector("meta[name='theme-color']")
-    ?.setAttribute("content", bg);
+function toggleTheme(): void {
+  const next = resolvedTheme() === "dark" ? "light" : "dark";
+  try {
+    localStorage.setItem(THEME_KEY, next);
+    localStorage.setItem("theme", next);
+  } catch {
+    sessionPreference = next;
+    // Keep the toggle usable when persistent storage is unavailable.
+  }
+  reflect();
 }
 
 function setup(): void {
   reflect();
-  document.querySelector("#theme-btn")?.addEventListener("click", () => {
-    themeValue = themeValue === LIGHT ? DARK : LIGHT;
-    persist();
-  });
+  const button = document.querySelector("#theme-btn");
+  // setup may run more than once for a document; keep the listener singular.
+  button?.removeEventListener("click", toggleTheme);
+  button?.addEventListener("click", toggleTheme);
 }
 
 setup();
-
-// Re-run after View Transitions navigation.
 document.addEventListener("astro:after-swap", setup);
-
-// Carry the theme-color value across View Transitions to prevent the
-// Android navigation bar from flashing during page transitions.
 document.addEventListener("astro:before-swap", event => {
-  const color = document
-    .querySelector("meta[name='theme-color']")
-    ?.getAttribute("content");
-  if (color) {
-    (event as { newDocument: Document }).newDocument
-      .querySelector("meta[name='theme-color']")
-      ?.setAttribute("content", color);
-  }
+  const next = (event as Event & { newDocument: Document }).newDocument;
+  // Set appearance before the new DOM is painted, rather than correcting it
+  // afterwards and briefly displaying a different theme.
+  apply(next.documentElement, resolvedTheme());
+  const color = document.querySelector("meta[name='theme-color']")?.getAttribute("content");
+  if (color) next.querySelector("meta[name='theme-color']")?.setAttribute("content", color);
 });
-
-// Sync with OS-level dark/light preference changes.
-window
-  .matchMedia("(prefers-color-scheme: dark)")
-  .addEventListener("change", ({ matches }) => {
-    themeValue = matches ? DARK : LIGHT;
-    persist();
-  });
+mediaQuery.addEventListener("change", () => {
+  if (preference() === "auto") reflect();
+});
+window.addEventListener("storage", event => {
+  if (event.key === THEME_KEY || event.key === null) reflect();
+});

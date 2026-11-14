@@ -20,10 +20,13 @@ for (const [locale, content] of Object.entries(copy)) {
   assert.ok(!schemas.some(item => ['TechArticle', 'BlogPosting'].includes(item['@type'])), `${path}: homepage classified as article`)
   assert.ok(!schemas.some(item => item['@type'] === 'FAQPage'), `${path}: removed homepage FAQ schema remains`)
   assert.ok(!html.includes('id="faq-title"'), `${path}: removed homepage FAQ remains`)
-  for (const text of [content.title, content.accent, content.intro, content.capabilityNote, content.byokLabel, content.reviewsTitle, content.reviewsNote, ...content.features.flat()]) {
+  for (const text of [content.title, content.accent, content.intro, content.capabilityNote, content.byokLabel, content.reviewsTitle, content.reviewsNote, ...content.features.map(feature => feature[0]), ...content.modeSummaries]) {
     assert.ok(body.includes(text), `${path}: content missing from static HTML: ${text}`)
   }
-  assert.ok(html.indexOf('id="product-demo"') < html.indexOf('id="workflow-title"'), `${path}: demo should precede feature details`)
+  assert.ok(html.includes('app-showcase') && html.includes('mock-phone') && html.includes('mock-tablet'), `${path}: original product mock must remain`)
+  assert.ok(html.includes('workspace-mode-descriptions') && !html.includes('workspace-mode-picker'), `${path}: modes must be static descriptions`)
+  assert.ok(!/<video(?:\s|>)/.test(html), `${path}: video must stay unloaded until the demo is opened`)
+  assert.ok(html.indexOf('id="workflow-title"') < html.indexOf('id="product-demo"'), `${path}: workspace modes should precede the demo`)
   assert.ok(html.indexOf('id="reviews-title"') > html.indexOf('id="workflow-title"'), `${path}: reviews should follow features`)
   const snapshot = JSON.parse(readFileSync('docs/.vitepress/theme/data/google-play-reviews.json', 'utf8'))
   for (const review of snapshot.reviews) {

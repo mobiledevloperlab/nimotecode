@@ -1,9 +1,20 @@
 ---
-title: AI Agent Build Demo | NimoteCode Workflows
-description: Watch NimoteCode AI Agent build, test, repair and commit a developer task board web app from a phone.
+title: 모바일 개발 워크플로 | NimoteCode
+description: 개발 컴퓨터 연결, 코드 편집과 변경 검토, 터미널 AI 도구, Agent 제작 데모를 작업에 맞게 선택하세요.
 ---
 
-# AI 에이전트가 전화기에서 개발자 작업 보드를 구축합니다.
+# 워크플로
+
+작업에 맞는 워크플로를 선택하세요.
+
+<div class="workflow-hub">
+<a href="/ko/docs/ssh"><span>01</span><strong>개발 컴퓨터에 연결</strong><span aria-hidden="true">→</span></a>
+<a href="/ko/use-cases/mobile-workspace-demo"><span>02</span><strong>편집, 실행, 변경 검토</strong><span aria-hidden="true">→</span></a>
+<a href="/ko/use-cases/terminal-ai-tools"><span>03</span><strong>터미널 AI 도구 사용</strong><span aria-hidden="true">→</span></a>
+<a href="#agent-build"><span>04</span><strong>AI Agent 제작 데모</strong><span aria-hidden="true">↓</span></a>
+</div>
+
+<h2 id="agent-build">AI 에이전트가 전화기에서 개발자 작업 보드를 구축합니다.</h2>
 
 
 이 워크플로는 NimoteCode AI 에이전트를 따르며 하나의 제품 개요를 작동하는 개발자 작업 보드로 전환합니다. 에이전트는 DeepSeek-v4-flash 모델을 사용하여 개발자가 별도의 모바일 앱 사이를 이동할 필요 없이 작업을 계획하고, 프로젝트를 생성하고, 확인하고, 완료된 변경 사항을 기록합니다.

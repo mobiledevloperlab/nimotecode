@@ -5,7 +5,13 @@ description: Abre tu proyecto desde el móvil y conéctate a tu ordenador para e
 
 # Funciones de NimoteCode
 
-NimoteCode es un espacio de desarrollo móvil para trabajar con proyectos existentes desde un teléfono o tableta. No sustituye el repositorio, servidor, gestor de paquetes, proveedor de IA ni cadena de herramientas: reúne archivos, editor, entorno de shell, control de versiones y ayuda opcional de IA.
+Edita código, ejecuta herramientas, revisa cambios de Git y trabaja con IA desde el móvil o la tablet. Los modos IDE, Terminal e IA conservan el proyecto y el estado de Explorer.
+
+<WorkspaceModes />
+
+## Vista de la interfaz
+
+<div class="feature-showcase" role="region" tabindex="0" aria-label="NimoteCode feature highlights"><div class="feature-showcase__track"><figure class="feature-showcase__item"><img src="/screenshots/p1.png" alt="Local files, SSH, code editing and AI Agent in NimoteCode" width="1604" height="901" loading="eager"><figcaption>Workspaces, editing and AI Agent</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p2.png" alt="SSH terminal, Source Control and code diagnostics in NimoteCode" width="1597" height="896" loading="lazy"><figcaption>Terminal, Git and diagnostics</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p3.png" alt="NimoteCode debugging, remote workspace sync, and smart caching" width="1598" height="893" loading="lazy"><figcaption>Debugging and workspace sync</figcaption></figure></div></div>
 
 ## Espacios de trabajo
 
@@ -36,13 +42,6 @@ La IA es opcional y usa un proveedor que configuras. Hay plantillas para OpenAI,
 - [Plugins personalizados](/es/docs/plugins) combinan datos, formularios y acciones confirmadas. También hay [LSP](/es/docs/lsp), [depuración](/es/docs/debug) y [sincronización/caché](/es/docs/sync-cache).
 
 La salida de IA es ayuda, no garantía de exactitud, seguridad ni éxito. Los plugins y herramientas de lenguaje/depuración no instalan dependencias en silencio ni añaden permisos del host. La disponibilidad depende de plataforma, versión, cuenta, canal y región; la app muestra el estado actual.
-
-## La interfaz de un vistazo
-
-Las imágenes siguientes muestran las superficies de espacio de trabajo, revisión, diagnóstico y transferencia descritas arriba.
-
-<div class="feature-showcase" role="region" tabindex="0" aria-label="NimoteCode feature highlights"><div class="feature-showcase__track"><figure class="feature-showcase__item"><img src="/screenshots/p1.png" alt="Local files, SSH, code editing and AI Agent in NimoteCode" width="1604" height="901" loading="eager"><figcaption>Workspaces, editing and AI Agent</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p2.png" alt="SSH terminal, Source Control and code diagnostics in NimoteCode" width="1597" height="896" loading="lazy"><figcaption>Terminal, Git and diagnostics</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p3.png" alt="NimoteCode debugging, remote workspace sync, and smart caching" width="1598" height="893" loading="lazy"><figcaption>Debugging and workspace sync</figcaption></figure></div></div>
-
 
 ## Espacios de trabajo y Docker en 2.3.0
 

@@ -1,9 +1,20 @@
 ---
-title: AI Agent 构建演示 | NimoteCode 工作流
-description: 观看 NimoteCode AI Agent 在手机上构建、测试、修复并提交开发者任务看板应用。
+title: 移动开发工作流 | NimoteCode
+description: 按任务选择移动开发方式：连接开发主机、编辑与审查改动、使用终端 AI 工具，或观看 AI Agent 构建演示。
 ---
 
-# AI Agent 在手机上构建开发者任务看板
+# 移动开发工作流
+
+从手头的任务，选择适合的工作方式。
+
+<div class="workflow-hub">
+<a href="/zh/docs/ssh"><span>01</span><strong>连接开发主机</strong><span aria-hidden="true">→</span></a>
+<a href="/zh/use-cases/mobile-workspace-demo"><span>02</span><strong>编辑、运行与审查改动</strong><span aria-hidden="true">→</span></a>
+<a href="/zh/use-cases/terminal-ai-tools"><span>03</span><strong>使用终端 AI 工具</strong><span aria-hidden="true">→</span></a>
+<a href="#agent-build"><span>04</span><strong>AI Agent 构建演示</strong><span aria-hidden="true">↓</span></a>
+</div>
+
+<h2 id="agent-build">AI Agent 在手机上构建开发者任务看板</h2>
 
 这段工作流记录了 NimoteCode AI Agent 如何把一条产品需求变成可运行的开发者任务看板。演示使用 DeepSeek-v4-flash：Agent 先规划，再创建项目、验证结果并记录完成的改动，开发者无需在多个移动应用之间来回切换。
 

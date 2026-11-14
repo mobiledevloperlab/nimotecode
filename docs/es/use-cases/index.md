@@ -1,9 +1,20 @@
 ---
-title: AI Agent Build Demo | NimoteCode Workflows
-description: Watch NimoteCode AI Agent build, test, repair and commit a developer task board web app from a phone.
+title: Flujos de desarrollo móvil | NimoteCode
+description: Conecta al equipo de desarrollo, edita y revisa código, usa herramientas de IA en el terminal o mira una demostración de AI Agent.
 ---
 
-# Un agente de IA crea un tablero de tareas para desarrolladores desde un teléfono
+# Flujos de trabajo
+
+Elige un flujo para tu próxima tarea.
+
+<div class="workflow-hub">
+<a href="/es/docs/ssh"><span>01</span><strong>Conectar al equipo de desarrollo</strong><span aria-hidden="true">→</span></a>
+<a href="/es/use-cases/mobile-workspace-demo"><span>02</span><strong>Editar, ejecutar y revisar cambios</strong><span aria-hidden="true">→</span></a>
+<a href="/es/use-cases/terminal-ai-tools"><span>03</span><strong>Usar herramientas de IA en el terminal</strong><span aria-hidden="true">→</span></a>
+<a href="#agent-build"><span>04</span><strong>Demostración de construcción con AI Agent</strong><span aria-hidden="true">↓</span></a>
+</div>
+
+<h2 id="agent-build">Un agente de IA crea un tablero de tareas para desarrolladores desde un teléfono</h2>
 
 
 Este flujo de trabajo sigue a NimoteCode AI Agent, ya que convierte un resumen de producto en un tablero de tareas de desarrollador funcional. Utilizando el modelo DeepSeek-v4-flash, el agente planifica el trabajo, crea el proyecto, lo verifica y registra el cambio finalizado, sin que el desarrollador tenga que moverse entre aplicaciones móviles independientes.

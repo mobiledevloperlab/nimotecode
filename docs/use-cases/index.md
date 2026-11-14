@@ -1,9 +1,20 @@
 ---
-title: AI Agent Build Demo | NimoteCode Workflows
-description: Watch NimoteCode AI Agent build, test, repair and commit a developer task board web app from a phone.
+title: Mobile development workflows | NimoteCode
+description: Connect to a development machine, edit and review code, run terminal AI tools, or watch an AI Agent build a project.
 ---
 
-# An AI Agent Builds a Developer Task Board From a Phone
+# Workflows
+
+Choose a workflow for your next task.
+
+<div class="workflow-hub">
+<a href="/docs/ssh"><span>01</span><strong>Connect to a development machine</strong><span aria-hidden="true">→</span></a>
+<a href="/use-cases/mobile-workspace-demo"><span>02</span><strong>Edit, run, and review changes</strong><span aria-hidden="true">→</span></a>
+<a href="/use-cases/terminal-ai-tools"><span>03</span><strong>Use terminal AI tools</strong><span aria-hidden="true">→</span></a>
+<a href="#agent-build"><span>04</span><strong>AI Agent build walkthrough</strong><span aria-hidden="true">↓</span></a>
+</div>
+
+<h2 id="agent-build">An AI Agent Builds a Developer Task Board From a Phone</h2>
 
 This workflow follows NimoteCode AI Agent as it turns one product brief into a working developer task board. Using the DeepSeek-v4-flash model, the agent plans the work, creates the project, verifies it and records the finished change—without the developer having to move between separate mobile apps.
 

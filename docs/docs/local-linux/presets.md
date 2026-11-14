@@ -1,21 +1,27 @@
 ---
-title: NimoteCode Linux Presets | Android Local Linux
-description: Learn how NimoteCode Linux Presets declares optional Ubuntu development environments for Android Local Linux with manifests and SHA-256 verification.
+title: "Linux Presets for Python, Node.js and C++ | NimoteCode"
+description: "Explore optional Ubuntu development toolsets for Android Local Linux. Check experimental status, supported architectures and SHA-256 before installation."
 ---
 
 # NimoteCode Linux Presets
 
-[NimoteCode Linux Presets](https://github.com/mobiledevloperlab/nimote-linux-presets) is an independent technical repository for optional Local Linux development environments. It owns the actual manifests, installers, verifiers, schemas, test harnesses, and release assets; this website does not copy those files or a rootfs.
+Optional development toolsets for Local Linux are maintained in the [Linux Presets repository](https://github.com/mobiledevloperlab/nimote-linux-presets). Choose a toolset for your project, then check the declared compatibility before installation.
 
-## Current scope
+## Toolsets
 
-The repository declares `minimal`, `python`, `web`, and `cpp` presets for Ubuntu 24.04 on ARM64 and AMD64. Their manifests currently mark them `experimental`. The root manifest also records the PRoot runtime version, source URL, SHA-256, rootfs input metadata, and per-preset hashes.
+| Toolset | Purpose |
+| --- | --- |
+| `minimal` | Essential command-line tools |
+| `python` | Python 3, pip and virtual environments |
+| `web` | Node.js and npm from Ubuntu packages |
+| `cpp` | GCC, CMake, GDB and native build tools |
 
-## Verification path
+The declared environment is Ubuntu 24.04 on ARM64 or AMD64. These presets are marked **experimental**; use the selected release manifest for exact status, dependencies and runtime requirements.
 
-1. Choose a declared release or revision in the Presets repository.
-2. Read the root and preset manifests for status, architecture, Ubuntu version, dependencies, and network requirements.
-3. Verify `checksums.sha256` plus the SHA-256 values declared for the selected scripts.
-4. Follow the repository's validation and testing instructions before using a preset for important work.
+## Before installation
 
-This does not claim every tool behaves the same under PRoot. The repository's container checks validate ordinary Ubuntu behaviour, while its Android PRoot reports are the runtime evidence. See [Architecture](/docs/local-linux/architecture), [Compatibility](/docs/local-linux/compatibility), and the [Presets gateway in the main repository](https://github.com/mobiledevloperlab/nimotecode/tree/main/presets).
+1. Choose a release or revision matching your environment.
+2. Review its manifest and verify `checksums.sha256` and the selected script hashes before running the documented installer.
+3. Check the Android PRoot test records. Passing Ubuntu container tests alone does not establish compatibility on your device.
+
+For setup, see [getting started](/docs/local-linux/getting-started). For runtime limits, see [compatibility](/docs/local-linux/compatibility); for verification, see [security and integrity](/docs/local-linux/security-integrity).

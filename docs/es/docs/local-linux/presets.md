@@ -1,30 +1,27 @@
 ---
-title: NimoteCode Linux Presets | Android Local Linux
-description: Learn how NimoteCode Linux Presets declares optional Ubuntu development environments for Android Local Linux with manifests and SHA-256 verification.
+title: "Linux Presets para Python, Node.js y C++ | NimoteCode"
+description: "Explora herramientas Ubuntu opcionales para Local Linux en Android. Comprueba estado experimental, arquitecturas, dependencias y SHA-256 antes de instalar."
 ---
 
-# NimoteCode Ajustes preestablecidos de Linux
+# NimoteCode Linux Presets
 
+Los conjuntos de herramientas opcionales se mantienen en el [repositorio Linux Presets](https://github.com/mobiledevloperlab/nimote-linux-presets). Elige uno para tu proyecto y comprueba su compatibilidad antes de instalar.
 
-[NimoteCode Linux Presets](https://github.com/mobiledevloperlab/nimote-linux-presets) es un repositorio técnico independiente para entornos de desarrollo locales de Linux opcionales. Posee los manifiestos, instaladores, verificadores, esquemas, arneses de prueba y activos de lanzamiento reales; Este sitio web no copia esos archivos ni un rootfs.
+## Herramientas disponibles
 
+| Conjunto | Uso |
+| --- | --- |
+| `minimal` | Herramientas esenciales de línea de comandos |
+| `python` | Python 3, pip y entornos virtuales |
+| `web` | Node.js y npm de los paquetes de Ubuntu |
+| `cpp` | GCC, CMake, GDB y compilación nativa |
 
-## Alcance actual
+El entorno declarado es Ubuntu 24.04 en ARM64 o AMD64. Los conjuntos están marcados como **experimental**. Consulta el manifiesto de la versión elegida para conocer estado, dependencias y requisitos exactos.
 
+## Antes de instalar
 
-El repositorio declara los ajustes preestablecidos `minimal`, `python`, `web` y `cpp` para Ubuntu 24.04 en ARM64 y AMD64. Sus manifiestos actualmente los marcan `experimental`. El manifiesto raíz también registra la versión del tiempo de ejecución de PRoot, la URL de origen, SHA-256, los metadatos de entrada de rootfs y los hashes por ajuste preestablecido.
+1. Elige una versión o revisión compatible con tu entorno.
+2. Lee su manifiesto y verifica `checksums.sha256` y los hashes de los scripts antes de seguir el instalador documentado.
+3. Consulta las pruebas de Android PRoot. Superar las pruebas de contenedores Ubuntu no demuestra compatibilidad con tu dispositivo.
 
-
-## Ruta de verificación
-
-
-1. Elija una versión o revisión declarada en el repositorio de ajustes preestablecidos.
-
-2. Lea los manifiestos raíz y preestablecidos para conocer el estado, la arquitectura, la versión de Ubuntu, las dependencias y los requisitos de red.
-
-3. Verifique `checksums.sha256` más los valores SHA-256 declarados para los scripts seleccionados.
-
-4. Siga las instrucciones de validación y prueba del repositorio antes de usar un ajuste preestablecido para trabajos importantes.
-
-
-Esto no afirma que todas las herramientas se comporten igual en PRoot. Las comprobaciones de contenedores del repositorio validan el comportamiento normal de Ubuntu, mientras que sus informes PRoot de Android son la evidencia en tiempo de ejecución. Consulte [Arquitectura](/docs/local-linux/architecture), [Compatibilidad](/docs/local-linux/compatibility) y la [puerta de enlace de ajustes preestablecidos en el repositorio principal](https://github.com/mobiledevloperlab/nimotecode/tree/main/presets).
+Para comenzar, consulta [primeros pasos](/es/docs/local-linux/getting-started). Revisa los límites en [compatibilidad](/es/docs/local-linux/compatibility) y la verificación en [seguridad e integridad](/es/docs/local-linux/security-integrity).

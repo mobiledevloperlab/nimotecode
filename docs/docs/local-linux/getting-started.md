@@ -1,24 +1,47 @@
 ---
-title: Android Local Linux Getting Started | NimoteCode
-description: Prepare and open NimoteCode Local Linux on a supported Android device, then choose appropriate local or remote development work.
+title: Install Android Local Linux and run your first command | NimoteCode
+description: Install NimoteCode Local Linux, open /workspace, check Ubuntu and run a first Shell command. Includes package setup and stop, reset and delete guidance.
 ---
 
-# Android Local Linux Getting Started
+# Install Android Local Linux
 
-Use Local Linux for a small Ubuntu-based development environment on Android. It is available on Android 8+ 64-bit ARM64 and x86_64 devices, needs no Android root, and is not available on iPhone or iPad.
+Follow these steps to open a Linux terminal on your device. Check the [device and account requirements](/docs/local-linux#local-linux-requirements) first and leave space for the environment and your project tools. AI setup is not required.
 
-## Before installation
+## Install and open a workspace
 
-- Keep sufficient device storage available for the base environment and the project tools you plan to install.
-- Use a network connection for the initial setup and for later APT package installation.
-- Choose Local Linux for compact local work; use [SSH](/docs/ssh) when the project depends on an existing workstation, server, container, or long build.
+1. Select **Local Linux** on the welcome screen or in Explorer.
+2. Select **Install** and wait for installation to finish.
+3. Select **Start**, then open `/workspace`.
 
-## Open a workspace
+The initial installation uses the bundled image and stores environment files in app-private storage. Downloading additional packages requires a network connection.
 
-1. Select **Local Linux** from the workspace or Explorer chooser.
-2. Select **Install**, wait for preparation to complete, then select **Start**.
-3. Open the default `/workspace` directory.
-4. Inspect the environment in [Terminal](/docs/terminal), then add only the toolchain your project needs.
-5. Use Explorer, Editor, and [Source Control](/docs/source-control) in that workspace.
+<DocScreenshot file="local-linux-deploy.jpg" caption="Select Install in the Local Linux setup dialog." />
 
-The base environment provides Ubuntu, Bash, Git, and SSH foundations. It is not a promise that every desktop tool or debugger will behave identically under PRoot. Read [Compatibility](/docs/local-linux/compatibility) before selecting a local workload and [Linux Presets](/docs/local-linux/presets) for declared optional toolsets.
+## Run your first command
+
+Open [Terminal](/docs/terminal) in that workspace and run:
+
+```sh
+pwd
+uname -m
+cat /etc/os-release
+printf 'Hello from Local Linux\n'
+```
+
+`pwd` shows the working directory; `uname -m` identifies the architecture; `cat /etc/os-release` identifies Ubuntu. The final command should print `Hello from Local Linux`.
+
+The environment shares Android's kernel. `uname -a` reports that kernel, not the Ubuntu distribution version.
+
+<DocScreenshot file="local-linux-terminal-uname-a.jpg" caption="The Local Linux terminal runs commands directly on the device." />
+
+## Add your project tools
+
+Open or create project files in `/workspace`, then use the editor and [Source Control](/docs/source-control). Install only the tools the project needs through Ubuntu's package manager; optional [Linux Presets](/docs/local-linux/presets) have their own compatibility and setup requirements.
+
+For package errors or tools that behave differently under PRoot, use [troubleshooting](/docs/local-linux/troubleshooting).
+
+## Stop, reset or delete
+
+Stopping interrupts active work but keeps the environment. Resetting, deleting the environment or clearing app data removes its files; back up your project first.
+
+If Android stops the app in the background, return and restart Local Linux.

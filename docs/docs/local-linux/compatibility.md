@@ -1,6 +1,6 @@
 ---
-title: Android Local Linux Compatibility | NimoteCode
-description: Review NimoteCode Local Linux device, architecture, runtime, and workload compatibility expectations before starting development on Android.
+title: "Android Local Linux compatibility and limits | NimoteCode"
+description: "Check Android versions, ARM64 and x86_64 support, PRoot limitations and suitable workloads. Learn when to choose an SSH host instead."
 ---
 
 # Android Local Linux Compatibility

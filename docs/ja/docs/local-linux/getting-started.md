@@ -1,36 +1,47 @@
 ---
-title: Android Local Linux Getting Started | NimoteCode
-description: Prepare and open NimoteCode Local Linux on a supported Android device, then choose appropriate local or remote development work.
+title: Android Local Linux のインストールと最初のコマンド | NimoteCode
+description: NimoteCode Local Linux をインストールし、/workspace を開いて Ubuntu とコマンド実行を確認。ツール追加、停止、リセット、削除の手順も紹介します。
 ---
 
-# Android ローカル Linux 入門
+# Android Local Linux をインストール
 
+以下の手順で端末上の Linux ターミナルを開きます。先に[端末とアカウントの要件](/ja/docs/local-linux#local-linux-requirements)を確認し、環境とツール用の空き容量を確保してください。AI の設定は不要です。
 
-Android 上の小規模な Ubuntu ベースの開発環境にはローカル Linux を使用します。 Android 8 以降の 64 ビット ARM64 および x86_64 デバイスで利用でき、Android ルートは必要ありません。また、iPhone または iPad では利用できません。
+## インストールしてワークスペースを開く
 
+1. ようこそ画面または Explorer で **Local Linux** を選択します。
+2. **Install** を選び、完了を待ちます。
+3. **Start** を選び、`/workspace` を開きます。
 
-## インストール前
+初回インストールには同梱イメージを使い、環境ファイルはアプリ専用ストレージに保存します。追加パッケージのダウンロードにはネットワーク接続が必要です。
 
+<DocScreenshot file="local-linux-deploy.jpg" caption="Local Linux のセットアップ画面で Install を選択します。" />
 
-- 基本環境とインストールする予定のプロジェクト ツールに使用できる十分なデバイス ストレージを確保してください。
+## 最初のコマンドを実行
 
-- 初期セットアップとその後の APT パッケージのインストールにはネットワーク接続を使用します。
+同じワークスペースで[ターミナル](/ja/docs/terminal)を開き、次を実行します。
 
-- ローカル作業をコンパクトにするにはローカル Linux を選択します。プロジェクトが既存のワークステーション、サーバー、コンテナ、または長いビルドに依存している場合は、[SSH](/docs/ssh) を使用します。
+```sh
+pwd
+uname -m
+cat /etc/os-release
+printf 'Hello from Local Linux\n'
+```
 
+`pwd` は作業ディレクトリ、`uname -m` はアーキテクチャ、`cat /etc/os-release` は Ubuntu の情報を表示します。最後のコマンドは `Hello from Local Linux` を出力します。
 
-## ワークスペースを開く
+Android カーネルを共有するため、`uname -a` の出力は Ubuntu のディストリビューションバージョンを示しません。
 
+<DocScreenshot file="local-linux-terminal-uname-a.jpg" caption="Local Linux のターミナルで端末上のコマンドを実行します。" />
 
-1. ワークスペースまたはエクスプローラーセレクターから**ローカルLinux**を選択します。
+## プロジェクトのツールを準備
 
-2. [**インストール**]を選択し、準備が完了するまで待ってから、[**開始**]を選択します。
+`/workspace` でファイルを開くか作成し、エディターと[ソース管理](/ja/docs/source-control)を使います。Ubuntu のパッケージマネージャーで必要なツールだけを追加してください。任意の [Linux Presets](/ja/docs/local-linux/presets) には独自の互換性と設定要件があります。
 
-3. デフォルトの`/workspace`ディレクトリを開きます。
+パッケージのエラーや PRoot 上の動作差は[トラブルシューティング](/ja/docs/local-linux/troubleshooting)を参照してください。
 
-4. [ターミナル](/docs/terminal)で環境を確認し、プロジェクトに必要なツールチェーンのみを追加します。
+## 停止・リセット・削除
 
-5. そのワークスペースでエクスプローラ、エディタ、および[ソース管理](/docs/source-control)を使用します。
+停止は作業を中断し、環境を保持します。リセット、環境削除、アプリデータ消去はファイルを削除するため、先にプロジェクトをバックアップしてください。
 
-
-基本環境は、Ubuntu、Bash、Git、および SSH の基盤を提供します。すべてのデスクトップ ツールまたはデバッガーが PRoot の下で同じように動作するという保証はありません。ローカルワークロードを選択する前に[互換性](/docs/local-linux/compatibility)を読み、宣言されたオプションのツールセットについては[Linuxプリセット](/docs/local-linux/presets)をお読みください。
+Android がバックグラウンドでアプリを終了した場合は Local Linux を再起動します。

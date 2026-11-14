@@ -192,10 +192,15 @@ Published [Local Linux source bundles and license notices](https://nimotecode.co
 <summary>Maintain the website and docs</summary>
 
 ```bash
+nvm install
+nvm use
 npm ci
+npm ci --prefix blog
 npm run docs:build
 npm run docs:check
 ```
+
+Use Node 24 (`.nvmrc`), matching deployment. Astro requires Node >=22.23.4; Node 20 is unsupported. Run `nvm use` after opening a new terminal in this repository.
 
 Use `npm run docs:dev` to preview locally.
 

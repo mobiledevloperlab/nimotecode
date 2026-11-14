@@ -1,30 +1,27 @@
 ---
-title: NimoteCode Linux Presets | Android Local Linux
-description: Learn how NimoteCode Linux Presets declares optional Ubuntu development environments for Android Local Linux with manifests and SHA-256 verification.
+title: "Linux Presets: Python, Node.js, C++ 개발 도구 | NimoteCode"
+description: "Android Local Linux용 선택적 Ubuntu 도구 모음을 살펴보세요. 실험 상태, 지원 아키텍처, 종속성 및 SHA-256을 설치 전에 확인하세요."
 ---
 
-# NimoteCode Linux 사전 설정
+# NimoteCode Linux Presets
 
+선택적 개발 도구 모음은 [Linux Presets 저장소](https://github.com/mobiledevloperlab/nimote-linux-presets)에서 관리합니다. 프로젝트에 맞게 선택하고 설치 전에 호환성을 확인하세요.
 
-[NimoteCode Linux Presets](https://github.com/mobiledevloperlab/nimote-linux-presets)는 선택적 로컬 Linux 개발 환경을 위한 독립적인 기술 저장소입니다. 실제 매니페스트, 설치 프로그램, 검증자, 스키마, 테스트 하네스 및 릴리스 자산을 소유합니다. 이 웹사이트는 해당 파일이나 rootfs를 복사하지 않습니다.
+## 도구 모음
 
+| 도구 모음 | 용도 |
+| --- | --- |
+| `minimal` | 기본 명령줄 개발 도구 |
+| `python` | Python 3, pip, 가상 환경 |
+| `web` | Ubuntu 패키지의 Node.js와 npm |
+| `cpp` | GCC, CMake, GDB, 네이티브 빌드 도구 |
 
-## 현재 범위
+선언된 환경은 ARM64 또는 AMD64의 Ubuntu 24.04입니다. 도구 모음은 **experimental(실험 단계)**로 표시되어 있습니다. 정확한 상태, 종속성, 런타임 요구 사항은 선택한 버전의 manifest를 확인하세요.
 
+## 설치 전 확인
 
-리포지토리는 ARM64 및 AMD64의 Ubuntu 24.04에 대한 `minimal`, `python`, `web` 및 `cpp` 사전 설정을 선언합니다. 현재 매니페스트에는 `experimental`로 표시되어 있습니다. 루트 매니페스트는 PRoot 런타임 버전, 소스 URL, SHA-256, rootfs 입력 메타데이터 및 사전 설정별 해시도 기록합니다.
+1. 현재 환경에 맞는 릴리스나 리비전을 선택하세요.
+2. manifest를 읽고 `checksums.sha256` 및 해당 스크립트의 해시를 확인한 뒤 저장소의 설치 절차를 따르세요.
+3. Android PRoot 테스트 기록을 확인하세요. Ubuntu 컨테이너 테스트 통과만으로 기기 호환성을 입증할 수 없습니다.
 
-
-## 확인 경로
-
-
-1. 사전 설정 저장소에서 선언된 릴리스 또는 개정판을 선택합니다.
-
-2. 상태, 아키텍처, Ubuntu 버전, 종속성 및 네트워크 요구 사항에 대한 루트 및 사전 설정 매니페스트를 읽어보세요.
-
-3. `checksums.sha256`와 선택한 스크립트에 대해 선언된 SHA-256 값을 확인합니다.
-
-4. 중요한 작업에 사전 설정을 사용하기 전에 저장소의 검증 및 테스트 지침을 따르십시오.
-
-
-이는 PRoot에서 모든 도구가 동일하게 작동한다고 주장하는 것은 아닙니다. 저장소의 컨테이너 검사는 일반적인 Ubuntu 동작을 검증하는 반면 Android PRoot 보고서는 런타임 증거입니다. [아키텍처](/docs/local-linux/architecture), [호환성](/docs/local-linux/compatibility) 및 [기본 저장소의 사전 설정 게이트웨이](https://github.com/mobiledevloperlab/nimotecode/tree/main/presets)를 참조하세요.
+처음에는 [설치 시작하기](/ko/docs/local-linux/getting-started)를 참고하세요. 실행 제한은 [호환성](/ko/docs/local-linux/compatibility), 검증 방법은 [보안 및 무결성](/ko/docs/local-linux/security-integrity)을 확인하세요.

@@ -5,12 +5,27 @@ description: Open your project on mobile, connect to your development machine, t
 
 # NimoteCode features
 
-NimoteCode is a mobile development workspace for working with an existing project from a phone or tablet. It does not replace your repository, server, package manager, model provider, or project toolchain. Instead, it brings the parts of that workflow together: files, an editor, a shell environment, version control, and optional AI assistance.
+Edit code, run project tools, review Git changes, and work with AI from your phone or tablet. Switch between IDE, Terminal, and AI modes while keeping the same project and Explorer state.
 
 <div class="guide-actions">
 
 [Get started](/docs/quick-start) · [Read the documentation](/docs) · [Download NimoteCode](/download)
 
+</div>
+
+<WorkspaceModes />
+
+## Interface at a glance
+
+<div class="feature-showcase" role="region" tabindex="0" aria-label="NimoteCode feature highlights">
+  <div class="feature-showcase__track">
+    <figure class="feature-showcase__item"><img src="/screenshots/p1.png" alt="Local files, SSH, code editing and AI Agent in NimoteCode" width="1604" height="901" loading="eager"><figcaption>Workspaces, editing and AI Agent</figcaption></figure>
+    <figure class="feature-showcase__item"><img src="/screenshots/p2.png" alt="SSH terminal, Source Control and code diagnostics in NimoteCode" width="1597" height="896" loading="lazy"><figcaption>Terminal, Git and diagnostics</figcaption></figure>
+    <figure class="feature-showcase__item"><img src="/screenshots/p3.png" alt="NimoteCode debugging, remote workspace sync, and smart caching" width="1598" height="893" loading="lazy"><figcaption>Debugging and workspace sync</figcaption></figure>
+    <figure class="feature-showcase__item" aria-hidden="true"><img src="/screenshots/p1.png" alt="" width="1604" height="901" loading="lazy"><figcaption>Workspaces, editing and AI Agent</figcaption></figure>
+    <figure class="feature-showcase__item" aria-hidden="true"><img src="/screenshots/p2.png" alt="" width="1597" height="896" loading="lazy"><figcaption>Terminal, Git and diagnostics</figcaption></figure>
+    <figure class="feature-showcase__item" aria-hidden="true"><img src="/screenshots/p3.png" alt="" width="1598" height="893" loading="lazy"><figcaption>Debugging and workspace sync</figcaption></figure>
+  </div>
 </div>
 
 ## Choose the environment that fits the work
@@ -64,21 +79,6 @@ Plugins and language/debug tools do not silently install dependencies or grant n
 NimoteCode’s feature availability can vary by platform, app version, account entitlement, release channel, and store region. The app shows the access state for the current account; where a feature is offered as Pro, it is gated at the relevant operation rather than changing the authority of your remote host. [Account and subscription](/docs/account-subscription) explains how to check or restore access.
 
 For the precise setup steps and limitations of a workflow, use the linked product documentation rather than relying on this overview.
-
-## Interface at a glance
-
-The screenshots below illustrate the workspace, code review, diagnostics, and project-transfer surfaces described above.
-
-<div class="feature-showcase" role="region" tabindex="0" aria-label="NimoteCode feature highlights">
-  <div class="feature-showcase__track">
-    <figure class="feature-showcase__item"><img src="/screenshots/p1.png" alt="Local files, SSH, code editing and AI Agent in NimoteCode" width="1604" height="901" loading="eager"><figcaption>Workspaces, editing and AI Agent</figcaption></figure>
-    <figure class="feature-showcase__item"><img src="/screenshots/p2.png" alt="SSH terminal, Source Control and code diagnostics in NimoteCode" width="1597" height="896" loading="lazy"><figcaption>Terminal, Git and diagnostics</figcaption></figure>
-    <figure class="feature-showcase__item"><img src="/screenshots/p3.png" alt="NimoteCode debugging, remote workspace sync, and smart caching" width="1598" height="893" loading="lazy"><figcaption>Debugging and workspace sync</figcaption></figure>
-    <figure class="feature-showcase__item" aria-hidden="true"><img src="/screenshots/p1.png" alt="" width="1604" height="901" loading="lazy"><figcaption>Workspaces, editing and AI Agent</figcaption></figure>
-    <figure class="feature-showcase__item" aria-hidden="true"><img src="/screenshots/p2.png" alt="" width="1597" height="896" loading="lazy"><figcaption>Terminal, Git and diagnostics</figcaption></figure>
-    <figure class="feature-showcase__item" aria-hidden="true"><img src="/screenshots/p3.png" alt="" width="1598" height="893" loading="lazy"><figcaption>Debugging and workspace sync</figcaption></figure>
-  </div>
-</div>
 
 ## NimoteCode 2.3.0 workspaces and Docker
 

@@ -406,3 +406,12 @@ html:not(.dark) .pf-billing-toggle button.active {
     font-size: 2.4rem;
   }
 }
+
+/* Keep pricing and eligibility separate, with detailed capabilities on demand. */
+.pf-plan-card .home-page-btn { margin-top: 24px; }
+.pf-plan-card.is-featured .pf-price-row { flex-direction: column; gap: 10px; align-items: flex-start; }
+.pf-plan-card.is-featured .pf-price-row strong { font-size: clamp(1.5rem, 2.5vw, 2rem); line-height: 1.3; }
+.pf-feature-details { margin-block: 24px 48px; border: 1px solid var(--nimote-border); border-radius: var(--nimote-radius-md); }
+.pf-feature-details > summary { padding: 20px 24px; cursor: pointer; font-weight: 600; color: var(--nimote-text-primary); }
+.pf-feature-details > summary:focus-visible { outline: 2px solid var(--nimote-link); outline-offset: 4px; }
+.pf-feature-details .pf-features-section { padding: 32px 24px; }

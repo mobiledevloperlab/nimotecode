@@ -3,3 +3,27 @@
 .blog-shell[data-blog-theme=dark]{--ink:#e6f1ee;--muted:#9bafab;--line:#304641;--accent:#6bdac0;--surface:#172724;--paper:#10201e;--hero:#1a3530;--vp-c-bg-soft:#203833;--vp-code-bg:#203833;color-scheme:dark}.blog-shell[data-blog-theme=light]{color-scheme:light}@media(prefers-color-scheme:dark){.blog-shell[data-blog-theme=auto]{--ink:#e6f1ee;--muted:#9bafab;--line:#304641;--accent:#6bdac0;--surface:#172724;--paper:#10201e;--hero:#1a3530;--vp-c-bg-soft:#203833;--vp-code-bg:#203833;color-scheme:dark}}
 @media(max-width:700px){.blog-header-inner{padding:15px 20px}.blog-brand{font-size:13px}.blog-brand-mark{width:36px;height:36px}.blog-brand small{font-size:8px}.blog-header nav{gap:13px;font-size:12px}.blog-product-link{display:none}.blog-main{padding:0 20px}.blog-intro{grid-template-columns:1fr;gap:35px;padding:58px 0 45px}.blog-intro h1{margin:20px 0;font-size:clamp(45px,10vw,64px)}.lab-visual{min-height:270px}.lab-orbit{width:240px;height:240px}.lab-orbit-two{width:180px;height:180px}.blog-list-item{grid-template-columns:1fr 24px;gap:10px;padding:25px 0}.blog-list-date{grid-column:1/-1;flex-direction:row;gap:12px}.blog-list-body h3{font-size:19px}.blog-article{padding-top:48px}.blog-article-tags{margin-top:40px}.blog-footer{padding:0 20px;margin-top:70px}.blog-footer>div{flex-wrap:wrap}.blog-footer>div span:nth-child(2){display:none}}
 .blog-about{max-width:1200px;margin:90px auto 0;padding:0 32px}.blog-about-inner{display:grid;grid-template-columns:52px 1fr;gap:20px;padding:30px;border:1px solid var(--line);border-radius:18px;background:var(--surface)}.blog-about-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:14px;background:var(--hero);color:var(--accent);font:700 16px ui-monospace,monospace}.blog-about-label{color:var(--accent);font:700 10px/1.4 ui-monospace,monospace;letter-spacing:.1em}.blog-about h2{margin:8px 0;font-size:20px;letter-spacing:-.03em}.blog-about-inner p:not(.blog-about-label){max-width:670px;color:var(--muted);font-size:14px;line-height:1.7}.blog-about-projects{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.blog-about-projects a,.blog-about-projects span{padding:6px 10px;border:1px solid var(--line);border-radius:7px;color:var(--accent);font-size:12px;font-weight:700}.blog-about+.blog-footer{margin-top:40px}@media(max-width:700px){.blog-about{margin-top:65px;padding:0 20px}.blog-about-inner{grid-template-columns:1fr;padding:24px}}
+
+/* The development fallback uses the same palette and appearance as the site.
+   Root-class selectors also apply before Vue hydrates the blog shell. */
+.blog-shell,
+.dark .blog-shell,
+.blog-shell[data-blog-theme=dark],
+.blog-shell[data-blog-theme=light] {
+  --ink: var(--nimote-text-primary);
+  --muted: var(--nimote-text-secondary);
+  --line: var(--nimote-border);
+  --accent: var(--nimote-link);
+  --surface: var(--nimote-bg-elevated);
+  --paper: var(--nimote-bg);
+  --hero: var(--nimote-bg-subtle);
+  --vp-c-bg-soft: var(--nimote-bg-subtle);
+  --vp-code-bg: var(--nimote-bg-subtle);
+  font-family: var(--vp-font-family-base);
+}
+.blog-shell { color-scheme: light; }
+.dark .blog-shell { color-scheme: dark; }
+.blog-brand-mark { display: flex; align-items: center; justify-content: center; background: var(--nimote-action); }
+.blog-brand-mark span, .blog-status-dot { color: inherit; }
+.blog-status-dot { background: var(--nimote-link); box-shadow: none; }
+.blog-shell .blog-article-tags { margin-top: 32px; }
