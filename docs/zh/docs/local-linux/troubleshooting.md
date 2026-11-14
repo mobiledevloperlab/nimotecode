@@ -1,6 +1,6 @@
 ---
-title: Android 本地 Linux 故障排查 | NimoteCode
-description: 排查 Android 上 NimoteCode 本地 Linux 常见的安装、软件包、架构与生命周期问题。
+title: "Android 本地 Linux 故障排查：安装、APT 与后台停止 | NimoteCode"
+description: "解决 Local Linux 入口不可用、安装失败、APT 软件包错误、PRoot 兼容性和 Android 后台任务停止问题。"
 ---
 
 # Android 本地 Linux 故障排查

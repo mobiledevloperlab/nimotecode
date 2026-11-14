@@ -3,44 +3,44 @@
     "badge": "A mobile IDE for Android & iOS",
     "title": "Your project,",
     "accent": "ready when you are.",
-    "intro": "Pick up work from your phone or tablet. Open a local project or connect to your computer over SSH, then edit files, run your project’s tools, and review changes in one workspace.",
+    "intro": "Connect to your development machine from your phone or tablet. Edit code, run commands, and review Git changes.",
     "android": "Get for Android",
     "ios": "Get for iOS",
     "watch": "Watch the demo",
     "available": "Android · iPhone · iPad",
     "release": "What’s new",
-    "caption": "Phone-first development. More room to work on a tablet.",
+    "caption": "IDE, Terminal, and AI. One project, wherever you work.",
     "facts": [
       "Local files & SSH projects",
       "Root-free Linux on Android",
       "Git, GitHub & optional AI"
     ],
-    "eyebrow": "Built around your project",
-    "heading": "Pick up where your project left off.",
-    "description": "Use IDE, Terminal, and AI modes around the same project. Your files and Explorer stay in place as you move from a quick edit to a command or an AI task.",
+    "eyebrow": "Three modes. One project.",
+    "heading": "One project. Three ways to work.",
+    "description": "Switch modes while keeping your project and Explorer state.",
     "features": [
       [
-        "Choose a workspace",
-        "Start where your project lives.",
-        "Edit local files on your device, or use your development machine’s projects and tools over SSH. Supported Android devices can also run root-free Ubuntu. A local folder alone does not provide a command runtime.",
-        "Explore local and SSH workspaces"
+        "IDE mode",
+        "See the project. Focus on the change.",
+        "Bring project files, code editing, and Git review together. Work across tabs or split panes, then inspect the diff before committing.",
+        "Explore the editor"
       ],
       [
-        "Edit and review",
-        "From a code change to a reviewed diff.",
-        "Edit project files, run project checks in an SSH or Android Local Linux terminal, then inspect the Git diff. Use GitHub integration to browse repositories, work with issues and pull requests, and check reviews and CI status.",
-        "Explore Git and GitHub workflows"
+        "Terminal mode",
+        "Give commands and project tools room to work.",
+        "Run builds, tests, and scripts over SSH or supported Android Local Linux. Adaptive terminal panes, command history, and zoom make mobile command work easier.",
+        "Explore the terminal"
       ],
       [
-        "Work with AI",
-        "Built-in Agent. Your choice of tools.",
-        "Use the built-in Nimote Agent, customized from the Codex core, or connect compatible external agents through ACP. Nimote Agent is available through Early Access and uses BYOK (Bring Your Own Key): add your own model API key; provider fees apply and model credits are not included. External ACP agents require their own runtime setup and authentication.",
-        "Explore Agents and model setup"
+        "AI mode",
+        "Turn a goal into a plan you can review.",
+        "Let an agent read your project, propose a plan, and carry out multi-step tasks. Review the plan, add follow-up instructions, and inspect tool output and code changes.",
+        "Explore AI workflows"
       ]
     ],
     "demoLabel": "See it in action",
-    "demoTitle": "See NimoteCode in use.",
-    "demoCopy": "Watch workspace and AI Agent demos to see how file editing, project tools and task execution work in the app.",
+    "demoTitle": "See the workflow in action.",
+    "demoCopy": "Choose an AI Agent or workspace walkthrough.",
     "demoSteps": [
       "Inspect",
       "Plan",
@@ -66,8 +66,8 @@
         "Selected tutorials, practical blog posts and official references."
       ]
     ],
-    "ctaTitle": "Make progress from wherever you are.",
-    "ctaCopy": "Open the demo to see how the workspace works, or connect your own project. Keep its tools on your computer with SSH, or use Local Linux on a supported Android device.",
+    "ctaTitle": "Open your next project.",
+    "ctaCopy": "Start with a local folder or connect to your development machine over SSH.",
     "allDownloads": "All download options",
     "illustration": "Illustrative product interface",
     "blogHeading": "From the blog",
@@ -137,7 +137,7 @@
     ],
     "resourceLabel": "Technical resources",
     "resourceCopy": "Guides, tools and development references.",
-    "startNote": "Free to start. No AI setup needed to open your first project.",
+    "startNote": "Free to start. No AI setup required.",
     "startLink": "Set up your first workspace",
     "byok": "AI models use BYOK (Bring Your Own Key). Add your own provider API key; model usage is billed separately by your provider. No model credits are included.",
     "planLink": "See free features and Early Access",
@@ -150,50 +150,81 @@
     "reviewsLink": "Read reviews on Google Play",
     "reviewsNote": "Full reviews in their original language. Feedback reflects the version reviewed.",
     "reviewsUpdated": "Checked",
-    "reviewOriginal": "Original review"
+    "reviewOriginal": "Original review",
+    "modeBenefits": [
+      [
+        "Multi-file and split editing",
+        "Git diffs and change review",
+        "Keep project and Explorer state"
+      ],
+      [
+        "Builds, tests, and scripts",
+        "History, zoom, and terminal panes",
+        "SSH and Android Local Linux"
+      ],
+      [
+        "Project context and planning",
+        "Execution timeline and follow-ups",
+        "Reviewable results and code changes"
+      ]
+    ],
+    "modeNotes": [
+      "Language services and debugging need configured tools; some advanced features require Pro.",
+      "Commands need SSH or supported Android Local Linux; multiple terminals require Pro.",
+      "Agent access is included in Early Access Pro. Bring your own API key; model usage is billed separately."
+    ],
+    "screenshotLink": "View screenshot",
+    "capabilityDetails": "More development tools and access details",
+    "reviewExpand": "Read the full review",
+    "reviewCollapse": "Collapse review",
+    "modeSummaries": [
+      "Browse project files, edit across tabs, and review Git diffs in IDE mode.",
+      "Run commands, builds, and tests over SSH or supported Android Local Linux in Terminal mode.",
+      "Understand code, plan tasks, and work with an agent while reviewing its actions and results in AI mode."
+    ]
   },
   "zh": {
     "badge": "Android 与 iOS 移动 IDE",
     "title": "项目在手边，",
     "accent": "开发随时继续。",
-    "intro": "在手机或平板打开本地项目，或通过 SSH 连回开发电脑。编辑文件、运行项目工具、检查改动，都在同一个工作区完成。",
+    "intro": "在手机和平板上连接开发主机，编辑代码、运行命令并审查 Git 改动。",
     "android": "下载 Android 版",
     "ios": "下载 iOS 版",
     "watch": "观看产品演示",
     "available": "Android · iPhone · iPad",
     "release": "查看最新更新",
-    "caption": "以手机为中心的开发体验，平板带来更宽阔的工作空间。",
+    "caption": "IDE、终端与 AI，围绕同一个项目。",
     "facts": [
       "本地文件与 SSH 项目",
       "Android 免 root Linux",
       "Git、GitHub 与可选 AI"
     ],
-    "eyebrow": "围绕你的项目展开",
-    "heading": "从上次停下的地方继续。",
-    "description": "围绕同一个项目使用 IDE、终端和 AI 模式。切换任务时，项目和资源管理器仍在原处，编辑、执行命令与 AI 协作可以顺着进行。",
+    "eyebrow": "三种模式，一个项目",
+    "heading": "一个项目，三种工作方式。",
+    "description": "切换模式，保留项目与资源管理器状态。",
     "features": [
       [
-        "选择工作区",
-        "项目在哪里，就从哪里开始。",
-        "打开设备上的本地文件进行编辑；通过 SSH 使用开发主机上的项目和工具链；受支持的 Android 设备还可免 root 运行 Ubuntu。本地文件夹本身不提供命令运行环境。",
-        "了解本地与 SSH 工作区"
+        "IDE 模式",
+        "看清项目，专注修改。",
+        "将项目文件、代码编辑和 Git 审查集中在一起。使用标签页或分栏处理多个文件，核对 Diff 后再提交改动。",
+        "探索编辑器"
       ],
       [
-        "修改与检查",
-        "从修改代码，到审查这次改动。",
-        "编辑项目文件，在 SSH 或 Android Local Linux 终端运行项目检查，再查看 Git Diff。通过 GitHub 集成浏览仓库、处理 Issue 和拉取请求，并查看评审与 CI 状态。",
-        "了解 Git 与 GitHub 工作流"
+        "终端模式",
+        "让命令与项目工具充分展开。",
+        "在 SSH 或受支持的 Android Local Linux 工作区运行构建、测试和脚本。自适应终端面板、命令历史与缩放，让手机上的命令操作更顺手。",
+        "探索终端"
       ],
       [
-        "AI 协作",
-        "内置 Agent，也能接入你的常用工具。",
-        "使用基于 Codex 核心定制的内置 Nimote Agent，或通过 ACP 接入兼容的外部 Agent。Nimote Agent 通过 Early Access 开放，采用 BYOK（自备 API Key）方式：配置自己的模型 API Key，模型调用费用由服务商另行收取，不包含模型额度。外部 ACP Agent 需单独配置运行环境与认证。",
-        "了解 Agent 与模型配置"
+        "AI 模式",
+        "围绕目标，规划并推进任务。",
+        "让 Agent 读取项目、提出计划并执行多步骤任务。审查计划、追加指令，再核对工具输出与代码改动。",
+        "探索 AI 工作流"
       ]
     ],
     "demoLabel": "真实操作演示",
-    "demoTitle": "看看 NimoteCode 中的实际操作。",
-    "demoCopy": "观看工作区与 AI Agent 演示，了解文件编辑、项目工具和任务执行在应用中的操作方式。",
+    "demoTitle": "看看实际操作。",
+    "demoCopy": "选择 AI Agent 或工作区演示，了解完整操作过程。",
     "demoSteps": [
       "检查",
       "规划",
@@ -219,8 +250,8 @@
         "按场景阅读实用博客、教程与外部官方资料。"
       ]
     ],
-    "ctaTitle": "换个地方，也能推进手头的项目。",
-    "ctaCopy": "先打开演示工作区了解操作，也可以直接连接自己的项目。通过 SSH 使用电脑上已有的开发环境；支持的 Android 设备还可选择 Local Linux。",
+    "ctaTitle": "打开项目，继续创造。",
+    "ctaCopy": "从本地文件夹开始，或通过 SSH 连接你的开发电脑。",
     "allDownloads": "查看全部下载方式",
     "illustration": "产品界面示意",
     "blogHeading": "博客与开发指南",
@@ -290,7 +321,7 @@
     ],
     "resourceLabel": "技术资源",
     "resourceCopy": "查找移动开发指南、工具与技术资料。",
-    "startNote": "免费开始使用。打开第一个项目，无需先配置 AI。",
+    "startNote": "免费开始，无需先配置 AI。",
     "startLink": "创建你的第一个工作区",
     "byok": "AI 模型采用 BYOK（自备 API Key）方式。需配置自己的模型服务商与 API Key，模型调用费用由服务商另行收取；NimoteCode 不包含模型额度。",
     "planLink": "查看免费功能与 Early Access 权益",
@@ -303,50 +334,81 @@
     "reviewsLink": "在 Google Play 查看评价",
     "reviewsNote": "以下为完整评价原文，反馈对应用户当时使用的版本。",
     "reviewsUpdated": "核对日期",
-    "reviewOriginal": "查看原评"
+    "reviewOriginal": "查看原评",
+    "modeBenefits": [
+      [
+        "多文件与分栏编辑",
+        "Git Diff 与改动审查",
+        "保留项目与资源管理器状态"
+      ],
+      [
+        "构建、测试与脚本",
+        "命令历史、缩放与面板",
+        "SSH 与 Android Local Linux"
+      ],
+      [
+        "项目上下文与任务规划",
+        "执行时间线与追加指令",
+        "结果与代码改动可审查"
+      ]
+    ],
+    "modeNotes": [
+      "语言服务和调试需配置相应工具；部分进阶能力需 Pro。",
+      "运行命令需 SSH 或受支持的 Android Local Linux；多终端需 Pro。",
+      "Agent 通过 Early Access Pro 开放。自备 API Key，模型费用另计。"
+    ],
+    "screenshotLink": "查看真实界面",
+    "capabilityDetails": "更多开发能力与使用条件",
+    "reviewExpand": "展开完整评价",
+    "reviewCollapse": "收起评价",
+    "modeSummaries": [
+      "浏览项目、多文件编辑与 Git Diff 审查，让每次修改更清楚。",
+      "通过 SSH 或受支持的 Android Local Linux 运行命令、构建和测试。",
+      "理解代码、规划任务并协助执行，过程与结果可审查。"
+    ]
   },
   "ja": {
     "badge": "Android・iOS 向けモバイル IDE",
     "title": "プロジェクトの続きは、",
     "accent": "スマートフォンから。",
-    "intro": "スマートフォンやタブレットでローカルプロジェクトを開くか、SSH で開発用コンピューターに接続。ファイル編集、プロジェクトのコマンド実行、変更確認を同じワークスペースで行えます。",
+    "intro": "スマートフォンやタブレットから開発マシンに接続。コードを編集し、コマンドを実行して Git の変更を確認できます。",
     "android": "Android 版を入手",
     "ios": "iOS 版を入手",
     "watch": "デモを見る",
     "available": "Android · iPhone · iPad",
     "release": "最新のアップデート",
-    "caption": "スマートフォンを中心に。タブレットなら、もっと広い作業スペース。",
+    "caption": "IDE・ターミナル・AI。同じプロジェクトで。",
     "facts": [
       "ローカルファイルと SSH プロジェクト",
       "Android で root 不要の Linux",
       "Git・GitHub・オプションの AI"
     ],
-    "eyebrow": "プロジェクトを中心に",
-    "heading": "前回の続きから、すぐに作業。",
-    "description": "同じプロジェクトで IDE、ターミナル、AI の各モードを利用できます。切り替えてもプロジェクトと Explorer はそのまま。編集からコマンド実行、AI への依頼へつなげられます。",
+    "eyebrow": "3つのモード、1つのプロジェクト",
+    "heading": "1つのプロジェクト、3つの作業モード。",
+    "description": "モードを切り替えても、プロジェクトと Explorer の状態を維持。",
     "features": [
       [
-        "ワークスペースを選ぶ",
-        "プロジェクトのある場所から始めよう。",
-        "端末上のローカルファイルを編集したり、SSH で開発マシン上のプロジェクトやツールを利用できます。対応する Android 端末では root 不要の Ubuntu も実行できます。ローカルフォルダーを開くだけでは、コマンドの実行環境は提供されません。",
-        "ローカル・SSH ワークスペースについて"
+        "IDE モード",
+        "プロジェクトを把握し、編集に集中。",
+        "ファイル、コード編集、Git レビューをひとつに。タブや分割画面で複数ファイルを編集し、コミット前に差分を確認できます。",
+        "エディターを見る"
       ],
       [
-        "編集と確認",
-        "コードの変更から、差分の確認まで。",
-        "ファイルを編集し、SSH または Android Local Linux のターミナルでプロジェクトのチェックを実行して、Git の差分を確認できます。GitHub 連携では、リポジトリの閲覧、Issue やプルリクエストの処理、レビューや CI の状況確認ができます。",
-        "Git・GitHub ワークフローについて"
+        "ターミナルモード",
+        "コマンドと開発ツールを広い画面で。",
+        "SSH または対応 Android Local Linux でビルド、テスト、スクリプトを実行。可変ペイン、履歴、ズームで操作を補助します。",
+        "ターミナルを見る"
       ],
       [
-        "AI と作業する",
-        "内蔵 Agent と、使い慣れたツール。",
-        "Codex コアをベースにカスタマイズした内蔵 Nimote Agent を使うか、ACP 経由で互換性のある外部 Agent に接続できます。Nimote Agent は Early Access で提供され、BYOK（API キー持ち込み）方式です。自分のモデル API キーを設定し、利用料はプロバイダーに別途支払います。モデルの利用枠は含まれません。外部 ACP Agent は実行環境の設定と認証が別途必要です。",
-        "Agent とモデル設定について"
+        "AI モード",
+        "目標から計画、実行、確認へ。",
+        "Agent がプロジェクトを読み、計画を提案して複数ステップの作業を実行。計画を確認し、追加指示を送り、出力と差分を検証できます。",
+        "AI ワークフローを見る"
       ]
     ],
     "demoLabel": "操作デモ",
-    "demoTitle": "NimoteCode の実際の操作を見てみよう。",
-    "demoCopy": "ワークスペースと AI Agent のデモで、ファイル編集、プロジェクトツール、タスク実行の操作を確認できます。",
+    "demoTitle": "実際の操作を見る。",
+    "demoCopy": "AI Agent またはワークスペースの操作デモを選択。",
     "demoSteps": [
       "調査",
       "計画",
@@ -372,8 +434,8 @@
         "実践ブログ、チュートリアル、公式資料を厳選。"
       ]
     ],
-    "ctaTitle": "場所を選ばず、プロジェクトを前へ。",
-    "ctaCopy": "まずデモで操作を確認するか、自分のプロジェクトに接続しましょう。SSH ならコンピューターの開発環境をそのまま使えます。対応する Android では Local Linux も利用できます。",
+    "ctaTitle": "次のプロジェクトを開こう。",
+    "ctaCopy": "ローカルフォルダーを開くか、SSH で開発マシンに接続。",
     "allDownloads": "すべてのダウンロード方法",
     "illustration": "製品インターフェースのイメージ",
     "blogHeading": "ブログと開発ガイド",
@@ -443,7 +505,7 @@
     ],
     "resourceLabel": "技術リソース",
     "resourceCopy": "開発ガイド、ツール、技術資料。",
-    "startNote": "無料で始められます。最初のプロジェクトに AI 設定は不要です。",
+    "startNote": "無料で開始。AI の設定は後から。",
     "startLink": "最初のワークスペースを作成",
     "byok": "AI モデルは BYOK（API キー持ち込み）方式です。自分のプロバイダーと API キーを設定してください。モデル利用料はプロバイダーから別途請求され、利用枠は含まれません。",
     "planLink": "無料機能と Early Access を確認",
@@ -456,50 +518,81 @@
     "reviewsLink": "Google Play でレビューを見る",
     "reviewsNote": "レビューは原文の全文を掲載しています。内容は投稿時のバージョンに関するものです。",
     "reviewsUpdated": "確認日",
-    "reviewOriginal": "元のレビュー"
+    "reviewOriginal": "元のレビュー",
+    "modeBenefits": [
+      [
+        "複数ファイルと分割編集",
+        "Git の差分と変更レビュー",
+        "プロジェクトと Explorer の状態を維持"
+      ],
+      [
+        "ビルド・テスト・スクリプト",
+        "履歴・ズーム・ターミナルペイン",
+        "SSH と Android Local Linux"
+      ],
+      [
+        "プロジェクトの理解と計画",
+        "実行履歴と追加指示",
+        "結果とコード変更を確認"
+      ]
+    ],
+    "modeNotes": [
+      "言語サービスとデバッグはツール設定が必要です。一部の高度な機能は Pro 対象です。",
+      "コマンド実行には SSH または対応 Android Local Linux が必要です。複数ターミナルは Pro 対象です。",
+      "Agent は Early Access Pro で提供。API キーは持ち込みで、モデル利用料は別途発生します。"
+    ],
+    "screenshotLink": "画面を拡大",
+    "capabilityDetails": "開発機能と利用条件",
+    "reviewExpand": "レビュー全文を読む",
+    "reviewCollapse": "折りたたむ",
+    "modeSummaries": [
+      "IDE モードでファイルを参照し、複数ファイルを編集して Git の差分を確認。",
+      "ターミナルモードで SSH または対応 Android Local Linux のコマンド、ビルド、テストを実行。",
+      "AI モードでコードを理解し、作業を計画。Agent の操作と結果を確認しながら進められます。"
+    ]
   },
   "ko": {
     "badge": "Android 및 iOS용 모바일 IDE",
     "title": "프로젝트 작업을,",
     "accent": "언제 어디서나 이어가세요.",
-    "intro": "휴대폰이나 태블릿에서 로컬 프로젝트를 열거나 SSH로 개발 컴퓨터에 연결하세요. 파일 편집, 프로젝트 명령 실행, 변경 사항 검토를 한 작업 공간에서 할 수 있습니다.",
+    "intro": "휴대폰과 태블릿에서 개발 컴퓨터에 연결하세요. 코드를 편집하고 명령을 실행하며 Git 변경 사항을 검토하세요.",
     "android": "Android 다운로드",
     "ios": "iOS 다운로드",
     "watch": "데모 보기",
     "available": "Android · iPhone · iPad",
     "release": "최신 업데이트",
-    "caption": "휴대폰 중심의 개발 경험. 태블릿에서는 더 넓은 작업 공간.",
+    "caption": "IDE, 터미널, AI. 하나의 프로젝트에서.",
     "facts": [
       "로컬 파일과 SSH 프로젝트",
       "Android에서 루팅 없이 Linux 실행",
       "Git, GitHub 및 선택형 AI"
     ],
-    "eyebrow": "프로젝트 중심의 작업 공간",
-    "heading": "마지막으로 멈춘 곳에서 다시 시작하세요.",
-    "description": "같은 프로젝트에서 IDE, 터미널, AI 모드를 오가세요. 모드를 바꿔도 프로젝트와 Explorer는 그대로 유지되어 편집에서 명령 실행과 AI 작업으로 자연스럽게 이어집니다.",
+    "eyebrow": "세 가지 모드, 하나의 프로젝트",
+    "heading": "하나의 프로젝트, 세 가지 작업 모드.",
+    "description": "모드를 전환해도 프로젝트와 Explorer 상태가 유지됩니다.",
     "features": [
       [
-        "작업 공간 선택",
-        "프로젝트가 있는 곳에서 시작하세요.",
-        "기기의 로컬 파일을 편집하거나 SSH로 개발 컴퓨터의 프로젝트와 도구를 사용하세요. 지원되는 Android 기기에서는 루팅 없이 Ubuntu를 실행할 수도 있습니다. 로컬 폴더를 여는 것만으로는 명령 실행 환경이 제공되지 않습니다.",
-        "로컬 및 SSH 작업 공간 알아보기"
+        "IDE 모드",
+        "프로젝트를 살피고 수정에 집중하세요.",
+        "프로젝트 파일, 코드 편집, Git 검토를 한곳에서 처리하세요. 탭과 분할 화면으로 여러 파일을 편집하고 커밋 전에 Diff를 확인하세요.",
+        "편집기 살펴보기"
       ],
       [
-        "수정과 검토",
-        "코드 수정부터 변경 사항 검토까지.",
-        "파일을 편집하고 SSH 또는 Android Local Linux 터미널에서 프로젝트 검사를 실행한 뒤 Git diff를 확인하세요. GitHub 연동으로 저장소를 탐색하고 이슈와 풀 리퀘스트를 처리하며 리뷰와 CI 상태를 확인할 수 있습니다.",
-        "Git 및 GitHub 워크플로 알아보기"
+        "터미널 모드",
+        "명령과 개발 도구를 넓게 사용하세요.",
+        "SSH 또는 지원되는 Android Local Linux에서 빌드, 테스트, 스크립트를 실행하세요. 가변 패널, 명령 기록, 확대 기능으로 모바일 작업을 돕습니다.",
+        "터미널 살펴보기"
       ],
       [
-        "AI와 작업",
-        "내장 Agent와 익숙한 도구를 함께.",
-        "Codex 코어를 기반으로 맞춤 개발한 내장 Nimote Agent를 사용하거나 ACP로 호환되는 외부 Agent에 연결하세요. Nimote Agent는 Early Access로 제공되며 BYOK(자신의 API 키 사용) 방식입니다. 모델 API 키를 직접 설정하고 사용료는 제공업체에 별도로 지불하며, 모델 크레딧은 포함되지 않습니다. 외부 ACP Agent는 별도의 실행 환경 설정과 인증이 필요합니다.",
-        "Agent 및 모델 설정 알아보기"
+        "AI 모드",
+        "목표를 검토 가능한 계획으로 바꾸세요.",
+        "Agent가 프로젝트를 읽고 계획을 제안하며 여러 단계의 작업을 수행합니다. 계획 검토, 추가 지시, 도구 출력과 코드 변경 확인을 이어가세요.",
+        "AI 워크플로 살펴보기"
       ]
     ],
     "demoLabel": "실제 사용 데모",
-    "demoTitle": "NimoteCode의 실제 사용 모습을 확인하세요.",
-    "demoCopy": "작업 공간과 AI Agent 데모에서 파일 편집, 프로젝트 도구, 작업 실행이 앱에서 어떻게 이루어지는지 살펴보세요.",
+    "demoTitle": "실제 작업 과정을 확인하세요.",
+    "demoCopy": "AI Agent 또는 작업 공간 데모를 선택하세요.",
     "demoSteps": [
       "확인",
       "계획",
@@ -525,8 +618,8 @@
         "실용 블로그, 튜토리얼, 공식 참고 자료 모음."
       ]
     ],
-    "ctaTitle": "어디서든 프로젝트를 한 걸음 더 진행하세요.",
-    "ctaCopy": "먼저 데모 작업 공간에서 사용법을 살펴보거나 자신의 프로젝트에 연결하세요. SSH로 컴퓨터의 개발 환경을 그대로 이용할 수 있고, 지원되는 Android에서는 Local Linux도 사용할 수 있습니다.",
+    "ctaTitle": "프로젝트를 열고 계속 만드세요.",
+    "ctaCopy": "로컬 폴더를 열거나 SSH로 개발 컴퓨터에 연결하세요.",
     "allDownloads": "모든 다운로드 방법",
     "illustration": "제품 인터페이스 예시",
     "blogHeading": "블로그와 개발 가이드",
@@ -596,7 +689,7 @@
     ],
     "resourceLabel": "기술 자료",
     "resourceCopy": "개발 가이드, 도구 및 참고 자료.",
-    "startNote": "무료로 시작하세요. 첫 프로젝트에 AI 설정은 필요하지 않습니다.",
+    "startNote": "무료로 시작하세요. AI 설정은 나중에.",
     "startLink": "첫 작업 공간 만들기",
     "byok": "AI 모델은 BYOK(자신의 API 키 사용) 방식입니다. AI 제공업체와 API 키를 직접 설정하며, 모델 사용료는 해당 제공업체가 별도로 청구합니다. 모델 크레딧은 포함되지 않습니다.",
     "planLink": "무료 기능 및 Early Access 확인",
@@ -609,50 +702,81 @@
     "reviewsLink": "Google Play에서 후기 보기",
     "reviewsNote": "후기 원문 전체입니다. 내용은 작성 당시 사용한 버전에 대한 의견입니다.",
     "reviewsUpdated": "확인 날짜",
-    "reviewOriginal": "원문 보기"
+    "reviewOriginal": "원문 보기",
+    "modeBenefits": [
+      [
+        "여러 파일과 분할 편집",
+        "Git Diff와 변경 검토",
+        "프로젝트와 Explorer 상태 유지"
+      ],
+      [
+        "빌드, 테스트, 스크립트",
+        "기록, 확대, 터미널 패널",
+        "SSH와 Android Local Linux"
+      ],
+      [
+        "프로젝트 맥락과 계획",
+        "실행 기록과 추가 지시",
+        "결과와 코드 변경 검토"
+      ]
+    ],
+    "modeNotes": [
+      "언어 서비스와 디버깅은 도구 설정이 필요하며 일부 고급 기능은 Pro에 포함됩니다.",
+      "명령 실행에는 SSH 또는 지원되는 Android Local Linux가 필요하며 다중 터미널은 Pro 기능입니다.",
+      "Agent는 Early Access Pro에서 제공됩니다. API 키를 직접 준비하고 모델 사용료는 별도로 지불합니다."
+    ],
+    "screenshotLink": "실제 화면 보기",
+    "capabilityDetails": "추가 개발 기능과 사용 조건",
+    "reviewExpand": "전체 리뷰 읽기",
+    "reviewCollapse": "리뷰 접기",
+    "modeSummaries": [
+      "IDE 모드에서 파일을 탐색하고 여러 파일을 편집하며 Git Diff를 검토하세요.",
+      "터미널 모드에서 SSH 또는 지원되는 Android Local Linux로 명령, 빌드, 테스트를 실행하세요.",
+      "AI 모드에서 코드를 이해하고 작업을 계획하며 Agent의 실행 과정과 결과를 검토하세요."
+    ]
   },
   "es": {
     "badge": "Un IDE móvil para Android e iOS",
     "title": "Tu proyecto,",
     "accent": "a mano cuando lo necesites.",
-    "intro": "Abre un proyecto local desde el móvil o la tableta, o vuelve a tu ordenador por SSH. Edita archivos, ejecuta las herramientas del proyecto y revisa los cambios en un mismo espacio.",
+    "intro": "Conecta con tu equipo de desarrollo desde el móvil o la tablet. Edita código, ejecuta comandos y revisa cambios de Git.",
     "android": "Para Android",
     "ios": "Para iOS",
     "watch": "Ver la demo",
     "available": "Android · iPhone · iPad",
     "release": "Novedades",
-    "caption": "Pensado para el móvil. Más espacio para trabajar en la tablet.",
+    "caption": "IDE, Terminal e IA. Un mismo proyecto.",
     "facts": [
       "Archivos locales y proyectos SSH",
       "Linux sin root en Android",
       "Git, GitHub e IA opcional"
     ],
-    "eyebrow": "Tu proyecto como punto de partida",
-    "heading": "Continúa justo donde lo dejaste.",
-    "description": "Usa los modos IDE, Terminal e IA con el mismo proyecto. Al cambiar de tarea, el proyecto y el Explorador siguen en su sitio para pasar de editar a ejecutar comandos o pedir ayuda a la IA.",
+    "eyebrow": "Tres modos. Un proyecto.",
+    "heading": "Un proyecto. Tres formas de trabajar.",
+    "description": "Cambia de modo conservando el proyecto y el estado de Explorer.",
     "features": [
       [
-        "Elige un espacio",
-        "Empieza donde está tu proyecto.",
-        "Edita archivos locales en tu dispositivo o utiliza los proyectos y las herramientas de tu equipo de desarrollo por SSH. Los dispositivos Android compatibles también pueden ejecutar Ubuntu sin root. Abrir una carpeta local no proporciona un entorno para ejecutar comandos.",
-        "Explorar espacios locales y SSH"
+        "Modo IDE",
+        "Explora el proyecto y concéntrate en el cambio.",
+        "Reúne archivos, edición de código y revisión de Git. Trabaja con pestañas o paneles divididos y revisa el diff antes de confirmar cambios.",
+        "Explorar el editor"
       ],
       [
-        "Edita y revisa",
-        "Del cambio de código a la revisión del diff.",
-        "Edita archivos, ejecuta las comprobaciones del proyecto en una terminal SSH o de Android Local Linux y revisa el diff de Git. La integración con GitHub permite explorar repositorios, gestionar issues y pull requests y consultar las revisiones y el estado de CI.",
-        "Explorar flujos de Git y GitHub"
+        "Modo Terminal",
+        "Más espacio para comandos y herramientas.",
+        "Ejecuta compilaciones, pruebas y scripts por SSH o Android Local Linux compatible. Usa paneles adaptables, historial de comandos y zoom.",
+        "Explorar el terminal"
       ],
       [
-        "Trabaja con IA",
-        "Agente integrado. Tus herramientas favoritas.",
-        "Usa Nimote Agent, integrado y adaptado a partir del núcleo de Codex, o conecta agentes externos compatibles mediante ACP. Nimote Agent está disponible con Early Access y usa BYOK (tu propia clave API): configura la clave de tu modelo; el proveedor cobra el uso por separado y no se incluyen créditos. Los agentes ACP externos requieren configurar su entorno de ejecución y autenticación.",
-        "Explorar agentes y configuración de modelos"
+        "Modo IA",
+        "Convierte un objetivo en un plan revisable.",
+        "El agente lee el proyecto, propone un plan y ejecuta tareas de varios pasos. Revisa el plan, envía instrucciones adicionales y comprueba las salidas y los cambios.",
+        "Explorar flujos de IA"
       ]
     ],
     "demoLabel": "Míralo en acción",
-    "demoTitle": "Descubre cómo se usa NimoteCode.",
-    "demoCopy": "Mira las demos del espacio de trabajo y del agente de IA para conocer la edición de archivos, las herramientas del proyecto y la ejecución de tareas en la aplicación.",
+    "demoTitle": "Mira el flujo en acción.",
+    "demoCopy": "Elige una demostración del agente o del espacio de trabajo.",
     "demoSteps": [
       "Inspecciona",
       "Planifica",
@@ -678,8 +802,8 @@
         "Tutoriales, artículos prácticos y referencias oficiales."
       ]
     ],
-    "ctaTitle": "Avanza con tu proyecto estés donde estés.",
-    "ctaCopy": "Prueba primero el espacio de demostración o conecta tu propio proyecto. Con SSH conservas las herramientas de tu ordenador; en Android compatible también puedes usar Local Linux.",
+    "ctaTitle": "Abre tu próximo proyecto.",
+    "ctaCopy": "Abre una carpeta local o conecta por SSH con tu equipo de desarrollo.",
     "allDownloads": "Todas las opciones de descarga",
     "illustration": "Interfaz ilustrativa del producto",
     "blogHeading": "Blog y guías de desarrollo",
@@ -749,7 +873,7 @@
     ],
     "resourceLabel": "Recursos técnicos",
     "resourceCopy": "Guías, herramientas y referencias de desarrollo.",
-    "startNote": "Empieza gratis. No necesitas configurar IA para abrir tu primer proyecto.",
+    "startNote": "Empieza gratis. Sin configurar IA.",
     "startLink": "Crea tu primer espacio de trabajo",
     "byok": "Los modelos de IA usan BYOK (tu propia clave API). Configura tu proveedor y tu clave; el proveedor cobra el uso del modelo por separado. No se incluyen créditos de IA.",
     "planLink": "Ver funciones gratuitas y Early Access",
@@ -762,6 +886,37 @@
     "reviewsLink": "Ver reseñas en Google Play",
     "reviewsNote": "Reseñas completas en su idioma original. Los comentarios corresponden a la versión reseñada.",
     "reviewsUpdated": "Comprobado",
-    "reviewOriginal": "Reseña original"
+    "reviewOriginal": "Reseña original",
+    "modeBenefits": [
+      [
+        "Edición de varios archivos y paneles",
+        "Diffs de Git y revisión de cambios",
+        "Conserva el proyecto y Explorer"
+      ],
+      [
+        "Compilaciones, pruebas y scripts",
+        "Historial, zoom y paneles",
+        "SSH y Android Local Linux"
+      ],
+      [
+        "Contexto del proyecto y planificación",
+        "Cronología e instrucciones adicionales",
+        "Resultados y cambios revisables"
+      ]
+    ],
+    "modeNotes": [
+      "Los servicios de lenguaje y depuración necesitan herramientas configuradas; algunas funciones requieren Pro.",
+      "Los comandos requieren SSH o Android Local Linux compatible; varios terminales requieren Pro.",
+      "El agente se ofrece en Early Access Pro. Usa tu propia clave API; el uso del modelo se factura aparte."
+    ],
+    "screenshotLink": "Ver captura",
+    "capabilityDetails": "Más herramientas y condiciones de acceso",
+    "reviewExpand": "Leer la reseña completa",
+    "reviewCollapse": "Contraer reseña",
+    "modeSummaries": [
+      "Explora archivos, edita en varias pestañas y revisa diffs de Git en el modo IDE.",
+      "Ejecuta comandos, compilaciones y pruebas por SSH o Android Local Linux compatible en el modo Terminal.",
+      "Comprende el código, planifica tareas y colabora con un agente revisando sus acciones y resultados en el modo IA."
+    ]
   }
 }

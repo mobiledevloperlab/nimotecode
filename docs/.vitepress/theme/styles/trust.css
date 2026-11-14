@@ -48,3 +48,12 @@
 
 /* Terms share the help/policy layout; long visible URLs must wrap. */
 .terms-page .vp-doc a { overflow-wrap: anywhere; }
+
+/* Consent stays explicit while the first-visit notice takes less screen space. */
+.privacy-panel { width: min(400px, calc(100vw - 40px)); padding: 16px 20px; }
+.privacy-panel-heading button { min-width: 32px; min-height: 32px; }
+.privacy-panel p { margin: 8px 0 12px; line-height: 1.6; }
+.privacy-details { margin-bottom: 14px; font-size: 12px; color: var(--vp-c-text-2); }
+.privacy-details summary { width: fit-content; cursor: pointer; }
+.privacy-details summary:focus-visible { outline: 2px solid var(--vp-c-brand-1); outline-offset: 4px; }
+@media (max-width: 600px) { .privacy-panel { width: calc(100vw - 24px); padding: 12px 16px; } }

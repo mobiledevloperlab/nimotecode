@@ -1,36 +1,47 @@
 ---
-title: Android Local Linux Getting Started | NimoteCode
-description: Prepare and open NimoteCode Local Linux on a supported Android device, then choose appropriate local or remote development work.
+title: Instalar Local Linux en Android y ejecutar comandos | NimoteCode
+description: Instala NimoteCode Local Linux, abre /workspace, comprueba Ubuntu y ejecuta un primer comando. Aprende a añadir herramientas, detener y restablecer el entorno.
 ---
 
-# Introducción a Linux local de Android
+# Instalar Local Linux en Android
 
+Sigue estos pasos para abrir un terminal Linux en tu dispositivo. Comprueba los [requisitos del dispositivo y la cuenta](/es/docs/local-linux#local-linux-requirements) y reserva espacio para el entorno y las herramientas. No necesitas configurar IA.
 
-Utilice Linux local para un pequeño entorno de desarrollo basado en Ubuntu en Android. Está disponible en dispositivos Android 8+ de 64 bits ARM64 y x86_64, no necesita raíz de Android y no está disponible en iPhone o iPad.
+## Instalar y abrir el espacio de trabajo
 
+1. Selecciona **Local Linux** en la bienvenida o en Explorer.
+2. Selecciona **Install** y espera a que termine.
+3. Selecciona **Start** y abre `/workspace`.
 
-## Antes de la instalación
+La primera instalación usa la imagen incluida en la app y guarda los archivos en su almacenamiento privado. Descargar paquetes adicionales requiere conexión de red.
 
+<DocScreenshot file="local-linux-deploy.jpg" caption="Selecciona Install en el diálogo de instalación de Local Linux." />
 
-- Mantenga suficiente almacenamiento en el dispositivo disponible para el entorno base y las herramientas del proyecto que planea instalar.
+## Ejecutar el primer comando
 
-- Utilice una conexión de red para la configuración inicial y para la instalación posterior del paquete APT.
+Abre [Terminal](/es/docs/terminal) en el mismo espacio y ejecuta:
 
-- Elija Linux local para un trabajo local compacto; use [SSH](/docs/ssh) cuando el proyecto dependa de una estación de trabajo, servidor, contenedor o compilación larga existente.
+```sh
+pwd
+uname -m
+cat /etc/os-release
+printf 'Hello from Local Linux\n'
+```
 
+`pwd` muestra el directorio de trabajo; `uname -m`, la arquitectura; y `cat /etc/os-release`, la información de Ubuntu. El último comando debe imprimir `Hello from Local Linux`.
 
-## Abrir un espacio de trabajo
+El entorno comparte el kernel de Android. `uname -a` muestra ese kernel, no la versión de la distribución Ubuntu.
 
+<DocScreenshot file="local-linux-terminal-uname-a.jpg" caption="El terminal de Local Linux ejecuta comandos directamente en el dispositivo." />
 
-1. Seleccione **Linux local** en el espacio de trabajo o en el selector del Explorador.
+## Preparar las herramientas del proyecto
 
-2. Seleccione **Instalar**, espere a que se complete la preparación y luego seleccione **Iniciar**.
+Abre o crea archivos en `/workspace` y usa el editor y el [control de código fuente](/es/docs/source-control). Añade solo las herramientas necesarias con el gestor de paquetes de Ubuntu. Los [Linux Presets](/es/docs/local-linux/presets) opcionales tienen sus propios requisitos de compatibilidad e instalación.
 
-3. Abra el directorio predeterminado `/workspace`.
+Para errores de paquetes o diferencias de ejecución bajo PRoot, consulta la [solución de problemas](/es/docs/local-linux/troubleshooting).
 
-4. Inspecciona el entorno en [Terminal](/docs/terminal), luego agrega solo la cadena de herramientas que tu proyecto necesita.
+## Detener, restablecer o eliminar
 
-5. Utilice el Explorador, el Editor y el [Control de código fuente](/docs/source-control) en ese espacio de trabajo.
+Detener interrumpe el trabajo y conserva el entorno. Restablecer, eliminar el entorno o borrar los datos de la app elimina los archivos: haz una copia del proyecto antes.
 
-
-El entorno base proporciona las bases de Ubuntu, Bash, Git y SSH. No es una promesa de que todas las herramientas de escritorio o depuradores se comportarán de manera idéntica en PRoot. Lea [Compatibilidad](/docs/local-linux/compatibility) antes de seleccionar una carga de trabajo local y [Preajustes de Linux](/docs/local-linux/presets) para conocer los conjuntos de herramientas opcionales declarados.
+Si Android cierra la app en segundo plano, vuelve a iniciar Local Linux.

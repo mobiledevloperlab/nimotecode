@@ -99,7 +99,8 @@
             "Safer mobile continuity"
           ]
         }
-      ]
+      ],
+      "detailsLabel": "Full feature comparison"
     },
     "pricing": {
       "eyebrow": "Pricing",
@@ -140,8 +141,8 @@
         {
           "name": "Pro",
           "badge": "Early Access",
-          "price": "Early Access",
-          "period": "rolling out now",
+          "price": "See store pricing",
+          "period": "Varies by region",
           "summary": "Explore the complete mobile IDE workflow while Early Access expands.",
           "cta": "Check store availability",
           "link": "/download",
@@ -261,7 +262,8 @@
             "更可靠的移动端连续工作"
           ]
         }
-      ]
+      ],
+      "detailsLabel": "展开完整功能对比"
     },
     "pricing": {
       "eyebrow": "价格",
@@ -302,8 +304,8 @@
         {
           "name": "Pro",
           "badge": "Early Access",
-          "price": "Early Access",
-          "period": "现正逐步开放",
+          "price": "查看商店价格",
+          "period": "依地区与账号显示",
           "summary": "在 Early Access 扩展期间体验完整移动 IDE 工作流。",
           "cta": "查看商店可用性",
           "link": "/zh/download",
@@ -414,7 +416,8 @@
             "モバイル作業の継続性を向上"
           ]
         }
-      ]
+      ],
+      "detailsLabel": "すべての機能を比較"
     },
     "pricing": {
       "eyebrow": "料金",
@@ -455,8 +458,8 @@
         {
           "name": "Pro",
           "badge": "Early Access",
-          "price": "Early Access",
-          "period": "段階的に提供中",
+          "price": "ストアで価格を確認",
+          "period": "地域・アカウントによって異なります",
           "summary": "Early Access の拡大に合わせて完全なモバイル IDE ワークフローを体験。",
           "cta": "ストアで利用可否を確認",
           "link": "/ja/download",
@@ -566,7 +569,8 @@
             "더 안정적인 모바일 연속성"
           ]
         }
-      ]
+      ],
+      "detailsLabel": "전체 기능 비교"
     },
     "pricing": {
       "eyebrow": "가격",
@@ -607,8 +611,8 @@
         {
           "name": "Pro",
           "badge": "Early Access",
-          "price": "Early Access",
-          "period": "단계적으로 제공 중",
+          "price": "스토어 가격 확인",
+          "period": "지역과 계정에 따라 다름",
           "summary": "Early Access가 확대되는 동안 완전한 모바일 IDE 워크플로를 경험하세요.",
           "cta": "스토어에서 이용 가능 여부 확인",
           "link": "/ko/download",

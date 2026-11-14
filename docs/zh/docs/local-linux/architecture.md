@@ -1,6 +1,6 @@
 ---
-title: Android 本地 Linux 架构 | NimoteCode
-description: 了解 Android、PRoot、Ubuntu 与回环 SSH 如何构成 NimoteCode 本地 Linux 工作区。
+title: "Android 本地 Linux 运行原理：PRoot、Ubuntu 与 SSH | NimoteCode"
+description: "了解 PRoot 如何在 Android 上运行 Ubuntu 用户空间，以及共享内核、应用私有存储和回环 SSH 在工作区中的作用。"
 ---
 
 # Android 本地 Linux 架构

@@ -10,10 +10,17 @@ pageClass: compare-page
 
 These products serve different mobile workflows. Termius and Blink Shell emphasize remote access; Redock, ServerCC and Moshi help steer agents on a host; Orca extends a desktop or remote server agent environment to mobile. NimoteCode combines a mobile editor, project explorer, Git review, SSH workspace and, on supported Android devices, Local Linux. The comparison below describes how each feature works and links to product-specific evidence.
 
-NimoteCode's documented release is **2.2.0**. [2.0.0](/releases/2.0.0) added Plugin Center and custom workspace panels, active-run Agent follow-ups and interactive questions, Git branch search/create/checkout, SOCKS5 and HTTP CONNECT SSH proxies, and Nimote Editor as the default across devices. [2.2.0](/releases/2.2.0) adds native GitHub workflows for repositories, issues, pull requests, and CI, plus experimental Android Local Linux development toolkits and more dependable workspace search. This refresh checks competitor documentation on November 5, 2026 and NimoteCode against its current documentation and release notes. Moshi inbox actions have a five-action free trial; Orca can use a desktop or a remote server runtime; ServerCC documents MCP configuration for five host agents. A notification or restored SSH connection does not guarantee that a host process is still running.
+NimoteCode is now at [2.3.0](/releases/2.3.0), with IDE, Terminal, and AI modes, Windows SSH, and Docker workflows. Competitor evidence retains the review date shown above.
+
+<MobileDevToolComparison lang="en" />
+
+<details>
+<summary>Comparison notes and requirements</summary>
+
+The November 5 comparison snapshot covers NimoteCode **2.2.0**. [2.0.0](/releases/2.0.0) added Plugin Center and custom workspace panels, active-run Agent follow-ups and interactive questions, Git branch search/create/checkout, SOCKS5 and HTTP CONNECT SSH proxies, and Nimote Editor as the default across devices. [2.2.0](/releases/2.2.0) adds native GitHub workflows for repositories, issues, pull requests, and CI, plus experimental Android Local Linux development toolkits and more dependable workspace search. This refresh checks competitor documentation on November 5, 2026 and NimoteCode against its current documentation and release notes. Moshi inbox actions have a five-action free trial; Orca can use a desktop or a remote server runtime; ServerCC documents MCP configuration for five host agents. A notification or restored SSH connection does not guarantee that a host process is still running.
 
 System-granted external folders are a narrower workspace type: they support file browsing and editing, while Git, LSP, Debug, Tasks, the file watcher and Agent workflows need a native filesystem path. See [Free and Pro](/pro) for NimoteCode's access boundaries.
 
-<MobileDevToolComparison lang="en" />
+</details>
 
 [Read the scenario-based buying guide](/blog/best-ssh-clients) for a shorter explanation of which workflow each product fits.

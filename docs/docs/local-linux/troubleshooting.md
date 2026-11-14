@@ -1,6 +1,6 @@
 ---
-title: Android Local Linux Troubleshooting | NimoteCode
-description: Diagnose common NimoteCode Local Linux installation, package, architecture, and lifecycle issues on Android.
+title: "Fix Android Local Linux installation and package errors | NimoteCode"
+description: "Troubleshoot unavailable Local Linux, failed installation, APT errors, PRoot compatibility and tasks stopped by Android background limits."
 ---
 
 # Android Local Linux Troubleshooting

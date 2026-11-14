@@ -13,7 +13,9 @@
     "astro": "astro",
     "format:check": "prettier --check .",
     "format": "prettier --write .",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "predev": "node ../scripts/check-node-version.mjs",
+    "prebuild": "node ../scripts/check-node-version.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^7.3.4",

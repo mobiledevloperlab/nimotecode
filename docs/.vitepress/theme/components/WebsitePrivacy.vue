@@ -15,6 +15,14 @@ const translations: Record<string, string[]> = {
  ko: ['웹사이트 개인정보 설정', '선택적 웹사이트 분석', 'Google Analytics의 방문 및 링크 클릭 분석을 허용하시겠습니까? 쿠키와 식별자가 사용될 수 있습니다. 거부해도 이용할 수 있습니다. 이 선택은 웹사이트에만 적용되며 앱 분석에는 적용되지 않습니다.', '분석 거부', '분석 허용', '개인정보처리방침', '닫기'],
  es: ['Privacidad del sitio web', 'Analítica web opcional', '¿Permitir que Google Analytics mida visitas y clics? Puede usar cookies e identificadores. Rechazar no limita el acceso. Esta elección solo afecta al sitio web, no a la app.', 'Rechazar analítica', 'Permitir analítica', 'Política de privacidad', 'Cerrar']
 }
+const compactCopy: Record<string, string[]> = {
+ en: ['Allow optional analytics using cookies? Declining does not affect access.', 'Details'],
+ zh: ['是否允许使用 Cookie 进行可选访问统计？拒绝不影响使用。', '了解详情'],
+ ja: ['Cookie を使用する任意の解析を許可しますか？拒否しても利用できます。', '詳細'],
+ ko: ['쿠키를 사용하는 선택적 분석을 허용할까요? 거부해도 이용할 수 있습니다.', '자세히'],
+ es: ['¿Permitir analítica opcional con cookies? Rechazar no limita el acceso.', 'Detalles']
+}
+const compact = computed(() => compactCopy[locale.value])
 const copy = computed(() => translations[locale.value])
 const privacyHref = computed(() => `${locale.value === 'en' ? '' : '/' + locale.value}/privacy#analytics`)
 function choose(value: 'allow' | 'deny') {
@@ -47,7 +55,8 @@ watch(() => route.path, () => {
     <button v-if="ready" ref="launcher" type="button" class="privacy-launcher" :aria-expanded="open" aria-controls="website-privacy-panel" @click="show">{{ copy[0] }}</button>
     <section v-if="open" id="website-privacy-panel" ref="panel" class="privacy-panel" tabindex="-1" aria-labelledby="website-privacy-title" @keydown.esc="open = false">
       <div class="privacy-panel-heading"><strong id="website-privacy-title">{{ copy[1] }}</strong><button type="button" :aria-label="copy[6]" @click="open = false">×</button></div>
-      <p>{{ copy[2] }} <a :href="privacyHref">{{ copy[5] }}</a></p>
+      <p>{{ compact[0] }} <a :href="privacyHref">{{ copy[5] }}</a></p>
+      <details class="privacy-details"><summary>{{ compact[1] }}</summary><p>{{ copy[2] }}</p></details>
       <div class="privacy-actions"><button type="button" @click="choose('deny')">{{ copy[3] }}</button><button type="button" @click="choose('allow')">{{ copy[4] }}</button></div>
     </section>
   </div>

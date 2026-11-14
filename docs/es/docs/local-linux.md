@@ -1,48 +1,33 @@
 ---
-title: Local Linux en Android | NimoteCode
-description: "Configuración, procedimientos y referencia de la interfaz: Local Linux en Android."
+title: Ubuntu en Android sin root | NimoteCode Local Linux
+description: Usa Ubuntu, Bash, Git y SSH en Android sin acceso root. Consulta los dispositivos compatibles, las tareas locales y cuándo conviene trabajar por SSH.
 ---
 
 # Local Linux en Android
 
-> La integración con GitHub y Android Local Linux requieren Early Access Pro. Local Linux solo está disponible en Android.
+Local Linux lleva un entorno de desarrollo Ubuntu a tu dispositivo Android. Usa Bash, Git y SSH junto al editor de NimoteCode sin acceso root.
+
+[Instalar y ejecutar el primer comando](/es/docs/local-linux/getting-started)
+
+## Qué puedes hacer
+
+- Ejecutar scripts de Shell y tareas ligeras del proyecto en el dispositivo.
+- Editar archivos y revisar el estado y los cambios de Git.
+- Añadir herramientas de lenguaje o elegir un [Linux Preset](/es/docs/local-linux/presets) opcional.
+
+Para servidores existentes, Docker o compilaciones largas, usa un [espacio de trabajo SSH](/es/docs/ssh). Consulta la [compatibilidad y los límites](/es/docs/local-linux/compatibility) antes de elegir herramientas locales.
+
+<div id="local-linux-requirements"></div>
 
 ## Requisitos
 
-Local Linux proporciona Ubuntu, Bash, Git y SSH en Android 8 o posterior con la aplicación de 64 bits para ARM64 o x86_64. Usa PRoot y no requiere acceso root. No está disponible en iOS ni en dispositivos ARM de 32 bits. Las herramientas de lenguaje, servidores de lenguaje, adaptadores de depuración y CLI de agentes externos se instalan por separado.
+- **Dispositivo**: Android 8 o posterior con la app de 64 bits ARM64 o x86_64. No admite iPhone, iPad ni ARM de 32 bits.
+- **Acceso**: Requiere Early Access Pro. Consulta la disponibilidad en el [estado de tu cuenta](/es/docs/account-subscription) dentro de la app.
+- **Herramientas**: Incluye Ubuntu, Bash, Git y SSH. Las cadenas de herramientas, servidores de lenguaje, depuradores y CLI de agentes externos requieren configuración aparte.
 
-<div class="doc-section">
-<div class="doc-section__copy">
+PRoot comparte el kernel de Android; no proporciona una máquina virtual ni acceso root. Android controla la ejecución en segundo plano.
 
-## Instalar y abrir
+## Siguientes pasos
 
-1. Seleccione **Local Linux** en la bienvenida o en Explorer.
-2. Seleccione **Install** y espere a que termine la instalación.
-3. Inicie el entorno y abra su espacio de trabajo.
-
-La instalación inicial usa una imagen incluida en la aplicación. Los paquetes adicionales pueden necesitar conexión a internet. Los archivos del entorno se guardan en el almacenamiento privado de la aplicación.
-
-</div>
-
-<div class="doc-screenshots">
-  <DocScreenshot file="local-linux-deploy.jpg" caption="Diálogo de instalación de Local Linux con el estado Not installed y la acción Install." />
-</div>
-
-</div>
-
-## Verificar el entorno
-
-En Terminal, ejecute `uname -a` para consultar el kernel y la arquitectura. Use `cat /etc/os-release` para identificar la distribución. Local Linux comparte el kernel del host Android; su nombre no identifica por sí solo la versión del espacio de usuario de Ubuntu.
-
-<div class="doc-screenshots">
-  <DocScreenshot file="local-linux-terminal-uname-a.jpg" caption="Salida de uname -a en el terminal de Local Linux." />
-  <DocScreenshot file="local-linux-ai-print-os-info.jpg" caption="Respuesta de IA que resume la salida de uname y /etc/os-release." />
-</div>
-
-## Detener, restablecer o eliminar
-
-Use los controles de Local Linux para gestionar el entorno. Detenerlo finaliza el trabajo activo; al reiniciarlo se usa el entorno existente. Restablecerlo, eliminarlo o borrar los datos de la aplicación elimina sus archivos. El servicio SSH integrado escucha en loopback para la conexión de la aplicación. Android puede terminar procesos en segundo plano; compruebe el estado al volver a la aplicación.
-
-## Referencias
-
-[Configuración](/es/docs/local-linux/getting-started) · [Arquitectura](/es/docs/local-linux/architecture) · [Compatibilidad](/es/docs/local-linux/compatibility) · [Seguridad e integridad](/es/docs/local-linux/security-integrity) · [Preajustes](/es/docs/local-linux/presets) · [Solución de problemas](/es/docs/local-linux/troubleshooting) · [Código fuente y licencias](/es/docs/local-linux-source)
+- **[Solución de problemas](/es/docs/local-linux/troubleshooting)**: instalación, paquetes y cierre en segundo plano.
+- **[Arquitectura](/es/docs/local-linux/architecture)** · **[Seguridad y verificación](/es/docs/local-linux/security-integrity)** · **[Código fuente y licencias](/es/docs/local-linux-source)**

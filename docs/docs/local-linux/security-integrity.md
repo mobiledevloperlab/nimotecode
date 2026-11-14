@@ -1,18 +1,17 @@
 ---
-title: Android Local Linux Security and Integrity | NimoteCode
-description: Verify Local Linux artifacts and use safe package, SSH, credential, and PRoot practices on Android.
+title: "Local Linux security: packages, checksums and credentials | NimoteCode"
+description: "Verify Local Linux downloads and preset checksums, use trusted package sources, and protect SSH and AI provider credentials."
 ---
 
 # Android Local Linux Security and Integrity
 
-Local Linux is a development environment, not an Android-root mechanism. Treat it as a distinct userspace with its own packages and files while keeping Android, SSH, and provider credentials protected.
+Use trusted packages and protect the credentials you use inside Local Linux.
 
 ## Verify what you install
 
 - Read the release manifest before using a preset or runtime bundle.
 - Verify the published SHA-256 value for downloaded artifacts and scripts.
 - Use documented APT sources; package installation changes the environment and may require network access.
-- Do not copy rootfs archives, `.zst` assets, or release bundles into the website repository.
 
 ## Protect access
 

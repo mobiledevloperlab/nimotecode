@@ -1,6 +1,6 @@
 ---
-title: Android 本地 Linux 兼容性 | NimoteCode
-description: 在 Android 上使用 NimoteCode 本地 Linux 前，检查设备、架构、runtime 与工作负载的兼容性预期。
+title: "Android 本地 Linux 兼容性与运行限制 | NimoteCode"
+description: "查看 Android 版本、ARM64 与 x86_64 支持范围，了解 PRoot 下的工具限制，判断哪些任务适合本地运行、哪些应使用 SSH 主机。"
 ---
 
 # Android 本地 Linux 兼容性

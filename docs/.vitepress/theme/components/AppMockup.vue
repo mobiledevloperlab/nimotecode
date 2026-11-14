@@ -261,4 +261,7 @@ const nav = [
   .mock-device { transition: filter .45s ease; }
   .app-showcase:hover .mock-device { filter: drop-shadow(0 .7em 1.5em #303d5d18); }
 }
+/* Subtle edge highlights and soft contact shadows retain the original devices. */
+.mock-device { box-shadow: 0 2.4em 4.5em -2em var(--mock-device-shadow), inset 0 0 0 .1em var(--mock-device-highlight); }
+.device-screen { box-shadow: inset 0 0 0 .08em var(--mock-line); }
 </style>

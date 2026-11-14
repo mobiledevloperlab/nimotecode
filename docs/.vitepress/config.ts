@@ -962,7 +962,7 @@ export default defineConfig({
               text: 'Workflows',
               collapsed: false,
               items: [
-                { text: 'AI Agent Build Demo', link: '/use-cases/' },
+                { text: 'Workflow overview', link: '/use-cases/' },
                 { text: 'Mobile Workspace Demo', link: '/use-cases/mobile-workspace-demo' },
                 { text: 'Terminal AI Tools', link: '/use-cases/terminal-ai-tools' }
               ]
@@ -1080,7 +1080,7 @@ export default defineConfig({
               text: '工作流',
               collapsed: false,
               items: [
-                { text: 'AI Agent 构建演示', link: '/zh/use-cases/' },
+                { text: '工作流总览', link: '/zh/use-cases/' },
                 { text: '移动工作区演示', link: '/zh/use-cases/mobile-workspace-demo' },
                 { text: '终端 AI 工具', link: '/zh/use-cases/terminal-ai-tools' }
               ]
@@ -1120,7 +1120,7 @@ export default defineConfig({
             editor: 'エディター', terminal: 'ターミナル', search: '検索', sourceControl: 'ソース管理', lsp: 'LSP', debug: 'デバッグ', syncCache: '同期 / キャッシュ', tasks: 'タスク',
             overview: '概要', gettingStarted: 'はじめる', architecture: 'アーキテクチャ', compatibility: '互換性', securityIntegrity: 'セキュリティと整合性', presets: 'Linux プリセット', troubleshooting: 'トラブルシューティング',
             reference: 'リファレンス', account: 'アカウントとサブスクリプション', security: 'セキュリティと安全性', settings: '設定', notifications: '通知', configuration: '構成', sourceLicenses: 'ローカル Linux のソースとライセンス', faq: 'よくある質問'
-          }), ...useCasesSidebar('/ja', { heading: 'ワークフロー', agentDemo: 'AI エージェントのビルドデモ', workspaceDemo: 'モバイルワークスペースのデモ', terminalTools: 'ターミナル AI ツール' })
+          }), ...useCasesSidebar('/ja', { heading: 'ワークフロー', agentDemo: 'ワークフローの概要', workspaceDemo: 'モバイルワークスペースのデモ', terminalTools: 'ターミナル AI ツール' })
         }
       }
     },
@@ -1143,7 +1143,7 @@ export default defineConfig({
             editor: '편집기', terminal: '터미널', search: '검색', sourceControl: '소스 제어', lsp: 'LSP', debug: '디버깅', syncCache: '동기화 / 캐시', tasks: '작업',
             overview: '개요', gettingStarted: '시작하기', architecture: '아키텍처', compatibility: '호환성', securityIntegrity: '보안 및 무결성', presets: 'Linux 프리셋', troubleshooting: '문제 해결',
             reference: '참조', account: '계정 및 구독', security: '보안 및 안전', settings: '설정', notifications: '알림', configuration: '구성', sourceLicenses: '로컬 Linux 소스 및 라이선스', faq: '자주 묻는 질문'
-          }), ...useCasesSidebar('/ko', { heading: '워크플로', agentDemo: 'AI 에이전트 빌드 데모', workspaceDemo: '모바일 워크스페이스 데모', terminalTools: '터미널 AI 도구' })
+          }), ...useCasesSidebar('/ko', { heading: '워크플로', agentDemo: '워크플로 개요', workspaceDemo: '모바일 워크스페이스 데모', terminalTools: '터미널 AI 도구' })
         }
       }
     },
@@ -1165,7 +1165,7 @@ export default defineConfig({
             editor: 'Editor', terminal: 'Terminal', search: 'Búsqueda', sourceControl: 'Control de código fuente', lsp: 'LSP', debug: 'Depuración', syncCache: 'Sincronización / caché', tasks: 'Tareas',
             overview: 'Descripción general', gettingStarted: 'Primeros pasos', architecture: 'Arquitectura', compatibility: 'Compatibilidad', securityIntegrity: 'Seguridad e integridad', presets: 'Preajustes de Linux', troubleshooting: 'Resolución de problemas',
             reference: 'Referencia', account: 'Cuenta y suscripción', security: 'Seguridad y protección', settings: 'Ajustes', notifications: 'Notificaciones', configuration: 'Configuración de IA y conexiones', sourceLicenses: 'Código fuente y licencias de Local Linux', faq: 'Preguntas frecuentes'
-          }), ...useCasesSidebar('/es', { heading: 'Flujos de trabajo', agentDemo: 'Demo de compilación con agente de IA', workspaceDemo: 'Demo de espacio de trabajo móvil', terminalTools: 'Herramientas de IA en terminal' })
+          }), ...useCasesSidebar('/es', { heading: 'Flujos de trabajo', agentDemo: 'Resumen de flujos de trabajo', workspaceDemo: 'Demo de espacio de trabajo móvil', terminalTools: 'Herramientas de IA en terminal' })
         }
       }
     }

@@ -5,7 +5,13 @@ description: 휴대폰에서 프로젝트를 열고 개발 컴퓨터에 연결�
 
 # NimoteCode 기능
 
-NimoteCode는 휴대폰과 태블릿에서 기존 프로젝트를 작업하기 위한 개발 작업 공간입니다. 저장소, 서버, 패키지 관리자, AI 제공자 또는 도구 체인을 대체하지 않고 파일, 편집기, 셸 환경, 버전 관리 및 선택적 AI 지원을 한곳에 모읍니다.
+휴대폰과 태블릿에서 코드 편집, 명령 실행, Git 검토, AI 협업을 진행하세요. IDE, 터미널, AI 모드를 전환해도 프로젝트와 Explorer 상태가 유지됩니다.
+
+<WorkspaceModes />
+
+## 인터페이스 살펴보기
+
+<div class="feature-showcase" role="region" tabindex="0" aria-label="NimoteCode feature highlights"><div class="feature-showcase__track"><figure class="feature-showcase__item"><img src="/screenshots/p1.png" alt="Local files, SSH, code editing and AI Agent in NimoteCode" width="1604" height="901" loading="eager"><figcaption>Workspaces, editing and AI Agent</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p2.png" alt="SSH terminal, Source Control and code diagnostics in NimoteCode" width="1597" height="896" loading="lazy"><figcaption>Terminal, Git and diagnostics</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p3.png" alt="NimoteCode debugging, remote workspace sync, and smart caching" width="1598" height="893" loading="lazy"><figcaption>Debugging and workspace sync</figcaption></figure></div></div>
 
 ## 작업 공간
 
@@ -36,13 +42,6 @@ AI는 선택 사항이며 직접 구성한 제공자를 사용합니다. OpenAI,
 - [사용자 지정 플러그인](/ko/docs/plugins)은 데이터, 양식, 확인된 파일/네트워크/명령 작업을 조합합니다. [LSP](/ko/docs/lsp), [디버깅](/ko/docs/debug), [동기화 및 캐시](/ko/docs/sync-cache)도 지원합니다.
 
 AI 출력은 보조 수단이며 정확성, 보안 또는 실행 성공을 보장하지 않습니다. 플러그인과 언어/디버그 도구는 의존성을 자동 설치하거나 호스트 권한을 추가하지 않습니다. 기능은 플랫폼, 앱 버전, 계정 권한, 배포 채널 및 지역에 따라 다르며 앱에서 현재 상태를 확인할 수 있습니다.
-
-## 인터페이스 개요
-
-아래 이미지는 위에서 설명한 작업 공간, 코드 검토, 진단 및 전송 화면을 보여 줍니다.
-
-<div class="feature-showcase" role="region" tabindex="0" aria-label="NimoteCode feature highlights"><div class="feature-showcase__track"><figure class="feature-showcase__item"><img src="/screenshots/p1.png" alt="Local files, SSH, code editing and AI Agent in NimoteCode" width="1604" height="901" loading="eager"><figcaption>Workspaces, editing and AI Agent</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p2.png" alt="SSH terminal, Source Control and code diagnostics in NimoteCode" width="1597" height="896" loading="lazy"><figcaption>Terminal, Git and diagnostics</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p3.png" alt="NimoteCode debugging, remote workspace sync, and smart caching" width="1598" height="893" loading="lazy"><figcaption>Debugging and workspace sync</figcaption></figure></div></div>
-
 
 ## 2.3.0 작업 공간 및 Docker
 

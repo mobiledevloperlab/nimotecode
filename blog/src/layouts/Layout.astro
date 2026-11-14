@@ -116,16 +116,17 @@ const rssHref = getAssetPath("rss.xml");
     -->
     <script is:inline>
       (function () {
-        const stored = localStorage.getItem("theme");
-        const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
-        ).matches;
-        const theme = stored ?? (prefersDark ? "dark" : "light");
-        const root = document.firstElementChild;
-        root?.setAttribute("data-theme", theme);
-        root?.classList.toggle("dark", theme === "dark");
-        // Expose value so theme.ts can skip re-detection.
-        window.__theme = { value: theme };
+        let saved = "dark";
+        try {
+          saved = localStorage.getItem("vitepress-theme-appearance") ?? localStorage.getItem("theme") ?? "dark";
+        } catch { /* Default appearance also works without persistent storage. */ }
+        const theme = saved === "auto"
+          ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+          : saved === "light" ? "light" : "dark";
+        const root = document.documentElement;
+        root.setAttribute("data-theme", theme);
+        root.classList.toggle("dark", theme === "dark");
+        root.style.colorScheme = theme;
       })();
     </script>
 

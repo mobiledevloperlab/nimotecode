@@ -5,12 +5,24 @@ description: 在手机或平板打开项目，连接开发电脑，在同一工�
 
 # NimoteCode 功能
 
-NimoteCode 是面向手机和平板的移动开发工作区，用于处理已有项目。它不会替代你的代码仓库、服务器、包管理器、模型服务商或项目工具链；它将文件、编辑器、Shell 环境、版本控制和可选 AI 协助集中在同一处。
+在手机和平板上编辑代码、运行项目工具、审查 Git 改动，并与 AI 协作。IDE、终端和 AI 三种模式共享项目与资源管理器状态，按当前任务切换即可继续。
 
 <div class="guide-actions">
 
 [快速开始](/zh/docs/quick-start) · [阅读文档](/zh/docs) · [下载 NimoteCode](/zh/download)
 
+</div>
+
+<WorkspaceModes />
+
+## 界面概览
+
+<div class="feature-showcase" role="region" tabindex="0" aria-label="NimoteCode 功能亮点">
+  <div class="feature-showcase__track">
+    <figure class="feature-showcase__item"><img src="/screenshots/p1.png" alt="NimoteCode 中的本地文件、SSH、代码编辑与 AI Agent" width="1604" height="901" loading="eager"><figcaption>工作区、编辑与 AI Agent</figcaption></figure>
+    <figure class="feature-showcase__item"><img src="/screenshots/p2.png" alt="NimoteCode 中的 SSH 终端、Source Control 与代码诊断" width="1597" height="896" loading="lazy"><figcaption>终端、Git 与诊断</figcaption></figure>
+    <figure class="feature-showcase__item"><img src="/screenshots/p3.png" alt="NimoteCode 的调试、远程工作区同步与智能缓存" width="1598" height="893" loading="lazy"><figcaption>调试与工作区同步</figcaption></figure>
+  </div>
 </div>
 
 ## 选择适合工作的环境
@@ -64,18 +76,6 @@ AI 输出仅供协助，不保证正确性、安全性或执行成功。使用�
 功能可用性会因平台、应用版本、账户权益、发布渠道和商店地区而不同。应用会在当前账户对应的操作位置显示可用状态；如果某项能力以 Pro 方式提供，限制的是应用内操作，不会改变远程主机账户原本拥有的权限。请参阅[账户与订阅](/zh/docs/account-subscription)了解如何查看或恢复权益。
 
 具体工作流的配置步骤和限制请以相应功能文档为准。
-
-## 界面概览
-
-以下截图展示了上文介绍的工作区、代码审查、诊断与项目传输界面。
-
-<div class="feature-showcase" role="region" tabindex="0" aria-label="NimoteCode 功能亮点">
-  <div class="feature-showcase__track">
-    <figure class="feature-showcase__item"><img src="/screenshots/p1.png" alt="NimoteCode 中的本地文件、SSH、代码编辑与 AI Agent" width="1604" height="901" loading="eager"><figcaption>工作区、编辑与 AI Agent</figcaption></figure>
-    <figure class="feature-showcase__item"><img src="/screenshots/p2.png" alt="NimoteCode 中的 SSH 终端、Source Control 与代码诊断" width="1597" height="896" loading="lazy"><figcaption>终端、Git 与诊断</figcaption></figure>
-    <figure class="feature-showcase__item"><img src="/screenshots/p3.png" alt="NimoteCode 的调试、远程工作区同步与智能缓存" width="1598" height="893" loading="lazy"><figcaption>调试与工作区同步</figcaption></figure>
-  </div>
-</div>
 
 ## 2.3.0 工作区与 Docker
 

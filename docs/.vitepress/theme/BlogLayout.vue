@@ -1,29 +1,12 @@
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { computed } from 'vue'
 import { useData, useRoute, withBase } from 'vitepress'
 import { data as posts } from './blog.data'
 import SiteAnalytics from './SiteAnalytics.vue'
 import './styles/blog.css'
 
-const theme = ref<'light' | 'dark' | 'auto'>('auto')
-const systemDark = ref(false)
-let mediaQuery: MediaQueryList | undefined
-const syncSystemTheme = (event: MediaQueryListEvent) => { systemDark.value = event.matches }
-onMounted(() => {
-  mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-  systemDark.value = mediaQuery.matches
-  mediaQuery.addEventListener('change', syncSystemTheme)
-  try {
-    const saved = localStorage.getItem('developer-notes-theme')
-    if (saved === 'light' || saved === 'dark') theme.value = saved
-  } catch { /* Theme selection still works for this session. */ }
-})
-onUnmounted(() => mediaQuery?.removeEventListener('change', syncSystemTheme))
-const isDark = computed(() => theme.value === 'dark' || (theme.value === 'auto' && systemDark.value))
-const toggleTheme = () => {
-  theme.value = isDark.value ? 'light' : 'dark'
-  try { localStorage.setItem('developer-notes-theme', theme.value) } catch { /* Storage may be unavailable. */ }
-}
+const { isDark } = useData()
+const toggleTheme = () => { isDark.value = !isDark.value }
 
 const route = useRoute()
 const { frontmatter } = useData()
@@ -41,7 +24,7 @@ const formatDate = (date: string) => {
 
 <template>
   <SiteAnalytics />
-  <div class="blog-shell" :data-blog-theme="theme">
+  <div class="blog-shell" :data-blog-theme="isDark ? 'dark' : 'light'">
     <a class="blog-skip" href="#blog-content">{{ isZh ? '跳至正文' : 'Skip to content' }}</a>
     <header class="blog-header">
       <div class="blog-header-inner">

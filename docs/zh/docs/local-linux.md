@@ -1,48 +1,33 @@
 ---
-title: Android 本地 Linux | NimoteCode
-description: "Android 本地 Linux 的配置、操作步骤与界面说明。"
+title: Android 免 root 运行 Ubuntu｜本地 Linux | NimoteCode
+description: 在 Android 手机上免 root 使用 Ubuntu、Bash、Git 和 SSH。了解本地 Linux 的设备要求、适用场景，以及何时选择远程开发。
 ---
 
 # Android 本地 Linux
 
-> GitHub 集成和 Android 本地 Linux 需要 Early Access Pro。本地 Linux 仅支持 Android；语言工具需要配置工作区环境。
+Local Linux 将 Ubuntu 开发环境带到 Android 设备，无需 root。在 NimoteCode 中编辑文件、使用 Bash、Git 和 SSH，让代码与命令留在同一个工作区。
+
+[安装并运行第一条命令](/zh/docs/local-linux/getting-started)
+
+## 可以用来做什么
+
+- 在设备上运行 Shell 脚本和轻量项目任务。
+- 编辑文件，检查 Git 状态与代码差异。
+- 按项目需要安装语言工具，或选择可选的 [Linux Presets 工具集](/zh/docs/local-linux/presets)。
+
+已有服务器环境、Docker 工作负载或长时间构建，建议使用 [SSH 工作区](/zh/docs/ssh)。选择本地工具前，可先查看[兼容性与运行限制](/zh/docs/local-linux/compatibility)。
+
+<div id="local-linux-requirements"></div>
 
 ## 使用条件
 
-Local Linux 在 Android 8+ 的 ARM64 或 x86_64 64 位应用中提供 Ubuntu、Bash、Git 和 SSH。它使用 PRoot，无需 Android root 权限。不支持 iOS 或 32 位 ARM 设备。语言工具链、语言服务、调试适配器及外部 Agent CLI 需要另行安装。
+- **设备**：Android 8+，使用 ARM64 或 x86_64 的 64 位应用；不支持 iPhone、iPad 和 32 位 ARM。
+- **权益**：需要 Early Access Pro，具体可用性见应用内[当前账号状态](/zh/docs/account-subscription)。
+- **工具**：内置 Ubuntu、Bash、Git 和 SSH；语言工具链、语言服务、调试工具和外部 Agent CLI 需另行配置。
 
-<div class="doc-section">
-<div class="doc-section__copy">
+环境通过 PRoot 共享 Android 内核，不是虚拟机，也不会授予 Android root 权限。后台任务受 Android 进程管理影响。
 
-## 安装并打开
+## 接下来
 
-1. 在欢迎页或 Explorer 中选择 **Local Linux**。
-2. 点击 **Install** 并等待安装完成。
-3. 启动环境并打开工作区。
-
-首次安装使用应用内置镜像，后续安装软件包可能需要联网。环境文件保存在应用私有存储中。
-
-</div>
-
-<div class="doc-screenshots">
-  <DocScreenshot file="local-linux-deploy.jpg" caption="Local Linux 安装对话框，状态为 Not installed，并提供 Install 按钮。" />
-</div>
-
-</div>
-
-## 验证运行环境
-
-打开终端，运行 `uname -a` 查看内核与架构，运行 `cat /etc/os-release` 查看发行版信息。Local Linux 共享 Android 主机内核，不能仅凭内核名称判断 Ubuntu 用户空间版本。
-
-<div class="doc-screenshots">
-  <DocScreenshot file="local-linux-terminal-uname-a.jpg" caption="Local Linux 终端中的 uname -a 输出。" />
-  <DocScreenshot file="local-linux-ai-print-os-info.jpg" caption="AI 根据 uname 与 /etc/os-release 输出汇总系统信息。" />
-</div>
-
-## 停止、重置或删除
-
-通过 Local Linux 控制项管理环境。停止会中断当前工作，再次启动使用原有环境。重置、删除环境或清除应用数据会移除环境文件。内置 SSH 服务监听回环地址，供应用连接使用。Android 可能结束后台进程，回到应用后请检查环境状态。
-
-## 参考资料
-
-[安装入门](/zh/docs/local-linux/getting-started) · [架构](/zh/docs/local-linux/architecture) · [兼容性](/zh/docs/local-linux/compatibility) · [安全与完整性](/zh/docs/local-linux/security-integrity) · [Presets](/zh/docs/local-linux/presets) · [故障排查](/zh/docs/local-linux/troubleshooting) · [源码与许可证](/zh/docs/local-linux-source)
+- **[故障排查](/zh/docs/local-linux/troubleshooting)**：处理安装、软件包和后台停止问题。
+- **[运行原理](/zh/docs/local-linux/architecture)** · **[安全与校验](/zh/docs/local-linux/security-integrity)** · **[源码与许可证](/zh/docs/local-linux-source)**

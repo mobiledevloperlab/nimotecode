@@ -5,7 +5,13 @@ description: プロジェクトをスマートフォンで開き、開発用コ�
 
 # NimoteCode の機能
 
-NimoteCode は、スマートフォンやタブレットから既存プロジェクトを扱うための開発ワークスペースです。リポジトリ、サーバー、パッケージマネージャー、AI プロバイダー、ツールチェーンの代替ではありません。ファイル、エディター、シェル環境、バージョン管理、任意の AI 支援を一つの作業場所にまとめます。
+スマートフォンやタブレットでコード編集、コマンド実行、Git レビュー、AI との作業を。IDE・ターミナル・AI を切り替えても、プロジェクトと Explorer の状態を維持します。
+
+<WorkspaceModes />
+
+## インターフェース
+
+<div class="feature-showcase" role="region" tabindex="0" aria-label="NimoteCode feature highlights"><div class="feature-showcase__track"><figure class="feature-showcase__item"><img src="/screenshots/p1.png" alt="Local files, SSH, code editing and AI Agent in NimoteCode" width="1604" height="901" loading="eager"><figcaption>ワークスペース、編集、AI エージェント</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p2.png" alt="SSH terminal, Source Control and code diagnostics in NimoteCode" width="1597" height="896" loading="lazy"><figcaption>ターミナル、Git、診断</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p3.png" alt="NimoteCode debugging, remote workspace sync, and smart caching" width="1598" height="893" loading="lazy"><figcaption>デバッグとワークスペースの同期</figcaption></figure></div></div>
 
 ## ワークスペースを選ぶ
 
@@ -56,13 +62,6 @@ AI の出力は支援であり、正確性、安全性、実行成功を保証�
 ## 利用可否
 
 機能はプラットフォーム、アプリバージョン、アカウント権限、配布チャネル、ストア地域によって異なります。現在のアカウントで利用できる状態はアプリ内で確認できます。Pro として提供される機能でも、リモートホスト上のアカウント権限自体は変わりません。詳細は[アカウントとサブスクリプション](/ja/docs/account-subscription)を参照してください。
-
-## 画面の概要
-
-以下の画像は、上記のワークスペース、コードレビュー、診断、転送画面を示します。
-
-<div class="feature-showcase" role="region" tabindex="0" aria-label="NimoteCode feature highlights"><div class="feature-showcase__track"><figure class="feature-showcase__item"><img src="/screenshots/p1.png" alt="Local files, SSH, code editing and AI Agent in NimoteCode" width="1604" height="901" loading="eager"><figcaption>ワークスペース、編集、AI エージェント</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p2.png" alt="SSH terminal, Source Control and code diagnostics in NimoteCode" width="1597" height="896" loading="lazy"><figcaption>ターミナル、Git、診断</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p3.png" alt="NimoteCode debugging, remote workspace sync, and smart caching" width="1598" height="893" loading="lazy"><figcaption>デバッグとワークスペースの同期</figcaption></figure></div></div>
-
 
 ## 2.3.0 のワークスペースと Docker
 

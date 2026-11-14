@@ -187,10 +187,15 @@ NimoteCode 是商业闭源应用。本仓库提供官方文档、教程、工作
 <summary>维护本站文档</summary>
 
 ```bash
+nvm install
+nvm use
 npm ci
+npm ci --prefix blog
 npm run docs:build
 npm run docs:check
 ```
+
+使用与部署环境一致的 Node 24（见 `.nvmrc`）。Astro 要求 Node >=22.23.4，不支持 Node 20。在新终端进入本仓库后，先运行 `nvm use`。
 
 使用 `npm run docs:dev` 在本地预览。
 

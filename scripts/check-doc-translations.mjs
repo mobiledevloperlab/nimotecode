@@ -5,7 +5,7 @@ import { resolve } from 'node:path'
 // guides synchronized without requiring literal translations of their prose.
 const pages = [
   'account-subscription', 'ai', 'configuration', 'docker', 'debug', 'editor', 'faq',
-  'local-linux', 'lsp', 'notifications', 'plugins', 'quick-start', 'search',
+  'local-linux', 'local-linux/getting-started', 'lsp', 'notifications', 'plugins', 'quick-start', 'search',
   'security', 'settings', 'source-control', 'ssh', 'sync-cache', 'tasks', 'terminal'
 ]
 const locales = ['zh', 'ja', 'ko', 'es']
@@ -24,7 +24,8 @@ const structures = {
   steps: /^(\d+)\. /gm,
   screenshots: /<DocScreenshot file="([^"]+)"/g,
   images: /<img src="([^"]+)"/g,
-  commands: /`([^`]+)`/g,
+  commands: /(?<!`)`([^`\n]+)`(?!`)/g,
+  codeBlocks: /^```[^\n]*\n([\s\S]*?)^```/gm,
   layout: /<\/?div(?: class="[^"]+")?>/g
 }
 
@@ -63,8 +64,11 @@ const blogScreenshots = new Set(blogDirs.filter(existsSync).flatMap(dir => readd
   .filter(file => file.endsWith('.md'))
   .flatMap(file => extract(readFileSync(resolve(dir, file), 'utf8'), /\/images\/placeholders\/([^\s)"']+)/g))))
 const coreGuideScreenshots = new Set(pages.flatMap(page => extract(read('', page), structures.screenshots)))
+// AI-generated OS summaries are no longer part of Linux onboarding.
+// Keep the old image available to existing links without requiring it in a guide.
+const retiredScreenshots = new Set(['local-linux-ai-print-os-info.jpg'])
 const screenshots = readdirSync(resolve(root, 'public/images/placeholders'))
-  .filter(file => /\.(png|jpe?g|webp)$/i.test(file) && (!blogScreenshots.has(file) || coreGuideScreenshots.has(file)))
+  .filter(file => !retiredScreenshots.has(file) && /\.(png|jpe?g|webp)$/i.test(file) && (!blogScreenshots.has(file) || coreGuideScreenshots.has(file)))
 for (const locale of ['', ...locales]) {
   const used = new Set(pages.flatMap(page => extract(read(locale, page), structures.screenshots)))
   for (const file of screenshots) {

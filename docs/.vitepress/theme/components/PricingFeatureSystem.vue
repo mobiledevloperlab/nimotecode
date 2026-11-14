@@ -62,23 +62,26 @@ const trialCopy = computed(() => copy.value.pricing.trial)
       <p class="pf-trust-line">{{ productCopy[language].byok }}</p>
     </section>
 
-    <section v-if="showFeatures" class="home-page-section dense alt pf-features-section">
-      <div class="home-page-section-head home-page-section-head-centered">
-        <p class="home-page-eyebrow">{{ copy.features.eyebrow }}</p>
-        <h2 class="home-page-section-title">{{ copy.features.title }}</h2>
-        <p class="home-page-section-copy">{{ copy.features.summary }}</p>
-      </div>
-      <div class="pf-feature-grid">
-        <article v-for="group in copy.features.groups" :key="group.name" class="pf-feature-card">
-          <div class="pf-card-head">
-            <h3>{{ group.name }}</h3>
-            <span>{{ group.badge }}</span>
-          </div>
-          <ul>
-            <li v-for="item in group.items" :key="item">{{ item }}</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+    <details v-if="showFeatures" class="pf-feature-details">
+      <summary>{{ copy.features.detailsLabel }}</summary>
+      <section class="home-page-section dense alt pf-features-section">
+        <div class="home-page-section-head home-page-section-head-centered">
+          <p class="home-page-eyebrow">{{ copy.features.eyebrow }}</p>
+          <h2 class="home-page-section-title">{{ copy.features.title }}</h2>
+          <p class="home-page-section-copy">{{ copy.features.summary }}</p>
+        </div>
+        <div class="pf-feature-grid">
+          <article v-for="group in copy.features.groups" :key="group.name" class="pf-feature-card">
+            <div class="pf-card-head">
+              <h3>{{ group.name }}</h3>
+              <span>{{ group.badge }}</span>
+            </div>
+            <ul>
+              <li v-for="item in group.items" :key="item">{{ item }}</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </details>
   </div>
 </template>

@@ -5,6 +5,7 @@ import Layout from './Layout.vue'
 import MarketingLayout from './MarketingLayout.vue'
 import AppMockup from './components/AppMockup.vue'
 import ProductHome from './components/ProductHome.vue'
+import WorkspaceModes from './components/WorkspaceModes.vue'
 import ImagePlaceholder from './components/ImagePlaceholder.vue'
 import DocScreenshot from './components/DocScreenshot.vue'
 import DownloadPage from './components/DownloadPage.vue'
@@ -19,6 +20,7 @@ import LocalizedLandingPage from './components/LocalizedLandingPage.vue'
 import { type Theme } from 'vitepress'
 import './custom.css'
 import TrustNav from './components/TrustNav.vue'
+import { shouldReloadBlogRoute } from './blog-navigation.mjs'
 
 const theme: Theme = {
   extends: DefaultTheme,
@@ -27,7 +29,7 @@ const theme: Theme = {
   enhanceApp({ app, router }) {
     if (typeof window !== 'undefined') {
       router.onBeforeRouteChange = (to) => {
-        if (/^\/(?:zh\/)?blog(?:\/|$)/.test(new URL(to, window.location.href).pathname)) {
+        if (shouldReloadBlogRoute(to, window.location.href, import.meta.env.PROD)) {
           window.location.assign(to)
           return false
         }
@@ -35,6 +37,7 @@ const theme: Theme = {
     }
     app.component('AppMockup', AppMockup)
     app.component('ProductHome', ProductHome)
+    app.component('WorkspaceModes', WorkspaceModes)
     app.component('ImagePlaceholder', ImagePlaceholder)
     app.component('DocScreenshot', DocScreenshot)
     app.component('DownloadPage', DownloadPage)
