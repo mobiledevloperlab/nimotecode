@@ -373,9 +373,7 @@ html:not(.dark) .home-page-feature-icon {
   background: var(--nimote-action);
   color: var(--nimote-on-action);
   border-color: var(--nimote-action);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.18),
-    0 1px 2px rgba(8, 9, 10, 0.12);
+  box-shadow: var(--nimote-shadow-xs);
   transition: transform 0.2s var(--nimote-ease), box-shadow 0.2s var(--nimote-ease),
     border-color 0.2s var(--nimote-ease), filter 0.2s var(--nimote-ease);
 }
@@ -383,16 +381,17 @@ html:not(.dark) .home-page-feature-icon {
   background: var(--nimote-action-hover);
   border-color: var(--nimote-action-hover);
   filter: none;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.2),
-    0 2px 8px rgba(var(--nimote-accent-rgb), 0.16);
+  box-shadow: var(--nimote-shadow-sm);
+}
+.vp-doc .home-page-btn.primary:hover,
+.vp-doc .home-page-btn.primary:focus-visible {
+  color: var(--nimote-on-action);
+  border-color: var(--nimote-action-hover);
 }
 .home-page-btn.primary:active {
   transform: translateY(1px);
   filter: brightness(0.97);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.12),
-    0 1px 2px rgba(8, 9, 10, 0.1);
+  box-shadow: none;
 }
 
 .home-page-btn.secondary {
@@ -1614,7 +1613,8 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
 .home-tool-comparison-row h3 { margin: 0; padding: 17px 18px; background: var(--nimote-bg-subtle); color: var(--nimote-text-primary); font-size: 0.88rem; line-height: 1.45; }
 .home-tool-comparison-results { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .home-tool-comparison-result { min-width: 0; padding: 13px 18px; border-left: 1px solid var(--nimote-border); overflow-wrap: anywhere; }
-.home-tool-comparison-result.is-nimote { background: color-mix(in srgb, var(--nimote-accent) 8%, transparent); }
+.home-tool-comparison-result.is-nimote { background: var(--nimote-bg-elevated); }
+.home-tool-comparison-result.is-nimote .home-tool-comparison-result-head strong { color: var(--nimote-link); }
 .home-tool-comparison-result-head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 5px 10px; }
 .home-tool-comparison-result-head strong { color: var(--nimote-text-primary); font-size: 0.84rem; }
 .home-tool-comparison-result p { margin: 6px 0 0; color: var(--nimote-text-muted); font-size: 0.78rem; line-height: 1.45; }

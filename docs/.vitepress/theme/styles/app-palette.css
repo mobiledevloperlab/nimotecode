@@ -1,82 +1,42 @@
-/* Theme roles shared by the hero and workflow illustrations.
-   Light surfaces follow the application's assets/themes/light.json. */
+/* One neutral dark application theme, framed by the shared site palette.
+   Software surfaces use closely spaced neutral layers; purple identifies small active controls. */
 .app-showcase,
 .product-feature-visual {
-  --mock-surface: #ffffff;
-  --mock-editor: #ffffff;
-  --mock-panel: #f6f7f9;
-  --mock-line: #d3d7de;
-  --mock-ink: #111827;
-  --mock-secondary: #596271;
-  --mock-muted: #5f6874;
-  --mock-accent: #5e6ad2;
-  --mock-accent-text: #515ebf;
-  --mock-selected: #e4e7fa;
-  --mock-selection: #e4e7fa;
-  --mock-green: #167839;
-  --mock-amber: #8d5d1b;
-  --mock-elevated: #eff1f4;
-  --mock-keyword: #8a3775;
-  --mock-function: #235f9a;
-  --mock-string: #227148;
-  --mock-number: #89541b;
-  --mock-error: #b53b4f;
-  --mock-error-soft: #f8e2e6;
-  --mock-success-soft: #e1f2e9;
-  --mock-on-accent: #ffffff;
-  --mock-color-scheme: light;
-  --mock-device-frame: linear-gradient(145deg, #e3e5eb, #c4c8d2 45%, #eef0f4);
-  --mock-device-border: #a4aab6;
-  --mock-device-shadow: #19223b26;
-  --mock-device-highlight: #ffffffb3;
-  --mock-hardware: #596271;
+  --mock-surface: var(--nimote-editor-bg);
+  --mock-editor: var(--nimote-editor-bg);
+  --mock-panel: var(--nimote-editor-panel);
+  --mock-chrome: var(--nimote-chrome-bg);
+  --mock-sidebar: var(--nimote-chrome-bg);
+  --mock-line: var(--nimote-editor-border);
+  --mock-ink: var(--nimote-editor-text);
+  --mock-secondary: var(--nimote-editor-secondary);
+  --mock-muted: var(--nimote-editor-muted);
+  --mock-accent: #aaa3d1;
+  --mock-accent-text: #c2bddf;
+  --mock-selected: var(--nimote-editor-selection);
+  --mock-selection: var(--nimote-editor-selection);
+  --mock-green: #96baa1;
+  --mock-amber: #c7af85;
+  --mock-elevated: var(--nimote-editor-panel);
+  --mock-keyword: #c2a7bf;
+  --mock-function: #a3b8d1;
+  --mock-string: #a0bca8;
+  --mock-number: #cfb990;
+  --mock-error: #d49ba3;
+  --mock-error-soft: #38292c;
+  --mock-success-soft: #27332b;
+  --mock-on-accent: #101112;
+  --mock-python-blue: #91a8c0;
+  --mock-python-gold: #c1ad86;
+  --mock-color-scheme: dark;
+  --mock-device-frame: #191a1c;
+  --mock-device-border: #3a3b3f;
+  --mock-device-shadow: #00000024;
+  --mock-device-highlight: #ffffff00;
+  --mock-panel-shadow: #00000018;
+  --mock-status-shadow: #00000020;
+  --mock-accent-glow: #aaa3d120;
+  --mock-hardware: #77797f;
   color-scheme: var(--mock-color-scheme);
 }
-
-.dark .app-showcase,
-.dark .product-feature-visual {
-  --mock-surface: #000000;
-  --mock-editor: #000000;
-  --mock-panel: #0d0d0d;
-  --mock-line: #202020;
-  --mock-ink: #e6e6e6;
-  --mock-secondary: #aaaaaa;
-  --mock-muted: #8c8c8c;
-  --mock-accent: #6d61c9;
-  --mock-accent-text: #b4acf0;
-  --mock-selected: #18151f;
-  --mock-selection: #18151f;
-  --mock-green: #63b58a;
-  --mock-amber: #c39a5b;
-  --mock-elevated: #161616;
-  --mock-color-scheme: dark;
-  --mock-device-frame: linear-gradient(145deg, #34343a, #171719 45%, #29292d);
-  --mock-device-border: #77717f;
-  --mock-device-shadow: #00000066;
-  --mock-device-highlight: #ffffff18;
-  --mock-hardware: #b7b7c0;
-  --mock-keyword: #c792b9;
-  --mock-function: #82a9d8;
-  --mock-string: #7bc498;
-  --mock-number: #d4a574;
-  --mock-error: #d8787f;
-  --mock-error-soft: #241214;
-  --mock-success-soft: #101c15;
-}
-
-/* The tablet retains its softer charcoal appearance in dark mode only. */
-.dark .mock-tablet {
-  --mock-surface: #1c1e23;
-  --mock-editor: #1c1e23;
-  --mock-panel: #24262c;
-  --mock-elevated: #292c33;
-  --mock-line: #383b43;
-  --mock-ink: #d4d5d9;
-  --mock-secondary: #b2b4bc;
-  --mock-muted: #9296a1;
-  --mock-selected: #2d2c37;
-  --mock-selection: #2d2c37;
-  --mock-accent-text: #aaa6cb;
-  --mock-device-frame: linear-gradient(145deg, #454850, #2c2f35 45%, #3c3f46);
-  --mock-device-border: #555962;
-}
+.product-showcase .mock-stage strong { color: inherit; }

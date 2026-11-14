@@ -179,7 +179,8 @@
   border-left: 1px solid var(--nimote-border);
   overflow-wrap: anywhere;
 }
-.vp-doc .cmp-result-nimote { background: rgba(var(--nimote-accent-rgb), 0.06); }
+.vp-doc .cmp-result-nimote { background: var(--nimote-bg-elevated); }
+.vp-doc .cmp-result-nimote .cmp-product-line strong { color: var(--nimote-link); }
 .vp-doc .cmp-product-line {
   display: flex;
   align-items: center;

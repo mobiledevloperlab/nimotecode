@@ -16,15 +16,12 @@ const locale = computed(() => {
 })
 const copy = computed(() => translations[locale.value])
 const local = (path: string) => `${locale.value === 'en' ? '' : `/${locale.value}`}${path}`
-const blogRoot = computed(() => locale.value === 'zh' ? '/zh/blog/' : '/blog/')
-const blogSlugs = ['best-ssh-clients', 'can-an-ai-agent-really-code-from-a-phone', 'tailscale-ssh-android-mac-linux']
 const android = 'https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=website&utm_campaign=homepage'
 const ios = 'https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253'
-const resourceLinks = computed(() => [local('/docs/quick-start'), local('/use-cases/'), local('/resources/')])
 // Explicit codec hints let browsers without H.264 select the WebM fallback.
 const demoMimeTypes = ['video/mp4; codecs="avc1.64001F"', 'video/mp4; codecs="avc1.640032, mp4a.40.2"']
 const activeDemo = ref(0)
-const demoOpen = ref(false)
+const demoOpen = ref(true)
 const expandedReviews = ref<string[]>([])
 function toggleReview(id: string) {
   expandedReviews.value = expandedReviews.value.includes(id) ? expandedReviews.value.filter(value => value !== id) : [...expandedReviews.value, id]
@@ -45,60 +42,61 @@ const formatReviewDate = (date: string) => new Intl.DateTimeFormat(locale.value,
     <section class="product-hero">
       <div class="product-container product-hero-grid">
         <div class="product-hero-copy">
-          <p class="product-eyebrow"><span class="product-live-dot" aria-hidden="true"></span>{{ copy.badge }}</p>
-          <h1>{{ copy.title }} <span>{{ copy.accent }}</span></h1>
-          <p class="product-intro">{{ copy.intro }}</p>
-          <div class="product-actions">
-            <a class="product-button" :href="android" target="_blank" rel="noopener noreferrer"><MockIcon name="android" />{{ copy.android }}</a>
-            <a class="product-button product-button-secondary" :href="ios" target="_blank" rel="noopener noreferrer"><MockIcon name="apple" />{{ copy.ios }}</a>
+          <p class="product-announcement">
+            <span class="product-announcement-badge">{{ copy.previewLabel }}</span>
+            <strong>{{ copy.previewMessage }}</strong>
+          </p>
+          <div class="product-hero-heading">
+            <p class="product-eyebrow">NimoteCode <span aria-hidden="true">/</span> {{ copy.badge }}</p>
+            <h1>{{ copy.title }} <span>{{ copy.accent }}</span></h1>
           </div>
-          <p class="product-start-note">{{ copy.startNote }}</p>
-          <div class="product-hero-links"><a class="product-demo-link" href="#product-demo" @click="demoOpen = true"><span class="product-play" aria-hidden="true">▶</span>{{ copy.watch }}<span aria-hidden="true">↓</span></a></div>
+          <div class="product-hero-description">
+            <p class="product-intro">{{ copy.intro }}</p>
+            <div class="product-actions">
+              <a class="product-button" :href="android" target="_blank" rel="noopener noreferrer"><MockIcon name="android" />{{ copy.android }}</a>
+              <a class="product-button product-button-secondary" :href="ios" target="_blank" rel="noopener noreferrer"><MockIcon name="apple" />{{ copy.ios }}</a>
+              <a class="product-demo-link" href="#product-demo" @click="demoOpen = true"><span class="product-play" aria-hidden="true">▶</span>{{ copy.watch }}</a>
+            </div>
+            <div class="product-hero-meta"><p class="product-start-note">{{ copy.startNote }}</p><p class="product-hero-tasks">{{ copy.heroTasks }}</p></div>
+          </div>
         </div>
         <figure class="product-showcase" :aria-label="copy.illustration">
-          <div class="product-showcase-heading"><span><span class="product-live-dot" aria-hidden="true"></span>NimoteCode</span><span>{{ copy.illustration }}</span><a href="#workflow-title">{{ copy.allFeatures }} <span aria-hidden="true">↓</span></a></div>
           <AppMockup />
-          <figcaption><span class="product-caption-line" aria-hidden="true"></span>{{ copy.caption }}</figcaption>
+          <figcaption><span>{{ copy.caption }}</span><span>{{ copy.available }}</span></figcaption>
         </figure>
-      </div>
-      <div class="product-container">
-        <div class="product-facts">
-          <span class="product-platforms">{{ copy.available }}</span>
-          <span v-for="(fact, index) in copy.facts" :key="fact"><MockIcon :name="['cloud', 'terminal', 'spark'][index]" />{{ fact }}</span>
-        </div>
       </div>
     </section>
 
     <section class="product-container product-section" aria-labelledby="workflow-title">
       <WorkspaceModes />
-    </section>
-
-    <section id="product-demo" class="product-demo-section" aria-labelledby="demo-title">
-      <div class="product-container product-section">
-        <div class="product-demo-heading"><p class="product-eyebrow">{{ copy.demoLabel }}</p><h2 id="demo-title">{{ copy.demoTitle }}</h2><p>{{ copy.demoCopy }}</p></div>
+      <div id="product-demo" class="product-demo-section">
         <details class="product-demo-disclosure" :open="demoOpen" @toggle="demoOpen = ($event.target as HTMLDetailsElement).open">
-          <summary><span class="product-play" aria-hidden="true">▶</span>{{ copy.watch }}<span class="product-disclosure-plus" aria-hidden="true">+</span></summary>
+          <summary class="product-demo-heading"><h2><span class="product-eyebrow">{{ copy.demoLabel }}</span><span class="product-demo-title">{{ copy.demoTitle }}</span></h2><span class="product-disclosure-icon" aria-hidden="true"><MockIcon name="down" /></span></summary>
         <div v-if="demoOpen" class="product-demo-panel">
-          <div class="product-demo-tabs" role="group" :aria-label="copy.demoLabel"><button v-for="(tab, index) in copy.demoTabs" :key="tab" type="button" :aria-pressed="activeDemo === index" aria-controls="demo-player" @click="selectDemo(index)"><MockIcon :name="index === 0 ? 'spark' : 'code'" />{{ tab }}</button></div>
+          <p class="product-demo-copy">{{ copy.demoCopy }}</p>
+          <div class="product-demo-toolbar"><div class="product-demo-tabs" role="group" :aria-label="copy.demoLabel"><button v-for="(tab, index) in copy.demoTabs" :key="tab" type="button" :aria-pressed="activeDemo === index" aria-controls="demo-player" @click="selectDemo(index)"><MockIcon :name="index === 0 ? 'spark' : 'code'" />{{ tab }}</button></div><a class="product-text-link product-demo-resource" :href="local('/use-cases/')">{{ copy.resources[1][0] }}<span aria-hidden="true">→</span></a></div>
+          <div class="product-demo-layout" :class="{ 'is-workspace': activeDemo === 1 }">
           <div id="demo-player" class="product-demo-stage" :class="{ 'is-portrait': activeDemo === 0 }">
             <video :key="activeDemo" ref="demoVideo" controls playsinline preload="none" :poster="activeDemo === 0 ? '/videos/nimotecode-poster.jpg' : '/videos/workspace-demo-poster.jpg'" :aria-label="copy.demoTabs[activeDemo]"><source :src="activeDemo === 0 ? '/videos/nimotecode.mp4' : '/videos/pad_workflow.mp4'" :type="demoMimeTypes[activeDemo]"><source :src="activeDemo === 0 ? '/videos/ai-agent-demo.webm' : '/videos/workspace-demo.webm'" type="video/webm"><a :href="activeDemo === 0 ? '/videos/nimotecode.mp4' : '/videos/pad_workflow.mp4'">{{ copy.watch }}</a></video>
           </div>
-          <div class="product-demo-footer"><span>{{ copy.caption }}</span><a class="product-text-link" :href="local('/use-cases/')">{{ copy.resources[1][0] }}<span aria-hidden="true">→</span></a></div>
+          <div v-if="activeDemo === 0" class="product-demo-guide">
+            <h3>{{ copy.demoContext }}</h3>
+            <ol><li v-for="(step, index) in copy.demoSteps" :key="step"><span>{{ String(index + 1).padStart(2, '0') }}</span><div><strong>{{ step }}</strong><p>{{ copy.demoDetails[index] }}</p></div></li></ol>
+            <p class="product-demo-access">{{ copy.modeNotes[2] }}</p>
+          </div>
+          </div>
         </div>
         </details>
       </div>
-    </section>
-
-    <section class="product-container product-secondary" :aria-label="copy.capabilityTitle">
-      <details class="product-technical-details">
-        <summary>{{ copy.capabilityDetails }}<span class="product-disclosure-plus" aria-hidden="true">+</span></summary>
+      <details class="product-technical-details" open>
+        <summary>{{ copy.capabilityDetails }}<span class="product-disclosure-icon" aria-hidden="true"><MockIcon name="down" /></span></summary>
       <div class="product-capabilities">
         <div class="product-capability-heading"><h3>{{ copy.capabilityTitle }}</h3><a class="product-text-link" :href="local('/features')">{{ copy.allFeatures }}<span aria-hidden="true">→</span></a></div>
         <div class="product-capability-grid"><a v-for="(capability, index) in copy.capabilities" :key="capability[0]" :href="local(`/docs/${capabilityLinks[index]}`)"><MockIcon :name="['branch', 'code', 'search', 'globe', 'terminal', 'plus'][index]" /><div><h3>{{ capability[0] }}</h3><p>{{ capability[1] }}</p></div></a></div>
-        <p class="product-capability-note">{{ copy.capabilityNote }}</p>
+        <div class="product-access"><div class="product-access-conditions"><p class="product-capability-note">{{ copy.capabilityNote }}</p>
         <p class="product-byok-note">{{ copy.byok }}</p>
-        <div class="product-access-links"><a class="product-text-link" :href="local('/pro')">{{ copy.planLink }}<span aria-hidden="true">→</span></a><a class="product-release" :href="local(`/releases/${latestRelease.version}`)"><span>v{{ latestRelease.version }}</span>{{ copy.release }} →</a></div>
-        <p class="product-deadline"><a :href="local('/pro')">{{ copy.earlyAccessDeadline }} →</a></p>
+        </div><div class="product-access-actions"><div class="product-access-links"><a class="product-text-link" :href="local('/pro')">{{ copy.planLink }}<span aria-hidden="true">→</span></a><a class="product-release" :href="local(`/releases/${latestRelease.version}`)"><span>v{{ latestRelease.version }}</span>{{ copy.release }} →</a></div>
+        <p class="product-deadline"><a :href="local('/pro')">{{ copy.earlyAccessDeadline }} →</a></p></div></div>
       </div>
       </details>
     </section>
@@ -119,23 +117,11 @@ const formatReviewDate = (date: string) => new Intl.DateTimeFormat(locale.value,
       </div>
     </section>
 
-    <section class="product-container product-blog" aria-labelledby="blog-title">
-      <div class="product-blog-heading"><h2 id="blog-title">{{ copy.blogHeading }}</h2><a class="product-text-link" :href="blogRoot">{{ copy.blogAll }}<span aria-hidden="true">→</span></a></div>
-      <div class="product-blog-grid">
-        <a v-for="(article, index) in copy.blogArticles" :key="blogSlugs[index]" class="product-blog-card" :href="`${blogRoot}${blogSlugs[index]}`">
-          <p class="product-eyebrow">{{ article[0] }}</p><h3>{{ article[1] }}</h3><p class="product-blog-summary">{{ article[2] }}</p><span class="product-blog-arrow" aria-hidden="true">↗</span>
-        </a>
-      </div>
-    </section>
-
-    <nav class="product-container product-explore-links" :aria-label="copy.resourcesTitle">
-      <a v-for="(resource, index) in copy.resources" :key="resource[0]" :href="resourceLinks[index]">{{ resource[0] }} <span aria-hidden="true">→</span></a>
-      <a :href="locale === 'zh' ? '/zh/compare/mobile-ai-development-tools' : '/compare/mobile-ai-development-tools'" :hreflang="locale === 'zh' ? 'zh' : 'en'">{{ copy.fullComparisonLink }} <span aria-hidden="true">→</span></a>
-      <a href="https://discord.gg/tTxbpqYmhR" target="_blank" rel="noopener noreferrer">Discord <span aria-hidden="true">↗</span></a>
-    </nav>
-
-    <section class="product-container product-download-section" aria-labelledby="download-title">
-      <div class="product-download"><img src="/app_icon.png" width="64" height="64" alt="" loading="lazy" decoding="async" /><h2 id="download-title">{{ copy.ctaTitle }}</h2><p>{{ copy.ctaCopy }}</p><div class="product-actions"><a class="product-button" :href="android" target="_blank" rel="noopener noreferrer"><MockIcon name="android" />{{ copy.android }}</a><a class="product-button product-button-secondary" :href="ios" target="_blank" rel="noopener noreferrer"><MockIcon name="apple" />{{ copy.ios }}</a></div><p class="product-start-note"><span>{{ copy.startNote }}</span><span>{{ copy.byokLabel }}</span></p><a class="product-text-link" :href="local('/download')">{{ copy.allDownloads }}<span aria-hidden="true">→</span></a></div>
+    <section class="product-container product-getting-started" aria-labelledby="getting-started-title">
+      <div class="product-section-heading"><div><p class="product-eyebrow">{{ copy.resources[0][0] }}</p><h2 id="getting-started-title">{{ copy.gettingStartedTitle }}</h2></div><a class="product-text-link" :href="local('/docs/quick-start')">{{ copy.startLink }} <span aria-hidden="true">↗</span></a></div>
+      <p class="product-getting-started-copy">{{ copy.gettingStartedCopy }}</p>
+      <ol class="product-start-steps"><li v-for="(step, index) in copy.gettingStartedSteps" :key="step[0]"><span>{{ String(index + 1).padStart(2, '0') }}</span><h3>{{ step[0] }}</h3><p>{{ step[1] }}</p></li></ol>
+      <p class="product-start-condition">{{ copy.byokLabel }}</p>
     </section>
   </div>
 </template>

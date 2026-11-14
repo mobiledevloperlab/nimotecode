@@ -112,9 +112,7 @@
 .pf-plan-card.is-featured {
   border-color: var(--nimote-border-accent);
   box-shadow: var(--nimote-shadow-brand);
-  background:
-    radial-gradient(ellipse 120% 60% at 100% -10%, rgba(var(--nimote-accent-rgb), 0.08), transparent 55%),
-    var(--nimote-card);
+  background: var(--nimote-card);
 }
 
 .pf-plan-card:hover {
@@ -123,7 +121,7 @@
   box-shadow: var(--nimote-shadow-md);
 }
 .pf-plan-card.is-featured:hover {
-  box-shadow: 0 14px 34px rgba(var(--nimote-accent-rgb), 0.2);
+  box-shadow: var(--nimote-shadow-lg);
 }
 
 .pf-plan-topline {
@@ -145,8 +143,9 @@
 .pf-plan-topline span {
   padding: 0.35rem 0.85rem;
   border-radius: var(--nimote-radius-pill);
-  background: var(--nimote-action);
-  color: var(--nimote-on-action);
+  border: 1px solid var(--nimote-border-accent);
+  background: var(--nimote-bg-subtle);
+  color: var(--nimote-link);
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -230,10 +229,7 @@
   padding: 22px 28px;
   border-radius: var(--nimote-radius-lg);
   border: 1px solid var(--nimote-border-accent);
-  background:
-    radial-gradient(circle at 92% 8%, rgba(var(--nimote-accent-2-rgb), 0.14), transparent 44%),
-    var(--nimote-gradient-soft),
-    var(--nimote-card);
+  background: var(--nimote-bg-subtle);
   box-shadow: var(--nimote-shadow-brand);
 }
 

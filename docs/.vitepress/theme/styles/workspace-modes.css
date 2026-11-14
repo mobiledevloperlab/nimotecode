@@ -1,19 +1,22 @@
-/* All three modes are readable at once; these are descriptions, not controls. */
-.workspace-modes { color: var(--nimote-text-primary); }
-.vp-doc .workspace-modes :is(h2, h3, p) { margin: 0; padding: 0; border: 0; }
-.workspace-modes-heading { display: grid; grid-template-columns: 1.2fr 1fr; align-items: end; gap: 40px; margin-bottom: 28px; }
-.vp-doc .workspace-modes-eyebrow { color: var(--nimote-link); font-size: 13px; font-weight: 600; }
-.vp-doc .workspace-modes h2 { margin-top: 12px; font-size: var(--nimote-fs-3xl); line-height: 1.3; letter-spacing: -.035em; text-wrap: balance; }
-.workspace-modes-heading > p { color: var(--nimote-text-secondary); font-size: var(--nimote-fs-md); line-height: 1.8; }
-.workspace-mode-descriptions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; padding-top: 28px; border-top: 1px solid var(--nimote-border); }
-.workspace-mode-description { min-width: 0; }
-.workspace-mode-description > svg { width: 24px; height: 24px; color: var(--nimote-link); margin-bottom: 16px; }
-.vp-doc .workspace-modes .workspace-mode-description h3 { font-size: 18px; font-weight: 600; line-height: 1.4; }
-.vp-doc .workspace-modes .workspace-mode-description p { margin-top: 10px; color: var(--nimote-text-secondary); font-size: 15px; line-height: 1.8; }
-@media (max-width: 700px) {
-  .workspace-modes-heading { grid-template-columns: 1fr; gap: 12px; margin-bottom: 24px; }
-  .workspace-mode-descriptions { grid-template-columns: 1fr; gap: 24px; padding-top: 24px; }
-  .workspace-mode-description { display: grid; grid-template-columns: 24px 1fr; column-gap: 14px; }
-  .workspace-mode-description > svg { grid-row: 1 / 3; margin: 0; }
-  .vp-doc .workspace-modes .workspace-mode-description p { margin-top: 8px; }
+/* Shared by the homepage and feature pages. */
+.vp-doc .workspace-modes :is(h2,h3,p) { margin: 0; padding: 0; border: 0; }
+.vp-doc .workspace-modes h2 { font-size: var(--nimote-fs-3xl); font-weight: 550; line-height: 1.3; letter-spacing: -.035em; }
+.workspace-modes-heading { display: grid; gap: 16px; margin-bottom: 36px; }
+.vp-doc .workspace-modes-eyebrow { color: var(--nimote-text-secondary); font-size: 12px; letter-spacing: .025em; }
+.vp-doc .workspace-modes h2 { max-width: 620px; margin-top: 12px; }
+.workspace-modes-heading > p { max-width: 640px; color: var(--nimote-text-secondary); font-size: 15px; line-height: 1.85; }
+.workspace-mode-descriptions { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 40px; }
+.workspace-mode-description { padding-top: 24px; border-top: 1px solid var(--nimote-border); }
+.vp-doc .workspace-mode-label { display: flex; align-items: center; gap: 16px; color: var(--nimote-text-secondary); font-size: 12px; }
+.workspace-mode-label > span { color: var(--nimote-text-muted); font-family: var(--vp-font-family-mono); }
+.vp-doc .workspace-mode-description h3 { margin-top: 24px; font-size: 20px; }
+.vp-doc .workspace-mode-description > p:last-child { margin-top: 12px; color: var(--nimote-text-secondary); font-size: 14px; line-height: 1.85; }
+@media (max-width: 760px) {
+  .workspace-modes-heading { grid-template-columns: 1fr; gap: 20px; margin-bottom: 32px; }
+  .workspace-mode-descriptions { gap: 24px; }
+}
+@media (max-width: 600px) {
+  .workspace-mode-descriptions { grid-template-columns: 1fr; gap: 28px; }
+  .workspace-mode-description { padding-top: 20px; }
+  .vp-doc .workspace-mode-description h3 { margin-top: 12px; }
 }

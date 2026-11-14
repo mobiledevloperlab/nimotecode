@@ -146,6 +146,7 @@ function localized(path: string) {
           <span class="nimote-footer-social-links">
             <a href="https://www.youtube.com/watch?v=gW2wFNIBNws" target="_blank" rel="noreferrer">{{ copy.youtube }}</a>
             <a href="https://x.com/mobiledevlab" target="_blank" rel="noreferrer">{{ copy.x }}</a>
+            <a href="https://discord.gg/tTxbpqYmhR" target="_blank" rel="noreferrer">Discord</a>
             <a href="https://github.com/mobiledevloperlab" target="_blank" rel="noreferrer">{{ copy.github }}</a>
           </span>
         </nav>
