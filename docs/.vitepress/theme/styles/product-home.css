@@ -52,6 +52,7 @@
 .product-demo-tabs button { display: inline-flex; align-items: center; gap: 8px; min-height: 56px; border-bottom: 2px solid transparent; color: var(--nimote-text-secondary); font-size: 14px; cursor: pointer; }
 .product-demo-tabs button[aria-pressed="true"] { color: var(--nimote-text-primary); border-color: var(--nimote-text-primary); }
 .product-demo-layout { display: grid; grid-template-columns: minmax(0,360px) minmax(0,440px); justify-content: center; gap: clamp(40px,7vw,96px); align-items: center; padding: clamp(32px,5vw,56px); border: 1px solid var(--nimote-border); border-radius: 16px; background: var(--nimote-bg-media); }
+.product-demo-layout.is-landscape { grid-template-columns: minmax(0, 1fr); }
 .product-demo-stage > video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #111; object-fit: contain; }
 .product-demo-stage.is-portrait > video { width: 100%; max-width: 360px; aspect-ratio: 9 / 16; margin-inline: auto; border: 1px solid var(--nimote-border); border-radius: 14px; box-shadow: 0 16px 40px rgba(0,0,0,.14); }
 .product-demo-guide { max-width: 440px; }

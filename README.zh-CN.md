@@ -7,16 +7,15 @@
 <p align="center"><a href="README.md">English</a> · 简体中文 · <a href="README.es.md">Español</a> · <a href="README.ja.md">日本語</a> · <a href="README.ko.md">한국어</a></p>
 
 <p align="center">
-  <strong>在手机和平板上，继续你的开发工作。</strong><br>
-  打开本地项目，或通过 SSH 连接开发主机。<br>
-  在同一个移动工作区中编辑代码、运行命令、审查 Git 改动，并使用 AI 辅助开发。
+  <strong>在手机和平板上编辑、运行和审查项目的移动 IDE。</strong><br>
+  打开本地文件或通过 SSH 连接开发主机，在同一工作区使用编辑器、终端、Git 和 AI 编程 Agent。
 </p>
 
 <p align="center"><sub>代码编辑器&nbsp;&nbsp;•&nbsp;&nbsp;SSH 终端&nbsp;&nbsp;•&nbsp;&nbsp;Git&nbsp;&nbsp;•&nbsp;&nbsp;AI 编码<br>支持的 Android 设备还可运行免 root Ubuntu</sub></p>
 
 <p align="center">
-  <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-安装-34A853?style=for-the-badge&amp;logo=googleplay&amp;logoColor=white" alt="从 Google Play 安装 Android 版 NimoteCode"></a>
-  <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-下载-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="从 App Store 下载 iPhone 和 iPad 版 NimoteCode"></a>
+  <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-%E5%AE%89%E8%A3%85-34A853?style=for-the-badge&amp;logo=googleplay&amp;logoColor=white" alt="从 Google Play 安装 Android 版 NimoteCode"></a>
+  <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-%E4%B8%8B%E8%BD%BD-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="从 App Store 下载 iPhone 和 iPad 版 NimoteCode"></a>
 </p>
 
 <p align="center"><sub><a href="#演示">观看演示</a> · <a href="#与其他移动开发工具对比">工具对比</a> · <a href="https://nimotecode.com/zh/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=zh_quick_start">快速开始</a> · <a href="#latest-release">2.3.0 更新亮点</a></sub></p>
@@ -24,15 +23,17 @@
 <p align="center"><sub>免费开始使用，无需先配置 AI。<br>商业闭源应用 · 本仓库提供官方文档与社区资源</sub></p>
 
 <p align="center">
-  <img src="docs/public/screenshots/nimote-pro.webp?v=8692016c" alt="NimoteCode 在平板和手机上展示代码编辑器、项目文件与 AI 工作区" width="1000">
+  <img src="docs/public/screenshots/nimote-pro.webp" alt="NimoteCode 在平板和手机上展示代码编辑器、项目文件与 AI 工作区" width="1000">
 </p>
 
 ---
 
 ## 演示
 
+上方截图展示了手机上的 AI Agent 和平板上的 SSH 工作区。可在下方观看，或[直接打开演示视频](https://github.com/user-attachments/assets/df7de976-e743-415d-9bd1-df396a647e10)。
+
 <div align="center">
-  <video src="https://github.com/user-attachments/assets/8710a3de-5799-4c4a-99e8-dcfa1092cc61" controls muted playsinline width="420"></video>
+  <video src="https://github.com/user-attachments/assets/df7de976-e743-415d-9bd1-df396a647e10" controls muted playsinline width="420"></video>
 </div>
 
 ## 项目在哪里，就在哪里继续开发
@@ -47,7 +48,7 @@ NimoteCode 将代码编辑器、SSH 终端、Git 审查与 AI 工作流带到 An
 
 > ⭐ **这些工作流对你有帮助？欢迎 Star 收藏，方便再次找到教程与示例。**
 
-## 为什么值得一试
+## 功能亮点
 
 - **切换工作区模式：**在 IDE、终端和 AI 模式间切换，同时保留项目与文件浏览器状态。
 - **容器开发：**通过 SSH 管理 Docker 与 Compose，或根据 `devcontainer.json` 创建和重建 Dev Container。
@@ -72,7 +73,7 @@ NimoteCode 将代码编辑器、SSH 终端、Git 审查与 AI 工作流带到 An
 
 应用不包含 AI 模型访问权限或 Token 额度，Provider 费用另计。外部 Agent 与 CLI 需要单独安装、认证并具备相应服务权限；Claude Code 和 Codex 并非 NimoteCode 内置工具。接受 AI 修改前，请检查命令与代码 Diff。
 
-## 从第一个项目开始
+## 快速开始
 
 1. **安装应用：**[Android — Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) · [iPhone / iPad — App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253)。
 2. **打开工作区：**选择本地项目、连接 SSH 主机，或先体验 Demo 工作区；支持的 Android 设备也可使用 Local Linux。无需先配置 AI。
@@ -83,6 +84,50 @@ NimoteCode 将代码编辑器、SSH 终端、Git 审查与 AI 工作流带到 An
 **免费开始，Early Access 体验进阶功能：**免费版包含本地与 SSH 工作区、编辑器、基础终端、Git 审查、AI Chat 和基础 Tasks。GitHub 集成、Android Local Linux、AI Agent、远程内容搜索、多终端、Git 写操作、LSP 和调试等进阶工作流通过 Early Access 开放。当前可用性与权益以[Early Access 权益说明](https://nimotecode.com/zh/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_plans)及应用内显示为准。
 
 商店可用性与版本上线时间可能因平台和地区不同。查看[下载与平台要求](https://nimotecode.com/zh/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_download)；商店实际提供的版本可能与下方介绍的版本不同。
+
+## 下载
+
+Android 用户可从 [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) 安装，iPhone 和 iPad 用户可从 [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253) 下载。
+
+<a id="latest-release"></a>
+
+## NimoteCode 2.3.0 · 工作区模式、Docker 与 Dev Containers
+
+可在 IDE、终端和 AI 模式间切换，并保留项目状态；同时升级 Windows SSH、插件、Agent 交互、终端及 SSH 主机 Docker 开发体验。
+
+- **切换工作区模式：**在 IDE、终端和 AI 间切换，项目与资源管理器状态保持同步。
+- **通过 SSH 使用 Docker：**管理容器、镜像、卷、网络和 Compose 服务；查看日志与统计、打开 exec，并搜索 Docker Hub。
+- **使用 Dev Containers：**从 `devcontainer.json` 创建或重建容器，在隔离且配置好的工作区中打开项目。
+- **扩展开发流程：**Windows SSH、经校验的插件贡献与 Agent 工具、ACP Agent 执行中追问、自适应终端分屏及移动端 Git 审阅。
+
+> [阅读完整 2.3.0 发布说明](https://nimotecode.com/zh/releases/2.3.0) · [历史版本](https://nimotecode.com/releases/)
+
+## 文档
+
+- [快速开始](https://nimotecode.com/zh/docs/quick-start) · [SSH](https://nimotecode.com/zh/docs/ssh) · [终端](https://nimotecode.com/zh/docs/terminal) · [编辑器](https://nimotecode.com/zh/docs/editor)
+- [AI Chat 和 Agent](https://nimotecode.com/zh/docs/ai) · [源代码管理](https://nimotecode.com/zh/docs/source-control) · [LSP](https://nimotecode.com/zh/docs/lsp) · [调试](https://nimotecode.com/zh/docs/debug)
+- [Docker](https://nimotecode.com/zh/docs/docker) · [插件](https://nimotecode.com/zh/docs/plugins) · [安全](https://nimotecode.com/zh/docs/security) · [全部文档](https://nimotecode.com/zh/docs)
+
+### 教程与资源
+
+- [移动开发指南](resources/README.md) —— 本地编辑、远程开发、Git 与 AI 工作流（英文）。
+- [Android 本地 Linux 文档](https://nimotecode.com/zh/docs/local-linux) —— 安装、兼容性与故障排查。
+- [Linux Presets](https://github.com/mobiledevloperlab/nimote-linux-presets) —— 含版本化清单与校验脚本的可选环境；另见[预设概览](presets/README.md)。
+- [官方网站](https://nimotecode.com/zh/?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_website) —— 产品详情与使用文档。
+
+## 常见问题
+
+**NimoteCode 与 Termux、Acode 和 code-server 有什么区别？** NimoteCode 在移动应用中结合了触屏编辑器、SSH 客户端、终端、Git 和 AI 工作流，并可选用 Android Local Linux。Termux 侧重 Android 终端和软件包；Acode 是移动代码编辑器；code-server 在浏览器中运行 VS Code。可根据所需环境和工作流选择。
+
+**必须有 SSH 服务器吗？** 不需要。可以先打开本地文件夹或 Demo 工作区；SSH 工作区需要已配置且可访问的主机。
+
+**可以在手机上运行代码吗？** 受支持的 Android 设备可以使用 Local Linux；iPhone 和 iPad 可通过 SSH 使用合适的远程主机。能运行什么取决于工作区中安装的工具。
+
+**包含 AI 服务吗？** AI 配置是可选的。需要自备服务商和 API Key，模型使用可能另行收费。内置 Agent 属于 Early Access 功能。
+
+**NimoteCode 是开源的吗？** 应用是商业闭源软件，本仓库提供文档和资源；许可详情见[关于本仓库](#关于本仓库)。
+
+[查看更多常见问题](https://nimotecode.com/zh/docs/faq)。
 
 ## 与其他移动开发工具对比
 
@@ -137,25 +182,9 @@ Orca 的移动端依赖桌面 Companion；Moshi 的 Diff 和网页预览需要 P
 
 **想亲自试试？** [安装 NimoteCode](https://nimotecode.com/zh/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_compare_download)，先打开 Demo 或本地项目，无需先配置 AI。
 
-<a id="latest-release"></a>
+## 参与贡献
 
-## NimoteCode 2.3.0 · 工作区模式、Docker 与 Dev Containers
-
-可在 IDE、终端和 AI 模式间切换，并保留项目状态；同时升级 Windows SSH、插件、Agent 交互、终端及 SSH 主机 Docker 开发体验。
-
-- **切换工作区模式：**在 IDE、终端和 AI 间切换，项目与资源管理器状态保持同步。
-- **通过 SSH 使用 Docker：**管理容器、镜像、卷、网络和 Compose 服务；查看日志与统计、打开 exec，并搜索 Docker Hub。
-- **使用 Dev Containers：**从 `devcontainer.json` 创建或重建容器，在隔离且配置好的工作区中打开项目。
-- **扩展开发流程：**Windows SSH、经校验的插件贡献与 Agent 工具、ACP Agent 执行中追问、自适应终端分屏及移动端 Git 审阅。
-
-> [阅读完整 2.3.0 发布说明](https://nimotecode.com/zh/releases/2.3.0) · [Earlier releases](https://nimotecode.com/releases/)
-
-## 教程与资源
-
-- [移动开发指南](resources/README.md) —— 本地编辑、远程开发、Git 与 AI 工作流（英文）。
-- [Android 本地 Linux 文档](https://nimotecode.com/zh/docs/local-linux) —— 安装、兼容性与故障排查。
-- [Linux Presets](https://github.com/mobiledevloperlab/nimote-linux-presets) —— 含版本化清单与校验脚本的可选环境；另见[预设概览](presets/README.md)。
-- [官方网站](https://nimotecode.com/zh/?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_website) —— 产品详情与使用文档。
+欢迎通过 Pull Request 改进本仓库的文档和示例，也可以在 [Issue 追踪器](https://github.com/mobiledevloperlab/nimote_issues/issues)报告应用问题或提出功能建议。报告问题时请提供复现步骤、设备和应用版本。应用源代码不在本仓库中。
 
 ## 社区
 

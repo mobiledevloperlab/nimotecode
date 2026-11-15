@@ -12,12 +12,18 @@
 
 <p align="center"><sub><a href="#workspace-demo">Demo</a> · <a href="https://nimotecode.com/es/docs/quick-start">Inicio rápido</a> · <a href="https://nimotecode.com/es/releases/2.3.0">Novedades</a></sub></p>
 
+<p align="center"><sub>Gratis para empezar; configurar la IA es opcional. Aplicación comercial de código cerrado · Documentación y recursos oficiales.</sub></p>
+
+<p align="center"><img src="docs/public/screenshots/nimote-pro.webp" alt="NimoteCode mobile AI Agent and tablet SSH workspace" width="1000"></p>
+
 <a id="workspace-demo"></a>
 
 ## Demo
 
+La imagen muestra el Agente de IA en un teléfono y el espacio SSH en una tableta. [Abre el video de demostración](https://github.com/user-attachments/assets/df7de976-e743-415d-9bd1-df396a647e10).
+
 <div align="center">
-  <video src="https://github.com/user-attachments/assets/8710a3de-5799-4c4a-99e8-dcfa1092cc61" controls muted playsinline width="420"></video>
+  <video src="https://github.com/user-attachments/assets/df7de976-e743-415d-9bd1-df396a647e10" controls muted playsinline width="420"></video>
 </div>
 
 ## Desarrolla donde esté tu proyecto
@@ -25,6 +31,8 @@
 - **Proyecto local:** abre una carpeta con el selector del sistema y empieza a editar.
 - **Host de desarrollo por SSH:** trabaja con archivos remotos, terminal y cambios de Git en el mismo espacio.
 - **Linux local en Android:** usa Ubuntu, Bash, Git y SSH mediante PRoot en Android compatible; los proyectos locales se comparten en `/mnt/local`.
+
+Local Linux requiere Android 8 o posterior en dispositivos ARM64 / x86_64 compatibles; no está disponible en iPhone ni iPad. Un host SSH debe estar configurado y ser accesible.
 
 ## Capacidades principales
 
@@ -34,6 +42,11 @@
 - **Ejecuta y verifica:** usa terminal, tareas de proyecto, teclas adicionales móviles, modo de enfoque, paletas de terminal y proxies SSH SOCKS5 o HTTP CONNECT.
 - **Revisa con Git:** consulta estado, diferencias e historial; busca, crea y cambia ramas desde el encabezado de Git.
 - **Amplía el espacio de trabajo:** el Centro de plugins de Early Access permite paneles, formularios, flujos, vistas de resultados y tareas de script locales o SSH.
+
+- **Herramientas de lenguaje:** conecta servidores compatibles para diagnósticos y adaptadores de depuración remotos configurados. LSP y depuración son flujos de Early Access que requieren las herramientas del entorno.
+- **Carpetas externas:** las carpetas autorizadas por el sistema permiten explorar y editar; Git, LSP, depuración, tareas, vigilancia de archivos y Agent requieren una ruta nativa.
+- **Disponibilidad:** las herramientas dependen del espacio de trabajo, las herramientas instaladas y el plan. Consulta la [referencia de funciones](https://nimotecode.com/es/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_features).
+
 
 ## IA para programar a tu manera
 
@@ -45,7 +58,62 @@
 | **Agente ACP externo** | Conecta un entorno compatible en tu host SSH y revisa permisos y progreso en la conversación de la aplicación. |
 | **Claude Code / Codex por SSH** | Ejecuta la CLI instalada en tu propio host desde el terminal. |
 
-El acceso a modelos y los tokens no están incluidos. Revisa comandos y diferencias antes de aceptar cambios generados por IA.
+El acceso a modelos y los tokens no están incluidos. Los agentes externos y las CLI requieren instalación, autenticación y acceso propios; Claude Code y Codex no están incluidos. Revisa comandos y diferencias antes de aceptar cambios generados por IA.
+
+## Empezar
+
+1. Instala NimoteCode desde [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) o la [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253).
+2. Abre un proyecto local, conecta un host SSH o explora el espacio Demo.
+3. Haz un cambio pequeño, ejecuta una comprobación disponible y revisa la diferencia de Git.
+
+> [Guía de inicio rápido →](https://nimotecode.com/es/docs/quick-start?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_quick_start)
+
+**Gratis para empezar, con flujos avanzados en Early Access:** Gratis incluye espacios locales y SSH, editor, terminal básico, revisión de Git, AI Chat y tareas básicas. integración con GitHub, Android Local Linux, Agent, búsqueda remota, varios terminales, escritura Git, LSP y depuración se ofrecen mediante Early Access. Consulta [Early Access](https://nimotecode.com/es/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_plans) y la aplicación para la disponibilidad y condiciones actuales.
+
+La disponibilidad en tiendas y el momento de lanzamiento pueden variar por plataforma y región. Consulta [descargas y requisitos de plataforma](https://nimotecode.com/es/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_download).
+
+## Descargas
+
+Descarga para Android en [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) o para iPhone y iPad en la [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253).
+
+## NimoteCode 2.3.0 · Modos de espacio, Docker y Dev Containers
+
+Cambia entre IDE, Terminal e IA conservando el proyecto. También incorpora mejoras para Windows SSH, plugins, Agent, terminal y Docker en hosts SSH.
+
+- **Cambia de modo:** alterna entre IDE, Terminal e IA conservando el proyecto y el Explorador.
+- **Docker por SSH:** administra contenedores, imágenes, volúmenes, redes y Compose; consulta registros y estadísticas, abre exec y busca en Docker Hub.
+- **Dev Containers:** crea o reconstruye desde `devcontainer.json` y abre un espacio aislado configurado.
+- **Flujos ampliados:** Windows SSH, plugins validados, instrucciones al Agent en curso, terminal adaptable y revisión móvil de Git.
+
+> [Leer las notas completas de 2.3.0](https://nimotecode.com/es/releases/2.3.0) · [Versiones anteriores](https://nimotecode.com/releases/)
+
+## Documentación
+
+- [Inicio rápido](https://nimotecode.com/es/docs/quick-start) · [SSH](https://nimotecode.com/es/docs/ssh) · [Terminal](https://nimotecode.com/es/docs/terminal) · [Editor](https://nimotecode.com/es/docs/editor)
+- [AI Chat & Agent](https://nimotecode.com/es/docs/ai) · [Control de código](https://nimotecode.com/es/docs/source-control) · [LSP](https://nimotecode.com/es/docs/lsp) · [Depuración](https://nimotecode.com/es/docs/debug)
+- [Docker](https://nimotecode.com/es/docs/docker) · [Plugins](https://nimotecode.com/es/docs/plugins) · [Seguridad](https://nimotecode.com/es/docs/security) · [Índice](https://nimotecode.com/es/docs)
+
+### Guías y recursos
+
+- [Sitio oficial](https://nimotecode.com/es/?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_website)
+- [Funciones](https://nimotecode.com/es/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_features)
+- [Documentación de Linux local](https://nimotecode.com/es/docs/local-linux)
+- [Guías de desarrollo móvil](resources/README.md) — edición local, desarrollo remoto, Git y flujos de IA (en inglés).
+- [Preajustes de Linux](https://github.com/mobiledevloperlab/nimote-linux-presets) — entornos opcionales con manifiestos versionados y scripts de verificación.
+
+## Preguntas frecuentes
+
+**¿En qué se diferencia de Termux, Acode y code-server?** NimoteCode reúne editor táctil, cliente SSH, terminal, Git e IA en una aplicación móvil, con Local Linux opcional en Android. Termux se centra en la terminal y los paquetes de Android; Acode es un editor móvil; code-server ejecuta VS Code en el navegador.
+
+**¿Necesito un servidor SSH?** No. Puedes abrir una carpeta local o el espacio Demo. Para usar SSH necesitas un host configurado y accesible.
+
+**¿Puedo ejecutar código en el teléfono?** Los dispositivos Android compatibles pueden usar Local Linux. En iPhone y iPad puedes usar un host remoto por SSH. La ejecución depende de las herramientas instaladas.
+
+**¿Está incluida la IA?** La configuración es opcional. Debes aportar tu proveedor y clave API; el uso del modelo puede tener costes adicionales. El Agente integrado requiere Early Access.
+
+**¿Es de código abierto?** La aplicación es comercial y de código cerrado. Este repositorio contiene documentación y recursos.
+
+[Más preguntas frecuentes](https://nimotecode.com/es/docs/faq).
 
 ## Compara herramientas móviles
 
@@ -77,6 +145,7 @@ El acceso a modelos y los tokens no están incluidos. Revisa comandos y diferenc
 | Git / interfaz de diferencias | ✅ ¹ | ? | ✅ | ✅ |
 | Ramas de Git | ✅ ¹ | ? | ? | ? |
 | Agente de IA integrado | ✅ ¹ | ? | ? | ? |
+| Continuar un Agente de IA activo | ✅ ¹ | ? | ? | ? |
 | Servidores MCP integrados | ✅ ¹ | ? | ? | ? |
 | Diagnósticos LSP | ✅ ¹ | ? | ? | ? |
 | Vista previa web / de aplicación | ✅ | ✅ | ✅ | ✅ |
@@ -94,31 +163,9 @@ Una marca no significa que la función sea gratuita, no requiera configuración 
 
 > [Comparación completa con fuentes oficiales →](https://nimotecode.com/es/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_comparison)
 
-## Por qué probar NimoteCode
+## Contribuir
 
-- **Herramientas de lenguaje:** conecta servidores compatibles para diagnósticos y adaptadores de depuración remotos configurados. LSP y depuración son flujos de Early Access que requieren las herramientas del entorno.
-- **Carpetas externas:** las carpetas autorizadas por el sistema permiten explorar y editar; Git, LSP, depuración, tareas, vigilancia de archivos y Agent requieren una ruta nativa.
-- **Disponibilidad:** las herramientas dependen del espacio de trabajo, las herramientas instaladas y el plan. Consulta la [referencia de funciones](https://nimotecode.com/es/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_features).
-
-## Empezar
-
-1. Instala NimoteCode desde [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) o la [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253).
-2. Abre un proyecto local, conecta un host SSH o explora el espacio Demo.
-3. Haz un cambio pequeño, ejecuta una comprobación disponible y revisa la diferencia de Git.
-
-> [Guía de inicio rápido →](https://nimotecode.com/es/docs/quick-start?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_quick_start)
-
-**Gratis para empezar, con flujos avanzados en Early Access:** Gratis incluye espacios locales y SSH, editor, terminal básico, revisión de Git, AI Chat y tareas básicas. integración con GitHub, Android Local Linux, Agent, búsqueda remota, varios terminales, escritura Git, LSP y depuración se ofrecen mediante Early Access. Consulta [Early Access](https://nimotecode.com/es/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_plans) y la aplicación para la disponibilidad y condiciones actuales.
-
-La disponibilidad en tiendas y el momento de lanzamiento pueden variar por plataforma y región. Consulta [descargas y requisitos de plataforma](https://nimotecode.com/es/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_download).
-
-## Recursos
-
-- [Sitio oficial](https://nimotecode.com/es/?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_website)
-- [Funciones](https://nimotecode.com/es/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_features)
-- [Documentación de Linux local](https://nimotecode.com/es/docs/local-linux)
-- [Guías de desarrollo móvil](resources/README.md) — edición local, desarrollo remoto, Git y flujos de IA (en inglés).
-- [Preajustes de Linux](https://github.com/mobiledevloperlab/nimote-linux-presets) — entornos opcionales con manifiestos versionados y scripts de verificación.
+Se agradecen las mejoras a la documentación y los ejemplos mediante pull requests. Para informar de problemas de la aplicación o proponer funciones, usa el [rastreador de incidencias](https://github.com/mobiledevloperlab/nimote_issues/issues); incluye los pasos para reproducir el problema y las versiones del dispositivo y de la aplicación. El código de la aplicación no está en este repositorio.
 
 ## Comunidad
 
@@ -132,13 +179,21 @@ NimoteCode es una aplicación comercial de código cerrado. Este repositorio con
 
 Los [paquetes de código fuente y avisos de licencia de Local Linux](https://nimotecode.com/es/docs/local-linux-source) cubren componentes de terceros; no hacen que NimoteCode sea de código abierto.
 
-## NimoteCode 2.3.0 · Modos de espacio, Docker y Dev Containers
 
-Cambia entre IDE, Terminal e IA conservando el proyecto. También incorpora mejoras para Windows SSH, plugins, Agent, terminal y Docker en hosts SSH.
+La [licencia MIT de Linux Presets](https://github.com/mobiledevloperlab/nimote-linux-presets/blob/master/LICENSE) se aplica a ese repositorio, no a la aplicación ni a todo este contenido.
 
-- **Cambia de modo:** alterna entre IDE, Terminal e IA conservando el proyecto y el Explorador.
-- **Docker por SSH:** administra contenedores, imágenes, volúmenes, redes y Compose; consulta registros y estadísticas, abre exec y busca en Docker Hub.
-- **Dev Containers:** crea o reconstruye desde `devcontainer.json` y abre un espacio aislado configurado.
-- **Flujos ampliados:** Windows SSH, plugins validados, instrucciones al Agent en curso, terminal adaptable y revisión móvil de Git.
+<details>
+<summary>Mantener el sitio y la documentación</summary>
 
-> [Leer las notas completas de 2.3.0](https://nimotecode.com/es/releases/2.3.0) · [Earlier releases](https://nimotecode.com/releases/)
+```bash
+nvm install
+nvm use
+npm ci
+npm ci --prefix blog
+npm run docs:build
+npm run docs:check
+```
+
+Node 24 (`.nvmrc`); `npm run docs:dev`.
+
+</details>

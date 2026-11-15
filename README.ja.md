@@ -8,16 +8,22 @@
 
 <p align="center"><sub>コードエディター&nbsp;&nbsp;•&nbsp;&nbsp;SSH ターミナル&nbsp;&nbsp;•&nbsp;&nbsp;Git&nbsp;&nbsp;•&nbsp;&nbsp;AI コーディング<br>対応 Android デバイスでは root 不要の Ubuntu を利用可能</sub></p>
 
-<p align="center"><a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-インストール-34A853?style=for-the-badge&amp;logo=googleplay&amp;logoColor=white" alt="Google Play から Android 版 NimoteCode をインストール"></a> <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-ダウンロード-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="App Store から NimoteCode をダウンロード"></a></p>
+<p align="center"><a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB-34A853?style=for-the-badge&amp;logo=googleplay&amp;logoColor=white" alt="Google Play から Android 版 NimoteCode をインストール"></a> <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="App Store から NimoteCode をダウンロード"></a></p>
 
 <p align="center"><sub><a href="#workspace-demo">デモ</a> · <a href="https://nimotecode.com/ja/docs/quick-start">クイックスタート</a> · <a href="https://nimotecode.com/ja/releases/2.3.0">リリースノート</a></sub></p>
+
+<p align="center"><sub>無料で開始でき、AI の設定は任意です。商用クローズドソースアプリ · 公式ドキュメントとリソース</sub></p>
+
+<p align="center"><img src="docs/public/screenshots/nimote-pro.webp" alt="NimoteCode mobile AI Agent and tablet SSH workspace" width="1000"></p>
 
 <a id="workspace-demo"></a>
 
 ## デモ
 
+上の画像はスマートフォンの AI Agent とタブレットの SSH ワークスペースです。[デモ動画を開く](https://github.com/user-attachments/assets/df7de976-e743-415d-9bd1-df396a647e10)。
+
 <div align="center">
-  <video src="https://github.com/user-attachments/assets/8710a3de-5799-4c4a-99e8-dcfa1092cc61" controls muted playsinline width="420"></video>
+  <video src="https://github.com/user-attachments/assets/df7de976-e743-415d-9bd1-df396a647e10" controls muted playsinline width="420"></video>
 </div>
 
 ## プロジェクトのある場所で開発する
@@ -25,6 +31,8 @@
 - **ローカルプロジェクト:** システムピッカーでフォルダーを開き、すぐに編集を開始できます。
 - **SSH 開発ホスト:** リモートファイル、ターミナル、Git の変更を同じワークスペースで扱えます。
 - **Android Local Linux:** 対応 Android 上で PRoot の Ubuntu、Bash、Git、SSH を利用し、ローカルプロジェクトを `/mnt/local` で共有できます。
+
+Local Linux は対応する Android 8 以降の ARM64 / x86_64 端末が必要で、iPhone / iPad では利用できません。SSH ホストは設定済みで接続可能である必要があります。
 
 ## 主な機能
 
@@ -34,6 +42,11 @@
 - **実行と検証:** ターミナル、プロジェクトタスク、モバイル拡張キー、フォーカスモード、配色、SOCKS5 / HTTP CONNECT の SSH プロキシを利用できます。
 - **Git レビュー:** ステータス、差分、履歴を確認し、Git ヘッダーからブランチを検索、作成、切り替えできます。
 - **ワークスペースの拡張:** Early Access のプラグインセンターで、カスタムパネル、フォーム、ワークフロー、成果物ビュー、ローカルまたは SSH のスクリプトジョブを作成できます。
+
+- **言語ツール:** 対応する言語サーバーで診断を表示し、構成済みリモートデバッグアダプターでデバッグできます。LSP とデバッグは Early Access で、環境ツールが必要です。
+- **外部フォルダー:** システムに許可された外部フォルダーは閲覧と編集に対応しますが、Git、LSP、デバッグ、Tasks、ファイル監視、Agent はネイティブファイルパスが必要です。
+- **利用可能性:** ツールはワークスペース、インストール済みツール、プランに依存します。[機能リファレンス](https://nimotecode.com/ja/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_features)を確認してください。
+
 
 ## 好みに合わせた AI コーディング
 
@@ -45,7 +58,61 @@
 | **外部 ACP Agent** | SSH ホスト上の対応ランタイムを接続し、アプリの会話画面で権限と進行状況を確認できます。 |
 | **SSH 経由の Claude Code / Codex** | 自分のホストにインストールした CLI をターミナルから実行します。 |
 
-モデル利用とトークンは含まれません。AI が生成した変更を受け入れる前に、コマンドと差分を確認してください。
+モデル利用とトークンは含まれません。 外部 Agent と CLI は別途インストール、認証、サービスへのアクセスが必要です。Claude Code と Codex は同梱されません。AI が生成した変更を受け入れる前に、コマンドと差分を確認してください。
+
+## はじめる
+
+1. [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) または [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253) から NimoteCode をインストールします。
+2. ローカルプロジェクトを開く、SSH ホストへ接続する、または Demo ワークスペースを試します。
+3. 小さな変更を行い、利用可能なチェックを実行して Git 差分を確認します。
+
+> [クイックスタート →](https://nimotecode.com/ja/docs/quick-start?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_quick_start)
+
+**無料で開始し、Early Access で高度なワークフローを利用:** 無料版にはローカルと SSH のワークスペース、エディター、基本ターミナル、Git レビュー、AI Chat、基本 Tasks が含まれます。GitHub 連携、Android Local Linux、AI Agent、リモートコンテンツ検索、複数ターミナル、Git 書き込み、LSP、デバッグは Early Access で利用できます。現在の利用条件は[Early Access の詳細](https://nimotecode.com/ja/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_plans)とアプリで確認してください。
+
+ストアでの提供状況とリリース時期はプラットフォームや地域により異なる場合があります。[ダウンロードとプラットフォーム要件](https://nimotecode.com/ja/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_download)を確認してください。
+
+## ダウンロード
+
+Android 版は [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode)、iPhone / iPad 版は [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253) から入手できます。
+
+## NimoteCode 2.3.0 · ワークスペースモード、Docker、Dev Containers
+
+IDE、ターミナル、AI を切り替えながらプロジェクト状態を維持。Windows SSH、プラグイン、Agent、ターミナル、SSH ホスト上の Docker 開発も強化しました。
+
+- **モード切替：**IDE、ターミナル、AI を切り替えてもプロジェクトと Explorer の状態を維持します。
+- **SSH の Docker：**コンテナ、イメージ、ボリューム、ネットワーク、Compose を管理し、ログ、統計、exec、Docker Hub 検索を利用できます。
+- **Dev Containers：**`devcontainer.json` から作成または再構築し、設定済みの隔離ワークスペースを開けます。
+- **開発フローを強化：**Windows SSH、検証付きプラグイン、Agent への追加指示、適応型ターミナル分割、モバイル Git レビューに対応。
+
+> [2.3.0 のリリースノート全文](https://nimotecode.com/ja/releases/2.3.0) · [過去のリリース](https://nimotecode.com/releases/)
+
+## ドキュメント
+
+- [クイックスタート](https://nimotecode.com/ja/docs/quick-start) · [SSH](https://nimotecode.com/ja/docs/ssh) · [ターミナル](https://nimotecode.com/ja/docs/terminal) · [エディター](https://nimotecode.com/ja/docs/editor)
+- [AI Chat & Agent](https://nimotecode.com/ja/docs/ai) · [ソース管理](https://nimotecode.com/ja/docs/source-control) · [LSP](https://nimotecode.com/ja/docs/lsp) · [デバッグ](https://nimotecode.com/ja/docs/debug)
+- [Docker](https://nimotecode.com/ja/docs/docker) · [Plugins](https://nimotecode.com/ja/docs/plugins) · [セキュリティ](https://nimotecode.com/ja/docs/security) · [一覧](https://nimotecode.com/ja/docs)
+
+### ガイドとリソース
+
+- [公式サイト](https://nimotecode.com/ja/?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_website)
+- [機能](https://nimotecode.com/ja/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_features)
+- [モバイル開発ガイド](resources/README.md) — ローカル編集、リモート開発、Git、AI ワークフロー（英語）。
+- [Linux プリセット](https://github.com/mobiledevloperlab/nimote-linux-presets) — バージョン管理されたマニフェストと検証スクリプトを含む任意の環境。
+
+## よくある質問
+
+**Termux、Acode、code-server との違いは？** NimoteCode はタッチ操作向けエディター、SSH クライアント、ターミナル、Git、AI を一つのモバイルアプリにまとめ、Android では Local Linux も利用できます。Termux は Android のターミナルとパッケージ、Acode はモバイルコード編集、code-server はブラウザー上の VS Code に重点を置いています。
+
+**SSH サーバーは必要ですか？** いいえ。ローカルフォルダーや Demo ワークスペースから始められます。SSH には設定済みで接続可能なホストが必要です。
+
+**スマートフォンでコードを実行できますか？** 対応 Android 端末では Local Linux を利用できます。iPhone / iPad では SSH 経由で適切なリモートホストを使用できます。実行できる内容はインストール済みツールによって異なります。
+
+**AI は含まれますか？** AI の設定は任意です。自身のプロバイダーと API キーが必要で、モデル利用料は別途発生する場合があります。組み込み Agent は Early Access の機能です。
+
+**オープンソースですか？** アプリは商用のクローズドソースです。このリポジトリにはドキュメントとリソースが含まれます。
+
+[その他の FAQ](https://nimotecode.com/ja/docs/faq)。
 
 ## モバイル開発ツールの比較
 
@@ -77,6 +144,7 @@
 | Git / 差分 UI | ✅ ¹ | ? | ✅ | ✅ |
 | Git ブランチ操作 | ✅ ¹ | ? | ? | ? |
 | 組み込み AI Agent | ✅ ¹ | ? | ? | ? |
+| 実行中の AI Agent を継続 | ✅ ¹ | ? | ? | ? |
 | 組み込み MCP ツールサーバー | ✅ ¹ | ? | ? | ? |
 | LSP 診断 | ✅ ¹ | ? | ? | ? |
 | Web / アプリプレビュー | ✅ | ✅ | ✅ | ✅ |
@@ -94,30 +162,9 @@ Orca モバイルにはデスクトップ Companion が必要です。Moshi の�
 
 > [公式根拠を含む完全な比較を見る →](https://nimotecode.com/ja/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_comparison)
 
-## NimoteCode を試す理由
+## 貢献する
 
-- **言語ツール:** 対応する言語サーバーで診断を表示し、構成済みリモートデバッグアダプターでデバッグできます。LSP とデバッグは Early Access で、環境ツールが必要です。
-- **外部フォルダー:** システムに許可された外部フォルダーは閲覧と編集に対応しますが、Git、LSP、デバッグ、Tasks、ファイル監視、Agent はネイティブファイルパスが必要です。
-- **利用可能性:** ツールはワークスペース、インストール済みツール、プランに依存します。[機能リファレンス](https://nimotecode.com/ja/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_features)を確認してください。
-
-## はじめる
-
-1. [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) または [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253) から NimoteCode をインストールします。
-2. ローカルプロジェクトを開く、SSH ホストへ接続する、または Demo ワークスペースを試します。
-3. 小さな変更を行い、利用可能なチェックを実行して Git 差分を確認します。
-
-> [クイックスタート →](https://nimotecode.com/ja/docs/quick-start?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_quick_start)
-
-**無料で開始し、Early Access で高度なワークフローを利用:** 無料版にはローカルと SSH のワークスペース、エディター、基本ターミナル、Git レビュー、AI Chat、基本 Tasks が含まれます。GitHub 連携、Android Local Linux、AI Agent、リモートコンテンツ検索、複数ターミナル、Git 書き込み、LSP、デバッグは Early Access で利用できます。現在の利用条件は[Early Access の詳細](https://nimotecode.com/ja/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_plans)とアプリで確認してください。
-
-ストアでの提供状況とリリース時期はプラットフォームや地域により異なる場合があります。[ダウンロードとプラットフォーム要件](https://nimotecode.com/ja/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_download)を確認してください。
-
-## リソース
-
-- [公式サイト](https://nimotecode.com/ja/?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_website)
-- [機能](https://nimotecode.com/ja/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ja_features)
-- [モバイル開発ガイド](resources/README.md) — ローカル編集、リモート開発、Git、AI ワークフロー（英語）。
-- [Linux プリセット](https://github.com/mobiledevloperlab/nimote-linux-presets) — バージョン管理されたマニフェストと検証スクリプトを含む任意の環境。
+ドキュメントや例の改善は Pull Request で歓迎します。アプリの不具合報告や機能提案には [Issue トラッカー](https://github.com/mobiledevloperlab/nimote_issues/issues)を使用し、再現手順と端末・アプリのバージョンを記載してください。アプリのソースコードはこのリポジトリにありません。
 
 ## コミュニティ
 
@@ -131,13 +178,21 @@ NimoteCode は商用のクローズドソースアプリケーションです。
 
 [Local Linux のソースバンドルとライセンス通知](https://nimotecode.com/ja/docs/local-linux-source)はサードパーティコンポーネントを対象とし、NimoteCode アプリをオープンソース化するものではありません。
 
-## NimoteCode 2.3.0 · ワークスペースモード、Docker、Dev Containers
 
-IDE、ターミナル、AI を切り替えながらプロジェクト状態を維持。Windows SSH、プラグイン、Agent、ターミナル、SSH ホスト上の Docker 開発も強化しました。
+[Linux Presets の MIT ライセンス](https://github.com/mobiledevloperlab/nimote-linux-presets/blob/master/LICENSE)はそのリポジトリに適用され、アプリや本リポジトリのすべての内容には適用されません。
 
-- **モード切替：**IDE、ターミナル、AI を切り替えてもプロジェクトと Explorer の状態を維持します。
-- **SSH の Docker：**コンテナ、イメージ、ボリューム、ネットワーク、Compose を管理し、ログ、統計、exec、Docker Hub 検索を利用できます。
-- **Dev Containers：**`devcontainer.json` から作成または再構築し、設定済みの隔離ワークスペースを開けます。
-- **開発フローを強化：**Windows SSH、検証付きプラグイン、Agent への追加指示、適応型ターミナル分割、モバイル Git レビューに対応。
+<details>
+<summary>サイトとドキュメントの保守</summary>
 
-> [2.3.0 のリリースノート全文](https://nimotecode.com/ja/releases/2.3.0) · [Earlier releases](https://nimotecode.com/releases/)
+```bash
+nvm install
+nvm use
+npm ci
+npm ci --prefix blog
+npm run docs:build
+npm run docs:check
+```
+
+Node 24 (`.nvmrc`); `npm run docs:dev`.
+
+</details>
