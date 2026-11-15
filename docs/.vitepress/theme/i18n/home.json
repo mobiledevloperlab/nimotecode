@@ -205,7 +205,26 @@
       ]
     ],
     "previewLabel": "2.4.0 Preview",
-    "previewMessage": "Major new features are coming soon!"
+    "previewMessage": "Major new features are coming soon!",
+    "workspaceDemoContext": "Explore the mobile workspace",
+    "workspaceDemoSteps": [
+      [
+        "Open your project",
+        "Browse project files on your phone."
+      ],
+      [
+        "Build with AI",
+        "Ask the agent to help with your project."
+      ],
+      [
+        "Review source control",
+        "Inspect changes and Git history."
+      ],
+      [
+        "Work in two terminals",
+        "Run commands side by side on one screen."
+      ]
+    ]
   },
   "zh": {
     "badge": "Android 与 iOS 移动 IDE",
@@ -413,7 +432,26 @@
       ]
     ],
     "previewLabel": "2.4.0 预告",
-    "previewMessage": "重磅功能即将发布！"
+    "previewMessage": "重磅功能即将发布！",
+    "workspaceDemoContext": "探索移动工作区",
+    "workspaceDemoSteps": [
+      [
+        "打开项目",
+        "在手机上浏览项目文件。"
+      ],
+      [
+        "使用 AI 开发",
+        "让 Agent 协助处理项目任务。"
+      ],
+      [
+        "查看版本管理",
+        "检查代码变更与 Git 历史。"
+      ],
+      [
+        "使用双终端",
+        "在同一屏幕并排运行命令。"
+      ]
+    ]
   },
   "ja": {
     "badge": "Android・iOS 向けモバイル IDE",
@@ -621,7 +659,26 @@
       ]
     ],
     "previewLabel": "2.4.0 予告",
-    "previewMessage": "注目の新機能、まもなく登場！"
+    "previewMessage": "注目の新機能、まもなく登場！",
+    "workspaceDemoContext": "モバイルワークスペースを探索",
+    "workspaceDemoSteps": [
+      [
+        "プロジェクトを開く",
+        "スマートフォンでファイルを確認。"
+      ],
+      [
+        "AI と開発",
+        "エージェントにプロジェクトの作業を依頼。"
+      ],
+      [
+        "ソース管理を確認",
+        "変更内容と Git の履歴を確認。"
+      ],
+      [
+        "2つのターミナルを使う",
+        "1つの画面でコマンドを並べて実行。"
+      ]
+    ]
   },
   "ko": {
     "badge": "Android 및 iOS용 모바일 IDE",
@@ -829,7 +886,26 @@
       ]
     ],
     "previewLabel": "2.4.0 미리보기",
-    "previewMessage": "강력한 새 기능이 곧 출시됩니다!"
+    "previewMessage": "강력한 새 기능이 곧 출시됩니다!",
+    "workspaceDemoContext": "모바일 작업 공간 살펴보기",
+    "workspaceDemoSteps": [
+      [
+        "프로젝트 열기",
+        "휴대전화에서 프로젝트 파일을 살펴봅니다."
+      ],
+      [
+        "AI와 함께 개발",
+        "에이전트에게 프로젝트 작업을 요청합니다."
+      ],
+      [
+        "소스 관리 확인",
+        "변경 사항과 Git 기록을 확인합니다."
+      ],
+      [
+        "두 터미널 사용",
+        "한 화면에서 명령을 나란히 실행합니다."
+      ]
+    ]
   },
   "es": {
     "badge": "Un IDE móvil para Android e iOS",
@@ -1037,6 +1113,25 @@
       ]
     ],
     "previewLabel": "Avance de 2.4.0",
-    "previewMessage": "¡Próximamente, grandes novedades!"
+    "previewMessage": "¡Próximamente, grandes novedades!",
+    "workspaceDemoContext": "Explora el espacio de trabajo móvil",
+    "workspaceDemoSteps": [
+      [
+        "Abre tu proyecto",
+        "Explora los archivos desde el teléfono."
+      ],
+      [
+        "Desarrolla con IA",
+        "Pide ayuda al agente con el proyecto."
+      ],
+      [
+        "Revisa el control de código",
+        "Consulta los cambios y el historial de Git."
+      ],
+      [
+        "Usa dos terminales",
+        "Ejecuta comandos en paralelo en una pantalla."
+      ]
+    ]
   }
 }

@@ -18,8 +18,6 @@ const copy = computed(() => translations[locale.value])
 const local = (path: string) => `${locale.value === 'en' ? '' : `/${locale.value}`}${path}`
 const android = 'https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=website&utm_campaign=homepage'
 const ios = 'https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253'
-// Explicit codec hints let browsers without H.264 select the WebM fallback.
-const demoMimeTypes = ['video/mp4; codecs="avc1.64001F"', 'video/mp4; codecs="avc1.640032, mp4a.40.2"']
 const activeDemo = ref(0)
 const demoOpen = ref(true)
 const expandedReviews = ref<string[]>([])
@@ -74,12 +72,16 @@ const formatReviewDate = (date: string) => new Intl.DateTimeFormat(locale.value,
           <summary class="product-demo-heading"><h2><span class="product-eyebrow">{{ copy.demoLabel }}</span><span class="product-demo-title">{{ copy.demoTitle }}</span></h2><span class="product-disclosure-icon" aria-hidden="true"><MockIcon name="down" /></span></summary>
         <div v-if="demoOpen" class="product-demo-panel">
           <p class="product-demo-copy">{{ copy.demoCopy }}</p>
-          <div class="product-demo-toolbar"><div class="product-demo-tabs" role="group" :aria-label="copy.demoLabel"><button v-for="(tab, index) in copy.demoTabs" :key="tab" type="button" :aria-pressed="activeDemo === index" aria-controls="demo-player" @click="selectDemo(index)"><MockIcon :name="index === 0 ? 'spark' : 'code'" />{{ tab }}</button></div><a class="product-text-link product-demo-resource" :href="local('/use-cases/')">{{ copy.resources[1][0] }}<span aria-hidden="true">→</span></a></div>
-          <div class="product-demo-layout" :class="{ 'is-workspace': activeDemo === 1 }">
-          <div id="demo-player" class="product-demo-stage" :class="{ 'is-portrait': activeDemo === 0 }">
-            <video :key="activeDemo" ref="demoVideo" controls playsinline preload="none" :poster="activeDemo === 0 ? '/videos/nimotecode-poster.jpg' : '/videos/workspace-demo-poster.jpg'" :aria-label="copy.demoTabs[activeDemo]"><source :src="activeDemo === 0 ? '/videos/nimotecode.mp4' : '/videos/pad_workflow.mp4'" :type="demoMimeTypes[activeDemo]"><source :src="activeDemo === 0 ? '/videos/ai-agent-demo.webm' : '/videos/workspace-demo.webm'" type="video/webm"><a :href="activeDemo === 0 ? '/videos/nimotecode.mp4' : '/videos/pad_workflow.mp4'">{{ copy.watch }}</a></video>
+          <div class="product-demo-toolbar"><div class="product-demo-tabs" role="group" :aria-label="copy.demoLabel"><button v-for="(tab, index) in [...copy.demoTabs].reverse()" :key="tab" type="button" :aria-pressed="activeDemo === index" aria-controls="demo-player" @click="selectDemo(index)"><MockIcon :name="index === 0 ? 'code' : 'spark'" />{{ tab }}</button></div><a class="product-text-link product-demo-resource" :href="local('/use-cases/')">{{ copy.resources[1][0] }}<span aria-hidden="true">→</span></a></div>
+          <div class="product-demo-layout">
+          <div id="demo-player" class="product-demo-stage is-portrait">
+            <video :key="activeDemo" ref="demoVideo" controls playsinline preload="none" :poster="activeDemo === 0 ? '/videos/mobile-promot-poster.jpg' : '/videos/nimotecode-poster.jpg'" :aria-label="copy.demoTabs[1 - activeDemo]"><source :src="activeDemo === 0 ? '/videos/nimotecode-mobile-promot.mp4' : '/videos/nimotecode.mp4'" type="video/mp4"><source v-if="activeDemo === 1" src="/videos/ai-agent-demo.webm" type="video/webm"><a :href="activeDemo === 0 ? '/videos/nimotecode-mobile-promot.mp4' : '/videos/nimotecode.mp4'">{{ copy.watch }}</a></video>
           </div>
           <div v-if="activeDemo === 0" class="product-demo-guide">
+            <h3>{{ copy.workspaceDemoContext }}</h3>
+            <ol><li v-for="(step, index) in copy.workspaceDemoSteps" :key="step[0]"><span>{{ String(index + 1).padStart(2, '0') }}</span><div><strong>{{ step[0] }}</strong><p>{{ step[1] }}</p></div></li></ol>
+          </div>
+          <div v-else class="product-demo-guide">
             <h3>{{ copy.demoContext }}</h3>
             <ol><li v-for="(step, index) in copy.demoSteps" :key="step"><span>{{ String(index + 1).padStart(2, '0') }}</span><div><strong>{{ step }}</strong><p>{{ copy.demoDetails[index] }}</p></div></li></ol>
             <p class="product-demo-access">{{ copy.modeNotes[2] }}</p>

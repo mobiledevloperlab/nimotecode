@@ -29,23 +29,16 @@
 <p align="center"><sub>Free to start. AI setup is optional.<br>Commercial, closed-source app · Official documentation and community resources</sub></p>
 
 <p align="center">
-  <img src="docs/public/screenshots/nimote-pro.webp?v=8692016c" alt="NimoteCode code editor, project explorer and AI workspace on a tablet and phone" width="1000" style="border: 1px solid rgba(99, 102, 241, 0.28); border-radius: 12px; box-shadow: 0 18px 48px rgba(15, 23, 42, 0.22);">
+  <img src="docs/public/screenshots/nimote-pro.webp?v=8692016c" alt="NimoteCode code editor, project explorer and AI workspace on a tablet and phone" width="1000">
 </p>
 
 ---
 
 ## Demo
 
-<div align="center" style="padding: 24px 16px; background: radial-gradient(ellipse at center, rgba(56, 139, 253, 0.16) 0%, rgba(56, 139, 253, 0) 72%);">
-  <video src="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6" controls muted playsinline width="420" poster="docs/public/videos/nimotecode-poster.jpg" style="display: block; max-width: 100%; margin: 0 auto; border: 1px solid rgba(56, 139, 253, 0.28); border-radius: 16px; box-shadow: 0 12px 32px rgba(27, 31, 35, 0.18);">
-    Open the <a href="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6">AI Agent demo video</a>.
-  </video>
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/8710a3de-5799-4c4a-99e8-dcfa1092cc61" controls muted playsinline width="420"></video>
 </div>
-
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6">Watch the AI Agent product demo</a> ·
-  <a href="https://nimotecode.com/videos/ai-agent-demo-small.mp4">Alternative MP4 video</a>
-</p>
 
 ## Develop wherever your project lives
 
@@ -58,6 +51,43 @@ NimoteCode brings a code editor, SSH terminal, Git review and AI workflows to An
 - **Run Linux on Android without root.** Use bundled Ubuntu through PRoot, with Bash, Git and SSH, on supported Android 8+ ARM64 / x86_64 devices. Share app-local projects with Linux at `/mnt/local`. [Try your first Linux script](resources/android-linux-development.md). Local Linux is unavailable on iPhone and iPad.
 
 > ⭐ **Useful for your mobile workflow? Star this repository to keep the guides and examples handy.**
+
+## Why try NimoteCode?
+
+- **Choose your view:** switch between IDE, Terminal and AI modes while keeping your project and Explorer state.
+- **Develop with containers:** manage Docker and Compose on an SSH host, or create and rebuild a Dev Container from `devcontainer.json`.
+- **Edit and navigate:** use the same Nimote Editor on phone, tablet, and desktop; browse and search project files, use split editor panes, and preview Markdown and web output.
+- **Run and inspect:** use the terminal and project tasks in a compatible workspace, with mobile extra keys, terminal focus mode, configurable color palettes, and SOCKS5 or HTTP CONNECT SSH proxies when needed.
+- **Review with Git:** inspect status, diffs and history; search for, create, and check out branches from the Git header; use Early Access workflows to commit, pull, push and resolve conflicts.
+- **Extend the workspace:** use Early Access Plugin Center to create custom panels, forms, workflows, artifact views, and local or SSH script jobs, with permission changes reviewed before installation or updates.
+- **Use language tools:** connect supported language servers for editor diagnostics and configured remote debug adapters for debugging. LSP and debugging are available through Early Access and require the appropriate environment tools.
+- **Work with AI:** ask about code, delegate a bounded task to the built-in Agent, or use compatible agents on your SSH host.
+
+System-granted external folders support browsing and editing; Git, LSP, debugging, Tasks, file watching and Agent workflows need a native filesystem path. Tool availability depends on the workspace, installed tools and plan. See the [feature reference](https://nimotecode.com/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_features) for details.
+
+## AI coding, your way
+
+| Workflow | How to use it |
+| --- | --- |
+| **AI Chat** | Explain code and terminal output with workspace context. Connect your own AI provider and API key. |
+| **Built-in Agent** | Inspect files, plan changes, edit and run checks in a supported workspace; continue an active run with follow-up instructions and answer its interactive questions. Available through Early Access. |
+| **MCP tool servers** | Configure verified MCP servers for the built-in Agent on a local or SSH workspace; every tool call requires explicit approval. Available through Early Access. |
+| **External ACP agent** | Connect a compatible runtime on your SSH host; review permissions and progress in the app's conversation view. |
+| **Claude Code / Codex over SSH** | Run a CLI installed on your own host through the terminal. Follow the [Claude Code on phone](resources/claude-code-on-phone.md) guide. |
+
+AI model access and tokens are not included. Provider charges are separate. External agents and CLIs require their own installation, authentication and service access; Claude Code and Codex are not bundled with NimoteCode. Review commands and diffs before accepting AI-generated changes.
+
+## Start with your first project
+
+1. **Install:** [Android — Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) · [iPhone / iPad — App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253).
+2. **Open a workspace:** choose a local project, connect an SSH host, or explore the Demo workspace. Supported Android devices can also use Local Linux. You can start without configuring AI.
+3. **Make one small change:** open a file, edit it, run a check if your environment supports it, then inspect the Git diff in a Git repository.
+
+> [**Follow the quick start →**](https://nimotecode.com/docs/quick-start?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_get_started)
+
+**Free to start, with advanced workflows through Early Access:** Free includes local and SSH workspaces, the editor, baseline terminal, Git review, AI Chat and basic Tasks. Advanced workflows such as GitHub integration, Android Local Linux, AI Agent, remote content search, multiple terminals, Git writes, LSP and debugging are available through Early Access. Check [Early Access details](https://nimotecode.com/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_plans) and the app for current availability and terms.
+
+Store availability and release timing may differ by platform and region. See [download and platform requirements](https://nimotecode.com/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_download); the version offered by your store may differ from the release documented below.
 
 ## Compare mobile development tools
 
@@ -111,41 +141,6 @@ A check does not mean free, setup-free or available on every platform. Blink int
 > [**See all seven tools and feature-by-feature official evidence →**](https://nimotecode.com/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_comparison) · Competitor evidence baseline: 2026-10-19; NimoteCode capabilities: 2.3.0.
 
 **Try the workflow yourself:** [install NimoteCode](https://nimotecode.com/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_compare_download) and open a demo or local project. No AI setup needed to start.
-
-## Why try NimoteCode?
-
-- **Edit and navigate:** use the same Nimote Editor on phone, tablet, and desktop; browse and search project files, use split editor panes, and preview Markdown and web output.
-- **Run and inspect:** use the terminal and project tasks in a compatible workspace, with mobile extra keys, terminal focus mode, configurable color palettes, and SOCKS5 or HTTP CONNECT SSH proxies when needed.
-- **Review with Git:** inspect status, diffs and history; search for, create, and check out branches from the Git header; use Early Access workflows to commit, pull, push and resolve conflicts.
-- **Extend the workspace:** use Early Access Plugin Center to create custom panels, forms, workflows, artifact views, and local or SSH script jobs, with permission changes reviewed before installation or updates.
-- **Use language tools:** connect supported language servers for editor diagnostics and configured remote debug adapters for debugging. LSP and debugging are available through Early Access and require the appropriate environment tools.
-- **Work with AI:** ask about code, delegate a bounded task to the built-in Agent, or use compatible agents on your SSH host.
-
-System-granted external folders support browsing and editing; Git, LSP, debugging, Tasks, file watching and Agent workflows need a native filesystem path. Tool availability depends on the workspace, installed tools and plan. See the [feature reference](https://nimotecode.com/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_features) for details.
-
-## AI coding, your way
-
-| Workflow | How to use it |
-| --- | --- |
-| **AI Chat** | Explain code and terminal output with workspace context. Connect your own AI provider and API key. |
-| **Built-in Agent** | Inspect files, plan changes, edit and run checks in a supported workspace; continue an active run with follow-up instructions and answer its interactive questions. Available through Early Access. |
-| **MCP tool servers** | Configure verified MCP servers for the built-in Agent on a local or SSH workspace; every tool call requires explicit approval. Available through Early Access. |
-| **External ACP agent** | Connect a compatible runtime on your SSH host; review permissions and progress in the app's conversation view. |
-| **Claude Code / Codex over SSH** | Run a CLI installed on your own host through the terminal. Follow the [Claude Code on phone](resources/claude-code-on-phone.md) guide. |
-
-AI model access and tokens are not included. Provider charges are separate. External agents and CLIs require their own installation, authentication and service access; Claude Code and Codex are not bundled with NimoteCode. Review commands and diffs before accepting AI-generated changes.
-
-## Start with your first project
-
-1. **Install:** [Android — Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) · [iPhone / iPad — App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253).
-2. **Open a workspace:** choose a local project, connect an SSH host, or explore the Demo workspace. Supported Android devices can also use Local Linux. You can start without configuring AI.
-3. **Make one small change:** open a file, edit it, run a check if your environment supports it, then inspect the Git diff in a Git repository.
-
-> [**Follow the quick start →**](https://nimotecode.com/docs/quick-start?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_get_started)
-
-**Free to start, with advanced workflows through Early Access:** Free includes local and SSH workspaces, the editor, baseline terminal, Git review, AI Chat and basic Tasks. Advanced workflows such as GitHub integration, Android Local Linux, AI Agent, remote content search, multiple terminals, Git writes, LSP and debugging are available through Early Access. Check [Early Access details](https://nimotecode.com/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_plans) and the app for current availability and terms.
-
-Store availability and release timing may differ by platform and region. See [download and platform requirements](https://nimotecode.com/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_download); the version offered by your store may differ from the release documented below.
 
 <a id="latest-release"></a>
 

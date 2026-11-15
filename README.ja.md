@@ -10,9 +10,15 @@
 
 <p align="center"><a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-インストール-34A853?style=for-the-badge&amp;logo=googleplay&amp;logoColor=white" alt="Google Play から Android 版 NimoteCode をインストール"></a> <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-ダウンロード-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="App Store から NimoteCode をダウンロード"></a></p>
 
+<p align="center"><sub><a href="#workspace-demo">デモ</a> · <a href="https://nimotecode.com/ja/docs/quick-start">クイックスタート</a> · <a href="https://nimotecode.com/ja/releases/2.3.0">リリースノート</a></sub></p>
+
+<a id="workspace-demo"></a>
+
 ## デモ
 
-<p align="center"><a href="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6">AI Agent 製品デモを見る</a> · <a href="https://nimotecode.com/videos/ai-agent-demo-small.mp4">代替 MP4 動画</a></p>
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/8710a3de-5799-4c4a-99e8-dcfa1092cc61" controls muted playsinline width="420"></video>
+</div>
 
 ## プロジェクトのある場所で開発する
 
@@ -22,6 +28,8 @@
 
 ## 主な機能
 
+- **モード切り替え:** プロジェクトとエクスプローラーの状態を保ったまま、IDE・ターミナル・AI を切り替えます。
+- **コンテナ開発:** SSH ホスト上の Docker と Compose を管理し、`devcontainer.json` から Dev Container を作成・再構築できます。
 - **編集とナビゲーション:** スマートフォン、タブレット、デスクトップで Nimote Editor を利用。ファイル検索、分割ペイン、Markdown と Web のプレビューに対応します。
 - **実行と検証:** ターミナル、プロジェクトタスク、モバイル拡張キー、フォーカスモード、配色、SOCKS5 / HTTP CONNECT の SSH プロキシを利用できます。
 - **Git レビュー:** ステータス、差分、履歴を確認し、Git ヘッダーからブランチを検索、作成、切り替えできます。

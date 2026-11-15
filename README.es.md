@@ -10,9 +10,15 @@
 
 <p align="center"><a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-Instalar-34A853?style=for-the-badge&amp;logo=googleplay&amp;logoColor=white" alt="Instalar NimoteCode en Android desde Google Play"></a> <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-Descargar-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="Descargar NimoteCode para iPhone y iPad desde App Store"></a></p>
 
+<p align="center"><sub><a href="#workspace-demo">Demo</a> · <a href="https://nimotecode.com/es/docs/quick-start">Inicio rápido</a> · <a href="https://nimotecode.com/es/releases/2.3.0">Novedades</a></sub></p>
+
+<a id="workspace-demo"></a>
+
 ## Demo
 
-<p align="center"><a href="https://github.com/user-attachments/assets/531d62fc-4874-41b9-96af-1ac9d2ad6fd6">Ver la demostración de AI Agent</a> · <a href="https://nimotecode.com/videos/ai-agent-demo-small.mp4">Vídeo MP4 alternativo</a></p>
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/8710a3de-5799-4c4a-99e8-dcfa1092cc61" controls muted playsinline width="420"></video>
+</div>
 
 ## Desarrolla donde esté tu proyecto
 
@@ -22,6 +28,8 @@
 
 ## Capacidades principales
 
+- **Cambia de modo:** alterna entre IDE, Terminal e IA conservando el proyecto y el estado del explorador.
+- **Desarrolla con contenedores:** administra Docker y Compose en un host SSH, o crea y reconstruye un Dev Container desde `devcontainer.json`.
 - **Edita y navega:** usa Nimote Editor en teléfono, tableta y escritorio; busca archivos, usa paneles divididos y previsualiza Markdown y contenido web.
 - **Ejecuta y verifica:** usa terminal, tareas de proyecto, teclas adicionales móviles, modo de enfoque, paletas de terminal y proxies SSH SOCKS5 o HTTP CONNECT.
 - **Revisa con Git:** consulta estado, diferencias e historial; busca, crea y cambia ramas desde el encabezado de Git.

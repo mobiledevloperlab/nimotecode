@@ -31,7 +31,7 @@ for (const [locale, content] of Object.entries(copy)) {
   assert.ok(!/<(?:img|picture|button)(?:\s|>)/.test(modes), `${path}: workspace modes must stay text-only without image switching`)
   assert.ok(!html.includes('/images/home/'), `${path}: unapproved homepage screenshots must not return`)
   assert.ok(/<details[^>]*class="product-demo-disclosure"[^>]*\sopen(?:\s|>)/.test(html), `${path}: demo must be expanded by default`)
-  assert.ok(/<video[^>]*preload="none"/.test(html) && html.includes('/videos/nimotecode.mp4'), `${path}: AI Agent demo should be visible first without preloading video data`)
+  assert.ok(/<video[^>]*preload="none"/.test(html) && html.includes('/videos/nimotecode-mobile-promot.mp4'), `${path}: workspace demo should be visible first without preloading video data`)
   assert.ok(/<details[^>]*class="product-technical-details"[^>]*\sopen(?:\s|>)/.test(html), `${path}: development tools and access details must be expanded by default`)
   assert.ok(html.indexOf('id="workflow-title"') < html.indexOf('id="product-demo"'), `${path}: workspace modes should precede the demo`)
   assert.ok(html.indexOf('id="reviews-title"') > html.indexOf('id="workflow-title"'), `${path}: reviews should follow features`)
