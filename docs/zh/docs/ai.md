@@ -1,6 +1,6 @@
 ---
 title: AI Chat、Agent、MCP 与外部 Agent | NimoteCode
-description: "配置 NimoteCode 的 AI Chat 和 Agent，审查计划与工具操作，并安全使用 MCP 服务器或兼容的外部 ACP Agent。"
+description: "了解 NimoteCode AI 对话与 Agent，审查工具执行并连接可信 MCP 服务或外部 Agent。"
 ---
 
 # AI Chat、Agent、MCP 与外部 Agent

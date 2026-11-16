@@ -11,7 +11,6 @@ Explorer にはローカル、リモート SSH、Local Linux、デモへの入�
 
 <div class="doc-screenshots">
   <DocScreenshot file="workspace-start-light.png" caption="ワークスペースを開く前の Explorer、ライトテーマ。" />
-  <DocScreenshot file="workspace-start-dark.jpg" caption="ワークスペースを開く前の Explorer、ダークテーマ。" />
 </div>
 
 ## ローカルフォルダーを開く
@@ -22,17 +21,9 @@ Explorer にはローカル、リモート SSH、Local Linux、デモへの入�
 
 **Open Local Workspace** を選択し、システムの選択画面でプロジェクトの保存場所を探します。図は Android の例で、他の OS では画面が異なる場合があります。
 
-<div class="doc-screenshots">
-  <DocScreenshot file="local-storage-picker.png" caption="Android の保存場所の選択画面。" />
-</div>
-
 ### プロジェクトフォルダーへのアクセスを許可する
 
 プロジェクトフォルダーを開き、場所を確認して **Use this folder** を選択します。個別のファイルではなく、プロジェクトのディレクトリを選びます。
-
-<div class="doc-screenshots">
-  <DocScreenshot file="local-file-browser.png" caption="Use this folder 操作を備えた Android のフォルダー選択画面。" />
-</div>
 
 ### ローカルワークスペースを確認する
 
@@ -52,7 +43,7 @@ Local Explorer に戻ったら、ルートディレクトリを確認します�
 **Ping / test SSH port** はホストとポートへの直接 TCP 接続を確認します。プロキシや認証情報は検証しません。ポートテストに成功しても SSH ワークスペースへの接続は確立されません。
 
 <div class="doc-screenshots">
-  <DocScreenshot file="remote-connection-form.jpg" caption="ポートテスト、プロキシ、認証設定を備えた SSH 接続フォーム。" />
+  <DocScreenshot file="remote-connection-form.jpg" caption="ホスト、ユーザー名、ポート、プロキシを設定する新規 SSH 接続フォーム。" />
   <DocScreenshot file="remote-connection-history.png" caption="保存済み SSH 接続を表示する Recent History。" />
 </div>
 

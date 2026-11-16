@@ -1,6 +1,6 @@
 ---
 title: Documentación de NimoteCode
-description: "Guías de espacios de trabajo, edición, terminal, Git, IA, plugins y diagnóstico."
+description: "Conoce los cuatro modos de NimoteCode, SSH, Linux en Android, programación con IA, Git y desarrollo remoto."
 ---
 
 # Documentación de NimoteCode
@@ -9,6 +9,7 @@ Empieza con [Inicio rápido](/es/docs/quick-start) para abrir un espacio, editar
 
 ## Elige tu primera tarea
 
+- [Conocer los cuatro modos](/es/docs/quick-start)
 - [Editar sin configurar IA](/es/docs/quick-start)
 - [Conectar a mi equipo de desarrollo](/es/docs/ssh)
 - [Configurar Linux en Android](/es/docs/local-linux)

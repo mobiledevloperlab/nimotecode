@@ -1,6 +1,6 @@
 ---
 title: Quick start | NimoteCode
-description: "Get started with NimoteCode: open a local, SSH or Android Local Linux workspace, edit files, run commands and configure AI Agent."
+description: "Get started with NimoteCode: explore four modes, open a local or SSH project, run commands with SSH or Android Local Linux, and configure AI Agent."
 ---
 
 # Quick start
@@ -14,11 +14,20 @@ Open a workspace, edit a file, and run your first command. Follow the steps belo
 
 ## Open a workspace
 
-Choose a workspace from the welcome screen. **Open Local Workspace** opens files on the device; **Connect Remote Workspace** connects to an SSH host. **Local Linux** installs Ubuntu on supported Android devices. To explore the interface without configuring a host, choose **Try Demo Workspace**.
+NimoteCode offers four modes. Choose a mode on the welcome screen. In Full IDE, open the workspace menu to switch modes:
+
+| Mode | Use it for |
+| --- | --- |
+| **Quick Terminal** | SSH, Local Linux and commands. |
+| **AI Workspace** | AI conversations, agents and tasks. |
+| **Full IDE** | Files, Git and AI development. |
+| **Host** | Persistent remote tasks and Agent sessions using NimoteHost. See [Host setup](/docs/host). |
+
+Choose where your project lives separately: a [local folder or SSH workspace](/docs/ssh), or [Local Linux](/docs/local-linux) on supported Android devices. A local folder can be edited without a Linux runtime; project commands require SSH or Local Linux. A demo workspace is also available.
 
 <div class="doc-screenshots">
   <DocScreenshot file="startup-light.jpg" caption="Welcome screen, light theme." />
-  <DocScreenshot file="startup-dark.jpg" caption="Welcome screen, dark theme." />
+  <DocScreenshot file="mode-switch.png" caption="Switch modes from the workspace menu in Full IDE." />
 </div>
 
 <div class="doc-section">
@@ -31,7 +40,7 @@ Select a project directory, then open a file in Explorer. Edit the file and save
 </div>
 
 <div class="doc-screenshots">
-  <DocScreenshot file="editor-multiple-files.jpg" caption="Open files appear in tabs; webapp.py is active in this example." />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="The demo project’s app.js file in the editor." />
 </div>
 
 </div>

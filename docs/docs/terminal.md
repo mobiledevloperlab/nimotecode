@@ -1,6 +1,6 @@
 ---
 title: Terminal | NimoteCode
-description: "Configuration, procedures, and interface reference for terminal."
+description: "Run commands over SSH or Android Local Linux, manage terminal sessions and use terminal output in NimoteCode."
 ---
 
 # Terminal

@@ -1,6 +1,6 @@
 ---
 title: AI Chat, Agent, MCP, and external agents | NimoteCode
-description: Configure AI Chat and Agent in NimoteCode, review plans and tool actions, and safely use MCP servers or compatible external ACP agents.
+description: "Configure AI Chat and Agent, review tool execution, and connect trusted MCP servers or external agents in NimoteCode."
 ---
 
 # AI Chat, Agent, MCP, and external agents

@@ -111,7 +111,7 @@ function organizeDocsGroups(groups: DefaultTheme.SidebarItem[], prefix: string):
     })
   })
   return [
-    group(names[locale][0], ['quick-start']),
+    { text: names[locale][0], items: [{ text: ({ en: 'Documentation overview', zh: '文档概览', ja: 'ドキュメント概要', ko: '문서 개요', es: 'Resumen de documentación' } as Record<string, string>)[locale], link: `${prefix}/docs` }, ...group(names[locale][0], ['quick-start']).items] },
     group(names[locale][1], ['ssh', 'windows-ssh-sftp', 'host']),
     group(names[locale][2], ['editor', 'terminal', 'search', 'source-control', 'tasks', 'docker']),
     group(names[locale][3], ['ai', 'configuration', 'plugins']),

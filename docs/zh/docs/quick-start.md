@@ -14,11 +14,13 @@ description: "快速开始的配置、操作步骤与界面说明。"
 
 ## 打开工作区
 
-在欢迎页选择项目所在位置。**Open Local Workspace** 打开设备文件，**Connect Remote Workspace** 连接 SSH 主机，**Local Linux** 在受支持的 Android 设备上安装 Ubuntu。首次体验可选择 **Try Demo Workspace** 打开示例项目。
+选择完整 IDE 后，可以打开设备文件、连接 SSH 主机、从 GitHub 打开项目，或在受支持的 Android 设备上使用 Local Linux。也可以打开示例项目体验界面。
+
+应用有四种模式：**快捷终端**用于 SSH、Linux 和命令；**AI 工作区**用于 AI 对话、Agent 和任务；**完整 IDE**用于文件、Git 和 AI 开发；**Host** 使用 NimoteHost 管理持续运行的远程任务与 Agent 会话。使用“切换模式”选择适合当前任务的界面。项目位置与模式是不同的选择：设备文件可以编辑，运行项目命令需要 SSH 或 Local Linux。
 
 <div class="doc-screenshots">
   <DocScreenshot file="startup-light.jpg" caption="欢迎页，浅色主题。" />
-  <DocScreenshot file="startup-dark.jpg" caption="欢迎页，深色主题。" />
+  <DocScreenshot file="mode-switch.png" caption="在完整 IDE 的工作区菜单中切换模式。" />
 </div>
 
 <div class="doc-section">
@@ -31,7 +33,7 @@ description: "快速开始的配置、操作步骤与界面说明。"
 </div>
 
 <div class="doc-screenshots">
-  <DocScreenshot file="editor-multiple-files.jpg" caption="已打开的文件显示在标签栏中，示例当前编辑 webapp.py。" />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="编辑器中的示例项目 app.js 文件。" />
 </div>
 
 </div>

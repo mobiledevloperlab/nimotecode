@@ -1,6 +1,6 @@
 ---
 title: Documentation | NimoteCode
-description: User documentation for NimoteCode workspaces, editing, terminal, Git, AI, plugins, and diagnostics.
+description: Explore NimoteCode documentation for its four modes, SSH and Android Local Linux, AI coding, Git and remote development.
 ---
 
 # NimoteCode documentation
@@ -10,7 +10,9 @@ Start with [Quick start](/docs/quick-start) to open a workspace, edit a file and
 ## Choose your first task
 
 - [Try a first edit without configuring AI](/docs/quick-start)
+- [Compare the four modes](/docs/quick-start#open-a-workspace)
 - [Connect to my development machine](/docs/ssh)
+- [Resume remote sessions with Host](/docs/host)
 - [Set up Linux on my Android device](/docs/local-linux)
 - [Configure my AI provider and model](/docs/configuration)
 

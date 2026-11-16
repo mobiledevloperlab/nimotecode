@@ -11,7 +11,6 @@ Abra **Settings** para cambiar el tema, los colores del editor, la escala de la 
 
 <div class="doc-screenshots">
   <DocScreenshot file="app-settings-light.png" caption="Ajustes con tema White y una cuenta con sesión iniciada." />
-  <DocScreenshot file="app-setting-dark.jpg" caption="Ajustes con tema Black y controles de inicio de sesión." />
 </div>
 
 <div class="doc-section">

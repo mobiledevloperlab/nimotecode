@@ -11,7 +11,6 @@ description: "設定の設定、操作手順、画面の説明。"
 
 <div class="doc-screenshots">
   <DocScreenshot file="app-settings-light.png" caption="White テーマでサインイン済みの設定画面。" />
-  <DocScreenshot file="app-setting-dark.jpg" caption="Black テーマでサインイン操作を表示する設定画面。" />
 </div>
 
 <div class="doc-section">

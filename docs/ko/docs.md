@@ -1,6 +1,6 @@
 ---
 title: NimoteCode 문서
-description: "작업 공간, 편집, 터미널, Git, AI, 플러그인 및 진단 사용 안내."
+description: "NimoteCode의 네 가지 모드, SSH, Android Local Linux, AI 코딩, Git 및 원격 개발을 알아보세요."
 ---
 
 # NimoteCode 문서
@@ -9,6 +9,7 @@ description: "작업 공간, 편집, 터미널, Git, AI, 플러그인 및 진단
 
 ## 첫 작업 선택
 
+- [네 가지 모드 알아보기](/ko/docs/quick-start)
 - [AI 설정 없이 편집 시작](/ko/docs/quick-start)
 - [개발 호스트에 연결](/ko/docs/ssh)
 - [Android에 Linux 설정](/ko/docs/local-linux)

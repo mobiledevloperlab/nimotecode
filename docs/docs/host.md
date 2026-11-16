@@ -9,7 +9,7 @@ Use Host mode when you want to start work from your phone, leave the app, and co
 
 Install Host on the computer that runs your project first. Installing NimoteCode on the phone alone does not set up Host.
 
-This guide follows the 2.4.0 implementation. NimoteHost is a development preview; available Agent, inbox, and plugin controls depend on the connected Host. The screenshots are from a physical Android phone using English and the Light theme. At capture time, the app package was labeled 2.3.1 (Build 64) and Host reported a local 2.4.0 build, so some labels may differ in your installed version.
+This guide follows the 2.4.0 implementation. NimoteHost is a development preview; available Agent, inbox, and plugin controls depend on the connected Host. The screenshots are from a physical Android phone using English and the Light theme. Some session screenshots were captured with app 2.3.1 (Build 64) and a local 2.4.0 Host build; labels may differ in your installed version.
 
 ## Before you start
 

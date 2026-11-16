@@ -14,11 +14,13 @@ Abre un espacio de trabajo, edita un archivo y ejecuta tu primer comando. Sigue 
 
 ## Abrir un espacio de trabajo
 
-Elija un espacio en la pantalla de bienvenida. **Open Local Workspace** abre archivos del dispositivo; **Connect Remote Workspace** conecta con un host SSH. **Local Linux** instala Ubuntu en dispositivos Android compatibles. Para explorar la interfaz sin configurar un host, elija **Try Demo Workspace**.
+En el IDE completo puedes abrir archivos del dispositivo, conectar por SSH, abrir un proyecto de GitHub o usar Local Linux en Android compatible. También puedes explorar el proyecto de ejemplo.
+
+La aplicación ofrece cuatro modos: **Terminal rápido** para SSH, Linux y comandos; **Espacio de trabajo de IA** para conversaciones, agentes y tareas; **IDE completo** para archivos, Git y desarrollo con IA; y **Host** para tareas remotas y sesiones de Agent persistentes con NimoteHost. Usa el selector de modo para cambiar de vista. La ubicación del proyecto se elige por separado: puedes editar archivos del dispositivo, pero ejecutar comandos requiere SSH o Local Linux.
 
 <div class="doc-screenshots">
   <DocScreenshot file="startup-light.jpg" caption="Pantalla de bienvenida con tema claro." />
-  <DocScreenshot file="startup-dark.jpg" caption="Pantalla de bienvenida con tema oscuro." />
+  <DocScreenshot file="mode-switch.png" caption="Cambia de modo desde el menú del espacio en el IDE completo." />
 </div>
 
 <div class="doc-section">
@@ -31,7 +33,7 @@ Seleccione el directorio del proyecto y abra un archivo en Explorer. Edítelo y 
 </div>
 
 <div class="doc-screenshots">
-  <DocScreenshot file="editor-multiple-files.jpg" caption="Los archivos abiertos aparecen en pestañas; webapp.py está activo en este ejemplo." />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="El archivo app.js del proyecto de ejemplo en el editor." />
 </div>
 
 </div>

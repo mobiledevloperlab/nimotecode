@@ -11,7 +11,6 @@ Explorer에는 로컬, 원격 SSH, Local Linux 및 데모 진입점이 있습니
 
 <div class="doc-screenshots">
   <DocScreenshot file="workspace-start-light.png" caption="작업 공간을 열기 전의 Explorer, 밝은 테마." />
-  <DocScreenshot file="workspace-start-dark.jpg" caption="작업 공간을 열기 전의 Explorer, 어두운 테마." />
 </div>
 
 ## 로컬 폴더 열기
@@ -22,17 +21,9 @@ Explorer에는 로컬, 원격 SSH, Local Linux 및 데모 진입점이 있습니
 
 **Open Local Workspace**를 선택한 뒤 시스템 선택기에서 프로젝트의 저장 위치를 찾습니다. 예시는 Android이며 다른 운영 체제에서는 화면이 다를 수 있습니다.
 
-<div class="doc-screenshots">
-  <DocScreenshot file="local-storage-picker.png" caption="Android 저장 위치 선택기." />
-</div>
-
 ### 프로젝트 폴더 접근 허용
 
 프로젝트 폴더를 열고 경로를 확인한 다음 **Use this folder**를 선택해 접근을 허용합니다. 개별 파일이 아닌 프로젝트 디렉터리를 선택하세요.
-
-<div class="doc-screenshots">
-  <DocScreenshot file="local-file-browser.png" caption="Use this folder 작업이 있는 Android 폴더 선택기." />
-</div>
 
 ### 로컬 작업 공간 확인
 
@@ -52,7 +43,7 @@ Local Explorer로 돌아와 루트 디렉터리를 확인합니다. 예시 폴�
 **Ping / test SSH port**는 호스트와 포트의 직접 TCP 연결을 확인합니다. 프록시를 테스트하거나 인증 정보를 검증하지 않습니다. 포트 테스트가 성공해도 SSH 작업 공간 연결이 설정되는 것은 아닙니다.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="remote-connection-form.jpg" caption="포트 테스트, 프록시 및 인증 설정이 있는 SSH 연결 양식." />
+  <DocScreenshot file="remote-connection-form.jpg" caption="호스트, 사용자 이름, 포트와 프록시를 설정하는 새 SSH 연결 양식." />
   <DocScreenshot file="remote-connection-history.png" caption="저장된 SSH 프로필이 있는 Recent History." />
 </div>
 

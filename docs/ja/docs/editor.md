@@ -11,7 +11,7 @@ Explorer または Search からファイルを開くと、それぞれタブに
 
 <div class="doc-screenshots">
   <DocScreenshot file="editor-empty-state.png" caption="タブが開いていないときは Browse files からファイルを選択できます。" />
-  <DocScreenshot file="editor-multiple-files.jpg" caption="複数のファイルタブ。webapp.py が選択されています。" />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="エディターで開いたサンプルプロジェクトの app.js。" />
 </div>
 
 ## テキストを選択して編集する

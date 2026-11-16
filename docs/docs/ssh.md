@@ -1,17 +1,16 @@
 ---
 title: Local and SSH workspaces | NimoteCode
-description: "Configuration, procedures, and interface reference for local and ssh workspaces."
+description: "Open local folders, configure SSH connections and proxies, and choose a project directory in NimoteCode."
 ---
 
 # Local and SSH workspaces
 
 ## Choose a workspace
 
-Explorer provides local, remote SSH, Local Linux, and demo entry points. Recent History lists previously opened locations. The connected workspace determines which files and tools are available.
+Choose a local folder for device files, SSH for a remote project, or Local Linux for an Android Linux environment. Recent History lists previously opened locations. The workspace determines which files and tools are available. Separately, choose a [mode](/docs/quick-start#open-a-workspace) for your task; [Host](/docs/host) manages remote sessions using NimoteHost.
 
 <div class="doc-screenshots">
   <DocScreenshot file="workspace-start-light.png" caption="Explorer before opening a workspace, light theme." />
-  <DocScreenshot file="workspace-start-dark.jpg" caption="Explorer before opening a workspace, dark theme." />
 </div>
 
 ## Open a local folder
@@ -22,17 +21,9 @@ Select **Open Local Workspace**, choose a storage location in the system picker,
 
 After selecting **Open Local Workspace**, locate your project in the system picker. The example shows Android; other operating systems may look different.
 
-<div class="doc-screenshots">
-  <DocScreenshot file="local-storage-picker.png" caption="Android storage-location picker." />
-</div>
-
 ### Grant access to the project folder
 
 Open the project folder, check the location, then select **Use this folder** to grant access. Choose the project directory rather than an individual file.
-
-<div class="doc-screenshots">
-  <DocScreenshot file="local-file-browser.png" caption="Android folder picker with the Use this folder action." />
-</div>
 
 ### Check the local workspace
 
@@ -52,7 +43,7 @@ Back in Local Explorer, verify the root directory. The example folder is empty; 
 **Ping / test SSH port** checks a direct TCP connection to the host and port. It does not test the proxy or authenticate your credentials. A successful port test does not establish an SSH workspace.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="remote-connection-form.jpg" caption="SSH profile form with port test, proxy, and authentication settings." />
+  <DocScreenshot file="remote-connection-form.jpg" caption="New SSH connection form with host, username, port and proxy settings." />
   <DocScreenshot file="remote-connection-history.png" caption="Recent History with a saved SSH profile." />
 </div>
 

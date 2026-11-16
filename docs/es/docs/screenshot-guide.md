@@ -5,7 +5,7 @@ description: "Encuentre capturas y procedimientos por función."
 
 # Referencia de la interfaz
 
-Las capturas acompañan a los procedimientos correspondientes. Elija un tema para consultar su interfaz. Seleccione una imagen para ampliarla y use «Abrir original» para verla en otra pestaña. La bienvenida, la selección de espacios y los ajustes incluyen ejemplos de los temas claro y oscuro.
+Las capturas acompañan a los procedimientos correspondientes. Elija un tema para consultar su interfaz. Seleccione una imagen para ampliarla y use «Abrir original» para verla en otra pestaña.
 
 | Tema | Contenido |
 | --- | --- |

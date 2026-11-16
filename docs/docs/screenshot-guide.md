@@ -5,7 +5,7 @@ description: Find interface screenshots and procedures by feature.
 
 # Interface reference
 
-Screenshots appear alongside the procedures they illustrate. Choose a topic below to view its interface reference. Select a screenshot to enlarge it; use Open original in the preview to view the source image in a new tab. Welcome, workspace selection, and settings include both light and dark examples.
+Screenshots appear alongside the procedures they illustrate. Choose a topic below to view its interface reference. Select a screenshot to enlarge it; use Open original in the preview to view the source image in a new tab.
 
 | Topic | Contents |
 | --- | --- |

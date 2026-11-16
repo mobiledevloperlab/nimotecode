@@ -66,7 +66,7 @@ const blogScreenshots = new Set(blogDirs.filter(existsSync).flatMap(dir => readd
 const coreGuideScreenshots = new Set(pages.flatMap(page => extract(read('', page), structures.screenshots)))
 // AI-generated OS summaries are no longer part of Linux onboarding.
 // Keep the old image available to existing links without requiring it in a guide.
-const retiredScreenshots = new Set(['local-linux-ai-print-os-info.jpg'])
+const retiredScreenshots = new Set(['local-linux-ai-print-os-info.jpg', 'startup-dark.jpg', 'workspace-start-dark.jpg', 'app-setting-dark.jpg', 'local-storage-picker.png', 'local-file-browser.png'])
 const screenshots = readdirSync(resolve(root, 'public/images/placeholders'))
   .filter(file => !retiredScreenshots.has(file) && /\.(png|jpe?g|webp)$/i.test(file) && (!blogScreenshots.has(file) || coreGuideScreenshots.has(file)))
 for (const locale of ['', ...locales]) {

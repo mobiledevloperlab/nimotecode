@@ -11,7 +11,7 @@ Explorer 또는 Search에서 파일을 열면 각각 탭으로 표시됩니다. 
 
 <div class="doc-screenshots">
   <DocScreenshot file="editor-empty-state.png" caption="열린 탭이 없을 때 Browse files로 파일을 선택할 수 있습니다." />
-  <DocScreenshot file="editor-multiple-files.jpg" caption="여러 파일 탭이 열려 있고 webapp.py가 활성화되어 있습니다." />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="편집기에서 연 데모 프로젝트의 app.js 파일." />
 </div>
 
 ## 텍스트 선택 및 편집

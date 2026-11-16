@@ -1,6 +1,6 @@
 ---
 title: 文档 | NimoteCode
-description: NimoteCode 工作区、编辑器、终端、Git、AI、插件及诊断工具使用文档。
+description: 了解 NimoteCode 的四种模式、SSH 和 Android 本地 Linux，以及 AI 编程、Git 和远程开发。
 ---
 
 # NimoteCode 文档
@@ -10,6 +10,7 @@ description: NimoteCode 工作区、编辑器、终端、Git、AI、插件及诊
 ## 从你要完成的任务开始
 
 - [不配置 AI，先完成一次编辑](/zh/docs/quick-start)
+- [了解四种模式](/zh/docs/quick-start)
 - [连接我已有的开发主机](/zh/docs/ssh)
 - [在 Android 上安装 Linux 环境](/zh/docs/local-linux)
 - [接入自己的 AI Provider 与模型](/zh/docs/configuration)

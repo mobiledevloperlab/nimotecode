@@ -11,7 +11,7 @@ Abra un archivo desde Explorer o Search. Cada archivo abierto aparece en una pes
 
 <div class="doc-screenshots">
   <DocScreenshot file="editor-empty-state.png" caption="Browse files permite seleccionar un archivo cuando no hay pestañas abiertas." />
-  <DocScreenshot file="editor-multiple-files.jpg" caption="Varias pestañas de archivos con webapp.py activo." />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="El archivo app.js del proyecto de ejemplo en el editor." />
 </div>
 
 ## Seleccionar y editar texto

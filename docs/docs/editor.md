@@ -1,6 +1,6 @@
 ---
 title: Code editor | NimoteCode
-description: "Configuration, procedures, and interface reference for code editor."
+description: "Edit code on your phone or tablet with tabs, selection, navigation, previews and editor settings in NimoteCode."
 ---
 
 # Code editor
@@ -11,7 +11,7 @@ Open a file from Explorer or Search. Each open file appears in a tab. The editor
 
 <div class="doc-screenshots">
   <DocScreenshot file="editor-empty-state.png" caption="Browse files opens file selection when the editor has no open tab." />
-  <DocScreenshot file="editor-multiple-files.jpg" caption="Multiple file tabs with webapp.py active." />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="The demo project’s app.js file in the editor." />
 </div>
 
 ## Select and edit text

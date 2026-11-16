@@ -11,7 +11,6 @@ description: "설정 설정, 사용 절차 및 화면 안내."
 
 <div class="doc-screenshots">
   <DocScreenshot file="app-settings-light.png" caption="White 테마에서 로그인된 계정의 설정 화면." />
-  <DocScreenshot file="app-setting-dark.jpg" caption="Black 테마에서 로그인 항목이 표시된 설정 화면." />
 </div>
 
 <div class="doc-section">

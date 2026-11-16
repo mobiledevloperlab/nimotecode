@@ -1,6 +1,6 @@
 ---
 title: 终端 | NimoteCode
-description: "终端的配置、操作步骤与界面说明。"
+description: "使用 NimoteCode 通过 SSH 或 Android Local Linux 运行命令、管理终端会话并分析输出。"
 ---
 
 # 终端

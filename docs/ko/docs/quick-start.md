@@ -14,11 +14,13 @@ description: "빠른 시작 설정, 사용 절차 및 화면 안내."
 
 ## 작업 공간 열기
 
-시작 화면에서 작업 공간을 선택합니다. **Open Local Workspace**는 기기의 파일을 열고, **Connect Remote Workspace**는 SSH 호스트에 연결합니다. **Local Linux**는 지원되는 Android 기기에 Ubuntu를 설치합니다. 호스트 설정 없이 둘러보려면 **Try Demo Workspace**를 선택합니다.
+전체 IDE에서 기기 파일, SSH 호스트, GitHub 프로젝트 또는 지원되는 Android 기기의 Local Linux를 선택할 수 있습니다. 데모 프로젝트로 화면을 살펴볼 수도 있습니다.
+
+앱에는 네 가지 모드가 있습니다. **빠른 터미널**은 SSH, Linux와 명령어에, **AI 작업 공간**은 AI 대화, 에이전트와 작업에, **전체 IDE**는 파일, Git과 AI 개발에 사용합니다. **Host**는 NimoteHost를 사용해 지속되는 원격 작업과 Agent 세션을 관리합니다. 모드 전환에서 선택하세요. 프로젝트 위치는 별도로 선택하며, 기기 파일은 편집할 수 있지만 명령 실행에는 SSH 또는 Local Linux가 필요합니다.
 
 <div class="doc-screenshots">
   <DocScreenshot file="startup-light.jpg" caption="밝은 테마의 시작 화면." />
-  <DocScreenshot file="startup-dark.jpg" caption="어두운 테마의 시작 화면." />
+  <DocScreenshot file="mode-switch.png" caption="전체 IDE의 작업 공간 메뉴에서 모드를 전환합니다." />
 </div>
 
 <div class="doc-section">
@@ -31,7 +33,7 @@ description: "빠른 시작 설정, 사용 절차 및 화면 안내."
 </div>
 
 <div class="doc-screenshots">
-  <DocScreenshot file="editor-multiple-files.jpg" caption="열린 파일은 탭으로 표시됩니다. 예시에서는 webapp.py가 활성화되어 있습니다." />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="편집기에서 연 데모 프로젝트의 app.js 파일." />
 </div>
 
 </div>

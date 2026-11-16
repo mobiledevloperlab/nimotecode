@@ -11,7 +11,6 @@ Explorer ofrece acceso a espacios locales, SSH remotos, Local Linux y de demostr
 
 <div class="doc-screenshots">
   <DocScreenshot file="workspace-start-light.png" caption="Explorer antes de abrir un espacio, con tema claro." />
-  <DocScreenshot file="workspace-start-dark.jpg" caption="Explorer antes de abrir un espacio, con tema oscuro." />
 </div>
 
 ## Abrir una carpeta local
@@ -22,17 +21,9 @@ Seleccione **Open Local Workspace**, elija una ubicación en el selector del sis
 
 Tras seleccionar **Open Local Workspace**, busca el proyecto en el selector del sistema. El ejemplo muestra Android; otros sistemas pueden tener una interfaz distinta.
 
-<div class="doc-screenshots">
-  <DocScreenshot file="local-storage-picker.png" caption="Selector de ubicación de almacenamiento de Android." />
-</div>
-
 ### Autorizar el acceso a la carpeta
 
 Abre la carpeta del proyecto, comprueba la ubicación y selecciona **Use this folder** para autorizar el acceso. Elige el directorio del proyecto, no un archivo individual.
-
-<div class="doc-screenshots">
-  <DocScreenshot file="local-file-browser.png" caption="Selector de carpetas de Android con la acción Use this folder." />
-</div>
 
 ### Comprobar el espacio de trabajo local
 
@@ -52,7 +43,7 @@ Al volver a Local Explorer, comprueba el directorio raíz. La carpeta del ejempl
 **Ping / test SSH port** comprueba una conexión TCP directa al host y puerto. No prueba el proxy ni autentica las credenciales. Un resultado correcto no establece un espacio de trabajo SSH.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="remote-connection-form.jpg" caption="Formulario SSH con prueba de puerto, proxy y autenticación." />
+  <DocScreenshot file="remote-connection-form.jpg" caption="Formulario de conexión SSH con host, usuario, puerto y configuración de proxy." />
   <DocScreenshot file="remote-connection-history.png" caption="Recent History con un perfil SSH guardado." />
 </div>
 

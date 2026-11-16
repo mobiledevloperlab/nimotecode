@@ -1,6 +1,6 @@
 ---
 title: 代码编辑器 | NimoteCode
-description: "代码编辑器的配置、操作步骤与界面说明。"
+description: "在手机或平板上使用 NimoteCode 编辑代码，了解标签页、选择、导航与预览。"
 ---
 
 # 代码编辑器
@@ -11,7 +11,7 @@ description: "代码编辑器的配置、操作步骤与界面说明。"
 
 <div class="doc-screenshots">
   <DocScreenshot file="editor-empty-state.png" caption="没有打开文件时，可通过 Browse files 选择文件。" />
-  <DocScreenshot file="editor-multiple-files.jpg" caption="多个文件标签页，当前激活文件为 webapp.py。" />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="编辑器中的示例项目 app.js 文件。" />
 </div>
 
 ## 选择与编辑文本

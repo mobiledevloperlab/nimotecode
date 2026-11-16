@@ -1,6 +1,6 @@
 ---
 title: 本地与 SSH 工作区 | NimoteCode
-description: "本地与 SSH 工作区的配置、操作步骤与界面说明。"
+description: "使用 NimoteCode 打开本地文件夹、配置 SSH 与代理，并选择远程项目目录。"
 ---
 
 # 本地与 SSH 工作区
@@ -11,7 +11,6 @@ Explorer 提供本地、远程 SSH、Local Linux 和演示入口，Recent Histor
 
 <div class="doc-screenshots">
   <DocScreenshot file="workspace-start-light.png" caption="尚未打开工作区的 Explorer，浅色主题。" />
-  <DocScreenshot file="workspace-start-dark.jpg" caption="尚未打开工作区的 Explorer，深色主题。" />
 </div>
 
 ## 打开本地目录
@@ -22,17 +21,9 @@ Explorer 提供本地、远程 SSH、Local Linux 和演示入口，Recent Histor
 
 点击 **Open Local Workspace** 后，在系统选择器中找到项目所在的存储位置。下图以 Android 为例，其他系统的界面可能不同。
 
-<div class="doc-screenshots">
-  <DocScreenshot file="local-storage-picker.png" caption="Android 存储位置选择器。" />
-</div>
-
 ### 授权项目目录
 
 进入项目文件夹，确认目录后点击 **Use this folder** 授权访问。选择项目目录，而不是只选择某个文件。
-
-<div class="doc-screenshots">
-  <DocScreenshot file="local-file-browser.png" caption="Android 目录选择器及 Use this folder 授权按钮。" />
-</div>
 
 ### 确认本地工作区
 
@@ -52,7 +43,7 @@ Explorer 提供本地、远程 SSH、Local Linux 和演示入口，Recent Histor
 **Ping / test SSH port** 仅检查主机与端口的直接 TCP 连通性，不经过代理，也不验证登录凭据。端口测试成功不代表 SSH 登录成功。
 
 <div class="doc-screenshots">
-  <DocScreenshot file="remote-connection-form.jpg" caption="SSH 连接表单，包括端口测试、代理和认证设置。" />
+  <DocScreenshot file="remote-connection-form.jpg" caption="新建 SSH 连接表单，可填写主机、用户名、端口并选择代理。" />
   <DocScreenshot file="remote-connection-history.png" caption="Recent History 中保存的 SSH 连接。" />
 </div>
 

@@ -14,11 +14,13 @@ description: "クイックスタートの設定、操作手順、画面の説明
 
 ## ワークスペースを開く
 
-ようこそ画面でワークスペースを選びます。**Open Local Workspace** は端末のファイルを開き、**Connect Remote Workspace** は SSH ホストに接続します。**Local Linux** は対応する Android 端末に Ubuntu をインストールします。ホストを設定せずに試すには **Try Demo Workspace** を選択します。
+フル IDE では、端末のファイル、SSH ホスト、GitHub のプロジェクト、対応 Android 端末の Local Linux を選べます。サンプルプロジェクトでも画面を試せます。
+
+アプリには4つのモードがあります。**クイックターミナル**は SSH、Linux、コマンド用、**AI ワークスペース**は AI チャット、エージェント、タスク用、**フル IDE**はファイル、Git、AI 開発用です。**Host** は NimoteHost を使い、継続するリモートタスクと Agent セッションを管理します。「モードを切り替え」で選択できます。プロジェクトの保存先は別に選びます。端末のファイルは編集できますが、コマンドの実行には SSH または Local Linux が必要です。
 
 <div class="doc-screenshots">
   <DocScreenshot file="startup-light.jpg" caption="ようこそ画面、ライトテーマ。" />
-  <DocScreenshot file="startup-dark.jpg" caption="ようこそ画面、ダークテーマ。" />
+  <DocScreenshot file="mode-switch.png" caption="フル IDE のワークスペースメニューからモードを切り替えます。" />
 </div>
 
 <div class="doc-section">
@@ -31,7 +33,7 @@ description: "クイックスタートの設定、操作手順、画面の説明
 </div>
 
 <div class="doc-screenshots">
-  <DocScreenshot file="editor-multiple-files.jpg" caption="開いているファイルはタブに表示されます。この例では webapp.py が選択されています。" />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="エディターで開いたサンプルプロジェクトの app.js。" />
 </div>
 
 </div>

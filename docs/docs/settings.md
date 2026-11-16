@@ -11,7 +11,6 @@ Open **Settings** to change the app theme, editor colors, interface scale, and l
 
 <div class="doc-screenshots">
   <DocScreenshot file="app-settings-light.png" caption="Settings with the White theme and a signed-in account." />
-  <DocScreenshot file="app-setting-dark.jpg" caption="Settings with the Black theme and sign-in controls." />
 </div>
 
 <div class="doc-section">

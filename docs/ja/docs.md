@@ -1,6 +1,6 @@
 ---
 title: NimoteCode ドキュメント
-description: "ワークスペース、編集、ターミナル、Git、AI、プラグイン、診断の操作ガイド。"
+description: "NimoteCode の4つのモード、SSH、Android Local Linux、AI コーディング、Git、リモート開発を紹介します。"
 ---
 
 # NimoteCode ドキュメント
@@ -9,6 +9,7 @@ description: "ワークスペース、編集、ターミナル、Git、AI、プ�
 
 ## 最初の作業を選ぶ
 
+- [4つのモードを見る](/ja/docs/quick-start)
 - [AI の設定なしで編集を試す](/ja/docs/quick-start)
 - [開発ホストに接続する](/ja/docs/ssh)
 - [Android に Linux を設定する](/ja/docs/local-linux)

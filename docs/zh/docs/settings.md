@@ -11,7 +11,6 @@ description: "设置的配置、操作步骤与界面说明。"
 
 <div class="doc-screenshots">
   <DocScreenshot file="app-settings-light.png" caption="White 主题下的设置页，示例账户已登录。" />
-  <DocScreenshot file="app-setting-dark.jpg" caption="Black 主题下的设置页，显示登录入口。" />
 </div>
 
 <div class="doc-section">
