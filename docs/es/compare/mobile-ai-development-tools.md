@@ -10,7 +10,7 @@ pageClass: compare-page
 
 Termius y Blink Shell se centran en acceso remoto; Redock, ServerCC y Moshi ayudan a manejar agentes en el host; Orca conecta el móvil a su entorno de escritorio o servidor remoto. NimoteCode reúne edición, revisión de Git, SSH y Local Linux en dispositivos Android compatibles.
 
-La versión actual de NimoteCode es [2.3.0](/es/releases/2.3.0), con modos IDE, Terminal e IA, Windows SSH y Docker. Las fuentes de competidores conservan la fecha de revisión indicada.
+NimoteCode [2.4.0](/es/releases/2.4.0) añade Host opcional, descubrimiento de tareas y mejoras de diagnóstico de CI. Las evidencias de la comparación conservan su fecha de revisión.
 
 <MobileDevToolComparison lang="en" />
 

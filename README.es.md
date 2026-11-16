@@ -10,7 +10,7 @@
 
 <p align="center"><a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-Instalar-34A853?style=for-the-badge&amp;logo=googleplay&amp;logoColor=white" alt="Instalar NimoteCode en Android desde Google Play"></a> <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-Descargar-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="Descargar NimoteCode para iPhone y iPad desde App Store"></a></p>
 
-<p align="center"><sub><a href="#workspace-demo">Demo</a> · <a href="https://nimotecode.com/es/docs/quick-start">Inicio rápido</a> · <a href="https://nimotecode.com/es/releases/2.3.0">Novedades</a></sub></p>
+<p align="center"><sub><a href="#workspace-demo">Demo</a> · <a href="https://nimotecode.com/es/docs/quick-start">Inicio rápido</a> · <a href="https://nimotecode.com/es/releases/2.4.0">Novedades</a></sub></p>
 
 <p align="center"><sub>Gratis para empezar; configurar la IA es opcional. Aplicación comercial de código cerrado · Documentación y recursos oficiales.</sub></p>
 
@@ -76,16 +76,22 @@ La disponibilidad en tiendas y el momento de lanzamiento pueden variar por plata
 
 Descarga para Android en [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) o para iPhone y iPad en la [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253).
 
-## NimoteCode 2.3.0 · Modos de espacio, Docker y Dev Containers
+[Modo Host: Instalar NimoteHost, conectar por SSH y retomar terminales y tareas Agent.](https://nimotecode.com/es/docs/host)
 
-Cambia entre IDE, Terminal e IA conservando el proyecto. También incorpora mejoras para Windows SSH, plugins, Agent, terminal y Docker en hosts SSH.
+## NimoteCode 2.4.0 · Host, tareas de proyecto y fiabilidad remota
 
-- **Cambia de modo:** alterna entre IDE, Terminal e IA conservando el proyecto y el Explorador.
-- **Docker por SSH:** administra contenedores, imágenes, volúmenes, redes y Compose; consulta registros y estadísticas, abre exec y busca en Docker Hub.
-- **Dev Containers:** crea o reconstruye desde `devcontainer.json` y abre un espacio aislado configurado.
-- **Flujos ampliados:** Windows SSH, plugins validados, instrucciones al Agent en curso, terminal adaptable y revisión móvil de Git.
+- **Espacio Host.** Instala e inicia NimoteHost compatible en la máquina remota y conecta por SSH para buscar, fijar y retomar sesiones de terminal y Agent. Host es opcional.
+- **Colaboración Agent.** Sesiones compatibles de Codex, Claude y OpenCode con conversaciones estructuradas, herramientas, aprobaciones, comandos, modelos e indicaciones durante la ejecución. Las políticas dependen del Host; las acciones sensibles pueden requerir aprobación.
+- **Bandeja de tareas e Issues de GitHub.** Revisa estados, evidencias de verificación y diffs; continúa o archiva tareas y envía Issues según la política de publicación elegida. Depende de la versión y configuración del Host.
+- **Plugins Host.** Accede desde la barra lateral a formularios versionados, tablas paginadas, detalles y vistas interactivas con controles de permisos.
+- **Tareas de proyecto.** Descubre tareas compatibles de package.json, Taskfile, Makefile, justfile y .vscode/tasks.json y ejecútalas en el terminal. El descubrimiento dinámico de Make/just requiere confirmación.
+- **Avisos y editor.** Configura avisos de finalización, confirmación y error, sonido y vibración sujetos al sistema, números de línea y minimapa horizontal. Pro se activa por defecto en Windows.
+- Configuración unificada de funciones, paneles y plugins; avisos en la configuración Agent. Mejoras para tablets, Windows, colores horizontales y movimiento reducido.
+- Filtra CI de GitHub por rama y flujo; consulta logs por paso, contexto de errores y avisos de descarga incompleta.
+- Mayor respuesta del terminal, actualizaciones sincronizadas, búsqueda, desplazamiento, Vim, portapapeles, pegado en Windows y teclado virtual.
+- Historial más fiable con eliminación local sin conexión; guardado remoto con motivos de error, edición de archivos grandes y diffs ajustados con navegación inferior.
 
-> [Leer las notas completas de 2.3.0](https://nimotecode.com/es/releases/2.3.0) · [Versiones anteriores](https://nimotecode.com/releases/)
+[2.4.0 →](https://nimotecode.com/es/releases/2.4.0)
 
 ## Documentación
 
@@ -117,7 +123,7 @@ Cambia entre IDE, Terminal e IA conservando el proyecto. También incorpora mejo
 
 ## Compara herramientas móviles
 
-**Editar → ejecutar verificaciones → revisar diferencias → ampliar el espacio de trabajo, en un solo IDE móvil.** La columna de NimoteCode refleja 2.3.0; `?` significa que la capacidad no se ha verificado para ese producto.
+**Editar → ejecutar verificaciones → revisar diferencias → ampliar el espacio de trabajo, en un solo IDE móvil.** La columna de NimoteCode refleja 2.4.0; `?` significa que la capacidad no se ha verificado para ese producto.
 
 | Capacidad | **NimoteCode** | Termius | Blink Shell | ServerCC |
 | --- | :---: | :---: | :---: | :---: |

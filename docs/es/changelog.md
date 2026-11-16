@@ -14,6 +14,12 @@ Este es el registro público de actualizaciones notables de productos. Para obte
 
 ## 2026
 
+### 2.4.0 · 16 de noviembre de 2026
+
+Host, tareas de proyecto y fiabilidad remota.
+
+[2.4.0 →](/es/releases/2.4.0)
+
 ### Versión 2.2.0 · 2 de noviembre de 2026
 
 NimoteCode ahora incluye flujos nativos de GitHub: inicia sesión, explora repositorios y ramas, clona proyectos en espacios de trabajo locales o SSH y colabora mediante incidencias, pull requests, revisiones y CI. Esta versión también añade herramientas experimentales de línea de comandos, Python y Web para Android Local Linux, hace que las operaciones de GitHub y búsqueda sean más fiables y unifica los paneles y las conversaciones del entorno de trabajo.

@@ -18,6 +18,7 @@ description: "작업 공간, 편집, 터미널, Git, AI, 플러그인 및 진단
 
 | 주제 | 내용 |
 | --- | --- |
+| [Host 모드](/ko/docs/host) | NimoteHost 설치, SSH 연결, 터미널 및 Agent 사용법. |
 | [빠른 시작](/ko/docs/quick-start) | 작업 공간 열기 · 파일 열기 및 편집 · 명령 실행 · AI Agent 실행 |
 | [로컬 및 SSH 작업 공간](/ko/docs/ssh) | 작업 공간 선택 · 로컬 폴더 열기 · SSH 연결 설정 |
 | [코드 편집기](/ko/docs/editor) | 파일 열기 및 탭 전환 · 텍스트 선택 및 편집 · 심볼 및 기록 탐색 |

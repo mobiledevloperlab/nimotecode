@@ -23,7 +23,7 @@
   <a href="#demo">Watch demo</a> ·
   <a href="#compare-mobile-development-tools">Compare tools</a> ·
   <a href="https://nimotecode.com/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=en_quick_start">Quick start</a> ·
-  <a href="#latest-release">What's new in 2.3.0</a>
+  <a href="#latest-release">What's new in 2.4.0</a>
 </sub></p>
 
 <p align="center"><sub>Free to start. AI setup is optional.<br>Commercial, closed-source app · Official documentation and community resources</sub></p>
@@ -97,16 +97,22 @@ Store availability and release timing may differ by platform and region. See [do
 
 <a id="latest-release"></a>
 
-## NimoteCode 2.3.0 · Workspace modes, Docker, and Dev Containers
+[Host mode: Install NimoteHost, connect over SSH, and return to terminals and Agent tasks.](https://nimotecode.com/docs/host)
 
-Workspace modes for IDE, Terminal, and AI, plus Windows SSH, upgraded plugins, interactive Agent follow-ups, terminal improvements, and Docker development on SSH hosts.
+## NimoteCode 2.4.0 · Host workspace, project tasks, and remote reliability
 
-- **Switch workspace modes:** move between IDE, Terminal, and AI while keeping the current project and Explorer state.
-- **Develop with Docker over SSH:** manage containers, images, volumes, networks, and Compose services; inspect logs and statistics, open exec, and search Docker Hub.
-- **Use Dev Containers:** create or rebuild from `devcontainer.json` and open an isolated, configured workspace.
-- **More capable workflows:** Windows SSH, validated plugin contributions and Agent tools, ACP Agent follow-ups, adaptive terminal panes, and mobile Git review.
+- **Host workspace.** Install and start a compatible NimoteHost on your remote machine, then connect over SSH to browse, search, pin, and resume terminal and Agent sessions. Host is optional and existing SSH workflows remain available.
+- **Host Agent collaboration.** Compatible Codex, Claude, and OpenCode sessions offer structured conversations, tools, approvals, commands, model controls, and supported follow-up instructions. Execution policies depend on Host capabilities; sensitive actions may still require approval.
+- **Task inbox and GitHub Issues.** Review task status, verification evidence and diffs, continue or archive tasks, and dispatch GitHub Issues with the selected publication policy. Availability depends on Host version and configuration.
+- **Host plugins.** Open compatible Host plugins from the sidebar, with versioned forms, paginated tables, details, interactive views, and permission checks.
+- **Project task runner.** Discover supported tasks from package.json, Taskfile, Makefile, justfile, and .vscode/tasks.json. Run them in workspace terminals; Make/just dynamic discovery requires explicit confirmation.
+- **Alerts and editor preferences.** Configure Agent completion, confirmation, and failure alerts, sound and vibration subject to system settings, editor line numbers, and the landscape minimap. Pro is enabled by default on Windows.
+- Unified application configuration for core features, panels, and plugins; Agent alerts are under Agent configuration. Refined tablet and Windows layouts, landscape colors, and reduced-motion support.
+- Filter GitHub CI runs by branch and workflow and inspect step logs, error context, and incomplete-log notices.
+- More responsive terminal output, synchronized updates, search, scrolling, Vim, clipboard access, Windows paste, software keyboards, and held navigation keys.
+- More reliable session history, offline deletion of local history entries, remote saves with failure reasons, large-file editing, and wrapped Git diffs with footer navigation.
 
-> [Read the full 2.3.0 release notes](https://nimotecode.com/releases/2.3.0) · [Earlier releases](https://nimotecode.com/releases/)
+[2.4.0 →](https://nimotecode.com/releases/2.4.0)
 
 ## Documentation
 
@@ -137,7 +143,7 @@ Workspace modes for IDE, Terminal, and AI, plus Windows SSH, upgraded plugins, i
 
 ## Compare mobile development tools
 
-**Edit → Run checks → Review the diff → extend the workspace, in one mobile IDE.** These selected capabilities from our detailed comparison help you choose the right tool for your workflow. The NimoteCode column reflects 2.3.0; question marks mean the corresponding capability has not been verified for that product.
+**Edit → Run checks → Review the diff → extend the workspace, in one mobile IDE.** These selected capabilities from our detailed comparison help you choose the right tool for your workflow. The NimoteCode column reflects 2.4.0; question marks mean the corresponding capability has not been verified for that product.
 
 ✅ Documented built-in or integrated capability · ◐ Conditional · ? Not verified, **not an absence claim** · — Explicitly unsupported
 
@@ -184,7 +190,7 @@ Orca mobile requires its desktop companion. Moshi's diff and web preview require
 
 A check does not mean free, setup-free or available on every platform. Blink integrates editing through Blink Code; Git / LSP depend on repository or remote IDE configuration. Termius Mosh is verified here for Android only. See the full comparison for each product's setup and plan requirements.
 
-> [**See all seven tools and feature-by-feature official evidence →**](https://nimotecode.com/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_comparison) · Competitor evidence baseline: 2026-10-19; NimoteCode capabilities: 2.3.0.
+> [**See all seven tools and feature-by-feature official evidence →**](https://nimotecode.com/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_comparison) · Competitor evidence baseline: 2026-10-19; NimoteCode capabilities: 2.4.0.
 
 **Try the workflow yourself:** [install NimoteCode](https://nimotecode.com/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_compare_download) and open a demo or local project. No AI setup needed to start.
 

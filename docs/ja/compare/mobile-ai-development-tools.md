@@ -10,7 +10,7 @@ pageClass: compare-page
 
 Termius と Blink Shell はリモートアクセス、Redock・ServerCC・Moshi はホスト上の Agent 操作、Orca はデスクトップまたはリモートサーバー環境のモバイル利用に重点があります。NimoteCode は編集、Git レビュー、SSH と、対応 Android 端末での Local Linux を一つのワークスペースにまとめます。
 
-NimoteCode の現行バージョンは [2.3.0](/ja/releases/2.3.0)。IDE・ターミナル・AI モード、Windows SSH、Docker を追加。競合情報の確認日は上記のとおりです。
+NimoteCode [2.4.0](/ja/releases/2.4.0) は任意の Host ワークスペース、タスク検出、GitHub CI 診断を追加。下記の比較情報は記載の確認日時点のものです。
 
 <MobileDevToolComparison lang="en" />
 

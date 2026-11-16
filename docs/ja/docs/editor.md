@@ -84,3 +84,9 @@ HTML プレビューは未保存の変更を含む現在の編集内容のスナ
 <div class="doc-screenshots">
   <DocScreenshot file="html-report-preview.jpg" caption="エディターのプレビュータブに表示された HTML ベンチマークレポート。" />
 </div>
+
+## NimoteCode 2.4.0
+
+履歴の安定性とローカル履歴のオフライン削除、保存エラーの説明、大きなファイルの編集、折り返し差分と下部ナビゲーションを改善。
+
+[2.4.0 →](/ja/releases/2.4.0)

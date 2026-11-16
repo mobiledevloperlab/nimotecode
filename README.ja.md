@@ -10,7 +10,7 @@
 
 <p align="center"><a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB-34A853?style=for-the-badge&amp;logo=googleplay&amp;logoColor=white" alt="Google Play から Android 版 NimoteCode をインストール"></a> <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="App Store から NimoteCode をダウンロード"></a></p>
 
-<p align="center"><sub><a href="#workspace-demo">デモ</a> · <a href="https://nimotecode.com/ja/docs/quick-start">クイックスタート</a> · <a href="https://nimotecode.com/ja/releases/2.3.0">リリースノート</a></sub></p>
+<p align="center"><sub><a href="#workspace-demo">デモ</a> · <a href="https://nimotecode.com/ja/docs/quick-start">クイックスタート</a> · <a href="https://nimotecode.com/ja/releases/2.4.0">リリースノート</a></sub></p>
 
 <p align="center"><sub>無料で開始でき、AI の設定は任意です。商用クローズドソースアプリ · 公式ドキュメントとリソース</sub></p>
 
@@ -76,16 +76,22 @@ Local Linux は対応する Android 8 以降の ARM64 / x86_64 端末が必要�
 
 Android 版は [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode)、iPhone / iPad 版は [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253) から入手できます。
 
-## NimoteCode 2.3.0 · ワークスペースモード、Docker、Dev Containers
+[Host モード: NimoteHost の導入、SSH 接続、ターミナルと Agent の使い方。](https://nimotecode.com/ja/docs/host)
 
-IDE、ターミナル、AI を切り替えながらプロジェクト状態を維持。Windows SSH、プラグイン、Agent、ターミナル、SSH ホスト上の Docker 開発も強化しました。
+## NimoteCode 2.4.0 · Host、プロジェクトタスク、リモート操作の安定性
 
-- **モード切替：**IDE、ターミナル、AI を切り替えてもプロジェクトと Explorer の状態を維持します。
-- **SSH の Docker：**コンテナ、イメージ、ボリューム、ネットワーク、Compose を管理し、ログ、統計、exec、Docker Hub 検索を利用できます。
-- **Dev Containers：**`devcontainer.json` から作成または再構築し、設定済みの隔離ワークスペースを開けます。
-- **開発フローを強化：**Windows SSH、検証付きプラグイン、Agent への追加指示、適応型ターミナル分割、モバイル Git レビューに対応。
+- **Host ワークスペース。** リモートに対応する NimoteHost をインストールして起動し、SSH で接続すると、ターミナルや Agent セッションの検索、固定、再開ができます。Host は任意の機能です。
+- **Agent 連携。** 対応する Codex、Claude、OpenCode の構造化対話、ツール、承認、コマンド、モデル設定、実行中の追加指示に対応。実行ポリシーは Host の機能に依存し、機密性の高い操作は承認が必要な場合があります。
+- **タスク受信箱と GitHub Issue。** 状態、検証の証拠、差分を確認し、タスクを続行・アーカイブできます。選択した公開ポリシーで Issue を依頼できます。Host のバージョンと設定に依存します。
+- **Host プラグイン。** サイドバーから、バージョン付きフォーム、ページ分割テーブル、詳細、対話ビューを権限確認付きで利用できます。
+- **プロジェクトタスク。** package.json、Taskfile、Makefile、justfile、.vscode/tasks.json の対応タスクを検出してターミナルで実行。Make/just の動的検出には明示的な確認が必要です。
+- **通知とエディター。** 完了・確認待ち・失敗の通知、音と振動、行番号、横向きミニマップを設定できます。通知はシステム設定に従います。Windows は Pro が標準で有効です。
+- 機能、パネル、プラグインの設定を統合。通知は Agent 設定へ移動。タブレット、Windows、横向きの配色と視差効果を減らす設定への対応を改善。
+- GitHub CI をブランチやワークフローで絞り込み、ステップログ、エラーの前後、不完全なログの表示を確認できます。
+- ターミナルの応答性、同期更新、検索、スクロール、Vim、クリップボード、Windows の貼り付け、ソフトキーボードを改善。
+- 履歴の安定性とローカル履歴のオフライン削除、保存エラーの説明、大きなファイルの編集、折り返し差分と下部ナビゲーションを改善。
 
-> [2.3.0 のリリースノート全文](https://nimotecode.com/ja/releases/2.3.0) · [過去のリリース](https://nimotecode.com/releases/)
+[2.4.0 →](https://nimotecode.com/ja/releases/2.4.0)
 
 ## ドキュメント
 
@@ -116,7 +122,7 @@ IDE、ターミナル、AI を切り替えながらプロジェクト状態を�
 
 ## モバイル開発ツールの比較
 
-**編集 → チェック実行 → 差分確認 → ワークスペース拡張を、一つのモバイル IDE で。** NimoteCode 列は 2.3.0 を反映しています。`?` は、その製品の機能が未確認であることを示します。
+**編集 → チェック実行 → 差分確認 → ワークスペース拡張を、一つのモバイル IDE で。** NimoteCode 列は 2.4.0 を反映しています。`?` は、その製品の機能が未確認であることを示します。
 
 | 主な機能 | **NimoteCode** | Termius | Blink Shell | ServerCC |
 | --- | :---: | :---: | :---: | :---: |

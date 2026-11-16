@@ -51,3 +51,9 @@ Open the tab customization menu to rename a tab, change its color, or reset its 
 ## Split panes and connect terminal output to the IDE
 
 Open multiple panes in a terminal workspace and resize them to watch commands, logs, or services together. Select a file location in terminal output to open it in the IDE, or send selected output to AI for analysis. Supported commands are recorded for review and reuse; terminal display preferences, zoom, and per-connection prompt styles can be customized.
+
+## NimoteCode 2.4.0
+
+More responsive terminal output, synchronized updates, search, scrolling, Vim, clipboard access, Windows paste, software keyboards, and held navigation keys.
+
+[2.4.0 →](/releases/2.4.0)

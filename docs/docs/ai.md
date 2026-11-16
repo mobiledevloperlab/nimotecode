@@ -72,3 +72,13 @@ These screenshots correspond to the Chat, Agent selection, plan review, executio
 ## Continue a running ACP task
 
 ACP Agents that support follow-up prompts can receive additional instructions while a task is running. Check the delivery state in the conversation timeline and answer interactive questions there; support depends on the Agent runtime.
+
+## NimoteCode 2.4.0
+
+**Host Agent collaboration.** Compatible Codex, Claude, and OpenCode sessions offer structured conversations, tools, approvals, commands, model controls, and supported follow-up instructions. Execution policies depend on Host capabilities; sensitive actions may still require approval.
+
+**Task inbox and GitHub Issues.** Review task status, verification evidence and diffs, continue or archive tasks, and dispatch GitHub Issues with the selected publication policy. Availability depends on Host version and configuration.
+
+[2.4.0 →](/releases/2.4.0)
+
+[Host mode →](/docs/host) — Install NimoteHost, connect over SSH, and return to terminals and Agent tasks.

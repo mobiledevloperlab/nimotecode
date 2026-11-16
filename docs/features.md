@@ -15,6 +15,23 @@ Edit code, run project tools, review Git changes, and work with AI from your pho
 
 <WorkspaceModes />
 
+## NimoteCode 2.4.0 · Host workspace, project tasks, and remote reliability
+
+- **Host workspace.** Install and start a compatible NimoteHost on your remote machine, then connect over SSH to browse, search, pin, and resume terminal and Agent sessions. Host is optional and existing SSH workflows remain available.
+- **Host Agent collaboration.** Compatible Codex, Claude, and OpenCode sessions offer structured conversations, tools, approvals, commands, model controls, and supported follow-up instructions. Execution policies depend on Host capabilities; sensitive actions may still require approval.
+- **Task inbox and GitHub Issues.** Review task status, verification evidence and diffs, continue or archive tasks, and dispatch GitHub Issues with the selected publication policy. Availability depends on Host version and configuration.
+- **Host plugins.** Open compatible Host plugins from the sidebar, with versioned forms, paginated tables, details, interactive views, and permission checks.
+- **Project task runner.** Discover supported tasks from package.json, Taskfile, Makefile, justfile, and .vscode/tasks.json. Run them in workspace terminals; Make/just dynamic discovery requires explicit confirmation.
+- **Alerts and editor preferences.** Configure Agent completion, confirmation, and failure alerts, sound and vibration subject to system settings, editor line numbers, and the landscape minimap. Pro is enabled by default on Windows.
+- Unified application configuration for core features, panels, and plugins; Agent alerts are under Agent configuration. Refined tablet and Windows layouts, landscape colors, and reduced-motion support.
+- Filter GitHub CI runs by branch and workflow and inspect step logs, error context, and incomplete-log notices.
+- More responsive terminal output, synchronized updates, search, scrolling, Vim, clipboard access, Windows paste, software keyboards, and held navigation keys.
+- More reliable session history, offline deletion of local history entries, remote saves with failure reasons, large-file editing, and wrapped Git diffs with footer navigation.
+
+[2.4.0 →](/releases/2.4.0)
+
+
+
 ## Interface at a glance
 
 <div class="feature-showcase" role="region" tabindex="0" aria-label="NimoteCode feature highlights">
@@ -88,3 +105,5 @@ Switch between IDE, Terminal, and AI modes while keeping the project and Explore
   <DocScreenshot file="docker-images.png" caption="Docker image list in the Light theme, including Debian bookworm-slim." />
   <DocScreenshot file="docker-image-detail.png" caption="Debian bookworm-slim image details in the Light theme." />
 </div>
+
+[Host mode →](/docs/host) — Install NimoteHost, connect over SSH, and return to terminals and Agent tasks.

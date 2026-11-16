@@ -92,3 +92,13 @@ MCP 支持两类服务器传输方式：**stdio** 会在所选目标环境（自
 ## 继续执行中的 ACP 任务
 
 支持后续指令的 ACP Agent 可在任务运行期间接收新指令。可在会话时间线查看送达状态，并在其中回答交互式问题；具体能力取决于 Agent 运行时。
+
+## NimoteCode 2.4.0
+
+**Host Agent 协作。** 兼容的 Codex、Claude 和 OpenCode 会话提供结构化对话、工具、审批、命令、模型控制和受支持的运行中追问。执行策略取决于 Host 能力，敏感操作仍可能需要确认。
+
+**任务收件箱与 GitHub Issue。** 查看任务状态、验证证据与 Diff，继续或归档任务，并按所选发布策略派发 GitHub Issue。部分能力取决于 Host 版本和配置。
+
+[2.4.0 →](/zh/releases/2.4.0)
+
+[Host 模式 →](/zh/docs/host) — 安装 NimoteHost，通过 SSH 连接，创建终端、运行任务和使用 Agent。

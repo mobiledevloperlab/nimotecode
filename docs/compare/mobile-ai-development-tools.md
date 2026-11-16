@@ -10,7 +10,7 @@ pageClass: compare-page
 
 These products serve different mobile workflows. Termius and Blink Shell emphasize remote access; Redock, ServerCC and Moshi help steer agents on a host; Orca extends a desktop or remote server agent environment to mobile. NimoteCode combines a mobile editor, project explorer, Git review, SSH workspace and, on supported Android devices, Local Linux. The comparison below describes how each feature works and links to product-specific evidence.
 
-NimoteCode is now at [2.3.0](/releases/2.3.0), with IDE, Terminal, and AI modes, Windows SSH, and Docker workflows. Competitor evidence retains the review date shown above.
+NimoteCode [2.4.0](/releases/2.4.0) adds the optional Host workspace, project task discovery, and improved GitHub CI diagnostics. The comparison evidence below retains its stated review date.
 
 <MobileDevToolComparison lang="en" />
 

@@ -11,6 +11,12 @@ This is the public record of notable product updates. For setup help, use the [d
 
 ## 2026
 
+### 2.4.0 · November 16, 2026
+
+Host workspace, project tasks, and remote reliability.
+
+[2.4.0 →](/releases/2.4.0)
+
 ### Version 2.2.0 · November 2, 2026
 
 NimoteCode now includes native GitHub workflows: sign in, browse repositories and branches, clone projects into local or SSH workspaces, and collaborate through issues, pull requests, reviews, and CI. This release also adds experimental command-line, Python, and Web toolkits for Android Local Linux, makes GitHub and search operations more dependable, and unifies workbench panels and conversations.

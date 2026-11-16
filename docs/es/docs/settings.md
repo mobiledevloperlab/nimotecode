@@ -32,3 +32,11 @@ La página **Plugins** controla la visibilidad de LSP, Debug, Sync / Cache y Tas
 ## Crear un plugin personalizado
 
 Consulte [Plugins personalizados](/es/docs/plugins) para crear, previsualizar, instalar y gestionar plugins. La guía también explica los permisos, los requisitos de scripts y los trabajos en segundo plano.
+
+## NimoteCode 2.4.0
+
+Configuración unificada de funciones, paneles y plugins; avisos en la configuración Agent. Mejoras para tablets, Windows, colores horizontales y movimiento reducido.
+
+**Avisos y editor.** Configura avisos de finalización, confirmación y error, sonido y vibración sujetos al sistema, números de línea y minimapa horizontal. Pro se activa por defecto en Windows.
+
+[2.4.0 →](/es/releases/2.4.0)

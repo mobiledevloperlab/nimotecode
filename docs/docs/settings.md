@@ -32,3 +32,11 @@ The **Plugins** settings page controls visibility of LSP, Debug, Sync / Cache, a
 ## Create a custom plugin
 
 See [Custom plugins](/docs/plugins) for creation, preview, installation, and management. The guide also covers permissions, script requirements, and background jobs.
+
+## NimoteCode 2.4.0
+
+Unified application configuration for core features, panels, and plugins; Agent alerts are under Agent configuration. Refined tablet and Windows layouts, landscape colors, and reduced-motion support.
+
+**Alerts and editor preferences.** Configure Agent completion, confirmation, and failure alerts, sound and vibration subject to system settings, editor line numbers, and the landscape minimap. Pro is enabled by default on Windows.
+
+[2.4.0 →](/releases/2.4.0)

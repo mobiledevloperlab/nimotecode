@@ -87,3 +87,11 @@ Abra **AI Tools**, elija proveedor y archivos, y seleccione **Commit Message**, 
 ## Revisión móvil de Git
 
 La vista de diferencias y sus controles se adaptan a teléfonos y tabletas.
+
+## NimoteCode 2.4.0
+
+Filtra CI de GitHub por rama y flujo; consulta logs por paso, contexto de errores y avisos de descarga incompleta.
+
+**Bandeja de tareas e Issues de GitHub.** Revisa estados, evidencias de verificación y diffs; continúa o archiva tareas y envía Issues según la política de publicación elegida. Depende de la versión y configuración del Host.
+
+[2.4.0 →](/es/releases/2.4.0)

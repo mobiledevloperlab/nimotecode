@@ -23,3 +23,11 @@ Tasks 将命令保存为命名任务，并支持按用途分组。点击 **+** �
 ## 运行并检查输出
 
 点击任务旁的运行按钮，在终端检查输出。任务名称只是标签，并不能说明命令实际完成了什么；执行前检查命令和工作目录。基础任务创建与执行无需额外 Pro 权益。
+
+## NimoteCode 2.4.0
+
+**项目任务运行器。** 从 package.json、Taskfile、Makefile、justfile 和 .vscode/tasks.json 发现支持的任务，在工作区终端运行；Make/just 动态发现需明确确认。
+
+[2.4.0 →](/zh/releases/2.4.0)
+
+[Host 模式 →](/zh/docs/host) — 安装 NimoteHost，通过 SSH 连接，创建终端、运行任务和使用 Agent。

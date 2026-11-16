@@ -67,3 +67,11 @@ Un plugin puede combinar paneles, formularios, datos del espacio, acciones confi
 ## Validación de plugins e integración con Agent
 
 Las contribuciones y dependencias versionadas de plugins se validan antes de instalar. Las herramientas y flujos aprobados pueden usarse desde el Agent integrado.
+
+## NimoteCode 2.4.0
+
+**Plugins Host.** Accede desde la barra lateral a formularios versionados, tablas paginadas, detalles y vistas interactivas con controles de permisos.
+
+[2.4.0 →](/es/releases/2.4.0)
+
+[Modo Host →](/es/docs/host) — Instalar NimoteHost, conectar por SSH y retomar terminales y tareas Agent.

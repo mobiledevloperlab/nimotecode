@@ -94,6 +94,8 @@ function organizeDocsGroups(groups: DefaultTheme.SidebarItem[], prefix: string):
     ja: 'Windows SSH と SFTP', ko: 'Windows SSH 및 SFTP', es: 'SSH y SFTP en Windows'
   }
   items.push({ text: windowsLabels[locale], link: `${prefix}/docs/windows-ssh-sftp` })
+  const hostLabels: Record<string, string> = { en: 'Host mode', zh: 'Host 模式', es: 'Modo Host', ja: 'Host モード', ko: 'Host 모드' }
+  items.push({ text: hostLabels[locale], link: `${prefix}/docs/host` })
   const labels: Record<string, string> = locale === 'zh' ? {
     ssh: '本地与 SSH 工作区', ai: 'AI 对话与 Agent', editor: '代码编辑器',
     terminal: '终端', search: '工作区搜索', 'source-control': '源代码管理',
@@ -110,7 +112,7 @@ function organizeDocsGroups(groups: DefaultTheme.SidebarItem[], prefix: string):
   })
   return [
     group(names[locale][0], ['quick-start']),
-    group(names[locale][1], ['ssh', 'windows-ssh-sftp']),
+    group(names[locale][1], ['ssh', 'windows-ssh-sftp', 'host']),
     group(names[locale][2], ['editor', 'terminal', 'search', 'source-control', 'tasks', 'docker']),
     group(names[locale][3], ['ai', 'configuration', 'plugins']),
     group(names[locale][4], ['lsp', 'debug', 'sync-cache']),

@@ -23,3 +23,11 @@ Tasks guarda comandos con nombre y los agrupa por finalidad. Añada una tarea co
 ## Ejecutar e inspeccionar la salida
 
 Pulse el control de ejecución junto a la tarea y revise la salida del terminal. El nombre es una etiqueta, no una validación del comando: compruebe el comando y el directorio de trabajo antes de usarlo. La creación y ejecución básicas de tareas no requieren Pro.
+
+## NimoteCode 2.4.0
+
+**Tareas de proyecto.** Descubre tareas compatibles de package.json, Taskfile, Makefile, justfile y .vscode/tasks.json y ejecútalas en el terminal. El descubrimiento dinámico de Make/just requiere confirmación.
+
+[2.4.0 →](/es/releases/2.4.0)
+
+[Modo Host →](/es/docs/host) — Instalar NimoteHost, conectar por SSH y retomar terminales y tareas Agent.

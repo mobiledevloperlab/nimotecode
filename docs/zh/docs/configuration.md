@@ -21,3 +21,9 @@ description: "AI 与连接配置的配置、操作步骤与界面说明。"
 ## 通用设置
 
 AI Configuration 提供对话历史自动保存和 AI 隐私设置。这些设置与模型采样参数、输出设置相互独立。MCP 工具服务器设置见[AI Chat、Agent、MCP 与外部 Agent](/zh/docs/ai#谨慎连接-mcp-工具)。SSH 主机配置见[本地与 SSH 工作区](/zh/docs/ssh)。
+
+## NimoteCode 2.4.0
+
+统一应用配置入口，管理核心功能、面板和插件；提醒位于 Agent 配置。优化平板与 Windows 布局、横屏配色及减少动态效果支持。
+
+[2.4.0 →](/zh/releases/2.4.0)

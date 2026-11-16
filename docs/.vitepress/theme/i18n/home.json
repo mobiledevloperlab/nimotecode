@@ -128,6 +128,10 @@
       [
         "Plugins",
         "Extend your workspace your way."
+      ],
+      [
+        "Host",
+        "Install and start a compatible NimoteHost on your remote machine, then connect over SSH to browse, search, pin, and resume terminal and Agent sessions. Host is optional and existing SSH workflows remain available."
       ]
     ],
     "community": [
@@ -355,6 +359,10 @@
       [
         "插件",
         "按自己的工作方式扩展工作区。"
+      ],
+      [
+        "Host",
+        "先在远程机器安装并启动兼容的 NimoteHost，再通过 SSH 浏览、搜索、固定和恢复终端与 Agent 会话。Host 为可选功能，原有 SSH 工作流仍可使用。"
       ]
     ],
     "community": [
@@ -582,6 +590,10 @@
       [
         "プラグイン",
         "自分に合った開発環境に拡張。"
+      ],
+      [
+        "Host",
+        "リモートに対応する NimoteHost をインストールして起動し、SSH で接続すると、ターミナルや Agent セッションの検索、固定、再開ができます。Host は任意の機能です。"
       ]
     ],
     "community": [
@@ -809,6 +821,10 @@
       [
         "플러그인",
         "작업 공간을 원하는 대로 확장하세요."
+      ],
+      [
+        "Host",
+        "원격 컴퓨터에 호환 NimoteHost를 설치하고 시작한 뒤 SSH로 연결해 터미널 및 Agent 세션을 검색, 고정하고 다시 시작합니다. Host는 선택 기능입니다."
       ]
     ],
     "community": [
@@ -1036,6 +1052,10 @@
       [
         "Plugins",
         "Amplía tu espacio a tu manera."
+      ],
+      [
+        "Host",
+        "Instala e inicia NimoteHost compatible en la máquina remota y conecta por SSH para buscar, fijar y retomar sesiones de terminal y Agent. Host es opcional."
       ]
     ],
     "community": [

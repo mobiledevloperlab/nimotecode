@@ -80,3 +80,13 @@ Presta atención a los archivos ausentes, al alcance de la copia de trabajo y al
 ## Instrucciones adicionales al Agent en ejecución
 
 Los Agents ACP compatibles aceptan instrucciones durante una tarea. La disponibilidad depende del runtime del Agent.
+
+## NimoteCode 2.4.0
+
+**Colaboración Agent.** Sesiones compatibles de Codex, Claude y OpenCode con conversaciones estructuradas, herramientas, aprobaciones, comandos, modelos e indicaciones durante la ejecución. Las políticas dependen del Host; las acciones sensibles pueden requerir aprobación.
+
+**Bandeja de tareas e Issues de GitHub.** Revisa estados, evidencias de verificación y diffs; continúa o archiva tareas y envía Issues según la política de publicación elegida. Depende de la versión y configuración del Host.
+
+[2.4.0 →](/es/releases/2.4.0)
+
+[Modo Host →](/es/docs/host) — Instalar NimoteHost, conectar por SSH y retomar terminales y tareas Agent.

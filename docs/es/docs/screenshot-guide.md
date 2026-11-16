@@ -9,6 +9,7 @@ Las capturas acompañan a los procedimientos correspondientes. Elija un tema par
 
 | Tema | Contenido |
 | --- | --- |
+| [Modo Host](/es/docs/host) | Instalar NimoteHost, conectar por SSH y retomar terminales y tareas Agent. |
 | [Inicio rápido](/es/docs/quick-start) | Abrir un espacio de trabajo · Abrir y editar un archivo · Ejecutar un comando · Ejecutar AI Agent |
 | [Espacios de trabajo locales y SSH](/es/docs/ssh) | Elegir un espacio de trabajo · Abrir una carpeta local · Configurar una conexión SSH |
 | [Editor de código](/es/docs/editor) | Abrir archivos y cambiar de pestaña · Seleccionar y editar texto · Navegar por símbolos e historial |

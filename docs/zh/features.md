@@ -15,6 +15,23 @@ description: 在手机或平板打开项目，连接开发电脑，在同一工�
 
 <WorkspaceModes />
 
+## NimoteCode 2.4.0 · Host 工作区、项目任务与远程可靠性
+
+- **Host 工作区。** 先在远程机器安装并启动兼容的 NimoteHost，再通过 SSH 浏览、搜索、固定和恢复终端与 Agent 会话。Host 为可选功能，原有 SSH 工作流仍可使用。
+- **Host Agent 协作。** 兼容的 Codex、Claude 和 OpenCode 会话提供结构化对话、工具、审批、命令、模型控制和受支持的运行中追问。执行策略取决于 Host 能力，敏感操作仍可能需要确认。
+- **任务收件箱与 GitHub Issue。** 查看任务状态、验证证据与 Diff，继续或归档任务，并按所选发布策略派发 GitHub Issue。部分能力取决于 Host 版本和配置。
+- **Host 插件。** 从侧边栏访问兼容插件，使用带版本的表单、分页表格、详情和交互界面，并沿用权限校验。
+- **项目任务运行器。** 从 package.json、Taskfile、Makefile、justfile 和 .vscode/tasks.json 发现支持的任务，在工作区终端运行；Make/just 动态发现需明确确认。
+- **提醒与编辑器偏好。** 配置 Agent 完成、待确认与失败提醒，提示音和震动受系统设置影响；支持编辑器行号和横屏缩略图设置。Windows 默认启用 Pro。
+- 统一应用配置入口，管理核心功能、面板和插件；提醒位于 Agent 配置。优化平板与 Windows 布局、横屏配色及减少动态效果支持。
+- 按分支和工作流筛选 GitHub CI 运行记录，查看步骤日志、错误上下文及日志不完整提示。
+- 优化终端输出响应、同步更新、搜索、滚动、Vim、剪贴板、Windows 粘贴、软键盘及长按导航键。
+- 改进会话历史，支持离线删除本地历史条目；优化远程保存及失败原因、长文件编辑，以及带底部导航的换行 Git Diff。
+
+[2.4.0 →](/zh/releases/2.4.0)
+
+
+
 ## 界面概览
 
 <div class="feature-showcase" role="region" tabindex="0" aria-label="NimoteCode 功能亮点">
@@ -85,3 +102,5 @@ AI 输出仅供协助，不保证正确性、安全性或执行成功。使用�
   <DocScreenshot file="docker-images.png" caption="浅色主题下的 Docker 镜像列表，包含 Debian bookworm-slim。" />
   <DocScreenshot file="docker-image-detail.png" caption="浅色主题下的 Debian bookworm-slim 镜像详情。" />
 </div>
+
+[Host 模式 →](/zh/docs/host) — 安装 NimoteHost，通过 SSH 连接，创建终端、运行任务和使用 Agent。

@@ -30,7 +30,7 @@ function selectDemo(index: number) {
   demoVideo.value?.pause()
   activeDemo.value = index
 }
-const capabilityLinks = ['source-control', 'lsp', 'debug', 'editor', 'tasks', 'plugins']
+const capabilityLinks = ['source-control', 'lsp', 'debug', 'editor', 'tasks', 'plugins', 'host']
 const reviewUrl = (id: string) => `https://play.google.com/store/apps/details?id=com.nimote.nimotecode&reviewId=${encodeURIComponent(id)}`
 const formatReviewDate = (date: string) => new Intl.DateTimeFormat(locale.value, { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`))
 </script>
@@ -90,7 +90,7 @@ const formatReviewDate = (date: string) => new Intl.DateTimeFormat(locale.value,
         <summary>{{ copy.capabilityDetails }}<span class="product-disclosure-icon" aria-hidden="true"><MockIcon name="down" /></span></summary>
       <div class="product-capabilities">
         <div class="product-capability-heading"><h3>{{ copy.capabilityTitle }}</h3><a class="product-text-link" :href="local('/features')">{{ copy.allFeatures }}<span aria-hidden="true">→</span></a></div>
-        <div class="product-capability-grid"><a v-for="(capability, index) in copy.capabilities" :key="capability[0]" :href="local(`/docs/${capabilityLinks[index]}`)"><MockIcon :name="['branch', 'code', 'search', 'globe', 'terminal', 'plus'][index]" /><div><h3>{{ capability[0] }}</h3><p>{{ capability[1] }}</p></div></a></div>
+        <div class="product-capability-grid"><a v-for="(capability, index) in copy.capabilities" :key="capability[0]" :href="local(`/docs/${capabilityLinks[index]}`)"><MockIcon :name="['branch', 'code', 'search', 'globe', 'terminal', 'plus', 'terminal'][index]" /><div><h3>{{ capability[0] }}</h3><p>{{ capability[1] }}</p></div></a></div>
         <div class="product-access"><div class="product-access-conditions"><p class="product-capability-note">{{ copy.capabilityNote }}</p>
         <p class="product-byok-note">{{ copy.byok }}</p>
         </div><div class="product-access-actions"><div class="product-access-links"><a class="product-text-link" :href="local('/pro')">{{ copy.planLink }}<span aria-hidden="true">→</span></a><a class="product-release" :href="local(`/releases/${latestRelease.version}`)"><span>v{{ latestRelease.version }}</span>{{ copy.release }} →</a></div>

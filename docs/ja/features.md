@@ -9,6 +9,23 @@ description: プロジェクトをスマートフォンで開き、開発用コ�
 
 <WorkspaceModes />
 
+## NimoteCode 2.4.0 · Host、プロジェクトタスク、リモート操作の安定性
+
+- **Host ワークスペース。** リモートに対応する NimoteHost をインストールして起動し、SSH で接続すると、ターミナルや Agent セッションの検索、固定、再開ができます。Host は任意の機能です。
+- **Agent 連携。** 対応する Codex、Claude、OpenCode の構造化対話、ツール、承認、コマンド、モデル設定、実行中の追加指示に対応。実行ポリシーは Host の機能に依存し、機密性の高い操作は承認が必要な場合があります。
+- **タスク受信箱と GitHub Issue。** 状態、検証の証拠、差分を確認し、タスクを続行・アーカイブできます。選択した公開ポリシーで Issue を依頼できます。Host のバージョンと設定に依存します。
+- **Host プラグイン。** サイドバーから、バージョン付きフォーム、ページ分割テーブル、詳細、対話ビューを権限確認付きで利用できます。
+- **プロジェクトタスク。** package.json、Taskfile、Makefile、justfile、.vscode/tasks.json の対応タスクを検出してターミナルで実行。Make/just の動的検出には明示的な確認が必要です。
+- **通知とエディター。** 完了・確認待ち・失敗の通知、音と振動、行番号、横向きミニマップを設定できます。通知はシステム設定に従います。Windows は Pro が標準で有効です。
+- 機能、パネル、プラグインの設定を統合。通知は Agent 設定へ移動。タブレット、Windows、横向きの配色と視差効果を減らす設定への対応を改善。
+- GitHub CI をブランチやワークフローで絞り込み、ステップログ、エラーの前後、不完全なログの表示を確認できます。
+- ターミナルの応答性、同期更新、検索、スクロール、Vim、クリップボード、Windows の貼り付け、ソフトキーボードを改善。
+- 履歴の安定性とローカル履歴のオフライン削除、保存エラーの説明、大きなファイルの編集、折り返し差分と下部ナビゲーションを改善。
+
+[2.4.0 →](/ja/releases/2.4.0)
+
+
+
 ## インターフェース
 
 <div class="feature-showcase" role="region" tabindex="0" aria-label="NimoteCode feature highlights"><div class="feature-showcase__track"><figure class="feature-showcase__item"><img src="/screenshots/p1.png" alt="Local files, SSH, code editing and AI Agent in NimoteCode" width="1604" height="901" loading="eager"><figcaption>ワークスペース、編集、AI エージェント</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p2.png" alt="SSH terminal, Source Control and code diagnostics in NimoteCode" width="1597" height="896" loading="lazy"><figcaption>ターミナル、Git、診断</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p3.png" alt="NimoteCode debugging, remote workspace sync, and smart caching" width="1598" height="893" loading="lazy"><figcaption>デバッグとワークスペースの同期</figcaption></figure></div></div>
@@ -73,3 +90,5 @@ SSH ホストの Docker パネルではコンテナ、イメージ、ボリュ�
   <DocScreenshot file="docker-images.png" caption="Docker image list in the Light theme, including Debian bookworm-slim." />
   <DocScreenshot file="docker-image-detail.png" caption="Debian bookworm-slim image details in the Light theme." />
 </div>
+
+[Host モード →](/ja/docs/host) — NimoteHost の導入、SSH 接続、ターミナルと Agent の使い方。

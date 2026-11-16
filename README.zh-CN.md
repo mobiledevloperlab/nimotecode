@@ -18,7 +18,7 @@
   <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-%E4%B8%8B%E8%BD%BD-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="从 App Store 下载 iPhone 和 iPad 版 NimoteCode"></a>
 </p>
 
-<p align="center"><sub><a href="#演示">观看演示</a> · <a href="#与其他移动开发工具对比">工具对比</a> · <a href="https://nimotecode.com/zh/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=zh_quick_start">快速开始</a> · <a href="#latest-release">2.3.0 更新亮点</a></sub></p>
+<p align="center"><sub><a href="#演示">观看演示</a> · <a href="#与其他移动开发工具对比">工具对比</a> · <a href="https://nimotecode.com/zh/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=zh_quick_start">快速开始</a> · <a href="#latest-release">2.4.0 更新亮点</a></sub></p>
 
 <p align="center"><sub>免费开始使用，无需先配置 AI。<br>商业闭源应用 · 本仓库提供官方文档与社区资源</sub></p>
 
@@ -91,16 +91,22 @@ Android 用户可从 [Google Play](https://play.google.com/store/apps/details?id
 
 <a id="latest-release"></a>
 
-## NimoteCode 2.3.0 · 工作区模式、Docker 与 Dev Containers
+[Host 模式: 安装 NimoteHost，通过 SSH 连接，创建终端、运行任务和使用 Agent。](https://nimotecode.com/zh/docs/host)
 
-可在 IDE、终端和 AI 模式间切换，并保留项目状态；同时升级 Windows SSH、插件、Agent 交互、终端及 SSH 主机 Docker 开发体验。
+## NimoteCode 2.4.0 · Host 工作区、项目任务与远程可靠性
 
-- **切换工作区模式：**在 IDE、终端和 AI 间切换，项目与资源管理器状态保持同步。
-- **通过 SSH 使用 Docker：**管理容器、镜像、卷、网络和 Compose 服务；查看日志与统计、打开 exec，并搜索 Docker Hub。
-- **使用 Dev Containers：**从 `devcontainer.json` 创建或重建容器，在隔离且配置好的工作区中打开项目。
-- **扩展开发流程：**Windows SSH、经校验的插件贡献与 Agent 工具、ACP Agent 执行中追问、自适应终端分屏及移动端 Git 审阅。
+- **Host 工作区。** 先在远程机器安装并启动兼容的 NimoteHost，再通过 SSH 浏览、搜索、固定和恢复终端与 Agent 会话。Host 为可选功能，原有 SSH 工作流仍可使用。
+- **Host Agent 协作。** 兼容的 Codex、Claude 和 OpenCode 会话提供结构化对话、工具、审批、命令、模型控制和受支持的运行中追问。执行策略取决于 Host 能力，敏感操作仍可能需要确认。
+- **任务收件箱与 GitHub Issue。** 查看任务状态、验证证据与 Diff，继续或归档任务，并按所选发布策略派发 GitHub Issue。部分能力取决于 Host 版本和配置。
+- **Host 插件。** 从侧边栏访问兼容插件，使用带版本的表单、分页表格、详情和交互界面，并沿用权限校验。
+- **项目任务运行器。** 从 package.json、Taskfile、Makefile、justfile 和 .vscode/tasks.json 发现支持的任务，在工作区终端运行；Make/just 动态发现需明确确认。
+- **提醒与编辑器偏好。** 配置 Agent 完成、待确认与失败提醒，提示音和震动受系统设置影响；支持编辑器行号和横屏缩略图设置。Windows 默认启用 Pro。
+- 统一应用配置入口，管理核心功能、面板和插件；提醒位于 Agent 配置。优化平板与 Windows 布局、横屏配色及减少动态效果支持。
+- 按分支和工作流筛选 GitHub CI 运行记录，查看步骤日志、错误上下文及日志不完整提示。
+- 优化终端输出响应、同步更新、搜索、滚动、Vim、剪贴板、Windows 粘贴、软键盘及长按导航键。
+- 改进会话历史，支持离线删除本地历史条目；优化远程保存及失败原因、长文件编辑，以及带底部导航的换行 Git Diff。
 
-> [阅读完整 2.3.0 发布说明](https://nimotecode.com/zh/releases/2.3.0) · [历史版本](https://nimotecode.com/releases/)
+[2.4.0 →](https://nimotecode.com/zh/releases/2.4.0)
 
 ## 文档
 
@@ -131,7 +137,7 @@ Android 用户可从 [Google Play](https://play.google.com/store/apps/details?id
 
 ## 与其他移动开发工具对比
 
-**编辑代码 → 运行检查 → 审查 Diff → 扩展工作台，在一个移动 IDE 中衔接完成。** 以下精选官网对比中的关键能力，帮助你选择适合自己的工具。NimoteCode 一列反映 2.3.0；问号表示尚未核实该产品是否具备对应能力。
+**编辑代码 → 运行检查 → 审查 Diff → 扩展工作台，在一个移动 IDE 中衔接完成。** 以下精选官网对比中的关键能力，帮助你选择适合自己的工具。NimoteCode 一列反映 2.4.0；问号表示尚未核实该产品是否具备对应能力。
 
 ✅ 已有文档确认的内置或集成能力 · ◐ 有条件支持 · ? 未核实，**不代表不支持** · — 明确不支持
 
@@ -178,7 +184,7 @@ Orca 的移动端依赖桌面 Companion；Moshi 的 Diff 和网页预览需要 P
 
 勾选不代表免费、无需配置或所有平台均支持。Blink 的编辑能力通过 Blink Code 集成，Git / LSP 取决于仓库或远程 IDE 配置；Termius 的 Mosh 此处仅核实 Android。各产品的配置与付费要求见完整对比。
 
-> [**查看七款工具的完整对比与逐项官方依据 →**](https://nimotecode.com/zh/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_comparison) · 竞品资料基准：2026-10-19；NimoteCode 能力版本：2.3.0。
+> [**查看七款工具的完整对比与逐项官方依据 →**](https://nimotecode.com/zh/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_comparison) · 竞品资料基准：2026-10-19；NimoteCode 能力版本：2.4.0。
 
 **想亲自试试？** [安装 NimoteCode](https://nimotecode.com/zh/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_compare_download)，先打开 Demo 或本地项目，无需先配置 AI。
 

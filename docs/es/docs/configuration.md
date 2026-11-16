@@ -21,3 +21,9 @@ Seleccione **Test chat connection** para enviar una instrucción breve de prueba
 ## Ajustes generales
 
 AI Configuration incluye servidores de herramientas MCP, guardado automático del historial y privacidad de IA. Revise estos ajustes por separado de los parámetros de muestreo y salida del modelo. Para configurar el host SSH, consulte [Espacios de trabajo locales y SSH](/es/docs/ssh).
+
+## NimoteCode 2.4.0
+
+Configuración unificada de funciones, paneles y plugins; avisos en la configuración Agent. Mejoras para tablets, Windows, colores horizontales y movimiento reducido.
+
+[2.4.0 →](/es/releases/2.4.0)

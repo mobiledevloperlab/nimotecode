@@ -52,3 +52,9 @@ Abra el menú de personalización para cambiar el nombre o color de una pestaña
 ## Terminal dividido e integrado
 
 Abre y ajusta varios paneles. Desde una ruta de archivo en la salida puedes abrirla en el IDE o enviar el texto seleccionado a la IA para analizarlo.
+
+## NimoteCode 2.4.0
+
+Mayor respuesta del terminal, actualizaciones sincronizadas, búsqueda, desplazamiento, Vim, portapapeles, pegado en Windows y teclado virtual.
+
+[2.4.0 →](/es/releases/2.4.0)

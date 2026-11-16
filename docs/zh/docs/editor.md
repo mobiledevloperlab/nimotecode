@@ -84,3 +84,9 @@ HTML 预览展示当前编辑内容的快照，包括未保存的修改。下图
 <div class="doc-screenshots">
   <DocScreenshot file="html-report-preview.jpg" caption="编辑器预览标签页中的 HTML 基准测试报告。" />
 </div>
+
+## NimoteCode 2.4.0
+
+改进会话历史，支持离线删除本地历史条目；优化远程保存及失败原因、长文件编辑，以及带底部导航的换行 Git Diff。
+
+[2.4.0 →](/zh/releases/2.4.0)

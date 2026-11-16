@@ -14,6 +14,12 @@ description: Product updates, new capabilities, fixes and compatibility notes fo
 
 ## 2026
 
+### 2.4.0 · 2026 年 11 月 16 日
+
+Host、プロジェクトタスク、リモート操作の安定性.
+
+[2.4.0 →](/ja/releases/2.4.0)
+
 ### バージョン 2.2.0 · 2026 年 11 月 2 日
 
 NimoteCode にネイティブ GitHub ワークフローが加わりました。サインイン、リポジトリとブランチの参照、ローカルまたは SSH ワークスペースへのクローンに加え、Issue、プルリクエスト、レビュー、CI を通じて共同作業できます。このリリースでは Android Local Linux 向けの実験的なコマンドライン、Python、Web ツールキットも追加し、GitHub と検索操作の信頼性を高め、ワークベンチのパネルと会話を統一しました。

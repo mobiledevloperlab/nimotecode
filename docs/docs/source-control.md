@@ -88,3 +88,11 @@ Open **AI Tools**, choose a provider and files, then select **Commit Message**, 
 ## Review Git changes on mobile
 
 Diff views, Source Control headings, and actions adapt to phone and tablet layouts so changes remain readable and review controls stay accessible on narrow screens.
+
+## NimoteCode 2.4.0
+
+Filter GitHub CI runs by branch and workflow and inspect step logs, error context, and incomplete-log notices.
+
+**Task inbox and GitHub Issues.** Review task status, verification evidence and diffs, continue or archive tasks, and dispatch GitHub Issues with the selected publication policy. Availability depends on Host version and configuration.
+
+[2.4.0 →](/releases/2.4.0)

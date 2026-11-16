@@ -90,3 +90,13 @@ Haz clic en **Select** para entrar en el modo de selección. Comprueba el espaci
 En hosts Windows, PowerShell y SFTP permiten trabajar con proyectos remotos. La búsqueda de archivos, Git y terminal necesitan las herramientas correspondientes en el host.
 
 [Configuración y diagnóstico de Windows 11](/es/docs/windows-ssh-sftp)
+
+## NimoteCode 2.4.0
+
+**Espacio Host.** Instala e inicia NimoteHost compatible en la máquina remota y conecta por SSH para buscar, fijar y retomar sesiones de terminal y Agent. Host es opcional.
+
+Verificación de claves SSH reforzada y mejor compatibilidad de Windows con known_hosts y servidores SSH modernos de macOS.
+
+[2.4.0 →](/es/releases/2.4.0)
+
+[Modo Host →](/es/docs/host) — Instalar NimoteHost, conectar por SSH y retomar terminales y tareas Agent.

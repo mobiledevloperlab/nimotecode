@@ -84,3 +84,9 @@ La vista previa de HTML muestra una instantánea del contenido actual, incluidos
 <div class="doc-screenshots">
   <DocScreenshot file="html-report-preview.jpg" caption="Informe de rendimiento HTML en una pestaña de vista previa del editor." />
 </div>
+
+## NimoteCode 2.4.0
+
+Historial más fiable con eliminación local sin conexión; guardado remoto con motivos de error, edición de archivos grandes y diffs ajustados con navegación inferior.
+
+[2.4.0 →](/es/releases/2.4.0)

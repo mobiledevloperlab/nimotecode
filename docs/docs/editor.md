@@ -84,3 +84,9 @@ The HTML preview shows a snapshot of the current editor contents, including unsa
 <div class="doc-screenshots">
   <DocScreenshot file="html-report-preview.jpg" caption="An HTML benchmark report displayed in an editor preview tab." />
 </div>
+
+## NimoteCode 2.4.0
+
+More reliable session history, offline deletion of local history entries, remote saves with failure reasons, large-file editing, and wrapped Git diffs with footer navigation.
+
+[2.4.0 →](/releases/2.4.0)

@@ -84,3 +84,9 @@ HTML 미리보기는 저장하지 않은 변경을 포함한 현재 편집 내�
 <div class="doc-screenshots">
   <DocScreenshot file="html-report-preview.jpg" caption="편집기 미리보기 탭에 표시된 HTML 벤치마크 보고서." />
 </div>
+
+## NimoteCode 2.4.0
+
+기록 안정성, 로컬 기록 오프라인 삭제, 원격 저장 오류 안내, 큰 파일 편집, 줄바꿈 diff 및 하단 탐색을 개선했습니다.
+
+[2.4.0 →](/ko/releases/2.4.0)

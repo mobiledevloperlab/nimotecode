@@ -12,3 +12,9 @@ Notifications indicate workspace activity that has completed or needs attention.
 ## Identify sessions
 
 Use descriptive names for [terminal tabs](/docs/terminal) and [Tasks](/docs/tasks) so that activity can be associated with the correct project. After reconnecting, confirm the host and directory before continuing.
+
+## NimoteCode 2.4.0
+
+**Alerts and editor preferences.** Configure Agent completion, confirmation, and failure alerts, sound and vibration subject to system settings, editor line numbers, and the landscape minimap. Pro is enabled by default on Windows.
+
+[2.4.0 →](/releases/2.4.0)

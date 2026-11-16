@@ -90,3 +90,13 @@ Remote Explorer에 표시된 호스트, 사용자, 포트, 루트 경로를 확�
 Windows 호스트에서는 PowerShell과 SFTP를 사용해 원격 프로젝트를 다룹니다. 파일 검색, Git, 터미널 등의 사용에는 호스트에 필요한 도구가 있어야 합니다.
 
 [Windows 11 설정 및 문제 해결](/ko/docs/windows-ssh-sftp)
+
+## NimoteCode 2.4.0
+
+**Host 작업 공간.** 원격 컴퓨터에 호환 NimoteHost를 설치하고 시작한 뒤 SSH로 연결해 터미널 및 Agent 세션을 검색, 고정하고 다시 시작합니다. Host는 선택 기능입니다.
+
+SSH 호스트 키 검증, Windows known_hosts 동시 접근과 최신 macOS SSH 서버 연결을 개선했습니다.
+
+[2.4.0 →](/ko/releases/2.4.0)
+
+[Host 모드 →](/ko/docs/host) — NimoteHost 설치, SSH 연결, 터미널 및 Agent 사용법.

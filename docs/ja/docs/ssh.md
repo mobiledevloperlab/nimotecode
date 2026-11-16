@@ -90,3 +90,13 @@ Remote Explorer のホスト、ユーザー、ポート、ルートパスを確�
 Windows ホストでは PowerShell と SFTP を利用してリモートプロジェクトを操作します。ファイル検索、Git、ターミナルなどの利用にはホスト側の対応環境が必要です。
 
 [Windows 11 の設定とトラブルシューティング](/ja/docs/windows-ssh-sftp)
+
+## NimoteCode 2.4.0
+
+**Host ワークスペース。** リモートに対応する NimoteHost をインストールして起動し、SSH で接続すると、ターミナルや Agent セッションの検索、固定、再開ができます。Host は任意の機能です。
+
+SSH ホスト鍵の検証、Windows の known_hosts 同時アクセス、最新 macOS SSH サーバーへの接続を改善。
+
+[2.4.0 →](/ja/releases/2.4.0)
+
+[Host モード →](/ja/docs/host) — NimoteHost の導入、SSH 接続、ターミナルと Agent の使い方。

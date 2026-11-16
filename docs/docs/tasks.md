@@ -23,3 +23,11 @@ Tasks stores named commands and groups them by purpose. Add a task with the **+*
 ## Run and inspect output
 
 Use the play control beside a task and inspect its terminal output. A task name is a label, not a validation of the command: check the command and working directory before using it. Basic task creation and execution do not require a separate Pro tier.
+
+## NimoteCode 2.4.0
+
+**Project task runner.** Discover supported tasks from package.json, Taskfile, Makefile, justfile, and .vscode/tasks.json. Run them in workspace terminals; Make/just dynamic discovery requires explicit confirmation.
+
+[2.4.0 →](/releases/2.4.0)
+
+[Host mode →](/docs/host) — Install NimoteHost, connect over SSH, and return to terminals and Agent tasks.

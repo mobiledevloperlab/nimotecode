@@ -23,3 +23,9 @@ Select **Test chat connection** to send a short test prompt. The test does not s
 ## General settings
 
 AI Configuration also includes chat-history autosave and AI privacy settings. MCP tool-server settings are covered in [AI Chat, Agent, MCP, and external agents](/docs/ai#connect-mcp-tools-carefully). Review these separately from the model’s sampling and output settings. For SSH host configuration, follow [Local and SSH workspaces](/docs/ssh).
+
+## NimoteCode 2.4.0
+
+Unified application configuration for core features, panels, and plugins; Agent alerts are under Agent configuration. Refined tablet and Windows layouts, landscape colors, and reduced-motion support.
+
+[2.4.0 →](/releases/2.4.0)

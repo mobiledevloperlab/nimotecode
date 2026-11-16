@@ -72,3 +72,11 @@ Panel navigation, LSP operations, and native configured Tasks remain foreground 
 ## Versioned contributions and Agent workflows
 
 Plugins can declare versioned contributions and dependencies. NimoteCode validates them before installation and presents permission changes for review. Approved plugin tools, skills, and workflows can be made available to the embedded Agent; workspace events can start controlled automation workflows.
+
+## NimoteCode 2.4.0
+
+**Host plugins.** Open compatible Host plugins from the sidebar, with versioned forms, paginated tables, details, interactive views, and permission checks.
+
+[2.4.0 →](/releases/2.4.0)
+
+[Host mode →](/docs/host) — Install NimoteHost, connect over SSH, and return to terminals and Agent tasks.

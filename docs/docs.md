@@ -18,6 +18,7 @@ Start with [Quick start](/docs/quick-start) to open a workspace, edit a file and
 
 | Topic | Contents |
 | --- | --- |
+| [Host mode](/docs/host) | Install NimoteHost, connect over SSH, and return to terminals and Agent tasks. |
 | [Quick start](/docs/quick-start) | Open a workspace; Open and edit a file; Run a command; Run AI Agent |
 | [Local and SSH workspaces](/docs/ssh) | Choose a workspace; Open a local folder; Configure an SSH connection |
 | [Code editor](/docs/editor) | Open files and switch tabs; Select and edit text; Navigate symbols and history |

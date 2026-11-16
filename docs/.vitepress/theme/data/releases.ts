@@ -1,46 +1,46 @@
 export const latestRelease = {
-  version: '2.3.0',
-  date: {
-    en: 'November 7, 2026',
-    zh: '2026 年 11 月 7 日',
-    es: '7 de noviembre de 2026',
-    ja: '2026 年 11 月 7 日',
-    ko: '2026년 11월 7일'
+  "version": "2.4.0",
+  "date": {
+    "en": "November 16, 2026",
+    "zh": "2026 年 11 月 16 日",
+    "es": "16 de noviembre de 2026",
+    "ja": "2026 年 11 月 16 日",
+    "ko": "2026년 11월 16일"
   },
-  homeSummary: {
-    en: 'Switchable IDE, Terminal, and AI workspaces, Windows SSH, Docker management, and Dev Containers.',
-    zh: 'IDE、终端与 AI 工作区切换、Windows SSH、Docker 管理和 Dev Containers。',
-    es: 'Modos IDE, Terminal e IA, Windows SSH, administración Docker y Dev Containers.',
-    ja: 'IDE、ターミナル、AI の切替、Windows SSH、Docker 管理、Dev Containers。',
-    ko: 'IDE, 터미널, AI 모드 전환, Windows SSH, Docker 관리 및 Dev Containers.'
+  "homeSummary": {
+    "en": "Host workspace, project tasks, and remote reliability",
+    "zh": "Host 工作区、项目任务与远程可靠性",
+    "es": "Host, tareas de proyecto y fiabilidad remota",
+    "ja": "Host、プロジェクトタスク、リモート操作の安定性",
+    "ko": "Host, 프로젝트 작업 및 원격 안정성"
   },
-  build: '62',
-  newCount: 6,
-  highlights: {
+  "build": "65",
+  "newCount": 6,
+  "highlights": {
+    "en": [
+      "Host workspace.",
+      "Task inbox and GitHub Issues.",
+      "Project task runner."
+    ],
     "zh": [
-      "IDE、终端和 AI 模式，保留项目与资源管理器状态",
-      "Windows SSH：PowerShell 与 SFTP 工作区",
-      "SSH 主机 Docker 管理与 Dev Containers"
+      "Host 工作区。",
+      "任务收件箱与 GitHub Issue。",
+      "项目任务运行器。"
     ],
     "es": [
-      "Modos IDE, Terminal e IA con el mismo proyecto",
-      "Windows SSH con PowerShell y SFTP",
-      "Docker y Dev Containers en hosts SSH"
+      "Espacio Host.",
+      "Bandeja de tareas e Issues de GitHub.",
+      "Tareas de proyecto."
     ],
     "ja": [
-      "プロジェクト状態を維持する IDE・ターミナル・AI モード",
-      "PowerShell と SFTP による Windows SSH",
-      "SSH ホストの Docker 管理と Dev Containers"
+      "Host ワークスペース。",
+      "タスク受信箱と GitHub Issue。",
+      "プロジェクトタスク。"
     ],
     "ko": [
-      "프로젝트 상태를 유지하는 IDE·터미널·AI 모드",
-      "PowerShell 및 SFTP 기반 Windows SSH",
-      "SSH 호스트의 Docker 관리 및 Dev Containers"
-    ],
-    "en": [
-      "IDE, Terminal, and AI modes with shared project state",
-      "Windows SSH workspaces with PowerShell and SFTP",
-      "Docker management and Dev Containers on SSH hosts"
+      "Host 작업 공간.",
+      "작업 수신함과 GitHub Issue.",
+      "프로젝트 작업."
     ]
   }
 } as const

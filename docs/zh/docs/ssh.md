@@ -89,3 +89,13 @@ Explorer 提供本地、远程 SSH、Local Linux 和演示入口，Recent Histor
 Windows 主机通过 PowerShell 和 SFTP 提供远程工作区操作。在主机及账户具备所需工具和权限时，可使用文件浏览与搜索、Git、终端、语言服务和 Agent 工作流。
 
 [Windows 11 配置与故障排查](/zh/docs/windows-ssh-sftp)
+
+## NimoteCode 2.4.0
+
+**Host 工作区。** 先在远程机器安装并启动兼容的 NimoteHost，再通过 SSH 浏览、搜索、固定和恢复终端与 Agent 会话。Host 为可选功能，原有 SSH 工作流仍可使用。
+
+加强 SSH 主机密钥校验、Windows known_hosts 并发访问，以及 Windows 连接现代 macOS SSH 服务器的兼容性。
+
+[2.4.0 →](/zh/releases/2.4.0)
+
+[Host 模式 →](/zh/docs/host) — 安装 NimoteHost，通过 SSH 连接，创建终端、运行任务和使用 Agent。

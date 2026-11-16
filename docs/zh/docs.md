@@ -18,6 +18,7 @@ description: NimoteCode 工作区、编辑器、终端、Git、AI、插件及诊
 
 | 主题 | 内容 |
 | --- | --- |
+| [Host 模式](/zh/docs/host) | 安装 NimoteHost，通过 SSH 连接，创建终端、运行任务和使用 Agent。 |
 | [快速开始](/zh/docs/quick-start) | 打开工作区、打开并编辑文件、运行命令、运行 AI Agent |
 | [本地与 SSH 工作区](/zh/docs/ssh) | 选择工作区、打开本地目录、配置 SSH 连接 |
 | [代码编辑器](/zh/docs/editor) | 打开文件与切换标签页、选择与编辑文本、符号导航与历史记录 |

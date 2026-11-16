@@ -70,3 +70,11 @@ Android 支持在 SSH 和 Android Local Linux 目标上运行可恢复的插件�
 ## 带版本的贡献与 Agent 工作流
 
 插件可声明带版本的贡献和依赖，NimoteCode 会在安装前校验，并供你审查权限变化。经批准的插件工具、技能和工作流可提供给内嵌 Agent；工作区事件也可启动受控自动化流程。
+
+## NimoteCode 2.4.0
+
+**Host 插件。** 从侧边栏访问兼容插件，使用带版本的表单、分页表格、详情和交互界面，并沿用权限校验。
+
+[2.4.0 →](/zh/releases/2.4.0)
+
+[Host 模式 →](/zh/docs/host) — 安装 NimoteHost，通过 SSH 连接，创建终端、运行任务和使用 Agent。

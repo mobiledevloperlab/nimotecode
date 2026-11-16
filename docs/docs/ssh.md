@@ -89,3 +89,13 @@ When you need to select files, click **Select** to enter selection mode. Verify 
 Windows hosts use PowerShell and SFTP for remote workspace operations. File browsing and search, Git, terminal commands, language services, and Agent workflows are available where the host and account provide the required tools and permissions.
 
 [Windows 11 setup and troubleshooting](/docs/windows-ssh-sftp)
+
+## NimoteCode 2.4.0
+
+**Host workspace.** Install and start a compatible NimoteHost on your remote machine, then connect over SSH to browse, search, pin, and resume terminal and Agent sessions. Host is optional and existing SSH workflows remain available.
+
+Strengthened SSH host key verification, concurrent known_hosts access on Windows, and Windows connections to modern macOS SSH servers.
+
+[2.4.0 →](/releases/2.4.0)
+
+[Host mode →](/docs/host) — Install NimoteHost, connect over SSH, and return to terminals and Agent tasks.

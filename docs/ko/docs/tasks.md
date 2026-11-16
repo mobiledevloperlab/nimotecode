@@ -23,3 +23,11 @@ Tasks는 명령에 이름을 붙여 저장하고 용도별로 그룹화합니다
 ## 실행 및 출력 확인
 
 작업 옆의 실행 버튼을 누르고 터미널 출력을 확인합니다. 작업 이름은 레이블일 뿐 명령을 검증하지 않습니다. 실행 전에 명령과 작업 디렉터리를 확인하세요. 기본 작업 생성 및 실행에는 Pro가 필요하지 않습니다.
+
+## NimoteCode 2.4.0
+
+**프로젝트 작업.** package.json, Taskfile, Makefile, justfile 및 .vscode/tasks.json에서 지원되는 작업을 찾아 터미널에서 실행합니다. Make/just 동적 탐색은 명시적 확인이 필요합니다.
+
+[2.4.0 →](/ko/releases/2.4.0)
+
+[Host 모드 →](/ko/docs/host) — NimoteHost 설치, SSH 연결, 터미널 및 Agent 사용법.
