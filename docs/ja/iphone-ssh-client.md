@@ -1,13 +1,13 @@
 ---
 title: "iPhone SSH クライアント：SFTP・編集・Git | NimoteCode"
 description: "NimoteCode の iPhone 版で SSH 接続、SFTP ファイル参照、コード編集、ホストのコマンド実行と Git レビュー。設定手順と App Store へのリンクを紹介。"
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
 # iPhone SSH クライアントでプロジェクトを編集する
 
-外出中にサーバーの設定やスクリプト、リポジトリを確認したいとき、NimoteCode では SSH ターミナル、リモートファイル、コード編集、Git レビュー、任意の AI 支援を一つの iPhone ワークスペースで使えます。プロジェクトはホストに置いたまま操作します。
+NimoteCode は iPhone から SSH で Windows、macOS、Linux ホストに接続します。同じワークスペースで SFTP によるファイル参照、コード編集、ホスト上のコマンド実行、Git 差分確認を行えます。リポジトリと実行環境はリモートマシンに置いたまま使います。
 
 コマンドだけなら専用ターミナルで足りる場合があります。ファイルを探して編集し、検証して差分まで読む作業に NimoteCode が役立ちます。
 
@@ -15,7 +15,7 @@ pageClass: "seo-product-guide"
   <a href="/images/ios/iphone-ssh.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-ssh.webp" width="660" height="1433" alt="iPhone の NimoteCode Remote Explorer に表示された SSH 接続先とプロジェクト。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone の NimoteCode Remote Explorer に表示された SSH 接続先とプロジェクト。 出典：NimoteCode の App Store 掲載画像。宣伝用スクリーンショットであり、連続した操作の記録ではありません。</figcaption>
+  <figcaption>iPhone の NimoteCode Remote Explorer に表示された SSH 接続先とプロジェクト。 出典：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode の App Store 掲載画像</a>。</figcaption>
 </figure>
 
 ## 開発ホストに接続する
@@ -68,7 +68,6 @@ iOS はバックグラウンドのアプリを停止する場合があります�
   <p><strong>NimoteCode をダウンロード</strong></p>
   <p class="seo-cta-actions">
     <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">App Store</a>
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">Google Play</a>
     <a href="/ja/docs/quick-start" class="home-page-btn secondary">クイックスタート</a>
   </p>
 </div>

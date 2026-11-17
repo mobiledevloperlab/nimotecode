@@ -1,7 +1,7 @@
 ---
 title: "Programar desde el móvil: archivos, Linux o SSH | NimoteCode"
 description: "Empieza a programar en Android o iPhone. Elige edición local, Local Linux en Android o SSH y ejecuta tu primer script Python en el entorno adecuado."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -23,7 +23,7 @@ Local Linux utiliza PRoot sin root y no está disponible en iPhone o iPad. Un ed
   <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="Edición en iPhone; ejecutar necesita un entorno configurado." loading="lazy" decoding="async">
   </a>
-  <figcaption>Edición en iPhone; ejecutar necesita un entorno configurado. Fuente: ficha de NimoteCode en App Store. Captura promocional; no es una grabación continua.</figcaption>
+  <figcaption>Edición en iPhone; ejecutar necesita un entorno configurado. Fuente: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">capturas de NimoteCode en App Store</a>.</figcaption>
 </figure>
 
 ## Tu primer script Python

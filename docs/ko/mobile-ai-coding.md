@@ -1,13 +1,13 @@
 ---
 title: "모바일 AI 코딩: Chat, Agent, ACP | NimoteCode"
 description: "NimoteCode의 AI Chat, Nimote Agent와 외부 ACP를 작업별로 선택하세요. 모델 설정, 실행 환경, 계획 승인과 Git 검증을 설명합니다."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
 # 모바일 AI 코딩의 모드와 실행 환경
 
-함수 설명과 파일을 읽고 검증을 실행하는 작업은 다릅니다. NimoteCode는 편집기, 터미널, Git과 함께 Chat, 내장 Nimote Agent와 호환 외부 ACP Agent를 제공합니다. 요청 전에 모드와 실행 위치를 정하세요.
+NimoteCode는 코드 설명을 위한 AI Chat, 작업 공간에서 도구를 사용하는 Nimote Agent, 호환 외부 에이전트에 연결하는 ACP를 제공합니다. 편집기, 터미널, Git 도구와 함께 사용할 수 있습니다. 작업에 맞는 모드를 선택하고 제공업체나 실행 환경을 설정한 뒤 사용할 작업 공간을 확인하세요.
 
 ## Chat과 Agent 선택
 
@@ -27,7 +27,7 @@ pageClass: "seo-product-guide"
   <a href="/images/ios/iphone-agents.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-agents.webp" width="660" height="1433" alt="iPhone NimoteCode의 내장 및 외부 Agent 선택 화면." loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone NimoteCode의 내장 및 외부 Agent 선택 화면. 출처: NimoteCode App Store 등록 이미지. 연속 작업 기록이 아닌 홍보 스크린샷입니다.</figcaption>
+  <figcaption>iPhone NimoteCode의 내장 및 외부 Agent 선택 화면. 출처: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 등록 이미지</a>.</figcaption>
 </figure>
 
 ## 읽기 전용 요청부터 시작

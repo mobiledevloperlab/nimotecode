@@ -1,7 +1,7 @@
 ---
 title: "Programar en iPad con SSH, editor, Git e IA | NimoteCode"
 description: "Programa con NimoteCode en iPad: explorador, editor dividido, terminal SSH y revisión Git. Conoce la ejecución remota, las limitaciones de iPadOS y los primeros pasos."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -15,7 +15,7 @@ Para una nota puede bastar un editor sencillo. Para cambiar un proyecto, decide 
   <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
     <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="Vista de NimoteCode para iPad en App Store, con navegación del proyecto y edición." loading="lazy" decoding="async">
   </a>
-  <figcaption>Vista de NimoteCode para iPad en App Store, con navegación del proyecto y edición. Fuente: ficha de NimoteCode en App Store. Captura promocional; no es una grabación continua.</figcaption>
+  <figcaption>Vista de NimoteCode para iPad en App Store, con navegación del proyecto y edición. Fuente: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">capturas de NimoteCode en App Store</a>.</figcaption>
 </figure>
 
 ## Elige edición local o proyecto remoto
@@ -46,7 +46,7 @@ Mantén archivos relacionados en pestañas y compara implementación, configurac
   <a href="/images/ios/ipad-git.webp" target="_blank" rel="noopener">
     <img src="/images/ios/ipad-git.webp" width="1200" height="899" alt="Vista para iPad en App Store con herramientas Git AI y análisis de cambios." loading="lazy" decoding="async">
   </a>
-  <figcaption>Vista para iPad en App Store con herramientas Git AI y análisis de cambios. Fuente: ficha de NimoteCode en App Store. Captura promocional; no es una grabación continua.</figcaption>
+  <figcaption>Vista para iPad en App Store con herramientas Git AI y análisis de cambios. Fuente: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">capturas de NimoteCode en App Store</a>.</figcaption>
 </figure>
 
 ## Añade IA cuando ayude
@@ -81,7 +81,6 @@ Puedes empezar con edición local o SSH y la terminal básica. Algunas funciones
   <p><strong>Descargar NimoteCode</strong></p>
   <p class="seo-cta-actions">
     <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">App Store</a>
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">Google Play</a>
     <a href="/es/docs/quick-start" class="home-page-btn secondary">Guía de inicio</a>
   </p>
 </div>

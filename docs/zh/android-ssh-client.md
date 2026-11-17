@@ -1,41 +1,91 @@
 ---
-title: "Android SSH 客户端：终端、SFTP 与代码编辑 | NimoteCode"
-description: "用 NimoteCode 从 Android 连接 Linux、Mac 和 Windows，配置 SSH 认证、通过 SFTP 浏览文件、编辑代码并验证远程项目。"
-lastUpdated: "2026-11-13"
+title: "Android SSH 客户端：终端、SFTP 与代码编辑器 | NimoteCode"
+description: "使用 NimoteCode 从 Android 连接 Linux、macOS 或 Windows，通过 SSH 执行命令、通过 SFTP 浏览和编辑文件，并在远程工作区审查 Git 变更。"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
-# Android SSH 客户端：终端与文件操作一起完成
+# Android SSH 客户端：终端、SFTP 与代码编辑器
 
-需要在 Android 上运行服务器命令或修改远程配置？NimoteCode 将 SSH 终端、SFTP 文件浏览、代码编辑和 Git 审查放在一起。只执行命令时独立终端已经足够，需要操作项目文件和变更时可选择项目工作区。
+NimoteCode 让 Android 手机或平板通过 SSH 连接远程主机。在同一个应用中执行终端命令、通过 SFTP 浏览项目文件、编辑代码；仓库、依赖和构建工具保留在主机上。
 
-## 创建并验证连接
+离开电脑时，可以用它检查服务、修改配置文件或处理代码变更。需要操作整个项目时，将仓库打开为远程工作区，便可在使用终端的同时浏览文件、检查修改。
 
-填写主机、SSH 端口、账号及主机允许的认证方式，首次连接核对主机指纹。端口测试只检查直连 TCP 可达性，不进行账号认证，也不能证明 SFTP 可用。连接后选择仓库根目录。
+## 执行命令，处理项目文件
+
+| 任务 | 在 NimoteCode 中的操作 |
+| --- | --- |
+| 执行命令 | 通过 SSH 终端使用主机的 Shell 和已安装的工具。 |
+| 浏览远程文件 | 在远程资源管理器中选择目录，通过 SFTP 访问文件。 |
+| 编辑代码或配置 | 在编辑器中打开远程文件，保存时写回主机；账号需具备对应的写入权限。 |
+| 审查变更 | 提交前在源代码管理中查看差异。主机需安装 Git，部分高级 Git 功能可能需要 Pro。 |
+
+Linux 和 macOS 使用主机配置的 Shell。Windows 工作区使用 PowerShell 与 SFTP；服务端安装、防火墙和文件访问设置见 [Windows OpenSSH 指南](/zh/docs/windows-ssh-sftp)。
+
+## 从 Android 连接 SSH 主机
+
+连接前，先在主机上启用 SSH 服务，确认账号能够访问项目目录。主机需要保持唤醒，并能从 Android 设备所在的网络访问。
+
+1. 在 NimoteCode 中选择 **Connect Remote Workspace**，再选择 **Connect**，新建连接配置。
+2. 填写主机地址、SSH 端口、用户名，以及服务端允许的认证方式。两台设备处于同一局域网时，使用主机当前的 Wi-Fi 或以太网地址。
+3. 首次连接时，将主机密钥指纹与通过可信渠道取得的服务端记录核对，确认后再接受连接。
+4. 连接后，在 **Remote Directory** 中选择项目目录。Git 项目应选择仓库根目录。
+5. 开始编辑前，检查远程资源管理器显示的主机、账号和根目录路径。
 
 <div class="doc-screenshots">
-  <DocScreenshot file="remote-connection-form.jpg" caption="Android SSH 连接表单，包含端口测试和认证设置。" />
+  <DocScreenshot file="remote-connection-form.jpg" caption="SSH 连接设置：主机、端口、用户名、认证方式及可选代理。" />
+  <DocScreenshot file="remote-workspace-connected.jpg" caption="远程资源管理器显示已连接的主机和选定的项目根目录。" />
 </div>
 
-## 使用正确地址与权限
+**端口测试的作用：** **Ping / test SSH port** 只测试到指定主机和端口的直连 TCP 连接，不测试已配置的代理、不验证账号，也不检查 SFTP。测试通过仅表示这一步网络检查成功。
 
-同一局域网使用主机当前 Wi-Fi 或以太网地址，外网访问需 VPN 等安全网络通路，主机需保持唤醒。密码、密钥和账号限制遵循服务端策略，SFTP 保存还取决于文件系统写权限。
+从主机所在局域网之外访问时，需先配置 VPN 等安全网络通路。网络要求使用代理时，可在连接表单中设置 SOCKS5 或 HTTP CONNECT。具体设置见 [SSH 工作区说明](/zh/docs/ssh)。
 
-Windows 使用 PowerShell 与 SFTP，可按 [Windows 指南](/zh/docs/windows-ssh-sftp)安装 OpenSSH 并检查防火墙。Mac 与 Linux 使用主机配置的 Shell。
+## 用一次实际修改验证连接
 
-## 验证完整文件工作流
+在自己有权限的测试目录中打开文件，做一处小修改并保存，再次打开，确认内容已写入。这样可以单独验证文件访问和写入权限，避免把终端连接成功当成文件操作正常。
 
-在用户目录打开和保存测试文件，另行确认终端目录，执行项目约定检查，提交前在源代码管理查看变更。命令使用主机工具，Git、语言服务和外部 Agent 需安装并获得对应权限。
+执行命令前，在终端中确认当前目录和 Git 分支。Linux 或 macOS 可以使用：
 
-完整连接与错误排查见[远程编程配置](/zh/remote-coding)。没有单独主机时可了解 [Android IDE 与本地 Linux](/zh/android-ide)，更多功能见 [SSH IDE](/zh/ssh-ide)。
+```sh
+pwd
+git status --short --branch
+```
 
-可以从本地或 SSH 编辑及基础终端开始。部分功能需要 Pro，参见[免费版与 Pro](/zh/pro)及应用内显示的访问状态。AI 需要配置自己的模型提供商，模型使用费用由提供商另行收取。
+在主机上执行项目规定的检查，提交前再查看差异。终端调用的是主机上已安装的软件；Git、语言服务和外部编程 Agent 均需另行安装、配置，并具备相应权限。
+
+## Android SSH 常见故障排查
+
+| 现象 | 检查项 |
+| --- | --- |
+| 连接超时 | 主机是否开机或休眠，地址是否正确，VPN、防火墙及网络隔离设置是否影响访问。 |
+| 连接被拒绝 | SSH 服务是否运行，是否监听所填写的端口。 |
+| 认证失败 | 用户名、密码或密钥是否正确，是否符合服务端的账号及认证策略。 |
+| 终端可用，但文件打不开 | 服务端是否启用 SFTP，账号是否有权访问选定目录。 |
+| 文件能打开，但无法保存 | 文件归属、写入权限，以及文件系统是否只读。 |
+| 项目命令执行失败 | 终端当前目录、主机上的依赖和工具执行权限。 |
+
+完整的连接与验证流程见[远程编程配置指南](/zh/remote-coding)。
+
+## 常见问题
+
+### 必须有另一台电脑或服务器吗？
+
+使用 SSH 时需要。NimoteCode 连接已有的 SSH 主机，构建和运行命令都在该主机上执行。如果希望完全在支持的 Android 设备上工作，可查看 [Android IDE 与本地 Linux](/zh/android-ide)。
+
+### 终端连接成功，是否代表 SFTP 也能使用？
+
+不一定。SSH Shell 和 SFTP 文件访问取决于各自的服务端设置。账号还需要项目目录的读取权限，以及待修改文件的写入权限。
+
+### 免费版可以做什么？
+
+免费版包含本地与 SSH 工作区、文件编辑和基础终端。高级 Git 工作流、多终端和语言服务等功能可能需要 Pro。具体以[免费版与 Pro](/zh/pro)说明及应用内当前账号显示的可用功能为准。
 
 <div class="seo-cta">
-  <p><strong>下载 NimoteCode</strong></p>
+  <p><strong>安装 Android 版 NimoteCode</strong></p>
+  <p>连接 SSH 主机，打开项目目录即可开始工作。</p>
   <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Google Play</a>
-    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">前往 Google Play</a>
     <a href="/zh/docs/quick-start" class="home-page-btn secondary">快速入门</a>
   </p>
 </div>

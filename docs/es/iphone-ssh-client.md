@@ -1,13 +1,13 @@
 ---
 title: "Cliente SSH para iPhone con SFTP, editor y Git | NimoteCode"
 description: "Conecta NimoteCode en iPhone por SSH, explora archivos con SFTP, edita código, ejecuta comandos del equipo remoto y revisa Git. Configuración y descarga en App Store."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
 # Cliente SSH para iPhone: trabaja en tu proyecto
 
-¿Necesitas consultar un archivo del servidor, corregir un script o revisar un repositorio fuera de casa? NimoteCode reúne terminal SSH, explorador remoto, editor, revisión Git e IA opcional en un espacio para iPhone. El proyecto permanece en el equipo remoto y el teléfono proporciona la interfaz.
+NimoteCode conecta tu iPhone por SSH a un equipo Windows, macOS o Linux. Explora archivos por SFTP, edita código, ejecuta comandos y revisa cambios Git en el mismo espacio. El repositorio y su entorno de ejecución permanecen en el equipo remoto.
 
 Para ejecutar solo comandos puede bastar una terminal dedicada. NimoteCode resulta útil cuando también necesitas encontrar un archivo, editarlo, comprobar el resultado y revisar los cambios.
 
@@ -15,7 +15,7 @@ Para ejecutar solo comandos puede bastar una terminal dedicada. NimoteCode resul
   <a href="/images/ios/iphone-ssh.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-ssh.webp" width="660" height="1433" alt="Remote Explorer de NimoteCode en iPhone con el proyecto y la conexión SSH." loading="lazy" decoding="async">
   </a>
-  <figcaption>Remote Explorer de NimoteCode en iPhone con el proyecto y la conexión SSH. Fuente: ficha de NimoteCode en App Store. Captura promocional; no es una grabación continua.</figcaption>
+  <figcaption>Remote Explorer de NimoteCode en iPhone con el proyecto y la conexión SSH. Fuente: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">capturas de NimoteCode en App Store</a>.</figcaption>
 </figure>
 
 ## Conecta el iPhone a tu equipo de desarrollo
@@ -68,7 +68,6 @@ Puedes empezar con edición local o SSH y la terminal básica. Algunas funciones
   <p><strong>Descargar NimoteCode</strong></p>
   <p class="seo-cta-actions">
     <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">App Store</a>
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">Google Play</a>
     <a href="/es/docs/quick-start" class="home-page-btn secondary">Guía de inicio</a>
   </p>
 </div>

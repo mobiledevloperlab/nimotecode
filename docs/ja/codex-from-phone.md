@@ -1,7 +1,7 @@
 ---
 title: "スマートフォンから SSH で Codex を使う | NimoteCode"
 description: "開発ホストで Codex を動かし、Android や iPhone の NimoteCode から操作。設定、再接続、Git レビュー、トラブル対処を説明します。"
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -42,7 +42,7 @@ git status --short --branch
   <a href="/images/ios/iphone-terminal.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-terminal.webp" width="660" height="1433" alt="iPhone の NimoteCode SSH ターミナル。Codex の実行記録ではなく Shell の画面例です。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone の NimoteCode SSH ターミナル。Codex の実行記録ではなく Shell の画面例です。 出典：NimoteCode の App Store 掲載画像。宣伝用スクリーンショットであり、連続した操作の記録ではありません。</figcaption>
+  <figcaption>iPhone の NimoteCode SSH ターミナル。Codex の実行記録ではなく Shell の画面例です。 出典：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode の App Store 掲載画像</a>。</figcaption>
 </figure>
 
 ## 3. ホスト側のセッションで開始する
@@ -118,7 +118,7 @@ Nimote Agent の Confirm は内蔵 Agent の制御です。手入力の SSH コ�
 
 <!-- faq:end -->
 
-ローカル／SSH ファイルの編集と基本ターミナルから始められます。一部機能には Pro が必要です。[無料版と Pro](/ja/pro)およびアプリ内の利用状態を確認してください。AI にはモデル提供元の設定が必要で、利用料は提供元が別途請求します。
+無料プランにはローカル・SSH 編集と基本ターミナルが含まれます。高度な Git 操作などは[無料版と Pro](/ja/pro)を確認してください。Claude Code と Codex のアカウント・料金は各サービスで管理されます。SSH ターミナルでの実行に NimoteCode のモデル提供元設定は不要です。
 
 <div class="seo-cta">
   <p><strong>NimoteCode をダウンロード</strong></p>

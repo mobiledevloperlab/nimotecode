@@ -95,7 +95,7 @@ export const placeholderImages = {
   },
   sshIde: {
     phone: {
-      src: '/images/placeholders/local-file-browser.png',
+      src: '/images/placeholders/remote-workspace-connected.jpg',
       width: PHONE_WIDTH,
       height: PHONE_HEIGHT
     }
@@ -108,18 +108,10 @@ export const placeholderImages = {
     }
   },
   iphoneSshClient: {
-    phone: {
-      src: '/images/placeholders/local-file-browser.png',
-      width: PHONE_WIDTH,
-      height: PHONE_HEIGHT
-    }
+    phone: { src: '/images/ios/iphone-ssh.webp', width: 660, height: 1433 }
   },
   ipadCoding: {
-    phone: {
-      src: '/images/placeholders/workspace-start-light.png',
-      width: PHONE_WIDTH,
-      height: PHONE_HEIGHT
-    }
+    ipad: { src: '/images/ios/ipad-workspace.webp', width: 1200, height: 899 }
   },
   mobileAiCoding: {
     phone: {
@@ -130,14 +122,14 @@ export const placeholderImages = {
   },
   claudeCodeFromPhone: {
     phone: {
-      src: '/images/placeholders/ai-chat-welcome.png',
+      src: '/images/placeholders/terminal-command-output.png',
       width: PHONE_WIDTH,
       height: PHONE_HEIGHT
     }
   },
   codexFromPhone: {
     phone: {
-      src: '/images/placeholders/ai-chat-welcome.png',
+      src: '/images/placeholders/terminal-command-output.png',
       width: PHONE_WIDTH,
       height: PHONE_HEIGHT
     }
@@ -217,7 +209,7 @@ export const placeholderImages = {
     phone: { src: '/images/placeholders/workspace-start-light.png', width: SCREENSHOT_PHONE_WIDTH, height: SCREENSHOT_PHONE_HEIGHT }
   },
   explorerPopup: {
-    phone: { src: '/images/placeholders/workspace-start-dark.jpg', width: SCREENSHOT_PHONE_WIDTH, height: SCREENSHOT_PHONE_HEIGHT }
+    phone: { src: '/images/placeholders/workspace-start-light.png', width: SCREENSHOT_PHONE_WIDTH, height: SCREENSHOT_PHONE_HEIGHT }
   },
   remoteDirectory: {
     phone: { src: '/images/placeholders/remote-directory-picker.jpg', width: SCREENSHOT_PHONE_WIDTH, height: SCREENSHOT_PHONE_HEIGHT }

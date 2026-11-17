@@ -1,7 +1,7 @@
 ---
 title: "スマートフォンのリモート開発：SSH 設定と診断 | NimoteCode"
 description: "Android、iPhone、iPad のリモート開発を設定。SSH ホスト、SFTP、ルート選択、検証とネットワーク・認証の問題を順に確認します。"
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -28,7 +28,7 @@ git status --short --branch
   <a href="/images/ios/iphone-ssh.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-ssh.webp" width="660" height="1433" alt="iPhone の Remote Explorer に表示された SSH プロジェクト。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone の Remote Explorer に表示された SSH プロジェクト。 出典：NimoteCode の App Store 掲載画像。宣伝用スクリーンショットであり、連続した操作の記録ではありません。</figcaption>
+  <figcaption>iPhone の Remote Explorer に表示された SSH プロジェクト。 出典：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode の App Store 掲載画像</a>。</figcaption>
 </figure>
 
 ## 3. 一つの変更を検証

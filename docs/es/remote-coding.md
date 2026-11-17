@@ -1,7 +1,7 @@
 ---
 title: "Desarrollo remoto desde el móvil: configurar SSH | NimoteCode"
 description: "Configura desarrollo remoto en Android, iPhone o iPad: host SSH, acceso SFTP, repositorio, comprobaciones y diagnóstico de red y autenticación."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -28,7 +28,7 @@ git status --short --branch
   <a href="/images/ios/iphone-ssh.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-ssh.webp" width="660" height="1433" alt="Remote Explorer en iPhone con el proyecto SSH conectado." loading="lazy" decoding="async">
   </a>
-  <figcaption>Remote Explorer en iPhone con el proyecto SSH conectado. Fuente: ficha de NimoteCode en App Store. Captura promocional; no es una grabación continua.</figcaption>
+  <figcaption>Remote Explorer en iPhone con el proyecto SSH conectado. Fuente: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">capturas de NimoteCode en App Store</a>.</figcaption>
 </figure>
 
 ## 3. Verifica un cambio real

@@ -1,7 +1,7 @@
 ---
 title: "手机与平板远程编程：SSH 配置与排障 | NimoteCode"
 description: "配置 Android、iPhone 和 iPad 远程编程：准备 SSH 主机、验证 SFTP、选择仓库、运行检查，并按网络、账号和运行环境排查问题。"
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -28,7 +28,7 @@ git status --short --branch
   <a href="/images/ios/iphone-ssh.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-ssh.webp" width="660" height="1433" alt="iPhone Remote Explorer 显示已连接的 SSH 项目。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone Remote Explorer 显示已连接的 SSH 项目。 来源：NimoteCode App Store 页面。此图为宣传截图，不是连续操作录屏。</figcaption>
+  <figcaption>iPhone Remote Explorer 显示已连接的 SSH 项目。 图片来源：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 页面</a>。</figcaption>
 </figure>
 
 ## 3. 验证一次真实修改

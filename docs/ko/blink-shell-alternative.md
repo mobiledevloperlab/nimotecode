@@ -1,7 +1,7 @@
 ---
 title: "Blink Shell 대안: 모바일 개발 비교 | NimoteCode"
 description: "iPhone과 iPad 개발용 NimoteCode와 Blink Shell을 비교하세요. SSH, Mosh, SFTP, 편집, Git과 AI를 실제 작업에 맞춰 선택할 수 있습니다."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -9,7 +9,7 @@ pageClass: "seo-product-guide"
 
 Blink의 키보드와 터미널이 잘 맞는다면 그 장점도 비교에 포함하세요. Blink는 SSH, Mosh, SFTP와 Files 연동, VS Code 기반 Code 흐름을 제공합니다. NimoteCode는 Android, iPhone, iPad에서 자체 탐색기, 편집기, Git과 AI를 제공합니다.
 
-공식 자료 확인일: 2026-11-13. 제품 문서를 기반으로 비교했으며 성능 벤치마크는 실시하지 않았습니다.
+공식 자료 확인일: 2026-11-17. 제품 문서를 기반으로 비교했으며 성능 벤치마크는 실시하지 않았습니다.
 
 ## 접속뿐 아니라 작업 흐름 비교하기
 
@@ -28,18 +28,18 @@ Mosh, 키보드 설정, Files나 기존 Blink Code 환경이 중요하다면 Bli
 
 ## NimoteCode를 시험할 작업
 
-작은 저장소 작업으로 평가하세요. 파일을 찾아 편집하고 저장한 뒤 호스트에서 검증하고 diff를 읽습니다. 기능 목록만으로 속도나 신뢰성을 판단하지 마세요. 언어 서버, 디버거, Git과 외부 Agent에는 실행 환경의 호환 도구가 필요합니다.
+iPhone 또는 iPad에서 Blink Code로 다루던 저장소를 여세요. 관련 파일 두 개의 편집, 저장, Git diff 확인을 비교합니다. 평소 사용하는 외장 키보드와 네트워크에서 재연결도 시험하세요. Mosh가 필수라면 선택 조건에 포함하세요. 이 안내는 NimoteCode의 SSH 작업 흐름을 다룹니다.
 
 <figure class="seo-phone-capture">
   <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone NimoteCode 편집기의 탭과 키보드." loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone NimoteCode 편집기의 탭과 키보드. 출처: NimoteCode App Store 등록 이미지. 연속 작업 기록이 아닌 홍보 스크린샷입니다.</figcaption>
+  <figcaption>iPhone NimoteCode 편집기의 탭과 키보드. 출처: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 등록 이미지</a>.</figcaption>
 </figure>
 
 ## 이전 전에 연결 하나 검증하기
 
-1. 호스트, 포트, 계정, 인증 정책과 프로젝트 경로를 기록하고 새 연결을 설정하세요. 자동 가져오기를 전제하지 않습니다.
+1. 호스트, 포트, 계정, 인증 정책과 프로젝트 경로를 기록하고 새 연결을 설정하세요. 해당 정보로 NimoteCode에 SSH 프로필을 만드세요.
 2. 호스트가 허용하는 인증을 사용하고 개인 키를 보호하세요. AI 대화나 문제 보고에 붙여 넣지 마세요.
 3. 호스트 지문을 확인하고 같은 루트를 연 뒤 쓰기 가능한 폴더에서 목록과 저장을 시험하세요.
 4. 프로젝트 검증과 diff 검토를 완료하고 외출 전에 재접속도 확인하세요.
@@ -57,7 +57,7 @@ Mosh, 키보드 설정, Files나 기존 Blink Code 환경이 중요하다면 Bli
 
 ### 호스트와 키가 자동으로 이전되나요?
 
-자동 가져오기를 보장하지 않습니다. 호스트가 지원하는 인증으로 연결을 설정하고 프로젝트와 권한을 검증하세요.
+NimoteCode에서 호스트와 인증을 설정하세요. 호스트가 지원하는 인증으로 연결을 설정하고 프로젝트와 권한을 검증하세요.
 
 ### 모든 사용자에게 NimoteCode가 더 저렴한가요?
 

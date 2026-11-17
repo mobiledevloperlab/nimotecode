@@ -1,13 +1,13 @@
 ---
 title: "SSH IDE for Remote Files, Terminal & Git | NimoteCode"
 description: "Explore NimoteCode SSH IDE capabilities: SFTP project browsing, code editing, host terminal, Git and configured language tools. Understand host and access requirements."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
-# SSH IDE: files, tools, and review around one project
+# SSH IDE for editing and checking remote projects
 
-An SSH terminal is enough to run a known command. An SSH IDE helps when you need to navigate the repository behind that command, edit a file, and inspect the patch. NimoteCode combines a remote project explorer, code editor, terminal, Git, and optional AI for Android, iPhone, and iPad.
+NimoteCode opens a remote project over SSH on Android, iPhone and iPad. Browse files through SFTP, edit source in tabs or split panes, run commands on the host, and review Git changes in the same workspace. The host keeps the repository, dependencies and runtime.
 
 ## Understand the three layers
 
@@ -19,12 +19,9 @@ An SSH terminal is enough to run a known command. An SSH IDE helps when you need
 
 A working shell does not prove SFTP works, and opening a file does not install a toolchain. Keep those checks separate.
 
-<figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone code editor with source tabs and keyboard." loading="lazy" decoding="async">
-  </a>
-  <figcaption>iPhone code editor with source tabs and keyboard. Source: NimoteCode App Store listing. Promotional screenshot, not a continuous recording.</figcaption>
-</figure>
+<div class="doc-screenshots">
+  <DocScreenshot file="remote-workspace-connected.jpg" caption="Remote Explorer showing the SSH host, account and selected repository root." />
+</div>
 
 ## What the workspace provides
 
@@ -33,6 +30,21 @@ Use Explorer to choose a project root and editor tabs or split panes to inspect 
 ## Match the host environment
 
 Windows workspaces use PowerShell and SFTP; see [Windows setup](/docs/windows-ssh-sftp). Mac and Linux hosts use their configured shell and tools. Keep the project on a host with the dependencies it needs, and ensure it stays awake. A network connection does not maintain host processes.
+
+## Check the selected repository before editing
+
+Confirm the host, account and root path in Remote Explorer. Open Terminal and check its working directory and branch separately; editor navigation does not change the shell’s directory. On a Linux or macOS host:
+
+```sh
+pwd
+git status --short --branch
+```
+
+Save files before running the repository’s documented test or build command. Review the diff and any existing changes before committing. If the terminal works but file access fails, check the SFTP subsystem and directory permissions; if a command is missing, check the host installation and PATH.
+
+## Plan for disconnections
+
+For long-running jobs, use a host-side session manager and check the job after reconnecting. On Linux or macOS, a configured tmux session can survive an SSH disconnect while the host remains running. Locking a phone or switching apps can interrupt the client connection; a sleeping or restarted host can still stop the job.
 
 ## Set up or troubleshoot the connection
 

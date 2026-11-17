@@ -1,41 +1,91 @@
 ---
-title: "Cliente SSH Android con SFTP, editor y terminal | NimoteCode"
-description: "Conecta NimoteCode desde Android a Linux, Mac o Windows. Configura autenticación SSH, explora archivos SFTP, edita y verifica el proyecto remoto."
-lastUpdated: "2026-11-13"
+title: "Cliente SSH para Android: terminal, SFTP y editor | NimoteCode"
+description: "Conecta Android a Linux, macOS o Windows con NimoteCode. Ejecuta comandos SSH, explora y edita archivos por SFTP y revisa cambios Git en un espacio remoto."
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
-# Cliente SSH Android para comandos y archivos
+# Cliente SSH para Android con terminal, SFTP y editor de código
 
-Para comandos del servidor o configuración remota, NimoteCode reúne SSH, SFTP, edición y revisión Git. Una terminal dedicada basta para comandos; el espacio de proyecto ayuda cuando también necesitas archivos y cambios.
+NimoteCode conecta tu teléfono o tableta Android a un equipo remoto mediante SSH. Ejecuta comandos, explora archivos del proyecto por SFTP y edita código desde la misma aplicación. El repositorio, las dependencias y las herramientas de compilación permanecen en el equipo remoto.
 
-## Configura y verifica la conexión
+Puedes comprobar un servicio, modificar un archivo de configuración o corregir código cuando no tienes el ordenador a mano. Para trabajar con un proyecto, abre el repositorio como espacio remoto: tendrás acceso a sus archivos y a la revisión de cambios junto a la terminal.
 
-Introduce servidor, puerto, cuenta y autenticación permitida. Verifica la huella en la primera conexión. La prueba de puerto solo comprueba TCP directo; no autentica ni demuestra que SFTP funcione. Selecciona la raíz al conectar.
+## Comandos y archivos del proyecto
+
+| Tarea | Cómo funciona en NimoteCode |
+| --- | --- |
+| Ejecutar comandos | La terminal SSH utiliza la shell y las herramientas instaladas en el equipo remoto. |
+| Explorar archivos | Selecciona un directorio en el explorador remoto y accede a sus archivos por SFTP. |
+| Editar código o configuración | Abre un archivo remoto en el editor y guárdalo en el servidor con los permisos de escritura de tu cuenta. |
+| Revisar cambios | Examina las diferencias en Control de código fuente antes de confirmar. El servidor debe tener Git; algunas funciones avanzadas pueden requerir Pro. |
+
+Linux y macOS utilizan la shell configurada en el equipo remoto. Los espacios Windows usan PowerShell y SFTP. La [guía de OpenSSH para Windows](/es/docs/windows-ssh-sftp) explica la instalación del servidor, el firewall y el acceso a archivos.
+
+## Conecta Android al servidor SSH
+
+Activa el servidor SSH y comprueba que tu cuenta puede acceder al directorio del proyecto. El equipo debe permanecer activo y ser accesible desde la red del dispositivo Android.
+
+1. En NimoteCode, selecciona **Connect Remote Workspace** y después **Connect** para crear un perfil.
+2. Introduce dirección, puerto SSH, usuario y un método de autenticación permitido por el servidor. En la misma red local, usa la dirección Wi-Fi o Ethernet activa del equipo.
+3. Antes de aceptar la primera conexión, contrasta la huella de la clave del servidor con un registro obtenido por un canal de confianza.
+4. Conecta y selecciona el proyecto en **Remote Directory**. Para un proyecto Git, elige la raíz del repositorio.
+5. Comprueba el servidor, la cuenta y la ruta raíz que aparecen en el explorador remoto antes de editar.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="remote-connection-form.jpg" caption="Formulario SSH en Android con prueba de puerto y autenticación." />
+  <DocScreenshot file="remote-connection-form.jpg" caption="Configuración SSH: servidor, puerto, usuario, autenticación y proxy opcional." />
+  <DocScreenshot file="remote-workspace-connected.jpg" caption="El explorador remoto muestra el servidor conectado y la raíz del proyecto." />
 </div>
 
-## Dirección y permisos
+**Alcance de la prueba de puerto:** **Ping / test SSH port** comprueba una conexión TCP directa al servidor y puerto indicados. No prueba el proxy configurado, no autentica la cuenta ni verifica SFTP. Un resultado correcto solo confirma esa comprobación de red.
 
-En la LAN utiliza la dirección activa Wi-Fi o Ethernet. Fuera, prepara una ruta segura como VPN. El equipo debe permanecer encendido. La autenticación sigue la política del servidor y guardar por SFTP también necesita permisos de archivo.
+Para acceder desde fuera de la red local, configura una vía segura, como una VPN. Si necesitas un proxy, el formulario admite SOCKS5 y HTTP CONNECT. Consulta los ajustes en la [referencia de espacios SSH](/es/docs/ssh).
 
-Windows usa PowerShell y SFTP; sigue la [guía Windows](/es/docs/windows-ssh-sftp) para OpenSSH y firewall. Mac y Linux utilizan la shell configurada.
+## Verifica la conexión con una edición
 
-## Verifica también los archivos
+Abre un archivo en un directorio de prueba de tu propiedad, haz un pequeño cambio y guárdalo. Vuelve a abrirlo para comprobar el contenido. Así verificas el acceso a archivos y los permisos de escritura por separado del acceso a la terminal.
 
-Abre y guarda un archivo de prueba en una carpeta del usuario, comprueba el directorio de terminal y las verificaciones, y lee el diff. Git, servicios de lenguaje y agentes externos requieren instalación y permisos en el equipo.
+Antes de ejecutar comandos, confirma el directorio de trabajo y la rama Git. En Linux o macOS:
 
-Para pasos y errores consulta [configuración remota](/es/remote-coding). Sin equipo aparte, lee [IDE Android](/es/android-ide); para funciones, [IDE SSH](/es/ssh-ide).
+```sh
+pwd
+git status --short --branch
+```
 
-Puedes empezar con edición local o SSH y la terminal básica. Algunas funciones requieren Pro; consulta [Gratis y Pro](/es/pro) y el acceso mostrado en la aplicación. La IA requiere configurar tu proveedor de modelos, que factura el uso por separado.
+Ejecuta las comprobaciones documentadas del proyecto en el equipo remoto y revisa las diferencias antes de confirmar. Los comandos usan el software instalado allí. Git, los servicios de lenguaje y los agentes de programación externos requieren su propia instalación, configuración y permisos.
+
+## Solución de problemas de conexión
+
+| Síntoma | Qué comprobar |
+| --- | --- |
+| La conexión agota el tiempo de espera | Encendido y suspensión del equipo, dirección, VPN, firewall y aislamiento de red. |
+| Conexión rechazada | Que el servicio SSH esté activo y escuche en el puerto indicado. |
+| Error de autenticación | Usuario, contraseña o clave y políticas de acceso del servidor. |
+| La terminal funciona, pero los archivos no se abren | Subsistema SFTP y permisos de acceso al directorio. |
+| Los archivos se abren, pero no se guardan | Propietario, permisos de escritura y sistema de archivos de solo lectura. |
+| Falla un comando del proyecto | Directorio de la terminal, dependencias y permisos de las herramientas en el servidor. |
+
+La [guía de configuración remota](/es/remote-coding) describe el proceso completo de conexión y verificación.
+
+## Preguntas frecuentes
+
+### ¿Necesito otro ordenador o servidor?
+
+Para trabajar por SSH, sí. NimoteCode se conecta a un servidor SSH existente; los comandos de compilación y ejecución se procesan allí. Para trabajar íntegramente en un dispositivo Android compatible, consulta [IDE Android y Linux local](/es/android-ide).
+
+### ¿El acceso a la terminal garantiza que SFTP funcione?
+
+No. La shell SSH y el acceso SFTP dependen de ajustes distintos del servidor. La cuenta también necesita permiso para leer el directorio y escribir los archivos que vayas a modificar.
+
+### ¿Qué incluye el plan gratuito?
+
+Incluye espacios locales y SSH, edición y terminal básica. Las funciones avanzadas de Git, varias terminales y los servicios de lenguaje pueden requerir Pro. Consulta [Gratis y Pro](/es/pro) y las funciones disponibles para tu cuenta en la aplicación.
 
 <div class="seo-cta">
-  <p><strong>Descargar NimoteCode</strong></p>
+  <p><strong>Instala NimoteCode para Android</strong></p>
+  <p>Conecta tu servidor SSH y abre el directorio del proyecto.</p>
   <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Google Play</a>
-    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Descargar en Google Play</a>
     <a href="/es/docs/quick-start" class="home-page-btn secondary">Guía de inicio</a>
   </p>
 </div>

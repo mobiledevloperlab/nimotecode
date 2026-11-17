@@ -1,7 +1,7 @@
 ---
 title: "Blink Shell の代替：モバイル開発を比較 | NimoteCode"
 description: "iPhone と iPad の開発で NimoteCode と Blink Shell を比較。SSH、Mosh、SFTP、編集、Git、AI を実際の作業に合わせて選びます。"
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -9,7 +9,7 @@ pageClass: "seo-product-guide"
 
 Blink のキーボードやターミナルが合っているなら、その利点も比較に含めます。Blink は SSH、Mosh、SFTP と Files 連携、VS Code を使う Code ワークフローを提供します。NimoteCode は Android、iPhone、iPad で独自の Explorer、エディター、Git、AI を提供します。
 
-公式資料の確認日：2026-11-13。製品文書に基づく比較であり、性能のベンチマークは実施していません。
+公式資料の確認日：2026-11-17。製品文書に基づく比較であり、性能のベンチマークは実施していません。
 
 ## 接続だけでなく作業の流れを比較する
 
@@ -28,18 +28,18 @@ Mosh、キーボード設定、Files、既存の Blink Code 環境が重要な�
 
 ## NimoteCode を試す場面
 
-小さなリポジトリ作業で評価します。ファイルを探し、編集・保存し、ホストで検証を実行して差分を読む流れです。機能の一覧だけで速度や信頼性を判断しないでください。言語サーバー、デバッガー、Git、外部 Agent は実行環境に対応ツールが必要です。
+iPhone または iPad で、Blink Code で使っているリポジトリを開きます。関連する二つのファイルの編集、保存、Git 差分確認を比較してください。普段の外付けキーボードとネットワークで再接続も試します。Mosh が必須なら選定条件に含めてください。このガイドで扱うのは NimoteCode の SSH ワークフローです。
 
 <figure class="seo-phone-capture">
   <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone の NimoteCode エディターに表示されたタブとキーボード。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone の NimoteCode エディターに表示されたタブとキーボード。 出典：NimoteCode の App Store 掲載画像。宣伝用スクリーンショットであり、連続した操作の記録ではありません。</figcaption>
+  <figcaption>iPhone の NimoteCode エディターに表示されたタブとキーボード。 出典：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode の App Store 掲載画像</a>。</figcaption>
 </figure>
 
 ## 移行前に一つの接続を検証する
 
-1. ホスト、ポート、アカウント、認証方針、パスを控えて新しい接続を設定します。自動インポートは前提にしません。
+1. ホスト、ポート、アカウント、認証方針、パスを控えて新しい接続を設定します。その情報で NimoteCode に SSH プロファイルを作成します。
 2. ホストが許可する認証を使い、秘密鍵を保護します。AI や問い合わせに貼り付けないでください。
 3. ホスト鍵を照合し、同じルートを開いて書き込み可能な場所で一覧と保存を確認します。
 4. プロジェクトを検証して差分を読み、外出前に再接続も試します。
@@ -57,7 +57,7 @@ Mosh、キーボード設定、Files、既存の Blink Code 環境が重要な�
 
 ### ホストと鍵は自動で移行されますか？
 
-自動インポートは保証していません。ホストが対応する認証方法で接続を設定し、プロジェクトと権限を検証してください。
+NimoteCode でホスト、ポート、認証方式を設定し、ホスト鍵、プロジェクトのパス、ファイル権限を確認してください。新しい接続を検証するまでは、現在のクライアントも残しておきます。
 
 ### 誰にとっても NimoteCode の方が安いですか？
 

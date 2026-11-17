@@ -1,13 +1,13 @@
 ---
 title: "SSH IDE：远程文件、终端与 Git 工作区 | NimoteCode"
 description: "了解 NimoteCode SSH IDE 的 SFTP 项目浏览、代码编辑、主机终端、Git 和语言工具配置，明确连接、文件权限与执行环境的区别。"
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
-# SSH IDE：围绕一个远程项目编辑、执行和审查
+# SSH IDE：编辑远程项目，执行检查并审查变更
 
-只执行已知命令时，SSH 终端就够了。需要找到命令背后的仓库、编辑文件并审查补丁时，SSH IDE 更有帮助。NimoteCode 在 Android、iPhone 和 iPad 上整合远程项目树、编辑器、终端、Git 与可选 AI。
+NimoteCode 在 Android、iPhone 和 iPad 上通过 SSH 打开远程项目。通过 SFTP 浏览文件，在标签页或分栏中编辑源码，使用主机终端执行命令，并在同一工作区审查 Git 变更。仓库、依赖和运行环境保留在主机上。
 
 ## 理解三个独立层次
 
@@ -19,12 +19,9 @@ pageClass: "seo-product-guide"
 
 Shell 可用不代表 SFTP 可用，打开文件也不会自动安装工具链，应分别验证。
 
-<figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone 代码编辑器，展示源码标签页和键盘。" loading="lazy" decoding="async">
-  </a>
-  <figcaption>iPhone 代码编辑器，展示源码标签页和键盘。 来源：NimoteCode App Store 页面。此图为宣传截图，不是连续操作录屏。</figcaption>
-</figure>
+<div class="doc-screenshots">
+  <DocScreenshot file="remote-workspace-connected.jpg" caption="远程资源管理器显示 SSH 主机、账号和所选仓库根目录。" />
+</div>
 
 ## 工作区提供什么
 
@@ -33,6 +30,21 @@ Shell 可用不代表 SFTP 可用，打开文件也不会自动安装工具链�
 ## 按主机环境配置
 
 Windows 工作区使用 PowerShell 和 SFTP，参见 [Windows 配置](/zh/docs/windows-ssh-sftp)；Mac 与 Linux 使用主机配置的 Shell 和工具。项目应留在依赖准备充分的主机上，并确认主机保持唤醒。连接可达不等于进程得到维护。
+
+## 编辑前确认仓库和终端位置
+
+先检查远程资源管理器中的主机、账号和根目录路径，再单独确认终端的当前目录与分支。编辑器中切换文件不会改变 Shell 的工作目录。Linux 或 macOS 主机可以使用：
+
+```sh
+pwd
+git status --short --branch
+```
+
+保存文件后，再执行仓库规定的测试或构建命令。提交前检查差异，并确认哪些修改原本就已存在。终端正常但文件无法访问时，检查 SFTP 子系统和目录权限；找不到命令时，检查主机上的安装位置和 PATH。
+
+## 处理断线与长时间任务
+
+长时间任务应使用主机端的会话管理工具，重连后检查任务状态。在 Linux 或 macOS 上，配置好的 tmux 会话可以在 SSH 断线后继续保留，前提是主机仍在运行。手机锁屏或切换应用可能中断客户端连接；主机休眠或重启仍可能导致任务停止。
 
 ## 去哪里配置与排障
 

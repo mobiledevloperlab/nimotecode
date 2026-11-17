@@ -1,7 +1,7 @@
 ---
 title: "Coding on iPad with SSH, Editor, Git & AI | NimoteCode"
 description: "Code on iPad with a project explorer, split editor, SSH terminal and Git review. Learn what runs remotely, what iPadOS permits, and how to start with NimoteCode."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -15,7 +15,7 @@ If you only need to edit a note, a simpler editor may be enough. For a project c
   <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
     <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="NimoteCode App Store iPad view with project navigation and code editing." loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode App Store iPad view with project navigation and code editing. Source: NimoteCode App Store listing. Promotional screenshot, not a continuous recording.</figcaption>
+  <figcaption>NimoteCode App Store iPad view with project navigation and code editing. Source: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store screenshots</a>.</figcaption>
 </figure>
 
 ## Choose local editing or a remote project
@@ -46,7 +46,7 @@ Keep related files open in tabs and compare the implementation with its configur
   <a href="/images/ios/ipad-git.webp" target="_blank" rel="noopener">
     <img src="/images/ios/ipad-git.webp" width="1200" height="899" alt="NimoteCode App Store iPad view showing Git AI tools and change analysis." loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode App Store iPad view showing Git AI tools and change analysis. Source: NimoteCode App Store listing. Promotional screenshot, not a continuous recording.</figcaption>
+  <figcaption>NimoteCode App Store iPad view showing Git AI tools and change analysis. Source: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store screenshots</a>.</figcaption>
 </figure>
 
 ## Add AI when it helps the task
@@ -81,7 +81,6 @@ Start with local or SSH editing and the basic terminal. Some capabilities requir
   <p><strong>Download NimoteCode</strong></p>
   <p class="seo-cta-actions">
     <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">App Store</a>
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">Google Play</a>
     <a href="/docs/quick-start" class="home-page-btn secondary">Quick start</a>
   </p>
 </div>

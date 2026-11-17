@@ -1,7 +1,7 @@
 ---
 title: "用手机通过 SSH 使用 Codex | NimoteCode"
 description: "在开发主机运行 Codex，通过 Android 或 iPhone 上的 NimoteCode 访问。包含配置、会话恢复、Git 审查与分层排障步骤。"
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -42,7 +42,7 @@ git status --short --branch
   <a href="/images/ios/iphone-terminal.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-terminal.webp" width="660" height="1433" alt="NimoteCode 的 iPhone SSH 终端显示 Shell 命令。该图说明终端界面，并非 Codex 任务实录。" loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode 的 iPhone SSH 终端显示 Shell 命令。该图说明终端界面，并非 Codex 任务实录。 来源：NimoteCode App Store 页面。此图为宣传截图，不是连续操作录屏。</figcaption>
+  <figcaption>NimoteCode 的 iPhone SSH 终端显示 Shell 命令。该图说明终端界面，并非 Codex 任务实录。 图片来源：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 页面</a>。</figcaption>
 </figure>
 
 ## 3. 在主机会话中启动任务
@@ -118,7 +118,7 @@ Nimote Agent 的 Confirm 模式控制内置 Agent 工作流，不控制手动 SS
 
 <!-- faq:end -->
 
-可以从本地或 SSH 编辑及基础终端开始。部分功能需要 Pro，参见[免费版与 Pro](/zh/pro)及应用内显示的访问状态。AI 需要配置自己的模型提供商，模型使用费用由提供商另行收取。
+免费版包含本地与 SSH 编辑和基础终端，高级 Git 等功能范围见[免费版与 Pro](/zh/pro)。Claude Code 和 Codex 使用各自的账号与计费方式；通过 SSH 终端运行它们，无需在 NimoteCode 中配置模型提供商。
 
 <div class="seo-cta">
   <p><strong>下载 NimoteCode</strong></p>

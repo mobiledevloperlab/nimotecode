@@ -1,7 +1,7 @@
 ---
 title: "Termius 替代选择：代码编辑与 Git 工作流 | NimoteCode"
 description: "比较 NimoteCode 与 Termius 的 SSH、SFTP、编辑、Git 和 AI 工作流，了解平台、权限与迁移步骤，按实际任务选择工具。"
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -9,7 +9,7 @@ pageClass: "seo-product-guide"
 
 已经在使用 Termius 时，是否更换应取决于实际任务。Termius 提供 SSH、SFTP、端口转发、主机管理，以及按套餐提供的同步和团队功能。远程会话经常需要查项目、改源码、审查 Git 并执行 AI 任务时，可以评估 NimoteCode 的一体化工作区。
 
-官方资料核对日期：2026-11-13。本页依据产品文档对比，未进行性能基准测试。
+官方资料核对日期：2026-11-17。本页依据产品文档对比，未进行性能基准测试。
 
 ## 比较实际工作流，而不只比较能否连接
 
@@ -28,18 +28,18 @@ pageClass: "seo-product-guide"
 
 ## 什么情况下尝试 NimoteCode
 
-选一个小型仓库任务：定位源码、保存一处修改、在主机运行项目检查，再用源代码管理阅读 diff。这样评估的是项目工作流，而不是用功能清单推断速度和可靠性。语言服务器、调试器、Git 与外部 Agent 仍需在执行环境中准备兼容工具。
+选择一个平时通过 Termius 访问的仓库，在 NimoteCode 中打开相同目录，修改并保存一个文件，在源代码管理中查看差异，再用主机执行项目检查。重点比较文件导航和变更审查的操作；常用的主机管理与同步功能应另行验证。
 
 <figure class="seo-phone-capture">
   <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone 上的 NimoteCode 代码编辑器，展示标签页与键盘。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone 上的 NimoteCode 代码编辑器，展示标签页与键盘。 来源：NimoteCode App Store 页面。此图为宣传截图，不是连续操作录屏。</figcaption>
+  <figcaption>iPhone 上的 NimoteCode 代码编辑器，展示标签页与键盘。 图片来源：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 页面</a>。</figcaption>
 </figure>
 
 ## 迁移前先验证一个连接
 
-1. 记录主机、端口、账号、认证策略和项目路径，新建连接；本文不承诺自动导入配置。
+1. 记录主机、端口、账号、认证策略和项目路径，使用这些信息在 NimoteCode 中新建 SSH 配置。
 2. 采用主机策略允许的认证方式，保护私钥，不要将其粘贴到 AI 对话或问题反馈中。
 3. 核对主机指纹，打开相同项目根目录，在有写权限的目录测试文件列表和保存。
 4. 运行仓库检查并审查变更，离开电脑前先验证重连。
@@ -57,7 +57,7 @@ pageClass: "seo-product-guide"
 
 ### 更换后会自动迁移主机和密钥吗？
 
-本文不承诺自动导入。请按主机支持的认证方式配置并测试连接，再确认项目位置与权限。
+在 NimoteCode 中配置主机地址、端口和认证方式，再验证指纹、项目路径与文件权限。确认新连接可用之前，保留现有客户端。
 
 ### NimoteCode 对所有用户都更便宜吗？
 

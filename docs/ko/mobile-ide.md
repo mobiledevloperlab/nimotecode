@@ -13,10 +13,10 @@ pageClass: mobile-ide-article
 저희는 Android, iPhone, iPad용 편집기이자 개발 작업 공간인 NimoteCode를 만들고 있습니다. 이 글에서는 NimoteCode를 예로 들지만, 어떤 앱을 고르든 먼저 답할 질문은 같습니다. **코드와 개발 도구를 어디에서 실행할 건가요?**
 
 <figure class="article-hero">
-  <a href="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" target="_blank" rel="noopener">
-    <img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" width="1414" height="878" alt="태블릿의 NimoteCode에서 소스 관리와 코드 편집기를 나란히 표시한 화면입니다." loading="eager" decoding="async">
+  <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="iPad용 NimoteCode의 프로젝트 탐색과 코드 편집 화면. 출처: NimoteCode App Store 등록 이미지." loading="eager" decoding="async">
   </a>
-  <figcaption>태블릿의 NimoteCode에서 소스 관리와 코드 편집기를 나란히 표시한 화면입니다.</figcaption>
+  <figcaption>iPad용 NimoteCode의 프로젝트 탐색과 코드 편집 화면. 출처: NimoteCode App Store 등록 이미지.</figcaption>
 </figure>
 
 ## 앱보다 작업 방식을 먼저 고르세요

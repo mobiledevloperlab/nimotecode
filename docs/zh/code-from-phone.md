@@ -1,7 +1,7 @@
 ---
 title: "用手机写代码：本地文件、Linux 与 SSH 入门 | NimoteCode"
 description: "用 Android 或 iPhone 开始编程：选择本地编辑、Android 本地 Linux 或 SSH，在正确环境运行第一个 Python 脚本，并验证实际结果。"
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -23,7 +23,7 @@ pageClass: "seo-product-guide"
   <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="在 iPhone 上编辑源码；运行仍需要配置执行环境。" loading="lazy" decoding="async">
   </a>
-  <figcaption>在 iPhone 上编辑源码；运行仍需要配置执行环境。 来源：NimoteCode App Store 页面。此图为宣传截图，不是连续操作录屏。</figcaption>
+  <figcaption>在 iPhone 上编辑源码；运行仍需要配置执行环境。 图片来源：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 页面</a>。</figcaption>
 </figure>
 
 ## 运行第一个 Python 脚本

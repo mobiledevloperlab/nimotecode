@@ -1,13 +1,13 @@
 ---
 title: "IA móvil para programar: Chat, Agent y ACP | NimoteCode"
 description: "Elige AI Chat, Nimote Agent o ACP externo en NimoteCode. Configura proveedor y entorno, revisa planes y verifica archivos y Git después de ejecutar herramientas."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
 # IA móvil: elige el modo y el entorno
 
-Explicar una función no es lo mismo que inspeccionar archivos y ejecutar pruebas. NimoteCode ofrece Chat, Nimote Agent integrado y agentes ACP compatibles junto al editor, terminal y Git. Decide el modo y el destino antes de enviar la tarea.
+NimoteCode ofrece AI Chat para explicar código, Nimote Agent para tareas del proyecto y conexiones ACP con agentes externos compatibles. Se utilizan junto al editor, la terminal y Git. Elige el modo adecuado, configura su proveedor o entorno de ejecución y confirma el espacio de trabajo que utilizará.
 
 ## Elige Chat o Agent
 
@@ -27,7 +27,7 @@ Prueba el acceso en [configuración](/es/docs/configuration) y confirma la raíz
   <a href="/images/ios/iphone-agents.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-agents.webp" width="660" height="1433" alt="Selección de agentes integrados y externos en iPhone." loading="lazy" decoding="async">
   </a>
-  <figcaption>Selección de agentes integrados y externos en iPhone. Fuente: ficha de NimoteCode en App Store. Captura promocional; no es una grabación continua.</figcaption>
+  <figcaption>Selección de agentes integrados y externos en iPhone. Fuente: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">capturas de NimoteCode en App Store</a>.</figcaption>
 </figure>
 
 ## Empieza por una tarea de lectura

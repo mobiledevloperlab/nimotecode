@@ -13,10 +13,10 @@ That is a useful test for a mobile IDE. Opening a file is only the beginning. Ca
 We build NimoteCode, an editor and development workspace for Android, iPhone and iPad. This guide uses it for a concrete example, but the first decision applies whichever app you choose: **where will your code and tools run?**
 
 <figure class="article-hero">
-  <a href="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" target="_blank" rel="noopener">
-    <img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" width="1414" height="878" alt="NimoteCode on a tablet: Source Control and the code editor visible side by side." loading="eager" decoding="async">
+  <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="NimoteCode on iPad with project navigation and code editing. Source: NimoteCode App Store screenshots." loading="eager" decoding="async">
   </a>
-  <figcaption>NimoteCode on a tablet: Source Control and the code editor visible side by side.</figcaption>
+  <figcaption>NimoteCode on iPad with project navigation and code editing. Source: NimoteCode App Store screenshots.</figcaption>
 </figure>
 
 ## Choose the workflow before the app

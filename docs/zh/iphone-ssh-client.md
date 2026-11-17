@@ -1,13 +1,13 @@
 ---
 title: "iPhone SSH 客户端：SFTP、代码编辑与 Git | NimoteCode"
 description: "使用 NimoteCode 在 iPhone 上通过 SSH 连接主机、用 SFTP 浏览文件、编辑代码、运行命令并审查 Git。了解配置步骤、使用条件和 App Store 下载入口。"
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
 # iPhone SSH 客户端：连接主机，直接处理项目
 
-电脑不在身边，但需要查看服务器文件、修复脚本或检查仓库？NimoteCode 在 iPhone 工作区中集成 SSH 终端、远程文件浏览、代码编辑、Git 审查和可选 AI。项目保留在主机上，手机提供操作界面。
+NimoteCode 通过 SSH 将 iPhone 连接到 Windows、macOS 或 Linux 主机。在同一工作区中通过 SFTP 浏览项目文件、编辑代码、执行主机命令并审查 Git 变更。仓库和运行环境保留在远程主机上。
 
 只运行命令时，独立终端可能已经足够；需要找文件、修改代码、运行项目检查并审查变更时，NimoteCode 可以把这些操作连起来。
 
@@ -15,7 +15,7 @@ pageClass: "seo-product-guide"
   <a href="/images/ios/iphone-ssh.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-ssh.webp" width="660" height="1433" alt="iPhone 上的 NimoteCode Remote Explorer，显示已连接的 SSH 项目。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone 上的 NimoteCode Remote Explorer，显示已连接的 SSH 项目。 来源：NimoteCode App Store 页面。此图为宣传截图，不是连续操作录屏。</figcaption>
+  <figcaption>iPhone 上的 NimoteCode Remote Explorer，显示已连接的 SSH 项目。 图片来源：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 页面</a>。</figcaption>
 </figure>
 
 ## 将 iPhone 连接到开发主机
@@ -68,7 +68,6 @@ iOS 可能在后台挂起应用，连接可用不代表进程始终存活。长�
   <p><strong>下载 NimoteCode</strong></p>
   <p class="seo-cta-actions">
     <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">App Store</a>
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">Google Play</a>
     <a href="/zh/docs/quick-start" class="home-page-btn secondary">快速入门</a>
   </p>
 </div>

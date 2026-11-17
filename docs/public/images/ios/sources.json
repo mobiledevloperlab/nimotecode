@@ -1,6 +1,6 @@
 {
   "source": "https://apps.apple.com/app/id6776158253",
-  "checked": "2026-11-13",
+  "checked": "2026-11-17",
   "appVersion": "2.3.0",
   "description": "NimoteCode-owned App Store promotional screenshots; separate interface views, not a continuous session. Resized to WebP for website delivery.",
   "images": [
@@ -8,37 +8,44 @@
       "file": "iphone-ssh.webp",
       "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/83/a6/77/83a6772e-4cd6-06ac-0aed-8767353c1e66/05_feature.png/1440x1920bb.jpg",
       "width": 660,
-      "height": 1433
+      "height": 1433,
+      "sha256": "9e7b3b1f1efb8cfde93e761f0c4f52bfeb2e2b338dbcc7af16a7c8a2bdece1df"
     },
     {
       "file": "iphone-editor.webp",
       "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ca/a0/9b/caa09ba3-6e76-09e7-fb58-f912678b11cd/04_feature.png/1440x1920bb.jpg",
       "width": 660,
-      "height": 1433
+      "height": 1433,
+      "sha256": "9ac629257dcfe71b73ecff97710fe56a5c45d65039deab362d1fa842da275902"
     },
     {
       "file": "iphone-terminal.webp",
       "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8b/6d/45/8b6d4526-a4ac-3fbb-5e96-be0168966bed/03_feature.png/1440x1920bb.jpg",
       "width": 660,
-      "height": 1433
+      "height": 1433,
+      "sha256": "88908c21813a8473fa8406e54ccbfb09384cd5fdbc6c0fae2ac5e23d177594e8"
     },
     {
       "file": "iphone-agents.webp",
       "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ac/1e/fb/ac1efb9d-9cff-92a1-57a5-df0fc7d949f8/02_feature.png/1440x1920bb.jpg",
       "width": 660,
-      "height": 1433
+      "height": 1433,
+      "sha256": "89fc1a6f43611780ccfb7cbd2a81c123bf5e70027b095470d00a47c4d9cce79f"
     },
     {
       "file": "ipad-workspace.webp",
       "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a2/33/26/a23326a1-ed37-91f8-edf7-3a727a7f6b58/Page1.png/1440x1920bb.jpg",
       "width": 1200,
-      "height": 899
+      "height": 899,
+      "sha256": "8f00037a50e625325538c9e6b56b1b5b17d2d4fc4a8aae290ad02b61ec39d8dc"
     },
     {
       "file": "ipad-git.webp",
       "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/88/b7/c5/88b7c573-f112-3d96-aae2-7702ceeb7ede/Page3.png/1440x1920bb.jpg",
       "width": 1200,
-      "height": 899
+      "height": 899,
+      "sha256": "14e7f64b2b6fd9c2028176d2654404fbee39f459f4c78cb1f7b5610878794458"
     }
-  ]
+  ],
+  "verificationSource": "https://itunes.apple.com/lookup?id=6776158253&country=us"
 }

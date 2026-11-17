@@ -1,7 +1,7 @@
 ---
 title: "iPad 编程：SSH、代码编辑、Git 与 AI 工作区 | NimoteCode"
 description: "使用 NimoteCode 在 iPad 上浏览项目、分栏编辑、连接 SSH 终端并审查 Git。了解远程运行方式、iPadOS 限制与 App Store 安装步骤。"
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -15,7 +15,7 @@ pageClass: "seo-product-guide"
   <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
     <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="NimoteCode 的 App Store iPad 界面，展示项目导航和代码编辑。" loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode 的 App Store iPad 界面，展示项目导航和代码编辑。 来源：NimoteCode App Store 页面。此图为宣传截图，不是连续操作录屏。</figcaption>
+  <figcaption>NimoteCode 的 App Store iPad 界面，展示项目导航和代码编辑。 图片来源：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 页面</a>。</figcaption>
 </figure>
 
 ## 选择本地编辑或远程项目
@@ -46,7 +46,7 @@ pageClass: "seo-product-guide"
   <a href="/images/ios/ipad-git.webp" target="_blank" rel="noopener">
     <img src="/images/ios/ipad-git.webp" width="1200" height="899" alt="NimoteCode 的 App Store iPad 界面，展示 Git AI 工具与变更分析。" loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode 的 App Store iPad 界面，展示 Git AI 工具与变更分析。 来源：NimoteCode App Store 页面。此图为宣传截图，不是连续操作录屏。</figcaption>
+  <figcaption>NimoteCode 的 App Store iPad 界面，展示 Git AI 工具与变更分析。 图片来源：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 页面</a>。</figcaption>
 </figure>
 
 ## 在需要时加入 AI 辅助
@@ -81,7 +81,6 @@ pageClass: "seo-product-guide"
   <p><strong>下载 NimoteCode</strong></p>
   <p class="seo-cta-actions">
     <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">App Store</a>
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">Google Play</a>
     <a href="/zh/docs/quick-start" class="home-page-btn secondary">快速入门</a>
   </p>
 </div>

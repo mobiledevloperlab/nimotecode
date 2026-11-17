@@ -1,7 +1,7 @@
 ---
 title: "スマートフォンでプログラミング：Linux・SSH 入門 | NimoteCode"
 description: "Android や iPhone でコードを書き始める手順。ローカル編集、Android Local Linux、SSH を選び、Python の例を実行して確認します。"
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -23,7 +23,7 @@ Local Linux は root 不要の PRoot を使い、iPhone と iPad では利用で
   <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone でコードを編集。実行には環境設定が必要です。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone でコードを編集。実行には環境設定が必要です。 出典：NimoteCode の App Store 掲載画像。宣伝用スクリーンショットであり、連続した操作の記録ではありません。</figcaption>
+  <figcaption>iPhone でコードを編集。実行には環境設定が必要です。 出典：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode の App Store 掲載画像</a>。</figcaption>
 </figure>
 
 ## Python の最初のスクリプト

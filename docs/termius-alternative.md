@@ -1,7 +1,7 @@
 ---
 title: "Termius Alternative for Code Editing & Git | NimoteCode"
 description: "Compare NimoteCode and Termius for SSH, SFTP, code editing, Git and AI. Review platform differences, access requirements and a practical migration checklist."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -9,7 +9,7 @@ pageClass: "seo-product-guide"
 
 If you already use Termius, switching is worthwhile only if it improves the work you actually do. Termius provides SSH, SFTP, port forwarding, host management, and paid sync or team workflows. NimoteCode is worth evaluating when your remote session regularly needs project navigation, source editing, Git review, and an AI task in the same app.
 
-Official sources reviewed: 2026-11-13. Product documentation review; no comparative performance benchmark was conducted.
+Official sources reviewed: 2026-11-17. Product documentation review; no comparative performance benchmark was conducted.
 
 ## Compare the workflow, not only the connection
 
@@ -28,18 +28,18 @@ Stay with Termius when cross-device host management, your established terminal w
 
 ## When to try NimoteCode
 
-Try a small repository task: locate the source file, save one change, run the project’s check on the host, and read the diff in Source Control. This evaluates the app’s project workflow without pretending that a feature list proves speed or reliability. Language servers, debuggers, Git, and external agents still need compatible tools in the execution environment.
+Use a repository you already access through Termius. Open the same directory in NimoteCode, edit one file, save it and review the diff in Source Control. Run the project’s check on the host. Compare the file navigation and review steps, then test the host-management and sync features you depend on separately.
 
 <figure class="seo-phone-capture">
   <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="NimoteCode on iPhone showing the code editor, tabs, and keyboard." loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode on iPhone showing the code editor, tabs, and keyboard. Source: NimoteCode App Store listing. Promotional screenshot, not a continuous recording.</figcaption>
+  <figcaption>NimoteCode on iPhone showing the code editor, tabs, and keyboard. Source: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store screenshots</a>.</figcaption>
 </figure>
 
 ## Test one connection before migrating
 
-1. Record the host, port, account, authentication policy, and project path. Configure a new connection; this guide does not promise automatic profile import.
+1. Record the host, port, account, authentication policy, and project path. Create a new SSH profile in NimoteCode using those settings.
 2. Use an authentication method permitted by your host policy. Keep private keys protected; do not paste them into AI chat or support reports.
 3. Verify the server fingerprint, open the same project root, and test file listing and saving in a user-owned directory.
 4. Run the repository’s checks and review changed files. Test reconnection before relying on it away from the desk.
@@ -57,7 +57,7 @@ Try a small repository task: locate the source file, save one change, run the pr
 
 ### Does switching transfer my hosts and keys automatically?
 
-This guide does not claim automatic import. Configure and test a connection using your host’s supported authentication method, then confirm the project and permissions.
+Set up the host address, port and authentication in NimoteCode, then verify the fingerprint, project path and file permissions. Keep the existing client available until you have tested the new connection.
 
 ### Is NimoteCode cheaper for every user?
 

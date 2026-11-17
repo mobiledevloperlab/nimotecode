@@ -1,13 +1,13 @@
 ---
 title: "モバイル AI 開発：Chat・Agent・ACP | NimoteCode"
 description: "NimoteCode の AI Chat、Nimote Agent、外部 ACP を作業に応じて選択。モデル設定、実行環境、計画承認と Git 検証を説明します。"
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
 # モバイル AI 開発のモードと実行環境
 
-関数の説明と、ファイルを調べて検証を実行する作業は異なります。NimoteCode はエディター、ターミナル、Git と共に Chat、内蔵 Nimote Agent、互換性のある外部 ACP Agent を提供します。依頼前にモードと実行場所を選びます。
+NimoteCode は、コード説明用の AI Chat、ワークスペースで作業する Nimote Agent、対応する外部エージェントへの ACP 接続を提供します。エディター、ターミナル、Git と併せて使えます。作業に合うモードを選び、モデル提供元または実行環境を設定して、使用するワークスペースを確認します。
 
 ## Chat と Agent を選ぶ
 
@@ -27,7 +27,7 @@ pageClass: "seo-product-guide"
   <a href="/images/ios/iphone-agents.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-agents.webp" width="660" height="1433" alt="iPhone の NimoteCode に表示された内蔵・外部 Agent の選択。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone の NimoteCode に表示された内蔵・外部 Agent の選択。 出典：NimoteCode の App Store 掲載画像。宣伝用スクリーンショットであり、連続した操作の記録ではありません。</figcaption>
+  <figcaption>iPhone の NimoteCode に表示された内蔵・外部 Agent の選択。 出典：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode の App Store 掲載画像</a>。</figcaption>
 </figure>
 
 ## 読み取りだけの依頼から始める

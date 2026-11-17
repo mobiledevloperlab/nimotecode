@@ -1,41 +1,91 @@
 ---
-title: "Android SSH クライアント：SFTP・編集・ターミナル | NimoteCode"
-description: "NimoteCode で Android から Linux、Mac、Windows に SSH 接続。認証、SFTP ファイル参照、コード編集とリモートプロジェクトの検証を説明します。"
-lastUpdated: "2026-11-13"
+title: "Android SSH クライアント：ターミナル・SFTP・コード編集 | NimoteCode"
+description: "NimoteCode で Android から Linux、macOS、Windows に接続。SSH コマンドの実行、SFTP によるファイル参照・編集、Git 差分の確認をリモートワークスペースで行えます。"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
-# Android SSH クライアントでコマンドとファイルを扱う
+# ターミナル・SFTP・コードエディターを備えた Android SSH クライアント
 
-Android からサーバーのコマンドや設定を扱う場合、NimoteCode は SSH、SFTP 参照、編集、Git レビューを提供します。コマンドだけなら専用ターミナルで十分です。ファイルと変更も扱うならプロジェクトワークスペースを選べます。
+NimoteCode は、Android スマートフォンやタブレットから SSH でリモートマシンに接続するアプリです。ターミナルでのコマンド実行、SFTP によるファイル参照、コード編集を同じアプリで行えます。リポジトリ、依存関係、ビルドツールは接続先のマシンに置いたまま作業します。
 
-## 接続を設定して確認
+パソコンから離れているときのサービス確認、設定ファイルの更新、コード修正に使えます。プロジェクト全体を扱う場合は、リポジトリをリモートワークスペースとして開くと、ターミナルと併せてファイルの移動や差分確認ができます。
 
-ホスト、ポート、アカウント、許可された認証を入力し、初回はホスト鍵を照合します。ポートテストは直接 TCP 接続を調べるだけで、認証や SFTP は検証しません。接続後にルートを選びます。
+## コマンドとプロジェクトファイルを扱う
+
+| 作業 | NimoteCode での操作 |
+| --- | --- |
+| コマンド実行 | SSH ターミナルからホストのシェルと導入済みツールを使います。 |
+| ファイル参照 | Remote Explorer でディレクトリを選び、SFTP でファイルにアクセスします。 |
+| コード・設定の編集 | リモートファイルをエディターで開き、ホストに保存します。アカウントに書き込み権限が必要です。 |
+| 変更のレビュー | コミット前にソース管理で差分を確認します。ホストに Git が必要で、高度な Git 機能には Pro が必要な場合があります。 |
+
+Linux と macOS ではホストに設定されたシェルを使います。Windows ワークスペースでは PowerShell と SFTP を使います。サーバーの導入、ファイアウォール、ファイルアクセスの設定は [Windows OpenSSH ガイド](/ja/docs/windows-ssh-sftp)を参照してください。
+
+## Android から SSH ホストに接続する
+
+接続前にホストの SSH サーバーを有効にし、使用するアカウントでプロジェクトディレクトリにアクセスできることを確認します。ホストはスリープさせず、Android 端末から到達できる状態にしてください。
+
+1. NimoteCode で **Connect Remote Workspace**、続いて **Connect** を選び、接続プロファイルを作成します。
+2. ホストのアドレス、SSH ポート、ユーザー名、サーバーが許可する認証方式を入力します。同じ LAN 内では、ホストが使用中の Wi-Fi または Ethernet のアドレスを使います。
+3. 初回接続を受け入れる前に、ホスト鍵のフィンガープリントを、信頼できる経路で取得したサーバーの記録と照合します。
+4. 接続後、**Remote Directory** でプロジェクトを選びます。Git プロジェクトではリポジトリのルートを選択します。
+5. 編集前に Remote Explorer のホスト、アカウント、ルートパスを確認します。
 
 <div class="doc-screenshots">
-  <DocScreenshot file="remote-connection-form.jpg" caption="Android の SSH 接続画面。ポートテストと認証設定を表示。" />
+  <DocScreenshot file="remote-connection-form.jpg" caption="SSH 接続設定：ホスト、ポート、ユーザー名、認証方式、任意のプロキシ。" />
+  <DocScreenshot file="remote-workspace-connected.jpg" caption="接続先のホストと選択したプロジェクトルートを表示する Remote Explorer。" />
 </div>
 
-## アドレスと権限
+**ポートテストの範囲：** **Ping / test SSH port** は、指定したホストとポートへの直接 TCP 接続を確認します。設定したプロキシ、アカウント認証、SFTP は検証しません。成功しても、確認できたのはこのネットワーク接続だけです。
 
-LAN では使用中の Wi-Fi／Ethernet アドレスを使い、外部では VPN などの安全な経路を用意します。ホストを起動しておく必要があります。認証はサーバーの方針、SFTP 保存はファイル権限にも従います。
+LAN の外から接続する場合は、VPN などの安全な経路を用意します。プロキシが必要な環境では、接続画面で SOCKS5 または HTTP CONNECT を設定できます。詳細は [SSH ワークスペースの設定](/ja/docs/ssh)を参照してください。
 
-Windows は PowerShell と SFTP を使います。[Windows ガイド](/ja/docs/windows-ssh-sftp)で OpenSSH とファイアウォールを設定します。Mac と Linux はホストの Shell を使います。
+## 実際に編集して接続を確認する
 
-## ファイル操作まで検証
+自分が所有するテストディレクトリでファイルを開き、小さな変更を保存してから再度開きます。保存内容を確認することで、ターミナル接続とは別に、ファイルアクセスと書き込み権限を検証できます。
 
-ユーザー所有の場所でファイルを開いて保存し、ターミナルのディレクトリと所定の検証を確認してから Git 差分を読みます。Git、言語サービス、外部 Agent はホスト側の導入と権限が必要です。
+コマンド実行前に、ターミナルの作業ディレクトリと Git ブランチを確認します。Linux または macOS では次を使えます。
 
-詳細は[リモート開発の設定](/ja/remote-coding)、ホストなしの Android 作業は [Android IDE](/ja/android-ide)、機能一覧は [SSH IDE](/ja/ssh-ide)を参照してください。
+```sh
+pwd
+git status --short --branch
+```
 
-ローカル／SSH ファイルの編集と基本ターミナルから始められます。一部機能には Pro が必要です。[無料版と Pro](/ja/pro)およびアプリ内の利用状態を確認してください。AI にはモデル提供元の設定が必要で、利用料は提供元が別途請求します。
+ホスト上でプロジェクト所定のチェックを実行し、コミット前に差分を確認します。コマンドはホストに導入されたソフトウェアを使います。Git、言語サービス、外部コーディングエージェントは、それぞれ導入・設定と権限が必要です。
+
+## SSH 接続のトラブルシューティング
+
+| 症状 | 確認する項目 |
+| --- | --- |
+| 接続がタイムアウトする | ホストの電源・スリープ状態、アドレス、VPN、ファイアウォール、ネットワーク分離。 |
+| 接続が拒否される | SSH サービスが起動し、入力したポートで待ち受けているか。 |
+| 認証に失敗する | ユーザー名、パスワードまたは鍵、サーバーのアカウント・認証ポリシー。 |
+| ターミナルは使えるがファイルを開けない | SFTP サブシステムと選択したディレクトリへのアクセス権限。 |
+| ファイルを開けるが保存できない | 所有者、書き込み権限、ファイルシステムの読み取り専用設定。 |
+| プロジェクトのコマンドが失敗する | ターミナルの作業ディレクトリ、ホストの依存関係、ツールの実行権限。 |
+
+接続から検証までの手順は[リモート開発の設定ガイド](/ja/remote-coding)を参照してください。
+
+## よくある質問
+
+### 別のパソコンやサーバーは必要ですか？
+
+SSH で作業する場合は必要です。NimoteCode は既存の SSH ホストに接続し、ビルドや実行コマンドはホスト上で動作します。対応する Android 端末だけで作業する場合は [Android IDE と Local Linux](/ja/android-ide)を参照してください。
+
+### ターミナルに接続できれば SFTP も使えますか？
+
+必ずしも使えるとは限りません。SSH シェルと SFTP は、それぞれのサーバー設定に依存します。アカウントには、プロジェクトディレクトリの読み取り権限と、変更するファイルの書き込み権限も必要です。
+
+### 無料で使える機能は何ですか？
+
+無料プランにはローカル・SSH ワークスペース、編集、基本ターミナルが含まれます。高度な Git 操作、複数ターミナル、言語サービスなどには Pro が必要な場合があります。[無料版と Pro](/ja/pro)と、アプリ内で表示されるアカウントの利用可能な機能を確認してください。
 
 <div class="seo-cta">
-  <p><strong>NimoteCode をダウンロード</strong></p>
+  <p><strong>Android 版 NimoteCode をインストール</strong></p>
+  <p>SSH ホストに接続し、プロジェクトディレクトリを開いて作業を始められます。</p>
   <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Google Play</a>
-    <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">App Store</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">Google Play で入手</a>
     <a href="/ja/docs/quick-start" class="home-page-btn secondary">クイックスタート</a>
   </p>
 </div>

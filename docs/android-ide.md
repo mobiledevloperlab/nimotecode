@@ -6,7 +6,7 @@ pageClass: android-ide-page
 
 # Android IDE for local Linux and remote development
 
-Need to edit a Python script on your tablet, run a command on your development PC, or review a repository from your phone? Start with where the project and its tools will run. NimoteCode lets you work with local files, an on-device Linux environment, or a remote SSH host from one Android app.
+NimoteCode is an Android IDE for local files, on-device Linux and remote SSH projects. Edit source on a phone or tablet, run compatible tools in Local Linux, or connect to the development machine that already has your project’s dependencies. Choose the workspace according to where the files and commands need to run.
 
 **NimoteCode is a mobile IDE with a code editor, project explorer, terminal, Git, and configurable AI assistance.** Open a project, find the file, make a change, then use the appropriate runtime to check it. Phone and tablet layouts support different amounts of screen space; split editor panes are available when you need to compare files.
 

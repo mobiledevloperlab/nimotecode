@@ -1,7 +1,7 @@
 ---
 title: "Blink Shell 替代选择：移动项目开发 | NimoteCode"
 description: "比较 NimoteCode 与 Blink Shell 在 iPhone、iPad 上的 SSH、Mosh、SFTP、编辑、Git 和 AI 用法，先验证真实工作流再决定是否更换。"
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -9,7 +9,7 @@ pageClass: "seo-product-guide"
 
 如果 Blink 已经适合你的键盘和终端习惯，比较时应保留这些优势。Blink 提供 SSH、Mosh、SFTP 与 Files 集成，以及基于 VS Code 的 Code 工作流。NimoteCode 则在 Android、iPhone 和 iPad 上提供自己的项目浏览、编辑器、Git 界面和可配置 AI。
 
-官方资料核对日期：2026-11-13。本页依据产品文档对比，未进行性能基准测试。
+官方资料核对日期：2026-11-17。本页依据产品文档对比，未进行性能基准测试。
 
 ## 比较实际工作流，而不只比较能否连接
 
@@ -28,18 +28,18 @@ Mosh、已有键盘配置、Files 集成或 Blink Code 环境是工作重点时�
 
 ## 什么情况下尝试 NimoteCode
 
-选一个小型仓库任务：定位源码、保存一处修改、在主机运行项目检查，再用源代码管理阅读 diff。这样评估的是项目工作流，而不是用功能清单推断速度和可靠性。语言服务器、调试器、Git 与外部 Agent 仍需在执行环境中准备兼容工具。
+在 iPhone 或 iPad 上打开平时使用 Blink Code 处理的同一仓库，比较两个关联文件的编辑、保存和 Git 差异查看。使用常用外接键盘，并在实际网络下测试重连。如果工作依赖 Mosh，应将其作为选择条件；本指南介绍的是 NimoteCode 的 SSH 工作流。
 
 <figure class="seo-phone-capture">
   <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone 上的 NimoteCode 代码编辑器，展示标签页与键盘。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone 上的 NimoteCode 代码编辑器，展示标签页与键盘。 来源：NimoteCode App Store 页面。此图为宣传截图，不是连续操作录屏。</figcaption>
+  <figcaption>iPhone 上的 NimoteCode 代码编辑器，展示标签页与键盘。 图片来源：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 页面</a>。</figcaption>
 </figure>
 
 ## 迁移前先验证一个连接
 
-1. 记录主机、端口、账号、认证策略和项目路径，新建连接；本文不承诺自动导入配置。
+1. 记录主机、端口、账号、认证策略和项目路径，使用这些信息在 NimoteCode 中新建 SSH 配置。
 2. 采用主机策略允许的认证方式，保护私钥，不要将其粘贴到 AI 对话或问题反馈中。
 3. 核对主机指纹，打开相同项目根目录，在有写权限的目录测试文件列表和保存。
 4. 运行仓库检查并审查变更，离开电脑前先验证重连。
@@ -57,7 +57,7 @@ Mosh、已有键盘配置、Files 集成或 Blink Code 环境是工作重点时�
 
 ### 更换后会自动迁移主机和密钥吗？
 
-本文不承诺自动导入。请按主机支持的认证方式配置并测试连接，再确认项目位置与权限。
+在 NimoteCode 中配置主机地址、端口和认证方式，再验证指纹、项目路径与文件权限。确认新连接可用之前，保留现有客户端。
 
 ### NimoteCode 对所有用户都更便宜吗？
 

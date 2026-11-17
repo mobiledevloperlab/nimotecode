@@ -1,13 +1,13 @@
 ---
 title: "iPhone SSH Client with SFTP, Editor & Git | NimoteCode"
 description: "Use NimoteCode on iPhone to connect over SSH, browse files with SFTP, edit code, run host commands and review Git changes. Setup, requirements and App Store download."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
 # iPhone SSH client for editing real projects
 
-Need to inspect a server file, fix a script, or check a repository while your computer is elsewhere? NimoteCode combines an SSH terminal, remote file explorer, code editor, Git review, and optional AI in an iPhone workspace. Your project stays on the host; your phone provides the interface.
+NimoteCode connects your iPhone to a Windows, macOS or Linux host over SSH. Browse project files with SFTP, edit code, run host commands and review Git changes from the same workspace. The repository and its runtime stay on the remote machine.
 
 For a command-only task, a dedicated terminal may be enough. Choose NimoteCode when you also need to find a file, edit it, run the project’s checks, and inspect what changed.
 
@@ -15,7 +15,7 @@ For a command-only task, a dedicated terminal may be enough. Choose NimoteCode w
   <a href="/images/ios/iphone-ssh.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-ssh.webp" width="660" height="1433" alt="NimoteCode on iPhone showing Remote Explorer and the connected SSH project." loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode on iPhone showing Remote Explorer and the connected SSH project. Source: NimoteCode App Store listing. Promotional screenshot, not a continuous recording.</figcaption>
+  <figcaption>NimoteCode on iPhone showing Remote Explorer and the connected SSH project. Source: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store screenshots</a>.</figcaption>
 </figure>
 
 ## Connect your iPhone to a development host
@@ -68,7 +68,6 @@ Start with local or SSH editing and the basic terminal. Some capabilities requir
   <p><strong>Download NimoteCode</strong></p>
   <p class="seo-cta-actions">
     <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">App Store</a>
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">Google Play</a>
     <a href="/docs/quick-start" class="home-page-btn secondary">Quick start</a>
   </p>
 </div>

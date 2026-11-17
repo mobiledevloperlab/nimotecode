@@ -1,7 +1,7 @@
 ---
 title: "Use Codex From Your Phone over SSH | NimoteCode"
 description: "Run Codex on your development host and access it from Android or iPhone with NimoteCode. Follow setup, session recovery, Git review and troubleshooting steps."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -42,7 +42,7 @@ git status --short --branch
   <a href="/images/ios/iphone-terminal.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-terminal.webp" width="660" height="1433" alt="NimoteCode iPhone SSH terminal showing shell commands. This screenshot illustrates the terminal, not a recorded Codex run." loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode iPhone SSH terminal showing shell commands. This screenshot illustrates the terminal, not a recorded Codex run. Source: NimoteCode App Store listing. Promotional screenshot, not a continuous recording.</figcaption>
+  <figcaption>NimoteCode iPhone SSH terminal showing shell commands. This screenshot illustrates the terminal, not a recorded Codex run. Source: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store screenshots</a>.</figcaption>
 </figure>
 
 ## 3. Start a task in a host-side session
@@ -118,7 +118,7 @@ No. This is an independent guide to an SSH workflow using NimoteCode. Vendor-sup
 
 <!-- faq:end -->
 
-Start with local or SSH editing and the basic terminal. Some capabilities require Pro access; check [Free and Pro](/pro) and the access shown in the app. AI requires your own model provider, whose usage is billed separately.
+Local and SSH editing and the basic terminal are included in the free plan. Advanced Git and other Pro features are listed in [Free and Pro](/pro). Claude Code and Codex use their own accounts and billing; an SSH terminal session does not require a NimoteCode model-provider configuration.
 
 <div class="seo-cta">
   <p><strong>Download NimoteCode</strong></p>

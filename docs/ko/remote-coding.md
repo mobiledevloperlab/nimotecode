@@ -1,7 +1,7 @@
 ---
 title: "휴대폰 원격 개발: SSH 설정과 문제 해결 | NimoteCode"
 description: "Android, iPhone, iPad의 원격 개발을 설정하세요. SSH 호스트, SFTP, 저장소 선택, 검증과 네트워크 및 인증 문제를 순서대로 확인합니다."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -28,7 +28,7 @@ git status --short --branch
   <a href="/images/ios/iphone-ssh.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-ssh.webp" width="660" height="1433" alt="iPhone Remote Explorer의 연결된 SSH 프로젝트." loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone Remote Explorer의 연결된 SSH 프로젝트. 출처: NimoteCode App Store 등록 이미지. 연속 작업 기록이 아닌 홍보 스크린샷입니다.</figcaption>
+  <figcaption>iPhone Remote Explorer의 연결된 SSH 프로젝트. 출처: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 등록 이미지</a>.</figcaption>
 </figure>
 
 ## 3. 실제 변경 검증

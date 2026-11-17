@@ -1,13 +1,13 @@
 ---
 title: "iPhone SSH 클라이언트: SFTP, 편집기, Git | NimoteCode"
 description: "NimoteCode iPhone에서 SSH로 연결하고 SFTP 파일 탐색, 코드 편집, 호스트 명령과 Git 검토를 이어 가세요. 설정 절차, 사용 조건과 App Store 다운로드 안내."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
 # iPhone SSH 클라이언트로 프로젝트 편집하기
 
-외출 중 서버 파일을 확인하거나 스크립트를 수정하고 저장소를 검토해야 하나요? NimoteCode는 iPhone 작업 공간에 SSH 터미널, 원격 파일 탐색, 코드 편집기, Git 검토와 선택적 AI를 제공합니다. 프로젝트는 호스트에 두고 휴대폰에서 조작합니다.
+NimoteCode는 iPhone을 SSH로 Windows, macOS, Linux 호스트에 연결합니다. 같은 작업 공간에서 SFTP 파일 탐색, 코드 편집, 호스트 명령 실행과 Git 변경 검토를 할 수 있습니다. 저장소와 실행 환경은 원격 컴퓨터에 유지됩니다.
 
 명령만 실행한다면 전용 터미널로 충분할 수 있습니다. 파일을 찾아 편집하고 검증한 뒤 diff까지 확인하는 작업에 NimoteCode가 유용합니다.
 
@@ -15,7 +15,7 @@ pageClass: "seo-product-guide"
   <a href="/images/ios/iphone-ssh.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-ssh.webp" width="660" height="1433" alt="iPhone의 NimoteCode Remote Explorer에 표시된 SSH 연결과 프로젝트." loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone의 NimoteCode Remote Explorer에 표시된 SSH 연결과 프로젝트. 출처: NimoteCode App Store 등록 이미지. 연속 작업 기록이 아닌 홍보 스크린샷입니다.</figcaption>
+  <figcaption>iPhone의 NimoteCode Remote Explorer에 표시된 SSH 연결과 프로젝트. 출처: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 등록 이미지</a>.</figcaption>
 </figure>
 
 ## 개발 호스트에 연결하기
@@ -68,7 +68,6 @@ iOS는 백그라운드 앱을 일시 중지할 수 있습니다. 긴 작업에�
   <p><strong>NimoteCode 다운로드</strong></p>
   <p class="seo-cta-actions">
     <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">App Store</a>
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">Google Play</a>
     <a href="/ko/docs/quick-start" class="home-page-btn secondary">빠른 시작</a>
   </p>
 </div>

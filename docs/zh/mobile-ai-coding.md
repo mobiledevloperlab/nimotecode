@@ -1,13 +1,13 @@
 ---
 title: "移动 AI 编程：Chat、Agent 与 ACP 工作流 | NimoteCode"
 description: "在 NimoteCode 中按任务选择 AI Chat、Nimote Agent 或外部 ACP，了解模型配置、工具审批、执行环境与 Git 验证，避免混淆对话和实际执行。"
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
 # 移动 AI 编程：先选模式，再选执行环境
 
-需要解释一个函数，还是让 Agent 读文件并运行检查？两者需要不同工具。NimoteCode 将 AI Chat、内置 Nimote Agent 和兼容的外部 ACP Agent 放在编辑器、终端和 Git 旁边，使用前应明确任务模式和执行位置。
+NimoteCode 提供用于解释代码的 AI Chat、处理工作区任务的内置 Nimote Agent，以及兼容外部 Agent 的 ACP 连接。它们可配合编辑器、终端和 Git 工具使用。先按任务选择模式，配置对应的模型提供商或运行时，再确认所使用的工作区。
 
 ## 区分 Chat 与 Agent
 
@@ -27,7 +27,7 @@ pageClass: "seo-product-guide"
   <a href="/images/ios/iphone-agents.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-agents.webp" width="660" height="1433" alt="iPhone 上的 NimoteCode，展示内置与外部 Agent 选择。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone 上的 NimoteCode，展示内置与外部 Agent 选择。 来源：NimoteCode App Store 页面。此图为宣传截图，不是连续操作录屏。</figcaption>
+  <figcaption>iPhone 上的 NimoteCode，展示内置与外部 Agent 选择。 图片来源：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 页面</a>。</figcaption>
 </figure>
 
 ## 先用只读任务验证

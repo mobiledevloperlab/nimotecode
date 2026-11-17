@@ -1,7 +1,7 @@
 ---
 title: "휴대폰에서 SSH로 Codex 사용하기 | NimoteCode"
 description: "개발 호스트에서 Codex를 실행하고 Android 또는 iPhone의 NimoteCode로 접근하세요. 설정, 세션 복구, Git 검토와 문제 해결을 설명합니다."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -42,7 +42,7 @@ git status --short --branch
   <a href="/images/ios/iphone-terminal.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-terminal.webp" width="660" height="1433" alt="iPhone NimoteCode SSH 터미널의 셸 명령 화면. Codex 실행 기록은 아닙니다." loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone NimoteCode SSH 터미널의 셸 명령 화면. Codex 실행 기록은 아닙니다. 출처: NimoteCode App Store 등록 이미지. 연속 작업 기록이 아닌 홍보 스크린샷입니다.</figcaption>
+  <figcaption>iPhone NimoteCode SSH 터미널의 셸 명령 화면. Codex 실행 기록은 아닙니다. 출처: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 등록 이미지</a>.</figcaption>
 </figure>
 
 ## 3. 호스트 세션에서 시작하기
@@ -118,7 +118,7 @@ Nimote Agent의 Confirm 모드는 내장 Agent를 제어합니다. 수동 SSH �
 
 <!-- faq:end -->
 
-로컬 또는 SSH 파일 편집과 기본 터미널부터 시작할 수 있습니다. 일부 기능에는 Pro가 필요합니다. [무료 및 Pro](/ko/pro)와 앱에 표시되는 접근 상태를 확인하세요. AI는 모델 제공업체를 직접 설정해야 하며 모델 사용료는 별도로 청구됩니다.
+무료 플랜에는 로컬 및 SSH 편집과 기본 터미널이 포함됩니다. 고급 Git 등의 범위는 [무료 및 Pro](/ko/pro)를 확인하세요. Claude Code와 Codex는 각 서비스의 계정과 요금 체계를 사용합니다. SSH 터미널에서 실행할 때 NimoteCode의 모델 제공업체 설정은 필요하지 않습니다.
 
 <div class="seo-cta">
   <p><strong>NimoteCode 다운로드</strong></p>

@@ -1,7 +1,7 @@
 ---
 title: "Remote Coding Setup for Phone & Tablet | NimoteCode"
 description: "Set up remote coding from Android, iPhone or iPad: prepare an SSH host, verify SFTP, select a repository, run checks and troubleshoot the network or account."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -28,7 +28,7 @@ git status --short --branch
   <a href="/images/ios/iphone-ssh.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-ssh.webp" width="660" height="1433" alt="iPhone Remote Explorer showing the connected SSH project." loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone Remote Explorer showing the connected SSH project. Source: NimoteCode App Store listing. Promotional screenshot, not a continuous recording.</figcaption>
+  <figcaption>iPhone Remote Explorer showing the connected SSH project. Source: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store screenshots</a>.</figcaption>
 </figure>
 
 ## 3. Verify a real change

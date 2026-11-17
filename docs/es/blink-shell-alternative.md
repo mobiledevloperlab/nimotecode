@@ -1,7 +1,7 @@
 ---
 title: "Alternativa a Blink Shell para desarrollo móvil | NimoteCode"
 description: "Compara NimoteCode y Blink Shell para iPhone y iPad: SSH, Mosh, SFTP, edición, Git e IA. Elige según tu trabajo y verifica antes de cambiar."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -9,7 +9,7 @@ pageClass: "seo-product-guide"
 
 Si Blink encaja con tu teclado y terminal, incluye esas ventajas en la comparación. Blink ofrece SSH, Mosh, SFTP con Files y un flujo Code basado en VS Code. NimoteCode proporciona explorador, editor, interfaz Git e IA configurable en Android, iPhone y iPad.
 
-Fuentes oficiales revisadas: 2026-11-13. Comparación documental de productos; no se realizaron pruebas comparativas de rendimiento.
+Fuentes oficiales revisadas: 2026-11-17. Comparación documental de productos; no se realizaron pruebas comparativas de rendimiento.
 
 ## Compara el trabajo, además de la conexión
 
@@ -28,18 +28,18 @@ Conserva Blink si Mosh, el teclado, Files o tu entorno Blink Code son esenciales
 
 ## Cuándo probar NimoteCode
 
-Evalúa una tarea pequeña: encuentra el archivo, guarda un cambio, ejecuta las comprobaciones en el equipo y revisa el diff. Así compruebas el flujo de proyecto sin deducir velocidad o fiabilidad de una lista. Servidores de lenguaje, depuradores, Git y agentes externos necesitan herramientas compatibles en el entorno.
+En iPhone o iPad, abre el repositorio que uses con Blink Code. Compara la edición de dos archivos relacionados, el guardado y la revisión del diff Git. Prueba tu teclado externo y la reconexión en tu red habitual. Si dependes de Mosh, inclúyelo como requisito: esta guía describe el flujo SSH de NimoteCode.
 
 <figure class="seo-phone-capture">
   <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="Editor de NimoteCode en iPhone con pestañas y teclado." loading="lazy" decoding="async">
   </a>
-  <figcaption>Editor de NimoteCode en iPhone con pestañas y teclado. Fuente: ficha de NimoteCode en App Store. Captura promocional; no es una grabación continua.</figcaption>
+  <figcaption>Editor de NimoteCode en iPhone con pestañas y teclado. Fuente: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">capturas de NimoteCode en App Store</a>.</figcaption>
 </figure>
 
 ## Verifica una conexión antes de migrar
 
-1. Anota servidor, puerto, cuenta, política de autenticación y ruta. Crea una conexión nueva; no se presupone importación automática.
+1. Anota servidor, puerto, cuenta, política de autenticación y ruta. Crea un perfil SSH en NimoteCode con esos datos.
 2. Utiliza la autenticación permitida y protege las claves privadas. No las pegues en conversaciones de IA ni informes.
 3. Verifica la huella, abre la misma raíz y prueba listado y guardado en una carpeta del usuario.
 4. Ejecuta las comprobaciones, revisa cambios y prueba la reconexión antes de depender de ella fuera de casa.
@@ -57,7 +57,7 @@ Evalúa una tarea pequeña: encuentra el archivo, guarda un cambio, ejecuta las 
 
 ### ¿Se transfieren automáticamente equipos y claves?
 
-No se garantiza la importación automática. Configura y prueba la conexión con la autenticación admitida por el equipo y confirma proyecto y permisos.
+Configura dirección, puerto y autenticación en NimoteCode. Verifica la huella, la ruta y los permisos. Conserva el cliente anterior hasta comprobar la conexión nueva.
 
 ### ¿NimoteCode es más barato para todos?
 

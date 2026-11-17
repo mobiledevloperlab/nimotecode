@@ -1,13 +1,13 @@
 ---
 title: "SSH IDE: 원격 파일, 터미널, Git | NimoteCode"
 description: "NimoteCode SSH IDE의 SFTP 파일 탐색, 코드 편집, 호스트 터미널과 Git을 확인하세요. 연결, 파일 권한과 언어 도구의 요구 사항을 구분합니다."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
-# SSH IDE로 원격 프로젝트 다루기
+# SSH IDE로 원격 프로젝트 편집과 검증하기
 
-알고 있는 명령만 실행한다면 SSH 터미널이면 충분합니다. 저장소를 찾아 편집하고 패치를 검토해야 할 때 SSH IDE가 도움이 됩니다. NimoteCode는 Android, iPhone, iPad에 탐색기, 편집기, 터미널, Git과 선택적 AI를 제공합니다.
+NimoteCode는 Android, iPhone, iPad에서 SSH로 원격 프로젝트를 엽니다. SFTP로 파일을 탐색하고, 탭이나 분할 창에서 소스를 편집하며, 호스트에서 명령을 실행하고 같은 작업 공간에서 Git 변경을 검토할 수 있습니다. 저장소, 의존성, 실행 환경은 호스트에 유지됩니다.
 
 ## 세 계층을 나눠 확인
 
@@ -19,12 +19,9 @@ pageClass: "seo-product-guide"
 
 셸 성공이 SFTP 성공을 증명하지는 않습니다. 파일을 열어도 도구가 설치되지는 않습니다.
 
-<figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone 편집기의 소스 탭과 키보드." loading="lazy" decoding="async">
-  </a>
-  <figcaption>iPhone 편집기의 소스 탭과 키보드. 출처: NimoteCode App Store 등록 이미지. 연속 작업 기록이 아닌 홍보 스크린샷입니다.</figcaption>
-</figure>
+<div class="doc-screenshots">
+  <DocScreenshot file="remote-workspace-connected.jpg" caption="Remote Explorer에 SSH 호스트, 계정, 선택한 저장소 루트가 표시됩니다." />
+</div>
 
 ## 작업 공간 기능
 
@@ -33,6 +30,21 @@ Explorer에서 루트를 선택하고 탭과 분할 편집으로 관련 파일�
 ## 호스트에 맞춰 설정
 
 Windows는 PowerShell과 SFTP를 사용합니다. [설정 안내](/ko/docs/windows-ssh-sftp)를 참고하세요. Mac과 Linux는 호스트의 셸과 도구를 사용합니다. 의존성이 준비된 호스트를 켜 둬야 하며 연결만으로 프로세스를 유지하지는 않습니다.
+
+## 편집 전에 저장소 확인하기
+
+Remote Explorer에서 호스트, 계정, 루트 경로를 확인하세요. 터미널의 작업 디렉터리와 브랜치는 별도로 확인해야 합니다. 편집기에서 파일을 바꿔도 셸의 디렉터리는 바뀌지 않습니다. Linux 또는 macOS에서는 다음 명령을 사용할 수 있습니다.
+
+```sh
+pwd
+git status --short --branch
+```
+
+파일을 저장한 뒤 프로젝트에 명시된 테스트나 빌드를 실행하세요. 커밋 전에 diff와 기존 변경을 확인합니다. 터미널은 되지만 파일 접근이 안 되면 SFTP와 디렉터리 권한을, 명령을 찾지 못하면 호스트의 설치 위치와 PATH를 확인하세요.
+
+## 연결 끊김과 장시간 작업에 대비하기
+
+장시간 작업에는 호스트의 세션 관리 도구를 사용하고 재접속 후 상태를 확인하세요. Linux 또는 macOS에서 설정된 tmux 세션은 호스트가 실행 중이면 SSH 연결이 끊겨도 유지될 수 있습니다. 화면 잠금이나 앱 전환으로 연결이 중단될 수 있으며 호스트 절전이나 재시작으로 작업이 멈출 수 있습니다.
 
 ## 설정과 문제 해결
 

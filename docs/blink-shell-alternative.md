@@ -1,7 +1,7 @@
 ---
 title: "Blink Shell Alternative for Mobile Development | NimoteCode"
 description: "Compare NimoteCode and Blink Shell for iPhone and iPad development: SSH, Mosh, SFTP, editing, Git and AI. Choose by workflow and verify before switching."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -9,7 +9,7 @@ pageClass: "seo-product-guide"
 
 If Blink already fits your keyboard and terminal workflow, keep those strengths in the comparison. Blink provides SSH, Mosh, SFTP with Files integration, and a Code workflow built around VS Code. NimoteCode offers its own project explorer, editor, Git interface, and configurable AI across Android, iPhone, and iPad.
 
-Official sources reviewed: 2026-11-13. Product documentation review; no comparative performance benchmark was conducted.
+Official sources reviewed: 2026-11-17. Product documentation review; no comparative performance benchmark was conducted.
 
 ## Compare the workflow, not only the connection
 
@@ -28,18 +28,18 @@ Stay with Blink when Mosh, your keyboard setup, Files integration, or an establi
 
 ## When to try NimoteCode
 
-Try a small repository task: locate the source file, save one change, run the project’s check on the host, and read the diff in Source Control. This evaluates the app’s project workflow without pretending that a feature list proves speed or reliability. Language servers, debuggers, Git, and external agents still need compatible tools in the execution environment.
+On iPhone or iPad, open the same repository you use with Blink Code. Compare editing two related files, saving a change and reviewing its Git diff. Test your external keyboard and reconnection under your usual network conditions. If Mosh is essential to your workflow, include that requirement in the decision; this guide covers NimoteCode’s SSH workflow.
 
 <figure class="seo-phone-capture">
   <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="NimoteCode on iPhone showing the code editor, tabs, and keyboard." loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode on iPhone showing the code editor, tabs, and keyboard. Source: NimoteCode App Store listing. Promotional screenshot, not a continuous recording.</figcaption>
+  <figcaption>NimoteCode on iPhone showing the code editor, tabs, and keyboard. Source: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store screenshots</a>.</figcaption>
 </figure>
 
 ## Test one connection before migrating
 
-1. Record the host, port, account, authentication policy, and project path. Configure a new connection; this guide does not promise automatic profile import.
+1. Record the host, port, account, authentication policy, and project path. Create a new SSH profile in NimoteCode using those settings.
 2. Use an authentication method permitted by your host policy. Keep private keys protected; do not paste them into AI chat or support reports.
 3. Verify the server fingerprint, open the same project root, and test file listing and saving in a user-owned directory.
 4. Run the repository’s checks and review changed files. Test reconnection before relying on it away from the desk.
@@ -57,7 +57,7 @@ Try a small repository task: locate the source file, save one change, run the pr
 
 ### Does switching transfer my hosts and keys automatically?
 
-This guide does not claim automatic import. Configure and test a connection using your host’s supported authentication method, then confirm the project and permissions.
+Set up the host address, port and authentication in NimoteCode, then verify the fingerprint, project path and file permissions. Keep the existing client available until you have tested the new connection.
 
 ### Is NimoteCode cheaper for every user?
 

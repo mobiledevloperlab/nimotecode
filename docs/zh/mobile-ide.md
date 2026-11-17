@@ -13,10 +13,10 @@ pageClass: mobile-ide-article
 我们正在开发 NimoteCode，一款支持 Android、iPhone 和 iPad 的编辑器与开发工作区。下面用它举例。不过，选任何工具之前，都值得先回答一个问题：**代码和工具到底在哪里运行？**
 
 <figure class="article-hero">
-  <a href="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" target="_blank" rel="noopener">
-    <img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" width="1414" height="878" alt="平板上的 NimoteCode：源代码管理和代码编辑器并排显示。" loading="eager" decoding="async">
+  <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="iPad 上的 NimoteCode，展示项目导航和代码编辑。图片来源：NimoteCode App Store 页面。" loading="eager" decoding="async">
   </a>
-  <figcaption>平板上的 NimoteCode：源代码管理和代码编辑器并排显示。</figcaption>
+  <figcaption>iPad 上的 NimoteCode，展示项目导航和代码编辑。图片来源：NimoteCode App Store 页面。</figcaption>
 </figure>
 
 ## 先选工作方式，再选应用

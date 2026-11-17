@@ -13,10 +13,10 @@ pageClass: mobile-ide-article
 私たちはAndroid、iPhone、iPad向けのエディターと開発ワークスペース、NimoteCodeを開発しています。この記事ではNimoteCodeを使って説明しますが、どのアプリを選ぶ場合も、最初に考えたいことは同じです。**コードと開発ツールを、どこで動かしますか？**
 
 <figure class="article-hero">
-  <a href="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" target="_blank" rel="noopener">
-    <img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" width="1414" height="878" alt="タブレット上のNimoteCode。ソース管理とコードエディターを並べて表示しています。" loading="eager" decoding="async">
+  <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="iPad 版 NimoteCode のプロジェクトナビゲーションとコード編集。出典：NimoteCode の App Store 掲載画像。" loading="eager" decoding="async">
   </a>
-  <figcaption>タブレット上のNimoteCode。ソース管理とコードエディターを並べて表示しています。</figcaption>
+  <figcaption>iPad 版 NimoteCode のプロジェクトナビゲーションとコード編集。出典：NimoteCode の App Store 掲載画像。</figcaption>
 </figure>
 
 ## アプリより先に作業の進め方を選ぶ

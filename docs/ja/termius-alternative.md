@@ -1,7 +1,7 @@
 ---
 title: "Termius の代替：編集と Git のワークフロー | NimoteCode"
 description: "NimoteCode と Termius の SSH、SFTP、コード編集、Git、AI を比較。プラットフォーム、利用条件、移行前の確認手順を紹介します。"
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -9,7 +9,7 @@ pageClass: "seo-product-guide"
 
 Termius を使っているなら、乗り換える価値は実際の仕事が改善するかで判断します。Termius は SSH、SFTP、ポート転送、ホスト管理、プランに応じた同期やチーム機能を提供します。コード編集、Git レビュー、AI の作業を同じアプリで進めたい場合に NimoteCode を検討できます。
 
-公式資料の確認日：2026-11-13。製品文書に基づく比較であり、性能のベンチマークは実施していません。
+公式資料の確認日：2026-11-17。製品文書に基づく比較であり、性能のベンチマークは実施していません。
 
 ## 接続だけでなく作業の流れを比較する
 
@@ -28,18 +28,18 @@ Termius を使っているなら、乗り換える価値は実際の仕事が改
 
 ## NimoteCode を試す場面
 
-小さなリポジトリ作業で評価します。ファイルを探し、編集・保存し、ホストで検証を実行して差分を読む流れです。機能の一覧だけで速度や信頼性を判断しないでください。言語サーバー、デバッガー、Git、外部 Agent は実行環境に対応ツールが必要です。
+普段 Termius でアクセスするリポジトリを使います。NimoteCode で同じディレクトリを開き、ファイルを編集・保存し、ソース管理で差分を確認してホストで検証を実行します。ファイル移動とレビューの手順を比較し、必要なホスト管理や同期機能は別に確認してください。
 
 <figure class="seo-phone-capture">
   <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone の NimoteCode エディターに表示されたタブとキーボード。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone の NimoteCode エディターに表示されたタブとキーボード。 出典：NimoteCode の App Store 掲載画像。宣伝用スクリーンショットであり、連続した操作の記録ではありません。</figcaption>
+  <figcaption>iPhone の NimoteCode エディターに表示されたタブとキーボード。 出典：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode の App Store 掲載画像</a>。</figcaption>
 </figure>
 
 ## 移行前に一つの接続を検証する
 
-1. ホスト、ポート、アカウント、認証方針、パスを控えて新しい接続を設定します。自動インポートは前提にしません。
+1. ホスト、ポート、アカウント、認証方針、パスを控えて新しい接続を設定します。その情報で NimoteCode に SSH プロファイルを作成します。
 2. ホストが許可する認証を使い、秘密鍵を保護します。AI や問い合わせに貼り付けないでください。
 3. ホスト鍵を照合し、同じルートを開いて書き込み可能な場所で一覧と保存を確認します。
 4. プロジェクトを検証して差分を読み、外出前に再接続も試します。
@@ -57,7 +57,7 @@ Termius を使っているなら、乗り換える価値は実際の仕事が改
 
 ### ホストと鍵は自動で移行されますか？
 
-自動インポートは保証していません。ホストが対応する認証方法で接続を設定し、プロジェクトと権限を検証してください。
+NimoteCode でホスト、ポート、認証方式を設定し、ホスト鍵、プロジェクトのパス、ファイル権限を確認してください。新しい接続を検証するまでは、現在のクライアントも残しておきます。
 
 ### 誰にとっても NimoteCode の方が安いですか？
 

@@ -1,7 +1,7 @@
 ---
 title: "iPad でプログラミング：SSH・編集・Git・AI | NimoteCode"
 description: "NimoteCode で iPad のプロジェクト参照、分割編集、SSH ターミナル、Git レビューを利用。リモート実行、iPadOS の制約、導入手順を説明します。"
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -15,7 +15,7 @@ pageClass: "seo-product-guide"
   <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
     <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="App Store 掲載の NimoteCode iPad 画面。プロジェクトの参照と編集を表示。" loading="lazy" decoding="async">
   </a>
-  <figcaption>App Store 掲載の NimoteCode iPad 画面。プロジェクトの参照と編集を表示。 出典：NimoteCode の App Store 掲載画像。宣伝用スクリーンショットであり、連続した操作の記録ではありません。</figcaption>
+  <figcaption>App Store 掲載の NimoteCode iPad 画面。プロジェクトの参照と編集を表示。 出典：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode の App Store 掲載画像</a>。</figcaption>
 </figure>
 
 ## ローカル編集かリモートプロジェクトか
@@ -46,7 +46,7 @@ pageClass: "seo-product-guide"
   <a href="/images/ios/ipad-git.webp" target="_blank" rel="noopener">
     <img src="/images/ios/ipad-git.webp" width="1200" height="899" alt="App Store 掲載の iPad 画面で Git AI ツールと変更分析を表示。" loading="lazy" decoding="async">
   </a>
-  <figcaption>App Store 掲載の iPad 画面で Git AI ツールと変更分析を表示。 出典：NimoteCode の App Store 掲載画像。宣伝用スクリーンショットであり、連続した操作の記録ではありません。</figcaption>
+  <figcaption>App Store 掲載の iPad 画面で Git AI ツールと変更分析を表示。 出典：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode の App Store 掲載画像</a>。</figcaption>
 </figure>
 
 ## 必要なときに AI を加える
@@ -81,7 +81,6 @@ pageClass: "seo-product-guide"
   <p><strong>NimoteCode をダウンロード</strong></p>
   <p class="seo-cta-actions">
     <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">App Store</a>
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">Google Play</a>
     <a href="/ja/docs/quick-start" class="home-page-btn secondary">クイックスタート</a>
   </p>
 </div>

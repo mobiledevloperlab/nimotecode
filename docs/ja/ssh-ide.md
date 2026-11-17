@@ -1,13 +1,13 @@
 ---
 title: "SSH IDE：リモートファイル・ターミナル・Git | NimoteCode"
 description: "NimoteCode の SSH IDE で SFTP 参照、コード編集、ホストのターミナル、Git を利用。接続、権限、言語ツールの要件を確認できます。"
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
-# SSH IDE でリモートプロジェクトを扱う
+# SSH IDE でリモートプロジェクトを編集・検証する
 
-既知のコマンドだけなら SSH ターミナルで十分です。リポジトリを探し、ファイルを編集して差分を読む作業では SSH IDE が役立ちます。NimoteCode は Android、iPhone、iPad で Explorer、編集、ターミナル、Git、任意の AI を提供します。
+NimoteCode は Android、iPhone、iPad から SSH でリモートプロジェクトを開きます。SFTP でファイルを参照し、タブや分割ペインで編集し、ホストでコマンドを実行して Git 差分を確認できます。リポジトリ、依存関係、実行環境はホストに置いたまま使います。
 
 ## 三つの層を分けて確認する
 
@@ -19,12 +19,9 @@ pageClass: "seo-product-guide"
 
 Shell が動いても SFTP の成功は証明できません。ファイルを開くだけではツールも導入されません。
 
-<figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone エディターのソースタブとキーボード。" loading="lazy" decoding="async">
-  </a>
-  <figcaption>iPhone エディターのソースタブとキーボード。 出典：NimoteCode の App Store 掲載画像。宣伝用スクリーンショットであり、連続した操作の記録ではありません。</figcaption>
-</figure>
+<div class="doc-screenshots">
+  <DocScreenshot file="remote-workspace-connected.jpg" caption="SSH ホスト、アカウント、リポジトリルートを表示する Remote Explorer。" />
+</div>
 
 ## ワークスペースの機能
 
@@ -33,6 +30,21 @@ Explorer でルートを選び、タブや分割編集で関連ファイルを�
 ## ホストに合わせる
 
 Windows は PowerShell と SFTP を使います。[設定ガイド](/ja/docs/windows-ssh-sftp)を参照してください。Mac と Linux はホストの Shell とツールを使います。依存関係があるホストを起動しておく必要があり、接続だけではプロセスを維持できません。
+
+## 編集前にリポジトリを確認する
+
+Remote Explorer のホスト、アカウント、ルートパスを確認します。ターミナルの作業ディレクトリとブランチは別に確認してください。エディターでファイルを切り替えてもシェルのディレクトリは変わりません。Linux または macOS では次を使えます。
+
+```sh
+pwd
+git status --short --branch
+```
+
+保存後にプロジェクト所定のテストやビルドを実行します。コミット前に差分と既存の変更を確認してください。ターミナルは使えてもファイルにアクセスできない場合は SFTP とディレクトリ権限を、コマンドが見つからない場合はホストの導入先と PATH を確認します。
+
+## 切断と長時間の処理に備える
+
+長い処理にはホスト側のセッション管理を使い、再接続後に状態を確認します。Linux や macOS の設定済み tmux セッションは、ホストが稼働していれば SSH 切断後も維持できます。画面ロックやアプリ切り替えで接続が中断することがあり、ホストのスリープや再起動では処理が止まる場合があります。
 
 ## 設定と問題の切り分け
 

@@ -1,13 +1,13 @@
 ---
 title: "Mobile AI Coding: Chat, Agent & ACP Workflows | NimoteCode"
 description: "Choose AI Chat, Nimote Agent or an external ACP agent for a mobile project. Learn provider setup, tool approvals, execution environments and Git verification."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
 # Mobile AI coding with the right mode and runtime
 
-Want an explanation of a function, or an agent to inspect files and run checks? These are different tasks. NimoteCode provides AI Chat, a built-in Nimote Agent, and compatible external ACP agents alongside the project editor, terminal, and Git tools. Choose the mode and execution environment before sending a task.
+NimoteCode provides AI Chat for code explanations, Nimote Agent for workspace tasks, and ACP connections to compatible external agents. Each works alongside the editor, terminal and Git tools. Choose a mode for the task, configure its provider or runtime, and confirm which workspace it will use.
 
 ## Choose between Chat and an Agent
 
@@ -27,7 +27,7 @@ Follow [model configuration](/docs/configuration) to add a provider and test acc
   <a href="/images/ios/iphone-agents.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-agents.webp" width="660" height="1433" alt="NimoteCode on iPhone showing built-in and external agent choices." loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode on iPhone showing built-in and external agent choices. Source: NimoteCode App Store listing. Promotional screenshot, not a continuous recording.</figcaption>
+  <figcaption>NimoteCode on iPhone showing built-in and external agent choices. Source: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store screenshots</a>.</figcaption>
 </figure>
 
 ## Try a read-only task first

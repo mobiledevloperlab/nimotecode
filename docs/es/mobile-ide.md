@@ -13,10 +13,10 @@ Es una buena prueba para un IDE móvil. Abrir un archivo es solo el principio. �
 Desarrollamos NimoteCode, un editor y espacio de desarrollo para Android, iPhone y iPad. Lo usaremos como ejemplo, pero la primera decisión sirve para cualquier aplicación: **¿dónde se ejecutarán el código y las herramientas?**
 
 <figure class="article-hero">
-  <a href="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" target="_blank" rel="noopener">
-    <img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" width="1414" height="878" alt="NimoteCode en una tableta, con Source Control y el editor de código visibles a la vez." loading="eager" decoding="async">
+  <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="NimoteCode en iPad con navegación del proyecto y edición de código. Fuente: capturas de NimoteCode en App Store." loading="eager" decoding="async">
   </a>
-  <figcaption>NimoteCode en una tableta, con Source Control y el editor de código visibles a la vez.</figcaption>
+  <figcaption>NimoteCode en iPad con navegación del proyecto y edición de código. Fuente: capturas de NimoteCode en App Store.</figcaption>
 </figure>
 
 ## Elige cómo vas a trabajar antes de elegir la aplicación

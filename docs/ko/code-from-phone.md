@@ -1,7 +1,7 @@
 ---
 title: "휴대폰 코딩 입문: 로컬 파일, Linux, SSH | NimoteCode"
 description: "Android 또는 iPhone에서 코딩을 시작하세요. 로컬 편집, Android Local Linux와 SSH를 선택하고 Python 예제를 실행해 결과를 확인합니다."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -23,7 +23,7 @@ Local Linux는 루팅 없는 PRoot를 사용하고 iPhone과 iPad에서는 사�
   <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone 코드 편집. 실행 환경은 별도로 설정해야 합니다." loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone 코드 편집. 실행 환경은 별도로 설정해야 합니다. 출처: NimoteCode App Store 등록 이미지. 연속 작업 기록이 아닌 홍보 스크린샷입니다.</figcaption>
+  <figcaption>iPhone 코드 편집. 실행 환경은 별도로 설정해야 합니다. 출처: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 등록 이미지</a>.</figcaption>
 </figure>
 
 ## 첫 Python 스크립트

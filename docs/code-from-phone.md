@@ -1,7 +1,7 @@
 ---
 title: "How to Code From a Phone: Local Files, Linux or SSH | NimoteCode"
 description: "Start coding from Android or iPhone with the right environment. Edit local files, run a first Python script in Android Local Linux or SSH, and verify the result."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -23,7 +23,7 @@ Local Linux uses PRoot without root access and is unavailable on iPhone or iPad.
   <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
     <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="Editing source on iPhone; running it requires a configured runtime." loading="lazy" decoding="async">
   </a>
-  <figcaption>Editing source on iPhone; running it requires a configured runtime. Source: NimoteCode App Store listing. Promotional screenshot, not a continuous recording.</figcaption>
+  <figcaption>Editing source on iPhone; running it requires a configured runtime. Source: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store screenshots</a>.</figcaption>
 </figure>
 
 ## Try a first Python script

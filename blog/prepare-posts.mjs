@@ -12,7 +12,7 @@ for (const file of readdirSync(source).filter(name => name.endsWith('.md') && na
   if (!date) throw new Error(`Missing date: ${file}`)
   text = text.replace(/^---\n/, `---\npubDatetime: ${date}T00:00:00Z\n${updated ? `modDatetime: ${updated}T00:00:00Z\n` : ''}`)
   text = text.replace(/\n# [^\n]+\n/, '\n').replace(/\n<p class="article-meta">[^\n]*<\/p>\n/, '\n')
-  const images = { sshIde: '/images/placeholders/local-file-browser.png', sourceControl: '/images/placeholders/source-control-changes.png' }
+  const images = { sshIde: '/images/placeholders/remote-workspace-connected.jpg', sourceControl: '/images/placeholders/source-control-changes.png' }
   text = text.replace(/<ImagePlaceholder image-key="([^"]+)" alt="([^"]+)"\s*\/>/g, (_, key, alt) => {
     if (!images[key]) throw new Error(`Unknown image key: ${key}`)
     return `<img src="${images[key]}" alt="${alt}" width="1080" height="2376" loading="lazy">`

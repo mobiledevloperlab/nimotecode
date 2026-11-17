@@ -1,7 +1,7 @@
 ---
 title: "iPad 코딩: SSH, 편집기, Git, AI 작업 공간 | NimoteCode"
 description: "NimoteCode로 iPad에서 프로젝트 탐색, 분할 편집, SSH 터미널과 Git 검토를 사용하세요. 원격 실행 방식, iPadOS 제약과 설치 절차를 설명합니다."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
@@ -15,7 +15,7 @@ pageClass: "seo-product-guide"
   <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
     <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="App Store에 등록된 NimoteCode iPad 화면: 프로젝트 탐색과 코드 편집." loading="lazy" decoding="async">
   </a>
-  <figcaption>App Store에 등록된 NimoteCode iPad 화면: 프로젝트 탐색과 코드 편집. 출처: NimoteCode App Store 등록 이미지. 연속 작업 기록이 아닌 홍보 스크린샷입니다.</figcaption>
+  <figcaption>App Store에 등록된 NimoteCode iPad 화면: 프로젝트 탐색과 코드 편집. 출처: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 등록 이미지</a>.</figcaption>
 </figure>
 
 ## 로컬 편집과 원격 프로젝트 선택
@@ -46,7 +46,7 @@ pageClass: "seo-product-guide"
   <a href="/images/ios/ipad-git.webp" target="_blank" rel="noopener">
     <img src="/images/ios/ipad-git.webp" width="1200" height="899" alt="App Store의 iPad 화면에 표시된 Git AI 도구와 변경 분석." loading="lazy" decoding="async">
   </a>
-  <figcaption>App Store의 iPad 화면에 표시된 Git AI 도구와 변경 분석. 출처: NimoteCode App Store 등록 이미지. 연속 작업 기록이 아닌 홍보 스크린샷입니다.</figcaption>
+  <figcaption>App Store의 iPad 화면에 표시된 Git AI 도구와 변경 분석. 출처: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 등록 이미지</a>.</figcaption>
 </figure>
 
 ## 필요할 때 AI 추가하기
@@ -81,7 +81,6 @@ pageClass: "seo-product-guide"
   <p><strong>NimoteCode 다운로드</strong></p>
   <p class="seo-cta-actions">
     <a href="https://apps.apple.com/app/id6776158253" class="home-page-btn primary" target="_blank" rel="noopener noreferrer">App Store</a>
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode" class="home-page-btn tertiary" target="_blank" rel="noopener noreferrer">Google Play</a>
     <a href="/ko/docs/quick-start" class="home-page-btn secondary">빠른 시작</a>
   </p>
 </div>

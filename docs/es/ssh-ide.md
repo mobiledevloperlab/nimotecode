@@ -1,13 +1,13 @@
 ---
 title: "IDE SSH: archivos remotos, terminal y Git | NimoteCode"
 description: "Explora el IDE SSH de NimoteCode: archivos SFTP, edición, terminal del equipo, Git y herramientas del lenguaje. Comprende conexión, permisos y requisitos."
-lastUpdated: "2026-11-13"
+lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
 ---
 
-# IDE SSH para trabajar en un proyecto remoto
+# IDE SSH para editar y verificar proyectos remotos
 
-Una terminal SSH basta para un comando conocido. Un IDE SSH ayuda cuando necesitas encontrar el repositorio, editar y revisar el parche. NimoteCode reúne explorador, editor, terminal, Git e IA opcional en Android, iPhone y iPad.
+NimoteCode abre proyectos remotos por SSH en Android, iPhone y iPad. Explora archivos por SFTP, edita código en pestañas o paneles divididos, ejecuta comandos en el servidor y revisa cambios Git en el mismo espacio. El repositorio, las dependencias y el entorno de ejecución permanecen en el servidor.
 
 ## Separa las tres capas
 
@@ -19,12 +19,9 @@ Una terminal SSH basta para un comando conocido. Un IDE SSH ayuda cuando necesit
 
 Una shell operativa no demuestra que SFTP funcione. Abrir un archivo tampoco instala sus herramientas.
 
-<figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="Editor iPhone con pestañas de código y teclado." loading="lazy" decoding="async">
-  </a>
-  <figcaption>Editor iPhone con pestañas de código y teclado. Fuente: ficha de NimoteCode en App Store. Captura promocional; no es una grabación continua.</figcaption>
-</figure>
+<div class="doc-screenshots">
+  <DocScreenshot file="remote-workspace-connected.jpg" caption="Remote Explorer muestra el servidor SSH, la cuenta y la raíz del repositorio." />
+</div>
 
 ## Qué aporta el espacio
 
@@ -33,6 +30,21 @@ Selecciona la raíz en Explorer y usa pestañas o paneles divididos. Guarda ante
 ## Adapta el entorno al equipo
 
 Windows utiliza PowerShell y SFTP; consulta su [configuración](/es/docs/windows-ssh-sftp). Mac y Linux usan la shell y las herramientas del equipo. Mantén encendido el equipo con las dependencias necesarias; una conexión no mantiene los procesos.
+
+## Comprueba el repositorio antes de editar
+
+Confirma el servidor, la cuenta y la raíz en Remote Explorer. Comprueba por separado el directorio y la rama en Terminal: navegar por el editor no cambia el directorio de la shell. En Linux o macOS:
+
+```sh
+pwd
+git status --short --branch
+```
+
+Guarda antes de ejecutar las pruebas o la compilación documentadas del proyecto. Revisa el diff y los cambios existentes antes de confirmar. Si funciona la terminal pero no los archivos, comprueba SFTP y los permisos del directorio. Si falta un comando, comprueba su instalación y el PATH del servidor.
+
+## Prepara las sesiones para las desconexiones
+
+Usa un gestor de sesiones en el servidor para trabajos largos y comprueba su estado al reconectar. En Linux o macOS, una sesión tmux configurada puede mantenerse tras una desconexión SSH mientras el equipo siga activo. Bloquear el teléfono o cambiar de aplicación puede interrumpir la conexión; suspender o reiniciar el servidor puede detener el trabajo.
 
 ## Configuración y diagnóstico
 
