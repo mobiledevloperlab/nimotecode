@@ -7,6 +7,15 @@ description: Instala NimoteHost en Linux, macOS o Windows y conecta NimoteCode p
 
 Host sirve para iniciar trabajo desde el móvil y volver más tarde. NimoteHost mantiene tareas y terminales en tu ordenador; NimoteCode usa SSH para mostrar la salida y enviar instrucciones.
 
+## Qué puedes hacer con Host
+
+- **Retomar el trabajo remoto:** Inicia una terminal o tarea desde el móvil y vuelve a conectarte para ver la salida y continuar una sesión que siga en ejecución.
+- **Gestionar sesiones de Agent:** Usa Agents compatibles instalados en el ordenador, revisa las acciones de sus herramientas, responde a solicitudes de permisos y continúa la conversación.
+- **Organizar el trabajo:** Busca, filtra y fija sesiones. Si el Host lo permite, la bandeja de tareas también muestra estados, registros de verificación y cambios de código.
+- **Usar tu entorno de desarrollo:** Los comandos y Agents se ejecutan en la carpeta del proyecto del ordenador remoto. El móvil se conecta por SSH, por lo que no necesitas exponer a internet el puerto HTTP local de Host.
+
+Host resulta útil para consultar compilaciones, pruebas y trabajo de Agent desde el móvil. Host y sus procesos deben seguir activos: la suspensión, el cierre de sesión o el reinicio de Host pueden interrumpir el trabajo, y reiniciar no restaura el proceso original. Las opciones de Agent, bandeja de tareas y plugins dependen de las capacidades del Host conectado.
+
 Esta guía sigue la implementación 2.4.0. Host es una versión preliminar y las opciones dependen de sus capacidades. Las capturas son de un teléfono Android real, en inglés y con tema claro. El paquete móvil indicaba 2.3.1 (Build 64) y Host una compilación local 2.4.0.
 
 ## Antes de empezar

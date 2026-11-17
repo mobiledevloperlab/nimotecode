@@ -7,6 +7,15 @@ description: Install NimoteHost on Linux, macOS, or Windows, connect from Nimote
 
 Use Host mode when you want to start work from your phone, leave the app, and come back to the result. NimoteHost runs on your development computer and keeps its tasks and terminals there. NimoteCode uses SSH to show their output, send input, and handle Agent approvals.
 
+## What can Host do?
+
+- **Return to remote work:** Start a terminal or task from your phone, then reconnect to see its output and resume a session that is still running.
+- **Manage Agent sessions:** Use compatible Agents installed on your computer, inspect tool calls, respond to permission requests, and continue the conversation.
+- **Organize work:** Search, filter, and pin sessions. When supported by the Host, the task inbox also shows status, verification records, and code changes.
+- **Use your existing development environment:** Commands and Agents run in the project directory on your remote computer. Your phone connects over SSH, so the Host's local HTTP port does not need to be exposed to the internet.
+
+Host is useful for checking builds, tests, and Agent work from your phone. The Host and its processes must remain running: sleep, logout, or a Host restart can interrupt work, and a restart does not restore the original process. Agent, task inbox, and plugin controls depend on the connected Host's capabilities.
+
 Install Host on the computer that runs your project first. Installing NimoteCode on the phone alone does not set up Host.
 
 This guide follows the 2.4.0 implementation. NimoteHost is a development preview; available Agent, inbox, and plugin controls depend on the connected Host. The screenshots are from a physical Android phone using English and the Light theme. Some session screenshots were captured with app 2.3.1 (Build 64) and a local 2.4.0 Host build; labels may differ in your installed version.
