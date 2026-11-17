@@ -11,11 +11,6 @@ This is the public record of notable product updates. For setup help, use the [d
 
 ## 2026
 
-### 2.4.0 · November 16, 2026
-
-Host workspace, project tasks, and remote reliability.
-
-[2.4.0 →](/releases/2.4.0)
 
 ### Version 2.2.0 · November 2, 2026
 

@@ -10,7 +10,7 @@
 
 <p align="center"><a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-%EC%84%A4%EC%B9%98-34A853?style=for-the-badge&amp;logo=googleplay&amp;logoColor=white" alt="Google Play에서 Android용 NimoteCode 설치"></a> <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="App Store에서 NimoteCode 다운로드"></a></p>
 
-<p align="center"><sub><a href="#workspace-demo">데모</a> · <a href="https://nimotecode.com/ko/docs/quick-start">빠른 시작</a> · <a href="https://nimotecode.com/ko/releases/2.4.0">릴리스 노트</a></sub></p>
+<p align="center"><sub><a href="#workspace-demo">데모</a> · <a href="https://nimotecode.com/ko/docs/quick-start">빠른 시작</a> · <a href="https://nimotecode.com/ko/releases/2.4.1">릴리스 노트</a></sub></p>
 
 <p align="center"><sub>무료로 시작할 수 있으며 AI 설정은 선택 사항입니다. 상용 비공개 소스 앱 · 공식 문서와 자료</sub></p>
 
@@ -78,7 +78,11 @@ Android용은 [Google Play](https://play.google.com/store/apps/details?id=com.ni
 
 [Host 모드: NimoteHost 설치, SSH 연결, 터미널 및 Agent 사용법.](https://nimotecode.com/ko/docs/host)
 
-## NimoteCode 2.4.0 · Host, 프로젝트 작업 및 원격 안정성
+**NimoteCode 2.4.1 출시 예정:** 공개되지 않은 2.4.0 기능을 포함합니다. Windows, macOS, Linux용 NimoteCode와 NimoteHost도 곧 출시됩니다.
+
+## NimoteCode 2.4.1 · 출시 예정
+
+- **작업 흐름 개선.** 보관된 터미널 기록 검색과 탐색기 Git 상태 색상을 지원하며, 터미널 선택, 가로 화면, 원격 저장, Windows 다중 프로세스 안정성을 개선했습니다. 네이티브 Host Agent 세션 연결은 실험 기능이며 명시적인 빌드 설정과 호환 Host가 필요합니다.
 
 - **Host 작업 공간.** 원격 컴퓨터에 호환 NimoteHost를 설치하고 시작한 뒤 SSH로 연결해 터미널 및 Agent 세션을 검색, 고정하고 다시 시작합니다. Host는 선택 기능입니다.
 - **Agent 협업.** 호환 Codex, Claude, OpenCode 세션에서 구조화된 대화, 도구, 승인, 명령, 모델 설정과 실행 중 추가 지시를 지원합니다. 실행 정책은 Host에 따라 다르며 민감한 작업은 승인이 필요할 수 있습니다.
@@ -91,7 +95,7 @@ Android용은 [Google Play](https://play.google.com/store/apps/details?id=com.ni
 - 터미널 응답성, 동기화 업데이트, 검색, 스크롤, Vim, 클립보드, Windows 붙여넣기 및 소프트 키보드를 개선했습니다.
 - 기록 안정성, 로컬 기록 오프라인 삭제, 원격 저장 오류 안내, 큰 파일 편집, 줄바꿈 diff 및 하단 탐색을 개선했습니다.
 
-[2.4.0 →](https://nimotecode.com/ko/releases/2.4.0)
+[2.4.1 →](https://nimotecode.com/ko/releases/2.4.1)
 
 ## 문서
 
@@ -122,7 +126,7 @@ Android용은 [Google Play](https://play.google.com/store/apps/details?id=com.ni
 
 ## 모바일 개발 도구 비교
 
-**편집 → 검사 실행 → diff 검토 → 작업 공간 확장을 하나의 모바일 IDE에서.** NimoteCode 열은 2.4.0을 반영합니다. `?`는 해당 제품의 기능이 확인되지 않았음을 뜻합니다.
+**편집 → 검사 실행 → diff 검토 → 작업 공간 확장을 하나의 모바일 IDE에서.** NimoteCode 열은 미출시 2.4.0 빌드(2.4.1에 포함 예정)를 반영합니다. `?`는 해당 제품의 기능이 확인되지 않았음을 뜻합니다.
 
 | 주요 기능 | **NimoteCode** | Termius | Blink Shell | ServerCC |
 | --- | :---: | :---: | :---: | :---: |

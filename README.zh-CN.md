@@ -18,7 +18,7 @@
   <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-%E4%B8%8B%E8%BD%BD-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="从 App Store 下载 iPhone 和 iPad 版 NimoteCode"></a>
 </p>
 
-<p align="center"><sub><a href="#演示">观看演示</a> · <a href="#与其他移动开发工具对比">工具对比</a> · <a href="https://nimotecode.com/zh/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=zh_quick_start">快速开始</a> · <a href="#latest-release">2.4.0 更新亮点</a></sub></p>
+<p align="center"><sub><a href="#演示">观看演示</a> · <a href="#与其他移动开发工具对比">工具对比</a> · <a href="https://nimotecode.com/zh/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=zh_quick_start">快速开始</a> · <a href="#latest-release">2.4.1 预告</a></sub></p>
 
 <p align="center"><sub>免费开始使用，无需先配置 AI。<br>商业闭源应用 · 本仓库提供官方文档与社区资源</sub></p>
 
@@ -93,7 +93,11 @@ Android 用户可从 [Google Play](https://play.google.com/store/apps/details?id
 
 [Host 模式: 安装 NimoteHost，通过 SSH 连接，创建终端、运行任务和使用 Agent。](https://nimotecode.com/zh/docs/host)
 
-## NimoteCode 2.4.0 · Host 工作区、项目任务与远程可靠性
+**即将发布：NimoteCode 2.4.1**，包含尚未公开发布的 2.4.0 功能；Windows、macOS、Linux 版 NimoteCode 及 NimoteHost 也即将发布，具体时间另行公布。
+
+## NimoteCode 2.4.1 · 即将发布
+
+- **工作流进一步完善。** 支持搜索保留的终端历史、资源管理器 Git 状态着色，改善终端选择、横屏布局、远程保存与 Windows 多进程稳定性。原生 Host Agent 会话接管为实验功能，需要显式构建开关及兼容的 Host 能力。
 
 - **Host 工作区。** 先在远程机器安装并启动兼容的 NimoteHost，再通过 SSH 浏览、搜索、固定和恢复终端与 Agent 会话。Host 为可选功能，原有 SSH 工作流仍可使用。
 - **Host Agent 协作。** 兼容的 Codex、Claude 和 OpenCode 会话提供结构化对话、工具、审批、命令、模型控制和受支持的运行中追问。执行策略取决于 Host 能力，敏感操作仍可能需要确认。
@@ -106,7 +110,7 @@ Android 用户可从 [Google Play](https://play.google.com/store/apps/details?id
 - 优化终端输出响应、同步更新、搜索、滚动、Vim、剪贴板、Windows 粘贴、软键盘及长按导航键。
 - 改进会话历史，支持离线删除本地历史条目；优化远程保存及失败原因、长文件编辑，以及带底部导航的换行 Git Diff。
 
-[2.4.0 →](https://nimotecode.com/zh/releases/2.4.0)
+[2.4.1 →](https://nimotecode.com/zh/releases/2.4.1)
 
 ## 文档
 
@@ -137,7 +141,7 @@ Android 用户可从 [Google Play](https://play.google.com/store/apps/details?id
 
 ## 与其他移动开发工具对比
 
-**编辑代码 → 运行检查 → 审查 Diff → 扩展工作台，在一个移动 IDE 中衔接完成。** 以下精选官网对比中的关键能力，帮助你选择适合自己的工具。NimoteCode 一列反映 2.4.0；问号表示尚未核实该产品是否具备对应能力。
+**编辑代码 → 运行检查 → 审查 Diff → 扩展工作台，在一个移动 IDE 中衔接完成。** 以下精选官网对比中的关键能力，帮助你选择适合自己的工具。NimoteCode 一列反映未发布的 2.4.0 构建（将并入 2.4.1）；问号表示尚未核实该产品是否具备对应能力。
 
 ✅ 已有文档确认的内置或集成能力 · ◐ 有条件支持 · ? 未核实，**不代表不支持** · — 明确不支持
 
@@ -184,7 +188,7 @@ Orca 的移动端依赖桌面 Companion；Moshi 的 Diff 和网页预览需要 P
 
 勾选不代表免费、无需配置或所有平台均支持。Blink 的编辑能力通过 Blink Code 集成，Git / LSP 取决于仓库或远程 IDE 配置；Termius 的 Mosh 此处仅核实 Android。各产品的配置与付费要求见完整对比。
 
-> [**查看七款工具的完整对比与逐项官方依据 →**](https://nimotecode.com/zh/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_comparison) · 竞品资料基准：2026-10-19；NimoteCode 能力版本：2.4.0。
+> [**查看七款工具的完整对比与逐项官方依据 →**](https://nimotecode.com/zh/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_comparison) · 竞品资料基准：2026-10-19；NimoteCode 能力基准：未发布的 2.4.0 构建，将并入 2.4.1。
 
 **想亲自试试？** [安装 NimoteCode](https://nimotecode.com/zh/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_compare_download)，先打开 Demo 或本地项目，无需先配置 AI。
 

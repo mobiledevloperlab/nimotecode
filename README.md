@@ -23,7 +23,7 @@
   <a href="#demo">Watch demo</a> ·
   <a href="#compare-mobile-development-tools">Compare tools</a> ·
   <a href="https://nimotecode.com/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=en_quick_start">Quick start</a> ·
-  <a href="#latest-release">What's new in 2.4.0</a>
+  <a href="#latest-release">2.4.1 preview</a>
 </sub></p>
 
 <p align="center"><sub>Free to start. AI setup is optional.<br>Commercial, closed-source app · Official documentation and community resources</sub></p>
@@ -99,7 +99,11 @@ Store availability and release timing may differ by platform and region. See [do
 
 [Host mode: Install NimoteHost, connect over SSH, and return to terminals and Agent tasks.](https://nimotecode.com/docs/host)
 
-## NimoteCode 2.4.0 · Host workspace, project tasks, and remote reliability
+**Coming soon: NimoteCode 2.4.1**, including the unreleased 2.4.0 features, plus NimoteCode for Windows, macOS and Linux and NimoteHost. Release timing will be announced.
+
+## NimoteCode 2.4.1 · Coming soon
+
+- **More refined workflows.** Search retained terminal history, use Git status colors in Explorer, and benefit from improved terminal selection, landscape layouts, remote saves, and Windows multi-process reliability. Experimental native Host Agent session takeover requires an explicit build flag and compatible Host capabilities.
 
 - **Host workspace.** Install and start a compatible NimoteHost on your remote machine, then connect over SSH to browse, search, pin, and resume terminal and Agent sessions. Host is optional and existing SSH workflows remain available.
 - **Host Agent collaboration.** Compatible Codex, Claude, and OpenCode sessions offer structured conversations, tools, approvals, commands, model controls, and supported follow-up instructions. Execution policies depend on Host capabilities; sensitive actions may still require approval.
@@ -112,7 +116,7 @@ Store availability and release timing may differ by platform and region. See [do
 - More responsive terminal output, synchronized updates, search, scrolling, Vim, clipboard access, Windows paste, software keyboards, and held navigation keys.
 - More reliable session history, offline deletion of local history entries, remote saves with failure reasons, large-file editing, and wrapped Git diffs with footer navigation.
 
-[2.4.0 →](https://nimotecode.com/releases/2.4.0)
+[2.4.1 →](https://nimotecode.com/releases/2.4.1)
 
 ## Documentation
 
@@ -143,7 +147,7 @@ Store availability and release timing may differ by platform and region. See [do
 
 ## Compare mobile development tools
 
-**Edit → Run checks → Review the diff → extend the workspace, in one mobile IDE.** These selected capabilities from our detailed comparison help you choose the right tool for your workflow. The NimoteCode column reflects 2.4.0; question marks mean the corresponding capability has not been verified for that product.
+**Edit → Run checks → Review the diff → extend the workspace, in one mobile IDE.** These selected capabilities from our detailed comparison help you choose the right tool for your workflow. The NimoteCode column reflects the unreleased 2.4.0 build, included in the upcoming 2.4.1; question marks mean the corresponding capability has not been verified for that product.
 
 ✅ Documented built-in or integrated capability · ◐ Conditional · ? Not verified, **not an absence claim** · — Explicitly unsupported
 
@@ -190,7 +194,7 @@ Orca mobile requires its desktop companion. Moshi's diff and web preview require
 
 A check does not mean free, setup-free or available on every platform. Blink integrates editing through Blink Code; Git / LSP depend on repository or remote IDE configuration. Termius Mosh is verified here for Android only. See the full comparison for each product's setup and plan requirements.
 
-> [**See all seven tools and feature-by-feature official evidence →**](https://nimotecode.com/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_comparison) · Competitor evidence baseline: 2026-10-19; NimoteCode capabilities: 2.4.0.
+> [**See all seven tools and feature-by-feature official evidence →**](https://nimotecode.com/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_comparison) · Competitor evidence baseline: 2026-10-19; NimoteCode capabilities: unreleased 2.4.0 build, included in 2.4.1.
 
 **Try the workflow yourself:** [install NimoteCode](https://nimotecode.com/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_compare_download) and open a demo or local project. No AI setup needed to start.
 

@@ -10,7 +10,7 @@
 
 <p align="center"><a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-Instalar-34A853?style=for-the-badge&amp;logo=googleplay&amp;logoColor=white" alt="Instalar NimoteCode en Android desde Google Play"></a> <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-Descargar-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="Descargar NimoteCode para iPhone y iPad desde App Store"></a></p>
 
-<p align="center"><sub><a href="#workspace-demo">Demo</a> · <a href="https://nimotecode.com/es/docs/quick-start">Inicio rápido</a> · <a href="https://nimotecode.com/es/releases/2.4.0">Novedades</a></sub></p>
+<p align="center"><sub><a href="#workspace-demo">Demo</a> · <a href="https://nimotecode.com/es/docs/quick-start">Inicio rápido</a> · <a href="https://nimotecode.com/es/releases/2.4.1">Novedades</a></sub></p>
 
 <p align="center"><sub>Gratis para empezar; configurar la IA es opcional. Aplicación comercial de código cerrado · Documentación y recursos oficiales.</sub></p>
 
@@ -78,7 +78,11 @@ Descarga para Android en [Google Play](https://play.google.com/store/apps/detail
 
 [Modo Host: Instalar NimoteHost, conectar por SSH y retomar terminales y tareas Agent.](https://nimotecode.com/es/docs/host)
 
-## NimoteCode 2.4.0 · Host, tareas de proyecto y fiabilidad remota
+**NimoteCode 2.4.1 llegará pronto** e incluirá las funciones no publicadas de 2.4.0. También llegarán NimoteCode para Windows, macOS y Linux y NimoteHost.
+
+## NimoteCode 2.4.1 · Próximamente
+
+- **Flujos más pulidos.** Busca en el historial conservado del terminal y consulta colores de estado Git en el explorador; mejoran la selección, el diseño horizontal, el guardado remoto y los procesos simultáneos en Windows. La conexión a sesiones nativas de Agent en Host es experimental y requiere una opción de compilación explícita y un Host compatible.
 
 - **Espacio Host.** Instala e inicia NimoteHost compatible en la máquina remota y conecta por SSH para buscar, fijar y retomar sesiones de terminal y Agent. Host es opcional.
 - **Colaboración Agent.** Sesiones compatibles de Codex, Claude y OpenCode con conversaciones estructuradas, herramientas, aprobaciones, comandos, modelos e indicaciones durante la ejecución. Las políticas dependen del Host; las acciones sensibles pueden requerir aprobación.
@@ -91,7 +95,7 @@ Descarga para Android en [Google Play](https://play.google.com/store/apps/detail
 - Mayor respuesta del terminal, actualizaciones sincronizadas, búsqueda, desplazamiento, Vim, portapapeles, pegado en Windows y teclado virtual.
 - Historial más fiable con eliminación local sin conexión; guardado remoto con motivos de error, edición de archivos grandes y diffs ajustados con navegación inferior.
 
-[2.4.0 →](https://nimotecode.com/es/releases/2.4.0)
+[2.4.1 →](https://nimotecode.com/es/releases/2.4.1)
 
 ## Documentación
 
@@ -123,7 +127,7 @@ Descarga para Android en [Google Play](https://play.google.com/store/apps/detail
 
 ## Compara herramientas móviles
 
-**Editar → ejecutar verificaciones → revisar diferencias → ampliar el espacio de trabajo, en un solo IDE móvil.** La columna de NimoteCode refleja 2.4.0; `?` significa que la capacidad no se ha verificado para ese producto.
+**Editar → ejecutar verificaciones → revisar diferencias → ampliar el espacio de trabajo, en un solo IDE móvil.** La columna de NimoteCode refleja la compilación no publicada de 2.4.0, incluida en 2.4.1; `?` significa que la capacidad no se ha verificado para ese producto.
 
 | Capacidad | **NimoteCode** | Termius | Blink Shell | ServerCC |
 | --- | :---: | :---: | :---: | :---: |

@@ -1,46 +1,46 @@
 export const latestRelease = {
-  "version": "2.4.0",
+  "version": "2.3.0",
   "date": {
-    "en": "November 16, 2026",
-    "zh": "2026 年 11 月 16 日",
-    "es": "16 de noviembre de 2026",
-    "ja": "2026 年 11 月 16 日",
-    "ko": "2026년 11월 16일"
+    "en": "November 7, 2026",
+    "zh": "2026 年 11 月 7 日",
+    "es": "7 de noviembre de 2026",
+    "ja": "2026 年 11 月 7 日",
+    "ko": "2026년 11월 7일"
   },
   "homeSummary": {
-    "en": "Host workspace, project tasks, and remote reliability",
-    "zh": "Host 工作区、项目任务与远程可靠性",
-    "es": "Host, tareas de proyecto y fiabilidad remota",
-    "ja": "Host、プロジェクトタスク、リモート操作の安定性",
-    "ko": "Host, 프로젝트 작업 및 원격 안정성"
+    "en": "Workspace modes, Windows SSH, Docker and Dev Containers",
+    "zh": "工作区模式、Windows SSH、Docker 与 Dev Containers",
+    "es": "Modos de trabajo, Windows SSH, Docker y Dev Containers",
+    "ja": "ワークスペースモード、Windows SSH、Docker と Dev Containers",
+    "ko": "작업 공간 모드, Windows SSH, Docker와 Dev Containers"
   },
-  "build": "65",
+  "build": "62",
   "newCount": 6,
   "highlights": {
     "en": [
-      "Host workspace.",
-      "Task inbox and GitHub Issues.",
-      "Project task runner."
+      "IDE, Terminal and AI modes.",
+      "Windows SSH workspaces.",
+      "Docker and Dev Containers."
     ],
     "zh": [
-      "Host 工作区。",
-      "任务收件箱与 GitHub Issue。",
-      "项目任务运行器。"
+      "IDE、终端与 AI 模式。",
+      "Windows SSH 工作区。",
+      "Docker 与 Dev Containers。"
     ],
     "es": [
-      "Espacio Host.",
-      "Bandeja de tareas e Issues de GitHub.",
-      "Tareas de proyecto."
+      "Modos IDE, Terminal e IA.",
+      "Espacios Windows SSH.",
+      "Docker y Dev Containers."
     ],
     "ja": [
-      "Host ワークスペース。",
-      "タスク受信箱と GitHub Issue。",
-      "プロジェクトタスク。"
+      "IDE・ターミナル・AI モード。",
+      "Windows SSH ワークスペース。",
+      "Docker と Dev Containers。"
     ],
     "ko": [
-      "Host 작업 공간.",
-      "작업 수신함과 GitHub Issue.",
-      "프로젝트 작업."
+      "IDE, 터미널, AI 모드.",
+      "Windows SSH 작업 공간.",
+      "Docker와 Dev Containers."
     ]
   }
 } as const

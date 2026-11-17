@@ -10,7 +10,7 @@
 
 <p align="center"><a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB-34A853?style=for-the-badge&amp;logo=googleplay&amp;logoColor=white" alt="Google Play から Android 版 NimoteCode をインストール"></a> <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="App Store から NimoteCode をダウンロード"></a></p>
 
-<p align="center"><sub><a href="#workspace-demo">デモ</a> · <a href="https://nimotecode.com/ja/docs/quick-start">クイックスタート</a> · <a href="https://nimotecode.com/ja/releases/2.4.0">リリースノート</a></sub></p>
+<p align="center"><sub><a href="#workspace-demo">デモ</a> · <a href="https://nimotecode.com/ja/docs/quick-start">クイックスタート</a> · <a href="https://nimotecode.com/ja/releases/2.4.1">リリースノート</a></sub></p>
 
 <p align="center"><sub>無料で開始でき、AI の設定は任意です。商用クローズドソースアプリ · 公式ドキュメントとリソース</sub></p>
 
@@ -78,7 +78,11 @@ Android 版は [Google Play](https://play.google.com/store/apps/details?id=com.n
 
 [Host モード: NimoteHost の導入、SSH 接続、ターミナルと Agent の使い方。](https://nimotecode.com/ja/docs/host)
 
-## NimoteCode 2.4.0 · Host、プロジェクトタスク、リモート操作の安定性
+**NimoteCode 2.4.1 は近日公開予定。** 未公開の 2.4.0 の機能を含みます。Windows・macOS・Linux 版 NimoteCode と NimoteHost も近日公開予定です。
+
+## NimoteCode 2.4.1 · 近日公開予定
+
+- **操作性と安定性の改善。** 保持されたターミナル履歴の検索、エクスプローラーの Git 状態色、文字選択、横画面、リモート保存、Windows の複数プロセスを改善。Host Agent のネイティブセッション接管は実験機能で、明示的なビルド設定と対応 Host が必要です。
 
 - **Host ワークスペース。** リモートに対応する NimoteHost をインストールして起動し、SSH で接続すると、ターミナルや Agent セッションの検索、固定、再開ができます。Host は任意の機能です。
 - **Agent 連携。** 対応する Codex、Claude、OpenCode の構造化対話、ツール、承認、コマンド、モデル設定、実行中の追加指示に対応。実行ポリシーは Host の機能に依存し、機密性の高い操作は承認が必要な場合があります。
@@ -91,7 +95,7 @@ Android 版は [Google Play](https://play.google.com/store/apps/details?id=com.n
 - ターミナルの応答性、同期更新、検索、スクロール、Vim、クリップボード、Windows の貼り付け、ソフトキーボードを改善。
 - 履歴の安定性とローカル履歴のオフライン削除、保存エラーの説明、大きなファイルの編集、折り返し差分と下部ナビゲーションを改善。
 
-[2.4.0 →](https://nimotecode.com/ja/releases/2.4.0)
+[2.4.1 →](https://nimotecode.com/ja/releases/2.4.1)
 
 ## ドキュメント
 
@@ -122,7 +126,7 @@ Android 版は [Google Play](https://play.google.com/store/apps/details?id=com.n
 
 ## モバイル開発ツールの比較
 
-**編集 → チェック実行 → 差分確認 → ワークスペース拡張を、一つのモバイル IDE で。** NimoteCode 列は 2.4.0 を反映しています。`?` は、その製品の機能が未確認であることを示します。
+**編集 → チェック実行 → 差分確認 → ワークスペース拡張を、一つのモバイル IDE で。** NimoteCode 列は未公開の 2.4.0 ビルド（2.4.1 に含まれます）を反映しています。`?` は、その製品の機能が未確認であることを示します。
 
 | 主な機能 | **NimoteCode** | Termius | Blink Shell | ServerCC |
 | --- | :---: | :---: | :---: | :---: |

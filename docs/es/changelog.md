@@ -14,11 +14,6 @@ Este es el registro público de actualizaciones notables de productos. Para obte
 
 ## 2026
 
-### 2.4.0 · 16 de noviembre de 2026
-
-Host, tareas de proyecto y fiabilidad remota.
-
-[2.4.0 →](/es/releases/2.4.0)
 
 ### Versión 2.2.0 · 2 de noviembre de 2026
 

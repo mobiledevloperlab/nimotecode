@@ -42,7 +42,7 @@ const formatReviewDate = (date: string) => new Intl.DateTimeFormat(locale.value,
         <div class="product-hero-copy">
           <p class="product-announcement">
             <span class="product-announcement-badge">{{ copy.previewLabel }}</span>
-            <strong>{{ copy.previewMessage }}</strong>
+            <strong><a :href="local('/releases/2.4.1')">{{ copy.previewMessage }}</a></strong>
           </p>
           <div class="product-hero-heading">
             <p class="product-eyebrow">NimoteCode <span aria-hidden="true">/</span> {{ copy.badge }}</p>

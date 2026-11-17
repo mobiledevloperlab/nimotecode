@@ -14,11 +14,6 @@ description: Product updates, new capabilities, fixes and compatibility notes fo
 
 ## 2026
 
-### 2.4.0 · 2026년 11월 16일
-
-Host, 프로젝트 작업 및 원격 안정성.
-
-[2.4.0 →](/ko/releases/2.4.0)
 
 ### 버전 2.2.0 · 2026년 11월 2일
 

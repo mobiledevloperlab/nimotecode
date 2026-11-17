@@ -14,11 +14,6 @@ description: Product updates, new capabilities, fixes and compatibility notes fo
 
 ## 2026
 
-### 2.4.0 · 2026 年 11 月 16 日
-
-Host、プロジェクトタスク、リモート操作の安定性.
-
-[2.4.0 →](/ja/releases/2.4.0)
 
 ### バージョン 2.2.0 · 2026 年 11 月 2 日
 
