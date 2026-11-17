@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/public/app_icon_round.png" alt="Logotipo de NimoteCode" width="88" height="88"></p>
+<p align="center"><img src="docs/public/app_icon_rounded.png" alt="Logotipo de NimoteCode" width="88" height="88"></p>
 
 <h1 align="center">NimoteCode — IDE móvil para Android e iOS</h1>
 

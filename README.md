@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/public/app_icon_round.png" alt="NimoteCode logo" width="88" height="88">
+  <img src="docs/public/app_icon_rounded.png" alt="NimoteCode logo" width="88" height="88">
 </p>
 
 <h1 align="center">NimoteCode — Mobile IDE for Android &amp; iOS</h1>

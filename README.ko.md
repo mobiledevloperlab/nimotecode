@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/public/app_icon_round.png" alt="NimoteCode 로고" width="88" height="88"></p>
+<p align="center"><img src="docs/public/app_icon_rounded.png" alt="NimoteCode 로고" width="88" height="88"></p>
 
 <h1 align="center">NimoteCode — Android / iOS용 모바일 IDE</h1>
 
