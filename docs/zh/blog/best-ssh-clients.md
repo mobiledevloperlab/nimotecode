@@ -192,8 +192,8 @@ Orca 的移动端适合已经采用其 worktree 与 Agent 工作方式的用户�
 NimoteCode 的重点是让文件、编辑器、终端、Git 审查和 AI 在同一个移动工作区里衔接。它适合这样的任务：找到文件，亲自做一处修改，在项目环境中运行检查，查看 Diff，然后决定是否交付。你也可以先打开 Demo 或本地项目，不配置 AI 就开始体验。[快速开始](/zh/docs/quick-start)
 
 <figure>
-  <img src="/screenshots/p1.png" alt="NimoteCode 官方产品展示：本地与远程工作区、代码编辑器和 AI 面板" width="1604" height="901" loading="lazy" decoding="async">
-  <figcaption>NimoteCode 的工作区、编辑器与 AI 界面。来源：<a href="/zh/features">官方功能页</a>。</figcaption>
+  <img src="/images/ios/ipad-workspace.webp" alt="NimoteCode App Store iPad 展示图：项目资源管理器与代码编辑器" width="1200" height="899" loading="lazy" decoding="async">
+  <figcaption>NimoteCode iPad 界面的项目资源管理器与代码编辑器。来源：<a href="https://apps.apple.com/app/id6776158253">App Store 展示截图</a>。</figcaption>
 </figure>
 
 与单纯操作主机 CLI 相比，它的选择理由主要是三个：**本地与 SSH 项目可以在同一应用中处理；需要时能直接编辑和审查；受支持的 Android 设备还能通过 PRoot 免 root 使用 Ubuntu。** 2.2.0 又加入 GitHub 工作流与实验性的 Local Linux 开发工具包。[工作区指南](/zh/docs/ssh) · [2.2.0 发布说明](/zh/releases/2.2.0)

@@ -1,0 +1,62 @@
+/* Product details: compact introduction, real phone captures, explicit tool specifications. */
+.vp-doc .product-features { color: var(--nimote-text-primary); }
+.vp-doc .product-features :is(h1,h2,h3,p,figure) { margin: 0; padding: 0; border: 0; }
+.product-features a { text-decoration: none; }
+.product-features :is(a,button):focus-visible,.product-reference summary:focus-visible { outline: 2px solid var(--nimote-link); outline-offset: 5px; }
+.product-features [id] { scroll-margin-top: calc(var(--nimote-nav-height) + 24px); }
+.features-hero { padding-block: 8px 48px; border-bottom: 1px solid var(--nimote-border); }
+.vp-doc .product-features .features-eyebrow { color: var(--nimote-text-muted); font-size: 12px; font-weight: 550; letter-spacing: .04em; line-height: 1.6; }
+.vp-doc .product-features h1 { margin-top: 20px; font-size: clamp(32px,3.3vw,46px); line-height: 1.22; letter-spacing: -.04em; text-wrap: balance; }
+.vp-doc .product-features .features-intro { margin-top: 20px; max-width: 720px; color: var(--nimote-text-secondary); font-size: 16px; line-height: 1.85; }
+.features-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 24px; margin-top: 24px; }
+.features-actions a { display: inline-flex; align-items: center; justify-content: center; gap: 16px; min-height: 44px; font-size: 14px; }
+.vp-doc .features-actions .features-primary { padding: 10px 18px; border-radius: var(--nimote-radius-sm); background: var(--nimote-action); color: var(--nimote-on-action); }
+.vp-doc .features-actions .features-primary:hover { background: var(--nimote-action-hover); }
+.vp-doc .product-features .features-deadline { margin-top: 24px; font-size: 12px; line-height: 1.8; }
+.vp-doc .product-features h2 { font-size: clamp(24px,2.5vw,30px); line-height: 1.35; letter-spacing: -.025em; }
+.features-gallery { padding-top: 40px; }
+.features-gallery header { max-width: 720px; }
+.features-view-controls { display: flex; flex-wrap: wrap; gap: 8px; margin-block: 24px 20px; }
+.features-view-controls button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 46px; padding: 10px 18px; border: 1px solid var(--nimote-border); border-radius: var(--nimote-radius-sm); color: var(--nimote-text-secondary); cursor: pointer; font-size: 14px; }
+.features-view-controls button:hover { border-color: var(--nimote-border-strong); }
+.features-view-controls button[aria-pressed="true"] { background: var(--nimote-action); border-color: var(--nimote-action); color: var(--nimote-on-action); }
+.features-view-controls svg { width: 18px; height: 18px; }
+.features-view { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,360px); align-items: center; gap: clamp(24px,5vw,72px); padding: clamp(20px,4vw,48px); border: 1px solid var(--nimote-border); border-radius: var(--nimote-radius-lg); background: var(--nimote-bg-subtle); }
+.features-view-copy { max-width: 540px; }
+.vp-doc .features-view-copy h3 { margin-top: 16px; font-size: clamp(24px,2.4vw,32px); line-height: 1.35; letter-spacing: -.03em; text-wrap: balance; }
+.vp-doc .features-view-copy > p:not(.features-eyebrow) { margin-top: 20px; color: var(--nimote-text-secondary); font-size: 15px; line-height: 1.85; }
+.vp-doc .product-features .features-tool-points { margin: 24px 0 0; padding: 0; list-style: none; }
+.vp-doc .product-features .features-tool-points li { position: relative; padding: 12px 0 12px 16px; margin: 0; border-top: 1px solid var(--nimote-border); color: var(--nimote-text-secondary); font-size: 13px; line-height: 1.7; }
+.features-tool-points li::before { content: ''; position: absolute; left: 0; top: 21px; width: 4px; height: 4px; background: var(--nimote-text-muted); }
+.features-view-copy > a { display: inline-flex; align-items: center; gap: 20px; min-height: 44px; margin-top: 20px; font-size: 14px; }
+.features-phone { min-width: 0; text-align: center; }
+.features-phone > a { display: block; width: min(100%,255px); margin-inline: auto; }
+.vp-doc .product-features .features-phone img { display: block; width: 100%; height: auto; object-fit: contain; margin: 0; border: 1px solid var(--nimote-border-strong); border-radius: var(--nimote-radius-md); box-shadow: var(--nimote-shadow-sm); }
+.features-phone figcaption { margin-top: 14px; color: var(--nimote-text-muted); font-size: 11px; line-height: 1.6; }
+.features-extensions { padding-block: 48px; }
+.features-extension-grid { margin-top: 24px; border-top: 1px solid var(--nimote-border); }
+.features-extension-grid article { display: grid; grid-template-columns: minmax(0,200px) minmax(0,1fr) auto; align-items: start; gap: 8px 32px; padding: 24px 0; border-bottom: 1px solid var(--nimote-border); }
+.vp-doc .features-extension-grid .features-tag { grid-column: 1; grid-row: 2; color: var(--nimote-text-muted); font-size: 12px; }
+.vp-doc .features-extension-grid h3 { grid-column: 1; grid-row: 1; font-size: 17px; line-height: 1.5; }
+.vp-doc .features-extension-grid h3 + p { grid-column: 2; grid-row: 1 / span 2; color: var(--nimote-text-secondary); font-size: 14px; line-height: 1.85; }
+.features-extension-grid article > a { grid-column: 3; grid-row: 1 / span 2; display: inline-flex; gap: 16px; align-items: center; min-height: 44px; font-size: 13px; }
+.vp-doc .product-features .features-details-title { margin-bottom: 24px; }
+.product-reference > details { border-top: 1px solid var(--nimote-border); }
+.product-reference > details:last-child { border-bottom: 1px solid var(--nimote-border); }
+.product-reference > details > summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0; color: var(--nimote-text-primary); font-size: 17px; font-weight: 550; cursor: pointer; list-style: none; }
+.product-reference summary::-webkit-details-marker { display: none; }
+.product-reference > details > summary::after { content: '+'; font-size: 24px; font-weight: 400; }
+.product-reference > details[open] > summary::after { content: '−'; }
+.product-reference > details > h2 { margin-top: 0; border: 0; padding-top: 0; font-size: 20px; }
+.product-reference > details > :last-child { margin-bottom: 28px; }
+@media (max-width: 767px) {
+  .features-hero { padding-block: 0 32px; }
+  .features-gallery { padding-top: 32px; }
+  .features-view { grid-template-columns: minmax(0,1fr); gap: 28px; }
+  .features-view-copy { max-width: none; }
+  .features-view-controls button { padding-inline: 12px; }
+  .features-extensions { padding-block: 32px; }
+  .features-extension-grid article { grid-template-columns: minmax(0,1fr); gap: 8px; }
+  .vp-doc .features-extension-grid article > :is(h3,p,a) { grid-column: auto; grid-row: auto; }
+  .vp-doc .features-extension-grid .features-tag { grid-row: 1; }
+}

@@ -130,7 +130,7 @@
           ]
         }
       ],
-      "earlyAccessDeadline": "Early Access ends soon · November 30, 2026"
+      "earlyAccessDeadline": "Early Access ends November 30, 2026 at 23:59:59 Beijing time (UTC+8)"
     }
   },
   "zh": {
@@ -264,7 +264,7 @@
           ]
         }
       ],
-      "earlyAccessDeadline": "Early Access 活动即将结束 · 截止 2026 年 11 月 30 日"
+      "earlyAccessDeadline": "Early Access 截止：北京时间 2026 年 11 月 30 日 23:59:59"
     }
   },
   "ja": {
@@ -399,7 +399,7 @@
           ]
         }
       ],
-      "earlyAccessDeadline": "Early Access はまもなく終了 · 2026年11月30日まで"
+      "earlyAccessDeadline": "Early Access 終了：2026年11月30日 23:59:59 北京時間（UTC+8）"
     }
   },
   "ko": {
@@ -534,7 +534,7 @@
           ]
         }
       ],
-      "earlyAccessDeadline": "Early Access 곧 종료 · 2026년 11월 30일까지"
+      "earlyAccessDeadline": "Early Access 종료: 2026년 11월 30일 23:59:59 베이징 시간 (UTC+8)"
     }
   },
   "es": {
@@ -669,7 +669,7 @@
           ]
         }
       ],
-      "earlyAccessDeadline": "Early Access termina pronto · 30 de noviembre de 2026"
+      "earlyAccessDeadline": "Early Access termina el 30 de noviembre de 2026 a las 23:59:59, hora de Pekín (UTC+8)"
     }
   }
 }

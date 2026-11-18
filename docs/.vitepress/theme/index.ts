@@ -5,6 +5,7 @@ import Layout from './Layout.vue'
 import MarketingLayout from './MarketingLayout.vue'
 import AppMockup from './components/AppMockup.vue'
 import ProductHome from './components/ProductHome.vue'
+import ProductFeatures from './components/ProductFeatures.vue'
 import ResourceHub from './components/ResourceHub.vue'
 import WorkspaceModes from './components/WorkspaceModes.vue'
 import HostDownload from './components/HostDownload.vue'
@@ -38,6 +39,7 @@ const theme: Theme = {
     }
     app.component('AppMockup', AppMockup)
     app.component('ProductHome', ProductHome)
+    app.component('ProductFeatures', ProductFeatures)
     app.component('ResourceHub', ResourceHub)
     app.component('WorkspaceModes', WorkspaceModes)
     app.component('HostDownload', HostDownload)

@@ -192,8 +192,8 @@ Evaluate whether you want that environment before treating Orca as another stand
 NimoteCode brings files, editing, terminals, Git review and optional AI into one workspace. It fits a task where you locate a file, make a change yourself, run the project's checks and inspect the diff before deciding to ship. You can begin with a demo or local project without configuring AI. [Quick start](/docs/quick-start)
 
 <figure>
-  <img src="/screenshots/p1.png" alt="NimoteCode product image showing local and remote workspaces, a code editor and AI panels" width="1604" height="901" loading="lazy" decoding="async">
-  <figcaption>NimoteCode's workspace, editor and AI interface. Source: <a href="/features">official features page</a>.</figcaption>
+  <img src="/images/ios/ipad-workspace.webp" alt="NimoteCode App Store iPad image showing the project explorer and code editor" width="1200" height="899" loading="lazy" decoding="async">
+  <figcaption>NimoteCode on iPad: project explorer and code editor. Source: <a href="https://apps.apple.com/app/id6776158253">App Store screenshots</a>.</figcaption>
 </figure>
 
 Its main reasons to try are handling local and SSH projects in the same app, retaining direct editing and review, and using Ubuntu through PRoot without root on supported Android devices. Version 2.2.0 adds GitHub workflows and experimental Local Linux development toolkits. [Workspaces](/docs/ssh) · [Release notes](/releases/2.2.0)

@@ -3,58 +3,44 @@ title: Funciones de NimoteCode | Espacio de desarrollo móvil
 description: Abre tu proyecto desde el móvil y conéctate a tu ordenador para editar, ejecutar comandos y revisar cambios de Git en un mismo espacio. Consulta cuándo usar SSH, Docker y Pro.
 ---
 
-# Funciones de NimoteCode
+<ProductFeatures />
 
-Elige entre **cuatro modos: IDE, Terminal, IA y Host** para editar, ejecutar, colaborar con un Agent o volver al trabajo gestionado en tu ordenador. Host requiere instalar NimoteHost. IDE, Terminal e IA mantienen el proyecto y Explorer al cambiar.
+<div class="product-reference">
 
-<WorkspaceModes />
+<details>
+<summary>Búsqueda, servicios de lenguaje y depuración</summary>
 
-**Host: tu ordenador ejecuta y tú revisas el progreso.** Mantén terminales, tareas y Agents compatibles tras desconectar y vuelve para revisar salidas, aprobaciones, verificaciones y diffs. Todo el código de NimoteHost se ofrece bajo Apache-2.0 para revisar, compilar, modificar y contribuir. [Capacidades y despliegue](/es/docs/host) · [Código y contribuciones](https://github.com/mobiledevloperlab/nimotehost). El modo Host llegará con 2.4.1; el ordenador y Host deben seguir activos.
+- [Búsqueda de proyectos](/es/docs/search): busca contenido en espacios SSH, con distinción de mayúsculas y expresiones regulares.
+- [Servicios de lenguaje](/es/docs/lsp): un servidor compatible instalado y configurado en el destino proporciona diagnósticos, navegación por símbolos y acciones de código.
+- [Depuración](/es/docs/debug): utiliza un adaptador configurado para puntos de interrupción, pila de llamadas, variables y expresiones de seguimiento.
 
+</details>
 
-## Vista de la interfaz
+<details>
+<summary>GitHub, tareas y plugins</summary>
 
-<div class="feature-showcase" role="region" tabindex="0" aria-label="NimoteCode feature highlights"><div class="feature-showcase__track"><figure class="feature-showcase__item"><img src="/screenshots/p1.png" alt="Local files, SSH, code editing and AI Agent in NimoteCode" width="1604" height="901" loading="eager"><figcaption>Workspaces, editing and AI Agent</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p2.png" alt="SSH terminal, Source Control and code diagnostics in NimoteCode" width="1597" height="896" loading="lazy"><figcaption>Terminal, Git and diagnostics</figcaption></figure><figure class="feature-showcase__item"><img src="/screenshots/p3.png" alt="NimoteCode debugging, remote workspace sync, and smart caching" width="1598" height="893" loading="lazy"><figcaption>Debugging and workspace sync</figcaption></figure></div></div>
+- [GitHub](/es/docs/source-control): clona en el dispositivo, Local Linux o un host SSH; gestiona issues, PR, revisiones, comprobaciones y ejecuciones según los permisos de la cuenta.
+- [Tareas](/es/docs/tasks): guarda comandos con nombre y ejecútalos desde el directorio del proyecto SSH o Local Linux.
+- [Plugins](/es/docs/plugins): crea paneles con formularios, datos del espacio, operaciones de archivos, solicitudes HTTP y scripts. Las acciones de archivos, red y ejecución requieren confirmación.
 
-## Espacios de trabajo
+</details>
 
-| Espacio | Uso | Límite importante |
-| --- | --- | --- |
-| **Local** | Abre una carpeta autorizada por el sistema y trabaja con Git en el dispositivo. | Una carpeta no aporta por sí misma shell Linux, compilador ni runtime. |
-| **SSH** | Usa proyecto y herramientas que ya existen en un host remoto. | Los comandos se ejecutan con los permisos de la cuenta remota elegida. |
-| **Android Local Linux** | Usa un espacio Ubuntu sin root en Android compatible. | Solo Android; herramientas y dependencias se instalan por separado. |
-| **Demo** | Explora archivos e interfaz de ejemplo antes de conectar un proyecto. | No es un entorno desplegable. |
+<details>
+<summary>Proveedores de modelos y herramientas externas</summary>
 
-Consulta [espacios locales y SSH](/es/docs/ssh) y [Android Local Linux](/es/docs/local-linux).
+- [Configuración de modelos](/es/docs/configuration): configura proveedor, modelo y credenciales. La cuenta y los costes de uso del modelo son independientes de NimoteCode.
+- [Agents ACP externos](/es/docs/ai): ejecuta un Agent compatible configurado por separado en un entorno admitido. Sus credenciales, permisos y política de ejecución dependen de ese entorno.
+- [Servidores MCP](/es/docs/ai): conecta herramientas por stdio o Streamable HTTP. Iniciar un servidor stdio e invocar herramientas MCP requiere aprobación.
 
-## Desarrollo y revisión
+</details>
 
-- [Editor](/es/docs/editor): archivos locales o remotos, pestañas, panel dividido, edición y vista previa de Markdown o HTML estático.
-- [Terminal](/es/docs/terminal): comandos SSH/Local Linux, búsqueda de salida, sesiones y actualización del entorno remoto.
-- [Control de código fuente y GitHub](/es/docs/source-control): estado, staging, diffs, ramas, historial, clonación, issues, PR, revisiones, checks, flujos y artefactos.
-- [Tareas](/es/docs/tasks) y [búsqueda](/es/docs/search): comandos guardados y búsqueda de contenido SSH.
+<details>
+<summary>Acceso a funciones</summary>
 
-El proyecto determina el resultado real de compilaciones, pruebas y Git. Confirma directorio, comando, diff y remoto antes de modificar archivos o publicar código.
+La app muestra el acceso de la cuenta y plataforma actuales. Escritura Git, varios terminales, ejecución de Agents, Docker, LSP y depuración dependen del acceso Pro, de prueba o Early Access correspondiente.
 
-## IA y extensiones
+Consulta [cuenta y suscripción](/es/docs/account-subscription) para acceso y restauración, o [Early Access](/es/pro) para las condiciones actuales.
 
-La IA es opcional y usa un proveedor que configuras. Hay plantillas para OpenAI, Anthropic, Google Gemini, xAI Grok, DeepSeek, Alibaba Qwen, OpenRouter, Groq, SiliconFlow, StepFun, Zhipu AI/GLM, Moonshot AI, Ollama y endpoints compatibles con OpenAI. La cuenta, disponibilidad y costes pertenecen al proveedor.
+</details>
 
-- [AI Chat](/es/docs/ai), Nimote Agent con revisión de plan y agentes ACP externos compatibles.
-- Servidores MCP como proceso local/remoto o servidor HTTP; añade solo servidores de confianza y revisa cada llamada.
-- [Plugins personalizados](/es/docs/plugins) combinan datos, formularios y acciones confirmadas. También hay [LSP](/es/docs/lsp), [depuración](/es/docs/debug) y [sincronización/caché](/es/docs/sync-cache).
-
-La salida de IA es ayuda, no garantía de exactitud, seguridad ni éxito. Los plugins y herramientas de lenguaje/depuración no instalan dependencias en silencio ni añaden permisos del host. La disponibilidad depende de plataforma, versión, cuenta, canal y región; la app muestra el estado actual.
-
-## Espacios de trabajo y Docker en 2.3.0
-
-Cambia entre los modos IDE, Terminal e IA dentro del espacio de trabajo, compartiendo el mismo proyecto y el estado del Explorador.
-
-El panel Docker del host SSH muestra contenedores, imágenes, volúmenes, redes y Compose. Las capturas de Debian bookworm-slim muestran la lista y los detalles de una imagen. Dev Containers se configura desde el devcontainer.json del proyecto.
-
-<div class="doc-screenshots">
-  <DocScreenshot file="docker-images.png" caption="Docker image list in the Light theme, including Debian bookworm-slim." />
-  <DocScreenshot file="docker-image-detail.png" caption="Debian bookworm-slim image details in the Light theme." />
 </div>
-
-[Modo Host →](/es/docs/host) — Instalar NimoteHost, conectar por SSH y retomar terminales y tareas Agent.
