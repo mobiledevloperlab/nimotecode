@@ -63,7 +63,7 @@ Host 沿用已有的 SSH 认证连接，本地 HTTP API 仅监听回环地址并
 ## 先准备好这几样
 
 - 一台能通过 SSH 登录的 Linux、macOS 或 Windows 电脑。手机需要能访问它的 SSH 地址。
-- 包含 Host 模式的 NimoteCode 构建，以及与它兼容的 NimoteHost。本文基于 2.4.0 实现，相关功能将并入即将发布的 2.4.1；安装 Host 不会让旧版 App 自动获得该入口。
+- NimoteCode 2.4.1 或更新版本，以及与它兼容的 NimoteHost。安装 Host 不会让旧版 App 自动获得该入口。
 - 一个远程账号有权访问的项目目录。后面的“工作区目录”填电脑上的路径，不是手机路径。
 
 第一次用 SSH，先按[本地与 SSH 工作区](/zh/docs/ssh)把连接配好。Windows 可以先看 [Windows SSH 与 SFTP](/zh/docs/windows-ssh-sftp)。Host 不会替你安装或开启 SSH。

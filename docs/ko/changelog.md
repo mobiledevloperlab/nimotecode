@@ -14,6 +14,12 @@ description: Product updates, new capabilities, fixes and compatibility notes fo
 
 ## 2026
 
+### 버전 2.4.1 · 2026년 11월 19일
+
+NimoteCode 2.4.1은 원격 터미널과 Agent 세션을 위한 Host 워크스페이스, 파일 및 폴더 전송, 프로젝트 작업 검색을 추가합니다. 인터페이스와 태블릿 레이아웃을 개편하고 GitHub CI, 터미널 기록 검색, SSH 호스트 확인, 원격 저장을 개선합니다.
+
+[2.4.1 릴리스 노트 보기](/ko/releases/2.4.1)
+
 
 ### 버전 2.2.0 · 2026년 11월 2일
 

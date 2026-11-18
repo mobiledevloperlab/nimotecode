@@ -62,7 +62,7 @@ Commands run with the Host OS account's authority. Use an appropriately scoped a
 
 ## Before you start
 
-You need a Linux, macOS, or Windows computer that you can reach over SSH, a NimoteCode build that includes Host mode (the 2.4.0 implementation is included in the upcoming 2.4.1), a compatible NimoteHost, and a project directory the remote account can access. The workspace path you enter later belongs to the computer, not the phone. Installing Host does not add Host mode to an older app.
+You need a Linux, macOS, or Windows computer that you can reach over SSH, NimoteCode 2.4.1 or later with Host mode, a compatible NimoteHost, and a project directory the remote account can access. The workspace path you enter later belongs to the computer, not the phone. Installing Host does not add Host mode to an older app.
 
 For background operation, Linux needs a working systemd user manager; macOS needs the user's GUI login session; Windows uses a per-user login scheduled task. Without the required service manager, try foreground operation. Keep the computer awake and reachable. Across networks, use a reachable SSH address or your existing VPN; installing Host does not make a private address reachable.
 

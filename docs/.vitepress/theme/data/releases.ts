@@ -1,46 +1,46 @@
 export const latestRelease = {
-  "version": "2.3.0",
+  "version": "2.4.1",
   "date": {
-    "en": "November 7, 2026",
-    "zh": "2026 年 11 月 7 日",
-    "es": "7 de noviembre de 2026",
-    "ja": "2026 年 11 月 7 日",
-    "ko": "2026년 11월 7일"
+    "en": "November 19, 2026",
+    "zh": "2026 年 11 月 19 日",
+    "es": "19 de noviembre de 2026",
+    "ja": "2026 年 11 月 19 日",
+    "ko": "2026년 11월 19일"
   },
   "homeSummary": {
-    "en": "Workspace modes, Windows SSH, Docker and Dev Containers",
-    "zh": "工作区模式、Windows SSH、Docker 与 Dev Containers",
-    "es": "Modos de trabajo, Windows SSH, Docker y Dev Containers",
-    "ja": "ワークスペースモード、Windows SSH、Docker と Dev Containers",
-    "ko": "작업 공간 모드, Windows SSH, Docker와 Dev Containers"
+    "en": "Host sessions, file transfers, and project tasks",
+    "zh": "Host 会话、文件传输与项目任务",
+    "es": "Sesiones Host, transferencias y tareas de proyecto",
+    "ja": "Host セッション、ファイル転送、プロジェクトタスク",
+    "ko": "Host 세션, 파일 전송 및 프로젝트 작업"
   },
-  "build": "62",
+  "build": "66",
   "newCount": 6,
   "highlights": {
     "en": [
-      "IDE, Terminal and AI modes.",
-      "Windows SSH workspaces.",
-      "Docker and Dev Containers."
+      "Remote terminal and Agent sessions with NimoteHost.",
+      "File transfers and project task discovery.",
+      "Redesigned interface and improved tablet support."
     ],
     "zh": [
-      "IDE、终端与 AI 模式。",
-      "Windows SSH 工作区。",
-      "Docker 与 Dev Containers。"
+      "通过 NimoteHost 管理远程终端与 Agent 会话。",
+      "文件传输与项目任务发现。",
+      "重构界面，改善平板支持。"
     ],
     "es": [
-      "Modos IDE, Terminal e IA.",
-      "Espacios Windows SSH.",
-      "Docker y Dev Containers."
+      "Sesiones remotas de terminal y Agent con NimoteHost.",
+      "Transferencias y detección de tareas.",
+      "Interfaz renovada y mejoras para tabletas."
     ],
     "ja": [
-      "IDE・ターミナル・AI モード。",
-      "Windows SSH ワークスペース。",
-      "Docker と Dev Containers。"
+      "NimoteHost でリモートのターミナルと Agent セッションを管理。",
+      "ファイル転送とプロジェクトタスク検出。",
+      "画面の刷新とタブレット対応の改善。"
     ],
     "ko": [
-      "IDE, 터미널, AI 모드.",
-      "Windows SSH 작업 공간.",
-      "Docker와 Dev Containers."
+      "NimoteHost로 원격 터미널 및 Agent 세션 관리.",
+      "파일 전송 및 프로젝트 작업 검색.",
+      "인터페이스 개편과 태블릿 지원 개선."
     ]
   }
 } as const

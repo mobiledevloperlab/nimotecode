@@ -187,7 +187,7 @@
       "Language services and debugging need configured tools; some advanced features require Pro.",
       "Commands need SSH or supported Android Local Linux; multiple terminals require Pro.",
       "Bring your own model service or external agent; usage is billed separately",
-      "Requires a compatible NimoteHost on a reachable SSH computer. Host mode is coming in 2.4.1; Host and the computer must stay running."
+      "Requires a compatible NimoteHost on a reachable SSH computer. Host mode requires NimoteCode 2.4.1 or later; Host and the computer must stay running."
     ],
     "screenshotLink": "View screenshot",
     "capabilityDetails": "More development tools and access details",
@@ -222,8 +222,8 @@
         "Edit a file, then run a check over SSH and review the result."
       ]
     ],
-    "previewLabel": "2.4.1 Coming Soon",
-    "previewMessage": "Host sessions, Agent tasks and project tools are coming in 2.4.1. NimoteCode for Windows, macOS and Linux, plus NimoteHost, are coming soon.",
+    "previewLabel": "2.4.1 Released",
+    "previewMessage": "Host sessions, file transfers, and project task discovery are now available.",
     "workspaceDemoContext": "Explore the mobile workspace",
     "workspaceDemoSteps": [
       [
@@ -262,7 +262,7 @@
         ]
       ],
       "privacy": "Self-host on Linux, macOS, or Windows through your existing SSH connection. The authenticated Host API listens only on loopback; Host credentials stay on your computer. AI tools use their configured providers.",
-      "note": "Host mode is coming in 2.4.1. Host/OS restart interrupts processes; source and release access depend on repository publication.",
+      "note": "Host mode requires NimoteCode 2.4.1 or later. Host/OS restart interrupts processes; source and release access depend on repository publication.",
       "guide": "Install and use Host",
       "source": "Explore the source",
       "contribute": "Contribute code"
@@ -456,7 +456,7 @@
       "语言服务和调试需配置相应工具；部分进阶能力需 Pro。",
       "运行命令需 SSH 或受支持的 Android Local Linux；多终端需 Pro。",
       "需自备模型服务或外部 Agent；Pro 不包含模型用量、API 额度或第三方订阅",
-      "需在 SSH 可达的电脑上安装兼容 NimoteHost。Host 模式将随 2.4.1 提供；电脑和 Host 需要保持运行。"
+      "需在 SSH 可达的电脑上安装兼容 NimoteHost。Host 模式需要 NimoteCode 2.4.1 或更新版本；电脑和 Host 需要保持运行。"
     ],
     "screenshotLink": "查看真实界面",
     "capabilityDetails": "更多开发能力与使用条件",
@@ -491,8 +491,8 @@
         "编辑文件，通过 SSH 运行检查，再核对结果。"
       ]
     ],
-    "previewLabel": "2.4.1 即将发布",
-    "previewMessage": "2.4.1 将带来 Host 会话、Agent 任务和项目工具。Windows、macOS、Linux 版 NimoteCode 与 NimoteHost 也即将发布。",
+    "previewLabel": "2.4.1 已发布",
+    "previewMessage": "新增 Host 会话、文件传输与项目任务发现。",
     "workspaceDemoContext": "探索移动工作区",
     "workspaceDemoSteps": [
       [
@@ -531,7 +531,7 @@
         ]
       ],
       "privacy": "通过已有 SSH 连接，自部署到 Linux、macOS 或 Windows。Host API 仅监听本机回环地址并要求认证，Host 凭据留在自己的电脑上；AI 工具仍使用各自配置的模型服务。",
-      "note": "Host 模式将随 2.4.1 提供。Host 或系统重启会中断进程；源码与发布包入口以仓库公开状态为准。",
+      "note": "Host 模式需要 NimoteCode 2.4.1 或更新版本。Host 或系统重启会中断进程；源码与发布包入口以仓库公开状态为准。",
       "guide": "安装并使用 Host",
       "source": "查看开源代码",
       "contribute": "参与代码贡献"
@@ -725,7 +725,7 @@
       "言語サービスとデバッグはツール設定が必要です。一部の高度な機能は Pro 対象です。",
       "コマンド実行には SSH または対応 Android Local Linux が必要です。複数ターミナルは Pro 対象です。",
       "モデルサービスや外部 Agent は各自で設定。利用料は別途発生",
-      "SSH で到達できるパソコンに対応 NimoteHost が必要です。2.4.1 で提供予定。パソコンと Host は稼働を続ける必要があります。"
+      "SSH で到達できるパソコンに対応 NimoteHost が必要です。NimoteCode 2.4.1 以降が必要です。パソコンと Host は稼働を続ける必要があります。"
     ],
     "screenshotLink": "画面を拡大",
     "capabilityDetails": "開発機能と利用条件",
@@ -760,8 +760,8 @@
         "ファイルを編集し、SSH 経由でチェックを実行して結果を確認します。"
       ]
     ],
-    "previewLabel": "2.4.1 まもなく登場",
-    "previewMessage": "2.4.1 では Host セッション、Agent タスク、プロジェクトツールが登場。Windows・macOS・Linux 版 NimoteCode と NimoteHost も近日公開予定。",
+    "previewLabel": "2.4.1 公開",
+    "previewMessage": "Host セッション、ファイル転送、プロジェクトタスク検出に対応。",
     "workspaceDemoContext": "モバイルワークスペースを探索",
     "workspaceDemoSteps": [
       [
@@ -800,7 +800,7 @@
         ]
       ],
       "privacy": "Linux、macOS、Windows に自分で導入し、既存の SSH で接続します。認証付き API はループバックのみで待ち受け、Host 認証情報はパソコンに残ります。AI ツールは設定した提供元に接続します。",
-      "note": "Host モードは 2.4.1 で提供予定。Host/OS の再起動はプロセスを中断します。ソースと配布物へのアクセスはリポジトリの公開状況によります。",
+      "note": "Host モードには NimoteCode 2.4.1 以降が必要です。Host/OS の再起動はプロセスを中断します。ソースと配布物へのアクセスはリポジトリの公開状況によります。",
       "guide": "導入と使い方",
       "source": "ソースを見る",
       "contribute": "コードを貢献"
@@ -994,7 +994,7 @@
       "언어 서비스와 디버깅은 도구 설정이 필요하며 일부 고급 기능은 Pro에 포함됩니다.",
       "명령 실행에는 SSH 또는 지원되는 Android Local Linux가 필요하며 다중 터미널은 Pro 기능입니다.",
       "모델 서비스 또는 외부 Agent는 직접 설정하며 사용료는 별도",
-      "SSH로 접근 가능한 컴퓨터에 호환 NimoteHost가 필요합니다. 2.4.1 제공 예정이며 컴퓨터와 Host는 계속 실행되어야 합니다."
+      "SSH로 접근 가능한 컴퓨터에 호환 NimoteHost가 필요합니다. NimoteCode 2.4.1 이상이 필요하며 컴퓨터와 Host는 계속 실행되어야 합니다."
     ],
     "screenshotLink": "실제 화면 보기",
     "capabilityDetails": "추가 개발 기능과 사용 조건",
@@ -1029,8 +1029,8 @@
         "파일을 편집하고 SSH로 검사를 실행한 뒤 결과를 확인하세요."
       ]
     ],
-    "previewLabel": "2.4.1 출시 예정",
-    "previewMessage": "2.4.1에서 Host 세션, Agent 작업과 프로젝트 도구를 만나보세요. Windows, macOS, Linux용 NimoteCode와 NimoteHost도 곧 출시됩니다.",
+    "previewLabel": "2.4.1 출시",
+    "previewMessage": "Host 세션, 파일 전송 및 프로젝트 작업 검색을 지원합니다.",
     "workspaceDemoContext": "모바일 작업 공간 살펴보기",
     "workspaceDemoSteps": [
       [
@@ -1069,7 +1069,7 @@
         ]
       ],
       "privacy": "Linux, macOS, Windows에 직접 배포하고 기존 SSH로 연결합니다. 인증 API는 루프백에서만 수신하고 Host 인증 정보는 컴퓨터에 남습니다. AI 도구는 설정한 제공자를 사용합니다.",
-      "note": "Host 모드는 2.4.1 제공 예정입니다. Host/OS 재시작은 프로세스를 중단하며 소스와 패키지는 저장소 공개 상태에 따라 제공됩니다.",
+      "note": "Host 모드에는 NimoteCode 2.4.1 이상이 필요합니다. Host/OS 재시작은 프로세스를 중단하며 소스와 패키지는 저장소 공개 상태에 따라 제공됩니다.",
       "guide": "설치 및 사용 안내",
       "source": "소스 보기",
       "contribute": "코드 기여"
@@ -1263,7 +1263,7 @@
       "Los servicios de lenguaje y depuración necesitan herramientas configuradas; algunas funciones requieren Pro.",
       "Los comandos requieren SSH o Android Local Linux compatible; varios terminales requieren Pro.",
       "Configura tu servicio de modelos o agente externo; consumo facturado aparte",
-      "Requiere NimoteHost compatible en un equipo accesible por SSH. Llegará con 2.4.1; el equipo y Host deben seguir encendidos."
+      "Requiere NimoteHost compatible en un equipo accesible por SSH. Requiere NimoteCode 2.4.1 o posterior; el equipo y Host deben seguir encendidos."
     ],
     "screenshotLink": "Ver captura",
     "capabilityDetails": "Más herramientas y condiciones de acceso",
@@ -1298,8 +1298,8 @@
         "Edita un archivo, ejecuta una comprobación por SSH y revisa el resultado."
       ]
     ],
-    "previewLabel": "2.4.1 próximamente",
-    "previewMessage": "La versión 2.4.1 traerá sesiones Host, tareas Agent y herramientas de proyecto. NimoteCode para Windows, macOS y Linux, y NimoteHost, también llegarán pronto.",
+    "previewLabel": "2.4.1 publicada",
+    "previewMessage": "Ya están disponibles las sesiones Host, transferencias y detección de tareas.",
     "workspaceDemoContext": "Explora el espacio de trabajo móvil",
     "workspaceDemoSteps": [
       [
@@ -1338,7 +1338,7 @@
         ]
       ],
       "privacy": "Despliega en Linux, macOS o Windows usando SSH. La API autenticada solo escucha en loopback y las credenciales Host permanecen en el equipo. Las herramientas de IA usan sus proveedores configurados.",
-      "note": "El modo Host llegará con 2.4.1. Reiniciar Host o el sistema interrumpe los procesos. El acceso al código y paquetes depende de la publicación del repositorio.",
+      "note": "El modo Host requiere NimoteCode 2.4.1 o posterior. Reiniciar Host o el sistema interrumpe los procesos. El acceso al código y paquetes depende de la publicación del repositorio.",
       "guide": "Instalación y uso",
       "source": "Explorar el código",
       "contribute": "Contribuir código"

@@ -32,7 +32,7 @@ NimoteCode es el cliente; NimoteHost ejecuta las tareas en tu ordenador. Host of
 
 La conexión es **NimoteCode → SSH → NimoteHost → herramientas del proyecto**. No requiere otra cuenta Nimote ni un puerto público de Host. Las credenciales locales permanecen en el ordenador; los comandos tienen los permisos de su cuenta del sistema. Usa cuentas separadas para aislar usuarios. SSH normal funciona sin instalar Host; Host añade tareas que continúan tras desconectar y gestión de Agents compatibles.
 
- El modo Host de la implementación 2.4.0 se incluirá en 2.4.1; instalar el servicio no añade esta función a una aplicación antigua.
+ El modo Host requiere NimoteCode 2.4.1 o posterior; instalar el servicio no añade esta función a una aplicación antigua.
 
 ## Código completo: revisar, personalizar y contribuir
 

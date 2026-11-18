@@ -24,7 +24,7 @@
       [
         "NimoteHost",
         "Requires a separate host installation and a running computer. Managed terminals, tasks, and compatible Agents can continue after the client disconnects.",
-        "Upcoming · 2.4.1"
+        "NimoteCode 2.4.1+"
       ]
     ],
     "views": [
@@ -108,7 +108,7 @@
       [
         "NimoteHost",
         "需要单独安装 Host，电脑须保持运行。托管终端、任务与兼容 Agent 可在客户端断开后继续执行。",
-        "即将推出 · 2.4.1"
+        "NimoteCode 2.4.1+"
       ]
     ],
     "views": [
@@ -192,7 +192,7 @@
       [
         "NimoteHost",
         "別途インストールとコンピューターの継続稼働が必要です。切断後も管理対象のターミナル、タスク、対応 Agent を実行できます。",
-        "提供予定 · 2.4.1"
+        "NimoteCode 2.4.1+"
       ]
     ],
     "views": [
@@ -276,7 +276,7 @@
       [
         "NimoteHost",
         "별도 설치와 켜져 있는 컴퓨터가 필요합니다. 연결 해제 후에도 관리되는 터미널, 작업, 호환 Agent를 실행할 수 있습니다.",
-        "출시 예정 · 2.4.1"
+        "NimoteCode 2.4.1+"
       ]
     ],
     "views": [
@@ -360,7 +360,7 @@
       [
         "NimoteHost",
         "Requiere instalación independiente y un ordenador encendido. Las terminales, tareas y Agents compatibles pueden continuar tras desconectar.",
-        "Próximamente · 2.4.1"
+        "NimoteCode 2.4.1+"
       ]
     ],
     "views": [
