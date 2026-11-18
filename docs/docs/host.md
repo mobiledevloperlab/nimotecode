@@ -5,7 +5,11 @@ description: "Keep terminals, tasks, and coding Agents running on your computer 
 
 # Host mode: an open-source workspace for remote tasks and Agents
 
-Use Host mode when you want to start work from your phone, leave the app, and come back to the result. NimoteHost runs on your development computer and keeps its tasks and terminals there. NimoteCode uses SSH to show their output, send input, and handle Agent approvals.
+Manage terminals, tasks, and coding Agents on your development computer from your phone. Disconnect while work continues, then reconnect to review progress and respond to approvals.
+
+## Download NimoteHost {#download-nimotehost}
+
+<HostDownload />
 
 ## What Host brings to your workflow
 
@@ -36,8 +40,6 @@ The connection is: **NimoteCode → your existing SSH connection → NimoteHost 
 | Host mode | Leave tasks running after the client disconnects, return to their output, and manage compatible structured Agent conversations and approvals. |
 | Host CLI | Deploy on a server or manage the service from a shell. No desktop environment needed. |
 | Host desktop bundle | Manage service status, sessions, devices, settings, and diagnostics on the computer. Includes the CLI. |
-
-The repository and release downloads will become available when published. If GitHub returns 404 or no matching asset is listed, use a complete preview bundle or source checkout supplied by the maintainer, or wait for publication. The commands below do not imply that public downloads are already available.
 
 This guide follows the 2.4.0 implementation. NimoteHost is a development preview; available Agent, inbox, and plugin controls depend on the connected Host. The screenshots are from a physical Android phone using English and the Light theme. Some session screenshots were captured with app 2.3.1 (Build 64) and a local 2.4.0 Host build; labels may differ in your installed version.
 
@@ -99,9 +101,9 @@ Compare the digest with the adjacent `.sha256` file from the same release. Use y
 
 Keep the extracted bundle together: binaries, installation scripts, licenses, `BUILD.json`, `MODULES.json`, and `SHA256SUMS`. A GUI executable by itself is not the full bundle. Once a service uses an installed path, keep its files in place.
 
-### Install from source
+### Install from source {#host-source}
 
-Source installation needs Git and Go 1.26.5 or later; prebuilt distributions do not need Go. Once the repository is public, run the following as your ordinary user on the development computer. With a supplied source checkout, enter its root and run the last command:
+Source installation needs Git and Go 1.26.5 or later; prebuilt distributions do not need Go. Run the following as your ordinary user on the development computer. With a supplied source checkout, enter its root and run the last command:
 
 ```sh
 git clone https://github.com/mobiledevloperlab/nimotehost.git
@@ -111,7 +113,7 @@ go run ./tools/install
 
 The Go installer works in Unix shells and PowerShell. It builds, verifies, installs, and starts the CLI service; it does not build the desktop GUI. To build a distribution without installing it, use `go run ./tools/build`. For the desktop build, use `go run ./tools/build -gui` with the native desktop SDK and C compiler described in the repository. Keep app and Host versions compatible; a source build does not guarantee compatibility with an older store client.
 
-## 2. Install and start it on the computer
+## 2. Install and start it on the computer {#host-install}
 
 Run these commands on your development computer using the same account you will use for SSH.
 

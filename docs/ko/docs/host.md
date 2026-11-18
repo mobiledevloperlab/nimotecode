@@ -5,7 +5,11 @@ description: "연결 해제 후 컴퓨터에서 터미널, 작업과 Agent를 �
 
 # Host: 오픈 소스 원격 작업 및 Agent 작업 공간
 
-휴대폰에서 작업을 시작한 뒤 나중에 결과를 보고 싶다면 Host를 사용하세요. 개발 컴퓨터의 NimoteHost가 작업과 터미널을 관리하고, 휴대폰은 SSH로 출력과 입력, Agent 승인을 처리합니다.
+휴대폰에서 개발 컴퓨터의 터미널, 작업과 Agent를 관리하세요. 연결 해제 후에도 작업은 계속되며 다시 연결해 진행 상황과 승인을 확인합니다.
+
+## NimoteHost 다운로드 {#download-nimotehost}
+
+<HostDownload />
 
 ## Host 기능과 사용 가치
 
@@ -28,7 +32,7 @@ NimoteCode는 클라이언트이고 NimoteHost는 컴퓨터에서 작업을 실�
 
 연결은 **NimoteCode → SSH → NimoteHost → 프로젝트 도구** 순서입니다. 추가 Nimote 계정이나 공개 Host 포트가 필요 없으며 인증 정보는 컴퓨터에 남습니다. 명령은 Host의 OS 계정 권한으로 실행되므로 사용자 격리가 필요하면 OS 계정을 분리하세요. 일반 SSH에는 Host가 필요 없으며 Host는 연결 해제 후 작업 지속과 호환 Agent 관리를 추가합니다.
 
-저장소와 다운로드는 공개 이후 제공됩니다. 404나 패키지 부재 시 유지 관리자가 제공한 전체 미리보기 패키지·소스를 사용하거나 공개를 기다리세요. 2.4.0 구현의 Host 모드는 출시 예정인 2.4.1에 포함됩니다. 서비스를 설치해도 이전 앱에 해당 화면이 추가되지는 않습니다.
+ 2.4.0 구현의 Host 모드는 출시 예정인 2.4.1에 포함됩니다. 서비스를 설치해도 이전 앱에 해당 화면이 추가되지는 않습니다.
 
 ## 전체 소스: 검토, 사용자 정의 및 기여
 
@@ -66,7 +70,7 @@ Linux와 Windows에는 32비트 x86용 386 CLI도 있으며 GUI는 포함하지 
 
 압축을 푼 뒤 실행 파일, 스크립트, 라이선스, BUILD.json, MODULES.json과 SHA256SUMS를 함께 보관하세요. 서비스가 참조하는 파일을 지우지 마세요. 맞는 패키지가 없다면 [저장소 안내](https://github.com/mobiledevloperlab/nimotehost)에 따라 빌드할 수 있습니다. 소스 설치에는 Go 1.26.5 이상이 필요하며 사전 빌드 패키지에는 필요 없습니다.
 
-## 2. 컴퓨터에서 설치
+## 2. 컴퓨터에서 설치 {#host-install}
 
 나중에 SSH로 사용할 계정으로 실행합니다. Linux/macOS에서는 압축을 푼 폴더의 터미널에서 sudo 없이 실행하세요.
 
@@ -88,11 +92,11 @@ Windows에서는 같은 폴더의 PowerShell에서 실행합니다.
 
 설치 전 잠깐 써 보려면 ./nimotehost start, Windows는 .\nimotehost.exe start를 실행하고 창을 열어 두세요. 서비스가 실행 중이면 두 번째 프로세스를 시작할 필요는 없습니다. Host는 SSH나 Agent를 설치하지 않습니다. 휴대폰은 SSH를 통하므로 Host의 로컬 HTTP 포트를 인터넷에 열지 않아도 됩니다.
 
-### 패키지와 소스 설치
+### 패키지와 소스 설치 {#host-source}
 
 CLI 이름은 `nimotehost-<version>-<os>-<arch>`, 데스크톱은 `nimotehost-gui-<version>-<os>-<arch>`입니다. Linux/macOS는 `.tar.gz`, Windows는 `.zip`입니다. GitHub Source code 대신 전체 바이너리 배포본을 선택하고 첨부 `.sha256`과 대조한 뒤 전체를 압축 해제하세요. Linux 데스크톱은 glibc 2.35 이상이 필요하며 macOS 패키지는 서명·공증되지 않았습니다.
 
-Git과 Go 1.26.5 이상을 준비하고 저장소 공개 후 일반 계정으로 실행하세요.
+Git과 Go 1.26.5 이상을 준비하고 일반 계정으로 실행하세요.
 
 ```sh
 git clone https://github.com/mobiledevloperlab/nimotehost.git

@@ -5,7 +5,11 @@ description: "Mantén terminales, tareas y Agents en tu ordenador tras desconect
 
 # Host: espacio abierto para tareas remotas y Agents
 
-Host sirve para iniciar trabajo desde el móvil y volver más tarde. NimoteHost mantiene tareas y terminales en tu ordenador; NimoteCode usa SSH para mostrar la salida y enviar instrucciones.
+Gestiona terminales, tareas y Agents de tu ordenador desde el móvil. El trabajo continúa al desconectar; vuelve para revisar el progreso y responder aprobaciones.
+
+## Descargar NimoteHost {#download-nimotehost}
+
+<HostDownload />
 
 ## Capacidades y ventajas de Host
 
@@ -28,7 +32,7 @@ NimoteCode es el cliente; NimoteHost ejecuta las tareas en tu ordenador. Host of
 
 La conexión es **NimoteCode → SSH → NimoteHost → herramientas del proyecto**. No requiere otra cuenta Nimote ni un puerto público de Host. Las credenciales locales permanecen en el ordenador; los comandos tienen los permisos de su cuenta del sistema. Usa cuentas separadas para aislar usuarios. SSH normal funciona sin instalar Host; Host añade tareas que continúan tras desconectar y gestión de Agents compatibles.
 
-El repositorio y las descargas estarán disponibles al publicarse. Si aparece 404 o faltan paquetes, utiliza una distribución o código completo del mantenedor, o espera la publicación. El modo Host de la implementación 2.4.0 se incluirá en 2.4.1; instalar el servicio no añade esta función a una aplicación antigua.
+ El modo Host de la implementación 2.4.0 se incluirá en 2.4.1; instalar el servicio no añade esta función a una aplicación antigua.
 
 ## Código completo: revisar, personalizar y contribuir
 
@@ -64,7 +68,7 @@ Linux y Windows también tienen CLI 386, sin GUI. Descarga la suma SHA256 y comp
 
 Si falta un paquete para tu equipo, consulta el [repositorio](https://github.com/mobiledevloperlab/nimotehost). Compilar desde código requiere Go 1.26.5 o posterior; los paquetes precompilados no necesitan Go.
 
-## 2. Instalar en el ordenador
+## 2. Instalar en el ordenador {#host-install}
 
 Usa la misma cuenta con la que conectarás por SSH. En Linux/macOS, abre un terminal en la carpeta extraída, sin sudo:
 
@@ -86,11 +90,11 @@ El instalador verifica el paquete e instala un servicio de usuario. Comprueba qu
 
 Para probar sin servicio, ejecuta `./nimotehost start` o `.\nimotehost.exe start` y deja esa ventana abierta. No arranques otra copia si ya hay un servicio activo. Host no configura SSH ni instala Agent. El teléfono lo alcanza por SSH; no abras su puerto HTTP local a internet.
 
-### Paquetes y compilación desde código
+### Paquetes y compilación desde código {#host-source}
 
 Los archivos se llaman `nimotehost-<version>-<os>-<arch>` para CLI y `nimotehost-gui-<version>-<os>-<arch>` para escritorio. Linux/macOS usan `.tar.gz` y Windows `.zip`. Descarga la distribución binaria completa, no el archivo Source code de GitHub. Compara su hash con el `.sha256` adjunto antes de extraer todo el contenido. El escritorio Linux requiere glibc 2.35 o posterior; los paquetes macOS no están firmados ni notarizados.
 
-Con Git y Go 1.26.5+, una vez público el repositorio, ejecuta como usuario normal:
+Con Git y Go 1.26.5+, ejecuta como usuario normal:
 
 ```sh
 git clone https://github.com/mobiledevloperlab/nimotehost.git

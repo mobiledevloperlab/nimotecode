@@ -5,7 +5,11 @@ description: "切断後もパソコンでターミナル、タスク、Agent を
 
 # Host：オープンソースのリモートタスクと Agent ワークスペース
 
-スマートフォンから処理を始め、アプリを離れてから結果を見たいときは Host を使います。開発用パソコンの NimoteHost がタスクとターミナルを管理し、スマートフォンは SSH で出力を表示したり入力を送ったりします。
+スマートフォンから開発パソコンのターミナル、タスク、Agent を管理。切断後も作業は続き、再接続して進捗や承認を確認できます。
+
+## NimoteHost をダウンロード {#download-nimotehost}
+
+<HostDownload />
 
 ## Host の機能と得られること
 
@@ -28,7 +32,7 @@ NimoteCode はクライアント、NimoteHost はパソコン側の実行サー�
 
 接続は **NimoteCode → SSH → NimoteHost → プロジェクトのツール**です。追加の Nimote アカウントや Host の公開ポートは不要で、認証情報はパソコンに残ります。コマンドは Host の OS アカウント権限で動くため、ユーザーを分離する場合は OS アカウントを分けてください。通常の SSH に Host は不要です。Host は切断後のタスク継続と対応 Agent の管理を追加します。
 
-リポジトリと配布物は公開後に利用できます。404 やパッケージがない場合は、提供された完全なプレビュー配布物・ソースを使うか公開を待ってください。2.4.0 実装の Host モードは公開予定の 2.4.1 に含まれます。サービスを導入しても旧アプリに入口は追加されません。
+2.4.0 実装の Host モードは公開予定の 2.4.1 に含まれます。サービスを導入しても旧アプリに入口は追加されません。
 
 ## 完全なソース：確認、変更、貢献
 
@@ -66,7 +70,7 @@ Linux と Windows には 32 ビット x86 用の 386 CLI もあります。GUI �
 
 展開したバイナリー、スクリプト、ライセンス、BUILD.json、MODULES.json、SHA256SUMS は一緒に保管してください。サービスが参照するファイルを後から削除しないでください。対応パッケージがない場合は[リポジトリの手順](https://github.com/mobiledevloperlab/nimotehost)でビルドできます。ソースからの導入には Go 1.26.5 以降が必要です。
 
-## 2. パソコンでインストールする
+## 2. パソコンでインストールする {#host-install}
 
 SSH に使うアカウントで、展開先のターミナルから実行します。Linux/macOS では sudo を付けません。
 
@@ -88,11 +92,11 @@ Windows は PowerShell で実行します。
 
 まず試すだけなら、展開先で ./nimotehost start、Windows は .\nimotehost.exe start を実行し、ウィンドウを開いたままにします。サービスが動いていれば二重起動は不要です。Host は SSH や Agent をインストールしません。スマートフォンは SSH 経由で接続するので、Host のローカル HTTP ポートをインターネットへ公開する必要はありません。
 
-### パッケージとソースからの導入
+### パッケージとソースからの導入 {#host-source}
 
 CLI は `nimotehost-<version>-<os>-<arch>`、デスクトップは `nimotehost-gui-<version>-<os>-<arch>` という名前です。Linux/macOS は `.tar.gz`、Windows は `.zip` です。GitHub の Source code ではなく完全なバイナリー配布物を選び、添付の `.sha256` と照合してから全体を展開します。Linux デスクトップは glibc 2.35 以降が必要で、macOS パッケージは署名・公証されていません。
 
-Git と Go 1.26.5 以降を用意し、公開後に一般ユーザーで実行します。
+Git と Go 1.26.5 以降を用意し、一般ユーザーで実行します。
 
 ```sh
 git clone https://github.com/mobiledevloperlab/nimotehost.git

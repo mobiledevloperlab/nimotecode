@@ -1,0 +1,172 @@
+{
+  "en": {
+    "label": "Official downloads · Apache-2.0",
+    "intro": "Install NimoteHost on the computer running your projects. Choose the computer’s system and CPU, even if you are reading this on your phone.",
+    "download": "Download NimoteHost",
+    "hint": "Opens the latest GitHub Release. Expand Assets to choose a complete desktop or CLI bundle and its .sha256 file.",
+    "install": "Already downloaded? Install Host →",
+    "source": "Build from source →",
+    "platforms": [
+      [
+        "Windows",
+        ".zip · x64 (amd64) / ARM64",
+        "Windows packages"
+      ],
+      [
+        "macOS",
+        ".tar.gz · Apple Silicon (arm64) / Intel (amd64)",
+        "macOS packages"
+      ],
+      [
+        "Linux",
+        ".tar.gz · x64 (amd64) / ARM64",
+        "Linux packages"
+      ]
+    ],
+    "desktop": "Desktop bundle: recommended for a development computer; includes the CLI and graphical manager.",
+    "cli": "CLI bundle: for servers or terminal-based management; no Go required.",
+    "steps": [
+      "Download the complete bundle",
+      "Install on your computer",
+      "Connect through SSH"
+    ],
+    "all": "All versions and release notes",
+    "note": "32-bit x86 (386) builds are CLI-only on Linux and Windows. Package availability and requirements are listed in each release."
+  },
+  "zh": {
+    "label": "官方下载 · Apache-2.0 开源",
+    "intro": "安装到运行项目的开发电脑上。请按电脑的系统与 CPU 选择安装包；即使你正用手机浏览，也应选择电脑版本。",
+    "download": "下载 NimoteHost",
+    "hint": "打开 GitHub 最新发布页，在 Assets（资源）中选择完整桌面包或 CLI 包，并下载对应的 .sha256 校验文件。",
+    "install": "已经下载？前往安装步骤 →",
+    "source": "从源码构建 →",
+    "platforms": [
+      [
+        "Windows",
+        ".zip · x64（amd64）/ ARM64",
+        "选择 Windows 安装包"
+      ],
+      [
+        "macOS",
+        ".tar.gz · Apple 芯片（arm64）/ Intel（amd64）",
+        "选择 macOS 安装包"
+      ],
+      [
+        "Linux",
+        ".tar.gz · x64（amd64）/ ARM64",
+        "选择 Linux 安装包"
+      ]
+    ],
+    "desktop": "桌面包：开发电脑推荐，包含 CLI 与图形管理器。",
+    "cli": "CLI 包：适合服务器或纯命令行管理，无需安装 Go。",
+    "steps": [
+      "下载完整分发包",
+      "在电脑上安装服务",
+      "从手机通过 SSH 连接"
+    ],
+    "all": "全部版本与发布说明",
+    "note": "Linux、Windows 另有 32 位 x86（386）CLI 包。具体安装包与系统要求以对应发布说明为准。"
+  },
+  "ja": {
+    "label": "公式ダウンロード · Apache-2.0",
+    "intro": "プロジェクトを実行するパソコンに導入します。スマートフォンで閲覧中でも、パソコンの OS と CPU に合う配布物を選んでください。",
+    "download": "NimoteHost をダウンロード",
+    "hint": "GitHub の最新リリースを開きます。Assets で完全なデスクトップ版または CLI 版と対応する .sha256 を選びます。",
+    "install": "ダウンロード済み：導入手順へ →",
+    "source": "ソースからビルド →",
+    "platforms": [
+      [
+        "Windows",
+        ".zip · x64 (amd64) / ARM64",
+        "Windows 版を選ぶ"
+      ],
+      [
+        "macOS",
+        ".tar.gz · Apple Silicon (arm64) / Intel (amd64)",
+        "macOS 版を選ぶ"
+      ],
+      [
+        "Linux",
+        ".tar.gz · x64 (amd64) / ARM64",
+        "Linux 版を選ぶ"
+      ]
+    ],
+    "desktop": "デスクトップ版：開発パソコンに推奨。CLI と管理画面を含みます。",
+    "cli": "CLI 版：サーバーやターミナルでの管理向け。Go は不要です。",
+    "steps": [
+      "完全な配布物を取得",
+      "パソコンに導入",
+      "SSH で接続"
+    ],
+    "all": "すべてのバージョンとリリースノート",
+    "note": "Linux と Windows の 32 ビット x86 (386) は CLI のみです。配布物とシステム要件は各リリースを確認してください。"
+  },
+  "ko": {
+    "label": "공식 다운로드 · Apache-2.0",
+    "intro": "프로젝트를 실행하는 컴퓨터에 설치하세요. 휴대폰에서 읽고 있어도 컴퓨터의 OS와 CPU에 맞는 패키지를 선택합니다.",
+    "download": "NimoteHost 다운로드",
+    "hint": "GitHub 최신 릴리스를 엽니다. Assets에서 전체 데스크톱 또는 CLI 패키지와 해당 .sha256 파일을 선택하세요.",
+    "install": "다운로드 완료? 설치 안내 →",
+    "source": "소스에서 빌드 →",
+    "platforms": [
+      [
+        "Windows",
+        ".zip · x64 (amd64) / ARM64",
+        "Windows 패키지 선택"
+      ],
+      [
+        "macOS",
+        ".tar.gz · Apple Silicon (arm64) / Intel (amd64)",
+        "macOS 패키지 선택"
+      ],
+      [
+        "Linux",
+        ".tar.gz · x64 (amd64) / ARM64",
+        "Linux 패키지 선택"
+      ]
+    ],
+    "desktop": "데스크톱 패키지: 개발 컴퓨터에 권장하며 CLI와 그래픽 관리자를 포함합니다.",
+    "cli": "CLI 패키지: 서버나 터미널 관리용이며 Go 설치가 필요 없습니다.",
+    "steps": [
+      "전체 패키지 다운로드",
+      "컴퓨터에 설치",
+      "SSH로 연결"
+    ],
+    "all": "전체 버전 및 릴리스 정보",
+    "note": "Linux와 Windows의 32비트 x86 (386)은 CLI 전용입니다. 패키지 제공 여부와 시스템 요구 사항은 각 릴리스를 확인하세요."
+  },
+  "es": {
+    "label": "Descargas oficiales · Apache-2.0",
+    "intro": "Instala NimoteHost en el ordenador que ejecuta tus proyectos. Elige su sistema y CPU, aunque estés leyendo desde el móvil.",
+    "download": "Descargar NimoteHost",
+    "hint": "Abre la última versión en GitHub. Despliega Assets para elegir el paquete completo de escritorio o CLI y su archivo .sha256.",
+    "install": "¿Ya lo descargaste? Instalar →",
+    "source": "Compilar desde código →",
+    "platforms": [
+      [
+        "Windows",
+        ".zip · x64 (amd64) / ARM64",
+        "Elegir paquete Windows"
+      ],
+      [
+        "macOS",
+        ".tar.gz · Apple Silicon (arm64) / Intel (amd64)",
+        "Elegir paquete macOS"
+      ],
+      [
+        "Linux",
+        ".tar.gz · x64 (amd64) / ARM64",
+        "Elegir paquete Linux"
+      ]
+    ],
+    "desktop": "Escritorio: recomendado para el ordenador de desarrollo; incluye CLI y gestor gráfico.",
+    "cli": "CLI: para servidores o gestión por terminal; no requiere Go.",
+    "steps": [
+      "Descarga el paquete completo",
+      "Instala en el ordenador",
+      "Conecta por SSH"
+    ],
+    "all": "Todas las versiones y notas",
+    "note": "Linux y Windows también ofrecen CLI para x86 de 32 bits (386). Consulta disponibilidad y requisitos en cada versión."
+  }
+}
