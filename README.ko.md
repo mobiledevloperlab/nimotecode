@@ -1,222 +1,222 @@
-<p align="center"><img src="docs/public/app_icon_rounded.png" alt="NimoteCode 로고" width="88" height="88"></p>
+<p align="center">
+  <img src="docs/public/app_icon_rounded.png" alt="NimoteCode logo" width="88" height="88">
+</p>
 
-<h1 align="center">NimoteCode — Android / iOS용 모바일 IDE</h1>
+<h1 align="center">NimoteCode — 모바일 AI IDE 및 SSH 작업 공간</h1>
 
-<p align="center"><a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.es.md">Español</a> · <a href="README.ja.md">日本語</a> · 한국어</p>
+<p align="center"><a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.es.md">Español</a> · <a href="README.ja.md">日本語</a> · <strong>한국어</strong></p>
 
-<p align="center"><strong>휴대폰이나 태블릿에서 프로젝트를 계속 진행하세요.</strong><br>로컬 프로젝트를 열거나 SSH로 개발 호스트에 연결하세요. 하나의 모바일 작업 공간에서 코드를 편집하고, 명령을 실행하고, Git 변경 사항을 검토하고, AI와 함께 작업할 수 있습니다.</p>
+<p align="center">
+  <strong>내 프로젝트와 도구를 어디서나.</strong><br>
+  Android, iPhone, iPad를 위한 편집기, SSH 터미널, Git과 AI Agent.
+</p>
 
-<p align="center"><sub>코드 편집기&nbsp;&nbsp;•&nbsp;&nbsp;SSH 터미널&nbsp;&nbsp;•&nbsp;&nbsp;Git&nbsp;&nbsp;•&nbsp;&nbsp;AI 코딩<br>지원되는 Android 기기에서 root 없이 Ubuntu 사용</sub></p>
+<p align="center">
+  <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-Install-34A853?style=for-the-badge&amp;logo=googleplay&amp;logoColor=white" alt="Install NimoteCode for Android"></a>
+  <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-Download-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="Download NimoteCode for iPhone and iPad"></a>
+</p>
 
-<p align="center"><a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-%EC%84%A4%EC%B9%98-34A853?style=for-the-badge&amp;logo=googleplay&amp;logoColor=white" alt="Google Play에서 Android용 NimoteCode 설치"></a> <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="App Store에서 NimoteCode 다운로드"></a></p>
+<p align="center">
+  <a href="https://nimotecode.com/ko/releases/2.4.1"><img src="https://img.shields.io/badge/NimoteCode-2.4.1-2563EB?style=flat-square" alt="NimoteCode 2.4.1"></a>
+  <a href="https://nimotecode.com/ko/docs"><img src="https://img.shields.io/badge/docs-online-2563EB?style=flat-square" alt="Documentation"></a>
+  <a href="https://github.com/mobiledevloperlab/nimotehost"><img src="https://img.shields.io/badge/NimoteHost-Apache--2.0-64748B?style=flat-square" alt="NimoteHost companion license: Apache-2.0"></a>
+</p>
 
-<p align="center"><sub><a href="#workspace-demo">데모</a> · <a href="#nimotehost">NimoteHost</a> · <a href="https://nimotecode.com/ko/docs/quick-start">빠른 시작</a> · <a href="https://nimotecode.com/ko/releases/2.4.1">릴리스 노트</a></sub></p>
+<p align="center">
+  <a href="#workspace-demo">데모</a> ·
+  <a href="#workflow">개발 흐름</a> ·
+  <a href="#workspace-modes">네 가지 모드</a> ·
+  <a href="#quick-start">빠른 시작</a> ·
+  <a href="#latest-release">2.4.1 새 기능</a> ·
+  <a href="#nimotehost">NimoteHost</a> ·
+  <a href="https://nimotecode.com/ko/docs">문서</a> ·
+  <a href="https://github.com/mobiledevloperlab/nimote_issues/issues">문제 보고</a>
+</p>
 
-<p align="center"><sub>무료로 시작할 수 있으며 AI 설정은 선택 사항입니다. 상용 비공개 소스 앱 · NimoteHost는 Apache-2.0 전체 소스 제공</sub></p>
+<p align="center">
+  <img src="docs/public/screenshots/nimote-pro-framed.svg" alt="NimoteCode 파일 탐색기, 편집기, 터미널과 AI Agent 작업 공간" width="1000">
+</p>
 
-<p align="center"><img src="docs/public/screenshots/nimote-pro.webp" alt="NimoteCode mobile AI Agent and tablet SSH workspace" width="1000"></p>
+NimoteCode는 **로컬 및 SSH 프로젝트를 위한 모바일 IDE**입니다. 파일 탐색, 코드 편집, 프로젝트 명령 실행, Git diff 검토를 하나의 작업 공간에서 이어갑니다. 원하는 AI 제공자를 연결하거나 개발 컴퓨터에 설치한 Agent를 사용할 수 있습니다.
+
+**네 가지 모드 · 나만의 개발 환경 · 선택형 AI**
 
 <a id="workspace-demo"></a>
 
 ## 데모
 
-위 이미지는 휴대폰의 AI Agent와 태블릿의 SSH 작업 공간을 보여 줍니다. [데모 동영상 열기](https://github.com/user-attachments/assets/df7de976-e743-415d-9bd1-df396a647e10).
+영상에서 작업 공간을 살펴보세요. [영상 직접 열기](https://github.com/user-attachments/assets/df7de976-e743-415d-9bd1-df396a647e10)。
 
 <div align="center">
   <video src="https://github.com/user-attachments/assets/df7de976-e743-415d-9bd1-df396a647e10" controls muted playsinline width="420"></video>
 </div>
 
-## 프로젝트가 있는 곳에서 개발하세요
+## NimoteCode를 선택하는 이유
 
-- **로컬 프로젝트:** 시스템 선택기로 폴더를 열고 바로 편집을 시작하세요.
-- **SSH 개발 호스트:** 원격 파일, 터미널, Git 변경 사항을 하나의 작업 공간에서 다룹니다.
-- **Android 로컬 Linux:** 지원되는 Android에서 PRoot Ubuntu, Bash, Git, SSH를 사용하고 로컬 프로젝트를 `/mnt/local`에서 공유합니다.
+| 하고 싶은 작업 | 연결된 개발 흐름 |
+| --- | --- |
+| **휴대폰에서 프로젝트 이어가기** | SSH/SFTP 파일, 코드 편집기와 호스트 도구를 사용하는 터미널. |
+| **태블릿에서 개발하기** | 파일 트리, 검색, 분할 편집기, Markdown 및 웹 미리보기. |
+| **변경 사항 검증하기** | 프로젝트 명령과 작업 옆에서 Git 상태, 기록과 diff 확인. |
+| **AI와 협업하기** | Chat, 내장 Agent, MCP 도구와 호환 ACP Agent. |
+| **원격 작업으로 돌아오기** | 연결을 끊어도 내 컴퓨터에서 유지되는 NimoteHost 관리 세션. |
+| **Android에서 로컬 개발하기** | root 없이 PRoot 기반 Ubuntu, Bash, Git, SSH 사용. |
 
-Local Linux는 지원되는 Android 8 이상 ARM64 / x86_64 기기가 필요하며 iPhone과 iPad에서는 사용할 수 없습니다. SSH 호스트는 설정되어 있고 연결 가능해야 합니다.
+<a id="workspace-modes"></a>
 
-## 핵심 기능
+## 명령 하나부터 프로젝트 전체까지, 네 가지 모드
 
-- **원격 작업 지속:** 선택형 [NimoteHost](https://nimotecode.com/ko/docs/host)로 터미널, 작업과 호환 Agent를 관리하고 연결 해제 후 돌아옵니다. 2.4.1 제공 예정입니다.
-- **작업 공간 전환:** IDE, 터미널, AI, Host를 선택하세요. IDE, 터미널, AI는 프로젝트 상태를 유지하고 Host는 NimoteHost 관리 작업에 연결합니다.
-- **컨테이너 개발:** SSH 호스트에서 Docker와 Compose를 관리하고 `devcontainer.json`으로 Dev Container를 만들거나 다시 빌드합니다.
-- **편집 및 탐색:** 휴대폰, 태블릿, 데스크톱에서 Nimote Editor를 사용하고, 파일 검색, 분할 편집기, Markdown 및 웹 미리 보기를 이용하세요.
-- **실행 및 검증:** 터미널, 프로젝트 작업, 모바일 추가 키, 집중 모드, 색상표 및 SOCKS5 / HTTP CONNECT SSH 프록시를 사용하세요.
-- **Git 검토:** 상태, diff, 기록을 검토하고 Git 헤더에서 브랜치를 검색, 생성, 전환하세요.
-- **작업 공간 확장:** Early Access 플러그인 센터에서 맞춤 패널, 양식, 워크플로, 결과 보기, 로컬 또는 SSH 스크립트 작업을 만드세요.
+파일, 명령, 코드 변경, Agent 작업에 맞는 전용 화면을 선택하세요.
 
-- **언어 도구:** 기본 LSP 진단, 완성 및 탐색은 무료입니다. 고급 코드 작업, 언어 서버 설치 안내 및 디버깅에는 Pro 권한과 해당 언어 서버 또는 디버그 어댑터가 필요합니다.
-- **외부 폴더:** 시스템에서 권한을 부여한 외부 폴더는 탐색과 편집을 지원하지만 Git, LSP, 디버깅, Tasks, 파일 감시 및 Agent에는 네이티브 파일 시스템 경로가 필요합니다.
-- **가용성:** 도구는 작업 공간, 설치된 도구 및 플랜에 따라 달라집니다. [기능 참조](https://nimotecode.com/ko/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_features)를 확인하세요.
+<table>
+  <tr>
+    <td rowspan="5" width="180" align="center" valign="middle"><a href="docs/public/images/placeholders/host-mode.png"><img src="docs/public/screenshots/host-mode-framed.svg" alt="NimoteCode 네 가지 모드: Full IDE, Quick Terminal, AI Workspace, Host" width="160"></a></td>
+    <th>모드</th>
+    <th>언제 사용하나요?</th>
+    <th>작업 환경</th>
+  </tr>
+  <tr>
+    <td valign="top"><strong>IDE</strong></td>
+    <td valign="top">프로젝트 읽기, 편집, 검토.</td>
+    <td valign="top">파일 트리, 검색, 분할 편집기, 터미널과 Git을 한 작업대에서 사용.</td>
+  </tr>
+  <tr>
+    <td valign="top"><strong>AI</strong></td>
+    <td valign="top">질문, 작업 위임, 실행 과정 확인.</td>
+    <td valign="top">프로젝트 맥락, Chat 및 Agent, 도구 출력, 승인 요청과 결과.</td>
+  </tr>
+  <tr>
+    <td valign="top"><strong>Terminal</strong></td>
+    <td valign="top">빌드, 셸 명령, 대화형 CLI 실행.</td>
+    <td valign="top">터미널 중심 화면, 확장 키, 기록 검색과 호스트의 기존 도구.</td>
+  </tr>
+  <tr>
+    <td valign="top"><strong>Host</strong></td>
+    <td valign="top">컴퓨터에서 실행 중인 작업으로 복귀.</td>
+    <td valign="top">NimoteHost 관리 터미널, 호환 Agent, 작업과 검증 기록.</td>
+  </tr>
+</table>
 
+**IDE, Terminal, AI를 전환해도 프로젝트와 파일 탐색기 상태가 유지됩니다. Host는 NimoteHost 관리 세션에 연결합니다.** IDE에서 문제를 살펴보고, Terminal에서 검사하고, AI에 변경을 맡긴 뒤 Host에서 원격 작업을 이어가세요.
+
+SSH 접속부터 편집, Git 검토, Agent 실행과 세션 복구까지 이어지는 개발 흐름입니다. SSH의 Docker와 Compose, Dev Container, 언어 서비스, 디버깅과 맞춤 플러그인으로 확장할 수 있습니다.
+
+[전체 기능](https://nimotecode.com/ko/features) · [모바일 개발 도구 비교](https://nimotecode.com/ko/compare/mobile-ai-development-tools)
+
+<a id="workflow"></a>
+
+## 하나의 프로젝트, 코드에서 검토까지
+
+SSH 프로젝트를 열고, 코드를 살펴보고, Agent와 협업한 뒤 호스트에서 명령을 실행하고 변경 사항을 검토하세요. 모바일에서도 개발 흐름을 이어갈 수 있습니다.
+
+<table>
+  <tr>
+    <th width="25%" align="center">1 · 코드 살펴보기</th>
+    <th width="25%" align="center">2 · Agent와 협업</th>
+    <th width="25%" align="center">3 · 명령 실행</th>
+    <th width="25%" align="center">4 · 변경 검토</th>
+  </tr>
+  <tr>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/editor-code-selection.png"><img src="docs/public/screenshots/editor-code-selection-framed.svg" alt="1 · 코드 살펴보기" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/ai-plan-running.jpg"><img src="docs/public/screenshots/ai-plan-running-framed.svg" alt="2 · Agent와 협업" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/terminal-command-output.png"><img src="docs/public/screenshots/terminal-command-output-framed.svg" alt="3 · 명령 실행" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/source-control-changes.png"><img src="docs/public/screenshots/source-control-changes-framed.svg" alt="4 · 변경 검토" width="220"></a></td>
+  </tr>
+  <tr>
+    <td valign="top">구문 강조와 줄 번호로 프로젝트 파일을 읽고 편집합니다.</td>
+    <td valign="top">실행 타임라인에서 Agent의 계획, 파일 읽기와 도구 활동을 확인합니다.</td>
+    <td valign="top">호스트 셸과 설치된 도구로 프로젝트 검사를 실행합니다.</td>
+    <td valign="top">Source Control에서 변경 파일을 확인하고 커밋 전에 diff를 검토합니다.</td>
+  </tr>
+</table>
+
+<sub>실제 앱 화면입니다. 클릭하면 원본 크기로 볼 수 있습니다.</sub>
+
+잠시 자리를 비워야 하나요? [Host 모드](#nimotehost)에서 컴퓨터의 NimoteHost 관리 호환 세션으로 돌아올 수 있습니다.
+
+<a id="quick-start"></a>
+
+## 작은 변경부터 시작하세요
+
+1. **설치:** [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) 또는 [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253)에서 설치합니다.
+2. **프로젝트 열기:** 로컬 폴더, 설정된 SSH 호스트 또는 Demo를 선택하세요. AI 설정 없이 시작할 수 있습니다.
+3. **편집 → 실행 → 검토:** 파일을 바꾸고 환경에서 지원하는 검사를 실행한 뒤 Git 저장소에서 diff를 확인하세요.
+
+[빠른 시작 →](https://nimotecode.com/ko/docs/quick-start)
+
+### 코드가 실행되는 위치
+
+| 작업 공간 | 파일과 도구의 위치 | 필요한 것 |
+| --- | --- | --- |
+| **로컬** | 기기에서 파일 탐색 및 편집. | 열 수 있는 폴더. 시스템이 허용한 외부 폴더는 도구 사용에 제한이 있습니다. |
+| **SSH** | Linux, macOS 또는 Windows 호스트. | 접근 가능한 SSH 서버, 프로젝트와 설치된 개발 도구. |
+| **Android Local Linux** | Android의 Ubuntu. 앱 로컬 프로젝트를 `/mnt/local`로 공유. | 지원되는 Android 8+ ARM64 / x86_64 기기. |
+| **Host** | NimoteHost가 관리하는 내 컴퓨터. | SSH와 실행 중인 호환 NimoteHost. |
+
+iPhone과 iPad에서는 Local Linux를 사용할 수 없으며 SSH 호스트에서 개발 명령을 실행할 수 있습니다. Git, LSP, 디버깅, Tasks, 파일 감시와 Agent에는 네이티브 파일 경로가 필요합니다. 기능은 환경, 설치된 도구와 앱 이용 권한에 따라 달라집니다.
+
+<a id="latest-release"></a>
+
+## NimoteCode 2.4.1 출시
+
+- **새 인터페이스:** 태블릿과 가로 화면, 편집기 조작, 모바일 Git 검토 개선.
+- **Host 작업 공간:** 호환 터미널과 Agent 세션을 재개하고 승인, 작업 결과와 diff 확인.
+- **파일 전송:** 기기와 SSH 사이의 파일 및 폴더 전송, 로컬 가져오기와 내보내기.
+- **프로젝트 작업 발견:** npm, Taskfile, Makefile, justfile 및 VS Code의 지원 작업 정의 탐색.
+- **터미널과 원격 작업:** 보존된 기록 검색, 선택과 클립보드, CI 단계 로그, 원격 저장 안정성 개선.
+
+[2.4.1 전체 릴리스 노트](https://nimotecode.com/ko/releases/2.4.1) · [공식 다운로드](https://nimotecode.com/ko/download)
+
+스토어 제공 여부와 배포 시점은 플랫폼 및 지역에 따라 다를 수 있습니다.
 
 <a id="nimotehost"></a>
 
-## NimoteHost: 내 컴퓨터에서 작업 계속하기
+## NimoteHost: 앱을 떠나도 작업은 계속
 
-**NimoteHost**는 Linux, macOS, Windows에 직접 설치하는 선택형 보조 서비스로 CLI와 데스크톱 관리자를 제공합니다. 휴대폰에서 작업을 시작하고 연결을 끊은 뒤 SSH로 돌아와 계속 실행 중인 터미널, 로그와 호환 Agent 대화를 확인하세요.
+Linux, macOS, Windows용 선택형 자체 호스팅 서비스입니다. 휴대폰 연결을 끊은 뒤 SSH로 컴퓨터의 터미널이나 호환 **Codex, Claude Code, OpenCode** 대화에 돌아갈 수 있습니다.
 
-- 호환 Codex, Claude Code, OpenCode의 구조화된 도구 출력과 승인을 확인하고 지원되는 경우 실행 중 지시를 추가합니다.
-- 세션 검색과 고정, 작업 수신함, 검증 기록과 diff 확인, 지원되는 Host의 GitHub Issue 작업 전달을 사용합니다.
-- CLI/GUI 패키지 배포, 소스 빌드, RPC, Go 클라이언트, MCP와 커뮤니티 플러그인 연동을 지원합니다.
+Host 기능에 따라 도구 출력, 승인, 작업과 검증 결과를 확인하세요. CLI나 데스크톱 관리자를 선택하거나 전체 **Apache-2.0 소스**를 직접 빌드하고 확장할 수 있습니다.
 
-**NimoteHost 2.4.0 개발 미리보기를 다운로드할 수 있습니다.** 전체 소스는 [별도 저장소](https://github.com/mobiledevloperlab/nimotehost)에서 **Apache-2.0**으로 제공하며 빌드된 패키지는 [GitHub Releases](https://github.com/mobiledevloperlab/nimotehost/releases)에 있습니다. NimoteCode 앱은 상용 비공개 소스입니다. Host 모드에는 NimoteCode 2.4.1 이상의 호환 버전이 필요하며 앱 스토어 공개 시점은 Host 릴리스와 별개입니다.
+컴퓨터의 OS와 CPU에 맞는 호환 패키지를 실행하고 NimoteCode 2.4.1 이상의 **Host → SSH connections**로 연결하세요. Host 또는 OS를 재시작하면 프로세스가 중단됩니다. Agent 설치와 인증은 별도로 필요하며 일반 SSH 작업 공간은 Host 없이 사용할 수 있습니다.
 
-컴퓨터에 전체 패키지를 설치하고 `status`와 `capabilities`를 확인한 뒤 앱의 **Host → SSH connections**에서 같은 OS 계정으로 연결하세요. 일반 SSH에는 Host가 필요 없습니다. Host와 컴퓨터는 계속 실행되어야 하며 Host/OS 재시작은 프로세스를 중단합니다. Agent 설치, 인증과 모델 비용은 별도이며 기능은 양쪽 버전에 따라 다릅니다.
+[설치 가이드](https://nimotecode.com/ko/docs/host/getting-started) · [소스](https://github.com/mobiledevloperlab/nimotehost) · [Host 다운로드](https://github.com/mobiledevloperlab/nimotehost/releases)
 
-**Host 컴퓨터 기준으로 선택하세요:** 휴대폰에서 다운로드해도 Host의 OS와 CPU에 맞춰야 합니다. Linux／Windows는 `amd64`·`arm64` CLI 및 데스크톱과 CLI 전용 `386`을 제공합니다. macOS는 Intel(`amd64`) 및 Apple Silicon(`arm64`)을 지원합니다. 32비트 ARM은 제공하지 않습니다. [하드웨어 및 시스템 요구 사항](https://nimotecode.com/ko/docs/host/compatibility)을 확인한 뒤 [설치](https://nimotecode.com/ko/docs/host/getting-started)하세요. 표는 배포 대상을 나타내며 전체 네이티브 플랫폼과 휴대폰／Agent 실기기 검증은 아직 완료되지 않았습니다.
+## 원하는 도구와 제공자로 AI 사용하기
 
-**검토, 수정 및 기여:** Host 런타임, CLI, 데스크톱 관리자와 SDK 전체 소스를 빌드하고 Fork로 배포와 연동을 수정할 수 있습니다. [기여 가이드](https://github.com/mobiledevloperlab/nimotehost/blob/master/CONTRIBUTING.md)를 따라 수정, Agent 어댑터, 번역과 문서를 기여하세요. SSH 인증, 인증 루프백 API와 로컬 Host 인증 정보로 접근을 관리합니다. 모델 도구는 설정된 제공자를 사용합니다.
-
-[**설치, 배포 및 사용 안내 →**](https://nimotecode.com/ko/docs/host) · [소스 및 라이선스](https://github.com/mobiledevloperlab/nimotehost) · [다운로드](https://github.com/mobiledevloperlab/nimotehost/releases)
-
-## 원하는 방식의 AI 코딩
-
-| 워크플로 | 사용 방법 |
+| 방식 | 용도 |
 | --- | --- |
-| **AI Chat** | 작업 공간 문맥으로 코드와 터미널 출력을 설명합니다. 자신의 AI 공급자와 API 키를 연결하세요. |
-| **내장 Agent** | 파일을 검사하고, 변경을 계획하고, 편집 및 검사를 실행합니다. 실행 중인 Agent에 후속 지시를 추가하고 대화형 질문에 답할 수 있습니다. Early Access에서 제공됩니다. |
-| **MCP 도구 서버** | 로컬 또는 SSH 작업 공간에서 내장 Agent용 검증된 MCP 서버를 구성합니다. 모든 도구 호출에는 명시적 승인이 필요합니다. |
-| **외부 ACP Agent** | SSH 호스트의 호환 런타임을 연결하고 앱 대화 화면에서 권한과 진행 상황을 검토합니다. |
-| **SSH의 Claude Code / Codex** | 자신의 호스트에 설치한 CLI를 터미널에서 실행합니다. |
+| **AI Chat** | 프로젝트 맥락에 따라 코드와 터미널 출력 설명. |
+| **내장 Agent** | 지원 작업 공간에서 조사, 계획, 파일 편집과 검사 실행. |
+| **MCP** | 설정된 도구를 연결하고 도구 호출 승인. |
+| **ACP Agent** | 별도로 설치한 호환 런타임을 대화 화면에서 사용. |
+| **SSH CLI** | 호스트에 설치한 Claude Code, Codex 등을 직접 실행. |
 
-모델 액세스와 토큰은 포함되지 않습니다. 외부 Agent와 CLI는 별도 설치, 인증 및 서비스 액세스가 필요합니다. Claude Code와 Codex는 포함되지 않습니다. AI가 생성한 변경 사항을 수락하기 전에 명령과 diff를 검토하세요.
+**모델 크레딧과 제공자 구독은 NimoteCode와 별개입니다.** 자신의 인증 정보를 설정하고 커밋 전에 변경 사항과 검사 결과를 검토하세요.
 
-## 시작하기
+[AI 설정](https://nimotecode.com/ko/docs/configuration) · [Agent와 MCP](https://nimotecode.com/ko/docs/ai)
 
-1. [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode) 또는 [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253)에서 NimoteCode를 설치하세요.
-2. 로컬 프로젝트를 열고, SSH 호스트에 연결하거나, Demo 작업 공간을 살펴보세요.
-3. 작은 변경을 수행하고 사용 가능한 검사를 실행한 뒤 Git diff를 검토하세요.
+## 문서와 가이드
 
-> [빠른 시작 →](https://nimotecode.com/ko/docs/quick-start?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_quick_start)
+| 시작하기 | 더 알아보기 |
+| --- | --- |
+| [편집기](https://nimotecode.com/ko/docs/editor) | [Git과 GitHub](https://nimotecode.com/ko/docs/source-control) |
+| [SSH와 SFTP](https://nimotecode.com/ko/docs/ssh) | [프로젝트 작업](https://nimotecode.com/ko/docs/tasks) |
+| [터미널](https://nimotecode.com/ko/docs/terminal) | [Docker](https://nimotecode.com/ko/docs/docker) |
+| [Local Linux](https://nimotecode.com/ko/docs/local-linux) | [플러그인](https://nimotecode.com/ko/docs/plugins) |
 
-**무료로 시작하세요:** 로컬 및 SSH 작업 공간, 편집기, 기본 터미널, Git 검토, AI Chat, 기본 LSP 및 터미널 기반 Tasks는 무료입니다. AI Agent, Git 쓰기 및 GitHub 연동, Android Local Linux, 다중 터미널, Host, Docker, 고급 언어 도구 및 SSH 파일 워크플로에는 Pro 권한이 필요합니다. 체험, 구독 또는 Early Access 권한은 [무료 및 Pro](https://nimotecode.com/ko/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_plans)와 앱에서 확인하세요. 모델 사용료는 제공업체가 별도로 청구합니다.
+[전체 문서](https://nimotecode.com/ko/docs) · [FAQ](https://nimotecode.com/ko/docs/faq) · [실전 가이드·영문](resources/README.md) · [Linux 프리셋](presets/README.md)
 
-스토어 제공 여부와 출시 시점은 플랫폼과 지역에 따라 다를 수 있습니다. [다운로드 및 플랫폼 요구 사항](https://nimotecode.com/ko/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_download)을 확인하세요.
+## 커뮤니티와 기여
 
-## 다운로드
+[버그 및 기능 요청](https://github.com/mobiledevloperlab/nimote_issues/issues) · [Discord](https://discord.gg/tTxbpqYmhR) · [X](https://x.com/mobiledevlab) · [공식 웹사이트](https://nimotecode.com/ko/)
 
-Android용은 [Google Play](https://play.google.com/store/apps/details?id=com.nimote.nimotecode), iPhone 및 iPad용은 [App Store](https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253)에서 다운로드하세요.
+앱 버전, 기기와 OS, 작업 공간 유형, 재현 단계, 인증 정보를 제거한 로그를 함께 알려주세요. 문서 수정, 번역과 예제는 Pull Request로 기여할 수 있습니다. Host 코드 기여는 [NimoteHost](https://github.com/mobiledevloperlab/nimotehost)로 보내주세요.
 
-**NimoteCode 2.4.1 출시 예정:** 공개되지 않은 2.4.0 기능과 Windows, macOS, Linux용 NimoteCode를 포함합니다. NimoteHost 개발 미리보기는 별도로 공개되었으며 호환 앱의 스토어 출시 시점과는 다릅니다.
+## 이 저장소에 대하여
 
-## NimoteCode 2.4.1 · 출시 예정
+**NimoteCode는 상용 비공개 소스 앱입니다.** 이 저장소에는 공식 웹사이트, 문서, 가이드와 릴리스 노트가 있으며 앱 소스는 포함되지 않습니다.
 
-- **작업 흐름 개선.** 보관된 터미널 기록 검색과 탐색기 Git 상태 색상을 지원하며, 터미널 선택, 가로 화면, 원격 저장, Windows 다중 프로세스 안정성을 개선했습니다. 네이티브 Host Agent 세션 연결은 실험 기능이며 명시적인 빌드 설정과 호환 Host가 필요합니다.
-
-- **Host 작업 공간.** 원격 컴퓨터에 호환 NimoteHost를 설치하고 시작한 뒤 SSH로 연결해 터미널 및 Agent 세션을 검색, 고정하고 다시 시작합니다. Host는 선택 기능입니다.
-- **Agent 협업.** 호환 Codex, Claude, OpenCode 세션에서 구조화된 대화, 도구, 승인, 명령, 모델 설정과 실행 중 추가 지시를 지원합니다. 실행 정책은 Host에 따라 다르며 민감한 작업은 승인이 필요할 수 있습니다.
-- **작업 수신함과 GitHub Issue.** 상태, 검증 증거와 diff를 확인하고 작업을 계속하거나 보관합니다. 선택한 게시 정책으로 Issue를 전달합니다. Host 버전 및 설정에 따라 다릅니다.
-- **Host 플러그인.** 사이드바에서 버전이 지정된 양식, 페이지별 표, 상세 및 대화형 보기를 권한 확인과 함께 사용합니다.
-- **프로젝트 작업.** package.json, Taskfile, Makefile, justfile 및 .vscode/tasks.json에서 지원되는 작업을 찾아 터미널에서 실행합니다. Make/just 동적 탐색은 명시적 확인이 필요합니다.
-- **알림 및 편집기.** 완료, 확인 대기 및 실패 알림, 소리와 진동, 줄 번호와 가로 미니맵을 설정합니다. 알림은 시스템 설정을 따릅니다. Windows에서는 Pro가 기본 활성화됩니다.
-- 기능, 패널 및 플러그인 설정을 통합하고 알림을 Agent 설정으로 이동했습니다. 태블릿, Windows, 가로 색상 및 동작 줄이기를 개선했습니다.
-- 브랜치와 워크플로별 GitHub CI 필터, 단계 로그, 오류 문맥과 불완전한 로그 안내를 제공합니다.
-- 터미널 응답성, 동기화 업데이트, 검색, 스크롤, Vim, 클립보드, Windows 붙여넣기 및 소프트 키보드를 개선했습니다.
-- 기록 안정성, 로컬 기록 오프라인 삭제, 원격 저장 오류 안내, 큰 파일 편집, 줄바꿈 diff 및 하단 탐색을 개선했습니다.
-
-[2.4.1 →](https://nimotecode.com/ko/releases/2.4.1)
-
-## 문서
-
-작업에 맞는 가이드를 선택하세요. [문서 개요](https://nimotecode.com/ko/docs)에서 작업 공간 선택, 설정, 사용법 및 문제 해결을 확인할 수 있습니다.
-
-- **시작하기:** [문서 개요](https://nimotecode.com/ko/docs) · [빠른 시작](https://nimotecode.com/ko/docs/quick-start) · [NimoteCode 자주 묻는 질문](https://nimotecode.com/ko/docs/faq)
-- **작업 공간 및 실행 환경:** [로컬 및 SSH 작업 공간](https://nimotecode.com/ko/docs/ssh) · [Windows SSH 및 SFTP](https://nimotecode.com/ko/docs/windows-ssh-sftp) · [동기화 및 캐시](https://nimotecode.com/ko/docs/sync-cache) · [Docker 및 Dev Containers](https://nimotecode.com/ko/docs/docker)
-- **편집, 실행 및 Git:** [코드 편집기](https://nimotecode.com/ko/docs/editor) · [작업 공간 검색](https://nimotecode.com/ko/docs/search) · [터미널](https://nimotecode.com/ko/docs/terminal) · [작업](https://nimotecode.com/ko/docs/tasks) · [Git 및 GitHub](https://nimotecode.com/ko/docs/source-control) · [언어 서비스(LSP)](https://nimotecode.com/ko/docs/lsp) · [디버깅](https://nimotecode.com/ko/docs/debug)
-- **AI 및 확장 기능:** [AI 제공업체 및 모델 설정](https://nimotecode.com/ko/docs/configuration) · [AI Chat, Agent 및 MCP](https://nimotecode.com/ko/docs/ai) · [사용자 지정 플러그인](https://nimotecode.com/ko/docs/plugins)
-- **Host 모드:** [개요](https://nimotecode.com/ko/docs/host) · [하드웨어 및 패키지 선택](https://nimotecode.com/ko/docs/host/compatibility) · [다운로드 및 설치](https://nimotecode.com/ko/docs/host/getting-started) · [문제 해결](https://nimotecode.com/ko/docs/host/troubleshooting)
-- **Android Local Linux:** [개요](https://nimotecode.com/ko/docs/local-linux) · [기기 요구 사항 및 호환성](https://nimotecode.com/ko/docs/local-linux/compatibility) · [설치 및 첫 실행](https://nimotecode.com/ko/docs/local-linux/getting-started) · [문제 해결](https://nimotecode.com/ko/docs/local-linux/troubleshooting)
-- **설정 및 참고 자료:** [설정](https://nimotecode.com/ko/docs/settings) · [계정 및 구독](https://nimotecode.com/ko/docs/account-subscription) · [알림](https://nimotecode.com/ko/docs/notifications) · [인증 정보 및 작업 검토](https://nimotecode.com/ko/docs/security)
-
-### 가이드와 자료
-
-- [공식 웹사이트](https://nimotecode.com/ko/?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_website)
-- [기능](https://nimotecode.com/ko/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_features)
-- [모바일 개발 가이드](resources/README.md) — 로컬 편집, 원격 개발, Git 및 AI 워크플로(영어).
-- [Linux 프리셋](https://github.com/mobiledevloperlab/nimote-linux-presets) — 버전이 지정된 매니페스트와 검증 스크립트를 포함하는 선택적 환경.
-
-## 자주 묻는 질문
-
-**Termux, Acode, code-server와 어떻게 다른가요?** NimoteCode는 터치에 맞춘 편집기, SSH 클라이언트, 터미널, Git, AI를 하나의 모바일 앱에 결합하며 Android에서 선택적으로 Local Linux를 제공합니다. Termux는 Android 터미널과 패키지, Acode는 모바일 코드 편집, code-server는 브라우저에서 실행하는 VS Code에 중점을 둡니다.
-
-**SSH 서버가 필요한가요?** 아니요. 로컬 폴더나 Demo 작업 공간으로 시작할 수 있습니다. SSH 작업 공간에는 설정되어 있고 연결 가능한 호스트가 필요합니다.
-
-**휴대폰에서 코드를 실행할 수 있나요?** 지원되는 Android 기기에서는 Local Linux를 사용할 수 있습니다. iPhone과 iPad에서는 SSH로 적절한 원격 호스트를 사용할 수 있습니다. 실행 가능 여부는 설치된 도구에 따라 다릅니다.
-
-**AI가 포함되어 있나요?** AI 설정은 선택 사항입니다. 직접 공급자와 API 키를 준비해야 하며 모델 사용료가 별도로 발생할 수 있습니다. 내장 Agent는 Early Access 기능입니다.
-
-**오픈 소스인가요?** 앱은 상용 비공개 소스입니다. 이 리포지토리는 문서와 자료를 제공합니다. 별도 [NimoteHost](https://github.com/mobiledevloperlab/nimotehost)는 전체 소스를 Apache-2.0으로 제공하며 해당 라이선스는 Host에 적용됩니다.
-
-[FAQ 더 보기](https://nimotecode.com/ko/docs/faq).
-
-## 모바일 개발 도구 비교
-
-**편집 → 검사 실행 → diff 검토 → 작업 공간 확장을 하나의 모바일 IDE에서.** NimoteCode 열은 미출시 2.4.0 빌드(2.4.1에 포함 예정)를 반영합니다. `?`는 해당 제품의 기능이 확인되지 않았음을 뜻합니다.
-
-| 주요 기능 | **NimoteCode** | Termius | Blink Shell | ServerCC |
-| --- | :---: | :---: | :---: | :---: |
-| SSH 연결 | ✅ | ✅ | ✅ | ✅ |
-| 코드 편집기 | ✅ | ? | ✅ | ? |
-| 맞춤 플러그인 / 패널 | ✅ ¹ | ? | ? | ? |
-| Git / diff UI | ✅ ¹ | ? | ◐ | ✅ |
-| Git 브랜치 작업 | ✅ ¹ | ? | ? | ? |
-| 내장 AI Agent | ✅ ¹ | ? | ? | ? |
-| 실행 중인 AI Agent 계속 진행 | ✅ ¹ | ? | ? | ? |
-| 내장 MCP 도구 서버 | ✅ ¹ | ? | ? | ? |
-| LSP 진단 | ✅ ¹ | ? | ◐ | ? |
-| 웹 / 앱 미리 보기 | ✅ | ? | ? | ✅ |
-| SOCKS5 / HTTP CONNECT SSH 프록시 | ✅ | ? | ? | ? |
-| Android 로컬 Linux | ✅ ² | ? | ? | ? |
-| Mosh 전송 | ? | ✅ | ✅ | ? |
-
-<details><summary>Redock, Orca, Moshi와 비교</summary>
-
-| 주요 기능 | **NimoteCode** | Redock | Orca | Moshi |
-| --- | :---: | :---: | :---: | :---: |
-| SSH 연결 | ✅ | ✅ | ◐ | ✅ |
-| 코드 편집기 | ✅ | ? | — | ? |
-| 맞춤 플러그인 / 패널 | ✅ ¹ | ? | ? | ? |
-| Git / diff UI | ✅ ¹ | ? | ✅ | ✅ |
-| Git 브랜치 작업 | ✅ ¹ | ? | ? | ? |
-| 내장 AI Agent | ✅ ¹ | ? | ? | ? |
-| 실행 중인 AI Agent 계속 진행 | ✅ ¹ | ? | ? | ? |
-| 내장 MCP 도구 서버 | ✅ ¹ | ? | ? | ? |
-| LSP 진단 | ✅ ¹ | ? | ? | ? |
-| 웹 / 앱 미리 보기 | ✅ | ✅ | ✅ | ✅ |
-| SOCKS5 / HTTP CONNECT SSH 프록시 | ✅ | ? | ? | ? |
-| Android 로컬 Linux | ✅ ² | ? | ? | ? |
-| Mosh 전송 | ? | ✅ | ? | ✅ |
-
-Orca 모바일에는 데스크톱 Companion이 필요합니다. Moshi의 diff와 웹 미리 보기에는 Pro 및 호스트 hook이 필요합니다. Redock의 미리 보기는 호스트 개발 서버를 사용합니다.
-
-</details>
-
-¹ 플러그인 센터, Agent(실행 중 후속 지시 및 구성된 MCP 도구 서버 포함), Git 쓰기 및 고급 LSP는 Early Access 대상이며 Git 상태, diff, 기록 및 기본 LSP는 무료입니다. ² 지원되는 Android 8+ ARM64 / x86_64가 필요합니다. 내장 Agent에는 자신의 AI 공급자가, LSP에는 구성된 호스트 언어 서버가 필요합니다.
-
-체크 표시는 무료, 설정 불필요 또는 모든 플랫폼에서 사용 가능함을 뜻하지 않습니다. Blink 편집은 Blink Code를 통해 통합되며 Git / LSP는 리포지토리나 원격 IDE 구성에 따라 달라집니다. Termius Mosh는 여기서 Android만 확인했습니다.
-
-> [공식 근거가 포함된 전체 비교 보기 →](https://nimotecode.com/ko/compare/mobile-ai-development-tools?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_comparison)
-
-## 기여하기
-
-문서와 예제 개선을 위한 Pull Request를 환영합니다. 앱 문제나 기능 제안은 [이슈 트래커](https://github.com/mobiledevloperlab/nimote_issues/issues)를 이용하고, 재현 단계와 기기 및 앱 버전을 함께 알려 주세요. 앱 소스 코드는 이 리포지토리에 없습니다.
-
-## 커뮤니티
-
-버그를 공유하거나 질문하거나 지원되었으면 하는 워크플로를 제안하세요.
-
-<p align="center"><a href="https://discord.gg/tTxbpqYmhR">Discord</a> · <a href="https://github.com/mobiledevloperlab/nimote_issues/issues">문제 신고</a> · <a href="https://x.com/mobiledevlab">X</a></p>
-
-## 이 리포지토리 정보
-
-별도 [NimoteHost](https://github.com/mobiledevloperlab/nimotehost)는 전체 소스를 Apache-2.0으로 제공하며 해당 라이선스는 Host에 적용됩니다.
-
-NimoteCode는 상용 비공개 소스 애플리케이션입니다. 이 리포지토리에는 공식 문서, 튜토리얼, 워크플로 예제 및 릴리스 노트가 포함되며 애플리케이션 소스 코드는 공개되지 않습니다. Linux 프리셋은 별도 리포지토리에서 관리되고 버그 보고에는 위의 이슈 트래커를 사용합니다.
-
-[Local Linux 소스 번들 및 라이선스 고지](https://nimotecode.com/ko/docs/local-linux-source)는 타사 구성 요소를 다루며 NimoteCode 애플리케이션을 오픈 소스로 만들지 않습니다.
-
-
-[Linux Presets MIT 라이선스](https://github.com/mobiledevloperlab/nimote-linux-presets/blob/master/LICENSE)는 해당 리포지토리에 적용되며 앱이나 이곳의 모든 콘텐츠에는 적용되지 않습니다.
+[NimoteHost](https://github.com/mobiledevloperlab/nimotehost)는 Apache-2.0, [Linux Presets](https://github.com/mobiledevloperlab/nimote-linux-presets/blob/master/LICENSE)는 MIT입니다. [Local Linux 소스와 라이선스 고지](https://nimotecode.com/ko/docs/local-linux-source)는 타사 구성 요소에 적용됩니다. 각 라이선스는 해당 구성 요소에 적용되며 앱이나 저장소 전체에 적용되지 않습니다.
 
 <details>
 <summary>웹사이트와 문서 유지 관리</summary>
@@ -226,6 +226,7 @@ nvm install
 nvm use
 npm ci
 npm ci --prefix blog
+node scripts/generate-readme-screenshot.mjs
 npm run docs:build
 npm run docs:check
 ```
@@ -233,3 +234,11 @@ npm run docs:check
 Node 24 (`.nvmrc`); `npm run docs:dev`.
 
 </details>
+
+---
+
+## 함께 더 나은 NimoteCode 만들기
+
+NimoteCode가 도움이 되었다면 [⭐ Star](https://github.com/mobiledevloperlab/nimotecode)로 다른 개발자에게도 알려주세요.
+
+개선 아이디어, 기능 요청 또는 버그가 있나요? 앱 내 피드백이나 [GitHub Issues](https://github.com/mobiledevloperlab/nimote_issues/issues)로 알려주세요. 실제 사용 경험이 앞으로의 개선에 도움이 됩니다.

@@ -19,7 +19,7 @@ function communityLinks(zh: boolean): DefaultTheme.SocialLink[] {
 
 const siteUrl = 'https://nimotecode.com'
 const brandLogo = `${siteUrl}/app_icon.png`
-const socialImage = `${siteUrl}/screenshots/nimote-pro.webp?v=8692016c`
+const socialImage = `${siteUrl}/screenshots/nimote-pro.webp?v=0fc5e74d`
 const localeConfig = {
   root: { lang: 'en-US', path: '' },
   zh: { lang: 'zh-CN', path: '/zh' },
