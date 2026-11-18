@@ -64,7 +64,7 @@ NimoteCode brings a code editor, SSH terminal, Git review and AI workflows to An
 - **Run and inspect:** use the terminal and project tasks in a compatible workspace, with mobile extra keys, terminal focus mode, configurable color palettes, and SOCKS5 or HTTP CONNECT SSH proxies when needed.
 - **Review with Git:** inspect status, diffs and history; search for, create, and check out branches from the Git header; use Early Access workflows to commit, pull, push and resolve conflicts.
 - **Extend the workspace:** use Early Access Plugin Center to create custom panels, forms, workflows, artifact views, and local or SSH script jobs, with permission changes reviewed before installation or updates.
-- **Use language tools:** connect supported language servers for editor diagnostics and configured remote debug adapters for debugging. LSP and debugging are available through Early Access and require the appropriate environment tools.
+- **Use language tools:** basic LSP diagnostics, completion, and navigation are free. Advanced code actions, guided language-server installation, and debugging require Pro access and the appropriate language servers or debug adapters.
 - **Work with AI:** ask about code, delegate a bounded task to the built-in Agent, or use compatible agents on your SSH host.
 
 System-granted external folders support browsing and editing; Git, LSP, debugging, Tasks, file watching and Agent workflows need a native filesystem path. Tool availability depends on the workspace, installed tools and plan. See the [feature reference](https://nimotecode.com/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_features) for details.
@@ -80,11 +80,13 @@ Start a build or coding Agent from your phone, leave the app, and return to the 
 - **Track results:** search and pin sessions, inspect the task inbox, verification records, and diffs, and dispatch GitHub Issues when supported by the connected Host.
 - **Deploy and extend it yourself:** choose CLI or desktop bundles, build from source, or integrate through RPC, the Go client package, MCP, and community plugins.
 
-**Host mode is part of the upcoming 2.4.1 release.** NimoteHost is fully open source under **Apache-2.0** at [mobiledevloperlab/nimotehost](https://github.com/mobiledevloperlab/nimotehost). NimoteCode remains commercial and closed source. Source and binary downloads will be available when published; a 404 or empty release list means public installation is not yet available.
+**NimoteHost 2.4.0 is available as a development preview**, with complete **Apache-2.0** source at [mobiledevloperlab/nimotehost](https://github.com/mobiledevloperlab/nimotehost) and prebuilt packages on [GitHub Releases](https://github.com/mobiledevloperlab/nimotehost/releases). The NimoteCode app remains commercial and closed source; its Host mode requires NimoteCode 2.4.1 or a later compatible version. Store availability is separate from the Host release.
 
 To get started, install a complete compatible Host bundle on the development computer, check `status` and `capabilities`, then select **Host → SSH connections** in NimoteCode using the same OS account. Ordinary SSH workspaces remain available without Host.
 
 Host and the computer must stay running: client disconnection detaches, while Host/OS restart interrupts processes. Agent tools, authentication, and model usage are configured separately. Available controls depend on both app and Host versions.
+
+**Choose for the Host computer:** match its operating system and CPU, even when downloading from your phone. Linux and Windows provide `amd64` / `arm64` CLI and desktop bundles, plus `386` CLI only; macOS provides Intel (`amd64`) and Apple Silicon (`arm64`) bundles. There is no 32-bit ARM build. Check [hardware and system requirements](https://nimotecode.com/docs/host/compatibility) before [downloading and installing](https://nimotecode.com/docs/host/getting-started); the matrix lists build targets, with full native and mobile/Agent acceptance still pending.
 
 **Inspect, customize, contribute:** read and build the full Host runtime, CLI, desktop manager, and SDK source; fork it to adapt your deployment or integrate your tools. Submit fixes, Agent adapters, translations, and documentation through the [Host contribution guide](https://github.com/mobiledevloperlab/nimotehost/blob/master/CONTRIBUTING.md). SSH authentication, a loopback-only authenticated API, and local Host credentials keep access under your control; model tools still use their configured providers.
 
@@ -110,7 +112,7 @@ AI model access and tokens are not included. Provider charges are separate. Exte
 
 > [**Follow the quick start →**](https://nimotecode.com/docs/quick-start?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_get_started)
 
-**Free to start, with advanced workflows through Early Access:** Free includes local and SSH workspaces, the editor, baseline terminal, Git review, AI Chat and basic Tasks. Advanced workflows such as GitHub integration, Android Local Linux, AI Agent, remote content search, multiple terminals, Git writes, LSP and debugging are available through Early Access. Check [Early Access details](https://nimotecode.com/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_plans) and the app for current availability and terms.
+**Free to start:** local and SSH workspaces, the editor, baseline terminal, Git review, AI Chat, basic LSP, and terminal-based Tasks are free. AI Agent, Git writes and GitHub integration, Android Local Linux, multiple terminals, Host, Docker, advanced language tools, and SSH file workflows require Pro access. Check [Free and Pro](https://nimotecode.com/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=en_plans) and the app for your current trial, subscription, or Early Access entitlement. AI model usage is billed separately by your provider.
 
 ## Downloads
 
@@ -120,9 +122,7 @@ Store availability and release timing may differ by platform and region. See [do
 
 <a id="latest-release"></a>
 
-[Host mode: Install NimoteHost, connect over SSH, and return to terminals and Agent tasks.](https://nimotecode.com/docs/host)
-
-**Coming soon: NimoteCode 2.4.1**, including the unreleased 2.4.0 features, plus NimoteCode for Windows, macOS and Linux and NimoteHost. Release timing will be announced.
+**Coming soon: NimoteCode 2.4.1**, including the unreleased 2.4.0 features and NimoteCode for Windows, macOS and Linux. NimoteHost is already available separately as a development preview; its release does not determine when a compatible app reaches your store.
 
 ## NimoteCode 2.4.1 · Coming soon
 
@@ -143,9 +143,15 @@ Store availability and release timing may differ by platform and region. See [do
 
 ## Documentation
 
-- [Quick start](https://nimotecode.com/docs/quick-start) · [SSH](https://nimotecode.com/docs/ssh) · [Terminal](https://nimotecode.com/docs/terminal) · [Editor](https://nimotecode.com/docs/editor)
-- [AI Chat and Agent](https://nimotecode.com/docs/ai) · [Source control](https://nimotecode.com/docs/source-control) · [LSP](https://nimotecode.com/docs/lsp) · [Debugging](https://nimotecode.com/docs/debug)
-- [Docker](https://nimotecode.com/docs/docker) · [Plugins](https://nimotecode.com/docs/plugins) · [Security](https://nimotecode.com/docs/security) · [All documentation](https://nimotecode.com/docs)
+Choose a guide by task. The [documentation overview](https://nimotecode.com/docs) explains workspace choices and links to setup and troubleshooting.
+
+- **Start here:** [Documentation overview](https://nimotecode.com/docs) · [Quick start](https://nimotecode.com/docs/quick-start) · [NimoteCode FAQ](https://nimotecode.com/docs/faq)
+- **Workspaces and environments:** [Local and SSH workspaces](https://nimotecode.com/docs/ssh) · [Windows SSH and SFTP](https://nimotecode.com/docs/windows-ssh-sftp) · [Sync and Cache](https://nimotecode.com/docs/sync-cache) · [Docker and Dev Containers](https://nimotecode.com/docs/docker)
+- **Edit, run and use Git:** [Code editor](https://nimotecode.com/docs/editor) · [Workspace search](https://nimotecode.com/docs/search) · [Terminal](https://nimotecode.com/docs/terminal) · [Tasks](https://nimotecode.com/docs/tasks) · [Git and GitHub](https://nimotecode.com/docs/source-control) · [Language services (LSP)](https://nimotecode.com/docs/lsp) · [Debugging](https://nimotecode.com/docs/debug)
+- **AI and extensions:** [AI providers and models](https://nimotecode.com/docs/configuration) · [Chat, Agents and MCP](https://nimotecode.com/docs/ai) · [Custom plugins](https://nimotecode.com/docs/plugins)
+- **Host mode:** [Overview](https://nimotecode.com/docs/host) · [Hardware and package selection](https://nimotecode.com/docs/host/compatibility) · [Download and installation](https://nimotecode.com/docs/host/getting-started) · [Troubleshooting](https://nimotecode.com/docs/host/troubleshooting)
+- **Android Local Linux:** [Overview](https://nimotecode.com/docs/local-linux) · [Requirements and compatibility](https://nimotecode.com/docs/local-linux/compatibility) · [Installation and first run](https://nimotecode.com/docs/local-linux/getting-started) · [Troubleshooting](https://nimotecode.com/docs/local-linux/troubleshooting)
+- **Settings and reference:** [Settings](https://nimotecode.com/docs/settings) · [Account and subscription](https://nimotecode.com/docs/account-subscription) · [Notifications](https://nimotecode.com/docs/notifications) · [Credentials and operation review](https://nimotecode.com/docs/security)
 
 ### Guides and resources
 
@@ -213,7 +219,7 @@ Orca mobile requires its desktop companion. Moshi's diff and web preview require
 
 </details>
 
-¹ **Early Access:** NimoteCode’s Plugin Center, built-in Agent (including active-run follow-ups and configured MCP tool servers), Git writes and LSP are available through Early Access; Git status, diffs and history are free. Check the app for current availability. ² Local Linux requires supported Android 8+ ARM64 / x86_64 devices. The built-in Agent needs your own AI provider; LSP needs a configured host language server.
+¹ **Early Access:** NimoteCode’s Plugin Center, built-in Agent (including active-run follow-ups and configured MCP tool servers), Git writes and advanced LSP tools are available through Early Access; Git status, diffs, history and basic LSP are free. Check the app for current availability. ² Local Linux requires supported Android 8+ ARM64 / x86_64 devices. The built-in Agent needs your own AI provider; LSP needs a configured host language server.
 
 A check does not mean free, setup-free or available on every platform. Blink integrates editing through Blink Code; Git / LSP depend on repository or remote IDE configuration. Termius Mosh is verified here for Android only. See the full comparison for each product's setup and plan requirements.
 

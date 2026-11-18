@@ -44,7 +44,7 @@ Local Linux requiere Android 8 o posterior en dispositivos ARM64 / x86_64 compat
 - **Revisa con Git:** consulta estado, diferencias e historial; busca, crea y cambia ramas desde el encabezado de Git.
 - **Amplía el espacio de trabajo:** el Centro de plugins de Early Access permite paneles, formularios, flujos, vistas de resultados y tareas de script locales o SSH.
 
-- **Herramientas de lenguaje:** conecta servidores compatibles para diagnósticos y adaptadores de depuración remotos configurados. LSP y depuración son flujos de Early Access que requieren las herramientas del entorno.
+- **Herramientas de lenguaje:** los diagnósticos, el autocompletado y la navegación LSP básicos son gratuitos. Las acciones de código avanzadas, la instalación guiada del servidor y la depuración requieren acceso Pro y servidores de lenguaje o adaptadores adecuados.
 - **Carpetas externas:** las carpetas autorizadas por el sistema permiten explorar y editar; Git, LSP, depuración, tareas, vigilancia de archivos y Agent requieren una ruta nativa.
 - **Disponibilidad:** las herramientas dependen del espacio de trabajo, las herramientas instaladas y el plan. Consulta la [referencia de funciones](https://nimotecode.com/es/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_features).
 
@@ -59,9 +59,11 @@ Local Linux requiere Android 8 o posterior en dispositivos ARM64 / x86_64 compat
 - Busca y fija sesiones; revisa la bandeja de tareas, verificaciones y diffs; envía Issues de GitHub cuando el Host lo permita.
 - Despliega paquetes CLI o GUI, compila el código o integra RPC, el cliente Go, MCP y plugins comunitarios.
 
-El modo Host llegará con **2.4.1**. NimoteHost ofrece todo su código bajo **Apache-2.0** en [su repositorio](https://github.com/mobiledevloperlab/nimotehost); NimoteCode sigue siendo comercial y de código cerrado. Si GitHub muestra 404 o no hay paquetes, la descarga pública aún no está disponible.
+**NimoteHost 2.4.0 está disponible como versión preliminar**, con todo su código bajo **Apache-2.0** en el [repositorio independiente](https://github.com/mobiledevloperlab/nimotehost) y paquetes compilados en [GitHub Releases](https://github.com/mobiledevloperlab/nimotehost/releases). NimoteCode sigue siendo una aplicación comercial de código cerrado. Su modo Host requiere NimoteCode 2.4.1 o una versión posterior compatible; la disponibilidad en las tiendas es independiente del lanzamiento de Host.
 
 Instala el paquete completo en el ordenador, comprueba `status` y `capabilities` y elige **Host → SSH connections** con la misma cuenta del sistema. SSH normal no necesita Host. El ordenador y Host deben seguir encendidos; reiniciar Host o el sistema interrumpe los procesos. Instala y autentica los Agents por separado; el uso del modelo no está incluido. Las funciones dependen de ambas versiones.
+
+**Elige según el ordenador Host:** aunque descargues desde el móvil, usa el SO y la CPU del Host. Linux y Windows ofrecen CLI y escritorio para `amd64` / `arm64`, además de CLI para `386`; macOS ofrece Intel (`amd64`) y Apple Silicon (`arm64`). No hay compilación ARM de 32 bits. Comprueba los [requisitos de hardware y sistema](https://nimotecode.com/es/docs/host/compatibility) antes de [instalar](https://nimotecode.com/es/docs/host/getting-started). La matriz indica destinos de compilación; la validación completa nativa y móvil/Agent sigue pendiente.
 
 **Revisa, personaliza y contribuye:** compila todo el código del servicio, la CLI, el gestor y los SDK; haz un Fork para adaptar el despliegue o integrar herramientas. Aporta correcciones, adaptadores de Agents, traducciones y documentación mediante la [guía de contribución](https://github.com/mobiledevloperlab/nimotehost/blob/master/CONTRIBUTING.md). SSH, la API autenticada en loopback y las credenciales Host locales permiten controlar el acceso; los modelos usan sus proveedores configurados.
 
@@ -87,7 +89,7 @@ El acceso a modelos y los tokens no están incluidos. Los agentes externos y las
 
 > [Guía de inicio rápido →](https://nimotecode.com/es/docs/quick-start?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_quick_start)
 
-**Gratis para empezar, con flujos avanzados en Early Access:** Gratis incluye espacios locales y SSH, editor, terminal básico, revisión de Git, AI Chat y tareas básicas. integración con GitHub, Android Local Linux, Agent, búsqueda remota, varios terminales, escritura Git, LSP y depuración se ofrecen mediante Early Access. Consulta [Early Access](https://nimotecode.com/es/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_plans) y la aplicación para la disponibilidad y condiciones actuales.
+**Empieza gratis:** espacios locales y SSH, editor, terminal básico, revisión Git, AI Chat, LSP básico y Tasks basadas en terminal son gratuitos. AI Agent, escritura Git e integración GitHub, Local Linux en Android, múltiples terminales, Host, Docker, herramientas de lenguaje avanzadas y flujos de archivos SSH requieren acceso Pro. Consulta [Gratis y Pro](https://nimotecode.com/es/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_plans) y la aplicación para conocer tus permisos de prueba, suscripción o Early Access. El proveedor cobra el uso del modelo por separado.
 
 La disponibilidad en tiendas y el momento de lanzamiento pueden variar por plataforma y región. Consulta [descargas y requisitos de plataforma](https://nimotecode.com/es/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_download).
 
@@ -97,7 +99,7 @@ Descarga para Android en [Google Play](https://play.google.com/store/apps/detail
 
 [Modo Host: Instalar NimoteHost, conectar por SSH y retomar terminales y tareas Agent.](https://nimotecode.com/es/docs/host)
 
-**NimoteCode 2.4.1 llegará pronto** e incluirá las funciones no publicadas de 2.4.0. También llegarán NimoteCode para Windows, macOS y Linux y NimoteHost.
+**NimoteCode 2.4.1 llegará pronto**, con las funciones no publicadas de 2.4.0 y NimoteCode para Windows, macOS y Linux. NimoteHost ya está disponible por separado como versión preliminar; eso no determina cuándo llegará la aplicación compatible a tu tienda.
 
 ## NimoteCode 2.4.1 · Próximamente
 
@@ -118,9 +120,15 @@ Descarga para Android en [Google Play](https://play.google.com/store/apps/detail
 
 ## Documentación
 
-- [Inicio rápido](https://nimotecode.com/es/docs/quick-start) · [SSH](https://nimotecode.com/es/docs/ssh) · [Terminal](https://nimotecode.com/es/docs/terminal) · [Editor](https://nimotecode.com/es/docs/editor)
-- [AI Chat & Agent](https://nimotecode.com/es/docs/ai) · [Control de código](https://nimotecode.com/es/docs/source-control) · [LSP](https://nimotecode.com/es/docs/lsp) · [Depuración](https://nimotecode.com/es/docs/debug)
-- [Docker](https://nimotecode.com/es/docs/docker) · [Plugins](https://nimotecode.com/es/docs/plugins) · [Seguridad](https://nimotecode.com/es/docs/security) · [Índice](https://nimotecode.com/es/docs)
+Elige una guía según tu tarea. El [resumen de documentación](https://nimotecode.com/es/docs) explica los espacios y enlaza configuración, uso y solución de problemas.
+
+- **Primeros pasos:** [Resumen de documentación](https://nimotecode.com/es/docs) · [Inicio rápido](https://nimotecode.com/es/docs/quick-start) · [Preguntas frecuentes de NimoteCode](https://nimotecode.com/es/docs/faq)
+- **Espacios y entornos:** [Espacios de trabajo locales y SSH](https://nimotecode.com/es/docs/ssh) · [SSH y SFTP en Windows](https://nimotecode.com/es/docs/windows-ssh-sftp) · [Sincronización y caché](https://nimotecode.com/es/docs/sync-cache) · [Docker y Dev Containers](https://nimotecode.com/es/docs/docker)
+- **Editar, ejecutar y usar Git:** [Editor de código](https://nimotecode.com/es/docs/editor) · [Búsqueda en el espacio de trabajo](https://nimotecode.com/es/docs/search) · [Terminal](https://nimotecode.com/es/docs/terminal) · [Tareas](https://nimotecode.com/es/docs/tasks) · [Git y GitHub](https://nimotecode.com/es/docs/source-control) · [Servicios de lenguaje (LSP)](https://nimotecode.com/es/docs/lsp) · [Depuración](https://nimotecode.com/es/docs/debug)
+- **IA y extensiones:** [Proveedores y modelos de IA](https://nimotecode.com/es/docs/configuration) · [Chat, Agents y MCP](https://nimotecode.com/es/docs/ai) · [Plugins personalizados](https://nimotecode.com/es/docs/plugins)
+- **Modo Host:** [Resumen](https://nimotecode.com/es/docs/host) · [Hardware y selección de paquetes](https://nimotecode.com/es/docs/host/compatibility) · [Descarga e instalación](https://nimotecode.com/es/docs/host/getting-started) · [Solución de problemas](https://nimotecode.com/es/docs/host/troubleshooting)
+- **Local Linux en Android:** [Resumen](https://nimotecode.com/es/docs/local-linux) · [Requisitos y compatibilidad](https://nimotecode.com/es/docs/local-linux/compatibility) · [Instalación y primer uso](https://nimotecode.com/es/docs/local-linux/getting-started) · [Solución de problemas](https://nimotecode.com/es/docs/local-linux/troubleshooting)
+- **Ajustes y referencias:** [Ajustes](https://nimotecode.com/es/docs/settings) · [Cuenta y suscripción](https://nimotecode.com/es/docs/account-subscription) · [Notificaciones](https://nimotecode.com/es/docs/notifications) · [Credenciales y revisión de operaciones](https://nimotecode.com/es/docs/security)
 
 ### Guías y recursos
 
@@ -186,7 +194,7 @@ Orca móvil requiere su aplicación complementaria de escritorio. Las diferencia
 
 </details>
 
-¹ Centro de plugins, Agente —incluidas instrucciones durante la ejecución y servidores MCP configurados—, operaciones de escritura Git y LSP forman parte de Early Access; estado, diferencias e historial de Git son gratuitos. ² Requiere Android 8+ ARM64 / x86_64 compatible; el Agente integrado necesita tu proveedor de IA y LSP necesita un servidor de lenguaje configurado en el host.
+¹ Centro de plugins, Agente —incluidas instrucciones durante la ejecución y servidores MCP configurados—, operaciones de escritura Git y herramientas LSP avanzadas forman parte de Early Access; estado, diferencias e historial de Git y LSP básico son gratuitos. ² Requiere Android 8+ ARM64 / x86_64 compatible; el Agente integrado necesita tu proveedor de IA y LSP necesita un servidor de lenguaje configurado en el host.
 
 Una marca no significa que la función sea gratuita, no requiera configuración ni esté disponible en todas las plataformas. La edición de Blink se integra mediante Blink Code; Git y LSP dependen de la configuración del repositorio o del IDE remoto. Mosh de Termius se verificó aquí solo en Android.
 

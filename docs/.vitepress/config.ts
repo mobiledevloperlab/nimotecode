@@ -6,6 +6,7 @@ import { productCopy } from './theme/product'
 import homeTranslations from './theme/i18n/home.json'
 import { allCompetitors } from './theme/data/mobileDevelopmentCompetitors'
 import { guideLayout } from './guide-layout'
+import { docsSidebar } from './docs-navigation'
 
 function communityLinks(zh: boolean): DefaultTheme.SocialLink[] {
   return [
@@ -42,136 +43,6 @@ function docsUi(locale: 'zh' | 'ja' | 'ko' | 'es') {
     sidebarMenuLabel: menu,
     returnToTopLabel: top,
     langMenuLabel: languages
-  }
-}
-
-type DocsSidebarLabels = {
-  start: string
-  quickStart: string
-  workflow: string
-  ssh: string
-  localLinux: string
-  ai: string
-  plugins: string
-  editor: string
-  terminal: string
-  search: string
-  sourceControl: string
-  lsp: string
-  debug: string
-  syncCache: string
-  tasks: string
-  docker: string
-  overview: string
-  gettingStarted: string
-  architecture: string
-  compatibility: string
-  securityIntegrity: string
-  presets: string
-  troubleshooting: string
-  reference: string
-  account: string
-  security: string
-  settings: string
-  notifications: string
-  configuration: string
-  sourceLicenses: string
-  faq: string
-}
-
-function organizeDocsGroups(groups: DefaultTheme.SidebarItem[], prefix: string): DefaultTheme.SidebarItem[] {
-  const locale = prefix.slice(1) || 'en'
-  const names: Record<string, string[]> = {
-    en: ['Getting started', 'Workspaces', 'Core development', 'AI and automation', 'Code intelligence and delivery', 'Android Local Linux', 'Settings and help'],
-    zh: ['开始使用', '工作区', '核心开发', 'AI 与自动化', '代码智能与交付', 'Android 本地 Linux', '设置与帮助'],
-    ja: ['はじめに', 'ワークスペース', 'コア開発', 'AI と自動化', 'コードインテリジェンスとデリバリー', 'Android Local Linux', '設定とヘルプ'],
-    ko: ['시작하기', '작업 공간', '핵심 개발', 'AI 및 자동화', '코드 인텔리전스 및 배포', 'Android Local Linux', '설정 및 도움말'],
-    es: ['Primeros pasos', 'Espacios de trabajo', 'Desarrollo principal', 'IA y automatización', 'Inteligencia de código y entrega', 'Android Local Linux', 'Ajustes y ayuda']
-  }
-  const items = groups.flatMap(group => group.items ?? [])
-  const windowsLabels: Record<string, string> = {
-    en: 'Windows SSH and SFTP', zh: 'Windows SSH 与 SFTP',
-    ja: 'Windows SSH と SFTP', ko: 'Windows SSH 및 SFTP', es: 'SSH y SFTP en Windows'
-  }
-  items.push({ text: windowsLabels[locale], link: `${prefix}/docs/windows-ssh-sftp` })
-  const hostLabels: Record<string, string> = { en: 'Host mode', zh: 'Host 模式', es: 'Modo Host', ja: 'Host モード', ko: 'Host 모드' }
-  items.push({ text: hostLabels[locale], link: `${prefix}/docs/host` })
-  const labels: Record<string, string> = locale === 'zh' ? {
-    ssh: '本地与 SSH 工作区', ai: 'AI 对话与 Agent', editor: '代码编辑器',
-    terminal: '终端', search: '工作区搜索', 'source-control': '源代码管理',
-    lsp: '语言服务（LSP）', debug: '调试', 'sync-cache': '同步与缓存',
-    tasks: '任务', docker: 'Docker 与 Dev Containers', configuration: '模型与连接配置', plugins: '自定义插件'
-  } : {}
-  const group = (text: string, routes: string[], collapsed = false) => ({
-    text, collapsed,
-    items: routes.map(route => {
-      const item = items.find(item => item.link === `${prefix}/docs/${route}`)
-      if (!item) throw new Error(`Missing documentation navigation: ${prefix}/${route}`)
-      return { ...item, text: labels[route] ?? item.text }
-    })
-  })
-  return [
-    { text: names[locale][0], items: [{ text: ({ en: 'Documentation overview', zh: '文档概览', ja: 'ドキュメント概要', ko: '문서 개요', es: 'Resumen de documentación' } as Record<string, string>)[locale], link: `${prefix}/docs` }, ...group(names[locale][0], ['quick-start']).items] },
-    group(names[locale][1], ['ssh', 'windows-ssh-sftp', 'host']),
-    group(names[locale][2], ['editor', 'terminal', 'search', 'source-control', 'tasks', 'docker']),
-    group(names[locale][3], ['ai', 'configuration', 'plugins']),
-    group(names[locale][4], ['lsp', 'debug', 'sync-cache']),
-    { ...groups[2], text: names[locale][5], collapsed: false },
-    group(names[locale][6], ['settings', 'account-subscription', 'security', 'notifications', 'local-linux-source', 'faq'], true)
-  ]
-}
-
-function docsSidebar(prefix: string, labels: DocsSidebarLabels) {
-  const docs = `${prefix}/docs`
-  return {
-    [`${docs}/`]: organizeDocsGroups([
-      { text: labels.start, items: [{ text: labels.quickStart, link: `${docs}/quick-start` }] },
-      {
-        text: labels.workflow,
-        collapsed: false,
-        items: [
-          { text: labels.ssh, link: `${docs}/ssh` },
-          { text: labels.localLinux, link: `${docs}/local-linux` },
-          { text: labels.ai, link: `${docs}/ai` },
-          { text: labels.plugins, link: `${docs}/plugins` },
-          { text: labels.editor, link: `${docs}/editor` },
-          { text: labels.terminal, link: `${docs}/terminal` },
-          { text: labels.search, link: `${docs}/search` },
-          { text: labels.sourceControl, link: `${docs}/source-control` },
-          { text: labels.lsp, link: `${docs}/lsp` },
-          { text: labels.debug, link: `${docs}/debug` },
-          { text: labels.syncCache, link: `${docs}/sync-cache` },
-          { text: labels.tasks, link: `${docs}/tasks` },
-          { text: labels.docker, link: `${docs}/docker` }
-        ]
-      },
-      {
-        text: labels.localLinux,
-        collapsed: false,
-        items: [
-          { text: labels.overview, link: `${docs}/local-linux` },
-          { text: labels.gettingStarted, link: `${docs}/local-linux/getting-started` },
-          { text: labels.architecture, link: `${docs}/local-linux/architecture` },
-          { text: labels.compatibility, link: `${docs}/local-linux/compatibility` },
-          { text: labels.securityIntegrity, link: `${docs}/local-linux/security-integrity` },
-          { text: labels.presets, link: `${docs}/local-linux/presets` },
-          { text: labels.troubleshooting, link: `${docs}/local-linux/troubleshooting` }
-        ]
-      },
-      {
-        text: labels.reference,
-        collapsed: false,
-        items: [
-          { text: labels.account, link: `${docs}/account-subscription` },
-          { text: labels.security, link: `${docs}/security` },
-          { text: labels.settings, link: `${docs}/settings` },
-          { text: labels.notifications, link: `${docs}/notifications` },
-          { text: labels.configuration, link: `${docs}/configuration` },
-          { text: labels.sourceLicenses, link: `${docs}/local-linux-source` },
-          { text: labels.faq, link: `${docs}/faq` }
-        ]
-      }
-    ], prefix)
   }
 }
 
@@ -903,60 +774,7 @@ export default defineConfig({
               ]
             }
           ],
-          '/docs/': organizeDocsGroups([
-            {
-              text: 'Start',
-              items: [
-                { text: 'Quick Start', link: '/docs/quick-start' }
-              ]
-            },
-            {
-              text: 'Development Workflow',
-              collapsed: false,
-              items: [
-                { text: 'Local and Remote Workspaces', link: '/docs/ssh' },
-                { text: 'Android Local Linux', link: '/docs/local-linux' },
-                { text: 'AI Chat and Agent', link: '/docs/ai' },
-                { text: 'Custom Plugins', link: '/docs/plugins' },
-                { text: 'Editor', link: '/docs/editor' },
-                { text: 'Terminal', link: '/docs/terminal' },
-                { text: 'Search', link: '/docs/search' },
-                { text: 'Source Control', link: '/docs/source-control' },
-                { text: 'LSP', link: '/docs/lsp' },
-                { text: 'Debug', link: '/docs/debug' },
-                { text: 'Sync / Cache', link: '/docs/sync-cache' },
-                { text: 'Tasks', link: '/docs/tasks' },
-                { text: 'Docker and Dev Containers', link: '/docs/docker' },
-                { text: 'Docker and Dev Containers', link: '/docs/docker' }
-              ]
-            },
-            {
-              text: 'Android Local Linux',
-              collapsed: false,
-              items: [
-                { text: 'Overview', link: '/docs/local-linux' },
-                { text: 'Getting Started', link: '/docs/local-linux/getting-started' },
-                { text: 'Architecture', link: '/docs/local-linux/architecture' },
-                { text: 'Compatibility', link: '/docs/local-linux/compatibility' },
-                { text: 'Security and Integrity', link: '/docs/local-linux/security-integrity' },
-                { text: 'Linux Presets', link: '/docs/local-linux/presets' },
-                { text: 'Troubleshooting', link: '/docs/local-linux/troubleshooting' }
-              ]
-            },
-            {
-              text: 'Reference',
-              collapsed: false,
-              items: [
-                { text: 'Account and Subscription', link: '/docs/account-subscription' },
-                { text: 'Security and Safety', link: '/docs/security' },
-                { text: 'Settings', link: '/docs/settings' },
-                { text: 'Notifications', link: '/docs/notifications' },
-                { text: 'Configuration', link: '/docs/configuration' },
-                { text: 'Local Linux Source and Licenses', link: '/docs/local-linux-source' },
-                { text: 'FAQ', link: '/docs/faq' }
-              ]
-            }
-          ], ''),
+          ...docsSidebar(''),
           '/use-cases/': [
             {
               text: 'Workflows',
@@ -1021,59 +839,7 @@ export default defineConfig({
               ]
             }
           ],
-          '/zh/docs/': organizeDocsGroups([
-            {
-              text: '开始使用',
-              items: [
-                { text: '快速入门', link: '/zh/docs/quick-start' }
-              ]
-            },
-            {
-              text: '开发工作流',
-              collapsed: false,
-              items: [
-                { text: '本地与远程 SSH 工作区', link: '/zh/docs/ssh' },
-                { text: 'Android 本地 Linux', link: '/zh/docs/local-linux' },
-                { text: 'AI Chat 与 Agent', link: '/zh/docs/ai' },
-                { text: '自定义插件', link: '/zh/docs/plugins' },
-                { text: '编辑器', link: '/zh/docs/editor' },
-                { text: '终端使用', link: '/zh/docs/terminal' },
-                { text: '远程搜索', link: '/zh/docs/search' },
-                { text: 'Source Control 工作流', link: '/zh/docs/source-control' },
-                { text: 'LSP 面板', link: '/zh/docs/lsp' },
-                { text: '调试面板', link: '/zh/docs/debug' },
-                { text: 'Sync / Cache 面板', link: '/zh/docs/sync-cache' },
-                { text: 'Tasks 面板', link: '/zh/docs/tasks' },
-                { text: 'Docker 与 Dev Containers', link: '/zh/docs/docker' }
-              ]
-            },
-            {
-              text: 'Android 本地 Linux',
-              collapsed: false,
-              items: [
-                { text: '概览', link: '/zh/docs/local-linux' },
-                { text: '快速开始', link: '/zh/docs/local-linux/getting-started' },
-                { text: '架构', link: '/zh/docs/local-linux/architecture' },
-                { text: '兼容性', link: '/zh/docs/local-linux/compatibility' },
-                { text: '安全与完整性', link: '/zh/docs/local-linux/security-integrity' },
-                { text: 'Linux Presets', link: '/zh/docs/local-linux/presets' },
-                { text: '故障排查', link: '/zh/docs/local-linux/troubleshooting' }
-              ]
-            },
-            {
-              text: '参考',
-              collapsed: false,
-              items: [
-                { text: '账户与订阅', link: '/zh/docs/account-subscription' },
-                { text: '安全与防护', link: '/zh/docs/security' },
-                { text: '设置', link: '/zh/docs/settings' },
-                { text: '通知', link: '/zh/docs/notifications' },
-                { text: '配置', link: '/zh/docs/configuration' },
-                { text: '本地 Linux 对应源码与许可证', link: '/zh/docs/local-linux-source' },
-                { text: '常见问题', link: '/zh/docs/faq' }
-              ]
-            }
-          ], '/zh'),
+          ...docsSidebar('/zh'),
           '/zh/use-cases/': [
             {
               text: '工作流',
@@ -1111,13 +877,7 @@ export default defineConfig({
           { text: 'アップデート', link: '/ja/releases/' },
           { text: 'ダウンロード', link: '/ja/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ], sidebar: {
-          ...docsSidebar('/ja', {
-            start: 'はじめに', quickStart: 'クイックスタート', workflow: '開発ワークフロー',
-            ssh: 'ローカルと SSH のワークスペース', localLinux: 'Android Local Linux', docker: 'Docker と Dev Containers', ai: 'AI Chat と Agent', plugins: 'カスタムプラグイン',
-            editor: 'エディター', terminal: 'ターミナル', search: '検索', sourceControl: 'ソース管理', lsp: 'LSP', debug: 'デバッグ', syncCache: '同期 / キャッシュ', tasks: 'タスク',
-            overview: '概要', gettingStarted: 'はじめる', architecture: 'アーキテクチャ', compatibility: '互換性', securityIntegrity: 'セキュリティと整合性', presets: 'Linux プリセット', troubleshooting: 'トラブルシューティング',
-            reference: 'リファレンス', account: 'アカウントとサブスクリプション', security: 'セキュリティと安全性', settings: '設定', notifications: '通知', configuration: '構成', sourceLicenses: 'ローカル Linux のソースとライセンス', faq: 'よくある質問'
-          }), ...useCasesSidebar('/ja', { heading: 'ワークフロー', agentDemo: 'Agent の構築デモ', workspaceDemo: 'モバイルワークスペースのデモ', terminalTools: 'ターミナル AI ツール' })
+          ...docsSidebar('/ja'), ...useCasesSidebar('/ja', { heading: 'ワークフロー', agentDemo: 'Agent の構築デモ', workspaceDemo: 'モバイルワークスペースのデモ', terminalTools: 'ターミナル AI ツール' })
         }
       }
     },
@@ -1132,13 +892,7 @@ export default defineConfig({
           { text: '업데이트', link: '/ko/releases/' },
           { text: '다운로드', link: '/ko/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ], sidebar: {
-          ...docsSidebar('/ko', {
-            start: '시작하기', quickStart: '빠른 시작', workflow: '개발 워크플로',
-            ssh: '로컬 및 SSH 작업 공간', localLinux: 'Android Local Linux', docker: 'Docker 및 Dev Containers', ai: 'AI Chat 및 Agent', plugins: '사용자 지정 플러그인',
-            editor: '편집기', terminal: '터미널', search: '검색', sourceControl: '소스 제어', lsp: 'LSP', debug: '디버깅', syncCache: '동기화 / 캐시', tasks: '작업',
-            overview: '개요', gettingStarted: '시작하기', architecture: '아키텍처', compatibility: '호환성', securityIntegrity: '보안 및 무결성', presets: 'Linux 프리셋', troubleshooting: '문제 해결',
-            reference: '참조', account: '계정 및 구독', security: '보안 및 안전', settings: '설정', notifications: '알림', configuration: '구성', sourceLicenses: '로컬 Linux 소스 및 라이선스', faq: '자주 묻는 질문'
-          }), ...useCasesSidebar('/ko', { heading: '워크플로', agentDemo: 'Agent 빌드 데모', workspaceDemo: '모바일 워크스페이스 데모', terminalTools: '터미널 AI 도구' })
+          ...docsSidebar('/ko'), ...useCasesSidebar('/ko', { heading: '워크플로', agentDemo: 'Agent 빌드 데모', workspaceDemo: '모바일 워크스페이스 데모', terminalTools: '터미널 AI 도구' })
         }
       }
     },
@@ -1153,13 +907,7 @@ export default defineConfig({
           { text: 'Novedades', link: '/es/releases/' },
           { text: 'Descargar', link: '/es/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ], sidebar: {
-          ...docsSidebar('/es', {
-            start: 'Primeros pasos', quickStart: 'Inicio rápido', workflow: 'Flujo de desarrollo',
-            ssh: 'Espacios de trabajo locales y SSH', localLinux: 'Local Linux en Android', docker: 'Docker y Dev Containers', ai: 'AI Chat y Agent', plugins: 'Plugins personalizados',
-            editor: 'Editor', terminal: 'Terminal', search: 'Búsqueda', sourceControl: 'Control de código fuente', lsp: 'LSP', debug: 'Depuración', syncCache: 'Sincronización / caché', tasks: 'Tareas',
-            overview: 'Descripción general', gettingStarted: 'Primeros pasos', architecture: 'Arquitectura', compatibility: 'Compatibilidad', securityIntegrity: 'Seguridad e integridad', presets: 'Preajustes de Linux', troubleshooting: 'Resolución de problemas',
-            reference: 'Referencia', account: 'Cuenta y suscripción', security: 'Seguridad y protección', settings: 'Ajustes', notifications: 'Notificaciones', configuration: 'Configuración de IA y conexiones', sourceLicenses: 'Código fuente y licencias de Local Linux', faq: 'Preguntas frecuentes'
-          }), ...useCasesSidebar('/es', { heading: 'Flujos de trabajo', agentDemo: 'Demo de un Agent', workspaceDemo: 'Demo de espacio de trabajo móvil', terminalTools: 'Herramientas de IA en terminal' })
+          ...docsSidebar('/es'), ...useCasesSidebar('/es', { heading: 'Flujos de trabajo', agentDemo: 'Demo de un Agent', workspaceDemo: 'Demo de espacio de trabajo móvil', terminalTools: 'Herramientas de IA en terminal' })
         }
       }
     }

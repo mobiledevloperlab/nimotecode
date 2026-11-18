@@ -5,45 +5,79 @@ description: Explore NimoteCode documentation for its four modes, SSH and Androi
 
 # NimoteCode documentation
 
-Start with [Quick start](/docs/quick-start) to open a workspace, edit a file and run your first command. Use the guides below for setup, procedures and troubleshooting.
+Start with [Quick start](/docs/quick-start) to open a workspace, edit a file, and run a command. Then choose the guide for the work you want to do.
 
-## Choose your first task
+## Choose where your work runs
 
-- [Try a first edit without configuring AI](/docs/quick-start)
-- [Compare the four modes](/docs/quick-start#open-a-workspace)
-- [Connect to my development machine](/docs/ssh)
-- [Resume remote sessions with Host](/docs/host)
-- [Set up Linux on my Android device](/docs/local-linux)
-- [Configure my AI provider and model](/docs/configuration)
+| I want to… | Start here | What to expect |
+| --- | --- | --- |
+| Edit files on my device | [Local and SSH workspaces](/docs/ssh) | A local folder gives file access. Running project commands needs SSH or Local Linux. |
+| Use an existing computer or server | [Local and SSH workspaces](/docs/ssh) | Connect over SSH and use the project files and tools installed there. |
+| Return to remote tasks after disconnecting | [Host mode](/docs/host) | Install NimoteHost on the computer, then connect over SSH. Host keeps managed processes running while it remains active. |
+| Run Linux tools on Android | [Requirements and compatibility](/docs/local-linux/compatibility) | Check device compatibility before installing Local Linux. This environment is available on supported Android devices. |
 
-## All feature guides
+The four app modes choose the interface; the workspace chooses where files and commands live. Host adds a service on your computer. See [Quick start](/docs/quick-start) for mode selection.
 
-| Topic | Contents |
+## Find a guide
+
+### Getting started
+
+| Guide | Use it for |
 | --- | --- |
-| [Host mode](/docs/host) | Install NimoteHost, connect over SSH, and return to terminals and Agent tasks. |
 | [Quick start](/docs/quick-start) | Open a workspace; Open and edit a file; Run a command; Run AI Agent |
+| [NimoteCode FAQ](/docs/faq) | Compare workspace options, AI configuration, and feature requirements. |
+
+### Workspaces and environments
+
+| Guide | Use it for |
+| --- | --- |
 | [Local and SSH workspaces](/docs/ssh) | Choose a workspace; Open a local folder; Configure an SSH connection |
+| [Windows SSH and SFTP](/docs/windows-ssh-sftp) | Configure Windows OpenSSH and troubleshoot SSH/SFTP access. |
+| [Sync and Cache](/docs/sync-cache) | Select a transfer direction; Start and verify a transfer |
+| [Docker and Dev Containers](/docs/docker) | Manage SSH-host resources; Control Compose services; Create an isolated workspace |
+
+### Edit, run and use Git
+
+| Guide | Use it for |
+| --- | --- |
 | [Code editor](/docs/editor) | Open files and switch tabs; Select and edit text; Navigate symbols and history |
-| [AI Chat, Agent, MCP, and external agents](/docs/ai) | Choose Chat or Agent; Review plans and tools; Configure trusted MCP servers or ACP runtimes |
-| [AI and connection configuration](/docs/configuration) | Add a provider configuration; Test the chat connection; Manage privacy and history settings |
+| [Workspace search](/docs/search) | Search file contents; If no results appear |
 | [Terminal](/docs/terminal) | Run workspace commands; Search, copy, and analyze output; Refresh the remote environment |
-| [Source Control](/docs/source-control) | Inspect repository status; Review diffs and commits; Switch branches |
-| [GitHub workflows](/docs/source-control) | Sign in, clone to device, Local Linux, or SSH, and work with issues, pull requests, reviews, checks, and workflow artifacts |
-| [Settings](/docs/settings) | Appearance and language; Panel and editor preferences |
-| [Custom plugins](/docs/plugins) | Build and test panels, actions, workflows, Agent tools, MCP references, and Android background jobs |
+| [Tasks](/docs/tasks) | Create a reusable command; Run and inspect output |
+| [Git and GitHub](/docs/source-control) | Review changes, commits, branches, and GitHub workflows. |
 | [Language services (LSP)](/docs/lsp) | Check language-server setup; Use diagnostics and code actions |
 | [Debugging](/docs/debug) | Prepare a debug session; Inspect a paused program |
-| [Workspace search](/docs/search) | Search file contents; If no results appear |
-| [Sync and Cache](/docs/sync-cache) | Select a transfer direction; Start and verify a transfer |
-| [Tasks](/docs/tasks) | Create a reusable command; Run and inspect output |
-| [Docker and Dev Containers](/docs/docker) | Manage SSH-host resources; Control Compose services; Create an isolated workspace |
-| [Android Local Linux](/docs/local-linux) | Requirements; Install and open; Verify the environment |
 
-## Account and reference
+### AI and extensions
 
-- [Notifications](/docs/notifications)
-- [Account and subscription](/docs/account-subscription)
-- [Credentials and operation review](/docs/security)
-- [FAQ](/docs/faq)
-- [Interface reference](/docs/screenshot-guide)
-- [Local Linux source and licenses](/docs/local-linux-source)
+| Guide | Use it for |
+| --- | --- |
+| [AI providers and models](/docs/configuration) | Configure model providers and test the AI connection. |
+| [Chat, Agents and MCP](/docs/ai) | Choose Chat or Agent; Review plans and tools; Configure trusted MCP servers or ACP runtimes |
+| [Custom plugins](/docs/plugins) | Build and test panels, actions, workflows, Agent tools, MCP references, and Android background jobs |
+
+### Host mode
+
+[Host mode](/docs/host)
+
+[Hardware and package selection](/docs/host/compatibility) · [Download and installation](/docs/host/getting-started) · [Connections, terminals and tasks](/docs/host/sessions) · [Agents and task inbox](/docs/host/agents) · [Service management and updates](/docs/host/maintenance) · [Troubleshooting](/docs/host/troubleshooting)
+
+### Android Local Linux
+
+[Android Local Linux](/docs/local-linux)
+
+[Requirements and compatibility](/docs/local-linux/compatibility) · [Installation and first run](/docs/local-linux/getting-started) · [Troubleshooting](/docs/local-linux/troubleshooting)
+
+### Settings and reference
+
+| Guide | Use it for |
+| --- | --- |
+| [Settings](/docs/settings) | Set appearance, language, editor, and panel preferences. |
+| [Account and subscription](/docs/account-subscription) | Check account status, restore purchases, and review feature access. |
+| [Notifications](/docs/notifications) | Find completed or pending activity and open the corresponding session. |
+| [Credentials and operation review](/docs/security) | Handle SSH credentials, model API keys, and operation approvals. |
+| [Interface reference](/docs/screenshot-guide) | Find interface screenshots and procedures by feature. |
+
+## Need help?
+
+For connection problems, start with [FAQ](/docs/faq), [Windows SSH and SFTP](/docs/windows-ssh-sftp), [Host troubleshooting](/docs/host/troubleshooting), or [Local Linux troubleshooting](/docs/local-linux/troubleshooting), according to your environment.

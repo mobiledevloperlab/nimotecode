@@ -129,8 +129,9 @@ for (const url of canonicalUrls) {
 
 // GitHub tutorials live outside the VitePress build. Check their relative links
 // and media here as well. Fragment navigation is checked in the browser review.
-const repoDocs = [resolve('README.md'), resolve('README.zh-CN.md'),
-  ...files(resolve('resources'))].filter((file) => file.endsWith('.md'))
+const readmeLocales = new Map([['README.md', ''], ['README.zh-CN.md', '/zh'], ['README.ja.md', '/ja'], ['README.ko.md', '/ko'], ['README.es.md', '/es']])
+const repoDocs = [...readmeLocales.keys()].map(file => resolve(file)).concat(
+  files(resolve('resources'))).filter((file) => file.endsWith('.md'))
 const bodies = new Map()
 for (const file of repoDocs) {
   const source = readFileSync(file, 'utf8')
@@ -139,6 +140,14 @@ for (const file of repoDocs) {
   bodies.set(normalized, file)
   for (const match of source.matchAll(/\]\(([^\s)]+)\)|(?:href|src|poster)="([^"]+)"/g)) {
     const href = match[1] || match[2]
+    const readmeLocale = readmeLocales.get(relative(process.cwd(), file))
+    if (readmeLocale !== undefined && href.startsWith(`${site}/`)) {
+      const pathname = new URL(href).pathname
+      if (/^\/(?:zh\/|ja\/|ko\/|es\/)?docs(?:\/|$)/.test(pathname)) {
+        if (!targetExists(href)) failures.push(`Broken documentation link in ${relative(process.cwd(), file)}: ${href}`)
+        if (!pathname.startsWith(`${readmeLocale}/docs`)) failures.push(`Documentation link leaves the README language in ${relative(process.cwd(), file)}: ${href}`)
+      }
+    }
     if (/^(?:https?:|mailto:|data:|#)/.test(href)) continue
     const target = resolve(dirname(file), decodeURIComponent(href.split(/[?#]/)[0]))
     if (!existsSync(target)) failures.push(`Broken repository link in ${relative(process.cwd(), file)}: ${href}`)

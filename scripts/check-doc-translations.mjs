@@ -4,7 +4,7 @@ import { resolve } from 'node:path'
 // Structural parity complements editorial translation review. Keep the core
 // guides synchronized without requiring literal translations of their prose.
 const pages = [
-  'host', 'account-subscription', 'ai', 'configuration', 'docker', 'debug', 'editor', 'faq',
+  'host', 'host/compatibility', 'host/getting-started', 'host/sessions', 'host/agents', 'host/maintenance', 'host/troubleshooting', 'account-subscription', 'ai', 'configuration', 'docker', 'debug', 'editor', 'faq',
   'local-linux', 'local-linux/getting-started', 'lsp', 'notifications', 'plugins', 'quick-start', 'search',
   'security', 'settings', 'source-control', 'ssh', 'sync-cache', 'tasks', 'terminal'
 ]
@@ -38,7 +38,7 @@ for (const page of pages) {
       continue
     }
     const translated = read(locale, page)
-    if (!localizedLayouts.has(page)) {
+    if (!localizedLayouts.has(page) && !page.startsWith('host/')) {
       for (const [label, pattern] of Object.entries(structures)) {
         if (JSON.stringify(extract(english, pattern)) !== JSON.stringify(extract(translated, pattern))) {
           failures.push(`${locale}/${page}: ${label} differ from English`)

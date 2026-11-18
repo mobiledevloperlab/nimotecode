@@ -57,7 +57,7 @@ NimoteCode 将代码编辑器、SSH 终端、Git 审查与 AI 工作流带到 An
 - **运行与检查：**在兼容的工作区中使用终端和项目任务，配合移动端扩展按键、终端专注模式、可配置配色，以及按需使用 SOCKS5 或 HTTP CONNECT SSH 代理。
 - **Git 审查：**查看状态、Diff 和历史；可在 Git 标题栏搜索、创建和切换分支；通过 Early Access 工作流提交、拉取、推送及解决冲突。
 - **扩展工作台：**通过 Early Access 插件中心创建自定义面板、表单、工作流、产物视图及本机或 SSH 脚本任务；安装或更新前会先审查权限变更。
-- **语言工具：**接入受支持的语言服务器查看编辑器诊断，配置远程调试适配器进行调试。LSP 与调试通过 Early Access 开放，并需要相应环境工具。
+- **语言工具：**基础 LSP 诊断、补全和导航可免费使用；进阶代码动作、语言服务器引导安装与调试需要 Pro 权益，并配置相应语言服务器或调试适配器。
 - **AI 辅助开发：**询问代码问题、让内置 Agent 完成范围明确的任务，或使用 SSH 主机上的兼容 Agent。
 
 通过系统选择器授权的外部目录支持浏览与编辑；Git、LSP、调试、Tasks、文件监听与 Agent 需要原生文件路径。具体工具取决于工作区、环境与权益。详见[功能说明](https://nimotecode.com/zh/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_features)。
@@ -73,11 +73,13 @@ NimoteCode 将代码编辑器、SSH 终端、Git 审查与 AI 工作流带到 An
 - **跟进任务结果：** 搜索和固定会话，查看任务收件箱、验证记录与 Diff，并在主机支持时从 GitHub Issue 派发工作。
 - **自行部署和扩展：** 选择 CLI 或桌面包、从源码构建，或通过 RPC、Go 客户端包、MCP 与社区插件接入自己的工具。
 
-**Host 模式将随即将发布的 2.4.1 提供。** NimoteHost 完整源码以 **Apache-2.0** 许可证在 [mobiledevloperlab/nimotehost](https://github.com/mobiledevloperlab/nimotehost) 开源；NimoteCode 应用仍为商业闭源软件。源码和二进制包将在公开发布后可用，仓库显示 404 或发布页为空时，表示公开安装入口尚未开放。
+**NimoteHost 2.4.0 开发预览版已开放下载**，完整源码以 **Apache-2.0** 许可证在 [mobiledevloperlab/nimotehost](https://github.com/mobiledevloperlab/nimotehost) 开源，预编译包见 [GitHub Releases](https://github.com/mobiledevloperlab/nimotehost/releases)。NimoteCode 应用仍为商业闭源软件；客户端 Host 模式需要 NimoteCode 2.4.1 或更新的兼容版本。客户端商店上线与 Host 发布是两回事。
 
 开始使用：在开发电脑安装完整兼容 Host 包，检查 `status` 和 `capabilities`，再在 NimoteCode 选择 **Host → SSH connections**，使用同一个系统账号连接。普通 SSH 工作区无需安装 Host。
 
 Host 和电脑需要保持运行：客户端断线仅断开连接，Host 或系统重启会中断进程。Agent 工具、登录及模型费用另行配置；具体入口取决于 App 和 Host 版本。
+
+**按 Host 主机选择安装包：**即使在手机上下载，也要匹配运行 Host 的电脑的系统与 CPU。Linux／Windows 提供 `amd64`、`arm64` 的 CLI 和桌面包，以及仅 CLI 的 `386` 包；macOS 提供 Intel（`amd64`）和 Apple 芯片（`arm64`）包，当前不提供 32 位 ARM。先核对[硬件与系统要求](https://nimotecode.com/zh/docs/host/compatibility)，再[下载与安装](https://nimotecode.com/zh/docs/host/getting-started)；支持矩阵表示发行构建目标，完整原生平台与手机／Agent 实机验收仍待完成。
 
 **可审查、可自定义、可共建：** Host 服务端、CLI、桌面管理器与 SDK 均提供完整源码。可以自行编译、Fork 修改部署与行为、接入自己的工具，并按 [Host 贡献指南](https://github.com/mobiledevloperlab/nimotehost/blob/master/CONTRIBUTING.zh-CN.md)贡献修复、Agent 适配、翻译和文档。SSH 认证、本机回环 API 认证与本地 Host 凭据让访问由你管理；模型工具仍使用各自配置的服务商。
 
@@ -103,7 +105,7 @@ Host 和电脑需要保持运行：客户端断线仅断开连接，Host 或系�
 
 > [**跟随快速开始教程 →**](https://nimotecode.com/zh/docs/quick-start?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_get_started)
 
-**免费开始，Early Access 体验进阶功能：**免费版包含本地与 SSH 工作区、编辑器、基础终端、Git 审查、AI Chat 和基础 Tasks。GitHub 集成、Android Local Linux、AI Agent、远程内容搜索、多终端、Git 写操作、LSP 和调试等进阶工作流通过 Early Access 开放。当前可用性与权益以[Early Access 权益说明](https://nimotecode.com/zh/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_plans)及应用内显示为准。
+**免费开始：**本地与 SSH 工作区、编辑器、基础终端、Git 审查、AI Chat、基础 LSP 和基于终端的 Tasks 均可免费使用。AI Agent、Git 写操作与 GitHub 集成、Android 本地 Linux、多终端、Host、Docker、进阶语言工具和 SSH 文件工作流需要 Pro 权益。当前试用、订阅或 Early Access 权益以[免费版与 Pro](https://nimotecode.com/zh/pro?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_plans)及应用内显示为准；AI 模型调用由服务商另行计费。
 
 商店可用性与版本上线时间可能因平台和地区不同。查看[下载与平台要求](https://nimotecode.com/zh/download?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_download)；商店实际提供的版本可能与下方介绍的版本不同。
 
@@ -113,9 +115,7 @@ Android 用户可从 [Google Play](https://play.google.com/store/apps/details?id
 
 <a id="latest-release"></a>
 
-[Host 模式: 安装 NimoteHost，通过 SSH 连接，创建终端、运行任务和使用 Agent。](https://nimotecode.com/zh/docs/host)
-
-**即将发布：NimoteCode 2.4.1**，包含尚未公开发布的 2.4.0 功能；Windows、macOS、Linux 版 NimoteCode 及 NimoteHost 也即将发布，具体时间另行公布。
+**即将发布：NimoteCode 2.4.1**，包含尚未公开发布的 2.4.0 功能，以及 Windows、macOS、Linux 版 NimoteCode。NimoteHost 已单独提供开发预览版，Host 发布不代表兼容客户端已在你的商店上线。
 
 ## NimoteCode 2.4.1 · 即将发布
 
@@ -136,9 +136,15 @@ Android 用户可从 [Google Play](https://play.google.com/store/apps/details?id
 
 ## 文档
 
-- [快速开始](https://nimotecode.com/zh/docs/quick-start) · [SSH](https://nimotecode.com/zh/docs/ssh) · [终端](https://nimotecode.com/zh/docs/terminal) · [编辑器](https://nimotecode.com/zh/docs/editor)
-- [AI Chat 和 Agent](https://nimotecode.com/zh/docs/ai) · [源代码管理](https://nimotecode.com/zh/docs/source-control) · [LSP](https://nimotecode.com/zh/docs/lsp) · [调试](https://nimotecode.com/zh/docs/debug)
-- [Docker](https://nimotecode.com/zh/docs/docker) · [插件](https://nimotecode.com/zh/docs/plugins) · [安全](https://nimotecode.com/zh/docs/security) · [全部文档](https://nimotecode.com/zh/docs)
+按当前任务选择指南。[文档概览](https://nimotecode.com/zh/docs)提供工作区选择说明，以及配置、操作与排错入口。
+
+- **开始使用:** [文档概览](https://nimotecode.com/zh/docs) · [快速开始](https://nimotecode.com/zh/docs/quick-start) · [常见问题](https://nimotecode.com/zh/docs/faq)
+- **工作区与运行环境:** [本地与 SSH 工作区](https://nimotecode.com/zh/docs/ssh) · [Windows SSH 与 SFTP](https://nimotecode.com/zh/docs/windows-ssh-sftp) · [同步与缓存](https://nimotecode.com/zh/docs/sync-cache) · [Docker 与 Dev Containers](https://nimotecode.com/zh/docs/docker)
+- **编辑、运行与 Git:** [代码编辑器](https://nimotecode.com/zh/docs/editor) · [工作区搜索](https://nimotecode.com/zh/docs/search) · [终端](https://nimotecode.com/zh/docs/terminal) · [任务](https://nimotecode.com/zh/docs/tasks) · [Git 与 GitHub](https://nimotecode.com/zh/docs/source-control) · [语言服务（LSP）](https://nimotecode.com/zh/docs/lsp) · [调试](https://nimotecode.com/zh/docs/debug)
+- **AI 与扩展:** [模型与服务商配置](https://nimotecode.com/zh/docs/configuration) · [AI 对话、Agent 与 MCP](https://nimotecode.com/zh/docs/ai) · [自定义插件](https://nimotecode.com/zh/docs/plugins)
+- **Host 模式:** [概览](https://nimotecode.com/zh/docs/host) · [硬件支持与版本选择](https://nimotecode.com/zh/docs/host/compatibility) · [下载与安装](https://nimotecode.com/zh/docs/host/getting-started) · [故障排查](https://nimotecode.com/zh/docs/host/troubleshooting)
+- **Android 本地 Linux:** [概览](https://nimotecode.com/zh/docs/local-linux) · [设备要求与兼容性](https://nimotecode.com/zh/docs/local-linux/compatibility) · [安装与首次运行](https://nimotecode.com/zh/docs/local-linux/getting-started) · [故障排查](https://nimotecode.com/zh/docs/local-linux/troubleshooting)
+- **设置与参考:** [设置](https://nimotecode.com/zh/docs/settings) · [账户与订阅](https://nimotecode.com/zh/docs/account-subscription) · [通知](https://nimotecode.com/zh/docs/notifications) · [凭据与操作审查](https://nimotecode.com/zh/docs/security)
 
 ### 教程与资源
 
@@ -206,7 +212,7 @@ Orca 的移动端依赖桌面 Companion；Moshi 的 Diff 和网页预览需要 P
 
 </details>
 
-¹ **Early Access：**NimoteCode 的插件中心、内置 Agent（包括运行中追加指令和已配置的 MCP 工具服务器）、Git 写操作与 LSP 属于 Early Access 权益；Git 状态、Diff 与历史可免费使用。具体开放情况以应用内显示为准。² Local Linux 仅限受支持的 Android 8+ ARM64 / x86_64 设备。内置 Agent 需要自有 AI Provider；LSP 需要配置主机语言服务器。
+¹ **Early Access：**NimoteCode 的插件中心、内置 Agent（包括运行中追加指令和已配置的 MCP 工具服务器）、Git 写操作与进阶 LSP 属于 Early Access 权益；Git 状态、Diff、历史与基础 LSP 可免费使用。具体开放情况以应用内显示为准。² Local Linux 仅限受支持的 Android 8+ ARM64 / x86_64 设备。内置 Agent 需要自有 AI Provider；LSP 需要配置主机语言服务器。
 
 勾选不代表免费、无需配置或所有平台均支持。Blink 的编辑能力通过 Blink Code 集成，Git / LSP 取决于仓库或远程 IDE 配置；Termius 的 Mosh 此处仅核实 Android。各产品的配置与付费要求见完整对比。
 

@@ -9,6 +9,7 @@ const locale = computed(() => {
   const key = lang.value.split('-')[0]
   return key in translations ? key as keyof typeof translations : 'en'
 })
+const installPage = computed(() => `${locale.value === 'en' ? '' : '/' + locale.value}/docs/host/getting-started`)
 const copy = computed(() => translations[locale.value])
 const releases = 'https://github.com/mobiledevloperlab/nimotehost/releases'
 const latest = `${releases}/latest`
@@ -21,7 +22,7 @@ const latest = `${releases}/latest`
       <a class="host-download-primary" :href="latest"><span aria-hidden="true">↓</span>{{ copy.download }}</a>
       <p class="host-download-intro">{{ copy.intro }}</p>
       <p class="host-download-hint">{{ copy.hint }}</p>
-      <div class="host-download-shortcuts"><a href="#host-install">{{ copy.install }}</a><a href="#host-source">{{ copy.source }}</a></div>
+      <div class="host-download-shortcuts"><a :href="installPage.replace('getting-started', 'compatibility')">{{ copy.compatibility }}</a><a :href="`${installPage}#host-install`">{{ copy.install }}</a><a :href="`${installPage}#host-source`">{{ copy.source }}</a></div>
     </div>
     <div class="host-download-platforms">
       <article v-for="platform in copy.platforms" :key="platform[0]">

@@ -5,44 +5,79 @@ description: 了解 NimoteCode 的四种模式、SSH 和 Android 本地 Linux，
 
 # NimoteCode 文档
 
-首次使用请从[快速开始](/zh/docs/quick-start)进入，完成打开工作区、编辑文件和运行命令。下方按任务和功能整理配置、操作与排查指南。
+首次使用先按[快速开始](/zh/docs/quick-start)完成打开工作区、编辑文件和运行命令，再按当前任务选择指南。
 
-## 从你要完成的任务开始
+## 先确定文件和命令在哪里运行
 
-- [不配置 AI，先完成一次编辑](/zh/docs/quick-start)
-- [了解四种模式](/zh/docs/quick-start)
-- [连接我已有的开发主机](/zh/docs/ssh)
-- [在 Android 上安装 Linux 环境](/zh/docs/local-linux)
-- [接入自己的 AI Provider 与模型](/zh/docs/configuration)
+| 我想做什么 | 从这里开始 | 需要了解什么 |
+| --- | --- | --- |
+| 编辑设备上的文件 | [本地与 SSH 工作区](/zh/docs/ssh) | 本地目录提供文件访问；运行项目命令需要 SSH 或本地 Linux 环境。 |
+| 使用已有的电脑或服务器 | [本地与 SSH 工作区](/zh/docs/ssh) | 通过 SSH 访问远程项目，沿用主机上已经安装的工具链。 |
+| 断线后回来继续处理远程任务 | [Host 模式](/zh/docs/host) | 先在电脑上安装 NimoteHost，再通过 SSH 连接；Host 保持运行时可继续托管进程。 |
+| 在 Android 上运行 Linux 工具 | [设备要求与兼容性](/zh/docs/local-linux/compatibility) | 先检查设备要求，再安装本地 Linux；仅适用于受支持的 Android 设备。 |
 
-## 完整功能与操作指南
+应用的四种模式决定操作界面，工作区决定文件位置和命令执行环境。Host 另外需要电脑上的服务。模式选择见[快速开始](/zh/docs/quick-start)。
 
-| 主题 | 内容 |
+## 按任务查找指南
+
+### 开始使用
+
+| 指南 | 用途 |
 | --- | --- |
-| [Host 模式](/zh/docs/host) | 安装 NimoteHost，通过 SSH 连接，创建终端、运行任务和使用 Agent。 |
 | [快速开始](/zh/docs/quick-start) | 打开工作区、打开并编辑文件、运行命令、运行 AI Agent |
+| [常见问题](/zh/docs/faq) | 了解工作区选择、AI 配置与功能使用条件。 |
+
+### 工作区与运行环境
+
+| 指南 | 用途 |
+| --- | --- |
 | [本地与 SSH 工作区](/zh/docs/ssh) | 选择工作区、打开本地目录、配置 SSH 连接 |
+| [Windows SSH 与 SFTP](/zh/docs/windows-ssh-sftp) | 配置 Windows OpenSSH，排查 SSH／SFTP 连接与文件访问问题。 |
+| [同步与缓存](/zh/docs/sync-cache) | 选择传输方向、开始并检查传输 |
+| [Docker 与 Dev Containers](/zh/docs/docker) | 管理 SSH 主机资源、控制 Compose 服务、创建隔离工作区 |
+
+### 编辑、运行与 Git
+
+| 指南 | 用途 |
+| --- | --- |
 | [代码编辑器](/zh/docs/editor) | 打开文件与切换标签页、选择与编辑文本、符号导航与历史记录 |
-| [AI Chat 与 Agent](/zh/docs/ai) | 开始对话、选择 Agent、审批计划与查看执行过程 |
-| [AI 与连接配置](/zh/docs/configuration) | 添加模型配置、测试对话连接、通用设置 |
+| [工作区搜索](/zh/docs/search) | 搜索文件内容、没有搜索结果时 |
 | [终端](/zh/docs/terminal) | 执行工作区命令、搜索、复制与分析输出、刷新远程环境 |
-| [源代码管理](/zh/docs/source-control) | 查看仓库状态、审查差异与提交、切换分支 |
-| [GitHub 工作流](/zh/docs/source-control) | 2.2.0 起支持；登录、克隆到本机或 SSH 主机，处理 Issue、拉取请求与检查状态 |
-| [设置](/zh/docs/settings) | 外观与语言、面板与编辑器偏好 |
-| [自定义插件](/zh/docs/plugins) | 创建与安装、数据与操作、权限、后台任务 |
+| [任务](/zh/docs/tasks) | 创建可复用命令、运行并检查输出 |
+| [Git 与 GitHub](/zh/docs/source-control) | 查看差异、提交和分支，处理 GitHub 工作流。 |
 | [语言服务（LSP）](/zh/docs/lsp) | 检查语言服务配置、使用诊断与代码动作 |
 | [调试](/zh/docs/debug) | 准备调试会话、检查暂停的程序 |
-| [工作区搜索](/zh/docs/search) | 搜索文件内容、没有搜索结果时 |
-| [同步与缓存](/zh/docs/sync-cache) | 选择传输方向、开始并检查传输 |
-| [任务](/zh/docs/tasks) | 创建可复用命令、运行并检查输出 |
-| [Docker 与 Dev Containers](/zh/docs/docker) | 管理 SSH 主机资源、控制 Compose 服务、创建隔离工作区 |
-| [Android 本地 Linux](/zh/docs/local-linux) | 使用条件、安装并打开、验证运行环境 |
 
-## 账户与参考资料
+### AI 与扩展
 
-- [通知](/zh/docs/notifications)
-- [账户与订阅](/zh/docs/account-subscription)
-- [凭据与操作审查](/zh/docs/security)
-- [常见问题](/zh/docs/faq)
-- [界面与操作索引](/zh/docs/screenshot-guide)
-- [Local Linux 源码与许可证](/zh/docs/local-linux-source)
+| 指南 | 用途 |
+| --- | --- |
+| [模型与服务商配置](/zh/docs/configuration) | 配置模型服务商、测试 AI 连接与设置隐私选项。 |
+| [AI 对话、Agent 与 MCP](/zh/docs/ai) | 开始对话、选择 Agent、审批计划与查看执行过程 |
+| [自定义插件](/zh/docs/plugins) | 创建与安装、数据与操作、权限、后台任务 |
+
+### Host 模式
+
+[Host 模式](/zh/docs/host)
+
+[硬件支持与版本选择](/zh/docs/host/compatibility) · [下载与安装](/zh/docs/host/getting-started) · [连接、终端与任务](/zh/docs/host/sessions) · [Agent 与任务收件箱](/zh/docs/host/agents) · [服务管理与升级](/zh/docs/host/maintenance) · [故障排查](/zh/docs/host/troubleshooting)
+
+### Android 本地 Linux
+
+[Android 本地 Linux](/zh/docs/local-linux)
+
+[设备要求与兼容性](/zh/docs/local-linux/compatibility) · [安装与首次运行](/zh/docs/local-linux/getting-started) · [故障排查](/zh/docs/local-linux/troubleshooting)
+
+### 设置与参考
+
+| 指南 | 用途 |
+| --- | --- |
+| [设置](/zh/docs/settings) | 调整外观、语言、编辑器和面板偏好。 |
+| [账户与订阅](/zh/docs/account-subscription) | 查看账户状态、恢复购买与核对功能权益。 |
+| [通知](/zh/docs/notifications) | 查找已完成或待处理的活动，返回对应会话。 |
+| [凭据与操作审查](/zh/docs/security) | 了解 SSH 凭据、模型密钥与操作审批。 |
+| [界面与操作索引](/zh/docs/screenshot-guide) | 按功能查找界面截图与操作说明。 |
+
+## 遇到问题
+
+按当前环境查看[常见问题](/zh/docs/faq)、[Windows SSH 与 SFTP](/zh/docs/windows-ssh-sftp)、[Host 故障排查](/zh/docs/host/troubleshooting)或[本地 Linux 故障排查](/zh/docs/local-linux/troubleshooting)。
