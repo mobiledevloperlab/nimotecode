@@ -1,29 +1,27 @@
 ---
 title: NimoteCode Early Access Pro | Mobile IDE Workflows
-description: NimoteCode Early Access Pro は、カスタマイズ可能なプラグイン、AI Agent、高度な Git などのモバイル IDE ワークフローを提供します。利用可否と価格は Google Play または App Store で確認できます。
+description: AI Agent、Git と GitHub、複数ターミナル、Host、Docker、高度な言語ツール、SSH ファイル操作を利用できます。購入可否と価格はアプリで確認してください。 Pro を14日間無料体験。有効な購入やその他の Pro 利用権限がなければ無料版へ。
 pageClass: pricing-page
 ---
 
 # NimoteCode Pro
 
-
-無料版にはローカルと SSH のワークスペース、編集、基本ターミナル、AI Chat が含まれます。**Early Access Pro** には GitHub 連携、対応端末での Android Local Linux、Plugin Center、AI Agent、Git 書き込み、リモート検索、複数ターミナル、LSP、デバッグ、同期 / キャッシュが含まれます。利用可否と価格はストアでご確認ください。
-
+ローカルと SSH、編集、基本ターミナル、Git レビュー、AI Chat、基本 LSP、ターミナルベースのタスクは無料です。 **Pro** — AI Agent、Git と GitHub、複数ターミナル、Host、Docker、高度な言語ツール、SSH ファイル操作を利用できます。購入可否と価格はアプリで確認してください。
 
 <PricingFeatureSystem lang="ja" mode="full" />
 
 ## なぜプロなのか
 
 
-Pro exists for the moments mobile work has to end with a carefully reviewed result: a gated Git commit after checking the diff, several terminal contexts at once, configured LSP feedback, a debug session, or an AI Agent task.特に運用システムでは、コマンド、差分、AI の提案を確認する必要性がなくなるわけではありません。
+Pro は、差分を確認してからのコミット、複数ターミナルでの作業、言語サーバーによる修正、デバッグ、AI Agent の複数ステップの作業を支援します。コマンド、権限変更、差分、AI の提案は実行前に確認してください。
 
 
-サブスクリプションの検証、購入の復元、およびアクセス動作については、[アカウントとサブスクリプション](/docs/account-subscription)を参照してください。
+サブスクリプションの検証、購入の復元、およびアクセス動作については、[アカウントとサブスクリプション](/ja/docs/account-subscription)を参照してください。
 
 <div class="seo-cta">
-  <p><strong>Start with the free plan, then check your store for Early Access Pro availability.</strong></p>
+  <p><strong>Pro を14日間無料体験。有効な購入やその他の Pro 利用権限がなければ無料版へ。</strong></p>
   <p class="seo-cta-actions">
-    <a href="/download?utm_source=pro&utm_medium=website&utm_campaign=download" class="home-page-btn primary">Download NimoteCode</a>
-    <a href="/features?utm_source=pro&utm_medium=website&utm_campaign=feature_map" class="home-page-btn secondary">View all features</a>
+    <a href="/ja/download?utm_source=pro&utm_medium=website&utm_campaign=download" class="home-page-btn primary">NimoteCode をダウンロード</a>
+    <a href="/ja/features?utm_source=pro&utm_medium=website&utm_campaign=feature_map" class="home-page-btn secondary">すべての機能を見る</a>
   </p>
 </div>

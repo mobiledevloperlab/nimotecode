@@ -11,7 +11,7 @@ description: "NimoteCode 자주 묻는 질문 설정, 사용 절차 및 화면 �
 
 ## Pro 없이 사용할 수 있나요?
 
-네. 무료 플랜에는 로컬 및 SSH 작업 공간, 편집기, 기본 터미널, AI Chat과 기본 Tasks가 포함됩니다. GitHub 연동과 Android Local Linux는 Early Access Pro가 필요합니다. Local Linux는 Android 8+ ARM64 또는 x86_64 기기에서 지원되며 iOS에서는 사용할 수 없습니다. [Pro](/ko/pro)를 참고하세요.
+네. 무료 플랜에는 로컬 및 SSH 작업 공간, 편집기, 기본 터미널, AI Chat과 기본 Tasks가 포함됩니다. GitHub 연동과 Android Local Linux는 Early Access Pro가 필요합니다. Local Linux는 Android 8+ ARM64 또는 x86_64 기기에서 지원되며 iOS에서는 사용할 수 없습니다. [Pro](/ko/pro)를 참고하세요. 앱에서 14일 무료 체험을 시작하세요. 종료 시 유료 구독이나 Early Access 등 유효한 Pro 권한이 없으면 자동으로 무료 버전으로 돌아갑니다. 체험 자격은 앱에서 확인하세요.
 
 ## 어떤 AI 제공업체를 설정할 수 있나요?
 
@@ -27,4 +27,4 @@ Tasks는 SSH 작업 공간에서 반복 사용할 명령을 실행합니다. 명
 
 ## 모든 프로젝트에서 LSP와 디버깅을 사용할 수 있나요?
 
-원격 호스트에 호환되는 언어 서버나 디버그 어댑터가 구성되어 있는지, 프로젝트가 어떻게 설정되어 있는지에 따라 다릅니다. Pro 기능이며 [LSP](/ko/docs/lsp)와 [디버깅](/ko/docs/debug)을 참고하세요.
+원격 호스트에 호환되는 언어 서버나 디버그 어댑터가 구성되어 있는지, 프로젝트가 어떻게 설정되어 있는지에 따라 다릅니다. 기본 LSP 진단, 완성 및 탐색은 무료입니다. 코드 작업, 언어 서버 설치 지원 및 디버깅에는 Pro와 도구 설정이 필요합니다.  [LSP](/ko/docs/lsp)와 [디버깅](/ko/docs/debug)을 참고하세요.

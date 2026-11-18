@@ -108,7 +108,7 @@
       "Open the result and review it yourself."
     ],
     "capabilityTitle": "Configure your workspace for the project.",
-    "capabilityNote": "Agent, Git write operations, GitHub integration, Android Local Linux, LSP, debugging and plugins are available through Early Access. Local Linux requires a supported Android device. Language services, debugging and project commands require the appropriate tools.",
+    "capabilityNote": "Local and SSH workspaces, editing, a basic terminal, Git review, AI Chat, basic LSP and terminal-backed Tasks are free. Use AI Agents, Git and GitHub, parallel terminals, Host, Docker, advanced language tools and SSH file workflows. Purchase availability and prices are shown in the app for your platform, account and region.",
     "allFeatures": "Explore all features",
     "capabilities": [
       [
@@ -147,12 +147,12 @@
     ],
     "resourceLabel": "Technical resources",
     "resourceCopy": "Guides, tools and development references.",
-    "startNote": "Free to start. No AI setup required.",
+    "startNote": "14-day free Pro trial. Without an upgrade or other valid Pro access, you return to Free.",
     "startLink": "Set up your first workspace",
     "byok": "AI models use BYOK (Bring Your Own Key). Add your own provider API key; model usage is billed separately by your provider. No model credits are included.",
     "planLink": "See free features and Early Access",
     "byokLabel": "Project commands require SSH or supported Android Local Linux.",
-    "earlyAccessDeadline": "Early Access ends December 30",
+    "earlyAccessDeadline": "Early Access ends soon · November 30, 2026",
     "communityBlogTitle": "Blog",
     "communityBlogCopy": "Notes on mobile development, remote work, and AI.",
     "fullComparisonLink": "See full comparison",
@@ -186,7 +186,7 @@
     "modeNotes": [
       "Language services and debugging need configured tools; some advanced features require Pro.",
       "Commands need SSH or supported Android Local Linux; multiple terminals require Pro.",
-      "Agent access is included in Early Access Pro. Bring your own API key; model usage is billed separately.",
+      "Bring your own model service or external agent; usage is billed separately",
       "Requires a compatible NimoteHost on a reachable SSH computer. Host mode is coming in 2.4.1; Host and the computer must stay running."
     ],
     "screenshotLink": "View screenshot",
@@ -377,7 +377,7 @@
       "打开产物，亲自确认实际效果。"
     ],
     "capabilityTitle": "按项目需要，配置你的工作区。",
-    "capabilityNote": "Agent、Git 写操作、GitHub 集成、Android Local Linux、LSP、调试与插件通过 Early Access 开放。Local Linux 仅适用于受支持的 Android 设备；语言服务、调试和项目命令需要相应工具链。",
+    "capabilityNote": "本地与 SSH 工作区、编辑器、基础终端、Git 状态与差异审查、AI Chat、基础 LSP 和基于终端的 Tasks 均可免费使用。 解锁 AI Agent、Git 与 GitHub、多终端、Host、Docker、进阶语言工具和 SSH 文件工作流。购买可用性与价格以应用为你的平台、账号和地区显示的内容为准。",
     "allFeatures": "了解全部功能",
     "capabilities": [
       [
@@ -416,12 +416,12 @@
     ],
     "resourceLabel": "技术资源",
     "resourceCopy": "查找移动开发指南、工具与技术资料。",
-    "startNote": "免费开始，无需先配置 AI。",
+    "startNote": "Pro 免费试用 14 天，到期如无订阅或其他有效 Pro 权益，自动回退免费版。",
     "startLink": "创建你的第一个工作区",
     "byok": "AI 模型采用 BYOK（自备 API Key）方式。需配置自己的模型服务商与 API Key，模型调用费用由服务商另行收取；NimoteCode 不包含模型额度。",
     "planLink": "查看免费功能与 Early Access 权益",
     "byokLabel": "运行项目命令需 SSH 或受支持的 Android Local Linux 环境。",
-    "earlyAccessDeadline": "Early Access 截止至 12 月 30 日",
+    "earlyAccessDeadline": "Early Access 活动即将结束 · 截止 2026 年 11 月 30 日",
     "communityBlogTitle": "博客",
     "communityBlogCopy": "移动开发、远程工作与 AI 的实践笔记。",
     "fullComparisonLink": "查看完整对比",
@@ -455,7 +455,7 @@
     "modeNotes": [
       "语言服务和调试需配置相应工具；部分进阶能力需 Pro。",
       "运行命令需 SSH 或受支持的 Android Local Linux；多终端需 Pro。",
-      "Agent 通过 Early Access Pro 开放。自备 API Key，模型费用另计。",
+      "需自备模型服务或外部 Agent；Pro 不包含模型用量、API 额度或第三方订阅",
       "需在 SSH 可达的电脑上安装兼容 NimoteHost。Host 模式将随 2.4.1 提供；电脑和 Host 需要保持运行。"
     ],
     "screenshotLink": "查看真实界面",
@@ -646,7 +646,7 @@
       "結果を開き、自分で確認します。"
     ],
     "capabilityTitle": "プロジェクトに合わせてワークスペースを設定。",
-    "capabilityNote": "Agent、Git の書き込み操作、GitHub 連携、Android Local Linux、LSP、デバッグ、プラグインは Early Access で提供されます。Local Linux は対応する Android 端末専用です。言語サービス、デバッグ、プロジェクトのコマンドには、それぞれ必要なツールの設定が必要です。",
+    "capabilityNote": "ローカルと SSH、編集、基本ターミナル、Git レビュー、AI Chat、基本 LSP、ターミナルベースのタスクは無料です。 AI Agent、Git と GitHub、複数ターミナル、Host、Docker、高度な言語ツール、SSH ファイル操作を利用できます。購入可否と価格はアプリで確認してください。",
     "allFeatures": "すべての機能を見る",
     "capabilities": [
       [
@@ -685,12 +685,12 @@
     ],
     "resourceLabel": "技術リソース",
     "resourceCopy": "開発ガイド、ツール、技術資料。",
-    "startNote": "無料で開始。AI の設定は後から。",
+    "startNote": "Pro を14日間無料体験。有効な購入やその他の Pro 利用権限がなければ無料版へ。",
     "startLink": "最初のワークスペースを作成",
     "byok": "AI モデルは BYOK（API キー持ち込み）方式です。自分のプロバイダーと API キーを設定してください。モデル利用料はプロバイダーから別途請求され、利用枠は含まれません。",
     "planLink": "無料機能と Early Access を確認",
     "byokLabel": "プロジェクトのコマンド実行には SSH または対応する Android Local Linux 環境が必要です。",
-    "earlyAccessDeadline": "Early Access は12月30日まで",
+    "earlyAccessDeadline": "Early Access はまもなく終了 · 2026年11月30日まで",
     "communityBlogTitle": "ブログ",
     "communityBlogCopy": "モバイル開発、リモート作業、AI の実践ノート。",
     "fullComparisonLink": "詳しい比較を見る（英語）",
@@ -724,7 +724,7 @@
     "modeNotes": [
       "言語サービスとデバッグはツール設定が必要です。一部の高度な機能は Pro 対象です。",
       "コマンド実行には SSH または対応 Android Local Linux が必要です。複数ターミナルは Pro 対象です。",
-      "Agent は Early Access Pro で提供。API キーは持ち込みで、モデル利用料は別途発生します。",
+      "モデルサービスや外部 Agent は各自で設定。利用料は別途発生",
       "SSH で到達できるパソコンに対応 NimoteHost が必要です。2.4.1 で提供予定。パソコンと Host は稼働を続ける必要があります。"
     ],
     "screenshotLink": "画面を拡大",
@@ -915,7 +915,7 @@
       "결과를 열고 직접 확인합니다."
     ],
     "capabilityTitle": "프로젝트에 맞게 작업 공간을 구성하세요.",
-    "capabilityNote": "Agent, Git 쓰기 작업, GitHub 연동, Android Local Linux, LSP, 디버깅, 플러그인은 Early Access로 제공됩니다. Local Linux는 지원되는 Android 기기에서만 사용할 수 있습니다. 언어 서비스, 디버깅, 프로젝트 명령에는 해당 도구가 설치되고 구성되어 있어야 합니다.",
+    "capabilityNote": "로컬 및 SSH 작업 공간, 편집기, 기본 터미널, Git 검토, AI Chat, 기본 LSP, 터미널 기반 작업은 무료입니다. AI Agent, Git과 GitHub, 다중 터미널, Host, Docker, 고급 언어 도구, SSH 파일 작업을 이용하세요. 구매 가능 여부와 가격은 앱에서 확인하세요.",
     "allFeatures": "모든 기능 보기",
     "capabilities": [
       [
@@ -954,12 +954,12 @@
     ],
     "resourceLabel": "기술 자료",
     "resourceCopy": "개발 가이드, 도구 및 참고 자료.",
-    "startNote": "무료로 시작하세요. AI 설정은 나중에.",
+    "startNote": "Pro 14일 무료 체험. 종료 시 구독 또는 다른 유효한 Pro 권한이 없으면 무료 버전으로 전환됩니다.",
     "startLink": "첫 작업 공간 만들기",
     "byok": "AI 모델은 BYOK(자신의 API 키 사용) 방식입니다. AI 제공업체와 API 키를 직접 설정하며, 모델 사용료는 해당 제공업체가 별도로 청구합니다. 모델 크레딧은 포함되지 않습니다.",
     "planLink": "무료 기능 및 Early Access 확인",
     "byokLabel": "프로젝트 명령 실행에는 SSH 또는 지원되는 Android Local Linux 환경이 필요합니다.",
-    "earlyAccessDeadline": "Early Access는 12월 30일까지",
+    "earlyAccessDeadline": "Early Access 곧 종료 · 2026년 11월 30일까지",
     "communityBlogTitle": "블로그",
     "communityBlogCopy": "모바일 개발, 원격 작업, AI 활용에 관한 실용적인 글.",
     "fullComparisonLink": "전체 비교 보기 (영어)",
@@ -993,7 +993,7 @@
     "modeNotes": [
       "언어 서비스와 디버깅은 도구 설정이 필요하며 일부 고급 기능은 Pro에 포함됩니다.",
       "명령 실행에는 SSH 또는 지원되는 Android Local Linux가 필요하며 다중 터미널은 Pro 기능입니다.",
-      "Agent는 Early Access Pro에서 제공됩니다. API 키를 직접 준비하고 모델 사용료는 별도로 지불합니다.",
+      "모델 서비스 또는 외부 Agent는 직접 설정하며 사용료는 별도",
       "SSH로 접근 가능한 컴퓨터에 호환 NimoteHost가 필요합니다. 2.4.1 제공 예정이며 컴퓨터와 Host는 계속 실행되어야 합니다."
     ],
     "screenshotLink": "실제 화면 보기",
@@ -1184,7 +1184,7 @@
       "Abre el resultado y revísalo."
     ],
     "capabilityTitle": "Configura el espacio de trabajo para tu proyecto.",
-    "capabilityNote": "El agente, las operaciones de escritura de Git, la integración con GitHub, Android Local Linux, LSP, la depuración y los plugins están disponibles mediante Early Access. Local Linux requiere un dispositivo Android compatible. Los servicios de lenguaje, la depuración y los comandos del proyecto necesitan las herramientas correspondientes.",
+    "capabilityNote": "Los espacios locales y SSH, el editor, el terminal básico, la revisión Git, AI Chat, LSP básico y las tareas de terminal son gratuitos. Usa AI Agent, Git y GitHub, varios terminales, Host, Docker, herramientas de lenguaje avanzadas y operaciones SSH. Consulta disponibilidad de compra y precios en la app.",
     "allFeatures": "Explorar todas las funciones",
     "capabilities": [
       [
@@ -1223,12 +1223,12 @@
     ],
     "resourceLabel": "Recursos técnicos",
     "resourceCopy": "Guías, herramientas y referencias de desarrollo.",
-    "startNote": "Empieza gratis. Sin configurar IA.",
+    "startNote": "Prueba Pro gratis 14 días. Al finalizar, vuelves a Gratis si no tienes una suscripción u otro acceso Pro vigente.",
     "startLink": "Crea tu primer espacio de trabajo",
     "byok": "Los modelos de IA usan BYOK (tu propia clave API). Configura tu proveedor y tu clave; el proveedor cobra el uso del modelo por separado. No se incluyen créditos de IA.",
     "planLink": "Ver funciones gratuitas y Early Access",
     "byokLabel": "Los comandos del proyecto requieren SSH o un entorno Android Local Linux compatible.",
-    "earlyAccessDeadline": "Early Access termina el 30 de diciembre",
+    "earlyAccessDeadline": "Early Access termina pronto · 30 de noviembre de 2026",
     "communityBlogTitle": "Blog",
     "communityBlogCopy": "Notas sobre desarrollo móvil, trabajo remoto e IA.",
     "fullComparisonLink": "Ver la comparación completa (en inglés)",
@@ -1262,7 +1262,7 @@
     "modeNotes": [
       "Los servicios de lenguaje y depuración necesitan herramientas configuradas; algunas funciones requieren Pro.",
       "Los comandos requieren SSH o Android Local Linux compatible; varios terminales requieren Pro.",
-      "El agente se ofrece en Early Access Pro. Usa tu propia clave API; el uso del modelo se factura aparte.",
+      "Configura tu servicio de modelos o agente externo; consumo facturado aparte",
       "Requiere NimoteHost compatible en un equipo accesible por SSH. Llegará con 2.4.1; el equipo y Host deben seguir encendidos."
     ],
     "screenshotLink": "Ver captura",

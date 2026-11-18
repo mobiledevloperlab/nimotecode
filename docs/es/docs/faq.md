@@ -11,7 +11,7 @@ No. Puede abrir un proyecto local, usar Android Local Linux o conectar con un es
 
 ## ¿Puedo usarlo sin Pro?
 
-Sí. El plan gratuito incluye espacios locales y SSH, editor, terminal básico, AI Chat y Tasks básicas. La integración con GitHub y Android Local Linux requieren Early Access Pro. Local Linux necesita Android 8+ en ARM64 o x86_64 y no está disponible en iOS. Consulta [Pro](/es/pro).
+Sí. El plan gratuito incluye espacios locales y SSH, editor, terminal básico, AI Chat y Tasks básicas. La integración con GitHub y Android Local Linux requieren Early Access Pro. Local Linux necesita Android 8+ en ARM64 o x86_64 y no está disponible en iOS. Consulta [Pro](/es/pro). Activa la prueba gratuita de 14 días en la app. Al terminar, volverás a Gratis salvo que tengas una suscripción de pago u otro acceso Pro vigente, como Early Access. Consulta los requisitos en la app.
 
 ## ¿Qué proveedores de IA puedo configurar?
 
@@ -27,4 +27,4 @@ Tasks está diseñado para comandos reutilizables en un espacio SSH. Los comando
 
 ## ¿LSP y la depuración funcionan con cualquier proyecto?
 
-Dependen de que el host remoto tenga un servidor de lenguaje o adaptador compatible configurado, y de la configuración del proyecto. Son funciones Pro; consulte [LSP](/es/docs/lsp) y [Depuración](/es/docs/debug).
+Dependen de que el host remoto tenga un servidor de lenguaje o adaptador compatible configurado, y de la configuración del proyecto. Los diagnósticos, el autocompletado y la navegación LSP básicos son gratis. Las acciones de código, la instalación guiada y la depuración requieren Pro y herramientas configuradas.  consulte [LSP](/es/docs/lsp) y [Depuración](/es/docs/debug).

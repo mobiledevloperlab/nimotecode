@@ -219,6 +219,12 @@
   flex-shrink: 0;
 }
 
+.pf-campaign-notice {
+  margin-top: 16px;
+  color: var(--nimote-link);
+  font-size: var(--nimote-fs-sm);
+}
+
 /* Free-trial banner ------------------------------------------------------ */
 .pf-trial-banner {
   display: flex;

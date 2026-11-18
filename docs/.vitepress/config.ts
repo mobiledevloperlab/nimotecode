@@ -558,7 +558,7 @@ function faqSchema(context: TransformContext): object | null {
       },
       {
         question: 'Can I use it without Pro?',
-        answer: 'Yes. Free includes local and SSH workspaces, the editor, baseline terminal, AI Chat and basic Tasks. AI Agent and remote search are available through Early Access Pro as availability expands; check your store for the offer shown to your account and region.'
+        answer: 'Yes. Free includes local and SSH workspaces, the editor, baseline terminal, AI Chat and basic Tasks. Try Pro free for 14 days; when the trial ends, you return to Free unless you have a subscription or other valid Pro access. Check the app for eligibility and prices.'
       },
       {
         question: 'Which AI providers can I configure?',
@@ -574,7 +574,7 @@ function faqSchema(context: TransformContext): object | null {
       },
       {
         question: 'Do LSP and Debug work for every project?',
-        answer: 'They depend on a compatible language server or debug adapter being configured on the remote host and on the project setup. They are Pro workflows.'
+        answer: 'They depend on a compatible language server or debug adapter being configured on the remote host and on the project setup. Basic LSP diagnostics, completion and navigation are free. Code actions, guided language-server installation and debugging require Pro and configured tools.'
       }
     ],
     '/zh/docs/faq': [
@@ -584,7 +584,7 @@ function faqSchema(context: TransformContext): object | null {
       },
       {
         question: '不购买 Pro 能使用吗？',
-        answer: '可以。免费版包含本地与 SSH 工作区、编辑器、基础终端、AI Chat 和基础 Tasks。AI Agent 与远程内容搜索将通过 Early Access Pro 逐步开放；请以商店为你的账号和地区显示的内容为准。'
+        answer: '可以。免费版包含本地与 SSH 工作区、编辑器、基础终端、AI Chat 和基础 Tasks。Pro 可免费试用 14 天，到期如无订阅或其他有效 Pro 权益则自动回退免费版；试用资格与价格以应用内显示为准。'
       },
       {
         question: '可配置哪些 AI Provider？',
@@ -600,7 +600,7 @@ function faqSchema(context: TransformContext): object | null {
       },
       {
         question: 'LSP 和 Debug 所有项目都能用吗？',
-        answer: '这取决于远程主机是否已配置兼容的语言服务或调试适配器，以及项目本身的启动设置。两者均属于 Pro 功能。'
+        answer: '这取决于远程主机是否已配置兼容的语言服务或调试适配器，以及项目本身的启动设置。基础 LSP 诊断、补全与导航免费；代码操作、语言服务器辅助安装与调试需要 Pro，并需配置相应工具。'
       }
     ],
     "/ja/android-ide": [

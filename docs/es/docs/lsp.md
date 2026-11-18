@@ -22,4 +22,4 @@ Abra un archivo fuente y después el panel LSP. Compruebe **LSP Setup** y el ser
 
 ## Usar diagnósticos y acciones de código
 
-Despliegue **Problems** y seleccione un diagnóstico para abrir su ubicación en el código. Revise en **Code Actions** las acciones para la posición del cursor. Las opciones dependen del servidor de lenguaje. Tras aplicar una acción, guarde el archivo y repita la comprobación pertinente del proyecto. LSP requiere acceso Pro.
+Despliegue **Problems** y seleccione un diagnóstico para abrir su ubicación en el código. Revise en **Code Actions** las acciones para la posición del cursor. Las opciones dependen del servidor de lenguaje. Tras aplicar una acción, guarde el archivo y repita la comprobación pertinente del proyecto. Los diagnósticos, el autocompletado y la navegación LSP básicos son gratis. Las acciones de código, la instalación guiada y la depuración requieren Pro y herramientas configuradas.

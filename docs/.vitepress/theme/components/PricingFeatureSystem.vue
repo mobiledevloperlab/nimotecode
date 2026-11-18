@@ -12,7 +12,7 @@ const props = defineProps<{
 
 const copy = computed(() => translations[props.lang || 'en'] || translations.en)
 const showFeatures = computed(() => props.mode !== 'preview')
-const language = computed(() => (props.lang === 'zh' ? 'zh' : 'en'))
+const language = computed(() => props.lang || 'en')
 const trialCopy = computed(() => copy.value.pricing.trial)
 </script>
 
@@ -23,6 +23,7 @@ const trialCopy = computed(() => copy.value.pricing.trial)
         <p class="home-page-eyebrow">{{ copy.pricing.eyebrow }}</p>
         <h2 class="home-page-section-title">{{ copy.pricing.title }}</h2>
         <p class="home-page-section-copy">{{ copy.pricing.summary }}</p>
+        <p class="pf-campaign-notice"><strong>{{ copy.pricing.earlyAccessDeadline }}</strong></p>
       </div>
 
       <div class="pf-pricing-grid">

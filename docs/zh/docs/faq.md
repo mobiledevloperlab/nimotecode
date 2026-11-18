@@ -11,7 +11,7 @@ description: 快速了解 NimoteCode 的本地、Android 本地 Linux 与 SSH �
 
 ## 不购买 Pro 能使用吗？
 
-可以。免费版包含本地和 SSH 工作区、编辑器、基础终端、AI Chat 和基础 Tasks。GitHub 集成与 Android 本地 Linux 需要 Early Access Pro。本地 Linux 需要 Android 8+ ARM64 或 x86_64 设备，iOS 不支持。详见 [Pro](/zh/pro)。
+可以。免费版包含本地和 SSH 工作区、编辑器、基础终端、AI Chat 和基础 Tasks。GitHub 集成与 Android 本地 Linux 需要 Early Access Pro。本地 Linux 需要 Android 8+ ARM64 或 x86_64 设备，iOS 不支持。详见 [Pro](/zh/pro)。 在应用内领取 14 天免费试用。到期后，如无付费订阅或 Early Access 等其他有效 Pro 权益，将自动回退到免费版，免费功能可继续使用。试用资格以应用内显示为准。
 
 ## 可配置哪些 AI Provider？
 
@@ -27,4 +27,4 @@ Tasks 面向 SSH 工作区中的可复用命令流程。命令在已连接的工
 
 ## LSP 和 Debug 所有项目都能用吗？
 
-这取决于远程主机是否已配置兼容的语言服务或调试适配器，以及项目本身的启动设置。两者均属于 Pro 功能，可查看 [LSP](/zh/docs/lsp) 与 [调试](/zh/docs/debug)。
+这取决于远程主机是否已配置兼容的语言服务或调试适配器，以及项目本身的启动设置。基础 LSP 诊断、补全与导航免费；代码操作、语言服务器辅助安装与调试需要 Pro，并需配置相应工具。 可查看 [LSP](/zh/docs/lsp) 与 [调试](/zh/docs/debug)。

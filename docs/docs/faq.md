@@ -11,7 +11,7 @@ No. NimoteCode can open a local project, use Android Local Linux, or connect to 
 
 ## Can I use it without Pro?
 
-Yes. Free includes local and SSH workspaces, the editor, basic terminal, AI Chat and basic Tasks. GitHub integration and Android Local Linux require Early Access Pro. Local Linux requires Android 8+ on an ARM64 or x86_64 device and is unavailable on iOS. See [Pro](/pro) for details.
+Yes. Free includes local and SSH workspaces, the editor, basic terminal, AI Chat and basic Tasks. GitHub integration and Android Local Linux require Early Access Pro. Local Linux requires Android 8+ on an ARM64 or x86_64 device and is unavailable on iOS. See [Pro](/pro) for details. Claim your trial in the app. After 14 days, you return to Free unless you have a paid subscription or other valid Pro access, such as Early Access. Trial eligibility is shown in the app.
 
 ## Which AI providers can I configure?
 
@@ -27,4 +27,4 @@ Tasks are designed for repeatable command workflows in an SSH workspace. Command
 
 ## Do LSP and Debug work for every project?
 
-They depend on a compatible language server or debug adapter being configured on the remote host and on the project’s setup. They are Pro workflows; see [LSP](/docs/lsp) and [Debug](/docs/debug).
+They depend on a compatible language server or debug adapter being configured on the remote host and on the project’s setup. Basic LSP diagnostics, completion and navigation are free. Code actions, guided language-server installation and debugging require Pro and configured tools.  see [LSP](/docs/lsp) and [Debug](/docs/debug).

@@ -56,6 +56,7 @@ const formatReviewDate = (date: string) => new Intl.DateTimeFormat(locale.value,
               <a class="product-demo-link" href="#product-demo" @click="demoOpen = true"><span class="product-play" aria-hidden="true">▶</span>{{ copy.watch }}</a>
             </div>
             <div class="product-hero-meta"><p class="product-start-note">{{ copy.startNote }}</p><p class="product-hero-tasks">{{ copy.heroTasks }}</p></div>
+            <p class="product-deadline"><a :href="local('/pro')">{{ copy.earlyAccessDeadline }} →</a></p>
           </div>
         </div>
         <figure class="product-showcase" :aria-label="copy.illustration">
