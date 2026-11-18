@@ -18,9 +18,17 @@ description: Linux, macOS, Windows에 NimoteHost를 설치하고 SSH로 연결�
 
 이 문서는 2.4.0 구현을 기준으로 작성했습니다. Host는 개발 미리보기이며 제공되는 기능은 연결된 Host에 따라 다릅니다. 사진은 실제 Android 휴대폰의 영어 화면과 라이트 테마입니다. 촬영 당시 앱 패키지는 2.3.1(Build 64), Host는 로컬 2.4.0 빌드였습니다.
 
+## NimoteCode와 NimoteHost
+
+NimoteCode는 클라이언트이고 NimoteHost는 컴퓨터에서 작업을 실행합니다. Host는 Linux, macOS, Windows용 CLI와 데스크톱 관리자를 제공하며 [전용 저장소](https://github.com/mobiledevloperlab/nimotehost)에서 Apache-2.0으로 공개할 예정입니다. NimoteCode 앱은 상용 비공개 소스로 유지됩니다. Host는 독립 실행 및 RPC, Go 클라이언트, MCP 연동도 지원합니다.
+
+연결은 **NimoteCode → SSH → NimoteHost → 프로젝트 도구** 순서입니다. 추가 Nimote 계정이나 공개 Host 포트가 필요 없으며 인증 정보는 컴퓨터에 남습니다. 명령은 Host의 OS 계정 권한으로 실행되므로 사용자 격리가 필요하면 OS 계정을 분리하세요. 일반 SSH에는 Host가 필요 없으며 Host는 연결 해제 후 작업 지속과 호환 Agent 관리를 추가합니다.
+
+저장소와 다운로드는 공개 이후 제공됩니다. 404나 패키지 부재 시 유지 관리자가 제공한 전체 미리보기 패키지·소스를 사용하거나 공개를 기다리세요. 2.4.0 구현의 Host 모드는 출시 예정인 2.4.1에 포함됩니다. 서비스를 설치해도 이전 앱에 해당 화면이 추가되지는 않습니다.
+
 ## 준비할 것
 
-SSH로 접속할 수 있는 Linux, macOS 또는 Windows 컴퓨터, NimoteCode 2.4.0과 호환 Host, 원격 계정이 접근할 수 있는 프로젝트 폴더가 필요합니다. 뒤에서 입력하는 경로는 휴대폰이 아닌 컴퓨터의 경로입니다.
+SSH로 접속할 수 있는 Linux, macOS 또는 Windows 컴퓨터, Host 모드가 포함된 NimoteCode 빌드와 호환 Host, 원격 계정이 접근할 수 있는 프로젝트 폴더가 필요합니다. 뒤에서 입력하는 경로는 휴대폰이 아닌 컴퓨터의 경로입니다.
 
 SSH가 처음이라면 먼저 [SSH 연결](/ko/docs/ssh)을 설정하세요. Windows는 [Windows SSH](/ko/docs/windows-ssh-sftp)도 참고하세요. Host가 SSH를 설치하거나 설정해 주지는 않습니다.
 
@@ -59,6 +67,26 @@ Windows에서는 같은 폴더의 PowerShell에서 실행합니다.
 설치 프로그램은 패키지를 확인하고 고정 사용자 폴더로 복사한 뒤 사용자 서비스를 등록합니다. status에 running: true가 나오면 연결할 수 있습니다. Unix에서는 비대화형 SSH의 PATH에서도 명령을 찾을 수 있어야 합니다. Windows의 호환 클라이언트는 같은 사용자의 discovery.json, 고정 설치 경로 및 SSH PATH를 확인합니다.
 
 설치 전 잠깐 써 보려면 ./nimotehost start, Windows는 .\nimotehost.exe start를 실행하고 창을 열어 두세요. 서비스가 실행 중이면 두 번째 프로세스를 시작할 필요는 없습니다. Host는 SSH나 Agent를 설치하지 않습니다. 휴대폰은 SSH를 통하므로 Host의 로컬 HTTP 포트를 인터넷에 열지 않아도 됩니다.
+
+### 패키지와 소스 설치
+
+CLI 이름은 `nimotehost-<version>-<os>-<arch>`, 데스크톱은 `nimotehost-gui-<version>-<os>-<arch>`입니다. Linux/macOS는 `.tar.gz`, Windows는 `.zip`입니다. GitHub Source code 대신 전체 바이너리 배포본을 선택하고 첨부 `.sha256`과 대조한 뒤 전체를 압축 해제하세요. Linux 데스크톱은 glibc 2.35 이상이 필요하며 macOS 패키지는 서명·공증되지 않았습니다.
+
+Git과 Go 1.26.5 이상을 준비하고 저장소 공개 후 일반 계정으로 실행하세요.
+
+```sh
+git clone https://github.com/mobiledevloperlab/nimotehost.git
+cd nimotehost
+go run ./tools/install
+```
+
+전체 소스를 제공받았다면 루트에서 마지막 줄을 실행하세요. PowerShell도 지원하며 CLI를 빌드, 검증, 설치하고 시작합니다. 설치 없이 패키지만 만들려면 `go run ./tools/build`, 데스크톱은 `go run ./tools/build -gui`를 사용하며 후자는 네이티브 SDK와 C 컴파일러가 필요합니다.
+
+### 서비스 및 데스크톱 관리자
+
+Linux에는 systemd 사용자 관리자, macOS에는 사용자의 GUI 로그인 세션이 필요하며 Windows는 사용자 로그인 예약 작업을 사용합니다. 해당 환경이 없으면 포그라운드로 실행하세요. 컴퓨터를 깨어 있는 상태로 유지하고 직접 또는 VPN으로 SSH에 접근할 수 있어야 합니다.
+
+설치 위치는 Linux/macOS에서 `~/.local/share/nimotehost`, Windows에서 `%LOCALAPPDATA%\NimoteHost`입니다. PATH에 추가하거나 전체 경로로 실행하세요. GUI는 `NimoteHost.app`, `nimotehost-gui.exe`, `nimotehost-gui`를 엽니다. Overview는 서비스, Sessions는 세션, Devices는 제한된 기기, Settings는 설정, Help & diagnostics는 로그를 제공합니다. 창을 닫아도 작업은 계속되며 명시적인 중지로 종료됩니다. 기기 접근 제한에는 등록 외에 SSH 키 설정도 필요합니다.
 
 ## 3. 휴대폰에서 연결
 
@@ -120,6 +148,35 @@ GitHub Issue 전달에는 해당 기능을 지원하는 Host와 설치 및 인�
 ## 9. Host 플러그인 열기
 
 앱 설정의 플러그인에서 연결된 Host가 제공하는 항목을 확인하고 사이드바에서 엽니다. 폼은 플러그인마다 다릅니다. 권한이나 호환성 문제를 해결한 뒤 다시 실행하세요. [플러그인 안내](/ko/docs/plugins)도 참고할 수 있습니다.
+
+## 유지 관리, 업데이트 및 로컬 데이터
+
+| 명령 | 동작 |
+| --- | --- |
+| `nimotehost version` | 실행 파일 버전. |
+| `nimotehost status` | 실행 중이면 `running: true`. |
+| `nimotehost capabilities` | 프로토콜, 기능, 도구. |
+| `nimotehost agents` | 설치된 Agent 버전. |
+| `nimotehost install` | 고정 경로에서 사용자 서비스 등록 및 시작. |
+| `nimotehost stop` | Host와 활성 작업 중지. |
+| `nimotehost restart` | 설치된 서비스 재시작 및 작업 중단. |
+| `nimotehost uninstall` | 서비스 제거, 인증 정보와 기록 유지. |
+
+설치된 CLI를 사용하세요. PowerShell에서는 `& "$env:LOCALAPPDATA\NimoteHost\nimotehost.exe" status`로 호출할 수 있습니다. 중지된 설치 서비스는 `restart`로 시작하고 `start`는 포그라운드로 실행됩니다. `setup`은 전체 패키지를 검증·설치하고 `install`은 배치된 실행 파일을 등록합니다.
+
+Unix SSH 환경은 대상을 바꿔 `ssh user@host 'command -v nimotehost && nimotehost status'`로 확인하세요. 없으면 `ssh user@host '$HOME/.local/share/nimotehost/nimotehost status'`를 시도하고 비대화형 PATH를 수정하세요. 도구 경로 변경 후 작업을 마치고 설치된 CLI에서 `stop`, 수정된 환경에서 `install`을 실행합니다.
+
+업데이트 시 새 전체 패키지를 검증하고 작업을 마친 뒤 이전 GUI를 닫고 같은 계정으로 설치하세요. 이전 패키지를 보존하며 활성 작업 중단은 거부합니다. 이후 버전, 상태, 기능을 확인하세요. 다운그레이드 전 상태를 백업하세요. 설치 파일 삭제 전에 `uninstall`을 실행하며 기록과 인증 정보는 남습니다.
+
+| 시스템 | 기본 설정 및 상태 디렉터리 |
+| --- | --- |
+| Linux | `~/.config/nimotehost` 또는 `$XDG_CONFIG_HOME/nimotehost` |
+| macOS | `~/Library/Application Support/nimotehost` |
+| Windows | `%APPDATA%\nimotehost` |
+
+Host를 중지한 상태에서 백업하고 소유자 전용 권한을 유지하며 인증 정보와 대화를 공개하지 마세요. 프로젝트와 Agent 제공자 데이터는 별도로 백업합니다. 기록 복사로 실행 프로세스가 복원되지는 않습니다.
+
+진단은 Linux의 `systemctl --user status nimotehost.service` 및 `journalctl --user -u nimotehost.service -n 50 --no-pager`, macOS의 `launchctl print gui/$(id -u)/com.nimotehost`, Windows의 `schtasks.exe /Query /TN NimoteHost /V /FO LIST`를 사용하세요. 사용자 로그인 상태와 Linux 로그아웃 후 lingering 정책도 확인하세요.
 
 ## 연결되지 않을 때
 

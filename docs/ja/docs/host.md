@@ -18,9 +18,17 @@ description: Linux、macOS、Windows に NimoteHost を導入し、SSH で接続
 
 この手順は 2.4.0 の実装に基づきます。Host は開発プレビューで、利用できる機能は接続先によって変わります。画像は実機 Android、英語表示、ライトテーマです。撮影時のアプリ表示は 2.3.1（Build 64）、Host は 2.4.0 のローカルビルドでした。
 
+## NimoteCode と NimoteHost
+
+NimoteCode はクライアント、NimoteHost はパソコン側の実行サービスです。Host は Linux、macOS、Windows 向けの CLI とデスクトップ管理画面を提供し、[専用リポジトリ](https://github.com/mobiledevloperlab/nimotehost)で Apache-2.0 として公開予定です。NimoteCode は商用クローズドソースです。Host は単独でも動作し、RPC、Go クライアント、MCP で連携できます。
+
+接続は **NimoteCode → SSH → NimoteHost → プロジェクトのツール**です。追加の Nimote アカウントや Host の公開ポートは不要で、認証情報はパソコンに残ります。コマンドは Host の OS アカウント権限で動くため、ユーザーを分離する場合は OS アカウントを分けてください。通常の SSH に Host は不要です。Host は切断後のタスク継続と対応 Agent の管理を追加します。
+
+リポジトリと配布物は公開後に利用できます。404 やパッケージがない場合は、提供された完全なプレビュー配布物・ソースを使うか公開を待ってください。2.4.0 実装の Host モードは公開予定の 2.4.1 に含まれます。サービスを導入しても旧アプリに入口は追加されません。
+
 ## 用意するもの
 
-SSH で接続できる Linux、macOS、Windows のパソコン、NimoteCode 2.4.0、対応する NimoteHost、リモートアカウントから開けるプロジェクトフォルダーを用意します。後で指定するパスはスマートフォンではなくパソコン側のものです。
+SSH で接続できる Linux、macOS、Windows のパソコン、Host 対応の NimoteCode ビルド、対応する NimoteHost、リモートアカウントから開けるプロジェクトフォルダーを用意します。後で指定するパスはスマートフォンではなくパソコン側のものです。
 
 SSH が初めてなら、先に [SSH の設定](/ja/docs/ssh)を済ませてください。Windows は [Windows SSH](/ja/docs/windows-ssh-sftp)も参照してください。Host は SSH を設定しません。
 
@@ -59,6 +67,26 @@ Windows は PowerShell で実行します。
 インストーラーはパッケージを検証し、固定のユーザーディレクトリへコピーしてユーザーサービスを設定します。status が running: true を返したら接続できます。Unix では SSH の非対話環境からもコマンドが見つかる PATH が必要です。Windows の対応クライアントは同じユーザーの discovery.json を読み、固定のインストール先と SSH PATH も確認します。
 
 まず試すだけなら、展開先で ./nimotehost start、Windows は .\nimotehost.exe start を実行し、ウィンドウを開いたままにします。サービスが動いていれば二重起動は不要です。Host は SSH や Agent をインストールしません。スマートフォンは SSH 経由で接続するので、Host のローカル HTTP ポートをインターネットへ公開する必要はありません。
+
+### パッケージとソースからの導入
+
+CLI は `nimotehost-<version>-<os>-<arch>`、デスクトップは `nimotehost-gui-<version>-<os>-<arch>` という名前です。Linux/macOS は `.tar.gz`、Windows は `.zip` です。GitHub の Source code ではなく完全なバイナリー配布物を選び、添付の `.sha256` と照合してから全体を展開します。Linux デスクトップは glibc 2.35 以降が必要で、macOS パッケージは署名・公証されていません。
+
+Git と Go 1.26.5 以降を用意し、公開後に一般ユーザーで実行します。
+
+```sh
+git clone https://github.com/mobiledevloperlab/nimotehost.git
+cd nimotehost
+go run ./tools/install
+```
+
+完全なソースの提供を受けた場合は、そのルートで最後の行を実行します。PowerShell にも対応し、CLI をビルド・検証・導入して起動します。導入せず配布物を作る場合は `go run ./tools/build`、デスクトップは `go run ./tools/build -gui` を使い、後者にはネイティブ SDK と C コンパイラーが必要です。
+
+### サービスとデスクトップ管理画面
+
+Linux は systemd ユーザーマネージャー、macOS はユーザーの GUI ログイン、Windows はログイン時のユーザー別タスクを使います。利用できない環境ではフォアグラウンドで試してください。パソコンを起動状態に保ち、直接または VPN で SSH に到達できるようにします。
+
+導入先は Linux/macOS が `~/.local/share/nimotehost`、Windows が `%LOCALAPPDATA%\NimoteHost` です。PATH に追加するか絶対パスで実行します。GUI は `NimoteHost.app`、`nimotehost-gui.exe`、`nimotehost-gui` を開きます。Overview はサービス、Sessions はセッション、Devices は制限付きデバイス、Settings は設定、Help & diagnostics はログを表示します。ウィンドウを閉じてもタスクは続き、停止操作で終了します。デバイスの制限には登録のほか SSH 鍵の設定が必要です。
 
 ## 3. スマートフォンから接続する
 
@@ -120,6 +148,35 @@ GitHub Issue の依頼には、対応する Host と、インストール・認�
 ## 9. Host プラグインを開く
 
 アプリ設定のプラグインから接続先の提供内容を確認し、利用可能なものをサイドバーで開きます。フォームはプラグインによって異なります。権限や互換性のエラーは解消してから再試行してください。[プラグインの説明](/ja/docs/plugins)も参照できます。
+
+## 運用、更新、ローカルデータ
+
+| コマンド | 動作 |
+| --- | --- |
+| `nimotehost version` | 実行ファイルのバージョン。 |
+| `nimotehost status` | 稼働時は `running: true`。 |
+| `nimotehost capabilities` | プロトコル、機能、ツール。 |
+| `nimotehost agents` | インストール済み Agent のバージョン。 |
+| `nimotehost install` | 固定パスからユーザーサービスを登録・起動。 |
+| `nimotehost stop` | Host と実行中タスクを停止。 |
+| `nimotehost restart` | 導入済みサービスを再起動し、タスクを中断。 |
+| `nimotehost uninstall` | サービスを削除し、認証情報と記録を保持。 |
+
+導入済み CLI を使います。PowerShell では `& "$env:LOCALAPPDATA\NimoteHost\nimotehost.exe" status` で呼び出せます。停止中の導入済みサービスは `restart` で起動し、`start` はフォアグラウンド動作です。`setup` は完全な配布物を検証・導入し、`install` は配置済みの実行ファイルを登録します。
+
+Unix の SSH 環境は、接続先を置き換えて `ssh user@host 'command -v nimotehost && nimotehost status'` で確認できます。見つからなければ `ssh user@host '$HOME/.local/share/nimotehost/nimotehost status'` を試し、非対話 PATH を修正します。ツールのパス変更後は作業を完了させ、導入済み CLI で `stop`、修正済み環境で `install` を実行します。
+
+更新時は新しい完全な配布物を検証し、タスク完了と旧 GUI 終了後に同じユーザーでインストーラーを実行します。旧パッケージを保持し、活動中タスクの中断は拒否します。更新後はバージョン、状態、機能を確認します。ダウングレード前は状態をバックアップしてください。ファイル削除前に `uninstall` を実行します。記録と認証情報は残ります。
+
+| OS | 設定と状態の既定ディレクトリ |
+| --- | --- |
+| Linux | `~/.config/nimotehost` または `$XDG_CONFIG_HOME/nimotehost` |
+| macOS | `~/Library/Application Support/nimotehost` |
+| Windows | `%APPDATA%\nimotehost` |
+
+バックアップは Host 停止中に行い、所有者のみのアクセス権を維持し、認証情報や会話を公開しないでください。プロジェクトと Agent 提供元のデータは別途バックアップします。記録のコピーはプロセスを復元しません。
+
+診断は Linux で `systemctl --user status nimotehost.service` と `journalctl --user -u nimotehost.service -n 50 --no-pager`、macOS で `launchctl print gui/$(id -u)/com.nimotehost`、Windows で `schtasks.exe /Query /TN NimoteHost /V /FO LIST` を使います。ユーザーのログイン状態と、Linux ではログアウト後の lingering ポリシーも確認します。
 
 ## 接続できないとき
 

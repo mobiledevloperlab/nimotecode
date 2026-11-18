@@ -1,6 +1,6 @@
 ---
 title: "Host mode: install NimoteHost and reconnect to terminals and Agents | NimoteCode"
-description: Install NimoteHost on Linux, macOS, or Windows, connect from NimoteCode over SSH, and use remote terminals, tasks, Agent sessions, and the task inbox.
+description: Deploy NimoteHost on Linux, macOS, or Windows from a release or source, connect over SSH, manage persistent terminals and coding Agents, and maintain the service.
 ---
 
 # Keep remote work running with Host mode
@@ -18,17 +18,36 @@ Host is useful for checking builds, tests, and Agent work from your phone. The H
 
 Install Host on the computer that runs your project first. Installing NimoteCode on the phone alone does not set up Host.
 
+## NimoteCode and NimoteHost
+
+**NimoteCode is the client; NimoteHost runs the work on your computer.** NimoteHost is a standalone CLI and optional desktop manager for Linux, macOS, and Windows. It is planned for release under Apache-2.0 in the [NimoteHost repository](https://github.com/mobiledevloperlab/nimotehost). NimoteCode remains a commercial, closed-source app. Host can also run independently of NimoteCode, with RPC, a Go client package, and an opt-in MCP interface for other integrations.
+
+The connection is: **NimoteCode → your existing SSH connection → NimoteHost → project tools and Agents**. There is no additional Nimote account, public relay, or Host port to open. Host authenticates its local API and keeps its credentials on the computer. Commands run with the Host account's permissions; use separate OS accounts when you need separate users or trust boundaries.
+
+| Choose | When it fits |
+| --- | --- |
+| Ordinary SSH workspace | Edit remote files, use a terminal, and review Git without installing Host. |
+| Host mode | Leave tasks running after the client disconnects, return to their output, and manage compatible structured Agent conversations and approvals. |
+| Host CLI | Deploy on a server or manage the service from a shell. No desktop environment needed. |
+| Host desktop bundle | Manage service status, sessions, devices, settings, and diagnostics on the computer. Includes the CLI. |
+
+The repository and release downloads will become available when published. If GitHub returns 404 or no matching asset is listed, use a complete preview bundle or source checkout supplied by the maintainer, or wait for publication. The commands below do not imply that public downloads are already available.
+
 This guide follows the 2.4.0 implementation. NimoteHost is a development preview; available Agent, inbox, and plugin controls depend on the connected Host. The screenshots are from a physical Android phone using English and the Light theme. Some session screenshots were captured with app 2.3.1 (Build 64) and a local 2.4.0 Host build; labels may differ in your installed version.
 
 ## Before you start
 
-You need a Linux, macOS, or Windows computer that you can reach over SSH, NimoteCode 2.4.0 with a compatible NimoteHost, and a project directory the remote account can access. The workspace path you enter later belongs to the computer, not the phone.
+You need a Linux, macOS, or Windows computer that you can reach over SSH, a NimoteCode build that includes Host mode (the 2.4.0 implementation is included in the upcoming 2.4.1), a compatible NimoteHost, and a project directory the remote account can access. The workspace path you enter later belongs to the computer, not the phone. Installing Host does not add Host mode to an older app.
+
+For background operation, Linux needs a working systemd user manager; macOS needs the user's GUI login session; Windows uses a per-user login scheduled task. Without the required service manager, try foreground operation. Keep the computer awake and reachable. Across networks, use a reachable SSH address or your existing VPN; installing Host does not make a private address reachable.
 
 If SSH is new to you, set up a connection using [Local and SSH workspaces](/docs/ssh) first. For Windows, see [Windows SSH and SFTP](/docs/windows-ssh-sftp). Host does not configure SSH for you.
 
 ## 1. Download NimoteHost
 
 Open the [NimoteHost releases page](https://github.com/mobiledevloperlab/nimotehost/releases) and choose a complete distribution for your computer. The CLI is enough for a server. Choose a GUI bundle if you also want a desktop window for managing Host.
+
+Release names follow `nimotehost-<version>-<os>-<arch>` for CLI and `nimotehost-gui-<version>-<os>-<arch>` for desktop bundles. Linux/macOS archives use `.tar.gz`; Windows uses `.zip`. Download the binary distribution rather than GitHub's automatically generated source archive unless you intend to compile it. Check the release notes for platform requirements; Linux desktop bundles target glibc 2.35 or newer, and macOS bundles are unsigned and not notarized.
 
 | Computer | OS label | Architecture |
 | --- | --- | --- |
@@ -40,9 +59,34 @@ Linux and Windows also have 386 CLI builds for 32-bit x86, without a GUI. There 
 
 Download the accompanying SHA256 checksum file. Compare it with the hash calculated by `sha256sum` on Linux, `shasum -a 256` on macOS, or `Get-FileHash -Algorithm SHA256` in PowerShell before extracting the archive.
 
+For example, replace the sample filename with your downloaded archive:
+
+```sh
+# Linux
+sha256sum nimotehost-2.4.0-linux-amd64.tar.gz
+# macOS
+shasum -a 256 nimotehost-2.4.0-darwin-arm64.tar.gz
+```
+
+```powershell
+Get-FileHash -Algorithm SHA256 .\nimotehost-2.4.0-windows-amd64.zip
+```
+
+Compare the digest with the adjacent `.sha256` file from the same release. Use your archive manager to extract the complete archive and open a terminal in the folder containing `nimotehost` or `nimotehost.exe` and `scripts`. Checksums check file integrity; obtain both files from the official release.
+
 Keep the extracted bundle together: binaries, installation scripts, licenses, `BUILD.json`, `MODULES.json`, and `SHA256SUMS`. A GUI executable by itself is not the full bundle. Once a service uses an installed path, keep its files in place.
 
-If a matching download is unavailable, follow the [Host repository instructions](https://github.com/mobiledevloperlab/nimotehost) to build from source. Source installation needs Go 1.26.5 or later; prebuilt distributions do not need Go.
+### Install from source
+
+Source installation needs Git and Go 1.26.5 or later; prebuilt distributions do not need Go. Once the repository is public, run the following as your ordinary user on the development computer. With a supplied source checkout, enter its root and run the last command:
+
+```sh
+git clone https://github.com/mobiledevloperlab/nimotehost.git
+cd nimotehost
+go run ./tools/install
+```
+
+The Go installer works in Unix shells and PowerShell. It builds, verifies, installs, and starts the CLI service; it does not build the desktop GUI. To build a distribution without installing it, use `go run ./tools/build`. For the desktop build, use `go run ./tools/build -gui` with the native desktop SDK and C compiler described in the repository. Keep app and Host versions compatible; a source build does not guarantee compatibility with an older store client.
 
 ## 2. Install and start it on the computer
 
@@ -81,6 +125,12 @@ To try the CLI without installing a service, run `nimotehost.exe start` from its
 On Linux or macOS, use `./nimotehost start` from the bundle; on Windows, use `.\nimotehost.exe start`. Leave that window open. You do not need another copy if the service is already running.
 
 Host listens on the computer's loopback interface. Your phone reaches it through SSH; do not enter Host's local HTTP port as the phone connection or expose it to the internet.
+
+### Open the desktop manager
+
+After installing a GUI bundle, open `NimoteHost.app` on macOS, `nimotehost-gui.exe` on Windows, or `nimotehost-gui` on Linux from the installed directory. Overview shows service status; Sessions provides search and status filters; Devices manages restricted device access; Settings contains language, theme, and local service controls. Help & diagnostics provides logs and diagnostic export. Restricted devices require SSH key configuration; registering a device alone does not restrict an ordinary SSH login.
+
+Closing the desktop window leaves Host and its sessions running. Use the explicit stop action to stop work. Windows/macOS close hides to the tray; Linux tray behavior depends on the desktop. The desktop manager uses the same Host service as the phone.
 
 ## 3. Choose Host and your SSH connection
 
@@ -161,6 +211,59 @@ To dispatch a GitHub Issue, use the supported dispatch entry to select the Issue
 ## 9. Open Host plugins
 
 After connecting over SSH, look for the current Host's plugins in application configuration. Available plugins open from the sidebar; their forms and actions depend on the plugin. Resolve permission or compatibility errors before retrying an operation. See the [plugin guide](/docs/plugins).
+
+## Service management, updates, and local data
+
+Use the installed CLI for routine maintenance. On Linux/macOS it is `~/.local/share/nimotehost/nimotehost`; on Windows, invoke `& "$env:LOCALAPPDATA\NimoteHost\nimotehost.exe"` in PowerShell. The commands below assume that directory is on PATH; otherwise use the full executable path.
+
+| Command | Effect |
+| --- | --- |
+| `nimotehost version` | Show the executable version. |
+| `nimotehost status` | Check whether the service responds; a running Host returns `running: true`. |
+| `nimotehost capabilities` | Inspect protocol, platform, features, and detected tools. |
+| `nimotehost agents` | Probe installed Agent versions. |
+| `nimotehost install` | Register and start the user service from its fixed executable path. |
+| `nimotehost stop` | Stop Host and its active tasks. |
+| `nimotehost restart` | Restart the installed service and terminate active tasks. |
+| `nimotehost uninstall` | Stop and remove the service; retain credentials and records. |
+
+For a stopped installed service, use `nimotehost restart`; `nimotehost start` runs in the foreground. `setup` verifies and installs an entire bundle; `install` registers the executable already in place. Do not run these through sudo or a different account.
+
+### Check the same environment used by SSH
+
+From another computer, replace `user@host` with your SSH destination:
+
+```sh
+ssh user@host 'command -v nimotehost && nimotehost status'
+```
+
+This example is for a Unix host. If the command is missing, check the fixed path directly:
+
+```sh
+ssh user@host '$HOME/.local/share/nimotehost/nimotehost status'
+```
+
+If the absolute path works, make the installed directory visible to the SSH noninteractive PATH before retrying in the app. For Windows, check the same account's discovery record and fixed path described above. The Host service also needs to find installed Agent tools; Unix installation captures absolute PATH entries and `XDG_CONFIG_HOME`. After changing tool paths, finish active work, run `nimotehost stop`, then `nimotehost install` from the installed executable in the corrected environment.
+
+### Update or remove Host
+
+Download and verify a compatible new complete bundle, finish active work, and run its installer as the same user. The setup flow preserves the previous bundle, checks readiness, and refuses to interrupt active tasks; repeating an unchanged healthy installation does not restart it. Close an older GUI first. For an earlier preview using the old executable name, follow the repository's migration instructions rather than manually renaming state directories.
+
+After updating, check `version`, `status`, and `capabilities`, reconnect, and open a small test session. Back up state before a downgrade; older binaries may reject newer records. To remove login startup, run `nimotehost uninstall` while the installed executable is still present, then remove installed bundle files if no longer needed. Uninstalling the service keeps local identity, credentials, and task records.
+
+| System | Installed bundle | Default configuration and state directory |
+| --- | --- | --- |
+| Linux | `~/.local/share/nimotehost` | `~/.config/nimotehost` (or `$XDG_CONFIG_HOME/nimotehost`) |
+| macOS | `~/.local/share/nimotehost` | `~/Library/Application Support/nimotehost` |
+| Windows | `%LOCALAPPDATA%\NimoteHost` | `%APPDATA%\nimotehost` |
+
+The state directory contains private Host identity, credentials, configuration, and session records. Back it up only while Host is stopped, preserve owner-only permissions, and keep it out of public repositories and issue attachments. Back up project files and Agent-provider data separately; copying Host records cannot restore a running process.
+
+### Inspect service failures
+
+- Linux: `systemctl --user status nimotehost.service` and `journalctl --user -u nimotehost.service -n 50 --no-pager`. If no user manager is available, use foreground operation; logout survival requires an appropriate lingering policy.
+- macOS: `launchctl print gui/$(id -u)/com.nimotehost` in the logged-in user's session. Without that GUI session, try the CLI in the foreground.
+- Windows: `schtasks.exe /Query /TN NimoteHost /V /FO LIST`. Check that you installed under the intended logged-in account.
 
 ## If it will not connect
 

@@ -1,6 +1,6 @@
 ---
 title: Host 模式使用教程：安装 NimoteHost，连接终端与 Agent | NimoteCode
-description: 在 Linux、macOS 或 Windows 安装 NimoteHost，再从 NimoteCode 通过 SSH 连接，创建终端、运行任务、使用 Agent，并在离开后回到原会话。
+description: 从发布包或源码在 Linux、macOS、Windows 部署 NimoteHost，通过 SSH 托管终端、任务与编程 Agent，了解桌面管理、服务维护、升级和卸载。
 ---
 
 # 用 Host 模式继续远程任务
@@ -8,6 +8,21 @@ description: 在 Linux、macOS 或 Windows 安装 NimoteHost，再从 NimoteCode
 如果你想在手机上发起任务，离开应用一会儿，再回来查看结果，可以用 Host 模式。任务和终端由开发电脑上的 NimoteHost 托管，手机通过 SSH 查看输出、输入命令或回复 Agent。
 
 先把 Host 装到运行项目的电脑上，再打开手机连接。只在手机上安装 NimoteCode，还不能使用 Host。
+
+## NimoteCode 和 NimoteHost 分别做什么？
+
+**NimoteCode 是操作客户端，NimoteHost 在电脑上执行和托管工作。** NimoteHost 提供独立 CLI 和可选的桌面管理器，支持 Linux、macOS、Windows，计划以 Apache-2.0 许可证在 [NimoteHost 仓库](https://github.com/mobiledevloperlab/nimotehost)开源。NimoteCode 应用仍为商业闭源软件。Host 也可独立运行，通过 RPC、Go 客户端包和按需启用的 MCP 接口接入其他工具。
+
+连接关系是：**NimoteCode → 已有 SSH 连接 → NimoteHost → 项目工具与 Agent**。无需额外的 Nimote 账号、公网中继或 Host 入站端口；本地 API 需要认证，Host 凭据保留在电脑上。命令默认以 Host 所属的系统账号权限运行；需要隔离用户或访问范围时，应使用独立系统账号。
+
+| 选择哪种方式 | 适合什么情况 |
+| --- | --- |
+| 普通 SSH 工作区 | 编辑远程文件、使用终端和查看 Git，无需安装 Host。 |
+| Host 模式 | 手机断线后继续运行任务，回来查看输出，管理兼容 Agent 的结构化对话和审批。 |
+| Host CLI | 在服务器部署，或通过命令行管理后台服务，不需要桌面环境。 |
+| Host 桌面包 | 在电脑上管理服务、会话、设备、设置和诊断；已包含 CLI。 |
+
+仓库和发布包将在公开发布后可用。如果 GitHub 显示 404，或没有对应安装包，请使用维护者提供的完整预览包、源码，或等待发布。下面给出的是部署流程，不代表公开下载已经开放。
 
 ## Host 能做什么？
 
@@ -23,14 +38,18 @@ description: 在 Linux、macOS 或 Windows 安装 NimoteHost，再从 NimoteCode
 ## 先准备好这几样
 
 - 一台能通过 SSH 登录的 Linux、macOS 或 Windows 电脑。手机需要能访问它的 SSH 地址。
-- NimoteCode 2.4.0，以及与它兼容的 NimoteHost。
+- 包含 Host 模式的 NimoteCode 构建，以及与它兼容的 NimoteHost。本文基于 2.4.0 实现，相关功能将并入即将发布的 2.4.1；安装 Host 不会让旧版 App 自动获得该入口。
 - 一个远程账号有权访问的项目目录。后面的“工作区目录”填电脑上的路径，不是手机路径。
 
 第一次用 SSH，先按[本地与 SSH 工作区](/zh/docs/ssh)把连接配好。Windows 可以先看 [Windows SSH 与 SFTP](/zh/docs/windows-ssh-sftp)。Host 不会替你安装或开启 SSH。
 
+后台运行还需要系统服务环境：Linux 使用 systemd 用户服务，macOS 需要该用户已登录图形会话，Windows 使用用户登录计划任务。缺少对应环境时，可以先前台试运行。电脑应保持唤醒和网络可达；跨网络访问可使用可达的 SSH 地址或已有 VPN，安装 Host 本身不会让内网地址变成公网可达。
+
 ## 1. 下载 NimoteHost
 
 打开 [NimoteHost 发布页](https://github.com/mobiledevloperlab/nimotehost/releases)，选择适合开发电脑系统和 CPU 的完整分发包。服务器上只需要 CLI；想在电脑上查看服务和会话，可以选择带 GUI 的包。
+
+CLI 包名称为 `nimotehost-<version>-<os>-<arch>`，桌面包为 `nimotehost-gui-<version>-<os>-<arch>`。Linux/macOS 使用 `.tar.gz`，Windows 使用 `.zip`。不打算编译时，应下载二进制分发包，而不是 GitHub 自动生成的 Source code 源码压缩包。系统要求以对应发布说明为准；Linux 桌面包要求 glibc 2.35 或更高版本，macOS 包暂未签名或公证。
 
 | 电脑 | 系统标记 | 架构 |
 | --- | --- | --- |
@@ -42,9 +61,34 @@ Linux、Windows 另有 386 CLI，供 32 位 x86 使用，不包含 GUI。macOS �
 
 同时下载包旁边的 SHA256 校验文件，核对后再解压。Linux 可以用 `sha256sum`，macOS 用 `shasum -a 256`，Windows PowerShell 用 `Get-FileHash -Algorithm SHA256`。对比计算结果和下载页提供的值。
 
+例如，将以下示例文件名替换成你下载的实际文件名：
+
+```sh
+# Linux
+sha256sum nimotehost-2.4.0-linux-amd64.tar.gz
+# macOS
+shasum -a 256 nimotehost-2.4.0-darwin-arm64.tar.gz
+```
+
+```powershell
+Get-FileHash -Algorithm SHA256 .\nimotehost-2.4.0-windows-amd64.zip
+```
+
+将输出的摘要与同一发布包旁的 `.sha256` 文件逐字符对比。确认后，用系统解压工具解压整个包，在同时包含 `nimotehost` 或 `nimotehost.exe` 和 `scripts` 的目录打开终端。校验用于检查文件完整性，安装包和校验文件都应从官方发布入口获取。
+
 解压后保留整个目录，包括二进制、安装脚本、许可证、`BUILD.json`、`MODULES.json` 和 `SHA256SUMS`。不要只复制 GUI 程序，也不要在启用服务后删掉它引用的文件。
 
-如果发布页暂时没有适合你的包，也可以按 [NimoteHost 仓库说明](https://github.com/mobiledevloperlab/nimotehost)从源码构建；源码安装需要 Go 1.26.5 或更高版本，预编译包不需要 Go。
+### 从源码安装
+
+源码安装需要 Git 和 Go 1.26.5 或更高版本；预编译包不需要 Go。仓库公开后，在开发电脑上以普通账号执行以下命令。已有维护者提供的完整源码时，直接进入源码根目录执行最后一行：
+
+```sh
+git clone https://github.com/mobiledevloperlab/nimotehost.git
+cd nimotehost
+go run ./tools/install
+```
+
+Go 安装器可在 Unix Shell 和 Windows PowerShell 中运行，会构建、校验、安装并启动 CLI 用户服务，不包含桌面 GUI 构建。只构建分发包而不安装，可运行 `go run ./tools/build`；构建桌面包用 `go run ./tools/build -gui`，还需仓库说明中的原生桌面 SDK 和 C 编译器。源码构建也需要匹配 App 协议，并不保证兼容旧商店版本。
 
 ## 2. 在开发电脑安装并启动
 
@@ -83,6 +127,12 @@ sh scripts/install.sh
 Linux、macOS 在解压目录执行 `./nimotehost start`；Windows 执行 `.\nimotehost.exe start`。保持这个窗口打开即可。已经有服务在运行时，不需要再启动第二份。
 
 Host 默认只监听电脑本机的 loopback 地址，手机通过 SSH 调用它。不要给手机填写 Host 的本机 HTTP 端口，也不需要把这个端口开放到公网。
+
+### 打开桌面管理器
+
+安装 GUI 包后，从安装目录打开 macOS 的 `NimoteHost.app`、Windows 的 `nimotehost-gui.exe` 或 Linux 的 `nimotehost-gui`。**Overview** 查看服务状态，**Sessions** 搜索和筛选会话，**Devices** 管理受限设备，**Settings** 设置语言、主题和本地服务；**Help & diagnostics** 提供日志和诊断导出。受限设备还需要配置 SSH 密钥，单独登记设备不会限制普通 SSH 账号的权限。
+
+关闭桌面窗口后，Host 和会话仍会继续运行；要结束工作需明确执行停止。Windows/macOS 关闭窗口通常隐藏至托盘，Linux 托盘行为取决于桌面环境。桌面管理器与手机操作的是同一个 Host 服务。
 
 ## 3. 在 NimoteCode 选择 Host 和 SSH 连接
 
@@ -163,6 +213,59 @@ Host 默认只监听电脑本机的 loopback 地址，手机通过 SSH 调用它
 ## 9. 使用 Host 插件
 
 连接 SSH 后，在应用配置的插件区域查看当前 Host 提供的插件。可用插件可以从侧边栏打开，具体表单和操作由插件决定。遇到权限或兼容性提示，先检查当前账号和 Host 版本，不要重复提交同一操作。完整说明见[插件指南](/zh/docs/plugins)。
+
+## 服务管理、升级与本地数据
+
+日常维护请使用安装后的 CLI。Linux/macOS 路径为 `~/.local/share/nimotehost/nimotehost`；Windows PowerShell 用 `& "$env:LOCALAPPDATA\NimoteHost\nimotehost.exe"` 调用。下表假定安装目录已加入 PATH，否则将命令中的程序名替换为完整路径。
+
+| 命令 | 作用 |
+| --- | --- |
+| `nimotehost version` | 查看当前执行文件的版本。 |
+| `nimotehost status` | 检查服务是否响应；运行中返回 `running: true`。 |
+| `nimotehost capabilities` | 查看协议、平台、功能与已发现的工具。 |
+| `nimotehost agents` | 检测已安装的 Agent 版本。 |
+| `nimotehost install` | 从固定程序路径注册并启动用户服务。 |
+| `nimotehost stop` | 停止 Host，同时结束正在托管的任务。 |
+| `nimotehost restart` | 重启已安装服务，会结束运行中的任务。 |
+| `nimotehost uninstall` | 停止并移除服务，保留凭据和记录。 |
+
+已安装服务停止后，可用 `nimotehost restart` 启动；`nimotehost start` 是前台运行。`setup` 用于校验并安装整个包，`install` 用于注册固定位置上已有的程序。不要换账号或用 sudo 执行这些操作。
+
+### 检查 SSH 实际使用的环境
+
+在另一台电脑上执行，把 `user@host` 换成你的 SSH 目标。以下示例用于 Unix 主机：
+
+```sh
+ssh user@host 'command -v nimotehost && nimotehost status'
+```
+
+如果找不到命令，再检查固定路径：
+
+```sh
+ssh user@host '$HOME/.local/share/nimotehost/nimotehost status'
+```
+
+完整路径能运行时，应让 SSH 非交互环境的 PATH 包含安装目录，再回 App 重试。Windows 按前文检查同账号的发现记录和固定路径。Host 服务也需要找到 Agent 工具；Unix 安装时会记录 PATH 中的绝对路径和 `XDG_CONFIG_HOME`。改动工具路径后，先完成当前任务，再用已安装的程序执行 `nimotehost stop`，在修正后的环境执行 `nimotehost install`，刷新服务环境。
+
+### 升级与卸载
+
+下载并校验新的兼容完整包，结束当前任务，以原账号重新运行新包中的安装器。安装流程会保留旧包、检查新服务就绪，并拒绝中断活动任务；对未变化且健康的安装重复执行不会重启服务。先关闭旧 GUI。使用过旧程序名的预览版时，按仓库迁移说明操作，不要自行重命名状态目录。
+
+升级后检查 `version`、`status` 和 `capabilities`，重新连接并创建一个小测试会话。降级前先备份状态；旧二进制可能无法读取新版记录。需要移除登录启动时，在已安装程序仍存在的情况下运行 `nimotehost uninstall`，之后按需删除安装包文件。卸载服务会保留本地身份、凭据和任务记录。
+
+| 系统 | 安装目录 | 默认配置与状态目录 |
+| --- | --- | --- |
+| Linux | `~/.local/share/nimotehost` | `~/.config/nimotehost`，设置 XDG 时为 `$XDG_CONFIG_HOME/nimotehost` |
+| macOS | `~/.local/share/nimotehost` | `~/Library/Application Support/nimotehost` |
+| Windows | `%LOCALAPPDATA%\NimoteHost` | `%APPDATA%\nimotehost` |
+
+状态目录包含私有身份、凭据、配置和会话记录。仅在 Host 停止时备份，保留仅所属用户可访问的权限，勿上传到公开仓库或问题附件。项目文件和 Agent 提供方的数据需要单独备份；复制 Host 记录不能恢复正在运行的进程。
+
+### 查看服务启动失败的原因
+
+- Linux：`systemctl --user status nimotehost.service`，日志用 `journalctl --user -u nimotehost.service -n 50 --no-pager`。缺少用户服务管理器时先前台运行；注销后继续运行需符合系统 lingering 策略。
+- macOS：在已登录用户会话中执行 `launchctl print gui/$(id -u)/com.nimotehost`；没有图形登录会话时先尝试 CLI 前台运行。
+- Windows：`schtasks.exe /Query /TN NimoteHost /V /FO LIST`，核对是否以目标登录账号安装。
 
 ## 连不上时，按这个顺序查
 

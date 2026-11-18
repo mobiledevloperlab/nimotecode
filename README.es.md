@@ -10,9 +10,9 @@
 
 <p align="center"><a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-Instalar-34A853?style=for-the-badge&amp;logo=googleplay&amp;logoColor=white" alt="Instalar NimoteCode en Android desde Google Play"></a> <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-Descargar-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="Descargar NimoteCode para iPhone y iPad desde App Store"></a></p>
 
-<p align="center"><sub><a href="#workspace-demo">Demo</a> · <a href="https://nimotecode.com/es/docs/quick-start">Inicio rápido</a> · <a href="https://nimotecode.com/es/releases/2.4.1">Novedades</a></sub></p>
+<p align="center"><sub><a href="#workspace-demo">Demo</a> · <a href="#nimotehost">NimoteHost</a> · <a href="https://nimotecode.com/es/docs/quick-start">Inicio rápido</a> · <a href="https://nimotecode.com/es/releases/2.4.1">Novedades</a></sub></p>
 
-<p align="center"><sub>Gratis para empezar; configurar la IA es opcional. Aplicación comercial de código cerrado · Documentación y recursos oficiales.</sub></p>
+<p align="center"><sub>Gratis para empezar; configurar la IA es opcional. Aplicación comercial de código cerrado · NimoteHost se publicará bajo Apache-2.0.</sub></p>
 
 <p align="center"><img src="docs/public/screenshots/nimote-pro.webp" alt="NimoteCode mobile AI Agent and tablet SSH workspace" width="1000"></p>
 
@@ -36,6 +36,7 @@ Local Linux requiere Android 8 o posterior en dispositivos ARM64 / x86_64 compat
 
 ## Capacidades principales
 
+- **Trabajo remoto persistente:** [NimoteHost](https://nimotecode.com/es/docs/host) opcional mantiene terminales, tareas y Agents compatibles tras desconectar; previsto para 2.4.1.
 - **Cambia de modo:** alterna entre IDE, Terminal e IA conservando el proyecto y el estado del explorador.
 - **Desarrolla con contenedores:** administra Docker y Compose en un host SSH, o crea y reconstruye un Dev Container desde `devcontainer.json`.
 - **Edita y navega:** usa Nimote Editor en teléfono, tableta y escritorio; busca archivos, usa paneles divididos y previsualiza Markdown y contenido web.
@@ -47,6 +48,22 @@ Local Linux requiere Android 8 o posterior en dispositivos ARM64 / x86_64 compat
 - **Carpetas externas:** las carpetas autorizadas por el sistema permiten explorar y editar; Git, LSP, depuración, tareas, vigilancia de archivos y Agent requieren una ruta nativa.
 - **Disponibilidad:** las herramientas dependen del espacio de trabajo, las herramientas instaladas y el plan. Consulta la [referencia de funciones](https://nimotecode.com/es/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=es_features).
 
+
+<a id="nimotehost"></a>
+
+## NimoteHost: el trabajo sigue en tu ordenador
+
+**NimoteHost** es el complemento opcional que puedes alojar en Linux, macOS o Windows, con CLI y gestor de escritorio. Inicia una tarea desde el móvil, desconecta y vuelve a los terminales, registros y conversaciones compatibles que siguen ejecutándose por SSH.
+
+- Usa Codex, Claude Code y OpenCode compatibles, con herramientas estructuradas, aprobaciones e indicaciones durante la ejecución cuando estén disponibles.
+- Busca y fija sesiones; revisa la bandeja de tareas, verificaciones y diffs; envía Issues de GitHub cuando el Host lo permita.
+- Despliega paquetes CLI o GUI, compila el código o integra RPC, el cliente Go, MCP y plugins comunitarios.
+
+El modo Host llegará con **2.4.1**. NimoteHost se publicará como código abierto bajo **Apache-2.0** en [su repositorio](https://github.com/mobiledevloperlab/nimotehost); NimoteCode sigue siendo comercial y de código cerrado. Si GitHub muestra 404 o no hay paquetes, la descarga pública aún no está disponible.
+
+Instala el paquete completo en el ordenador, comprueba `status` y `capabilities` y elige **Host → SSH connections** con la misma cuenta del sistema. SSH normal no necesita Host. El ordenador y Host deben seguir encendidos; reiniciar Host o el sistema interrumpe los procesos. Instala y autentica los Agents por separado; el uso del modelo no está incluido. Las funciones dependen de ambas versiones.
+
+[**Instalación, despliegue y uso →**](https://nimotecode.com/es/docs/host) · [Código y licencia](https://github.com/mobiledevloperlab/nimotehost) · [Descargas](https://github.com/mobiledevloperlab/nimotehost/releases)
 
 ## IA para programar a tu manera
 
@@ -121,7 +138,7 @@ Descarga para Android en [Google Play](https://play.google.com/store/apps/detail
 
 **¿Está incluida la IA?** La configuración es opcional. Debes aportar tu proveedor y clave API; el uso del modelo puede tener costes adicionales. El Agente integrado requiere Early Access.
 
-**¿Es de código abierto?** La aplicación es comercial y de código cerrado. Este repositorio contiene documentación y recursos.
+**¿Es de código abierto?** La aplicación es comercial y de código cerrado. Este repositorio contiene documentación y recursos. El [complemento NimoteHost](https://github.com/mobiledevloperlab/nimotehost) se publicará bajo Apache-2.0; esa licencia se aplica a Host, no a la aplicación.
 
 [Más preguntas frecuentes](https://nimotecode.com/es/docs/faq).
 
@@ -184,6 +201,8 @@ Comparte un error, pregunta o flujo de trabajo que te gustaría ver compatible.
 <p align="center"><a href="https://discord.gg/tTxbpqYmhR">Discord</a> · <a href="https://github.com/mobiledevloperlab/nimote_issues/issues">Informar de un problema</a> · <a href="https://x.com/mobiledevlab">X</a></p>
 
 ## Acerca de este repositorio
+
+El [complemento NimoteHost](https://github.com/mobiledevloperlab/nimotehost) se publicará bajo Apache-2.0; esa licencia se aplica a Host, no a la aplicación.
 
 NimoteCode es una aplicación comercial de código cerrado. Este repositorio contiene documentación oficial, tutoriales, ejemplos de flujo de trabajo y notas de versión; el código fuente de la aplicación no se publica. Los preajustes de Linux se mantienen en un repositorio separado y los informes de errores usan el rastreador enlazado arriba.
 

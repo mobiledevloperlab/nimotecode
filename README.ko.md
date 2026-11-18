@@ -10,9 +10,9 @@
 
 <p align="center"><a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode"><img src="https://img.shields.io/badge/Google_Play-%EC%84%A4%EC%B9%98-34A853?style=for-the-badge&amp;logo=googleplay&amp;logoColor=white" alt="Google Play에서 Android용 NimoteCode 설치"></a> <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="App Store에서 NimoteCode 다운로드"></a></p>
 
-<p align="center"><sub><a href="#workspace-demo">데모</a> · <a href="https://nimotecode.com/ko/docs/quick-start">빠른 시작</a> · <a href="https://nimotecode.com/ko/releases/2.4.1">릴리스 노트</a></sub></p>
+<p align="center"><sub><a href="#workspace-demo">데모</a> · <a href="#nimotehost">NimoteHost</a> · <a href="https://nimotecode.com/ko/docs/quick-start">빠른 시작</a> · <a href="https://nimotecode.com/ko/releases/2.4.1">릴리스 노트</a></sub></p>
 
-<p align="center"><sub>무료로 시작할 수 있으며 AI 설정은 선택 사항입니다. 상용 비공개 소스 앱 · 공식 문서와 자료</sub></p>
+<p align="center"><sub>무료로 시작할 수 있으며 AI 설정은 선택 사항입니다. 상용 비공개 소스 앱 · NimoteHost는 Apache-2.0 공개 예정</sub></p>
 
 <p align="center"><img src="docs/public/screenshots/nimote-pro.webp" alt="NimoteCode mobile AI Agent and tablet SSH workspace" width="1000"></p>
 
@@ -36,6 +36,7 @@ Local Linux는 지원되는 Android 8 이상 ARM64 / x86_64 기기가 필요하�
 
 ## 핵심 기능
 
+- **원격 작업 지속:** 선택형 [NimoteHost](https://nimotecode.com/ko/docs/host)로 터미널, 작업과 호환 Agent를 관리하고 연결 해제 후 돌아옵니다. 2.4.1 제공 예정입니다.
 - **작업 공간 전환:** 프로젝트와 탐색기 상태를 유지하며 IDE, 터미널, AI 모드를 전환합니다.
 - **컨테이너 개발:** SSH 호스트에서 Docker와 Compose를 관리하고 `devcontainer.json`으로 Dev Container를 만들거나 다시 빌드합니다.
 - **편집 및 탐색:** 휴대폰, 태블릿, 데스크톱에서 Nimote Editor를 사용하고, 파일 검색, 분할 편집기, Markdown 및 웹 미리 보기를 이용하세요.
@@ -47,6 +48,22 @@ Local Linux는 지원되는 Android 8 이상 ARM64 / x86_64 기기가 필요하�
 - **외부 폴더:** 시스템에서 권한을 부여한 외부 폴더는 탐색과 편집을 지원하지만 Git, LSP, 디버깅, Tasks, 파일 감시 및 Agent에는 네이티브 파일 시스템 경로가 필요합니다.
 - **가용성:** 도구는 작업 공간, 설치된 도구 및 플랜에 따라 달라집니다. [기능 참조](https://nimotecode.com/ko/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=ko_features)를 확인하세요.
 
+
+<a id="nimotehost"></a>
+
+## NimoteHost: 내 컴퓨터에서 작업 계속하기
+
+**NimoteHost**는 Linux, macOS, Windows에 직접 설치하는 선택형 보조 서비스로 CLI와 데스크톱 관리자를 제공합니다. 휴대폰에서 작업을 시작하고 연결을 끊은 뒤 SSH로 돌아와 계속 실행 중인 터미널, 로그와 호환 Agent 대화를 확인하세요.
+
+- 호환 Codex, Claude Code, OpenCode의 구조화된 도구 출력과 승인을 확인하고 지원되는 경우 실행 중 지시를 추가합니다.
+- 세션 검색과 고정, 작업 수신함, 검증 기록과 diff 확인, 지원되는 Host의 GitHub Issue 작업 전달을 사용합니다.
+- CLI/GUI 패키지 배포, 소스 빌드, RPC, Go 클라이언트, MCP와 커뮤니티 플러그인 연동을 지원합니다.
+
+Host 모드는 **2.4.1 출시 예정 기능**입니다. NimoteHost는 [별도 저장소](https://github.com/mobiledevloperlab/nimotehost)에서 **Apache-2.0** 오픈 소스로 공개할 예정이며 NimoteCode 앱은 상용 비공개 소스로 유지됩니다. GitHub가 404를 표시하거나 패키지가 없으면 아직 공개 다운로드가 제공되지 않은 상태입니다.
+
+컴퓨터에 전체 패키지를 설치하고 `status`와 `capabilities`를 확인한 뒤 앱의 **Host → SSH connections**에서 같은 OS 계정으로 연결하세요. 일반 SSH에는 Host가 필요 없습니다. Host와 컴퓨터는 계속 실행되어야 하며 Host/OS 재시작은 프로세스를 중단합니다. Agent 설치, 인증과 모델 비용은 별도이며 기능은 양쪽 버전에 따라 다릅니다.
+
+[**설치, 배포 및 사용 안내 →**](https://nimotecode.com/ko/docs/host) · [소스 및 라이선스](https://github.com/mobiledevloperlab/nimotehost) · [다운로드](https://github.com/mobiledevloperlab/nimotehost/releases)
 
 ## 원하는 방식의 AI 코딩
 
@@ -120,7 +137,7 @@ Android용은 [Google Play](https://play.google.com/store/apps/details?id=com.ni
 
 **AI가 포함되어 있나요?** AI 설정은 선택 사항입니다. 직접 공급자와 API 키를 준비해야 하며 모델 사용료가 별도로 발생할 수 있습니다. 내장 Agent는 Early Access 기능입니다.
 
-**오픈 소스인가요?** 앱은 상용 비공개 소스입니다. 이 리포지토리는 문서와 자료를 제공합니다.
+**오픈 소스인가요?** 앱은 상용 비공개 소스입니다. 이 리포지토리는 문서와 자료를 제공합니다. 별도 [NimoteHost](https://github.com/mobiledevloperlab/nimotehost)는 Apache-2.0으로 공개 예정이며 해당 라이선스는 Host에 적용됩니다.
 
 [FAQ 더 보기](https://nimotecode.com/ko/docs/faq).
 
@@ -183,6 +200,8 @@ Orca 모바일에는 데스크톱 Companion이 필요합니다. Moshi의 diff와
 <p align="center"><a href="https://discord.gg/tTxbpqYmhR">Discord</a> · <a href="https://github.com/mobiledevloperlab/nimote_issues/issues">문제 신고</a> · <a href="https://x.com/mobiledevlab">X</a></p>
 
 ## 이 리포지토리 정보
+
+별도 [NimoteHost](https://github.com/mobiledevloperlab/nimotehost)는 Apache-2.0으로 공개 예정이며 해당 라이선스는 Host에 적용됩니다.
 
 NimoteCode는 상용 비공개 소스 애플리케이션입니다. 이 리포지토리에는 공식 문서, 튜토리얼, 워크플로 예제 및 릴리스 노트가 포함되며 애플리케이션 소스 코드는 공개되지 않습니다. Linux 프리셋은 별도 리포지토리에서 관리되고 버그 보고에는 위의 이슈 트래커를 사용합니다.
 

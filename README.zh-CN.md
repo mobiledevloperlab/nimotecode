@@ -18,9 +18,9 @@
   <a href="https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253"><img src="https://img.shields.io/badge/App_Store-%E4%B8%8B%E8%BD%BD-0D96F6?style=for-the-badge&amp;logo=appstore&amp;logoColor=white" alt="从 App Store 下载 iPhone 和 iPad 版 NimoteCode"></a>
 </p>
 
-<p align="center"><sub><a href="#演示">观看演示</a> · <a href="#与其他移动开发工具对比">工具对比</a> · <a href="https://nimotecode.com/zh/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=zh_quick_start">快速开始</a> · <a href="#latest-release">2.4.1 预告</a></sub></p>
+<p align="center"><sub><a href="#演示">观看演示</a> · <a href="#nimotehost">NimoteHost</a> · <a href="#与其他移动开发工具对比">工具对比</a> · <a href="https://nimotecode.com/zh/docs/quick-start?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=readme&amp;utm_content=zh_quick_start">快速开始</a> · <a href="#latest-release">2.4.1 预告</a></sub></p>
 
-<p align="center"><sub>免费开始使用，无需先配置 AI。<br>商业闭源应用 · 本仓库提供官方文档与社区资源</sub></p>
+<p align="center"><sub>免费开始使用，无需先配置 AI。<br>商业闭源应用 · 配套 NimoteHost 计划以 Apache-2.0 开源</sub></p>
 
 <p align="center">
   <img src="docs/public/screenshots/nimote-pro.webp" alt="NimoteCode 在平板和手机上展示代码编辑器、项目文件与 AI 工作区" width="1000">
@@ -50,6 +50,7 @@ NimoteCode 将代码编辑器、SSH 终端、Git 审查与 AI 工作流带到 An
 
 ## 功能亮点
 
+- **远程任务持续运行：**通过可选的 [NimoteHost](https://nimotecode.com/zh/docs/host) 托管终端、任务与兼容 Agent，断线后重新连接继续工作；计划随 2.4.1 提供。
 - **切换工作区模式：**在 IDE、终端和 AI 模式间切换，同时保留项目与文件浏览器状态。
 - **容器开发：**通过 SSH 管理 Docker 与 Compose，或根据 `devcontainer.json` 创建和重建 Dev Container。
 - **编辑与浏览：**在手机、平板与桌面统一使用 Nimote Editor；浏览和搜索项目文件，使用编辑器分屏，预览 Markdown 与网页内容。
@@ -60,6 +61,25 @@ NimoteCode 将代码编辑器、SSH 终端、Git 审查与 AI 工作流带到 An
 - **AI 辅助开发：**询问代码问题、让内置 Agent 完成范围明确的任务，或使用 SSH 主机上的兼容 Agent。
 
 通过系统选择器授权的外部目录支持浏览与编辑；Git、LSP、调试、Tasks、文件监听与 Agent 需要原生文件路径。具体工具取决于工作区、环境与权益。详见[功能说明](https://nimotecode.com/zh/features?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=zh_features)。
+
+<a id="nimotehost"></a>
+
+## NimoteHost：让工作在自己的电脑上继续
+
+从手机发起构建或编程 Agent，离开应用后，再回到原来的工作。**NimoteHost** 是可选的自部署配套服务，支持 Linux、macOS、Windows，提供独立 CLI 和桌面管理器。任务使用电脑上的项目文件和工具运行，手机通过已有 SSH 连接操作。
+
+- **断线后接续工作：** 重新连接仍在运行的终端、任务日志和兼容 Agent 对话。
+- **审查 Agent 操作：** 使用电脑上已安装的兼容 Codex、Claude Code、OpenCode，查看结构化工具输出、回复权限请求，并在支持时追加指令。
+- **跟进任务结果：** 搜索和固定会话，查看任务收件箱、验证记录与 Diff，并在主机支持时从 GitHub Issue 派发工作。
+- **自行部署和扩展：** 选择 CLI 或桌面包、从源码构建，或通过 RPC、Go 客户端包、MCP 与社区插件接入自己的工具。
+
+**Host 模式将随即将发布的 2.4.1 提供。** NimoteHost 计划以 **Apache-2.0** 许可证在 [mobiledevloperlab/nimotehost](https://github.com/mobiledevloperlab/nimotehost) 开源；NimoteCode 应用仍为商业闭源软件。源码和二进制包将在公开发布后可用，仓库显示 404 或发布页为空时，表示公开安装入口尚未开放。
+
+开始使用：在开发电脑安装完整兼容 Host 包，检查 `status` 和 `capabilities`，再在 NimoteCode 选择 **Host → SSH connections**，使用同一个系统账号连接。普通 SSH 工作区无需安装 Host。
+
+Host 和电脑需要保持运行：客户端断线仅断开连接，Host 或系统重启会中断进程。Agent 工具、登录及模型费用另行配置；具体入口取决于 App 和 Host 版本。
+
+[**安装、部署、使用与故障排查 →**](https://nimotecode.com/zh/docs/host) · [Host 源码与许可证](https://github.com/mobiledevloperlab/nimotehost) · [发布包下载](https://github.com/mobiledevloperlab/nimotehost/releases)
 
 ## 按你的习惯使用 AI
 
@@ -135,7 +155,7 @@ Android 用户可从 [Google Play](https://play.google.com/store/apps/details?id
 
 **包含 AI 服务吗？** AI 配置是可选的。需要自备服务商和 API Key，模型使用可能另行收费。内置 Agent 属于 Early Access 功能。
 
-**NimoteCode 是开源的吗？** 应用是商业闭源软件，本仓库提供文档和资源；许可详情见[关于本仓库](#关于本仓库)。
+**NimoteCode 是开源的吗？** 应用是商业闭源软件，本仓库提供文档和资源；许可详情见[关于本仓库](#关于本仓库)。独立的 [NimoteHost 配套服务](https://github.com/mobiledevloperlab/nimotehost)计划以 Apache-2.0 开源，该许可适用于 Host，不适用于 NimoteCode 应用。
 
 [查看更多常见问题](https://nimotecode.com/zh/docs/faq)。
 
@@ -212,6 +232,8 @@ Orca 的移动端依赖桌面 Companion；Moshi 的 Diff 和网页预览需要 P
 </p>
 
 ## 关于本仓库
+
+独立的 [NimoteHost 配套服务](https://github.com/mobiledevloperlab/nimotehost)计划以 Apache-2.0 开源，该许可适用于 Host，不适用于 NimoteCode 应用。
 
 NimoteCode 是商业闭源应用。本仓库提供官方文档、教程、工作流示例与发布说明，不发布应用源码。Linux 预设在独立仓库维护；Bug 反馈请使用上方的问题追踪入口。
 
