@@ -352,7 +352,7 @@ function pageSchemas(context: TransformContext): object[] {
         url: siteUrl,
         image: socialImage,
         description,
-        featureList: [...homeCopy.facts, ...homeCopy.capabilities.map(([name]) => name), homeCopy.capabilityNote, homeCopy.byok],
+        featureList: [...homeCopy.facts, ...homeCopy.features.map(([name]) => name), ...homeCopy.capabilities.map(([name]) => name), homeCopy.host.label, homeCopy.capabilityNote, homeCopy.byok],
         offers: {
           '@type': 'Offer',
           price: '0',

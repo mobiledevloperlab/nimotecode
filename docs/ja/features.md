@@ -5,9 +5,11 @@ description: プロジェクトをスマートフォンで開き、開発用コ�
 
 # NimoteCode の機能
 
-スマートフォンやタブレットでコード編集、コマンド実行、Git レビュー、AI との作業を。IDE・ターミナル・AI を切り替えても、プロジェクトと Explorer の状態を維持します。
+**IDE・ターミナル・AI・Host の4つのモード**で、編集、実行、Agent との協働、パソコン上の作業への再接続を選べます。Host は NimoteHost の別途導入が必要です。IDE・ターミナル・AI の切り替えではプロジェクトと Explorer の状態を維持します。
 
 <WorkspaceModes />
+
+**Host：パソコンで実行し、手元で進捗を確認。** 切断後もタスク、ターミナル、対応 Agent を継続し、再接続して出力、承認、検証、差分を確認できます。NimoteHost は完全なソースを Apache-2.0 で提供し、確認・ビルド・変更・貢献ができます。[機能と導入](/ja/docs/host) · [ソースと貢献](https://github.com/mobiledevloperlab/nimotehost)。Host モードは 2.4.1 で提供予定で、パソコンと Host は稼働を続ける必要があります。
 
 ## NimoteCode 2.4.0 · Host、プロジェクトタスク、リモート操作の安定性
 

@@ -1,30 +1,50 @@
 ---
-title: Usar Host：instalar NimoteHost y conectar sesiones | NimoteCode
-description: Instala NimoteHost en Linux, macOS o Windows y conecta NimoteCode por SSH para usar terminales, tareas y Agent.
+title: "Host: tareas remotas y Agents de código abierto | NimoteCode"
+description: "Mantén terminales, tareas y Agents en tu ordenador tras desconectar. Conoce NimoteHost, su código Apache-2.0, personalización, contribución y despliegue."
 ---
 
-# Volver al trabajo remoto con Host
+# Host: espacio abierto para tareas remotas y Agents
 
 Host sirve para iniciar trabajo desde el móvil y volver más tarde. NimoteHost mantiene tareas y terminales en tu ordenador; NimoteCode usa SSH para mostrar la salida y enviar instrucciones.
 
-## Qué puedes hacer con Host
+## Capacidades y ventajas de Host
 
-- **Retomar el trabajo remoto:** Inicia una terminal o tarea desde el móvil y vuelve a conectarte para ver la salida y continuar una sesión que siga en ejecución.
-- **Gestionar sesiones de Agent:** Usa Agents compatibles instalados en el ordenador, revisa las acciones de sus herramientas, responde a solicitudes de permisos y continúa la conversación.
-- **Organizar el trabajo:** Busca, filtra y fija sesiones. Si el Host lo permite, la bandeja de tareas también muestra estados, registros de verificación y cambios de código.
-- **Usar tu entorno de desarrollo:** Los comandos y Agents se ejecutan en la carpeta del proyecto del ordenador remoto. El móvil se conecta por SSH, por lo que no necesitas exponer a internet el puerto HTTP local de Host.
+Ejecuta en tu ordenador con sus archivos y herramientas habituales y consulta el progreso desde el móvil. Vuelve cuando el trabajo necesite una decisión o revisión.
 
-Host resulta útil para consultar compilaciones, pruebas y trabajo de Agent desde el móvil. Host y sus procesos deben seguir activos: la suspensión, el cierre de sesión o el reinicio de Host pueden interrumpir el trabajo, y reiniciar no restaura el proceso original. Las opciones de Agent, bandeja de tareas y plugins dependen de las capacidades del Host conectado.
+| Capacidad | Ventaja |
+| --- | --- |
+| Terminales y tareas gestionadas | Ejecuta compilaciones, pruebas y scripts. Los procesos gestionados continúan al desconectar; reconecta para ver la salida y seguir trabajando. |
+| Agents compatibles | Revisa conversaciones, herramientas y aprobaciones de Codex, Claude Code y OpenCode; envía indicaciones adicionales cuando se admita. |
+| Sesiones y bandeja de tareas | Busca, filtra y fija trabajo para encontrar aprobaciones, fallos y resultados pendientes de revisión. |
+| Verificación y revisión | Comprueba pruebas ejecutadas, códigos de salida y diffs. Envía Issues de GitHub con una política de publicación cuando el Host lo admita. |
+| Tu entorno habitual | Usa el proyecto y sus herramientas en Linux, macOS o Windows mediante CLI o gestor de escritorio. |
+| Código abierto | Inspecciona, compila y modifica todo el código de Host, añade integraciones y contribuye mejoras. |
 
-Esta guía sigue la implementación 2.4.0. Host es una versión preliminar y las opciones dependen de sus capacidades. Las capturas son de un teléfono Android real, en inglés y con tema claro. El paquete móvil indicaba 2.3.1 (Build 64) y Host una compilación local 2.4.0.
+Inicia las pruebas antes de salir y consulta el resultado más tarde, o atiende aprobaciones de un Agent y revisa el diff al terminar. Host y el ordenador deben seguir activos; reiniciarlos no restaura los procesos originales. Las funciones dependen del Host y las herramientas instaladas.
 
 ## NimoteCode y NimoteHost
 
-NimoteCode es el cliente; NimoteHost ejecuta las tareas en tu ordenador. Host ofrece CLI y gestor de escritorio para Linux, macOS y Windows. Se publicará bajo Apache-2.0 en [su repositorio](https://github.com/mobiledevloperlab/nimotehost); NimoteCode sigue siendo comercial y de código cerrado. Host también puede ejecutarse de forma independiente e integrarse por RPC, el cliente Go o MCP.
+NimoteCode es el cliente; NimoteHost ejecuta las tareas en tu ordenador. Host ofrece CLI y gestor de escritorio para Linux, macOS y Windows. Su código completo se ofrece bajo Apache-2.0 en [su repositorio](https://github.com/mobiledevloperlab/nimotehost); NimoteCode sigue siendo comercial y de código cerrado. Host también puede ejecutarse de forma independiente e integrarse por RPC, el cliente Go o MCP.
 
 La conexión es **NimoteCode → SSH → NimoteHost → herramientas del proyecto**. No requiere otra cuenta Nimote ni un puerto público de Host. Las credenciales locales permanecen en el ordenador; los comandos tienen los permisos de su cuenta del sistema. Usa cuentas separadas para aislar usuarios. SSH normal funciona sin instalar Host; Host añade tareas que continúan tras desconectar y gestión de Agents compatibles.
 
 El repositorio y las descargas estarán disponibles al publicarse. Si aparece 404 o faltan paquetes, utiliza una distribución o código completo del mantenedor, o espera la publicación. El modo Host de la implementación 2.4.0 se incluirá en 2.4.1; instalar el servicio no añade esta función a una aplicación antigua.
+
+## Código completo: revisar, personalizar y contribuir
+
+**Todo el código de NimoteHost se ofrece bajo Apache-2.0**, incluido el servicio, la CLI, el gestor de escritorio y los SDK de integración. Puedes revisar la ejecución, autenticación y persistencia, compilarlo y desplegarlo por tu cuenta. El cliente NimoteCode sigue siendo comercial y de código cerrado.
+
+- Haz un Fork para modificar comportamiento, interfaz o despliegue. Mantén la compatibilidad de protocolo con la aplicación.
+- Desarrolla plugins con `pkg/pluginsdk`, integra Go con `pkg/hostclient` y conecta RPC o MCP. MCP es de solo lectura por defecto; las escrituras requieren activación explícita.
+- Abre Issues para problemas o propuestas y pull requests para correcciones, adaptadores de Agents, traducciones y documentación. Discute primero cambios grandes y ejecuta las comprobaciones de la guía.
+
+[Código completo](https://github.com/mobiledevloperlab/nimotehost) · [Licencia](https://github.com/mobiledevloperlab/nimotehost/blob/master/LICENSE) · [Contribuir](https://github.com/mobiledevloperlab/nimotehost/blob/master/CONTRIBUTING.md) · [SDK de plugins](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/plugin-system/plugin-sdk.md)
+
+### Implementación transparente y acceso controlado
+
+Host usa SSH autenticado; su API HTTP autenticada solo escucha en loopback. Las credenciales Host permanecen en el ordenador, sin otro relay Nimote ni puerto API público. Tú controlas dónde se ejecuta y puedes revisar el código.
+
+Los comandos tienen los permisos de la cuenta del sistema de Host. Usa una cuenta adecuada, revisa permisos de Agents y plugins y actualiza dependencias. Las entradas del Agent y contexto del proyecto pueden enviarse al proveedor configurado. El código abierto permite revisión, pero no garantiza ausencia de vulnerabilidades ni una auditoría independiente completada. Consulta la [política y el reporte privado de seguridad](https://github.com/mobiledevloperlab/nimotehost/blob/master/SECURITY.md).
 
 ## Antes de empezar
 

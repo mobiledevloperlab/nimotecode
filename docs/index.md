@@ -2,7 +2,7 @@
 layout: home
 title: "NimoteCode | Mobile IDE & SSH Workspace for Android, iPhone and iPad"
 titleTemplate: false
-description: Open a project on your phone or tablet, edit it, run its tools, and review the changes. Start with a local folder, connect to your computer over SSH, or use Android Local Linux on a supported device.
+description: "Edit, run, review, and use coding Agents with four modes: IDE, Terminal, AI, and Host. Self-host NimoteHost to keep remote work running after you disconnect, with Apache-2.0 source you can inspect and customize."
 ---
 
 <ProductHome />

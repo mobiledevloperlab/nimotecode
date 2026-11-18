@@ -5,7 +5,7 @@ description: 在手机或平板打开项目，连接开发电脑，在同一工�
 
 # NimoteCode 功能
 
-在手机和平板上编辑代码、运行项目工具、审查 Git 改动，并与 AI 协作。IDE、终端和 AI 三种模式共享项目与资源管理器状态，按当前任务切换即可继续。
+按任务选择 **IDE、终端、AI、Host 四种模式**：编辑文件、运行项目工具、与 Agent 协作，或回到电脑上托管的工作。Host 模式需要单独安装 NimoteHost；IDE、终端和 AI 之间切换时保留项目与资源管理器状态。
 
 <div class="guide-actions">
 
@@ -14,6 +14,8 @@ description: 在手机或平板打开项目，连接开发电脑，在同一工�
 </div>
 
 <WorkspaceModes />
+
+**Host 模式：电脑持续运行，手机随时掌握进展。** 托管终端、任务与兼容 Agent，客户端断线后继续执行；回来查看输出、处理审批、审查验证记录与 Diff。NimoteHost 完整源码采用 Apache-2.0 开源，可审查、自行编译、按需修改并贡献改进。[了解能力与部署](/zh/docs/host) · [源码与贡献入口](https://github.com/mobiledevloperlab/nimotehost)。Host 模式将随 2.4.1 提供，电脑与 Host 需保持运行。
 
 ## NimoteCode 2.4.0 · Host 工作区、项目任务与远程可靠性
 

@@ -9,15 +9,15 @@
     "watch": "Watch the demo",
     "available": "Android · iPhone · iPad",
     "release": "What’s new",
-    "caption": "IDE, Terminal, and AI. One project, wherever you work.",
+    "caption": "IDE, Terminal, AI, and Host. Work from your phone to your computer.",
     "facts": [
       "Local files & SSH projects",
       "Root-free Linux on Android",
       "Git, GitHub & optional AI"
     ],
-    "eyebrow": "Three modes. One project.",
+    "eyebrow": "Four modes. One development workflow.",
     "heading": "From a change to a checked result.",
-    "description": "Your files, commands, and AI share one project. Switch how you work without starting over.",
+    "description": "Edit in IDE, run commands in Terminal, collaborate in AI, or use Host to keep remote work running after you disconnect.",
     "features": [
       [
         "IDE mode",
@@ -36,6 +36,12 @@
         "Turn a goal into a plan you can review.",
         "Let an agent read your project, propose a plan, and carry out multi-step tasks. Review the plan, add follow-up instructions, and inspect tool output and code changes.",
         "Explore AI workflows"
+      ],
+      [
+        "Host mode",
+        "Leave the app. Keep the work running.",
+        "Keep terminals, tasks, and compatible coding Agents on your own computer. Reconnect to review output, respond to approvals, and continue the session.",
+        "Explore Host mode"
       ]
     ],
     "demoLabel": "See it in action",
@@ -130,8 +136,8 @@
         "Extend your workspace your way."
       ],
       [
-        "Host",
-        "Install and start a compatible NimoteHost on your remote machine, then connect over SSH to browse, search, pin, and resume terminal and Agent sessions. Host is optional and existing SSH workflows remain available."
+        "Host mode",
+        "Keep terminals, tasks, and compatible coding Agents on your own computer. Reconnect to review output, respond to approvals, and continue the session."
       ]
     ],
     "community": [
@@ -170,12 +176,18 @@
         "Project context and planning",
         "Execution timeline and follow-ups",
         "Reviewable results and code changes"
+      ],
+      [
+        "Tasks continue after client disconnection",
+        "Structured Agent conversations and approvals",
+        "Apache-2.0 source, self-hosting, and customization"
       ]
     ],
     "modeNotes": [
       "Language services and debugging need configured tools; some advanced features require Pro.",
       "Commands need SSH or supported Android Local Linux; multiple terminals require Pro.",
-      "Agent access is included in Early Access Pro. Bring your own API key; model usage is billed separately."
+      "Agent access is included in Early Access Pro. Bring your own API key; model usage is billed separately.",
+      "Requires a compatible NimoteHost on a reachable SSH computer. Host mode is coming in 2.4.1; Host and the computer must stay running."
     ],
     "screenshotLink": "View screenshot",
     "capabilityDetails": "More development tools and access details",
@@ -184,13 +196,15 @@
     "modeSummaries": [
       "Find your files, edit across tabs, and review Git diffs before committing a change.",
       "Use the tools on your development machine for builds, tests, and scripts over SSH. Supported Android devices can also use Local Linux.",
-      "Let an agent read the project, propose a plan, and help execute it. Inspect the tool output and code changes."
+      "Let an agent read the project, propose a plan, and help execute it. Inspect the tool output and code changes.",
+      "Keep terminals, tasks, and compatible coding Agents on your own computer. Reconnect to review output, respond to approvals, and continue the session."
     ],
     "heroTasks": "Quick fixes · Remote checks · Working with an agent",
     "modeTitles": [
       "Make the change.",
       "Use your own environment.",
-      "Move a task forward."
+      "Move a task forward.",
+      "Leave the app. Keep the work running."
     ],
     "gettingStartedTitle": "Your first workspace, in three steps.",
     "gettingStartedCopy": "Start with a project you already know. Add AI when you need it.",
@@ -228,7 +242,31 @@
         "Work in two terminals",
         "Run commands side by side on one screen."
       ]
-    ]
+    ],
+    "host": {
+      "label": "NimoteHost · Open source under Apache-2.0",
+      "title": "Your computer runs the work. You stay in control.",
+      "intro": "Start a build, test, or coding Agent from your phone. Return to its logs and conversation over SSH while NimoteHost keeps the work on your development computer.",
+      "benefits": [
+        [
+          "Keep work moving",
+          "Client disconnection leaves managed processes running. Reconnect to terminals, inspect results, and respond to Agent approvals."
+        ],
+        [
+          "Review how it works",
+          "The Host runtime, CLI, desktop manager, and SDK source are available under Apache-2.0. Inspect the code and build it yourself."
+        ],
+        [
+          "Make it your own",
+          "Modify the source, add integrations and plugins, and contribute fixes, Agent adapters, or documentation through pull requests."
+        ]
+      ],
+      "privacy": "Self-host on Linux, macOS, or Windows through your existing SSH connection. The authenticated Host API listens only on loopback; Host credentials stay on your computer. AI tools use their configured providers.",
+      "note": "Host mode is coming in 2.4.1. Host/OS restart interrupts processes; source and release access depend on repository publication.",
+      "guide": "Install and use Host",
+      "source": "Explore the source",
+      "contribute": "Contribute code"
+    }
   },
   "zh": {
     "badge": "Android 与 iOS 移动 IDE",
@@ -240,15 +278,15 @@
     "watch": "观看产品演示",
     "available": "Android · iPhone · iPad",
     "release": "查看最新更新",
-    "caption": "IDE、终端与 AI，围绕同一个项目。",
+    "caption": "IDE、终端、AI 与 Host，从手机连接到开发电脑。",
     "facts": [
       "本地文件与 SSH 项目",
       "Android 免 root Linux",
       "Git、GitHub 与可选 AI"
     ],
-    "eyebrow": "三种模式，一个项目",
+    "eyebrow": "四种模式，衔接开发的每一步",
     "heading": "从修改到验证，都在一个项目里。",
-    "description": "文件、命令与 AI 共用项目上下文。切换工作方式，不必重新开始。",
+    "description": "用 IDE 编辑项目，用终端运行命令，用 AI 协作开发，用 Host 托管远程工作，离开应用后任务仍可继续。",
     "features": [
       [
         "IDE 模式",
@@ -267,6 +305,12 @@
         "围绕目标，规划并推进任务。",
         "让 Agent 读取项目、提出计划并执行多步骤任务。审查计划、追加指令，再核对工具输出与代码改动。",
         "探索 AI 工作流"
+      ],
+      [
+        "Host 模式",
+        "离开应用，工作继续。",
+        "将终端、任务与兼容编程 Agent 托管在自己的电脑上。重新连接即可查看输出、处理审批，并回到原会话继续工作。",
+        "了解 Host 模式"
       ]
     ],
     "demoLabel": "真实操作演示",
@@ -361,8 +405,8 @@
         "按自己的工作方式扩展工作区。"
       ],
       [
-        "Host",
-        "先在远程机器安装并启动兼容的 NimoteHost，再通过 SSH 浏览、搜索、固定和恢复终端与 Agent 会话。Host 为可选功能，原有 SSH 工作流仍可使用。"
+        "Host 模式",
+        "将终端、任务与兼容编程 Agent 托管在自己的电脑上。重新连接即可查看输出、处理审批，并回到原会话继续工作。"
       ]
     ],
     "community": [
@@ -401,12 +445,18 @@
         "项目上下文与任务规划",
         "执行时间线与追加指令",
         "结果与代码改动可审查"
+      ],
+      [
+        "手机断线后任务继续运行",
+        "结构化 Agent 对话与权限审批",
+        "Apache-2.0 开源、自部署与自定义"
       ]
     ],
     "modeNotes": [
       "语言服务和调试需配置相应工具；部分进阶能力需 Pro。",
       "运行命令需 SSH 或受支持的 Android Local Linux；多终端需 Pro。",
-      "Agent 通过 Early Access Pro 开放。自备 API Key，模型费用另计。"
+      "Agent 通过 Early Access Pro 开放。自备 API Key，模型费用另计。",
+      "需在 SSH 可达的电脑上安装兼容 NimoteHost。Host 模式将随 2.4.1 提供；电脑和 Host 需要保持运行。"
     ],
     "screenshotLink": "查看真实界面",
     "capabilityDetails": "更多开发能力与使用条件",
@@ -415,13 +465,15 @@
     "modeSummaries": [
       "找到项目文件，多标签编辑代码，在提交前核对 Git Diff，让修改更清楚。",
       "通过 SSH 沿用开发主机的工具链，运行构建、测试与脚本；受支持的 Android 设备也可使用 Local Linux。",
-      "让 Agent 读取项目、提出计划并协助执行，工具输出和代码改动都可以检查。"
+      "让 Agent 读取项目、提出计划并协助执行，工具输出和代码改动都可以检查。",
+      "将终端、任务与兼容编程 Agent 托管在自己的电脑上。重新连接即可查看输出、处理审批，并回到原会话继续工作。"
     ],
     "heroTasks": "临时修复 · 远程检查 · Agent 协作",
     "modeTitles": [
       "看清项目，完成修改。",
       "沿用熟悉的开发环境。",
-      "让任务向前推进。"
+      "让任务向前推进。",
+      "离开应用，工作继续。"
     ],
     "gettingStartedTitle": "三步，开始你的第一个工作区。",
     "gettingStartedCopy": "从你熟悉的项目开始，需要时再配置 AI。",
@@ -459,7 +511,31 @@
         "使用双终端",
         "在同一屏幕并排运行命令。"
       ]
-    ]
+    ],
+    "host": {
+      "label": "NimoteHost · Apache-2.0 开源",
+      "title": "电脑持续运行，你随时掌握进展。",
+      "intro": "从手机发起构建、测试或编程 Agent，工作由开发电脑上的 NimoteHost 托管。通过 SSH 回来查看日志、接续对话，把碎片时间用在真正需要你决定的地方。",
+      "benefits": [
+        [
+          "工作持续推进",
+          "客户端断线不会结束托管进程。回来继续操作终端、查看结果，或处理 Agent 的权限请求。"
+        ],
+        [
+          "实现透明可查",
+          "Host 服务端、CLI、桌面管理器和 SDK 源码均以 Apache-2.0 开放，可自行阅读、审查和编译。"
+        ],
+        [
+          "按需修改与共建",
+          "可修改源码、接入自己的工具、开发插件，并通过 Pull Request 贡献修复、Agent 适配和文档。"
+        ]
+      ],
+      "privacy": "通过已有 SSH 连接，自部署到 Linux、macOS 或 Windows。Host API 仅监听本机回环地址并要求认证，Host 凭据留在自己的电脑上；AI 工具仍使用各自配置的模型服务。",
+      "note": "Host 模式将随 2.4.1 提供。Host 或系统重启会中断进程；源码与发布包入口以仓库公开状态为准。",
+      "guide": "安装并使用 Host",
+      "source": "查看开源代码",
+      "contribute": "参与代码贡献"
+    }
   },
   "ja": {
     "badge": "Android・iOS 向けモバイル IDE",
@@ -471,15 +547,15 @@
     "watch": "デモを見る",
     "available": "Android · iPhone · iPad",
     "release": "最新のアップデート",
-    "caption": "IDE・ターミナル・AI。同じプロジェクトで。",
+    "caption": "IDE・ターミナル・AI・Host。スマートフォンから開発パソコンへ。",
     "facts": [
       "ローカルファイルと SSH プロジェクト",
       "Android で root 不要の Linux",
       "Git・GitHub・オプションの AI"
     ],
-    "eyebrow": "3つのモード、1つのプロジェクト",
+    "eyebrow": "4つのモードで、開発をつなぐ",
     "heading": "変更から検証まで、ひとつのプロジェクトで。",
-    "description": "ファイル、コマンド、AI が同じプロジェクトを共有。作業モードを切り替えても、そのまま続けられます。",
+    "description": "IDE で編集、ターミナルで実行、AI と協働。Host では切断後もリモートの作業を続けられます。",
     "features": [
       [
         "IDE モード",
@@ -498,6 +574,12 @@
         "目標から計画、実行、確認へ。",
         "Agent がプロジェクトを読み、計画を提案して複数ステップの作業を実行。計画を確認し、追加指示を送り、出力と差分を検証できます。",
         "AI ワークフローを見る"
+      ],
+      [
+        "Host モード",
+        "アプリを離れても、作業は続く。",
+        "自分のパソコンでターミナル、タスク、対応 Agent を管理。再接続して出力を確認し、承認に応答して会話を続けられます。",
+        "Host モードを見る"
       ]
     ],
     "demoLabel": "操作デモ",
@@ -592,8 +674,8 @@
         "自分に合った開発環境に拡張。"
       ],
       [
-        "Host",
-        "リモートに対応する NimoteHost をインストールして起動し、SSH で接続すると、ターミナルや Agent セッションの検索、固定、再開ができます。Host は任意の機能です。"
+        "Host モード",
+        "自分のパソコンでターミナル、タスク、対応 Agent を管理。再接続して出力を確認し、承認に応答して会話を続けられます。"
       ]
     ],
     "community": [
@@ -632,12 +714,18 @@
         "プロジェクトの理解と計画",
         "実行履歴と追加指示",
         "結果とコード変更を確認"
+      ],
+      [
+        "切断後もタスクを継続",
+        "構造化された Agent 対話と承認",
+        "Apache-2.0・自分で導入・カスタマイズ"
       ]
     ],
     "modeNotes": [
       "言語サービスとデバッグはツール設定が必要です。一部の高度な機能は Pro 対象です。",
       "コマンド実行には SSH または対応 Android Local Linux が必要です。複数ターミナルは Pro 対象です。",
-      "Agent は Early Access Pro で提供。API キーは持ち込みで、モデル利用料は別途発生します。"
+      "Agent は Early Access Pro で提供。API キーは持ち込みで、モデル利用料は別途発生します。",
+      "SSH で到達できるパソコンに対応 NimoteHost が必要です。2.4.1 で提供予定。パソコンと Host は稼働を続ける必要があります。"
     ],
     "screenshotLink": "画面を拡大",
     "capabilityDetails": "開発機能と利用条件",
@@ -646,13 +734,15 @@
     "modeSummaries": [
       "ファイルを探し、複数タブで編集。コミット前に Git の差分を確認できます。",
       "SSH で開発マシンのツールを使い、ビルド、テスト、スクリプトを実行。対応 Android 端末では Local Linux も使えます。",
-      "エージェントがプロジェクトを読み、計画と実行を支援。ツール出力とコード変更を確認できます。"
+      "エージェントがプロジェクトを読み、計画と実行を支援。ツール出力とコード変更を確認できます。",
+      "自分のパソコンでターミナル、タスク、対応 Agent を管理。再接続して出力を確認し、承認に応答して会話を続けられます。"
     ],
     "heroTasks": "小さな修正 · リモートで確認 · エージェントと作業",
     "modeTitles": [
       "必要な変更に集中。",
       "いつもの開発環境を使う。",
-      "タスクを一歩先へ。"
+      "タスクを一歩先へ。",
+      "アプリを離れても、作業は続く。"
     ],
     "gettingStartedTitle": "3 ステップで最初のワークスペースを。",
     "gettingStartedCopy": "使い慣れたプロジェクトから始めて、AI は必要になったときに。",
@@ -690,7 +780,31 @@
         "2つのターミナルを使う",
         "1つの画面でコマンドを並べて実行。"
       ]
-    ]
+    ],
+    "host": {
+      "label": "NimoteHost · Apache-2.0 オープンソース",
+      "title": "パソコンで実行。進捗は手元で確認。",
+      "intro": "スマートフォンからビルド、テスト、Agent を開始。NimoteHost が開発パソコンで管理し、SSH でログや会話に戻れます。",
+      "benefits": [
+        [
+          "作業を継続",
+          "クライアントが切断しても管理対象のプロセスは続きます。再接続し、結果や Agent の承認を確認できます。"
+        ],
+        [
+          "実装を確認",
+          "Host ランタイム、CLI、デスクトップ管理画面、SDK のソースを Apache-2.0 で提供。コードを確認し、自分でビルドできます。"
+        ],
+        [
+          "変更して貢献",
+          "ソースの変更、独自ツールやプラグインの追加に対応。修正、Agent アダプター、文書を Pull Request で提案できます。"
+        ]
+      ],
+      "privacy": "Linux、macOS、Windows に自分で導入し、既存の SSH で接続します。認証付き API はループバックのみで待ち受け、Host 認証情報はパソコンに残ります。AI ツールは設定した提供元に接続します。",
+      "note": "Host モードは 2.4.1 で提供予定。Host/OS の再起動はプロセスを中断します。ソースと配布物へのアクセスはリポジトリの公開状況によります。",
+      "guide": "導入と使い方",
+      "source": "ソースを見る",
+      "contribute": "コードを貢献"
+    }
   },
   "ko": {
     "badge": "Android 및 iOS용 모바일 IDE",
@@ -702,15 +816,15 @@
     "watch": "데모 보기",
     "available": "Android · iPhone · iPad",
     "release": "최신 업데이트",
-    "caption": "IDE, 터미널, AI. 하나의 프로젝트에서.",
+    "caption": "IDE, 터미널, AI, Host. 휴대폰에서 개발 컴퓨터까지.",
     "facts": [
       "로컬 파일과 SSH 프로젝트",
       "Android에서 루팅 없이 Linux 실행",
       "Git, GitHub 및 선택형 AI"
     ],
-    "eyebrow": "세 가지 모드, 하나의 프로젝트",
+    "eyebrow": "네 가지 모드로 이어지는 개발",
     "heading": "수정부터 검증까지, 하나의 프로젝트에서.",
-    "description": "파일, 명령, AI가 같은 프로젝트를 공유합니다. 작업 모드를 바꿔도 이어서 진행하세요.",
+    "description": "IDE에서 편집하고 터미널에서 실행하며 AI와 협업하세요. Host는 연결을 끊은 뒤에도 원격 작업을 이어갑니다.",
     "features": [
       [
         "IDE 모드",
@@ -729,6 +843,12 @@
         "목표를 검토 가능한 계획으로 바꾸세요.",
         "Agent가 프로젝트를 읽고 계획을 제안하며 여러 단계의 작업을 수행합니다. 계획 검토, 추가 지시, 도구 출력과 코드 변경 확인을 이어가세요.",
         "AI 워크플로 살펴보기"
+      ],
+      [
+        "Host 모드",
+        "앱을 떠나도 작업은 계속됩니다.",
+        "내 컴퓨터에서 터미널, 작업과 호환 Agent를 관리합니다. 다시 연결해 출력을 확인하고 승인을 처리하며 세션을 이어가세요.",
+        "Host 모드 알아보기"
       ]
     ],
     "demoLabel": "실제 사용 데모",
@@ -823,8 +943,8 @@
         "작업 공간을 원하는 대로 확장하세요."
       ],
       [
-        "Host",
-        "원격 컴퓨터에 호환 NimoteHost를 설치하고 시작한 뒤 SSH로 연결해 터미널 및 Agent 세션을 검색, 고정하고 다시 시작합니다. Host는 선택 기능입니다."
+        "Host 모드",
+        "내 컴퓨터에서 터미널, 작업과 호환 Agent를 관리합니다. 다시 연결해 출력을 확인하고 승인을 처리하며 세션을 이어가세요."
       ]
     ],
     "community": [
@@ -863,12 +983,18 @@
         "프로젝트 맥락과 계획",
         "실행 기록과 추가 지시",
         "결과와 코드 변경 검토"
+      ],
+      [
+        "연결 해제 후 작업 지속",
+        "구조화된 Agent 대화 및 승인",
+        "Apache-2.0, 직접 배포 및 사용자 정의"
       ]
     ],
     "modeNotes": [
       "언어 서비스와 디버깅은 도구 설정이 필요하며 일부 고급 기능은 Pro에 포함됩니다.",
       "명령 실행에는 SSH 또는 지원되는 Android Local Linux가 필요하며 다중 터미널은 Pro 기능입니다.",
-      "Agent는 Early Access Pro에서 제공됩니다. API 키를 직접 준비하고 모델 사용료는 별도로 지불합니다."
+      "Agent는 Early Access Pro에서 제공됩니다. API 키를 직접 준비하고 모델 사용료는 별도로 지불합니다.",
+      "SSH로 접근 가능한 컴퓨터에 호환 NimoteHost가 필요합니다. 2.4.1 제공 예정이며 컴퓨터와 Host는 계속 실행되어야 합니다."
     ],
     "screenshotLink": "실제 화면 보기",
     "capabilityDetails": "추가 개발 기능과 사용 조건",
@@ -877,13 +1003,15 @@
     "modeSummaries": [
       "파일을 찾고 여러 탭에서 코드를 편집한 뒤 커밋 전에 Git Diff를 확인하세요.",
       "SSH로 개발 컴퓨터의 도구를 사용해 빌드, 테스트, 스크립트를 실행하세요. 지원되는 Android 기기에서는 Local Linux도 사용할 수 있습니다.",
-      "에이전트가 프로젝트를 읽고 계획과 실행을 돕습니다. 도구 출력과 코드 변경을 확인하세요."
+      "에이전트가 프로젝트를 읽고 계획과 실행을 돕습니다. 도구 출력과 코드 변경을 확인하세요.",
+      "내 컴퓨터에서 터미널, 작업과 호환 Agent를 관리합니다. 다시 연결해 출력을 확인하고 승인을 처리하며 세션을 이어가세요."
     ],
     "heroTasks": "작은 수정 · 원격 확인 · 에이전트와 협업",
     "modeTitles": [
       "필요한 수정을 완료하세요.",
       "익숙한 개발 환경을 사용하세요.",
-      "작업을 다음 단계로."
+      "작업을 다음 단계로.",
+      "앱을 떠나도 작업은 계속됩니다."
     ],
     "gettingStartedTitle": "세 단계로 첫 작업 공간을 시작하세요.",
     "gettingStartedCopy": "익숙한 프로젝트부터 시작하고 AI는 필요할 때 설정하세요.",
@@ -921,7 +1049,31 @@
         "두 터미널 사용",
         "한 화면에서 명령을 나란히 실행합니다."
       ]
-    ]
+    ],
+    "host": {
+      "label": "NimoteHost · Apache-2.0 오픈 소스",
+      "title": "컴퓨터에서 실행하고, 어디서든 확인하세요.",
+      "intro": "휴대폰에서 빌드, 테스트 또는 Agent를 시작하세요. NimoteHost가 개발 컴퓨터에서 관리하며 SSH로 로그와 대화에 돌아올 수 있습니다.",
+      "benefits": [
+        [
+          "작업 지속",
+          "클라이언트 연결이 끊겨도 관리 중인 프로세스는 계속됩니다. 다시 연결해 결과와 Agent 승인을 확인하세요."
+        ],
+        [
+          "투명한 구현",
+          "Host 런타임, CLI, 데스크톱 관리자와 SDK 소스는 Apache-2.0입니다. 코드를 검토하고 직접 빌드할 수 있습니다."
+        ],
+        [
+          "수정 및 기여",
+          "소스 수정, 도구 연동과 플러그인 개발을 지원합니다. 수정, Agent 어댑터와 문서를 Pull Request로 기여하세요."
+        ]
+      ],
+      "privacy": "Linux, macOS, Windows에 직접 배포하고 기존 SSH로 연결합니다. 인증 API는 루프백에서만 수신하고 Host 인증 정보는 컴퓨터에 남습니다. AI 도구는 설정한 제공자를 사용합니다.",
+      "note": "Host 모드는 2.4.1 제공 예정입니다. Host/OS 재시작은 프로세스를 중단하며 소스와 패키지는 저장소 공개 상태에 따라 제공됩니다.",
+      "guide": "설치 및 사용 안내",
+      "source": "소스 보기",
+      "contribute": "코드 기여"
+    }
   },
   "es": {
     "badge": "Un IDE móvil para Android e iOS",
@@ -933,15 +1085,15 @@
     "watch": "Ver la demo",
     "available": "Android · iPhone · iPad",
     "release": "Novedades",
-    "caption": "IDE, Terminal e IA. Un mismo proyecto.",
+    "caption": "IDE, Terminal, IA y Host. Del móvil a tu ordenador.",
     "facts": [
       "Archivos locales y proyectos SSH",
       "Linux sin root en Android",
       "Git, GitHub e IA opcional"
     ],
-    "eyebrow": "Tres modos. Un proyecto.",
+    "eyebrow": "Cuatro modos. Un flujo de desarrollo.",
     "heading": "Del cambio al resultado, en un proyecto.",
-    "description": "Tus archivos, comandos e IA comparten el proyecto. Cambia de modo sin empezar de nuevo.",
+    "description": "Edita en IDE, ejecuta en Terminal, colabora con IA o usa Host para mantener el trabajo remoto al desconectarte.",
     "features": [
       [
         "Modo IDE",
@@ -960,6 +1112,12 @@
         "Convierte un objetivo en un plan revisable.",
         "El agente lee el proyecto, propone un plan y ejecuta tareas de varios pasos. Revisa el plan, envía instrucciones adicionales y comprueba las salidas y los cambios.",
         "Explorar flujos de IA"
+      ],
+      [
+        "Modo Host",
+        "Sales de la app. El trabajo continúa.",
+        "Gestiona terminales, tareas y Agents compatibles en tu ordenador. Reconecta para revisar salidas, responder aprobaciones y continuar la sesión.",
+        "Explorar Host"
       ]
     ],
     "demoLabel": "Míralo en acción",
@@ -1054,8 +1212,8 @@
         "Amplía tu espacio a tu manera."
       ],
       [
-        "Host",
-        "Instala e inicia NimoteHost compatible en la máquina remota y conecta por SSH para buscar, fijar y retomar sesiones de terminal y Agent. Host es opcional."
+        "Modo Host",
+        "Gestiona terminales, tareas y Agents compatibles en tu ordenador. Reconecta para revisar salidas, responder aprobaciones y continuar la sesión."
       ]
     ],
     "community": [
@@ -1094,12 +1252,18 @@
         "Contexto del proyecto y planificación",
         "Cronología e instrucciones adicionales",
         "Resultados y cambios revisables"
+      ],
+      [
+        "Tareas activas tras desconectar",
+        "Conversaciones Agent y aprobaciones",
+        "Apache-2.0, alojamiento propio y personalización"
       ]
     ],
     "modeNotes": [
       "Los servicios de lenguaje y depuración necesitan herramientas configuradas; algunas funciones requieren Pro.",
       "Los comandos requieren SSH o Android Local Linux compatible; varios terminales requieren Pro.",
-      "El agente se ofrece en Early Access Pro. Usa tu propia clave API; el uso del modelo se factura aparte."
+      "El agente se ofrece en Early Access Pro. Usa tu propia clave API; el uso del modelo se factura aparte.",
+      "Requiere NimoteHost compatible en un equipo accesible por SSH. Llegará con 2.4.1; el equipo y Host deben seguir encendidos."
     ],
     "screenshotLink": "Ver captura",
     "capabilityDetails": "Más herramientas y condiciones de acceso",
@@ -1108,13 +1272,15 @@
     "modeSummaries": [
       "Encuentra archivos, edita en varias pestañas y revisa los diffs de Git antes de confirmar un cambio.",
       "Usa las herramientas de tu equipo para compilar, probar y ejecutar scripts por SSH. Los dispositivos Android compatibles también pueden usar Local Linux.",
-      "Deja que el agente lea el proyecto, proponga un plan y ayude a ejecutarlo. Revisa las salidas y los cambios."
+      "Deja que el agente lea el proyecto, proponga un plan y ayude a ejecutarlo. Revisa las salidas y los cambios.",
+      "Gestiona terminales, tareas y Agents compatibles en tu ordenador. Reconecta para revisar salidas, responder aprobaciones y continuar la sesión."
     ],
     "heroTasks": "Pequeños cambios · Revisiones remotas · Trabajo con agentes",
     "modeTitles": [
       "Haz el cambio.",
       "Usa tu propio entorno.",
-      "Avanza con la tarea."
+      "Avanza con la tarea.",
+      "Sales de la app. El trabajo continúa."
     ],
     "gettingStartedTitle": "Tu primer espacio de trabajo en tres pasos.",
     "gettingStartedCopy": "Empieza con un proyecto que conozcas. Configura la IA cuando la necesites.",
@@ -1152,6 +1318,30 @@
         "Usa dos terminales",
         "Ejecuta comandos en paralelo en una pantalla."
       ]
-    ]
+    ],
+    "host": {
+      "label": "NimoteHost · Código abierto Apache-2.0",
+      "title": "Tu ordenador ejecuta. Tú mantienes el control.",
+      "intro": "Inicia una compilación, prueba o Agent desde el móvil. NimoteHost lo gestiona en tu ordenador y puedes volver a los registros y la conversación por SSH.",
+      "benefits": [
+        [
+          "Trabajo continuo",
+          "Los procesos gestionados continúan al desconectar el cliente. Reconecta para revisar resultados y responder aprobaciones del Agent."
+        ],
+        [
+          "Implementación transparente",
+          "El código del servicio Host, la CLI, el gestor de escritorio y el SDK se ofrece bajo Apache-2.0. Revísalo y compílalo por tu cuenta."
+        ],
+        [
+          "Personaliza y contribuye",
+          "Modifica el código, integra herramientas y crea plugins. Aporta correcciones, adaptadores de Agents o documentación mediante pull requests."
+        ]
+      ],
+      "privacy": "Despliega en Linux, macOS o Windows usando SSH. La API autenticada solo escucha en loopback y las credenciales Host permanecen en el equipo. Las herramientas de IA usan sus proveedores configurados.",
+      "note": "El modo Host llegará con 2.4.1. Reiniciar Host o el sistema interrumpe los procesos. El acceso al código y paquetes depende de la publicación del repositorio.",
+      "guide": "Instalación y uso",
+      "source": "Explorar el código",
+      "contribute": "Contribuir código"
+    }
   }
 }

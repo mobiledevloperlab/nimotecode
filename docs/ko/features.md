@@ -5,9 +5,11 @@ description: 휴대폰에서 프로젝트를 열고 개발 컴퓨터에 연결�
 
 # NimoteCode 기능
 
-휴대폰과 태블릿에서 코드 편집, 명령 실행, Git 검토, AI 협업을 진행하세요. IDE, 터미널, AI 모드를 전환해도 프로젝트와 Explorer 상태가 유지됩니다.
+**IDE, 터미널, AI, Host 네 가지 모드**로 편집, 실행, Agent 협업과 컴퓨터 작업 재연결을 선택하세요. Host는 NimoteHost를 별도로 설치해야 합니다. IDE, 터미널, AI 전환은 프로젝트와 Explorer 상태를 유지합니다.
 
 <WorkspaceModes />
+
+**Host: 컴퓨터에서 실행하고 휴대폰에서 확인하세요.** 연결 해제 후 터미널, 작업과 호환 Agent를 유지하고 돌아와 출력, 승인, 검증과 diff를 확인합니다. NimoteHost 전체 소스는 Apache-2.0이며 검토, 빌드, 수정과 기여가 가능합니다. [기능 및 배포](/ko/docs/host) · [소스와 기여](https://github.com/mobiledevloperlab/nimotehost). Host 모드는 2.4.1 제공 예정이며 컴퓨터와 Host는 계속 실행되어야 합니다.
 
 ## NimoteCode 2.4.0 · Host, 프로젝트 작업 및 원격 안정성
 

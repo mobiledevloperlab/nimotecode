@@ -67,6 +67,20 @@ const formatReviewDate = (date: string) => new Intl.DateTimeFormat(locale.value,
 
     <section class="product-container product-section" aria-labelledby="workflow-title">
       <WorkspaceModes />
+      <section class="product-host" aria-labelledby="host-title">
+        <div class="product-section-heading"><div><p class="product-eyebrow">{{ copy.host.label }}</p><h2 id="host-title">{{ copy.host.title }}</h2></div></div>
+        <p class="product-host-intro">{{ copy.host.intro }}</p>
+        <div class="product-host-benefits">
+          <article v-for="benefit in copy.host.benefits" :key="benefit[0]"><h3>{{ benefit[0] }}</h3><p>{{ benefit[1] }}</p></article>
+        </div>
+        <p class="product-host-privacy">{{ copy.host.privacy }}</p>
+        <div class="product-host-links">
+          <a class="product-text-link" :href="local('/docs/host')">{{ copy.host.guide }} <span aria-hidden="true">→</span></a>
+          <a class="product-text-link" href="https://github.com/mobiledevloperlab/nimotehost">{{ copy.host.source }} <span aria-hidden="true">↗</span></a>
+          <a class="product-text-link" href="https://github.com/mobiledevloperlab/nimotehost/blob/master/CONTRIBUTING.md">{{ copy.host.contribute }} <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="product-host-note">{{ copy.host.note }}</p>
+      </section>
       <div id="product-demo" class="product-demo-section">
         <details class="product-demo-disclosure" :open="demoOpen" @toggle="demoOpen = ($event.target as HTMLDetailsElement).open">
           <summary class="product-demo-heading"><h2><span class="product-eyebrow">{{ copy.demoLabel }}</span><span class="product-demo-title">{{ copy.demoTitle }}</span></h2><span class="product-disclosure-icon" aria-hidden="true"><MockIcon name="down" /></span></summary>

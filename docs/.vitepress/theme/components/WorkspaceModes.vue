@@ -10,6 +10,8 @@ const locale = computed(() => {
   return key in translations ? key as keyof typeof translations : 'en'
 })
 const copy = computed(() => translations[locale.value])
+const modePaths = ['editor', 'terminal', 'ai', 'host']
+const modeLink = (index: number) => `${locale.value === 'en' ? '' : `/${locale.value}`}/docs/${modePaths[index]}`
 </script>
 
 <template>
@@ -23,6 +25,7 @@ const copy = computed(() => translations[locale.value])
         <p class="workspace-mode-label"><span>0{{ index + 1 }}</span>{{ feature[0] }}</p>
         <h3>{{ copy.modeTitles[index] }}</h3>
         <p>{{ copy.modeSummaries[index] }}</p>
+        <a class="workspace-mode-link" :href="modeLink(index)">{{ feature[3] }} <span aria-hidden="true">→</span></a>
       </article>
     </div>
   </div>

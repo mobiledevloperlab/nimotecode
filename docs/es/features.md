@@ -5,9 +5,11 @@ description: Abre tu proyecto desde el móvil y conéctate a tu ordenador para e
 
 # Funciones de NimoteCode
 
-Edita código, ejecuta herramientas, revisa cambios de Git y trabaja con IA desde el móvil o la tablet. Los modos IDE, Terminal e IA conservan el proyecto y el estado de Explorer.
+Elige entre **cuatro modos: IDE, Terminal, IA y Host** para editar, ejecutar, colaborar con un Agent o volver al trabajo gestionado en tu ordenador. Host requiere instalar NimoteHost. IDE, Terminal e IA mantienen el proyecto y Explorer al cambiar.
 
 <WorkspaceModes />
+
+**Host: tu ordenador ejecuta y tú revisas el progreso.** Mantén terminales, tareas y Agents compatibles tras desconectar y vuelve para revisar salidas, aprobaciones, verificaciones y diffs. Todo el código de NimoteHost se ofrece bajo Apache-2.0 para revisar, compilar, modificar y contribuir. [Capacidades y despliegue](/es/docs/host) · [Código y contribuciones](https://github.com/mobiledevloperlab/nimotehost). El modo Host llegará con 2.4.1; el ordenador y Host deben seguir activos.
 
 ## NimoteCode 2.4.0 · Host, tareas de proyecto y fiabilidad remota
 

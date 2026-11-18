@@ -98,6 +98,17 @@
 .product-review-card figcaption { display: flex; justify-content: space-between; align-items: end; flex-wrap: wrap; gap: 12px; margin-top: auto; font-size: 12px; }
 .product-review-card time { display: block; margin-top: 4px; color: var(--nimote-text-secondary); }
 .product-review-card figcaption a { color: var(--nimote-link); }
+.product-host { margin-top: var(--nimote-section-space); }
+.vp-doc .product-home :is(.product-host-intro,.product-host-privacy) { max-width: 760px; margin-inline: auto; color: var(--nimote-text-secondary); text-align: center; }
+.product-host-benefits { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 32px; margin-block: 32px; }
+.product-host-benefits > article { padding-top: 20px; border-top: 1px solid var(--nimote-border); }
+.vp-doc .product-home .product-host-benefits h3 { font-size: 18px; }
+.vp-doc .product-home .product-host-benefits p { margin-top: 10px; color: var(--nimote-text-secondary); font-size: 14px; }
+.product-host-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 28px; margin-top: 16px; }
+.vp-doc .product-home .product-host-note { margin-top: 12px; text-align: center; color: var(--nimote-text-secondary); font-size: 12px; }
+@media (max-width: 600px) {
+  .product-host-benefits { grid-template-columns: 1fr; gap: 24px; }
+}
 .product-getting-started { padding-bottom: var(--nimote-section-space); }
 .vp-doc .product-home .product-getting-started-copy { max-width: 640px; margin-inline: auto; text-align: center; color: var(--nimote-text-secondary); }
 .vp-doc .product-home .product-start-steps { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 40px; list-style: none; margin-top: 36px; }

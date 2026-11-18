@@ -5,7 +5,7 @@ description: Open your project on mobile, connect to your development machine, t
 
 # NimoteCode features
 
-Edit code, run project tools, review Git changes, and work with AI from your phone or tablet. Switch between IDE, Terminal, and AI modes while keeping the same project and Explorer state.
+Choose **IDE, Terminal, AI, or Host** for the task at hand: edit files, run project tools, collaborate with an Agent, or return to work managed on your computer. Host mode uses a separately installed NimoteHost; IDE, Terminal, and AI retain the project and Explorer state when switching.
 
 <div class="guide-actions">
 
@@ -14,6 +14,8 @@ Edit code, run project tools, review Git changes, and work with AI from your pho
 </div>
 
 <WorkspaceModes />
+
+**Host mode: your computer runs the work.** Keep managed terminals, tasks, and compatible Agents running after client disconnection; reconnect to inspect output, respond to approvals, and review verification and diffs. NimoteHost offers its complete source under Apache-2.0: inspect it, build it yourself, customize it, and contribute improvements. [Explore capabilities and deployment](/docs/host) · [Source and contribution guide](https://github.com/mobiledevloperlab/nimotehost). Host mode is included in the upcoming 2.4.1; the computer and Host must remain running.
 
 ## NimoteCode 2.4.0 · Host workspace, project tasks, and remote reliability
 

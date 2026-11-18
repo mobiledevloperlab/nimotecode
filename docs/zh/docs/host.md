@@ -1,9 +1,9 @@
 ---
-title: Host 模式使用教程：安装 NimoteHost，连接终端与 Agent | NimoteCode
-description: 从发布包或源码在 Linux、macOS、Windows 部署 NimoteHost，通过 SSH 托管终端、任务与编程 Agent，了解桌面管理、服务维护、升级和卸载。
+title: "Host 模式：开源远程任务与编程 Agent 工作台 | NimoteCode"
+description: "用 NimoteHost 托管终端、任务与编程 Agent，手机断线后工作继续。了解功能价值、Apache-2.0 完整源码、自定义与贡献，以及安装部署和服务维护。"
 ---
 
-# 用 Host 模式继续远程任务
+# Host 模式：开源的远程任务与 Agent 工作台
 
 如果你想在手机上发起任务，离开应用一会儿，再回来查看结果，可以用 Host 模式。任务和终端由开发电脑上的 NimoteHost 托管，手机通过 SSH 查看输出、输入命令或回复 Agent。
 
@@ -11,7 +11,39 @@ description: 从发布包或源码在 Linux、macOS、Windows 部署 NimoteHost�
 
 ## NimoteCode 和 NimoteHost 分别做什么？
 
-**NimoteCode 是操作客户端，NimoteHost 在电脑上执行和托管工作。** NimoteHost 提供独立 CLI 和可选的桌面管理器，支持 Linux、macOS、Windows，计划以 Apache-2.0 许可证在 [NimoteHost 仓库](https://github.com/mobiledevloperlab/nimotehost)开源。NimoteCode 应用仍为商业闭源软件。Host 也可独立运行，通过 RPC、Go 客户端包和按需启用的 MCP 接口接入其他工具。
+**NimoteCode 是操作客户端，NimoteHost 在电脑上执行和托管工作。** NimoteHost 提供独立 CLI 和可选的桌面管理器，支持 Linux、macOS、Windows，以 Apache-2.0 许可证在 [NimoteHost 仓库](https://github.com/mobiledevloperlab/nimotehost)开放完整源码。NimoteCode 应用仍为商业闭源软件。Host 也可独立运行，通过 RPC、Go 客户端包和按需启用的 MCP 接口接入其他工具。
+
+连接关系是：**NimoteCode → 已有 SSH 连接 → NimoteHost → 项目工具与 Agent**。无需额外的 Nimote 账号、公网中继或 Host 入站端口；本地 API 需要认证，Host 凭据保留在电脑上。命令默认以 Host 所属的系统账号权限运行；需要隔离用户或访问范围时，应使用独立系统账号。
+
+| 选择哪种方式 | 适合什么情况 |
+| --- | --- |
+| 普通 SSH 工作区 | 编辑远程文件、使用终端和查看 Git，无需安装 Host。 |
+| Host 模式 | 手机断线后继续运行任务，回来查看输出，管理兼容 Agent 的结构化对话和审批。 |
+| Host CLI | 在服务器部署，或通过命令行管理后台服务，不需要桌面环境。 |
+| Host 桌面包 | 在电脑上管理服务、会话、设备、设置和诊断；已包含 CLI。 |
+
+仓库和发布包将在公开发布后可用。如果 GitHub 显示 404，或没有对应安装包，请使用维护者提供的完整预览包、源码，或等待发布。下面给出的是部署流程，不代表公开下载已经开放。
+
+## Host 能做什么，能为你带来什么？
+
+Host 将开发电脑变成可从手机随时回来的工作台。项目和工具链继续留在熟悉的电脑上，执行由电脑负责，你用 NimoteCode 查看进展、审查结果、处理需要自己决定的事项。
+
+| 能力 | 带来的价值 |
+| --- | --- |
+| 托管终端与任务 | 启动构建、测试、脚本或交互 Shell；客户端断线不会结束托管进程，重新连接即可查看保留的输出并继续操作。 |
+| 结构化 Agent 协作 | 使用兼容的 Codex、Claude Code、OpenCode，阅读对话和工具结果，回复权限请求，并在支持时向执行中的 Agent 追加指令。 |
+| 会话与任务收件箱 | 搜索、筛选、固定工作，集中找到待审批、执行失败和完成待审的任务，减少逐个打开会话确认的操作。 |
+| 验证与代码审查 | 检查实际测试记录、退出码和 Diff，再决定是否接受结果；主机支持时，可将 GitHub Issue 派发给 Agent，并选择代码发布策略。 |
+| 沿用已有开发环境 | 在 Linux、macOS、Windows 上直接使用项目现有文件和工具链；服务器选 CLI，桌面选管理器，两者操作同一个 Host 服务。 |
+| 开源与按需定制 | 审查 Host 完整源码、自行编译、修改行为、扩展集成，并在 Apache-2.0 许可下贡献改进。 |
+
+例如，离开电脑前从手机启动项目测试，稍后回来查看退出码；让 Agent 完成一处明确的修复，途中处理权限请求，完成后审查 Diff 和验证记录。执行一直发生在开发电脑上，手机负责呈现进展和操作入口。
+
+Host 和托管进程需要保持运行，Host 或系统重启不会恢复原进程。Agent、收件箱、验证、Issue 和插件入口取决于所连接主机及已安装工具。先在运行项目的电脑部署 Host，再连接手机使用。
+
+## NimoteCode 和 NimoteHost 分别做什么？
+
+**NimoteCode 是操作客户端，NimoteHost 在电脑上执行和托管工作。** NimoteHost 提供独立 CLI 和可选的桌面管理器，支持 Linux、macOS、Windows，以 Apache-2.0 许可证在 [NimoteHost 仓库](https://github.com/mobiledevloperlab/nimotehost)开放完整源码。NimoteCode 应用仍为商业闭源软件。Host 也可独立运行，通过 RPC、Go 客户端包和按需启用的 MCP 接口接入其他工具。
 
 连接关系是：**NimoteCode → 已有 SSH 连接 → NimoteHost → 项目工具与 Agent**。无需额外的 Nimote 账号、公网中继或 Host 入站端口；本地 API 需要认证，Host 凭据保留在电脑上。命令默认以 Host 所属的系统账号权限运行；需要隔离用户或访问范围时，应使用独立系统账号。
 
@@ -34,6 +66,23 @@ description: 从发布包或源码在 Linux、macOS、Windows 部署 NimoteHost�
 这适合需要从手机查看构建、测试或 Agent 工作进度的人。Host 和进程必须保持运行：电脑睡眠、用户注销或 Host 重启可能中断工作，重启后也不会恢复原进程。Agent、任务收件箱和插件等入口取决于主机提供的能力。
 
 本文按 2.4.0 的实现编写。NimoteHost 目前是开发预览版，Agent、任务收件箱和插件入口会随主机能力变化。下面的图片来自连接的 Android 真机，使用英文界面和浅色主题。截图时应用包标记为 2.3.1（Build 64），Host 报告 2.4.0 本地构建；你的按钮文字和位置可能略有不同。
+
+## 完整开源：可审查、可自定义、可参与贡献
+
+**NimoteHost 完整源码采用 Apache-2.0 许可证开放**，范围包括 Host 服务端、CLI、桌面管理器与集成 SDK。你可以检查远程执行、凭据处理和会话持久化的实现，自行编译部署，并按自己的开发环境修改。该许可适用于 NimoteHost；NimoteCode 客户端仍是商业闭源软件。
+
+- **查看与自行构建：** 阅读源码和依赖，核对许可证声明，按下文从源码构建，无需只依赖预编译包。
+- **修改与自定义：** Fork 仓库，调整 Host 行为、桌面界面或部署方式，维护自己的构建；与 App 连接时保持协议和能力协商兼容。
+- **扩展工作流：** 使用 `pkg/pluginsdk` 开发社区插件，通过 RPC、MCP 接入自己的工具，或用 `pkg/hostclient` 编写 Go 集成。MCP 默认只读，写操作需明确启用。
+- **贡献代码与文档：** 通过 Issue 反馈可复现问题或提出方案，通过 Pull Request 贡献修复、Agent 适配、插件、翻译和文档；较大的协议或架构调整先讨论，再按贡献指南完成检查。
+
+[浏览完整源码](https://github.com/mobiledevloperlab/nimotehost) · [Apache-2.0 许可证](https://github.com/mobiledevloperlab/nimotehost/blob/master/LICENSE) · [贡献指南](https://github.com/mobiledevloperlab/nimotehost/blob/master/CONTRIBUTING.zh-CN.md) · [插件 SDK](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/plugin-system/plugin-sdk.md)
+
+### 实现透明，访问由你掌握
+
+Host 沿用已有的 SSH 认证连接，本地 HTTP API 仅监听回环地址并要求认证；Host 凭据保留在电脑上，无需额外的 Nimote 中继或公开 API 端口。你决定服务部署在哪里，也可以审查和修改处理访问的代码。
+
+命令默认使用 Host 所属系统账号的权限，应按项目需要分配账号、审查 Agent 与插件权限，并保持依赖更新。Agent 的提示词与项目上下文可能发送给该 Agent 配置的模型服务商。开源让安全审查可验证，并不等于保证零漏洞或已经完成独立安全审计；漏洞反馈请按[安全政策与私密报告流程](https://github.com/mobiledevloperlab/nimotehost/blob/master/SECURITY.zh-CN.md)处理。
 
 ## 先准备好这几样
 

@@ -27,7 +27,7 @@
   <a href="#latest-release">2.4.1 preview</a>
 </sub></p>
 
-<p align="center"><sub>Free to start. AI setup is optional.<br>Commercial, closed-source app · NimoteHost companion planned as Apache-2.0 open source</sub></p>
+<p align="center"><sub>Free to start. AI setup is optional.<br>Commercial, closed-source app · NimoteHost companion: full Apache-2.0 source</sub></p>
 
 <p align="center">
   <img src="docs/public/screenshots/nimote-pro.webp" alt="NimoteCode code editor, project explorer and AI workspace on a tablet and phone" width="1000">
@@ -58,7 +58,7 @@ NimoteCode brings a code editor, SSH terminal, Git review and AI workflows to An
 ## Feature highlights
 
 - **Keep remote work running:** optional [NimoteHost](https://nimotecode.com/docs/host) adds managed terminals, tasks, and compatible Agent sessions you can return to after disconnecting; planned for 2.4.1.
-- **Choose your view:** switch between IDE, Terminal and AI modes while keeping your project and Explorer state.
+- **Choose your view:** choose IDE, Terminal, AI, or Host. IDE, Terminal, and AI keep your project and Explorer state; Host connects to work managed by NimoteHost.
 - **Develop with containers:** manage Docker and Compose on an SSH host, or create and rebuild a Dev Container from `devcontainer.json`.
 - **Edit and navigate:** use the same Nimote Editor on phone, tablet, and desktop; browse and search project files, use split editor panes, and preview Markdown and web output.
 - **Run and inspect:** use the terminal and project tasks in a compatible workspace, with mobile extra keys, terminal focus mode, configurable color palettes, and SOCKS5 or HTTP CONNECT SSH proxies when needed.
@@ -80,11 +80,13 @@ Start a build or coding Agent from your phone, leave the app, and return to the 
 - **Track results:** search and pin sessions, inspect the task inbox, verification records, and diffs, and dispatch GitHub Issues when supported by the connected Host.
 - **Deploy and extend it yourself:** choose CLI or desktop bundles, build from source, or integrate through RPC, the Go client package, MCP, and community plugins.
 
-**Host mode is part of the upcoming 2.4.1 release.** NimoteHost is planned for open-source release under **Apache-2.0** at [mobiledevloperlab/nimotehost](https://github.com/mobiledevloperlab/nimotehost). NimoteCode remains commercial and closed source. Source and binary downloads will be available when published; a 404 or empty release list means public installation is not yet available.
+**Host mode is part of the upcoming 2.4.1 release.** NimoteHost is fully open source under **Apache-2.0** at [mobiledevloperlab/nimotehost](https://github.com/mobiledevloperlab/nimotehost). NimoteCode remains commercial and closed source. Source and binary downloads will be available when published; a 404 or empty release list means public installation is not yet available.
 
 To get started, install a complete compatible Host bundle on the development computer, check `status` and `capabilities`, then select **Host → SSH connections** in NimoteCode using the same OS account. Ordinary SSH workspaces remain available without Host.
 
 Host and the computer must stay running: client disconnection detaches, while Host/OS restart interrupts processes. Agent tools, authentication, and model usage are configured separately. Available controls depend on both app and Host versions.
+
+**Inspect, customize, contribute:** read and build the full Host runtime, CLI, desktop manager, and SDK source; fork it to adapt your deployment or integrate your tools. Submit fixes, Agent adapters, translations, and documentation through the [Host contribution guide](https://github.com/mobiledevloperlab/nimotehost/blob/master/CONTRIBUTING.md). SSH authentication, a loopback-only authenticated API, and local Host credentials keep access under your control; model tools still use their configured providers.
 
 [**Installation, deployment, usage, and troubleshooting →**](https://nimotecode.com/docs/host) · [Host source and license](https://github.com/mobiledevloperlab/nimotehost) · [Release downloads](https://github.com/mobiledevloperlab/nimotehost/releases)
 
@@ -162,7 +164,7 @@ Store availability and release timing may differ by platform and region. See [do
 
 **Is AI included?** AI setup is optional. Bring your own provider and API key; model usage may incur separate charges. The built-in Agent is an Early Access feature.
 
-**Is NimoteCode open source?** The app is commercial and closed source. This repository contains documentation and resources; see [About this repository](#about-this-repository) for licensing details. The separate [NimoteHost companion](https://github.com/mobiledevloperlab/nimotehost) is planned for Apache-2.0 open-source release; that license applies to Host, not the NimoteCode app.
+**Is NimoteCode open source?** The app is commercial and closed source. This repository contains documentation and resources; see [About this repository](#about-this-repository) for licensing details. The separate [NimoteHost companion](https://github.com/mobiledevloperlab/nimotehost) provides its complete source under Apache-2.0; that license applies to Host, not the NimoteCode app.
 
 [More answers in the FAQ](https://nimotecode.com/docs/faq).
 
@@ -240,7 +242,7 @@ Share a bug, ask a question or suggest a workflow you would like to see supporte
 
 ## About this repository
 
-The separate [NimoteHost companion](https://github.com/mobiledevloperlab/nimotehost) is planned for Apache-2.0 open-source release; that license applies to Host, not the NimoteCode app.
+The separate [NimoteHost companion](https://github.com/mobiledevloperlab/nimotehost) provides its complete source under Apache-2.0; that license applies to Host, not the NimoteCode app.
 
 NimoteCode is a commercial, closed-source application. This repository contains official documentation, tutorials, workflow examples and release notes. The application source code is not published here. Linux presets are maintained in a separate repository, and bug reports use the issue tracker linked above.
 

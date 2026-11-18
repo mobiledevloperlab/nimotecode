@@ -8,6 +8,10 @@ for (const [locale, content] of Object.entries(copy)) {
   for (const key of ['features', 'capabilities']) {
     assert.equal(content[key].length, copy.en[key].length, `${locale}: ${key} out of sync`)
   }
+  for (const key of ['features', 'modeTitles', 'modeSummaries', 'modeBenefits', 'modeNotes']) {
+    assert.equal(content[key].length, 4, `${locale}: ${key} must describe IDE, Terminal, AI, and Host`)
+  }
+  assert.ok(content.features[3][0].includes('Host'), `${locale}: fourth mode must be Host`)
   const path = locale === 'en' ? 'index.html' : `${locale}/index.html`
   const html = readFileSync(`docs/.vitepress/dist/${path}`, 'utf8')
   const schemas = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
@@ -16,7 +20,7 @@ for (const [locale, content] of Object.entries(copy)) {
   assert.equal((html.match(/<h1(?:\s|>)/g) || []).length, 1, `${path}: one main heading`)
   const app = schemas.find(item => item['@type'] === 'SoftwareApplication')
   assert.ok(app, `${path}: app identity missing`)
-  assert.deepEqual(app.featureList, [...content.facts, ...content.capabilities.map(([name]) => name), content.capabilityNote, content.byok], `${path}: app capabilities differ from localized content`)
+  assert.deepEqual(app.featureList, [...content.facts, ...content.features.map(([name]) => name), ...content.capabilities.map(([name]) => name), content.host.label, content.capabilityNote, content.byok], `${path}: app capabilities differ from localized content`)
   assert.ok(!schemas.some(item => ['TechArticle', 'BlogPosting'].includes(item['@type'])), `${path}: homepage classified as article`)
   assert.ok(!schemas.some(item => item['@type'] === 'FAQPage'), `${path}: removed homepage FAQ schema remains`)
   assert.ok(!html.includes('id="download-title"'), `${path}: repeated final download pitch must not return`)
@@ -28,6 +32,16 @@ for (const [locale, content] of Object.entries(copy)) {
   assert.ok(html.includes('app-showcase') && html.includes('mock-phone') && html.includes('mock-tablet'), `${path}: original product mock must remain`)
   assert.ok(html.includes('workspace-mode-descriptions') && !html.includes('workspace-mode-picker'), `${path}: modes must be static descriptions`)
   const modes = html.slice(html.indexOf('class="workspace-modes"'), html.indexOf('id="product-demo"'))
+  assert.equal((modes.match(/class="workspace-mode-description"/g) || []).length, 4, `${path}: all four modes must be rendered`)
+  for (const guide of ['editor', 'terminal', 'ai', 'host']) {
+    const prefix = locale === 'en' ? '' : `/${locale}`
+    assert.ok(modes.includes(`href="${prefix}/docs/${guide}"`), `${path}: localized ${guide} guide missing from modes`)
+  }
+  assert.ok(html.includes('aria-labelledby="host-title"'), `${path}: Host section missing`)
+  for (const text of [content.eyebrow, content.caption, ...Object.values(content.host).filter(value => typeof value === 'string'), ...content.host.benefits.flat()]) {
+    assert.ok(body.includes(text), `${path}: Host value or open-source copy missing: ${text}`)
+  }
+  assert.ok(modes.includes('https://github.com/mobiledevloperlab/nimotehost/blob/master/CONTRIBUTING.md'), `${path}: Host contribution link missing`)
   assert.ok(!/<(?:img|picture|button)(?:\s|>)/.test(modes), `${path}: workspace modes must stay text-only without image switching`)
   assert.ok(!html.includes('/images/home/'), `${path}: unapproved homepage screenshots must not return`)
   assert.ok(/<details[^>]*class="product-demo-disclosure"[^>]*\sopen(?:\s|>)/.test(html), `${path}: demo must be expanded by default`)

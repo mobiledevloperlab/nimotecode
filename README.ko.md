@@ -12,7 +12,7 @@
 
 <p align="center"><sub><a href="#workspace-demo">데모</a> · <a href="#nimotehost">NimoteHost</a> · <a href="https://nimotecode.com/ko/docs/quick-start">빠른 시작</a> · <a href="https://nimotecode.com/ko/releases/2.4.1">릴리스 노트</a></sub></p>
 
-<p align="center"><sub>무료로 시작할 수 있으며 AI 설정은 선택 사항입니다. 상용 비공개 소스 앱 · NimoteHost는 Apache-2.0 공개 예정</sub></p>
+<p align="center"><sub>무료로 시작할 수 있으며 AI 설정은 선택 사항입니다. 상용 비공개 소스 앱 · NimoteHost는 Apache-2.0 전체 소스 제공</sub></p>
 
 <p align="center"><img src="docs/public/screenshots/nimote-pro.webp" alt="NimoteCode mobile AI Agent and tablet SSH workspace" width="1000"></p>
 
@@ -37,7 +37,7 @@ Local Linux는 지원되는 Android 8 이상 ARM64 / x86_64 기기가 필요하�
 ## 핵심 기능
 
 - **원격 작업 지속:** 선택형 [NimoteHost](https://nimotecode.com/ko/docs/host)로 터미널, 작업과 호환 Agent를 관리하고 연결 해제 후 돌아옵니다. 2.4.1 제공 예정입니다.
-- **작업 공간 전환:** 프로젝트와 탐색기 상태를 유지하며 IDE, 터미널, AI 모드를 전환합니다.
+- **작업 공간 전환:** IDE, 터미널, AI, Host를 선택하세요. IDE, 터미널, AI는 프로젝트 상태를 유지하고 Host는 NimoteHost 관리 작업에 연결합니다.
 - **컨테이너 개발:** SSH 호스트에서 Docker와 Compose를 관리하고 `devcontainer.json`으로 Dev Container를 만들거나 다시 빌드합니다.
 - **편집 및 탐색:** 휴대폰, 태블릿, 데스크톱에서 Nimote Editor를 사용하고, 파일 검색, 분할 편집기, Markdown 및 웹 미리 보기를 이용하세요.
 - **실행 및 검증:** 터미널, 프로젝트 작업, 모바일 추가 키, 집중 모드, 색상표 및 SOCKS5 / HTTP CONNECT SSH 프록시를 사용하세요.
@@ -59,9 +59,11 @@ Local Linux는 지원되는 Android 8 이상 ARM64 / x86_64 기기가 필요하�
 - 세션 검색과 고정, 작업 수신함, 검증 기록과 diff 확인, 지원되는 Host의 GitHub Issue 작업 전달을 사용합니다.
 - CLI/GUI 패키지 배포, 소스 빌드, RPC, Go 클라이언트, MCP와 커뮤니티 플러그인 연동을 지원합니다.
 
-Host 모드는 **2.4.1 출시 예정 기능**입니다. NimoteHost는 [별도 저장소](https://github.com/mobiledevloperlab/nimotehost)에서 **Apache-2.0** 오픈 소스로 공개할 예정이며 NimoteCode 앱은 상용 비공개 소스로 유지됩니다. GitHub가 404를 표시하거나 패키지가 없으면 아직 공개 다운로드가 제공되지 않은 상태입니다.
+Host 모드는 **2.4.1 출시 예정 기능**입니다. NimoteHost는 [별도 저장소](https://github.com/mobiledevloperlab/nimotehost)에서 전체 소스를 **Apache-2.0**으로 제공하며 NimoteCode 앱은 상용 비공개 소스로 유지됩니다. GitHub가 404를 표시하거나 패키지가 없으면 아직 공개 다운로드가 제공되지 않은 상태입니다.
 
 컴퓨터에 전체 패키지를 설치하고 `status`와 `capabilities`를 확인한 뒤 앱의 **Host → SSH connections**에서 같은 OS 계정으로 연결하세요. 일반 SSH에는 Host가 필요 없습니다. Host와 컴퓨터는 계속 실행되어야 하며 Host/OS 재시작은 프로세스를 중단합니다. Agent 설치, 인증과 모델 비용은 별도이며 기능은 양쪽 버전에 따라 다릅니다.
+
+**검토, 수정 및 기여:** Host 런타임, CLI, 데스크톱 관리자와 SDK 전체 소스를 빌드하고 Fork로 배포와 연동을 수정할 수 있습니다. [기여 가이드](https://github.com/mobiledevloperlab/nimotehost/blob/master/CONTRIBUTING.md)를 따라 수정, Agent 어댑터, 번역과 문서를 기여하세요. SSH 인증, 인증 루프백 API와 로컬 Host 인증 정보로 접근을 관리합니다. 모델 도구는 설정된 제공자를 사용합니다.
 
 [**설치, 배포 및 사용 안내 →**](https://nimotecode.com/ko/docs/host) · [소스 및 라이선스](https://github.com/mobiledevloperlab/nimotehost) · [다운로드](https://github.com/mobiledevloperlab/nimotehost/releases)
 
@@ -137,7 +139,7 @@ Android용은 [Google Play](https://play.google.com/store/apps/details?id=com.ni
 
 **AI가 포함되어 있나요?** AI 설정은 선택 사항입니다. 직접 공급자와 API 키를 준비해야 하며 모델 사용료가 별도로 발생할 수 있습니다. 내장 Agent는 Early Access 기능입니다.
 
-**오픈 소스인가요?** 앱은 상용 비공개 소스입니다. 이 리포지토리는 문서와 자료를 제공합니다. 별도 [NimoteHost](https://github.com/mobiledevloperlab/nimotehost)는 Apache-2.0으로 공개 예정이며 해당 라이선스는 Host에 적용됩니다.
+**오픈 소스인가요?** 앱은 상용 비공개 소스입니다. 이 리포지토리는 문서와 자료를 제공합니다. 별도 [NimoteHost](https://github.com/mobiledevloperlab/nimotehost)는 전체 소스를 Apache-2.0으로 제공하며 해당 라이선스는 Host에 적용됩니다.
 
 [FAQ 더 보기](https://nimotecode.com/ko/docs/faq).
 
@@ -201,7 +203,7 @@ Orca 모바일에는 데스크톱 Companion이 필요합니다. Moshi의 diff와
 
 ## 이 리포지토리 정보
 
-별도 [NimoteHost](https://github.com/mobiledevloperlab/nimotehost)는 Apache-2.0으로 공개 예정이며 해당 라이선스는 Host에 적용됩니다.
+별도 [NimoteHost](https://github.com/mobiledevloperlab/nimotehost)는 전체 소스를 Apache-2.0으로 제공하며 해당 라이선스는 Host에 적용됩니다.
 
 NimoteCode는 상용 비공개 소스 애플리케이션입니다. 이 리포지토리에는 공식 문서, 튜토리얼, 워크플로 예제 및 릴리스 노트가 포함되며 애플리케이션 소스 코드는 공개되지 않습니다. Linux 프리셋은 별도 리포지토리에서 관리되고 버그 보고에는 위의 이슈 트래커를 사용합니다.
 
