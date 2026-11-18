@@ -1,18 +1,9 @@
 ---
-title: 모바일 개발 워크플로 | NimoteCode
-description: 개발 컴퓨터 연결, 코드 편집과 변경 검토, 터미널 AI 도구, Agent 제작 데모를 작업에 맞게 선택하세요.
+title: "Agent 빌드 데모 | NimoteCode"
+description: "녹화된 작업에서 계획, 편집 및 검증 과정을 확인하세요."
 ---
 
-# 워크플로
-
-작업에 맞는 워크플로를 선택하세요.
-
-<div class="workflow-hub">
-<a href="/ko/docs/ssh"><span>01</span><strong>개발 컴퓨터에 연결</strong><span aria-hidden="true">→</span></a>
-<a href="/ko/use-cases/mobile-workspace-demo"><span>02</span><strong>편집, 실행, 변경 검토</strong><span aria-hidden="true">→</span></a>
-<a href="/ko/use-cases/terminal-ai-tools"><span>03</span><strong>터미널 AI 도구 사용</strong><span aria-hidden="true">→</span></a>
-<a href="#agent-build"><span>04</span><strong>AI Agent 제작 데모</strong><span aria-hidden="true">↓</span></a>
-</div>
+# Agent 빌드 데모
 
 <h2 id="agent-build">AI 에이전트가 전화기에서 개발자 작업 보드를 구축합니다.</h2>
 

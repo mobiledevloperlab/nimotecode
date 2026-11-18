@@ -110,8 +110,6 @@ NimoteCode は AI モデル、推論サービス、利用枠を提供しませ�
 
 - システムリソース、API、またはインフラストラクチャの悪用
 
-本規約とストアルールに従う限定的・非独占的利用許諾を付与します。コード、ファイル、プロンプトの既存権利は権利者に留まり、依頼した機能とサポートに必要な範囲で処理します。送信・使用する権限を確認してください。オープンソース ([https://nimotecode.com/docs/local-linux-source](/docs/local-linux-source))の個別ライセンス、Apple 標準 EULA (<https://www.apple.com/legal/internet-services/itunes/dev/stdeula/>)、Google Play 利用規約 (<https://play.google.com/about/play-terms/>)も適用されます。法律やオープンソースの許容する権利を排除しません。
-
 ## 7. サードパーティのサービス {#third-party}
 
 アプリケーションは、Git プロバイダー、SSH サーバー、AI プロバイダーなどのサードパーティ サービスを統合または対話する場合があります。

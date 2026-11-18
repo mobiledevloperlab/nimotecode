@@ -110,8 +110,6 @@ NimoteCode는 AI 모델, 추론 서비스 또는 사용량 크레딧을 제공�
 
 - 시스템 리소스, API 또는 인프라 남용
 
-약관과 스토어 규칙에 따른 제한적·비독점적 사용권을 제공합니다. 코드·파일·프롬프트의 기존 권리는 권리자에게 남으며 요청한 기능과 지원에 필요한 범위에서만 처리합니다. 사용할 권한을 확인하세요. 오픈소스 ([https://nimotecode.com/docs/local-linux-source](/docs/local-linux-source)) 개별 라이선스, Apple 표준 EULA (<https://www.apple.com/legal/internet-services/itunes/dev/stdeula/>), Google Play 약관 (<https://play.google.com/about/play-terms/>)도 적용됩니다. 법이나 오픈소스가 허용하는 권리를 배제하지 않습니다.
-
 ## 7. 제3자 서비스 {#third-party}
 
 애플리케이션은 Git 제공자, SSH 서버 또는 AI 제공자와 같은 제3자 서비스를 통합하거나 상호 작용할 수 있습니다.

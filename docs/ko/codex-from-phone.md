@@ -96,7 +96,6 @@ Nimote Agent의 Confirm 모드는 내장 Agent를 제어합니다. 수동 SSH �
 
 ## 공식 설정과 관련 안내
 
-[Codex CLI](https://learn.chatgpt.com/docs/codex/cli) · [CLI reference](https://learn.chatgpt.com/docs/developer-commands?surface=cli)
 
 [SSH](/ko/docs/ssh) · [Git](/ko/docs/source-control) · [AI / ACP](/ko/docs/ai)
 

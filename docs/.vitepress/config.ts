@@ -874,10 +874,9 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Product', link: '/features' },
-          { text: 'Workflows', link: '/use-cases/' },
+          { text: 'Pro', link: '/pro' },
+          { text: 'Explore', link: '/resources/', activeMatch: '^/(?:resources|use-cases|compare)(?:/|$)' },
           { text: 'Docs', link: '/docs/quick-start' },
-          { text: 'Resources', link: '/resources/' },
-          { text: 'Compare', link: '/compare/mobile-ai-development-tools' },
           { text: 'Updates', link: '/releases/' },
           { text: 'Download', link: '/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ],
@@ -963,7 +962,7 @@ export default defineConfig({
               text: 'Workflows',
               collapsed: false,
               items: [
-                { text: 'Workflow overview', link: '/use-cases/' },
+                { text: 'Agent build demo', link: '/use-cases/' },
                 { text: 'Mobile Workspace Demo', link: '/use-cases/mobile-workspace-demo' },
                 { text: 'Terminal AI Tools', link: '/use-cases/terminal-ai-tools' }
               ]
@@ -993,10 +992,9 @@ export default defineConfig({
         socialLinks: communityLinks(true),
         nav: [
           { text: '产品', link: '/zh/features' },
-          { text: '工作流', link: '/zh/use-cases/' },
+          { text: 'Pro', link: '/zh/pro' },
+          { text: '探索', link: '/zh/resources/', activeMatch: '^/zh/(?:resources|use-cases|compare)(?:/|$)' },
           { text: '文档', link: '/zh/docs/quick-start' },
-          { text: '资源', link: '/zh/resources/' },
-          { text: '对比', link: '/zh/compare/mobile-ai-development-tools' },
           { text: '更新日志', link: '/zh/releases/' },
           { text: '下载', link: '/zh/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ],
@@ -1081,7 +1079,7 @@ export default defineConfig({
               text: '工作流',
               collapsed: false,
               items: [
-                { text: '工作流总览', link: '/zh/use-cases/' },
+                { text: 'Agent 构建演示', link: '/zh/use-cases/' },
                 { text: '移动工作区演示', link: '/zh/use-cases/mobile-workspace-demo' },
                 { text: '终端 AI 工具', link: '/zh/use-cases/terminal-ai-tools' }
               ]
@@ -1107,11 +1105,9 @@ export default defineConfig({
       themeConfig: {
         ...docsUi('ja'), nav: [
           { text: '製品', link: '/ja/features' },
-          { text: 'ワークフロー', link: '/ja/use-cases/' },
+          { text: 'Pro', link: '/ja/pro' },
+          { text: '探索', link: '/ja/resources/', activeMatch: '^/ja/(?:resources|use-cases|compare)(?:/|$)' },
           { text: 'ドキュメント', link: '/ja/docs/quick-start' },
-          { text: 'リソース', link: '/ja/resources/' },
-          { text: '比較', link: '/ja/compare/mobile-ai-development-tools' },
-          { text: 'ブログ (English)', link: '/blog/' },
           { text: 'アップデート', link: '/ja/releases/' },
           { text: 'ダウンロード', link: '/ja/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ], sidebar: {
@@ -1121,7 +1117,7 @@ export default defineConfig({
             editor: 'エディター', terminal: 'ターミナル', search: '検索', sourceControl: 'ソース管理', lsp: 'LSP', debug: 'デバッグ', syncCache: '同期 / キャッシュ', tasks: 'タスク',
             overview: '概要', gettingStarted: 'はじめる', architecture: 'アーキテクチャ', compatibility: '互換性', securityIntegrity: 'セキュリティと整合性', presets: 'Linux プリセット', troubleshooting: 'トラブルシューティング',
             reference: 'リファレンス', account: 'アカウントとサブスクリプション', security: 'セキュリティと安全性', settings: '設定', notifications: '通知', configuration: '構成', sourceLicenses: 'ローカル Linux のソースとライセンス', faq: 'よくある質問'
-          }), ...useCasesSidebar('/ja', { heading: 'ワークフロー', agentDemo: 'ワークフローの概要', workspaceDemo: 'モバイルワークスペースのデモ', terminalTools: 'ターミナル AI ツール' })
+          }), ...useCasesSidebar('/ja', { heading: 'ワークフロー', agentDemo: 'Agent の構築デモ', workspaceDemo: 'モバイルワークスペースのデモ', terminalTools: 'ターミナル AI ツール' })
         }
       }
     },
@@ -1130,11 +1126,9 @@ export default defineConfig({
       themeConfig: {
         ...docsUi('ko'), nav: [
           { text: '제품', link: '/ko/features' },
-          { text: '워크플로', link: '/ko/use-cases/' },
+          { text: 'Pro', link: '/ko/pro' },
+          { text: '둘러보기', link: '/ko/resources/', activeMatch: '^/ko/(?:resources|use-cases|compare)(?:/|$)' },
           { text: '문서', link: '/ko/docs/quick-start' },
-          { text: '리소스', link: '/ko/resources/' },
-          { text: '비교', link: '/ko/compare/mobile-ai-development-tools' },
-          { text: '블로그 (English)', link: '/blog/' },
           { text: '업데이트', link: '/ko/releases/' },
           { text: '다운로드', link: '/ko/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ], sidebar: {
@@ -1144,7 +1138,7 @@ export default defineConfig({
             editor: '편집기', terminal: '터미널', search: '검색', sourceControl: '소스 제어', lsp: 'LSP', debug: '디버깅', syncCache: '동기화 / 캐시', tasks: '작업',
             overview: '개요', gettingStarted: '시작하기', architecture: '아키텍처', compatibility: '호환성', securityIntegrity: '보안 및 무결성', presets: 'Linux 프리셋', troubleshooting: '문제 해결',
             reference: '참조', account: '계정 및 구독', security: '보안 및 안전', settings: '설정', notifications: '알림', configuration: '구성', sourceLicenses: '로컬 Linux 소스 및 라이선스', faq: '자주 묻는 질문'
-          }), ...useCasesSidebar('/ko', { heading: '워크플로', agentDemo: '워크플로 개요', workspaceDemo: '모바일 워크스페이스 데모', terminalTools: '터미널 AI 도구' })
+          }), ...useCasesSidebar('/ko', { heading: '워크플로', agentDemo: 'Agent 빌드 데모', workspaceDemo: '모바일 워크스페이스 데모', terminalTools: '터미널 AI 도구' })
         }
       }
     },
@@ -1153,10 +1147,9 @@ export default defineConfig({
       themeConfig: {
         ...docsUi('es'), nav: [
           { text: 'Producto', link: '/es/features' },
-          { text: 'Flujos', link: '/es/use-cases/' },
+          { text: 'Pro', link: '/es/pro' },
+          { text: 'Explorar', link: '/es/resources/', activeMatch: '^/es/(?:resources|use-cases|compare)(?:/|$)' },
           { text: 'Documentación', link: '/es/docs/quick-start' },
-          { text: 'Recursos', link: '/es/resources/' },
-          { text: 'Comparar', link: '/es/compare/mobile-ai-development-tools' },
           { text: 'Novedades', link: '/es/releases/' },
           { text: 'Descargar', link: '/es/download?utm_source=navigation&utm_medium=website&utm_campaign=primary_nav' }
         ], sidebar: {
@@ -1166,7 +1159,7 @@ export default defineConfig({
             editor: 'Editor', terminal: 'Terminal', search: 'Búsqueda', sourceControl: 'Control de código fuente', lsp: 'LSP', debug: 'Depuración', syncCache: 'Sincronización / caché', tasks: 'Tareas',
             overview: 'Descripción general', gettingStarted: 'Primeros pasos', architecture: 'Arquitectura', compatibility: 'Compatibilidad', securityIntegrity: 'Seguridad e integridad', presets: 'Preajustes de Linux', troubleshooting: 'Resolución de problemas',
             reference: 'Referencia', account: 'Cuenta y suscripción', security: 'Seguridad y protección', settings: 'Ajustes', notifications: 'Notificaciones', configuration: 'Configuración de IA y conexiones', sourceLicenses: 'Código fuente y licencias de Local Linux', faq: 'Preguntas frecuentes'
-          }), ...useCasesSidebar('/es', { heading: 'Flujos de trabajo', agentDemo: 'Resumen de flujos de trabajo', workspaceDemo: 'Demo de espacio de trabajo móvil', terminalTools: 'Herramientas de IA en terminal' })
+          }), ...useCasesSidebar('/es', { heading: 'Flujos de trabajo', agentDemo: 'Demo de un Agent', workspaceDemo: 'Demo de espacio de trabajo móvil', terminalTools: 'Herramientas de IA en terminal' })
         }
       }
     }

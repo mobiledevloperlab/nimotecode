@@ -94,7 +94,6 @@ Nimote Agent の Confirm は内蔵 Agent の制御です。手入力の SSH コ�
 
 ## 公式設定と関連ガイド
 
-[Claude Code quickstart](https://code.claude.com/docs/en/quickstart) · [Remote Control](https://code.claude.com/docs/en/remote-control)
 
 [SSH](/ja/docs/ssh) · [Git](/ja/docs/source-control) · [AI / ACP](/ja/docs/ai)
 

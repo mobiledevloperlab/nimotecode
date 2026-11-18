@@ -5,6 +5,7 @@ import Layout from './Layout.vue'
 import MarketingLayout from './MarketingLayout.vue'
 import AppMockup from './components/AppMockup.vue'
 import ProductHome from './components/ProductHome.vue'
+import ResourceHub from './components/ResourceHub.vue'
 import WorkspaceModes from './components/WorkspaceModes.vue'
 import HostDownload from './components/HostDownload.vue'
 import ImagePlaceholder from './components/ImagePlaceholder.vue'
@@ -13,7 +14,6 @@ import DownloadPage from './components/DownloadPage.vue'
 import HomeToolComparison from './components/HomeToolComparison.vue'
 import LatestReleaseLink from './components/LatestReleaseLink.vue'
 import ReleaseArchive from './components/ReleaseArchive.vue'
-import ReleaseDetailHeader from './components/ReleaseDetailHeader.vue'
 import MobileDevToolComparison from './components/MobileDevToolComparison.vue'
 import PricingFeatureSystem from './components/PricingFeatureSystem.vue'
 import SocialProof from './components/SocialProof.vue'
@@ -38,6 +38,7 @@ const theme: Theme = {
     }
     app.component('AppMockup', AppMockup)
     app.component('ProductHome', ProductHome)
+    app.component('ResourceHub', ResourceHub)
     app.component('WorkspaceModes', WorkspaceModes)
     app.component('HostDownload', HostDownload)
     app.component('ImagePlaceholder', ImagePlaceholder)
@@ -46,7 +47,6 @@ const theme: Theme = {
     app.component('HomeToolComparison', HomeToolComparison)
     app.component('LatestReleaseLink', LatestReleaseLink)
     app.component('ReleaseArchive', ReleaseArchive)
-    app.component('ReleaseDetailHeader', ReleaseDetailHeader)
     app.component('MobileDevToolComparison', MobileDevToolComparison)
     app.component('PricingFeatureSystem', PricingFeatureSystem)
     app.component('SocialProof', SocialProof)

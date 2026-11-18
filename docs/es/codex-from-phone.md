@@ -96,7 +96,6 @@ El modo Confirm de Nimote Agent controla el agente integrado. No controla comand
 
 ## Configuración oficial y guías relacionadas
 
-[Codex CLI](https://learn.chatgpt.com/docs/codex/cli) · [CLI reference](https://learn.chatgpt.com/docs/developer-commands?surface=cli)
 
 [SSH](/es/docs/ssh) · [Git](/es/docs/source-control) · [AI / ACP](/es/docs/ai)
 

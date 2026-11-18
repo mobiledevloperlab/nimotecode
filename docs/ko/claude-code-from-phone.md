@@ -94,7 +94,6 @@ Nimote Agent의 Confirm 모드는 내장 Agent를 제어합니다. 수동 SSH �
 
 ## 공식 설정과 관련 안내
 
-[Claude Code quickstart](https://code.claude.com/docs/en/quickstart) · [Remote Control](https://code.claude.com/docs/en/remote-control)
 
 [SSH](/ko/docs/ssh) · [Git](/ko/docs/source-control) · [AI / ACP](/ko/docs/ai)
 

@@ -94,7 +94,6 @@ Nimote Agent Confirm mode controls the built-in Agent workflow. It does not gove
 
 ## Official setup and related guides
 
-[Claude Code quickstart](https://code.claude.com/docs/en/quickstart) · [Remote Control](https://code.claude.com/docs/en/remote-control)
 
 [SSH](/docs/ssh) · [Git](/docs/source-control) · [AI / ACP](/docs/ai)
 

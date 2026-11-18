@@ -96,7 +96,6 @@ Nimote Agent 的 Confirm 模式控制内置 Agent 工作流，不控制手动 SS
 
 ## 官方配置与相关指南
 
-[Codex CLI](https://learn.chatgpt.com/docs/codex/cli) · [CLI reference](https://learn.chatgpt.com/docs/developer-commands?surface=cli)
 
 [SSH](/zh/docs/ssh) · [Git](/zh/docs/source-control) · [AI / ACP](/zh/docs/ai)
 

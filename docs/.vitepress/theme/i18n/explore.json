@@ -1,0 +1,362 @@
+{
+  "en": {
+    "nav": "Explore",
+    "title": "Guides, workflows & comparisons",
+    "intro": "Find a practical workflow, compare development tools, or look up a reference.",
+    "jump": "Explore by topic",
+    "sections": [
+      {
+        "id": "workflows",
+        "title": "Workflows",
+        "description": "See how a task comes together.",
+        "items": [
+          {
+            "title": "Edit, run and review",
+            "description": "Follow a mobile workspace from editing to terminal output and Git review.",
+            "link": "/use-cases/mobile-workspace-demo"
+          },
+          {
+            "title": "Use terminal AI tools",
+            "description": "Run compatible coding tools in your SSH or Local Linux workspace.",
+            "link": "/use-cases/terminal-ai-tools"
+          },
+          {
+            "title": "Watch an Agent build",
+            "description": "Follow a recorded task through planning, editing and verification.",
+            "link": "/use-cases/#agent-build"
+          }
+        ]
+      },
+      {
+        "id": "compare",
+        "title": "Compare tools",
+        "description": "Choose an approach that fits your environment.",
+        "items": [
+          {
+            "title": "Mobile development tools",
+            "description": "Compare SSH clients, mobile IDEs and tools for host-based Agents.",
+            "link": "/compare/mobile-ai-development-tools"
+          },
+          {
+            "title": "Local, remote or cloud",
+            "description": "Understand where your code and development tools will run.",
+            "link": "/compare/mobile-development-approaches"
+          }
+        ]
+      },
+      {
+        "id": "references",
+        "title": "Development references",
+        "description": "Go straight to the setup or background you need.",
+        "items": [
+          {
+            "title": "SSH workspaces",
+            "description": "Connect to a host and work with its files and development tools.",
+            "link": "/docs/ssh"
+          },
+          {
+            "title": "Android Local Linux",
+            "description": "Check device support and set up a local Linux environment.",
+            "link": "/docs/local-linux"
+          },
+          {
+            "title": "Articles and tutorials",
+            "description": "Read practical tutorials and notes from building NimoteCode.",
+            "link": "/blog/"
+          }
+        ]
+      }
+    ],
+    "help": "New to NimoteCode?",
+    "helpLink": "Start with your first workspace",
+    "english": "English"
+  },
+  "zh": {
+    "nav": "探索",
+    "title": "开发指南与工具对比",
+    "intro": "从实际任务出发，查找工作流、工具对比与开发参考。",
+    "jump": "按主题浏览",
+    "sections": [
+      {
+        "id": "workflows",
+        "title": "工作流",
+        "description": "了解一个任务如何完成。",
+        "items": [
+          {
+            "title": "编辑、运行与审查",
+            "description": "从编辑代码到查看终端输出，再到审查 Git 改动。",
+            "link": "/use-cases/mobile-workspace-demo"
+          },
+          {
+            "title": "使用终端 AI 工具",
+            "description": "在 SSH 或 Local Linux 工作区运行兼容的 AI 编程工具。",
+            "link": "/use-cases/terminal-ai-tools"
+          },
+          {
+            "title": "观看 Agent 构建演示",
+            "description": "通过实际录屏了解规划、编辑与验证如何衔接。",
+            "link": "/use-cases/#agent-build"
+          }
+        ]
+      },
+      {
+        "id": "compare",
+        "title": "工具对比",
+        "description": "按开发环境选择合适的工具。",
+        "items": [
+          {
+            "title": "移动开发工具对比",
+            "description": "比较 SSH 客户端、移动 IDE 和主机 Agent 工具的适用场景。",
+            "link": "/compare/mobile-ai-development-tools"
+          },
+          {
+            "title": "本地、远程还是云端",
+            "description": "了解代码和开发工具应当运行在哪里。",
+            "link": "/compare/mobile-development-approaches"
+          }
+        ]
+      },
+      {
+        "id": "references",
+        "title": "开发参考",
+        "description": "直接找到需要的配置与背景资料。",
+        "items": [
+          {
+            "title": "SSH 工作区",
+            "description": "连接开发主机，使用主机上的文件与开发工具。",
+            "link": "/docs/ssh"
+          },
+          {
+            "title": "Android 本地 Linux",
+            "description": "查看设备要求，配置本地 Linux 开发环境。",
+            "link": "/docs/local-linux"
+          },
+          {
+            "title": "文章与教程",
+            "description": "阅读实用教程，以及 NimoteCode 的开发实践。",
+            "link": "/blog/"
+          }
+        ]
+      }
+    ],
+    "help": "第一次使用 NimoteCode？",
+    "helpLink": "创建你的第一个工作区",
+    "english": "英文"
+  },
+  "ja": {
+    "nav": "探索",
+    "title": "ガイド・ワークフロー・比較",
+    "intro": "実践的なワークフロー、ツール比較、開発資料を見つけましょう。",
+    "jump": "テーマで探す",
+    "sections": [
+      {
+        "id": "workflows",
+        "title": "ワークフロー",
+        "description": "作業の流れを確認する。",
+        "items": [
+          {
+            "title": "編集・実行・レビュー",
+            "description": "編集からターミナル出力、Git の変更確認まで。",
+            "link": "/use-cases/mobile-workspace-demo"
+          },
+          {
+            "title": "ターミナル AI ツール",
+            "description": "SSH または Local Linux で互換 AI ツールを実行。",
+            "link": "/use-cases/terminal-ai-tools"
+          },
+          {
+            "title": "Agent の構築デモ",
+            "description": "計画・編集・検証の流れを録画で確認。",
+            "link": "/use-cases/#agent-build"
+          }
+        ]
+      },
+      {
+        "id": "compare",
+        "title": "ツール比較",
+        "description": "開発環境に合う方法を選ぶ。",
+        "items": [
+          {
+            "title": "モバイル開発ツール",
+            "description": "SSH クライアント、モバイル IDE、ホスト Agent 用ツールを比較。",
+            "link": "/compare/mobile-ai-development-tools"
+          },
+          {
+            "title": "ローカル・リモート・クラウド",
+            "description": "コードと開発ツールを実行する場所を検討。",
+            "link": "/compare/mobile-development-approaches"
+          }
+        ]
+      },
+      {
+        "id": "references",
+        "title": "開発資料",
+        "description": "必要な設定や背景を調べる。",
+        "items": [
+          {
+            "title": "SSH ワークスペース",
+            "description": "ホストに接続し、ファイルや開発ツールを利用。",
+            "link": "/docs/ssh"
+          },
+          {
+            "title": "Android Local Linux",
+            "description": "対応端末とローカル Linux の設定方法を確認。",
+            "link": "/docs/local-linux"
+          },
+          {
+            "title": "記事とチュートリアル",
+            "description": "実践的な手順と NimoteCode の開発記録。",
+            "link": "/blog/"
+          }
+        ]
+      }
+    ],
+    "help": "NimoteCode を初めて使う方へ",
+    "helpLink": "最初のワークスペースを作る",
+    "english": "英語"
+  },
+  "ko": {
+    "nav": "둘러보기",
+    "title": "가이드, 워크플로 및 비교",
+    "intro": "실용적인 워크플로, 도구 비교와 개발 참고 자료를 찾아보세요.",
+    "jump": "주제별 탐색",
+    "sections": [
+      {
+        "id": "workflows",
+        "title": "워크플로",
+        "description": "작업이 완성되는 흐름을 확인하세요.",
+        "items": [
+          {
+            "title": "편집, 실행 및 검토",
+            "description": "코드 편집부터 터미널 출력과 Git 변경 검토까지.",
+            "link": "/use-cases/mobile-workspace-demo"
+          },
+          {
+            "title": "터미널 AI 도구",
+            "description": "SSH 또는 Local Linux에서 호환 AI 코딩 도구를 실행하세요.",
+            "link": "/use-cases/terminal-ai-tools"
+          },
+          {
+            "title": "Agent 빌드 데모",
+            "description": "녹화된 작업에서 계획, 편집 및 검증 과정을 확인하세요.",
+            "link": "/use-cases/#agent-build"
+          }
+        ]
+      },
+      {
+        "id": "compare",
+        "title": "도구 비교",
+        "description": "개발 환경에 맞는 방식을 선택하세요.",
+        "items": [
+          {
+            "title": "모바일 개발 도구",
+            "description": "SSH 클라이언트, 모바일 IDE, 호스트 Agent 도구를 비교하세요.",
+            "link": "/compare/mobile-ai-development-tools"
+          },
+          {
+            "title": "로컬, 원격 또는 클라우드",
+            "description": "코드와 개발 도구를 실행할 위치를 살펴보세요.",
+            "link": "/compare/mobile-development-approaches"
+          }
+        ]
+      },
+      {
+        "id": "references",
+        "title": "개발 참고 자료",
+        "description": "필요한 설정과 배경을 찾아보세요.",
+        "items": [
+          {
+            "title": "SSH 작업 공간",
+            "description": "호스트에 연결해 파일과 개발 도구를 사용하세요.",
+            "link": "/docs/ssh"
+          },
+          {
+            "title": "Android Local Linux",
+            "description": "지원 기기와 로컬 Linux 설정 방법을 확인하세요.",
+            "link": "/docs/local-linux"
+          },
+          {
+            "title": "글과 튜토리얼",
+            "description": "실용적인 가이드와 NimoteCode 개발 기록을 읽어보세요.",
+            "link": "/blog/"
+          }
+        ]
+      }
+    ],
+    "help": "NimoteCode를 처음 사용하시나요?",
+    "helpLink": "첫 작업 공간 만들기",
+    "english": "영어"
+  },
+  "es": {
+    "nav": "Explorar",
+    "title": "Guías, flujos y comparativas",
+    "intro": "Encuentra un flujo práctico, compara herramientas o consulta una referencia.",
+    "jump": "Explorar por tema",
+    "sections": [
+      {
+        "id": "workflows",
+        "title": "Flujos de trabajo",
+        "description": "Descubre cómo completar una tarea.",
+        "items": [
+          {
+            "title": "Editar, ejecutar y revisar",
+            "description": "De la edición al terminal y a la revisión de cambios Git.",
+            "link": "/use-cases/mobile-workspace-demo"
+          },
+          {
+            "title": "Herramientas de IA en terminal",
+            "description": "Ejecuta herramientas compatibles en SSH o Local Linux.",
+            "link": "/use-cases/terminal-ai-tools"
+          },
+          {
+            "title": "Demo de un Agent",
+            "description": "Sigue una tarea grabada: planificación, edición y verificación.",
+            "link": "/use-cases/#agent-build"
+          }
+        ]
+      },
+      {
+        "id": "compare",
+        "title": "Comparar herramientas",
+        "description": "Elige según tu entorno de desarrollo.",
+        "items": [
+          {
+            "title": "Herramientas de desarrollo móvil",
+            "description": "Compara clientes SSH, IDE móviles y herramientas para agentes en un host.",
+            "link": "/compare/mobile-ai-development-tools"
+          },
+          {
+            "title": "Local, remoto o nube",
+            "description": "Decide dónde ejecutar el código y las herramientas.",
+            "link": "/compare/mobile-development-approaches"
+          }
+        ]
+      },
+      {
+        "id": "references",
+        "title": "Referencias de desarrollo",
+        "description": "Consulta la configuración y el contexto que necesitas.",
+        "items": [
+          {
+            "title": "Espacios SSH",
+            "description": "Conecta a un host y utiliza sus archivos y herramientas.",
+            "link": "/docs/ssh"
+          },
+          {
+            "title": "Android Local Linux",
+            "description": "Comprueba los dispositivos compatibles y configura Linux local.",
+            "link": "/docs/local-linux"
+          },
+          {
+            "title": "Artículos y tutoriales",
+            "description": "Guías prácticas y notas sobre el desarrollo de NimoteCode.",
+            "link": "/blog/"
+          }
+        ]
+      }
+    ],
+    "help": "¿Primera vez con NimoteCode?",
+    "helpLink": "Crea tu primer espacio de trabajo",
+    "english": "Inglés"
+  }
+}

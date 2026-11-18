@@ -1,18 +1,9 @@
 ---
-title: Flujos de desarrollo móvil | NimoteCode
-description: Conecta al equipo de desarrollo, edita y revisa código, usa herramientas de IA en el terminal o mira una demostración de AI Agent.
+title: "Demo de un Agent | NimoteCode"
+description: "Sigue una tarea grabada: planificación, edición y verificación."
 ---
 
-# Flujos de trabajo
-
-Elige un flujo para tu próxima tarea.
-
-<div class="workflow-hub">
-<a href="/es/docs/ssh"><span>01</span><strong>Conectar al equipo de desarrollo</strong><span aria-hidden="true">→</span></a>
-<a href="/es/use-cases/mobile-workspace-demo"><span>02</span><strong>Editar, ejecutar y revisar cambios</strong><span aria-hidden="true">→</span></a>
-<a href="/es/use-cases/terminal-ai-tools"><span>03</span><strong>Usar herramientas de IA en el terminal</strong><span aria-hidden="true">→</span></a>
-<a href="#agent-build"><span>04</span><strong>Demostración de construcción con AI Agent</strong><span aria-hidden="true">↓</span></a>
-</div>
+# Demo de un Agent
 
 <h2 id="agent-build">Un agente de IA crea un tablero de tareas para desarrolladores desde un teléfono</h2>
 

@@ -11,22 +11,6 @@ Elige entre **cuatro modos: IDE, Terminal, IA y Host** para editar, ejecutar, co
 
 **Host: tu ordenador ejecuta y tú revisas el progreso.** Mantén terminales, tareas y Agents compatibles tras desconectar y vuelve para revisar salidas, aprobaciones, verificaciones y diffs. Todo el código de NimoteHost se ofrece bajo Apache-2.0 para revisar, compilar, modificar y contribuir. [Capacidades y despliegue](/es/docs/host) · [Código y contribuciones](https://github.com/mobiledevloperlab/nimotehost). El modo Host llegará con 2.4.1; el ordenador y Host deben seguir activos.
 
-## NimoteCode 2.4.0 · Host, tareas de proyecto y fiabilidad remota
-
-- **Espacio Host.** Instala e inicia NimoteHost compatible en la máquina remota y conecta por SSH para buscar, fijar y retomar sesiones de terminal y Agent. Host es opcional.
-- **Colaboración Agent.** Sesiones compatibles de Codex, Claude y OpenCode con conversaciones estructuradas, herramientas, aprobaciones, comandos, modelos e indicaciones durante la ejecución. Las políticas dependen del Host; las acciones sensibles pueden requerir aprobación.
-- **Bandeja de tareas e Issues de GitHub.** Revisa estados, evidencias de verificación y diffs; continúa o archiva tareas y envía Issues según la política de publicación elegida. Depende de la versión y configuración del Host.
-- **Plugins Host.** Accede desde la barra lateral a formularios versionados, tablas paginadas, detalles y vistas interactivas con controles de permisos.
-- **Tareas de proyecto.** Descubre tareas compatibles de package.json, Taskfile, Makefile, justfile y .vscode/tasks.json y ejecútalas en el terminal. El descubrimiento dinámico de Make/just requiere confirmación.
-- **Avisos y editor.** Configura avisos de finalización, confirmación y error, sonido y vibración sujetos al sistema, números de línea y minimapa horizontal. Pro se activa por defecto en Windows.
-- Configuración unificada de funciones, paneles y plugins; avisos en la configuración Agent. Mejoras para tablets, Windows, colores horizontales y movimiento reducido.
-- Filtra CI de GitHub por rama y flujo; consulta logs por paso, contexto de errores y avisos de descarga incompleta.
-- Mayor respuesta del terminal, actualizaciones sincronizadas, búsqueda, desplazamiento, Vim, portapapeles, pegado en Windows y teclado virtual.
-- Historial más fiable con eliminación local sin conexión; guardado remoto con motivos de error, edición de archivos grandes y diffs ajustados con navegación inferior.
-
-[2.4.0 →](/es/releases/2.4.0)
-
-
 
 ## Vista de la interfaz
 

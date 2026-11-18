@@ -1,18 +1,9 @@
 ---
-title: 移动开发工作流 | NimoteCode
-description: 按任务选择移动开发方式：连接开发主机、编辑与审查改动、使用终端 AI 工具，或观看 AI Agent 构建演示。
+title: "观看 Agent 构建演示 | NimoteCode"
+description: "通过实际录屏了解规划、编辑与验证如何衔接。"
 ---
 
-# 移动开发工作流
-
-从手头的任务，选择适合的工作方式。
-
-<div class="workflow-hub">
-<a href="/zh/docs/ssh"><span>01</span><strong>连接开发主机</strong><span aria-hidden="true">→</span></a>
-<a href="/zh/use-cases/mobile-workspace-demo"><span>02</span><strong>编辑、运行与审查改动</strong><span aria-hidden="true">→</span></a>
-<a href="/zh/use-cases/terminal-ai-tools"><span>03</span><strong>使用终端 AI 工具</strong><span aria-hidden="true">→</span></a>
-<a href="#agent-build"><span>04</span><strong>AI Agent 构建演示</strong><span aria-hidden="true">↓</span></a>
-</div>
+# 观看 Agent 构建演示
 
 <h2 id="agent-build">AI Agent 在手机上构建开发者任务看板</h2>
 

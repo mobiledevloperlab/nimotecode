@@ -110,8 +110,6 @@ Usted acepta no:
 
 - Abusar de los recursos del sistema, las API o la infraestructura
 
-Recibes una licencia limitada y no exclusiva sujeta a estos términos y reglas de la tienda. Los derechos existentes sobre código, archivos e instrucciones permanecen con sus titulares. Solo tratamos ese contenido según sea necesario para las funciones y soporte solicitados; debes tener autorización para usarlo y transmitirlo. Los componentes de código abierto ([https://nimotecode.com/docs/local-linux-source](/docs/local-linux-source)) mantienen sus licencias. Se aplican el EULA estándar de Apple (<https://www.apple.com/legal/internet-services/itunes/dev/stdeula/>) y los términos de Google Play (<https://play.google.com/about/play-terms/>) según la distribución. No se excluyen derechos permitidos por la ley o licencias abiertas.
-
 ## 7. Servicios de terceros {#third-party}
 
 La Aplicación puede integrarse o interactuar con servicios de terceros, como proveedores de Git, servidores SSH o proveedores de IA.

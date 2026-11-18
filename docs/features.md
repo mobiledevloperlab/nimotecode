@@ -17,22 +17,6 @@ Choose **IDE, Terminal, AI, or Host** for the task at hand: edit files, run proj
 
 **Host mode: your computer runs the work.** Keep managed terminals, tasks, and compatible Agents running after client disconnection; reconnect to inspect output, respond to approvals, and review verification and diffs. NimoteHost offers its complete source under Apache-2.0: inspect it, build it yourself, customize it, and contribute improvements. [Explore capabilities and deployment](/docs/host) · [Source and contribution guide](https://github.com/mobiledevloperlab/nimotehost). Host mode is included in the upcoming 2.4.1; the computer and Host must remain running.
 
-## NimoteCode 2.4.0 · Host workspace, project tasks, and remote reliability
-
-- **Host workspace.** Install and start a compatible NimoteHost on your remote machine, then connect over SSH to browse, search, pin, and resume terminal and Agent sessions. Host is optional and existing SSH workflows remain available.
-- **Host Agent collaboration.** Compatible Codex, Claude, and OpenCode sessions offer structured conversations, tools, approvals, commands, model controls, and supported follow-up instructions. Execution policies depend on Host capabilities; sensitive actions may still require approval.
-- **Task inbox and GitHub Issues.** Review task status, verification evidence and diffs, continue or archive tasks, and dispatch GitHub Issues with the selected publication policy. Availability depends on Host version and configuration.
-- **Host plugins.** Open compatible Host plugins from the sidebar, with versioned forms, paginated tables, details, interactive views, and permission checks.
-- **Project task runner.** Discover supported tasks from package.json, Taskfile, Makefile, justfile, and .vscode/tasks.json. Run them in workspace terminals; Make/just dynamic discovery requires explicit confirmation.
-- **Alerts and editor preferences.** Configure Agent completion, confirmation, and failure alerts, sound and vibration subject to system settings, editor line numbers, and the landscape minimap. Pro is enabled by default on Windows.
-- Unified application configuration for core features, panels, and plugins; Agent alerts are under Agent configuration. Refined tablet and Windows layouts, landscape colors, and reduced-motion support.
-- Filter GitHub CI runs by branch and workflow and inspect step logs, error context, and incomplete-log notices.
-- More responsive terminal output, synchronized updates, search, scrolling, Vim, clipboard access, Windows paste, software keyboards, and held navigation keys.
-- More reliable session history, offline deletion of local history entries, remote saves with failure reasons, large-file editing, and wrapped Git diffs with footer navigation.
-
-[2.4.0 →](/releases/2.4.0)
-
-
 
 ## Interface at a glance
 

@@ -96,7 +96,6 @@ Nimote Agent の Confirm は内蔵 Agent の制御です。手入力の SSH コ�
 
 ## 公式設定と関連ガイド
 
-[Codex CLI](https://learn.chatgpt.com/docs/codex/cli) · [CLI reference](https://learn.chatgpt.com/docs/developer-commands?surface=cli)
 
 [SSH](/ja/docs/ssh) · [Git](/ja/docs/source-control) · [AI / ACP](/ja/docs/ai)
 

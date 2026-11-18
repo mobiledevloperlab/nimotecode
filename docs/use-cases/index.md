@@ -1,18 +1,9 @@
 ---
-title: Mobile development workflows | NimoteCode
-description: Connect to a development machine, edit and review code, run terminal AI tools, or watch an AI Agent build a project.
+title: "Watch an Agent build | NimoteCode"
+description: "Follow a recorded task through planning, editing and verification."
 ---
 
-# Workflows
-
-Choose a workflow for your next task.
-
-<div class="workflow-hub">
-<a href="/docs/ssh"><span>01</span><strong>Connect to a development machine</strong><span aria-hidden="true">→</span></a>
-<a href="/use-cases/mobile-workspace-demo"><span>02</span><strong>Edit, run, and review changes</strong><span aria-hidden="true">→</span></a>
-<a href="/use-cases/terminal-ai-tools"><span>03</span><strong>Use terminal AI tools</strong><span aria-hidden="true">→</span></a>
-<a href="#agent-build"><span>04</span><strong>AI Agent build walkthrough</strong><span aria-hidden="true">↓</span></a>
-</div>
+# Watch an Agent build
 
 <h2 id="agent-build">An AI Agent Builds a Developer Task Board From a Phone</h2>
 

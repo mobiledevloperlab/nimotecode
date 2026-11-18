@@ -1,18 +1,9 @@
 ---
-title: モバイル開発ワークフロー | NimoteCode
-description: 開発マシンへの接続、編集と差分確認、ターミナル AI ツール、Agent の構築デモを作業に合わせて選択。
+title: "Agent の構築デモ | NimoteCode"
+description: "計画・編集・検証の流れを録画で確認。"
 ---
 
-# ワークフロー
-
-作業に合うワークフローを選択。
-
-<div class="workflow-hub">
-<a href="/ja/docs/ssh"><span>01</span><strong>開発マシンに接続</strong><span aria-hidden="true">→</span></a>
-<a href="/ja/use-cases/mobile-workspace-demo"><span>02</span><strong>編集・実行・差分確認</strong><span aria-hidden="true">→</span></a>
-<a href="/ja/use-cases/terminal-ai-tools"><span>03</span><strong>ターミナルの AI ツール</strong><span aria-hidden="true">→</span></a>
-<a href="#agent-build"><span>04</span><strong>AI Agent の構築デモ</strong><span aria-hidden="true">↓</span></a>
-</div>
+# Agent の構築デモ
 
 <h2 id="agent-build">AI エージェントが電話から開発者タスク ボードを構築する</h2>
 

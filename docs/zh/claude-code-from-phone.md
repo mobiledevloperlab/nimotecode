@@ -94,7 +94,6 @@ Nimote Agent 的 Confirm 模式控制内置 Agent 工作流，不控制手动 SS
 
 ## 官方配置与相关指南
 
-[Claude Code quickstart](https://code.claude.com/docs/en/quickstart) · [Remote Control](https://code.claude.com/docs/en/remote-control)
 
 [SSH](/zh/docs/ssh) · [Git](/zh/docs/source-control) · [AI / ACP](/zh/docs/ai)
 

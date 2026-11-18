@@ -96,7 +96,6 @@ Nimote Agent Confirm mode controls the built-in Agent workflow. It does not gove
 
 ## Official setup and related guides
 
-[Codex CLI](https://learn.chatgpt.com/docs/codex/cli) · [CLI reference](https://learn.chatgpt.com/docs/developer-commands?surface=cli)
 
 [SSH](/docs/ssh) · [Git](/docs/source-control) · [AI / ACP](/docs/ai)
 

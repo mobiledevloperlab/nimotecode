@@ -94,7 +94,6 @@ El modo Confirm de Nimote Agent controla el agente integrado. No controla comand
 
 ## Configuración oficial y guías relacionadas
 
-[Claude Code quickstart](https://code.claude.com/docs/en/quickstart) · [Remote Control](https://code.claude.com/docs/en/remote-control)
 
 [SSH](/es/docs/ssh) · [Git](/es/docs/source-control) · [AI / ACP](/es/docs/ai)
 
