@@ -11,3 +11,5 @@ AI Agent, Git y GitHub, Host, Docker y herramientas avanzadas en un espacio de d
 <PricingFeatureSystem lang="es" mode="full" />
 
 Para verificar el acceso o restaurar compras, consulta [Cuenta y suscripción](/es/docs/account-subscription).
+
+Antes de conectar un proyecto, consulta [Seguridad y compatibilidad](/es/security): credenciales, datos de IA, transferencias y alcance de las pruebas.

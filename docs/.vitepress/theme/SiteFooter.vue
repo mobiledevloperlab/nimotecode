@@ -13,6 +13,10 @@ const localePrefix = computed(() => {
 })
 
 const locale = computed(() => localePrefix.value.slice(1) || 'en')
+const securityLabel = computed(() => ({
+  en: 'Security & compatibility', zh: '安全与兼容性', ja: 'セキュリティと互換性',
+  ko: '보안 및 호환성', es: 'Seguridad y compatibilidad'
+}[locale.value] || 'Security & compatibility'))
 
 const copy = computed(() => locale.value === 'zh' ? {
   positioning: '移动 AI 开发工作台：Editor + Explorer + SSH + Terminal + Git + AI Agent。',
@@ -75,6 +79,7 @@ function localized(path: string) {
   <footer v-if="compact" class="nimote-doc-footer">
     <nav :aria-label="copy.company">
       <a :href="localized('/support')">{{ copy.support }}</a>
+      <a :href="localized('/security')">{{ securityLabel }}</a>
       <a :href="localized('/privacy')">{{ copy.privacy }}</a>
       <a :href="localized('/terms')">{{ copy.terms }}</a>
     </nav>
@@ -110,6 +115,7 @@ function localized(path: string) {
         <nav :aria-label="copy.company">
           <h2>{{ copy.company }}</h2>
           <a :href="localized('/support')">{{ copy.support }}</a>
+          <a :href="localized('/security')">{{ securityLabel }}</a>
           <a :href="localized('/privacy')">{{ copy.privacy }}</a>
           <a :href="localized('/terms')">{{ copy.terms }}</a>
           <a :href="localized('/docs/local-linux-source')">{{ copy.openSource }}</a>

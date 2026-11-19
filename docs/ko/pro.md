@@ -11,3 +11,5 @@ pageClass: pricing-page
 <PricingFeatureSystem lang="ko" mode="full" />
 
 권한 확인과 구매 복원은 [계정 및 구독](/ko/docs/account-subscription)을 참고하세요.
+
+연결 전에 [보안 및 호환성](/ko/security)에서 인증 정보 저장, AI 데이터 전송, 전송 범위와 검증 기록을 확인하세요.

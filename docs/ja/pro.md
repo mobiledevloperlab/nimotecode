@@ -11,3 +11,5 @@ AI Agent、Git と GitHub、Host、Docker、高度な開発ツールを一つの
 <PricingFeatureSystem lang="ja" mode="full" />
 
 利用権限の確認と購入の復元は[アカウントとサブスクリプション](/ja/docs/account-subscription)をご覧ください。
+
+接続前に[セキュリティと互換性](/ja/security)で、認証情報の保存、AI への送信、転送の範囲、検証記録をご確認ください。

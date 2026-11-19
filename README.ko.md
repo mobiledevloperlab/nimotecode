@@ -45,10 +45,10 @@ NimoteCode는 **로컬 및 SSH 프로젝트를 위한 모바일 IDE**입니다. 
 
 ## 데모
 
-영상에서 작업 공간을 살펴보세요. [영상 직접 열기](https://github.com/user-attachments/assets/df7de976-e743-415d-9bd1-df396a647e10)。
+영상에서 작업 공간을 살펴보세요. [영상 직접 열기](https://github.com/user-attachments/assets/14c8bab8-ae16-4e15-8a8a-926ef2c747f4)。
 
 <div align="center">
-  <video src="https://github.com/user-attachments/assets/df7de976-e743-415d-9bd1-df396a647e10" controls muted playsinline width="420"></video>
+  <video src="https://github.com/user-attachments/assets/14c8bab8-ae16-4e15-8a8a-926ef2c747f4" controls muted playsinline width="420"></video>
 </div>
 
 ## NimoteCode를 선택하는 이유

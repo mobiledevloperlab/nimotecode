@@ -45,10 +45,10 @@ NimoteCode は、**ローカルと SSH プロジェクトのためのモバイ�
 
 ## デモ
 
-ワークスペースの操作を動画で確認できます。[動画を直接開く](https://github.com/user-attachments/assets/df7de976-e743-415d-9bd1-df396a647e10)。
+ワークスペースの操作を動画で確認できます。[動画を直接開く](https://github.com/user-attachments/assets/14c8bab8-ae16-4e15-8a8a-926ef2c747f4)。
 
 <div align="center">
-  <video src="https://github.com/user-attachments/assets/df7de976-e743-415d-9bd1-df396a647e10" controls muted playsinline width="420"></video>
+  <video src="https://github.com/user-attachments/assets/14c8bab8-ae16-4e15-8a8a-926ef2c747f4" controls muted playsinline width="420"></video>
 </div>
 
 ## NimoteCode を選ぶ理由

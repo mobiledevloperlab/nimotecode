@@ -57,3 +57,16 @@
 .privacy-details summary { width: fit-content; cursor: pointer; }
 .privacy-details summary:focus-visible { outline: 2px solid var(--vp-c-brand-1); outline-offset: 4px; }
 @media (max-width: 600px) { .privacy-panel { width: calc(100vw - 24px); padding: 12px 16px; } }
+
+/* Keep the reference tables readable without widening the mobile page. */
+.trust-page.compatibility-page .nimote-marketing-doc { max-width: 1100px; }
+.compatibility-table { margin-block: 24px; overflow-x: auto; overscroll-behavior-inline: contain; }
+.compatibility-table:focus-visible { outline: 2px solid var(--nimote-link); outline-offset: 4px; }
+.compatibility-page .vp-doc .compatibility-table table { min-width: 680px; margin: 0; }
+.compatibility-page .vp-doc .compatibility-table th:first-child { width: 22%; }
+.compatibility-page .vp-doc .compatibility-table th:last-child { width: 20%; }
+.compatibility-page .vp-doc .compatibility-table :is(th,td) { padding: 16px; font-size: 14px; }
+.compatibility-scroll-hint { display: none; }
+@media (max-width: 767px) {
+  .compatibility-scroll-hint { display: block; color: var(--nimote-text-muted); font-size: 12px; }
+}

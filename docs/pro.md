@@ -11,3 +11,5 @@ AI Agents, Git and GitHub, Host, Docker and advanced development tools in one mo
 <PricingFeatureSystem lang="en" mode="full" />
 
 For access verification and purchase restoration, see [Account and subscription](/docs/account-subscription).
+
+Before connecting a project, review [Security & compatibility](/security) for credential storage, AI data sharing, transfer boundaries, and documented verification.

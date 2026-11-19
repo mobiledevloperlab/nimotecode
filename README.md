@@ -43,10 +43,10 @@ NimoteCode is a **mobile IDE for local and SSH projects**. Browse source files, 
 
 ## Demo
 
-Watch NimoteCode in action below, or [open the demo video](https://github.com/user-attachments/assets/df7de976-e743-415d-9bd1-df396a647e10).
+Watch NimoteCode in action below, or [open the demo video](https://github.com/user-attachments/assets/14c8bab8-ae16-4e15-8a8a-926ef2c747f4).
 
 <div align="center">
-  <video src="https://github.com/user-attachments/assets/df7de976-e743-415d-9bd1-df396a647e10" controls muted playsinline width="420"></video>
+  <video src="https://github.com/user-attachments/assets/14c8bab8-ae16-4e15-8a8a-926ef2c747f4" controls muted playsinline width="420"></video>
 </div>
 
 ## Why NimoteCode
