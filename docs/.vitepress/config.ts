@@ -2,11 +2,25 @@ import { defineConfig, type HeadConfig, type TransformContext, type DefaultTheme
 import { existsSync, readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
+import { imageOptimizerCacheKey } from '../../scripts/image-optimizer-cache.mjs'
 import { productCopy } from './theme/product'
 import homeTranslations from './theme/i18n/home.json'
 import { allCompetitors } from './theme/data/mobileDevelopmentCompetitors'
 import { guideLayout } from './guide-layout'
 import { docsSidebar } from './docs-navigation'
+
+const imageEncodingOptions = {
+  svg: { multipass: true },
+  png: { quality: 80, compressionLevel: 9 },
+  jpeg: { quality: 80 },
+  webp: { quality: 80 }
+}
+
+const imageCacheKey = imageOptimizerCacheKey(
+  resolve('docs/public'),
+  imageEncodingOptions,
+  readFileSync(resolve('package-lock.json'))
+)
 
 function communityLinks(zh: boolean): DefaultTheme.SocialLink[] {
   return [
@@ -926,22 +940,10 @@ export default defineConfig({
         ],
         includePublic: true,
         cache: true,
-        cacheLocation: 'node_modules/.vite-image-optimizer',
+        cacheLocation: `node_modules/.vite-image-optimizer/${imageCacheKey}`,
         logStats: true,
         ansiColors: true,
-        svg: {
-          multipass: true
-        },
-        png: {
-          quality: 80,
-          compressionLevel: 9
-        },
-        jpeg: {
-          quality: 80
-        },
-        webp: {
-          quality: 80
-        }
+        ...imageEncodingOptions
       })
     ]
   }
