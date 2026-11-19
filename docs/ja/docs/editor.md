@@ -11,7 +11,7 @@ Explorer または Search からファイルを開くと、それぞれタブに
 
 <div class="doc-screenshots">
   <DocScreenshot file="editor-empty-state.png" caption="タブが開いていないときは Browse files からファイルを選択できます。" />
-  <DocScreenshot file="editor-multiple-files.jpg" caption="エディターで開いたサンプルプロジェクトの app.js。" />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="別々のエディタータブで開いた Python と Markdown。" />
 </div>
 
 ## テキストを選択して編集する
@@ -31,7 +31,7 @@ Explorer または Search からファイルを開くと、それぞれタブに
 テキストを選択すると、コピー、切り取り、貼り付けを利用できます。選択範囲について AI に相談する場合は **Ask AI** を使います。
 
 <div class="doc-screenshots">
-  <DocScreenshot file="editor-context-menu.jpg" caption="Copy、Cut、Paste、Select All、Ask AI を含む選択メニュー。" />
+  <DocScreenshot file="editor-context-menu.jpg" caption="Python の識別子を選択し、コピー、切り取り、貼り付け、全選択、Ask AI を表示。" />
 </div>
 
 ### 変更を取り消す・やり直す
@@ -82,7 +82,7 @@ Markdown のソースを編集し、プレビューで見出し、コードブ�
 HTML プレビューは未保存の変更を含む現在の編集内容のスナップショットです。図はレポートの例です。サーバー側の処理にはプロジェクトの実行環境が必要です。
 
 <div class="doc-screenshots">
-  <DocScreenshot file="html-report-preview.jpg" caption="エディターのプレビュータブに表示された HTML ベンチマークレポート。" />
+  <DocScreenshot file="html-report-preview.jpg" caption="内蔵ブラウザーの HTML 品質レポート：Python の単体テスト 3 件が成功。" />
 </div>
 
 ## NimoteCode 2.4.0

@@ -31,10 +31,10 @@ Mosh、已有键盘配置、Files 集成或 Blink Code 环境是工作重点时�
 在 iPhone 或 iPad 上打开平时使用 Blink Code 处理的同一仓库，比较两个关联文件的编辑、保存和 Git 差异查看。使用常用外接键盘，并在实际网络下测试重连。如果工作依赖 Mosh，应将其作为选择条件；本指南介绍的是 NimoteCode 的 SSH 工作流。
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone 上的 NimoteCode 代码编辑器，展示标签页与键盘。" loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-editor.webp?v=dc778aae9066" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-editor.webp?v=dc778aae9066" width="720" height="1565" alt="iPhone 上的 Python 编辑器。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone 上的 NimoteCode 代码编辑器，展示标签页与键盘。 图片来源：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 页面</a>。</figcaption>
+  <figcaption>iPhone 上的 Python 编辑器。 来源：本机编译的 NimoteCode 2.4.1（66）iOS 模拟器实截。</figcaption>
 </figure>
 
 ## 迁移前先验证一个连接

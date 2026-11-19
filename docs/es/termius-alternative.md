@@ -31,10 +31,10 @@ Conserva Termius si la gestión de equipos entre dispositivos, tu terminal habit
 Usa un repositorio al que ya accedas con Termius. Abre el mismo directorio en NimoteCode, edita y guarda un archivo, revisa el diff en Control de código fuente y ejecuta las comprobaciones en el servidor. Compara la navegación y la revisión; verifica por separado la gestión de servidores y la sincronización que necesites.
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="Editor de NimoteCode en iPhone con pestañas y teclado." loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-editor.webp?v=dc778aae9066" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-editor.webp?v=dc778aae9066" width="720" height="1565" alt="Editor Python en iPhone." loading="lazy" decoding="async">
   </a>
-  <figcaption>Editor de NimoteCode en iPhone con pestañas y teclado. Fuente: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">capturas de NimoteCode en App Store</a>.</figcaption>
+  <figcaption>Editor Python en iPhone. Capturado en el simulador iOS con la compilación local NimoteCode 2.4.1 (66).</figcaption>
 </figure>
 
 ## Verifica una conexión antes de migrar

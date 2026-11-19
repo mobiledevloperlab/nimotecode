@@ -33,7 +33,7 @@ Seleccione el directorio del proyecto y abra un archivo en Explorer. Edítelo y 
 </div>
 
 <div class="doc-screenshots">
-  <DocScreenshot file="editor-multiple-files.jpg" caption="El archivo app.js del proyecto de ejemplo en el editor." />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="Archivos Python y Markdown abiertos en pestañas distintas." />
 </div>
 
 </div>
@@ -64,7 +64,7 @@ Use AI Agent para inspeccionar el proyecto y explicar la relación entre sus arc
 
 <div class="doc-screenshots">
   <DocScreenshot file="ai-plan-approval.jpg" caption="Modo Confirm: revise el plan de inspección del proyecto antes de aprobar la ejecución." />
-  <DocScreenshot file="ai-plan-running.jpg" caption="Tras la aprobación, el agente lee los archivos y registra el progreso." />
+  <DocScreenshot file="ai-plan-running.jpg" caption="Resultado del Agent: pruebas Python añadidas, salida correcta y diff de Git." />
 </div>
 
 Lea la respuesta junto con las limitaciones indicadas, como archivos que no se pudieron inspeccionar. Puede enviar instrucciones adicionales durante la ejecución. Consulte [AI Chat y Agent](/es/docs/ai) para la selección y los controles del agente.

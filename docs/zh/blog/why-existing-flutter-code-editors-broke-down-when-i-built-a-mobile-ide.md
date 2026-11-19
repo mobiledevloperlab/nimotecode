@@ -6,7 +6,7 @@ author: "NimoteCode 团队"
 date: "2026-06-11"
 lastUpdated: "2026-11-03"
 tags: ["flutter", "rust", "ide", "工程"]
-image: /blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png
+image: /blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png?v=6dff9c17acfe
 ---
 
 # 在构建移动 IDE 时，为什么现有 Flutter 代码编辑器会失效
@@ -46,7 +46,7 @@ image: /blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-
 与其拥有一个「编辑文本的 Widget」，你需要的是文档模型、布局系统、状态引擎，以及和外部系统同步的层。当多个系统依赖编辑器状态时，它就不能再是被动的，必须成为单一事实来源。
 
 <figure>
-  <img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-1.png" width="1344" height="2992" alt="移动设备上的 NimoteCode 代码编辑器" loading="lazy" decoding="async">
+  <img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-1.png?v=1ff48bae8252" width="1344" height="2992" alt="移动设备上的 NimoteCode 代码编辑器" loading="lazy" decoding="async">
   <figcaption>移动设备上的 NimoteCode 代码编辑器。 来源：NimoteCode 团队。</figcaption>
 </figure>
 
@@ -70,7 +70,7 @@ image: /blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-
 关键理念是：一切都依赖同一个文档模型，而不是 UI。
 
 <figure>
-  <img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" width="1414" height="878" alt="平板上的 NimoteCode 代码编辑器" loading="lazy" decoding="async">
+  <img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png?v=6dff9c17acfe" width="1414" height="878" alt="平板上的 NimoteCode 代码编辑器" loading="lazy" decoding="async">
   <figcaption>平板上的 NimoteCode 代码编辑器。 来源：NimoteCode 团队。</figcaption>
 </figure>
 

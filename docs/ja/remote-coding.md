@@ -25,10 +25,10 @@ git status --short --branch
 ```
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-ssh.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-ssh.webp" width="660" height="1433" alt="iPhone の Remote Explorer に表示された SSH プロジェクト。" loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-ssh.webp?v=6e00355be096" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-ssh.webp?v=6e00355be096" width="720" height="1565" alt="iPhone のリモートプロジェクトファイル。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone の Remote Explorer に表示された SSH プロジェクト。 出典：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode の App Store 掲載画像</a>。</figcaption>
+  <figcaption>iPhone のリモートプロジェクトファイル。 ローカルビルドの NimoteCode 2.4.1（66）iOS シミュレーターで撮影。</figcaption>
 </figure>
 
 ## 3. 一つの変更を検証

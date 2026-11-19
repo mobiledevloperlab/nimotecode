@@ -152,10 +152,10 @@ sftp username@192.168.1.100
 SFTP のアクセス範囲は Windows アカウントと NTFS 権限に従います。接続できても `C:\Windows` や `Program Files` に書き込めるわけではありません。SFTP のパス表記はローカルの `C:\...` と異なる場合があるため、サーバーが返すパスを使ってください。
 
 <figure>
-  <a href="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png" target="_blank" rel="noopener">
-    <img src="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png" width="2020" height="1041" alt="NimoteCode の Windows 接続設定、リモートファイル、PowerShell、Agent の各画面を並べたものです。" loading="lazy" decoding="async">
+  <a href="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png?v=d71056b9acfc" target="_blank" rel="noopener">
+    <img src="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png?v=d71056b9acfc" width="2020" height="1041" alt="NimoteCode 2.4.1 の接続フォーム、ディレクトリ選択、リモートファイル。現在の画面は一時的な macOS SSH プロジェクトで撮影し、上の Windows 設定手順は Windows 向けです。" loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode の Windows 接続設定、リモートファイル、PowerShell、Agent の各画面を並べたものです。</figcaption>
+  <figcaption>NimoteCode 2.4.1 の接続フォーム、ディレクトリ選択、リモートファイル。現在の画面は一時的な macOS SSH プロジェクトで撮影し、上の Windows 設定手順は Windows 向けです。</figcaption>
 </figure>
 
 ### Windows Shell とホスト鍵の確認

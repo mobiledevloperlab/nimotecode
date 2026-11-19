@@ -10,7 +10,7 @@ description: "ローカルと SSH のワークスペースの設定、操作手�
 Explorer にはローカル、リモート SSH、Local Linux、デモへの入口があります。Recent History には以前開いた場所が表示されます。接続中のワークスペースによって利用できるファイルとツールが決まります。
 
 <div class="doc-screenshots">
-  <DocScreenshot file="workspace-start-light.png" caption="ワークスペースを開く前の Explorer、ライトテーマ。" />
+  <DocScreenshot file="workspace-start-light.png" caption="プロジェクトを開く前のワークスペース選択画面（ダークテーマ）。" />
 </div>
 
 ## ローカルフォルダーを開く
@@ -30,7 +30,7 @@ Explorer にはローカル、リモート SSH、Local Linux、デモへの入�
 Local Explorer に戻ったら、ルートディレクトリを確認します。図のフォルダーは空です。自分のプロジェクトでは、ここに目的のファイルがあるか確認してください。
 
 <div class="doc-screenshots">
-  <DocScreenshot file="local-workspace-files.png" caption="フォルダー選択後の Local Explorer。この例ではプロジェクトファイルが表示されていません。" />
+  <DocScreenshot file="local-workspace-files.png" caption="Android の Local Explorer に表示した一時的な Python プロジェクト。" />
 </div>
 
 ## SSH 接続を設定する
@@ -44,7 +44,7 @@ Local Explorer に戻ったら、ルートディレクトリを確認します�
 
 <div class="doc-screenshots">
   <DocScreenshot file="remote-connection-form.jpg" caption="ホスト、ユーザー名、ポート、プロキシを設定する新規 SSH 接続フォーム。" />
-  <DocScreenshot file="remote-connection-history.png" caption="保存済み SSH 接続を表示する Recent History。" />
+  <DocScreenshot file="remote-connection-history.png" caption="Connection environments に保存された SSH 接続。" />
 </div>
 
 ## プロジェクトのルートを選ぶ

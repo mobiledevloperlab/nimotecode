@@ -15,7 +15,7 @@ This is a real AI Agent demo inside [NimoteCode](/mobile-ide). Starting from an 
 Everything happens inside a single mobile workspace—not by pasting snippets into a separate chat.
 
 <figure>
-  <video controls playsinline preload="metadata" poster="/videos/nimotecode-poster.jpg">
+  <video controls playsinline preload="metadata" poster="/videos/nimotecode-poster.jpg?v=334e426b8716">
     <source src="/videos/nimotecode.mp4" type="video/mp4">
   </video>
   <figcaption>Mobile agent workflow demonstration by the NimoteCode team; one demonstration does not establish a cross-project success rate.</figcaption>

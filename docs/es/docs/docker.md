@@ -10,7 +10,7 @@ Las herramientas Docker se ejecutan en un host SSH conectado. El host debe tener
 ## Abrir Docker
 
 <div class="doc-screenshots">
-  <DocScreenshot file="docker-images.png" caption="Lista de imágenes Docker con el tema claro; incluye Debian bookworm-slim." />
+  <DocScreenshot file="docker-images.png" caption="Lista de imágenes Docker con el paquete temporal de código nimotecode-screenshot-demo:2.4.1." />
 </div>
 
 Abre el panel Docker desde las herramientas del espacio de trabajo para consultar contenedores, imágenes, volúmenes, redes y proyectos Compose. Puedes inspeccionar recursos, seguir registros, consultar estadísticas, abrir un terminal exec y buscar imágenes en Docker Hub.
@@ -18,7 +18,7 @@ Abre el panel Docker desde las herramientas del espacio de trabajo para consulta
 ## Administrar servicios Compose
 
 <div class="doc-screenshots">
-  <DocScreenshot file="docker-image-detail.png" caption="Detalles de la imagen Debian bookworm-slim con el tema claro." />
+  <DocScreenshot file="docker-image-detail.png" caption="Detalles del paquete temporal: etiqueta, arquitectura, sistema y tamaño. No incluye runtime." />
 </div>
 
 Abre un proyecto Compose para consultar sus servicios y controlar cada uno. Los archivos Compose y el contexto de compilación permanecen en el host SSH. Comprueba el proyecto y el host antes de iniciar o detener servicios.

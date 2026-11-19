@@ -24,10 +24,10 @@ NimoteCode 提供用于解释代码的 AI Chat、处理工作区任务的内置 
 按[模型配置](/zh/docs/configuration)添加提供商并测试访问，打开目标工作区并确认根目录。本地文件夹不会自动提供命令执行环境。SSH 使用主机环境，受支持的 Android 设备可以使用[本地 Linux](/zh/docs/local-linux)，iPhone 和 iPad 不提供 NimoteCode 本地 Linux。
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-agents.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-agents.webp" width="660" height="1433" alt="iPhone 上的 NimoteCode，展示内置与外部 Agent 选择。" loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-agents.webp?v=6c87b07b60da" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-agents.webp?v=6c87b07b60da" width="720" height="1565" alt="iPhone AI 工作区，尚未配置服务商。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone 上的 NimoteCode，展示内置与外部 Agent 选择。 图片来源：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 页面</a>。</figcaption>
+  <figcaption>iPhone AI 工作区，尚未配置服务商。 来源：本机编译的 NimoteCode 2.4.1（66）iOS 模拟器实截。</figcaption>
 </figure>
 
 ## 先用只读任务验证

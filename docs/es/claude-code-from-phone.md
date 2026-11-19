@@ -37,10 +37,10 @@ git status --short --branch
 ```
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-terminal.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-terminal.webp" width="660" height="1433" alt="Terminal SSH de NimoteCode en iPhone con comandos de shell. No es una grabación de una tarea de Claude Code." loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-terminal.webp?v=73084741cf14" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-terminal.webp?v=73084741cf14" width="720" height="1565" alt="Tres pruebas unitarias Python correctas en el terminal SSH de iPhone." loading="lazy" decoding="async">
   </a>
-  <figcaption>Terminal SSH de NimoteCode en iPhone con comandos de shell. No es una grabación de una tarea de Claude Code. Fuente: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">capturas de NimoteCode en App Store</a>.</figcaption>
+  <figcaption>Tres pruebas unitarias Python correctas en el terminal SSH de iPhone. Capturado en el simulador iOS con la compilación local NimoteCode 2.4.1 (66).</figcaption>
 </figure>
 
 ## 3. Inicia la tarea en una sesión del equipo

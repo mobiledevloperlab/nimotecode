@@ -24,10 +24,10 @@ A normal editor or terminal is enough when you already know the exact change. AI
 Follow [model configuration](/docs/configuration) to add a provider and test access. Open the intended workspace and confirm its root. A local folder does not automatically provide command execution. SSH uses the host’s environment; supported Android devices can use [Local Linux](/docs/local-linux). iPhone and iPad do not have NimoteCode Local Linux.
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-agents.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-agents.webp" width="660" height="1433" alt="NimoteCode on iPhone showing built-in and external agent choices." loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-agents.webp?v=6c87b07b60da" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-agents.webp?v=6c87b07b60da" width="720" height="1565" alt="AI workspace on iPhone, before provider configuration." loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode on iPhone showing built-in and external agent choices. Source: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store screenshots</a>.</figcaption>
+  <figcaption>AI workspace on iPhone, before provider configuration. Captured from the local NimoteCode 2.4.1 (66) iOS simulator build.</figcaption>
 </figure>
 
 ## Try a read-only task first

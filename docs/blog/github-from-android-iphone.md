@@ -35,14 +35,14 @@ For most established projects, SSH is the calmer choice: the phone is the interf
 
 <div class="mobile-ide-workflow-gallery">
   <figure class="mobile-ide-screenshot">
-    <a href="/images/placeholders/github_entry.png" target="_blank" rel="noopener">
-      <img src="/images/placeholders/github_entry.png" width="1320" height="2868" alt="GitHub repository picker with a selected repository and choices for this device or an SSH host." loading="eager" decoding="async">
+    <a href="/images/placeholders/github_entry.png?v=9955c5e42121" target="_blank" rel="noopener">
+      <img src="/images/placeholders/github_entry.png?v=9955c5e42121" width="1080" height="2376" alt="GitHub repository picker with a selected repository and choices for this device or an SSH host." loading="eager" decoding="async">
     </a>
     <figcaption>1. Choose an accessible repository and the environment that will run the work.</figcaption>
   </figure>
   <figure class="mobile-ide-screenshot">
-    <a href="/images/placeholders/github_conf.png" target="_blank" rel="noopener">
-      <img src="/images/placeholders/github_conf.png" width="1320" height="2868" alt="GitHub clone settings for an SSH host, including destination folder, branch, shallow clone and SSH key authentication." loading="lazy" decoding="async">
+    <a href="/images/placeholders/github_conf.png?v=445d106239d7" target="_blank" rel="noopener">
+      <img src="/images/placeholders/github_conf.png?v=445d106239d7" width="1080" height="2376" alt="GitHub clone settings for an SSH host, including destination folder, branch, shallow clone and SSH key authentication." loading="lazy" decoding="async">
     </a>
     <figcaption>2. Confirm the destination, branch, and host-side authentication before cloning.</figcaption>
   </figure>
@@ -55,8 +55,8 @@ Once a repository is open, its GitHub page brings together the default branch, b
 You can filter issues and pull requests, create an issue, and start an Agent task with issue context. The context makes the handoff clearer, but it does not replace judgment. Read the acceptance criteria, inspect the affected code, and keep the task narrow enough to review on a small screen.
 
 <figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/github.png" target="_blank" rel="noopener">
-    <img src="/images/placeholders/github.png" width="1320" height="2868" alt="A GitHub repository page in NimoteCode with tabs for Issues, Pull requests and Branches." loading="lazy" decoding="async">
+  <a href="/images/placeholders/github.png?v=94976c317669" target="_blank" rel="noopener">
+    <img src="/images/placeholders/github.png?v=94976c317669" width="1080" height="2376" alt="A GitHub repository page in NimoteCode with tabs for Issues, Pull requests and Branches." loading="lazy" decoding="async">
   </a>
   <figcaption>Repository context stays close: inspect issues, pull requests, and branches before opening the workspace.</figcaption>
 </figure>

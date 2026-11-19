@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
+import { screenshotUrl } from '../screenshot-assets'
 import {
   placeholderImages,
   type PlaceholderImage,
@@ -39,7 +40,7 @@ const hasSingleDeviceImage = computed(
         <img
           class="seo-media-placeholder__image"
           :class="{ 'nimote-pro-screenshot': image.phone?.src?.startsWith('/screenshots/nimote-pro.webp') }"
-          :src="image.phone?.src"
+          :src="screenshotUrl(image.phone.src)"
           :alt="image.phone?.src?.startsWith('/screenshots/nimote-pro.webp') ? alt : `${alt} — phone`"
           :width="image.phone?.width"
           :height="image.phone?.height"
@@ -51,7 +52,7 @@ const hasSingleDeviceImage = computed(
       <figure v-if="image.ipad?.src" class="seo-media-placeholder__device seo-media-placeholder__device--ipad">
         <img
           class="seo-media-placeholder__image"
-          :src="image.ipad.src"
+          :src="screenshotUrl(image.ipad.src)"
           :alt="`${alt} — iPad`"
           :width="image.ipad.width"
           :height="image.ipad.height"

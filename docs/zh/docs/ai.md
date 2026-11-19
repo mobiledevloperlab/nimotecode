@@ -17,7 +17,7 @@ AI 为可选功能。发送请求前，请在[AI 与连接配置](/zh/docs/confi
 </div>
 
 <div class="doc-screenshots">
-  <DocScreenshot file="ai-chat-welcome.png" caption="尚未打开工作区的 AI 面板。" />
+  <DocScreenshot file="ai-chat-welcome.png" caption="已连接 SSH 项目的 AI 工作区，尚未启动新任务。" />
 </div>
 
 </div>
@@ -32,7 +32,7 @@ Agent 选择器提供 Nimote Agent 和外部 Agent。Nimote Agent 适合需要�
 </div>
 
 <div class="doc-screenshots">
-  <DocScreenshot file="ai-agent-selector.jpg" caption="Agent 选择器：当前选择 Nimote Agent，外部 Agent 已关闭。" />
+  <DocScreenshot file="ai-agent-selector.jpg" caption="模型选择器：已选择 deepseek-flash，列表中也显示 deepseek-v4-pro。" />
 </div>
 
 </div>
@@ -45,7 +45,7 @@ Agent 选择器提供 Nimote Agent 和外部 Agent。Nimote Agent 适合需要�
 
 <div class="doc-screenshots">
   <DocScreenshot file="ai-plan-approval.jpg" caption="Confirm 模式下等待审批的项目检查计划。" />
-  <DocScreenshot file="ai-plan-running.jpg" caption="获批后读取文件的任务，时间线记录已完成的检查步骤。" />
+  <DocScreenshot file="ai-plan-running.jpg" caption="Agent 任务结果：新增 Python 测试、通过的测试输出与 Git 差异。" />
 </div>
 
 ## 阅读执行结果
@@ -73,7 +73,7 @@ Agent 选择器提供 Nimote Agent 和外部 Agent。Nimote Agent 适合需要�
 留意缺失文件、当前检出范围和基准测试方法等限制。不要将这次回答的结论直接套用到其他版本或环境。
 
 <div class="doc-screenshots">
-  <DocScreenshot file="ai-analysis-caveats.jpg" caption="针对当前检出文件和基准测试结果的注意事项。" />
+  <DocScreenshot file="ai-analysis-caveats.jpg" caption="AI 针对实际检查的 Python 实现、测试覆盖和未验证假设给出的注意事项。" />
 </div>
 
 ## 谨慎连接 MCP 工具

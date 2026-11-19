@@ -23,7 +23,7 @@ description: "NimoteHost 연결, 터미널 및 작업 안내 및 절차."
 + → Terminal에서 이미 존재하는 원격 폴더를 입력하고 Start session을 누릅니다. pwd와 echo Host connected로 위치와 출력을 확인합니다. Windows PowerShell에서는 Get-Location으로 폴더를 확인합니다.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="host-terminal.png" caption="pwd와 echo Host connected 출력입니다. 목록에서 다시 열어도 남아 있습니다." />
+  <DocScreenshot file="host-terminal.png" caption="완료된 원격 검사 출력: 세 개의 Python 테스트가 네 번 모두 통과했습니다." />
 </div>
 
 예제는 /tmp/nimote-host-guide를 사용합니다. macOS에서는 /private/tmp/nimote-host-guide로 표시될 수 있습니다. 실제 작업에는 프로젝트 폴더를 쓰고 중요한 파일은 임시 폴더에 두지 마세요. 목록으로 돌아가도 셸은 계속 실행됩니다. 끝내려면 exit나 중지 버튼을 사용합니다.
@@ -33,7 +33,7 @@ description: "NimoteHost 연결, 터미널 및 작업 안내 및 절차."
 Sessions에서 이름이나 폴더를 검색하고 All, Running, History로 범위를 바꿉니다. 메뉴에서는 고정이나 이름 변경도 할 수 있습니다.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="host-sessions.png" caption="예제 폴더와 Running으로 필터링해 실행 중인 터미널만 표시했습니다." />
+  <DocScreenshot file="host-sessions.png" caption="Host 세션 기록: 실행 중, 완료, 중지된 프로세스." />
 </div>
 
 SSH가 끊겨도 같은 Host에 다시 연결할 수 있습니다. Host와 프로세스가 계속 실행 중이면 원래 명령을 재실행하지 않고 돌아갑니다. Host나 OS를 재시작하면 프로세스가 복원되지는 않으며 미완료 세션은 중단으로 표시됩니다. 로그아웃 후 실행 여부도 각 OS의 사용자 서비스 설정에 달려 있습니다.

@@ -13,7 +13,7 @@ writeFileSync('docs/public/screenshots/nimote-pro-framed.svg',svg);
 const hash=createHash('sha256').update(bytes).digest('hex').slice(0,8);
 for(const file of ['docs/.vitepress/config.ts','docs/.vitepress/theme/image-registry.ts']){
  let s=readFileSync(file,'utf8').replace(/nimote-pro\.webp\?v=[a-f0-9]+/g,`nimote-pro.webp?v=${hash}`);
- if(file.includes('image-registry'))s=s.replace('src: NIMOTE_PRO_SCREENSHOT, width: 1440, height: 810',`src: NIMOTE_PRO_SCREENSHOT, width: ${width}, height: ${height}`);
+ if(file.includes('image-registry'))s=s.replace(/src:\s*NIMOTE_PRO_SCREENSHOT,\s*width:\s*\d+,\s*height:\s*\d+/g,`src: NIMOTE_PRO_SCREENSHOT, width: ${width}, height: ${height}`);
  writeFileSync(file,s);
 }
 console.log({width,height,radius,hash});

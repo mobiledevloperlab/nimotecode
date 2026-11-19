@@ -11,7 +11,7 @@ Abra un archivo desde Explorer o Search. Cada archivo abierto aparece en una pes
 
 <div class="doc-screenshots">
   <DocScreenshot file="editor-empty-state.png" caption="Browse files permite seleccionar un archivo cuando no hay pestañas abiertas." />
-  <DocScreenshot file="editor-multiple-files.jpg" caption="El archivo app.js del proyecto de ejemplo en el editor." />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="Archivos Python y Markdown abiertos en pestañas distintas." />
 </div>
 
 ## Seleccionar y editar texto
@@ -31,7 +31,7 @@ Abre el archivo y usa los números de línea y el resaltado de sintaxis para loc
 Selecciona texto para copiar, cortar o pegar desde el menú. Usa **Ask AI** si necesitas ayuda de la IA con la selección.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="editor-context-menu.jpg" caption="Menú de selección con Copy, Cut, Paste, Select All y Ask AI." />
+  <DocScreenshot file="editor-context-menu.jpg" caption="Identificador Python seleccionado con copiar, cortar, pegar, seleccionar todo y Ask AI." />
 </div>
 
 ### Deshacer y rehacer cambios
@@ -82,7 +82,7 @@ Revisa los títulos, bloques de código, árboles de directorios y tablas en la 
 La vista previa de HTML muestra una instantánea del contenido actual, incluidos los cambios sin guardar. El ejemplo es un informe; la lógica del servidor sigue necesitando el entorno de ejecución del proyecto.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="html-report-preview.jpg" caption="Informe de rendimiento HTML en una pestaña de vista previa del editor." />
+  <DocScreenshot file="html-report-preview.jpg" caption="Informe HTML en el navegador integrado con tres pruebas unitarias Python correctas." />
 </div>
 
 ## NimoteCode 2.4.0

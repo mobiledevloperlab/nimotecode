@@ -12,10 +12,10 @@ NimoteCode 通过 SSH 将 iPhone 连接到 Windows、macOS 或 Linux 主机。�
 只运行命令时，独立终端可能已经足够；需要找文件、修改代码、运行项目检查并审查变更时，NimoteCode 可以把这些操作连起来。
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-ssh.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-ssh.webp" width="660" height="1433" alt="iPhone 上的 NimoteCode Remote Explorer，显示已连接的 SSH 项目。" loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-ssh.webp?v=6e00355be096" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-ssh.webp?v=6e00355be096" width="720" height="1565" alt="iPhone 上的远程项目文件。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone 上的 NimoteCode Remote Explorer，显示已连接的 SSH 项目。 图片来源：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 页面</a>。</figcaption>
+  <figcaption>iPhone 上的远程项目文件。 来源：本机编译的 NimoteCode 2.4.1（66）iOS 模拟器实截。</figcaption>
 </figure>
 
 ## 将 iPhone 连接到开发主机

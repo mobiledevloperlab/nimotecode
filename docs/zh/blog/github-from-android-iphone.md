@@ -35,14 +35,14 @@ tags: ["github", "移动开发", "android", "ios", "git"]
 
 <div class="mobile-ide-workflow-gallery">
   <figure class="mobile-ide-screenshot">
-    <a href="/images/placeholders/github_entry.png" target="_blank" rel="noopener">
-      <img src="/images/placeholders/github_entry.png" width="1320" height="2868" alt="GitHub 仓库选择界面，已选择仓库，并可选择本机设备或 SSH 主机。" loading="eager" decoding="async">
+    <a href="/images/placeholders/github_entry.png?v=9955c5e42121" target="_blank" rel="noopener">
+      <img src="/images/placeholders/github_entry.png?v=9955c5e42121" width="1080" height="2376" alt="GitHub 仓库选择界面，已选择仓库，并可选择本机设备或 SSH 主机。" loading="eager" decoding="async">
     </a>
     <figcaption>1. 选择可访问的仓库，并决定由哪个环境执行工作。</figcaption>
   </figure>
   <figure class="mobile-ide-screenshot">
-    <a href="/images/placeholders/github_conf.png" target="_blank" rel="noopener">
-      <img src="/images/placeholders/github_conf.png" width="1320" height="2868" alt="面向 SSH 主机的 GitHub 克隆设置，包含目标目录、分支、浅克隆和 SSH 密钥认证。" loading="lazy" decoding="async">
+    <a href="/images/placeholders/github_conf.png?v=445d106239d7" target="_blank" rel="noopener">
+      <img src="/images/placeholders/github_conf.png?v=445d106239d7" width="1080" height="2376" alt="面向 SSH 主机的 GitHub 克隆设置，包含目标目录、分支、浅克隆和 SSH 密钥认证。" loading="lazy" decoding="async">
     </a>
     <figcaption>2. 克隆前核对目标目录、分支和主机端认证。</figcaption>
   </figure>
@@ -55,8 +55,8 @@ tags: ["github", "移动开发", "android", "ios", "git"]
 你可以筛选 Issue 和拉取请求、创建 Issue，也可以从 Issue 发起带上下文的 Agent 任务。有了上下文，交接会更清楚，但它不能代替判断。先读验收条件，检查受影响的代码，并把任务控制在能在小屏幕上认真审查的范围内。
 
 <figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/github.png" target="_blank" rel="noopener">
-    <img src="/images/placeholders/github.png" width="1320" height="2868" alt="NimoteCode 中的 GitHub 仓库页面，包含 Issue、拉取请求和分支标签。" loading="lazy" decoding="async">
+  <a href="/images/placeholders/github.png?v=94976c317669" target="_blank" rel="noopener">
+    <img src="/images/placeholders/github.png?v=94976c317669" width="1080" height="2376" alt="NimoteCode 中的 GitHub 仓库页面，包含 Issue、拉取请求和分支标签。" loading="lazy" decoding="async">
   </a>
   <figcaption>仓库上下文始终在手边：打开工作区前，先检查 Issue、拉取请求和分支。</figcaption>
 </figure>

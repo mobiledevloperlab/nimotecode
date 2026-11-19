@@ -20,10 +20,10 @@ Puedes escribir código en el teléfono, pero ejecutarlo necesita un entorno com
 Local Linux utiliza PRoot sin root y no está disponible en iPhone o iPad. Un editor básico basta para texto; no necesitas configurar IA para empezar.
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="Edición en iPhone; ejecutar necesita un entorno configurado." loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-editor.webp?v=dc778aae9066" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-editor.webp?v=dc778aae9066" width="720" height="1565" alt="Editor Python en iPhone." loading="lazy" decoding="async">
   </a>
-  <figcaption>Edición en iPhone; ejecutar necesita un entorno configurado. Fuente: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">capturas de NimoteCode en App Store</a>.</figcaption>
+  <figcaption>Editor Python en iPhone. Capturado en el simulador iOS con la compilación local NimoteCode 2.4.1 (66).</figcaption>
 </figure>
 
 ## Tu primer script Python

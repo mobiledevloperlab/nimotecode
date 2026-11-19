@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useData, withBase } from 'vitepress'
+import { screenshotUrl } from '../screenshot-assets'
 import MockIcon from './MockIcon.vue'
 import translations from '../i18n/product.json'
 import homeTranslations from '../i18n/home.json'
@@ -25,8 +26,8 @@ const views = [
 const cardPaths = ['ssh', 'local-linux', 'host']
 const current = computed(() => views[activeView.value])
 const currentCopy = computed(() => copy.value.views[activeView.value])
-const imageSource = computed(() => withBase(`/images/placeholders/thumbs/${current.value.image}.webp`))
-const originalSource = computed(() => withBase(`/images/placeholders/${current.value.image}.${current.value.extension}`))
+const imageSource = computed(() => withBase(screenshotUrl(`/images/placeholders/thumbs/${current.value.image}.webp`)))
+const originalSource = computed(() => withBase(screenshotUrl(`/images/placeholders/${current.value.image}.${current.value.extension}`)))
 </script>
 
 <template>

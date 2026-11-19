@@ -24,11 +24,11 @@ const PHONE_WIDTH = 1080
 const PHONE_HEIGHT = 2376
 const SCREENSHOT_PHONE_WIDTH = 1080
 const SCREENSHOT_PHONE_HEIGHT = 2376
-const NIMOTE_PRO_SCREENSHOT = '/screenshots/nimote-pro.webp?v=0fc5e74d'
+const NIMOTE_PRO_SCREENSHOT = '/screenshots/nimote-pro.webp?v=1113699e'
 
 export const placeholderImages = {
   quickStart: {
-    phone: { src: NIMOTE_PRO_SCREENSHOT, width: 1595, height: 926 }
+    phone: { src: NIMOTE_PRO_SCREENSHOT, width: 2560, height: 1600 }
   },
   sshWorkspace: {
     phone: {
@@ -108,10 +108,10 @@ export const placeholderImages = {
     }
   },
   iphoneSshClient: {
-    phone: { src: '/images/ios/iphone-ssh.webp', width: 660, height: 1433 }
+    phone: { src: '/images/ios/iphone-ssh.webp', width: 720, height: 1565 }
   },
   ipadCoding: {
-    ipad: { src: '/images/ios/ipad-workspace.webp', width: 1200, height: 899 }
+    ipad: { src: '/images/ios/ipad-workspace.webp', width: 1200, height: 1741 }
   },
   mobileAiCoding: {
     phone: {
@@ -164,9 +164,7 @@ export const placeholderImages = {
   },
   bestSshClients: {
     phone: {
-      src: NIMOTE_PRO_SCREENSHOT,
-      width: 1440,
-      height: 810
+      src: NIMOTE_PRO_SCREENSHOT, width: 2560, height: 1600
     }
   },
   gitCommitRecord: {

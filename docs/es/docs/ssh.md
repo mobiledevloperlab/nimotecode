@@ -10,7 +10,7 @@ description: "Configuración, procedimientos y referencia de la interfaz: Espaci
 Explorer ofrece acceso a espacios locales, SSH remotos, Local Linux y de demostración. Recent History muestra ubicaciones abiertas anteriormente. El espacio conectado determina los archivos y herramientas disponibles.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="workspace-start-light.png" caption="Explorer antes de abrir un espacio, con tema claro." />
+  <DocScreenshot file="workspace-start-light.png" caption="Entradas al espacio de trabajo antes de abrir un proyecto, con tema oscuro." />
 </div>
 
 ## Abrir una carpeta local
@@ -30,7 +30,7 @@ Abre la carpeta del proyecto, comprueba la ubicación y selecciona **Use this fo
 Al volver a Local Explorer, comprueba el directorio raíz. La carpeta del ejemplo está vacía; al abrir tu proyecto, verifica que sus archivos aparezcan aquí.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="local-workspace-files.png" caption="Local Explorer después de seleccionar una carpeta; el ejemplo no muestra archivos del proyecto." />
+  <DocScreenshot file="local-workspace-files.png" caption="Local Explorer con el proyecto Python temporal en Android." />
 </div>
 
 ## Configurar una conexión SSH
@@ -44,7 +44,7 @@ Al volver a Local Explorer, comprueba el directorio raíz. La carpeta del ejempl
 
 <div class="doc-screenshots">
   <DocScreenshot file="remote-connection-form.jpg" caption="Formulario de conexión SSH con host, usuario, puerto y configuración de proxy." />
-  <DocScreenshot file="remote-connection-history.png" caption="Recent History con un perfil SSH guardado." />
+  <DocScreenshot file="remote-connection-history.png" caption="Conexión SSH guardada en el panel Connection environments." />
 </div>
 
 ## Seleccionar la raíz del proyecto

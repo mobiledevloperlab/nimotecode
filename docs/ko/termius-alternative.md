@@ -31,10 +31,10 @@ Termius를 사용 중이라면 실제 작업이 나아지는지를 기준으로 
 평소 Termius로 접근하는 저장소를 사용하세요. NimoteCode에서 같은 디렉터리를 열고 파일 하나를 수정해 저장한 뒤 소스 제어에서 diff를 확인하고 호스트에서 검사를 실행합니다. 파일 탐색과 검토 과정을 비교하고 필요한 호스트 관리 및 동기화 기능은 별도로 확인하세요.
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone NimoteCode 편집기의 탭과 키보드." loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-editor.webp?v=dc778aae9066" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-editor.webp?v=dc778aae9066" width="720" height="1565" alt="iPhone의 Python 편집기." loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone NimoteCode 편집기의 탭과 키보드. 출처: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 등록 이미지</a>.</figcaption>
+  <figcaption>iPhone의 Python 편집기. 로컬 빌드 NimoteCode 2.4.1 (66) iOS 시뮬레이터에서 캡처.</figcaption>
 </figure>
 
 ## 이전 전에 연결 하나 검증하기

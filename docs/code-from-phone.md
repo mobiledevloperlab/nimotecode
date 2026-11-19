@@ -20,10 +20,10 @@ You can write and edit code on a phone. Running it needs an environment that sup
 Local Linux uses PRoot without root access and is unavailable on iPhone or iPad. A basic editor is enough for text-only tasks; you do not need AI to begin.
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="Editing source on iPhone; running it requires a configured runtime." loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-editor.webp?v=dc778aae9066" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-editor.webp?v=dc778aae9066" width="720" height="1565" alt="Python editor on iPhone." loading="lazy" decoding="async">
   </a>
-  <figcaption>Editing source on iPhone; running it requires a configured runtime. Source: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store screenshots</a>.</figcaption>
+  <figcaption>Python editor on iPhone. Captured from the local NimoteCode 2.4.1 (66) iOS simulator build.</figcaption>
 </figure>
 
 ## Try a first Python script

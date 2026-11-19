@@ -34,7 +34,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/public/screenshots/nimote-pro-framed.svg" alt="Espacio NimoteCode con explorador, editor, terminal y Agent de IA" width="1000">
+  <img src="docs/public/screenshots/nimote-pro-framed.svg?v=6d554a40db88" alt="Archivos remotos y editor Python de NimoteCode 2.4.1" width="1000">
 </p>
 
 NimoteCode es un **IDE móvil para proyectos locales y remotos por SSH**. Explora archivos, edita código, ejecuta comandos y revisa diferencias Git en un mismo espacio. Conecta tu proveedor de IA o utiliza agentes instalados en tu equipo de desarrollo.
@@ -70,7 +70,7 @@ Cada tarea dispone de una vista dedicada. El proyecto sigue a mano al pasar de a
 
 <table>
   <tr>
-    <td rowspan="5" width="180" align="center" valign="middle"><a href="docs/public/images/placeholders/host-mode.png"><img src="docs/public/screenshots/host-mode-framed.svg" alt="Selección de modos NimoteCode: Full IDE, Quick Terminal, AI Workspace y Host" width="160"></a></td>
+    <td rowspan="5" width="180" align="center" valign="middle"><a href="docs/public/images/placeholders/host-mode.png?v=8ed6f40a441c"><img src="docs/public/screenshots/host-mode-framed.svg?v=0b26255ed795" alt="Selección de modos NimoteCode: Full IDE, Quick Terminal, AI Workspace y Host" width="160"></a></td>
     <th>Modo</th>
     <th>Cuándo utilizarlo</th>
     <th>Experiencia</th>
@@ -117,10 +117,10 @@ Sigue un flujo móvil completo: abre el proyecto SSH, inspecciona el código, co
     <th width="25%" align="center">4 · Revisa los cambios</th>
   </tr>
   <tr>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/editor-code-selection.png"><img src="docs/public/screenshots/editor-code-selection-framed.svg" alt="1 · Explora el código" width="220"></a></td>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/ai-plan-running.jpg"><img src="docs/public/screenshots/ai-plan-running-framed.svg" alt="2 · Colabora con un Agent" width="220"></a></td>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/terminal-command-output.png"><img src="docs/public/screenshots/terminal-command-output-framed.svg" alt="3 · Ejecuta comandos" width="220"></a></td>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/source-control-changes.png"><img src="docs/public/screenshots/source-control-changes-framed.svg" alt="4 · Revisa los cambios" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/editor-code-selection.png?v=3bc86359abb3"><img src="docs/public/screenshots/editor-code-selection-framed.svg?v=5419f1211a45" alt="1 · Explora el código" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/ai-plan-running.jpg?v=7cdbc72fe334"><img src="docs/public/screenshots/ai-plan-running-framed.svg?v=50b2a9e2632d" alt="2 · Colabora con un Agent" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/terminal-command-output.png?v=8a8c20322c4e"><img src="docs/public/screenshots/terminal-command-output-framed.svg?v=62963867fed1" alt="3 · Ejecuta comandos" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/source-control-changes.png?v=f08e4471badb"><img src="docs/public/screenshots/source-control-changes-framed.svg?v=15712f667c09" alt="4 · Revisa los cambios" width="220"></a></td>
   </tr>
   <tr>
     <td valign="top">Lee y edita archivos con resaltado de sintaxis y números de línea.</td>
@@ -130,7 +130,7 @@ Sigue un flujo móvil completo: abre el proyecto SSH, inspecciona el código, co
   </tr>
 </table>
 
-<sub>Capturas reales de la aplicación. Haz clic para verlas a tamaño completo.</sub>
+<sub>Capturas reales de NimoteCode 2.4.1 para Android mediante ADB. Haz clic para ver el tamaño original.</sub>
 
 ¿Necesitas salir? El [modo Host](#nimotehost) permite volver a sesiones compatibles gestionadas por NimoteHost en tu ordenador.
 

@@ -11,7 +11,7 @@ description: "在手机或平板上使用 NimoteCode 编辑代码，了解标签
 
 <div class="doc-screenshots">
   <DocScreenshot file="editor-empty-state.png" caption="没有打开文件时，可通过 Browse files 选择文件。" />
-  <DocScreenshot file="editor-multiple-files.jpg" caption="编辑器中的示例项目 app.js 文件。" />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="Python 与 Markdown 文件在独立的编辑器标签页中打开。" />
 </div>
 
 ## 选择与编辑文本
@@ -31,7 +31,7 @@ description: "在手机或平板上使用 NimoteCode 编辑代码，了解标签
 选中文本后，在选区菜单中选择复制、剪切或粘贴；需要 AI 协助时，使用 **Ask AI** 入口。
 
 <div class="doc-screenshots">
-  <DocScreenshot file="editor-context-menu.jpg" caption="文本选区菜单：复制、剪切、粘贴、全选和 Ask AI。" />
+  <DocScreenshot file="editor-context-menu.jpg" caption="选中的 Python 标识符及 Copy、Cut、Paste、Select All 和 Ask AI 操作。" />
 </div>
 
 ### 撤销与重做
@@ -82,7 +82,7 @@ description: "在手机或平板上使用 NimoteCode 编辑代码，了解标签
 HTML 预览展示当前编辑内容的快照，包括未保存的修改。下图是报告页面示例；服务端逻辑仍需要项目自身的运行环境。
 
 <div class="doc-screenshots">
-  <DocScreenshot file="html-report-preview.jpg" caption="编辑器预览标签页中的 HTML 基准测试报告。" />
+  <DocScreenshot file="html-report-preview.jpg" caption="集成浏览器中的 HTML 质量报告，展示通过的 3 项 Python 单元测试。" />
 </div>
 
 ## NimoteCode 2.4.0

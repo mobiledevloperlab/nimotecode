@@ -12,10 +12,10 @@ NimoteCode는 iPhone을 SSH로 Windows, macOS, Linux 호스트에 연결합니�
 명령만 실행한다면 전용 터미널로 충분할 수 있습니다. 파일을 찾아 편집하고 검증한 뒤 diff까지 확인하는 작업에 NimoteCode가 유용합니다.
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-ssh.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-ssh.webp" width="660" height="1433" alt="iPhone의 NimoteCode Remote Explorer에 표시된 SSH 연결과 프로젝트." loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-ssh.webp?v=6e00355be096" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-ssh.webp?v=6e00355be096" width="720" height="1565" alt="iPhone의 원격 프로젝트 파일." loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone의 NimoteCode Remote Explorer에 표시된 SSH 연결과 프로젝트. 출처: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 등록 이미지</a>.</figcaption>
+  <figcaption>iPhone의 원격 프로젝트 파일. 로컬 빌드 NimoteCode 2.4.1 (66) iOS 시뮬레이터에서 캡처.</figcaption>
 </figure>
 
 ## 개발 호스트에 연결하기

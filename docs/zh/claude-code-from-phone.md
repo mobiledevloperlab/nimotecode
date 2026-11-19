@@ -37,10 +37,10 @@ git status --short --branch
 ```
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-terminal.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-terminal.webp" width="660" height="1433" alt="NimoteCode 的 iPhone SSH 终端显示 Shell 命令。该图说明终端界面，并非 Claude Code 任务实录。" loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-terminal.webp?v=73084741cf14" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-terminal.webp?v=73084741cf14" width="720" height="1565" alt="iPhone SSH 终端中通过的 3 项 Python 单元测试。" loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode 的 iPhone SSH 终端显示 Shell 命令。该图说明终端界面，并非 Claude Code 任务实录。 图片来源：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 页面</a>。</figcaption>
+  <figcaption>iPhone SSH 终端中通过的 3 项 Python 单元测试。 来源：本机编译的 NimoteCode 2.4.1（66）iOS 模拟器实截。</figcaption>
 </figure>
 
 ## 3. 在主机会话中启动任务

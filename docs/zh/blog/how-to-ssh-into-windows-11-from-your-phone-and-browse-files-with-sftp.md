@@ -4,13 +4,13 @@ description: "在 Windows 11 上配置 OpenSSH Server，从 Android 或 iPhone �
 date: "2026-11-12"
 author: "NimoteCode 团队"
 tags: ["windows", "ssh", "sftp", "tutorial", "mobile development"]
-image: /blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/cover.png
-ogImage: https://nimotecode.com/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/cover.png
+image: /blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/cover.png?v=73a77d426021
+ogImage: https://nimotecode.com/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/cover.png?v=73a77d426021
 ---
 
 # 如何用手机通过 SSH 连接 Windows 11，并使用 SFTP 浏览文件
 
-![通过手机使用 SSH 和 SFTP 访问 Windows 11](/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/cover.png)
+![通过手机使用 SSH 和 SFTP 访问 Windows 11](/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/cover.png?v=73a77d426021)
 
 **用手机访问你的 Windows 开发电脑，不一定需要远程桌面。SSH 和 SFTP 往往就够用了。**
 
@@ -236,7 +236,9 @@ Test-NetConnection 192.168.1.100 -Port 22
 
 我使用的是 [NimoteCode](https://nimotecode.com/)，它从 **2.3.0** 版本开始支持 Windows 远程工作区。
 
-![NimoteCode 的 Windows 11 远程工作区连接设置](/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png)
+![NimoteCode 2.4.1 SSH](/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png?v=d71056b9acfc)
+
+NimoteCode 2.4.1 连接表单、目录选择与远程文件。新版界面截图使用临时 macOS SSH 项目；上面的 Windows 配置步骤仍针对 Windows。
 
 创建一个 SSH 工作区或连接，填写以下信息：
 

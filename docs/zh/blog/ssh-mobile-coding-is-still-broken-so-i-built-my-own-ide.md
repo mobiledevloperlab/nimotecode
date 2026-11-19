@@ -6,7 +6,7 @@ author: "NimoteCode 团队"
 date: "2026-06-11"
 lastUpdated: "2026-11-03"
 tags: ["ssh", "flutter", "移动 ide", "devops"]
-image: /blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-1.png
+image: /blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-1.png?v=ea4cf080e63f
 ---
 
 # SSH + 移动编程仍然支离破碎，所以我自己做了一款 IDE
@@ -25,17 +25,17 @@ image: /blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-1.png
 - 移动优先的体验，而非桌面端的复制品
 
 <figure>
-  <img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-1.png" width="1604" height="901" alt="文件浏览、代码编辑与 AI 对话的产品展示拼图" loading="lazy" decoding="async">
+  <img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-1.png?v=ea4cf080e63f" width="1604" height="901" alt="文件浏览、代码编辑与 AI 对话的产品展示拼图" loading="lazy" decoding="async">
   <figcaption>文件浏览、代码编辑与 AI 对话的产品展示拼图。 来源：NimoteCode 团队。</figcaption>
 </figure>
 
 <figure>
-  <img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-2.png" width="1597" height="896" alt="终端、Git 变更审查与代码诊断的产品展示拼图" loading="lazy" decoding="async">
+  <img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-2.png?v=369b4d3ac72d" width="1597" height="896" alt="终端、Git 变更审查与代码诊断的产品展示拼图" loading="lazy" decoding="async">
   <figcaption>终端、Git 变更审查与代码诊断的产品展示拼图。 来源：NimoteCode 团队。</figcaption>
 </figure>
 
 <figure>
-  <img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-3.png" width="1598" height="893" alt="调试与工作区同步的产品展示拼图" loading="lazy" decoding="async">
+  <img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-3.png?v=ee17e2a1045d" width="1598" height="893" alt="调试与工作区同步的产品展示拼图" loading="lazy" decoding="async">
   <figcaption>调试与工作区同步的产品展示拼图。 来源：NimoteCode 团队。</figcaption>
 </figure>
 

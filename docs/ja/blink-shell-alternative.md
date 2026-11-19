@@ -31,10 +31,10 @@ Mosh、キーボード設定、Files、既存の Blink Code 環境が重要な�
 iPhone または iPad で、Blink Code で使っているリポジトリを開きます。関連する二つのファイルの編集、保存、Git 差分確認を比較してください。普段の外付けキーボードとネットワークで再接続も試します。Mosh が必須なら選定条件に含めてください。このガイドで扱うのは NimoteCode の SSH ワークフローです。
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone の NimoteCode エディターに表示されたタブとキーボード。" loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-editor.webp?v=dc778aae9066" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-editor.webp?v=dc778aae9066" width="720" height="1565" alt="iPhone の Python エディター。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone の NimoteCode エディターに表示されたタブとキーボード。 出典：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode の App Store 掲載画像</a>。</figcaption>
+  <figcaption>iPhone の Python エディター。 ローカルビルドの NimoteCode 2.4.1（66）iOS シミュレーターで撮影。</figcaption>
 </figure>
 
 ## 移行前に一つの接続を検証する

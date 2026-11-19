@@ -13,10 +13,10 @@ pageClass: mobile-ide-article
 저희는 Android, iPhone, iPad용 편집기이자 개발 작업 공간인 NimoteCode를 만들고 있습니다. 이 글에서는 NimoteCode를 예로 들지만, 어떤 앱을 고르든 먼저 답할 질문은 같습니다. **코드와 개발 도구를 어디에서 실행할 건가요?**
 
 <figure class="article-hero">
-  <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="iPad용 NimoteCode의 프로젝트 탐색과 코드 편집 화면. 출처: NimoteCode App Store 등록 이미지." loading="eager" decoding="async">
+  <a href="/images/ios/ipad-workspace.webp?v=477d0ae0628c" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-workspace.webp?v=477d0ae0628c" width="1200" height="1741" alt="iPad의 원격 파일 및 Python 편집기." loading="eager" decoding="async">
   </a>
-  <figcaption>iPad용 NimoteCode의 프로젝트 탐색과 코드 편집 화면. 출처: NimoteCode App Store 등록 이미지.</figcaption>
+  <figcaption>iPad의 원격 파일 및 Python 편집기. 로컬 빌드 NimoteCode 2.4.1 (66) iOS 시뮬레이터에서 캡처.</figcaption>
 </figure>
 
 ## 앱보다 작업 방식을 먼저 고르세요
@@ -49,8 +49,8 @@ git status --short --branch
 셸이 의도한 저장소 안에 있는지 확인하세요. 편집기 탭을 바꿔도 셸의 작업 디렉터리는 바뀌지 않습니다. 기존 변경 사항이 있다면 이번 수정과 구분해 둡니다.
 
 <figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/remote-workspace-connected.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/remote-workspace-connected.jpg" width="1080" height="2376" alt="연결된 SSH 작업 공간입니다. 파일을 열기 전에 호스트와 프로젝트 루트를 확인합니다." loading="lazy" decoding="async">
+  <a href="/images/placeholders/remote-workspace-connected.jpg?v=e924413fb586" target="_blank" rel="noopener">
+    <img src="/images/placeholders/remote-workspace-connected.jpg?v=e924413fb586" width="1080" height="2376" alt="연결된 SSH 작업 공간입니다. 파일을 열기 전에 호스트와 프로젝트 루트를 확인합니다." loading="lazy" decoding="async">
   </a>
   <figcaption>연결된 SSH 작업 공간입니다. 파일을 열기 전에 호스트와 프로젝트 루트를 확인합니다.</figcaption>
 </figure>
@@ -64,8 +64,8 @@ git status --short --branch
 Explorer에서 `README.md`를 열고 앞뒤 설명을 읽은 뒤 명령어를 수정합니다. 처음에는 이 수정에만 집중하세요. 문서 전체의 서식까지 함께 정리하면 작은 화면에서 diff를 읽기 어려워집니다.
 
 <figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/markdown-source-editor.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/markdown-source-editor.jpg" width="1080" height="2376" alt="모바일 편집기에서 연 README.md입니다. 미리보기와 비교할 수 있는 Markdown 소스 화면입니다." loading="lazy" decoding="async">
+  <a href="/images/placeholders/markdown-source-editor.jpg?v=2b3c42c3bcde" target="_blank" rel="noopener">
+    <img src="/images/placeholders/markdown-source-editor.jpg?v=2b3c42c3bcde" width="1080" height="2376" alt="모바일 편집기에서 연 README.md입니다. 미리보기와 비교할 수 있는 Markdown 소스 화면입니다." loading="lazy" decoding="async">
   </a>
   <figcaption>모바일 편집기에서 연 README.md입니다. 미리보기와 비교할 수 있는 Markdown 소스 화면입니다.</figcaption>
 </figure>
@@ -75,8 +75,8 @@ Explorer에서 `README.md`를 열고 앞뒤 설명을 읽은 뒤 명령어를 �
 Markdown 미리보기에서 명령어가 코드 블록 안에 있는지, 주변 목록이 제대로 표시되는지 확인합니다. 정적 HTML은 저장하지 않은 변경까지 포함해 현재 편집 내용을 미리 볼 수 있습니다. 서버 처리가 필요한 앱에는 별도의 실행 환경이 필요합니다. [편집기 안내](/ko/docs/editor)에서 차이를 설명합니다.
 
 <figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/markdown-preview.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/markdown-preview.jpg" width="1080" height="2376" alt="Markdown 미리보기에서는 제목, 코드 블록, 표가 실제로 어떻게 표시되는지 확인할 수 있습니다." loading="lazy" decoding="async">
+  <a href="/images/placeholders/markdown-preview.jpg?v=85fdfa272a29" target="_blank" rel="noopener">
+    <img src="/images/placeholders/markdown-preview.jpg?v=85fdfa272a29" width="1080" height="2376" alt="Markdown 미리보기에서는 제목, 코드 블록, 표가 실제로 어떻게 표시되는지 확인할 수 있습니다." loading="lazy" decoding="async">
   </a>
   <figcaption>Markdown 미리보기에서는 제목, 코드 블록, 표가 실제로 어떻게 표시되는지 확인할 수 있습니다.</figcaption>
 </figure>
@@ -96,8 +96,8 @@ git diff --check
 이 명령은 일부 공백 오류만 찾습니다. 문서의 절차나 앱 동작을 테스트하지는 않습니다.
 
 <figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/terminal-command-output.png" target="_blank" rel="noopener">
-    <img src="/images/placeholders/terminal-command-output.png" width="1080" height="2376" alt="작업 공간 터미널에 표시된 ls 디렉터리 목록입니다. 명령 출력 화면의 예시이며 테스트 통과 기록은 아닙니다." loading="lazy" decoding="async">
+  <a href="/images/placeholders/terminal-command-output.png?v=8a8c20322c4e" target="_blank" rel="noopener">
+    <img src="/images/placeholders/terminal-command-output.png?v=8a8c20322c4e" width="1080" height="2376" alt="작업 공간 터미널에 표시된 ls 디렉터리 목록입니다. 명령 출력 화면의 예시이며 테스트 통과 기록은 아닙니다." loading="lazy" decoding="async">
   </a>
   <figcaption>작업 공간 터미널에 표시된 ls 디렉터리 목록입니다. 명령 출력 화면의 예시이며 테스트 통과 기록은 아닙니다.</figcaption>
 </figure>
@@ -107,8 +107,8 @@ git diff --check
 **Source Control**에서 변경한 파일을 열고 차이를 확인합니다. 파일 이름, 수정한 줄, 예상하지 못한 다른 파일이 있는지 살펴보세요. NimoteCode 무료 버전에서는 Git 상태, diff, 기록을 볼 수 있습니다. Git 쓰기와 브랜치 작업에는 Pro가 필요합니다. 자세한 범위는 [무료 버전과 Pro 비교](/ko/pro)를 참고하세요.
 
 <figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/git-diff-view.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/git-diff-view.jpg" width="1080" height="2376" alt="Diff 화면은 추가와 삭제를 색으로 구분합니다. 이 기존 스크린샷은 기능 시연용 변경이며, 위 README 수정의 결과가 아닙니다." loading="lazy" decoding="async">
+  <a href="/images/placeholders/git-diff-view.jpg?v=d846ea1bdd11" target="_blank" rel="noopener">
+    <img src="/images/placeholders/git-diff-view.jpg?v=d846ea1bdd11" width="1080" height="2376" alt="Diff 화면은 추가와 삭제를 색으로 구분합니다. 이 기존 스크린샷은 기능 시연용 변경이며, 위 README 수정의 결과가 아닙니다." loading="lazy" decoding="async">
   </a>
   <figcaption>Diff 화면은 추가와 삭제를 색으로 구분합니다. 이 기존 스크린샷은 기능 시연용 변경이며, 위 README 수정의 결과가 아닙니다.</figcaption>
 </figure>

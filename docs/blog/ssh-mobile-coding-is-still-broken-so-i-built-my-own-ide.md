@@ -6,7 +6,7 @@ author: "NimoteCode Team"
 date: "2026-06-11"
 lastUpdated: "2026-11-03"
 tags: ["ssh", "flutter", "mobile ide", "devops"]
-image: /blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-1.png
+image: /blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-1.png?v=ea4cf080e63f
 ---
 
 # SSH + Mobile Coding Is Still Broken, So I Built My Own IDE
@@ -25,17 +25,17 @@ So I started building a mobile-first IDE called **NimoteCode**. The idea is simp
 - Mobile-first UX, not a desktop copy
 
 <figure>
-  <img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-1.png" width="1604" height="901" alt="Product composite: file browsing, code editing and AI chat" loading="lazy" decoding="async">
+  <img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-1.png?v=ea4cf080e63f" width="1604" height="901" alt="Product composite: file browsing, code editing and AI chat" loading="lazy" decoding="async">
   <figcaption>Product composite: file browsing, code editing and AI chat. Source: NimoteCode team.</figcaption>
 </figure>
 
 <figure>
-  <img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-2.png" width="1597" height="896" alt="Product composite: terminal, Git review and code diagnostics" loading="lazy" decoding="async">
+  <img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-2.png?v=369b4d3ac72d" width="1597" height="896" alt="Product composite: terminal, Git review and code diagnostics" loading="lazy" decoding="async">
   <figcaption>Product composite: terminal, Git review and code diagnostics. Source: NimoteCode team.</figcaption>
 </figure>
 
 <figure>
-  <img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-3.png" width="1598" height="893" alt="Product composite: debugging and workspace synchronization" loading="lazy" decoding="async">
+  <img src="/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-3.png?v=ee17e2a1045d" width="1598" height="893" alt="Product composite: debugging and workspace synchronization" loading="lazy" decoding="async">
   <figcaption>Product composite: debugging and workspace synchronization. Source: NimoteCode team.</figcaption>
 </figure>
 

@@ -33,7 +33,7 @@ description: "快速开始的配置、操作步骤与界面说明。"
 </div>
 
 <div class="doc-screenshots">
-  <DocScreenshot file="editor-multiple-files.jpg" caption="编辑器中的示例项目 app.js 文件。" />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="Python 与 Markdown 文件在独立的编辑器标签页中打开。" />
 </div>
 
 </div>
@@ -64,7 +64,7 @@ description: "快速开始的配置、操作步骤与界面说明。"
 
 <div class="doc-screenshots">
   <DocScreenshot file="ai-plan-approval.jpg" caption="Confirm 模式：检查项目分析计划，确认后批准运行。" />
-  <DocScreenshot file="ai-plan-running.jpg" caption="批准后，Agent 读取项目文件并记录执行进度。" />
+  <DocScreenshot file="ai-plan-running.jpg" caption="Agent 任务结果：新增 Python 测试、通过的测试输出与 Git 差异。" />
 </div>
 
 阅读结果时，同时检查 Agent 标注的限制，例如未能读取的文件。运行期间也可以发送补充说明。Agent 选择与执行控制详见 [AI Chat 与 Agent](/zh/docs/ai)。

@@ -12,10 +12,10 @@ A larger screen helps when a task needs both source code and command output. Nim
 If you only need to edit a note, a simpler editor may be enough. For a project change, first decide where its dependencies, checks, and services will run.
 
 <figure class="article-hero">
-  <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="NimoteCode App Store iPad view with project navigation and code editing." loading="lazy" decoding="async">
+  <a href="/images/ios/ipad-workspace.webp?v=477d0ae0628c" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-workspace.webp?v=477d0ae0628c" width="1200" height="1741" alt="Remote files and Python editor on iPad." loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode App Store iPad view with project navigation and code editing. Source: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store screenshots</a>.</figcaption>
+  <figcaption>Remote files and Python editor on iPad. Captured from the local NimoteCode 2.4.1 (66) iOS simulator build.</figcaption>
 </figure>
 
 ## Choose local editing or a remote project
@@ -43,10 +43,10 @@ The [Windows setup guide](/docs/windows-ssh-sftp) covers PowerShell and SFTP. A 
 Keep related files open in tabs and compare the implementation with its configuration or tests. [Source Control](/docs/source-control) provides changed files, diffs, and history; GitHub workflows depend on account and repository permissions. A wider screen helps with reading, but the host still supplies the project’s runtime.
 
 <figure class="article-hero">
-  <a href="/images/ios/ipad-git.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/ipad-git.webp" width="1200" height="899" alt="NimoteCode App Store iPad view showing Git AI tools and change analysis." loading="lazy" decoding="async">
+  <a href="/images/ios/ipad-git.webp?v=e71556a5988e" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-git.webp?v=e71556a5988e" width="1200" height="1741" alt="Git file-diff review on iPad." loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode App Store iPad view showing Git AI tools and change analysis. Source: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store screenshots</a>.</figcaption>
+  <figcaption>Git file-diff review on iPad. Captured from the local NimoteCode 2.4.1 (66) iOS simulator build.</figcaption>
 </figure>
 
 ## Add AI when it helps the task

@@ -20,10 +20,10 @@ pageClass: "seo-product-guide"
 Local Linux は root 不要の PRoot を使い、iPhone と iPad では利用できません。文章だけなら簡単なエディターで十分で、AI の設定も必須ではありません。
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone でコードを編集。実行には環境設定が必要です。" loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-editor.webp?v=dc778aae9066" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-editor.webp?v=dc778aae9066" width="720" height="1565" alt="iPhone の Python エディター。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone でコードを編集。実行には環境設定が必要です。 出典：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode の App Store 掲載画像</a>。</figcaption>
+  <figcaption>iPhone の Python エディター。 ローカルビルドの NimoteCode 2.4.1（66）iOS シミュレーターで撮影。</figcaption>
 </figure>
 
 ## Python の最初のスクリプト

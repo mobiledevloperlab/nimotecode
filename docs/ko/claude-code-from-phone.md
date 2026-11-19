@@ -37,10 +37,10 @@ git status --short --branch
 ```
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-terminal.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-terminal.webp" width="660" height="1433" alt="iPhone NimoteCode SSH 터미널의 셸 명령 화면. Claude Code 실행 기록은 아닙니다." loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-terminal.webp?v=73084741cf14" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-terminal.webp?v=73084741cf14" width="720" height="1565" alt="iPhone SSH 터미널에서 통과한 Python 단위 테스트 3개." loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone NimoteCode SSH 터미널의 셸 명령 화면. Claude Code 실행 기록은 아닙니다. 출처: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 등록 이미지</a>.</figcaption>
+  <figcaption>iPhone SSH 터미널에서 통과한 Python 단위 테스트 3개. 로컬 빌드 NimoteCode 2.4.1 (66) iOS 시뮬레이터에서 캡처.</figcaption>
 </figure>
 
 ## 3. 호스트 세션에서 시작하기

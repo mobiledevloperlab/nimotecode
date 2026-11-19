@@ -20,10 +20,10 @@ pageClass: "seo-product-guide"
 本地 Linux 基于 PRoot，无需 root，不支持 iPhone 和 iPad。只改文字时基础编辑器就够了，开始编程也不需要配置 AI。
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="在 iPhone 上编辑源码；运行仍需要配置执行环境。" loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-editor.webp?v=dc778aae9066" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-editor.webp?v=dc778aae9066" width="720" height="1565" alt="iPhone 上的 Python 编辑器。" loading="lazy" decoding="async">
   </a>
-  <figcaption>在 iPhone 上编辑源码；运行仍需要配置执行环境。 图片来源：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 页面</a>。</figcaption>
+  <figcaption>iPhone 上的 Python 编辑器。 来源：本机编译的 NimoteCode 2.4.1（66）iOS 模拟器实截。</figcaption>
 </figure>
 
 ## 运行第一个 Python 脚本

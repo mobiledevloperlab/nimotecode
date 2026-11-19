@@ -6,7 +6,7 @@ author: "NimoteCode Team"
 date: "2026-06-20"
 lastUpdated: "2026-11-03"
 tags: ["ai coding", "indie", "mobile ide", "engineering"]
-image: /blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me-6-months/image-1.png
+image: /blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me-6-months/image-1.png?v=913c0c089919
 ---
 
 # I Built a Mobile IDE With ~90% AI-Generated Code — It Still Took 6 Months
@@ -16,7 +16,7 @@ I recently shipped a mobile IDE on Google Play. **~90% of the code was generated
 From the outside, that sounds like it should be fast. In reality, it still took around **6 months of continuous work**.
 
 <figure>
-  <img src="/blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me-6-months/image-1.png" width="968" height="605" alt="NimoteCode promotional composite showing several interface views, not one continuous session" loading="lazy" decoding="async">
+  <img src="/blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me-6-months/image-1.png?v=913c0c089919" width="968" height="605" alt="NimoteCode promotional composite showing several interface views, not one continuous session" loading="lazy" decoding="async">
   <figcaption>NimoteCode promotional composite showing several interface views, not one continuous session. Source: NimoteCode team.</figcaption>
 </figure>
 

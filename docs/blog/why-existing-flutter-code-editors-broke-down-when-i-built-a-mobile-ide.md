@@ -6,7 +6,7 @@ author: "NimoteCode Team"
 date: "2026-06-11"
 lastUpdated: "2026-11-03"
 tags: ["flutter", "rust", "ide", "engineering"]
-image: /blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png
+image: /blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png?v=6dff9c17acfe
 ---
 
 # Why Existing Flutter Code Editors Broke Down When I Built a Mobile IDE
@@ -46,7 +46,7 @@ My integration needed a document model shared by rendering, synchronization and 
 Instead of "a widget that edits text", you need a document model, a layout system, a state engine, and a sync layer for external systems. Once multiple systems depend on the editor state, it can't be passive anymore. It must become the source of truth.
 
 <figure>
-  <img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-1.png" width="1344" height="2992" alt="NimoteCode code editor on a mobile device" loading="lazy" decoding="async">
+  <img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-1.png?v=1ff48bae8252" width="1344" height="2992" alt="NimoteCode code editor on a mobile device" loading="lazy" decoding="async">
   <figcaption>NimoteCode code editor on a mobile device. Source: NimoteCode team.</figcaption>
 </figure>
 
@@ -70,7 +70,7 @@ The editor is built around a shared core:
 The key idea: everything depends on the same document model—not the UI.
 
 <figure>
-  <img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png" width="1414" height="878" alt="NimoteCode code editor on a tablet" loading="lazy" decoding="async">
+  <img src="/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png?v=6dff9c17acfe" width="1414" height="878" alt="NimoteCode code editor on a tablet" loading="lazy" decoding="async">
   <figcaption>NimoteCode code editor on a tablet. Source: NimoteCode team.</figcaption>
 </figure>
 

@@ -10,7 +10,7 @@ description: "使用 NimoteCode 打开本地文件夹、配置 SSH 与代理，�
 Explorer 提供本地、远程 SSH、Local Linux 和演示入口，Recent History 列出最近打开的位置。当前工作区决定文件访问范围及可用工具。
 
 <div class="doc-screenshots">
-  <DocScreenshot file="workspace-start-light.png" caption="尚未打开工作区的 Explorer，浅色主题。" />
+  <DocScreenshot file="workspace-start-light.png" caption="打开项目前的工作区入口，深色主题。" />
 </div>
 
 ## 打开本地目录
@@ -30,7 +30,7 @@ Explorer 提供本地、远程 SSH、Local Linux 和演示入口，Recent Histor
 返回 Local Explorer 后，检查当前根目录是否正确。截图中的目录为空；打开自己的项目后，应在这里确认项目文件。
 
 <div class="doc-screenshots">
-  <DocScreenshot file="local-workspace-files.png" caption="选定目录后的 Local Explorer；示例目录未列出项目文件。" />
+  <DocScreenshot file="local-workspace-files.png" caption="Local Explorer 中的 Android 本地 Python 临时演示项目。" />
 </div>
 
 ## 配置 SSH 连接
@@ -44,7 +44,7 @@ Explorer 提供本地、远程 SSH、Local Linux 和演示入口，Recent Histor
 
 <div class="doc-screenshots">
   <DocScreenshot file="remote-connection-form.jpg" caption="新建 SSH 连接表单，可填写主机、用户名、端口并选择代理。" />
-  <DocScreenshot file="remote-connection-history.png" caption="Recent History 中保存的 SSH 连接。" />
+  <DocScreenshot file="remote-connection-history.png" caption="Connection environments 面板中的已保存 SSH 连接。" />
 </div>
 
 ## 选择项目根目录

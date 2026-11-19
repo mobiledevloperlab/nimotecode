@@ -24,10 +24,10 @@ NimoteCode は、コード説明用の AI Chat、ワークスペースで作業�
 [モデル設定](/ja/docs/configuration)で接続を試し、ワークスペースのルートを確認します。ローカルフォルダーだけではコマンド実行環境は用意されません。SSH はホスト、対応 Android は [Local Linux](/ja/docs/local-linux) を利用できます。iPhone と iPad に Local Linux はありません。
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-agents.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-agents.webp" width="660" height="1433" alt="iPhone の NimoteCode に表示された内蔵・外部 Agent の選択。" loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-agents.webp?v=6c87b07b60da" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-agents.webp?v=6c87b07b60da" width="720" height="1565" alt="プロバイダー設定前の iPhone AI ワークスペース。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone の NimoteCode に表示された内蔵・外部 Agent の選択。 出典：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode の App Store 掲載画像</a>。</figcaption>
+  <figcaption>プロバイダー設定前の iPhone AI ワークスペース。 ローカルビルドの NimoteCode 2.4.1（66）iOS シミュレーターで撮影。</figcaption>
 </figure>
 
 ## 読み取りだけの依頼から始める

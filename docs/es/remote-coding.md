@@ -25,10 +25,10 @@ git status --short --branch
 ```
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-ssh.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-ssh.webp" width="660" height="1433" alt="Remote Explorer en iPhone con el proyecto SSH conectado." loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-ssh.webp?v=6e00355be096" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-ssh.webp?v=6e00355be096" width="720" height="1565" alt="Archivos de un proyecto remoto en iPhone." loading="lazy" decoding="async">
   </a>
-  <figcaption>Remote Explorer en iPhone con el proyecto SSH conectado. Fuente: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">capturas de NimoteCode en App Store</a>.</figcaption>
+  <figcaption>Archivos de un proyecto remoto en iPhone. Capturado en el simulador iOS con la compilación local NimoteCode 2.4.1 (66).</figcaption>
 </figure>
 
 ## 3. Verifica un cambio real

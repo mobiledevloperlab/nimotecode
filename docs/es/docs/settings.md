@@ -10,7 +10,7 @@ description: "Configuración, procedimientos y referencia de la interfaz: Ajuste
 Abra **Settings** para cambiar el tema, los colores del editor, la escala de la interfaz y el idioma. **Follow app** adapta los colores del editor al tema de la aplicación. Aquí también se gestionan la cuenta y las compras; las capturas muestran estados de cuenta distintos.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="app-settings-light.png" caption="Ajustes con tema White y una cuenta con sesión iniciada." />
+  <DocScreenshot file="app-settings-light.png" caption="Ajustes: versión actual 2.4.1 (66) y enlaces de soporte." />
 </div>
 
 <div class="doc-section">

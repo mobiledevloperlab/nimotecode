@@ -152,10 +152,10 @@ Si funciona la dirección de bucle local pero la prueba por LAN agota el tiempo 
 El acceso SFTP depende de la cuenta Windows y los permisos NTFS. Autenticarse no concede permiso para escribir en `C:\Windows` o `Program Files`. Las rutas SFTP pueden diferir de `C:\...`; utiliza la representación que devuelve el servidor.
 
 <figure>
-  <a href="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png" target="_blank" rel="noopener">
-    <img src="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png" width="2020" height="1041" alt="Vistas distintas de NimoteCode para Windows: ajustes de conexión, archivos remotos, terminal PowerShell y una sesión Agent." loading="lazy" decoding="async">
+  <a href="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png?v=d71056b9acfc" target="_blank" rel="noopener">
+    <img src="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png?v=d71056b9acfc" width="2020" height="1041" alt="Formulario de conexión, selector de directorio y archivos remotos de NimoteCode 2.4.1. Las capturas actuales usan un proyecto SSH temporal en macOS; las instrucciones de Windows anteriores siguen siendo específicas de Windows." loading="lazy" decoding="async">
   </a>
-  <figcaption>Vistas distintas de NimoteCode para Windows: ajustes de conexión, archivos remotos, terminal PowerShell y una sesión Agent.</figcaption>
+  <figcaption>Formulario de conexión, selector de directorio y archivos remotos de NimoteCode 2.4.1. Las capturas actuales usan un proyecto SSH temporal en macOS; las instrucciones de Windows anteriores siguen siendo específicas de Windows.</figcaption>
 </figure>
 
 ### Shell de Windows y verificación del servidor

@@ -62,7 +62,7 @@ for (const page of pages) {
 const blogDirs = [resolve(root, 'blog'), ...locales.map(locale => resolve(root, locale, 'blog'))]
 const blogScreenshots = new Set(blogDirs.filter(existsSync).flatMap(dir => readdirSync(dir)
   .filter(file => file.endsWith('.md'))
-  .flatMap(file => extract(readFileSync(resolve(dir, file), 'utf8'), /\/images\/placeholders\/([^\s)"']+)/g))))
+  .flatMap(file => extract(readFileSync(resolve(dir, file), 'utf8'), /\/images\/placeholders\/([^\s)"'?#]+)/g))))
 const coreGuideScreenshots = new Set(pages.flatMap(page => extract(read('', page), structures.screenshots)))
 const screenshots = readdirSync(resolve(root, 'public/images/placeholders'))
   .filter(file => /\.(png|jpe?g|webp)$/i.test(file) && (!blogScreenshots.has(file) || coreGuideScreenshots.has(file)))

@@ -31,10 +31,10 @@ Mosh, 키보드 설정, Files나 기존 Blink Code 환경이 중요하다면 Bli
 iPhone 또는 iPad에서 Blink Code로 다루던 저장소를 여세요. 관련 파일 두 개의 편집, 저장, Git diff 확인을 비교합니다. 평소 사용하는 외장 키보드와 네트워크에서 재연결도 시험하세요. Mosh가 필수라면 선택 조건에 포함하세요. 이 안내는 NimoteCode의 SSH 작업 흐름을 다룹니다.
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone NimoteCode 편집기의 탭과 키보드." loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-editor.webp?v=dc778aae9066" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-editor.webp?v=dc778aae9066" width="720" height="1565" alt="iPhone의 Python 편집기." loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone NimoteCode 편집기의 탭과 키보드. 출처: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 등록 이미지</a>.</figcaption>
+  <figcaption>iPhone의 Python 편집기. 로컬 빌드 NimoteCode 2.4.1 (66) iOS 시뮬레이터에서 캡처.</figcaption>
 </figure>
 
 ## 이전 전에 연결 하나 검증하기

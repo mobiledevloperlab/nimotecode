@@ -34,7 +34,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/public/screenshots/nimote-pro-framed.svg" alt="NimoteCode のファイルツリー、エディター、ターミナル、AI Agent" width="1000">
+  <img src="docs/public/screenshots/nimote-pro-framed.svg?v=6d554a40db88" alt="NimoteCode 2.4.1 のリモートファイルと Python エディター" width="1000">
 </p>
 
 NimoteCode は、**ローカルと SSH プロジェクトのためのモバイル IDE** です。ファイルを探し、コードを編集し、コマンドを実行して Git 差分を確認するまで、一つのワークスペースで進められます。自分の AI プロバイダーや、開発マシンにインストールした Agent にも接続できます。
@@ -70,7 +70,7 @@ NimoteCode は、**ローカルと SSH プロジェクトのためのモバイ�
 
 <table>
   <tr>
-    <td rowspan="5" width="180" align="center" valign="middle"><a href="docs/public/images/placeholders/host-mode.png"><img src="docs/public/screenshots/host-mode-framed.svg" alt="NimoteCode の4つのモード：Full IDE、Quick Terminal、AI Workspace、Host" width="160"></a></td>
+    <td rowspan="5" width="180" align="center" valign="middle"><a href="docs/public/images/placeholders/host-mode.png?v=8ed6f40a441c"><img src="docs/public/screenshots/host-mode-framed.svg?v=0b26255ed795" alt="NimoteCode の4つのモード：Full IDE、Quick Terminal、AI Workspace、Host" width="160"></a></td>
     <th>モード</th>
     <th>適した作業</th>
     <th>使える環境</th>
@@ -117,10 +117,10 @@ SSH プロジェクトを開き、コードを確認し、Agent と協働して�
     <th width="25%" align="center">4 · 変更をレビュー</th>
   </tr>
   <tr>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/editor-code-selection.png"><img src="docs/public/screenshots/editor-code-selection-framed.svg" alt="1 · コードを確認" width="220"></a></td>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/ai-plan-running.jpg"><img src="docs/public/screenshots/ai-plan-running-framed.svg" alt="2 · Agent と協働" width="220"></a></td>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/terminal-command-output.png"><img src="docs/public/screenshots/terminal-command-output-framed.svg" alt="3 · コマンドを実行" width="220"></a></td>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/source-control-changes.png"><img src="docs/public/screenshots/source-control-changes-framed.svg" alt="4 · 変更をレビュー" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/editor-code-selection.png?v=3bc86359abb3"><img src="docs/public/screenshots/editor-code-selection-framed.svg?v=5419f1211a45" alt="1 · コードを確認" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/ai-plan-running.jpg?v=7cdbc72fe334"><img src="docs/public/screenshots/ai-plan-running-framed.svg?v=50b2a9e2632d" alt="2 · Agent と協働" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/terminal-command-output.png?v=8a8c20322c4e"><img src="docs/public/screenshots/terminal-command-output-framed.svg?v=62963867fed1" alt="3 · コマンドを実行" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/source-control-changes.png?v=f08e4471badb"><img src="docs/public/screenshots/source-control-changes-framed.svg?v=15712f667c09" alt="4 · 変更をレビュー" width="220"></a></td>
   </tr>
   <tr>
     <td valign="top">構文ハイライトと行番号でプロジェクトのファイルを読み、編集します。</td>
@@ -130,7 +130,7 @@ SSH プロジェクトを開き、コードを確認し、Agent と協働して�
   </tr>
 </table>
 
-<sub>実際のアプリ画面です。クリックすると原寸で表示します。</sub>
+<sub>ADB で撮影した NimoteCode 2.4.1 Android 実機画面。画像をクリックすると原寸で表示します。</sub>
 
 途中で離れる場合も、[Host モード](#nimotehost)からパソコンの NimoteHost 管理の対応セッションに戻れます。
 

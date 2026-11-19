@@ -31,10 +31,10 @@ Termius を使っているなら、乗り換える価値は実際の仕事が改
 普段 Termius でアクセスするリポジトリを使います。NimoteCode で同じディレクトリを開き、ファイルを編集・保存し、ソース管理で差分を確認してホストで検証を実行します。ファイル移動とレビューの手順を比較し、必要なホスト管理や同期機能は別に確認してください。
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone の NimoteCode エディターに表示されたタブとキーボード。" loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-editor.webp?v=dc778aae9066" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-editor.webp?v=dc778aae9066" width="720" height="1565" alt="iPhone の Python エディター。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone の NimoteCode エディターに表示されたタブとキーボード。 出典：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode の App Store 掲載画像</a>。</figcaption>
+  <figcaption>iPhone の Python エディター。 ローカルビルドの NimoteCode 2.4.1（66）iOS シミュレーターで撮影。</figcaption>
 </figure>
 
 ## 移行前に一つの接続を検証する

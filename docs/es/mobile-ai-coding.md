@@ -24,10 +24,10 @@ Si ya sabes qué cambiar, un editor o terminal puede bastar. La IA es opcional; 
 Prueba el acceso en [configuración](/es/docs/configuration) y confirma la raíz del proyecto. Una carpeta local no proporciona automáticamente ejecución de comandos. SSH utiliza el equipo remoto; Android compatible puede usar [Local Linux](/es/docs/local-linux). iPhone y iPad no tienen Local Linux.
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-agents.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-agents.webp" width="660" height="1433" alt="Selección de agentes integrados y externos en iPhone." loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-agents.webp?v=6c87b07b60da" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-agents.webp?v=6c87b07b60da" width="720" height="1565" alt="Espacio de IA en iPhone antes de configurar el proveedor." loading="lazy" decoding="async">
   </a>
-  <figcaption>Selección de agentes integrados y externos en iPhone. Fuente: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">capturas de NimoteCode en App Store</a>.</figcaption>
+  <figcaption>Espacio de IA en iPhone antes de configurar el proveedor. Capturado en el simulador iOS con la compilación local NimoteCode 2.4.1 (66).</figcaption>
 </figure>
 
 ## Empieza por una tarea de lectura

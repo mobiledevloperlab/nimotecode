@@ -13,10 +13,10 @@ That is a useful test for a mobile IDE. Opening a file is only the beginning. Ca
 We build NimoteCode, an editor and development workspace for Android, iPhone and iPad. This guide uses it for a concrete example, but the first decision applies whichever app you choose: **where will your code and tools run?**
 
 <figure class="article-hero">
-  <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="NimoteCode on iPad with project navigation and code editing. Source: NimoteCode App Store screenshots." loading="eager" decoding="async">
+  <a href="/images/ios/ipad-workspace.webp?v=477d0ae0628c" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-workspace.webp?v=477d0ae0628c" width="1200" height="1741" alt="Remote files and Python editor on iPad." loading="eager" decoding="async">
   </a>
-  <figcaption>NimoteCode on iPad with project navigation and code editing. Source: NimoteCode App Store screenshots.</figcaption>
+  <figcaption>Remote files and Python editor on iPad. Captured from the local NimoteCode 2.4.1 (66) iOS simulator build.</figcaption>
 </figure>
 
 ## Choose the workflow before the app
@@ -49,8 +49,8 @@ git status --short --branch
 The shell should be in the intended repository. Switching editor tabs does not change its working directory. If there are existing changes, identify them before adding your own.
 
 <figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/remote-workspace-connected.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/remote-workspace-connected.jpg" width="1080" height="2376" alt="A connected SSH workspace: check the host and project root before opening files." loading="lazy" decoding="async">
+  <a href="/images/placeholders/remote-workspace-connected.jpg?v=e924413fb586" target="_blank" rel="noopener">
+    <img src="/images/placeholders/remote-workspace-connected.jpg?v=e924413fb586" width="1080" height="2376" alt="A connected SSH workspace: check the host and project root before opening files." loading="lazy" decoding="async">
   </a>
   <figcaption>A connected SSH workspace: check the host and project root before opening files.</figcaption>
 </figure>
@@ -91,26 +91,26 @@ Here is that same loop in the workspace, from edit to review:
 
 <div class="mobile-ide-workflow-gallery">
   <figure class="mobile-ide-screenshot">
-    <a href="/images/placeholders/markdown-source-editor.jpg" target="_blank" rel="noopener">
-      <img src="/images/placeholders/markdown-source-editor.jpg" width="1080" height="2376" alt="Editing README.md in the mobile editor. This is the source view before opening the rendered preview." loading="lazy" decoding="async">
+    <a href="/images/placeholders/markdown-source-editor.jpg?v=2b3c42c3bcde" target="_blank" rel="noopener">
+      <img src="/images/placeholders/markdown-source-editor.jpg?v=2b3c42c3bcde" width="1080" height="2376" alt="Editing README.md in the mobile editor. This is the source view before opening the rendered preview." loading="lazy" decoding="async">
     </a>
     <figcaption>1. Make the focused change in the editor.</figcaption>
   </figure>
   <figure class="mobile-ide-screenshot">
-    <a href="/images/placeholders/markdown-preview.jpg" target="_blank" rel="noopener">
-      <img src="/images/placeholders/markdown-preview.jpg" width="1080" height="2376" alt="Markdown preview renders headings, code blocks and tables so you can inspect the document beyond its source text." loading="lazy" decoding="async">
+    <a href="/images/placeholders/markdown-preview.jpg?v=85fdfa272a29" target="_blank" rel="noopener">
+      <img src="/images/placeholders/markdown-preview.jpg?v=85fdfa272a29" width="1080" height="2376" alt="Markdown preview renders headings, code blocks and tables so you can inspect the document beyond its source text." loading="lazy" decoding="async">
     </a>
     <figcaption>2. Check the rendered result before moving on.</figcaption>
   </figure>
   <figure class="mobile-ide-screenshot">
-    <a href="/images/placeholders/terminal-command-output.png" target="_blank" rel="noopener">
-      <img src="/images/placeholders/terminal-command-output.png" width="1080" height="2376" alt="The workspace terminal showing an ls directory listing. This illustrates command output, not a successful test run." loading="lazy" decoding="async">
+    <a href="/images/placeholders/terminal-command-output.png?v=8a8c20322c4e" target="_blank" rel="noopener">
+      <img src="/images/placeholders/terminal-command-output.png?v=8a8c20322c4e" width="1080" height="2376" alt="The workspace terminal showing an ls directory listing. This illustrates command output, not a successful test run." loading="lazy" decoding="async">
     </a>
     <figcaption>3. Run the project’s own command in Terminal.</figcaption>
   </figure>
   <figure class="mobile-ide-screenshot">
-    <a href="/images/placeholders/git-diff-view.jpg" target="_blank" rel="noopener">
-      <img src="/images/placeholders/git-diff-view.jpg" width="1080" height="2376" alt="The diff view marks additions and deletions. This existing screenshot contains demonstration edits, not the README correction above." loading="lazy" decoding="async">
+    <a href="/images/placeholders/git-diff-view.jpg?v=d846ea1bdd11" target="_blank" rel="noopener">
+      <img src="/images/placeholders/git-diff-view.jpg?v=d846ea1bdd11" width="1080" height="2376" alt="The diff view marks additions and deletions. This existing screenshot contains demonstration edits, not the README correction above." loading="lazy" decoding="async">
     </a>
     <figcaption>4. Read the diff before you hand the change over.</figcaption>
   </figure>

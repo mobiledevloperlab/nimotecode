@@ -29,10 +29,10 @@ description: "NimoteHost 连接、终端与任务说明与操作步骤。"
 4. 输入 `pwd` 查看当前目录，再输入 `echo Host connected` 检查输出。Windows PowerShell 用 `Get-Location` 查看目录。
 
 <div class="doc-screenshots">
-  <DocScreenshot file="host-terminal.png" caption="演示终端执行了 pwd 和 echo Host connected。回到列表后重新打开，刚才的输出还在。" />
+  <DocScreenshot file="host-terminal.png" caption="已完成的远程检查会话保留输出：四轮 Python 检查均通过 3 项测试。" />
 </div>
 
-这张图使用 `/tmp/nimote-host-guide` 这个演示目录。macOS 的 `pwd` 可能显示 `/private/tmp/nimote-host-guide`，两者指向同一位置。自己使用时换成真实项目目录；需要长期保留的文件别放在临时目录里。
+这组 2.4.1 实机截图使用已有的 pocket-shop 工作区。终端截图展示已完成的命令会话；上面的步骤用于新建交互式 Shell。
 
 返回列表不会关闭终端。想结束这个演示 Shell，输入 `exit`，或使用会话里的停止按钮。停止后进程就结束了，重新打开历史只能看保留的输出。
 
@@ -41,7 +41,7 @@ description: "NimoteHost 连接、终端与任务说明与操作步骤。"
 在 **Sessions** 页面按名称或目录搜索，用 **All / Running / History** 切换范围，再点会话进去。右侧菜单可以固定、重命名或查看更多操作。
 
 <div class="doc-screenshots">
-  <DocScreenshot file="host-sessions.png" caption="按演示目录筛选后，只显示刚创建的终端。Running 表示它仍在主机运行。" />
+  <DocScreenshot file="host-sessions.png" caption="Host 会话历史，展示运行中、已完成和已停止的进程。" />
 </div>
 
 离开应用或 SSH 断开后，只要 Host 和它托管的进程还在，重新连接同一台主机就可以回到原会话，不会为了恢复画面再执行一次原命令。

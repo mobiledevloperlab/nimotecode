@@ -10,7 +10,7 @@ Docker 工具运行在已连接的 SSH 主机上。主机需要安装 Docker，�
 ## 打开 Docker
 
 <div class="doc-screenshots">
-  <DocScreenshot file="docker-images.png" caption="浅色主题下的 Docker 镜像列表，包含 Debian bookworm-slim 镜像。" />
+  <DocScreenshot file="docker-images.png" caption="Docker 镜像列表，展示临时源码包 nimotecode-screenshot-demo:2.4.1。" />
 </div>
 
 
@@ -19,7 +19,7 @@ Docker 工具运行在已连接的 SSH 主机上。主机需要安装 Docker，�
 ## 管理 Compose 服务
 
 <div class="doc-screenshots">
-  <DocScreenshot file="docker-image-detail.png" caption="浅色主题下的 Debian bookworm-slim 镜像详情。" />
+  <DocScreenshot file="docker-image-detail.png" caption="临时源码包镜像详情：标签、架构、系统和大小；该演示镜像不含运行时。" />
 </div>
 
 打开 Compose 项目查看服务，并对单个服务执行控制操作。Compose 文件和构建上下文保留在 SSH 主机上。启动或停止服务前，请确认当前项目和主机。

@@ -15,7 +15,7 @@ tags: ["ai agent", "移动开发", "ssh", "效率"]
 所有环节都发生在一个移动工作区里，而不是把代码片段贴进独立的聊天窗口。
 
 <figure>
-  <video controls playsinline preload="metadata" poster="/videos/nimotecode-poster.jpg">
+  <video controls playsinline preload="metadata" poster="/videos/nimotecode-poster.jpg?v=334e426b8716">
     <source src="/videos/nimotecode.mp4" type="video/mp4">
   </video>
   <figcaption>NimoteCode 团队的移动 Agent 工作流演示；单次演示不代表跨项目成功率。</figcaption>

@@ -165,10 +165,10 @@ sftp username@192.168.1.100
 **注意**：SFTP 允许的访问范围由 Windows 账户和 NTFS ACL 决定；登录成功不代表能写入 `C:\Windows`、`Program Files` 等受保护目录。Windows SFTP 路径表示法可能和本地 `C:\...` 不完全一致，目录打开失败时先使用服务端返回的路径。
 
 <figure>
-  <a href="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png" target="_blank" rel="noopener">
-    <img src="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png" width="2020" height="1041" alt="NimoteCode 的 Windows 工作流：连接设置、远程文件、PowerShell 终端和 Agent 会话。这些是不同界面的组合展示。" loading="lazy" decoding="async">
+  <a href="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png?v=d71056b9acfc" target="_blank" rel="noopener">
+    <img src="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png?v=d71056b9acfc" width="2020" height="1041" alt="NimoteCode 2.4.1 连接表单、目录选择与远程文件。新版界面截图使用临时 macOS SSH 项目；上面的 Windows 配置步骤仍针对 Windows。" loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode 的 Windows 工作流：连接设置、远程文件、PowerShell 终端和 Agent 会话。这些是不同界面的组合展示。</figcaption>
+  <figcaption>NimoteCode 2.4.1 连接表单、目录选择与远程文件。新版界面截图使用临时 macOS SSH 项目；上面的 Windows 配置步骤仍针对 Windows。</figcaption>
 </figure>
 
 ### Windows Shell 与主机指纹验证

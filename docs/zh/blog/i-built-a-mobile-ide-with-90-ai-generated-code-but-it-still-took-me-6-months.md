@@ -6,7 +6,7 @@ author: "NimoteCode 团队"
 date: "2026-06-20"
 lastUpdated: "2026-11-03"
 tags: ["ai 编程", "独立开发", "移动 ide", "工程"]
-image: /blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me-6-months/image-1.png
+image: /blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me-6-months/image-1.png?v=913c0c089919
 ---
 
 # 用约 90% AI 生成的代码做了一款移动 IDE，仍然花了 6 个月
@@ -16,7 +16,7 @@ image: /blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me
 这听上去理应很快，现实却是：它仍然花了大约 **6 个月的持续工作**。
 
 <figure>
-  <img src="/blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me-6-months/image-1.png" width="968" height="605" alt="NimoteCode 产品展示图；多个界面组合，不代表一次连续操作" loading="lazy" decoding="async">
+  <img src="/blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me-6-months/image-1.png?v=913c0c089919" width="968" height="605" alt="NimoteCode 产品展示图；多个界面组合，不代表一次连续操作" loading="lazy" decoding="async">
   <figcaption>NimoteCode 产品展示图；多个界面组合，不代表一次连续操作。 来源：NimoteCode 团队。</figcaption>
 </figure>
 

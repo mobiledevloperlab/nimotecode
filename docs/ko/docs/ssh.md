@@ -10,7 +10,7 @@ description: "로컬 및 SSH 작업 공간 설정, 사용 절차 및 화면 안�
 Explorer에는 로컬, 원격 SSH, Local Linux 및 데모 진입점이 있습니다. Recent History에는 이전에 연 위치가 표시됩니다. 연결된 작업 공간에 따라 사용 가능한 파일과 도구가 결정됩니다.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="workspace-start-light.png" caption="작업 공간을 열기 전의 Explorer, 밝은 테마." />
+  <DocScreenshot file="workspace-start-light.png" caption="프로젝트를 열기 전 작업 공간 선택 화면, 어두운 테마." />
 </div>
 
 ## 로컬 폴더 열기
@@ -30,7 +30,7 @@ Explorer에는 로컬, 원격 SSH, Local Linux 및 데모 진입점이 있습니
 Local Explorer로 돌아와 루트 디렉터리를 확인합니다. 예시 폴더는 비어 있습니다. 자신의 프로젝트를 열었다면 여기에서 프로젝트 파일을 확인하세요.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="local-workspace-files.png" caption="폴더 선택 후의 Local Explorer. 예시에는 프로젝트 파일이 나열되어 있지 않습니다." />
+  <DocScreenshot file="local-workspace-files.png" caption="Android Local Explorer에 표시된 임시 Python 데모 프로젝트." />
 </div>
 
 ## SSH 연결 설정
@@ -44,7 +44,7 @@ Local Explorer로 돌아와 루트 디렉터리를 확인합니다. 예시 폴�
 
 <div class="doc-screenshots">
   <DocScreenshot file="remote-connection-form.jpg" caption="호스트, 사용자 이름, 포트와 프록시를 설정하는 새 SSH 연결 양식." />
-  <DocScreenshot file="remote-connection-history.png" caption="저장된 SSH 프로필이 있는 Recent History." />
+  <DocScreenshot file="remote-connection-history.png" caption="Connection environments 패널에 저장된 SSH 연결." />
 </div>
 
 ## 프로젝트 루트 선택

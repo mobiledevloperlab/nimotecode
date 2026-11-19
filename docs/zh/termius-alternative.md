@@ -31,10 +31,10 @@ pageClass: "seo-product-guide"
 选择一个平时通过 Termius 访问的仓库，在 NimoteCode 中打开相同目录，修改并保存一个文件，在源代码管理中查看差异，再用主机执行项目检查。重点比较文件导航和变更审查的操作；常用的主机管理与同步功能应另行验证。
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone 上的 NimoteCode 代码编辑器，展示标签页与键盘。" loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-editor.webp?v=dc778aae9066" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-editor.webp?v=dc778aae9066" width="720" height="1565" alt="iPhone 上的 Python 编辑器。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone 上的 NimoteCode 代码编辑器，展示标签页与键盘。 图片来源：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 页面</a>。</figcaption>
+  <figcaption>iPhone 上的 Python 编辑器。 来源：本机编译的 NimoteCode 2.4.1（66）iOS 模拟器实截。</figcaption>
 </figure>
 
 ## 迁移前先验证一个连接

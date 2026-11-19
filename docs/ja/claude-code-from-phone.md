@@ -37,10 +37,10 @@ git status --short --branch
 ```
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-terminal.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-terminal.webp" width="660" height="1433" alt="iPhone の NimoteCode SSH ターミナル。Claude Code の実行記録ではなく Shell の画面例です。" loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-terminal.webp?v=73084741cf14" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-terminal.webp?v=73084741cf14" width="720" height="1565" alt="iPhone の SSH 端末で Python の単体テスト 3 件が成功。" loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone の NimoteCode SSH ターミナル。Claude Code の実行記録ではなく Shell の画面例です。 出典：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode の App Store 掲載画像</a>。</figcaption>
+  <figcaption>iPhone の SSH 端末で Python の単体テスト 3 件が成功。 ローカルビルドの NimoteCode 2.4.1（66）iOS シミュレーターで撮影。</figcaption>
 </figure>
 
 ## 3. ホスト側のセッションで開始する

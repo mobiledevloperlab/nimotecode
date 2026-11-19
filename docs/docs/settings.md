@@ -10,7 +10,7 @@ description: "Configuration, procedures, and interface reference for settings."
 Open **Settings** to change the app theme, editor colors, interface scale, and language. **Follow app** keeps editor colors aligned with the application theme. Account and purchase controls are also available here; the screenshots show different account states.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="app-settings-light.png" caption="Settings with the White theme and a signed-in account." />
+  <DocScreenshot file="app-settings-light.png" caption="Settings: current version 2.4.1 (66) and support links." />
 </div>
 
 <div class="doc-section">

@@ -34,7 +34,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/public/screenshots/nimote-pro-framed.svg" alt="NimoteCode 파일 탐색기, 편집기, 터미널과 AI Agent 작업 공간" width="1000">
+  <img src="docs/public/screenshots/nimote-pro-framed.svg?v=6d554a40db88" alt="NimoteCode 2.4.1 원격 프로젝트 파일 및 Python 편집기" width="1000">
 </p>
 
 NimoteCode는 **로컬 및 SSH 프로젝트를 위한 모바일 IDE**입니다. 파일 탐색, 코드 편집, 프로젝트 명령 실행, Git diff 검토를 하나의 작업 공간에서 이어갑니다. 원하는 AI 제공자를 연결하거나 개발 컴퓨터에 설치한 Agent를 사용할 수 있습니다.
@@ -70,7 +70,7 @@ NimoteCode는 **로컬 및 SSH 프로젝트를 위한 모바일 IDE**입니다. 
 
 <table>
   <tr>
-    <td rowspan="5" width="180" align="center" valign="middle"><a href="docs/public/images/placeholders/host-mode.png"><img src="docs/public/screenshots/host-mode-framed.svg" alt="NimoteCode 네 가지 모드: Full IDE, Quick Terminal, AI Workspace, Host" width="160"></a></td>
+    <td rowspan="5" width="180" align="center" valign="middle"><a href="docs/public/images/placeholders/host-mode.png?v=8ed6f40a441c"><img src="docs/public/screenshots/host-mode-framed.svg?v=0b26255ed795" alt="NimoteCode 네 가지 모드: Full IDE, Quick Terminal, AI Workspace, Host" width="160"></a></td>
     <th>모드</th>
     <th>언제 사용하나요?</th>
     <th>작업 환경</th>
@@ -117,10 +117,10 @@ SSH 프로젝트를 열고, 코드를 살펴보고, Agent와 협업한 뒤 호�
     <th width="25%" align="center">4 · 변경 검토</th>
   </tr>
   <tr>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/editor-code-selection.png"><img src="docs/public/screenshots/editor-code-selection-framed.svg" alt="1 · 코드 살펴보기" width="220"></a></td>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/ai-plan-running.jpg"><img src="docs/public/screenshots/ai-plan-running-framed.svg" alt="2 · Agent와 협업" width="220"></a></td>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/terminal-command-output.png"><img src="docs/public/screenshots/terminal-command-output-framed.svg" alt="3 · 명령 실행" width="220"></a></td>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/source-control-changes.png"><img src="docs/public/screenshots/source-control-changes-framed.svg" alt="4 · 변경 검토" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/editor-code-selection.png?v=3bc86359abb3"><img src="docs/public/screenshots/editor-code-selection-framed.svg?v=5419f1211a45" alt="1 · 코드 살펴보기" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/ai-plan-running.jpg?v=7cdbc72fe334"><img src="docs/public/screenshots/ai-plan-running-framed.svg?v=50b2a9e2632d" alt="2 · Agent와 협업" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/terminal-command-output.png?v=8a8c20322c4e"><img src="docs/public/screenshots/terminal-command-output-framed.svg?v=62963867fed1" alt="3 · 명령 실행" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/source-control-changes.png?v=f08e4471badb"><img src="docs/public/screenshots/source-control-changes-framed.svg?v=15712f667c09" alt="4 · 변경 검토" width="220"></a></td>
   </tr>
   <tr>
     <td valign="top">구문 강조와 줄 번호로 프로젝트 파일을 읽고 편집합니다.</td>
@@ -130,7 +130,7 @@ SSH 프로젝트를 열고, 코드를 살펴보고, Agent와 협업한 뒤 호�
   </tr>
 </table>
 
-<sub>실제 앱 화면입니다. 클릭하면 원본 크기로 볼 수 있습니다.</sub>
+<sub>ADB로 캡처한 NimoteCode 2.4.1 Android 실제 화면입니다. 클릭하면 원본을 볼 수 있습니다.</sub>
 
 잠시 자리를 비워야 하나요? [Host 모드](#nimotehost)에서 컴퓨터의 NimoteHost 관리 호환 세션으로 돌아올 수 있습니다.
 

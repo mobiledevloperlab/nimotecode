@@ -13,10 +13,10 @@ pageClass: mobile-ide-article
 我们正在开发 NimoteCode，一款支持 Android、iPhone 和 iPad 的编辑器与开发工作区。下面用它举例。不过，选任何工具之前，都值得先回答一个问题：**代码和工具到底在哪里运行？**
 
 <figure class="article-hero">
-  <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="iPad 上的 NimoteCode，展示项目导航和代码编辑。图片来源：NimoteCode App Store 页面。" loading="eager" decoding="async">
+  <a href="/images/ios/ipad-workspace.webp?v=477d0ae0628c" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-workspace.webp?v=477d0ae0628c" width="1200" height="1741" alt="iPad 上的远程文件树与 Python 编辑器。" loading="eager" decoding="async">
   </a>
-  <figcaption>iPad 上的 NimoteCode，展示项目导航和代码编辑。图片来源：NimoteCode App Store 页面。</figcaption>
+  <figcaption>iPad 上的远程文件树与 Python 编辑器。 来源：本机编译的 NimoteCode 2.4.1（66）iOS 模拟器实截。</figcaption>
 </figure>
 
 ## 先选工作方式，再选应用
@@ -49,8 +49,8 @@ git status --short --branch
 确认 Shell 当前就在目标仓库里。切换编辑器标签页不会改变终端的工作目录。如果仓库里已经有修改，先弄清楚哪些是原来的，避免和这次任务混在一起。
 
 <figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/remote-workspace-connected.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/remote-workspace-connected.jpg" width="1080" height="2376" alt="已连接的 SSH 工作区：打开文件前，先核对主机和项目根目录。" loading="lazy" decoding="async">
+  <a href="/images/placeholders/remote-workspace-connected.jpg?v=e924413fb586" target="_blank" rel="noopener">
+    <img src="/images/placeholders/remote-workspace-connected.jpg?v=e924413fb586" width="1080" height="2376" alt="已连接的 SSH 工作区：打开文件前，先核对主机和项目根目录。" loading="lazy" decoding="async">
   </a>
   <figcaption>已连接的 SSH 工作区：打开文件前，先核对主机和项目根目录。</figcaption>
 </figure>
@@ -91,26 +91,26 @@ git diff --check
 
 <div class="mobile-ide-workflow-gallery">
   <figure class="mobile-ide-screenshot">
-    <a href="/images/placeholders/markdown-source-editor.jpg" target="_blank" rel="noopener">
-      <img src="/images/placeholders/markdown-source-editor.jpg" width="1080" height="2376" alt="在手机编辑器中打开 README.md。这是文档源码视图，可与渲染预览对照查看。" loading="lazy" decoding="async">
+    <a href="/images/placeholders/markdown-source-editor.jpg?v=2b3c42c3bcde" target="_blank" rel="noopener">
+      <img src="/images/placeholders/markdown-source-editor.jpg?v=2b3c42c3bcde" width="1080" height="2376" alt="在手机编辑器中打开 README.md。这是文档源码视图，可与渲染预览对照查看。" loading="lazy" decoding="async">
     </a>
     <figcaption>1. 在编辑器中完成这次聚焦的修改。</figcaption>
   </figure>
   <figure class="mobile-ide-screenshot">
-    <a href="/images/placeholders/markdown-preview.jpg" target="_blank" rel="noopener">
-      <img src="/images/placeholders/markdown-preview.jpg" width="1080" height="2376" alt="Markdown 预览会渲染标题、代码块和表格，便于检查源码之外的阅读效果。" loading="lazy" decoding="async">
+    <a href="/images/placeholders/markdown-preview.jpg?v=85fdfa272a29" target="_blank" rel="noopener">
+      <img src="/images/placeholders/markdown-preview.jpg?v=85fdfa272a29" width="1080" height="2376" alt="Markdown 预览会渲染标题、代码块和表格，便于检查源码之外的阅读效果。" loading="lazy" decoding="async">
     </a>
     <figcaption>2. 继续之前，先确认渲染结果。</figcaption>
   </figure>
   <figure class="mobile-ide-screenshot">
-    <a href="/images/placeholders/terminal-command-output.png" target="_blank" rel="noopener">
-      <img src="/images/placeholders/terminal-command-output.png" width="1080" height="2376" alt="工作区终端中的 ls 目录列表。此图展示命令输出界面，不代表测试已通过。" loading="lazy" decoding="async">
+    <a href="/images/placeholders/terminal-command-output.png?v=8a8c20322c4e" target="_blank" rel="noopener">
+      <img src="/images/placeholders/terminal-command-output.png?v=8a8c20322c4e" width="1080" height="2376" alt="工作区终端中的 ls 目录列表。此图展示命令输出界面，不代表测试已通过。" loading="lazy" decoding="async">
     </a>
     <figcaption>3. 在终端中运行项目自己的命令。</figcaption>
   </figure>
   <figure class="mobile-ide-screenshot">
-    <a href="/images/placeholders/git-diff-view.jpg" target="_blank" rel="noopener">
-      <img src="/images/placeholders/git-diff-view.jpg" width="1080" height="2376" alt="Diff 界面用颜色区分新增和删除。这张已有截图包含演示性修改，不是上文 README 示例的结果。" loading="lazy" decoding="async">
+    <a href="/images/placeholders/git-diff-view.jpg?v=d846ea1bdd11" target="_blank" rel="noopener">
+      <img src="/images/placeholders/git-diff-view.jpg?v=d846ea1bdd11" width="1080" height="2376" alt="Diff 界面用颜色区分新增和删除。这张已有截图包含演示性修改，不是上文 README 示例的结果。" loading="lazy" decoding="async">
     </a>
     <figcaption>4. 交接前，把 diff 自己读一遍。</figcaption>
   </figure>

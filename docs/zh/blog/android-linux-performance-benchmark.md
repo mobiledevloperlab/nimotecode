@@ -46,17 +46,19 @@ tags: ["ARM64", "Android", "Linux", "移动开发", "性能测试"]
 
 曾利用依赖加法链得到约 2.34 GHz 的间接估计，但由于指令延迟和实际调度行为无法完全确认，这个数值不作为正式性能分析依据。
 
-**需要说明的是：本次数据来自 NimoteCode 在 Android 真机上的 PRoot 环境。 因此，它反映的是当前 ARM64 测试环境的计算与编译能力，不能直接视为 Android Local Linux 的实测成绩。**
-
-因此，它反映的是当前 ARM64 测试环境的计算与编译能力，不能直接视为 Android Local Linux 的实测成绩。
+**历史测试记录来自 Android 真机上的 PRoot 环境。这些数字只描述原测试的设备、依赖和负载，不代表所有设备或 2.4.1 新装环境的性能。**
 
 具体NimoteCode安装部署Local linux参考教程：<https://nimotecode.com/zh/docs/local-linux>
 
-![local linux deploy](/images/placeholders/local-linux-deploy-snapshot.png)
+![NimoteCode 2.4.1 Local Linux 运行状态](/images/placeholders/local-linux-deploy-snapshot.png?v=f4270b66bc9e)
 
-**实际测试直接让deepseek-flash进行环境部署和实际测试**
+> 截图更新说明：本文的 CoreMark、SQLite 与并行编译数据保留为原测试记录，并未在这次截图更新中重新测量。当前配图来自 NimoteCode 2.4.1（66）Android 实机的新装 Local Linux，不能用于证明下文的历史成绩。
 
-![deepseek-flash run benchmark](/images/placeholders/benchmarktest.png)
+**2.4.1 环境烟雾检查（不是 CoreMark 或 SQLite 基准测试）**
+
+![2.4.1 Local Linux 中实际执行的 64 MiB dd 烟雾检查](/images/placeholders/benchmarktest.png?v=a2ecb1f64e48)
+
+这次只运行 `time dd if=/dev/zero of=/dev/null bs=1M count=64`，确认终端和命令执行正常。这是内存到空设备的复制检查，不是磁盘速度、CPU 跑分或下文编译成绩的复测。
 
 ## 二、CoreMark：单核约 23,400，多核超过 144,000
 

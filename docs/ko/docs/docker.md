@@ -10,7 +10,7 @@ Docker 도구는 연결된 SSH 호스트에서 실행됩니다. 호스트에 Doc
 ## Docker 열기
 
 <div class="doc-screenshots">
-  <DocScreenshot file="docker-images.png" caption="Light 테마의 Docker 이미지 목록입니다. Debian bookworm-slim이 포함되어 있습니다." />
+  <DocScreenshot file="docker-images.png" caption="Docker 이미지 목록: 임시 소스 번들 nimotecode-screenshot-demo:2.4.1." />
 </div>
 
 작업 공간 도구에서 Docker 패널을 열어 컨테이너, 이미지, 볼륨, 네트워크 및 Compose 프로젝트를 확인합니다. 리소스 세부 정보, 로그, 통계, exec 터미널을 사용할 수 있으며 Docker Hub 이미지를 검색할 수 있습니다.
@@ -18,7 +18,7 @@ Docker 도구는 연결된 SSH 호스트에서 실행됩니다. 호스트에 Doc
 ## Compose 서비스 관리
 
 <div class="doc-screenshots">
-  <DocScreenshot file="docker-image-detail.png" caption="Light 테마에서 본 Debian bookworm-slim 이미지 세부 정보입니다." />
+  <DocScreenshot file="docker-image-detail.png" caption="임시 소스 번들 이미지의 태그, 아키텍처, OS 및 크기. 런타임은 포함하지 않습니다." />
 </div>
 
 Compose 프로젝트를 열어 서비스를 확인하고 개별 서비스를 제어합니다. Compose 파일과 빌드 컨텍스트는 SSH 호스트에 있습니다. 작업 전에 대상 프로젝트와 호스트를 확인하세요.

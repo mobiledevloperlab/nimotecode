@@ -52,11 +52,11 @@ Therefore, it reflects the computing and compilation capabilities of the current
 
 For instructions on installing and setting up Local Linux in NimoteCode, see <https://nimotecode.com/docs/local-linux>.
 
-![local linux deploy](/images/placeholders/local-linux-deploy-snapshot.png)
+![local linux deploy](/images/placeholders/local-linux-deploy-snapshot.png?v=f4270b66bc9e)
 
 **The actual test directly allows deepseek-flash to perform environment deployment and actual testing.**
 
-![deepseek-flash run benchmark](/images/placeholders/benchmarktest.png)
+![deepseek-flash run benchmark](/images/placeholders/benchmarktest.png?v=a2ecb1f64e48)
 
 ## 2. CoreMark: Single-core is about 23,400, multi-core is over 144,000
 

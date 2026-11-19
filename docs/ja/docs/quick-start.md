@@ -33,7 +33,7 @@ description: "クイックスタートの設定、操作手順、画面の説明
 </div>
 
 <div class="doc-screenshots">
-  <DocScreenshot file="editor-multiple-files.jpg" caption="エディターで開いたサンプルプロジェクトの app.js。" />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="別々のエディタータブで開いた Python と Markdown。" />
 </div>
 
 </div>
@@ -64,7 +64,7 @@ AI Agent でプロジェクトを調べ、ファイル間の関係を確認で�
 
 <div class="doc-screenshots">
   <DocScreenshot file="ai-plan-approval.jpg" caption="Confirm モードでプロジェクトの調査計画を確認してから実行を承認します。" />
-  <DocScreenshot file="ai-plan-running.jpg" caption="承認後、Agent がプロジェクトファイルを読み込み、進捗を記録します。" />
+  <DocScreenshot file="ai-plan-running.jpg" caption="Agent のタスク結果：Python テストの追加、成功したテスト出力、Git 差分。" />
 </div>
 
 回答とともに、読み取れなかったファイルなどの制約も確認してください。実行中に追加の指示を送ることもできます。Agent の選択と実行操作は [AI Chat と Agent](/ja/docs/ai)を参照してください。

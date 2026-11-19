@@ -60,13 +60,13 @@ For provider setup and connection testing, see [AI and connection configuration]
 These screenshots correspond to the Chat, Agent selection, plan review, execution timeline, and result-review stages described above.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="ai-chat-welcome.png" caption="AI panel before a workspace is opened." />
-  <DocScreenshot file="ai-agent-selector.jpg" caption="Agent selector with Nimote Agent selected and external agents disabled." />
+  <DocScreenshot file="ai-chat-welcome.png" caption="AI workspace with a connected SSH project, before starting a new task." />
+  <DocScreenshot file="ai-agent-selector.jpg" caption="Model selector with deepseek-flash selected and deepseek-v4-pro also listed." />
   <DocScreenshot file="ai-plan-approval.jpg" caption="A project-inspection plan waiting for approval in Confirm mode." />
-  <DocScreenshot file="ai-plan-running.jpg" caption="The approved run reading files and recording completed inspection steps." />
+  <DocScreenshot file="ai-plan-running.jpg" caption="Agent task result: added Python tests, passing test output and Git diff." />
   <DocScreenshot file="ai-analysis-overview.jpg" caption="Project overview and main components in an AI response." />
   <DocScreenshot file="ai-analysis-workflow.jpg" caption="Example project commands in an AI response." />
-  <DocScreenshot file="ai-analysis-caveats.jpg" caption="Caveats about the inspected checkout and benchmark results." />
+  <DocScreenshot file="ai-analysis-caveats.jpg" caption="AI caveats about the inspected Python implementation, test coverage and unverified assumptions." />
 </div>
 
 ## Continue a running ACP task

@@ -1,471 +1,656 @@
 {
-  "reviewedOn": "2026-11-17",
+  "reviewedOn": "2026-11-18",
   "source": "Repository documentation screenshots",
-  "versionPolicy": "Uses the latest file revision available in this repository. Original capture versions are not recorded; this inventory does not certify screenshots against the latest application build.",
+  "versionPolicy": "Every Android documentation image was reviewed and captured from NimoteCode 2.4.1 (versionCode 66) over ADB. iOS captures have separate platform provenance.",
   "images": [
     {
       "file": "ai-agent-selector.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "d5536cc15a3d3f3ca05e275968a1cb7e91b38299c4348d211e1a08c599edb8f8"
+      "sha256": "bd081f580f5963c3a21c88f8dd7935956b3154ad96f67340993c2d2bce9fb58f",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "selector"
     },
     {
       "file": "ai-analysis-caveats.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "c2f90b7e0fc74f038a2dd00e33f0d706258fedf5ded3e0e590f44acc686fd0cb"
+      "sha256": "2af89f6b83ec30954d27e96b93c0c2fa59aa319ca6deef18f61dce10d6330853",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "analysis-caveats-new"
     },
     {
       "file": "ai-analysis-overview.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "ba0e2ce03926d5a5c666156c406f8d493ce4abd9508e23d6879a4b26f79aadab"
+      "sha256": "2993f0dfa19d42de9a22bef53ca09ba8083e0ca67a2aaa4e500d481fb4dade60",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "analysis-workflow-new"
     },
     {
       "file": "ai-analysis-workflow.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "cc56ed60b2b681913879742dfc97383f17449c20404faa697fd454476eed3516"
+      "sha256": "0952b234d6d6911616f147c81ae752dabf323c41bef090bddb3d71090d5e799d",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "analysis-commands-new"
     },
     {
       "file": "ai-chat-welcome.png",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "c4b3dedd55d61d8b34289d78d33d26331f76bfe18e7067b1e3811cfe32ba464d"
+      "sha256": "c3597789ffc2946d5088560cbe2f329d8164747d2ed620b750ac1885d4836045",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "ai"
     },
     {
       "file": "ai-plan-approval.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "ffa83a633a390164c925f4ae9450bfd3efb50e1f1ddfcf12f91d790c4b6efdbd"
+      "sha256": "ac06067ce71ebf1ab0d37d3a67b805feb7cf010eead3c06f44ef8fafad6416a7",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "ai-waiting-new"
     },
     {
       "file": "ai-plan-running.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "cee9ddb81353725f5bf5266de455b73da69189d39dafc3d5e5cb0b3de15ed5ff"
+      "sha256": "7cdbc72fe3345ed3e9c227108fda522d6daa92e42056459dfe04b19868fb181b",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "task-top"
     },
     {
       "file": "ai-plugin-builder.png",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "306de70260ef98bc99f6db6d790bf67b96eaabd7266c28919cb9dc719c188a0c"
+      "sha256": "9223e6c59d0321e53f299ee0ad9f1781459f149f0a43b09d311a1df825dc5ba9",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "plugin-builder-new"
     },
     {
       "file": "ai-provider-overview.png",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "f03d947ee717f32a5bb188e61dcc12fb82f3da83913df581b9d286f5384dc081"
+      "sha256": "c47a6fcb46c97af8d858947741c93333fb26faf24690080cd24452441f9b13b9",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "provider-overview-new"
     },
     {
       "file": "ai-provider-settings.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "8aaea6b9b1d1002e22db0329a9ed6fa159bf61f7bda81fabacc6c67bebbcac17"
+      "sha256": "e6b0e143fdb045ac920929ce8faf545790e16568237702ac40c7513d9b144af8",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "provider-settings-new"
     },
     {
       "file": "app-settings-light.png",
-      "sourceUpdated": "2026-11-16",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "72d70dbd396e794b7387699ffb2fb914c32f4b1ba73ecf145acf4ebb7bc22434"
+      "sha256": "06eecd14181a66d3f25631773b0ea35306eea4646558f298a1916a649683b2ed",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "settings-safe2"
     },
     {
       "file": "benchmarktest.png",
-      "sourceUpdated": "2026-11-04",
-      "captureVersion": null,
-      "width": 1634,
-      "height": 878,
-      "sha256": "03d05e7ae379717a907fc39d02946da3618ba7b560b579b6c9cf5bb9cde14ca8"
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
+      "width": 1080,
+      "height": 2376,
+      "sha256": "a2ecb1f64e488cd2e6c08c885d22911e8343ac0009742afd7453fc2d89595f57",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "linux-smoke-benchmark-new"
     },
     {
       "file": "debugger-standby.png",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "67dcb712db882eb258b639a9d7780b02d0ba796c50ffbd76259cf743811bf148"
+      "sha256": "0bae9a8b6d41ab8a96ced4670399b343f4e2172697bfd844688443f8a93a7673",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "debug"
     },
     {
       "file": "docker-image-detail.png",
-      "sourceUpdated": "2026-11-08",
-      "captureVersion": null,
-      "width": 1264,
-      "height": 2780,
-      "sha256": "a0f589d126494ae6b8cd87fe067e71bfac22fd396b7d833d05bac1937df59719"
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
+      "width": 1080,
+      "height": 2376,
+      "sha256": "731e48850fc1313edb6bcba7794f74f428255f92ffa253d4e9377630692d43c3",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "docker-detail-new"
     },
     {
       "file": "docker-images.png",
-      "sourceUpdated": "2026-11-08",
-      "captureVersion": null,
-      "width": 1264,
-      "height": 2780,
-      "sha256": "6f06336caf46f30d666275e21c8700a28dee6c65d4b75d0d0ded5a0a149deabf"
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
+      "width": 1080,
+      "height": 2376,
+      "sha256": "025d5b829425dc4f58b125af69ed70fd730ec085a5d232f265dc0ff25cfbbc37",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "docker-images-new"
     },
     {
       "file": "editor-code-selection.png",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "91ef1d6abafefd636f3e3f0e4103f6552b4fe0343a5cbcd7af7ab5c19ca36473"
+      "sha256": "3bc86359abb33cb4c9cfe985ed4073797693b5d77d5e46566901224b70a110d8",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "editor"
     },
     {
       "file": "editor-context-menu.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "86b7ee74b637376bed20e416ccf0d48f67c404296484bba66c304f25d0a17939"
+      "sha256": "da60bf56106902442c1db5f73d5240815e578cbec61c29056563ff2a2d4f2006",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "context-new"
     },
     {
       "file": "editor-empty-state.png",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "30ca02f3d742dadc6fc3c885005d098dd7820638e623e53119037b3553fe9a6c"
+      "sha256": "901c7c63dcdb1273c2b6cdce3031d0fd3a721c33c50414a1b70dfa4ce0183f1f",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "demo-files"
     },
     {
       "file": "editor-multiple-files.jpg",
-      "sourceUpdated": "2026-11-16",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "bf0e4bcaf846a4941aabc04fd6cd2c30759ce619421e058178526ee354b93553"
+      "sha256": "2b3c42c3bcde55220fc8b7183bfb8b40ff5ac7868a02b8964712e17c3577e45b",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "markdown-source-new"
     },
     {
       "file": "editor-overflow-menu.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "f9da64faad2856540b9d482bd050b747eb02babd75e2ac7afea431ce7db925bf"
+      "sha256": "ef9f2baba000008b34d521f9fdced7310f7f3d76eee936716b5d880683c20886",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "editor-overflow"
     },
     {
       "file": "editor-symbol-menu.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "62b47ac9d86ab14c3d4b7628face0ae8e4f9edc9fa146aa1535a9e4ac50d13ec"
+      "sha256": "7e7b700a44126c1ef952fe34ef428053c86b5a474ae86ed8c7ddca69b8a16558",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "editor-menu"
     },
     {
       "file": "git-ai-explanation.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "d03f36241515daed0234b9bf68dc8832ddd0ee5a1c473f9fc7527ca48bbdaaa5"
+      "sha256": "52acfe37c8133852c126404d8688f6f98bb7a4b0c5c4c750be0f5690674a546c",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "git-ai-final"
     },
     {
       "file": "git-branch-checkout.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "a48dd5206beae758040bd0b2a9eeabe448f622d77713da463d6028bf4916d0ad"
+      "sha256": "f8a9d5712c3c7421cc111cad85d34cb8c5a7dce2cd8c4014e933d217c9971d1d",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "branches"
     },
     {
       "file": "git-commit-details.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "ca6bf26c0e00fcfa56ef37d524e89b543b7d67325c519c4d6c0e70eeee021c24"
+      "sha256": "3cc612e52226d4232628c8ed34c3a30192cf1e217a8b5b4b5c23233276893f72",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "git-commit-expanded"
     },
     {
       "file": "git-diff-view.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "a41b833e78d6d6c1d584d07474b4b647f4cd510d91847bfa5bd4a2d48436bb56"
+      "sha256": "d846ea1bdd11a73b22ef6f5a7d59ce513679fd7bba3ffd46336a199629783ca9",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "diff"
     },
     {
       "file": "github.png",
-      "sourceUpdated": "2026-11-03",
-      "captureVersion": null,
-      "width": 1320,
-      "height": 2868,
-      "sha256": "02531dbfa08389dd59d03724fcfa1e520f14fb53599fa2ed02b536045f8a4f5a"
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
+      "width": 1080,
+      "height": 2376,
+      "sha256": "94976c31766903ca740fc51479e7daff36b6f6c6aed9ac9172ccdb2ddfd390c0",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "github-after-load"
     },
     {
       "file": "github_conf.png",
-      "sourceUpdated": "2026-11-03",
-      "captureVersion": null,
-      "width": 1320,
-      "height": 2868,
-      "sha256": "dc98359b4f51dc76361825c6b49044084e7a9b9dc808ef1323984ff26ab48d1b"
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
+      "width": 1080,
+      "height": 2376,
+      "sha256": "445d106239d79b9dd0cb55de0d1c5fbd2bf18e98a2b705d70a3a52ce6ee594a3",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "github-config-ready"
     },
     {
       "file": "github_entry.png",
-      "sourceUpdated": "2026-11-03",
-      "captureVersion": null,
-      "width": 1320,
-      "height": 2868,
-      "sha256": "af9a6603a70515f77b376e7efd7be3a448bf923fe9e12f7b0b8c4758bd623f74"
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
+      "width": 1080,
+      "height": 2376,
+      "sha256": "9955c5e42121d600f8023a9eb69cd65a383b8829e1952374e2becd7d4d8cccd4",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "github-entry-ready"
     },
     {
       "file": "host-agent-form.png",
-      "sourceUpdated": "2026-11-16",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "4d071bb2e0312b6006c74b8b609ee2e884c56b0a8bc7ea84ff055304da35f1c2"
+      "sha256": "3929a50360b772f40e2b92ff219365789ce06c9432384651616d6e033b061ba4",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "host-agent-form"
     },
     {
       "file": "host-mode.png",
-      "sourceUpdated": "2026-11-16",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "1420d35d49127b54d8520e821e7d8850ea625a8334950dfd855a0d9020632611"
+      "sha256": "8ed6f40a441cd7936eddfb049a22784d4d276c6d0c6bc429e7ffc673962e9c42",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "startup"
     },
     {
       "file": "host-sessions.png",
-      "sourceUpdated": "2026-11-16",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "34bcbad2c2d3820735c94dd4d7fc528575d390852878822a3b346053228c3408"
+      "sha256": "a2e5e6781beb83b93fa6b4f197cf048e7b2d406e6b0d0c8cb429e31a8f40754d",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "host"
     },
     {
       "file": "host-setup.png",
-      "sourceUpdated": "2026-11-16",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "a5a440606a92a40a6c574b4845256705de97ba06656b92d9108440e45233bb3d"
+      "sha256": "a5586b95a261160c7590670883cadc0aac2a855f21d8624f82cd5ea7f9d72d3e",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "host-new2"
     },
     {
       "file": "host-terminal.png",
-      "sourceUpdated": "2026-11-16",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "4462cc6c54e5953705a2beb3bbeb3ce219a9770cda03ff9057d4c9880102a338"
+      "sha256": "b2c0956b4e5d2b6bee7eb82d3868e169e1e656a9e190a1d994a1856e8933056e",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "host-terminal"
     },
     {
       "file": "html-report-preview.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "01ab53a4abb7184160ef6487c70c8c25ef9e4f7eb1c5ffec5b9aa9b602ad7c31"
+      "sha256": "8f004633fec80c0a29b5a2340946fd1514a72657e23ad63f74b845e34d7425bf",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "report-correct-url"
     },
     {
       "file": "local-linux-deploy-snapshot.png",
-      "sourceUpdated": "2026-11-04",
-      "captureVersion": null,
-      "width": 1168,
-      "height": 947,
-      "sha256": "70e695a001f6c03ce001ac68a1f6745b61b4deba467f2695bbff12c6d3efc003"
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
+      "width": 1080,
+      "height": 2376,
+      "sha256": "f4270b66bc9ed5ef6bd51f89499bea95e989153ef46ecfd7fa358d22058d0554",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "linux-ready-sheet"
     },
     {
       "file": "local-linux-deploy.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "60cab1c897057c558bcffbb9f522c28c5bd656c6333294b945f0901132b8b509"
+      "sha256": "35225fb4430eb378a055549eedaa1604aae363f6604489b254e67866f118b55f",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "linux-installing-new"
     },
     {
       "file": "local-linux-terminal-uname-a.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "66f8afd93aff031f2d99cb632c5cb16765a144e6efb255d996a2be632fb6b610"
+      "sha256": "c7725ebf19bb8ccc4c257a225c1bd993445e3aa58f783f2afbe731f1adfa8ce4",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "linux-uname-final"
     },
     {
       "file": "local-workspace-files.png",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "e8d013e3c7fe07bfa39551aa37008f9a249a5b0825086dfcdd1b2e2d416815ec"
+      "sha256": "5ed07d4dfdc8d8dba00fd2c73be1890ab5b59c2b3c141fb4a30ccaf9fe5eacbc",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "local-files-final"
     },
     {
       "file": "lsp-python-status.png",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "2c6654f2831576e27321cf1c4ddba895274f5de4ff6f8d1477623fc9e5c806a1"
+      "sha256": "5e638686e52ce0f597e8e2414ba45ab75e3b464d0df1fd14447cff52420338a8",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "lsp-real-new"
     },
     {
       "file": "markdown-preview.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "511dcd0c468e4a5cc9e02e63eebfff9bc5ac66911e6f33526df6adacf1c230e3"
+      "sha256": "85fdfa272a29709082bffb113f3b7878c7b1a4d425d929b3241aa237bd05345a",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "markdown-preview-new"
     },
     {
       "file": "markdown-source-editor.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "8ccf96e641d132c308b1c4cd64685c41903df76dbc3a6b1ab90a4e1a4757785f"
+      "sha256": "2b3c42c3bcde55220fc8b7183bfb8b40ff5ac7868a02b8964712e17c3577e45b",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "markdown-source-new"
     },
     {
       "file": "mode-switch.png",
-      "sourceUpdated": "2026-11-16",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "7f9e844948f300864bd964705a0346dc7848e1151d794cebfc7bc78a2975c179"
+      "sha256": "db23eec98134f01d1c173a2b17d556742bcf4d14e98b50f2d8048f4f625e3b44",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "modes-menu"
     },
     {
       "file": "plugin-settings.png",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "b40aee07a1a5425dce596f82844d04863721de64c7fe3713ea5ff898fba909f1"
+      "sha256": "d2486741734e8e4113ed7f42c7223606c4e5d650e95ef56064ba0b07c8e3c51d",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "plugins"
     },
     {
       "file": "remote-connection-form.jpg",
-      "sourceUpdated": "2026-11-16",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "2aaa300a1f6685e1eb76bcb773f69c82366f8a5fc504ea45237921b04d79fe4c"
+      "sha256": "434183c479b74df0b725607934846c2f5b0160b3e4da80e5a4d75f71ec6de4db",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "remote-form-new"
     },
     {
       "file": "remote-connection-history.png",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "53921c73394f0199b7535455e0a5dbf9bbf8a5376b2738c5c81f096a3626cc7e"
+      "sha256": "08d861da3db41a5c3641bcdfd72901a2afea867b9fc1abcb675099219bc314af",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "remote-manager"
     },
     {
       "file": "remote-directory-picker.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "ebac0285806290b87b055ff8f3345d045eb2648156fe763afea36c3b08114d98"
+      "sha256": "6983e337641b9eda1ed66a9d57764fdf0de8da65fcb0d484f162792add30774f",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "demo-open"
     },
     {
       "file": "remote-file-selection.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "00a66dc988e776bc83bdd48b60bb9ce2abdc789d8e16e178736900a3ae8e87b4"
+      "sha256": "b90e6d363f30ee5939d1a5f79b54b3a9462551ce8f1625a78de92cb09b813516",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "remote-selection"
     },
     {
       "file": "remote-workspace-connected.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "a631ba0d8afd67e69e684cb9a67896a1b09b880c4c0488ce6f077c7da83549c7"
+      "sha256": "e924413fb58681cfb28ce3d0bd01f561be55590be11bc49c215a849d3cd80f12",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "explorer"
     },
     {
       "file": "search-global.png",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "9a0ddc88fa85929034c92976b824d62714f43a0f60f025a3bc8870eba929d016"
+      "sha256": "1a719bde037940ecea654ff67a07c5e103eb1763be118f9b8001005478386213",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "search-clean"
     },
     {
       "file": "source-control-changes.png",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "db0a396d3c0a99384aabeb75f4c0747274a2416b8588fce8e65a2b2e79cca519"
+      "sha256": "f08e4471badb5495374dd429b3249619da6f321fcf9957d70355778abcbf87a8",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "git"
     },
     {
       "file": "startup-light.jpg",
-      "sourceUpdated": "2026-11-16",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "af2c9673fcb07b9c87fa05dc02c204b3c2db5a62126896b070adb938e8c8c94d"
+      "sha256": "48a636209dba801ddd230d472256a282bfa30cd4a58c0f8d5e1bcc799bcdfbbb",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "startup"
     },
     {
       "file": "sync-cache-status.png",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "b6daefb5eb1aed32e7435f91bdf67482a7a916ef1c146437bd6093169dea080d"
+      "sha256": "d16dde6327e23a4f4bc5bd875e2c610fd5b233333761d832ad1f7d0a26813697",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "ai-config-new"
     },
     {
       "file": "task-runner.png",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "176cc0f134b5621cbb9c84a5d32c328488fff92af4b172af6e6e640a3c4f6eb4"
+      "sha256": "1d5ade413deb5413637b72874e077901369af4e609fe8d74a78d4578e2219370",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "task-list-new"
     },
     {
       "file": "terminal-actions-menu.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "898bdefbe42f82357dbdc39c982f46d100f1a15a37b11b88784700a0310c7af8"
+      "sha256": "5db407ca127e2286a5958b7eaa98af4c24e85924c28d91ca9a89fa1d6e859ee2",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "terminal-menu-new"
     },
     {
       "file": "terminal-command-output.png",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "3c18e3362452b16cf1a261c73b10aee1a5cb98354e483d0d655ec880ff9e5d31"
+      "sha256": "8a8c20322c4e4f5cf5e35b86a27ae4ce30d0a890e4b2e1fcd2156fc3a1354903",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "terminal"
     },
     {
       "file": "terminal-customize-menu.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "cefadcd13ba90264ff3720215524a9e24f2113cd168cb90de2d018553b80c093"
+      "sha256": "1d13a785ac6739831ac40a33e86679f9f5c27d047a6396a2d920a39f1e525b7f",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "terminal-customize-new"
     },
     {
       "file": "terminal-tab-style-form.jpg",
-      "sourceUpdated": "2026-10-26",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
       "height": 2376,
-      "sha256": "42f0c7322ef0257e7bd1d78f955471d194b7c07a2ddcf9d7321458ef3c89b702"
+      "sha256": "4e7e8b21ff26939c82ea613ec5dc7a9ccf49eeadd75fd2b23fcdf5b7b7f79390",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "terminal-style-new"
     },
     {
       "file": "workspace-start-light.png",
-      "sourceUpdated": "2026-11-16",
-      "captureVersion": null,
+      "sourceUpdated": "2026-11-18",
+      "captureVersion": "2.4.1",
       "width": 1080,
-      "height": 1290,
-      "sha256": "86752a2f0b22867c11ff8786ef8da799a66aebf9b591fa4e9863c35335d6a0f2"
+      "height": 2376,
+      "sha256": "e6dfb371cc35bc9f394ce2a203c9e9ad0c279308e587775a6307f95b5bc64154",
+      "versionCode": 66,
+      "captureMethod": "adb exec-out screencap -p",
+      "captureScene": "ide"
     }
-  ]
+  ],
+  "pendingRecapture": [],
+  "targetVersion": "2.4.1",
+  "hero": {
+    "file": "/screenshots/nimote-pro.webp",
+    "captureVersion": "2.4.1",
+    "versionCode": 66,
+    "width": 2560,
+    "height": 1600,
+    "sha256": "1113699ebbc4fe9828f39b897be25001e6e70a38c8a06350b080a5ea088795d0",
+    "captureMethod": "ADB screenshot with a temporary expanded Android viewport (1600x2560, density 360, landscape); original device display settings restored after capture."
+  }
 }

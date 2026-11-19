@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, ref } from 'vue'
 import { useData, withBase } from 'vitepress'
+import { screenshotUrl } from '../screenshot-assets'
 
 const props = defineProps<{ file: string; caption: string }>()
 const { lang } = useData()
@@ -12,8 +13,8 @@ const translations = {
   es: { enlarge: 'Ampliar', enlargeLabel: 'Ampliar imagen', preview: 'Vista previa', original: 'Abrir original ↗', close: 'Cerrar vista previa' }
 }
 const labels = computed(() => translations[lang.value.split('-')[0] as keyof typeof translations] ?? translations.en)
-const source = computed(() => withBase(`/images/placeholders/${props.file}`))
-const thumbnail = computed(() => withBase(`/images/placeholders/thumbs/${props.file.replace(/\.[^.]+$/, '')}.webp`))
+const source = computed(() => withBase(screenshotUrl(`/images/placeholders/${props.file}`)))
+const thumbnail = computed(() => withBase(screenshotUrl(`/images/placeholders/thumbs/${props.file.replace(/\.[^.]+$/, '')}.webp`)))
 const dialog = ref<HTMLDialogElement>()
 let previousOverflow: string | undefined
 

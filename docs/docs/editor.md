@@ -11,7 +11,7 @@ Open a file from Explorer or Search. Each open file appears in a tab. The editor
 
 <div class="doc-screenshots">
   <DocScreenshot file="editor-empty-state.png" caption="Browse files opens file selection when the editor has no open tab." />
-  <DocScreenshot file="editor-multiple-files.jpg" caption="The demo project’s app.js file in the editor." />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="Python and Markdown files open in separate editor tabs." />
 </div>
 
 ## Select and edit text
@@ -31,7 +31,7 @@ Open the target file and use line numbers and syntax highlighting to locate the 
 Select text to access copy, cut, and paste in the selection menu. Use **Ask AI** when you want AI assistance with the selection.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="editor-context-menu.jpg" caption="Text-selection menu with Copy, Cut, Paste, Select All, and Ask AI." />
+  <DocScreenshot file="editor-context-menu.jpg" caption="Selected Python identifier with Copy, Cut, Paste, Select All and Ask AI actions." />
 </div>
 
 ### Undo and redo edits
@@ -82,7 +82,7 @@ Inspect headings, code blocks, directory trees, and tables in the preview. Retur
 The HTML preview shows a snapshot of the current editor contents, including unsaved changes. The example is a report page; server-side logic still needs the project’s runtime.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="html-report-preview.jpg" caption="An HTML benchmark report displayed in an editor preview tab." />
+  <DocScreenshot file="html-report-preview.jpg" caption="HTML quality report in the integrated browser, showing three passing Python unit tests." />
 </div>
 
 ## NimoteCode 2.4.0

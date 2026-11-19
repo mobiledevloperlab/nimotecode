@@ -10,7 +10,7 @@ description: "设置的配置、操作步骤与界面说明。"
 打开 **Settings** 可调整应用主题、编辑器配色、界面缩放和语言。**Follow app** 使编辑器配色跟随应用主题。账户与购买管理也位于此处；下列截图展示的账户状态不同。
 
 <div class="doc-screenshots">
-  <DocScreenshot file="app-settings-light.png" caption="White 主题下的设置页，示例账户已登录。" />
+  <DocScreenshot file="app-settings-light.png" caption="设置中的当前版本 2.4.1（66）与支持入口。" />
 </div>
 
 <div class="doc-section">

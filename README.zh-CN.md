@@ -34,7 +34,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/public/screenshots/nimote-pro-framed.svg" alt="NimoteCode 开发工作区：项目文件树、编辑器、终端与 AI Agent" width="1000">
+  <img src="docs/public/screenshots/nimote-pro-framed.svg?v=6d554a40db88" alt="NimoteCode 2.4.1 远程项目文件树与 Python 编辑器" width="1000">
 </p>
 
 NimoteCode 是面向**本地与 SSH 项目的移动 IDE**。从浏览源码、编辑文件到执行项目命令、审查 Git Diff，在同一工作区完成。你可以连接自己的 AI 服务商使用编程助手，也可以接入开发电脑上运行的 Agent。
@@ -68,7 +68,7 @@ NimoteCode 是面向**本地与 SSH 项目的移动 IDE**。从浏览源码、�
 
 <table>
   <tr>
-    <td rowspan="5" width="180" align="center" valign="middle"><a href="docs/public/images/placeholders/host-mode.png"><img src="docs/public/screenshots/host-mode-framed.svg" alt="NimoteCode 四种模式入口：Full IDE、Quick Terminal、AI Workspace 和 Host" width="160"></a></td>
+    <td rowspan="5" width="180" align="center" valign="middle"><a href="docs/public/images/placeholders/host-mode.png?v=8ed6f40a441c"><img src="docs/public/screenshots/host-mode-framed.svg?v=0b26255ed795" alt="NimoteCode 四种模式入口：Full IDE、Quick Terminal、AI Workspace 和 Host" width="160"></a></td>
     <th>模式</th>
     <th>面向什么工作</th>
     <th>核心体验</th>
@@ -115,10 +115,10 @@ NimoteCode 是面向**本地与 SSH 项目的移动 IDE**。从浏览源码、�
     <th width="25%" align="center">4 · 审查代码改动</th>
   </tr>
   <tr>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/editor-code-selection.png"><img src="docs/public/screenshots/editor-code-selection-framed.svg" alt="1 · 查看与编辑代码" width="220"></a></td>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/ai-plan-running.jpg"><img src="docs/public/screenshots/ai-plan-running-framed.svg" alt="2 · 与 Agent 协作" width="220"></a></td>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/terminal-command-output.png"><img src="docs/public/screenshots/terminal-command-output-framed.svg" alt="3 · 运行项目命令" width="220"></a></td>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/source-control-changes.png"><img src="docs/public/screenshots/source-control-changes-framed.svg" alt="4 · 审查代码改动" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/editor-code-selection.png?v=3bc86359abb3"><img src="docs/public/screenshots/editor-code-selection-framed.svg?v=5419f1211a45" alt="1 · 查看与编辑代码" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/ai-plan-running.jpg?v=7cdbc72fe334"><img src="docs/public/screenshots/ai-plan-running-framed.svg?v=50b2a9e2632d" alt="2 · 与 Agent 协作" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/terminal-command-output.png?v=8a8c20322c4e"><img src="docs/public/screenshots/terminal-command-output-framed.svg?v=62963867fed1" alt="3 · 运行项目命令" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/source-control-changes.png?v=f08e4471badb"><img src="docs/public/screenshots/source-control-changes-framed.svg?v=15712f667c09" alt="4 · 审查代码改动" width="220"></a></td>
   </tr>
   <tr>
     <td valign="top">使用语法高亮与行号阅读、编辑项目文件。</td>
@@ -128,7 +128,7 @@ NimoteCode 是面向**本地与 SSH 项目的移动 IDE**。从浏览源码、�
   </tr>
 </table>
 
-<sub>真实应用截图，点击可查看原图。</sub>
+<sub>NimoteCode 2.4.1 Android 实机截图，通过 ADB 采集；点击图片查看原图。</sub>
 
 需要暂时离开？通过 [Host 模式](#nimotehost)，可以返回电脑上由 NimoteHost 托管的兼容会话。
 

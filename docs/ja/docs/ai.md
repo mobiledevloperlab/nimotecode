@@ -19,7 +19,7 @@ AI パネルで設定済みのモデルを選び、質問を入力します。�
 外部 Agent は、対応する ACP ランタイムを対象環境に設定して意図的に有効化した場合のみ実行されます。資格情報、ネットワーク、ツール方針は NimoteCode が提供するものではありません。MCP は stdio（選択したローカル／SSH／Local Linux のコマンド）または Streamable HTTP を使えます。信頼できるサーバーだけを追加し、起動と各ツール呼び出しを確認してください。
 
 <div class="doc-screenshots">
-  <DocScreenshot file="ai-chat-welcome.png" caption="ワークスペースを開く前の AI パネル。" />
+  <DocScreenshot file="ai-chat-welcome.png" caption="SSH プロジェクトに接続した AI ワークスペース。新しいタスクの開始前。" />
 </div>
 
 </div>
@@ -34,7 +34,7 @@ AI パネルで設定済みのモデルを選び、質問を入力します。�
 </div>
 
 <div class="doc-screenshots">
-  <DocScreenshot file="ai-agent-selector.jpg" caption="Nimote Agent が選択され、外部 Agent が無効になっている選択画面。" />
+  <DocScreenshot file="ai-agent-selector.jpg" caption="モデル選択：deepseek-flash を選択、deepseek-v4-pro も表示。" />
 </div>
 
 </div>
@@ -45,7 +45,7 @@ AI パネルで設定済みのモデルを選び、質問を入力します。�
 
 <div class="doc-screenshots">
   <DocScreenshot file="ai-plan-approval.jpg" caption="Confirm モードで承認を待つプロジェクト調査計画。" />
-  <DocScreenshot file="ai-plan-running.jpg" caption="承認後の実行でファイルを読み込み、完了した調査手順を記録している状態。" />
+  <DocScreenshot file="ai-plan-running.jpg" caption="Agent のタスク結果：Python テストの追加、成功したテスト出力、Git 差分。" />
 </div>
 
 ## 結果を読む
@@ -73,7 +73,7 @@ AI パネルで設定済みのモデルを選び、質問を入力します。�
 不足しているファイル、チェックアウトの範囲、ベンチマーク手法などの制約を確認します。結論が別のバージョンや環境にも当てはまるとは限りません。
 
 <div class="doc-screenshots">
-  <DocScreenshot file="ai-analysis-caveats.jpg" caption="調査対象のチェックアウトとベンチマーク結果に関する注意事項。" />
+  <DocScreenshot file="ai-analysis-caveats.jpg" caption="確認した Python 実装、テスト範囲、未検証の仮定に関する AI の注意点。" />
 </div>
 
 

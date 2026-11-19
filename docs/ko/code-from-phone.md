@@ -20,10 +20,10 @@ pageClass: "seo-product-guide"
 Local Linux는 루팅 없는 PRoot를 사용하고 iPhone과 iPad에서는 사용할 수 없습니다. 텍스트만 고친다면 간단한 편집기로 충분하며 AI 설정도 필수는 아닙니다.
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="iPhone 코드 편집. 실행 환경은 별도로 설정해야 합니다." loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-editor.webp?v=dc778aae9066" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-editor.webp?v=dc778aae9066" width="720" height="1565" alt="iPhone의 Python 편집기." loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone 코드 편집. 실행 환경은 별도로 설정해야 합니다. 출처: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 등록 이미지</a>.</figcaption>
+  <figcaption>iPhone의 Python 편집기. 로컬 빌드 NimoteCode 2.4.1 (66) iOS 시뮬레이터에서 캡처.</figcaption>
 </figure>
 
 ## 첫 Python 스크립트

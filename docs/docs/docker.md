@@ -10,7 +10,7 @@ Docker tools run on a connected SSH host. The host must have Docker installed an
 ## Open Docker
 
 <div class="doc-screenshots">
-  <DocScreenshot file="docker-images.png" caption="Docker image list in the Light theme, including the Debian bookworm-slim image." />
+  <DocScreenshot file="docker-images.png" caption="Docker image list with the temporary nimotecode-screenshot-demo:2.4.1 source bundle." />
 </div>
 
 
@@ -19,7 +19,7 @@ Open the Docker panel from workspace tools. Browse containers, images, volumes, 
 ## Manage Compose services
 
 <div class="doc-screenshots">
-  <DocScreenshot file="docker-image-detail.png" caption="Debian bookworm-slim image details in the Light theme." />
+  <DocScreenshot file="docker-image-detail.png" caption="Temporary source-bundle image details: tag, architecture, OS and size. No runtime is included." />
 </div>
 
 Open a Compose project to inspect its services and control an individual service. Compose files and build context remain on the SSH host. Check the selected project and host before starting or stopping services.

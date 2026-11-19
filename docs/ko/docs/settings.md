@@ -10,7 +10,7 @@ description: "설정 설정, 사용 절차 및 화면 안내."
 **Settings**에서 앱 테마, 편집기 색상, 인터페이스 배율 및 언어를 변경합니다. **Follow app**은 편집기 색상을 앱 테마에 맞춥니다. 계정 및 구매 관리도 이곳에 있습니다. 화면 예시는 서로 다른 계정 상태를 보여 줍니다.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="app-settings-light.png" caption="White 테마에서 로그인된 계정의 설정 화면." />
+  <DocScreenshot file="app-settings-light.png" caption="설정: 현재 버전 2.4.1 (66) 및 지원 링크." />
 </div>
 
 <div class="doc-section">

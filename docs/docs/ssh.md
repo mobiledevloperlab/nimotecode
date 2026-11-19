@@ -10,7 +10,7 @@ description: "Open local folders, configure SSH connections and proxies, and cho
 Choose a local folder for device files, SSH for a remote project, or Local Linux for an Android Linux environment. Recent History lists previously opened locations. The workspace determines which files and tools are available. Separately, choose a [mode](/docs/quick-start#open-a-workspace) for your task; [Host](/docs/host) manages remote sessions using NimoteHost.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="workspace-start-light.png" caption="Explorer before opening a workspace, light theme." />
+  <DocScreenshot file="workspace-start-light.png" caption="Workspace entry points before opening a project, in the dark theme." />
 </div>
 
 ## Open a local folder
@@ -30,7 +30,7 @@ Open the project folder, check the location, then select **Use this folder** to 
 Back in Local Explorer, verify the root directory. The example folder is empty; when opening your own project, check that its files appear here.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="local-workspace-files.png" caption="Local Explorer after selecting a folder; this example has no listed project files." />
+  <DocScreenshot file="local-workspace-files.png" caption="Local Explorer showing the temporary Python demo project on Android." />
 </div>
 
 ## Configure an SSH connection
@@ -44,7 +44,7 @@ Back in Local Explorer, verify the root directory. The example folder is empty; 
 
 <div class="doc-screenshots">
   <DocScreenshot file="remote-connection-form.jpg" caption="New SSH connection form with host, username, port and proxy settings." />
-  <DocScreenshot file="remote-connection-history.png" caption="Recent History with a saved SSH profile." />
+  <DocScreenshot file="remote-connection-history.png" caption="Saved SSH connection in the Connection environments sheet." />
 </div>
 
 ## Select the project root

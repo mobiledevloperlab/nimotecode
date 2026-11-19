@@ -31,10 +31,10 @@ Stay with Termius when cross-device host management, your established terminal w
 Use a repository you already access through Termius. Open the same directory in NimoteCode, edit one file, save it and review the diff in Source Control. Run the project’s check on the host. Compare the file navigation and review steps, then test the host-management and sync features you depend on separately.
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="NimoteCode on iPhone showing the code editor, tabs, and keyboard." loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-editor.webp?v=dc778aae9066" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-editor.webp?v=dc778aae9066" width="720" height="1565" alt="Python editor on iPhone." loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode on iPhone showing the code editor, tabs, and keyboard. Source: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store screenshots</a>.</figcaption>
+  <figcaption>Python editor on iPhone. Captured from the local NimoteCode 2.4.1 (66) iOS simulator build.</figcaption>
 </figure>
 
 ## Test one connection before migrating

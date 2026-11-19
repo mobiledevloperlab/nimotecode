@@ -19,7 +19,7 @@ AI 패널에서 설정된 모델을 선택하고 질문을 입력합니다. 프�
 외부 Agent는 호환 ACP 런타임을 대상 환경에 구성하고 의도적으로 활성화한 경우에만 실행됩니다. 자격 증명, 네트워크, 도구 정책은 NimoteCode가 제공하지 않습니다. MCP는 stdio(선택한 로컬/SSH/Local Linux 명령) 또는 Streamable HTTP를 사용합니다. 신뢰하는 서버만 추가하고 시작 및 각 도구 호출을 검토하세요.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="ai-chat-welcome.png" caption="작업 공간을 열기 전의 AI 패널." />
+  <DocScreenshot file="ai-chat-welcome.png" caption="SSH 프로젝트에 연결된 AI 작업 공간, 새 작업을 시작하기 전." />
 </div>
 
 </div>
@@ -34,7 +34,7 @@ AI 패널에서 설정된 모델을 선택하고 질문을 입력합니다. 프�
 </div>
 
 <div class="doc-screenshots">
-  <DocScreenshot file="ai-agent-selector.jpg" caption="Nimote Agent가 선택되고 외부 Agent가 비활성화된 선택기." />
+  <DocScreenshot file="ai-agent-selector.jpg" caption="모델 선택기: deepseek-flash 선택, deepseek-v4-pro도 표시." />
 </div>
 
 </div>
@@ -45,7 +45,7 @@ AI 패널에서 설정된 모델을 선택하고 질문을 입력합니다. 프�
 
 <div class="doc-screenshots">
   <DocScreenshot file="ai-plan-approval.jpg" caption="Confirm 모드에서 승인을 기다리는 프로젝트 분석 계획." />
-  <DocScreenshot file="ai-plan-running.jpg" caption="승인 후 파일을 읽고 완료된 분석 단계를 기록하는 실행 화면." />
+  <DocScreenshot file="ai-plan-running.jpg" caption="Agent 작업 결과: Python 테스트 추가, 통과한 테스트 출력과 Git 차이." />
 </div>
 
 ## 결과 읽기
@@ -73,7 +73,7 @@ AI 패널에서 설정된 모델을 선택하고 질문을 입력합니다. 프�
 누락된 파일, 체크아웃 범위, 벤치마크 방법 등의 제한을 확인합니다. 이 결론이 다른 버전이나 환경에도 적용된다고 가정하지 마세요.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="ai-analysis-caveats.jpg" caption="확인한 체크아웃과 벤치마크 결과에 관한 주의 사항." />
+  <DocScreenshot file="ai-analysis-caveats.jpg" caption="검토한 Python 구현, 테스트 범위 및 검증되지 않은 가정에 대한 AI 주의 사항." />
 </div>
 
 

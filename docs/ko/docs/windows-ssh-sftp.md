@@ -152,10 +152,10 @@ sftp username@192.168.1.100
 SFTP 접근 범위는 Windows 계정과 NTFS 권한에 따릅니다. 로그인 성공이 `C:\Windows`나 `Program Files`에 대한 쓰기 권한을 주지는 않습니다. SFTP 경로는 로컬 `C:\...` 형식과 다를 수 있으므로 서버가 반환하는 경로를 사용하세요.
 
 <figure>
-  <a href="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png" target="_blank" rel="noopener">
-    <img src="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png" width="2020" height="1041" alt="NimoteCode의 Windows 연결 설정, 원격 파일, PowerShell 터미널과 Agent 세션을 나란히 보여 주는 별도 화면들입니다." loading="lazy" decoding="async">
+  <a href="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png?v=d71056b9acfc" target="_blank" rel="noopener">
+    <img src="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png?v=d71056b9acfc" width="2020" height="1041" alt="NimoteCode 2.4.1 연결 양식, 디렉터리 선택 및 원격 파일. 현재 화면은 임시 macOS SSH 프로젝트로 캡처했으며 위 Windows 설정 절차는 Windows용입니다." loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode의 Windows 연결 설정, 원격 파일, PowerShell 터미널과 Agent 세션을 나란히 보여 주는 별도 화면들입니다.</figcaption>
+  <figcaption>NimoteCode 2.4.1 연결 양식, 디렉터리 선택 및 원격 파일. 현재 화면은 임시 macOS SSH 프로젝트로 캡처했으며 위 Windows 설정 절차는 Windows용입니다.</figcaption>
 </figure>
 
 ### Windows 셸과 호스트 키 확인

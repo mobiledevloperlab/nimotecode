@@ -153,10 +153,10 @@ If loopback works but the LAN test times out, check the target IPv4 address, act
 SFTP permissions are governed by the Windows account and NTFS permissions. Successfully connecting does not grant write access to protected directories such as `C:\Windows` or `Program Files`. Server-returned SFTP path syntax may not exactly match conventional `C:\...` paths.
 
 <figure>
-  <a href="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png" target="_blank" rel="noopener">
-    <img src="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png" width="2020" height="1041" alt="NimoteCode Windows workflow: connection settings, remote files, PowerShell terminal, and an Agent session. These are separate views." loading="lazy" decoding="async">
+  <a href="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png?v=d71056b9acfc" target="_blank" rel="noopener">
+    <img src="/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png?v=d71056b9acfc" width="2020" height="1041" alt="NimoteCode 2.4.1 connection form, directory picker and remote files. These current interface captures use a temporary macOS SSH project; the Windows setup instructions above remain specific to Windows." loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode Windows workflow: connection settings, remote files, PowerShell terminal, and an Agent session. These are separate views.</figcaption>
+  <figcaption>NimoteCode 2.4.1 connection form, directory picker and remote files. These current interface captures use a temporary macOS SSH project; the Windows setup instructions above remain specific to Windows.</figcaption>
 </figure>
 
 ### Windows shell and host verification

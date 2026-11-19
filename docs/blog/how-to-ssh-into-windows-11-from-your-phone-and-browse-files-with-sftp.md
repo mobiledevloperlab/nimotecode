@@ -4,13 +4,13 @@ description: "Set up Windows 11 OpenSSH Server, connect from Android or iPhone, 
 date: "2026-11-12"
 author: "NimoteCode Team"
 tags: ["windows", "ssh", "sftp", "tutorial", "mobile development"]
-image: /blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/cover.png
-ogImage: https://nimotecode.com/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/cover.png
+image: /blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/cover.png?v=73a77d426021
+ogImage: https://nimotecode.com/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/cover.png?v=73a77d426021
 ---
 
 # How to SSH Into Windows 11 From Your Phone (and Browse Files With SFTP)
 
-![SSH and SFTP access to Windows 11 from a phone](/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/cover.png)
+![SSH and SFTP access to Windows 11 from a phone](/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/cover.png?v=73a77d426021)
 
 **You don't need Remote Desktop to access your Windows development machine from your phone. SSH and SFTP are often enough.**
 
@@ -236,7 +236,9 @@ Now for the phone.
 
 I'm using [NimoteCode](https://nimotecode.com/), which supports Windows remote workspaces starting with version **2.3.0**.
 
-![NimoteCode Windows 11 remote workspace connection settings](/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png)
+![NimoteCode 2.4.1 SSH](/blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png?v=d71056b9acfc)
+
+NimoteCode 2.4.1 connection form, directory picker and remote files. These current interface captures use a temporary macOS SSH project; the Windows setup instructions above remain specific to Windows.
 
 
 Create an SSH workspace or connection with the following values:

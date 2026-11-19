@@ -12,10 +12,10 @@ pageClass: "seo-product-guide"
 短いメモなら簡単なエディターで十分です。プロジェクトを変更するなら、まず依存関係、検証、サービスの実行場所を決めます。
 
 <figure class="article-hero">
-  <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="App Store 掲載の NimoteCode iPad 画面。プロジェクトの参照と編集を表示。" loading="lazy" decoding="async">
+  <a href="/images/ios/ipad-workspace.webp?v=477d0ae0628c" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-workspace.webp?v=477d0ae0628c" width="1200" height="1741" alt="iPad のリモートファイルと Python エディター。" loading="lazy" decoding="async">
   </a>
-  <figcaption>App Store 掲載の NimoteCode iPad 画面。プロジェクトの参照と編集を表示。 出典：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode の App Store 掲載画像</a>。</figcaption>
+  <figcaption>iPad のリモートファイルと Python エディター。 ローカルビルドの NimoteCode 2.4.1（66）iOS シミュレーターで撮影。</figcaption>
 </figure>
 
 ## ローカル編集かリモートプロジェクトか
@@ -43,10 +43,10 @@ pageClass: "seo-product-guide"
 関連ファイルをタブに残し、実装、設定、テストを読み比べます。[ソース管理](/ja/docs/source-control)で差分と履歴を確認できます。GitHub 操作はアカウントとリポジトリの権限に従います。実行環境は引き続きホストが提供します。
 
 <figure class="article-hero">
-  <a href="/images/ios/ipad-git.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/ipad-git.webp" width="1200" height="899" alt="App Store 掲載の iPad 画面で Git AI ツールと変更分析を表示。" loading="lazy" decoding="async">
+  <a href="/images/ios/ipad-git.webp?v=e71556a5988e" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-git.webp?v=e71556a5988e" width="1200" height="1741" alt="iPad の Git ファイル差分レビュー。" loading="lazy" decoding="async">
   </a>
-  <figcaption>App Store 掲載の iPad 画面で Git AI ツールと変更分析を表示。 出典：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode の App Store 掲載画像</a>。</figcaption>
+  <figcaption>iPad の Git ファイル差分レビュー。 ローカルビルドの NimoteCode 2.4.1（66）iOS シミュレーターで撮影。</figcaption>
 </figure>
 
 ## 必要なときに AI を加える

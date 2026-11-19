@@ -39,10 +39,10 @@ git status --short --branch
 ```
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-terminal.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-terminal.webp" width="660" height="1433" alt="NimoteCode iPhone SSH terminal showing shell commands. This screenshot illustrates the terminal, not a recorded Codex run." loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-terminal.webp?v=73084741cf14" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-terminal.webp?v=73084741cf14" width="720" height="1565" alt="Three Python unit tests passed in the SSH terminal on iPhone." loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode iPhone SSH terminal showing shell commands. This screenshot illustrates the terminal, not a recorded Codex run. Source: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store screenshots</a>.</figcaption>
+  <figcaption>Three Python unit tests passed in the SSH terminal on iPhone. Captured from the local NimoteCode 2.4.1 (66) iOS simulator build.</figcaption>
 </figure>
 
 ## 3. Start a task in a host-side session

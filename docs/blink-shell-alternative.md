@@ -31,10 +31,10 @@ Stay with Blink when Mosh, your keyboard setup, Files integration, or an establi
 On iPhone or iPad, open the same repository you use with Blink Code. Compare editing two related files, saving a change and reviewing its Git diff. Test your external keyboard and reconnection under your usual network conditions. If Mosh is essential to your workflow, include that requirement in the decision; this guide covers NimoteCode’s SSH workflow.
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-editor.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-editor.webp" width="660" height="1433" alt="NimoteCode on iPhone showing the code editor, tabs, and keyboard." loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-editor.webp?v=dc778aae9066" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-editor.webp?v=dc778aae9066" width="720" height="1565" alt="Python editor on iPhone." loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode on iPhone showing the code editor, tabs, and keyboard. Source: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store screenshots</a>.</figcaption>
+  <figcaption>Python editor on iPhone. Captured from the local NimoteCode 2.4.1 (66) iOS simulator build.</figcaption>
 </figure>
 
 ## Test one connection before migrating

@@ -13,10 +13,10 @@ pageClass: mobile-ide-article
 私たちはAndroid、iPhone、iPad向けのエディターと開発ワークスペース、NimoteCodeを開発しています。この記事ではNimoteCodeを使って説明しますが、どのアプリを選ぶ場合も、最初に考えたいことは同じです。**コードと開発ツールを、どこで動かしますか？**
 
 <figure class="article-hero">
-  <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="iPad 版 NimoteCode のプロジェクトナビゲーションとコード編集。出典：NimoteCode の App Store 掲載画像。" loading="eager" decoding="async">
+  <a href="/images/ios/ipad-workspace.webp?v=477d0ae0628c" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-workspace.webp?v=477d0ae0628c" width="1200" height="1741" alt="iPad のリモートファイルと Python エディター。" loading="eager" decoding="async">
   </a>
-  <figcaption>iPad 版 NimoteCode のプロジェクトナビゲーションとコード編集。出典：NimoteCode の App Store 掲載画像。</figcaption>
+  <figcaption>iPad のリモートファイルと Python エディター。 ローカルビルドの NimoteCode 2.4.1（66）iOS シミュレーターで撮影。</figcaption>
 </figure>
 
 ## アプリより先に作業の進め方を選ぶ
@@ -49,8 +49,8 @@ git status --short --branch
 シェルが目的のリポジトリにいることを確認してください。エディターのタブを切り替えても、シェルの作業ディレクトリは変わりません。既存の変更があれば、今回の修正と区別しておきます。
 
 <figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/remote-workspace-connected.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/remote-workspace-connected.jpg" width="1080" height="2376" alt="SSH接続後のワークスペース。ファイルを開く前に、ホストとプロジェクトのルートを確認します。" loading="lazy" decoding="async">
+  <a href="/images/placeholders/remote-workspace-connected.jpg?v=e924413fb586" target="_blank" rel="noopener">
+    <img src="/images/placeholders/remote-workspace-connected.jpg?v=e924413fb586" width="1080" height="2376" alt="SSH接続後のワークスペース。ファイルを開く前に、ホストとプロジェクトのルートを確認します。" loading="lazy" decoding="async">
   </a>
   <figcaption>SSH接続後のワークスペース。ファイルを開く前に、ホストとプロジェクトのルートを確認します。</figcaption>
 </figure>
@@ -64,8 +64,8 @@ git status --short --branch
 Explorerで `README.md` を開き、前後の説明を読んでからコマンドを直します。最初の変更はその箇所だけに絞りましょう。文書全体の整形まで同時に行うと、小さな画面で差分を確認しづらくなります。
 
 <figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/markdown-source-editor.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/markdown-source-editor.jpg" width="1080" height="2376" alt="モバイルエディターで開いたREADME.md。プレビューと見比べられるMarkdownのソース画面です。" loading="lazy" decoding="async">
+  <a href="/images/placeholders/markdown-source-editor.jpg?v=2b3c42c3bcde" target="_blank" rel="noopener">
+    <img src="/images/placeholders/markdown-source-editor.jpg?v=2b3c42c3bcde" width="1080" height="2376" alt="モバイルエディターで開いたREADME.md。プレビューと見比べられるMarkdownのソース画面です。" loading="lazy" decoding="async">
   </a>
   <figcaption>モバイルエディターで開いたREADME.md。プレビューと見比べられるMarkdownのソース画面です。</figcaption>
 </figure>
@@ -75,8 +75,8 @@ Explorerで `README.md` を開き、前後の説明を読んでからコマン�
 Markdownプレビューで、コマンドがコードブロック内に収まり、前後のリストが正しく表示されるか確認します。静的HTMLでは、未保存の変更を含む編集中の内容をプレビューできます。サーバー処理が必要なアプリには、その実行環境が別途必要です。詳しくは[エディターガイド](/ja/docs/editor)を参照してください。
 
 <figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/markdown-preview.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/markdown-preview.jpg" width="1080" height="2376" alt="Markdownプレビューでは、見出し、コードブロック、表が実際にどう表示されるか確認できます。" loading="lazy" decoding="async">
+  <a href="/images/placeholders/markdown-preview.jpg?v=85fdfa272a29" target="_blank" rel="noopener">
+    <img src="/images/placeholders/markdown-preview.jpg?v=85fdfa272a29" width="1080" height="2376" alt="Markdownプレビューでは、見出し、コードブロック、表が実際にどう表示されるか確認できます。" loading="lazy" decoding="async">
   </a>
   <figcaption>Markdownプレビューでは、見出し、コードブロック、表が実際にどう表示されるか確認できます。</figcaption>
 </figure>
@@ -96,8 +96,8 @@ git diff --check
 このコマンドで分かるのは一部の空白文字のエラーです。文書の手順やアプリの動作を検証するものではありません。
 
 <figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/terminal-command-output.png" target="_blank" rel="noopener">
-    <img src="/images/placeholders/terminal-command-output.png" width="1080" height="2376" alt="ワークスペースのターミナルに表示されたlsのディレクトリ一覧。コマンド出力の画面例であり、テスト成功の記録ではありません。" loading="lazy" decoding="async">
+  <a href="/images/placeholders/terminal-command-output.png?v=8a8c20322c4e" target="_blank" rel="noopener">
+    <img src="/images/placeholders/terminal-command-output.png?v=8a8c20322c4e" width="1080" height="2376" alt="ワークスペースのターミナルに表示されたlsのディレクトリ一覧。コマンド出力の画面例であり、テスト成功の記録ではありません。" loading="lazy" decoding="async">
   </a>
   <figcaption>ワークスペースのターミナルに表示されたlsのディレクトリ一覧。コマンド出力の画面例であり、テスト成功の記録ではありません。</figcaption>
 </figure>
@@ -107,8 +107,8 @@ git diff --check
 **Source Control** で変更したファイルを開き、差分を確認します。ファイル名、修正した行、意図しないファイルがないかを見てください。NimoteCodeの無料版ではGitの状態、差分、履歴を確認できます。Gitの書き込みとブランチ操作にはProが必要です。[無料版とProの違い](/ja/pro)で範囲を確認できます。
 
 <figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/git-diff-view.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/git-diff-view.jpg" width="1080" height="2376" alt="差分画面は追加と削除を色分けします。この既存の画像にはデモ用の変更が含まれており、上のREADME修正の結果ではありません。" loading="lazy" decoding="async">
+  <a href="/images/placeholders/git-diff-view.jpg?v=d846ea1bdd11" target="_blank" rel="noopener">
+    <img src="/images/placeholders/git-diff-view.jpg?v=d846ea1bdd11" width="1080" height="2376" alt="差分画面は追加と削除を色分けします。この既存の画像にはデモ用の変更が含まれており、上のREADME修正の結果ではありません。" loading="lazy" decoding="async">
   </a>
   <figcaption>差分画面は追加と削除を色分けします。この既存の画像にはデモ用の変更が含まれており、上のREADME修正の結果ではありません。</figcaption>
 </figure>

@@ -34,7 +34,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/public/screenshots/nimote-pro-framed.svg" alt="NimoteCode workspace with project Explorer, split editor, terminal and AI agent" width="1000">
+  <img src="docs/public/screenshots/nimote-pro-framed.svg?v=6d554a40db88" alt="NimoteCode 2.4.1 remote project files and Python editor" width="1000">
 </p>
 
 NimoteCode is a **mobile IDE for local and SSH projects**. Browse source files, make an edit, run project commands and review the Git diff in one workspace. Use optional AI assistance with your own provider, or connect to coding agents on your development machine.
@@ -68,7 +68,7 @@ Mobile development means moving between files, commands, changes and Agent tasks
 
 <table>
   <tr>
-    <td rowspan="5" width="180" align="center" valign="middle"><a href="docs/public/images/placeholders/host-mode.png"><img src="docs/public/screenshots/host-mode-framed.svg" alt="NimoteCode mode selection: Full IDE, Quick Terminal, AI Workspace and Host" width="160"></a></td>
+    <td rowspan="5" width="180" align="center" valign="middle"><a href="docs/public/images/placeholders/host-mode.png?v=8ed6f40a441c"><img src="docs/public/screenshots/host-mode-framed.svg?v=0b26255ed795" alt="NimoteCode mode selection: Full IDE, Quick Terminal, AI Workspace and Host" width="160"></a></td>
     <th>Mode</th>
     <th>When to use it</th>
     <th>What you work with</th>
@@ -115,10 +115,10 @@ A mobile workflow you can follow: open your SSH project, inspect the code, work 
     <th width="25%" align="center">4 · Review changes</th>
   </tr>
   <tr>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/editor-code-selection.png"><img src="docs/public/screenshots/editor-code-selection-framed.svg" alt="1 · Inspect the code" width="220"></a></td>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/ai-plan-running.jpg"><img src="docs/public/screenshots/ai-plan-running-framed.svg" alt="2 · Work with an Agent" width="220"></a></td>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/terminal-command-output.png"><img src="docs/public/screenshots/terminal-command-output-framed.svg" alt="3 · Run commands" width="220"></a></td>
-    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/source-control-changes.png"><img src="docs/public/screenshots/source-control-changes-framed.svg" alt="4 · Review changes" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/editor-code-selection.png?v=3bc86359abb3"><img src="docs/public/screenshots/editor-code-selection-framed.svg?v=5419f1211a45" alt="1 · Inspect the code" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/ai-plan-running.jpg?v=7cdbc72fe334"><img src="docs/public/screenshots/ai-plan-running-framed.svg?v=50b2a9e2632d" alt="2 · Work with an Agent" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/terminal-command-output.png?v=8a8c20322c4e"><img src="docs/public/screenshots/terminal-command-output-framed.svg?v=62963867fed1" alt="3 · Run commands" width="220"></a></td>
+    <td width="25%" align="center" valign="top"><a href="docs/public/images/placeholders/source-control-changes.png?v=f08e4471badb"><img src="docs/public/screenshots/source-control-changes-framed.svg?v=15712f667c09" alt="4 · Review changes" width="220"></a></td>
   </tr>
   <tr>
     <td valign="top">Read and edit project files with syntax highlighting and line numbers.</td>
@@ -128,7 +128,7 @@ A mobile workflow you can follow: open your SSH project, inspect the code, work 
   </tr>
 </table>
 
-<sub>Real app screenshots. Click an image for the full-size view.</sub>
+<sub>NimoteCode 2.4.1 Android screenshots captured over ADB. Click an image for the full-size view.</sub>
 
 Need to step away? [Host mode](#nimotehost) lets you return to compatible sessions managed by NimoteHost on your computer.
 

@@ -1,0 +1,210 @@
+{
+  "captureVersion": "2.4.1",
+  "images": [
+    {
+      "file": "blog/best-mobile-ides/image-1.png",
+      "captureVersion": "2.4.1",
+      "width": 1604,
+      "height": 901,
+      "sha256": "ea4cf080e63f37a358d7966cdfca250922b0935c92063e5a1ec64ee99be53429",
+      "sources": [
+        "remote-workspace-connected.jpg",
+        "editor-code-selection.png",
+        "ai-plan-running.jpg"
+      ]
+    },
+    {
+      "file": "blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-1.png",
+      "captureVersion": "2.4.1",
+      "width": 1604,
+      "height": 901,
+      "sha256": "ea4cf080e63f37a358d7966cdfca250922b0935c92063e5a1ec64ee99be53429",
+      "sources": [
+        "remote-workspace-connected.jpg",
+        "editor-code-selection.png",
+        "ai-plan-running.jpg"
+      ]
+    },
+    {
+      "file": "blog/best-mobile-ides/image-2.png",
+      "captureVersion": "2.4.1",
+      "width": 1597,
+      "height": 896,
+      "sha256": "369b4d3ac72d36f25c671065526be8e37ea90a08522189452db01a6bb3c265df",
+      "sources": [
+        "terminal-command-output.png",
+        "source-control-changes.png",
+        "lsp-python-status.png"
+      ]
+    },
+    {
+      "file": "blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-2.png",
+      "captureVersion": "2.4.1",
+      "width": 1597,
+      "height": 896,
+      "sha256": "369b4d3ac72d36f25c671065526be8e37ea90a08522189452db01a6bb3c265df",
+      "sources": [
+        "terminal-command-output.png",
+        "source-control-changes.png",
+        "lsp-python-status.png"
+      ]
+    },
+    {
+      "file": "blog/best-mobile-ides/image-3.png",
+      "captureVersion": "2.4.1",
+      "width": 1598,
+      "height": 893,
+      "sha256": "ee17e2a1045d76e8970f95c7c536cf5112cc0d5264aaf533c1924e847b71c6dc",
+      "sources": [
+        "debugger-standby.png",
+        "sync-cache-status.png"
+      ]
+    },
+    {
+      "file": "blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide/image-3.png",
+      "captureVersion": "2.4.1",
+      "width": 1598,
+      "height": 893,
+      "sha256": "ee17e2a1045d76e8970f95c7c536cf5112cc0d5264aaf533c1924e847b71c6dc",
+      "sources": [
+        "debugger-standby.png",
+        "sync-cache-status.png"
+      ]
+    },
+    {
+      "file": "blog/best-mobile-ides/image-4.png",
+      "captureVersion": "2.4.1",
+      "width": 1811,
+      "height": 1024,
+      "sha256": "a2ba9ca315a7cda1e3908890bbe4f76719f8185d05a3d8f64dcd2e19ede4600c",
+      "sources": [
+        "remote-workspace-connected.jpg",
+        "editor-code-selection.png",
+        "ai-plan-running.jpg",
+        "terminal-command-output.png"
+      ]
+    },
+    {
+      "file": "blog/why-i-decided-to-build-a-mobile-ide-instead-of-another-ai-app/image-4.png",
+      "captureVersion": "2.4.1",
+      "width": 1811,
+      "height": 1024,
+      "sha256": "a2ba9ca315a7cda1e3908890bbe4f76719f8185d05a3d8f64dcd2e19ede4600c",
+      "sources": [
+        "remote-workspace-connected.jpg",
+        "editor-code-selection.png",
+        "ai-plan-running.jpg",
+        "terminal-command-output.png"
+      ]
+    },
+    {
+      "file": "blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/cover.png",
+      "captureVersion": "2.4.1",
+      "width": 1101,
+      "height": 796,
+      "sha256": "73a77d4260214f9aee9da55edbe73a13f4324163aef4c41b11fd75bfc5c3aed5",
+      "sources": [
+        "startup-light.jpg"
+      ]
+    },
+    {
+      "file": "blog/how-to-ssh-into-windows-11-from-your-phone-and-browse-files-with-sftp/nimotecode-win11.png",
+      "captureVersion": "2.4.1",
+      "width": 2020,
+      "height": 1041,
+      "sha256": "d71056b9acfc5160630efd9f776826a0cb6452cac866a9e0ea62a27e46acb8d8",
+      "sources": [
+        "remote-connection-form.jpg",
+        "remote-directory-picker.jpg",
+        "remote-workspace-connected.jpg"
+      ]
+    },
+    {
+      "file": "blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me-6-months/image-1.png",
+      "captureVersion": "2.4.1",
+      "width": 968,
+      "height": 605,
+      "sha256": "913c0c089919096ca26f854c6a04ccd8842c53d97675a5279c642739c1ab2901",
+      "sources": [
+        "editor-code-selection.png",
+        "terminal-command-output.png"
+      ]
+    },
+    {
+      "file": "blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me-6-months/image-2.png",
+      "captureVersion": "2.4.1",
+      "width": 1824,
+      "height": 879,
+      "sha256": "41de6f6a377997e1a8350693c005e08625a2d4cf90704e1ea925301fb0c3e7c9",
+      "sources": [
+        "source-control-changes.png",
+        "git-diff-view.jpg"
+      ]
+    },
+    {
+      "file": "blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-1.png",
+      "captureVersion": "2.4.1",
+      "width": 1344,
+      "height": 2992,
+      "sha256": "1ff48bae8252b7458548f1a4950a0500cca36c6aa9ed1763380480353966cce2",
+      "sources": [
+        "editor-context-menu.jpg"
+      ]
+    },
+    {
+      "file": "blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide/image-2.png",
+      "captureVersion": "2.4.1",
+      "width": 1414,
+      "height": 878,
+      "sha256": "6dff9c17acfe8b3b3fbbcbf5e84b0e9b693c8159b8b2fa1ec51379f503be2168",
+      "sources": [
+        "source-control-changes.png",
+        "git-commit-details.jpg"
+      ]
+    },
+    {
+      "file": "videos/nimotecode-workspace-demo-poster.jpg",
+      "captureVersion": "2.4.1",
+      "width": 1280,
+      "height": 720,
+      "sha256": "f4ea90128a8139b5fed9bc6997e24b75409d183c62692d6a299cd99f34af6c42",
+      "sources": [
+        "screenshots/nimote-pro.webp"
+      ],
+      "note": "Current UI poster; video footage is unchanged."
+    },
+    {
+      "file": "videos/mobile-promot-poster.jpg",
+      "captureVersion": "2.4.1",
+      "width": 1080,
+      "height": 1920,
+      "sha256": "aed17062938989596dfb92705a9e8dce283fca59aa9025fc9e817b256627d865",
+      "sources": [
+        "screenshots/nimote-pro.webp"
+      ],
+      "note": "Current UI poster; video footage is unchanged."
+    },
+    {
+      "file": "videos/workspace-demo-poster.jpg",
+      "captureVersion": "2.4.1",
+      "width": 1280,
+      "height": 720,
+      "sha256": "f4ea90128a8139b5fed9bc6997e24b75409d183c62692d6a299cd99f34af6c42",
+      "sources": [
+        "screenshots/nimote-pro.webp"
+      ],
+      "note": "Current UI poster; video footage is unchanged."
+    },
+    {
+      "file": "videos/nimotecode-poster.jpg",
+      "captureVersion": "2.4.1",
+      "width": 720,
+      "height": 1280,
+      "sha256": "334e426b8716b70d8914d49f1752891541e029bea194b6d6aac8ab8abbcfb0f3",
+      "sources": [
+        "screenshots/nimote-pro.webp"
+      ],
+      "note": "Current UI poster; video footage is unchanged."
+    }
+  ]
+}

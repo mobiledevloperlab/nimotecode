@@ -10,7 +10,7 @@ description: "設定の設定、操作手順、画面の説明。"
 **Settings** でアプリのテーマ、エディターの配色、表示倍率、言語を変更できます。**Follow app** はエディターの配色をアプリのテーマに合わせます。アカウントと購入の操作もここにあります。画面例は異なるアカウント状態を示しています。
 
 <div class="doc-screenshots">
-  <DocScreenshot file="app-settings-light.png" caption="White テーマでサインイン済みの設定画面。" />
+  <DocScreenshot file="app-settings-light.png" caption="設定：現在のバージョン 2.4.1（66）とサポート。" />
 </div>
 
 <div class="doc-section">

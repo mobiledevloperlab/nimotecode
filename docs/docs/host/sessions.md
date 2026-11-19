@@ -29,10 +29,10 @@ If the app reports a missing, stopped, or incompatible Host, fix that condition 
 4. Run `pwd`, then `echo Host connected` to check the directory and output. In Windows PowerShell, use `Get-Location` for the directory.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="host-terminal.png" caption="The demo terminal ran pwd and echo Host connected. The output remained after returning to the list and reopening it." />
+  <DocScreenshot file="host-terminal.png" caption="Retained output from a completed remote check: four runs of the three-test Python suite passed." />
 </div>
 
-This example uses `/tmp/nimote-host-guide`. On macOS, `pwd` may show `/private/tmp/nimote-host-guide`; both paths point to the same location. Use your project directory instead, and keep important files out of temporary directories.
+These 2.4.1 captures show the existing pocket-shop workspace. The terminal capture is a completed command session; the steps above illustrate how to create an interactive shell.
 
 Returning to the list leaves the shell running. To end the demo shell, enter `exit` or use the session's stop button. Once stopped, opening its history shows retained output; it does not bring the process back.
 
@@ -41,7 +41,7 @@ Returning to the list leaves the shell running. To end the demo shell, enter `ex
 In **Sessions**, search by name or directory, choose **All**, **Running**, or **History**, and open the session. Its menu includes pinning, renaming, and other actions.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="host-sessions.png" caption="Filtering by the demo directory shows just the new terminal. Running means the process is still active on the computer." />
+  <DocScreenshot file="host-sessions.png" caption="Host session history, with running, completed and stopped processes." />
 </div>
 
 After leaving the app or losing SSH, reconnect to the same Host. If Host and the managed process are still running, you can reattach without executing the original command again.

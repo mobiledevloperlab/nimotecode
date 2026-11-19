@@ -12,10 +12,10 @@ NimoteCode connects your iPhone to a Windows, macOS or Linux host over SSH. Brow
 For a command-only task, a dedicated terminal may be enough. Choose NimoteCode when you also need to find a file, edit it, run the project’s checks, and inspect what changed.
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-ssh.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-ssh.webp" width="660" height="1433" alt="NimoteCode on iPhone showing Remote Explorer and the connected SSH project." loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-ssh.webp?v=6e00355be096" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-ssh.webp?v=6e00355be096" width="720" height="1565" alt="Remote project files on iPhone." loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode on iPhone showing Remote Explorer and the connected SSH project. Source: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store screenshots</a>.</figcaption>
+  <figcaption>Remote project files on iPhone. Captured from the local NimoteCode 2.4.1 (66) iOS simulator build.</figcaption>
 </figure>
 
 ## Connect your iPhone to a development host

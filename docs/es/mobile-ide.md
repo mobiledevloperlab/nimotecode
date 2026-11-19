@@ -13,10 +13,10 @@ Es una buena prueba para un IDE móvil. Abrir un archivo es solo el principio. �
 Desarrollamos NimoteCode, un editor y espacio de desarrollo para Android, iPhone y iPad. Lo usaremos como ejemplo, pero la primera decisión sirve para cualquier aplicación: **¿dónde se ejecutarán el código y las herramientas?**
 
 <figure class="article-hero">
-  <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="NimoteCode en iPad con navegación del proyecto y edición de código. Fuente: capturas de NimoteCode en App Store." loading="eager" decoding="async">
+  <a href="/images/ios/ipad-workspace.webp?v=477d0ae0628c" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-workspace.webp?v=477d0ae0628c" width="1200" height="1741" alt="Archivos remotos y editor Python en iPad." loading="eager" decoding="async">
   </a>
-  <figcaption>NimoteCode en iPad con navegación del proyecto y edición de código. Fuente: capturas de NimoteCode en App Store.</figcaption>
+  <figcaption>Archivos remotos y editor Python en iPad. Capturado en el simulador iOS con la compilación local NimoteCode 2.4.1 (66).</figcaption>
 </figure>
 
 ## Elige cómo vas a trabajar antes de elegir la aplicación
@@ -49,8 +49,8 @@ git status --short --branch
 La shell debe estar en el repositorio correcto. Cambiar de pestaña en el editor no cambia el directorio de la terminal. Si ya hay modificaciones, identifica cuáles son antes de añadir las tuyas.
 
 <figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/remote-workspace-connected.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/remote-workspace-connected.jpg" width="1080" height="2376" alt="Un espacio de trabajo conectado por SSH: comprueba el equipo y la raíz del proyecto antes de abrir archivos." loading="lazy" decoding="async">
+  <a href="/images/placeholders/remote-workspace-connected.jpg?v=e924413fb586" target="_blank" rel="noopener">
+    <img src="/images/placeholders/remote-workspace-connected.jpg?v=e924413fb586" width="1080" height="2376" alt="Un espacio de trabajo conectado por SSH: comprueba el equipo y la raíz del proyecto antes de abrir archivos." loading="lazy" decoding="async">
   </a>
   <figcaption>Un espacio de trabajo conectado por SSH: comprueba el equipo y la raíz del proyecto antes de abrir archivos.</figcaption>
 </figure>
@@ -64,8 +64,8 @@ La corrección del README sirve como primera tarea. Es fácil de revisar en el t
 Busca `README.md` en Explorer y ábrelo. Lee las instrucciones que rodean el comando antes de modificarlo. Limita este primer cambio a la corrección: reformatear todo el documento al mismo tiempo dificulta la revisión en una pantalla pequeña.
 
 <figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/markdown-source-editor.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/markdown-source-editor.jpg" width="1080" height="2376" alt="README.md abierto en el editor móvil: el código Markdown que puedes comparar con la vista previa." loading="lazy" decoding="async">
+  <a href="/images/placeholders/markdown-source-editor.jpg?v=2b3c42c3bcde" target="_blank" rel="noopener">
+    <img src="/images/placeholders/markdown-source-editor.jpg?v=2b3c42c3bcde" width="1080" height="2376" alt="README.md abierto en el editor móvil: el código Markdown que puedes comparar con la vista previa." loading="lazy" decoding="async">
   </a>
   <figcaption>README.md abierto en el editor móvil: el código Markdown que puedes comparar con la vista previa.</figcaption>
 </figure>
@@ -75,8 +75,8 @@ Busca `README.md` en Explorer y ábrelo. Lee las instrucciones que rodean el com
 Abre la vista previa de Markdown para comprobar que el comando siga dentro de su bloque de código y que las listas se vean bien. Para HTML estático, NimoteCode puede mostrar el contenido actual del editor, incluidos los cambios sin guardar. Una aplicación con lógica de servidor sigue necesitando su propio entorno de ejecución. La [guía del editor](/es/docs/editor) explica la diferencia.
 
 <figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/markdown-preview.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/markdown-preview.jpg" width="1080" height="2376" alt="La vista previa de Markdown permite comprobar cómo se muestran los títulos, los bloques de código y las tablas." loading="lazy" decoding="async">
+  <a href="/images/placeholders/markdown-preview.jpg?v=85fdfa272a29" target="_blank" rel="noopener">
+    <img src="/images/placeholders/markdown-preview.jpg?v=85fdfa272a29" width="1080" height="2376" alt="La vista previa de Markdown permite comprobar cómo se muestran los títulos, los bloques de código y las tablas." loading="lazy" decoding="async">
   </a>
   <figcaption>La vista previa de Markdown permite comprobar cómo se muestran los títulos, los bloques de código y las tablas.</figcaption>
 </figure>
@@ -96,8 +96,8 @@ git diff --check
 Ese comando solo detecta determinados problemas de espacios en blanco. No prueba las instrucciones del documento ni el comportamiento de la aplicación.
 
 <figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/terminal-command-output.png" target="_blank" rel="noopener">
-    <img src="/images/placeholders/terminal-command-output.png" width="1080" height="2376" alt="La terminal muestra un listado de directorio con ls. Es un ejemplo de salida de comandos, no una prueba superada." loading="lazy" decoding="async">
+  <a href="/images/placeholders/terminal-command-output.png?v=8a8c20322c4e" target="_blank" rel="noopener">
+    <img src="/images/placeholders/terminal-command-output.png?v=8a8c20322c4e" width="1080" height="2376" alt="La terminal muestra un listado de directorio con ls. Es un ejemplo de salida de comandos, no una prueba superada." loading="lazy" decoding="async">
   </a>
   <figcaption>La terminal muestra un listado de directorio con ls. Es un ejemplo de salida de comandos, no una prueba superada.</figcaption>
 </figure>
@@ -107,8 +107,8 @@ Ese comando solo detecta determinados problemas de espacios en blanco. No prueba
 Abre **Source Control**, busca el archivo modificado y revisa las diferencias. Comprueba el nombre del archivo, la línea exacta y si aparece algún archivo inesperado. La versión gratuita de NimoteCode permite consultar el estado de Git, los diffs y el historial; las operaciones de escritura y de ramas requieren Pro. Consulta los detalles en [Gratis y Pro](/es/pro).
 
 <figure class="mobile-ide-screenshot">
-  <a href="/images/placeholders/git-diff-view.jpg" target="_blank" rel="noopener">
-    <img src="/images/placeholders/git-diff-view.jpg" width="1080" height="2376" alt="La vista de diferencias distingue las adiciones y eliminaciones por color. Esta captura existente contiene cambios de demostración, no la corrección del README del ejemplo." loading="lazy" decoding="async">
+  <a href="/images/placeholders/git-diff-view.jpg?v=d846ea1bdd11" target="_blank" rel="noopener">
+    <img src="/images/placeholders/git-diff-view.jpg?v=d846ea1bdd11" width="1080" height="2376" alt="La vista de diferencias distingue las adiciones y eliminaciones por color. Esta captura existente contiene cambios de demostración, no la corrección del README del ejemplo." loading="lazy" decoding="async">
   </a>
   <figcaption>La vista de diferencias distingue las adiciones y eliminaciones por color. Esta captura existente contiene cambios de demostración, no la corrección del README del ejemplo.</figcaption>
 </figure>

@@ -23,7 +23,7 @@ Si el servicio falta, está detenido o no es compatible, corrige esa condición 
 Toca +, elige Terminal, escribe una carpeta remota que ya exista y pulsa Start session. Prueba pwd y echo Host connected; en PowerShell usa Get-Location para ver la carpeta.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="host-terminal.png" caption="El terminal de ejemplo conserva pwd y echo Host connected al volver a abrirlo." />
+  <DocScreenshot file="host-terminal.png" caption="Salida conservada de una comprobación remota completada: las tres pruebas Python pasaron en cuatro ejecuciones." />
 </div>
 
 El ejemplo usa /tmp/nimote-host-guide. macOS puede mostrar /private/tmp/nimote-host-guide. Para trabajar, utiliza tu proyecto real; no guardes archivos importantes en una carpeta temporal. Volver a la lista no termina el Shell. Para cerrarlo, escribe exit o usa Detener.
@@ -33,7 +33,7 @@ El ejemplo usa /tmp/nimote-host-guide. macOS puede mostrar /private/tmp/nimote-h
 Busca por nombre o carpeta en Sessions. Usa All, Running e History para cambiar el filtro y abre la sesión original. El menú permite fijar y cambiar el nombre.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="host-sessions.png" caption="El filtro por carpeta y Running muestra el terminal del ejemplo que sigue activo." />
+  <DocScreenshot file="host-sessions.png" caption="Historial de sesiones Host con procesos en ejecución, completados y detenidos." />
 </div>
 
 Si pierdes SSH, vuelve al mismo Host. Mientras el servicio y el proceso sigan vivos, puedes retomar la sesión sin repetir el comando. Un reinicio de Host o del sistema no revive procesos: las sesiones pendientes quedan interrumpidas. Cerrar la sesión del usuario también depende de las reglas del servicio de cada sistema.

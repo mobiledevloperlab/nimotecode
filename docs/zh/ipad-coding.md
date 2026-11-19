@@ -12,10 +12,10 @@ pageClass: "seo-product-guide"
 只改一段笔记时，简单编辑器可能就够了。处理项目变更前，先确定依赖、检查和服务在哪里运行。
 
 <figure class="article-hero">
-  <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="NimoteCode 的 App Store iPad 界面，展示项目导航和代码编辑。" loading="lazy" decoding="async">
+  <a href="/images/ios/ipad-workspace.webp?v=477d0ae0628c" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-workspace.webp?v=477d0ae0628c" width="1200" height="1741" alt="iPad 上的远程文件树与 Python 编辑器。" loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode 的 App Store iPad 界面，展示项目导航和代码编辑。 图片来源：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 页面</a>。</figcaption>
+  <figcaption>iPad 上的远程文件树与 Python 编辑器。 来源：本机编译的 NimoteCode 2.4.1（66）iOS 模拟器实截。</figcaption>
 </figure>
 
 ## 选择本地编辑或远程项目
@@ -43,10 +43,10 @@ pageClass: "seo-product-guide"
 在标签页中保留相关文件，对照实现、配置和测试。[源代码管理](/zh/docs/source-control)提供变更文件、diff 和历史；GitHub 操作取决于账号及仓库权限。更宽的屏幕改善阅读空间，项目运行环境仍由主机提供。
 
 <figure class="article-hero">
-  <a href="/images/ios/ipad-git.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/ipad-git.webp" width="1200" height="899" alt="NimoteCode 的 App Store iPad 界面，展示 Git AI 工具与变更分析。" loading="lazy" decoding="async">
+  <a href="/images/ios/ipad-git.webp?v=e71556a5988e" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-git.webp?v=e71556a5988e" width="1200" height="1741" alt="iPad 上的 Git 文件差异审阅。" loading="lazy" decoding="async">
   </a>
-  <figcaption>NimoteCode 的 App Store iPad 界面，展示 Git AI 工具与变更分析。 图片来源：<a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 页面</a>。</figcaption>
+  <figcaption>iPad 上的 Git 文件差异审阅。 来源：本机编译的 NimoteCode 2.4.1（66）iOS 模拟器实截。</figcaption>
 </figure>
 
 ## 在需要时加入 AI 辅助

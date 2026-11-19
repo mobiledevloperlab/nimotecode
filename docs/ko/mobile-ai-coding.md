@@ -24,10 +24,10 @@ NimoteCode는 코드 설명을 위한 AI Chat, 작업 공간에서 도구를 사
 [모델 설정](/ko/docs/configuration)에서 접근을 시험하고 작업 공간 루트를 확인하세요. 로컬 폴더만으로 명령 환경이 제공되지는 않습니다. SSH는 호스트, 지원 Android는 [Local Linux](/ko/docs/local-linux)를 사용할 수 있습니다. iPhone과 iPad에는 Local Linux가 없습니다.
 
 <figure class="seo-phone-capture">
-  <a href="/images/ios/iphone-agents.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/iphone-agents.webp" width="660" height="1433" alt="iPhone NimoteCode의 내장 및 외부 Agent 선택 화면." loading="lazy" decoding="async">
+  <a href="/images/ios/iphone-agents.webp?v=6c87b07b60da" target="_blank" rel="noopener">
+    <img src="/images/ios/iphone-agents.webp?v=6c87b07b60da" width="720" height="1565" alt="서비스 제공자 설정 전 iPhone AI 작업 공간." loading="lazy" decoding="async">
   </a>
-  <figcaption>iPhone NimoteCode의 내장 및 외부 Agent 선택 화면. 출처: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 등록 이미지</a>.</figcaption>
+  <figcaption>서비스 제공자 설정 전 iPhone AI 작업 공간. 로컬 빌드 NimoteCode 2.4.1 (66) iOS 시뮬레이터에서 캡처.</figcaption>
 </figure>
 
 ## 읽기 전용 요청부터 시작

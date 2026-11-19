@@ -10,7 +10,7 @@ Docker ツールは接続済み SSH ホストで動作します。ホストに D
 ## Docker を開く
 
 <div class="doc-screenshots">
-  <DocScreenshot file="docker-images.png" caption="Light テーマの Docker イメージ一覧。Debian bookworm-slim を含みます。" />
+  <DocScreenshot file="docker-images.png" caption="Docker イメージ一覧：一時的なソースバンドル nimotecode-screenshot-demo:2.4.1。" />
 </div>
 
 ワークスペース ツールから Docker パネルを開き、コンテナ、イメージ、ボリューム、ネットワーク、Compose プロジェクトを確認します。リソースの詳細、ログ、統計情報、exec ターミナルを利用でき、Docker Hub のイメージも検索できます。
@@ -18,7 +18,7 @@ Docker ツールは接続済み SSH ホストで動作します。ホストに D
 ## Compose サービスの管理
 
 <div class="doc-screenshots">
-  <DocScreenshot file="docker-image-detail.png" caption="Light テーマで表示した Debian bookworm-slim イメージの詳細。" />
+  <DocScreenshot file="docker-image-detail.png" caption="一時的なソースバンドルのタグ、アーキテクチャ、OS、サイズ。ランタイムは含みません。" />
 </div>
 
 Compose プロジェクトを開いてサービスを確認し、個別のサービスを操作します。Compose ファイルとビルドコンテキストは SSH ホスト上にあります。操作前に対象のプロジェクトとホストを確認してください。

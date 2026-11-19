@@ -11,7 +11,7 @@ Explorer 또는 Search에서 파일을 열면 각각 탭으로 표시됩니다. 
 
 <div class="doc-screenshots">
   <DocScreenshot file="editor-empty-state.png" caption="열린 탭이 없을 때 Browse files로 파일을 선택할 수 있습니다." />
-  <DocScreenshot file="editor-multiple-files.jpg" caption="편집기에서 연 데모 프로젝트의 app.js 파일." />
+  <DocScreenshot file="editor-multiple-files.jpg" caption="별도 편집기 탭에 열린 Python 및 Markdown 파일." />
 </div>
 
 ## 텍스트 선택 및 편집
@@ -31,7 +31,7 @@ Explorer 또는 Search에서 파일을 열면 각각 탭으로 표시됩니다. 
 텍스트를 선택하면 메뉴에서 복사, 잘라내기, 붙여넣기를 사용할 수 있습니다. 선택 영역에 대해 AI의 도움이 필요하면 **Ask AI**를 사용합니다.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="editor-context-menu.jpg" caption="Copy, Cut, Paste, Select All, Ask AI가 있는 텍스트 선택 메뉴." />
+  <DocScreenshot file="editor-context-menu.jpg" caption="선택한 Python 식별자와 복사, 잘라내기, 붙여넣기, 전체 선택, Ask AI 작업." />
 </div>
 
 ### 실행 취소와 다시 실행
@@ -82,7 +82,7 @@ Markdown 소스를 편집한 뒤 미리보기에서 렌더링된 제목, 코드 
 HTML 미리보기는 저장하지 않은 변경을 포함한 현재 편집 내용의 스냅샷입니다. 예시는 보고서 페이지이며 서버 측 로직에는 프로젝트의 실행 환경이 필요합니다.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="html-report-preview.jpg" caption="편집기 미리보기 탭에 표시된 HTML 벤치마크 보고서." />
+  <DocScreenshot file="html-report-preview.jpg" caption="내장 브라우저의 HTML 품질 보고서: Python 단위 테스트 3개 통과." />
 </div>
 
 ## NimoteCode 2.4.0

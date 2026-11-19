@@ -12,10 +12,10 @@ pageClass: "seo-product-guide"
 짧은 메모라면 간단한 편집기로 충분합니다. 프로젝트를 수정할 때는 먼저 의존성, 검증과 서비스를 실행할 위치를 정하세요.
 
 <figure class="article-hero">
-  <a href="/images/ios/ipad-workspace.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/ipad-workspace.webp" width="1200" height="899" alt="App Store에 등록된 NimoteCode iPad 화면: 프로젝트 탐색과 코드 편집." loading="lazy" decoding="async">
+  <a href="/images/ios/ipad-workspace.webp?v=477d0ae0628c" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-workspace.webp?v=477d0ae0628c" width="1200" height="1741" alt="iPad의 원격 파일 및 Python 편집기." loading="lazy" decoding="async">
   </a>
-  <figcaption>App Store에 등록된 NimoteCode iPad 화면: 프로젝트 탐색과 코드 편집. 출처: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 등록 이미지</a>.</figcaption>
+  <figcaption>iPad의 원격 파일 및 Python 편집기. 로컬 빌드 NimoteCode 2.4.1 (66) iOS 시뮬레이터에서 캡처.</figcaption>
 </figure>
 
 ## 로컬 편집과 원격 프로젝트 선택
@@ -43,10 +43,10 @@ pageClass: "seo-product-guide"
 관련 파일을 탭에 남겨 구현, 설정과 테스트를 비교하세요. [소스 제어](/ko/docs/source-control)는 변경 파일, diff와 기록을 제공합니다. GitHub 작업은 계정과 저장소 권한을 따릅니다. 프로젝트 실행 환경은 여전히 호스트가 제공합니다.
 
 <figure class="article-hero">
-  <a href="/images/ios/ipad-git.webp" target="_blank" rel="noopener">
-    <img src="/images/ios/ipad-git.webp" width="1200" height="899" alt="App Store의 iPad 화면에 표시된 Git AI 도구와 변경 분석." loading="lazy" decoding="async">
+  <a href="/images/ios/ipad-git.webp?v=e71556a5988e" target="_blank" rel="noopener">
+    <img src="/images/ios/ipad-git.webp?v=e71556a5988e" width="1200" height="1741" alt="iPad의 Git 파일 차이 검토." loading="lazy" decoding="async">
   </a>
-  <figcaption>App Store의 iPad 화면에 표시된 Git AI 도구와 변경 분석. 출처: <a href="https://apps.apple.com/app/id6776158253" target="_blank" rel="noopener noreferrer">NimoteCode App Store 등록 이미지</a>.</figcaption>
+  <figcaption>iPad의 Git 파일 차이 검토. 로컬 빌드 NimoteCode 2.4.1 (66) iOS 시뮬레이터에서 캡처.</figcaption>
 </figure>
 
 ## 필요할 때 AI 추가하기

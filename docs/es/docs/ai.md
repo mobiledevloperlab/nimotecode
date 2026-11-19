@@ -19,7 +19,7 @@ Seleccione un modelo configurado en el panel de IA e introduzca una pregunta. Pa
 Un agente externo se ejecuta solo cuando configura un runtime ACP compatible en el entorno objetivo y lo habilita deliberadamente. NimoteCode no aporta sus credenciales, red ni política de herramientas. MCP admite stdio —un comando en local, SSH o Local Linux elegido— o Streamable HTTP. Añada solo servidores de confianza y revise cada inicio y llamada de herramienta.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="ai-chat-welcome.png" caption="Panel de IA antes de abrir un espacio de trabajo." />
+  <DocScreenshot file="ai-chat-welcome.png" caption="Espacio de IA con proyecto SSH conectado, antes de iniciar una tarea nueva." />
 </div>
 
 </div>
@@ -34,7 +34,7 @@ El selector ofrece Nimote Agent y agentes externos. Los externos se ejecutan en 
 </div>
 
 <div class="doc-screenshots">
-  <DocScreenshot file="ai-agent-selector.jpg" caption="Selector con Nimote Agent seleccionado y agentes externos desactivados." />
+  <DocScreenshot file="ai-agent-selector.jpg" caption="Selector de modelos con deepseek-flash seleccionado y deepseek-v4-pro disponible." />
 </div>
 
 </div>
@@ -45,7 +45,7 @@ En modo **Confirm**, revise el plan y seleccione **Approve this run** para permi
 
 <div class="doc-screenshots">
   <DocScreenshot file="ai-plan-approval.jpg" caption="Plan de inspección del proyecto pendiente de aprobación en modo Confirm." />
-  <DocScreenshot file="ai-plan-running.jpg" caption="Ejecución aprobada que lee archivos y registra los pasos de inspección completados." />
+  <DocScreenshot file="ai-plan-running.jpg" caption="Resultado del Agent: pruebas Python añadidas, salida correcta y diff de Git." />
 </div>
 
 ## Leer el resultado
@@ -73,7 +73,7 @@ Revisa los comandos de la misma respuesta y confirma que se aplican al proyecto 
 Presta atención a los archivos ausentes, al alcance de la copia de trabajo y al método de las pruebas de rendimiento. No supongas que las conclusiones se aplican a otras versiones o entornos.
 
 <div class="doc-screenshots">
-  <DocScreenshot file="ai-analysis-caveats.jpg" caption="Observaciones sobre la copia del repositorio inspeccionada y los resultados de rendimiento." />
+  <DocScreenshot file="ai-analysis-caveats.jpg" caption="Advertencias de IA sobre la implementación Python, la cobertura y los supuestos sin verificar." />
 </div>
 
 
