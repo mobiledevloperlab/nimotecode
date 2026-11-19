@@ -2,7 +2,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
-import { createHash } from 'node:crypto';
 const root = 'docs/public';
 const source = name => path.join(root, 'images/placeholders', name);
 const groups = [
@@ -33,13 +32,13 @@ for (const group of groups) for (const dir of group.dirs) {
   layers.push({input:Buffer.from(`<svg width="${width}" height="${header}"><text x="${gap}" y="${Math.round(header*0.65)}" fill="#d0d5d3" font-family="sans-serif" font-size="${Math.round(header*0.38)}">NimoteCode 2.4.1 · Android</text></svg>`),left:0,top:0});
   const bytes=await sharp({create:{width,height,channels:3,background:'#181a19'}}).composite(layers).png().toBuffer();
   fs.writeFileSync(target,bytes);
-  inventory.push({file:target.replace(root+'/',''),captureVersion:'2.4.1',width,height,sha256:createHash('sha256').update(bytes).digest('hex'),sources:group.scenes});
+  inventory.push({file:target.replace(root+'/',''),captureVersion:'2.4.1',width,height,sources:group.scenes});
 }
 // Posters identify the current UI; the linked videos retain their original footage.
 for(const file of ['nimotecode-workspace-demo-poster.jpg','mobile-promot-poster.jpg','workspace-demo-poster.jpg','nimotecode-poster.jpg']){
  const target=path.join(root,'videos',file);const {width,height}=await sharp(target).metadata();
  const bytes=await sharp(path.join(root,'screenshots/nimote-pro.webp')).resize({width,height,fit:'contain',background:'#181a19'}).jpeg({quality:95,chromaSubsampling:'4:4:4'}).toBuffer();fs.writeFileSync(target,bytes);
- inventory.push({file:'videos/'+file,captureVersion:'2.4.1',width,height,sha256:createHash('sha256').update(bytes).digest('hex'),sources:['screenshots/nimote-pro.webp'],note:'Current UI poster; video footage is unchanged.'});
+ inventory.push({file:'videos/'+file,captureVersion:'2.4.1',width,height,sources:['screenshots/nimote-pro.webp'],note:'Current UI poster; video footage is unchanged.'});
 }
 fs.writeFileSync(path.join(root,'screenshots/editorial-sources.json'),JSON.stringify({captureVersion:'2.4.1',images:inventory},null,2)+'\n');
 console.log(`Refreshed ${inventory.length} editorial figures and video posters.`);

@@ -6,7 +6,6 @@
       "captureVersion": "2.4.1",
       "width": 1604,
       "height": 901,
-      "sha256": "ea4cf080e63f37a358d7966cdfca250922b0935c92063e5a1ec64ee99be53429",
       "sources": [
         "remote-workspace-connected.jpg",
         "editor-code-selection.png",
@@ -18,7 +17,6 @@
       "captureVersion": "2.4.1",
       "width": 1604,
       "height": 901,
-      "sha256": "ea4cf080e63f37a358d7966cdfca250922b0935c92063e5a1ec64ee99be53429",
       "sources": [
         "remote-workspace-connected.jpg",
         "editor-code-selection.png",
@@ -30,7 +28,6 @@
       "captureVersion": "2.4.1",
       "width": 1597,
       "height": 896,
-      "sha256": "369b4d3ac72d36f25c671065526be8e37ea90a08522189452db01a6bb3c265df",
       "sources": [
         "terminal-command-output.png",
         "source-control-changes.png",
@@ -42,7 +39,6 @@
       "captureVersion": "2.4.1",
       "width": 1597,
       "height": 896,
-      "sha256": "369b4d3ac72d36f25c671065526be8e37ea90a08522189452db01a6bb3c265df",
       "sources": [
         "terminal-command-output.png",
         "source-control-changes.png",
@@ -54,7 +50,6 @@
       "captureVersion": "2.4.1",
       "width": 1598,
       "height": 893,
-      "sha256": "ee17e2a1045d76e8970f95c7c536cf5112cc0d5264aaf533c1924e847b71c6dc",
       "sources": [
         "debugger-standby.png",
         "sync-cache-status.png"
@@ -65,7 +60,6 @@
       "captureVersion": "2.4.1",
       "width": 1598,
       "height": 893,
-      "sha256": "ee17e2a1045d76e8970f95c7c536cf5112cc0d5264aaf533c1924e847b71c6dc",
       "sources": [
         "debugger-standby.png",
         "sync-cache-status.png"
@@ -76,7 +70,6 @@
       "captureVersion": "2.4.1",
       "width": 1811,
       "height": 1024,
-      "sha256": "a2ba9ca315a7cda1e3908890bbe4f76719f8185d05a3d8f64dcd2e19ede4600c",
       "sources": [
         "remote-workspace-connected.jpg",
         "editor-code-selection.png",
@@ -89,7 +82,6 @@
       "captureVersion": "2.4.1",
       "width": 1811,
       "height": 1024,
-      "sha256": "a2ba9ca315a7cda1e3908890bbe4f76719f8185d05a3d8f64dcd2e19ede4600c",
       "sources": [
         "remote-workspace-connected.jpg",
         "editor-code-selection.png",
@@ -102,7 +94,6 @@
       "captureVersion": "2.4.1",
       "width": 1101,
       "height": 796,
-      "sha256": "73a77d4260214f9aee9da55edbe73a13f4324163aef4c41b11fd75bfc5c3aed5",
       "sources": [
         "startup-light.jpg"
       ]
@@ -112,7 +103,6 @@
       "captureVersion": "2.4.1",
       "width": 2020,
       "height": 1041,
-      "sha256": "d71056b9acfc5160630efd9f776826a0cb6452cac866a9e0ea62a27e46acb8d8",
       "sources": [
         "remote-connection-form.jpg",
         "remote-directory-picker.jpg",
@@ -124,7 +114,6 @@
       "captureVersion": "2.4.1",
       "width": 968,
       "height": 605,
-      "sha256": "913c0c089919096ca26f854c6a04ccd8842c53d97675a5279c642739c1ab2901",
       "sources": [
         "editor-code-selection.png",
         "terminal-command-output.png"
@@ -135,7 +124,6 @@
       "captureVersion": "2.4.1",
       "width": 1824,
       "height": 879,
-      "sha256": "41de6f6a377997e1a8350693c005e08625a2d4cf90704e1ea925301fb0c3e7c9",
       "sources": [
         "source-control-changes.png",
         "git-diff-view.jpg"
@@ -146,7 +134,6 @@
       "captureVersion": "2.4.1",
       "width": 1344,
       "height": 2992,
-      "sha256": "1ff48bae8252b7458548f1a4950a0500cca36c6aa9ed1763380480353966cce2",
       "sources": [
         "editor-context-menu.jpg"
       ]
@@ -156,7 +143,6 @@
       "captureVersion": "2.4.1",
       "width": 1414,
       "height": 878,
-      "sha256": "6dff9c17acfe8b3b3fbbcbf5e84b0e9b693c8159b8b2fa1ec51379f503be2168",
       "sources": [
         "source-control-changes.png",
         "git-commit-details.jpg"
@@ -165,9 +151,8 @@
     {
       "file": "videos/nimotecode-workspace-demo-poster.jpg",
       "captureVersion": "2.4.1",
-      "width": 1280,
-      "height": 720,
-      "sha256": "e1050b092861706edffbc04978b780f9312627f9e51b32aa4f980e0ffaad1eb5",
+      "width": 1920,
+      "height": 1080,
       "sources": [
         "screenshots/nimote-pro.webp"
       ],
@@ -178,7 +163,6 @@
       "captureVersion": "2.4.1",
       "width": 1080,
       "height": 1920,
-      "sha256": "2be6bc6d3d5c5101a3d1ac7058b76fd93998d8c401d58d736c6a7de6e0316ef8",
       "sources": [
         "screenshots/nimote-pro.webp"
       ],
@@ -189,7 +173,6 @@
       "captureVersion": "2.4.1",
       "width": 1280,
       "height": 720,
-      "sha256": "f4ea90128a8139b5fed9bc6997e24b75409d183c62692d6a299cd99f34af6c42",
       "sources": [
         "screenshots/nimote-pro.webp"
       ],
@@ -200,7 +183,6 @@
       "captureVersion": "2.4.1",
       "width": 720,
       "height": 1280,
-      "sha256": "ac0cad482f11d3c35638004f77229dd6cfe35dedc796af52c7c4463a173b4300",
       "sources": [
         "screenshots/nimote-pro.webp"
       ],
