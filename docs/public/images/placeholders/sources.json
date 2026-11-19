@@ -648,9 +648,9 @@
     "file": "/screenshots/nimote-pro.webp",
     "captureVersion": "2.4.1",
     "versionCode": 66,
-    "width": 2560,
-    "height": 1600,
-    "sha256": "1113699ebbc4fe9828f39b897be25001e6e70a38c8a06350b080a5ea088795d0",
-    "captureMethod": "ADB screenshot with a temporary expanded Android viewport (1600x2560, density 360, landscape); original device display settings restored after capture."
+    "width": 1595,
+    "height": 926,
+    "sha256": "0fc5e74d1c21b36a39f1dd73da968255de2daedb7fd78818c23751f7203bab50",
+    "captureMethod": "Existing repository workspace screenshot; metadata verified against the unchanged source file."
   }
 }
