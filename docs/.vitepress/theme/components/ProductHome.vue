@@ -135,6 +135,7 @@ const formatReviewDate = (date: string) => new Intl.DateTimeFormat(locale.value,
       <p class="product-getting-started-copy">{{ copy.gettingStartedCopy }}</p>
       <ol class="product-start-steps"><li v-for="(step, index) in copy.gettingStartedSteps" :key="step[0]"><span>{{ String(index + 1).padStart(2, '0') }}</span><h3>{{ step[0] }}</h3><p>{{ step[1] }}</p></li></ol>
       <p class="product-start-condition">{{ copy.byokLabel }}</p>
+      <p><a class="product-text-link" :href="local('/compare/mobile-ai-development-tools')">{{ copy.compareLink }}</a></p>
     </section>
   </div>
 </template>

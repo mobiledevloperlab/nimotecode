@@ -5,7 +5,7 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 import { imageOptimizerCacheKey } from '../../scripts/image-optimizer-cache.mjs'
 import { productCopy } from './theme/product'
 import homeTranslations from './theme/i18n/home.json'
-import { allCompetitors } from './theme/data/mobileDevelopmentCompetitors'
+import { products as majorCompetitors } from './theme/data/majorCompetitors.mjs'
 import { guideLayout } from './guide-layout'
 import { docsSidebar } from './docs-navigation'
 
@@ -367,11 +367,11 @@ function compareItemListSchema(context: TransformContext): object | null {
     '@type': 'ItemList',
     name: isChinese ? '移动开发工具对比' : 'Mobile development tools compared',
     inLanguage: isChinese ? 'zh-CN' : 'en-US',
-    itemListElement: allCompetitors.map((competitor, index) => ({
+    itemListElement: majorCompetitors.map(([name, url], index) => ({
       '@type': 'ListItem',
       position: index + 1,
-      name: competitor.name,
-      url: competitor.website
+      name,
+      url
     }))
   }
 }
