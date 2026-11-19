@@ -3,7 +3,7 @@ title: NimoteCode features | Mobile development workspace
 description: Open your project on mobile, connect to your development machine, then edit, run commands, and review Git changes in one workspace. See when you need SSH, Android Local Linux, AI, Docker, or Pro.
 ---
 
-<ProductFeatures />
+<ProductFeatures>
 
 <div class="product-reference">
 
@@ -44,3 +44,5 @@ See [account and subscription](/docs/account-subscription) for access and restor
 </details>
 
 </div>
+
+</ProductFeatures>

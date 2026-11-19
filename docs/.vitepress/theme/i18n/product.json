@@ -1,422 +1,552 @@
 {
   "en": {
-    "eyebrow": "PRODUCT / CAPABILITIES",
-    "title": "NimoteCode features",
-    "intro": "Code editing, terminal sessions, Git, and AI tools for local and SSH projects. Project commands run on the SSH host or in Android Local Linux.",
-    "guide": "Documentation",
+    "eyebrow": "PRODUCT",
+    "title": "Keep your project within reach.",
+    "intro": "Edit code, run commands, and work with AI from your phone or tablet. Connect to your development machine, or open files on your device.",
+    "guide": "Read the docs",
     "gallery": "Development tools",
     "open": "View full size",
     "docSource": "App screenshot",
     "learn": "Read the guide",
-    "details": "Additional tools and configuration",
-    "extensions": "Workspace requirements",
+    "details": "More tools, when you need them",
+    "extensions": "Choose where you work",
     "cards": [
       [
         "Local files",
-        "Folder access is granted by the device OS. Editing a local folder does not provide a shell, compiler, or project runtime.",
+        "Open a folder on your device and edit your project files.",
         "Android / iOS"
       ],
       [
-        "SSH & Local Linux",
-        "SSH uses the host’s account and installed tools. Local Linux provides rootless Ubuntu on supported Android devices; install project dependencies separately.",
-        "Remote / Android"
+        "SSH workspace",
+        "Connect to your computer and use its existing development tools.",
+        "Remote host"
       ],
       [
-        "NimoteHost",
-        "Requires a separate host installation and a running computer. Managed terminals, tasks, and compatible Agents can continue after the client disconnects.",
-        "NimoteCode 2.4.1+"
+        "Local Linux",
+        "Run a rootless Ubuntu environment on supported Android devices.",
+        "Android"
       ]
     ],
     "views": [
       [
         "Editor",
-        "Code editor",
-        "Open local and remote files in tabs or split panes. A configured language server provides diagnostics, symbol navigation, and code actions."
+        "Edit local and remote projects.",
+        "Work across files and split panes, then preview the result without leaving your workspace."
       ],
       [
         "Terminal",
-        "Terminal sessions and commands",
-        "Run builds, tests, scripts, and development servers using the tools installed on the SSH host or in Android Local Linux."
+        "Use the tools you already know.",
+        "Run builds, tests, and scripts on your SSH host or in Android Local Linux."
       ],
       [
         "AI & Agents",
-        "AI Chat and Nimote Agent",
-        "Use Chat to discuss code and errors. Nimote Agent can inspect files, make edits, and run workspace tools; Confirm mode requires approval of the plan before execution."
+        "Take a task from plan to result.",
+        "Discuss code with Chat, or let Nimote Agent inspect files, make edits, and run workspace tools."
       ],
       [
         "Git",
-        "Source Control",
-        "View working-tree changes, staged files, diffs, and commit history. Create branches and run Git write operations with the required app access and repository permissions."
-      ],
-      [
-        "Docker",
-        "Docker and Dev Containers",
-        "Manage Docker resources and Compose services on an SSH host. Create or rebuild a Dev Container from the project configuration and open its workspace."
+        "Review every change.",
+        "Inspect diffs, stage files, and follow your project from working tree to commit."
       ]
     ],
-    "browse": "Explore capabilities",
     "points": [
       [
-        "Local and remote files · multiple tabs · split panes",
+        "Multiple tabs and split panes",
         "Markdown and static HTML previews",
-        "LSP diagnostics and code actions require a configured language server"
+        "Symbol navigation and code actions"
       ],
       [
-        "Named sessions · adaptive terminal splits",
-        "Output search, copying, and command records",
-        "Saved tasks run in the selected project directory"
+        "Named sessions and terminal splits",
+        "Output search and command history",
+        "Saved project tasks"
       ],
       [
-        "Configure your own provider; model usage is billed separately",
-        "Tool calls, output, and code changes in the execution timeline",
-        "External ACP Agents use their own runtime, credentials, and execution policy"
+        "Approve the plan in Confirm mode",
+        "Inspect tool calls and their output",
+        "Review the resulting code changes"
       ],
       [
-        "Status, staged changes, diffs, and history",
-        "Branch, commit, push, pull, and stash workflows",
-        "GitHub repositories, issues, and pull requests follow account permissions"
-      ],
-      [
+        "Working tree, staging, and history",
+        "Branches, commits, push, pull, and stash",
+        "GitHub issues and pull requests"
+      ]
+    ],
+    "docker": {
+      "title": "Docker and Dev Containers",
+      "intro": "Manage Docker resources and Compose services on an SSH host. Create or rebuild a Dev Container from the project configuration and open its workspace.",
+      "points": [
         "Containers, images, volumes, and networks",
         "Logs, statistics, exec terminals, and Compose",
         "Docker must be installed and accessible to the SSH account"
       ]
-    ]
+    },
+    "download": "Get NimoteCode",
+    "availability": "Android · iPhone · iPad",
+    "closingTitle": "Your next change starts here.",
+    "closingIntro": "Open a project you know. Make one small change.",
+    "quickStart": "Quick start",
+    "notes": [
+      "Language features require a configured language server.",
+      "Commands use the selected environment’s tools and permissions.",
+      "Bring your own provider key. Model usage is billed separately.",
+      "Write operations require app access and repository permissions."
+    ],
+    "cardNotes": [
+      "Folder access follows OS permissions; local files alone do not provide a runtime.",
+      "Commands run under the selected SSH account.",
+      "Install your project’s toolchains and dependencies separately."
+    ],
+    "host": {
+      "title": "Step away. Keep the work running.",
+      "intro": "NimoteHost keeps managed terminals, tasks, and compatible Agents on your computer. Reconnect from your phone to inspect output and continue.",
+      "steps": [
+        "Start a task",
+        "Leave it running",
+        "Reconnect and review"
+      ],
+      "note": "Requires NimoteCode 2.4.1+, a separate Host installation, and a computer that stays running.",
+      "link": "Explore NimoteHost",
+      "caption": "Managed sessions on your computer"
+    }
   },
   "zh": {
-    "eyebrow": "产品 / 功能详解",
-    "title": "NimoteCode 产品功能",
-    "intro": "提供代码编辑器、终端、Git 和 AI 工具，支持本地文件与 SSH 项目。项目命令在 SSH 主机或 Android Local Linux 中运行。",
-    "guide": "完整文档",
+    "eyebrow": "产品",
+    "title": "在手机上，继续你的开发工作。",
+    "intro": "编辑代码、运行命令，与 AI 协作。连接开发电脑，或直接打开设备上的项目文件。",
+    "guide": "阅读文档",
     "gallery": "开发工具",
     "open": "查看原图",
     "docSource": "应用截图",
     "learn": "阅读使用指南",
-    "details": "其他工具与配置",
-    "extensions": "工作区运行条件",
+    "details": "更多工具，按需使用",
+    "extensions": "选择你的工作方式",
     "cards": [
       [
         "本地文件",
-        "文件夹访问由设备操作系统授权。本地文件编辑本身不提供 Shell、编译器或项目运行环境。",
+        "打开设备上的文件夹，随时编辑项目文件。",
         "Android / iOS"
       ],
       [
-        "SSH 与 Local Linux",
-        "SSH 使用主机账户权限与已安装工具。受支持的 Android 设备可通过 Local Linux 运行免 root Ubuntu；项目依赖需另行安装。",
-        "远程主机 / Android"
+        "SSH 工作区",
+        "连接开发电脑，使用主机已有的开发工具。",
+        "远程主机"
       ],
       [
-        "NimoteHost",
-        "需要单独安装 Host，电脑须保持运行。托管终端、任务与兼容 Agent 可在客户端断开后继续执行。",
-        "NimoteCode 2.4.1+"
+        "Local Linux",
+        "在支持的 Android 设备上运行免 root Ubuntu。",
+        "Android"
       ]
     ],
     "views": [
       [
         "代码编辑",
-        "代码编辑器",
-        "通过标签页和分栏编辑本地或远程文件。配置语言服务器后，可使用代码诊断、符号导航和代码操作。"
+        "编辑本地与远程项目。",
+        "在标签页和分栏中处理文件，随时预览结果，让修改保持连贯。"
       ],
       [
         "终端",
-        "终端与命令",
-        "使用 SSH 主机或 Android Local Linux 中已安装的工具，运行构建、测试、脚本和开发服务器。"
+        "使用你熟悉的开发工具。",
+        "通过 SSH 主机或 Android Local Linux，运行项目构建、测试和脚本。"
       ],
       [
         "AI 与 Agent",
-        "AI Chat 与 Nimote Agent",
-        "Chat 用于讨论代码和分析错误。Nimote Agent 可读取文件、修改代码并调用工作区工具；Confirm 模式需先批准计划，再执行工具。"
+        "从任务计划，到执行结果。",
+        "用 Chat 讨论代码，或让 Nimote Agent 读取文件、进行修改并调用工作区工具。"
       ],
       [
         "Git",
-        "源代码管理",
-        "查看工作区改动、暂存文件、Diff 和提交历史。分支与 Git 写操作需要相应的应用权益和仓库权限。"
-      ],
-      [
-        "Docker",
-        "Docker 与 Dev Containers",
-        "在 SSH 主机上管理 Docker 资源和 Compose 服务。根据项目配置创建或重建 Dev Container，并打开容器工作区。"
+        "看清每一次改动。",
+        "检查 Diff、暂存文件、浏览历史，在提交前确认修改内容。"
       ]
     ],
-    "browse": "浏览功能",
     "points": [
       [
-        "本地与远程文件 · 多标签页 · 分栏编辑",
+        "多标签页与分栏编辑",
         "Markdown 与静态 HTML 预览",
-        "LSP 诊断与代码操作需配置语言服务器"
+        "符号导航与代码操作"
       ],
       [
-        "命名会话 · 自适应终端分栏",
-        "输出搜索、复制与命令记录",
-        "保存命名任务，在所选项目目录执行"
+        "命名会话与终端分栏",
+        "输出搜索与命令记录",
+        "保存项目常用任务"
       ],
       [
-        "自备模型服务，模型用量费用单独计算",
-        "执行时间线显示工具调用、输出与代码改动",
-        "外部 ACP Agent 使用独立运行时、凭据与执行策略"
+        "Confirm 模式先批准计划",
+        "检查工具调用与输出",
+        "查看执行后的代码改动"
       ],
       [
-        "状态、暂存改动、Diff 与提交历史",
-        "分支、提交、推送、拉取与 Stash",
-        "GitHub 仓库、Issue 与 PR 操作遵循账户权限"
-      ],
-      [
+        "工作区、暂存区与提交历史",
+        "分支、提交、推送与 Stash",
+        "GitHub Issue 与拉取请求"
+      ]
+    ],
+    "docker": {
+      "title": "Docker 与 Dev Containers",
+      "intro": "在 SSH 主机上管理 Docker 资源和 Compose 服务。根据项目配置创建或重建 Dev Container，并打开容器工作区。",
+      "points": [
         "容器、镜像、卷与网络",
         "日志、资源统计、Exec 终端与 Compose",
         "主机需安装 Docker，SSH 账户需具备 Docker 访问权限"
       ]
-    ]
+    },
+    "download": "下载 NimoteCode",
+    "availability": "Android · iPhone · iPad",
+    "closingTitle": "从下一次修改开始。",
+    "closingIntro": "打开熟悉的项目，完成一个小改动。",
+    "quickStart": "快速入门",
+    "notes": [
+      "语言功能需安装并配置兼容的语言服务器。",
+      "命令使用所选环境的工具和账户权限。",
+      "自备模型服务 API Key，模型用量单独计费。",
+      "写操作需相应的应用权益与仓库权限。"
+    ],
+    "cardNotes": [
+      "文件访问由系统授权；本地文件夹本身不提供运行环境。",
+      "命令在所选 SSH 账户的权限下执行。",
+      "项目工具链和依赖需另行安装。"
+    ],
+    "host": {
+      "title": "暂时离开，工作继续。",
+      "intro": "NimoteHost 将托管终端、任务和兼容 Agent 保留在电脑上。用手机重新连接，查看输出，继续处理。",
+      "steps": [
+        "启动任务",
+        "保持运行",
+        "重连并检查结果"
+      ],
+      "note": "需 NimoteCode 2.4.1+、单独安装 Host，且电脑保持运行。",
+      "link": "了解 NimoteHost",
+      "caption": "管理电脑上的会话"
+    }
   },
   "ja": {
-    "eyebrow": "製品 / 機能詳細",
-    "title": "NimoteCode の機能",
-    "intro": "ローカルファイルと SSH プロジェクト向けのエディター、ターミナル、Git、AI ツール。プロジェクトのコマンドは SSH ホストか Android Local Linux で実行します。",
+    "eyebrow": "製品",
+    "title": "外出先でも、開発の続きを。",
+    "intro": "スマートフォンやタブレットでコードを編集し、コマンドを実行し、AI と作業。開発用 PC に接続するか、端末のファイルを開けます。",
     "guide": "ドキュメント",
     "gallery": "開発ツール",
     "open": "原寸表示",
     "docSource": "アプリ画面",
     "learn": "ガイドを読む",
-    "details": "その他のツールと設定",
-    "extensions": "ワークスペースの動作条件",
+    "details": "必要に応じて使えるツール",
+    "extensions": "作業する環境を選ぶ",
     "cards": [
       [
         "ローカルファイル",
-        "フォルダーのアクセスは OS が許可します。ファイル編集だけではシェル、コンパイラー、実行環境は提供されません。",
+        "端末のフォルダーを開いて、プロジェクトを編集。",
         "Android / iOS"
       ],
       [
-        "SSH と Local Linux",
-        "SSH はホストの権限とツールを使用します。対応 Android では root 不要の Ubuntu を利用でき、依存関係は別途導入します。",
-        "リモート / Android"
+        "SSH ワークスペース",
+        "開発用 PC に接続し、既存のツールを使用。",
+        "リモートホスト"
       ],
       [
-        "NimoteHost",
-        "別途インストールとコンピューターの継続稼働が必要です。切断後も管理対象のターミナル、タスク、対応 Agent を実行できます。",
-        "NimoteCode 2.4.1+"
+        "Local Linux",
+        "対応 Android で root 不要の Ubuntu を実行。",
+        "Android"
       ]
     ],
     "views": [
       [
         "エディター",
-        "コードエディター",
-        "ローカルやリモートのファイルをタブと分割表示で編集します。言語サーバーを設定すると診断、シンボル移動、コードアクションを利用できます。"
+        "ローカルもリモートも編集。",
+        "タブや分割表示でファイルを編集し、ワークスペースを離れずに結果をプレビュー。"
       ],
       [
         "ターミナル",
-        "ターミナルとコマンド",
-        "SSH ホストや Android Local Linux にインストールしたツールで、ビルド、テスト、スクリプト、開発サーバーを実行します。"
+        "いつもの開発ツールを使う。",
+        "SSH ホストや Android Local Linux でビルド、テスト、スクリプトを実行。"
       ],
       [
         "AI・Agent",
-        "AI Chat と Nimote Agent",
-        "Chat はコードの相談やエラーの分析に使用します。Nimote Agent はファイルの読み取り、編集、ツール実行に対応。Confirm モードでは実行前に計画の承認が必要です。"
+        "計画から実行結果まで。",
+        "Chat でコードを相談。Nimote Agent はファイルの確認、編集、ツール実行を支援します。"
       ],
       [
         "Git",
-        "ソース管理",
-        "作業ツリー、ステージされたファイル、差分、コミット履歴を表示します。ブランチ操作や Git の書き込みにはアプリの利用権限とリポジトリ権限が必要です。"
-      ],
-      [
-        "Docker",
-        "Docker と Dev Containers",
-        "SSH ホストで Docker リソースと Compose サービスを管理します。プロジェクト設定から Dev Container を作成・再構築し、ワークスペースを開けます。"
+        "一つひとつの変更を確認。",
+        "差分を確認し、ファイルをステージ。作業ツリーからコミットまで追跡できます。"
       ]
     ],
-    "browse": "機能を見る",
     "points": [
       [
-        "ローカル／リモート · 複数タブ · 分割編集",
-        "Markdown と静的 HTML のプレビュー",
-        "LSP 診断とコードアクションには言語サーバーの設定が必要"
+        "複数タブと分割編集",
+        "Markdown・静的 HTML のプレビュー",
+        "シンボル移動とコードアクション"
       ],
       [
-        "名前付きセッション · 適応型ターミナル分割",
-        "出力の検索、コピー、コマンド履歴",
-        "保存したタスクをプロジェクトのディレクトリで実行"
+        "名前付きセッションとターミナル分割",
+        "出力検索とコマンド履歴",
+        "プロジェクトのタスクを保存"
       ],
       [
-        "プロバイダーは自身で設定し、モデル利用料は別途負担",
-        "実行タイムラインにツール呼び出し、出力、コード変更を表示",
-        "外部 ACP Agent は独自のランタイム、認証情報、実行ポリシーを使用"
+        "Confirm モードで計画を承認",
+        "ツール呼び出しと出力を確認",
+        "実行後のコード変更を確認"
       ],
       [
-        "状態、ステージ、差分、コミット履歴",
+        "作業ツリー、ステージ、履歴",
         "ブランチ、コミット、push、pull、stash",
-        "GitHub のリポジトリ、Issue、PR はアカウント権限に従う"
-      ],
-      [
+        "GitHub Issue とプルリクエスト"
+      ]
+    ],
+    "docker": {
+      "title": "Docker と Dev Containers",
+      "intro": "SSH ホストで Docker リソースと Compose サービスを管理します。プロジェクト設定から Dev Container を作成・再構築し、ワークスペースを開けます。",
+      "points": [
         "コンテナー、イメージ、ボリューム、ネットワーク",
         "ログ、統計、exec ターミナル、Compose",
         "ホストへの Docker 導入と SSH アカウントのアクセス権限が必要"
       ]
-    ]
+    },
+    "download": "NimoteCode を入手",
+    "availability": "Android · iPhone · iPad",
+    "closingTitle": "次の変更を、ここから。",
+    "closingIntro": "使い慣れたプロジェクトを開き、小さな変更から始めましょう。",
+    "quickStart": "クイックスタート",
+    "notes": [
+      "言語機能には互換性のある言語サーバーの設定が必要です。",
+      "コマンドは選択した環境のツールと権限を使用します。",
+      "プロバイダーの API キーを自身で設定。モデル利用料は別途必要です。",
+      "書き込みにはアプリの利用権限とリポジトリ権限が必要です。"
+    ],
+    "cardNotes": [
+      "ファイルアクセスは OS の許可に従います。実行環境は別途必要です。",
+      "コマンドは選択した SSH アカウントの権限で実行します。",
+      "ツールチェーンと依存関係は別途インストールします。"
+    ],
+    "host": {
+      "title": "離れている間も、処理は続く。",
+      "intro": "NimoteHost が PC 上でターミナル、タスク、対応 Agent を管理。スマートフォンから再接続して出力を確認し、作業を続けられます。",
+      "steps": [
+        "タスクを開始",
+        "実行を継続",
+        "再接続して確認"
+      ],
+      "note": "NimoteCode 2.4.1 以降、Host の別途インストール、PC の継続稼働が必要です。",
+      "link": "NimoteHost を詳しく見る",
+      "caption": "PC 上のセッションを管理"
+    }
   },
   "ko": {
-    "eyebrow": "제품 / 상세 기능",
-    "title": "NimoteCode 제품 기능",
-    "intro": "로컬 파일 및 SSH 프로젝트를 위한 코드 편집기, 터미널, Git, AI 도구. 프로젝트 명령은 SSH 호스트 또는 Android Local Linux에서 실행합니다.",
-    "guide": "문서",
+    "eyebrow": "제품",
+    "title": "폰에서도 개발을 이어가세요.",
+    "intro": "코드를 편집하고 명령을 실행하며 AI와 작업하세요. 개발 컴퓨터에 연결하거나 기기의 프로젝트 파일을 열 수 있습니다.",
+    "guide": "문서 보기",
     "gallery": "개발 도구",
     "open": "원본 보기",
     "docSource": "앱 화면",
     "learn": "사용 가이드",
-    "details": "추가 도구 및 설정",
-    "extensions": "워크스페이스 실행 조건",
+    "details": "필요할 때 꺼내 쓰는 도구",
+    "extensions": "작업 환경 선택",
     "cards": [
       [
         "로컬 파일",
-        "폴더 접근은 기기 OS의 권한을 따릅니다. 파일 편집만으로 셸, 컴파일러, 프로젝트 런타임이 제공되지는 않습니다.",
+        "기기의 폴더를 열고 프로젝트 파일을 편집하세요.",
         "Android / iOS"
       ],
       [
-        "SSH 및 Local Linux",
-        "SSH는 호스트 계정과 설치된 도구를 사용합니다. 지원 Android에서는 루트 없는 Ubuntu를 실행하며 의존성은 별도로 설치합니다.",
-        "원격 / Android"
+        "SSH 워크스페이스",
+        "개발 컴퓨터에 연결해 기존 도구를 사용하세요.",
+        "원격 호스트"
       ],
       [
-        "NimoteHost",
-        "별도 설치와 켜져 있는 컴퓨터가 필요합니다. 연결 해제 후에도 관리되는 터미널, 작업, 호환 Agent를 실행할 수 있습니다.",
-        "NimoteCode 2.4.1+"
+        "Local Linux",
+        "지원 Android 기기에서 루트 없는 Ubuntu를 실행하세요.",
+        "Android"
       ]
     ],
     "views": [
       [
         "편집기",
-        "코드 편집기",
-        "탭과 분할 화면으로 로컬 및 원격 파일을 편집합니다. 언어 서버를 설정하면 진단, 심볼 탐색, 코드 작업을 사용할 수 있습니다."
+        "로컬과 원격 프로젝트 편집.",
+        "탭과 분할 화면으로 파일을 편집하고 워크스페이스 안에서 결과를 미리 보세요."
       ],
       [
         "터미널",
-        "터미널 및 명령",
-        "SSH 호스트 또는 Android Local Linux에 설치된 도구로 빌드, 테스트, 스크립트, 개발 서버를 실행합니다."
+        "익숙한 개발 도구 그대로.",
+        "SSH 호스트나 Android Local Linux에서 빌드, 테스트, 스크립트를 실행하세요."
       ],
       [
         "AI 및 Agent",
-        "AI Chat 및 Nimote Agent",
-        "Chat으로 코드를 논의하고 오류를 분석합니다. Nimote Agent는 파일 읽기, 편집, 도구 실행을 지원하며 Confirm 모드에서는 실행 전 계획 승인이 필요합니다."
+        "계획에서 실행 결과까지.",
+        "Chat으로 코드를 논의하거나 Nimote Agent로 파일 확인, 편집, 도구 실행을 진행하세요."
       ],
       [
         "Git",
-        "소스 제어",
-        "작업 트리, 스테이징된 파일, Diff, 커밋 기록을 확인합니다. 브랜치 및 Git 쓰기 작업에는 앱 이용 권한과 저장소 권한이 필요합니다."
-      ],
-      [
-        "Docker",
-        "Docker 및 Dev Containers",
-        "SSH 호스트에서 Docker 리소스와 Compose 서비스를 관리합니다. 프로젝트 설정으로 Dev Container를 생성하거나 다시 빌드하고 워크스페이스를 엽니다."
+        "모든 변경을 확인하세요.",
+        "Diff를 검토하고 파일을 스테이징하며 작업 트리부터 커밋까지 확인하세요."
       ]
     ],
-    "browse": "기능 살펴보기",
     "points": [
       [
-        "로컬 및 원격 파일 · 여러 탭 · 분할 편집",
+        "여러 탭과 분할 편집",
         "Markdown 및 정적 HTML 미리보기",
-        "LSP 진단과 코드 작업에는 언어 서버 설정 필요"
+        "심볼 탐색 및 코드 작업"
       ],
       [
-        "이름이 지정된 세션 · 적응형 터미널 분할",
-        "출력 검색, 복사, 명령 기록",
-        "선택한 프로젝트 디렉터리에서 저장된 작업 실행"
+        "이름이 지정된 세션과 터미널 분할",
+        "출력 검색 및 명령 기록",
+        "프로젝트 작업 저장"
       ],
       [
-        "모델 제공자는 직접 설정하며 사용 요금은 별도",
-        "실행 타임라인에서 도구 호출, 출력, 코드 변경 확인",
-        "외부 ACP Agent는 자체 런타임, 인증 정보, 실행 정책 사용"
+        "Confirm 모드에서 계획 승인",
+        "도구 호출과 출력 확인",
+        "실행 후 코드 변경 검토"
       ],
       [
-        "상태, 스테이징, Diff 및 커밋 기록",
+        "작업 트리, 스테이징, 기록",
         "브랜치, 커밋, push, pull, stash",
-        "GitHub 저장소, Issue, PR은 계정 권한에 따라 사용"
-      ],
-      [
+        "GitHub Issue 및 풀 리퀘스트"
+      ]
+    ],
+    "docker": {
+      "title": "Docker 및 Dev Containers",
+      "intro": "SSH 호스트에서 Docker 리소스와 Compose 서비스를 관리합니다. 프로젝트 설정으로 Dev Container를 생성하거나 다시 빌드하고 워크스페이스를 엽니다.",
+      "points": [
         "컨테이너, 이미지, 볼륨, 네트워크",
         "로그, 통계, exec 터미널, Compose",
         "호스트에 Docker 설치 및 SSH 계정의 Docker 접근 권한 필요"
       ]
-    ]
+    },
+    "download": "NimoteCode 다운로드",
+    "availability": "Android · iPhone · iPad",
+    "closingTitle": "다음 변경을 여기서 시작하세요.",
+    "closingIntro": "익숙한 프로젝트를 열고 작은 변경부터 시작하세요.",
+    "quickStart": "빠른 시작",
+    "notes": [
+      "언어 기능에는 호환 언어 서버 설정이 필요합니다.",
+      "명령은 선택한 환경의 도구와 계정 권한으로 실행됩니다.",
+      "제공자 API 키를 직접 설정하며 모델 사용 요금은 별도입니다.",
+      "쓰기 작업에는 앱 이용 권한과 저장소 권한이 필요합니다."
+    ],
+    "cardNotes": [
+      "파일 접근은 OS 권한을 따릅니다. 로컬 폴더만으로 런타임이 제공되지는 않습니다.",
+      "선택한 SSH 계정의 권한으로 명령을 실행합니다.",
+      "프로젝트 도구와 의존성은 별도로 설치합니다."
+    ],
+    "host": {
+      "title": "잠시 떠나도 작업은 계속됩니다.",
+      "intro": "NimoteHost가 컴퓨터에서 터미널, 작업, 호환 Agent를 관리합니다. 폰으로 다시 연결해 출력을 확인하고 작업을 이어가세요.",
+      "steps": [
+        "작업 시작",
+        "실행 유지",
+        "다시 연결해 확인"
+      ],
+      "note": "NimoteCode 2.4.1 이상, 별도 Host 설치, 실행 중인 컴퓨터가 필요합니다.",
+      "link": "NimoteHost 알아보기",
+      "caption": "컴퓨터의 세션 관리"
+    }
   },
   "es": {
-    "eyebrow": "PRODUCTO / FUNCIONES",
-    "title": "Funciones de NimoteCode",
-    "intro": "Editor, terminal, Git y herramientas de IA para archivos locales y proyectos SSH. Los comandos del proyecto se ejecutan en el host SSH o en Android Local Linux.",
-    "guide": "Documentación",
+    "eyebrow": "PRODUCTO",
+    "title": "Tu proyecto, siempre a mano.",
+    "intro": "Edita código, ejecuta comandos y trabaja con IA desde tu móvil o tablet. Conecta con tu ordenador o abre archivos del dispositivo.",
+    "guide": "Ver documentación",
     "gallery": "Herramientas de desarrollo",
     "open": "Ver tamaño completo",
     "docSource": "Captura de la app",
     "learn": "Leer la guía",
-    "details": "Otras herramientas y configuración",
-    "extensions": "Requisitos del espacio de trabajo",
+    "details": "Más herramientas, cuando las necesites",
+    "extensions": "Elige dónde trabajar",
     "cards": [
       [
         "Archivos locales",
-        "El sistema operativo autoriza el acceso a carpetas. Editar archivos no proporciona un shell, compilador ni entorno de ejecución.",
+        "Abre una carpeta del dispositivo y edita tu proyecto.",
         "Android / iOS"
       ],
       [
-        "SSH y Local Linux",
-        "SSH utiliza la cuenta y herramientas del host. Local Linux ofrece Ubuntu sin root en Android compatible; las dependencias se instalan por separado.",
-        "Remoto / Android"
+        "Espacio SSH",
+        "Conecta con tu ordenador y utiliza sus herramientas de desarrollo.",
+        "Host remoto"
       ],
       [
-        "NimoteHost",
-        "Requiere instalación independiente y un ordenador encendido. Las terminales, tareas y Agents compatibles pueden continuar tras desconectar.",
-        "NimoteCode 2.4.1+"
+        "Local Linux",
+        "Ejecuta Ubuntu sin root en dispositivos Android compatibles.",
+        "Android"
       ]
     ],
     "views": [
       [
         "Editor",
-        "Editor de código",
-        "Edita archivos locales y remotos en pestañas o paneles divididos. Un servidor de lenguaje configurado proporciona diagnósticos, navegación por símbolos y acciones de código."
+        "Edita proyectos locales y remotos.",
+        "Trabaja en pestañas y paneles divididos y previsualiza el resultado sin salir del espacio de trabajo."
       ],
       [
         "Terminal",
-        "Terminales y comandos",
-        "Ejecuta compilaciones, pruebas, scripts y servidores de desarrollo con las herramientas instaladas en el host SSH o en Android Local Linux."
+        "Usa las herramientas que ya conoces.",
+        "Ejecuta compilaciones, pruebas y scripts en tu host SSH o en Android Local Linux."
       ],
       [
         "IA y Agents",
-        "AI Chat y Nimote Agent",
-        "Chat permite consultar código y analizar errores. Nimote Agent puede leer archivos, editarlos y ejecutar herramientas; el modo Confirm requiere aprobar el plan antes de la ejecución."
+        "Del plan al resultado.",
+        "Consulta código en Chat o usa Nimote Agent para revisar archivos, editarlos y ejecutar herramientas."
       ],
       [
         "Git",
-        "Control de versiones",
-        "Consulta cambios, archivos preparados, diffs e historial. Las operaciones de ramas y escritura Git requieren el acceso correspondiente en la app y permisos en el repositorio."
-      ],
-      [
-        "Docker",
-        "Docker y Dev Containers",
-        "Gestiona recursos Docker y servicios Compose en un host SSH. Crea o reconstruye un Dev Container a partir de la configuración del proyecto y abre su espacio de trabajo."
+        "Revisa cada cambio.",
+        "Inspecciona diffs, prepara archivos y sigue el proyecto desde el árbol de trabajo hasta el commit."
       ]
     ],
-    "browse": "Explorar funciones",
     "points": [
       [
-        "Archivos locales y remotos · pestañas · paneles divididos",
+        "Pestañas y paneles divididos",
         "Vista previa de Markdown y HTML estático",
-        "Los diagnósticos y acciones LSP requieren un servidor configurado"
+        "Navegación por símbolos y acciones de código"
       ],
       [
-        "Sesiones con nombre · divisiones adaptativas de terminal",
-        "Búsqueda, copia de salida y registro de comandos",
-        "Tareas guardadas desde el directorio del proyecto"
+        "Sesiones con nombre y terminales divididas",
+        "Búsqueda de salida e historial de comandos",
+        "Tareas guardadas del proyecto"
       ],
       [
-        "Configura tu proveedor; el uso del modelo se factura por separado",
-        "Llamadas a herramientas, salida y cambios en la cronología de ejecución",
-        "Los Agents ACP externos usan su propio entorno, credenciales y política de ejecución"
+        "Aprueba el plan en modo Confirm",
+        "Inspecciona llamadas a herramientas y su salida",
+        "Revisa los cambios de código resultantes"
       ],
       [
-        "Estado, preparación, diffs e historial",
+        "Árbol de trabajo, preparación e historial",
         "Ramas, commits, push, pull y stash",
-        "Repositorios, issues y PR de GitHub según los permisos de la cuenta"
-      ],
-      [
+        "Issues y pull requests de GitHub"
+      ]
+    ],
+    "docker": {
+      "title": "Docker y Dev Containers",
+      "intro": "Gestiona recursos Docker y servicios Compose en un host SSH. Crea o reconstruye un Dev Container a partir de la configuración del proyecto y abre su espacio de trabajo.",
+      "points": [
         "Contenedores, imágenes, volúmenes y redes",
         "Registros, estadísticas, terminal exec y Compose",
         "Requiere Docker instalado y acceso desde la cuenta SSH"
       ]
-    ]
+    },
+    "download": "Descargar NimoteCode",
+    "availability": "Android · iPhone · iPad",
+    "closingTitle": "Tu próximo cambio empieza aquí.",
+    "closingIntro": "Abre un proyecto conocido y haz un pequeño cambio.",
+    "quickStart": "Primeros pasos",
+    "notes": [
+      "Las funciones de lenguaje requieren un servidor compatible configurado.",
+      "Los comandos usan las herramientas y permisos del entorno elegido.",
+      "Configura tu propia clave API. El uso del modelo se factura por separado.",
+      "La escritura requiere acceso en la app y permisos en el repositorio."
+    ],
+    "cardNotes": [
+      "El acceso depende del sistema operativo; una carpeta local no aporta un entorno de ejecución.",
+      "Los comandos se ejecutan con la cuenta SSH seleccionada.",
+      "Instala las herramientas y dependencias del proyecto por separado."
+    ],
+    "host": {
+      "title": "Aléjate. El trabajo continúa.",
+      "intro": "NimoteHost mantiene terminales, tareas y Agents compatibles en tu ordenador. Reconecta desde el móvil para revisar la salida y continuar.",
+      "steps": [
+        "Inicia una tarea",
+        "Déjala en ejecución",
+        "Reconecta y revisa"
+      ],
+      "note": "Requiere NimoteCode 2.4.1+, instalar Host por separado y mantener el ordenador encendido.",
+      "link": "Explorar NimoteHost",
+      "caption": "Sesiones gestionadas en tu ordenador"
+    }
   }
 }

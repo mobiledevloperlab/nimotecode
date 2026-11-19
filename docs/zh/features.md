@@ -3,7 +3,7 @@ title: NimoteCode 功能 | 移动开发工作区
 description: 在手机或平板打开项目，连接开发电脑，在同一工作区编辑文件、运行命令并检查 Git 改动。了解 SSH、Android Local Linux、AI、Docker 与 Pro 适用场景。
 ---
 
-<ProductFeatures />
+<ProductFeatures>
 
 <div class="product-reference">
 
@@ -44,3 +44,5 @@ description: 在手机或平板打开项目，连接开发电脑，在同一工�
 </details>
 
 </div>
+
+</ProductFeatures>

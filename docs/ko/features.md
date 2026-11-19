@@ -3,7 +3,7 @@ title: NimoteCode 기능 | 모바일 개발 작업 공간
 description: 휴대폰에서 프로젝트를 열고 개발 컴퓨터에 연결해 편집, 명령 실행, Git 변경 검토를 한 작업 공간에서 진행하세요. SSH, Docker, Pro 사용 조건도 확인할 수 있습니다.
 ---
 
-<ProductFeatures />
+<ProductFeatures>
 
 <div class="product-reference">
 
@@ -44,3 +44,5 @@ description: 휴대폰에서 프로젝트를 열고 개발 컴퓨터에 연결�
 </details>
 
 </div>
+
+</ProductFeatures>

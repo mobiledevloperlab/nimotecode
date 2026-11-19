@@ -3,7 +3,7 @@ title: NimoteCode の機能 | モバイル開発ワークスペース
 description: プロジェクトをスマートフォンで開き、開発用コンピューターに接続。編集、コマンド実行、Git の変更確認を同じワークスペースで行う方法と、SSH、Docker、Pro の利用条件を紹介します。
 ---
 
-<ProductFeatures />
+<ProductFeatures>
 
 <div class="product-reference">
 
@@ -44,3 +44,5 @@ description: プロジェクトをスマートフォンで開き、開発用コ�
 </details>
 
 </div>
+
+</ProductFeatures>

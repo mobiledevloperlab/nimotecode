@@ -3,7 +3,7 @@ title: Funciones de NimoteCode | Espacio de desarrollo móvil
 description: Abre tu proyecto desde el móvil y conéctate a tu ordenador para editar, ejecutar comandos y revisar cambios de Git en un mismo espacio. Consulta cuándo usar SSH, Docker y Pro.
 ---
 
-<ProductFeatures />
+<ProductFeatures>
 
 <div class="product-reference">
 
@@ -44,3 +44,5 @@ Consulta [cuenta y suscripción](/es/docs/account-subscription) para acceso y re
 </details>
 
 </div>
+
+</ProductFeatures>
