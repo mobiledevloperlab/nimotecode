@@ -9,7 +9,7 @@ const props = defineProps({ full: Boolean })
 const { lang } = useData()
 const locale = computed(() => lang.value.split('-')[0] in translations ? lang.value.split('-')[0] : 'en')
 const copy = computed(() => translations[locale.value])
-const evidenceLocale = computed(() => locale.value === 'zh' ? 'zh' : 'en')
+const evidenceLocale = computed(() => locale.value)
 const selectedIndex = ref(3)
 const stale = ref(false)
 let freshnessTimer
@@ -25,10 +25,10 @@ const capabilities = [
   'Agent session recovery and approvals', 'Project task inbox'
 ]
 const comparisonRows = computed(() => props.full ? rows : capabilities.map(key => rows.find(([label]) => label.en === key)))
-const labelFor = label => copy.value.labels?.[capabilities.indexOf(label.en)] || label[evidenceLocale.value]
+const labelFor = label => label[evidenceLocale.value]
 const kind = cell => cell.text.en.startsWith('✅') ? 'supported' : cell.text.en.startsWith('◐') ? 'conditional' : 'unconfirmed'
 const suffix = cell => cell.text[evidenceLocale.value].replace(/^[✅◐—]\s*/, '')
-const fullComparison = computed(() => withBase(`${evidenceLocale.value === 'zh' ? '/zh' : ''}/compare/mobile-ai-development-tools`))
+const fullComparison = computed(() => withBase(`${locale.value === 'en' ? '' : `/${locale.value}`}/compare/mobile-ai-development-tools`))
 const evidenceUrl = url => url.replace('https://nimotecode.com/docs/', `https://nimotecode.com/${locale.value === 'en' ? '' : `${locale.value}/`}docs/`)
 const status = cell => {
   const value = cell.text[evidenceLocale.value]

@@ -200,7 +200,7 @@ iPhone 和 iPad 不支持 Local Linux，可通过 SSH 主机运行开发命令�
 <!-- major-comparison:start -->
 ## NimoteCode vs 五款主要竞品
 
-资料核实：**2026-11-20 04:12:58 (UTC)** · 依据官方文档、官网与公开发布信息。
+资料核实: **2026-11-20 04:12:58 (UTC)** · 依据官方文档、官网与公开发布信息
 
 **在自己的电脑上运行开发任务，在手机上查看代码、管理终端、恢复兼容 AI 会话并处理审批。**
 
@@ -253,7 +253,7 @@ SSH 场景表描述典型的终端工作流，不代表 Blink Shell 或 Termius 
 
 ### 竞品优势与产品改进优先级
 
-以下优先级是 NimoteCode 团队的产品判断，不是市场份额或性能排名。功能依据可通过上表官方来源核对。
+以下优先级是 NimoteCode 团队的产品判断，不是市场份额或性能排名。功能依据可通过官方来源核对。
 
 | 竞品 | 主要竞争点 | NimoteCode 改进重点 | 优先级 |
 | --- | --- | --- | --- |
@@ -306,7 +306,7 @@ npm run docs:check
 
 使用 `npm run docs:dev` 在本地预览。
 
-详细竞品表的共享数据位于 `docs/.vitepress/theme/data/majorCompetitors.mjs`。核对官方来源后更新数据，再运行 `npm run compare:sync` 同步中英文 README 与网站；完成构建后运行 `npm run compare:check`。核实时间记录人工来源审计，不是自动更新的数据源。`npm run compare:audit` 要求 24 小时内完成复核，并检查 NimoteCode 文档的已审核哈希。只有重新核对上游官方来源与依据摘要后，才更新核实时间或本地文档基线；构建或链接检查成功不能自动延长核实有效期。
+详细竞品表的共享数据位于 `docs/.vitepress/theme/data/majorCompetitors.mjs`。核对官方来源后更新数据，再运行 `npm run compare:sync` 同步五种语言的 README 与网站；完成构建后运行 `npm run compare:check`。核实时间记录人工来源审计，不是自动更新的数据源。`npm run compare:audit` 要求 24 小时内完成复核，并检查 NimoteCode 文档的已审核哈希。只有重新核对上游官方来源与依据摘要后，才更新核实时间或本地文档基线；构建或链接检查成功不能自动延长核实有效期。
 
 </details>
 

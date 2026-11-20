@@ -41,7 +41,7 @@ SSH 场景表描述典型的终端工作流，不代表 Blink Shell 或 Termius 
 <details class="major-comparison-details">
 <summary>竞品优势与产品改进优先级</summary>
 
-以下优先级是 NimoteCode 团队的产品判断，不是市场份额或性能排名。
+以下优先级是 NimoteCode 团队的产品判断，不是市场份额或性能排名。功能依据可通过官方来源核对。
 
 | 竞品 | 主要竞争点 | NimoteCode 改进重点 | 优先级 |
 | --- | --- | --- | --- |

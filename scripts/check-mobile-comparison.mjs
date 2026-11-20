@@ -4,6 +4,8 @@ import { promisify } from 'node:util'
 import { execFile } from 'node:child_process'
 import { accessNotes, competitors, featureRows, REVIEW_DATE, statusLabels } from '../docs/.vitepress/theme/data/mobileDevelopmentCompetitors.ts'
 import { products as majorCompetitors, rows as majorRows, reviewedAtUtc } from '../docs/.vitepress/theme/data/majorCompetitors.mjs'
+import { comparisonLocales } from '../docs/.vitepress/theme/data/majorComparisonTranslations.mjs'
+import comparisonCopy from '../docs/.vitepress/theme/i18n/product-comparison.json' with { type: 'json' }
 
 const official = {
   nimotecode: ['nimotecode.com'], termius: ['termius.com'], 'blink-shell': ['docs.blink.sh','github.com'],
@@ -45,10 +47,22 @@ for (const product of competitors) {
 const en = readFileSync('docs/compare/mobile-ai-development-tools.md','utf8')
 const zh = readFileSync('docs/zh/compare/mobile-ai-development-tools.md','utf8')
 assert.ok(en.includes('<MobileDevToolComparison lang="en" />') && zh.includes('<MobileDevToolComparison lang="zh" />'))
-for (const locale of ['','zh/']) {
+for (const language of comparisonLocales) {
+  const locale = language === 'en' ? '' : `${language}/`
   const path = `docs/.vitepress/dist/${locale}compare/mobile-ai-development-tools.html`
   assert.ok(existsSync(path), `${path}: build first`)
   const html = readFileSync(path,'utf8')
+  const current = html.slice(html.indexOf('<section id="product-comparison"'), html.indexOf('</section>', html.indexOf('<section id="product-comparison"')))
+  const plain = current.replace(/<[^>]+>/g, '').replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+  assert.equal((current.match(/scope="row"/g) || []).length, 14, `${path}: incomplete current comparison`)
+  for (const [label, cells] of majorRows) {
+    assert.ok(plain.includes(label[language]), `${path}: untranslated feature ${label.en}`)
+    for (const productIndex of [0, 3]) {
+      const evidence = cells[productIndex].evidence
+      if (evidence) assert.ok(plain.includes(evidence.summary[language]), `${path}: missing localized evidence for ${label.en}`)
+    }
+  }
+  assert.ok(plain.includes(comparisonCopy[language].snapshot), `${path}: missing localized freshness notice`)
   for (const [name] of majorCompetitors) assert.ok(html.includes(name), `${path}: missing major alternative ${name}`)
   assert.ok(html.includes(`datetime="${reviewedAtUtc}"`), `${path}: missing current review timestamp`)
   assert.ok(html.includes('Task Inbox') && (html.includes('Coming soon') || html.includes('待发布')), `${path}: missing Host workflow or Acode availability caveat`)
@@ -59,14 +73,21 @@ for (const locale of ['','zh/']) {
   for (const phrase of ['Not verified Not verified','未核实 未核实','Pro · Pro','Host-centered Host-centered','Not confirmed Not confirmed']) assert.ok(!html.includes(phrase), `${path}: duplicate ${phrase}`)
   for (const tag of ['canonical','hreflang','og:title','BreadcrumbList','ItemList']) assert.ok(html.includes(tag), `${path}: missing ${tag}`)
 }
-for (const locale of ['','zh/']) {
+for (const language of comparisonLocales) {
+  const locale = language === 'en' ? '' : `${language}/`
   const path = `docs/.vitepress/dist/${locale}index.html`
   assert.ok(existsSync(path), `${path}: build first`)
   const html = readFileSync(path,'utf8')
   assert.ok(html.includes(`href="/${locale}compare/mobile-ai-development-tools"`), `${path}: full comparison link missing`)
   assert.ok(!html.includes('home-tool-comparison-row'), `${path}: homepage should link to the detailed comparison`)
 }
-console.log(`Comparison data passed: ${competitors.length} products, ${featureRows.length} features, ${urls.size} unique evidence URLs; English and Chinese SSR verified.`)
+for (const language of comparisonLocales) {
+  const prefix = language === 'en' ? '' : `/${language}`
+  const path = `docs/.vitepress/dist${prefix}/features.html`
+  const html = readFileSync(path, 'utf8')
+  assert.ok(html.includes(`href="${prefix}/compare/mobile-ai-development-tools"`), `${path}: comparison link leaves its language`)
+}
+console.log(`Comparison data passed: historical evidence preserved; ${urls.size} evidence URLs; current comparison labels, sources, dates and product links verified in ${comparisonLocales.length} languages.`)
 
 if (process.argv.includes('--links')) {
   const run = promisify(execFile)

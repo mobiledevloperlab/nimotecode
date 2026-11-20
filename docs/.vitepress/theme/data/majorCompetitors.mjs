@@ -1,6 +1,7 @@
 // A reviewed snapshot, not an automatically refreshed feed. Keep review dates
 // honest: recheck official sources before advancing this date.
 import { sourceEvidence } from './majorCompetitorEvidence.mjs'
+import { comparisonTranslations } from './majorComparisonTranslations.mjs'
 export const reviewedAt = '2026-11-20'
 // Manual audit completion time; never replace this with build time.
 export const reviewedAtUtc = '2026-11-20T04:12:58Z'
@@ -69,3 +70,21 @@ export const notes = [
   pair('Replit documents mobile project editing, a Git pane and Agent task review. Its SSH documentation describes connecting into a Replit cloud app, rather than a mobile SSH client for your own computer. Mobile LSP coverage, persistent terminal processes and structured Agent recovery with approvals were not confirmed. Its task board is explicitly documented, including mobile access through the Tasks pane. Codespaces is a cloud development environment accessed through a browser or VS Code; phone browser availability does not promise a native mobile app or identical usability. Copilot requires a separate extension and access. Codespaces persistence applies only to an active environment: idle timeout and the documented maximum lifetime stop processes. A cloud shell is not a native SSH client, and Copilot task management is not credited as a Codespaces-native inbox or Agent recovery feature.', 'Replit 官方已说明手机项目编辑、Git 面板与 Agent 任务审查；其 SSH 文档说明的是连接到 Replit 云端应用，并非连接自有电脑的手机 SSH 客户端。移动端 LSP、持久终端进程与带审批的结构化 Agent 恢复尚未确认；任务看板已有明确文档，手机可通过 Tasks 面板访问。Codespaces 是通过浏览器或 VS Code 访问的云开发环境；手机浏览器可访问不代表有原生移动应用或相同易用性。Copilot 需要单独扩展与权限。Codespaces 的持续运行仅限活动工作区，空闲超时和文档规定的最长运行时限会停止进程。云端 Shell 不等于原生 SSH 客户端，Copilot 任务管理也不计作 Codespaces 原生收件箱或 Agent 恢复能力。'),
   pair('The SSH workflow table describes a typical terminal-led setup, not every feature of Blink Shell or Termius. Remote development and AI coding are not exclusive to NimoteCode. The combination to evaluate is running work on your own computer while using your phone to inspect code, manage terminals, recover compatible Agent sessions and handle approvals.', 'SSH 场景表描述典型的终端工作流，不代表 Blink Shell 或 Termius 的全部功能。远程开发与 AI 编程并非 NimoteCode 独有。值得评估的是这组组合体验：在自己的电脑上运行开发任务，在手机上查看代码、管理终端、恢复兼容 Agent 会话并处理审批。')
 ]
+
+for (const [locale, translation] of Object.entries(comparisonTranslations)) {
+  if (translation.labels.length !== rows.length || translation.notes.length !== notes.length || translation.workflows.length !== workflows.length || translation.strengths.length !== strengths.length) {
+    throw new Error(`${locale}: incomplete major comparison translation`)
+  }
+  rows.forEach(([label, cells], index) => {
+    label[locale] = translation.labels[index]
+    for (const cell of cells) {
+      const symbol = cell.text.en.match(/^(✅|◐|—)/u)[0]
+      const suffix = cell.text.en.slice(symbol.length).trim()
+      if (suffix && !translation.suffixes[suffix]) throw new Error(`${locale}: missing status translation for ${suffix}`)
+      cell.text[locale] = symbol + (suffix ? ` ${translation.suffixes[suffix]}` : '')
+    }
+  })
+  notes.forEach((note, index) => { note[locale] = translation.notes[index] })
+  workflows.forEach((row, index) => row.forEach((value, column) => { value[locale] = translation.workflows[index][column] }))
+  strengths.forEach(([, ...values], index) => values.forEach((value, column) => { value[locale] = translation.strengths[index][column] }))
+}

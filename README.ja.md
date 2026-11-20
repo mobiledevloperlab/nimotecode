@@ -195,6 +195,73 @@ Host の機能に応じて、ツール出力、承認、タスク、検証結果
 
 [AI 設定](https://nimotecode.com/ja/docs/configuration) · [Agent と MCP](https://nimotecode.com/ja/docs/ai)
 
+<!-- major-comparison:start -->
+## NimoteCode と主要な 5 製品の比較
+
+資料確認日時: **2026-11-20 04:12:58 (UTC)** · 公式ドキュメント、公式サイト、公開リリース情報に基づく比較
+
+**開発タスクは自分のコンピューターで実行。スマートフォンでコードとターミナルを確認し、対応する AI セッションを再開して承認に対応できます。**
+
+NimoteCode チームが公開資料に基づいて作成した、上記 UTC 日時点のスナップショットです。リアルタイムデータや性能測定ではありません。全アプリを同一端末・同一条件のストア版で検証したものではなく、文書が一般公開に先行する場合もあります。✅ は公式資料に記載された対応（明記した統合を含む）、◐ は一部対応、拡張機能、リモート環境や設定への依存、— は該当するネイティブ機能を確認できていないことを示します。状態をクリックすると公式資料を開きます。— は外部ツールで実現できないという意味ではなく、◐ は同一の体験を保証しません。
+
+### 主な機能
+
+| 機能 | [NimoteCode](https://nimotecode.com/ja/docs/host) | [Blink Shell](https://docs.blink.sh/advanced/code) | [Termius](https://www.termius.com/) | [Acode](https://docs.acode.app/user-guide/) | [Replit](https://docs.replit.com/features/platforms/mobile-app) | [Codespaces](https://docs.github.com/en/codespaces/about-codespaces/what-are-codespaces) |
+| --- | --- | --- | --- | --- | --- | --- |
+| Android | [✅](https://nimotecode.com/ja/download) | — | [✅](https://www.termius.com/free-ssh-client-for-android) | [✅](https://docs.acode.app/user-guide/) | [✅](https://docs.replit.com/features/platforms/mobile-app) | [◐ ブラウザー](https://docs.github.com/en/codespaces/about-codespaces/codespaces-features) |
+| iOS / iPadOS | [✅](https://nimotecode.com/ja/download) | [✅](https://docs.blink.sh/) | [✅](https://www.termius.com/free-ssh-client-for-iphone) | [— 公開予定](https://acode.app/ai-coding-ios) | [✅](https://docs.replit.com/features/platforms/mobile-app) | [◐ ブラウザー](https://docs.github.com/en/codespaces/about-codespaces/codespaces-features) |
+| SSH ターミナル | [✅](https://nimotecode.com/ja/docs/ssh) | [✅](https://docs.blink.sh/) | [✅](https://www.termius.com/free-ssh-client-for-android) | [✅](https://github.com/Acode-Foundation/Acode#readme) | — | — |
+| Mosh | — | [✅](https://docs.blink.sh/advanced/advanced-mosh) | [✅](https://www.termius.com/free-ssh-client-for-android) | — | — | — |
+| コードエディター | [✅](https://nimotecode.com/ja/docs/editor) | [✅](https://docs.blink.sh/advanced/code) | — | [✅](https://docs.acode.app/user-guide/) | [✅](https://docs.replit.com/features/platforms/mobile-app) | [✅](https://docs.github.com/en/codespaces/developing-in-a-codespace/developing-in-a-codespace) |
+| 端末内 Linux 環境 | [✅ Android · Pro](https://nimotecode.com/ja/docs/local-linux) | — | — | [✅ Android](https://docs.acode.app/user-guide/terminal) | — | — |
+| Git の GUI 操作 | [✅ 書き込みは Pro](https://nimotecode.com/ja/docs/source-control) | [◐](https://docs.blink.sh/advanced/code) | — | — | [✅ プロジェクトエディター](https://docs.replit.com/features/workspace-tools/git-interface) | [✅](https://docs.github.com/en/codespaces/developing-in-a-codespace/using-source-control-in-your-codespace) |
+| LSP によるコード支援 | [✅ 基本機能は無料](https://nimotecode.com/ja/docs/lsp) | — | — | [✅](https://docs.acode.app/user-guide/language-servers) | — | [◐ 言語拡張機能](https://code.visualstudio.com/docs/remote/codespaces) |
+| AI コーディング | [✅ Agent · Pro](https://nimotecode.com/ja/docs/ai) | — | [◐ コマンド補完](https://www.termius.com/pricing) | [◐ 公式プラグイン](https://docs.acode.app/tutorials/ai-agent) | [✅](https://docs.replit.com/features/platforms/mobile-app) | [◐ Copilot 拡張機能](https://docs.github.com/en/codespaces/reference/using-github-copilot-in-github-codespaces) |
+| VS Code 拡張機能 | — | [◐](https://docs.blink.sh/advanced/code) | — | — | — | [✅](https://code.visualstudio.com/docs/remote/codespaces) |
+| 自分の PC でリモート開発 | [✅](https://nimotecode.com/ja/docs/ssh) | [✅](https://docs.blink.sh/advanced/code) | [◐ SSH ターミナル](https://www.termius.com/free-ssh-client-for-android) | [◐](https://docs.acode.app/user-guide/remote-access) | — | — |
+| 永続ターミナルセッション | [✅ Host · Pro](https://nimotecode.com/ja/docs/host) | [◐ Mosh](https://docs.blink.sh/advanced/advanced-mosh) | [◐ Mosh](https://www.termius.com/free-ssh-client-for-android) | [◐ Android サービス](https://docs.acode.app/user-guide/terminal) | — | [◐ 稼働中のワークスペース](https://docs.github.com/en/codespaces/about-codespaces/understanding-the-codespace-lifecycle) |
+| Agent セッション復元・承認 | [✅ Host · Pro](https://nimotecode.com/ja/docs/host) | — | — | [◐ 公式プラグイン](https://docs.acode.app/tutorials/ai-agent) | — | — |
+| プロジェクトのタスク受信箱 | [✅ Host · Pro](https://nimotecode.com/ja/docs/host) | — | — | — | [✅ クラウドのタスクボード](https://docs.replit.com/features/agent/task-board) | — |
+
+### 利用条件と比較の読み方
+
+NimoteCode は 2.4.1 と現在の Host 文書を基準に確認しています。NimoteHost は開発プレビューであり、復元、承認、Task Inbox は Host の版、設定、Agent の互換性に依存します。コンピューター、Host、管理対象プロセスの継続稼働が必要で、Host や OS の再起動では元のプロセスを復元できません。Host、Android Local Linux、Git 書き込みには Pro が必要です。設定済みの言語ツールを使う基本 LSP 補完・診断・ナビゲーションは無料、コードアクション、サーバーの導入支援、デバッグは Pro が必要です。権限の範囲は無料・Pro の案内をご確認ください。
+
+Blink Code は VS Code サービスを統合します。文書にあるリポジトリ編集や拡張機能は接続先環境に依存します。Blink の LSP と AI Agent のワークフローは個別に確認できておらず、リモート IDE を開けることだけで対応とは判定していません。ローカルの Unix コマンド群は完全な Linux 環境ではありません。Mosh のローミング、tmux の再接続、構造化された Agent セッションの復元は条件が異なります。
+
+Acode は Android の Alpine Linux とネイティブ LSP 統合を文書化しています。各言語サーバーの有効化や導入は別途必要です。公式 AI Agent は version code 1002 以上、プラグインの追加とプロバイダー設定が必要で、チャット保存と承認に対応します。iPhone/iPad は引き続き Coming soon のため、一般公開済みの iOS 機能とは扱いません。Android ターミナルのバックグラウンド実行はフォアグラウンドサービスと OS のプロセス管理に依存します。Git の GUI 操作は未確認で、Git CLI を使えるだけでは根拠になりません。
+
+Replit はモバイルでのプロジェクト編集、Git パネル、Agent タスクのレビューを文書化しています。SSH 文書は Replit のクラウドアプリへの接続を説明しており、自分の PC に接続するモバイル SSH クライアントではありません。モバイル LSP、ターミナルプロセスの継続、承認を伴う構造化 Agent 復元は未確認です。タスクボードは明確に文書化され、モバイルの Tasks パネルから利用できます。Codespaces はブラウザーや VS Code で接続するクラウド開発環境であり、ブラウザーで開けることはネイティブアプリや同等の操作性を意味しません。Copilot は別の拡張機能と利用権限が必要です。継続実行は稼働中の codespace に限り、アイドルタイムアウトや文書に定める稼働時間上限でプロセスが停止します。クラウドの Shell はネイティブ SSH クライアントではなく、Copilot のタスク管理を Codespaces のネイティブ受信箱や Agent 復元として計上していません。
+
+[NimoteCode の無料・Pro の範囲](https://nimotecode.com/ja/pro) · [Host の利用条件](https://nimotecode.com/ja/docs/host) · [Acode の iOS 公開状況](https://acode.app/ai-coding-ios) · [Replit の SSH 接続先](https://docs.replit.com/features/workspace-tools/ssh)
+
+### スマートフォンから開発を続ける
+
+| 作業 | 一般的な SSH 構成 | NimoteCode + Host |
+| --- | --- | --- |
+| スマートフォンから PC に接続 | SSH | SSH + Host ワークスペース |
+| プロジェクトのコードを読む | 通常はターミナルツールや別のエディター | 内蔵コードエディター |
+| 編集と変更のレビュー | Git CLI や別のツール | エディター + Git Diff |
+| アプリを離れた後も実行 | tmux、Mosh などのホスト設定 | Host が管理するタスクとセッション |
+| AI の結果を確認 | CLI を開き直すかセッションに再接続 | 対応 Agent の構造化会話を復元 |
+| Agent の承認に対応 | 使用中の CLI に依存 | Host に対応する承認を集約 |
+| 対応が必要な作業を探す | ログやセッションを手動で確認 | Task Inbox |
+
+SSH の表は一般的なターミナル中心の構成を示し、Blink Shell や Termius の全機能を表すものではありません。リモート開発や AI コーディングは NimoteCode 独自の機能ではありません。評価すべき組み合わせは、自分のコンピューターでタスクを動かし、スマートフォンでコード、ターミナル、対応 Agent セッションの復元、承認を扱う体験です。
+
+### 競合製品の強みと改善の優先度
+
+優先度は NimoteCode チームの製品判断であり、市場シェアや実測性能の順位ではありません。機能の根拠は公式資料で確認できます。
+
+| 製品 | 強み | NimoteCode の改善方針 | 優先度 |
+| --- | --- | --- | --- |
+| Acode | Android エディター、Linux、プラグイン、AI、オープンソース環境 | モバイル IDE の完成度を高め、Host とリモート Agent 承認を実演 | 最優先 |
+| Blink Shell | Mosh、ターミナルとキーボード、Blink Code | ターミナルの操作性を改善し、Host と Git の連携を示す | 最優先 |
+| Termius | ホスト管理、同期、SFTP、Mosh、チームアクセス | 接続と既存プロジェクトの作業再開を簡単にする | 高 |
+| GitHub Codespaces | クラウド開発環境と VS Code エコシステム | 自分のコンピューターと既存ツールチェーンでの開発を示す | 中 |
+| Replit | AI によるアプリ作成、ホスティング、公開 | 既存プロジェクトの継続開発、レビュー、承認に集中 | 中 |
+<!-- major-comparison:end -->
+
 ## ドキュメントとガイド
 
 | 基本 | 応用 |

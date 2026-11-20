@@ -41,7 +41,7 @@ The SSH workflow table describes a typical terminal-led setup, not every feature
 <details class="major-comparison-details">
 <summary>Competitor strengths and product priorities</summary>
 
-These priorities are product judgments by the NimoteCode team, not measured market shares or performance rankings.
+These priorities are product judgments by the NimoteCode team, not measured market shares or performance rankings. Feature claims can be checked using the official sources.
 
 | Alternative | Strength | NimoteCode focus | Priority |
 | --- | --- | --- | --- |

@@ -3,6 +3,7 @@ import { createHash } from 'node:crypto'
 import { readFileSync } from 'node:fs'
 import { products, rows, reviewedAt, reviewedAtUtc, reviewWindowHours } from '../docs/.vitepress/theme/data/majorCompetitors.mjs'
 import { sourceEvidence } from '../docs/.vitepress/theme/data/majorCompetitorEvidence.mjs'
+import { comparisonLocales } from '../docs/.vitepress/theme/data/majorComparisonTranslations.mjs'
 
 const reviewedTime = Date.parse(reviewedAtUtc)
 assert.ok(Number.isFinite(reviewedTime), 'Missing manual audit timestamp')
@@ -20,10 +21,15 @@ assert.equal(products.length, 6)
 assert.equal(rows.length, 14)
 let verified = 0
 for (const [label, cells] of rows) {
+  for (const locale of comparisonLocales) assert.ok(label[locale], `${locale}: missing feature label`)
   assert.equal(cells.length, products.length, `${label.en}: missing product`)
   for (const [index, cell] of cells.entries()) {
     const name = `${products[index][0]} / ${label.en}`
     assert.match(cell.text.en, /^(✅|◐|—)/u, `${name}: unknown status`)
+    for (const locale of comparisonLocales) {
+      assert.ok(cell.text[locale], `${name}: missing ${locale} status`)
+      assert.equal(cell.text[locale].match(/^(✅|◐|—)/u)?.[0], cell.text.en.match(/^(✅|◐|—)/u)[0], `${name}: ${locale} changed the capability status`)
+    }
     if (!cell.text.en.startsWith('—')) assert.ok(cell.url, `${name}: claim has no source`)
     if (!cell.url) {
       assert.ok(cell.text.en.startsWith('—'), `${name}: unverified claims must not be credited`)
@@ -35,7 +41,7 @@ for (const [label, cells] of rows) {
     if (url.hostname === 'github.com') assert.ok(url.pathname.startsWith('/Acode-Foundation/'), `${name}: not Acode's official repository`)
     assert.ok(sourceEvidence[cell.url], `${name}: source was not audited`)
     assert.equal(cell.evidence.reviewedAtUtc, reviewedAtUtc, `${name}: mismatched review`)
-    for (const locale of ['en', 'zh']) assert.ok(cell.evidence.summary[locale]?.length > (locale === 'zh' ? 15 : 30), `${name}: missing evidence summary`)
+    for (const locale of comparisonLocales) assert.ok(cell.evidence.summary[locale]?.length > (['zh','ja','ko'].includes(locale) ? 15 : 30), `${name}: missing ${locale} evidence summary`)
     verified++
   }
 }

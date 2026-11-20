@@ -200,7 +200,7 @@ Connect your own provider and credentials. **Model credits and provider subscrip
 <!-- major-comparison:start -->
 ## NimoteCode vs five major alternatives
 
-Evidence reviewed：**2026-11-20 04:12:58 (UTC)** · Official documentation, websites and public release information。
+Evidence reviewed: **2026-11-20 04:12:58 (UTC)** · Official documentation, websites and public release information
 
 **Run development tasks on your own computer; use your phone to inspect code, manage terminals, recover compatible AI sessions and handle approvals.**
 
@@ -253,7 +253,7 @@ The SSH workflow table describes a typical terminal-led setup, not every feature
 
 ### Competitor strengths and product priorities
 
-The following priorities are the NimoteCode team’s product judgments, not measured market shares or performance rankings. Feature claims can be checked using the sources above.
+These priorities are product judgments by the NimoteCode team, not measured market shares or performance rankings. Feature claims can be checked using the official sources.
 
 | Alternative | Strength | NimoteCode focus | Priority |
 | --- | --- | --- | --- |
@@ -306,7 +306,7 @@ Use Node 24 (`.nvmrc`), matching deployment. Astro requires Node >=22.23.4; Node
 
 Use `npm run docs:dev` to preview locally.
 
-For the main competitor comparison, recheck official sources before changing `docs/.vitepress/theme/data/majorCompetitors.mjs`, then run `npm run compare:sync`. After building the site, run `npm run compare:check` to verify README/site consistency and rendered evidence. The review timestamp records a manual source audit; it is not an automatic feed. `npm run compare:audit` requires a review within 24 hours and checks the recorded hashes of NimoteCode documentation. Recheck upstream official sources and the evidence summaries before changing the timestamp or local-source baseline; a build or a successful link check must never renew the review date.
+For the main competitor comparison, recheck official sources before changing `docs/.vitepress/theme/data/majorCompetitors.mjs`, then run `npm run compare:sync`. After building the site, run `npm run compare:check` to verify all five languages of the READMEs, website and rendered evidence. The review timestamp records a manual source audit; it is not an automatic feed. `npm run compare:audit` requires a review within 24 hours and checks the recorded hashes of NimoteCode documentation. Recheck upstream official sources and the evidence summaries before changing the timestamp or local-source baseline; a build or a successful link check must never renew the review date.
 
 </details>
 
