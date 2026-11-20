@@ -38,6 +38,9 @@ jobs:
       - name: Install blog dependencies
         run: npm ci --prefix blog
 
+      - name: Require a recent, evidence-backed comparison review
+        run: npm run compare:audit
+
       - name: Build with VitePress
         run: npm run docs:build
 

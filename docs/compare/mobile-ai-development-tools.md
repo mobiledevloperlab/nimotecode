@@ -1,52 +1,30 @@
 ---
 title: "NimoteCode vs Blink Shell, Termius, Acode, Replit and Codespaces"
-description: "Reviewed 2026-11-19: compare mobile platforms, SSH, editing, Git, LSP, AI and persistent sessions across six tools, with official sources and NimoteHost preview limits."
+description: "Reviewed 2026-11-20: compare mobile platforms, SSH, editing, Git, LSP, AI and persistent sessions across six tools, with official sources and NimoteHost preview limits."
 pageClass: compare-page
 ---
 
 # NimoteCode vs Five Major Alternatives
 
 <!-- major-comparison:start -->
-## NimoteCode vs five major alternatives
+<ProductComparison full />
 
-Evidence reviewed：**2026-11-19 (UTC)** · Official documentation, websites and public release information。
+<details class="major-comparison-details">
+<summary>Product-specific requirements and evidence</summary>
 
-**Run development tasks on your own computer; use your phone to inspect code, manage terminals, recover compatible AI sessions and handle approvals.**
+NimoteCode is checked against 2.4.1 and the current Host documentation. NimoteHost remains a developer preview: recovery, approvals and Task Inbox depend on the Host version, configuration and compatible Agent. The computer, Host and managed process must stay running; a Host or OS restart does not restore the original process. Host, Android Local Linux and Git writes need Pro. Basic LSP completion, diagnostics and navigation are free with configured language tools; code actions, guided server installation and debugging need Pro. See Free and Pro for access boundaries.
 
-This is a vendor-authored, documentation-based snapshot, reviewed on the date above (UTC), not a live feed or a performance benchmark. ✅ means officially documented support, including named integrations; ◐ means partial support, an extension, a remote environment or setup is required; — means a corresponding native capability was not confirmed. Click a status for its official source. A dash does not rule out third-party solutions, and partial support does not imply the same experience.
+Blink Code integrates VS Code services; documented repository editing and extension access depend on the connected environment. LSP and AI Agent workflows were not independently confirmed for Blink and are not credited merely because it can open a remote IDE. Its local Unix commands do not constitute a full Linux environment. Mosh roaming and tmux reattachment have different requirements from structured Agent recovery.
 
-### Core capabilities
+Acode documents Android Alpine Linux and native LSP integration; language servers still need enabling or installation. Its official AI Agent requires version code 1002+ and a separate plugin with provider setup, saved chats and approvals. iPhone/iPad remains marked Coming soon; no generally released iOS capability is credited. Android terminal background execution depends on its foreground service and OS process management. Graphical Git operations were not confirmed; Git CLI access alone is insufficient evidence.
 
-| Capability | [NimoteCode](https://nimotecode.com/docs/host) | [Blink Shell](https://docs.blink.sh/advanced/code) | [Termius](https://www.termius.com/) | [Acode](https://docs.acode.app/user-guide/) | [Replit](https://docs.replit.com/features/platforms/mobile-app) | [Codespaces](https://docs.github.com/en/codespaces/about-codespaces/what-are-codespaces) |
-| --- | --- | --- | --- | --- | --- | --- |
-| Android | [✅](https://nimotecode.com/download) | — | [✅](https://www.termius.com/) | [✅](https://docs.acode.app/user-guide/) | [✅](https://docs.replit.com/features/platforms/mobile-app) | [◐](https://docs.github.com/en/codespaces/developing-in-a-codespace/developing-in-a-codespace) |
-| iOS / iPadOS | [✅](https://nimotecode.com/download) | [✅](https://docs.blink.sh/) | [✅](https://www.termius.com/) | [◐ Beta / soon](https://acode.app/ai-coding-ios) | [✅](https://docs.replit.com/features/platforms/mobile-app) | [◐](https://docs.github.com/en/codespaces/developing-in-a-codespace/developing-in-a-codespace) |
-| SSH terminal | [✅](https://nimotecode.com/docs/ssh) | [✅](https://docs.blink.sh/) | [✅](https://www.termius.com/) | [✅](https://github.com/Acode-Foundation/Acode#readme) | — | [◐ Cloud shell](https://docs.github.com/en/codespaces/developing-in-a-codespace/developing-in-a-codespace) |
-| Mosh | — | [✅](https://docs.blink.sh/advanced/advanced-mosh) | [✅](https://www.termius.com/pricing) | — | — | — |
-| Graphical code editor | [✅](https://nimotecode.com/docs/editor) | [✅](https://docs.blink.sh/advanced/code) | — | [✅](https://docs.acode.app/user-guide/) | [✅](https://docs.replit.com/features/platforms/mobile-app) | [✅](https://docs.github.com/en/codespaces/developing-in-a-codespace/developing-in-a-codespace) |
-| On-device Linux environment | [✅ Android](https://nimotecode.com/docs/local-linux) | [◐ Unix tools](https://docs.blink.sh/advanced/unix-roundup) | — | [✅ Android](https://docs.acode.app/user-guide/terminal) | — | — |
-| Graphical Git operations | [✅](https://nimotecode.com/docs/source-control) | [◐](https://docs.blink.sh/advanced/code) | — | [◐](https://acode.app/llms.txt) | [✅](https://docs.replit.com/features/workspace-tools/git-interface) | [✅](https://docs.github.com/en/codespaces/developing-in-a-codespace/using-source-control-in-your-codespace) |
-| LSP code intelligence | [✅](https://nimotecode.com/docs/lsp) | [◐](https://docs.blink.sh/advanced/code) | — | [✅](https://docs.acode.app/user-guide/language-servers) | [◐](https://docs.replit.com/features/platforms/mobile-app) | [✅](https://docs.github.com/en/codespaces/developing-in-a-codespace/developing-in-a-codespace) |
-| AI coding | [✅](https://nimotecode.com/docs/ai) | [◐](https://docs.blink.sh/advanced/code) | [◐](https://www.termius.com/pricing) | [◐ Official plugin](https://docs.acode.app/tutorials/ai-agent) | [✅](https://docs.replit.com/features/platforms/mobile-app) | [◐](https://docs.github.com/en/codespaces/developing-in-a-codespace/developing-in-a-codespace) |
-| VS Code extensions | — | [◐](https://docs.blink.sh/advanced/code) | — | — | — | [✅](https://docs.github.com/en/codespaces/developing-in-a-codespace/developing-in-a-codespace) |
-| Develop on your own computer | [✅](https://nimotecode.com/docs/ssh) | [✅](https://docs.blink.sh/advanced/code) | [◐](https://www.termius.com/) | [◐](https://github.com/Acode-Foundation/Acode#readme) | — | — |
-| Persistent terminal sessions | [✅ Host](https://nimotecode.com/docs/host) | [◐](https://docs.blink.sh/advanced/advanced-mosh) | [◐](https://www.termius.com/pricing) | [◐](https://docs.acode.app/user-guide/terminal) | [◐](https://docs.replit.com/features/workspace-tools/ssh) | [◐](https://docs.github.com/en/codespaces/developing-in-a-codespace/developing-in-a-codespace) |
-| Agent session recovery and approvals | [✅ Host](https://nimotecode.com/docs/host) | [◐](https://docs.blink.sh/advanced/code) | — | [◐](https://docs.acode.app/tutorials/ai-agent) | [◐](https://docs.replit.com/features/agent/task-lifecycle) | [◐](https://docs.github.com/en/codespaces/developing-in-a-codespace/developing-in-a-codespace) |
-| Project task inbox | [✅ Host](https://nimotecode.com/docs/host) | — | — | — | [◐](https://docs.replit.com/features/agent/task-lifecycle) | [◐](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent) |
+Replit documents mobile project editing, a Git pane and Agent task review. Its SSH documentation describes connecting into a Replit cloud app, rather than a mobile SSH client for your own computer. Mobile LSP coverage, persistent terminal processes and structured Agent recovery with approvals were not confirmed. Its task board is explicitly documented, including mobile access through the Tasks pane. Codespaces is a cloud development environment accessed through a browser or VS Code; phone browser availability does not promise a native mobile app or identical usability. Copilot requires a separate extension and access. Codespaces persistence applies only to an active environment: idle timeout and the documented maximum lifetime stop processes. A cloud shell is not a native SSH client, and Copilot task management is not credited as a Codespaces-native inbox or Agent recovery feature.
 
-### Requirements and interpretation
+[NimoteCode access boundaries](https://nimotecode.com/pro)
 
-NimoteCode is checked against 2.4.1 and the current Host documentation. NimoteHost remains a developer preview: recovery, approvals and Task Inbox depend on the Host version, configuration and compatible Agent. The computer, Host and managed process must stay running; a Host or OS restart does not restore the original process. Local Linux requires supported Android hardware and Pro; LSP needs a configured server and Pro, and Git write operations need Pro. See Free and Pro for access boundaries.
+</details>
 
-Blink Code integrates VS Code services; language tools, extensions, Git and Agent workflows depend on the connected environment. Its local Unix commands do not constitute a full Linux environment. Mosh roaming and tmux reattachment have different requirements from structured Agent recovery.
-
-Acode documents Android Alpine Linux and native LSP integration; language servers still need enabling or installation. Its official AI Agent is a separate plugin with provider setup, saved chats and approvals. iPhone/iPad is marked Coming soon with a beta entry, rather than a confirmed general release.
-
-Replit documents mobile project editing, a Git pane and Agent task review. Its SSH documentation describes connecting into a Replit cloud app, rather than a mobile SSH client for your own computer. Mobile LSP coverage was not confirmed. Codespaces is a cloud development environment accessed through a browser or VS Code; phone browser availability does not promise a native mobile app or identical usability. Copilot and its task workflows require separate access and do not constitute a native Codespaces task inbox.
-
-[NimoteCode access boundaries](https://nimotecode.com/pro) · [Host requirements](https://nimotecode.com/docs/host) · [Acode iOS availability](https://acode.app/ai-coding-ios) · [Replit SSH direction](https://docs.replit.com/features/workspace-tools/ssh)
-
-### Continuing work from a phone
+## Continuing work from a phone
 
 | Workflow | Typical SSH setup | NimoteCode + Host |
 | --- | --- | --- |
@@ -60,9 +38,10 @@ Replit documents mobile project editing, a Git pane and Agent task review. Its S
 
 The SSH workflow table describes a typical terminal-led setup, not every feature of Blink Shell or Termius. Remote development and AI coding are not exclusive to NimoteCode. The combination to evaluate is running work on your own computer while using your phone to inspect code, manage terminals, recover compatible Agent sessions and handle approvals.
 
-### Competitor strengths and product priorities
+<details class="major-comparison-details">
+<summary>Competitor strengths and product priorities</summary>
 
-The following priorities are the NimoteCode team’s product judgments, not measured market shares or performance rankings. Feature claims can be checked using the sources above.
+These priorities are product judgments by the NimoteCode team, not measured market shares or performance rankings.
 
 | Alternative | Strength | NimoteCode focus | Priority |
 | --- | --- | --- | --- |
@@ -71,6 +50,8 @@ The following priorities are the NimoteCode team’s product judgments, not meas
 | Termius | Host management, sync, SFTP, Mosh and team access | Simplify connection setup and continuing real project work | High |
 | GitHub Codespaces | Hosted development environment and VS Code ecosystem | Show development on the user’s existing computer and toolchain | Medium |
 | Replit | AI app creation, hosting and publishing | Focus on continuing existing projects with review and approvals | Medium |
+
+</details>
 <!-- major-comparison:end -->
 
 ## Historical supplement: specialized SSH and Agent tools

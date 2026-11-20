@@ -3,7 +3,7 @@ import { readFileSync, existsSync } from 'node:fs'
 import { promisify } from 'node:util'
 import { execFile } from 'node:child_process'
 import { accessNotes, competitors, featureRows, REVIEW_DATE, statusLabels } from '../docs/.vitepress/theme/data/mobileDevelopmentCompetitors.ts'
-import { products as majorCompetitors, reviewedAt } from '../docs/.vitepress/theme/data/majorCompetitors.mjs'
+import { products as majorCompetitors, rows as majorRows, reviewedAtUtc } from '../docs/.vitepress/theme/data/majorCompetitors.mjs'
 
 const official = {
   nimotecode: ['nimotecode.com'], termius: ['termius.com'], 'blink-shell': ['docs.blink.sh','github.com'],
@@ -11,6 +11,7 @@ const official = {
 }
 const positive = new Set(['Native','Integrated','CLI-only','Conditional'])
 const urls = new Set()
+for (const [, cells] of majorRows) for (const cell of cells) if (cell.url) urls.add(cell.url)
 assert.equal(competitors.length, 7)
 assert.equal(new Set(featureRows.map(row=>row.key)).size, featureRows.length)
 for (const product of competitors) {
@@ -49,8 +50,8 @@ for (const locale of ['','zh/']) {
   assert.ok(existsSync(path), `${path}: build first`)
   const html = readFileSync(path,'utf8')
   for (const [name] of majorCompetitors) assert.ok(html.includes(name), `${path}: missing major alternative ${name}`)
-  assert.ok(html.includes(`${reviewedAt} (UTC)`), `${path}: missing current review date`)
-  assert.ok(html.includes('Task Inbox') && html.includes('Beta'), `${path}: missing Host workflow or Acode availability caveat`)
+  assert.ok(html.includes(`datetime="${reviewedAtUtc}"`), `${path}: missing current review timestamp`)
+  assert.ok(html.includes('Task Inbox') && (html.includes('Coming soon') || html.includes('待发布')), `${path}: missing Host workflow or Acode availability caveat`)
   for (const product of competitors) assert.ok(html.includes(product.name), `${path}: missing ${product.name}`)
   assert.ok(html.includes('Evidence ↗') || html.includes('官方依据 ↗'), `${path}: missing SSR evidence links`)
   assert.ok(html.includes('Git / diff interface') || html.includes('Git / Diff 图形界面'), `${path}: missing matrix`)

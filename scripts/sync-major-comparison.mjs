@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from 'node:fs'
-import { reviewedAt, products, rows, strengths, workflows, notes } from '../docs/.vitepress/theme/data/majorCompetitors.mjs'
+import { reviewedAtUtc, products, rows, strengths, workflows, notes } from '../docs/.vitepress/theme/data/majorCompetitors.mjs'
 
 const start = '<!-- major-comparison:start -->'
 const end = '<!-- major-comparison:end -->'
@@ -15,7 +15,7 @@ for (const lang of ['en', 'zh']) {
   const content = `${start}
 ## ${heading}
 
-${choose('Evidence reviewed', '资料核实')}：**${reviewedAt} (UTC)** · ${choose('Official documentation, websites and public release information', '依据官方文档、官网与公开发布信息')}。
+${choose('Evidence reviewed', '资料核实')}：**${reviewedAtUtc.replace('T', ' ').replace('Z', '')} (UTC)** · ${choose('Official documentation, websites and public release information', '依据官方文档、官网与公开发布信息')}。
 
 **${choose('Run development tasks on your own computer; use your phone to inspect code, manage terminals, recover compatible AI sessions and handle approvals.', '在自己的电脑上运行开发任务，在手机上查看代码、管理终端、恢复兼容 AI 会话并处理审批。')}**
 
@@ -44,12 +44,43 @@ ${choose('The following priorities are the NimoteCode team’s product judgments
 ${table([choose('Alternative', '竞品'), choose('Strength', '主要竞争点'), choose('NimoteCode focus', 'NimoteCode 改进重点'), choose('Priority', '优先级')], strengths.map(([name, ...values]) => [name, ...values.map(value => value[lang])]))}
 ${end}`
 
+  // The README keeps its portable Markdown matrix. The website uses the same
+  // evidence in a responsive, interactive view instead of a six-product table.
+  const siteContent = `${start}
+<ProductComparison full />
+
+<details class="major-comparison-details">
+<summary>${choose('Product-specific requirements and evidence', '各产品的使用条件与依据')}</summary>
+
+${notes.slice(1, 5).map(note => note[lang]).join('\n\n')}
+
+[${choose('NimoteCode access boundaries', 'NimoteCode 免费与 Pro 权限')}](https://nimotecode.com${prefix}/pro)
+
+</details>
+
+## ${choose('Continuing work from a phone', '从手机继续开发的差异')}
+
+${table([choose('Workflow', '使用场景'), choose('Typical SSH setup', '典型 SSH 工作流'), 'NimoteCode + Host'], workflows.map(row => row.map(value => value[lang])))}
+
+${notes[5][lang]}
+
+<details class="major-comparison-details">
+<summary>${choose('Competitor strengths and product priorities', '竞品优势与产品改进优先级')}</summary>
+
+${choose('These priorities are product judgments by the NimoteCode team, not measured market shares or performance rankings.', '以下优先级是 NimoteCode 团队的产品判断，不是市场份额或性能排名。')}
+
+${table([choose('Alternative', '竞品'), choose('Strength', '主要竞争点'), choose('NimoteCode focus', 'NimoteCode 改进重点'), choose('Priority', '优先级')], strengths.map(([name, ...values]) => [name, ...values.map(value => value[lang])]))}
+
+</details>
+${end}`
+
   for (const path of [zh ? 'README.zh-CN.md' : 'README.md', `docs/${zh ? 'zh/' : ''}compare/mobile-ai-development-tools.md`]) {
     const original = readFileSync(path, 'utf8')
+    const block = path.startsWith('README') ? content : siteContent
     let updated
     if (original.includes(start)) {
       if (!original.includes(end)) throw new Error(`${path}: missing comparison end marker`)
-      updated = original.slice(0, original.indexOf(start)) + content + original.slice(original.indexOf(end) + end.length)
+      updated = original.slice(0, original.indexOf(start)) + block + original.slice(original.indexOf(end) + end.length)
     } else if (path.startsWith('README')) {
       const anchor = zh ? '## 文档与实用指南' : '## Guides and documentation'
       if (!original.includes(anchor)) throw new Error(`${path}: missing insertion point`)

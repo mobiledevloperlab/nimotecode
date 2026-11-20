@@ -16,6 +16,7 @@ import HomeToolComparison from './components/HomeToolComparison.vue'
 import LatestReleaseLink from './components/LatestReleaseLink.vue'
 import ReleaseArchive from './components/ReleaseArchive.vue'
 import MobileDevToolComparison from './components/MobileDevToolComparison.vue'
+import ProductComparison from './components/ProductComparison.vue'
 import PricingFeatureSystem from './components/PricingFeatureSystem.vue'
 import SocialProof from './components/SocialProof.vue'
 import LocalizedLandingPage from './components/LocalizedLandingPage.vue'
@@ -50,6 +51,7 @@ const theme: Theme = {
     app.component('LatestReleaseLink', LatestReleaseLink)
     app.component('ReleaseArchive', ReleaseArchive)
     app.component('MobileDevToolComparison', MobileDevToolComparison)
+    app.component('ProductComparison', ProductComparison)
     app.component('PricingFeatureSystem', PricingFeatureSystem)
     app.component('SocialProof', SocialProof)
     app.component('LocalizedLandingPage', LocalizedLandingPage)

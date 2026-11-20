@@ -3,6 +3,7 @@ import { computed, nextTick, ref } from 'vue'
 import { useData, withBase } from 'vitepress'
 import { screenshotUrl } from '../screenshot-assets'
 import MockIcon from './MockIcon.vue'
+import ProductComparison from './ProductComparison.vue'
 import translations from '../i18n/product.json'
 import '../styles/product-features.css'
 
@@ -102,6 +103,8 @@ function navigateViews(event: KeyboardEvent) {
         <figcaption>{{ copy.host.caption }}</figcaption>
       </figure>
     </section>
+
+    <ProductComparison />
 
     <section class="features-extensions" aria-labelledby="features-extensions-title">
       <h2 id="features-extensions-title">{{ copy.extensions }}</h2>
