@@ -21,7 +21,7 @@ description: "アカウントとサブスクリプションの設定、操作手
 
 NimoteCode 2.5.0 で [SSH 永続ターミナル](/ja/docs/terminal#persistent-ssh-terminal) を作成または再開するには、Pro と tmux を導入した対応ホストが必要です。ネイティブデスクトップ版では Pro が標準で有効です。
 
-ローカルと SSH、編集、基本ターミナル、Git レビュー、AI Chat、基本 LSP、ターミナルベースのタスクは無料です。 AI Agent、Git と GitHub、複数ターミナル、Host、Docker、高度な言語ツール、SSH ファイル操作を利用できます。購入可否と価格はアプリで確認してください。
+モバイルの Nimote Connect による管理対象の直接接続とリレーには Pro が必要です。通常の SSH、個人用 Tailscale、デスクトップ正式版の Nimote Connect は無料です。
 
 [無料版と Pro](/ja/pro)をご覧ください。
 

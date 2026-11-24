@@ -9,7 +9,7 @@ description: "スマートフォンからダウンロードする場合も、Nim
 
 ## 現在の配布対象
 
-NimoteHost 2.4.0 の配布対象です。ネイティブ環境とスマートフォン／Agent の完全な実機検証は未完了です。選択したリリースの添付ファイルを確認してください。
+NimoteHost Community 2.5.0 の配布対象です。ネイティブ環境とスマートフォン／Agent の完全な実機検証は未完了です。選択したリリースの添付ファイルを確認してください。
 
 | Host の OS／CPU | パッケージ表記 | CLI | デスクトップ |
 | --- | --- | --- | --- |
@@ -36,6 +36,6 @@ Linux／macOS では Host で `uname -m` を実行します。`x86_64` は `amd6
 
 バックグラウンド動作は Linux の systemd ユーザーマネージャー、macOS の GUI ログイン、Windows のログオンタスクを使います。使えない場合は CLI を前景で試せます。SSH は別途設定し、Host のスリープとネットワーク到達性を確認します。
 
-[ソースとビルド対象](https://github.com/mobiledevloperlab/nimotehost/blob/master/README.md) · [リリース](https://github.com/mobiledevloperlab/nimotehost/releases) · [未完了の検証](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/pending.md)
+[ソースとビルド対象](https://github.com/mobiledevloperlab/nimotehost/blob/master/README.md) · [リリース](https://github.com/mobiledevloperlab/nimotehost/releases/tag/community-v2.5.0) · [未完了の検証](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/pending.md)
 
 [ダウンロードと導入](/ja/docs/host/getting-started)

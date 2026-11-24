@@ -5,37 +5,35 @@ description: "NimoteHost：サービス管理と更新の手順と注意点。"
 
 # サービス管理と更新
 
-## 運用、更新、ローカルデータ
+Host を実行する PC で、SSH に使うアカウントから操作します。コマンドが PATH にない場合は下記の絶対パスを使用します。
 
-Community 版は Community のリリースから更新します。Nimote Connect 付属の Host は Connect で更新します。エディションを切り替える前に実行中の作業を終え、Community ガイドに従ってデータを保持してください。 [Community の更新ガイド](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)
+まず次のコマンドでサービスを確認します。以降のコマンドでも `nimotehost` の代わりに絶対パスを使用できます。
 
-NimoteCode 2.5.0 で **Host → リモート接続** を開き、状態を確認します。表示されるインストールまたは更新操作を使うか、Host のヘルプでインストール済みのバージョンを確認します。セッションを停止する場合は影響を確認して承認してください。
+```sh
+"$HOME/.local/share/nimotehost/nimotehost" deploy status
+```
+
+```powershell
+& "$env:LOCALAPPDATA\NimoteHost\nimotehost.exe" deploy status
+```
+
+## 状態の確認と起動
 
 | コマンド | 動作 |
 | --- | --- |
-| `nimotehost version` | 実行ファイルのバージョン。 |
-| `nimotehost status` | 稼働時は `running: true`。 |
-| `nimotehost capabilities` | プロトコル、機能、ツール。 |
-| `nimotehost agents` | インストール済み Agent のバージョン。 |
-| `nimotehost install` | 固定パスからユーザーサービスを登録・起動。 |
-| `nimotehost stop` | Host と実行中タスクを停止。 |
-| `nimotehost restart` | 導入済みサービスを再起動し、タスクを中断。 |
-| `nimotehost uninstall` | サービスを削除し、認証情報と記録を保持。 |
+| `nimotehost --version` | 導入済み CLI のバージョンを表示します。 |
+| `nimotehost deploy status` | サービスの状態を表示します。`"running": false` は停止中です。 |
+| `nimotehost deploy start` | 導入済みのバックグラウンドサービスを起動し、応答を待ちます。 |
+| `nimotehost deploy stop` | 実行中の作業がないときにサービスを停止します。 |
+| `nimotehost agents` | 稼働中の Host が見つけた Agent ツールを確認します。 |
+| `nimotehost tools refresh` | セッションを再起動せずツール検出を更新します。 |
 
-導入済み CLI を使います。PowerShell では `& "$env:LOCALAPPDATA\NimoteHost\nimotehost.exe" status` で呼び出せます。停止中の導入済みサービスは `restart` で起動し、`start` はフォアグラウンド動作です。`setup` は完全な配布物を検証・導入し、`install` は配置済みの実行ファイルを登録します。
+## Community の更新と削除
 
-Unix の SSH 環境は、接続先を置き換えて `ssh user@host 'command -v nimotehost && nimotehost status'` で確認できます。見つからなければ `ssh user@host '$HOME/.local/share/nimotehost/nimotehost status'` を試し、非対話 PATH を修正します。ツールのパス変更後は作業を完了させ、導入済み CLI で `stop`、修正済み環境で `install` を実行します。
+手動更新では実行中の作業を終え、対応する新しい配布物を検証し、展開先から `setup` を実行します。Connect 付属の Host は Connect から更新します。
 
-更新時は新しい完全な配布物を検証し、タスク完了と旧 GUI 終了後に同じユーザーでインストーラーを実行します。旧パッケージを保持し、活動中タスクの中断は拒否します。更新後はバージョン、状態、機能を確認します。ダウングレード前は状態をバックアップしてください。ファイル削除前に `uninstall` を実行します。記録と認証情報は残ります。
+`deploy uninstall` は停止可能なサービスと配布物を削除し、認証情報とセッション記録を保持します。展開したパッケージか、インストール先の外にある検証済みの実行ファイルから実行します。エディションの変更は [Community ガイド](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)を参照してください。
 
-| OS | 設定と状態の既定ディレクトリ |
-| --- | --- |
-| Linux | `~/.config/nimotehost` または `$XDG_CONFIG_HOME/nimotehost` |
-| macOS | `~/Library/Application Support/nimotehost` |
-| Windows | `%APPDATA%\nimotehost` |
-
-バックアップは Host 停止中に行い、所有者のみのアクセス権を維持し、認証情報や会話を公開しないでください。プロジェクトと Agent 提供元のデータは別途バックアップします。記録のコピーはプロセスを復元しません。
-
-診断は Linux で `systemctl --user status nimotehost.service` と `journalctl --user -u nimotehost.service -n 50 --no-pager`、macOS で `launchctl print gui/$(id -u)/com.nimotehost`、Windows で `schtasks.exe /Query /TN NimoteHost /V /FO LIST` を使います。ユーザーのログイン状態と、Linux ではログアウト後の lingering ポリシーも確認します。
+[詳細な導入と復旧](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/deployment.md)
 
 [概要](/ja/docs/host) · [トラブルシューティング](/ja/docs/host/troubleshooting)

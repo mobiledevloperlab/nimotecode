@@ -9,7 +9,7 @@ Choose the package for the **operating system and CPU architecture of the comput
 
 ## Current distribution targets
 
-As of NimoteHost 2.4.0. These are published build targets; complete native-platform and mobile/Agent acceptance is still pending. Check the files actually available in the selected release.
+As of NimoteHost Community 2.5.0. These are published build targets; complete native-platform and mobile/Agent acceptance is still pending. Check the files actually available in the selected release.
 
 | Host system / CPU | Package target | CLI | Desktop |
 | --- | --- | --- | --- |
@@ -36,6 +36,6 @@ No universal minimum RAM, disk space, or GPU requirement is published. Size the 
 
 For a background service, Linux uses a systemd user manager, macOS a logged-in GUI user, and Windows a user logon task. Without these, try foreground CLI operation. Configure SSH separately, keep the Host awake, and verify network access.
 
-[Source and build targets](https://github.com/mobiledevloperlab/nimotehost/blob/master/README.md) · [Releases](https://github.com/mobiledevloperlab/nimotehost/releases) · [Pending validation](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/pending.md)
+[Source and build targets](https://github.com/mobiledevloperlab/nimotehost/blob/master/README.md) · [Releases](https://github.com/mobiledevloperlab/nimotehost/releases/tag/community-v2.5.0) · [Pending validation](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/pending.md)
 
 [Download and installation](/docs/host/getting-started)

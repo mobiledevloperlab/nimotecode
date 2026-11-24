@@ -55,7 +55,9 @@ Explorer 提供本地、远程 SSH、Local Linux 和演示入口，Recent Histor
 
 已开启远程访问的兼容配对电脑还可以使用 Nimote Relay。公网接入仍在发布验收中，当前验证包括跨网络直连与线路切换。
 
-Relay 会显示从授权到 SSH 登录的各个阶段。配对电脑须在线并已开启远程访问。解除配对会撤销该设备的 Relay 访问。在 Host 服务可用时，同一配对电脑和 SSH 账号的已验证连接方式可打开同一个 Host 工作区。
+在 Android、iPhone 和 iPad 上，通过 Nimote Connect 使用托管直连或 Nimote 中继需要 Pro。普通 SSH、个人 Tailscale 和桌面正式版的 Nimote Connect 免费。
+
+Relay 会显示从授权到 SSH 登录的各个阶段。配对电脑须在线并已开启远程访问。解除配对会撤销该设备的 Relay 访问。使用 Host 模式时，请将手机和 Host 电脑接入同一局域网。
 
 ## 选择项目根目录
 

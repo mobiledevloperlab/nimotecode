@@ -1,6 +1,6 @@
 ---
 title: Android 本地 Linux 安装教程：运行第一条命令 | NimoteCode
-description: 安装 NimoteCode 本地 Linux，打开 /workspace，检查 Ubuntu 并运行第一条 Shell 命令。了解工具安装及停止、重置和删除环境的区别。
+description: "在兼容的 Android 手机上安装 Ubuntu、打开工作区并运行第一条命令。"
 ---
 
 # 安装 Android 本地 Linux
@@ -23,14 +23,10 @@ description: 安装 NimoteCode 本地 Linux，打开 /workspace，检查 Ubuntu 
 
 ```sh
 pwd
-uname -m
-cat /etc/os-release
 printf 'Hello from Local Linux\n'
 ```
 
-`pwd` 显示工作目录，`uname -m` 显示架构，`cat /etc/os-release` 确认 Ubuntu 发行版。最后一条命令应输出 `Hello from Local Linux`。
-
-环境共享 Android 内核；`uname -a` 显示的是该内核信息，不能用于判断 Ubuntu 发行版版本。
+如果打开的是 `/workspace`，终端会先显示该路径，再打印 `Hello from Local Linux`。
 
 <DocScreenshot file="local-linux-terminal-uname-a.jpg" caption="Local Linux 终端直接在设备上执行命令。" />
 

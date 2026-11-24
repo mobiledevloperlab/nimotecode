@@ -277,7 +277,7 @@
 /* Feature grid ----------------------------------------------------------- */
 .pf-feature-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
   margin-top: 3rem;
 }
@@ -312,39 +312,15 @@
   letter-spacing: -0.01em;
 }
 
-.pf-card-head span {
-  padding: 0.3rem 0.7rem;
-  border-radius: var(--nimote-radius-pill);
-  border: 1px solid var(--nimote-border);
-  font-size: 0.72rem;
-  font-weight: 600;
-  color: var(--nimote-text-secondary);
-  background: var(--nimote-bg-subtle);
-  white-space: nowrap;
-}
-
-.pf-feature-card ul {
+.pf-feature-card p {
   margin: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-.pf-feature-card li {
-  margin: 0.55rem 0;
   font-size: 0.92rem;
   line-height: 1.6;
   color: var(--nimote-text-secondary);
-  padding-left: 18px;
-  position: relative;
 }
-.pf-feature-card li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: var(--nimote-accent);
-  font-size: 0.8rem;
-  font-weight: 600;
+.pf-feature-card .pf-benefit-note {
+  margin-top: .75rem;
+  font-size: .85rem;
 }
 
 /* Light-mode overrides --------------------------------------------------- */
@@ -359,11 +335,6 @@ html:not(.dark) .pf-plan-card.is-featured {
   background: var(--nimote-card);
   box-shadow: var(--nimote-shadow-brand);
 }
-html:not(.dark) .pf-card-head span {
-  background: var(--nimote-bg-subtle);
-  border-color: var(--nimote-border);
-  color: var(--nimote-text-secondary);
-}
 html:not(.dark) .pf-billing-toggle button.active {
   background: var(--nimote-card);
   color: var(--nimote-text-primary);
@@ -371,16 +342,13 @@ html:not(.dark) .pf-billing-toggle button.active {
 }
 
 /* Responsive ------------------------------------------------------------- */
-@media (max-width: 900px) {
-  .pf-feature-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
 @media (max-width: 767px) {
 
-  .pf-pricing-grid {
+  .pf-pricing-grid, .pf-feature-grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .pf-pricing-grid {
     max-width: 480px;
   }
 
@@ -396,10 +364,6 @@ html:not(.dark) .pf-billing-toggle button.active {
 }
 
 @media (max-width: 480px) {
-  .pf-feature-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
   .pf-plan-card {
     padding: 1.7rem;
   }
@@ -409,11 +373,7 @@ html:not(.dark) .pf-billing-toggle button.active {
   }
 }
 
-/* Keep pricing and eligibility separate, with detailed capabilities on demand. */
+/* Keep pricing and eligibility separate from the benefit grid. */
 .pf-plan-card .home-page-btn { margin-top: 24px; }
 .pf-plan-card.is-featured .pf-price-row { flex-direction: column; gap: 10px; align-items: flex-start; }
 .pf-plan-card.is-featured .pf-price-row strong { font-size: clamp(1.5rem, 2.5vw, 2rem); line-height: 1.3; }
-.pf-feature-details { margin-block: 24px 48px; border: 1px solid var(--nimote-border); border-radius: var(--nimote-radius-md); }
-.pf-feature-details > summary { padding: 20px 24px; cursor: pointer; font-weight: 600; color: var(--nimote-text-primary); }
-.pf-feature-details > summary:focus-visible { outline: 2px solid var(--nimote-link); outline-offset: 4px; }
-.pf-feature-details .pf-features-section { padding: 32px 24px; }

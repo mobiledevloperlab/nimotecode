@@ -9,7 +9,7 @@ Elige el paquete según **el sistema operativo y la arquitectura del ordenador o
 
 ## Matriz de distribución actual
 
-Basado en NimoteHost 2.4.0. Son destinos de compilación; la validación completa en plataformas nativas y móvil/Agent sigue pendiente. Comprueba los archivos disponibles en cada versión.
+Basado en NimoteHost Community 2.5.0. Son destinos de compilación; la validación completa en plataformas nativas y móvil/Agent sigue pendiente. Comprueba los archivos disponibles en cada versión.
 
 | Sistema / CPU del Host | Destino del paquete | CLI | Escritorio |
 | --- | --- | --- | --- |
@@ -36,6 +36,6 @@ No se han publicado mínimos universales de RAM, disco o GPU. Calcula los recurs
 
 El servicio usa systemd de usuario en Linux, una sesión gráfica iniciada en macOS y una tarea de inicio de sesión en Windows. Si no están disponibles, prueba CLI en primer plano. Configura SSH por separado y mantén el Host activo y accesible por red.
 
-[Código y destinos de compilación](https://github.com/mobiledevloperlab/nimotehost/blob/master/README.md) · [Versiones](https://github.com/mobiledevloperlab/nimotehost/releases) · [Validación pendiente](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/pending.md)
+[Código y destinos de compilación](https://github.com/mobiledevloperlab/nimotehost/blob/master/README.md) · [Versiones](https://github.com/mobiledevloperlab/nimotehost/releases/tag/community-v2.5.0) · [Validación pendiente](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/pending.md)
 
 [Descarga e instalación](/es/docs/host/getting-started)

@@ -7,15 +7,17 @@ description: "Linux, macOS 또는 Windows 컴퓨터에 NimoteHost Community를 �
 
 Linux, macOS 또는 Windows 컴퓨터에 NimoteHost Community를 설치하세요. 연결을 끊어도 관리 중인 작업이 계속됩니다. NimoteCode에서 SSH로 다시 연결해 출력을 확인하고 에이전트 요청을 승인하거나 작업을 이어갈 수 있습니다.
 
+**NimoteHost는 현재 로컬 네트워크(LAN) 연결만 지원합니다.** 휴대폰과 Host 컴퓨터를 같은 LAN에 연결하고 컴퓨터의 로컬 주소로 SSH에 접속하세요.
+
 NimoteHost Community는 Apache-2.0으로 공개되며 CLI나 데스크톱 관리자로 독립 실행할 수 있습니다. 휴대폰에서 Host 모드를 사용하려면 호환되는 NimoteCode(2.4.1 이상)와 Pro가 필요합니다.
 
 ## NimoteHost Community 다운로드 {#download-nimotehost}
 
 <HostDownload />
 
-NimoteHost Community는 터미널, 작업, 호환 에이전트와 커뮤니티 플러그인을 관리합니다. GitHub Issue 전달은 Nimote Connect에 포함된 Host에서 제공됩니다. 업데이트나 에디션 변경은 [Community 가이드](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)를 참고하세요.
+[NimoteHost 설치](/ko/docs/host/getting-started) · [문제 해결](/ko/docs/host/troubleshooting)
 
-[하드웨어 및 패키지 선택](/ko/docs/host/compatibility) · [다운로드 및 설치](/ko/docs/host/getting-started) · [연결, 터미널 및 작업](/ko/docs/host/sessions) · [Agent 및 작업 수신함](/ko/docs/host/agents) · [서비스 관리 및 업데이트](/ko/docs/host/maintenance) · [문제 해결](/ko/docs/host/troubleshooting)
+NimoteHost Community는 터미널, 작업, 호환 에이전트와 커뮤니티 플러그인을 관리합니다. GitHub Issue 전달은 Nimote Connect에 포함된 Host에서 제공됩니다. 업데이트나 에디션 변경은 [Community 가이드](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)를 참고하세요.
 
 ## Host 기능과 사용 가치
 

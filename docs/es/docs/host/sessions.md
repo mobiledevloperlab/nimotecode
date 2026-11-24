@@ -7,6 +7,8 @@ description: "NimoteHost: guía de conexiones, terminales y tareas."
 
 Primero [instala e inicia NimoteHost](/es/docs/host/getting-started) en el ordenador y abre sesiones usando ese equipo y la misma cuenta SSH.
 
+**Por ahora, NimoteHost solo admite conexiones en la red local (LAN).** Conecta el móvil y el equipo que ejecuta Host a la misma red local y usa la dirección local del equipo para conectarte por SSH.
+
 ## Conectar desde el móvil {#_3-conectar-desde-el-movil}
 
 En NimoteCode 2.5.0, abre **Host → Conexiones remotas** y comprueba el estado. Usa la acción de instalación o actualización disponible, o consulta la versión instalada en la ayuda de Host. Revisa la interrupción de sesiones antes de autorizarla.

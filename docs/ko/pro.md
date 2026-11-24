@@ -1,16 +1,12 @@
 ---
 title: NimoteCode Pro | 고급 모바일 개발
-description: AI Agent, Git과 GitHub, 다중 터미널, Host, Docker, 고급 언어 도구, SSH 파일 작업을 이용하세요. 구매 가능 여부와 가격은 앱에서 확인하세요. Pro 14일 무료 체험. 종료 시 구독 또는 다른 유효한 Pro 권한이 없으면 무료 버전으로 전환됩니다.
+description: "NimoteCode 2.5.0의 무료 기능과 Pro 혜택을 비교하세요. 현재 플랜과 현지 가격은 앱에서 확인할 수 있습니다."
 pageClass: pricing-page
 ---
 
 # NimoteCode Pro
 
-하나의 모바일 작업 공간에서 AI Agent, Git과 GitHub, Host, Docker 및 고급 개발 도구를 사용하세요.
-
-NimoteCode 2.5.0에서 [지속 SSH 터미널](/ko/docs/terminal#persistent-ssh-terminal)을 만들거나 재개하려면 Pro와 tmux가 설치된 호환 호스트가 필요합니다. 네이티브 데스크톱 빌드는 기본으로 Pro를 적용합니다.
-
-2.5.0부터 Free에서 GitHub 탐색, 지원되는 SSH의 Docker 버전·컨테이너·이미지 개요, 중단점 관리를 이용할 수 있습니다. GitHub 복제·쓰기, Docker 리소스 관리, 디버깅 시작에는 Pro가 필요합니다.
+NimoteCode 2.5.0의 무료 기능과 Pro 혜택을 비교하세요. 현재 플랜과 현지 가격은 앱에서 확인할 수 있습니다.
 
 <PricingFeatureSystem lang="ko" mode="full" />
 

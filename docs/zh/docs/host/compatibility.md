@@ -9,7 +9,7 @@ description: "请按运行 NimoteHost 的电脑／服务器的操作系统和 CP
 
 ## 当前发行支持矩阵
 
-以 NimoteHost 2.4.0 为基准。下表表示当前发行构建目标；完整原生平台与手机／Agent 实机验收仍待完成。下载时以所选 Release 实际提供的附件为准。
+以 NimoteHost Community 2.5.0 为基准。下表表示当前发行构建目标；完整原生平台与手机／Agent 实机验收仍待完成。下载时以所选 Release 实际提供的附件为准。
 
 | Host 系统／CPU | 安装包标记 | CLI | 桌面版 |
 | --- | --- | --- | --- |
@@ -36,6 +36,6 @@ Linux／macOS：在 Host 上运行 `uname -m`。`x86_64` 对应 `amd64`；`aarch
 
 后台服务需要 Linux systemd 用户管理器、macOS 已登录的图形会话或 Windows 用户登录计划任务。缺少对应环境时可先以前台 CLI 试运行。SSH 需另外配置，主机应保持唤醒且网络可达。
 
-[源码与构建目标](https://github.com/mobiledevloperlab/nimotehost/blob/master/README.md) · [发行版本](https://github.com/mobiledevloperlab/nimotehost/releases) · [待完成验收](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/pending.md)
+[源码与构建目标](https://github.com/mobiledevloperlab/nimotehost/blob/master/README.md) · [发行版本](https://github.com/mobiledevloperlab/nimotehost/releases/tag/community-v2.5.0) · [待完成验收](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/pending.md)
 
 [下载与安装](/zh/docs/host/getting-started)

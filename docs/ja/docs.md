@@ -16,7 +16,7 @@ NimoteCode 2.5.0 では、[個人用 Tailscale でペアリング済みの PC �
 | 端末上のファイルを編集する | [ローカルと SSH のワークスペース](/ja/docs/ssh) | ローカルフォルダーはファイルへのアクセスを提供します。コマンド実行には SSH または Local Linux が必要です。 |
 | 既存のパソコンやサーバーを使う | [ローカルと SSH のワークスペース](/ja/docs/ssh) | SSH で接続し、リモートにあるプロジェクトとツールを使います。 |
 | 切断後もリモートタスクに戻る | [Host モード](/ja/docs/host) | パソコンに NimoteHost を導入し SSH で接続します。Host が動作中なら管理対象のプロセスを継続できます。 |
-| Android で Linux ツールを使う | [動作要件と互換性](/ja/docs/local-linux/compatibility) | 先に端末要件を確認してから導入します。対応 Android 端末のみで利用できます。 |
+| Android で Linux ツールを使う | [導入と初回実行](/ja/docs/local-linux/getting-started) | 先に端末要件を確認してから導入します。対応 Android 端末のみで利用できます。 |
 
 4つのアプリモードは操作画面を選び、ワークスペースはファイルとコマンドの場所を決めます。Host はパソコン側のサービスも必要です。モード選択は[クイックスタート](/ja/docs/quick-start)を参照してください。
 
@@ -60,15 +60,11 @@ NimoteCode 2.5.0 では、[個人用 Tailscale でペアリング済みの PC �
 
 ### Host モード
 
-[Host モード](/ja/docs/host)
-
-[ハードウェアとパッケージ選択](/ja/docs/host/compatibility) · [ダウンロードと導入](/ja/docs/host/getting-started) · [接続・ターミナル・タスク](/ja/docs/host/sessions) · [Agent とタスク受信箱](/ja/docs/host/agents) · [サービス管理と更新](/ja/docs/host/maintenance) · [トラブルシューティング](/ja/docs/host/troubleshooting)
+[Host モード](/ja/docs/host) · [NimoteHost を導入](/ja/docs/host/getting-started) · [トラブルシューティング](/ja/docs/host/troubleshooting)
 
 ### Android Local Linux
 
-[Android Local Linux](/ja/docs/local-linux)
-
-[動作要件と互換性](/ja/docs/local-linux/compatibility) · [導入と初回実行](/ja/docs/local-linux/getting-started) · [トラブルシューティング](/ja/docs/local-linux/troubleshooting)
+[Android Local Linux](/ja/docs/local-linux) · [導入と初回実行](/ja/docs/local-linux/getting-started) · [トラブルシューティング](/ja/docs/local-linux/troubleshooting)
 
 ### 設定とリファレンス
 

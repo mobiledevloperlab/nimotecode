@@ -5,17 +5,11 @@ description: 在 Android 手机上免 root 使用 Ubuntu、Bash、Git 和 SSH。
 
 # Android 本地 Linux
 
-Local Linux 将 Ubuntu 开发环境带到 Android 设备，无需 root。在 NimoteCode 中编辑文件、使用 Bash、Git 和 SSH，让代码与命令留在同一个工作区。
+在 Android 手机上的 Ubuntu 环境运行小脚本、使用 Git 和轻量开发工具。无需获取 Android Root 权限。
 
 [安装并运行第一条命令](/zh/docs/local-linux/getting-started)
 
-## 可以用来做什么
-
-- 在设备上运行 Shell 脚本和轻量项目任务。
-- 编辑文件，检查 Git 状态与代码差异。
-- 按项目需要安装语言工具，或选择可选的 [Linux Presets 工具集](/zh/docs/local-linux/presets)。
-
-已有服务器环境、Docker 工作负载或长时间构建，建议使用 [SSH 工作区](/zh/docs/ssh)。选择本地工具前，可先查看[兼容性与运行限制](/zh/docs/local-linux/compatibility)。
+需要 Docker、长期运行的服务，或已有电脑工具链时，请使用 [SSH 工作区](/zh/docs/ssh)。[本地 Linux 的限制](/zh/docs/local-linux/compatibility)
 
 <div id="local-linux-requirements"></div>
 

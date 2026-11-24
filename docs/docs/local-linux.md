@@ -5,17 +5,11 @@ description: Run an Ubuntu development environment on Android without root. Chec
 
 # Android Local Linux
 
-Local Linux brings an Ubuntu development environment to your Android device. Use Bash, Git and SSH alongside the NimoteCode editor, with no Android root required.
+Run small scripts, work with Git, and use lightweight development tools in Ubuntu on your Android device. Android root is unnecessary.
 
 [Install and run your first command](/docs/local-linux/getting-started)
 
-## What you can do
-
-- Run Shell scripts and lightweight project tasks on your device.
-- Edit files and review Git changes in the same workspace.
-- Add the language tools your project needs, or choose an optional [Linux Preset](/docs/local-linux/presets).
-
-For existing server environments, Docker workloads or long builds, use an [SSH workspace](/docs/ssh). See [compatibility and workload limits](/docs/local-linux/compatibility) before choosing local tools.
+If you need Docker, a long-running service, or an existing desktop toolchain, use an [SSH workspace](/docs/ssh). [Local Linux limits](/docs/local-linux/compatibility)
 
 <div id="local-linux-requirements"></div>
 

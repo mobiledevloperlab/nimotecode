@@ -16,7 +16,7 @@ In NimoteCode 2.5.0, you can [connect to a paired computer through personal Tail
 | Edit files on my device | [Local and SSH workspaces](/docs/ssh) | A local folder gives file access. Running project commands needs SSH or Local Linux. |
 | Use an existing computer or server | [Local and SSH workspaces](/docs/ssh) | Connect over SSH and use the project files and tools installed there. |
 | Return to remote tasks after disconnecting | [Host mode](/docs/host) | Install NimoteHost on the computer, then connect over SSH. Host keeps managed processes running while it remains active. |
-| Run Linux tools on Android | [Requirements and compatibility](/docs/local-linux/compatibility) | Check device compatibility before installing Local Linux. This environment is available on supported Android devices. |
+| Run Linux tools on Android | [Install and run a command](/docs/local-linux/getting-started) | Check device compatibility before installing Local Linux. This environment is available on supported Android devices. |
 
 The four app modes choose the interface; the workspace chooses where files and commands live. Host adds a service on your computer. See [Quick start](/docs/quick-start) for mode selection.
 
@@ -60,15 +60,11 @@ The four app modes choose the interface; the workspace chooses where files and c
 
 ### Host mode
 
-[Host mode](/docs/host)
-
-[Hardware and package selection](/docs/host/compatibility) · [Download and installation](/docs/host/getting-started) · [Connections, terminals and tasks](/docs/host/sessions) · [Agents and task inbox](/docs/host/agents) · [Service management and updates](/docs/host/maintenance) · [Troubleshooting](/docs/host/troubleshooting)
+[Host mode](/docs/host) · [Install NimoteHost](/docs/host/getting-started) · [Get help](/docs/host/troubleshooting)
 
 ### Android Local Linux
 
-[Android Local Linux](/docs/local-linux)
-
-[Requirements and compatibility](/docs/local-linux/compatibility) · [Installation and first run](/docs/local-linux/getting-started) · [Troubleshooting](/docs/local-linux/troubleshooting)
+[Android Local Linux](/docs/local-linux) · [Install and run a command](/docs/local-linux/getting-started) · [Get help](/docs/local-linux/troubleshooting)
 
 ### Settings and reference
 

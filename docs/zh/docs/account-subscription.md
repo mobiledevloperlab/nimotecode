@@ -21,7 +21,7 @@ description: "账户与订阅的配置、操作步骤与界面说明。"
 
 在 NimoteCode 2.5.0 中，创建或恢复 [SSH 持久终端](/zh/docs/terminal#persistent-ssh-terminal) 需要 Pro，以及安装了 tmux 的兼容主机。原生桌面版本默认启用 Pro。
 
-本地与 SSH 工作区、编辑器、基础终端、Git 状态与差异审查、AI Chat、基础 LSP 和基于终端的 Tasks 均可免费使用。 解锁 AI Agent、Git 与 GitHub、多终端、Host、Docker、进阶语言工具和 SSH 文件工作流。购买可用性与价格以应用为你的平台、账号和地区显示的内容为准。
+手机和平板通过 Nimote Connect 使用托管直连或 Nimote 中继需要 Pro。普通 SSH、个人 Tailscale 和桌面正式版的 Nimote Connect 免费。
 
 功能对比见[免费版与 Pro](/zh/pro)。
 

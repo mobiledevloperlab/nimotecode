@@ -1,16 +1,12 @@
 ---
 title: NimoteCode Pro | 移动开发进阶功能
-description: 解锁 AI Agent、Git 与 GitHub、多终端、Host、Docker、进阶语言工具和 SSH 文件工作流。购买可用性与价格以应用为你的平台、账号和地区显示的内容为准。 Pro 免费试用 14 天，到期如无订阅或其他有效 Pro 权益，自动回退免费版。
+description: "查看 NimoteCode 2.5.0 订阅页的免费功能与 Pro 权益。当前可选方案和本地价格以应用内显示为准。"
 pageClass: pricing-page
 ---
 
 # NimoteCode Pro
 
-在一个移动工作区中使用 AI Agent、Git 与 GitHub、Host、Docker 和进阶开发工具。
-
-在 NimoteCode 2.5.0 中，创建或恢复 [SSH 持久终端](/zh/docs/terminal#persistent-ssh-terminal) 需要 Pro，以及安装了 tmux 的兼容主机。原生桌面版本默认启用 Pro。
-
-在 2.5.0 中，Free 用户可以浏览 GitHub、通过受支持的 SSH 连接查看 Docker 版本和容器及镜像概览，并管理断点。GitHub 克隆或写入、管理 Docker 资源和启动调试均需 Pro。相关操作会显示权限标识。
+查看 NimoteCode 2.5.0 订阅页的免费功能与 Pro 权益。当前可选方案和本地价格以应用内显示为准。
 
 <PricingFeatureSystem lang="zh" mode="full" />
 

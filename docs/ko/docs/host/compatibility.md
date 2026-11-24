@@ -9,7 +9,7 @@ description: "휴대폰에서 다운로드하더라도 NimoteHost를 실행할 �
 
 ## 현재 배포 대상
 
-NimoteHost 2.4.0 배포 대상 기준입니다. 전체 네이티브 플랫폼과 휴대폰／Agent 실기기 검증은 아직 완료되지 않았습니다. 선택한 릴리스에 실제 제공되는 파일을 확인하세요.
+NimoteHost Community 2.5.0 배포 대상 기준입니다. 전체 네이티브 플랫폼과 휴대폰／Agent 실기기 검증은 아직 완료되지 않았습니다. 선택한 릴리스에 실제 제공되는 파일을 확인하세요.
 
 | Host 운영 체제／CPU | 패키지 표기 | CLI | 데스크톱 |
 | --- | --- | --- | --- |
@@ -36,6 +36,6 @@ Linux／macOS Host에서 `uname -m`을 실행하세요. `x86_64`는 `amd64`, `aa
 
 백그라운드 서비스는 Linux systemd 사용자 관리자, macOS GUI 로그인, Windows 사용자 로그온 작업을 사용합니다. 사용할 수 없으면 CLI를 포그라운드에서 실행하세요. SSH는 별도로 구성하고 Host를 깨어 있는 상태로 유지하며 네트워크 접근을 확인하세요.
 
-[소스 및 빌드 대상](https://github.com/mobiledevloperlab/nimotehost/blob/master/README.md) · [릴리스](https://github.com/mobiledevloperlab/nimotehost/releases) · [미완료 검증](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/pending.md)
+[소스 및 빌드 대상](https://github.com/mobiledevloperlab/nimotehost/blob/master/README.md) · [릴리스](https://github.com/mobiledevloperlab/nimotehost/releases/tag/community-v2.5.0) · [미완료 검증](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/pending.md)
 
 [다운로드 및 설치](/ko/docs/host/getting-started)

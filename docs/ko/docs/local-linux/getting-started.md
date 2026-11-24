@@ -1,6 +1,6 @@
 ---
 title: Android Local Linux 설치와 첫 명령 실행 | NimoteCode
-description: NimoteCode Local Linux를 설치하고 /workspace를 열어 Ubuntu와 명령 실행을 확인하세요. 도구 추가, 중지, 초기화, 삭제 방법도 안내합니다.
+description: "지원되는 Android에서 Ubuntu를 설치하고 작업 공간을 열어 첫 명령을 실행하세요."
 ---
 
 # Android Local Linux 설치
@@ -23,14 +23,10 @@ description: NimoteCode Local Linux를 설치하고 /workspace를 열어 Ubuntu�
 
 ```sh
 pwd
-uname -m
-cat /etc/os-release
 printf 'Hello from Local Linux\n'
 ```
 
-`pwd`는 작업 디렉터리, `uname -m`은 아키텍처, `cat /etc/os-release`는 Ubuntu 정보를 표시합니다. 마지막 명령은 `Hello from Local Linux`를 출력합니다.
-
-Android 커널을 공유하므로 `uname -a` 출력은 Ubuntu 배포판 버전을 나타내지 않습니다.
+`/workspace`를 열었다면 해당 경로에 이어 `Hello from Local Linux`가 출력됩니다.
 
 <DocScreenshot file="local-linux-terminal-uname-a.jpg" caption="Local Linux 터미널이 기기에서 직접 명령을 실행합니다." />
 

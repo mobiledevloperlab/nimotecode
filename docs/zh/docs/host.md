@@ -7,15 +7,17 @@ description: "在 Linux、macOS 或 Windows 电脑上安装 NimoteHost 社区版
 
 在 Linux、macOS 或 Windows 电脑上安装 NimoteHost 社区版。断开连接后，托管任务继续运行。通过 NimoteCode 以 SSH 重新连接，即可查看输出、处理 Agent 审批并接续工作。
 
+**NimoteHost 目前仅支持局域网连接。** **请将手机和运行 Host 的电脑接入同一局域网，并使用电脑的局域网地址通过 SSH 连接。
+
 NimoteHost 社区版采用 Apache-2.0 开源许可，可通过 CLI 或桌面管理器独立运行。在手机上使用 Host 模式需要兼容的 NimoteCode（2.4.1 或更新版本）与 Pro 权益。
 
 ## 下载 NimoteHost 社区版 {#download-nimotehost}
 
 <HostDownload />
 
-NimoteHost 社区版支持终端、任务、兼容的编程 Agent 和社区插件。GitHub Issue 派发由 Nimote Connect 随附的 Host 提供。升级或切换版本请参阅[社区版指南](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)。
+[安装 NimoteHost](/zh/docs/host/getting-started) · [故障排查](/zh/docs/host/troubleshooting)
 
-[硬件支持与版本选择](/zh/docs/host/compatibility) · [下载与安装](/zh/docs/host/getting-started) · [连接、终端与任务](/zh/docs/host/sessions) · [Agent 与任务收件箱](/zh/docs/host/agents) · [服务管理与升级](/zh/docs/host/maintenance) · [故障排查](/zh/docs/host/troubleshooting)
+NimoteHost 社区版支持终端、任务、兼容的编程 Agent 和社区插件。GitHub Issue 派发由 Nimote Connect 随附的 Host 提供。升级或切换版本请参阅[社区版指南](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)。
 
 ## Host 能做什么，能为你带来什么？
 
@@ -39,13 +41,6 @@ Host 和托管进程需要保持运行，Host 或系统重启不会恢复原进�
 **NimoteCode 是操作客户端，NimoteHost 在电脑上执行和托管工作。** NimoteHost 提供独立 CLI 和可选的桌面管理器，支持 Linux、macOS、Windows，以 Apache-2.0 许可证在 [NimoteHost 仓库](https://github.com/mobiledevloperlab/nimotehost)开放完整源码。NimoteCode 应用仍为商业闭源软件。Host 也可独立运行，通过 RPC、Go 客户端包和按需启用的 MCP 接口接入其他工具。
 
 连接关系是：**NimoteCode → 已有 SSH 连接 → NimoteHost → 项目工具与 Agent**。无需额外的 Nimote 账号、公网中继或 Host 入站端口；本地 API 需要认证，Host 凭据保留在电脑上。命令默认以 Host 所属的系统账号权限运行；需要隔离用户或访问范围时，应使用独立系统账号。
-
-| 选择哪种方式 | 适合什么情况 |
-| --- | --- |
-| 普通 SSH 工作区 | 编辑远程文件、使用终端和查看 Git，无需安装 Host。 |
-| Host 模式 | 手机断线后继续运行任务，回来查看输出，管理兼容 Agent 的结构化对话和审批。 |
-| Host CLI | 在服务器部署，或通过命令行管理后台服务，不需要桌面环境。 |
-| Host 桌面包 | 在电脑上管理服务、会话、设备、设置和诊断；已包含 CLI。 |
 
 截图来自早期的 Android 客户端与 Host 构建，包括 NimoteCode 2.3.1（Build 64）和本地构建的 Host 2.4.0。实际功能和界面取决于所连接的 Host、客户端版本和已配置的工具。
 

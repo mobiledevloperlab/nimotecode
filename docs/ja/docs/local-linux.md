@@ -5,17 +5,11 @@ description: Android で Ubuntu、Bash、Git、SSH を root 権限なしで利�
 
 # Android Local Linux
 
-Local Linux は、Android 端末で動く Ubuntu 開発環境です。Android の root 権限なしで、NimoteCode のエディターと Bash、Git、SSH を同じワークスペースで使えます。
+Android 上の Ubuntu で小さなスクリプトや Git、軽量な開発ツールを使えます。root 権限は不要です。
 
 [インストールして最初のコマンドを実行](/ja/docs/local-linux/getting-started)
 
-## できること
-
-- 端末上で Shell スクリプトや小規模なプロジェクト作業を実行。
-- ファイルを編集し、Git の状態と差分を確認。
-- 必要な言語ツールを追加、または任意の [Linux Presets](/ja/docs/local-linux/presets) を選択。
-
-既存のサーバー環境、Docker、長時間のビルドには [SSH ワークスペース](/ja/docs/ssh) を利用してください。ローカルツールの選択前に[互換性と制限](/ja/docs/local-linux/compatibility)を確認できます。
+Docker、長時間動くサービス、既存 PC のツールが必要なら、[SSH ワークスペース](/ja/docs/ssh)を使います。[Local Linux の制約](/ja/docs/local-linux/compatibility)
 
 <div id="local-linux-requirements"></div>
 

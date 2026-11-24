@@ -1,6 +1,6 @@
 ---
 title: Android Local Linux のインストールと最初のコマンド | NimoteCode
-description: NimoteCode Local Linux をインストールし、/workspace を開いて Ubuntu とコマンド実行を確認。ツール追加、停止、リセット、削除の手順も紹介します。
+description: "対応する Android に Ubuntu を導入し、ワークスペースを開いて最初のコマンドを実行します。"
 ---
 
 # Android Local Linux をインストール
@@ -23,14 +23,10 @@ description: NimoteCode Local Linux をインストールし、/workspace を開
 
 ```sh
 pwd
-uname -m
-cat /etc/os-release
 printf 'Hello from Local Linux\n'
 ```
 
-`pwd` は作業ディレクトリ、`uname -m` はアーキテクチャ、`cat /etc/os-release` は Ubuntu の情報を表示します。最後のコマンドは `Hello from Local Linux` を出力します。
-
-Android カーネルを共有するため、`uname -a` の出力は Ubuntu のディストリビューションバージョンを示しません。
+`/workspace` を開いていれば、作業ディレクトリに続いて `Hello from Local Linux` と表示されます。
 
 <DocScreenshot file="local-linux-terminal-uname-a.jpg" caption="Local Linux のターミナルで端末上のコマンドを実行します。" />
 

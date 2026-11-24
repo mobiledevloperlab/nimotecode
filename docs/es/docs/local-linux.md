@@ -5,17 +5,11 @@ description: Usa Ubuntu, Bash, Git y SSH en Android sin acceso root. Consulta lo
 
 # Local Linux en Android
 
-Local Linux lleva un entorno de desarrollo Ubuntu a tu dispositivo Android. Usa Bash, Git y SSH junto al editor de NimoteCode sin acceso root.
+Ejecuta scripts pequeños y usa Git y herramientas ligeras de desarrollo en Ubuntu desde Android. No necesitas acceso root.
 
 [Instalar y ejecutar el primer comando](/es/docs/local-linux/getting-started)
 
-## Qué puedes hacer
-
-- Ejecutar scripts de Shell y tareas ligeras del proyecto en el dispositivo.
-- Editar archivos y revisar el estado y los cambios de Git.
-- Añadir herramientas de lenguaje o elegir un [Linux Preset](/es/docs/local-linux/presets) opcional.
-
-Para servidores existentes, Docker o compilaciones largas, usa un [espacio de trabajo SSH](/es/docs/ssh). Consulta la [compatibilidad y los límites](/es/docs/local-linux/compatibility) antes de elegir herramientas locales.
+Si necesitas Docker, servicios de larga duración o herramientas ya instaladas en tu equipo, usa un [espacio de trabajo SSH](/es/docs/ssh). [Límites de Local Linux](/es/docs/local-linux/compatibility)
 
 <div id="local-linux-requirements"></div>
 

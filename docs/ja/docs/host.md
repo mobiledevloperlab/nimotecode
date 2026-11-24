@@ -7,15 +7,17 @@ description: "Linux、macOS、Windows に NimoteHost Community を導入でき�
 
 Linux、macOS、Windows に NimoteHost Community を導入できます。切断後も管理対象の作業は継続します。NimoteCode から SSH で再接続し、出力の確認やエージェントの承認、作業の再開ができます。
 
+**NimoteHost は現在、ローカルネットワーク（LAN）内の接続のみ対応しています。** **スマートフォンと Host を実行する PC を同じ LAN に接続し、PC のローカルアドレスを SSH に使用してください。
+
 NimoteHost Community は Apache-2.0 で公開され、CLI またはデスクトップマネージャーで単独で動作します。スマートフォンの Host モードには対応する NimoteCode（2.4.1 以降）と Pro が必要です。
 
 ## NimoteHost Community をダウンロード {#download-nimotehost}
 
 <HostDownload />
 
-NimoteHost Community はターミナル、タスク、対応エージェント、コミュニティプラグインを管理します。GitHub Issue の依頼には Nimote Connect 付属の Host を使用します。更新やエディションの切り替えは [Community ガイド](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)を参照してください。
+[NimoteHost を導入](/ja/docs/host/getting-started) · [トラブルシューティング](/ja/docs/host/troubleshooting)
 
-[ハードウェアとパッケージ選択](/ja/docs/host/compatibility) · [ダウンロードと導入](/ja/docs/host/getting-started) · [接続・ターミナル・タスク](/ja/docs/host/sessions) · [Agent とタスク受信箱](/ja/docs/host/agents) · [サービス管理と更新](/ja/docs/host/maintenance) · [トラブルシューティング](/ja/docs/host/troubleshooting)
+NimoteHost Community はターミナル、タスク、対応エージェント、コミュニティプラグインを管理します。GitHub Issue の依頼には Nimote Connect 付属の Host を使用します。更新やエディションの切り替えは [Community ガイド](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)を参照してください。
 
 ## Host の機能と得られること
 

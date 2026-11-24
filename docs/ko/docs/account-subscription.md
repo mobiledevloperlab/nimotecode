@@ -21,7 +21,7 @@ description: "계정 및 구독 설정, 사용 절차 및 화면 안내."
 
 NimoteCode 2.5.0에서 [지속 SSH 터미널](/ko/docs/terminal#persistent-ssh-terminal)을 만들거나 재개하려면 Pro와 tmux가 설치된 호환 호스트가 필요합니다. 네이티브 데스크톱 빌드는 기본으로 Pro를 적용합니다.
 
-로컬 및 SSH 작업 공간, 편집기, 기본 터미널, Git 검토, AI Chat, 기본 LSP, 터미널 기반 작업은 무료입니다. AI Agent, Git과 GitHub, 다중 터미널, Host, Docker, 고급 언어 도구, SSH 파일 작업을 이용하세요. 구매 가능 여부와 가격은 앱에서 확인하세요.
+모바일에서 Nimote Connect의 관리형 직접 연결과 릴레이를 사용하려면 Pro가 필요합니다. 일반 SSH, 개인 Tailscale, 데스크톱 정식 버전의 Nimote Connect는 무료입니다.
 
 [무료 버전과 Pro](/ko/pro)를 참고하세요.
 

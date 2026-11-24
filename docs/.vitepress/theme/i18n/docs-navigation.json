@@ -46,12 +46,12 @@
       "collapsed": true,
       "routes": [
         "host",
-        "host/compatibility",
         "host/getting-started",
         "host/sessions",
         "host/agents",
-        "host/maintenance",
-        "host/troubleshooting"
+        "host/troubleshooting",
+        "host/compatibility",
+        "host/maintenance"
       ]
     },
     {
@@ -59,10 +59,10 @@
       "collapsed": true,
       "routes": [
         "local-linux",
-        "local-linux/compatibility",
         "local-linux/getting-started",
         "local-linux/presets",
         "local-linux/troubleshooting",
+        "local-linux/compatibility",
         "local-linux/architecture",
         "local-linux/security-integrity",
         "local-linux-source"

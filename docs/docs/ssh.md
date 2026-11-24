@@ -55,7 +55,9 @@ For personal Tailscale, keep both devices on the same tailnet and enable SSH on 
 
 Nimote Relay is a separate option for compatible paired computers with remote access enabled. Public connectivity is undergoing release validation, including direct connections between networks and switching routes.
 
-Relay shows the stages from authorization through SSH sign-in. The paired computer needs to be online with remote access enabled. Unpairing revokes its Relay access. For verified routes to the same paired computer and SSH account, Host can reopen the same workspace when its service is available.
+On Android, iPhone, and iPad, managed direct and relay connections through Nimote Connect require Pro. Standard SSH, personal Tailscale, and Nimote Connect in desktop releases are free.
+
+Relay shows the stages from authorization through SSH sign-in. The paired computer needs to be online with remote access enabled. Unpairing revokes its Relay access. For Host mode, keep your phone and Host computer on the same LAN.
 
 ## Select the project root
 

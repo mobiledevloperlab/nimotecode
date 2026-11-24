@@ -7,6 +7,8 @@ description: "NimoteHost: connections, terminals and tasks."
 
 Install and start [NimoteHost](/docs/host/getting-started) first, then use the same computer and SSH account to open sessions.
 
+**NimoteHost currently supports local network (LAN) connections only.** Connect your phone and Host computer to the same local network and use the computer’s local address for SSH.
+
 ## Choose Host and your SSH connection {#_3-choose-host-and-your-ssh-connection}
 
 In NimoteCode 2.5.0, open **Host → Remote connections** to connect and check installation status. Use the setup or update action shown for the connection, or open Host help to check the installed version. Review any request to stop running sessions before continuing.

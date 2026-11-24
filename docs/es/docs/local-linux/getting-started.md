@@ -1,6 +1,6 @@
 ---
 title: Instalar Local Linux en Android y ejecutar comandos | NimoteCode
-description: Instala NimoteCode Local Linux, abre /workspace, comprueba Ubuntu y ejecuta un primer comando. Aprende a añadir herramientas, detener y restablecer el entorno.
+description: "Instala Ubuntu en un Android compatible, abre un espacio de trabajo y ejecuta tu primer comando."
 ---
 
 # Instalar Local Linux en Android
@@ -23,14 +23,10 @@ Abre [Terminal](/es/docs/terminal) en el mismo espacio y ejecuta:
 
 ```sh
 pwd
-uname -m
-cat /etc/os-release
 printf 'Hello from Local Linux\n'
 ```
 
-`pwd` muestra el directorio de trabajo; `uname -m`, la arquitectura; y `cat /etc/os-release`, la información de Ubuntu. El último comando debe imprimir `Hello from Local Linux`.
-
-El entorno comparte el kernel de Android. `uname -a` muestra ese kernel, no la versión de la distribución Ubuntu.
+Si abriste `/workspace`, el terminal mostrará esa ruta seguida de `Hello from Local Linux`.
 
 <DocScreenshot file="local-linux-terminal-uname-a.jpg" caption="El terminal de Local Linux ejecuta comandos directamente en el dispositivo." />
 

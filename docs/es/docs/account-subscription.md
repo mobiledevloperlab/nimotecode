@@ -21,7 +21,7 @@ En 2.5.0, Free permite explorar GitHub, ver el resumen por SSH de la versión de
 
 En NimoteCode 2.5.0, crear o reanudar un [terminal SSH persistente](/es/docs/terminal#persistent-ssh-terminal) requiere Pro y un host compatible con tmux instalado. Las compilaciones nativas de escritorio habilitan Pro de forma predeterminada.
 
-Los espacios locales y SSH, el editor, el terminal básico, la revisión Git, AI Chat, LSP básico y las tareas de terminal son gratuitos. Usa AI Agent, Git y GitHub, varios terminales, Host, Docker, herramientas de lenguaje avanzadas y operaciones SSH. Consulta disponibilidad de compra y precios en la app.
+La conexión directa gestionada y el relay de Nimote Connect requieren Pro en móviles y tabletas. SSH estándar, Tailscale personal y Nimote Connect en versiones de escritorio son gratuitos.
 
 Consulta [Gratis y Pro](/es/pro).
 

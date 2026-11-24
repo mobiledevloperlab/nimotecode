@@ -104,7 +104,7 @@
         "Leave it running",
         "Reconnect and review"
       ],
-      "note": "Requires NimoteCode 2.4.1+, a separate Host installation, and a computer that stays running.",
+      "note": "NimoteHost currently supports local network (LAN) connections only. Requires NimoteCode 2.4.1+, a separate Host installation, and a computer that stays running.",
       "link": "Explore NimoteHost",
       "caption": "Managed sessions on your computer"
     }
@@ -214,7 +214,7 @@
         "保持运行",
         "重连并检查结果"
       ],
-      "note": "需 NimoteCode 2.4.1+、单独安装 Host，且电脑保持运行。",
+      "note": "NimoteHost 目前仅支持局域网连接。需 NimoteCode 2.4.1+、单独安装 Host，且电脑保持运行。",
       "link": "了解 NimoteHost",
       "caption": "管理电脑上的会话"
     }
@@ -324,7 +324,7 @@
         "実行を継続",
         "再接続して確認"
       ],
-      "note": "NimoteCode 2.4.1 以降、Host の別途インストール、PC の継続稼働が必要です。",
+      "note": "NimoteHost は現在、ローカルネットワーク（LAN）内の接続のみ対応しています。NimoteCode 2.4.1 以降、Host の別途インストール、PC の継続稼働が必要です。",
       "link": "NimoteHost を詳しく見る",
       "caption": "PC 上のセッションを管理"
     }
@@ -434,7 +434,7 @@
         "실행 유지",
         "다시 연결해 확인"
       ],
-      "note": "NimoteCode 2.4.1 이상, 별도 Host 설치, 실행 중인 컴퓨터가 필요합니다.",
+      "note": "NimoteHost는 현재 로컬 네트워크(LAN) 연결만 지원합니다. NimoteCode 2.4.1 이상, 별도 Host 설치, 실행 중인 컴퓨터가 필요합니다.",
       "link": "NimoteHost 알아보기",
       "caption": "컴퓨터의 세션 관리"
     }
@@ -544,7 +544,7 @@
         "Déjala en ejecución",
         "Reconecta y revisa"
       ],
-      "note": "Requiere NimoteCode 2.4.1+, instalar Host por separado y mantener el ordenador encendido.",
+      "note": "Por ahora, NimoteHost solo admite conexiones en la red local (LAN). Requiere NimoteCode 2.4.1+, instalar Host por separado y mantener el ordenador encendido.",
       "link": "Explorar NimoteHost",
       "caption": "Sesiones gestionadas en tu ordenador"
     }

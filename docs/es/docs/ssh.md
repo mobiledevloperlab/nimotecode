@@ -55,7 +55,9 @@ Para usar Tailscale personal, conecta ambos dispositivos a la misma tailnet y ha
 
 Nimote Relay es una opción independiente para equipos compatibles vinculados con acceso remoto activado. La conectividad pública sigue en validación, incluidas las conexiones directas entre redes y los cambios de ruta.
 
-Relay muestra cada paso desde la autorización hasta el inicio de sesión SSH. El equipo debe estar en línea con acceso remoto activado. Desvincularlo revoca su acceso por Relay. Si Host está disponible, las rutas verificadas para el mismo equipo y usuario SSH pueden abrir el mismo espacio.
+En Android, iPhone y iPad, las conexiones directas gestionadas y el relay de Nimote Connect requieren Pro. SSH estándar, Tailscale personal y Nimote Connect en versiones de escritorio son gratuitos.
+
+Relay muestra cada paso desde la autorización hasta el inicio de sesión SSH. El equipo debe estar en línea con acceso remoto activado. Desvincularlo revoca su acceso por Relay. Para el modo Host, mantén el móvil y el equipo Host en la misma LAN.
 
 ## Seleccionar la raíz del proyecto
 

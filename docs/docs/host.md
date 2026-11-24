@@ -7,15 +7,17 @@ description: "Install NimoteHost Community on your Linux, macOS, or Windows comp
 
 Install NimoteHost Community on your Linux, macOS, or Windows computer. Managed work continues after you disconnect. Reconnect over SSH from NimoteCode to review output, respond to Agent approvals, and continue working.
 
+**NimoteHost currently supports local network (LAN) connections only.** Connect your phone and Host computer to the same local network and use the computer’s local address for SSH.
+
 NimoteHost Community is available under Apache-2.0 and runs independently through its CLI or desktop manager. Using Host mode from the phone requires a compatible NimoteCode build (2.4.1 or later) and Pro access.
 
 ## Download NimoteHost Community {#download-nimotehost}
 
 <HostDownload />
 
-NimoteHost Community manages terminals, tasks, compatible coding agents, and community plugins. GitHub Issue dispatch is available with the Host bundled with Nimote Connect. For upgrades and edition changes, see the [Community guide](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md).
+[Install NimoteHost](/docs/host/getting-started) · [Get help](/docs/host/troubleshooting)
 
-[Hardware and package selection](/docs/host/compatibility) · [Download and installation](/docs/host/getting-started) · [Connections, terminals and tasks](/docs/host/sessions) · [Agents and task inbox](/docs/host/agents) · [Service management and updates](/docs/host/maintenance) · [Troubleshooting](/docs/host/troubleshooting)
+NimoteHost Community manages terminals, tasks, compatible coding agents, and community plugins. GitHub Issue dispatch is available with the Host bundled with Nimote Connect. For upgrades and edition changes, see the [Community guide](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md).
 
 ## What Host brings to your workflow
 
@@ -39,13 +41,6 @@ Host and its processes must stay running. A Host or OS restart does not restore 
 **NimoteCode is the client; NimoteHost runs the work on your computer.** NimoteHost is a standalone CLI and optional desktop manager for Linux, macOS, and Windows. Its complete source is licensed under Apache-2.0 in the [NimoteHost repository](https://github.com/mobiledevloperlab/nimotehost). NimoteCode remains a commercial, closed-source app. Host can also run independently of NimoteCode, with RPC, a Go client package, and an opt-in MCP interface for other integrations.
 
 The connection is: **NimoteCode → your existing SSH connection → NimoteHost → project tools and Agents**. There is no additional Nimote account, public relay, or Host port to open. Host authenticates its local API and keeps its credentials on the computer. Commands run with the Host account's permissions; use separate OS accounts when you need separate users or trust boundaries.
-
-| Choose | When it fits |
-| --- | --- |
-| Ordinary SSH workspace | Edit remote files, use a terminal, and review Git without installing Host. |
-| Host mode | Leave tasks running after the client disconnects, return to their output, and manage compatible structured Agent conversations and approvals. |
-| Host CLI | Deploy on a server or manage the service from a shell. No desktop environment needed. |
-| Host desktop bundle | Manage service status, sessions, devices, settings, and diagnostics on the computer. Includes the CLI. |
 
 The screenshots show earlier Android and Host builds, including NimoteCode 2.3.1 (build 64) and a local Host 2.4.0 build. Controls vary with the connected Host, app version, and installed tools.
 

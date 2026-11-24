@@ -244,7 +244,7 @@
     "host": {
       "label": "NimoteHost Community · Apache-2.0 open source",
       "title": "Self-hosted terminals, tasks, and coding agents",
-      "intro": "Install NimoteHost Community on your Linux, macOS, or Windows computer. Managed work continues after you disconnect. Reconnect over SSH from NimoteCode to review output, respond to Agent approvals, and continue working.",
+      "intro": "NimoteHost currently supports local network (LAN) connections only. Install NimoteHost Community on your Linux, macOS, or Windows computer. Managed work continues after you disconnect. Reconnect over SSH from NimoteCode to review output, respond to Agent approvals, and continue working.",
       "benefits": [
         [
           "Keep work moving",
@@ -511,7 +511,7 @@
     "host": {
       "label": "NimoteHost 社区版 · Apache-2.0 开源",
       "title": "在自己的电脑上持续运行终端、任务与编程 Agent",
-      "intro": "在 Linux、macOS 或 Windows 电脑上安装 NimoteHost 社区版。断开连接后，托管任务继续运行。通过 NimoteCode 以 SSH 重新连接，即可查看输出、处理 Agent 审批并接续工作。",
+      "intro": "NimoteHost 目前仅支持局域网连接。在 Linux、macOS 或 Windows 电脑上安装 NimoteHost 社区版。断开连接后，托管任务继续运行。通过 NimoteCode 以 SSH 重新连接，即可查看输出、处理 Agent 审批并接续工作。",
       "benefits": [
         [
           "工作持续推进",
@@ -778,7 +778,7 @@
     "host": {
       "label": "NimoteHost Community · Apache-2.0 オープンソース",
       "title": "ターミナル、タスク、コーディングエージェントを自分の環境で実行",
-      "intro": "Linux、macOS、Windows に NimoteHost Community を導入できます。切断後も管理対象の作業は継続します。NimoteCode から SSH で再接続し、出力の確認やエージェントの承認、作業の再開ができます。",
+      "intro": "NimoteHost は現在、ローカルネットワーク（LAN）内の接続のみ対応しています。Linux、macOS、Windows に NimoteHost Community を導入できます。切断後も管理対象の作業は継続します。NimoteCode から SSH で再接続し、出力の確認やエージェントの承認、作業の再開ができます。",
       "benefits": [
         [
           "作業を継続",
@@ -1045,7 +1045,7 @@
     "host": {
       "label": "NimoteHost Community · Apache-2.0 오픈 소스",
       "title": "내 컴퓨터에서 실행하는 터미널, 작업 및 코딩 에이전트",
-      "intro": "Linux, macOS 또는 Windows 컴퓨터에 NimoteHost Community를 설치하세요. 연결을 끊어도 관리 중인 작업이 계속됩니다. NimoteCode에서 SSH로 다시 연결해 출력을 확인하고 에이전트 요청을 승인하거나 작업을 이어갈 수 있습니다.",
+      "intro": "NimoteHost는 현재 로컬 네트워크(LAN) 연결만 지원합니다. Linux, macOS 또는 Windows 컴퓨터에 NimoteHost Community를 설치하세요. 연결을 끊어도 관리 중인 작업이 계속됩니다. NimoteCode에서 SSH로 다시 연결해 출력을 확인하고 에이전트 요청을 승인하거나 작업을 이어갈 수 있습니다.",
       "benefits": [
         [
           "작업 지속",
@@ -1312,7 +1312,7 @@
     "host": {
       "label": "NimoteHost Community · Código abierto Apache-2.0",
       "title": "Terminales, tareas y agentes de programación en tu propio equipo",
-      "intro": "Instala NimoteHost Community en Linux, macOS o Windows. Las tareas gestionadas siguen ejecutándose al desconectar. Vuelve a conectarte por SSH desde NimoteCode para revisar la salida, responder a las solicitudes de aprobación y continuar el trabajo.",
+      "intro": "Por ahora, NimoteHost solo admite conexiones en la red local (LAN). Instala NimoteHost Community en Linux, macOS o Windows. Las tareas gestionadas siguen ejecutándose al desconectar. Vuelve a conectarte por SSH desde NimoteCode para revisar la salida, responder a las solicitudes de aprobación y continuar el trabajo.",
       "benefits": [
         [
           "Trabajo continuo",

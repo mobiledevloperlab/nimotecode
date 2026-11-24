@@ -1,6 +1,6 @@
 ---
 title: Install Android Local Linux and run your first command | NimoteCode
-description: Install NimoteCode Local Linux, open /workspace, check Ubuntu and run a first Shell command. Includes package setup and stop, reset and delete guidance.
+description: "Install Ubuntu on supported Android devices, open a workspace, and run your first shell command."
 ---
 
 # Install Android Local Linux
@@ -23,14 +23,10 @@ Open [Terminal](/docs/terminal) in that workspace and run:
 
 ```sh
 pwd
-uname -m
-cat /etc/os-release
 printf 'Hello from Local Linux\n'
 ```
 
-`pwd` shows the working directory; `uname -m` identifies the architecture; `cat /etc/os-release` identifies Ubuntu. The final command should print `Hello from Local Linux`.
-
-The environment shares Android's kernel. `uname -a` reports that kernel, not the Ubuntu distribution version.
+The terminal should print `/workspace` if you opened that directory, followed by `Hello from Local Linux`.
 
 <DocScreenshot file="local-linux-terminal-uname-a.jpg" caption="The Local Linux terminal runs commands directly on the device." />
 

@@ -7,6 +7,8 @@ description: "NimoteHost 连接、终端与任务说明与操作步骤。"
 
 先在电脑上[安装并启动 NimoteHost](/zh/docs/host/getting-started)，再使用同一台电脑、同一 SSH 账号连接并创建会话。
 
+**NimoteHost 目前仅支持局域网连接。** **请将手机和运行 Host 的电脑接入同一局域网，并使用电脑的局域网地址通过 SSH 连接。
+
 ## 在 NimoteCode 选择 Host 和 SSH 连接 {#_3-在-nimotecode-选择-host-和-ssh-连接}
 
 在 NimoteCode 2.5.0 中，从 **Host → 远程连接** 连接并检查安装状态。使用当前连接中显示的安装或更新入口，或打开 Host 帮助查看已安装版本。若需要停止正在运行的会话，请先核对影响再确认。

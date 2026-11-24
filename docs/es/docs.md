@@ -16,7 +16,7 @@ En NimoteCode 2.5.0 puedes [conectar con un equipo vinculado mediante Tailscale 
 | Editar archivos en mi dispositivo | [Espacios de trabajo locales y SSH](/es/docs/ssh) | Una carpeta local permite acceder a archivos. Ejecutar comandos del proyecto requiere SSH o Local Linux. |
 | Usar un ordenador o servidor existente | [Espacios de trabajo locales y SSH](/es/docs/ssh) | Conecta por SSH para usar el proyecto y las herramientas instaladas allí. |
 | Retomar tareas remotas tras desconectarme | [Modo Host](/es/docs/host) | Instala NimoteHost en el ordenador y conecta por SSH. Los procesos gestionados pueden continuar mientras Host siga activo. |
-| Ejecutar herramientas Linux en Android | [Requisitos y compatibilidad](/es/docs/local-linux/compatibility) | Comprueba los requisitos antes de instalar. Solo está disponible en dispositivos Android compatibles. |
+| Ejecutar herramientas Linux en Android | [Instalar y ejecutar el primer comando](/es/docs/local-linux/getting-started) | Comprueba los requisitos antes de instalar. Solo está disponible en dispositivos Android compatibles. |
 
 Los cuatro modos de la aplicación eligen la interfaz; el espacio determina dónde están los archivos y se ejecutan los comandos. Host requiere además un servicio en el ordenador. Consulta [Inicio rápido](/es/docs/quick-start) para elegir modo.
 
@@ -60,15 +60,11 @@ Los cuatro modos de la aplicación eligen la interfaz; el espacio determina dón
 
 ### Modo Host
 
-[Modo Host](/es/docs/host)
-
-[Hardware y selección de paquetes](/es/docs/host/compatibility) · [Descarga e instalación](/es/docs/host/getting-started) · [Conexiones, terminales y tareas](/es/docs/host/sessions) · [Agents y bandeja de tareas](/es/docs/host/agents) · [Gestión del servicio y actualizaciones](/es/docs/host/maintenance) · [Solución de problemas](/es/docs/host/troubleshooting)
+[Modo Host](/es/docs/host) · [Instalar NimoteHost](/es/docs/host/getting-started) · [Solucionar problemas](/es/docs/host/troubleshooting)
 
 ### Local Linux en Android
 
-[Local Linux en Android](/es/docs/local-linux)
-
-[Requisitos y compatibilidad](/es/docs/local-linux/compatibility) · [Instalación y primer uso](/es/docs/local-linux/getting-started) · [Solución de problemas](/es/docs/local-linux/troubleshooting)
+[Local Linux en Android](/es/docs/local-linux) · [Instalar y ejecutar el primer comando](/es/docs/local-linux/getting-started) · [Solucionar problemas](/es/docs/local-linux/troubleshooting)
 
 ### Ajustes y referencias
 

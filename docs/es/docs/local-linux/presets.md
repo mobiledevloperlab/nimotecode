@@ -9,7 +9,7 @@ Los conjuntos de herramientas opcionales se mantienen en el [repositorio Linux P
 
 ## Instalar un kit desde Android {#android-app}
 
-En NimoteCode 2.5.0, instala Ubuntu y abre los kits de desarrollo en la página de administración de Linux local. Revisa las dependencias y el espacio estimado antes de instalar. Usa la opción de comprobación para verificar los kits instalados. La aplicación verifica una revisión fija del catálogo y los hashes de sus scripts. Los kits de la comunidad aparecen cuando los responsables revisan y adoptan la revisión. Consulta el catálogo de la aplicación para ver los kits disponibles. El kit experimental de C++ sigue restringido.
+En NimoteCode 2.5.0, instala Ubuntu y abre **Development Toolkits** en la página de Local Linux. Elige un kit disponible, revisa las dependencias y el espacio estimado e instálalo. Usa la opción de comprobación para un kit ya instalado. La disponibilidad del kit experimental de C++ es limitada.
 
 ## Herramientas disponibles
 

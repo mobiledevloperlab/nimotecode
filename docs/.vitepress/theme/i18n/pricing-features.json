@@ -1,95 +1,58 @@
 {
   "en": {
     "features": {
-      "eyebrow": "Mobile development system",
-      "title": "Pro brings your mobile development workflow together.",
-      "summary": "Local and SSH workspaces, editing, a basic terminal, Git review, AI Chat, basic LSP and terminal-backed Tasks are free.",
+      "freeTitle": "Included for free",
+      "freeDescription": "Edit files, connect to SSH workspaces, use one terminal session with search, access basic LSP completion, diagnostics and navigation, use standalone AI chat with your own model service, and view Git diffs and commit history for free. Basic LSP requires a configured language server.",
+      "proTitle": "Premium Feature",
       "groups": [
         {
-          "name": "Foundation",
-          "badge": "Free",
-          "items": [
-            "Local and SSH workspaces",
-            "File editing and project management",
-            "Terminal access",
-            "AI Chat support",
-            "14 built-in provider templates and compatible custom endpoints",
-            "Create and run terminal-backed Tasks",
-            "Basic LSP diagnostics, completion and navigation",
-            "2.5.0: Browse GitHub, view the SSH Docker overview, and manage breakpoints"
-          ]
+          "id": "agent",
+          "name": "AI Agent",
+          "description": "Use the built-in Agent or external ACP agents to edit files, run commands and work on code. Capabilities depend on the selected agent. Configure your own model service or external agent; Pro does not include model usage, API credits or third-party subscriptions."
         },
         {
-          "name": "AI Agents",
-          "badge": "Pro",
-          "items": [
-            "Built-in Agent and compatible external ACP agents",
-            "Edit files, run commands and continue multi-step code tasks",
-            "Bring your own model service or external agent; usage is billed separately"
-          ]
+          "id": "git",
+          "name": "Git & GitHub",
+          "description": "Stage changes, commit, pull and push, manage branches and Stash, and publish changes from GitHub issues and pull requests. Repository permissions apply."
         },
         {
-          "name": "Git and GitHub",
-          "badge": "Pro",
-          "items": [
-            "Stage, commit, pull, push, branches and Stash",
-            "Open and clone repositories; manage issues and pull requests",
-            "View checks; available actions depend on repository permissions"
-          ]
+          "id": "environment",
+          "name": "Terminals & development environments",
+          "description": "Run tasks in multiple terminal sessions. Keep remote terminal tasks running in persistent sessions and reconnect to them later. Manage Docker, Compose and Dev Containers on SSH hosts. Run local Linux on supported Android devices.",
+          "note": "Persistent SSH terminals require tmux on a compatible host."
         },
         {
-          "name": "Terminals, Docker and Local Linux",
-          "badge": "Pro",
-          "items": [
-            "Multiple terminal sessions in supported workspaces",
-            "2.5.0: Create and resume persistent SSH terminals with tmux",
-            "Docker and Compose on SSH hosts: logs, statistics and container terminals",
-            "Dev Container workspaces; local Linux on supported Android devices"
-          ]
+          "id": "language",
+          "name": "Code actions & debugging",
+          "description": "Apply language-server code fixes and refactorings, use guided language-server installation, and run debug sessions. Capabilities depend on language server and debugger setup."
         },
         {
+          "id": "search-sync",
+          "name": "Project search & sync",
+          "description": "Search workspace code and manage SSH project synchronization and remote caches."
+        },
+        {
+          "id": "connect",
+          "name": "Nimote Connect · Pro",
+          "description": "Connect from your phone or tablet using a direct connection or Nimote’s relay. Standard SSH, personal Tailscale and Nimote Connect on desktop releases are free."
+        },
+        {
+          "id": "host",
           "name": "Host mode",
-          "badge": "Pro",
-          "items": [
-            "Remote terminals, tasks and AI sessions that can continue after disconnection",
-            "Requires SSH and the nimotehost service installed and running on your computer"
-          ]
+          "description": "Run remote terminals, tasks and AI sessions that can continue after disconnection. Host mode requires an SSH connection and the nimotehost service installed and running on the remote computer.",
+          "note": "NimoteHost currently supports local network (LAN) connections only."
         },
         {
-          "name": "Advanced language tools and debugging",
-          "badge": "Pro",
-          "items": [
-            "Language-server code fixes and refactorings",
-            "Guided language-server installation",
-            "Debug sessions with breakpoints, variables and stepping; requires configured tools"
-          ]
-        },
-        {
-          "name": "Search, sync and SSH files",
-          "badge": "Pro",
-          "items": [
-            "Remote content search, SSH project sync and remote caches",
-            "Batch upload and download; transfer entire folders",
-            "Copy and move multiple remote items; single-file transfers and basic operations are free"
-          ]
+          "id": "remote-files",
+          "name": "Remote file management",
+          "description": "Batch upload and download files, transfer entire folders, and copy or move multiple remote items over SSH. Single-file transfers and basic file operations remain free."
         }
-      ],
-      "detailsLabel": "Full feature comparison"
+      ]
     },
     "pricing": {
       "eyebrow": "Pricing",
-      "title": "Pro brings your mobile development workflow together.",
-      "summary": "Use AI Agents, Git and GitHub, parallel terminals, Host, Docker, advanced language tools and SSH file workflows. Purchase availability and prices are shown in the app for your platform, account and region.",
+      "summary": "See current offers in NimoteCode. Availability and prices depend on your platform, account, and region.",
       "trustLine": "No ads. No model credits. Store terms and regional availability apply.",
-      "billing": {
-        "label": "Billing period",
-        "monthly": "Monthly",
-        "yearly": "Yearly",
-        "save": "Save 17%",
-        "monthlyShort": "/month",
-        "yearlyShort": "/year",
-        "or": "or"
-      },
       "trial": {
         "title": "Try Pro free for 14 days",
         "body": "Claim your trial in the app. After 14 days, you return to Free unless you have a paid subscription or other valid Pro access, such as Early Access. Trial eligibility is shown in the app.",
@@ -101,35 +64,18 @@
           "name": "Free",
           "price": "$0",
           "period": "forever",
-          "summary": "Local and SSH workspaces, editing, a basic terminal, Git review, AI Chat, basic LSP and terminal-backed Tasks are free.",
           "cta": "Start free",
-          "link": "/download",
-          "features": [
-            "Local + SSH workspaces",
-            "File editing and project management",
-            "Terminal access",
-            "AI Chat with 14 provider templates or a compatible endpoint",
-            "Create and run terminal-backed Tasks",
-            "Basic LSP diagnostics, completion and navigation"
-          ]
+          "link": "/download"
         },
         {
           "name": "Pro",
           "badge": "Early Access",
           "price": "See store pricing",
           "period": "Varies by region",
-          "summary": "Use AI Agents, Git and GitHub, parallel terminals, Host, Docker, advanced language tools and SSH file workflows. Purchase availability and prices are shown in the app for your platform, account and region.",
+          "summary": "Use the Pro features below. Check the app for available plans and prices.",
           "cta": "Try Pro for 14 days",
           "link": "/download",
-          "highlight": true,
-          "features": [
-            "AI Agents: Built-in Agent and compatible external ACP agents",
-            "Git and GitHub: Stage, commit, pull, push, branches and Stash",
-            "Terminals, Docker and Local Linux: Multiple terminal sessions in supported workspaces",
-            "Host mode: Remote terminals, tasks and AI sessions that can continue after disconnection",
-            "Advanced language tools and debugging: Language-server code fixes and refactorings",
-            "Search, sync and SSH files: Remote content search, SSH project sync and remote caches"
-          ]
+          "highlight": true
         }
       ],
       "earlyAccessDeadline": "Early Access ends November 30, 2026 at 23:59:59 Beijing time (UTC+8)"
@@ -137,95 +83,58 @@
   },
   "zh": {
     "features": {
-      "eyebrow": "移动开发系统",
-      "title": "Pro，让移动开发工作流更完整。",
-      "summary": "本地与 SSH 工作区、编辑器、基础终端、Git 状态与差异审查、AI Chat、基础 LSP 和基于终端的 Tasks 均可免费使用。",
+      "freeTitle": "免费基础功能",
+      "freeDescription": "无需订阅即可编辑文件、连接 SSH 工作区、使用一个终端会话及终端内搜索，使用基础 LSP 补全、诊断和跳转，自备模型服务进行独立 AI 聊天，以及查看 Git 差异和提交历史。基础 LSP 需已配置可用的语言服务器。",
+      "proTitle": "专业版功能",
       "groups": [
         {
-          "name": "基础能力",
-          "badge": "免费",
-          "items": [
-            "本地与 SSH 工作区",
-            "文件编辑和项目管理",
-            "终端访问",
-            "AI Chat 支持",
-            "14 个内置 Provider 模板和兼容自定义端点",
-            "创建和运行基于终端的 Tasks",
-            "基础 LSP 诊断、补全与导航",
-            "2.5.0：浏览 GitHub、查看 SSH Docker 概览和管理断点"
-          ]
-        },
-        {
+          "id": "agent",
           "name": "AI Agent",
-          "badge": "Pro",
-          "items": [
-            "内置 Agent 与兼容的外部 ACP Agent",
-            "编辑文件、执行命令，并通过后续指令继续多步骤代码任务",
-            "需自备模型服务或外部 Agent；Pro 不包含模型用量、API 额度或第三方订阅"
-          ]
+          "description": "使用内置 Agent 或 ACP 外部 Agent 编辑文件、执行命令和处理代码任务，具体能力取决于所选 Agent。需自行配置模型服务或外部 Agent；Pro 不包含模型用量、API 额度或第三方订阅。"
         },
         {
+          "id": "git",
           "name": "Git 与 GitHub",
-          "badge": "Pro",
-          "items": [
-            "暂存、提交、拉取、推送，管理分支和 Stash",
-            "打开与克隆仓库，管理 Issue 和 Pull Request",
-            "查看检查状态；可用操作取决于仓库权限"
-          ]
+          "description": "暂存、提交、拉取与推送，管理分支和 Stash，并围绕 GitHub Issue 与 Pull Request 发布变更。可用操作取决于仓库权限。"
         },
         {
-          "name": "多终端、Docker 与本地 Linux",
-          "badge": "Pro",
-          "items": [
-            "在支持终端的工作区中并行管理多个会话",
-            "2.5.0：用 tmux 创建和恢复 SSH 持久终端",
-            "在 SSH 主机上管理 Docker 与 Compose，查看日志、统计并打开容器终端",
-            "创建 Dev Container 工作区；在受支持的 Android 设备上运行本地 Linux"
-          ]
+          "id": "environment",
+          "name": "终端与开发环境",
+          "description": "通过多个终端会话并行运行开发任务。 让远端任务在持久终端会话中继续运行，重新连接后可恢复会话。 在 SSH 主机上管理 Docker、Compose 与 Dev Containers。 在支持的 Android 设备上运行本地 Linux。",
+          "note": "SSH 持久终端需要兼容的主机，并已安装 tmux。"
         },
         {
+          "id": "language",
+          "name": "代码操作与调试",
+          "description": "使用语言服务提供的代码修复与重构、辅助安装语言服务，并运行调试会话。具体能力取决于语言服务器和调试器配置。"
+        },
+        {
+          "id": "search-sync",
+          "name": "项目搜索与同步",
+          "description": "搜索工作区代码；通过 SSH 项目同步与缓存管理提升远程开发效率。"
+        },
+        {
+          "id": "connect",
+          "name": "Nimote Connect · Pro",
+          "description": "手机和平板可通过 Nimote Connect 直连，或在需要时使用 Nimote 中继。普通 SSH、个人 Tailscale 和桌面正式版的 Nimote Connect 免费。"
+        },
+        {
+          "id": "host",
           "name": "Host 模式",
-          "badge": "Pro",
-          "items": [
-            "在远程电脑上运行终端、任务与 AI 会话，断开连接后仍可继续运行",
-            "需要通过 SSH 连接，并在远程电脑上安装和运行 nimotehost 服务"
-          ]
+          "description": "在远程电脑上运行终端、任务和 AI 会话，断开连接后仍可继续运行。Host 模式必须配合远程电脑上已安装并运行的 nimotehost 服务使用，并通过 SSH 连接。",
+          "note": "NimoteHost 目前仅支持局域网连接。"
         },
         {
-          "name": "进阶语言工具与调试",
-          "badge": "Pro",
-          "items": [
-            "使用语言服务器提供的代码修复与重构",
-            "辅助安装语言服务器",
-            "通过断点、变量检查和单步执行调试代码；需配置相应工具"
-          ]
-        },
-        {
-          "name": "搜索、同步与 SSH 文件",
-          "badge": "Pro",
-          "items": [
-            "远程内容搜索、SSH 项目同步与远程缓存",
-            "批量上传与下载文件、传输整个文件夹",
-            "批量复制和移动远程文件；单文件传输与基础文件操作免费"
-          ]
+          "id": "remote-files",
+          "name": "远程文件管理",
+          "description": "通过 SSH 批量上传与下载文件、传输整个文件夹，并批量复制和移动远程文件。单文件上传下载及基础文件操作免费。"
         }
-      ],
-      "detailsLabel": "展开完整功能对比"
+      ]
     },
     "pricing": {
       "eyebrow": "价格",
-      "title": "Pro，让移动开发工作流更完整。",
-      "summary": "解锁 AI Agent、Git 与 GitHub、多终端、Host、Docker、进阶语言工具和 SSH 文件工作流。购买可用性与价格以应用为你的平台、账号和地区显示的内容为准。",
+      "summary": "当前可购买的方案与价格以 NimoteCode 内显示为准，因平台、账号和地区而异。",
       "trustLine": "无广告、无模型额度；以商店条款和地区可用性为准。",
-      "billing": {
-        "label": "计费周期",
-        "monthly": "按月",
-        "yearly": "按年",
-        "save": "省 17%",
-        "monthlyShort": "/月",
-        "yearlyShort": "/年",
-        "or": "或"
-      },
       "trial": {
         "title": "免费试用 Pro 14 天",
         "body": "在应用内领取 14 天免费试用。到期后，如无付费订阅或 Early Access 等其他有效 Pro 权益，将自动回退到免费版，免费功能可继续使用。试用资格以应用内显示为准。",
@@ -237,35 +146,18 @@
           "name": "免费版",
           "price": "$0",
           "period": "永久",
-          "summary": "本地与 SSH 工作区、编辑器、基础终端、Git 状态与差异审查、AI Chat、基础 LSP 和基于终端的 Tasks 均可免费使用。",
           "cta": "免费开始",
-          "link": "/zh/download",
-          "features": [
-            "本地 + SSH 工作区",
-            "文件编辑和项目管理",
-            "终端访问",
-            "AI Chat 与 14 个 Provider 模板或兼容端点",
-            "创建和运行基于终端的 Tasks",
-            "基础 LSP 诊断、补全与导航"
-          ]
+          "link": "/zh/download"
         },
         {
           "name": "Pro",
           "badge": "Early Access",
           "price": "查看商店价格",
           "period": "依地区与账号显示",
-          "summary": "解锁 AI Agent、Git 与 GitHub、多终端、Host、Docker、进阶语言工具和 SSH 文件工作流。购买可用性与价格以应用为你的平台、账号和地区显示的内容为准。",
+          "summary": "使用下方的 Pro 功能。可选方案与价格请在应用内查看。",
           "cta": "试用 Pro 14 天",
           "link": "/zh/download",
-          "highlight": true,
-          "features": [
-            "AI Agent: 内置 Agent 与兼容的外部 ACP Agent",
-            "Git 与 GitHub: 暂存、提交、拉取、推送，管理分支和 Stash",
-            "多终端、Docker 与本地 Linux: 在支持终端的工作区中并行管理多个会话",
-            "Host 模式: 在远程电脑上运行终端、任务与 AI 会话，断开连接后仍可继续运行",
-            "进阶语言工具与调试: 使用语言服务器提供的代码修复与重构",
-            "搜索、同步与 SSH 文件: 远程内容搜索、SSH 项目同步与远程缓存"
-          ]
+          "highlight": true
         }
       ],
       "earlyAccessDeadline": "Early Access 截止：北京时间 2026 年 11 月 30 日 23:59:59"
@@ -273,96 +165,58 @@
   },
   "ja": {
     "features": {
-      "eyebrow": "モバイル開発システム",
-      "title": "Pro でモバイル開発のワークフローをつなぐ。",
-      "summary": "ローカルと SSH、編集、基本ターミナル、Git レビュー、AI Chat、基本 LSP、ターミナルベースのタスクは無料です。",
+      "freeTitle": "無料の基本機能",
+      "freeDescription": "ファイル編集、SSH 接続、検索付きのターミナルセッション 1 つ、基本的な LSP 補完・診断・ナビゲーション、自分のモデルサービスでの独立した AI チャット、Git 差分と履歴の閲覧は無料です。基本 LSP には設定済みの言語サーバーが必要です。",
+      "proTitle": "プレミアム機能",
       "groups": [
         {
-          "name": "基礎",
-          "badge": "無料",
-          "items": [
-            "ローカルと SSH ワークスペース",
-            "ファイル編集とプロジェクト管理",
-            "ターミナルアクセス",
-            "AI Chat サポート",
-            "持ち込み AI プロバイダ：OpenAI、Claude、Gemini",
-            "14 の組み込みプロバイダーテンプレートと互換エンドポイント",
-            "ターミナルベースのタスクを作成・実行",
-            "基本 LSP 診断、補完、ナビゲーション",
-            "2.5.0：GitHub の閲覧、SSH 経由の Docker 概要、ブレークポイント管理"
-          ]
+          "id": "agent",
+          "name": "AI エージェント",
+          "description": "内蔵 Agent または外部 ACP Agent でファイル編集、コマンド実行、コードの作業を行えます。機能は選択した Agent によって異なります。モデルサービスや外部 Agent はご自身で設定してください。Pro にモデル使用量、API クレジット、他社のサブスクリプションは含まれません。"
         },
         {
-          "name": "AI Agent",
-          "badge": "Pro",
-          "items": [
-            "内蔵 Agent と互換 ACP Agent",
-            "ファイル編集、コマンド実行、追加指示による複数ステップの作業",
-            "モデルサービスや外部 Agent は各自で設定。利用料は別途発生"
-          ]
-        },
-        {
+          "id": "git",
           "name": "Git と GitHub",
-          "badge": "Pro",
-          "items": [
-            "ステージ、コミット、pull、push、ブランチ、Stash",
-            "リポジトリの閲覧・クローン、Issue、Pull Request、チェック",
-            "操作はリポジトリの権限に依存"
-          ]
+          "description": "ステージング、コミット、プル、プッシュ、ブランチと Stash の管理に加え、GitHub Issue と Pull Request に関連する変更を公開できます。リポジトリの権限が適用されます。"
         },
         {
-          "name": "ターミナル、Docker、Local Linux",
-          "badge": "Pro",
-          "items": [
-            "対応ワークスペースで複数セッションを実行",
-            "2.5.0：tmux を使う SSH 永続ターミナルの作成と再開",
-            "SSH 上の Docker・Compose、ログ、統計、コンテナターミナル",
-            "Dev Container と対応 Android 端末での Local Linux"
-          ]
+          "id": "environment",
+          "name": "ターミナルと開発環境",
+          "description": "複数のターミナルセッションでタスクを並行実行。 永続セッションでリモート端末のタスクを実行し続け、あとから再接続できます。 SSH ホストで Docker、Compose、Dev Containers を管理。 対応する Android 端末でローカル Linux を実行。",
+          "note": "永続 SSH ターミナルには tmux を導入した対応ホストが必要です。"
         },
         {
+          "id": "language",
+          "name": "コードアクションとデバッグ",
+          "description": "言語サーバーによるコード修正・リファクタリング、言語サーバーのインストール支援、デバッグセッションを利用できます。機能は言語サーバーとデバッガーの設定によって異なります。"
+        },
+        {
+          "id": "search-sync",
+          "name": "プロジェクト検索と同期",
+          "description": "コード検索、SSH プロジェクトの同期とリモートキャッシュ管理。"
+        },
+        {
+          "id": "connect",
+          "name": "Nimote Connect · Pro",
+          "description": "スマートフォンやタブレットから直接接続するか、必要に応じて Nimote の中継を利用できます。通常の SSH、個人の Tailscale、デスクトップ正式版の Nimote Connect は無料です。"
+        },
+        {
+          "id": "host",
           "name": "Host モード",
-          "badge": "Pro",
-          "items": [
-            "切断後もリモートでターミナル、タスク、AI セッションを継続",
-            "SSH 接続と、リモート側で稼働する nimotehost が必要"
-          ]
+          "description": "リモートでターミナル、タスク、AI セッションを実行し、切断後も実行を継続できます。Host モードには SSH 接続と、リモートコンピューターでインストール・起動済みの nimotehost サービスが必要です。",
+          "note": "NimoteHost は現在、ローカルネットワーク（LAN）内の接続のみ対応しています。"
         },
         {
-          "name": "高度な言語ツールとデバッグ",
-          "badge": "Pro",
-          "items": [
-            "言語サーバーによるコード修正とリファクタリング",
-            "言語サーバーのインストール支援",
-            "設定済みツールでブレークポイント、変数、ステップ実行"
-          ]
-        },
-        {
-          "name": "検索、同期、SSH ファイル",
-          "badge": "Pro",
-          "items": [
-            "リモートコンテンツ検索、SSH プロジェクト同期、リモートキャッシュ",
-            "ファイルの一括転送とフォルダー全体の転送",
-            "リモートファイルの一括コピー・移動。単一ファイル転送と基本操作は無料"
-          ]
+          "id": "remote-files",
+          "name": "リモートファイル管理",
+          "description": "SSH 経由でファイルの一括アップロード・ダウンロード、フォルダー全体の転送、複数のリモート項目のコピー・移動を行えます。単一ファイルの転送と基本操作は無料です。"
         }
-      ],
-      "detailsLabel": "すべての機能を比較"
+      ]
     },
     "pricing": {
       "eyebrow": "料金",
-      "title": "Pro でモバイル開発のワークフローをつなぐ。",
-      "summary": "AI Agent、Git と GitHub、複数ターミナル、Host、Docker、高度な言語ツール、SSH ファイル操作を利用できます。購入可否と価格はアプリで確認してください。",
+      "summary": "利用できるプランと価格は NimoteCode に表示されます。プラットフォーム、アカウント、地域によって異なります。",
       "trustLine": "広告なし。モデルクレジットなし。ストアの条件と地域ごとの提供状況が適用されます。",
-      "billing": {
-        "label": "支払い期間",
-        "monthly": "月払い",
-        "yearly": "年払い",
-        "save": "17% お得",
-        "monthlyShort": "/月",
-        "yearlyShort": "/年",
-        "or": "または"
-      },
       "trial": {
         "title": "Pro を14日間無料で試す",
         "body": "アプリで14日間の無料トライアルを開始できます。終了後、有料サブスクリプションや Early Access などの有効な Pro 利用権限がなければ、自動で無料版に戻ります。対象条件はアプリで確認してください。",
@@ -374,35 +228,18 @@
           "name": "無料",
           "price": "$0",
           "period": "ずっと",
-          "summary": "ローカルと SSH、編集、基本ターミナル、Git レビュー、AI Chat、基本 LSP、ターミナルベースのタスクは無料です。",
           "cta": "無料で開始",
-          "link": "/ja/download",
-          "features": [
-            "ローカル + SSH ワークスペース",
-            "ファイル編集とプロジェクト管理",
-            "ターミナルアクセス",
-            "AI Chat と 14 のプロバイダーテンプレートまたは互換エンドポイント",
-            "ターミナルベースのタスクを作成・実行",
-            "基本 LSP 診断、補完、ナビゲーション"
-          ]
+          "link": "/ja/download"
         },
         {
           "name": "Pro",
           "badge": "Early Access",
           "price": "ストアで価格を確認",
           "period": "地域・アカウントによって異なります",
-          "summary": "AI Agent、Git と GitHub、複数ターミナル、Host、Docker、高度な言語ツール、SSH ファイル操作を利用できます。購入可否と価格はアプリで確認してください。",
+          "summary": "以下の Pro 機能を利用できます。プランと価格はアプリで確認してください。",
           "cta": "Pro を14日間試す",
           "link": "/ja/download",
-          "highlight": true,
-          "features": [
-            "AI Agent: 内蔵 Agent と互換 ACP Agent",
-            "Git と GitHub: ステージ、コミット、pull、push、ブランチ、Stash",
-            "ターミナル、Docker、Local Linux: 対応ワークスペースで複数セッションを実行",
-            "Host モード: 切断後もリモートでターミナル、タスク、AI セッションを継続",
-            "高度な言語ツールとデバッグ: 言語サーバーによるコード修正とリファクタリング",
-            "検索、同期、SSH ファイル: リモートコンテンツ検索、SSH プロジェクト同期、リモートキャッシュ"
-          ]
+          "highlight": true
         }
       ],
       "earlyAccessDeadline": "Early Access 終了：2026年11月30日 23:59:59 北京時間（UTC+8）"
@@ -410,96 +247,58 @@
   },
   "ko": {
     "features": {
-      "eyebrow": "모바일 개발 시스템",
-      "title": "Pro로 모바일 개발 워크플로를 연결하세요.",
-      "summary": "로컬 및 SSH 작업 공간, 편집기, 기본 터미널, Git 검토, AI Chat, 기본 LSP, 터미널 기반 작업은 무료입니다.",
+      "freeTitle": "무료 기본 기능",
+      "freeDescription": "파일 편집, SSH 연결, 검색 기능이 있는 터미널 세션 1개, 기본 LSP 자동 완성·진단·탐색, 자체 모델 서비스를 이용한 독립 AI 채팅, Git 변경 사항 및 기록 조회는 무료입니다. 기본 LSP에는 설정된 언어 서버가 필요합니다.",
+      "proTitle": "프리미엄 기능",
       "groups": [
         {
-          "name": "기반",
-          "badge": "무료",
-          "items": [
-            "로컬 및 SSH 워크스페이스",
-            "파일 편집과 프로젝트 관리",
-            "터미널 접근",
-            "AI Chat 지원",
-            "직접 연결하는 AI 제공자: OpenAI, Claude, Gemini",
-            "14개의 내장 AI 제공자 템플릿 및 호환 엔드포인트 연결",
-            "터미널 기반 작업 생성 및 실행",
-            "기본 LSP 진단, 완성 및 탐색",
-            "2.5.0: GitHub 탐색, SSH Docker 개요 조회 및 중단점 관리"
-          ]
+          "id": "agent",
+          "name": "AI 에이전트",
+          "description": "내장 Agent 또는 외부 ACP Agent로 파일을 편집하고 명령을 실행하며 코드 작업을 처리하세요. 기능은 선택한 Agent에 따라 다릅니다. 모델 서비스나 외부 Agent는 직접 설정해야 하며, Pro에는 모델 사용량, API 크레딧 또는 타사 구독이 포함되지 않습니다."
         },
         {
-          "name": "AI Agent",
-          "badge": "Pro",
-          "items": [
-            "내장 Agent 및 호환 ACP Agent",
-            "파일 편집, 명령 실행, 후속 지시로 여러 단계의 코드 작업 수행",
-            "모델 서비스 또는 외부 Agent는 직접 설정하며 사용료는 별도"
-          ]
-        },
-        {
+          "id": "git",
           "name": "Git 및 GitHub",
-          "badge": "Pro",
-          "items": [
-            "스테이징, 커밋, pull, push, 브랜치, Stash",
-            "저장소 열기 및 복제, Issue, Pull Request, 검사 상태",
-            "사용 가능한 작업은 저장소 권한에 따라 다름"
-          ]
+          "description": "변경 사항 스테이징, 커밋, 풀, 푸시, 브랜치 및 Stash 관리와 GitHub Issue 및 Pull Request 관련 변경 사항 게시를 지원합니다. 저장소 권한이 적용됩니다."
         },
         {
-          "name": "터미널, Docker 및 Local Linux",
-          "badge": "Pro",
-          "items": [
-            "지원 작업 공간에서 여러 터미널 세션 실행",
-            "2.5.0: tmux로 지속 SSH 터미널 만들기 및 다시 열기",
-            "SSH 호스트의 Docker, Compose, 로그, 통계, 컨테이너 터미널",
-            "Dev Container 및 지원 Android 기기의 Local Linux"
-          ]
+          "id": "environment",
+          "name": "터미널 및 개발 환경",
+          "description": "여러 터미널 세션에서 작업을 병렬 실행합니다. 원격 터미널 작업을 영구 세션에서 계속 실행하고 나중에 다시 연결할 수 있습니다. SSH 호스트에서 Docker, Compose 및 Dev Containers를 관리합니다. 지원되는 Android 기기에서 로컬 Linux를 실행합니다.",
+          "note": "영구 SSH 터미널에는 tmux가 설치된 호환 호스트가 필요합니다."
         },
         {
+          "id": "language",
+          "name": "코드 작업 및 디버깅",
+          "description": "언어 서버의 코드 수정·리팩터링, 언어 서버 설치 지원 및 디버깅 세션을 이용하세요. 기능은 언어 서버와 디버거 설정에 따라 다릅니다."
+        },
+        {
+          "id": "search-sync",
+          "name": "프로젝트 검색 및 동기화",
+          "description": "코드를 검색하고 SSH 프로젝트 동기화 및 원격 캐시를 관리합니다."
+        },
+        {
+          "id": "connect",
+          "name": "Nimote Connect · Pro",
+          "description": "휴대폰이나 태블릿에서 직접 연결하거나 Nimote 릴레이를 이용하세요. 일반 SSH, 개인 Tailscale, 데스크톱 정식 버전의 Nimote Connect는 무료입니다."
+        },
+        {
+          "id": "host",
           "name": "Host 모드",
-          "badge": "Pro",
-          "items": [
-            "연결이 끊겨도 원격 터미널, 작업 및 AI 세션 계속 실행",
-            "SSH 연결 및 원격 컴퓨터에서 실행 중인 nimotehost 필요"
-          ]
+          "description": "원격 터미널, 작업 및 AI 세션을 실행하며 연결이 끊겨도 실행을 계속할 수 있습니다. Host 모드는 SSH 연결과 원격 컴퓨터에 설치되어 실행 중인 nimotehost 서비스가 필요합니다.",
+          "note": "NimoteHost는 현재 로컬 네트워크(LAN) 연결만 지원합니다."
         },
         {
-          "name": "고급 언어 도구 및 디버깅",
-          "badge": "Pro",
-          "items": [
-            "언어 서버를 통한 코드 수정 및 리팩터링",
-            "언어 서버 설치 지원",
-            "도구 설정 후 중단점, 변수 및 단계 실행으로 디버깅"
-          ]
-        },
-        {
-          "name": "검색, 동기화 및 SSH 파일",
-          "badge": "Pro",
-          "items": [
-            "원격 콘텐츠 검색, SSH 프로젝트 동기화 및 원격 캐시",
-            "파일 일괄 업로드·다운로드 및 폴더 전체 전송",
-            "원격 파일 일괄 복사·이동. 단일 파일 전송 및 기본 작업은 무료"
-          ]
+          "id": "remote-files",
+          "name": "원격 파일 관리",
+          "description": "SSH로 파일을 일괄 업로드·다운로드하고 폴더 전체를 전송하며 여러 원격 항목을 복사하거나 이동하세요. 단일 파일 전송과 기본 파일 작업은 무료입니다."
         }
-      ],
-      "detailsLabel": "전체 기능 비교"
+      ]
     },
     "pricing": {
       "eyebrow": "가격",
-      "title": "Pro로 모바일 개발 워크플로를 연결하세요.",
-      "summary": "AI Agent, Git과 GitHub, 다중 터미널, Host, Docker, 고급 언어 도구, SSH 파일 작업을 이용하세요. 구매 가능 여부와 가격은 앱에서 확인하세요.",
+      "summary": "구매 가능한 플랜과 가격은 NimoteCode에서 확인하세요. 플랫폼, 계정 및 지역에 따라 달라집니다.",
       "trustLine": "광고 없음. 모델 크레딧 없음. 스토어 약관과 지역별 이용 가능 여부가 적용됩니다.",
-      "billing": {
-        "label": "결제 주기",
-        "monthly": "월간",
-        "yearly": "연간",
-        "save": "17% 할인",
-        "monthlyShort": "/월",
-        "yearlyShort": "/년",
-        "or": "또는"
-      },
       "trial": {
         "title": "Pro 14일 무료 체험",
         "body": "앱에서 14일 무료 체험을 시작하세요. 종료 시 유료 구독이나 Early Access 등 유효한 Pro 권한이 없으면 자동으로 무료 버전으로 돌아갑니다. 체험 자격은 앱에서 확인하세요.",
@@ -511,35 +310,18 @@
           "name": "무료",
           "price": "$0",
           "period": "계속 무료",
-          "summary": "로컬 및 SSH 작업 공간, 편집기, 기본 터미널, Git 검토, AI Chat, 기본 LSP, 터미널 기반 작업은 무료입니다.",
           "cta": "무료로 시작",
-          "link": "/ko/download",
-          "features": [
-            "로컬 + SSH 워크스페이스",
-            "파일 편집과 프로젝트 관리",
-            "터미널 접근",
-            "AI Chat과 14개 제공자 템플릿 또는 호환 엔드포인트",
-            "터미널 기반 작업 생성 및 실행",
-            "기본 LSP 진단, 완성 및 탐색"
-          ]
+          "link": "/ko/download"
         },
         {
           "name": "Pro",
           "badge": "Early Access",
           "price": "스토어 가격 확인",
           "period": "지역과 계정에 따라 다름",
-          "summary": "AI Agent, Git과 GitHub, 다중 터미널, Host, Docker, 고급 언어 도구, SSH 파일 작업을 이용하세요. 구매 가능 여부와 가격은 앱에서 확인하세요.",
+          "summary": "아래 Pro 기능을 이용할 수 있습니다. 플랜과 가격은 앱에서 확인하세요.",
           "cta": "Pro 14일 체험하기",
           "link": "/ko/download",
-          "highlight": true,
-          "features": [
-            "AI Agent: 내장 Agent 및 호환 ACP Agent",
-            "Git 및 GitHub: 스테이징, 커밋, pull, push, 브랜치, Stash",
-            "터미널, Docker 및 Local Linux: 지원 작업 공간에서 여러 터미널 세션 실행",
-            "Host 모드: 연결이 끊겨도 원격 터미널, 작업 및 AI 세션 계속 실행",
-            "고급 언어 도구 및 디버깅: 언어 서버를 통한 코드 수정 및 리팩터링",
-            "검색, 동기화 및 SSH 파일: 원격 콘텐츠 검색, SSH 프로젝트 동기화 및 원격 캐시"
-          ]
+          "highlight": true
         }
       ],
       "earlyAccessDeadline": "Early Access 종료: 2026년 11월 30일 23:59:59 베이징 시간 (UTC+8)"
@@ -547,95 +329,58 @@
   },
   "es": {
     "features": {
-      "eyebrow": "Desarrollo móvil",
-      "title": "Pro conecta tu flujo de desarrollo móvil.",
-      "summary": "Los espacios locales y SSH, el editor, el terminal básico, la revisión Git, AI Chat, LSP básico y las tareas de terminal son gratuitos.",
+      "freeTitle": "Funciones gratuitas",
+      "freeDescription": "Edita archivos, conecta espacios SSH, usa una sesión de terminal con búsqueda, accede al autocompletado, diagnóstico y navegación LSP básicos, usa el chat de IA independiente con tu propio servicio y consulta diferencias e historial de Git gratis. LSP básico requiere un servidor de lenguaje configurado.",
+      "proTitle": "Función premium",
       "groups": [
         {
-          "name": "Funciones básicas",
-          "badge": "Gratis",
-          "items": [
-            "Espacios locales y SSH",
-            "Edición de archivos y proyectos",
-            "Terminal básico",
-            "AI Chat con tu proveedor",
-            "14 plantillas de proveedores y endpoints compatibles",
-            "Tareas de terminal",
-            "Diagnósticos, autocompletado y navegación LSP básicos",
-            "2.5.0: Explora GitHub, consulta el resumen de Docker por SSH y gestiona puntos de interrupción"
-          ]
+          "id": "agent",
+          "name": "Agente de IA",
+          "description": "Usa el Agent integrado o agentes ACP externos para editar archivos, ejecutar comandos y trabajar con código. Las funciones dependen del agente elegido. Configura tu propio servicio de modelos o agente externo; Pro no incluye consumo de modelos, créditos de API ni suscripciones de terceros."
         },
         {
-          "name": "AI Agent",
-          "badge": "Pro",
-          "items": [
-            "Agente integrado y agentes ACP compatibles",
-            "Edita archivos, ejecuta comandos y continúa tareas con nuevas instrucciones",
-            "Configura tu servicio de modelos o agente externo; consumo facturado aparte"
-          ]
-        },
-        {
+          "id": "git",
           "name": "Git y GitHub",
-          "badge": "Pro",
-          "items": [
-            "Preparar cambios, commit, pull, push, ramas y Stash",
-            "Abrir y clonar repositorios, gestionar issues y pull requests, ver comprobaciones",
-            "Las operaciones dependen de los permisos del repositorio"
-          ]
+          "description": "Prepara cambios, haz commits, pull y push, gestiona ramas y Stash, y publica cambios desde issues y pull requests de GitHub. Se aplican los permisos del repositorio."
         },
         {
-          "name": "Terminales, Docker y Local Linux",
-          "badge": "Pro",
-          "items": [
-            "Varias sesiones en espacios compatibles",
-            "2.5.0: Crea y reanuda terminales SSH persistentes con tmux",
-            "Docker y Compose en hosts SSH: registros, estadísticas y terminales de contenedores",
-            "Dev Containers y Local Linux en dispositivos Android compatibles"
-          ]
+          "id": "environment",
+          "name": "Terminales y entornos de desarrollo",
+          "description": "Ejecuta tareas en varias sesiones de terminal. Mantén las tareas del terminal remoto en sesiones persistentes y vuelve a conectarte a ellas más tarde. Gestiona Docker, Compose y Dev Containers en hosts SSH. Ejecuta Linux local en dispositivos Android compatibles.",
+          "note": "Los terminales SSH persistentes requieren tmux en un equipo compatible."
         },
         {
+          "id": "language",
+          "name": "Acciones de código y depuración",
+          "description": "Aplica correcciones y refactorizaciones del servidor de lenguaje, usa la instalación guiada de servidores de lenguaje y ejecuta sesiones de depuración. Las funciones dependen de la configuración del servidor y del depurador."
+        },
+        {
+          "id": "search-sync",
+          "name": "Búsqueda y sincronización",
+          "description": "Busca código y gestiona la sincronización de proyectos SSH y las cachés remotas."
+        },
+        {
+          "id": "connect",
+          "name": "Nimote Connect · Pro",
+          "description": "Conecta tu teléfono o tableta directamente o mediante el relé de Nimote. SSH estándar, tu propia red Tailscale y Nimote Connect en las versiones de escritorio son gratuitos."
+        },
+        {
+          "id": "host",
           "name": "Modo Host",
-          "badge": "Pro",
-          "items": [
-            "Terminales, tareas y sesiones de IA remotas que pueden continuar tras desconectarse",
-            "Requiere SSH y el servicio nimotehost instalado y activo en el ordenador remoto"
-          ]
+          "description": "Ejecuta terminales, tareas y sesiones de IA remotas que pueden continuar tras desconectarte. El modo Host requiere una conexión SSH y el servicio nimotehost instalado y en ejecución en el equipo remoto.",
+          "note": "Por ahora, NimoteHost solo admite conexiones en la red local (LAN)."
         },
         {
-          "name": "Lenguaje avanzado y depuración",
-          "badge": "Pro",
-          "items": [
-            "Correcciones y refactorizaciones del servidor de lenguaje",
-            "Instalación guiada de servidores de lenguaje",
-            "Depuración con puntos de interrupción, variables y ejecución paso a paso; requiere herramientas configuradas"
-          ]
-        },
-        {
-          "name": "Búsqueda, sincronización y archivos SSH",
-          "badge": "Pro",
-          "items": [
-            "Búsqueda de contenido remoto, sincronización de proyectos SSH y cachés remotas",
-            "Transferencias por lotes y de carpetas completas",
-            "Copiar y mover varios archivos remotos; transferencias individuales y operaciones básicas gratuitas"
-          ]
+          "id": "remote-files",
+          "name": "Gestión de archivos remotos",
+          "description": "Sube y descarga archivos por lotes, transfiere carpetas completas y copia o mueve varios elementos remotos mediante SSH. Las transferencias de un archivo y las operaciones básicas siguen siendo gratuitas."
         }
-      ],
-      "detailsLabel": "Comparar todas las funciones"
+      ]
     },
     "pricing": {
       "eyebrow": "Planes",
-      "title": "Pro conecta tu flujo de desarrollo móvil.",
-      "summary": "Usa AI Agent, Git y GitHub, varios terminales, Host, Docker, herramientas de lenguaje avanzadas y operaciones SSH. Consulta disponibilidad de compra y precios en la app.",
+      "summary": "Consulta las ofertas en NimoteCode. Los precios y la disponibilidad dependen de la plataforma, la cuenta y la región.",
       "trustLine": "Sin anuncios ni créditos de modelos. Se aplican las condiciones de la tienda y la disponibilidad regional.",
-      "billing": {
-        "label": "Periodo de facturación",
-        "monthly": "Mensual",
-        "yearly": "Anual",
-        "save": "Ahorra un 17 %",
-        "monthlyShort": "/mes",
-        "yearlyShort": "/año",
-        "or": "o"
-      },
       "trial": {
         "title": "Prueba Pro gratis durante 14 días",
         "body": "Activa la prueba gratuita de 14 días en la app. Al terminar, volverás a Gratis salvo que tengas una suscripción de pago u otro acceso Pro vigente, como Early Access. Consulta los requisitos en la app.",
@@ -647,36 +392,18 @@
           "name": "Gratis",
           "price": "$0",
           "period": "para siempre",
-          "summary": "Los espacios locales y SSH, el editor, el terminal básico, la revisión Git, AI Chat, LSP básico y las tareas de terminal son gratuitos.",
           "cta": "Empezar gratis",
-          "link": "/es/download",
-          "features": [
-            "Espacios locales y SSH",
-            "Edición de archivos y proyectos",
-            "Terminal básico",
-            "AI Chat con tu proveedor",
-            "14 plantillas de proveedores y endpoints compatibles",
-            "Tareas de terminal",
-            "Diagnósticos, autocompletado y navegación LSP básicos"
-          ]
+          "link": "/es/download"
         },
         {
           "name": "Pro",
           "badge": "Early Access",
           "price": "Consultar precio",
           "period": "Según la región",
-          "summary": "Usa AI Agent, Git y GitHub, varios terminales, Host, Docker, herramientas de lenguaje avanzadas y operaciones SSH. Consulta disponibilidad de compra y precios en la app.",
+          "summary": "Utiliza las funciones Pro de abajo. Consulta los planes y precios en la app.",
           "cta": "Probar Pro durante 14 días",
           "link": "/es/download",
-          "highlight": true,
-          "features": [
-            "AI Agent: Agente integrado y agentes ACP compatibles",
-            "Git y GitHub: Preparar cambios, commit, pull, push, ramas y Stash",
-            "Terminales, Docker y Local Linux: Varias sesiones en espacios compatibles",
-            "Modo Host: Terminales, tareas y sesiones de IA remotas que pueden continuar tras desconectarse",
-            "Lenguaje avanzado y depuración: Correcciones y refactorizaciones del servidor de lenguaje",
-            "Búsqueda, sincronización y archivos SSH: Búsqueda de contenido remoto, sincronización de proyectos SSH y cachés remotas"
-          ]
+          "highlight": true
         }
       ],
       "earlyAccessDeadline": "Early Access termina el 30 de noviembre de 2026 a las 23:59:59, hora de Pekín (UTC+8)"

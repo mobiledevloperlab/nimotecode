@@ -9,7 +9,7 @@ Optional development toolsets for Local Linux are maintained in the [Linux Prese
 
 ## Install a toolkit from the Android app {#android-app}
 
-In NimoteCode 2.5.0, open **Development Toolkits** on the Local Linux management page after installing Ubuntu. Select a toolkit to review its dependencies and estimated disk space before installing. Use the check action to verify an existing installation. The app verifies a pinned catalog revision and its script hashes. New community recipes appear after maintainers review and adopt a revision. The in-app catalog determines availability, and the experimental C++ toolkit remains gated.
+In NimoteCode 2.5.0, after installing Ubuntu, open **Development Toolkits** on the Local Linux management page. Choose an available toolkit, review its dependencies and storage estimate, then install it. Use the check action to verify an existing installation. The C++ toolkit is experimental and availability is limited.
 
 ## Toolsets
 
