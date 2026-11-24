@@ -20,7 +20,7 @@ for (const [locale, content] of Object.entries(copy)) {
   assert.equal((html.match(/<h1(?:\s|>)/g) || []).length, 1, `${path}: one main heading`)
   const app = schemas.find(item => item['@type'] === 'SoftwareApplication')
   assert.ok(app, `${path}: app identity missing`)
-  assert.deepEqual(app.featureList, [...content.facts, ...content.features.map(([name]) => name), ...content.capabilities.map(([name]) => name), content.host.label, content.capabilityNote, content.byok], `${path}: app capabilities differ from localized content`)
+  assert.deepEqual(app.featureList, [...content.facts, ...content.features.map(([name]) => name), ...content.capabilities.map(([name]) => name), content.connect.eyebrow, content.host.label, content.capabilityNote, content.byok], `${path}: app capabilities differ from localized content`)
   assert.ok(!schemas.some(item => ['TechArticle', 'BlogPosting'].includes(item['@type'])), `${path}: homepage classified as article`)
   assert.ok(!schemas.some(item => item['@type'] === 'FAQPage'), `${path}: removed homepage FAQ schema remains`)
   assert.ok(!html.includes('id="download-title"'), `${path}: repeated final download pitch must not return`)
@@ -38,6 +38,7 @@ for (const [locale, content] of Object.entries(copy)) {
     assert.ok(modes.includes(`href="${prefix}/docs/${guide}"`), `${path}: localized ${guide} guide missing from modes`)
   }
   assert.ok(html.includes('aria-labelledby="host-title"'), `${path}: Host section missing`)
+  assert.ok(html.includes('aria-labelledby="connect-title"') && html.includes(`href="${locale === 'en' ? '' : `/${locale}`}/docs/connect"`), `${path}: independent Connect section or guide link missing`)
   for (const text of [content.eyebrow, content.caption, ...Object.values(content.host).filter(value => typeof value === 'string'), ...content.host.benefits.flat()]) {
     assert.ok(body.includes(text), `${path}: Host value or open-source copy missing: ${text}`)
   }

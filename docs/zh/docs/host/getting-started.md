@@ -13,7 +13,7 @@ description: "NimoteHost 下载与安装说明与操作步骤。"
 
 ## 从 NimoteCode 安装 {#install-over-ssh}
 
-在 NimoteCode 2.5.0 中打开 **Host** 并建立 SSH 连接。出现安装提示时按提示操作，电脑需要能访问 GitHub Releases。通过 Nimote Connect 部署的 Host，请使用其对应的安装或更新入口。
+在 NimoteCode 2.5.0 中打开 **Host** 并建立 SSH 连接。出现安装提示时按提示操作，电脑需要能访问 GitHub Releases。需要设备绑定和公网接入时，请阅读独立的 [Nimote Connect 下载、安装和升级指南](/zh/docs/connect)。
 
 ## 手动安装发布包 {#host-install}
 

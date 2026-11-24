@@ -2,7 +2,7 @@
 layout: home
 title: "NimoteCode | Android·iPhone·iPad용 모바일 IDE 및 SSH 개발 작업 공간"
 titleTemplate: false
-description: "IDE, 터미널, AI, Host 네 가지 모드로 편집, 실행, 검토와 Agent 협업을 진행하세요. 직접 배포하는 NimoteHost로 연결 해제 후 작업을 유지하고 Apache-2.0 전체 소스를 검토 및 수정하세요."
+description: "휴대폰에서 코드를 편집하고 SSH 작업 공간과 터미널을 사용하세요. Nimote Connect는 선택적 공용 원격 접속을 제공하고 Host 모드는 연결 해제 후에도 작업을 유지합니다."
 ---
 
 <ProductHome />

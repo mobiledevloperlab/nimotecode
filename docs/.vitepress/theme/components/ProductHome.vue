@@ -56,6 +56,7 @@ const formatReviewDate = (date: string) => new Intl.DateTimeFormat(locale.value,
               <a class="product-demo-link" href="#product-demo" @click="demoOpen = true"><span class="product-play" aria-hidden="true">▶</span>{{ copy.watch }}</a>
             </div>
             <div class="product-hero-meta"><p class="product-start-note">{{ copy.startNote }}</p><p class="product-hero-tasks">{{ copy.heroTasks }}</p></div>
+            <a class="product-text-link product-hero-connect" :href="local('/docs/connect')">{{ copy.connect.guide }} <span aria-hidden="true">→</span></a>
             <p class="product-deadline"><a :href="local('/pro')">{{ copy.earlyAccessDeadline }} →</a></p>
           </div>
         </div>
@@ -68,6 +69,13 @@ const formatReviewDate = (date: string) => new Intl.DateTimeFormat(locale.value,
 
     <section class="product-container product-section" aria-labelledby="workflow-title">
       <WorkspaceModes />
+      <section class="product-connect" aria-labelledby="connect-title">
+        <div class="product-section-heading"><div><p class="product-eyebrow">{{ copy.connect.eyebrow }}</p><h2 id="connect-title">{{ copy.connect.title }}</h2></div></div>
+        <p class="product-connect-intro">{{ copy.connect.intro }}</p>
+        <div class="product-connect-details"><p>{{ copy.connect.route }}</p><p>{{ copy.connect.setup }}</p></div>
+        <a class="product-text-link" :href="local('/docs/connect')">{{ copy.connect.guide }} <span aria-hidden="true">→</span></a>
+        <p class="product-connect-availability">{{ copy.connect.availability }}</p>
+      </section>
       <section class="product-host" aria-labelledby="host-title">
         <div class="product-section-heading"><div><p class="product-eyebrow">{{ copy.host.label }}</p><h2 id="host-title">{{ copy.host.title }}</h2></div></div>
         <p class="product-host-intro">{{ copy.host.intro }}</p>

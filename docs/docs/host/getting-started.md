@@ -13,7 +13,7 @@ You need a Linux, macOS, or Windows computer reachable over SSH, and a project f
 
 ## Open Host in NimoteCode {#install-over-ssh}
 
-In NimoteCode 2.5.0, connect through **Host** and follow the setup prompt if it appears. The computer needs access to GitHub Releases. If you use Nimote Connect, follow the setup or update instructions for that edition.
+In NimoteCode 2.5.0, connect through **Host** and follow the setup prompt if it appears. The computer needs access to GitHub Releases. For paired-device public access, follow the separate [Nimote Connect download, installation and update guide](/docs/connect).
 
 ## Install from a downloaded bundle {#host-install}
 
