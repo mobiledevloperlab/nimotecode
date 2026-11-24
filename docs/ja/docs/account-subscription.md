@@ -17,6 +17,10 @@ description: "アカウントとサブスクリプションの設定、操作手
 
 ## 利用できる機能
 
+2.5.0 の Free では、GitHub を閲覧し、SSH 経由で Docker のバージョン、コンテナ、イメージの概要を確認し、ブレークポイントを管理できます。GitHub のクローンと書き込み、Docker リソースの管理、デバッグ開始には Pro が必要です。
+
+NimoteCode 2.5.0 で [SSH 永続ターミナル](/ja/docs/terminal#persistent-ssh-terminal) を作成または再開するには、Pro と tmux を導入した対応ホストが必要です。ネイティブデスクトップ版では Pro が標準で有効です。
+
 ローカルと SSH、編集、基本ターミナル、Git レビュー、AI Chat、基本 LSP、ターミナルベースのタスクは無料です。 AI Agent、Git と GitHub、複数ターミナル、Host、Docker、高度な言語ツール、SSH ファイル操作を利用できます。購入可否と価格はアプリで確認してください。
 
 [無料版と Pro](/ja/pro)をご覧ください。

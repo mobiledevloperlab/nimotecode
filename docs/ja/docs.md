@@ -7,6 +7,8 @@ description: "NimoteCode の4つのモード、SSH、Android Local Linux、AI �
 
 まず[クイックスタート](/ja/docs/quick-start)でワークスペースを開き、編集とコマンド実行を試してください。その後、目的に合うガイドを選びます。
 
+NimoteCode 2.5.0 では、[個人用 Tailscale でペアリング済みの PC に接続](/ja/docs/ssh#paired-computers)、[tmux で SSH ターミナルを再開](/ja/docs/terminal#persistent-ssh-terminal)、[SSH で NimoteHost をセットアップ](/ja/docs/host/getting-started#install-over-ssh)できます。
+
 ## ファイルとコマンドの実行場所を選ぶ
 
 | 目的 | 最初のガイド | 確認すること |

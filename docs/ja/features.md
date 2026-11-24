@@ -8,6 +8,15 @@ description: プロジェクトをスマートフォンで開き、開発用コ�
 <div class="product-reference">
 
 <details>
+<summary>2.5.0 の新機能</summary>
+
+NimoteCode 2.5.0 では、[個人用 Tailscale でペアリング済みの PC に接続](/ja/docs/ssh#paired-computers)、[tmux で SSH ターミナルを再開](/ja/docs/terminal#persistent-ssh-terminal)、[SSH で NimoteHost をセットアップ](/ja/docs/host/getting-started#install-over-ssh)できます。
+
+[2.5.0 の新機能](/ja/releases/2.5.0)
+
+</details>
+
+<details>
 <summary>検索・言語サービス・デバッグ</summary>
 
 - [プロジェクト検索](/ja/docs/search)：SSH ワークスペースのファイル内容を検索。大文字小文字の区別と正規表現に対応します。

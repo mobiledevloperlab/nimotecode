@@ -14,6 +14,10 @@ description: "빠른 시작 설정, 사용 절차 및 화면 안내."
 
 ## 작업 공간 열기
 
+NimoteCode 2.5.0에서는 세로 모드 휴대전화의 플로팅 탐색 메뉴로 작업 패널을 전환할 수 있습니다. 단일 창 편집기가 비어 있으면 파일 탐색을 바로 열 수 있습니다.
+
+NimoteCode 2.5.0에서는 [개인 Tailscale로 페어링된 컴퓨터에 연결](/ko/docs/ssh#paired-computers), [tmux로 SSH 터미널 재개](/ko/docs/terminal#persistent-ssh-terminal), [SSH로 NimoteHost 설정](/ko/docs/host/getting-started#install-over-ssh)을 할 수 있습니다.
+
 전체 IDE에서 기기 파일, SSH 호스트, GitHub 프로젝트 또는 지원되는 Android 기기의 Local Linux를 선택할 수 있습니다. 데모 프로젝트로 화면을 살펴볼 수도 있습니다.
 
 앱에는 네 가지 모드가 있습니다. **빠른 터미널**은 SSH, Linux와 명령어에, **AI 작업 공간**은 AI 대화, 에이전트와 작업에, **전체 IDE**는 파일, Git과 AI 개발에 사용합니다. **Host**는 NimoteHost를 사용해 지속되는 원격 작업과 Agent 세션을 관리합니다. 모드 전환에서 선택하세요. 프로젝트 위치는 별도로 선택하며, 기기 파일은 편집할 수 있지만 명령 실행에는 SSH 또는 Local Linux가 필요합니다.

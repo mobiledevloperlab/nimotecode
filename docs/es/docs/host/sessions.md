@@ -9,6 +9,8 @@ Primero [instala e inicia NimoteHost](/es/docs/host/getting-started) en el orden
 
 ## Conectar desde el móvil {#_3-conectar-desde-el-movil}
 
+En NimoteCode 2.5.0, abre **Host → Conexiones remotas** y comprueba el estado. Usa la acción de instalación o actualización disponible, o consulta la versión instalada en la ayuda de Host. Revisa la interrupción de sesiones antes de autorizarla.
+
 Elige Host en la pantalla de modos y toca SSH connections. Selecciona la cuenta y el ordenador donde instalaste Host; usa New Remote Connection si aún no existe. Verifica la clave SSH al conectar por primera vez.
 
 <div class="doc-screenshots">

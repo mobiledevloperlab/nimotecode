@@ -8,6 +8,10 @@ pageClass: pricing-page
 
 AI Agent、Git と GitHub、Host、Docker、高度な開発ツールを一つのモバイルワークスペースで。
 
+NimoteCode 2.5.0 で [SSH 永続ターミナル](/ja/docs/terminal#persistent-ssh-terminal) を作成または再開するには、Pro と tmux を導入した対応ホストが必要です。ネイティブデスクトップ版では Pro が標準で有効です。
+
+2.5.0 の Free では、GitHub を閲覧し、SSH 経由で Docker のバージョン、コンテナ、イメージの概要を確認し、ブレークポイントを管理できます。GitHub のクローンと書き込み、Docker リソースの管理、デバッグ開始には Pro が必要です。
+
 <PricingFeatureSystem lang="ja" mode="full" />
 
 利用権限の確認と購入の復元は[アカウントとサブスクリプション](/ja/docs/account-subscription)をご覧ください。

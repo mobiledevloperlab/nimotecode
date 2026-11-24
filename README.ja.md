@@ -27,7 +27,7 @@
   <a href="#workflow">作業の流れ</a> ·
   <a href="#workspace-modes">4 つのモード</a> ·
   <a href="#quick-start">クイックスタート</a> ·
-  <a href="#latest-release">2.4.1 の新機能</a> ·
+  <a href="#latest-release">2.5.0 · 公開予定</a> ·
   <a href="#nimotehost">NimoteHost</a> ·
   <a href="https://nimotecode.com/ja/docs">ドキュメント</a> ·
   <a href="https://github.com/mobiledevloperlab/nimote_issues/issues">不具合報告</a>
@@ -157,17 +157,16 @@ Local Linux は iPhone・iPad では利用できません。開発コマンド�
 
 <a id="latest-release"></a>
 
-## NimoteCode 2.4.1 公開済み
+## NimoteCode 2.5.0 · 公開予定
 
-- **新しいインターフェース：** タブレット・横向きレイアウト、エディター操作、モバイル Git レビューを改善。
-- **Host ワークスペース：** 対応ターミナルと Agent を再開し、承認、タスク結果、差分を確認。
-- **ファイル転送：** 端末と SSH 間でファイル・フォルダーを転送し、ローカルでインポート・エクスポート。
-- **プロジェクトタスク：** npm、Taskfile、Makefile、justfile、VS Code の対応タスク定義を検出。
-- **ターミナルとリモート操作：** 保持された履歴の検索、選択とクリップボード、CI ステップログ、リモート保存を改善。
+- 個人用 Tailscale を使ってペアリング済みの PC に SSH 接続できます。
+- Pro で永続 tmux セッションを再開できます。SSH 経由で NimoteHost をインストール・更新できます。
+- SSH の再接続、ターミナルの入力、スクロール、コピーを改善しました。
+- スマートフォンのナビゲーションを刷新し、ワークスペース検索の一致箇所を強調表示します。
+- 内蔵 Codex の高速化と、Android のローカル Linux 開発ツールキットに対応しました。
+- 2.5.0 では Git のファイル・行履歴の再試行、スナップショットがない場合の Agent レビュー、操作ごとの Pro 表示も改善しました。Free で GitHub の閲覧、Docker 概要、ブレークポイント管理が可能です。
 
-[2.4.1 のリリースノート](https://nimotecode.com/ja/releases/2.4.1) · [公式ダウンロード](https://nimotecode.com/ja/download)
-
-ストアでの提供状況と配信時期はプラットフォームや地域によって異なる場合があります。
+[2.5.0 のリリースノートを読む](https://nimotecode.com/ja/releases/2.5.0) · [現在の公開版 2.4.1](https://nimotecode.com/ja/releases/2.4.1)
 
 <a id="nimotehost"></a>
 
@@ -198,7 +197,7 @@ Host の機能に応じて、ツール出力、承認、タスク、検証結果
 <!-- major-comparison:start -->
 ## NimoteCode と主要な 5 製品の比較
 
-資料確認日時: **2026-11-20 04:12:58 (UTC)** · 公式ドキュメント、公式サイト、公開リリース情報に基づく比較
+資料確認日時: **2026-11-24 07:16:24 (UTC)** · 公式ドキュメント、公式サイト、公開リリース情報に基づく比較
 
 **開発タスクは自分のコンピューターで実行。スマートフォンでコードとターミナルを確認し、対応する AI セッションを再開して承認に対応できます。**
 

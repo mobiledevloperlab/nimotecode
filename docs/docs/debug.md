@@ -10,6 +10,8 @@ description: "Configuration, procedures, and interface reference for debugging."
 
 ## Prepare a debug session
 
+In 2.5.0, Free accounts can manage breakpoints. Starting a debug session requires Pro and a configured debug adapter.
+
 Debugging requires a compatible adapter and a launch configuration for the project on the target host. Open the Debug panel and select **Start Debug** after configuring these prerequisites. Debugging requires Pro access.
 
 </div>

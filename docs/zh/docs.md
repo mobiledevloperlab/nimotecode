@@ -7,6 +7,8 @@ description: 了解 NimoteCode 的四种模式、SSH 和 Android 本地 Linux，
 
 首次使用先按[快速开始](/zh/docs/quick-start)完成打开工作区、编辑文件和运行命令，再按当前任务选择指南。
 
+在 NimoteCode 2.5.0 中，可[通过个人 Tailscale 连接已配对电脑](/zh/docs/ssh#paired-computers)、[用 tmux 恢复 SSH 终端](/zh/docs/terminal#persistent-ssh-terminal)，也可[通过 SSH 安装 NimoteHost](/zh/docs/host/getting-started#install-over-ssh)。
+
 ## 先确定文件和命令在哪里运行
 
 | 我想做什么 | 从这里开始 | 需要了解什么 |

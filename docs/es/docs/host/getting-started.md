@@ -13,6 +13,14 @@ Elige el paquete según **el sistema operativo y la arquitectura del ordenador o
 
 Prepara un ordenador Linux, macOS o Windows accesible por SSH, una compilación de NimoteCode con modo Host y un Host compatible y una carpeta de proyecto accesible para la cuenta remota. La ruta del proyecto pertenece al ordenador, no al teléfono. Si aún no tienes SSH, sigue la [guía de conexión](/es/docs/ssh) o la de [Windows SSH](/es/docs/windows-ssh-sftp).
 
+## Instalar o actualizar por SSH {#install-over-ssh}
+
+En NimoteCode 2.5.0, abre **Host**, conecta por SSH y consulta el estado en el panel Host. Confirma la instalación para descargar y verificar el paquete CLI correspondiente de la versión oficial de NimoteHost indicada en el panel, instalarlo e iniciarlo con la cuenta SSH. El ordenador necesita acceso a GitHub Releases. Si el servicio está instalado pero detenido, usa la acción de inicio del panel.
+
+El panel muestra el progreso, los errores y una opción para reintentar. Abre el aviso de actualización desde la cabecera de Host. Si la actualización requiere detener sesiones, revisa qué trabajo se interrumpirá antes de confirmar. Para obtener la interfaz de escritorio o compilar desde el código fuente, sigue los pasos manuales.
+
+Cuando el panel identifica la edición de Host, usa la instalación o actualización que muestra. Community necesita un paquete CLI publicado para la plataforma. Si falta el servicio en un equipo vinculado, sigue las instrucciones de Nimote Connect. Si no se identifica la edición, comprueba el origen del paquete antes de actualizar.
+
 ## 1. Descargar el paquete
 
 En [NimoteHost Releases](https://github.com/mobiledevloperlab/nimotehost/releases), elige el paquete completo para tu sistema y CPU. CLI basta para un servidor; el paquete GUI añade el gestor de escritorio.

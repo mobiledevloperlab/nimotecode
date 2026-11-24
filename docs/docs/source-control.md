@@ -48,6 +48,10 @@ Before cloning, confirm the target workspace, destination folder, and branch. Fo
 
 ## Review diffs and commits
 
+For 2.5.0, Git file and line history show loading failures separately from empty results. Use **Retry** in the history view. Remote directory aliases can resolve to the current repository.
+
+In 2.5.0, open the current file’s Git history from the editor. The history follows renames, and you can retry if loading fails.
+
 Open a changed file to compare its old and new contents. Open a commit in **Commit History** to inspect changes grouped by file. The diff in the screenshot includes a temporary text edit; it illustrates review and is not a recommended code change.
 
 <div class="doc-screenshots">

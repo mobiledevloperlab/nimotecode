@@ -20,6 +20,8 @@ Tasks stores named commands and groups them by purpose. Add a task with the **+*
 
 </div>
 
+In 2.5.0, the execution target shown by Tasks and plugins follows the current workspace and platform. Use a connected SSH terminal or a supported Android Local Linux terminal where available. The remote account or Linux environment supplies the installed tools.
+
 ## Run and inspect output
 
 Use the play control beside a task and inspect its terminal output. A task name is a label, not a validation of the command: check the command and working directory before using it. Basic task creation and execution do not require a separate Pro tier.

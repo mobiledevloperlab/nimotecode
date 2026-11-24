@@ -19,6 +19,14 @@ description: "NimoteHost 下载与安装说明与操作步骤。"
 
 后台运行还需要系统服务环境：Linux 使用 systemd 用户服务，macOS 需要该用户已登录图形会话，Windows 使用用户登录计划任务。缺少对应环境时，可以先前台试运行。电脑应保持唤醒和网络可达；跨网络访问可使用可达的 SSH 地址或已有 VPN，安装 Host 本身不会让内网地址变成公网可达。
 
+## 通过 SSH 安装或更新 {#install-over-ssh}
+
+在 NimoteCode 2.5.0 中打开 **Host**，通过 SSH 连接电脑，然后在 Host 面板检查安装状态。确认安装后，应用会从面板显示的 NimoteHost 官方发行版下载并校验匹配的 CLI 安装包，再使用 SSH 账号安装和启动。电脑需要能访问 GitHub Releases。如果已安装但服务停止，可使用面板中的启动操作。
+
+面板会显示进度、错误和重试入口。可从更新提示发起更新，关闭提示后仍可从 Host 顶栏打开。若更新需要停止会话，请先核对受影响的工作，再确认。需要桌面 GUI 或源码构建时，可使用下文的手动步骤。
+
+Host 面板识别出版本类型后，请使用面板为该版本提供的安装或更新入口。安装 Community 版需要相应平台的 CLI 包已经发布。已配对电脑缺少服务时，按 Nimote Connect 的安装指引处理。版本类型无法识别时，先向该安装包的分发方核对再更新。
+
 ## 1. 下载 NimoteHost
 
 打开 [NimoteHost 发布页](https://github.com/mobiledevloperlab/nimotehost/releases)，选择适合开发电脑系统和 CPU 的完整分发包。服务器上只需要 CLI；想在电脑上查看服务和会话，可以选择带 GUI 的包。

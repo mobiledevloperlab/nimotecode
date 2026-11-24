@@ -8,6 +8,15 @@ description: 휴대폰에서 프로젝트를 열고 개발 컴퓨터에 연결�
 <div class="product-reference">
 
 <details>
+<summary>2.5.0의 새로운 기능</summary>
+
+NimoteCode 2.5.0에서는 [개인 Tailscale로 페어링된 컴퓨터에 연결](/ko/docs/ssh#paired-computers), [tmux로 SSH 터미널 재개](/ko/docs/terminal#persistent-ssh-terminal), [SSH로 NimoteHost 설정](/ko/docs/host/getting-started#install-over-ssh)을 할 수 있습니다.
+
+[2.5.0의 새로운 기능](/ko/releases/2.5.0)
+
+</details>
+
+<details>
 <summary>검색, 언어 서비스 및 디버깅</summary>
 
 - [프로젝트 검색](/ko/docs/search): SSH 워크스페이스의 파일 내용을 검색하며 대소문자 구분과 정규식을 지원합니다.

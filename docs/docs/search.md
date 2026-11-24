@@ -12,6 +12,8 @@ description: "Configuration, procedures, and interface reference for workspace s
 
 In an SSH workspace, open Search and enter text in **Search file content**. Use the case-sensitivity control when capitalization matters; enable regular expressions for pattern matching. Select a result to open the file at the matching line. Remote content search requires Pro access.
 
+In 2.5.0, selecting a search result scrolls the editor to the match and highlights it.
+
 </div>
 
 <div class="doc-screenshots">

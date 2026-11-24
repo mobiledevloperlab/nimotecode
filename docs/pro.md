@@ -8,6 +8,10 @@ pageClass: pricing-page
 
 AI Agents, Git and GitHub, Host, Docker and advanced development tools in one mobile workspace.
 
+In NimoteCode 2.5.0, creating or resuming a [persistent SSH terminal](/docs/terminal#persistent-ssh-terminal) requires Pro and a compatible host with tmux installed. Native desktop builds enable Pro by default.
+
+In 2.5.0, Free users can browse GitHub, see the Docker version, container and image overview over supported SSH connections, and manage breakpoints. Pro is required to clone or write through GitHub, manage Docker resources, or start a debug session. Badges appear on the affected actions.
+
 <PricingFeatureSystem lang="en" mode="full" />
 
 For access verification and purchase restoration, see [Account and subscription](/docs/account-subscription).

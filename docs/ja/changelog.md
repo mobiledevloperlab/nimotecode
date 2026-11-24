@@ -14,6 +14,12 @@ description: Product updates, new capabilities, fixes and compatibility notes fo
 
 ## 2026
 
+### バージョン 2.5.0 · 公開予定
+
+ペアリング済み PC に SSH 接続し、tmux セッションの再開や NimoteHost のインストールができます。
+
+[2.5.0 のリリースノートを読む](/ja/releases/2.5.0)
+
 ### バージョン 2.4.1 · 2026 年 11 月 19 日
 
 NimoteCode 2.4.1 はリモートのターミナルと Agent セッション向けの Host ワークスペース、ファイルとフォルダーの転送、プロジェクトタスク検出を追加します。画面とタブレットレイアウトを刷新し、GitHub CI、ターミナル履歴検索、SSH ホスト検証、リモート保存を改善します。

@@ -47,6 +47,16 @@ Al volver a Local Explorer, comprueba el directorio raíz. La carpeta del ejempl
   <DocScreenshot file="remote-connection-history.png" caption="Conexión SSH guardada en el panel Connection environments." />
 </div>
 
+## Conectar con un equipo vinculado {#paired-computers}
+
+En NimoteCode 2.5.0, inicia sesión y abre **Connect / Tailscale** en el selector de conexiones. Para vincular un equipo, elige **Introducir código de vinculación** y usa el código de un solo uso que muestra Nimote Connect en ese ordenador. Puedes eliminar la vinculación desde la lista.
+
+Para usar Tailscale personal, conecta ambos dispositivos a la misma tailnet y habilita SSH en el ordenador. Selecciona el equipo y elige conectarte mediante Tailscale. La aplicación usa la IP de Tailscale o el nombre MagicDNS sincronizado. Introduce el usuario y la contraseña o clave SSH. Si falla, comprueba la dirección, el puerto SSH y MagicDNS si usas un nombre.
+
+Nimote Relay es una opción independiente para equipos compatibles vinculados con acceso remoto activado. La conectividad pública sigue en validación, incluidas las conexiones directas entre redes y los cambios de ruta.
+
+Relay muestra cada paso desde la autorización hasta el inicio de sesión SSH. El equipo debe estar en línea con acceso remoto activado. Desvincularlo revoca su acceso por Relay. Si Host está disponible, las rutas verificadas para el mismo equipo y usuario SSH pueden abrir el mismo espacio.
+
 ## Seleccionar la raíz del proyecto
 
 Introduzca la ruta o navegue hasta la carpeta en el selector remoto. Una vez abierta, compruebe servidor, usuario, puerto y raíz en Explorer. Use **Select** para entrar en el modo de selección de archivos. Cambiar de directorio cambia el espacio que usan las herramientas del proyecto.

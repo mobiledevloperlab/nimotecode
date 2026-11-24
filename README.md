@@ -27,7 +27,7 @@
   <a href="#workflow">See the workflow</a> ·
   <a href="#workspace-modes">Four modes</a> ·
   <a href="#quick-start">Quick start</a> ·
-  <a href="#latest-release">What’s new in 2.4.1</a> ·
+  <a href="#latest-release">2.5.0 · Upcoming</a> ·
   <a href="#nimotehost">NimoteHost</a> ·
   <a href="https://nimotecode.com/docs">Documentation</a> ·
   <a href="https://github.com/mobiledevloperlab/nimote_issues/issues">Report an issue</a>
@@ -155,19 +155,16 @@ Local Linux is unavailable on iPhone and iPad; use an SSH host for development c
 
 <a id="latest-release"></a>
 
-## What’s new in 2.4.1
+## NimoteCode 2.5.0 · Upcoming
 
-**NimoteCode 2.4.1 is released.** This update focuses on a redesigned workbench, remote sessions and moving files between workspaces.
+- SSH to paired computers via personal Tailscale.
+- Resume persistent tmux sessions with Pro. Install or update NimoteHost over SSH.
+- Improved SSH recovery, terminal input, scrolling, and copy.
+- New phone navigation and highlighted workspace search results.
+- Faster built-in Codex and Android Local Linux toolkits.
+- Other 2.5.0 changes include Git file and line history retry, clearer Agent review when a snapshot is missing, and action-level Pro badges. Free users can browse GitHub, view the Docker overview and manage breakpoints.
 
-- **Refreshed interface and tablet layouts:** improved landscape editing, editor controls, mobile Git review and Git status colors in Explorer.
-- **Host workspace and Agent tasks:** browse and resume compatible terminal and Agent sessions; review approvals, task results and diffs.
-- **File and folder transfers:** transfer between your device and SSH workspaces, or import and export locally.
-- **Project task discovery:** find supported tasks in npm, Taskfile, Makefile, justfile and VS Code task definitions.
-- **Better terminal and remote workflows:** retained-history search, improved selection and clipboard handling, GitHub CI step logs and more reliable remote saves.
-
-[Read the full 2.4.1 release notes →](https://nimotecode.com/releases/2.4.1)
-
-Download availability and store rollout can vary by platform and region. Use the [official download page](https://nimotecode.com/download) for current distribution channels and requirements.
+[Read the complete 2.5.0 release notes](https://nimotecode.com/releases/2.5.0) · [Current release 2.4.1](https://nimotecode.com/releases/2.4.1)
 
 <a id="nimotehost"></a>
 
@@ -200,7 +197,7 @@ Connect your own provider and credentials. **Model credits and provider subscrip
 <!-- major-comparison:start -->
 ## NimoteCode vs five major alternatives
 
-Evidence reviewed: **2026-11-20 04:12:58 (UTC)** · Official documentation, websites and public release information
+Evidence reviewed: **2026-11-24 07:16:24 (UTC)** · Official documentation, websites and public release information
 
 **Run development tasks on your own computer; use your phone to inspect code, manage terminals, recover compatible AI sessions and handle approvals.**
 

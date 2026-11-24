@@ -44,3 +44,35 @@ export const latestRelease = {
     ]
   }
 } as const
+
+export const upcomingRelease = {
+  "version": "2.5.0",
+  "build": "68",
+  "copy": {
+    "en": {
+      "status": "Upcoming",
+      "homeSummary": "Paired SSH, persistent terminals, and Host setup",
+      "view": "Read the complete 2.5.0 release notes"
+    },
+    "zh": {
+      "status": "待发布",
+      "homeSummary": "配对 SSH、持久终端与 Host 安装",
+      "view": "阅读完整 2.5.0 发布说明"
+    },
+    "es": {
+      "status": "Próximamente",
+      "homeSummary": "SSH a equipos vinculados, terminales persistentes e instalación de Host",
+      "view": "Leer las notas completas de 2.5.0"
+    },
+    "ja": {
+      "status": "公開予定",
+      "homeSummary": "ペアリング済み PC、永続ターミナル、Host セットアップ",
+      "view": "2.5.0 のリリースノートを読む"
+    },
+    "ko": {
+      "status": "출시 예정",
+      "homeSummary": "페어링 SSH, 지속 터미널 및 Host 설치",
+      "view": "2.5.0 전체 릴리스 노트 읽기"
+    }
+  }
+} as const

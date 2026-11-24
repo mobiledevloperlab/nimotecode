@@ -222,8 +222,6 @@
         "Edit a file, then run a check over SSH and review the result."
       ]
     ],
-    "previewLabel": "2.4.1 Released",
-    "previewMessage": "Host sessions, file transfers, and project task discovery are now available.",
     "workspaceDemoContext": "Explore the mobile workspace",
     "workspaceDemoSteps": [
       [
@@ -491,8 +489,6 @@
         "编辑文件，通过 SSH 运行检查，再核对结果。"
       ]
     ],
-    "previewLabel": "2.4.1 已发布",
-    "previewMessage": "新增 Host 会话、文件传输与项目任务发现。",
     "workspaceDemoContext": "探索移动工作区",
     "workspaceDemoSteps": [
       [
@@ -760,8 +756,6 @@
         "ファイルを編集し、SSH 経由でチェックを実行して結果を確認します。"
       ]
     ],
-    "previewLabel": "2.4.1 公開",
-    "previewMessage": "Host セッション、ファイル転送、プロジェクトタスク検出に対応。",
     "workspaceDemoContext": "モバイルワークスペースを探索",
     "workspaceDemoSteps": [
       [
@@ -1029,8 +1023,6 @@
         "파일을 편집하고 SSH로 검사를 실행한 뒤 결과를 확인하세요."
       ]
     ],
-    "previewLabel": "2.4.1 출시",
-    "previewMessage": "Host 세션, 파일 전송 및 프로젝트 작업 검색을 지원합니다.",
     "workspaceDemoContext": "모바일 작업 공간 살펴보기",
     "workspaceDemoSteps": [
       [
@@ -1298,8 +1290,6 @@
         "Edita un archivo, ejecuta una comprobación por SSH y revisa el resultado."
       ]
     ],
-    "previewLabel": "2.4.1 publicada",
-    "previewMessage": "Ya están disponibles las sesiones Host, transferencias y detección de tareas.",
     "workspaceDemoContext": "Explora el espacio de trabajo móvil",
     "workspaceDemoSteps": [
       [

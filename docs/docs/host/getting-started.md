@@ -17,6 +17,14 @@ For background operation, Linux needs a working systemd user manager; macOS need
 
 If SSH is new to you, set up a connection using [Local and SSH workspaces](/docs/ssh) first. For Windows, see [Windows SSH and SFTP](/docs/windows-ssh-sftp). Host does not configure SSH for you.
 
+## Install or update over SSH {#install-over-ssh}
+
+In NimoteCode 2.5.0, open **Host**, connect over SSH and check the installation status in the Host panel. Confirm the install prompt to download and verify the matching CLI bundle from the official NimoteHost release offered in the panel, then install and start it under the SSH account. The computer needs network access to GitHub Releases. If the service is installed but stopped, use the start action shown in the panel.
+
+The panel shows progress, errors and a retry action. To update, use the notice or reopen it from the Host header. If the update requires stopping sessions, confirm after reviewing the interruption. Use the manual steps below for a desktop GUI bundle or a source build.
+
+When the panel identifies a Host edition, follow the setup or update shown for that edition. Community installation depends on a matching published CLI package. A paired computer missing its service uses the Nimote Connect setup instructions. If the edition is unknown, check with its distributor before updating.
+
 ## 1. Download NimoteHost
 
 Open the [NimoteHost releases page](https://github.com/mobiledevloperlab/nimotehost/releases) and choose a complete distribution for your computer. The CLI is enough for a server. Choose a GUI bundle if you also want a desktop window for managing Host.

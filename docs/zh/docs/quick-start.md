@@ -14,6 +14,10 @@ description: "快速开始的配置、操作步骤与界面说明。"
 
 ## 打开工作区
 
+NimoteCode 2.5.0 在手机竖屏工作台新增浮动导航栏，可切换不同面板。单栏编辑器为空时，可用浏览文件操作打开资源管理器。
+
+在 NimoteCode 2.5.0 中，可[通过个人 Tailscale 连接已配对电脑](/zh/docs/ssh#paired-computers)、[用 tmux 恢复 SSH 终端](/zh/docs/terminal#persistent-ssh-terminal)，也可[通过 SSH 安装 NimoteHost](/zh/docs/host/getting-started#install-over-ssh)。
+
 选择完整 IDE 后，可以打开设备文件、连接 SSH 主机、从 GitHub 打开项目，或在受支持的 Android 设备上使用 Local Linux。也可以打开示例项目体验界面。
 
 应用有四种模式：**快捷终端**用于 SSH、Linux 和命令；**AI 工作区**用于 AI 对话、Agent 和任务；**完整 IDE**用于文件、Git 和 AI 开发；**Host** 使用 NimoteHost 管理持续运行的远程任务与 Agent 会话。使用“切换模式”选择适合当前任务的界面。项目位置与模式是不同的选择：设备文件可以编辑，运行项目命令需要 SSH 或 Local Linux。

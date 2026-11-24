@@ -47,6 +47,8 @@ Abre el menú de más opciones para deshacer un cambio o volver a aplicarlo. Est
 
 ## Navegar por símbolos e historial
 
+En 2.5.0 puedes abrir los commits del archivo actual desde la barra del editor. Si falla la carga del historial de archivos o de líneas, reintenta en la misma vista. Arrastrar la barra de desplazamiento conserva la selección.
+
 El menú de símbolos reúne **Go To Definition**, **References**, **Rename Symbol**, **Outline** y acciones del historial de Git. La navegación de código depende del servidor de lenguaje configurado; el historial requiere un repositorio Git.
 
 </div>

@@ -46,6 +46,10 @@ Antes de clonar, confirme el espacio de trabajo de destino, la carpeta de destin
 
 ## Revisar diferencias y commits
 
+En 2.5.0, el historial Git de archivos y líneas distingue errores y resultados vacíos. Reintenta la consulta desde el historial. Los alias de carpetas remotas pueden resolverse al repositorio actual.
+
+En 2.5.0 puedes abrir el historial Git del archivo actual desde el editor. El historial sigue los cambios de nombre y permite reintentar si falla la carga.
+
 Abra un archivo modificado para comparar su contenido anterior y nuevo. Abra un commit en **Commit History** para inspeccionar los cambios por archivo. El diff de la captura contiene una edición temporal de texto: ilustra la revisión, no recomienda ese cambio de código.
 
 <div class="doc-screenshots">

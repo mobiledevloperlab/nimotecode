@@ -20,6 +20,8 @@ Tasks guarda comandos con nombre y los agrupa por finalidad. Añada una tarea co
 
 </div>
 
+En 2.5.0, las tareas y los plugins muestran los destinos disponibles según el espacio y la plataforma. Usa un terminal SSH conectado o Linux local compatible en Android. Las herramientas proceden de la cuenta remota o del entorno Linux.
+
 ## Ejecutar e inspeccionar la salida
 
 Pulse el control de ejecución junto a la tarea y revise la salida del terminal. El nombre es una etiqueta, no una validación del comando: compruebe el comando y el directorio de trabajo antes de usarlo. La creación y ejecución básicas de tareas no requieren Pro.

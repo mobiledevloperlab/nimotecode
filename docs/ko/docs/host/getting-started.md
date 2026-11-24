@@ -15,6 +15,14 @@ SSH로 접속할 수 있는 Linux, macOS 또는 Windows 컴퓨터, Host 모드�
 
 SSH가 처음이라면 먼저 [SSH 연결](/ko/docs/ssh)을 설정하세요. Windows는 [Windows SSH](/ko/docs/windows-ssh-sftp)도 참고하세요. Host가 SSH를 설치하거나 설정해 주지는 않습니다.
 
+## SSH로 설치 또는 업데이트하기 {#install-over-ssh}
+
+NimoteCode 2.5.0에서 **Host**를 열고 SSH로 연결한 뒤 Host 패널에서 상태를 확인하세요. 설치를 승인하면 패널에 표시된 NimoteHost 공식 릴리스에서 맞는 CLI 패키지를 내려받아 검증하고, SSH 계정으로 설치하고 시작합니다. 컴퓨터에서 GitHub Releases에 접속할 수 있어야 합니다. 설치된 서비스가 중지된 경우 패널에서 시작할 수 있습니다.
+
+패널에 진행률, 오류 및 재시도 옵션이 표시됩니다. 업데이트 알림은 Host 헤더에서 다시 열 수 있습니다. 업데이트를 위해 세션을 중지해야 한다면 영향을 받는 작업을 확인한 뒤 승인하세요. 데스크톱 GUI나 소스 빌드가 필요하면 아래 수동 절차를 따르세요.
+
+Host 패널이 에디션을 확인하면 표시된 설치 또는 업데이트 작업을 사용하세요. Community 설치에는 플랫폼에 맞는 CLI 패키지가 공개되어 있어야 합니다. 페어링된 컴퓨터에 서비스가 없으면 Nimote Connect 설정 안내를 따르세요. 에디션을 인식하지 못하면 배포처를 확인한 뒤 업데이트하세요.
+
 ## 1. 패키지 다운로드
 
 [NimoteHost 릴리스](https://github.com/mobiledevloperlab/nimotehost/releases)에서 컴퓨터에 맞는 전체 패키지를 선택합니다. 서버에서는 CLI만 있으면 됩니다. 컴퓨터에서 관리 창도 사용하려면 GUI 패키지를 선택하세요.

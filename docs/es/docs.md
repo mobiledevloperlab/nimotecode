@@ -7,6 +7,8 @@ description: "Conoce los cuatro modos de NimoteCode, SSH, Linux en Android, prog
 
 Empieza con [Inicio rápido](/es/docs/quick-start) para abrir un espacio, editar un archivo y ejecutar un comando. Después elige la guía para tu tarea.
 
+En NimoteCode 2.5.0 puedes [conectar con un equipo vinculado mediante Tailscale personal](/es/docs/ssh#paired-computers), [reanudar un terminal SSH con tmux](/es/docs/terminal#persistent-ssh-terminal) o [instalar NimoteHost por SSH](/es/docs/host/getting-started#install-over-ssh).
+
 ## Elige dónde están los archivos y se ejecutan los comandos
 
 | Quiero… | Empezar aquí | Qué tener en cuenta |

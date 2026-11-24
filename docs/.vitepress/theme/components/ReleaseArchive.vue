@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useData } from 'vitepress'
-import { latestRelease } from '../data/releases'
+import { latestRelease, upcomingRelease } from '../data/releases'
 
 type Release = {
   version: string
@@ -42,7 +42,11 @@ const releases: Release[] = [
 ]
 
 const { page } = useData()
-const locale = computed(() => page.value.relativePath.match(/^(zh|es|ja|ko)\//)?.[1] ?? 'en')
+const locale = computed(() => {
+  const key = page.value.relativePath.split('/')[0]
+  return key in upcomingRelease.copy ? key as keyof typeof upcomingRelease.copy : 'en'
+})
+const upcomingCopy = computed(() => upcomingRelease.copy[locale.value])
 const localePath = computed(() => locale.value === 'en' ? '' : `/${locale.value}`)
 const copy = computed(() => ({ zh: {
   eyebrow: '最新版本', archive: '历史版本', latest: '当前版本', view: '查看发布说明', build: 'Build', more: '查看更早版本', count: '个版本'
@@ -78,6 +82,18 @@ const localized = (values: Record<string, string | undefined>) => values[locale.
       <ul class="release-highlights">
         <li v-for="highlight in releaseHighlights" :key="highlight">{{ highlight }}</li>
       </ul>
+    </div>
+  </section>
+
+  <section class="release-hero" aria-labelledby="upcoming-release-title">
+    <p class="release-eyebrow">{{ upcomingCopy.status }}</p>
+    <div class="release-hero-card">
+      <div class="release-hero-copy">
+        <h2 id="upcoming-release-title">NimoteCode {{ upcomingRelease.version }}</h2>
+        <p class="release-date">{{ copy.build }} {{ upcomingRelease.build }}</p>
+        <p class="release-summary">{{ upcomingCopy.homeSummary }}</p>
+        <a class="release-primary-link" :href="`${localePath}/releases/${upcomingRelease.version}`">{{ upcomingCopy.view }} <span aria-hidden="true">→</span></a>
+      </div>
     </div>
   </section>
 

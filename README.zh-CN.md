@@ -27,7 +27,7 @@
   <a href="#workflow">实景工作流</a> ·
   <a href="#workspace-modes">四种模式</a> ·
   <a href="#quick-start">快速开始</a> ·
-  <a href="#latest-release">2.4.1 新功能</a> ·
+  <a href="#latest-release">2.5.0 · 待发布</a> ·
   <a href="#nimotehost">NimoteHost</a> ·
   <a href="https://nimotecode.com/zh/docs">文档</a> ·
   <a href="https://github.com/mobiledevloperlab/nimote_issues/issues">反馈问题</a>
@@ -155,19 +155,16 @@ iPhone 和 iPad 不支持 Local Linux，可通过 SSH 主机运行开发命令�
 
 <a id="latest-release"></a>
 
-## 2.4.1 已发布
+## NimoteCode 2.5.0 · 待发布
 
-**NimoteCode 2.4.1 现已发布。** 本次更新聚焦重新设计的工作台、远程会话与工作区文件传输。
+- 通过个人 Tailscale，以 SSH 连接已配对的电脑。
+- Pro 支持恢复 tmux 持久会话。可通过 SSH 安装或更新 NimoteHost。
+- 改善 SSH 重连、终端输入、滚动与复制。
+- 更新手机导航，工作区搜索可定位并高亮匹配内容。
+- 内置 Codex 响应更快，Android 本地 Linux 支持开发工具包。
+- 2.5.0 还支持 Git 文件和行历史就地重试、从缺少快照的 Agent 审查卡查看 Git 差异，并细化了 Pro 操作标识。Free 用户可浏览 GitHub、查看 Docker 概览和管理断点。
 
-- **全新界面与平板布局：**优化横屏编辑、编辑器控件与移动端 Git 审查，文件浏览器显示 Git 状态颜色。
-- **Host 工作区与 Agent 任务：**浏览并恢复兼容终端和 Agent 会话，处理权限请求，查看任务结果与 Diff。
-- **文件与目录传输：**在设备和 SSH 工作区之间传输，或在本地导入、导出。
-- **项目任务发现：**识别 npm、Taskfile、Makefile、justfile 和 VS Code 任务定义中的受支持任务。
-- **终端与远程体验改进：**保留历史搜索、选择与剪贴板优化、GitHub CI 步骤日志，以及更可靠的远程保存。
-
-[阅读完整 2.4.1 发布说明 →](https://nimotecode.com/zh/releases/2.4.1)
-
-下载渠道与商店推送进度可能因平台和地区不同；请在[官方下载页](https://nimotecode.com/zh/download)查看当前渠道与平台要求。
+[阅读完整 2.5.0 发布说明](https://nimotecode.com/zh/releases/2.5.0) · [当前正式版本 2.4.1](https://nimotecode.com/zh/releases/2.4.1)
 
 <a id="nimotehost"></a>
 
@@ -200,7 +197,7 @@ iPhone 和 iPad 不支持 Local Linux，可通过 SSH 主机运行开发命令�
 <!-- major-comparison:start -->
 ## NimoteCode vs 五款主要竞品
 
-资料核实: **2026-11-20 04:12:58 (UTC)** · 依据官方文档、官网与公开发布信息
+资料核实: **2026-11-24 07:16:24 (UTC)** · 依据官方文档、官网与公开发布信息
 
 **在自己的电脑上运行开发任务，在手机上查看代码、管理终端、恢复兼容 AI 会话并处理审批。**
 

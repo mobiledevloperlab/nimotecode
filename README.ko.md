@@ -27,7 +27,7 @@
   <a href="#workflow">개발 흐름</a> ·
   <a href="#workspace-modes">네 가지 모드</a> ·
   <a href="#quick-start">빠른 시작</a> ·
-  <a href="#latest-release">2.4.1 새 기능</a> ·
+  <a href="#latest-release">2.5.0 · 출시 예정</a> ·
   <a href="#nimotehost">NimoteHost</a> ·
   <a href="https://nimotecode.com/ko/docs">문서</a> ·
   <a href="https://github.com/mobiledevloperlab/nimote_issues/issues">문제 보고</a>
@@ -157,17 +157,16 @@ iPhone과 iPad에서는 Local Linux를 사용할 수 없으며 SSH 호스트에�
 
 <a id="latest-release"></a>
 
-## NimoteCode 2.4.1 출시
+## NimoteCode 2.5.0 · 출시 예정
 
-- **새 인터페이스:** 태블릿과 가로 화면, 편집기 조작, 모바일 Git 검토 개선.
-- **Host 작업 공간:** 호환 터미널과 Agent 세션을 재개하고 승인, 작업 결과와 diff 확인.
-- **파일 전송:** 기기와 SSH 사이의 파일 및 폴더 전송, 로컬 가져오기와 내보내기.
-- **프로젝트 작업 발견:** npm, Taskfile, Makefile, justfile 및 VS Code의 지원 작업 정의 탐색.
-- **터미널과 원격 작업:** 보존된 기록 검색, 선택과 클립보드, CI 단계 로그, 원격 저장 안정성 개선.
+- 개인 Tailscale을 통해 페어링된 컴퓨터에 SSH로 연결하세요.
+- Pro에서 지속 tmux 세션을 재개하고, SSH로 NimoteHost를 설치하거나 업데이트할 수 있습니다.
+- SSH 재연결과 터미널 입력, 스크롤, 복사를 개선했습니다.
+- 휴대전화 탐색 메뉴를 개편하고 작업 공간 검색 결과를 강조합니다.
+- 내장 Codex가 빨라졌으며 Android 로컬 Linux 개발 도구 모음을 지원합니다.
+- 2.5.0에는 Git 파일 및 줄 기록 재시도, 스냅샷이 없을 때의 Agent 검토 안내, 작업별 Pro 표시도 포함됩니다. Free에서 GitHub 탐색, Docker 개요, 중단점 관리를 이용할 수 있습니다.
 
-[2.4.1 전체 릴리스 노트](https://nimotecode.com/ko/releases/2.4.1) · [공식 다운로드](https://nimotecode.com/ko/download)
-
-스토어 제공 여부와 배포 시점은 플랫폼 및 지역에 따라 다를 수 있습니다.
+[2.5.0 전체 릴리스 노트 읽기](https://nimotecode.com/ko/releases/2.5.0) · [현재 출시 버전 2.4.1](https://nimotecode.com/ko/releases/2.4.1)
 
 <a id="nimotehost"></a>
 
@@ -198,7 +197,7 @@ Host 기능에 따라 도구 출력, 승인, 작업과 검증 결과를 확인�
 <!-- major-comparison:start -->
 ## NimoteCode와 주요 경쟁 제품 5종 비교
 
-자료 확인 시각: **2026-11-20 04:12:58 (UTC)** · 공식 문서, 웹사이트와 공개 릴리스 자료 기준
+자료 확인 시각: **2026-11-24 07:16:24 (UTC)** · 공식 문서, 웹사이트와 공개 릴리스 자료 기준
 
 **개발 작업은 내 컴퓨터에서 실행하고, 휴대전화에서 코드를 살펴보고 터미널을 관리하며 호환 AI 세션을 복원하고 승인에 응답하세요.**
 

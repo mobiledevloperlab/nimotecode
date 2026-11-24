@@ -17,6 +17,10 @@ Si no se reconoce una compra anterior, compruebe la cuenta de la tienda de la pl
 
 ## Acceso a las funciones
 
+En 2.5.0, Free permite explorar GitHub, ver el resumen por SSH de la versión de Docker, los contenedores y las imágenes, y gestionar puntos de interrupción. Clonar o escribir en GitHub, gestionar recursos Docker e iniciar una depuración requieren Pro. Las acciones indican el acceso necesario.
+
+En NimoteCode 2.5.0, crear o reanudar un [terminal SSH persistente](/es/docs/terminal#persistent-ssh-terminal) requiere Pro y un host compatible con tmux instalado. Las compilaciones nativas de escritorio habilitan Pro de forma predeterminada.
+
 Los espacios locales y SSH, el editor, el terminal básico, la revisión Git, AI Chat, LSP básico y las tareas de terminal son gratuitos. Usa AI Agent, Git y GitHub, varios terminales, Host, Docker, herramientas de lenguaje avanzadas y operaciones SSH. Consulta disponibilidad de compra y precios en la app.
 
 Consulta [Gratis y Pro](/es/pro).

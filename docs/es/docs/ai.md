@@ -39,6 +39,10 @@ El selector ofrece Nimote Agent y agentes externos. Los externos se ejecutan en 
 
 </div>
 
+En 2.5.0, Codex integrado responde más rápido y mejora la cancelación y las llamadas a herramientas. Agent conserva los turnos cancelados al restaurar conversaciones interrumpidas.
+
+En 2.5.0, si falta una captura de un archivo, usa la acción Git de la tarjeta para inspeccionar el diff actual. Los archivos con capturas siguen accesibles desde la tarjeta.
+
 ## Revisar el plan y seguir la ejecución
 
 En modo **Confirm**, revise el plan y seleccione **Approve this run** para permitir las herramientas. La cronología muestra el paso actual, las llamadas completadas y su salida. Puede enviar instrucciones adicionales o responder preguntas durante la ejecución. Si se alcanza el límite de pasos, revise el resultado antes de continuar.

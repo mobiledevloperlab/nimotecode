@@ -47,6 +47,8 @@ description: "在手机或平板上使用 NimoteCode 编辑代码，了解标签
 
 ## 符号导航与历史记录
 
+2.5.0 可从编辑器工具栏的文件历史入口查看当前文件的提交。文件和行历史加载失败时可在原处重试。拖动滚动条会保留当前选区。
+
 符号菜单包含 **Go To Definition**、**References**、**Rename Symbol**、**Outline** 和 Git 历史入口。语言导航依赖已配置的语言服务；Git 历史操作需要当前项目是 Git 仓库。
 
 </div>

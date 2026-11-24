@@ -31,6 +31,10 @@ You can send follow-up instructions while a run is active. Stop a run when its d
 
 Automatic execution, when available, reduces approval prompts; it does not make an action safe. Use it only in a workspace and account whose scope you understand.
 
+In 2.5.0, the built-in Codex responds more quickly and handles cancellation and tool calls more reliably. Restoring interrupted Agent history preserves canceled turns.
+
+In 2.5.0, if a review card reports that a file has no recorded snapshot, use its Git action to inspect the current workspace diff. Files with snapshots can still be opened directly from the card.
+
 ## Add an external ACP agent
 
 External agents are disabled until you enable them. Configure a compatible Agent Client Protocol (ACP) runtime and any required command, arguments, and environment variables for the target environment. NimoteCode includes editable presets for DeepSeek Harness, Claude Agent, Kimi Code CLI, Codex, and OpenCode; you may also add a compatible custom runtime.

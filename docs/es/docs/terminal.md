@@ -35,6 +35,18 @@ El menú de sesión incluye búsqueda, portapapeles, **Analyze with AI**, borrad
 
 </div>
 
+## Reanudar un terminal SSH con tmux {#persistent-ssh-terminal}
+
+En NimoteCode 2.5.0 con Pro, conéctate a un host Linux o macOS compatible con tmux instalado. En el menú de terminal, elige crear un terminal persistente o consulta las sesiones tmux remotas para volver a una sesión del mismo host y usuario SSH. La lista usa el socket tmux predeterminado de ese usuario.
+
+Cerrar la pestaña local desconecta el cliente y deja la sesión en marcha. Para detener la sesión y sus procesos, elige finalizar la sesión tmux remota y confirma. La sesión termina si el host se reinicia o el servidor tmux se detiene.
+
+Si un programa como Codex o Claude Code captura el ratón, mantén pulsada Mayús mientras arrastras y copia desde el menú contextual. NimoteCode 2.5.0 conserva la selección tras el redibujado.
+
+Reanuda una sesión tmux guardada desde el historial o usa la lista remota en otro cliente con el mismo usuario SSH. En horizontal, Esc, Ctrl y otras teclas aparecen si el teclado está abierto y queda espacio.
+
+Con tmux instalado en Linux local de Android, el mismo menú permite abrir sesiones dentro del entorno en ejecución. Al detener el entorno, terminan las sesiones. Las acciones de persistencia no se ofrecen dentro de Dev Containers ni en hosts SSH nativos de Windows.
+
 ## Actualizar el entorno remoto
 
 Tras cambiar la configuración del shell de la cuenta remota, seleccione **Refresh Remote Environment** o reconecte. Las herramientas remotas, como Tasks, Git, servidores de lenguaje, adaptadores de depuración y agentes externos, comparten el entorno de inicio de sesión obtenido.

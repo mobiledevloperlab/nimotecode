@@ -49,6 +49,8 @@ Plugins use registered capabilities rather than loading executable app extension
 
 Treat a plugin command or script like any other command from an untrusted source: read it, confirm its target and input, and inspect its result. Do not store secrets in generated defaults or share them in a plugin description.
 
+In 2.5.0, the execution target shown by Tasks and plugins follows the current workspace and platform. Use a connected SSH terminal or a supported Android Local Linux terminal where available. The remote account or Linux environment supplies the installed tools.
+
 ## Install, update, disable, and recover
 
 Open Plugin Center to inspect a plugin’s details, capabilities, and permissions; **Open plugin** opens its panel. **Discover** starts a new AI-assisted creation flow, while **My Plugins** lists locally managed plugins.

@@ -27,7 +27,7 @@
   <a href="#workflow">Flujo de trabajo</a> ·
   <a href="#workspace-modes">Cuatro modos</a> ·
   <a href="#quick-start">Inicio rápido</a> ·
-  <a href="#latest-release">Novedades 2.4.1</a> ·
+  <a href="#latest-release">2.5.0 · Próximamente</a> ·
   <a href="#nimotehost">NimoteHost</a> ·
   <a href="https://nimotecode.com/es/docs">Documentación</a> ·
   <a href="https://github.com/mobiledevloperlab/nimote_issues/issues">Informar de un problema</a>
@@ -157,17 +157,16 @@ Local Linux no está disponible en iPhone o iPad; utiliza un host SSH para ejecu
 
 <a id="latest-release"></a>
 
-## NimoteCode 2.4.1 ya disponible
+## NimoteCode 2.5.0 · Próximamente
 
-- **Interfaz renovada:** mejores diseños de tablet y horizontal, controles del editor y revisión Git móvil.
-- **Espacio Host:** reanuda terminales y sesiones Agent compatibles; revisa permisos, resultados y diffs.
-- **Transferencias:** mueve archivos y carpetas entre dispositivo y SSH, o importa y exporta localmente.
-- **Tareas de proyecto:** descubre tareas compatibles de npm, Taskfile, Makefile, justfile y VS Code.
-- **Terminal y trabajo remoto:** búsqueda de historial conservado, selección y portapapeles mejorados, logs de CI y guardado remoto más fiable.
+- Conecta por SSH a equipos vinculados mediante Tailscale personal.
+- Retoma sesiones tmux con Pro. Instala o actualiza NimoteHost por SSH.
+- Mejoras en la reconexión SSH, la entrada, el desplazamiento y la copia en la terminal.
+- Nueva navegación móvil y resultados de búsqueda resaltados.
+- Codex integrado más rápido y kits de Linux local en Android.
+- 2.5.0 también permite reintentar el historial Git de archivos y líneas, enlaza al diff cuando falta una captura de Agent y marca cada acción Pro. Free permite explorar GitHub, ver el resumen de Docker y gestionar puntos de interrupción.
 
-[Notas completas de 2.4.1](https://nimotecode.com/es/releases/2.4.1) · [Descargas oficiales](https://nimotecode.com/es/download)
-
-La disponibilidad y el despliegue en tiendas pueden variar por plataforma y región.
+[Leer las notas completas de 2.5.0](https://nimotecode.com/es/releases/2.5.0) · [Versión publicada 2.4.1](https://nimotecode.com/es/releases/2.4.1)
 
 <a id="nimotehost"></a>
 
@@ -198,7 +197,7 @@ Instala un paquete compatible con el sistema y CPU del ordenador, mantenlo en ej
 <!-- major-comparison:start -->
 ## NimoteCode frente a cinco alternativas principales
 
-Fuentes verificadas: **2026-11-20 04:12:58 (UTC)** · Según documentación, sitios web y publicaciones oficiales
+Fuentes verificadas: **2026-11-24 07:16:24 (UTC)** · Según documentación, sitios web y publicaciones oficiales
 
 **Ejecuta el trabajo en tu ordenador; usa el móvil para revisar código, gestionar terminales, recuperar sesiones de IA compatibles y responder a las aprobaciones.**
 

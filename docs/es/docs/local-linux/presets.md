@@ -7,6 +7,10 @@ description: "Explora herramientas Ubuntu opcionales para Local Linux en Android
 
 Los conjuntos de herramientas opcionales se mantienen en el [repositorio Linux Presets](https://github.com/mobiledevloperlab/nimote-linux-presets). Elige uno para tu proyecto y comprueba su compatibilidad antes de instalar.
 
+## Instalar un kit desde Android {#android-app}
+
+En NimoteCode 2.5.0, instala Ubuntu y abre los kits de desarrollo en la página de administración de Linux local. Revisa las dependencias y el espacio estimado antes de instalar. Usa la opción de comprobación para verificar los kits instalados. La aplicación verifica una revisión fija del catálogo y los hashes de sus scripts. Los kits de la comunidad aparecen cuando los responsables revisan y adoptan la revisión. Consulta el catálogo de la aplicación para ver los kits disponibles. El kit experimental de C++ sigue restringido.
+
 ## Herramientas disponibles
 
 | Conjunto | Uso |

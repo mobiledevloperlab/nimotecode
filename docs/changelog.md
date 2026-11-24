@@ -11,6 +11,12 @@ This is the public record of notable product updates. For setup help, use the [d
 
 ## 2026
 
+### Version 2.5.0 · Upcoming
+
+SSH to paired computers, resume tmux sessions, and install NimoteHost over SSH.
+
+[Read the complete 2.5.0 release notes](/releases/2.5.0)
+
 ### Version 2.4.1 · November 19, 2026
 
 NimoteCode 2.4.1 adds a Host workspace for remote terminal and Agent sessions, file and folder transfers, and project task discovery. This release also redesigns the interface, improves tablet layouts, and updates GitHub CI, terminal history search, SSH verification, and remote saves.

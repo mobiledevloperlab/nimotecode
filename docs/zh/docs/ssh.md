@@ -47,6 +47,16 @@ Explorer 提供本地、远程 SSH、Local Linux 和演示入口，Recent Histor
   <DocScreenshot file="remote-connection-history.png" caption="Connection environments 面板中的已保存 SSH 连接。" />
 </div>
 
+## 连接已配对的电脑 {#paired-computers}
+
+在 NimoteCode 2.5.0 中登录账号，打开连接选择器并选择 **Connect / Tailscale**。使用 **输入绑定码**，填写电脑上的 Nimote Connect 显示的一次性代码。也可以从设备列表解除配对。
+
+使用个人 Tailscale 时，先让两台设备加入同一个 tailnet，并在电脑上启用 SSH。选择电脑和 **通过 Tailscale 连接** 后，应用会使用同步的 Tailscale IP 或 MagicDNS 名称。用电脑上的 SSH 用户名和密码或密钥登录。连接失败时，核对同步地址和 SSH 端口。使用主机名时也请检查 MagicDNS。
+
+已开启远程访问的兼容配对电脑还可以使用 Nimote Relay。公网接入仍在发布验收中，当前验证包括跨网络直连与线路切换。
+
+Relay 会显示从授权到 SSH 登录的各个阶段。配对电脑须在线并已开启远程访问。解除配对会撤销该设备的 Relay 访问。在 Host 服务可用时，同一配对电脑和 SSH 账号的已验证连接方式可打开同一个 Host 工作区。
+
 ## 选择项目根目录
 
 在远程目录选择器中输入路径或逐级浏览到项目目录。打开后，检查 Explorer 显示的服务器、用户、端口和根路径。点击 **Select** 进入文件选择模式。切换目录会改变项目工具使用的工作区。

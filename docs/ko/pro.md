@@ -8,6 +8,10 @@ pageClass: pricing-page
 
 하나의 모바일 작업 공간에서 AI Agent, Git과 GitHub, Host, Docker 및 고급 개발 도구를 사용하세요.
 
+NimoteCode 2.5.0에서 [지속 SSH 터미널](/ko/docs/terminal#persistent-ssh-terminal)을 만들거나 재개하려면 Pro와 tmux가 설치된 호환 호스트가 필요합니다. 네이티브 데스크톱 빌드는 기본으로 Pro를 적용합니다.
+
+2.5.0부터 Free에서 GitHub 탐색, 지원되는 SSH의 Docker 버전·컨테이너·이미지 개요, 중단점 관리를 이용할 수 있습니다. GitHub 복제·쓰기, Docker 리소스 관리, 디버깅 시작에는 Pro가 필요합니다.
+
 <PricingFeatureSystem lang="ko" mode="full" />
 
 권한 확인과 구매 복원은 [계정 및 구독](/ko/docs/account-subscription)을 참고하세요.

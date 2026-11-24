@@ -25,6 +25,17 @@ const paths: Record<string, string> = {
   book: 'M12 5v16M2 4c4-1 7-1 10 1 3-2 6-2 10-1v15c-4-1-7-1-10 2-3-3-6-3-10-2Z',
   wifi: 'M2 8a16 16 0 0 1 20 0M5 12a11 11 0 0 1 14 0m-11 4a6 6 0 0 1 8 0m-4 4h.01',
   battery: 'M2 6h17v12H2ZM22 10v4M5 9h11v6H5Z',
+  airplane: 'M12 2v20m-4-2 4-2 4 2M3 14l9-6 9 6',
+  close: 'm6 6 12 12M18 6 6 18',
+  confirm: 'M22 12a10 10 0 1 1-20 0 10 10 0 1 1 20 0ZM7 12l3 3 6-6',
+  expand: 'M9 3H3v6m12-6h6v6M3 15v6h6m12-6v6h-6',
+  'folder-add': 'M3 7V5h6l2 3h10v12H3Zm9 4v6m-3-3h6',
+  share: 'M9 11 15 6M9 13l6 5M9 12a3 3 0 1 1-6 0 3 3 0 1 1 6 0Zm12-7a3 3 0 1 1-6 0 3 3 0 1 1 6 0Zm0 14a3 3 0 1 1-6 0 3 3 0 1 1 6 0Z',
+  github: 'M8 20c0-3-3-1-4-5m4 7v-4c-5-1-5-4-5-6 0-2 1-3 2-4V4l4 2h6l4-2v4c1 1 2 2 2 4 0 2 0 5-5 6v4',
+  debug: 'm8 5 2 3m6-3-2 3M6 10l3 2m6 0 3-2M5 15h4m6 0h4M6 20l3-2m6 0 3 2M9 11a3 3 0 0 1 6 0v7a3 3 0 0 1-6 0Z',
+  docker: 'M3 13h15l2-3 3 2-2 3c-2 4-6 6-11 6H7c-3 0-4-3-4-8Zm3-2V8h3v3m2 0V8h3v3m2 0V8h3m-8-2V3h3v3',
+  sliders: 'M3 6h8m4 0h6M3 12h3m4 0h11M3 18h12m4 0h2M11 4h4v4h-4ZM6 10h4v4H6Zm9 6h4v4h-4Z',
+  grid: 'M4 4h6v6H4Zm10 0h6v6h-6ZM4 14h6v6H4Zm10 0h6v6h-6Z',
 }
 </script>
 

@@ -7,6 +7,10 @@ description: "Android Local Linux용 선택적 Ubuntu 도구 모음을 살펴보
 
 선택적 개발 도구 모음은 [Linux Presets 저장소](https://github.com/mobiledevloperlab/nimote-linux-presets)에서 관리합니다. 프로젝트에 맞게 선택하고 설치 전에 호환성을 확인하세요.
 
+## Android 앱에서 도구 모음 설치하기 {#android-app}
+
+NimoteCode 2.5.0에서 Ubuntu를 설치하고 로컬 Linux 관리 화면의 개발 도구 모음을 여세요. 설치 전에 도구 모음의 의존성과 예상 공간을 확인하세요. 검사 작업을 실행해 기존 설치를 확인할 수도 있습니다. 앱은 고정된 카탈로그 리비전과 스크립트 해시를 검증합니다. 커뮤니티 도구 모음은 유지 관리자가 검토한 리비전을 채택하면 표시됩니다. 설치 가능한 항목은 앱 카탈로그에서 확인할 수 있습니다. 실험용 C++ 도구 모음에는 계속 제한이 적용됩니다.
+
 ## 도구 모음
 
 | 도구 모음 | 용도 |

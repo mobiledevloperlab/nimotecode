@@ -5,7 +5,7 @@ import AppMockup from './AppMockup.vue'
 import WorkspaceModes from './WorkspaceModes.vue'
 import MockIcon from './MockIcon.vue'
 import reviewSnapshot from '../data/google-play-reviews.json'
-import { latestRelease } from '../data/releases'
+import { latestRelease, upcomingRelease } from '../data/releases'
 import translations from '../i18n/home.json'
 import '../styles/product-home.css'
 
@@ -41,8 +41,8 @@ const formatReviewDate = (date: string) => new Intl.DateTimeFormat(locale.value,
       <div class="product-container product-hero-grid">
         <div class="product-hero-copy">
           <p class="product-announcement">
-            <span class="product-announcement-badge">{{ copy.previewLabel }}</span>
-            <strong><a :href="local('/releases/2.4.1')">{{ copy.previewMessage }}</a></strong>
+            <span class="product-announcement-badge">{{ upcomingRelease.version }} · {{ upcomingRelease.copy[locale].status }}</span>
+            <strong><a :href="local(`/releases/${upcomingRelease.version}`)">{{ upcomingRelease.copy[locale].homeSummary }}</a></strong>
           </p>
           <div class="product-hero-heading">
             <p class="product-eyebrow">NimoteCode <span aria-hidden="true">/</span> {{ copy.badge }}</p>

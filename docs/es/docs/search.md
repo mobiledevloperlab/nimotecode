@@ -12,6 +12,8 @@ description: "Configuración, procedimientos y referencia de la interfaz: Búsqu
 
 En un espacio SSH, abra Search e introduzca texto en **Search file content**. Active la distinción entre mayúsculas y minúsculas cuando corresponda, o las expresiones regulares para buscar patrones. Seleccione un resultado para abrir el archivo en la línea coincidente. La búsqueda de contenido remoto requiere Pro.
 
+En 2.5.0, seleccionar un resultado desplaza el editor hasta la coincidencia y la resalta.
+
 </div>
 
 <div class="doc-screenshots">

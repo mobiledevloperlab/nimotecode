@@ -9,6 +9,8 @@ description: "NimoteHost 连接、终端与任务说明与操作步骤。"
 
 ## 在 NimoteCode 选择 Host 和 SSH 连接 {#_3-在-nimotecode-选择-host-和-ssh-连接}
 
+在 NimoteCode 2.5.0 中，从 **Host → 远程连接** 连接并检查安装状态。使用当前连接中显示的安装或更新入口，或打开 Host 帮助查看已安装版本。若需要停止正在运行的会话，请先核对影响再确认。
+
 1. 打开 NimoteCode 的模式入口，选择 **Host**。已有工作区时，也可以从模式菜单切换。
 2. 在部署提示页点 **SSH connections（SSH 连接）**。
 3. 选择安装 Host 的那台电脑及其 SSH 账号。没有保存过连接，就先选 **New Remote Connection** 添加。

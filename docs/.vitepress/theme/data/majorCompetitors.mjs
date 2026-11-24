@@ -2,9 +2,9 @@
 // honest: recheck official sources before advancing this date.
 import { sourceEvidence } from './majorCompetitorEvidence.mjs'
 import { comparisonTranslations } from './majorComparisonTranslations.mjs'
-export const reviewedAt = '2026-11-20'
+export const reviewedAt = '2026-11-24'
 // Manual audit completion time; never replace this with build time.
-export const reviewedAtUtc = '2026-11-20T04:12:58Z'
+export const reviewedAtUtc = '2026-11-24T07:16:24Z'
 export const reviewWindowHours = 24
 export const products = [
   ['NimoteCode', 'https://nimotecode.com/docs/host'],

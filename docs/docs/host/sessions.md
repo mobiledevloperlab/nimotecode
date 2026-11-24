@@ -9,6 +9,8 @@ Install and start [NimoteHost](/docs/host/getting-started) first, then use the s
 
 ## Choose Host and your SSH connection {#_3-choose-host-and-your-ssh-connection}
 
+In NimoteCode 2.5.0, open **Host → Remote connections** to connect and check installation status. Use the setup or update action shown for the connection, or open Host help to check the installed version. Review any request to stop running sessions before continuing.
+
 1. Choose **Host** from NimoteCode's mode entry or the mode menu in an existing workspace.
 2. On the setup screen, tap **SSH connections**.
 3. Pick the computer and account where you installed Host. Use **New Remote Connection** if you have not saved it yet.

@@ -7,6 +7,8 @@ description: Explore NimoteCode documentation for its four modes, SSH and Androi
 
 Start with [Quick start](/docs/quick-start) to open a workspace, edit a file, and run a command. Then choose the guide for the work you want to do.
 
+In NimoteCode 2.5.0, you can [connect to a paired computer through personal Tailscale](/docs/ssh#paired-computers), [resume an SSH terminal with tmux](/docs/terminal#persistent-ssh-terminal), or [set up NimoteHost over SSH](/docs/host/getting-started#install-over-ssh).
+
 ## Choose where your work runs
 
 | I want to… | Start here | What to expect |

@@ -7,6 +7,8 @@ description: "NimoteCode의 네 가지 모드, SSH, Android Local Linux, AI 코�
 
 [빠른 시작](/ko/docs/quick-start)에서 작업 공간 열기, 파일 편집, 명령 실행을 먼저 완료하세요. 다음으로 현재 작업에 맞는 가이드를 선택하세요.
 
+NimoteCode 2.5.0에서는 [개인 Tailscale로 페어링된 컴퓨터에 연결](/ko/docs/ssh#paired-computers), [tmux로 SSH 터미널 재개](/ko/docs/terminal#persistent-ssh-terminal), [SSH로 NimoteHost 설정](/ko/docs/host/getting-started#install-over-ssh)을 할 수 있습니다.
+
 ## 파일과 명령을 실행할 위치 선택
 
 | 하려는 작업 | 시작할 가이드 | 확인할 내용 |

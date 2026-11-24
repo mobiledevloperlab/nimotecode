@@ -35,6 +35,18 @@ description: "使用 NimoteCode 通过 SSH 或 Android Local Linux 运行命令�
 
 </div>
 
+## 使用 tmux 恢复 SSH 终端 {#persistent-ssh-terminal}
+
+在 NimoteCode 2.5.0 中启用 Pro 后，连接已安装 tmux 的兼容 Linux 或 macOS 主机。从终端菜单选择 **新建持久终端（tmux）**，或通过 **远端 tmux 会话** 找回同一主机、同一 SSH 用户的会话。发现会话使用该账号的默认 tmux socket。
+
+关闭本地标签只会断开当前客户端，远端会话继续运行。选择 **结束远端 tmux 会话** 并确认会停止会话及其中的任务。主机重启或 tmux 服务退出会结束原会话。
+
+如果 Codex 或 Claude Code 等终端程序捕获了鼠标，按住 Shift 拖选，再通过右键菜单复制。NimoteCode 2.5.0 会在程序重绘后保留选区。
+
+可从终端会话历史恢复保存过的 tmux 会话，或用同一 SSH 用户从另一客户端打开远端会话列表。手机横屏且软键盘打开时，若面板空间充足，会显示 Esc、Ctrl 等终端键。
+
+Android 本地 Linux 环境装有 tmux 时，也可用同一菜单接入该环境中的会话。环境停止时会话结束。该持久终端入口适用于 SSH 主机或兼容的本地 Linux 环境，Dev Containers 内及原生 Windows SSH 主机上不可用。
+
 ## 刷新远程环境
 
 更新远程账户的 Shell 配置后，选择 **Refresh Remote Environment** 或重新连接。解析后的登录环境供 Tasks、Git、语言服务、调试适配器及外部 Agent 等远程工具使用。

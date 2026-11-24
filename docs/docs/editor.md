@@ -47,6 +47,8 @@ Open the overflow menu to undo a change or redo it. Clipboard commands are also 
 
 ## Navigate symbols and history
 
+From the 2.5.0 editor, use the toolbar’s file history action to open the current file’s commits. Line history and file history show a retry action if loading fails. Dragging the scrollbar preserves the active text selection.
+
 The symbol menu groups **Go To Definition**, **References**, **Rename Symbol**, **Outline**, and Git history actions. Language navigation depends on the configured language server; history actions require a Git repository.
 
 </div>

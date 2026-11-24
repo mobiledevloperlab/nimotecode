@@ -17,6 +17,10 @@ description: "계정 및 구독 설정, 사용 절차 및 화면 안내."
 
 ## 기능 이용 권한
 
+2.5.0부터 Free에서 GitHub 탐색, 지원되는 SSH의 Docker 버전·컨테이너·이미지 개요, 중단점 관리를 이용할 수 있습니다. GitHub 복제·쓰기, Docker 리소스 관리, 디버깅 시작에는 Pro가 필요합니다.
+
+NimoteCode 2.5.0에서 [지속 SSH 터미널](/ko/docs/terminal#persistent-ssh-terminal)을 만들거나 재개하려면 Pro와 tmux가 설치된 호환 호스트가 필요합니다. 네이티브 데스크톱 빌드는 기본으로 Pro를 적용합니다.
+
 로컬 및 SSH 작업 공간, 편집기, 기본 터미널, Git 검토, AI Chat, 기본 LSP, 터미널 기반 작업은 무료입니다. AI Agent, Git과 GitHub, 다중 터미널, Host, Docker, 고급 언어 도구, SSH 파일 작업을 이용하세요. 구매 가능 여부와 가격은 앱에서 확인하세요.
 
 [무료 버전과 Pro](/ko/pro)를 참고하세요.

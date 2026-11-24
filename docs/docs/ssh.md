@@ -47,6 +47,16 @@ Back in Local Explorer, verify the root directory. The example folder is empty; 
   <DocScreenshot file="remote-connection-history.png" caption="Saved SSH connection in the Connection environments sheet." />
 </div>
 
+## Connect to a paired computer {#paired-computers}
+
+In NimoteCode 2.5.0, sign in and open the connection picker, then choose **Connect / Tailscale**. Use **Enter pairing code** to link a computer using the one-time code displayed by Nimote Connect on that computer. You can also remove a pairing from the device list.
+
+For personal Tailscale, keep both devices on the same tailnet and enable SSH on the computer. Select the computer and choose **Connect via Tailscale**. The app uses the synced Tailscale IP or MagicDNS name. Sign in with the computer’s SSH username and password or key. If it fails, check the synced address, SSH port and, for a hostname, MagicDNS.
+
+Nimote Relay is a separate option for compatible paired computers with remote access enabled. Public connectivity is undergoing release validation, including direct connections between networks and switching routes.
+
+Relay shows the stages from authorization through SSH sign-in. The paired computer needs to be online with remote access enabled. Unpairing revokes its Relay access. For verified routes to the same paired computer and SSH account, Host can reopen the same workspace when its service is available.
+
 ## Select the project root
 
 Use the remote directory picker to enter or browse to the project folder. After opening it, check the server, user, port, and root shown in Explorer. Use **Select** to enter file-selection mode. Switching directories changes the workspace used by project tools.

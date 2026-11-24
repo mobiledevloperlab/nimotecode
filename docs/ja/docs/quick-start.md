@@ -14,6 +14,10 @@ description: "クイックスタートの設定、操作手順、画面の説明
 
 ## ワークスペースを開く
 
+NimoteCode 2.5.0 では縦向きのスマートフォンにフローティングナビゲーションが表示され、パネルを切り替えられます。単一ペインのエディターが空の場合は、そこからファイルを開けます。
+
+NimoteCode 2.5.0 では、[個人用 Tailscale でペアリング済みの PC に接続](/ja/docs/ssh#paired-computers)、[tmux で SSH ターミナルを再開](/ja/docs/terminal#persistent-ssh-terminal)、[SSH で NimoteHost をセットアップ](/ja/docs/host/getting-started#install-over-ssh)できます。
+
 フル IDE では、端末のファイル、SSH ホスト、GitHub のプロジェクト、対応 Android 端末の Local Linux を選べます。サンプルプロジェクトでも画面を試せます。
 
 アプリには4つのモードがあります。**クイックターミナル**は SSH、Linux、コマンド用、**AI ワークスペース**は AI チャット、エージェント、タスク用、**フル IDE**はファイル、Git、AI 開発用です。**Host** は NimoteHost を使い、継続するリモートタスクと Agent セッションを管理します。「モードを切り替え」で選択できます。プロジェクトの保存先は別に選びます。端末のファイルは編集できますが、コマンドの実行には SSH または Local Linux が必要です。

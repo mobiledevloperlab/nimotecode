@@ -45,6 +45,8 @@ La vista previa permite comprobar el panel sin modificar archivos, enviar solici
 
 Los scripts usan intérpretes ya instalados en el destino y se ejecutan con los permisos de esa cuenta. Prepare antes el entorno Python, Node.js o shell necesario. Un plugin no instala servidores de lenguaje ni adaptadores de depuración; configúrelos mediante [LSP](/es/docs/lsp) y [Depuración](/es/docs/debug).
 
+En 2.5.0, las tareas y los plugins muestran los destinos disponibles según el espacio y la plataforma. Usa un terminal SSH conectado o Linux local compatible en Android. Las herramientas proceden de la cuenta remota o del entorno Linux.
+
 ## Editar y gestionar un plugin
 
 Continúe la conversación del plugin para modificar un panel existente. Previsualice la revisión antes de guardarla y compruebe los cambios de permisos al actualizar. La definición y la configuración del formulario se guardan por separado. Puede activar, desactivar o restaurar una versión reciente del plugin.

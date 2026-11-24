@@ -8,6 +8,15 @@ description: Abre tu proyecto desde el móvil y conéctate a tu ordenador para e
 <div class="product-reference">
 
 <details>
+<summary>Novedades de 2.5.0</summary>
+
+En NimoteCode 2.5.0 puedes [conectar con un equipo vinculado mediante Tailscale personal](/es/docs/ssh#paired-computers), [reanudar un terminal SSH con tmux](/es/docs/terminal#persistent-ssh-terminal) o [instalar NimoteHost por SSH](/es/docs/host/getting-started#install-over-ssh).
+
+[Novedades de 2.5.0](/es/releases/2.5.0)
+
+</details>
+
+<details>
 <summary>Búsqueda, servicios de lenguaje y depuración</summary>
 
 - [Búsqueda de proyectos](/es/docs/search): busca contenido en espacios SSH, con distinción de mayúsculas y expresiones regulares.

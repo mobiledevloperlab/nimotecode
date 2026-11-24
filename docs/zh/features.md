@@ -8,6 +8,15 @@ description: 在手机或平板打开项目，连接开发电脑，在同一工�
 <div class="product-reference">
 
 <details>
+<summary>2.5.0 新功能</summary>
+
+在 NimoteCode 2.5.0 中，可[通过个人 Tailscale 连接已配对电脑](/zh/docs/ssh#paired-computers)、[用 tmux 恢复 SSH 终端](/zh/docs/terminal#persistent-ssh-terminal)，也可[通过 SSH 安装 NimoteHost](/zh/docs/host/getting-started#install-over-ssh)。
+
+[2.5.0 新功能](/zh/releases/2.5.0)
+
+</details>
+
+<details>
 <summary>搜索、语言服务与调试</summary>
 
 - [项目搜索](/zh/docs/search)：搜索 SSH 工作区中的文件内容，支持区分大小写和正则表达式。

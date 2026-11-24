@@ -9,6 +9,8 @@ description: "NimoteHost 연결, 터미널 및 작업 안내 및 절차."
 
 ## 휴대폰에서 연결 {#_3-휴대폰에서-연결}
 
+NimoteCode 2.5.0에서 **Host → 원격 연결**을 열고 상태를 확인하세요. 표시된 설치 또는 업데이트 작업을 이용하거나 Host 도움말에서 설치된 버전을 확인할 수 있습니다. 실행 중인 세션을 중지해야 하면 영향을 확인한 뒤 승인하세요.
+
 모드 선택에서 Host를 열고 SSH connections를 누릅니다. Host를 설치한 컴퓨터와 계정을 고르세요. 저장된 연결이 없다면 New Remote Connection으로 추가하고, 처음 연결할 때 SSH 호스트 키를 확인합니다.
 
 <div class="doc-screenshots">

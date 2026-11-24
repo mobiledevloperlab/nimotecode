@@ -7,6 +7,10 @@ description: "Explore optional Ubuntu development toolsets for Android Local Lin
 
 Optional development toolsets for Local Linux are maintained in the [Linux Presets repository](https://github.com/mobiledevloperlab/nimote-linux-presets). Choose a toolset for your project, then check the declared compatibility before installation.
 
+## Install a toolkit from the Android app {#android-app}
+
+In NimoteCode 2.5.0, open **Development Toolkits** on the Local Linux management page after installing Ubuntu. Select a toolkit to review its dependencies and estimated disk space before installing. Use the check action to verify an existing installation. The app verifies a pinned catalog revision and its script hashes. New community recipes appear after maintainers review and adopt a revision. The in-app catalog determines availability, and the experimental C++ toolkit remains gated.
+
 ## Toolsets
 
 | Toolset | Purpose |

@@ -7,6 +7,8 @@ description: "NimoteHost: service management and updates."
 
 ## Service management, updates, and local data
 
+In NimoteCode 2.5.0, open **Host → Remote connections** to connect and check installation status. Use the setup or update action shown for the connection, or open Host help to check the installed version. Review any request to stop running sessions before continuing.
+
 Use the installed CLI for routine maintenance. On Linux/macOS it is `~/.local/share/nimotehost/nimotehost`; on Windows, invoke `& "$env:LOCALAPPDATA\NimoteHost\nimotehost.exe"` in PowerShell. The commands below assume that directory is on PATH; otherwise use the full executable path.
 
 | Command | Effect |

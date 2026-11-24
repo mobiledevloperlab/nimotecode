@@ -9,6 +9,8 @@ Docker ツールは接続済み SSH ホストで動作します。ホストに D
 
 ## Docker を開く
 
+2.5.0 の Free では、対応 SSH ホストの Docker サーバーのバージョン、コンテナ、イメージの概要を確認できます。コンテナの操作、ログや Compose には Pro が必要です。
+
 <div class="doc-screenshots">
   <DocScreenshot file="docker-images.png" caption="Docker イメージ一覧：一時的なソースバンドル nimotecode-screenshot-demo:2.4.1。" />
 </div>

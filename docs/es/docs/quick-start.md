@@ -14,6 +14,10 @@ Abre un espacio de trabajo, edita un archivo y ejecuta tu primer comando. Sigue 
 
 ## Abrir un espacio de trabajo
 
+NimoteCode 2.5.0 incorpora una barra flotante para cambiar de panel en teléfonos en vertical. Desde el editor vacío de un solo panel puedes abrir el explorador de archivos.
+
+En NimoteCode 2.5.0 puedes [conectar con un equipo vinculado mediante Tailscale personal](/es/docs/ssh#paired-computers), [reanudar un terminal SSH con tmux](/es/docs/terminal#persistent-ssh-terminal) o [instalar NimoteHost por SSH](/es/docs/host/getting-started#install-over-ssh).
+
 En el IDE completo puedes abrir archivos del dispositivo, conectar por SSH, abrir un proyecto de GitHub o usar Local Linux en Android compatible. También puedes explorar el proyecto de ejemplo.
 
 La aplicación ofrece cuatro modos: **Terminal rápido** para SSH, Linux y comandos; **Espacio de trabajo de IA** para conversaciones, agentes y tareas; **IDE completo** para archivos, Git y desarrollo con IA; y **Host** para tareas remotas y sesiones de Agent persistentes con NimoteHost. Usa el selector de modo para cambiar de vista. La ubicación del proyecto se elige por separado: puedes editar archivos del dispositivo, pero ejecutar comandos requiere SSH o Local Linux.
