@@ -1,15 +1,19 @@
 ---
-title: "Host mode: open-source remote tasks and coding Agents | NimoteCode"
-description: "Keep terminals, tasks, and coding Agents running on your computer after disconnecting. Explore NimoteHost capabilities, Apache-2.0 source, customization, contribution, and deployment."
+title: "NimoteHost Community | NimoteCode"
+description: "Install NimoteHost Community on your Linux, macOS, or Windows computer. Managed work continues after you disconnect. Reconnect over SSH from NimoteCode to review output, respond to Agent approvals, and continue working."
 ---
 
-# Host mode: an open-source workspace for remote tasks and Agents
+# NimoteHost Community
 
-Manage terminals, tasks, and coding Agents on your development computer from your phone. Disconnect while work continues, then reconnect to review progress and respond to approvals.
+Install NimoteHost Community on your Linux, macOS, or Windows computer. Managed work continues after you disconnect. Reconnect over SSH from NimoteCode to review output, respond to Agent approvals, and continue working.
 
-## Download NimoteHost {#download-nimotehost}
+NimoteHost Community is available under Apache-2.0 and runs independently through its CLI or desktop manager. Using Host mode from the phone requires a compatible NimoteCode build (2.4.1 or later) and Pro access.
+
+## Download NimoteHost Community {#download-nimotehost}
 
 <HostDownload />
+
+NimoteHost Community manages terminals, tasks, compatible coding agents, and community plugins. GitHub Issue dispatch is available with the Host bundled with Nimote Connect. For upgrades and edition changes, see the [Community guide](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md).
 
 [Hardware and package selection](/docs/host/compatibility) · [Download and installation](/docs/host/getting-started) · [Connections, terminals and tasks](/docs/host/sessions) · [Agents and task inbox](/docs/host/agents) · [Service management and updates](/docs/host/maintenance) · [Troubleshooting](/docs/host/troubleshooting)
 
@@ -22,7 +26,7 @@ Host turns your development computer into a workspace you can return to from you
 | Managed terminals and tasks | Start builds, tests, scripts, or an interactive shell. Client disconnection does not end the managed process; reconnect to review retained output and continue work. |
 | Structured coding Agents | Use compatible Codex, Claude Code, and OpenCode installations. Read conversations and tool results, respond to approvals, and send follow-up instructions where supported. |
 | Sessions and task inbox | Search, filter, and pin work; find pending approvals, failed tasks, and results awaiting review without reopening each session. |
-| Verification and code review | Inspect actual test records, exit codes, and diffs before accepting a result. Supported GitHub Issue dispatch connects an issue to an Agent task and your selected publication policy. |
+| Verification and code review | Inspect actual test records, exit codes, and diffs before accepting a result. |
 | Your own environment | Run against the project's existing toolchain and files on Linux, macOS, or Windows. Choose a server CLI or a desktop manager using the same Host service. |
 | Open-source customization | Review the full Host source, compile your own build, change its behavior, add integrations, and contribute improvements under Apache-2.0. |
 
@@ -43,7 +47,7 @@ The connection is: **NimoteCode → your existing SSH connection → NimoteHost 
 | Host CLI | Deploy on a server or manage the service from a shell. No desktop environment needed. |
 | Host desktop bundle | Manage service status, sessions, devices, settings, and diagnostics on the computer. Includes the CLI. |
 
-This guide follows the 2.4.0 implementation. NimoteHost is a development preview; available Agent, inbox, and plugin controls depend on the connected Host. The screenshots are from a physical Android phone using English and the Light theme. Some session screenshots were captured with app 2.3.1 (Build 64) and a local 2.4.0 Host build; labels may differ in your installed version.
+The screenshots show earlier Android and Host builds, including NimoteCode 2.3.1 (build 64) and a local Host 2.4.0 build. Controls vary with the connected Host, app version, and installed tools.
 
 ## Fully open-source Host: inspect, customize, and contribute
 

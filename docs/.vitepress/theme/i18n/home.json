@@ -242,9 +242,9 @@
       ]
     ],
     "host": {
-      "label": "NimoteHost · Open source under Apache-2.0",
-      "title": "Your computer runs the work. You stay in control.",
-      "intro": "Start a build, test, or coding Agent from your phone. Return to its logs and conversation over SSH while NimoteHost keeps the work on your development computer.",
+      "label": "NimoteHost Community · Apache-2.0 open source",
+      "title": "Self-hosted terminals, tasks, and coding agents",
+      "intro": "Install NimoteHost Community on your Linux, macOS, or Windows computer. Managed work continues after you disconnect. Reconnect over SSH from NimoteCode to review output, respond to Agent approvals, and continue working.",
       "benefits": [
         [
           "Keep work moving",
@@ -260,7 +260,7 @@
         ]
       ],
       "privacy": "Self-host on Linux, macOS, or Windows through your existing SSH connection. The authenticated Host API listens only on loopback; Host credentials stay on your computer. AI tools use their configured providers.",
-      "note": "Host mode requires NimoteCode 2.4.1 or later. Host/OS restart interrupts processes; source and release access depend on repository publication.",
+      "note": "NimoteHost Community is available under Apache-2.0 and runs independently through its CLI or desktop manager. Using Host mode from the phone requires a compatible NimoteCode build (2.4.1 or later) and Pro access.",
       "guide": "Install and use Host",
       "source": "Explore the source",
       "contribute": "Contribute code"
@@ -509,9 +509,9 @@
       ]
     ],
     "host": {
-      "label": "NimoteHost · Apache-2.0 开源",
-      "title": "电脑持续运行，你随时掌握进展。",
-      "intro": "从手机发起构建、测试或编程 Agent，工作由开发电脑上的 NimoteHost 托管。通过 SSH 回来查看日志、接续对话，把碎片时间用在真正需要你决定的地方。",
+      "label": "NimoteHost 社区版 · Apache-2.0 开源",
+      "title": "在自己的电脑上持续运行终端、任务与编程 Agent",
+      "intro": "在 Linux、macOS 或 Windows 电脑上安装 NimoteHost 社区版。断开连接后，托管任务继续运行。通过 NimoteCode 以 SSH 重新连接，即可查看输出、处理 Agent 审批并接续工作。",
       "benefits": [
         [
           "工作持续推进",
@@ -527,7 +527,7 @@
         ]
       ],
       "privacy": "通过已有 SSH 连接，自部署到 Linux、macOS 或 Windows。Host API 仅监听本机回环地址并要求认证，Host 凭据留在自己的电脑上；AI 工具仍使用各自配置的模型服务。",
-      "note": "Host 模式需要 NimoteCode 2.4.1 或更新版本。Host 或系统重启会中断进程；源码与发布包入口以仓库公开状态为准。",
+      "note": "NimoteHost 社区版采用 Apache-2.0 开源许可，可通过 CLI 或桌面管理器独立运行。在手机上使用 Host 模式需要兼容的 NimoteCode（2.4.1 或更新版本）与 Pro 权益。",
       "guide": "安装并使用 Host",
       "source": "查看开源代码",
       "contribute": "参与代码贡献"
@@ -776,9 +776,9 @@
       ]
     ],
     "host": {
-      "label": "NimoteHost · Apache-2.0 オープンソース",
-      "title": "パソコンで実行。進捗は手元で確認。",
-      "intro": "スマートフォンからビルド、テスト、Agent を開始。NimoteHost が開発パソコンで管理し、SSH でログや会話に戻れます。",
+      "label": "NimoteHost Community · Apache-2.0 オープンソース",
+      "title": "ターミナル、タスク、コーディングエージェントを自分の環境で実行",
+      "intro": "Linux、macOS、Windows に NimoteHost Community を導入できます。切断後も管理対象の作業は継続します。NimoteCode から SSH で再接続し、出力の確認やエージェントの承認、作業の再開ができます。",
       "benefits": [
         [
           "作業を継続",
@@ -794,7 +794,7 @@
         ]
       ],
       "privacy": "Linux、macOS、Windows に自分で導入し、既存の SSH で接続します。認証付き API はループバックのみで待ち受け、Host 認証情報はパソコンに残ります。AI ツールは設定した提供元に接続します。",
-      "note": "Host モードには NimoteCode 2.4.1 以降が必要です。Host/OS の再起動はプロセスを中断します。ソースと配布物へのアクセスはリポジトリの公開状況によります。",
+      "note": "NimoteHost Community は Apache-2.0 で公開され、CLI またはデスクトップマネージャーで単独で動作します。スマートフォンの Host モードには対応する NimoteCode（2.4.1 以降）と Pro が必要です。",
       "guide": "導入と使い方",
       "source": "ソースを見る",
       "contribute": "コードを貢献"
@@ -1043,9 +1043,9 @@
       ]
     ],
     "host": {
-      "label": "NimoteHost · Apache-2.0 오픈 소스",
-      "title": "컴퓨터에서 실행하고, 어디서든 확인하세요.",
-      "intro": "휴대폰에서 빌드, 테스트 또는 Agent를 시작하세요. NimoteHost가 개발 컴퓨터에서 관리하며 SSH로 로그와 대화에 돌아올 수 있습니다.",
+      "label": "NimoteHost Community · Apache-2.0 오픈 소스",
+      "title": "내 컴퓨터에서 실행하는 터미널, 작업 및 코딩 에이전트",
+      "intro": "Linux, macOS 또는 Windows 컴퓨터에 NimoteHost Community를 설치하세요. 연결을 끊어도 관리 중인 작업이 계속됩니다. NimoteCode에서 SSH로 다시 연결해 출력을 확인하고 에이전트 요청을 승인하거나 작업을 이어갈 수 있습니다.",
       "benefits": [
         [
           "작업 지속",
@@ -1061,7 +1061,7 @@
         ]
       ],
       "privacy": "Linux, macOS, Windows에 직접 배포하고 기존 SSH로 연결합니다. 인증 API는 루프백에서만 수신하고 Host 인증 정보는 컴퓨터에 남습니다. AI 도구는 설정한 제공자를 사용합니다.",
-      "note": "Host 모드에는 NimoteCode 2.4.1 이상이 필요합니다. Host/OS 재시작은 프로세스를 중단하며 소스와 패키지는 저장소 공개 상태에 따라 제공됩니다.",
+      "note": "NimoteHost Community는 Apache-2.0으로 공개되며 CLI나 데스크톱 관리자로 독립 실행할 수 있습니다. 휴대폰에서 Host 모드를 사용하려면 호환되는 NimoteCode(2.4.1 이상)와 Pro가 필요합니다.",
       "guide": "설치 및 사용 안내",
       "source": "소스 보기",
       "contribute": "코드 기여"
@@ -1310,9 +1310,9 @@
       ]
     ],
     "host": {
-      "label": "NimoteHost · Código abierto Apache-2.0",
-      "title": "Tu ordenador ejecuta. Tú mantienes el control.",
-      "intro": "Inicia una compilación, prueba o Agent desde el móvil. NimoteHost lo gestiona en tu ordenador y puedes volver a los registros y la conversación por SSH.",
+      "label": "NimoteHost Community · Código abierto Apache-2.0",
+      "title": "Terminales, tareas y agentes de programación en tu propio equipo",
+      "intro": "Instala NimoteHost Community en Linux, macOS o Windows. Las tareas gestionadas siguen ejecutándose al desconectar. Vuelve a conectarte por SSH desde NimoteCode para revisar la salida, responder a las solicitudes de aprobación y continuar el trabajo.",
       "benefits": [
         [
           "Trabajo continuo",
@@ -1328,7 +1328,7 @@
         ]
       ],
       "privacy": "Despliega en Linux, macOS o Windows usando SSH. La API autenticada solo escucha en loopback y las credenciales Host permanecen en el equipo. Las herramientas de IA usan sus proveedores configurados.",
-      "note": "El modo Host requiere NimoteCode 2.4.1 o posterior. Reiniciar Host o el sistema interrumpe los procesos. El acceso al código y paquetes depende de la publicación del repositorio.",
+      "note": "NimoteHost Community se publica bajo Apache-2.0 y funciona de forma independiente con la CLI o el gestor de escritorio. El modo Host en el móvil requiere una versión compatible de NimoteCode (2.4.1 o posterior) y acceso Pro.",
       "guide": "Instalación y uso",
       "source": "Explorar el código",
       "contribute": "Contribuir código"

@@ -23,7 +23,7 @@ Cuando el panel identifica la edición de Host, usa la instalación o actualizac
 
 ## 1. Descargar el paquete
 
-En [NimoteHost Releases](https://github.com/mobiledevloperlab/nimotehost/releases), elige el paquete completo para tu sistema y CPU. CLI basta para un servidor; el paquete GUI añade el gestor de escritorio.
+En [NimoteHost Community](https://github.com/mobiledevloperlab/nimotehost/releases/tag/community-v2.5.0), elige el paquete completo para tu sistema y CPU. CLI basta para un servidor; el paquete GUI añade el gestor de escritorio.
 
 | Sistema | Etiqueta | CPU |
 | --- | --- | --- |

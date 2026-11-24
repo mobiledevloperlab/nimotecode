@@ -1,6 +1,6 @@
 ---
 title: "NimoteCode と Blink Shell・Termius・Acode・Replit・Codespaces の比較"
-description: "公式資料から主要 6 製品のモバイル対応、SSH、編集、Git、LSP、AI、セッションを比較。確認日時、Pro の範囲、Host 開発プレビューの条件を明記。"
+description: "公式資料から主要 6 製品のモバイル対応、SSH、編集、Git、LSP、AI、セッションを比較。確認日時、Pro の範囲、NimoteHost Community の利用条件を明記。"
 pageClass: compare-page
 ---
 
@@ -12,7 +12,7 @@ pageClass: compare-page
 <details class="major-comparison-details">
 <summary>各製品の利用条件と根拠</summary>
 
-NimoteCode は 2.4.1 と現在の Host 文書を基準に確認しています。NimoteHost は開発プレビューであり、復元、承認、Task Inbox は Host の版、設定、Agent の互換性に依存します。コンピューター、Host、管理対象プロセスの継続稼働が必要で、Host や OS の再起動では元のプロセスを復元できません。Host、Android Local Linux、Git 書き込みには Pro が必要です。設定済みの言語ツールを使う基本 LSP 補完・診断・ナビゲーションは無料、コードアクション、サーバーの導入支援、デバッグは Pro が必要です。権限の範囲は無料・Pro の案内をご確認ください。
+NimoteCode は 2.4.1 と現在の Host 文書を基準に確認しています。NimoteHost Community の復元、承認、Task Inbox は Host の版、設定、Agent の互換性に依存します。コンピューター、Host、管理対象プロセスの継続稼働が必要で、Host や OS の再起動では元のプロセスを復元できません。Host、Android Local Linux、Git 書き込みには Pro が必要です。設定済みの言語ツールを使う基本 LSP 補完・診断・ナビゲーションは無料、コードアクション、サーバーの導入支援、デバッグは Pro が必要です。権限の範囲は無料・Pro の案内をご確認ください。
 
 Blink Code は VS Code サービスを統合します。文書にあるリポジトリ編集や拡張機能は接続先環境に依存します。Blink の LSP と AI Agent のワークフローは個別に確認できておらず、リモート IDE を開けることだけで対応とは判定していません。ローカルの Unix コマンド群は完全な Linux 環境ではありません。Mosh のローミング、tmux の再接続、構造化された Agent セッションの復元は条件が異なります。
 

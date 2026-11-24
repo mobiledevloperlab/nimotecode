@@ -7,6 +7,8 @@ description: "NimoteHost 서비스 관리 및 업데이트 안내 및 절차."
 
 ## 유지 관리, 업데이트 및 로컬 데이터
 
+Community 에디션은 Community 릴리스에서 업데이트합니다. Nimote Connect에 포함된 Host는 Connect에서 업데이트합니다. 에디션을 바꾸려면 실행 중인 작업을 마친 뒤 Community 가이드에 따라 상태 데이터를 보존하세요. [Community 업데이트 가이드](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)
+
 NimoteCode 2.5.0에서 **Host → 원격 연결**을 열고 상태를 확인하세요. 표시된 설치 또는 업데이트 작업을 이용하거나 Host 도움말에서 설치된 버전을 확인할 수 있습니다. 실행 중인 세션을 중지해야 하면 영향을 확인한 뒤 승인하세요.
 
 | 명령 | 동작 |

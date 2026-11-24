@@ -98,7 +98,7 @@
     ],
     "host": {
       "title": "Step away. Keep the work running.",
-      "intro": "NimoteHost keeps managed terminals, tasks, and compatible Agents on your computer. Reconnect from your phone to inspect output and continue.",
+      "intro": "NimoteHost Community keeps managed terminals, tasks, and compatible Agents on your computer. Reconnect from your phone to inspect output and continue.",
       "steps": [
         "Start a task",
         "Leave it running",
@@ -208,7 +208,7 @@
     ],
     "host": {
       "title": "暂时离开，工作继续。",
-      "intro": "NimoteHost 将托管终端、任务和兼容 Agent 保留在电脑上。用手机重新连接，查看输出，继续处理。",
+      "intro": "NimoteHost 社区版 将托管终端、任务和兼容 Agent 保留在电脑上。用手机重新连接，查看输出，继续处理。",
       "steps": [
         "启动任务",
         "保持运行",
@@ -318,7 +318,7 @@
     ],
     "host": {
       "title": "離れている間も、処理は続く。",
-      "intro": "NimoteHost が PC 上でターミナル、タスク、対応 Agent を管理。スマートフォンから再接続して出力を確認し、作業を続けられます。",
+      "intro": "NimoteHost Community が PC 上でターミナル、タスク、対応 Agent を管理。スマートフォンから再接続して出力を確認し、作業を続けられます。",
       "steps": [
         "タスクを開始",
         "実行を継続",
@@ -538,7 +538,7 @@
     ],
     "host": {
       "title": "Aléjate. El trabajo continúa.",
-      "intro": "NimoteHost mantiene terminales, tareas y Agents compatibles en tu ordenador. Reconecta desde el móvil para revisar la salida y continuar.",
+      "intro": "NimoteHost Community mantiene terminales, tareas y Agents compatibles en tu ordenador. Reconecta desde el móvil para revisar la salida y continuar.",
       "steps": [
         "Inicia una tarea",
         "Déjala en ejecución",

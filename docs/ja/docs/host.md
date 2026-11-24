@@ -1,15 +1,19 @@
 ---
-title: "Host：オープンソースのリモートタスクと Agent | NimoteCode"
-description: "切断後もパソコンでターミナル、タスク、Agent を継続。NimoteHost の機能、Apache-2.0 ソース、変更、貢献、導入と運用を紹介します。"
+title: "NimoteHost Community | NimoteCode"
+description: "Linux、macOS、Windows に NimoteHost Community を導入できます。切断後も管理対象の作業は継続します。NimoteCode から SSH で再接続し、出力の確認やエージェントの承認、作業の再開ができます。"
 ---
 
-# Host：オープンソースのリモートタスクと Agent ワークスペース
+# NimoteHost Community
 
-スマートフォンから開発パソコンのターミナル、タスク、Agent を管理。切断後も作業は続き、再接続して進捗や承認を確認できます。
+Linux、macOS、Windows に NimoteHost Community を導入できます。切断後も管理対象の作業は継続します。NimoteCode から SSH で再接続し、出力の確認やエージェントの承認、作業の再開ができます。
 
-## NimoteHost をダウンロード {#download-nimotehost}
+NimoteHost Community は Apache-2.0 で公開され、CLI またはデスクトップマネージャーで単独で動作します。スマートフォンの Host モードには対応する NimoteCode（2.4.1 以降）と Pro が必要です。
+
+## NimoteHost Community をダウンロード {#download-nimotehost}
 
 <HostDownload />
+
+NimoteHost Community はターミナル、タスク、対応エージェント、コミュニティプラグインを管理します。GitHub Issue の依頼には Nimote Connect 付属の Host を使用します。更新やエディションの切り替えは [Community ガイド](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)を参照してください。
 
 [ハードウェアとパッケージ選択](/ja/docs/host/compatibility) · [ダウンロードと導入](/ja/docs/host/getting-started) · [接続・ターミナル・タスク](/ja/docs/host/sessions) · [Agent とタスク受信箱](/ja/docs/host/agents) · [サービス管理と更新](/ja/docs/host/maintenance) · [トラブルシューティング](/ja/docs/host/troubleshooting)
 
@@ -22,7 +26,7 @@ description: "切断後もパソコンでターミナル、タスク、Agent を
 | ターミナルとタスク管理 | ビルド、テスト、スクリプトを実行。切断後も管理対象プロセスが続き、再接続で出力と操作に戻れます。 |
 | 対応 Agent との協働 | Codex、Claude Code、OpenCode の会話、ツール結果、承認を確認し、対応時は追加指示を送れます。 |
 | セッションと受信箱 | 検索、絞り込み、固定を使い、承認待ち、失敗、レビュー待ちを見つけられます。 |
-| 検証とコードレビュー | 実際のテスト記録、終了コード、差分を確認。対応 Host には公開方針を指定して GitHub Issue を依頼できます。 |
+| 検証とコードレビュー | 実際のテスト記録、終了コード、差分を確認。 |
 | 既存環境の利用 | Linux、macOS、Windows の CLI またはデスクトップ管理画面で、既存のプロジェクトを使えます。 |
 | オープンソース | 完全な Host ソースを確認・ビルド・変更し、連携の追加や改善の貢献ができます。 |
 

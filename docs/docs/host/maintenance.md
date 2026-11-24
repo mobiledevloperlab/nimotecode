@@ -7,6 +7,8 @@ description: "NimoteHost: service management and updates."
 
 ## Service management, updates, and local data
 
+For a Community installation, use the Community release channel. If your Host came with Nimote Connect, update it through Connect. Before switching editions, finish active work and follow the Community guide to retain your state. [Community upgrade guide](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)
+
 In NimoteCode 2.5.0, open **Host → Remote connections** to connect and check installation status. Use the setup or update action shown for the connection, or open Host help to check the installed version. Review any request to stop running sessions before continuing.
 
 Use the installed CLI for routine maintenance. On Linux/macOS it is `~/.local/share/nimotehost/nimotehost`; on Windows, invoke `& "$env:LOCALAPPDATA\NimoteHost\nimotehost.exe"` in PowerShell. The commands below assume that directory is on PATH; otherwise use the full executable path.

@@ -224,7 +224,7 @@ iPhone 和 iPad 不支持 Local Linux，可通过 SSH 主机运行开发命令�
 
 ### 使用条件与对比说明
 
-NimoteCode 按 2.4.1 与当前 Host 文档核对。NimoteHost 仍为开发预览；恢复、审批与 Task Inbox 取决于 Host 版本、配置及 Agent 兼容性。电脑、Host 与托管进程需要持续运行；Host 或系统重启不会恢复原进程。Host、Android Local Linux 与 Git 写入需要 Pro。基础 LSP 补全、诊断与导航免费，需配置语言工具；代码操作、引导安装语言服务器与调试需要 Pro。权限边界参见免费与 Pro。
+NimoteCode 按 2.4.1 与当前 Host 文档核对。使用 NimoteHost 社区版时，恢复、审批与 Task Inbox 取决于 Host 版本、配置及 Agent 兼容性。电脑、Host 与托管进程需要持续运行；Host 或系统重启不会恢复原进程。Host、Android Local Linux 与 Git 写入需要 Pro。基础 LSP 补全、诊断与导航免费，需配置语言工具；代码操作、引导安装语言服务器与调试需要 Pro。权限边界参见免费与 Pro。
 
 Blink Code 集成 VS Code 服务；已记录的仓库编辑和扩展访问取决于所连接的环境。Blink 的 LSP 和 AI Agent 工作流未获逐项确认，不因其可打开远程 IDE 就直接计为支持。本地 Unix 命令工具不等于完整 Linux 环境。Mosh 网络漫游、tmux 重附着与结构化 Agent 恢复各有不同条件。
 

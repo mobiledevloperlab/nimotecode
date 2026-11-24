@@ -1,9 +1,9 @@
 {
   "en": {
-    "label": "Official downloads · Apache-2.0",
+    "label": "NimoteHost Community · Apache-2.0 open source",
     "intro": "Install NimoteHost on the computer running your projects. Choose the computer’s system and CPU, even if you are reading this on your phone.",
-    "download": "Download NimoteHost",
-    "hint": "Opens the latest GitHub Release. Expand Assets to choose a complete desktop or CLI bundle and its .sha256 file.",
+    "download": "Download NimoteHost Community",
+    "hint": "Open Assets on the Community release page and choose a CLI or desktop bundle and its .sha256 file.",
     "install": "Already downloaded? Install Host →",
     "source": "Build from source →",
     "platforms": [
@@ -35,10 +35,10 @@
     "compatibility": "Hardware and package selection →"
   },
   "zh": {
-    "label": "官方下载 · Apache-2.0 开源",
+    "label": "NimoteHost 社区版 · Apache-2.0 开源",
     "intro": "安装到运行项目的开发电脑上。请按电脑的系统与 CPU 选择安装包；即使你正用手机浏览，也应选择电脑版本。",
-    "download": "下载 NimoteHost",
-    "hint": "打开 GitHub 最新发布页，在 Assets（资源）中选择完整桌面包或 CLI 包，并下载对应的 .sha256 校验文件。",
+    "download": "下载 NimoteHost 社区版",
+    "hint": "在社区版发布页的 Assets（资源）中选择桌面包或 CLI 包，并下载对应的 .sha256 校验文件。",
     "install": "已经下载？前往安装步骤 →",
     "source": "从源码构建 →",
     "platforms": [
@@ -70,10 +70,10 @@
     "compatibility": "硬件支持与版本选择 →"
   },
   "ja": {
-    "label": "公式ダウンロード · Apache-2.0",
+    "label": "NimoteHost Community · Apache-2.0 オープンソース",
     "intro": "プロジェクトを実行するパソコンに導入します。スマートフォンで閲覧中でも、パソコンの OS と CPU に合う配布物を選んでください。",
-    "download": "NimoteHost をダウンロード",
-    "hint": "GitHub の最新リリースを開きます。Assets で完全なデスクトップ版または CLI 版と対応する .sha256 を選びます。",
+    "download": "NimoteHost Community をダウンロード",
+    "hint": "Community のリリースページの Assets から、CLI またはデスクトップ版と対応する .sha256 ファイルを選んでください。",
     "install": "ダウンロード済み：導入手順へ →",
     "source": "ソースからビルド →",
     "platforms": [
@@ -105,10 +105,10 @@
     "compatibility": "ハードウェアとパッケージ選択 →"
   },
   "ko": {
-    "label": "공식 다운로드 · Apache-2.0",
+    "label": "NimoteHost Community · Apache-2.0 오픈 소스",
     "intro": "프로젝트를 실행하는 컴퓨터에 설치하세요. 휴대폰에서 읽고 있어도 컴퓨터의 OS와 CPU에 맞는 패키지를 선택합니다.",
-    "download": "NimoteHost 다운로드",
-    "hint": "GitHub 최신 릴리스를 엽니다. Assets에서 전체 데스크톱 또는 CLI 패키지와 해당 .sha256 파일을 선택하세요.",
+    "download": "NimoteHost Community 다운로드",
+    "hint": "Community 릴리스의 Assets에서 CLI 또는 데스크톱 패키지와 해당 .sha256 파일을 선택하세요.",
     "install": "다운로드 완료? 설치 안내 →",
     "source": "소스에서 빌드 →",
     "platforms": [
@@ -140,10 +140,10 @@
     "compatibility": "하드웨어 및 패키지 선택 →"
   },
   "es": {
-    "label": "Descargas oficiales · Apache-2.0",
+    "label": "NimoteHost Community · Código abierto Apache-2.0",
     "intro": "Instala NimoteHost en el ordenador que ejecuta tus proyectos. Elige su sistema y CPU, aunque estés leyendo desde el móvil.",
-    "download": "Descargar NimoteHost",
-    "hint": "Abre la última versión en GitHub. Despliega Assets para elegir el paquete completo de escritorio o CLI y su archivo .sha256.",
+    "download": "Descargar NimoteHost Community",
+    "hint": "En Assets de la versión Community, elige el paquete de escritorio o de CLI y su archivo .sha256.",
     "install": "¿Ya lo descargaste? Instalar →",
     "source": "Compilar desde código →",
     "platforms": [

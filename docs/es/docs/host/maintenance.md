@@ -7,6 +7,8 @@ description: "NimoteHost: guía de gestión del servicio y actualizaciones."
 
 ## Mantenimiento, actualización y datos
 
+Actualiza Community desde su propio canal de versiones. Si instalaste Host con Nimote Connect, actualízalo desde Connect. Antes de cambiar de edición, termina las tareas activas y sigue la guía de Community para conservar los datos. [Guía de actualización de Community](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)
+
 En NimoteCode 2.5.0, abre **Host → Conexiones remotas** y comprueba el estado. Usa la acción de instalación o actualización disponible, o consulta la versión instalada en la ayuda de Host. Revisa la interrupción de sesiones antes de autorizarla.
 
 | Comando | Efecto |

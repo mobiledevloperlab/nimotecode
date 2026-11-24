@@ -1,15 +1,19 @@
 ---
-title: "Host 模式：开源远程任务与编程 Agent 工作台 | NimoteCode"
-description: "用 NimoteHost 托管终端、任务与编程 Agent，手机断线后工作继续。了解功能价值、Apache-2.0 完整源码、自定义与贡献，以及安装部署和服务维护。"
+title: "NimoteHost 社区版 | NimoteCode"
+description: "在 Linux、macOS 或 Windows 电脑上安装 NimoteHost 社区版。断开连接后，托管任务继续运行。通过 NimoteCode 以 SSH 重新连接，即可查看输出、处理 Agent 审批并接续工作。"
 ---
 
-# Host 模式：开源的远程任务与 Agent 工作台
+# NimoteHost 社区版
 
-在手机上管理开发电脑的终端、任务与编程 Agent。断线后任务继续运行，重新连接即可查看进展、处理审批。
+在 Linux、macOS 或 Windows 电脑上安装 NimoteHost 社区版。断开连接后，托管任务继续运行。通过 NimoteCode 以 SSH 重新连接，即可查看输出、处理 Agent 审批并接续工作。
 
-## 下载 NimoteHost {#download-nimotehost}
+NimoteHost 社区版采用 Apache-2.0 开源许可，可通过 CLI 或桌面管理器独立运行。在手机上使用 Host 模式需要兼容的 NimoteCode（2.4.1 或更新版本）与 Pro 权益。
+
+## 下载 NimoteHost 社区版 {#download-nimotehost}
 
 <HostDownload />
+
+NimoteHost 社区版支持终端、任务、兼容的编程 Agent 和社区插件。GitHub Issue 派发由 Nimote Connect 随附的 Host 提供。升级或切换版本请参阅[社区版指南](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)。
 
 [硬件支持与版本选择](/zh/docs/host/compatibility) · [下载与安装](/zh/docs/host/getting-started) · [连接、终端与任务](/zh/docs/host/sessions) · [Agent 与任务收件箱](/zh/docs/host/agents) · [服务管理与升级](/zh/docs/host/maintenance) · [故障排查](/zh/docs/host/troubleshooting)
 
@@ -22,7 +26,7 @@ Host 将开发电脑变成可从手机随时回来的工作台。项目和工具
 | 托管终端与任务 | 启动构建、测试、脚本或交互 Shell；客户端断线不会结束托管进程，重新连接即可查看保留的输出并继续操作。 |
 | 结构化 Agent 协作 | 使用兼容的 Codex、Claude Code、OpenCode，阅读对话和工具结果，回复权限请求，并在支持时向执行中的 Agent 追加指令。 |
 | 会话与任务收件箱 | 搜索、筛选、固定工作，集中找到待审批、执行失败和完成待审的任务，减少逐个打开会话确认的操作。 |
-| 验证与代码审查 | 检查实际测试记录、退出码和 Diff，再决定是否接受结果；主机支持时，可将 GitHub Issue 派发给 Agent，并选择代码发布策略。 |
+| 验证与代码审查 | 检查实际测试记录、退出码和 Diff，再决定是否接受结果。 |
 | 沿用已有开发环境 | 在 Linux、macOS、Windows 上直接使用项目现有文件和工具链；服务器选 CLI，桌面选管理器，两者操作同一个 Host 服务。 |
 | 开源与按需定制 | 审查 Host 完整源码、自行编译、修改行为、扩展集成，并在 Apache-2.0 许可下贡献改进。 |
 
@@ -43,7 +47,7 @@ Host 和托管进程需要保持运行，Host 或系统重启不会恢复原进�
 | Host CLI | 在服务器部署，或通过命令行管理后台服务，不需要桌面环境。 |
 | Host 桌面包 | 在电脑上管理服务、会话、设备、设置和诊断；已包含 CLI。 |
 
-本文按 2.4.0 的实现编写。NimoteHost 目前是开发预览版，Agent、任务收件箱和插件入口会随主机能力变化。本组文档的图片来自连接的 Android 真机，使用英文界面和浅色主题。截图时应用包标记为 2.3.1（Build 64），Host 报告 2.4.0 本地构建；你的按钮文字和位置可能略有不同。
+截图来自早期的 Android 客户端与 Host 构建，包括 NimoteCode 2.3.1（Build 64）和本地构建的 Host 2.4.0。实际功能和界面取决于所连接的 Host、客户端版本和已配置的工具。
 
 ## 完整开源：可审查、可自定义、可参与贡献
 

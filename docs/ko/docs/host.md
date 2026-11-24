@@ -1,15 +1,19 @@
 ---
-title: "Host: 오픈 소스 원격 작업과 Agent | NimoteCode"
-description: "연결 해제 후 컴퓨터에서 터미널, 작업과 Agent를 유지하세요. NimoteHost 기능, Apache-2.0 전체 소스, 사용자 정의, 기여와 배포를 알아보세요."
+title: "NimoteHost Community | NimoteCode"
+description: "Linux, macOS 또는 Windows 컴퓨터에 NimoteHost Community를 설치하세요. 연결을 끊어도 관리 중인 작업이 계속됩니다. NimoteCode에서 SSH로 다시 연결해 출력을 확인하고 에이전트 요청을 승인하거나 작업을 이어갈 수 있습니다."
 ---
 
-# Host: 오픈 소스 원격 작업 및 Agent 작업 공간
+# NimoteHost Community
 
-휴대폰에서 개발 컴퓨터의 터미널, 작업과 Agent를 관리하세요. 연결 해제 후에도 작업은 계속되며 다시 연결해 진행 상황과 승인을 확인합니다.
+Linux, macOS 또는 Windows 컴퓨터에 NimoteHost Community를 설치하세요. 연결을 끊어도 관리 중인 작업이 계속됩니다. NimoteCode에서 SSH로 다시 연결해 출력을 확인하고 에이전트 요청을 승인하거나 작업을 이어갈 수 있습니다.
 
-## NimoteHost 다운로드 {#download-nimotehost}
+NimoteHost Community는 Apache-2.0으로 공개되며 CLI나 데스크톱 관리자로 독립 실행할 수 있습니다. 휴대폰에서 Host 모드를 사용하려면 호환되는 NimoteCode(2.4.1 이상)와 Pro가 필요합니다.
+
+## NimoteHost Community 다운로드 {#download-nimotehost}
 
 <HostDownload />
+
+NimoteHost Community는 터미널, 작업, 호환 에이전트와 커뮤니티 플러그인을 관리합니다. GitHub Issue 전달은 Nimote Connect에 포함된 Host에서 제공됩니다. 업데이트나 에디션 변경은 [Community 가이드](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)를 참고하세요.
 
 [하드웨어 및 패키지 선택](/ko/docs/host/compatibility) · [다운로드 및 설치](/ko/docs/host/getting-started) · [연결, 터미널 및 작업](/ko/docs/host/sessions) · [Agent 및 작업 수신함](/ko/docs/host/agents) · [서비스 관리 및 업데이트](/ko/docs/host/maintenance) · [문제 해결](/ko/docs/host/troubleshooting)
 
@@ -22,7 +26,7 @@ description: "연결 해제 후 컴퓨터에서 터미널, 작업과 Agent를 �
 | 터미널 및 작업 관리 | 빌드, 테스트와 스크립트를 실행하고 연결 해제 후에도 관리 프로세스를 유지합니다. 다시 연결해 출력을 보고 조작하세요. |
 | 호환 Agent 협업 | Codex, Claude Code, OpenCode의 대화, 도구 결과와 승인을 확인하고 지원되는 경우 추가 지시를 보냅니다. |
 | 세션 및 작업 수신함 | 검색, 필터와 고정으로 승인 대기, 실패, 검토할 결과를 찾습니다. |
-| 검증 및 코드 검토 | 실제 테스트 기록, 종료 코드와 diff를 확인합니다. 지원되는 Host에 게시 정책을 지정해 GitHub Issue를 전달합니다. |
+| 검증 및 코드 검토 | 실제 테스트 기록, 종료 코드와 diff를 확인합니다. |
 | 기존 환경 사용 | Linux, macOS, Windows의 CLI 또는 데스크톱 관리자로 기존 프로젝트와 도구를 사용합니다. |
 | 오픈 소스 | Host 전체 소스를 검토, 빌드, 수정하고 연동 및 개선에 기여합니다. |
 

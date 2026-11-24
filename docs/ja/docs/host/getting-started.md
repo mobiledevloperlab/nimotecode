@@ -25,7 +25,7 @@ Host パネルでエディションを識別できた場合は、そこに表示
 
 ## 1. パッケージを選ぶ
 
-[NimoteHost のリリースページ](https://github.com/mobiledevloperlab/nimotehost/releases)で、パソコンに合う完全な配布パッケージを選びます。サーバーは CLI だけで使えます。パソコンでも管理画面を開くなら GUI 付きにします。
+[NimoteHost Community](https://github.com/mobiledevloperlab/nimotehost/releases/tag/community-v2.5.0)で、パソコンに合う完全な配布パッケージを選びます。サーバーは CLI だけで使えます。パソコンでも管理画面を開くなら GUI 付きにします。
 
 | OS | 表記 | CPU |
 | --- | --- | --- |

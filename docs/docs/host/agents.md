@@ -32,6 +32,8 @@ Check whether a test actually ran, its exit code, and the revision it tested. An
 
 Mark work handled or archive it when you have reviewed it. Pending approvals cannot be hidden this way. Return to the original session for corrections, and check the Host and directory before opening Git review.
 
+GitHub Issue dispatch requires the Host bundled with Nimote Connect. NimoteHost Community supports Agent sessions, approvals, and verification.
+
 To dispatch a GitHub Issue, use the supported dispatch entry to select the Issue, Host directory, Agent, test command, and publication policy. The computer needs an installed, authorized `gh`; your phone's GitHub login is not copied to Host. Leave publication manual for your first task, review the diff and verification, then publish when ready. Automatic publication must be explicitly selected when dispatching. Host does not automatically merge PRs.
 
 ## Open Host plugins {#_9-open-host-plugins}

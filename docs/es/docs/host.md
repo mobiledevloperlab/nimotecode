@@ -1,15 +1,19 @@
 ---
-title: "Host: tareas remotas y Agents de código abierto | NimoteCode"
-description: "Mantén terminales, tareas y Agents en tu ordenador tras desconectar. Conoce NimoteHost, su código Apache-2.0, personalización, contribución y despliegue."
+title: "NimoteHost Community | NimoteCode"
+description: "Instala NimoteHost Community en Linux, macOS o Windows. Las tareas gestionadas siguen ejecutándose al desconectar. Vuelve a conectarte por SSH desde NimoteCode para revisar la salida, responder a las solicitudes de aprobación y continuar el trabajo."
 ---
 
-# Host: espacio abierto para tareas remotas y Agents
+# NimoteHost Community
 
-Gestiona terminales, tareas y Agents de tu ordenador desde el móvil. El trabajo continúa al desconectar; vuelve para revisar el progreso y responder aprobaciones.
+Instala NimoteHost Community en Linux, macOS o Windows. Las tareas gestionadas siguen ejecutándose al desconectar. Vuelve a conectarte por SSH desde NimoteCode para revisar la salida, responder a las solicitudes de aprobación y continuar el trabajo.
 
-## Descargar NimoteHost {#download-nimotehost}
+NimoteHost Community se publica bajo Apache-2.0 y funciona de forma independiente con la CLI o el gestor de escritorio. El modo Host en el móvil requiere una versión compatible de NimoteCode (2.4.1 o posterior) y acceso Pro.
+
+## Descargar NimoteHost Community {#download-nimotehost}
 
 <HostDownload />
+
+NimoteHost Community gestiona terminales, tareas, agentes compatibles y plugins de la comunidad. El envío de GitHub Issues se ofrece con el Host incluido en Nimote Connect. Consulta la [guía de Community](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md) para actualizar o cambiar de edición.
 
 [Hardware y selección de paquetes](/es/docs/host/compatibility) · [Descarga e instalación](/es/docs/host/getting-started) · [Conexiones, terminales y tareas](/es/docs/host/sessions) · [Agents y bandeja de tareas](/es/docs/host/agents) · [Gestión del servicio y actualizaciones](/es/docs/host/maintenance) · [Solución de problemas](/es/docs/host/troubleshooting)
 

@@ -1,6 +1,6 @@
 ---
 title: "NimoteCode와 Blink Shell·Termius·Acode·Replit·Codespaces 비교"
-description: "공식 자료로 6개 제품의 모바일 플랫폼, SSH, 편집, Git, LSP, AI와 세션을 비교합니다. 확인 시각, Pro 권한과 Host 개발 미리보기 조건을 명시합니다."
+description: "공식 자료로 6개 제품의 모바일 플랫폼, SSH, 편집, Git, LSP, AI와 세션을 비교합니다. 확인 시각, Pro 권한과 NimoteHost Community 사용 조건을 명시합니다."
 pageClass: compare-page
 ---
 
@@ -12,7 +12,7 @@ pageClass: compare-page
 <details class="major-comparison-details">
 <summary>제품별 사용 조건과 근거</summary>
 
-NimoteCode는 2.4.1과 현재 Host 문서를 기준으로 확인했습니다. NimoteHost는 개발 미리보기이며 복원, 승인, Task Inbox는 Host 버전·설정과 Agent 호환성에 의존합니다. 컴퓨터, Host 및 관리 프로세스가 계속 실행되어야 하며 Host나 OS 재시작은 원래 프로세스를 복원하지 않습니다. Host, Android Local Linux와 Git 쓰기는 Pro가 필요합니다. 설정된 언어 도구를 사용하는 기본 LSP 완성·진단·탐색은 무료이고 코드 작업, 서버 설치 안내와 디버깅은 Pro가 필요합니다. 권한 범위는 무료·Pro 안내를 확인하세요.
+NimoteCode는 2.4.1과 현재 Host 문서를 기준으로 확인했습니다. NimoteHost Community의 복원, 승인, Task Inbox는 Host 버전·설정과 Agent 호환성에 의존합니다. 컴퓨터, Host 및 관리 프로세스가 계속 실행되어야 하며 Host나 OS 재시작은 원래 프로세스를 복원하지 않습니다. Host, Android Local Linux와 Git 쓰기는 Pro가 필요합니다. 설정된 언어 도구를 사용하는 기본 LSP 완성·진단·탐색은 무료이고 코드 작업, 서버 설치 안내와 디버깅은 Pro가 필요합니다. 권한 범위는 무료·Pro 안내를 확인하세요.
 
 Blink Code는 VS Code 서비스를 통합합니다. 문서에 명시된 저장소 편집과 확장은 연결된 환경에 의존합니다. Blink의 LSP와 AI Agent 작업 흐름은 개별 확인되지 않아 원격 IDE를 열 수 있다는 이유만으로 지원으로 계산하지 않습니다. 로컬 Unix 명령 도구는 완전한 Linux 환경이 아닙니다. Mosh 로밍, tmux 재접속, 구조화된 Agent 세션 복원은 각각 조건이 다릅니다.
 

@@ -224,7 +224,7 @@ This is a vendor-authored, documentation-based snapshot, reviewed on the date ab
 
 ### Requirements and interpretation
 
-NimoteCode is checked against 2.4.1 and the current Host documentation. NimoteHost remains a developer preview: recovery, approvals and Task Inbox depend on the Host version, configuration and compatible Agent. The computer, Host and managed process must stay running; a Host or OS restart does not restore the original process. Host, Android Local Linux and Git writes need Pro. Basic LSP completion, diagnostics and navigation are free with configured language tools; code actions, guided server installation and debugging need Pro. See Free and Pro for access boundaries.
+NimoteCode is checked against 2.4.1 and the current Host documentation. With NimoteHost Community, recovery, approvals and Task Inbox depend on the Host version, configuration and compatible Agent. The computer, Host and managed process must stay running; a Host or OS restart does not restore the original process. Host, Android Local Linux and Git writes need Pro. Basic LSP completion, diagnostics and navigation are free with configured language tools; code actions, guided server installation and debugging need Pro. See Free and Pro for access boundaries.
 
 Blink Code integrates VS Code services; documented repository editing and extension access depend on the connected environment. LSP and AI Agent workflows were not independently confirmed for Blink and are not credited merely because it can open a remote IDE. Its local Unix commands do not constitute a full Linux environment. Mosh roaming and tmux reattachment have different requirements from structured Agent recovery.
 

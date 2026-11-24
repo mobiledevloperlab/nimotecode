@@ -25,7 +25,7 @@ Host 패널이 에디션을 확인하면 표시된 설치 또는 업데이트 �
 
 ## 1. 패키지 다운로드
 
-[NimoteHost 릴리스](https://github.com/mobiledevloperlab/nimotehost/releases)에서 컴퓨터에 맞는 전체 패키지를 선택합니다. 서버에서는 CLI만 있으면 됩니다. 컴퓨터에서 관리 창도 사용하려면 GUI 패키지를 선택하세요.
+[NimoteHost Community](https://github.com/mobiledevloperlab/nimotehost/releases/tag/community-v2.5.0)에서 컴퓨터에 맞는 전체 패키지를 선택합니다. 서버에서는 CLI만 있으면 됩니다. 컴퓨터에서 관리 창도 사용하려면 GUI 패키지를 선택하세요.
 
 | 운영체제 | 표기 | CPU |
 | --- | --- | --- |

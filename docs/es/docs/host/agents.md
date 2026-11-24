@@ -25,6 +25,8 @@ Si aparece Task inbox, úsalo para encontrar aprobaciones, fallos, tareas en eje
 
 Tras revisar puedes marcar como tratado o archivar; no puedes ocultar aprobaciones pendientes. Para corregir, vuelve a la sesión original. Antes de abrir Git, confirma ordenador y carpeta.
 
+El envío de GitHub Issues requiere el Host incluido en Nimote Connect. NimoteHost Community admite sesiones de agentes, aprobaciones y verificación.
+
 El envío de Issues requiere la capacidad correspondiente, un proyecto y gh instalado y autorizado en el Host. La sesión GitHub del teléfono no se copia al ordenador. Empieza con publicación manual y revisa diff y verificaciones antes de crear un PR. La publicación automática se elige expresamente al enviar; Host no fusiona PR automáticamente.
 
 ## Abrir plugins del Host {#_9-abrir-plugins-del-host}

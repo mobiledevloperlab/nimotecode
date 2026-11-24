@@ -29,7 +29,7 @@ Host 面板识别出版本类型后，请使用面板为该版本提供的安装
 
 ## 1. 下载 NimoteHost
 
-打开 [NimoteHost 发布页](https://github.com/mobiledevloperlab/nimotehost/releases)，选择适合开发电脑系统和 CPU 的完整分发包。服务器上只需要 CLI；想在电脑上查看服务和会话，可以选择带 GUI 的包。
+打开 [NimoteHost 社区版](https://github.com/mobiledevloperlab/nimotehost/releases/tag/community-v2.5.0)，选择适合开发电脑系统和 CPU 的完整分发包。服务器上只需要 CLI；想在电脑上查看服务和会话，可以选择带 GUI 的包。
 
 CLI 包名称为 `nimotehost-<version>-<os>-<arch>`，桌面包为 `nimotehost-gui-<version>-<os>-<arch>`。Linux/macOS 使用 `.tar.gz`，Windows 使用 `.zip`。不打算编译时，应下载二进制分发包，而不是 GitHub 自动生成的 Source code 源码压缩包。系统要求以对应发布说明为准；Linux 桌面包要求 glibc 2.35 或更高版本，macOS 包暂未签名或公证。
 
@@ -47,13 +47,13 @@ Linux、Windows 另有 386 CLI，供 32 位 x86 使用，不包含 GUI。macOS �
 
 ```sh
 # Linux
-sha256sum nimotehost-2.4.0-linux-amd64.tar.gz
+sha256sum nimotehost-2.5.0-community-linux-amd64.tar.gz
 # macOS
-shasum -a 256 nimotehost-2.4.0-darwin-arm64.tar.gz
+shasum -a 256 nimotehost-2.5.0-community-darwin-arm64.tar.gz
 ```
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\nimotehost-2.4.0-windows-amd64.zip
+Get-FileHash -Algorithm SHA256 .\nimotehost-2.5.0-community-windows-amd64.zip
 ```
 
 将输出的摘要与同一发布包旁的 `.sha256` 文件逐字符对比。确认后，用系统解压工具解压整个包，在同时包含 `nimotehost` 或 `nimotehost.exe` 和 `scripts` 的目录打开终端。校验用于检查文件完整性，安装包和校验文件都应从官方发布入口获取。

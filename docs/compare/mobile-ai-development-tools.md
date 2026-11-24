@@ -1,6 +1,6 @@
 ---
 title: "NimoteCode vs Blink Shell, Termius, Acode, Replit and Codespaces"
-description: "Reviewed 2026-11-20: compare mobile platforms, SSH, editing, Git, LSP, AI and persistent sessions across six tools, with official sources and NimoteHost preview limits."
+description: "Reviewed 2026-11-20: compare mobile platforms, SSH, editing, Git, LSP, AI and persistent sessions across six tools, with official sources and NimoteHost Community requirements."
 pageClass: compare-page
 ---
 
@@ -12,7 +12,7 @@ pageClass: compare-page
 <details class="major-comparison-details">
 <summary>Product-specific requirements and evidence</summary>
 
-NimoteCode is checked against 2.4.1 and the current Host documentation. NimoteHost remains a developer preview: recovery, approvals and Task Inbox depend on the Host version, configuration and compatible Agent. The computer, Host and managed process must stay running; a Host or OS restart does not restore the original process. Host, Android Local Linux and Git writes need Pro. Basic LSP completion, diagnostics and navigation are free with configured language tools; code actions, guided server installation and debugging need Pro. See Free and Pro for access boundaries.
+NimoteCode is checked against 2.4.1 and the current Host documentation. With NimoteHost Community, recovery, approvals and Task Inbox depend on the Host version, configuration and compatible Agent. The computer, Host and managed process must stay running; a Host or OS restart does not restore the original process. Host, Android Local Linux and Git writes need Pro. Basic LSP completion, diagnostics and navigation are free with configured language tools; code actions, guided server installation and debugging need Pro. See Free and Pro for access boundaries.
 
 Blink Code integrates VS Code services; documented repository editing and extension access depend on the connected environment. LSP and AI Agent workflows were not independently confirmed for Blink and are not credited merely because it can open a remote IDE. Its local Unix commands do not constitute a full Linux environment. Mosh roaming and tmux reattachment have different requirements from structured Agent recovery.
 

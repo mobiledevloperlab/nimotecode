@@ -32,6 +32,8 @@ description: "NimoteHost Agent 与任务收件箱说明与操作步骤。"
 
 处理完成后可以标记已处理或归档；待审批项目不能直接藏起来。需要修正就回原会话继续。打开 Git 审查前，检查当前主机和目录是不是这项任务所在的位置。
 
+GitHub Issue 派发需要 Nimote Connect 随附的 Host。NimoteHost 社区版支持 Agent 会话、审批和验证。
+
 要从 GitHub Issue 派发任务，在支持该功能的入口填写 Issue、Host 项目目录、Agent、测试命令和发布策略。远程电脑需要安装并授权 `gh`；手机的 GitHub 登录不会复制给 Host。第一次保留默认的手动发布，确认 Diff 和验证结果后，再提交、推送或创建草稿 PR。自动发布必须在派发时明确选择，Host 不会自动合并 PR。
 
 ## 使用 Host 插件 {#_9-使用-host-插件}

@@ -7,6 +7,8 @@ description: "NimoteHost 服务管理与升级说明与操作步骤。"
 
 ## 服务管理、升级与本地数据
 
+社区版请使用 Community 发布渠道更新。通过 Nimote Connect 安装的 Host 请在 Connect 中更新。切换版本前先完成运行中的任务，并按社区版指南保留现有数据。 [社区版升级指南](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)
+
 在 NimoteCode 2.5.0 中，从 **Host → 远程连接** 连接并检查安装状态。使用当前连接中显示的安装或更新入口，或打开 Host 帮助查看已安装版本。若需要停止正在运行的会话，请先核对影响再确认。
 
 日常维护请使用安装后的 CLI。Linux/macOS 路径为 `~/.local/share/nimotehost/nimotehost`；Windows PowerShell 用 `& "$env:LOCALAPPDATA\NimoteHost\nimotehost.exe"` 调用。下表假定安装目录已加入 PATH，否则将命令中的程序名替换为完整路径。

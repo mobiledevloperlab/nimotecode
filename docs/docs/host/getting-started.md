@@ -27,7 +27,7 @@ When the panel identifies a Host edition, follow the setup or update shown for t
 
 ## 1. Download NimoteHost
 
-Open the [NimoteHost releases page](https://github.com/mobiledevloperlab/nimotehost/releases) and choose a complete distribution for your computer. The CLI is enough for a server. Choose a GUI bundle if you also want a desktop window for managing Host.
+Open the [NimoteHost Community](https://github.com/mobiledevloperlab/nimotehost/releases/tag/community-v2.5.0) and choose a complete distribution for your computer. The CLI is enough for a server. Choose a GUI bundle if you also want a desktop window for managing Host.
 
 Release names follow `nimotehost-<version>-<os>-<arch>` for CLI and `nimotehost-gui-<version>-<os>-<arch>` for desktop bundles. Linux/macOS archives use `.tar.gz`; Windows uses `.zip`. Download the binary distribution rather than GitHub's automatically generated source archive unless you intend to compile it. Check the release notes for platform requirements; Linux desktop bundles target glibc 2.35 or newer, and macOS bundles are unsigned and not notarized.
 
@@ -45,13 +45,13 @@ For example, replace the sample filename with your downloaded archive:
 
 ```sh
 # Linux
-sha256sum nimotehost-2.4.0-linux-amd64.tar.gz
+sha256sum nimotehost-2.5.0-community-linux-amd64.tar.gz
 # macOS
-shasum -a 256 nimotehost-2.4.0-darwin-arm64.tar.gz
+shasum -a 256 nimotehost-2.5.0-community-darwin-arm64.tar.gz
 ```
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\nimotehost-2.4.0-windows-amd64.zip
+Get-FileHash -Algorithm SHA256 .\nimotehost-2.5.0-community-windows-amd64.zip
 ```
 
 Compare the digest with the adjacent `.sha256` file from the same release. Use your archive manager to extract the complete archive and open a terminal in the folder containing `nimotehost` or `nimotehost.exe` and `scripts`. Checksums check file integrity; obtain both files from the official release.

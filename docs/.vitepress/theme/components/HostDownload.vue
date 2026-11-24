@@ -12,14 +12,14 @@ const locale = computed(() => {
 const installPage = computed(() => `${locale.value === 'en' ? '' : '/' + locale.value}/docs/host/getting-started`)
 const copy = computed(() => translations[locale.value])
 const releases = 'https://github.com/mobiledevloperlab/nimotehost/releases'
-const latest = `${releases}/latest`
+const communityRelease = `${releases}/tag/community-v2.5.0`
 </script>
 
 <template>
   <section class="host-download" aria-labelledby="download-nimotehost">
     <div class="host-download-main">
       <p class="host-download-label">{{ copy.label }}</p>
-      <a class="host-download-primary" :href="latest"><span aria-hidden="true">↓</span>{{ copy.download }}</a>
+      <a class="host-download-primary" :href="communityRelease"><span aria-hidden="true">↓</span>{{ copy.download }}</a>
       <p class="host-download-intro">{{ copy.intro }}</p>
       <p class="host-download-hint">{{ copy.hint }}</p>
       <div class="host-download-shortcuts"><a :href="installPage.replace('getting-started', 'compatibility')">{{ copy.compatibility }}</a><a :href="`${installPage}#host-install`">{{ copy.install }}</a><a :href="`${installPage}#host-source`">{{ copy.source }}</a></div>
@@ -27,7 +27,7 @@ const latest = `${releases}/latest`
     <div class="host-download-platforms">
       <article v-for="platform in copy.platforms" :key="platform[0]">
         <h3>{{ platform[0] }}</h3><p>{{ platform[1] }}</p>
-        <a :href="latest">{{ platform[2] }} <span aria-hidden="true">↗</span></a>
+        <a :href="communityRelease">{{ platform[2] }} <span aria-hidden="true">↗</span></a>
       </article>
     </div>
     <div class="host-download-editions"><p>{{ copy.desktop }}</p><p>{{ copy.cli }}</p></div>
