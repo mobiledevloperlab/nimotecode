@@ -5,6 +5,8 @@ description: "Configuration, procedures, and interface reference for tasks."
 
 # Tasks
 
+Free can run individual tasks. Running a workflow with task dependencies requires Pro.
+
 <div class="doc-section">
 <div class="doc-section__copy">
 

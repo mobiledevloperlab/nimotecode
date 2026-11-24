@@ -5,6 +5,8 @@ description: "작업 공간 검색 설정, 사용 절차 및 화면 안내."
 
 # 작업 공간 검색
 
+무료 플랜은 하루에 내장 Agent 작업 3회와 원격 파일 내용 검색 10회를 제공합니다. UTC 00:00에 초기화됩니다.
+
 <div class="doc-section">
 <div class="doc-section__copy">
 

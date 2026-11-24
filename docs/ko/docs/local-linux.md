@@ -16,7 +16,7 @@ Docker나 오래 실행되는 서비스, 기존 컴퓨터 도구가 필요하면
 ## 요구 사항
 
 - **기기**: Android 8 이상, ARM64 또는 x86_64 64비트 앱. iPhone, iPad, 32비트 ARM은 지원하지 않습니다.
-- **이용 권한**: Early Access Pro가 필요합니다. 앱의 [계정 상태](/ko/docs/account-subscription)에서 이용 가능 여부를 확인하세요.
+- 지원되는 Android 기기에서 기본 로컬 Linux를 무료로 실행할 수 있습니다. 개발 도구 관리와 공유 폴더 가져오기에는 Pro가 필요합니다.
 - **도구**: Ubuntu, Bash, Git, SSH 포함. 언어 도구 모음, 언어 서버, 디버거, 외부 Agent CLI는 별도 설정이 필요합니다.
 
 PRoot를 통해 Android 커널을 공유하며 가상 머신이나 Android 루트 권한을 제공하지 않습니다. 백그라운드 실행은 Android의 프로세스 관리에 영향을 받습니다.

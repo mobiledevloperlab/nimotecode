@@ -17,11 +17,11 @@ description: "계정 및 구독 설정, 사용 절차 및 화면 안내."
 
 ## 기능 이용 권한
 
-2.5.0부터 Free에서 GitHub 탐색, 지원되는 SSH의 Docker 버전·컨테이너·이미지 개요, 중단점 관리를 이용할 수 있습니다. GitHub 복제·쓰기, Docker 리소스 관리, 디버깅 시작에는 Pro가 필요합니다.
+Free에서는 Git 상태와 차이 확인, 스테이징, 스테이징 취소 및 커밋을 지원합니다. GUI 푸시·풀·브랜치·스태시, Git AI 및 고급 GitHub 통합에는 Pro가 필요합니다. Docker 및 Dev Container에는 Pro와 호환 호스트가 필요합니다. 디버깅에는 Pro 및 구성된 디버그 어댑터가 필요합니다.
 
-NimoteCode 2.5.0에서 [지속 SSH 터미널](/ko/docs/terminal#persistent-ssh-terminal)을 만들거나 재개하려면 Pro와 tmux가 설치된 호환 호스트가 필요합니다. 네이티브 데스크톱 빌드는 기본으로 Pro를 적용합니다.
+NimoteHost, 지속 원격 터미널 및 기기 간 AI 세션 인계에는 체험판 또는 Early Access를 포함한 유효한 Pro 권한이 필요합니다.
 
-모바일에서 Nimote Connect의 관리형 직접 연결과 릴레이를 사용하려면 Pro가 필요합니다. 일반 SSH, 개인 Tailscale, 데스크톱 정식 버전의 Nimote Connect는 무료입니다.
+Nimote Connect의 공용 인터넷 접속은 계획 단계이며 Free 및 Pro 한도는 미정입니다. 일반 SSH와 개인 Tailscale은 사용할 수 있습니다.
 
 [무료 버전과 Pro](/ko/pro)를 참고하세요.
 

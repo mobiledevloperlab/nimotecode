@@ -5,6 +5,8 @@ description: "Configuración, procedimientos y referencia de la interfaz: Inicio
 
 # Inicio rápido
 
+[Free y Pro](/es/pro)
+
 Abre un espacio de trabajo, edita un archivo y ejecuta tu primer comando. Sigue los pasos siguientes; configura la conexión del modelo cuando vayas a usar el Agent.
 
 - [Abrir un espacio de trabajo](#abrir-un-espacio-de-trabajo)

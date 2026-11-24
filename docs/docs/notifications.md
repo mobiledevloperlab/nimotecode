@@ -15,6 +15,6 @@ Use descriptive names for [terminal tabs](/docs/terminal) and [Tasks](/docs/task
 
 ## NimoteCode 2.4.0
 
-**Alerts and editor preferences.** Configure Agent completion, confirmation, and failure alerts, sound and vibration subject to system settings, editor line numbers, and the landscape minimap. Pro is enabled by default on Windows.
+**Alerts and editor preferences.** Configure Agent completion, confirmation, and failure alerts, sound and vibration subject to system settings, editor line numbers, and the landscape minimap. Desktop access follows the signed-in account.
 
 [2.4.0 →](/releases/2.4.0)

@@ -11,7 +11,7 @@ No. Puede abrir un proyecto local, usar Android Local Linux o conectar con un es
 
 ## ¿Puedo usarlo sin Pro?
 
-Sí. El plan gratuito incluye espacios locales y SSH, editor, terminal básico, AI Chat y Tasks básicas. La integración con GitHub y Android Local Linux requieren Early Access Pro. Local Linux necesita Android 8+ en ARM64 o x86_64 y no está disponible en iOS. Consulta [Pro](/es/pro). Activa la prueba gratuita de 14 días en la app. Al terminar, volverás a Gratis salvo que tengas una suscripción de pago u otro acceso Pro vigente, como Early Access. Consulta los requisitos en la app.
+Edita archivos, conecta espacios SSH, usa hasta dos terminales simultáneos con búsqueda, accede al autocompletado, diagnóstico y navegación LSP básicos, usa el chat de IA independiente con tu propio servicio y prepara o retira cambios, crea commits y consulta las diferencias y el historial de Git gratis. LSP básico requiere un servidor de lenguaje configurado. Linux local básico es gratuito en dispositivos Android compatibles. Free incluye 3 tareas del agente integrado y 10 búsquedas de contenido remoto al día. Se restablecen a las 00:00 UTC. [Free y Pro](/es/pro).
 
 ## ¿Qué proveedores de IA puedo configurar?
 
@@ -19,7 +19,7 @@ La aplicación ofrece plantillas de proveedores y admite endpoints personalizado
 
 ## ¿Qué admite Control de código fuente?
 
-Todos los usuarios pueden consultar el estado, las diferencias y el historial del repositorio. Pro es necesario para operaciones restringidas de escritura de Git, como commits, pushes y stash. Consulte [Control de código fuente](/es/docs/source-control).
+Free permite ver el estado y las diferencias de Git, preparar y retirar cambios y crear commits. Las operaciones gráficas de push, pull, ramas y stash, Git AI y la integración avanzada de GitHub requieren Pro.
 
 ## ¿Las tareas se ejecutan localmente o en remoto?
 

@@ -5,6 +5,8 @@ description: "Configuración, procedimientos y referencia de la interfaz: Búsqu
 
 # Búsqueda en el espacio de trabajo
 
+Free incluye 3 tareas del agente integrado y 10 búsquedas de contenido remoto al día. Se restablecen a las 00:00 UTC.
+
 <div class="doc-section">
 <div class="doc-section__copy">
 

@@ -17,11 +17,11 @@ If a previous purchase is not recognized, confirm the platform-store account and
 
 ## Feature access
 
-In 2.5.0, Free users can browse GitHub, see the Docker version, container and image overview over supported SSH connections, and manage breakpoints. Pro is required to clone or write through GitHub, manage Docker resources, or start a debug session. Badges appear on the affected actions.
+Free includes Git status, diffs, staging, unstaging and commits. Graphical push, pull, branch and stash operations, Git AI and advanced GitHub integration require Pro. Docker and Dev Containers require Pro and a compatible host. Debug sessions require Pro and a configured debug adapter.
 
-In NimoteCode 2.5.0, creating or resuming a [persistent SSH terminal](/docs/terminal#persistent-ssh-terminal) requires Pro and a compatible host with tmux installed. Native desktop builds enable Pro by default.
+NimoteHost, persistent remote terminals and cross-device AI session takeover require an active Pro entitlement, including a valid trial or Early Access grant.
 
-Mobile Nimote Connect’s managed direct and relay connections require Pro. Standard SSH, personal Tailscale, and Nimote Connect in desktop releases are free.
+Nimote Connect public internet access is planned. Free and Pro allowances have yet to be defined. Standard SSH and personal Tailscale are available.
 
 See [Free and Pro](/pro).
 

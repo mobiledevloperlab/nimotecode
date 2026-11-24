@@ -12,17 +12,13 @@ const props = defineProps<{
 const copy = computed(() => translations[props.lang || 'en'] || translations.en)
 const showFeatures = computed(() => props.mode !== 'preview')
 const trialCopy = computed(() => copy.value.pricing.trial)
+const freeLimits = [2, 3, 10]
+const presentation = computed(() => copy.value.features.presentation)
 </script>
 
 <template>
   <div class="pricing-feature-system">
-    <section class="home-page-section dense pf-pricing-section">
-      <div class="home-page-section-head home-page-section-head-centered">
-        <p class="home-page-eyebrow">{{ copy.pricing.eyebrow }}</p>
-        <p class="home-page-section-copy">{{ copy.pricing.summary }}</p>
-        <p class="pf-campaign-notice"><strong>{{ copy.pricing.earlyAccessDeadline }}</strong></p>
-      </div>
-
+    <section class="pf-pricing-section" :aria-label="copy.pricing.eyebrow">
       <div class="pf-pricing-grid">
         <article
           v-for="plan in copy.pricing.plans"
@@ -31,40 +27,50 @@ const trialCopy = computed(() => copy.value.pricing.trial)
           :class="{ 'is-featured': plan.highlight }"
         >
           <div class="pf-plan-topline">
-            <h3>{{ plan.highlight ? plan.name : copy.features.freeTitle }}</h3>
+            <h2>{{ plan.highlight ? plan.name : copy.features.freeTitle }}</h2>
             <span v-if="plan.badge">{{ plan.badge }}</span>
           </div>
           <div class="pf-price-row">
             <strong>{{ plan.price }}</strong>
             <span>{{ plan.period }}</span>
           </div>
-          <p class="pf-plan-summary">{{ plan.highlight ? plan.summary : copy.features.freeDescription }}</p>
-          <a :href="plan.link" class="home-page-btn" :class="plan.highlight ? 'primary' : 'secondary'">
-            {{ plan.cta }}
-          </a>
+          <template v-if="plan.highlight">
+            <ul class="pf-highlights">
+              <li v-for="group in copy.features.groups.slice(0, 3)" :key="group.id">{{ group.name }}</li>
+            </ul>
+            <p class="pf-campaign-notice">{{ copy.pricing.earlyAccessDeadline }}</p>
+          </template>
+          <template v-else>
+            <ul class="pf-free-limits">
+              <li v-for="(label, index) in presentation.limits" :key="label">
+                <strong>{{ freeLimits[index] }}</strong>
+                <span>{{ label }}</span>
+              </li>
+            </ul>
+            <ul class="pf-free-checklist">
+              <li v-for="item in presentation.items" :key="item">{{ item }}</li>
+            </ul>
+          </template>
+          <div class="pf-plan-actions">
+            <a :href="plan.link" class="home-page-btn" :class="plan.highlight ? 'primary' : 'secondary'">{{ plan.cta }}</a>
+            <a v-if="plan.highlight && showFeatures" class="pf-benefits-link" href="#pro-benefits-title">{{ presentation.benefits }} <span aria-hidden="true">↓</span></a>
+          </div>
+          <details class="pf-plan-details">
+            <summary>{{ plan.highlight ? presentation.trialTerms : presentation.terms }}</summary>
+            <p>{{ plan.highlight ? trialCopy.body : presentation.finePrint }}</p>
+          </details>
         </article>
       </div>
-
-      <div class="pf-trial-banner">
-        <div class="pf-trial-copy">
-          <strong>{{ trialCopy.title }}</strong>
-          <span>{{ trialCopy.body }}</span>
-        </div>
-        <a :href="trialCopy.link" class="home-page-btn primary">{{ trialCopy.cta }}</a>
-      </div>
-
       <p class="pf-trust-line">{{ copy.pricing.trustLine }}</p>
     </section>
 
-    <section v-if="showFeatures" class="home-page-section dense alt pf-features-section" aria-labelledby="pro-benefits-title">
+    <section v-if="showFeatures" class="pf-features-section" aria-labelledby="pro-benefits-title">
       <div class="home-page-section-head home-page-section-head-centered">
         <h2 id="pro-benefits-title" class="home-page-section-title">{{ copy.features.proTitle }}</h2>
       </div>
       <div class="pf-feature-grid">
         <article v-for="group in copy.features.groups" :key="group.id" class="pf-feature-card" :data-benefit="group.id">
-          <div class="pf-card-head">
-            <h3>{{ group.name }}</h3>
-          </div>
+          <h3>{{ group.name }}</h3>
           <p>{{ group.description }}</p>
           <p v-if="'note' in group" class="pf-benefit-note">{{ group.note }}</p>
         </article>

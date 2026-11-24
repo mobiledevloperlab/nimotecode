@@ -9,7 +9,7 @@ Las herramientas Docker se ejecutan en un host SSH conectado. El host debe tener
 
 ## Abrir Docker
 
-En 2.5.0, Free puede consultar la versión del servidor Docker, los contenedores y las imágenes en un host SSH compatible. El control de contenedores, los logs y Compose requieren Pro.
+Docker y los Dev Containers requieren Pro y un host compatible.
 
 <div class="doc-screenshots">
   <DocScreenshot file="docker-images.png" caption="Lista de imágenes Docker con el paquete temporal de código nimotecode-screenshot-demo:2.4.1." />

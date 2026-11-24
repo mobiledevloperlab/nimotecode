@@ -11,7 +11,7 @@ No. NimoteCode can open a local project, use Android Local Linux, or connect to 
 
 ## Can I use it without Pro?
 
-Yes. Free includes local and SSH workspaces, the editor, basic terminal, AI Chat and basic Tasks. GitHub integration and Android Local Linux require Early Access Pro. Local Linux requires Android 8+ on an ARM64 or x86_64 device and is unavailable on iOS. See [Pro](/pro) for details. Claim your trial in the app. After 14 days, you return to Free unless you have a paid subscription or other valid Pro access, such as Early Access. Trial eligibility is shown in the app.
+Edit files, connect to SSH workspaces, use up to two terminals at once, including terminal search, access basic LSP completion, diagnostics and navigation, use standalone AI chat with your own model service, and stage, unstage and commit files, and view Git diffs and history for free. Basic LSP requires a configured language server. Basic Android Local Linux is free on supported devices. Free includes 3 built-in Agent tasks and 10 remote content searches per day. Quotas reset at 00:00 UTC. [Free and Pro](/pro).
 
 ## Which AI providers can I configure?
 
@@ -19,7 +19,7 @@ The app provides provider templates and supports compatible custom endpoints. Pr
 
 ## What does Source Control support?
 
-Source Control lets every user inspect repository status, diffs and history. Pro is required for gated Git write workflows such as commits, pushes and stash actions. Read [Source Control](/docs/source-control).
+Free includes Git status, diffs, staging, unstaging and commits. Graphical push, pull, branch and stash operations, Git AI and advanced GitHub integration require Pro.
 
 ## Are Tasks local or remote?
 

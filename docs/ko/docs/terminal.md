@@ -5,6 +5,8 @@ description: "터미널 설정, 사용 절차 및 화면 안내."
 
 # 터미널
 
+Free는 터미널 2개를 동시에 사용할 수 있습니다. Pro에는 앱에서 설정한 개수 제한이 없습니다.
+
 <div class="doc-section">
 <div class="doc-section__copy">
 

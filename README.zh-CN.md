@@ -162,7 +162,7 @@ iPhone 和 iPad 不支持 Local Linux，可通过 SSH 主机运行开发命令�
 - 改善 SSH 重连、终端输入、滚动与复制。
 - 更新手机导航，工作区搜索可定位并高亮匹配内容。
 - 内置 Codex 响应更快，Android 本地 Linux 支持开发工具包。
-- 2.5.0 还支持 Git 文件和行历史就地重试、从缺少快照的 Agent 审查卡查看 Git 差异，并细化了 Pro 操作标识。Free 用户可浏览 GitHub、查看 Docker 概览和管理断点。
+- Free 支持查看 Git 状态与差异、暂存、取消暂存和提交。图形化推送、拉取、分支、Stash、Git AI 及 GitHub 高级集成需要 Pro。 Docker 和 Dev Container 需要 Pro 及兼容的主机。 启动调试需要 Pro 和已配置的调试适配器。
 
 [阅读完整 2.5.0 发布说明](https://nimotecode.com/zh/releases/2.5.0) · [当前正式版本 2.4.1](https://nimotecode.com/zh/releases/2.4.1)
 
@@ -224,7 +224,7 @@ iPhone 和 iPad 不支持 Local Linux，可通过 SSH 主机运行开发命令�
 
 ### 使用条件与对比说明
 
-NimoteCode 按 2.4.1 与当前 Host 文档核对。使用 NimoteHost 社区版时，恢复、审批与 Task Inbox 取决于 Host 版本、配置及 Agent 兼容性。电脑、Host 与托管进程需要持续运行；Host 或系统重启不会恢复原进程。Host、Android Local Linux 与 Git 写入需要 Pro。基础 LSP 补全、诊断与导航免费，需配置语言工具；代码操作、引导安装语言服务器与调试需要 Pro。权限边界参见免费与 Pro。
+NimoteCode 条目依据 Free / Pro 权益说明和 Host 文档。使用 NimoteHost 社区版时，恢复、审批与 Task Inbox 取决于 Host 版本、配置及 Agent 兼容性。电脑、Host 与托管进程需要持续运行；Host 或系统重启不会恢复原进程。NimoteHost、持久化远程终端与 AI 会话跨设备接管需要有效的 Pro 权益，包括有效试用和 Early Access。 支持的 Android 设备可免费运行基础本地 Linux。开发工具管理与共享目录导入需要 Pro。 Free 支持查看 Git 状态与差异、暂存、取消暂存和提交。图形化推送、拉取、分支、Stash、Git AI 及 GitHub 高级集成需要 Pro。基础 LSP 补全、诊断与导航免费，需配置语言工具；代码操作、引导安装语言服务器与调试需要 Pro。权限边界参见免费与 Pro。
 
 Blink Code 集成 VS Code 服务；已记录的仓库编辑和扩展访问取决于所连接的环境。Blink 的 LSP 和 AI Agent 工作流未获逐项确认，不因其可打开远程 IDE 就直接计为支持。本地 Unix 命令工具不等于完整 Linux 环境。Mosh 网络漫游、tmux 重附着与结构化 Agent 恢复各有不同条件。
 

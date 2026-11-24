@@ -5,6 +5,8 @@ description: "タスクの設定、操作手順、画面の説明。"
 
 # タスク
 
+単独のタスクは無料です。依存タスクを含むワークフローの実行には Pro が必要です。
+
 <div class="doc-section">
 <div class="doc-section__copy">
 

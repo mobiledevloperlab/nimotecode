@@ -5,6 +5,8 @@ description: "工作区搜索的配置、操作步骤与界面说明。"
 
 # 工作区搜索
 
+免费版每天可运行 3 次内置 Agent 任务、搜索远程文件内容 10 次。额度于 UTC 00:00 重置。
+
 <div class="doc-section">
 <div class="doc-section__copy">
 

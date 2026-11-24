@@ -53,11 +53,8 @@ NimoteCode 2.5.0 にサインインし、接続選択画面で**Connect / Tailsc
 
 個人用 Tailscale を使う場合は、両方のデバイスを同じ tailnet に接続し、PC の SSH を有効にしてください。PC を選んで Tailscale 経由で接続します。同期済みの Tailscale IP または MagicDNS 名を使い、PC の SSH ユーザー名とパスワードまたは鍵でログインします。接続できない場合は、アドレス、SSH ポート、ホスト名を使う場合は MagicDNS を確認します。
 
-対応するペアリング済みの PC でリモートアクセスを有効にすると、Nimote Relay も選べます。ネットワーク間の直接接続と経路切り替えを含むインターネット接続は、公開に向けて検証中です。
+Nimote Connect のインターネット経由の接続は計画中です。Free と Pro の利用枠は未定です。通常の SSH と個人用 Tailscale を利用できます。
 
-Android、iPhone、iPad で Nimote Connect の管理対象の直接接続やリレーを使うには Pro が必要です。通常の SSH、個人用 Tailscale、デスクトップ正式版の Nimote Connect は無料です。
-
-Relay は認証から SSH ログインまでを段階ごとに表示します。PC がオンラインで、リモートアクセスが有効である必要があります。ペアリングを解除すると Relay のアクセス権が取り消されます。 Host モードではスマートフォンと Host を同じ LAN に接続してください。
 
 ## プロジェクトのルートを選ぶ
 

@@ -16,7 +16,7 @@ Si necesitas Docker, servicios de larga duración o herramientas ya instaladas e
 ## Requisitos
 
 - **Dispositivo**: Android 8 o posterior con la app de 64 bits ARM64 o x86_64. No admite iPhone, iPad ni ARM de 32 bits.
-- **Acceso**: Requiere Early Access Pro. Consulta la disponibilidad en el [estado de tu cuenta](/es/docs/account-subscription) dentro de la app.
+- Linux local básico es gratuito en dispositivos Android compatibles. La gestión de herramientas y la importación de carpetas compartidas requieren Pro.
 - **Herramientas**: Incluye Ubuntu, Bash, Git y SSH. Las cadenas de herramientas, servidores de lenguaje, depuradores y CLI de agentes externos requieren configuración aparte.
 
 PRoot comparte el kernel de Android; no proporciona una máquina virtual ni acceso root. Android controla la ejecución en segundo plano.

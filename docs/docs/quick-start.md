@@ -5,6 +5,8 @@ description: "Get started with NimoteCode: explore four modes, open a local or S
 
 # Quick start
 
+[Free and Pro](/pro)
+
 Open a workspace, edit a file, and run your first command. Follow the steps below; AI setup is only needed when you reach the Agent step.
 
 - [Open a workspace](#open-a-workspace)

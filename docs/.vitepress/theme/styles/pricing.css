@@ -1,379 +1,256 @@
-/* ==========================================================================
-   Pricing Feature System
-   - Billing toggle (.pf-billing-toggle)
-   - Pricing plan grid (.pf-pricing-grid / .pf-plan-card)
-   - Free-trial banner (.pf-trial-banner)
-   - Feature grid (.pf-feature-grid / .pf-feature-card)
-   - Trust lines
-   - Light-mode overrides + responsive behaviour
-   ========================================================================== */
-
 .pricing-feature-system {
-  width: 100%;
+  width: min(100%, 1024px);
+  margin: clamp(24px, 5vw, 44px) auto 0;
 }
 
-/* Section rhythm --------------------------------------------------------- */
-.pf-pricing-section,
-.pf-features-section {
-  padding-top: var(--nimote-section-space-compact);
-  padding-bottom: var(--nimote-section-space);
-}
-.pf-features-section {
-  border-top: 1px solid var(--nimote-border);
-}
-
-.pf-pricing-section .home-page-section-head,
-.pf-features-section .home-page-section-head {
-  margin: 0 auto;
+.pricing-page .vp-doc > div > h1,
+.pricing-page .vp-doc > div > h1 + p {
+  margin-inline: auto;
   text-align: center;
 }
-.pf-pricing-section .home-page-section-copy,
-.pf-features-section .home-page-section-copy {
-  margin-inline: auto;
+
+.pricing-page .nimote-marketing-doc .vp-doc > div > h1 {
+  max-width: none;
 }
 
-/* Billing toggle --------------------------------------------------------- */
-.pf-billing-toggle {
-  display: flex;
-  width: fit-content;
-  margin: 28px auto 0;
-  gap: 4px;
-  padding: 4px;
-  border: 1px solid var(--nimote-border);
-  border-radius: var(--nimote-radius-pill);
-  background: var(--nimote-bg-subtle);
-}
-
-.pf-billing-toggle button {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  border: 0;
-  background: transparent;
-  color: var(--nimote-text-secondary);
-  font: inherit;
-  font-size: 0.9rem;
-  font-weight: 500;
-  line-height: 1;
-  padding: 10px 18px;
-  border-radius: var(--nimote-radius-pill);
-  cursor: pointer;
-  transition: color 0.2s var(--nimote-ease), background-color 0.2s var(--nimote-ease),
-    box-shadow 0.2s var(--nimote-ease);
-}
-
-.pf-billing-toggle button:hover {
-  color: var(--nimote-text-primary);
-}
-
-.pf-billing-toggle button.active {
-  background: var(--nimote-card);
-  color: var(--nimote-text-primary);
-  box-shadow: var(--nimote-shadow-xs);
-}
-
-.pf-billing-toggle button span {
-  padding: 3px 8px;
-  border-radius: var(--nimote-radius-pill);
-  background: rgba(var(--nimote-accent-3-rgb), 0.12);
-  color: var(--nimote-accent-3);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-}
-
-.pf-billing-toggle button:focus-visible {
-  outline: 2px solid var(--nimote-accent-2);
-  outline-offset: 2px;
-}
-
-/* Plan cards ------------------------------------------------------------- */
 .pf-pricing-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.8rem;
-  width: 100%;
-  margin: 2.4rem auto 0;
+  gap: 16px;
+  align-items: stretch;
 }
 
 .pf-plan-card {
   display: flex;
   flex-direction: column;
+  min-width: 0;
+  padding: clamp(20px, 3.5vw, 32px);
   border: 1px solid var(--nimote-border);
   border-radius: var(--nimote-radius-lg);
-  padding: 2.2rem;
   background: var(--nimote-card);
-  box-shadow: var(--nimote-panel-shadow);
-  transition: transform 0.25s var(--nimote-ease), border-color 0.25s var(--nimote-ease),
-    box-shadow 0.25s var(--nimote-ease);
-  position: relative;
 }
 
 .pf-plan-card.is-featured {
   border-color: var(--nimote-border-accent);
-  box-shadow: var(--nimote-shadow-brand);
-  background: var(--nimote-card);
+  background: color-mix(in srgb, var(--nimote-accent) 5%, var(--nimote-card));
 }
 
-.pf-plan-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--nimote-border-accent);
-  box-shadow: var(--nimote-shadow-md);
-}
-.pf-plan-card.is-featured:hover {
-  box-shadow: var(--nimote-shadow-lg);
-}
-
-.pf-plan-topline {
+.vp-doc .pf-plan-topline {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 1.2rem;
+  gap: 8px 12px;
 }
 
-.pf-plan-topline h3 {
+.vp-doc .pf-plan-topline h2 {
   margin: 0;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--nimote-text-primary);
-  letter-spacing: -0.015em;
+  padding: 0;
+  border: 0;
+  font-size: 1.125rem;
+  line-height: 1.4;
 }
 
-.pf-plan-topline span {
-  padding: 0.35rem 0.85rem;
-  border-radius: var(--nimote-radius-pill);
+.pf-plan-topline > span {
+  padding: 3px 10px;
   border: 1px solid var(--nimote-border-accent);
-  background: var(--nimote-bg-subtle);
+  border-radius: var(--nimote-radius-pill);
   color: var(--nimote-link);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-size: .75rem;
+  line-height: 1.5;
 }
 
 .pf-price-row {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
-  gap: 0.4rem;
-  margin-bottom: 0.35rem;
-}
-.pf-price-row strong {
-  font-size: 2.75rem;
-  font-weight: 600;
-  letter-spacing: -0.035em;
-  color: var(--nimote-text-primary);
-  line-height: 1;
-}
-.pf-price-row span {
-  font-size: 0.96rem;
+  gap: 4px 10px;
+  margin: 12px 0 20px;
   color: var(--nimote-text-secondary);
-}
-
-.pf-price-alt {
-  margin: 0 0 1.1rem;
-  font-size: 0.88rem;
-  color: var(--nimote-text-muted);
-}
-.pf-price-alt em {
-  font-style: normal;
-  font-weight: 600;
-  color: var(--nimote-accent-3);
-}
-
-.pf-plan-summary {
-  margin: 0 0 1.5rem;
-  font-size: 0.98rem;
-  line-height: 1.6;
-  color: var(--nimote-text-secondary);
-}
-
-.pf-plan-card .home-page-btn {
-  width: 100%;
-  margin-top: auto;
-}
-
-.pf-plan-features {
-  margin: 1.8rem 0 0;
-  padding: 1.4rem 0 0;
-  list-style: none;
-  border-top: 1px solid var(--nimote-border);
-}
-
-.pf-plan-features li {
-  margin: 0.7rem 0;
-  font-size: 0.93rem;
-  line-height: 1.55;
-  color: var(--nimote-text-secondary);
-  display: flex;
-  align-items: flex-start;
-  gap: 0.6rem;
-  padding-left: 0;
-}
-.pf-plan-features li::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--nimote-accent);
-  margin-top: 0.5rem;
-  flex-shrink: 0;
-}
-
-.pf-campaign-notice {
-  margin-top: 16px;
-  color: var(--nimote-link);
-  font-size: var(--nimote-fs-sm);
-}
-
-/* Free-trial banner ------------------------------------------------------ */
-.pf-trial-banner {
-  display: flex;
-  align-items: center;
-  gap: 22px;
-  width: 100%;
-  margin: 2.6rem auto 0;
-  padding: 22px 28px;
-  border-radius: var(--nimote-radius-lg);
-  border: 1px solid var(--nimote-border-accent);
-  background: var(--nimote-bg-subtle);
-  box-shadow: var(--nimote-shadow-brand);
-}
-
-.pf-trial-copy {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  min-width: 0;
-}
-.pf-trial-copy strong {
-  color: var(--nimote-text-primary);
-  font-size: 1.08rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-}
-.pf-trial-copy span {
-  color: var(--nimote-text-secondary);
-  font-size: 0.92rem;
-  line-height: 1.6;
-}
-
-.pf-trial-banner .home-page-btn {
-  flex-shrink: 0;
-  white-space: nowrap;
-}
-
-/* Trust lines ------------------------------------------------------------ */
-.pf-trust-line {
-  text-align: center;
-  margin: 1.4rem 0 0;
-  color: var(--nimote-text-muted);
-  font-size: 0.86rem;
-  line-height: 1.6;
-}
-.pf-trust-line + .pf-trust-line {
-  margin-top: 0.35rem;
-}
-
-/* Feature grid ----------------------------------------------------------- */
-.pf-feature-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
-  margin-top: 3rem;
-}
-
-.pf-feature-card {
-  border: 1px solid var(--nimote-border);
-  border-radius: var(--nimote-radius-md);
-  padding: 1.8rem;
-  background: var(--nimote-card);
-  box-shadow: var(--nimote-panel-shadow);
-  transition: transform 0.25s var(--nimote-ease), border-color 0.25s var(--nimote-ease), box-shadow 0.25s var(--nimote-ease);
-}
-.pf-feature-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--nimote-border-accent);
-  box-shadow: var(--nimote-panel-shadow-hover);
-}
-
-.pf-card-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 1.1rem;
-}
-
-.pf-card-head h3 {
-  margin: 0;
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--nimote-text-primary);
-  letter-spacing: -0.01em;
-}
-
-.pf-feature-card p {
-  margin: 0;
-  font-size: 0.92rem;
-  line-height: 1.6;
-  color: var(--nimote-text-secondary);
-}
-.pf-feature-card .pf-benefit-note {
-  margin-top: .75rem;
   font-size: .85rem;
 }
 
-/* Light-mode overrides --------------------------------------------------- */
-html:not(.dark) .pf-feature-card,
-html:not(.dark) .pf-plan-card {
-  border-color: var(--nimote-border);
-  background: var(--nimote-card);
-  box-shadow: var(--nimote-panel-shadow);
-}
-html:not(.dark) .pf-plan-card.is-featured {
-  border-color: var(--nimote-border-accent);
-  background: var(--nimote-card);
-  box-shadow: var(--nimote-shadow-brand);
-}
-html:not(.dark) .pf-billing-toggle button.active {
-  background: var(--nimote-card);
+.pf-price-row strong {
   color: var(--nimote-text-primary);
-  box-shadow: var(--nimote-shadow-xs);
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: -.035em;
 }
 
-/* Responsive ------------------------------------------------------------- */
-@media (max-width: 767px) {
+.is-featured .pf-price-row strong { font-size: clamp(1.2rem, 2.5vw, 1.65rem); }
 
-  .pf-pricing-grid, .pf-feature-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .pf-pricing-grid {
-    max-width: 480px;
-  }
-
-  .pf-trial-banner {
-    flex-direction: column;
-    align-items: stretch;
-    text-align: center;
-    padding: 24px;
-  }
-  .pf-trial-banner .home-page-btn {
-    width: 100%;
-  }
+.vp-doc .pf-free-limits,
+.vp-doc .pf-free-checklist,
+.vp-doc .pf-highlights {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-@media (max-width: 480px) {
-  .pf-plan-card {
-    padding: 1.7rem;
-  }
-
-  .pf-price-row strong {
-    font-size: 2.4rem;
-  }
+.pf-free-limits {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
 }
 
-/* Keep pricing and eligibility separate from the benefit grid. */
-.pf-plan-card .home-page-btn { margin-top: 24px; }
-.pf-plan-card.is-featured .pf-price-row { flex-direction: column; gap: 10px; align-items: flex-start; }
-.pf-plan-card.is-featured .pf-price-row strong { font-size: clamp(1.5rem, 2.5vw, 2rem); line-height: 1.3; }
+.vp-doc .pf-free-limits li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  padding: 10px;
+  border-radius: var(--nimote-radius-sm);
+  background: var(--nimote-bg-subtle);
+  line-height: 1.35;
+}
+
+.pf-free-limits strong {
+  color: var(--nimote-text-primary);
+  font-size: 1.25rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.pf-free-limits span {
+  color: var(--nimote-text-secondary);
+  font-size: .75rem;
+  overflow-wrap: anywhere;
+}
+
+.vp-doc .pf-free-checklist {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px 14px;
+  margin-top: 16px;
+}
+
+.vp-doc :is(.pf-free-checklist, .pf-highlights) li {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 0;
+  color: var(--nimote-text-secondary);
+  font-size: .86rem;
+  line-height: 1.45;
+}
+
+:is(.pf-free-checklist, .pf-highlights) li::before {
+  content: '';
+  flex: none;
+  width: .65em;
+  height: .38em;
+  border-left: 1.5px solid var(--nimote-link);
+  border-bottom: 1.5px solid var(--nimote-link);
+  transform: translateY(-.15em) rotate(-45deg);
+}
+
+.pf-highlights { display: grid; gap: 9px; }
+
+.vp-doc .pf-campaign-notice {
+  margin: 16px 0 0;
+  color: var(--nimote-text-secondary);
+  font-size: .78rem;
+  line-height: 1.5;
+}
+
+.pf-plan-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 14px;
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.pf-plan-actions .home-page-btn {
+  white-space: normal;
+  text-align: center;
+}
+
+.pf-benefits-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .4em;
+  min-height: 44px;
+  font-size: .85rem;
+}
+
+.pf-plan-details {
+  margin-top: 14px;
+  color: var(--nimote-text-secondary);
+  font-size: .8rem;
+}
+
+.pf-plan-details summary {
+  width: fit-content;
+  min-height: 24px;
+  cursor: pointer;
+}
+
+.vp-doc .pf-plan-details p,
+.vp-doc .pf-trust-line {
+  margin: 6px 0 0;
+  line-height: 1.55;
+}
+
+.vp-doc .pf-trust-line {
+  margin-top: 14px;
+  color: var(--nimote-text-secondary);
+  font-size: .8rem;
+  text-align: center;
+}
+
+.pf-features-section {
+  margin: clamp(36px, 6vw, 64px) 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--nimote-border);
+}
+.pf-features-section .home-page-section-head { margin: 0 0 18px; }
+.vp-doc .pf-features-section h2 { margin: 0; padding: 0; border: 0; }
+
+.pf-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.pf-feature-card {
+  min-width: 0;
+  padding: clamp(16px, 3vw, 22px);
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-md);
+  background: var(--nimote-card);
+}
+
+.vp-doc .pf-feature-card h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.vp-doc .pf-feature-card p {
+  margin: 0;
+  color: var(--nimote-text-secondary);
+  font-size: .875rem;
+  line-height: 1.6;
+}
+
+.vp-doc .pf-feature-card .pf-benefit-note {
+  margin-top: 8px;
+  font-size: .8rem;
+}
+
+.pf-plan-details summary:focus-visible,
+.pf-benefits-link:focus-visible {
+  outline: 2px solid var(--nimote-link);
+  outline-offset: 3px;
+}
+
+@media (max-width: 730px) {
+  .pf-pricing-grid, .pf-feature-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 410px) {
+  .vp-doc .pf-free-checklist { grid-template-columns: minmax(0, 1fr); }
+  .pf-plan-actions .home-page-btn { width: 100%; }
+}

@@ -162,7 +162,7 @@ Local Linux is unavailable on iPhone and iPad; use an SSH host for development c
 - Improved SSH recovery, terminal input, scrolling, and copy.
 - New phone navigation and highlighted workspace search results.
 - Faster built-in Codex and Android Local Linux toolkits.
-- Other 2.5.0 changes include Git file and line history retry, clearer Agent review when a snapshot is missing, and action-level Pro badges. Free users can browse GitHub, view the Docker overview and manage breakpoints.
+- Free includes Git status, diffs, staging, unstaging and commits. Graphical push, pull, branch and stash operations, Git AI and advanced GitHub integration require Pro. Docker and Dev Containers require Pro and a compatible host. Debug sessions require Pro and a configured debug adapter.
 
 [Read the complete 2.5.0 release notes](https://nimotecode.com/releases/2.5.0) · [Current release 2.4.1](https://nimotecode.com/releases/2.4.1)
 
@@ -224,7 +224,7 @@ This is a vendor-authored, documentation-based snapshot, reviewed on the date ab
 
 ### Requirements and interpretation
 
-NimoteCode is checked against 2.4.1 and the current Host documentation. With NimoteHost Community, recovery, approvals and Task Inbox depend on the Host version, configuration and compatible Agent. The computer, Host and managed process must stay running; a Host or OS restart does not restore the original process. Host, Android Local Linux and Git writes need Pro. Basic LSP completion, diagnostics and navigation are free with configured language tools; code actions, guided server installation and debugging need Pro. See Free and Pro for access boundaries.
+The NimoteCode entries follow the Free and Pro feature descriptions and Host documentation. With NimoteHost Community, recovery, approvals and Task Inbox depend on the Host version, configuration and compatible Agent. The computer, Host and managed process must stay running; a Host or OS restart does not restore the original process. NimoteHost, persistent remote terminals and cross-device AI session takeover require an active Pro entitlement, including a valid trial or Early Access grant. Basic Local Linux runs on supported Android devices. Development tool management and shared-folder imports require Pro. Free includes Git status, diffs, staging, unstaging and commits. Graphical push, pull, branch and stash operations, Git AI and advanced GitHub integration require Pro. Basic LSP completion, diagnostics and navigation are free with configured language tools; code actions, guided server installation and debugging need Pro. See Free and Pro for access boundaries.
 
 Blink Code integrates VS Code services; documented repository editing and extension access depend on the connected environment. LSP and AI Agent workflows were not independently confirmed for Blink and are not credited merely because it can open a remote IDE. Its local Unix commands do not constitute a full Linux environment. Mosh roaming and tmux reattachment have different requirements from structured Agent recovery.
 

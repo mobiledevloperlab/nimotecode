@@ -9,7 +9,7 @@ Docker tools run on a connected SSH host. The host must have Docker installed an
 
 ## Open Docker
 
-In 2.5.0, the Docker overview shows the server version, containers and images for Free accounts on compatible SSH hosts. Pro unlocks management operations such as container controls, logs and Compose.
+Docker and Dev Containers require Pro and a compatible host.
 
 <div class="doc-screenshots">
   <DocScreenshot file="docker-images.png" caption="Docker image list with the temporary nimotecode-screenshot-demo:2.4.1 source bundle." />

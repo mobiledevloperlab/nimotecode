@@ -83,7 +83,7 @@ External CLI access does not mean an on-device model. Read the protocols separat
 
 | Product | Free, trial and advanced access | Check the source |
 | --- | --- | --- |
-| NimoteCode | Free: local/SSH workspace, editor, basic terminal, Git review and AI Chat. Early Access Pro: Agent, plugins, GitHub, Local Linux, Git writes, LSP and debugging. Bring your own AI provider. | [Official terms](https://nimotecode.com/pro) |
+| NimoteCode | Edit files, connect to SSH workspaces, use up to two terminals at once, including terminal search, access basic LSP completion, diagnostics and navigation, use standalone AI chat with your own model service, and stage, unstage and commit files, and view Git diffs and history for free. Basic LSP requires a configured language server. Basic Android Local Linux is free on supported devices. Free includes 3 built-in Agent tasks and 10 remote content searches per day. Quotas reset at 00:00 UTC. | [Official terms](https://nimotecode.com/pro) |
 | Termius | Starter includes SSH/SFTP, local vault, AI autocomplete and port forwarding. Pro adds cloud vault, cross-device sync, logs and snippets. | [Official terms](https://termius.com/pricing) |
 | Blink Shell | Blink+ is paid with a trial; limited-seat Community Edition is available separately. Exact feature entitlement by tier was not verified. | [Official terms](https://docs.blink.sh/faq) |
 | Redock | Free tier covers everyday use; Pro adds advanced features including Apple iCloud sync. Exact entitlement of other rows is unverified. | [Official terms](https://redock.dev/faq/) |

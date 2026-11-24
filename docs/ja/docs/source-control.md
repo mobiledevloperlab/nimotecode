@@ -5,6 +5,8 @@ description: "ソース管理の設定、操作手順、画面の説明。"
 
 # ソース管理
 
+Free では Git の状態と差分の確認、ステージング、ステージ解除、コミットができます。GUI でのプッシュ、プル、ブランチとスタッシュの操作、Git AI、高度な GitHub 連携には Pro が必要です。
+
 <div class="doc-section">
 <div class="doc-section__copy">
 

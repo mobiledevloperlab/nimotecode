@@ -2,23 +2,48 @@
   "en": {
     "features": {
       "freeTitle": "Included for free",
-      "freeDescription": "Edit files, connect to SSH workspaces, use one terminal session with search, access basic LSP completion, diagnostics and navigation, use standalone AI chat with your own model service, and view Git diffs and commit history for free. Basic LSP requires a configured language server.",
+      "freeDescription": "Edit files, connect to SSH workspaces, use up to two terminals at once, including terminal search, access basic LSP completion, diagnostics and navigation, use standalone AI chat with your own model service, and stage, unstage and commit files, and view Git diffs and history for free. Basic LSP requires a configured language server. Basic Android Local Linux is free on supported devices. Free includes 3 built-in Agent tasks and 10 remote content searches per day. Quotas reset at 00:00 UTC. Free runs individual tasks. Workflows with task dependencies require Pro.",
+      "presentation": {
+        "limits": [
+          "Concurrent terminals",
+          "Built-in Agent tasks / day",
+          "Remote content searches / day"
+        ],
+        "items": [
+          "File editing and SSH workspaces",
+          "Terminal search",
+          "Git staging, commits and history",
+          "Basic LSP and standalone AI chat",
+          "Basic Android Local Linux",
+          "Run individual tasks"
+        ],
+        "terms": "Free plan details",
+        "finePrint": "Daily quotas reset at 00:00 UTC. LSP requires a configured server. AI Chat uses your model provider. Local Linux requires a supported Android device. Task dependencies require Pro.",
+        "benefits": "Explore Pro features",
+        "trialTerms": "Trial eligibility and terms"
+      },
       "proTitle": "Premium Feature",
       "groups": [
         {
+          "id": "host",
+          "name": "Host mode",
+          "description": "Run remote terminals, tasks and AI sessions that can continue after disconnection. Host mode requires an SSH connection and the nimotehost service installed and running on the remote computer.",
+          "note": "NimoteHost currently supports local network (LAN) connections only."
+        },
+        {
           "id": "agent",
           "name": "AI Agent",
-          "description": "Use the built-in Agent or external ACP agents to edit files, run commands and work on code. Capabilities depend on the selected agent. Configure your own model service or external agent; Pro does not include model usage, API credits or third-party subscriptions."
+          "description": "Run unlimited built-in Agent tasks and connect external ACP agents. Your model provider’s limits and fees apply."
         },
         {
           "id": "git",
           "name": "Git & GitHub",
-          "description": "Stage changes, commit, pull and push, manage branches and Stash, and publish changes from GitHub issues and pull requests. Repository permissions apply."
+          "description": "Push, pull, manage branches and stashes, and use Git AI. Clone GitHub repositories, create and edit issues and pull requests, and manage reviews and workflow runs. Repository permissions apply."
         },
         {
           "id": "environment",
           "name": "Terminals & development environments",
-          "description": "Run tasks in multiple terminal sessions. Keep remote terminal tasks running in persistent sessions and reconnect to them later. Manage Docker, Compose and Dev Containers on SSH hosts. Run local Linux on supported Android devices.",
+          "description": "Run tasks in multiple terminal sessions. Keep remote terminal tasks running in persistent sessions and reconnect to them later. Manage Docker, Compose and Dev Containers on SSH hosts. Manage development tools and shared folders in Android Local Linux.",
           "note": "Persistent SSH terminals require tmux on a compatible host."
         },
         {
@@ -29,18 +54,7 @@
         {
           "id": "search-sync",
           "name": "Project search & sync",
-          "description": "Search workspace code and manage SSH project synchronization and remote caches."
-        },
-        {
-          "id": "connect",
-          "name": "Nimote Connect · Pro",
-          "description": "Connect from your phone or tablet using a direct connection or Nimote’s relay. Standard SSH, personal Tailscale and Nimote Connect on desktop releases are free."
-        },
-        {
-          "id": "host",
-          "name": "Host mode",
-          "description": "Run remote terminals, tasks and AI sessions that can continue after disconnection. Host mode requires an SSH connection and the nimotehost service installed and running on the remote computer.",
-          "note": "NimoteHost currently supports local network (LAN) connections only."
+          "description": "Search remote file contents without a daily limit and manage SSH sync and caches."
         },
         {
           "id": "remote-files",
@@ -65,7 +79,8 @@
           "price": "$0",
           "period": "forever",
           "cta": "Start free",
-          "link": "/download"
+          "link": "/download",
+          "summary": "Two concurrent terminal sessions are included with Free. Pro has no app-imposed terminal count limit."
         },
         {
           "name": "Pro",
@@ -84,23 +99,48 @@
   "zh": {
     "features": {
       "freeTitle": "免费基础功能",
-      "freeDescription": "无需订阅即可编辑文件、连接 SSH 工作区、使用一个终端会话及终端内搜索，使用基础 LSP 补全、诊断和跳转，自备模型服务进行独立 AI 聊天，以及查看 Git 差异和提交历史。基础 LSP 需已配置可用的语言服务器。",
+      "freeDescription": "无需订阅即可编辑文件、连接 SSH 工作区、同时使用最多两个终端及终端内搜索，使用基础 LSP 补全、诊断和跳转，自备模型服务进行独立 AI 聊天，以及暂存、取消暂存、提交文件及查看 Git 差异和历史。基础 LSP 需已配置可用的语言服务器。支持的 Android 设备可免费运行基础本地 Linux 环境。 免费版每天可运行 3 次内置 Agent 任务、搜索远程文件内容 10 次。额度于 UTC 00:00 重置。 免费版可运行独立任务。包含任务依赖的工作流需要 Pro。",
+      "presentation": {
+        "limits": [
+          "并行终端",
+          "内置 Agent 任务 / 天",
+          "远程内容搜索 / 天"
+        ],
+        "items": [
+          "文件编辑与 SSH 工作区",
+          "终端内搜索",
+          "Git 暂存、提交和历史",
+          "基础 LSP 与独立 AI 聊天",
+          "基础 Android 本地 Linux",
+          "运行独立任务"
+        ],
+        "terms": "免费版使用条件",
+        "finePrint": "每日额度于 UTC 00:00 重置。LSP 需配置语言服务器。AI 聊天使用自备模型服务。仅兼容 Android 设备支持本地 Linux。含任务依赖的工作流需要 Pro。",
+        "benefits": "查看 Pro 权益",
+        "trialTerms": "试用资格与条款"
+      },
       "proTitle": "专业版功能",
       "groups": [
         {
+          "id": "host",
+          "name": "Host 模式",
+          "description": "在远程电脑上运行终端、任务和 AI 会话，断开连接后仍可继续运行。Host 模式必须配合远程电脑上已安装并运行的 nimotehost 服务使用，并通过 SSH 连接。",
+          "note": "NimoteHost 目前仅支持局域网连接。"
+        },
+        {
           "id": "agent",
           "name": "AI Agent",
-          "description": "使用内置 Agent 或 ACP 外部 Agent 编辑文件、执行命令和处理代码任务，具体能力取决于所选 Agent。需自行配置模型服务或外部 Agent；Pro 不包含模型用量、API 额度或第三方订阅。"
+          "description": "不限次数运行内置 Agent 任务，或连接外部 ACP Agent。模型用量限制与费用由供应商决定。"
         },
         {
           "id": "git",
           "name": "Git 与 GitHub",
-          "description": "暂存、提交、拉取与推送，管理分支和 Stash，并围绕 GitHub Issue 与 Pull Request 发布变更。可用操作取决于仓库权限。"
+          "description": "使用图形界面推送、拉取、管理分支和 Stash，并使用 Git AI。 克隆 GitHub 仓库，创建和编辑 Issue 与 Pull Request，管理评审和工作流运行。可用操作取决于仓库权限。"
         },
         {
           "id": "environment",
           "name": "终端与开发环境",
-          "description": "通过多个终端会话并行运行开发任务。 让远端任务在持久终端会话中继续运行，重新连接后可恢复会话。 在 SSH 主机上管理 Docker、Compose 与 Dev Containers。 在支持的 Android 设备上运行本地 Linux。",
+          "description": "通过多个终端会话并行运行开发任务。 让远端任务在持久终端会话中继续运行，重新连接后可恢复会话。 在 SSH 主机上管理 Docker、Compose 与 Dev Containers。 管理 Android 本地 Linux 的开发工具和共享文件夹。",
           "note": "SSH 持久终端需要兼容的主机，并已安装 tmux。"
         },
         {
@@ -111,18 +151,7 @@
         {
           "id": "search-sync",
           "name": "项目搜索与同步",
-          "description": "搜索工作区代码；通过 SSH 项目同步与缓存管理提升远程开发效率。"
-        },
-        {
-          "id": "connect",
-          "name": "Nimote Connect · Pro",
-          "description": "手机和平板可通过 Nimote Connect 直连，或在需要时使用 Nimote 中继。普通 SSH、个人 Tailscale 和桌面正式版的 Nimote Connect 免费。"
-        },
-        {
-          "id": "host",
-          "name": "Host 模式",
-          "description": "在远程电脑上运行终端、任务和 AI 会话，断开连接后仍可继续运行。Host 模式必须配合远程电脑上已安装并运行的 nimotehost 服务使用，并通过 SSH 连接。",
-          "note": "NimoteHost 目前仅支持局域网连接。"
+          "description": "远程文件内容搜索不限次数，支持 SSH 同步与缓存管理。"
         },
         {
           "id": "remote-files",
@@ -147,7 +176,8 @@
           "price": "$0",
           "period": "永久",
           "cta": "免费开始",
-          "link": "/zh/download"
+          "link": "/zh/download",
+          "summary": "Free 可同时使用两个终端，Pro 没有应用层终端数量限制。"
         },
         {
           "name": "Pro",
@@ -166,23 +196,48 @@
   "ja": {
     "features": {
       "freeTitle": "無料の基本機能",
-      "freeDescription": "ファイル編集、SSH 接続、検索付きのターミナルセッション 1 つ、基本的な LSP 補完・診断・ナビゲーション、自分のモデルサービスでの独立した AI チャット、Git 差分と履歴の閲覧は無料です。基本 LSP には設定済みの言語サーバーが必要です。",
+      "freeDescription": "ファイル編集、SSH 接続、検索付きのターミナルを同時に最大 2 つ利用、基本的な LSP 補完・診断・ナビゲーション、自分のモデルサービスでの独立した AI チャット、Git のステージング、ステージ解除、コミット、差分と履歴の閲覧は無料です。基本 LSP には設定済みの言語サーバーが必要です。対応する Android 端末では基本的なローカル Linux 環境も無料です。 無料プランでは内蔵 Agent のタスクを 1 日 3 回、リモートファイルの内容検索を 1 日 10 回利用できます。UTC 0 時にリセットされます。 単独のタスクは無料です。依存タスクを含むワークフローの実行には Pro が必要です。",
+      "presentation": {
+        "limits": [
+          "同時ターミナル",
+          "内蔵 Agent タスク／日",
+          "リモート内容検索／日"
+        ],
+        "items": [
+          "ファイル編集と SSH ワークスペース",
+          "ターミナル内検索",
+          "Git のステージ・コミット・履歴",
+          "基本 LSP と独立した AI チャット",
+          "基本の Android Local Linux",
+          "個別タスクの実行"
+        ],
+        "terms": "無料プランの利用条件",
+        "finePrint": "日次枠は UTC 00:00 にリセットされます。LSP には設定済みサーバーが必要です。AI チャットでは自分のモデルサービスを使用します。Local Linux は対応 Android 端末のみ利用できます。依存関係付きタスクには Pro が必要です。",
+        "benefits": "Pro の機能を見る",
+        "trialTerms": "体験の対象と条件"
+      },
       "proTitle": "プレミアム機能",
       "groups": [
         {
+          "id": "host",
+          "name": "Host モード",
+          "description": "リモートでターミナル、タスク、AI セッションを実行し、切断後も実行を継続できます。Host モードには SSH 接続と、リモートコンピューターでインストール・起動済みの nimotehost サービスが必要です。",
+          "note": "NimoteHost は現在、ローカルネットワーク（LAN）内の接続のみ対応しています。"
+        },
+        {
           "id": "agent",
           "name": "AI エージェント",
-          "description": "内蔵 Agent または外部 ACP Agent でファイル編集、コマンド実行、コードの作業を行えます。機能は選択した Agent によって異なります。モデルサービスや外部 Agent はご自身で設定してください。Pro にモデル使用量、API クレジット、他社のサブスクリプションは含まれません。"
+          "description": "内蔵 Agent のタスクを回数制限なく実行し、外部 ACP Agent に接続できます。モデル提供元の料金と制限が適用されます。"
         },
         {
           "id": "git",
           "name": "Git と GitHub",
-          "description": "ステージング、コミット、プル、プッシュ、ブランチと Stash の管理に加え、GitHub Issue と Pull Request に関連する変更を公開できます。リポジトリの権限が適用されます。"
+          "description": "プッシュ、プル、ブランチとスタッシュの管理、Git AI を利用できます。 GitHub リポジトリのクローン、Issue と Pull Request の作成・編集、レビューとワークフロー実行の管理ができます。リポジトリの権限が適用されます。"
         },
         {
           "id": "environment",
           "name": "ターミナルと開発環境",
-          "description": "複数のターミナルセッションでタスクを並行実行。 永続セッションでリモート端末のタスクを実行し続け、あとから再接続できます。 SSH ホストで Docker、Compose、Dev Containers を管理。 対応する Android 端末でローカル Linux を実行。",
+          "description": "複数のターミナルセッションでタスクを並行実行。 永続セッションでリモート端末のタスクを実行し続け、あとから再接続できます。 SSH ホストで Docker、Compose、Dev Containers を管理。 Android のローカル Linux で開発ツールと共有フォルダーを管理できます。",
           "note": "永続 SSH ターミナルには tmux を導入した対応ホストが必要です。"
         },
         {
@@ -193,18 +248,7 @@
         {
           "id": "search-sync",
           "name": "プロジェクト検索と同期",
-          "description": "コード検索、SSH プロジェクトの同期とリモートキャッシュ管理。"
-        },
-        {
-          "id": "connect",
-          "name": "Nimote Connect · Pro",
-          "description": "スマートフォンやタブレットから直接接続するか、必要に応じて Nimote の中継を利用できます。通常の SSH、個人の Tailscale、デスクトップ正式版の Nimote Connect は無料です。"
-        },
-        {
-          "id": "host",
-          "name": "Host モード",
-          "description": "リモートでターミナル、タスク、AI セッションを実行し、切断後も実行を継続できます。Host モードには SSH 接続と、リモートコンピューターでインストール・起動済みの nimotehost サービスが必要です。",
-          "note": "NimoteHost は現在、ローカルネットワーク（LAN）内の接続のみ対応しています。"
+          "description": "リモートファイルの内容を回数制限なく検索し、SSH 同期とキャッシュを管理できます。"
         },
         {
           "id": "remote-files",
@@ -229,7 +273,8 @@
           "price": "$0",
           "period": "ずっと",
           "cta": "無料で開始",
-          "link": "/ja/download"
+          "link": "/ja/download",
+          "summary": "Free のターミナルは同時に 2 つまでです。Pro にアプリ側の個数制限はありません。"
         },
         {
           "name": "Pro",
@@ -248,23 +293,48 @@
   "ko": {
     "features": {
       "freeTitle": "무료 기본 기능",
-      "freeDescription": "파일 편집, SSH 연결, 검색 기능이 있는 터미널 세션 1개, 기본 LSP 자동 완성·진단·탐색, 자체 모델 서비스를 이용한 독립 AI 채팅, Git 변경 사항 및 기록 조회는 무료입니다. 기본 LSP에는 설정된 언어 서버가 필요합니다.",
+      "freeDescription": "파일 편집, SSH 연결, 검색을 지원하는 터미널 최대 2개 동시 사용, 기본 LSP 자동 완성·진단·탐색, 자체 모델 서비스를 이용한 독립 AI 채팅, Git 스테이징·스테이징 취소·커밋 및 변경 사항과 기록 조회는 무료입니다. 기본 LSP에는 설정된 언어 서버가 필요합니다. 지원되는 Android 기기에서는 기본 로컬 Linux 환경도 무료입니다. 무료 플랜은 하루에 내장 Agent 작업 3회와 원격 파일 내용 검색 10회를 제공합니다. UTC 00:00에 초기화됩니다. 개별 작업은 무료입니다. 작업 간 의존성이 있는 워크플로 실행에는 Pro가 필요합니다.",
+      "presentation": {
+        "limits": [
+          "동시 터미널",
+          "내장 Agent 작업 / 일",
+          "원격 내용 검색 / 일"
+        ],
+        "items": [
+          "파일 편집과 SSH 작업 공간",
+          "터미널 내부 검색",
+          "Git 스테이징·커밋·기록",
+          "기본 LSP와 독립형 AI 채팅",
+          "기본 Android Local Linux",
+          "개별 작업 실행"
+        ],
+        "terms": "무료 플랜 이용 조건",
+        "finePrint": "일일 한도는 UTC 00:00에 초기화됩니다. LSP는 설정된 서버가 필요합니다. AI 채팅은 사용자 모델 서비스를 사용합니다. Local Linux는 지원되는 Android에서 이용할 수 있습니다. 종속성이 있는 작업에는 Pro가 필요합니다.",
+        "benefits": "Pro 기능 보기",
+        "trialTerms": "체험 자격 및 조건"
+      },
       "proTitle": "프리미엄 기능",
       "groups": [
         {
+          "id": "host",
+          "name": "Host 모드",
+          "description": "원격 터미널, 작업 및 AI 세션을 실행하며 연결이 끊겨도 실행을 계속할 수 있습니다. Host 모드는 SSH 연결과 원격 컴퓨터에 설치되어 실행 중인 nimotehost 서비스가 필요합니다.",
+          "note": "NimoteHost는 현재 로컬 네트워크(LAN) 연결만 지원합니다."
+        },
+        {
           "id": "agent",
           "name": "AI 에이전트",
-          "description": "내장 Agent 또는 외부 ACP Agent로 파일을 편집하고 명령을 실행하며 코드 작업을 처리하세요. 기능은 선택한 Agent에 따라 다릅니다. 모델 서비스나 외부 Agent는 직접 설정해야 하며, Pro에는 모델 사용량, API 크레딧 또는 타사 구독이 포함되지 않습니다."
+          "description": "내장 Agent 작업을 횟수 제한 없이 실행하고 외부 ACP Agent를 연결하세요. 모델 공급자의 요금 및 한도는 적용됩니다."
         },
         {
           "id": "git",
           "name": "Git 및 GitHub",
-          "description": "변경 사항 스테이징, 커밋, 풀, 푸시, 브랜치 및 Stash 관리와 GitHub Issue 및 Pull Request 관련 변경 사항 게시를 지원합니다. 저장소 권한이 적용됩니다."
+          "description": "푸시, 풀, 브랜치 및 스태시 관리와 Git AI를 이용할 수 있습니다. GitHub 저장소를 복제하고, Issue와 Pull Request를 생성 및 편집하며, 리뷰와 워크플로 실행을 관리합니다. 저장소 권한이 적용됩니다."
         },
         {
           "id": "environment",
           "name": "터미널 및 개발 환경",
-          "description": "여러 터미널 세션에서 작업을 병렬 실행합니다. 원격 터미널 작업을 영구 세션에서 계속 실행하고 나중에 다시 연결할 수 있습니다. SSH 호스트에서 Docker, Compose 및 Dev Containers를 관리합니다. 지원되는 Android 기기에서 로컬 Linux를 실행합니다.",
+          "description": "여러 터미널 세션에서 작업을 병렬 실행합니다. 원격 터미널 작업을 영구 세션에서 계속 실행하고 나중에 다시 연결할 수 있습니다. SSH 호스트에서 Docker, Compose 및 Dev Containers를 관리합니다. Android 로컬 Linux에서 개발 도구와 공유 폴더를 관리합니다.",
           "note": "영구 SSH 터미널에는 tmux가 설치된 호환 호스트가 필요합니다."
         },
         {
@@ -275,18 +345,7 @@
         {
           "id": "search-sync",
           "name": "프로젝트 검색 및 동기화",
-          "description": "코드를 검색하고 SSH 프로젝트 동기화 및 원격 캐시를 관리합니다."
-        },
-        {
-          "id": "connect",
-          "name": "Nimote Connect · Pro",
-          "description": "휴대폰이나 태블릿에서 직접 연결하거나 Nimote 릴레이를 이용하세요. 일반 SSH, 개인 Tailscale, 데스크톱 정식 버전의 Nimote Connect는 무료입니다."
-        },
-        {
-          "id": "host",
-          "name": "Host 모드",
-          "description": "원격 터미널, 작업 및 AI 세션을 실행하며 연결이 끊겨도 실행을 계속할 수 있습니다. Host 모드는 SSH 연결과 원격 컴퓨터에 설치되어 실행 중인 nimotehost 서비스가 필요합니다.",
-          "note": "NimoteHost는 현재 로컬 네트워크(LAN) 연결만 지원합니다."
+          "description": "원격 파일 내용을 횟수 제한 없이 검색하고 SSH 동기화 및 캐시를 관리하세요."
         },
         {
           "id": "remote-files",
@@ -311,7 +370,8 @@
           "price": "$0",
           "period": "계속 무료",
           "cta": "무료로 시작",
-          "link": "/ko/download"
+          "link": "/ko/download",
+          "summary": "Free는 터미널 2개를 동시에 사용할 수 있습니다. Pro에는 앱에서 설정한 개수 제한이 없습니다."
         },
         {
           "name": "Pro",
@@ -330,23 +390,48 @@
   "es": {
     "features": {
       "freeTitle": "Funciones gratuitas",
-      "freeDescription": "Edita archivos, conecta espacios SSH, usa una sesión de terminal con búsqueda, accede al autocompletado, diagnóstico y navegación LSP básicos, usa el chat de IA independiente con tu propio servicio y consulta diferencias e historial de Git gratis. LSP básico requiere un servidor de lenguaje configurado.",
+      "freeDescription": "Edita archivos, conecta espacios SSH, usa hasta dos terminales simultáneos con búsqueda, accede al autocompletado, diagnóstico y navegación LSP básicos, usa el chat de IA independiente con tu propio servicio y prepara o retira cambios, crea commits y consulta las diferencias y el historial de Git gratis. LSP básico requiere un servidor de lenguaje configurado. Linux local básico es gratuito en dispositivos Android compatibles. Free incluye 3 tareas del agente integrado y 10 búsquedas de contenido remoto al día. Se restablecen a las 00:00 UTC. Free permite ejecutar tareas individuales. Los flujos con dependencias entre tareas requieren Pro.",
+      "presentation": {
+        "limits": [
+          "Terminales simultáneos",
+          "Tareas de Agent integrado / día",
+          "Búsquedas remotas de contenido / día"
+        ],
+        "items": [
+          "Edición de archivos y espacios SSH",
+          "Búsqueda en el terminal",
+          "Git: preparar cambios, commits e historial",
+          "LSP básico y chat de IA independiente",
+          "Local Linux básico en Android",
+          "Ejecución de tareas individuales"
+        ],
+        "terms": "Condiciones del plan gratuito",
+        "finePrint": "Los cupos se reinician a las 00:00 UTC. LSP requiere un servidor configurado. El chat de IA usa tu proveedor. Local Linux requiere un dispositivo Android compatible. Las dependencias entre tareas requieren Pro.",
+        "benefits": "Ver las funciones Pro",
+        "trialTerms": "Requisitos y condiciones de la prueba"
+      },
       "proTitle": "Función premium",
       "groups": [
         {
+          "id": "host",
+          "name": "Modo Host",
+          "description": "Ejecuta terminales, tareas y sesiones de IA remotas que pueden continuar tras desconectarte. El modo Host requiere una conexión SSH y el servicio nimotehost instalado y en ejecución en el equipo remoto.",
+          "note": "Por ahora, NimoteHost solo admite conexiones en la red local (LAN)."
+        },
+        {
           "id": "agent",
           "name": "Agente de IA",
-          "description": "Usa el Agent integrado o agentes ACP externos para editar archivos, ejecutar comandos y trabajar con código. Las funciones dependen del agente elegido. Configura tu propio servicio de modelos o agente externo; Pro no incluye consumo de modelos, créditos de API ni suscripciones de terceros."
+          "description": "Ejecuta tareas ilimitadas del agente integrado y conecta agentes ACP externos. Se aplican las tarifas y los límites de tu proveedor de modelos."
         },
         {
           "id": "git",
           "name": "Git y GitHub",
-          "description": "Prepara cambios, haz commits, pull y push, gestiona ramas y Stash, y publica cambios desde issues y pull requests de GitHub. Se aplican los permisos del repositorio."
+          "description": "Haz push y pull, gestiona ramas y stashes y usa Git AI. Clona repositorios de GitHub, crea y edita issues y pull requests, y gestiona revisiones y ejecuciones de flujos de trabajo. Se aplican los permisos del repositorio."
         },
         {
           "id": "environment",
           "name": "Terminales y entornos de desarrollo",
-          "description": "Ejecuta tareas en varias sesiones de terminal. Mantén las tareas del terminal remoto en sesiones persistentes y vuelve a conectarte a ellas más tarde. Gestiona Docker, Compose y Dev Containers en hosts SSH. Ejecuta Linux local en dispositivos Android compatibles.",
+          "description": "Ejecuta tareas en varias sesiones de terminal. Mantén las tareas del terminal remoto en sesiones persistentes y vuelve a conectarte a ellas más tarde. Gestiona Docker, Compose y Dev Containers en hosts SSH. Gestiona herramientas de desarrollo y carpetas compartidas en Linux local para Android.",
           "note": "Los terminales SSH persistentes requieren tmux en un equipo compatible."
         },
         {
@@ -357,18 +442,7 @@
         {
           "id": "search-sync",
           "name": "Búsqueda y sincronización",
-          "description": "Busca código y gestiona la sincronización de proyectos SSH y las cachés remotas."
-        },
-        {
-          "id": "connect",
-          "name": "Nimote Connect · Pro",
-          "description": "Conecta tu teléfono o tableta directamente o mediante el relé de Nimote. SSH estándar, tu propia red Tailscale y Nimote Connect en las versiones de escritorio son gratuitos."
-        },
-        {
-          "id": "host",
-          "name": "Modo Host",
-          "description": "Ejecuta terminales, tareas y sesiones de IA remotas que pueden continuar tras desconectarte. El modo Host requiere una conexión SSH y el servicio nimotehost instalado y en ejecución en el equipo remoto.",
-          "note": "Por ahora, NimoteHost solo admite conexiones en la red local (LAN)."
+          "description": "Busca contenido remoto sin límite diario y gestiona la sincronización SSH y la caché."
         },
         {
           "id": "remote-files",
@@ -393,7 +467,8 @@
           "price": "$0",
           "period": "para siempre",
           "cta": "Empezar gratis",
-          "link": "/es/download"
+          "link": "/es/download",
+          "summary": "Free permite dos terminales simultáneos. Pro no impone un límite de sesiones en la aplicación."
         },
         {
           "name": "Pro",

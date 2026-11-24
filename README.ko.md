@@ -164,7 +164,7 @@ iPhone과 iPad에서는 Local Linux를 사용할 수 없으며 SSH 호스트에�
 - SSH 재연결과 터미널 입력, 스크롤, 복사를 개선했습니다.
 - 휴대전화 탐색 메뉴를 개편하고 작업 공간 검색 결과를 강조합니다.
 - 내장 Codex가 빨라졌으며 Android 로컬 Linux 개발 도구 모음을 지원합니다.
-- 2.5.0에는 Git 파일 및 줄 기록 재시도, 스냅샷이 없을 때의 Agent 검토 안내, 작업별 Pro 표시도 포함됩니다. Free에서 GitHub 탐색, Docker 개요, 중단점 관리를 이용할 수 있습니다.
+- Free에서는 Git 상태와 차이 확인, 스테이징, 스테이징 취소 및 커밋을 지원합니다. GUI 푸시·풀·브랜치·스태시, Git AI 및 고급 GitHub 통합에는 Pro가 필요합니다. Docker 및 Dev Container에는 Pro와 호환 호스트가 필요합니다. 디버깅에는 Pro 및 구성된 디버그 어댑터가 필요합니다.
 
 [2.5.0 전체 릴리스 노트 읽기](https://nimotecode.com/ko/releases/2.5.0) · [현재 출시 버전 2.4.1](https://nimotecode.com/ko/releases/2.4.1)
 
@@ -224,7 +224,7 @@ NimoteCode 팀이 공개 문서로 정리한 위 UTC 시각 기준의 자료이�
 
 ### 사용 조건과 비교 해석
 
-NimoteCode는 2.4.1과 현재 Host 문서를 기준으로 확인했습니다. NimoteHost Community의 복원, 승인, Task Inbox는 Host 버전·설정과 Agent 호환성에 의존합니다. 컴퓨터, Host 및 관리 프로세스가 계속 실행되어야 하며 Host나 OS 재시작은 원래 프로세스를 복원하지 않습니다. Host, Android Local Linux와 Git 쓰기는 Pro가 필요합니다. 설정된 언어 도구를 사용하는 기본 LSP 완성·진단·탐색은 무료이고 코드 작업, 서버 설치 안내와 디버깅은 Pro가 필요합니다. 권한 범위는 무료·Pro 안내를 확인하세요.
+NimoteCode 항목은 Free 및 Pro 기능 설명과 Host 문서를 기준으로 합니다. NimoteHost Community의 복원, 승인, Task Inbox는 Host 버전·설정과 Agent 호환성에 의존합니다. 컴퓨터, Host 및 관리 프로세스가 계속 실행되어야 하며 Host나 OS 재시작은 원래 프로세스를 복원하지 않습니다. NimoteHost, 지속 원격 터미널 및 기기 간 AI 세션 인계에는 체험판 또는 Early Access를 포함한 유효한 Pro 권한이 필요합니다. 지원되는 Android 기기에서 기본 로컬 Linux를 무료로 실행할 수 있습니다. 개발 도구 관리와 공유 폴더 가져오기에는 Pro가 필요합니다. Free에서는 Git 상태와 차이 확인, 스테이징, 스테이징 취소 및 커밋을 지원합니다. GUI 푸시·풀·브랜치·스태시, Git AI 및 고급 GitHub 통합에는 Pro가 필요합니다. 설정된 언어 도구를 사용하는 기본 LSP 완성·진단·탐색은 무료이고 코드 작업, 서버 설치 안내와 디버깅은 Pro가 필요합니다. 권한 범위는 무료·Pro 안내를 확인하세요.
 
 Blink Code는 VS Code 서비스를 통합합니다. 문서에 명시된 저장소 편집과 확장은 연결된 환경에 의존합니다. Blink의 LSP와 AI Agent 작업 흐름은 개별 확인되지 않아 원격 IDE를 열 수 있다는 이유만으로 지원으로 계산하지 않습니다. 로컬 Unix 명령 도구는 완전한 Linux 환경이 아닙니다. Mosh 로밍, tmux 재접속, 구조화된 Agent 세션 복원은 각각 조건이 다릅니다.
 

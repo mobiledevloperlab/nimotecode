@@ -5,6 +5,8 @@ description: "ワークスペース内の検索の設定、操作手順、画面
 
 # ワークスペース内の検索
 
+無料プランでは内蔵 Agent のタスクを 1 日 3 回、リモートファイルの内容検索を 1 日 10 回利用できます。UTC 0 時にリセットされます。
+
 <div class="doc-section">
 <div class="doc-section__copy">
 

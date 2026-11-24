@@ -17,11 +17,11 @@ description: "账户与订阅的配置、操作步骤与界面说明。"
 
 ## 功能权益
 
-在 2.5.0 中，Free 用户可以浏览 GitHub、通过受支持的 SSH 连接查看 Docker 版本和容器及镜像概览，并管理断点。GitHub 克隆或写入、管理 Docker 资源和启动调试均需 Pro。相关操作会显示权限标识。
+Free 支持查看 Git 状态与差异、暂存、取消暂存和提交。图形化推送、拉取、分支、Stash、Git AI 及 GitHub 高级集成需要 Pro。 Docker 和 Dev Container 需要 Pro 及兼容的主机。 启动调试需要 Pro 和已配置的调试适配器。
 
-在 NimoteCode 2.5.0 中，创建或恢复 [SSH 持久终端](/zh/docs/terminal#persistent-ssh-terminal) 需要 Pro，以及安装了 tmux 的兼容主机。原生桌面版本默认启用 Pro。
+NimoteHost、持久化远程终端与 AI 会话跨设备接管需要有效的 Pro 权益，包括有效试用和 Early Access。
 
-手机和平板通过 Nimote Connect 使用托管直连或 Nimote 中继需要 Pro。普通 SSH、个人 Tailscale 和桌面正式版的 Nimote Connect 免费。
+Nimote Connect 公网接入仍在规划中，Free 与 Pro 的可用额度待定。普通 SSH 和个人 Tailscale 可用。
 
 功能对比见[免费版与 Pro](/zh/pro)。
 

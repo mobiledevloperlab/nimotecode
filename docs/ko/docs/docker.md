@@ -9,7 +9,7 @@ Docker 도구는 연결된 SSH 호스트에서 실행됩니다. 호스트에 Doc
 
 ## Docker 열기
 
-2.5.0의 Free 계정에서 호환 SSH 호스트의 Docker 서버 버전과 컨테이너 및 이미지 개요를 볼 수 있습니다. 컨테이너 제어, 로그, Compose에는 Pro가 필요합니다.
+Docker 및 Dev Container에는 Pro와 호환 호스트가 필요합니다.
 
 <div class="doc-screenshots">
   <DocScreenshot file="docker-images.png" caption="Docker 이미지 목록: 임시 소스 번들 nimotecode-screenshot-demo:2.4.1." />

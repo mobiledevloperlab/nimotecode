@@ -5,6 +5,8 @@ description: "작업 설정, 사용 절차 및 화면 안내."
 
 # 작업
 
+개별 작업은 무료입니다. 작업 간 의존성이 있는 워크플로 실행에는 Pro가 필요합니다.
+
 <div class="doc-section">
 <div class="doc-section__copy">
 

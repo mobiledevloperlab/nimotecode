@@ -5,6 +5,8 @@ description: "Configuration, procedures, and interface reference for workspace s
 
 # Workspace search
 
+Free includes 3 built-in Agent tasks and 10 remote content searches per day. Quotas reset at 00:00 UTC.
+
 <div class="doc-section">
 <div class="doc-section__copy">
 

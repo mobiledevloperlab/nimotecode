@@ -9,7 +9,7 @@ Docker 工具运行在已连接的 SSH 主机上。主机需要安装 Docker，�
 
 ## 打开 Docker
 
-在 2.5.0 中，Free 账号可在兼容的 SSH 主机上查看 Docker 服务端版本、容器和镜像概览。容器控制、日志及 Compose 等管理操作需要 Pro。
+Docker 和 Dev Container 需要 Pro 及兼容的主机。
 
 <div class="doc-screenshots">
   <DocScreenshot file="docker-images.png" caption="Docker 镜像列表，展示临时源码包 nimotecode-screenshot-demo:2.4.1。" />

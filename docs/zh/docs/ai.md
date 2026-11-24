@@ -5,6 +5,8 @@ description: "了解 NimoteCode AI 对话与 Agent，审查工具执行并连接
 
 # AI Chat、Agent、MCP 与外部 Agent
 
+免费版每天可运行 3 次内置 Agent 任务，按 UTC 零点刷新。Pro 可不限次数运行内置任务，并可使用外部 ACP Agent。模型供应商的额度和费用仍然适用。
+
 AI 为可选功能。发送请求前，请在[AI 与连接配置](/zh/docs/configuration)中配置自己控制的服务商。NimoteCode 不提供模型额度，也不会自动保证模型输出正确。
 
 <div class="doc-section">

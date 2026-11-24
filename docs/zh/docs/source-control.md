@@ -5,6 +5,8 @@ description: "源代码管理的配置、操作步骤与界面说明。"
 
 # 源代码管理
 
+Free 支持查看 Git 状态与差异、暂存、取消暂存和提交。图形化推送、拉取、分支、Stash、Git AI 及 GitHub 高级集成需要 Pro。
+
 <div class="doc-section">
 <div class="doc-section__copy">
 

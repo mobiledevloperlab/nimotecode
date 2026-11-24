@@ -5,6 +5,8 @@ description: "ターミナルの設定、操作手順、画面の説明。"
 
 # ターミナル
 
+Free のターミナルは同時に 2 つまでです。Pro にアプリ側の個数制限はありません。
+
 <div class="doc-section">
 <div class="doc-section__copy">
 

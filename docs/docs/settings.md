@@ -36,6 +36,6 @@ See [Custom plugins](/docs/plugins) for creation, preview, installation, and man
 
 Unified application configuration for core features, panels, and plugins; Agent alerts are under Agent configuration. Refined tablet and Windows layouts, landscape colors, and reduced-motion support.
 
-**Alerts and editor preferences.** Configure Agent completion, confirmation, and failure alerts, sound and vibration subject to system settings, editor line numbers, and the landscape minimap. Pro is enabled by default on Windows.
+**Alerts and editor preferences.** Configure Agent completion, confirmation, and failure alerts, sound and vibration subject to system settings, editor line numbers, and the landscape minimap. Desktop access follows the signed-in account.
 
 [2.4.0 →](/releases/2.4.0)

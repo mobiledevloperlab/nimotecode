@@ -16,7 +16,7 @@ If you need Docker, a long-running service, or an existing desktop toolchain, us
 ## Requirements
 
 - **Device**: Android 8+ with a 64-bit ARM64 or x86_64 app; iPhone, iPad and 32-bit ARM are not supported.
-- **Access**: Early Access Pro; check availability for your account in the [app](/docs/account-subscription).
+- Basic Local Linux runs on supported Android devices. Development tool management and shared-folder imports require Pro.
 - **Tools**: Ubuntu, Bash, Git and SSH are included. Language toolchains, language servers, debuggers and external Agent CLIs need separate setup.
 
 PRoot shares the Android kernel; it does not provide a virtual machine or Android root. Background execution is subject to Android's process management.

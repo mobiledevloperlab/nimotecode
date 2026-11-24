@@ -5,6 +5,8 @@ description: "AI Chat と Agentの設定、操作手順、画面の説明。"
 
 # AI Chat と Agent
 
+無料版では UTC の 1 日につき内蔵 Agent タスクを 3 回実行できます。Pro は内蔵タスクが無制限で、外部 ACP Agent に対応します。モデル提供元の制限と料金が適用されます。
+
 <div class="doc-section">
 <div class="doc-section__copy">
 

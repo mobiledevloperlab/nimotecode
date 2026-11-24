@@ -5,6 +5,8 @@ description: "任务的配置、操作步骤与界面说明。"
 
 # 任务
 
+免费版可运行独立任务。执行包含任务依赖的工作流需要 Pro。
+
 <div class="doc-section">
 <div class="doc-section__copy">
 

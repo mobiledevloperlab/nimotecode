@@ -10,7 +10,7 @@ description: "Configuración, procedimientos y referencia de la interfaz: Depura
 
 ## Preparar una sesión de depuración
 
-En 2.5.0, las cuentas Free pueden gestionar puntos de interrupción. Iniciar una sesión de depuración requiere Pro y un adaptador configurado.
+La depuración requiere Pro y un adaptador configurado.
 
 El host de destino necesita un adaptador compatible y una configuración de inicio para el proyecto. Una vez preparados, abra el panel Debug y seleccione **Start Debug**. La depuración requiere acceso Pro.
 

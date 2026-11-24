@@ -17,11 +17,11 @@ description: "アカウントとサブスクリプションの設定、操作手
 
 ## 利用できる機能
 
-2.5.0 の Free では、GitHub を閲覧し、SSH 経由で Docker のバージョン、コンテナ、イメージの概要を確認し、ブレークポイントを管理できます。GitHub のクローンと書き込み、Docker リソースの管理、デバッグ開始には Pro が必要です。
+Free では Git の状態と差分の確認、ステージング、ステージ解除、コミットができます。GUI でのプッシュ、プル、ブランチとスタッシュの操作、Git AI、高度な GitHub 連携には Pro が必要です。 Docker と Dev Container には Pro と対応ホストが必要です。 デバッグには Pro と設定済みのデバッグアダプターが必要です。
 
-NimoteCode 2.5.0 で [SSH 永続ターミナル](/ja/docs/terminal#persistent-ssh-terminal) を作成または再開するには、Pro と tmux を導入した対応ホストが必要です。ネイティブデスクトップ版では Pro が標準で有効です。
+NimoteHost、永続リモートターミナル、デバイス間の AI セッション引き継ぎには、有効なトライアルまたは Early Access を含む Pro 権限が必要です。
 
-モバイルの Nimote Connect による管理対象の直接接続とリレーには Pro が必要です。通常の SSH、個人用 Tailscale、デスクトップ正式版の Nimote Connect は無料です。
+Nimote Connect のインターネット経由の接続は計画中です。Free と Pro の利用枠は未定です。通常の SSH と個人用 Tailscale を利用できます。
 
 [無料版と Pro](/ja/pro)をご覧ください。
 

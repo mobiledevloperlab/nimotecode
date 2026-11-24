@@ -5,6 +5,8 @@ description: "Configure AI Chat and Agent, review tool execution, and connect tr
 
 # AI Chat, Agent, MCP, and external agents
 
+Free includes three built-in Agent tasks each UTC day. Pro includes unlimited built-in tasks and external ACP agents. Your model provider’s limits and fees apply.
+
 AI features are optional. Before sending a request, configure a provider you control in [AI and connection configuration](/docs/configuration). NimoteCode does not provide model credits or make a model’s output correct by default.
 
 ## Choose the right mode

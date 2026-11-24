@@ -164,7 +164,7 @@ Local Linux no está disponible en iPhone o iPad; utiliza un host SSH para ejecu
 - Mejoras en la reconexión SSH, la entrada, el desplazamiento y la copia en la terminal.
 - Nueva navegación móvil y resultados de búsqueda resaltados.
 - Codex integrado más rápido y kits de Linux local en Android.
-- 2.5.0 también permite reintentar el historial Git de archivos y líneas, enlaza al diff cuando falta una captura de Agent y marca cada acción Pro. Free permite explorar GitHub, ver el resumen de Docker y gestionar puntos de interrupción.
+- Free permite ver el estado y las diferencias de Git, preparar y retirar cambios y crear commits. Las operaciones gráficas de push, pull, ramas y stash, Git AI y la integración avanzada de GitHub requieren Pro. Docker y los Dev Containers requieren Pro y un host compatible. La depuración requiere Pro y un adaptador configurado.
 
 [Leer las notas completas de 2.5.0](https://nimotecode.com/es/releases/2.5.0) · [Versión publicada 2.4.1](https://nimotecode.com/es/releases/2.4.1)
 
@@ -224,7 +224,7 @@ Esta es una instantánea documental del equipo de NimoteCode, verificada en la f
 
 ### Condiciones e interpretación
 
-NimoteCode se verifica con la versión 2.4.1 y la documentación actual de Host. Con NimoteHost Community, la recuperación, las aprobaciones y Task Inbox dependen de la versión de Host, su configuración y el Agent compatible. El ordenador, Host y el proceso gestionado deben seguir ejecutándose; reiniciar Host o el sistema no restaura los procesos originales. Host, Android Local Linux y la escritura Git requieren Pro. La compleción, los diagnósticos y la navegación LSP básicos son gratuitos con las herramientas configuradas; las acciones de código, la instalación guiada de servidores y la depuración requieren Pro. Consulta los permisos de Gratis y Pro.
+Los datos de NimoteCode se basan en las funciones Free y Pro y en la documentación de Host. Con NimoteHost Community, la recuperación, las aprobaciones y Task Inbox dependen de la versión de Host, su configuración y el Agent compatible. El ordenador, Host y el proceso gestionado deben seguir ejecutándose; reiniciar Host o el sistema no restaura los procesos originales. NimoteHost, los terminales remotos persistentes y la continuación de sesiones de IA desde otro dispositivo requieren Pro, incluido un acceso de prueba o Early Access válido. Linux local básico es gratuito en dispositivos Android compatibles. La gestión de herramientas y la importación de carpetas compartidas requieren Pro. Free permite ver el estado y las diferencias de Git, preparar y retirar cambios y crear commits. Las operaciones gráficas de push, pull, ramas y stash, Git AI y la integración avanzada de GitHub requieren Pro. La compleción, los diagnósticos y la navegación LSP básicos son gratuitos con las herramientas configuradas; las acciones de código, la instalación guiada de servidores y la depuración requieren Pro. Consulta los permisos de Gratis y Pro.
 
 Blink Code integra servicios de VS Code; la edición de repositorios y las extensiones documentadas dependen del entorno conectado. No se han confirmado por separado los flujos LSP y AI Agent de Blink y no se les atribuye soporte solo porque pueda abrir un IDE remoto. Sus comandos Unix locales no constituyen un entorno Linux completo. La movilidad de Mosh, la reconexión de tmux y la recuperación estructurada de Agent tienen requisitos distintos.
 

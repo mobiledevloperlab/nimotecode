@@ -5,6 +5,8 @@ description: "Configuración, procedimientos y referencia de la interfaz: Tareas
 
 # Tareas
 
+Free permite ejecutar tareas individuales. Ejecutar flujos con dependencias entre tareas requiere Pro.
+
 <div class="doc-section">
 <div class="doc-section__copy">
 

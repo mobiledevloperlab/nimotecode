@@ -16,7 +16,7 @@ description: 在 Android 手机上免 root 使用 Ubuntu、Bash、Git 和 SSH。
 ## 使用条件
 
 - **设备**：Android 8+，使用 ARM64 或 x86_64 的 64 位应用；不支持 iPhone、iPad 和 32 位 ARM。
-- **权益**：需要 Early Access Pro，具体可用性见应用内[当前账号状态](/zh/docs/account-subscription)。
+- 支持的 Android 设备可免费运行基础本地 Linux。开发工具管理与共享目录导入需要 Pro。
 - **工具**：内置 Ubuntu、Bash、Git 和 SSH；语言工具链、语言服务、调试工具和外部 Agent CLI 需另行配置。
 
 环境通过 PRoot 共享 Android 内核，不是虚拟机，也不会授予 Android root 权限。后台任务受 Android 进程管理影响。

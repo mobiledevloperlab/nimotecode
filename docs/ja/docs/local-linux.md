@@ -16,7 +16,7 @@ Docker、長時間動くサービス、既存 PC のツールが必要なら、[
 ## 動作要件
 
 - **端末**：Android 8 以降、ARM64 または x86_64 の 64 ビット版アプリ。iPhone、iPad、32 ビット ARM は非対応。
-- **アクセス**：Early Access Pro が必要です。利用可否はアプリの[アカウント状態](/ja/docs/account-subscription)で確認してください。
+- 対応 Android 端末では基本のローカル Linux を無料で利用できます。開発ツールの管理と共有フォルダーへのインポートには Pro が必要です。
 - **ツール**：Ubuntu、Bash、Git、SSH を同梱。言語ツールチェーン、言語サーバー、デバッガー、外部 Agent CLI は別途設定が必要。
 
 PRoot を通じて Android カーネルを共有します。仮想マシンや Android の root 権限は提供しません。バックグラウンド処理は Android のプロセス管理に従います。

@@ -53,11 +53,8 @@ Explorer 提供本地、远程 SSH、Local Linux 和演示入口，Recent Histor
 
 使用个人 Tailscale 时，先让两台设备加入同一个 tailnet，并在电脑上启用 SSH。选择电脑和 **通过 Tailscale 连接** 后，应用会使用同步的 Tailscale IP 或 MagicDNS 名称。用电脑上的 SSH 用户名和密码或密钥登录。连接失败时，核对同步地址和 SSH 端口。使用主机名时也请检查 MagicDNS。
 
-已开启远程访问的兼容配对电脑还可以使用 Nimote Relay。公网接入仍在发布验收中，当前验证包括跨网络直连与线路切换。
+Nimote Connect 公网接入仍在规划中，Free 与 Pro 的可用额度待定。普通 SSH 和个人 Tailscale 可用。
 
-在 Android、iPhone 和 iPad 上，通过 Nimote Connect 使用托管直连或 Nimote 中继需要 Pro。普通 SSH、个人 Tailscale 和桌面正式版的 Nimote Connect 免费。
-
-Relay 会显示从授权到 SSH 登录的各个阶段。配对电脑须在线并已开启远程访问。解除配对会撤销该设备的 Relay 访问。使用 Host 模式时，请将手机和 Host 电脑接入同一局域网。
 
 ## 选择项目根目录
 

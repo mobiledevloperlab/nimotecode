@@ -53,11 +53,8 @@ En NimoteCode 2.5.0, inicia sesión y abre **Connect / Tailscale** en el selecto
 
 Para usar Tailscale personal, conecta ambos dispositivos a la misma tailnet y habilita SSH en el ordenador. Selecciona el equipo y elige conectarte mediante Tailscale. La aplicación usa la IP de Tailscale o el nombre MagicDNS sincronizado. Introduce el usuario y la contraseña o clave SSH. Si falla, comprueba la dirección, el puerto SSH y MagicDNS si usas un nombre.
 
-Nimote Relay es una opción independiente para equipos compatibles vinculados con acceso remoto activado. La conectividad pública sigue en validación, incluidas las conexiones directas entre redes y los cambios de ruta.
+El acceso público a Internet de Nimote Connect está previsto. Las cuotas Free y Pro aún no se han definido. SSH estándar y Tailscale personal están disponibles.
 
-En Android, iPhone y iPad, las conexiones directas gestionadas y el relay de Nimote Connect requieren Pro. SSH estándar, Tailscale personal y Nimote Connect en versiones de escritorio son gratuitos.
-
-Relay muestra cada paso desde la autorización hasta el inicio de sesión SSH. El equipo debe estar en línea con acceso remoto activado. Desvincularlo revoca su acceso por Relay. Para el modo Host, mantén el móvil y el equipo Host en la misma LAN.
 
 ## Seleccionar la raíz del proyecto
 

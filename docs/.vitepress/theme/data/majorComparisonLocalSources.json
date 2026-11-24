@@ -1,12 +1,12 @@
 {
   "docs/download.md": "59ac85c1b125f57343f1090d1e2fb1d2c9c214f5688e8fbda6288392eda33f54",
-  "docs/docs/ssh.md": "16fa09583fcdd62eff1b3c143951d19f5be40632f6c4d3e156c084d85fafe29a",
+  "docs/docs/ssh.md": "919cf838a510c0c8f630e0c71011c5f605d850a2cd4f6b5ba42b8aa0d430b36a",
   "docs/docs/editor.md": "13c2fa335c7469f4da02f48c5febf1f74330a5e4d972861f61770ee9af5dfd5d",
-  "docs/docs/local-linux.md": "3d58dfd85ad315f1ee3ccdd7cfdc868a92bd18a2f7d388c429c5616887ccebca",
-  "docs/docs/source-control.md": "e36c2fba8739dd91c964e1d77172302968d4ac1c20ca80ea9687f4e657da12e7",
+  "docs/docs/local-linux.md": "69d6314b78115855c60e88f9b0b5c49149835558dae195386ec23c6c9f2eea1c",
+  "docs/docs/source-control.md": "21ef8045f3620f64d8947b19713d15a2632811bfcfe6d110a70d55bae085402e",
   "docs/docs/lsp.md": "ea69ee94c56e1319edba9f91c3680db80047d2d2233a9d39f7721c457334019e",
-  "docs/docs/ai.md": "69c7e97c3267aef14f471f15786375e1a5b652ff534f4dd4fdaa9c8fd0ba8c7b",
+  "docs/docs/ai.md": "e658d7a14b147c514cdf6c71c6432c71d5dc65852151733516e5dc80ed99fb6b",
   "docs/docs/host.md": "14fb612f6e3f0e589bf28020a6f372638ebb7a7ec7b038279fbd7709c3cd19d0",
-  "docs/.vitepress/theme/i18n/pricing-features.json": "93886777eb8620aaa6e0c1b329e0dcc45c918e020c8d9029c5ca4eeade135340",
+  "docs/.vitepress/theme/i18n/pricing-features.json": "e50762b110a74d594d57c44acd11bdca46a347108534b6edaf39b4aedfebbf75",
   "docs/.vitepress/theme/data/releases.ts": "ce3945b0badc40a585d2f5a7fe57d0661d5467d1dab4f650b286ad0cce29b191"
 }

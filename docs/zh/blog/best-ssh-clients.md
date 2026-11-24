@@ -83,7 +83,7 @@ NimoteCode 的 Git 状态、Diff 与历史免费，分支与写入操作需 Earl
 
 | 产品 | 免费、试用与进阶权益 | 核对来源 |
 | --- | --- | --- |
-| NimoteCode | 免费：本地/SSH 工作区、编辑器、基础终端、Git 审查与 AI Chat。Early Access Pro：Agent、插件、GitHub、Local Linux、Git 写入、LSP 与调试。AI 服务账号自备。 | [官方说明](https://nimotecode.com/pro) |
+| NimoteCode | 无需订阅即可编辑文件、连接 SSH 工作区、同时使用最多两个终端及终端内搜索，使用基础 LSP 补全、诊断和跳转，自备模型服务进行独立 AI 聊天，以及暂存、取消暂存、提交文件及查看 Git 差异和历史。基础 LSP 需已配置可用的语言服务器。支持的 Android 设备可免费运行基础本地 Linux 环境。 免费版每天可运行 3 次内置 Agent 任务、搜索远程文件内容 10 次。额度于 UTC 00:00 重置。 | [官方说明](https://nimotecode.com/pro) |
 | Termius | Starter 含 SSH/SFTP、本地保险库、AI 补全与端口转发；Pro 增加云保险库、跨设备同步、日志和代码片段。 | [官方说明](https://termius.com/pricing) |
 | Blink Shell | Blink+ 为付费产品并提供试用；另有限席位 Community Edition。各层具体功能权限未核实。 | [官方说明](https://docs.blink.sh/faq) |
 | Redock | 免费层覆盖日常使用；Pro 增加包括 Apple iCloud 同步在内的高级功能。其他行的权限未核实。 | [官方说明](https://redock.dev/faq/) |

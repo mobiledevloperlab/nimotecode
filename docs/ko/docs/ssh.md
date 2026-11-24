@@ -53,11 +53,8 @@ NimoteCode 2.5.0에 로그인하고 연결 선택 화면에서 **Connect / Tails
 
 개인 Tailscale을 사용하려면 두 기기를 같은 tailnet에 연결하고 컴퓨터에서 SSH를 활성화하세요. 컴퓨터를 고르고 Tailscale을 통한 연결을 선택하면 동기화된 IP 또는 MagicDNS 이름이 사용됩니다. 컴퓨터의 SSH 사용자 이름과 비밀번호 또는 키로 로그인하세요. 연결이 실패하면 주소와 SSH 포트를 확인하고 호스트 이름을 쓸 때는 MagicDNS도 확인하세요.
 
-원격 액세스를 활성화한 호환 컴퓨터는 Nimote Relay로도 연결할 수 있습니다. 네트워크 간 직접 연결 및 경로 전환을 포함한 인터넷 접속은 출시를 위해 검증 중입니다.
+Nimote Connect의 공용 인터넷 접속은 계획 단계이며 Free 및 Pro 한도는 미정입니다. 일반 SSH와 개인 Tailscale은 사용할 수 있습니다.
 
-Android, iPhone, iPad에서 Nimote Connect의 관리형 직접 연결과 릴레이를 사용하려면 Pro가 필요합니다. 일반 SSH, 개인 Tailscale, 데스크톱 정식 버전의 Nimote Connect는 무료입니다.
-
-Relay는 승인부터 SSH 로그인까지 단계별 상태를 표시합니다. 컴퓨터는 온라인 상태이며 원격 액세스가 켜져 있어야 합니다. 페어링을 해제하면 Relay 접근이 취소됩니다. Host 서비스를 쓸 수 있으면 같은 컴퓨터와 SSH 계정의 Host 모드를 사용할 때는 휴대폰과 Host 컴퓨터를 같은 LAN에 연결하세요.
 
 ## 프로젝트 루트 선택
 

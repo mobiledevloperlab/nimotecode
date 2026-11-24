@@ -5,6 +5,8 @@ description: "使用 NimoteCode 通过 SSH 或 Android Local Linux 运行命令�
 
 # 终端
 
+Free 可同时使用两个终端，Pro 没有应用层终端数量限制。
+
 <div class="doc-section">
 <div class="doc-section__copy">
 

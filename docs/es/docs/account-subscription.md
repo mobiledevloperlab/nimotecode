@@ -17,11 +17,11 @@ Si no se reconoce una compra anterior, compruebe la cuenta de la tienda de la pl
 
 ## Acceso a las funciones
 
-En 2.5.0, Free permite explorar GitHub, ver el resumen por SSH de la versión de Docker, los contenedores y las imágenes, y gestionar puntos de interrupción. Clonar o escribir en GitHub, gestionar recursos Docker e iniciar una depuración requieren Pro. Las acciones indican el acceso necesario.
+Free permite ver el estado y las diferencias de Git, preparar y retirar cambios y crear commits. Las operaciones gráficas de push, pull, ramas y stash, Git AI y la integración avanzada de GitHub requieren Pro. Docker y los Dev Containers requieren Pro y un host compatible. La depuración requiere Pro y un adaptador configurado.
 
-En NimoteCode 2.5.0, crear o reanudar un [terminal SSH persistente](/es/docs/terminal#persistent-ssh-terminal) requiere Pro y un host compatible con tmux instalado. Las compilaciones nativas de escritorio habilitan Pro de forma predeterminada.
+NimoteHost, los terminales remotos persistentes y la continuación de sesiones de IA desde otro dispositivo requieren Pro, incluido un acceso de prueba o Early Access válido.
 
-La conexión directa gestionada y el relay de Nimote Connect requieren Pro en móviles y tabletas. SSH estándar, Tailscale personal y Nimote Connect en versiones de escritorio son gratuitos.
+El acceso público a Internet de Nimote Connect está previsto. Las cuotas Free y Pro aún no se han definido. SSH estándar y Tailscale personal están disponibles.
 
 Consulta [Gratis y Pro](/es/pro).
 

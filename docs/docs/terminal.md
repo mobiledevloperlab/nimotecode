@@ -5,6 +5,8 @@ description: "Run commands over SSH or Android Local Linux, manage terminal sess
 
 # Terminal
 
+Two concurrent terminal sessions are included with Free. Pro has no app-imposed terminal count limit.
+
 <div class="doc-section">
 <div class="doc-section__copy">
 

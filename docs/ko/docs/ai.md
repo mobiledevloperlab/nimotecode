@@ -5,6 +5,8 @@ description: "AI Chat 및 Agent 설정, 사용 절차 및 화면 안내."
 
 # AI Chat 및 Agent
 
+무료 플랜은 UTC 기준 하루에 내장 Agent 작업 3개를 실행할 수 있습니다. Pro는 내장 작업을 무제한으로 실행하고 외부 ACP Agent를 지원합니다. 모델 제공자의 한도와 요금이 적용됩니다.
+
 <div class="doc-section">
 <div class="doc-section__copy">
 

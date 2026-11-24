@@ -11,7 +11,7 @@ description: 快速了解 NimoteCode 的本地、Android 本地 Linux 与 SSH �
 
 ## 不购买 Pro 能使用吗？
 
-可以。免费版包含本地和 SSH 工作区、编辑器、基础终端、AI Chat 和基础 Tasks。GitHub 集成与 Android 本地 Linux 需要 Early Access Pro。本地 Linux 需要 Android 8+ ARM64 或 x86_64 设备，iOS 不支持。详见 [Pro](/zh/pro)。 在应用内领取 14 天免费试用。到期后，如无付费订阅或 Early Access 等其他有效 Pro 权益，将自动回退到免费版，免费功能可继续使用。试用资格以应用内显示为准。
+无需订阅即可编辑文件、连接 SSH 工作区、同时使用最多两个终端及终端内搜索，使用基础 LSP 补全、诊断和跳转，自备模型服务进行独立 AI 聊天，以及暂存、取消暂存、提交文件及查看 Git 差异和历史。基础 LSP 需已配置可用的语言服务器。支持的 Android 设备可免费运行基础本地 Linux 环境。 免费版每天可运行 3 次内置 Agent 任务、搜索远程文件内容 10 次。额度于 UTC 00:00 重置。 [Free 与 Pro](/zh/pro).
 
 ## 可配置哪些 AI Provider？
 
@@ -19,7 +19,7 @@ description: 快速了解 NimoteCode 的本地、Android 本地 Linux 与 SSH �
 
 ## Source Control 支持什么？
 
-所有用户都可在 Source Control 查看仓库状态、diff 与历史。提交、推送和 stash 等受限 Git 写入工作流需要 Pro；详见 [Source Control](/zh/docs/source-control)。
+Free 支持查看 Git 状态与差异、暂存、取消暂存和提交。图形化推送、拉取、分支、Stash、Git AI 及 GitHub 高级集成需要 Pro。
 
 ## Tasks 是本地还是远程运行？
 

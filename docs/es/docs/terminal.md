@@ -5,6 +5,8 @@ description: "Configuración, procedimientos y referencia de la interfaz: Termin
 
 # Terminal
 
+Free permite dos terminales simultáneos. Pro no impone un límite de sesiones en la aplicación.
+
 <div class="doc-section">
 <div class="doc-section__copy">
 

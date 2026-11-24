@@ -5,6 +5,8 @@ description: "Configuración, procedimientos y referencia de la interfaz: AI Cha
 
 # AI Chat y Agent
 
+Free permite tres tareas del Agent integrado por día UTC. Pro incluye tareas integradas ilimitadas y agentes ACP externos. Se aplican las cuotas y tarifas del proveedor del modelo.
+
 <div class="doc-section">
 <div class="doc-section__copy">
 
