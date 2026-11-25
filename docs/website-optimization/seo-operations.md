@@ -66,3 +66,15 @@ node scripts/seo/weekly.mjs .seo-cache/reports/weekly.json
 ## 回滚
 
 从部署记录找到已知正常的源码提交，通过人工审核 revert SEO 修改并按现有 Pages 流程发布。保留原 URL、已提交的 Sitemap 路径和 robots 抓取策略，发布后复跑日查及 Google/Bing URL Inspection。回退运行工具时删除本地 `.seo-cache`，按旧提交的 tag 与 lock 重新安装。可在 Actions 界面暂停 SEO 的独立工作流。撤销授权时删除私有 secret 和对应平台的访问权限或 API key。
+
+## 历史 use-cases 入口的 Cloudflare 301
+
+当前 Cloudflare 代理将网站请求转给 GitHub Pages。六个旧 use-cases 路径维护在 `docs/public/_redirects`，对应的真实 HTTP 301 由 Cloudflare Single Redirects 提供。
+
+```sh
+node scripts/seo/cloudflare-legacy-redirects.mjs --print
+node --env-file="$HOME/.config/nimotecode/cloudflare-redirects.env" scripts/seo/cloudflare-legacy-redirects.mjs --apply
+node scripts/seo/cloudflare-legacy-redirects.mjs --verify
+```
+
+使用限制在 `nimotecode.com` 区域、具有 Zone Read 和 Dynamic URL Redirects Write 的 API Token。凭据通过项目外、权限为 `600` 的文件注入 `CLOUDFLARE_API_TOKEN`。也可在 Cloudflare **Rules → Redirect Rules** 用 `--print` 生成的表达式、目标 URL 和查询参数选项录入两条规则。英语和中文入口各自指向本语言索引，状态码为 301，保留查询参数。应用程序在现有规则集追加规则，发现同名规则有差异时停下供维护人员检查。验证覆盖无参数和带参数的原 URL，以及返回 200 的两个目标页。需要撤销时在面板禁用带 `nimotecode_legacy_use_cases_` 标识的两条规则。 [Cloudflare Single Redirects](https://developers.cloudflare.com/rules/url-forwarding/single-redirects/create-dashboard/)

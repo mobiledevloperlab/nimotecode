@@ -197,7 +197,7 @@ iPhone 和 iPad 不支持 Local Linux，可通过 SSH 主机运行开发命令�
 <!-- major-comparison:start -->
 ## NimoteCode vs 五款主要竞品
 
-资料核实: **2026-11-24 07:16:24 (UTC)** · 依据官方文档、官网与公开发布信息
+资料核实: **2026-11-25 13:50:25 (UTC)** · 依据官方文档、官网与公开发布信息
 
 **在自己的电脑上运行开发任务，在手机上查看代码、管理终端、恢复兼容 AI 会话并处理审批。**
 
@@ -212,10 +212,10 @@ iPhone 和 iPad 不支持 Local Linux，可通过 SSH 主机运行开发命令�
 | SSH 终端 | [✅](https://nimotecode.com/zh/docs/ssh) | [✅](https://docs.blink.sh/) | [✅](https://www.termius.com/free-ssh-client-for-android) | [✅](https://github.com/Acode-Foundation/Acode#readme) | — | — |
 | Mosh | — | [✅](https://docs.blink.sh/advanced/advanced-mosh) | [✅](https://www.termius.com/free-ssh-client-for-android) | — | — | — |
 | 图形代码编辑器 | [✅](https://nimotecode.com/zh/docs/editor) | [✅](https://docs.blink.sh/advanced/code) | — | [✅](https://docs.acode.app/user-guide/) | [✅](https://docs.replit.com/features/platforms/mobile-app) | [✅](https://docs.github.com/en/codespaces/developing-in-a-codespace/developing-in-a-codespace) |
-| 设备本地 Linux 环境 | [✅ Android · Pro](https://nimotecode.com/zh/docs/local-linux) | — | — | [✅ Android](https://docs.acode.app/user-guide/terminal) | — | — |
-| Git 图形操作 | [✅ 写入需 Pro](https://nimotecode.com/zh/docs/source-control) | [◐](https://docs.blink.sh/advanced/code) | — | — | [✅ 项目编辑器](https://docs.replit.com/features/workspace-tools/git-interface) | [✅](https://docs.github.com/en/codespaces/developing-in-a-codespace/using-source-control-in-your-codespace) |
+| 设备本地 Linux 环境 | [✅ Android · 基础免费](https://nimotecode.com/zh/docs/local-linux) | — | — | [✅ Android](https://docs.acode.app/user-guide/terminal) | — | — |
+| Git 图形操作 | [✅ 基础提交免费](https://nimotecode.com/zh/docs/source-control) | [◐](https://docs.blink.sh/advanced/code) | — | — | [✅ 项目编辑器](https://docs.replit.com/features/workspace-tools/git-interface) | [✅](https://docs.github.com/en/codespaces/developing-in-a-codespace/using-source-control-in-your-codespace) |
 | LSP 智能提示 | [✅ 基础免费](https://nimotecode.com/zh/docs/lsp) | — | — | [✅](https://docs.acode.app/user-guide/language-servers) | — | [◐ 语言扩展](https://code.visualstudio.com/docs/remote/codespaces) |
-| AI 编程 | [✅ Agent · Pro](https://nimotecode.com/zh/docs/ai) | — | [◐ 命令补全](https://www.termius.com/pricing) | [◐ 官方插件](https://docs.acode.app/tutorials/ai-agent) | [✅](https://docs.replit.com/features/platforms/mobile-app) | [◐ Copilot 扩展](https://docs.github.com/en/codespaces/reference/using-github-copilot-in-github-codespaces) |
+| AI 编程 | [✅ 免费 Agent 有次数限制](https://nimotecode.com/zh/docs/ai) | — | [◐ 命令补全](https://www.termius.com/pricing) | [◐ 官方插件](https://docs.acode.app/tutorials/ai-agent) | [✅](https://docs.replit.com/features/platforms/mobile-app) | [◐ Copilot 扩展](https://docs.github.com/en/codespaces/reference/using-github-copilot-in-github-codespaces) |
 | VS Code 扩展 | — | [◐](https://docs.blink.sh/advanced/code) | — | — | — | [✅](https://code.visualstudio.com/docs/remote/codespaces) |
 | 自有电脑远程开发 | [✅](https://nimotecode.com/zh/docs/ssh) | [✅](https://docs.blink.sh/advanced/code) | [◐ SSH 终端](https://www.termius.com/free-ssh-client-for-android) | [◐](https://docs.acode.app/user-guide/remote-access) | — | — |
 | 持久终端会话 | [✅ Host · Pro](https://nimotecode.com/zh/docs/host) | [◐ Mosh](https://docs.blink.sh/advanced/advanced-mosh) | [◐ Mosh](https://www.termius.com/free-ssh-client-for-android) | [◐ Android 服务](https://docs.acode.app/user-guide/terminal) | — | [◐ 运行中工作区](https://docs.github.com/en/codespaces/about-codespaces/understanding-the-codespace-lifecycle) |
@@ -224,7 +224,7 @@ iPhone 和 iPad 不支持 Local Linux，可通过 SSH 主机运行开发命令�
 
 ### 使用条件与对比说明
 
-NimoteCode 条目依据 Free / Pro 权益说明和 Host 文档。使用 NimoteHost 社区版时，恢复、审批与 Task Inbox 取决于 Host 版本、配置及 Agent 兼容性。电脑、Host 与托管进程需要持续运行；Host 或系统重启不会恢复原进程。NimoteHost、持久化远程终端与 AI 会话跨设备接管需要有效的 Pro 权益，包括有效试用和 Early Access。 支持的 Android 设备可免费运行基础本地 Linux。开发工具管理与共享目录导入需要 Pro。 Free 支持查看 Git 状态与差异、暂存、取消暂存和提交。图形化推送、拉取、分支、Stash、Git AI 及 GitHub 高级集成需要 Pro。基础 LSP 补全、诊断与导航免费，需配置语言工具；代码操作、引导安装语言服务器与调试需要 Pro。权限边界参见免费与 Pro。
+NimoteCode 权益标签依据即将发布的 2.5.0 方案对比和 Host 文档。实际账号权益请以已安装版本为准。使用 NimoteHost 社区版时，恢复、审批与 Task Inbox 取决于 Host 版本、配置及 Agent 兼容性。电脑、Host 与托管进程需要持续运行；Host 或系统重启不会恢复原进程。NimoteHost、持久化远程终端与 AI 会话跨设备接管需要有效的 Pro 权益，包括有效试用和 Early Access。 支持的 Android 设备可免费运行基础本地 Linux。开发工具管理与共享目录导入需要 Pro。 Free 支持查看 Git 状态与差异、暂存、取消暂存和提交。图形化推送、拉取、分支、Stash、Git AI 及 GitHub 高级集成需要 Pro。基础 LSP 补全、诊断与导航免费，需配置语言工具；代码操作、引导安装语言服务器与调试需要 Pro。权限边界参见免费与 Pro。
 
 Blink Code 集成 VS Code 服务；已记录的仓库编辑和扩展访问取决于所连接的环境。Blink 的 LSP 和 AI Agent 工作流未获逐项确认，不因其可打开远程 IDE 就直接计为支持。本地 Unix 命令工具不等于完整 Linux 环境。Mosh 网络漫游、tmux 重附着与结构化 Agent 恢复各有不同条件。
 

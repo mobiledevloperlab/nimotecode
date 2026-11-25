@@ -197,7 +197,7 @@ Host 기능에 따라 도구 출력, 승인, 작업과 검증 결과를 확인�
 <!-- major-comparison:start -->
 ## NimoteCode와 주요 경쟁 제품 5종 비교
 
-자료 확인 시각: **2026-11-24 07:16:24 (UTC)** · 공식 문서, 웹사이트와 공개 릴리스 자료 기준
+자료 확인 시각: **2026-11-25 13:50:25 (UTC)** · 공식 문서, 웹사이트와 공개 릴리스 자료 기준
 
 **개발 작업은 내 컴퓨터에서 실행하고, 휴대전화에서 코드를 살펴보고 터미널을 관리하며 호환 AI 세션을 복원하고 승인에 응답하세요.**
 
@@ -212,10 +212,10 @@ NimoteCode 팀이 공개 문서로 정리한 위 UTC 시각 기준의 자료이�
 | SSH 터미널 | [✅](https://nimotecode.com/ko/docs/ssh) | [✅](https://docs.blink.sh/) | [✅](https://www.termius.com/free-ssh-client-for-android) | [✅](https://github.com/Acode-Foundation/Acode#readme) | — | — |
 | Mosh | — | [✅](https://docs.blink.sh/advanced/advanced-mosh) | [✅](https://www.termius.com/free-ssh-client-for-android) | — | — | — |
 | 그래픽 코드 편집기 | [✅](https://nimotecode.com/ko/docs/editor) | [✅](https://docs.blink.sh/advanced/code) | — | [✅](https://docs.acode.app/user-guide/) | [✅](https://docs.replit.com/features/platforms/mobile-app) | [✅](https://docs.github.com/en/codespaces/developing-in-a-codespace/developing-in-a-codespace) |
-| 기기 내 Linux 환경 | [✅ Android · Pro](https://nimotecode.com/ko/docs/local-linux) | — | — | [✅ Android](https://docs.acode.app/user-guide/terminal) | — | — |
-| Git 그래픽 작업 | [✅ 쓰기는 Pro 필요](https://nimotecode.com/ko/docs/source-control) | [◐](https://docs.blink.sh/advanced/code) | — | — | [✅ 프로젝트 편집기](https://docs.replit.com/features/workspace-tools/git-interface) | [✅](https://docs.github.com/en/codespaces/developing-in-a-codespace/using-source-control-in-your-codespace) |
+| 기기 내 Linux 환경 | [✅ Android · 기본 기능 무료](https://nimotecode.com/ko/docs/local-linux) | — | — | [✅ Android](https://docs.acode.app/user-guide/terminal) | — | — |
+| Git 그래픽 작업 | [✅ 기본 커밋 무료](https://nimotecode.com/ko/docs/source-control) | [◐](https://docs.blink.sh/advanced/code) | — | — | [✅ 프로젝트 편집기](https://docs.replit.com/features/workspace-tools/git-interface) | [✅](https://docs.github.com/en/codespaces/developing-in-a-codespace/using-source-control-in-your-codespace) |
 | LSP 코드 지원 | [✅ 기본 기능 무료](https://nimotecode.com/ko/docs/lsp) | — | — | [✅](https://docs.acode.app/user-guide/language-servers) | — | [◐ 언어 확장](https://code.visualstudio.com/docs/remote/codespaces) |
-| AI 코딩 | [✅ Agent · Pro](https://nimotecode.com/ko/docs/ai) | — | [◐ 명령 자동 완성](https://www.termius.com/pricing) | [◐ 공식 플러그인](https://docs.acode.app/tutorials/ai-agent) | [✅](https://docs.replit.com/features/platforms/mobile-app) | [◐ Copilot 확장](https://docs.github.com/en/codespaces/reference/using-github-copilot-in-github-codespaces) |
+| AI 코딩 | [✅ 무료 Agent 횟수 제한](https://nimotecode.com/ko/docs/ai) | — | [◐ 명령 자동 완성](https://www.termius.com/pricing) | [◐ 공식 플러그인](https://docs.acode.app/tutorials/ai-agent) | [✅](https://docs.replit.com/features/platforms/mobile-app) | [◐ Copilot 확장](https://docs.github.com/en/codespaces/reference/using-github-copilot-in-github-codespaces) |
 | VS Code 확장 | — | [◐](https://docs.blink.sh/advanced/code) | — | — | — | [✅](https://code.visualstudio.com/docs/remote/codespaces) |
 | 내 컴퓨터에서 원격 개발 | [✅](https://nimotecode.com/ko/docs/ssh) | [✅](https://docs.blink.sh/advanced/code) | [◐ SSH 터미널](https://www.termius.com/free-ssh-client-for-android) | [◐](https://docs.acode.app/user-guide/remote-access) | — | — |
 | 지속 터미널 세션 | [✅ Host · Pro](https://nimotecode.com/ko/docs/host) | [◐ Mosh](https://docs.blink.sh/advanced/advanced-mosh) | [◐ Mosh](https://www.termius.com/free-ssh-client-for-android) | [◐ Android 서비스](https://docs.acode.app/user-guide/terminal) | — | [◐ 실행 중 작업 공간](https://docs.github.com/en/codespaces/about-codespaces/understanding-the-codespace-lifecycle) |
@@ -224,7 +224,7 @@ NimoteCode 팀이 공개 문서로 정리한 위 UTC 시각 기준의 자료이�
 
 ### 사용 조건과 비교 해석
 
-NimoteCode 항목은 Free 및 Pro 기능 설명과 Host 문서를 기준으로 합니다. NimoteHost Community의 복원, 승인, Task Inbox는 Host 버전·설정과 Agent 호환성에 의존합니다. 컴퓨터, Host 및 관리 프로세스가 계속 실행되어야 하며 Host나 OS 재시작은 원래 프로세스를 복원하지 않습니다. NimoteHost, 지속 원격 터미널 및 기기 간 AI 세션 인계에는 체험판 또는 Early Access를 포함한 유효한 Pro 권한이 필요합니다. 지원되는 Android 기기에서 기본 로컬 Linux를 무료로 실행할 수 있습니다. 개발 도구 관리와 공유 폴더 가져오기에는 Pro가 필요합니다. Free에서는 Git 상태와 차이 확인, 스테이징, 스테이징 취소 및 커밋을 지원합니다. GUI 푸시·풀·브랜치·스태시, Git AI 및 고급 GitHub 통합에는 Pro가 필요합니다. 설정된 언어 도구를 사용하는 기본 LSP 완성·진단·탐색은 무료이고 코드 작업, 서버 설치 안내와 디버깅은 Pro가 필요합니다. 권한 범위는 무료·Pro 안내를 확인하세요.
+NimoteCode 권한은 출시 예정인 2.5.0 요금제 비교와 Host 문서를 기준으로 하며 실제 계정 권한은 설치된 버전에서 확인하세요. NimoteHost Community의 복원, 승인, Task Inbox는 Host 버전·설정과 Agent 호환성에 의존합니다. 컴퓨터, Host 및 관리 프로세스가 계속 실행되어야 하며 Host나 OS 재시작은 원래 프로세스를 복원하지 않습니다. NimoteHost, 지속 원격 터미널 및 기기 간 AI 세션 인계에는 체험판 또는 Early Access를 포함한 유효한 Pro 권한이 필요합니다. 지원되는 Android 기기에서 기본 로컬 Linux를 무료로 실행할 수 있습니다. 개발 도구 관리와 공유 폴더 가져오기에는 Pro가 필요합니다. Free에서는 Git 상태와 차이 확인, 스테이징, 스테이징 취소 및 커밋을 지원합니다. GUI 푸시·풀·브랜치·스태시, Git AI 및 고급 GitHub 통합에는 Pro가 필요합니다. 설정된 언어 도구를 사용하는 기본 LSP 완성·진단·탐색은 무료이고 코드 작업, 서버 설치 안내와 디버깅은 Pro가 필요합니다. 권한 범위는 무료·Pro 안내를 확인하세요.
 
 Blink Code는 VS Code 서비스를 통합합니다. 문서에 명시된 저장소 편집과 확장은 연결된 환경에 의존합니다. Blink의 LSP와 AI Agent 작업 흐름은 개별 확인되지 않아 원격 IDE를 열 수 있다는 이유만으로 지원으로 계산하지 않습니다. 로컬 Unix 명령 도구는 완전한 Linux 환경이 아닙니다. Mosh 로밍, tmux 재접속, 구조화된 Agent 세션 복원은 각각 조건이 다릅니다.
 

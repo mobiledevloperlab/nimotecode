@@ -12,7 +12,7 @@ pageClass: compare-page
 <details class="major-comparison-details">
 <summary>제품별 사용 조건과 근거</summary>
 
-NimoteCode 항목은 Free 및 Pro 기능 설명과 Host 문서를 기준으로 합니다. NimoteHost Community의 복원, 승인, Task Inbox는 Host 버전·설정과 Agent 호환성에 의존합니다. 컴퓨터, Host 및 관리 프로세스가 계속 실행되어야 하며 Host나 OS 재시작은 원래 프로세스를 복원하지 않습니다. NimoteHost, 지속 원격 터미널 및 기기 간 AI 세션 인계에는 체험판 또는 Early Access를 포함한 유효한 Pro 권한이 필요합니다. 지원되는 Android 기기에서 기본 로컬 Linux를 무료로 실행할 수 있습니다. 개발 도구 관리와 공유 폴더 가져오기에는 Pro가 필요합니다. Free에서는 Git 상태와 차이 확인, 스테이징, 스테이징 취소 및 커밋을 지원합니다. GUI 푸시·풀·브랜치·스태시, Git AI 및 고급 GitHub 통합에는 Pro가 필요합니다. 설정된 언어 도구를 사용하는 기본 LSP 완성·진단·탐색은 무료이고 코드 작업, 서버 설치 안내와 디버깅은 Pro가 필요합니다. 권한 범위는 무료·Pro 안내를 확인하세요.
+NimoteCode 권한은 출시 예정인 2.5.0 요금제 비교와 Host 문서를 기준으로 하며 실제 계정 권한은 설치된 버전에서 확인하세요. NimoteHost Community의 복원, 승인, Task Inbox는 Host 버전·설정과 Agent 호환성에 의존합니다. 컴퓨터, Host 및 관리 프로세스가 계속 실행되어야 하며 Host나 OS 재시작은 원래 프로세스를 복원하지 않습니다. NimoteHost, 지속 원격 터미널 및 기기 간 AI 세션 인계에는 체험판 또는 Early Access를 포함한 유효한 Pro 권한이 필요합니다. 지원되는 Android 기기에서 기본 로컬 Linux를 무료로 실행할 수 있습니다. 개발 도구 관리와 공유 폴더 가져오기에는 Pro가 필요합니다. Free에서는 Git 상태와 차이 확인, 스테이징, 스테이징 취소 및 커밋을 지원합니다. GUI 푸시·풀·브랜치·스태시, Git AI 및 고급 GitHub 통합에는 Pro가 필요합니다. 설정된 언어 도구를 사용하는 기본 LSP 완성·진단·탐색은 무료이고 코드 작업, 서버 설치 안내와 디버깅은 Pro가 필요합니다. 권한 범위는 무료·Pro 안내를 확인하세요.
 
 Blink Code는 VS Code 서비스를 통합합니다. 문서에 명시된 저장소 편집과 확장은 연결된 환경에 의존합니다. Blink의 LSP와 AI Agent 작업 흐름은 개별 확인되지 않아 원격 IDE를 열 수 있다는 이유만으로 지원으로 계산하지 않습니다. 로컬 Unix 명령 도구는 완전한 Linux 환경이 아닙니다. Mosh 로밍, tmux 재접속, 구조화된 Agent 세션 복원은 각각 조건이 다릅니다.
 
