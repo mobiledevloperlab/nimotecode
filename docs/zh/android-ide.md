@@ -87,6 +87,8 @@ AI 需要先配置自己的模型提供商，模型使用费用由提供商另�
 
 ## Android IDE 常见问题
 
+<!-- faq:start -->
+
 ### 在 NimoteCode 中运行 Linux 需要 root 吗？
 
 不需要。本地 Linux 通过 PRoot 运行，支持 Android 8 及以上设备的 64 位 ARM64 或 x86_64 应用。工具链需另外安装，并非所有 Linux 任务都兼容。
@@ -102,6 +104,8 @@ AI 需要先配置自己的模型提供商，模型使用费用由提供商另�
 ### NimoteCode 可以免费下载吗？
 
 NimoteCode 可从 Google Play 下载，部分功能需要 Pro 权限。可用性取决于账号、应用版本及商店地区，模型提供商的使用费用另行计算。
+
+<!-- faq:end -->
 
 <div class="seo-cta">
   <p><strong>在 Android 上打开项目，选择适合你的开发环境。</strong></p>

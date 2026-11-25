@@ -5,6 +5,10 @@ description: "Configuración, procedimientos y referencia de la interfaz: Pregun
 
 # Preguntas frecuentes de NimoteCode
 
+Los límites indicados corresponden a la próxima versión 2.5.0. Consulta tu versión instalada y [Gratis y Pro](/es/pro) para conocer el acceso de tu cuenta.
+
+<!-- faq:start -->
+
 ## ¿NimoteCode es solo un cliente SSH?
 
 No. Puede abrir un proyecto local, usar Android Local Linux o conectar con un espacio SSH. Reúne Explorer, Editor, Terminal, Git, asistencia de IA y paneles de diagnóstico en el mismo contexto de proyecto.
@@ -28,3 +32,5 @@ Tasks está diseñado para comandos reutilizables en un espacio SSH. Los comando
 ## ¿LSP y la depuración funcionan con cualquier proyecto?
 
 Dependen de que el host remoto tenga un servidor de lenguaje o adaptador compatible configurado, y de la configuración del proyecto. Los diagnósticos, el autocompletado y la navegación LSP básicos son gratis. Las acciones de código, la instalación guiada y la depuración requieren Pro y herramientas configuradas.  consulte [LSP](/es/docs/lsp) y [Depuración](/es/docs/debug).
+
+<!-- faq:end -->

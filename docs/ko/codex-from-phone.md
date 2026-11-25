@@ -1,7 +1,7 @@
 ---
 title: "휴대폰에서 SSH로 Codex 사용하기 | NimoteCode"
 description: "개발 호스트에서 Codex를 실행하고 Android 또는 iPhone의 NimoteCode로 접근하세요. 설정, 세션 복구, Git 검토와 문제 해결을 설명합니다."
-lastUpdated: "2026-11-17"
+lastUpdated: "2026-11-25"
 pageClass: "seo-product-guide"
 ---
 
@@ -10,6 +10,8 @@ pageClass: "seo-product-guide"
 저장소를 개발 기기에 두고 휴대폰에서 Codex 작업을 이어 가는 안내입니다. Linux 또는 macOS 호스트의 CLI에 SSH로 접속하고 NimoteCode에서 파일 탐색, 편집, 터미널과 Git 검토를 사용합니다.
 
 SSH는 여러 방법 중 하나입니다. Agent 작업만 확인한다면 제공업체의 최신 웹, 모바일과 원격 기능도 확인하세요. 호스트 파일과 프로젝트 명령에 직접 접근할 때 NimoteCode가 도움이 됩니다.
+[ChatGPT 모바일 앱](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex)의 Remote 탭에서 지원되는 데스크톱 Codex 채팅을 열 수 있습니다. 직접 관리하는 호스트에서 Codex CLI와 프로젝트 파일, 터미널, Git을 함께 사용하려면 아래 SSH 절차를 참고하세요.
+
 
 ## 1. 호스트와 계정 준비
 

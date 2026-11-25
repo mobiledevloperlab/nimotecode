@@ -23,7 +23,7 @@ const structuredData = {
   "@type": "BlogPosting",
   headline,
   description,
-  inLanguage: site.lang,
+  inLanguage: site.lang === "zh" ? "zh-CN" : "en-US",
   mainEntityOfPage: canonicalURL ?? new URL(Astro.url.pathname.replace(/\.html$/, ""), Astro.site).href,
   image: ogImage,
   ...(pubDatetime && { datePublished: pubDatetime.toISOString() }),

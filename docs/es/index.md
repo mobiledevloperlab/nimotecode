@@ -2,7 +2,7 @@
 layout: home
 title: "NimoteCode | IDE móvil y espacio SSH para Android, iPhone y iPad"
 titleTemplate: false
-description: "Edita código y usa espacios de trabajo y terminales SSH desde el móvil. Nimote Connect añade acceso remoto público opcional; el modo Host mantiene las tareas al desconectarte."
+description: "IDE móvil para Android, iPhone y iPad. Edita código, usa una terminal SSH y revisa cambios de Git en tu equipo de desarrollo. La IA es opcional."
 ---
 
 <ProductHome />

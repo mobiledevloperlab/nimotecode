@@ -8,11 +8,11 @@ description: Open your project on mobile, connect to your development machine, t
 <div class="product-reference">
 
 <details>
-<summary>What’s new in 2.5.0</summary>
+<summary>Upcoming in 2.5.0</summary>
 
-In NimoteCode 2.5.0, you can [connect to a paired computer through personal Tailscale](/docs/ssh#paired-computers), [resume an SSH terminal with tmux](/docs/terminal#persistent-ssh-terminal), or [set up NimoteHost over SSH](/docs/host/getting-started#install-over-ssh).
+The upcoming NimoteCode 2.5.0 release is planned to let you [connect to a paired computer through personal Tailscale](/docs/ssh#paired-computers), [resume an SSH terminal with tmux](/docs/terminal#persistent-ssh-terminal), or [set up NimoteHost over SSH](/docs/host/getting-started#install-over-ssh).
 
-[What’s new in 2.5.0](/releases/2.5.0)
+[Upcoming in 2.5.0](/releases/2.5.0)
 
 </details>
 
@@ -46,9 +46,9 @@ In NimoteCode 2.5.0, you can [connect to a paired computer through personal Tail
 <details>
 <summary>Feature access</summary>
 
-The app shows feature access for the current account and platform. Git write operations, multiple terminals, Agent execution, Docker, LSP, and debugging depend on the applicable Pro, trial, or Early Access entitlement.
+The app shows feature access for the current account and platform. Advanced Git workflows, multiple terminals, Agent execution, Docker, advanced LSP, and debugging depend on the applicable Pro, trial, or Early Access entitlement.
 
-See [account and subscription](/docs/account-subscription) for access and restoration, or [Early Access](/pro) for current terms.
+See [account and subscription](/docs/account-subscription) for access and restoration, or [Free and Pro](/pro) for the plan comparison.
 
 </details>
 

@@ -1,71 +1,37 @@
-# NimoteCode Full Context
+# NimoteCode
 
-> NimoteCode is a mobile IDE and project development workspace for Android, iPhone and iPad. Open local files or connect to a development host over SSH to edit code, run project commands and review changes. AI is optional.
+> NimoteCode is a mobile IDE and SSH workspace for Android, iPhone and iPad. The mobile app works with local files or projects on a development machine reached over SSH.
 
-## Product capabilities and boundaries
-- Local workspaces support file browsing and editing. Opening a local folder does not provide a Linux shell, compiler or project runtime.
-- SSH workspaces use the connected host’s projects, tools and account permissions.
-- Local Linux provides root-free Ubuntu on supported Android 8+ ARM64 / x86_64 devices. It is not available on iPhone or iPad; project tools and dependencies must be installed separately.
-- Git review includes status, diffs and history. GitHub integration supports repositories, issues, pull requests, reviews and CI workflows subject to account permissions.
-- Nimote Agent can read project files, plan changes and run checks. Confirm mode requires plan approval. Users can follow execution steps, add instructions during a run and review the resulting changes.
-- AI Chat and the built-in Agent require the user’s own provider and API key (BYOK). NimoteCode does not include model credits; provider usage is billed separately.
-- Compatible external ACP Agents require separate runtime setup and credentials. Claude Code and Codex can be used through SSH when installed and authenticated on the host; they are not bundled tools.
-- Free features include local and SSH workspaces, editing, basic terminals and Git review. Agent, Git write operations, GitHub integration, Local Linux, LSP, debugging and plugins are Early Access features. Check the current entitlement page and app for availability.
-- Language services and debugging require compatible tools in the target environment. Custom plugins and saved tasks extend project workflows.
+## Work modes and requirements
 
-## Authoritative product details
-- [Features and environment boundaries](https://nimotecode.com/features)
-- [Android Local Linux](https://nimotecode.com/docs/local-linux)
-- [Git and GitHub workflows](https://nimotecode.com/docs/source-control)
-- [AI, Agents and MCP](https://nimotecode.com/docs/ai)
-- [Custom plugins](https://nimotecode.com/docs/plugins)
-- [Current free and Early Access entitlements](https://nimotecode.com/pro)
-- [中文产品能力与限制](https://nimotecode.com/zh/features)
-- [中文快速开始](https://nimotecode.com/zh/docs/quick-start)
+- IDE mode opens local files or a remote project with a code editor and Git change review. In SSH workspaces, code and commands run using the host's tools and the connected account's permissions.
+- Terminal mode provides interactive access to the selected environment. Local files alone do not provide a Linux shell, compiler, or project runtime. Android Local Linux offers rootless Ubuntu on supported Android devices. iPhone and iPad do not include Android Local Linux.
+- AI mode offers optional AI Chat and Agent workflows. The built-in AI uses your own supported provider and API key. The provider bills model usage separately. NimoteCode does not include model credits. Compatible external ACP agents need their own runtime setup and credentials. Claude Code and Codex CLI may run over SSH if installed and authenticated on the host.
+- Host mode connects to a running compatible NimoteHost service for host-side workflows such as terminal and Agent sessions and tasks. Using it from a compatible NimoteCode release requires Pro access. Standard SSH remains available without a NimoteHost service.
+- Language services and debugging depend on compatible configured language servers and debug adapters. Docker, Compose and Dev Containers depend on a compatible SSH host and Pro access.
 
-## Primary Pages
-- [Home](https://nimotecode.com/): Product overview and demo-led landing page.
-- [Features](https://nimotecode.com/features): Core feature summary.
-- [Pro](https://nimotecode.com/pro): Free and Pro comparison.
-- [Download](https://nimotecode.com/download): Install steps and store links.
-- [Use Cases](https://nimotecode.com/use-cases/): Scenario hub for mobile development work.
+## Companion products and availability
+
+- NimoteCode is the mobile client. Download it through [the official stores](https://nimotecode.com/download). The [release archive](https://nimotecode.com/releases/) identifies the current and upcoming mobile releases.
+- NimoteHost Community is an Apache-2.0 project with standalone CLI or desktop packages for Linux, macOS and Windows. See [NimoteHost documentation](https://nimotecode.com/docs/host) and [source and releases](https://github.com/mobiledevloperlab/nimotehost).
+- Nimote Connect pairs computers and is designed to provide a route to a computer's SSH server. Its published CLI package is a prerelease. Paired public internet access is planned for NimoteCode and plan allowances have yet to be defined. Direct SSH to a reachable address, including a personal Tailscale address, works independently of Connect. See [Connect status and setup](https://nimotecode.com/docs/connect).
+
+## Plans and trial
+
+- NimoteCode offers a Free plan and Pro features. Free includes local and SSH workspaces, editing, a basic terminal, Git review, AI Chat with a provider you supply and basic language services. For the upcoming 2.5.0 comparison, Free includes basic Android Local Linux on supported devices and limited built-in Agent tasks. Pro raises Agent and remote-search limits and includes Host, debugging and supported Docker workflows. The [plan comparison for the upcoming 2.5.0 release](https://nimotecode.com/pro) gives the planned details. Check the installed release for account-specific access.
+- Eligible users can claim a 14-day Pro trial in the app. The account returns to Free after the trial unless it has other valid Pro access. Purchase availability, terms and local prices are shown in the app for the current account and store. See [account and subscription](https://nimotecode.com/docs/account-subscription).
 
 ## Documentation
-- [Quick Start](https://nimotecode.com/docs/quick-start): First-run setup and workspace basics.
-- [SSH Workspace](https://nimotecode.com/docs/ssh): Remote connection setup and workspace behavior.
-- [Editor](https://nimotecode.com/docs/editor): Editing gestures, navigation, and workflows.
-- [Terminal](https://nimotecode.com/docs/terminal): Terminal sessions and command execution.
-- [Search](https://nimotecode.com/docs/search): File and output search guidance.
-- [Source Control](https://nimotecode.com/docs/source-control): Git status, diff, staging, commit, push, pull, branches, and stashes.
-- [AI Chat and Agent](https://nimotecode.com/docs/ai): AI Chat and AI Agent usage.
-- [LSP](https://nimotecode.com/docs/lsp): Language server diagnostics and code actions.
-- [Debug](https://nimotecode.com/docs/debug): Breakpoints, stack inspection, variables, and watch views.
-- [Tasks](https://nimotecode.com/docs/tasks): Task creation and execution.
-- [Sync / Cache](https://nimotecode.com/docs/sync-cache): Workspace movement and cache flows.
-- [Account and Subscription](https://nimotecode.com/docs/account-subscription): Account and premium verification behavior.
-- [Security](https://nimotecode.com/docs/security): Safety and review-related settings.
-- [Settings](https://nimotecode.com/docs/settings): App configuration and preferences.
-- [Configuration](https://nimotecode.com/docs/configuration): Advanced setup and environment configuration.
-- [FAQ](https://nimotecode.com/docs/faq): Common questions and answers.
 
-## Use Cases
-- [Remote Hotfix](https://nimotecode.com/use-cases/remote-hotfix): Patch production from a phone.
-- [On-call Diagnostics](https://nimotecode.com/use-cases/on-call-diagnostics): Investigate incidents while away from a desk.
-- [AI Agent Workflows](https://nimotecode.com/use-cases/ai-agent): Use AI inside a real development workflow.
-
-## Support And Policy
-- [Support](https://nimotecode.com/support): Help and contact information.
-- [Privacy](https://nimotecode.com/privacy): Privacy policy.
-- [Terms](https://nimotecode.com/terms): Terms of service.
-- [Account Deletion](https://nimotecode.com/account-delete): Account deletion instructions.
-
-## Locales
-- [English](https://nimotecode.com/): Default locale.
-- [Chinese](https://nimotecode.com/zh/): Simplified Chinese locale.
-- [日本語](https://nimotecode.com/ja/): Japanese product overview.
-- [한국어](https://nimotecode.com/ko/): Korean product overview.
-- [Español](https://nimotecode.com/es/): Spanish product overview.
-
-## Notes
-- The public site separates conversion-focused marketing, guides and product updates from task-oriented documentation under `/docs/`.
-- The public documentation is intentionally concise so LLMs can use the linked pages as focused context rather than scraping the entire site.
+- [Features](https://nimotecode.com/features)
+- [Quick Start](https://nimotecode.com/docs/quick-start)
+- [SSH Workspace](https://nimotecode.com/docs/ssh)
+- [Android Local Linux](https://nimotecode.com/docs/local-linux)
+- [Source Control](https://nimotecode.com/docs/source-control)
+- [AI Chat and Agent](https://nimotecode.com/docs/ai)
+- [Language Services](https://nimotecode.com/docs/lsp)
+- [Debugging](https://nimotecode.com/docs/debug)
+- [Docker and Dev Containers](https://nimotecode.com/docs/docker)
+- [FAQ](https://nimotecode.com/docs/faq)
+- [Security and compatibility](https://nimotecode.com/security)
+- [Privacy policy](https://nimotecode.com/privacy)

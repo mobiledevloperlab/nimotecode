@@ -17,6 +17,8 @@ Si no se reconoce una compra anterior, compruebe la cuenta de la tienda de la pl
 
 ## Acceso a las funciones
 
+Los límites indicados corresponden a la próxima versión 2.5.0. Consulta tu versión instalada y [Gratis y Pro](/es/pro) para conocer el acceso de tu cuenta.
+
 Free permite ver el estado y las diferencias de Git, preparar y retirar cambios y crear commits. Las operaciones gráficas de push, pull, ramas y stash, Git AI y la integración avanzada de GitHub requieren Pro. Docker y los Dev Containers requieren Pro y un host compatible. La depuración requiere Pro y un adaptador configurado.
 
 NimoteHost, los terminales remotos persistentes y la continuación de sesiones de IA desde otro dispositivo requieren Pro, incluido un acceso de prueba o Early Access válido.

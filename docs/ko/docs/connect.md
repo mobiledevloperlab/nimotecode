@@ -9,7 +9,7 @@ NimoteCode의 연결된 기기 목록에서 공용 네트워크로 접속하려�
 
 Connect는 컴퓨터의 SSH 서버까지 연결 경로를 제공합니다. 연결 후 원격 작업 공간, 파일 및 SSH 터미널을 사용할 수 있습니다. Host 모드는 지속 작업과 Agent 세션을 위한 별도의 선택 기능이며 공용 SSH나 터미널의 필수 조건이 아닙니다. 현재 상용 패키지에는 Host도 함께 들어 있습니다.
 
-상용 패키지와 발행자가 제공한 SHA-256 값은 [GitHub Releases](https://github.com/mobiledevloperlab/nimote-connect/releases)에서 확인하세요. 이 주소는 상용 저장소가 공개되면 교체할 임시 링크입니다. 현재 문서의 `0.2.0-rc.6`은 로컬에서 검증한 출시 후보이며 모든 플랫폼에 공개된 안정 버전을 뜻하지 않습니다. macOS / Linux에서는 CPU에 맞는 `darwin-amd64`, `darwin-arm64`, `linux-amd64`, `linux-arm64` 상용 tarball을, Windows에서는 해당 릴리스에 있을 경우 x64 / ARM64 CLI ZIP을 선택합니다.
+[Nimote Connect 릴리스 페이지](https://github.com/mobiledevloperlab/nimote-connect/releases)에서 macOS 및 Linux의 arm64와 amd64용 CLI 프리뷰(`v0.2.0-local.8b06897`)를 제공합니다. Connect와 Host가 함께 들어 있습니다. 데스크톱 앱과 Windows 패키지는 이후 릴리스에서 제공 여부를 확인하세요. 프리뷰 페어링에는 호환 클라이언트가 필요하며 NimoteCode의 공개 인터넷 연결은 정식 출시 예정입니다. 동일한 릴리스의 패키지와 SHA-256 파일을 사용하세요.
 
 macOS / Linux에서는 압축을 풀고 일반 데스크톱 사용자로 `./install.sh`를 실행합니다. Windows PowerShell에서는 `.\install.ps1`을 실행합니다. macOS GUI는 `~/Applications/NimoteConn.app`, Linux GUI가 패키지에 포함된 경우 `~/.local/bin/nimoteconn`입니다. Windows는 CLI만 지원합니다. 컴퓨터에서 OpenSSH를 켜고 기기 연결을 승인한 다음 GUI의 **Connect → Remote access**에서 원격 접속을 활성화하세요. CLI에서는 `nimoteconnect remote-access enable`을 실행합니다.
 

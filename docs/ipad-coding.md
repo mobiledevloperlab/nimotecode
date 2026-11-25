@@ -1,5 +1,5 @@
 ---
-title: "Coding on iPad with SSH, Editor, Git & AI | NimoteCode"
+title: "Remote Development on iPad with SSH & Git | NimoteCode"
 description: "Code on iPad with a project explorer, split editor, SSH terminal and Git review. Learn what runs remotely, what iPadOS permits, and how to start with NimoteCode."
 lastUpdated: "2026-11-17"
 pageClass: "seo-product-guide"
@@ -29,9 +29,11 @@ If you only need to edit a note, a simpler editor may be enough. For a project c
 
 **Android Local Linux is not available on iPadOS.** Opening a local folder does not install Node.js, Python, a compiler, or a local Linux shell. File-provider folders can also restrict tools that require native filesystem paths. Consult [workspace setup](/docs/ssh) before choosing the project location.
 
+If your project is already set up in a browser-based environment, [GitHub Codespaces](https://code.visualstudio.com/docs/remote/codespaces) provides a managed development environment. [VS Code Remote Tunnels](https://code.visualstudio.com/docs/remote/tunnels) connects vscode.dev to a machine running the VS Code Server. Use the SSH steps below when you already have an SSH account and want a mobile editor and terminal for that host.
+
 ## Set up the iPad workflow
 
-1. Install NimoteCode from the App Store. Check the listing for device and operating-system requirements.
+1. Open [NimoteCode downloads](/download) and choose the App Store listing. Check the listing for device and operating-system requirements.
 2. Configure an SSH connection to an awake Windows, Mac, or Linux machine. Verify its host-key fingerprint and select the repository root.
 3. Open the relevant files. Use split editor panes to compare two files when helpful; confirm the terminal’s working directory separately.
 4. Save, run the repository’s checks on the host, and inspect the diff in Source Control before committing.

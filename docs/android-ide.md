@@ -87,6 +87,8 @@ For one command, a simple SSH client may be enough; for a text-only edit, a basi
 
 ## Android IDE questions
 
+<!-- faq:start -->
+
 ### Do I need root to run Linux in NimoteCode?
 
 No. Local Linux uses PRoot on supported Android 8+ devices with a 64-bit ARM64 or x86_64 app. Toolchains are installed separately, and not every Linux workload is compatible.
@@ -102,6 +104,8 @@ No. NimoteCode is a mobile IDE for editing, terminal work, Git, AI, and local Li
 ### Is NimoteCode free to download?
 
 NimoteCode is available on Google Play, with some capabilities requiring Pro access. Availability depends on the account, app version, and store region. Model-provider usage is billed separately.
+
+<!-- faq:end -->
 
 <div class="seo-cta">
   <p><strong>Open a project on Android and choose the environment that fits your work.</strong></p>

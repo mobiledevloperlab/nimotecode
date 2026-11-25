@@ -1,7 +1,7 @@
 ---
 title: "スマートフォンから SSH で Claude Code を使う | NimoteCode"
 description: "開発ホストで Claude Code を動かし、Android や iPhone の NimoteCode から操作。設定、再接続、Git レビュー、トラブル対処を説明します。"
-lastUpdated: "2026-11-17"
+lastUpdated: "2026-11-25"
 pageClass: "seo-product-guide"
 ---
 
@@ -10,6 +10,8 @@ pageClass: "seo-product-guide"
 リポジトリを開発マシンに置いたまま、スマートフォンから Claude Code の作業を続けたい場合の手順です。Linux または macOS ホストの CLI に SSH で接続し、NimoteCode でファイル参照、編集、ターミナル、Git レビューを行います。
 
 SSH は選択肢の一つです。Agent の作業を追うだけなら、提供元の最新の Web、モバイル、リモート機能も確認してください。ホストのファイルとプロジェクトコマンドを直接扱う場合に NimoteCode が役立ちます。
+[Claude モバイルアプリ](https://code.claude.com/docs/en/mobile)では、Remote Control でつないだセッションを含め、Claude Code の作業を追えます。プロジェクトファイルの編集、ターミナル操作、Git の差分確認も行う場合は、以下の SSH 手順を使えます。
+
 
 ## 1. ホストとアカウントを準備する
 

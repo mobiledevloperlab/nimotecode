@@ -17,6 +17,8 @@ description: "账户与订阅的配置、操作步骤与界面说明。"
 
 ## 功能权益
 
+以下限额来自即将发布的 2.5.0 方案对比。请以已安装版本及[免费版与 Pro](/zh/pro)中的账号权益为准。
+
 Free 支持查看 Git 状态与差异、暂存、取消暂存和提交。图形化推送、拉取、分支、Stash、Git AI 及 GitHub 高级集成需要 Pro。 Docker 和 Dev Container 需要 Pro 及兼容的主机。 启动调试需要 Pro 和已配置的调试适配器。
 
 NimoteHost、持久化远程终端与 AI 会话跨设备接管需要有效的 Pro 权益，包括有效试用和 Early Access。

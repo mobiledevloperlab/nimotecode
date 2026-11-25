@@ -1,9 +1,12 @@
 import { defineConfig, type HeadConfig, type TransformContext, type DefaultTheme } from 'vitepress'
 import { existsSync, readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
+import { unified } from 'unified'
+import remarkParse from 'remark-parse'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 import { imageOptimizerCacheKey } from '../../scripts/image-optimizer-cache.mjs'
 import { productCopy } from './theme/product'
+import productLinks from './theme/data/product-links.json'
 import homeTranslations from './theme/i18n/home.json'
 import { products as majorCompetitors } from './theme/data/majorCompetitors.mjs'
 import { guideLayout } from './guide-layout'
@@ -183,9 +186,8 @@ function localeAlternates(path: string): HeadConfig[] {
     const href = hrefPath === '/' ? siteUrl : `${siteUrl}${hrefPath}`
     return [['link', { rel: 'alternate', hreflang: locale.lang, href }] as HeadConfig]
   })
-  const englishPath = stripped || '/'
-  const englishHref = englishPath === '/' ? siteUrl : `${siteUrl}${englishPath}`
-  entries.push(['link', { rel: 'alternate', hreflang: 'x-default', href: englishHref }])
+  const english = entries.find(([, attrs]) => attrs.hreflang === localeConfig.root.lang)
+  if (english) entries.push(['link', { rel: 'alternate', hreflang: 'x-default', href: english[1].href }])
   return entries
 }
 
@@ -195,7 +197,9 @@ function pageSchemas(context: TransformContext): object[] {
   const description = pageDescription(context, title)
   const inLanguage = languageForPath(context.pageData.relativePath)
   const normalizedPath = normalizePath(context.pageData.relativePath)
-  const isHome = stripLocalePrefix(normalizedPath) === '/'
+  const route = stripLocalePrefix(normalizedPath)
+  const isHome = route === '/'
+  const isDownload = route === '/download'
   const homeLocale = (normalizedPath.split('/')[1] || 'en') as keyof typeof homeTranslations
   const homeCopy = homeTranslations[homeLocale] || homeTranslations.en
 
@@ -224,8 +228,14 @@ function pageSchemas(context: TransformContext): object[] {
         name: 'NimoteCode',
         url: siteUrl,
         description: websiteDescription(inLanguage),
-        inLanguage
-      },
+        inLanguage,
+        publisher: { '@id': `${siteUrl}/#organization` }
+      }
+    )
+  }
+
+  if (isHome || isDownload) {
+    schemas.push(
       {
         '@context': 'https://schema.org',
         '@type': 'SoftwareApplication',
@@ -233,17 +243,19 @@ function pageSchemas(context: TransformContext): object[] {
         inLanguage,
         name: 'NimoteCode',
         applicationCategory: 'DeveloperApplication',
-        operatingSystem: 'Android, iOS',
+        operatingSystem: 'Android, iOS, iPadOS',
         url: siteUrl,
         image: socialImage,
         description,
-        featureList: [...homeCopy.facts, ...homeCopy.features.map(([name]) => name), ...homeCopy.capabilities.map(([name]) => name), homeCopy.connect.eyebrow, homeCopy.host.label, homeCopy.capabilityNote, homeCopy.byok],
+        publisher: { '@id': `${siteUrl}/#organization` },
+        downloadUrl: [productLinks.android, productLinks.ios],
+        sameAs: [productLinks.repository, productLinks.android, productLinks.ios],
+        ...(isHome ? { featureList: [...homeCopy.facts, ...homeCopy.features.map(([name]) => name), ...homeCopy.capabilities.map(([name]) => name)] } : {}),
         offers: {
           '@type': 'Offer',
           price: '0',
           priceCurrency: 'USD',
-          availability: 'https://schema.org/InStock',
-          category: 'Freemium'
+          url: `${siteUrl}${normalizedPath.match(localePathPattern)?.[0] || ''}/download`
         }
       }
     )
@@ -252,48 +264,26 @@ function pageSchemas(context: TransformContext): object[] {
   schemas.push({
     '@context': 'https://schema.org',
     '@type': 'WebPage',
+    '@id': `${url.replace(/\/$/, '')}/#webpage`,
     name: title,
     description,
     url,
-    inLanguage
+    inLanguage,
+    isPartOf: { '@id': `${siteUrl}/#website` },
+    ...(isHome || isDownload ? { mainEntity: { '@id': `${siteUrl}/#application` } } : {})
   })
 
-  if (!isHome) {
-    const isBlogPost = /^\/(?:zh\/)?blog\/.+/.test(normalizedPath)
-    const datePublished = asContent(context.pageData.frontmatter.date, '')
-    const dateModified = asContent(context.pageData.frontmatter.lastUpdated, datePublished)
-    const authorName = asContent(context.pageData.frontmatter.author, 'NimoteCode Team')
-    const article: Record<string, unknown> = {
+  if (route.startsWith('/docs/') && context.pageData.frontmatter.noindex !== true) {
+    schemas.push({
       '@context': 'https://schema.org',
-      '@type': isBlogPost ? 'BlogPosting' : 'TechArticle',
+      '@type': 'TechArticle',
       headline: title,
       description,
       url,
-      author: {
-        '@type': 'Organization',
-        name: authorName
-      },
-      publisher: {
-        '@type': 'Organization',
-        name: 'NimoteCode',
-        logo: {
-          '@type': 'ImageObject',
-          url: brandLogo
-        }
-      }
-    }
-
-    if (isBlogPost && datePublished) {
-      article.datePublished = datePublished
-      article.dateModified = dateModified
-      article.mainEntityOfPage = {
-        '@type': 'WebPage',
-        '@id': url
-      }
-      article.image = asContent(context.pageData.frontmatter.image, socialImage)
-    }
-
-    schemas.push(article)
+      inLanguage,
+      mainEntityOfPage: { '@id': `${url.replace(/\/$/, '')}/#webpage` },
+      author: { '@id': `${siteUrl}/#organization`, '@type': 'Organization', name: 'NimoteCode' }
+    })
   }
 
   if (context.pageData.frontmatter.noindex === true) {
@@ -385,34 +375,42 @@ function compareItemListSchema(context: TransformContext): object | null {
 
 function breadcrumbSchema(context: TransformContext): object | null {
   const normalized = normalizePath(context.pageData.relativePath)
-  const localePrefix = normalized.match(/^\/zh(?=\/|$)/)?.[0] ?? ''
+  const localePrefix = normalized.match(localePathPattern)?.[0] || ''
   const stripped = stripLocalePrefix(normalized)
   if (stripped === '/') return null
 
+  const locale = pageLocaleKey(context.pageData.relativePath)
+  const homeLabels = { root: 'Home', zh: '首页', ja: 'ホーム', ko: '홈', es: 'Inicio' }
+  const items = [{
+    '@type': 'ListItem',
+    position: 1,
+    name: homeLabels[locale as keyof typeof homeLabels] || homeLabels.root,
+    item: localePrefix ? `${siteUrl}${localePrefix}/` : `${siteUrl}/`
+  }]
+
   const segments = stripped.split('/').filter(Boolean)
-  if (segments.length === 0) return null
-
-  const items = [
-    {
-      '@type': 'ListItem',
-      position: 1,
-      name: 'Home',
-      item: localePrefix ? `${siteUrl}${localePrefix}` : siteUrl
-    }
-  ]
-
-  let currentUrl = localePrefix ? `${siteUrl}${localePrefix}` : siteUrl
-  segments.forEach((segment, index) => {
-    currentUrl = `${currentUrl}/${segment}`
-    const isLast = index === segments.length - 1
-    const label = isLast ? asContent(context.pageData.title, titleCase(segment)) : titleCase(segment)
-
+  let parentPath = localePrefix
+  segments.slice(0, -1).forEach((segment) => {
+    parentPath += `/${segment}`
+    const source = resolve('docs', parentPath.slice(1))
+    const file = [`${source}.md`, `${source}/index.md`].find((candidate) => existsSync(candidate))
+    if (!file) return
+    const frontmatter = readFileSync(file, 'utf8').match(/^---\r?\n([\s\S]*?)\r?\n---/)?.[1] || ''
+    if (/^noindex:\s*true\s*$/m.test(frontmatter)) return
+    const label = frontmatter.match(/^title:\s*(.+)$/m)?.[1].trim().replace(/^["']|["']$/g, '')
     items.push({
       '@type': 'ListItem',
-      position: index + 2,
-      name: label,
-      item: currentUrl
+      position: items.length + 1,
+      name: label || titleCase(segment),
+      item: `${siteUrl}${parentPath}${file.endsWith('/index.md') ? '/' : ''}`
     })
+  })
+
+  items.push({
+    '@type': 'ListItem',
+    position: items.length + 1,
+    name: asContent(context.pageData.title, titleCase(segments.at(-1) || '')),
+    item: pageCanonicalUrl(context)
   })
 
   return {
@@ -422,186 +420,35 @@ function breadcrumbSchema(context: TransformContext): object | null {
   }
 }
 
+const faqMarkdown = unified().use(remarkParse)
+
+interface FaqNode {
+  type: string
+  value?: string
+  children?: FaqNode[]
+}
+function faqText(node: FaqNode): string {
+  return node.value ?? node.children?.map(faqText).join('') ?? ''
+}
+
 function faqSchema(context: TransformContext): object | null {
-  const normalized = normalizePath(context.pageData.relativePath)
-  // The marked FAQ is the source of truth for both visible text and JSON-LD,
-  // including translations. Fail the build rather than emit a partial FAQ.
-  const sourcePath = resolve(process.cwd(), 'docs', context.pageData.relativePath)
+  const page = context.pageData.relativePath
+  const sourcePath = resolve('docs', page)
   const source = existsSync(sourcePath) ? readFileSync(sourcePath, 'utf8') : ''
-  const visibleFaq = source.match(/<!-- faq:start -->([\s\S]*?)<!-- faq:end -->/)
-  if (visibleFaq) {
-    const entries = [...visibleFaq[1].matchAll(/^### ([^\n]+)\n\n([^\n]+)(?=\n|$)/gm)]
-    if (!entries.length || entries.length !== (visibleFaq[1].match(/^### /gm) || []).length) {
-      throw new Error(`Invalid FAQ content: ${context.pageData.relativePath}`)
-    }
-    return {
-      '@context': 'https://schema.org', '@type': 'FAQPage',
-      mainEntity: entries.map(([, question, answer]) => ({
-        '@type': 'Question', name: question,
-        acceptedAnswer: { '@type': 'Answer', text: answer }
-      }))
-    }
-  }
-  const faqEntries: Record<string, Array<{ question: string, answer: string }>> = {
-    '/docs/faq': [
-      {
-        question: 'Is NimoteCode only an SSH client?',
-        answer: 'No. NimoteCode can open a local project or an SSH workspace, and brings Explorer, Editor, Terminal, Git workflows, AI assistance and diagnostic panels into the same project context.'
-      },
-      {
-        question: 'Can I use it without Pro?',
-        answer: 'Yes. Free includes local and SSH workspaces, the editor, baseline terminal, AI Chat and basic Tasks. Try Pro free for 14 days; when the trial ends, you return to Free unless you have a subscription or other valid Pro access. Check the app for eligibility and prices.'
-      },
-      {
-        question: 'Which AI providers can I configure?',
-        answer: 'The app includes 14 built-in provider templates and supports compatible custom endpoints. Provider availability, model access and cost are determined by your own provider account and settings.'
-      },
-      {
-        question: 'What does Source Control support?',
-        answer: 'All users can inspect repository status, diffs and history. Pro is required for gated Git write workflows such as commits, pushes and stash actions.'
-      },
-      {
-        question: 'Are Tasks local or remote?',
-        answer: 'Tasks are designed for repeatable command workflows in an SSH workspace. Make the host, project root and risk of each command clear before running it.'
-      },
-      {
-        question: 'Do LSP and Debug work for every project?',
-        answer: 'They depend on a compatible language server or debug adapter being configured on the remote host and on the project setup. Basic LSP diagnostics, completion and navigation are free. Code actions, guided language-server installation and debugging require Pro and configured tools.'
-      }
-    ],
-    '/zh/docs/faq': [
-      {
-        question: 'NimoteCode 只是 SSH Client 吗？',
-        answer: '不是。NimoteCode 可打开本地项目或 SSH 工作区，并将 Explorer、编辑器、Terminal、Git 工作流、AI 协助与诊断面板放到同一项目上下文中。'
-      },
-      {
-        question: '不购买 Pro 能使用吗？',
-        answer: '可以。免费版包含本地与 SSH 工作区、编辑器、基础终端、AI Chat 和基础 Tasks。Pro 可免费试用 14 天，到期如无订阅或其他有效 Pro 权益则自动回退免费版；试用资格与价格以应用内显示为准。'
-      },
-      {
-        question: '可配置哪些 AI Provider？',
-        answer: '应用提供 14 个内置 Provider 模板，也支持兼容的自定义端点。具体模型访问与费用由你的 Provider 账户和配置决定。'
-      },
-      {
-        question: 'Source Control 支持什么？',
-        answer: '所有用户都可查看仓库状态、diff 与历史。提交、推送和 stash 等受限 Git 写入工作流需要 Pro。'
-      },
-      {
-        question: 'Tasks 是本地还是远程运行？',
-        answer: 'Tasks 面向 SSH 工作区中的可复用命令流程。运行前请在任务名称中明确主机、项目根目录和风险等级。'
-      },
-      {
-        question: 'LSP 和 Debug 所有项目都能用吗？',
-        answer: '这取决于远程主机是否已配置兼容的语言服务或调试适配器，以及项目本身的启动设置。基础 LSP 诊断、补全与导航免费；代码操作、语言服务器辅助安装与调试需要 Pro，并需配置相应工具。'
-      }
-    ],
-    "/ja/android-ide": [
-      {
-        "question": "Linux の利用に root は必要ですか？",
-        "answer": "不要です。Local Linux は Android 8 以降の対応端末で、64 ビット ARM64 または x86_64 のアプリから PRoot を使います。ツールチェーンは別途必要で、すべての Linux 処理が動くわけではありません。"
-      },
-      {
-        "question": "リモート PC がなくても開発できますか？",
-        "answer": "はい。対応 Android 端末でローカルファイルを編集し、Local Linux で互換性のあるツールを実行できます。初期設定やパッケージ取得には通信が必要な場合があります。クラウド AI と GitHub には各サービスへの接続が必要です。"
-      },
-      {
-        "question": "Android Studio と同じものですか？",
-        "answer": "いいえ。NimoteCode は編集、ターミナル、Git、AI、Local Linux、SSH プロジェクト向けのモバイル IDE です。完全な Android Studio ツールチェーンや Android エミュレーターは提供しません。必要なビルドは適切に設定したホストで実行してください。"
-      },
-      {
-        "question": "無料でダウンロードできますか？",
-        "answer": "Google Play からダウンロードできます。一部機能には Pro が必要です。利用可否はアカウント、アプリのバージョン、ストアの地域によって異なります。モデル利用料は別途発生します。"
-      }
-    ],
-    "/ko/android-ide": [
-      {
-        "question": "Linux를 사용하려면 루팅이 필요한가요?",
-        "answer": "아니요. Local Linux는 Android 8 이상 지원 기기의 64비트 ARM64 또는 x86_64 앱에서 PRoot를 사용합니다. 도구 체인은 별도로 설치해야 하며 모든 Linux 작업이 호환되는 것은 아닙니다."
-      },
-      {
-        "question": "원격 컴퓨터 없이도 개발할 수 있나요?",
-        "answer": "네. 지원 Android 기기에서 로컬 파일을 편집하고 Local Linux로 호환 도구를 실행할 수 있습니다. 초기 설정과 패키지 다운로드에는 인터넷이 필요할 수 있습니다. 클라우드 AI와 GitHub는 각 서비스 연결이 필요합니다."
-      },
-      {
-        "question": "Android Studio와 같은 도구인가요?",
-        "answer": "아니요. NimoteCode는 편집, 터미널, Git, AI, Local Linux 및 SSH 프로젝트용 모바일 IDE입니다. 전체 Android Studio 도구 체인이나 Android 에뮬레이터를 제공하지 않습니다. 필요한 빌드는 적절하게 구성한 호스트에서 실행하세요."
-      },
-      {
-        "question": "무료로 다운로드할 수 있나요?",
-        "answer": "Google Play에서 다운로드할 수 있으며 일부 기능은 Pro 권한이 필요합니다. 제공 여부는 계정, 앱 버전과 스토어 지역에 따라 다릅니다. 모델 제공업체 사용료는 별도입니다."
-      }
-    ],
-    "/es/android-ide": [
-      {
-        "question": "¿Necesito root para ejecutar Linux?",
-        "answer": "No. Local Linux utiliza PRoot en dispositivos compatibles con Android 8 o posterior y una aplicación de 64 bits ARM64 o x86_64. Las herramientas se instalan por separado y no todas las cargas Linux son compatibles."
-      },
-      {
-        "question": "¿Puedo programar sin un ordenador remoto?",
-        "answer": "Sí. Puedes editar archivos locales y ejecutar herramientas compatibles en Local Linux desde un dispositivo Android compatible. La configuración inicial y las descargas pueden requerir internet; la IA en la nube y GitHub necesitan conexión con sus servicios."
-      },
-      {
-        "question": "¿Es lo mismo que Android Studio?",
-        "answer": "No. NimoteCode es un IDE móvil para edición, terminal, Git, IA y proyectos Linux locales o SSH. No incluye todas las herramientas de Android Studio ni un emulador Android. Ejecuta las compilaciones que las necesiten en un equipo configurado para ello."
-      },
-      {
-        "question": "¿La descarga es gratuita?",
-        "answer": "NimoteCode se puede descargar desde Google Play; algunas funciones requieren acceso Pro. La disponibilidad depende de la cuenta, la versión y la región de la tienda. El proveedor del modelo factura su uso por separado."
-      }
-    ],
-    "/android-ide": [
-      {
-        "question": "Do I need root to run Linux in NimoteCode?",
-        "answer": "No. Local Linux uses PRoot on supported Android 8+ devices with a 64-bit ARM64 or x86_64 app. Toolchains are installed separately, and not every Linux workload is compatible."
-      },
-      {
-        "question": "Can I code without a remote computer?",
-        "answer": "Yes. You can edit local files and run compatible tools in Local Linux on supported Android devices. Initial setup and package downloads may require internet access; cloud AI and GitHub require their services."
-      },
-      {
-        "question": "Is NimoteCode the same as Android Studio?",
-        "answer": "No. NimoteCode is a mobile IDE for editing, terminal work, Git, AI, and local Linux or SSH projects. It does not provide the complete Android Studio toolchain or an Android emulator. Use a suitably configured host for builds that need those tools."
-      },
-      {
-        "question": "Is NimoteCode free to download?",
-        "answer": "NimoteCode is available on Google Play, with some capabilities requiring Pro access. Availability depends on the account, app version, and store region. Model-provider usage is billed separately."
-      }
-    ],
-    "/zh/android-ide": [
-      {
-        "question": "在 NimoteCode 中运行 Linux 需要 root 吗？",
-        "answer": "不需要。本地 Linux 通过 PRoot 运行，支持 Android 8 及以上设备的 64 位 ARM64 或 x86_64 应用。工具链需另外安装，并非所有 Linux 任务都兼容。"
-      },
-      {
-        "question": "没有远程电脑，也能用手机开发吗？",
-        "answer": "可以。在受支持的 Android 设备上，可以编辑本地文件，并在本地 Linux 中运行兼容的工具。首次配置和下载软件包可能需要联网；云端 AI 和 GitHub 需要连接相应服务。"
-      },
-      {
-        "question": "NimoteCode 和 Android Studio 一样吗？",
-        "answer": "不一样。NimoteCode 是面向代码编辑、终端、Git、AI、本地 Linux 和 SSH 项目的移动 IDE，不提供完整的 Android Studio 工具链或 Android 模拟器。需要这些工具的构建应在配置合适的主机上运行。"
-      },
-      {
-        "question": "NimoteCode 可以免费下载吗？",
-        "answer": "NimoteCode 可从 Google Play 下载，部分功能需要 Pro 权限。可用性取决于账号、应用版本及商店地区，模型提供商的使用费用另行计算。"
-      }
-    ],
-  }
+  const visible = source.match(/<!-- faq:start -->([\s\S]*?)<!-- faq:end -->/)?.[1]
+  if (!visible) return null
 
-  const entries = faqEntries[normalized]
-  if (!entries) return null
-
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: entries.map((entry) => ({
-      '@type': 'Question',
-      name: entry.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: entry.answer
-      }
-    }))
-  }
+  const depth = stripLocalePrefix(normalizePath(page)) === '/docs/faq' ? 2 : 3
+  const blocks = faqMarkdown.parse(visible).children
+  const mainEntity = blocks.flatMap((block, index) => {
+    if (block.type !== 'heading' || block.depth !== depth) return []
+    const answer = blocks[index + 1]
+    if (answer?.type !== 'paragraph') throw new Error(`Missing FAQ answer: ${page}`)
+    const text = faqText(answer).replace(/\s+/g, ' ').trim()
+    return [{ '@type': 'Question', name: faqText(block), acceptedAnswer: { '@type': 'Answer', text } }]
+  })
+  if (!mainEntity.length) throw new Error(`Empty FAQ section: ${page}`)
+  return { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity }
 }
 
 // Load the primary UI font asynchronously so it never blocks first paint.
@@ -653,7 +500,7 @@ function websiteDescription(inLanguage: string): string {
   if (inLanguage === 'ja-JP') return 'NimoteCode は、コードエディタ、SSH ターミナル、Git、AI Chat と Agent を備えたモバイル AI 開発ワークスペースです。'
   if (inLanguage === 'ko-KR') return 'NimoteCode는 코드 편집기, SSH 터미널, Git, AI Chat 및 Agent를 제공하는 모바일 AI 개발 워크스페이스입니다.'
   if (inLanguage === 'es-ES') return 'NimoteCode es un espacio de trabajo de desarrollo con IA móvil con editor de código, terminal SSH, Git, AI Chat y Agent.'
-  return 'NimoteCode is a Mobile AI Development Workspace for Android: code editor, SSH terminal, Git, AI Chat and Agent, LSP, debugger, tasks and sync/cache.'
+  return 'NimoteCode is a mobile IDE and SSH workspace for Android, iPhone and iPad, with a code editor, terminal, Git and optional AI.'
 }
 
 export default defineConfig({
@@ -675,7 +522,7 @@ export default defineConfig({
   // duplicate them under /public/ with their own titles and canonical URLs.
   // The Cloudflare runbook is internal operations documentation, so it stays in
   // the repository without becoming a route on the public site.
-  srcExclude: ['**/node_modules/**', '**/dist/**', 'public/**', 'cloudflare-r2-protection.md', 'repo-growth-audit.md', 'repo-growth-result.md'],
+  srcExclude: ['**/node_modules/**', '**/dist/**', 'public/**', 'cloudflare-r2-protection.md', 'repo-growth-audit.md', 'repo-growth-result.md', 'website-optimization/**'],
   // These retired workflow URLs are retained as 301 redirects in public/_redirects
   // so existing articles and external links continue to resolve to the single demo.
   ignoreDeadLinks: [/^\/(?:zh\/)?use-cases\/(?:remote-hotfix|on-call-diagnostics|ai-agent)\/?$/],
@@ -718,7 +565,7 @@ export default defineConfig({
       ['meta', { name: 'robots', content: robotsContent }],
       ['meta', { name: 'author', content: 'NimoteCode' }],
       ['meta', { name: 'apple-mobile-web-app-title', content: 'NimoteCode' }],
-      ['script', { type: 'application/ld+json' }, JSON.stringify(pageSchemas(context))],
+      ['script', { type: 'application/ld+json' }, JSON.stringify(pageSchemas(context)).replace(/</g, '\\u003c')],
       ...(noIndex ? [] : localeAlternates(context.pageData.relativePath))
     ]
   },

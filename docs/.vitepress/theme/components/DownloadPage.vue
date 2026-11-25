@@ -2,23 +2,24 @@
 import { computed } from 'vue'
 import { useData } from 'vitepress'
 import MockIcon from './MockIcon.vue'
+import productLinks from '../data/product-links.json'
 import homeTranslations from '../i18n/home.json'
 
 const { lang } = useData()
 const translations = {
-  en: { title: 'Download NimoteCode', intro: 'Bring your development workspace to Android, iPhone and iPad.', section: 'Mobile & tablet', description: 'Choose your device and install from the official app store.', releases: 'All releases', android: 'Get it on Google Play', ios: 'Download on the App Store', note: '14-day free Pro trial. Without an upgrade or other valid Pro access, you return to Free.', start: 'Quick start', help: 'Getting started' },
-  zh: { title: '下载 NimoteCode', intro: '在 Android、iPhone 和 iPad 上，随时继续你的开发工作。', section: '手机与平板', description: '选择你的设备，从官方应用商店安装。', releases: '更新日志', android: '前往 Google Play 下载', ios: '前往 App Store 下载', note: 'Pro 免费试用 14 天，到期如无订阅或其他有效 Pro 权益，自动回退免费版。', start: '快速开始', help: '开始使用' },
-  ja: { title: 'NimoteCode をダウンロード', intro: 'Android、iPhone、iPad で、いつでも開発を続けられます。', section: 'スマートフォンとタブレット', description: 'デバイスを選び、公式アプリストアからインストール。', releases: 'リリースノート', android: 'Google Play から入手', ios: 'App Store から入手', note: 'Pro を14日間無料体験。有効な購入やその他の Pro 利用権限がなければ無料版へ。', start: 'クイックスタート', help: '使い始める' },
-  ko: { title: 'NimoteCode 다운로드', intro: 'Android, iPhone, iPad에서 언제든 개발을 이어가세요.', section: '휴대폰 및 태블릿', description: '기기를 선택하고 공식 앱 스토어에서 설치하세요.', releases: '릴리스 노트', android: 'Google Play에서 다운로드', ios: 'App Store에서 다운로드', note: 'Pro 14일 무료 체험. 종료 시 구독 또는 다른 유효한 Pro 권한이 없으면 무료 버전으로 전환됩니다.', start: '빠른 시작', help: '시작하기' },
-  es: { title: 'Descarga NimoteCode', intro: 'Lleva tu espacio de desarrollo a Android, iPhone y iPad.', section: 'Móvil y tablet', description: 'Elige tu dispositivo e instala desde la tienda oficial.', releases: 'Todas las versiones', android: 'Descargar en Google Play', ios: 'Descargar en App Store', note: 'Prueba Pro gratis 14 días. Al finalizar, vuelves a Gratis si no tienes una suscripción u otro acceso Pro vigente.', start: 'Inicio rápido', help: 'Primeros pasos' }
+  en: { title: 'Download NimoteCode', intro: 'Bring your development workspace to Android, iPhone and iPad.', section: 'Mobile & tablet', description: 'Choose your device and install from the official app store.', releases: 'All releases', android: 'Get it on Google Play', ios: 'Download on the App Store', note: '14-day free Pro trial. Without an upgrade or other valid Pro access, you return to Free.', start: 'Quick start', help: 'Getting started', source: 'Project on GitHub' },
+  zh: { title: '下载 NimoteCode', intro: '在 Android、iPhone 和 iPad 上，随时继续你的开发工作。', section: '手机与平板', description: '选择你的设备，从官方应用商店安装。', releases: '更新日志', android: '前往 Google Play 下载', ios: '前往 App Store 下载', note: 'Pro 免费试用 14 天，到期如无订阅或其他有效 Pro 权益，自动回退免费版。', start: '快速开始', help: '开始使用', source: '在 GitHub 上查看项目' },
+  ja: { title: 'NimoteCode をダウンロード', intro: 'Android、iPhone、iPad で、いつでも開発を続けられます。', section: 'スマートフォンとタブレット', description: 'デバイスを選び、公式アプリストアからインストール。', releases: 'リリースノート', android: 'Google Play から入手', ios: 'App Store から入手', note: 'Pro を14日間無料体験。有効な購入やその他の Pro 利用権限がなければ無料版へ。', start: 'クイックスタート', help: '使い始める', source: 'GitHub でプロジェクトを見る' },
+  ko: { title: 'NimoteCode 다운로드', intro: 'Android, iPhone, iPad에서 언제든 개발을 이어가세요.', section: '휴대폰 및 태블릿', description: '기기를 선택하고 공식 앱 스토어에서 설치하세요.', releases: '릴리스 노트', android: 'Google Play에서 다운로드', ios: 'App Store에서 다운로드', note: 'Pro 14일 무료 체험. 종료 시 구독 또는 다른 유효한 Pro 권한이 없으면 무료 버전으로 전환됩니다.', start: '빠른 시작', help: '시작하기', source: 'GitHub에서 프로젝트 보기' },
+  es: { title: 'Descarga NimoteCode', intro: 'Lleva tu espacio de desarrollo a Android, iPhone y iPad.', section: 'Móvil y tablet', description: 'Elige tu dispositivo e instala desde la tienda oficial.', releases: 'Todas las versiones', android: 'Descargar en Google Play', ios: 'Descargar en App Store', note: 'Prueba Pro gratis 14 días. Al finalizar, vuelves a Gratis si no tienes una suscripción u otro acceso Pro vigente.', start: 'Inicio rápido', help: 'Primeros pasos', source: 'Proyecto en GitHub' }
 }
 const locale = computed(() => lang.value.split('-')[0] as keyof typeof translations)
 const copy = computed(() => translations[locale.value] ?? translations.en)
 const local = (path: string) => `${locale.value in translations && locale.value !== 'en' ? `/${locale.value}` : ''}${path}`
 const campaign = computed(() => locale.value === 'zh' ? 'zh_download_page' : 'download_page')
 const platforms = computed(() => [
-  { name: 'Android', icon: 'android', store: copy.value.android, href: `https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=website&utm_campaign=${campaign.value}_android` },
-  { name: 'iPhone / iPad', icon: 'apple', store: copy.value.ios, href: `https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253?pt=120058258&ct=${campaign.value}_ios&mt=8` }
+  { name: 'Android', icon: 'android', store: copy.value.android, href: `${productLinks.android}&utm_source=nimotecode&utm_medium=website&utm_campaign=${campaign.value}_android` },
+  { name: 'iPhone / iPad', icon: 'apple', store: copy.value.ios, href: `${productLinks.ios}?pt=120058258&ct=${campaign.value}_ios&mt=8` }
 ])
 </script>
 
@@ -45,7 +46,8 @@ const platforms = computed(() => [
     </section>
     <nav class="download-page__help" :aria-label="copy.help">
       <a :href="local('/docs/quick-start')">{{ copy.start }} <span aria-hidden="true">→</span></a>
-      <a :href="local('/pro')">Early Access Pro <span aria-hidden="true">→</span></a>
+      <a :href="local('/pro')">NimoteCode Pro <span aria-hidden="true">→</span></a>
+      <a :href="productLinks.repository">{{ copy.source }} <span aria-hidden="true">↗</span></a>
     </nav>
   </div>
 </template>

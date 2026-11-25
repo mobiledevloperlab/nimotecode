@@ -11,7 +11,7 @@ Connect 提供的是通往电脑 **SSH 服务的公网路径**。SSH 认证成�
 
 ## 从哪里下载
 
-到 [Nimote Connect GitHub Releases](https://github.com/mobiledevloperlab/nimote-connect/releases) 获取商业安装包和发布者提供的 SHA-256 校验值。**此仓库地址是待正式商业仓库发布时替换的占位地址**；在发布页尚无对应包时，不要下载名称相近的其他压缩包。根据运行 SSH 的电脑选择：
+[Nimote Connect 发布页](https://github.com/mobiledevloperlab/nimote-connect/releases) 目前提供 CLI 预览版（`v0.2.0-local.8b06897`），支持 macOS 和 Linux 的 arm64 与 amd64 架构。预览包同时包含 Connect 和 Host。下表中的桌面应用和 Windows 安装包为后续版本可能提供的包类型。
 
 | 电脑 | 安装包与界面 | 前提 |
 | --- | --- | --- |
@@ -19,7 +19,7 @@ Connect 提供的是通往电脑 **SSH 服务的公网路径**。SSH 认证成�
 | Linux x64 / ARM64 | `linux-amd64` / `linux-arm64` 商业 tarball；CLI，图形界面以该发行包实际内容为准 | systemd 用户会话和已启动的 OpenSSH 服务 |
 | Windows x64 / ARM64 | 如该版本发布了 Windows CLI ZIP；没有 NimoteConn 图形界面 | 已登录用户和监听 TCP 22 的 OpenSSH Server |
 
-**不是每个版本都有全部平台的安装包。** Connect 仓库目前记录的 `0.2.0-rc.6` 是本地验收过的候选版本，不能当作已公开发布的稳定版。下载后先将压缩包的 SHA-256 与发布者提供的校验值比较，再解压。
+预览版配对需要兼容客户端。NimoteCode 的公网访问功能计划后续正式推出。请使用同一版本的安装包和 SHA-256 校验文件。
 
 ## 安装与绑定
 

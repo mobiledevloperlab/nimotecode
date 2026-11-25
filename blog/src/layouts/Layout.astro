@@ -14,6 +14,7 @@ type Props = {
 };
 
 const { site } = config;
+const language = site.lang === "zh" ? "zh-CN" : "en-US";
 
 const {
   article = false,
@@ -36,7 +37,7 @@ const pageSchema = {
   "@type": suffix === "/about" ? "AboutPage" : article ? "WebPage" : "CollectionPage",
   "@id": canonicalURL + "#webpage",
   url: canonicalURL, name: title, description,
-  inLanguage: site.lang,
+  inLanguage: language,
   isPartOf: { "@type": "Blog", "@id": `https://nimotecode.com${base}/#blog`, name: site.title, url: `https://nimotecode.com${base}/` },
 };
 
@@ -47,7 +48,7 @@ const rssHref = getAssetPath("rss.xml");
 <!doctype html>
 <html
   dir={site.dir ?? "ltr"}
-  lang={Astro.currentLocale ?? site.lang}
+  lang={language}
   class="overflow-y-scroll scroll-smooth"
 >
   <head>

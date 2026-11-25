@@ -9,7 +9,7 @@ NimoteCode の公開ネットワーク経由のデバイス接続には、接続
 
 Connect は PC の SSH サーバーまでの通信経路です。接続後はリモートワークスペース、ファイル、SSH ターミナルを利用できます。Host モードは永続タスクや Agent セッションのための別の任意機能で、公開 SSH やターミナルの前提ではありません。現在の商用パッケージには Host も同梱されています。
 
-商用パッケージと発行元の SHA-256 値は [GitHub Releases](https://github.com/mobiledevloperlab/nimote-connect/releases) から入手します。このリンクは商用リポジトリ公開時に置き換える仮のリンクです。現在文書化されている `0.2.0-rc.6` はローカル検証済みのリリース候補であり、全プラットフォームへの公開を意味しません。macOS / Linux は CPU に合う `darwin-amd64`、`darwin-arm64`、`linux-amd64`、`linux-arm64` の商用 tarball、Windows は配布されている場合に x64 / ARM64 用 CLI ZIP を選びます。
+[Nimote Connect のリリースページ](https://github.com/mobiledevloperlab/nimote-connect/releases)では現在、macOS と Linux の arm64／amd64 向けに CLI プレビュー版（`v0.2.0-local.8b06897`）を配布しています。Connect と Host が同梱されています。デスクトップアプリと Windows パッケージは今後の配布状況をご確認ください。プレビュー版のペアリングには対応クライアントが必要です。NimoteCode のインターネット経由の接続は一般公開を予定しています。同じリリースのパッケージと SHA-256 ファイルを使用してください。
 
 macOS / Linux では展開先で通常のデスクトップユーザーとして `./install.sh` を実行します。Windows PowerShell では `.\install.ps1` を実行します。macOS の GUI は `~/Applications/NimoteConn.app`、Linux の GUI が含まれる場合は `~/.local/bin/nimoteconn` です。Windows は CLI のみです。PC で OpenSSH を起動し、ペアリングを承認してから GUI の **Connect → Remote access** で公開接続を有効化します。CLI では `nimoteconnect remote-access enable` を実行します。
 

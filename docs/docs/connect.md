@@ -11,7 +11,7 @@ Connect supplies the **network route to the computer's SSH server**. After SSH a
 
 ## Download the correct package
 
-Get the commercial bundle and its SHA-256 checksum from the [Nimote Connect GitHub releases](https://github.com/mobiledevloperlab/nimote-connect/releases). This repository URL is a release-page placeholder until the commercial repository is published; do not download an unrelated archive with a similar name. Check the release notes and choose the package for the computer running SSH:
+The [Nimote Connect release page](https://github.com/mobiledevloperlab/nimote-connect/releases) currently lists a CLI preview (`v0.2.0-local.8b06897`) for macOS and Linux on arm64 and amd64. The preview bundles Connect and Host. The desktop app and Windows packages below describe package types to look for in future releases.
 
 | Computer | Package and interface | Requirements |
 | --- | --- | --- |
@@ -19,7 +19,7 @@ Get the commercial bundle and its SHA-256 checksum from the [Nimote Connect GitH
 | Linux x64 or ARM64 | `linux-amd64` or `linux-arm64` commercial tarball; CLI, with NimoteConn GUI only when included in that release | systemd user session and running OpenSSH server |
 | Windows x64 or ARM64 | Windows CLI ZIP if listed in that release; no NimoteConn GUI | Signed-in user session and running OpenSSH Server on TCP 22 |
 
-Package availability varies by release. The Connect repository currently documents **0.2.0-rc.6 as a locally validated release candidate**, not a generally available stable release. Do not assume every platform has a published download. Verify the archive's SHA-256 against the checksum supplied by the publisher before extraction.
+A compatible client is required for preview pairing. General availability of NimoteCode public internet access is planned. Use the package and SHA-256 file from the same release.
 
 ## Install and pair
 

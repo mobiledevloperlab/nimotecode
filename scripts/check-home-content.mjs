@@ -20,7 +20,7 @@ for (const [locale, content] of Object.entries(copy)) {
   assert.equal((html.match(/<h1(?:\s|>)/g) || []).length, 1, `${path}: one main heading`)
   const app = schemas.find(item => item['@type'] === 'SoftwareApplication')
   assert.ok(app, `${path}: app identity missing`)
-  assert.deepEqual(app.featureList, [...content.facts, ...content.features.map(([name]) => name), ...content.capabilities.map(([name]) => name), content.connect.eyebrow, content.host.label, content.capabilityNote, content.byok], `${path}: app capabilities differ from localized content`)
+  assert.deepEqual(app.featureList, [...content.facts, ...content.features.map(([name]) => name), ...content.capabilities.map(([name]) => name)], `${path}: app capabilities differ from localized content`)
   assert.ok(!schemas.some(item => ['TechArticle', 'BlogPosting'].includes(item['@type'])), `${path}: homepage classified as article`)
   assert.ok(!schemas.some(item => item['@type'] === 'FAQPage'), `${path}: removed homepage FAQ schema remains`)
   assert.ok(!html.includes('id="download-title"'), `${path}: repeated final download pitch must not return`)

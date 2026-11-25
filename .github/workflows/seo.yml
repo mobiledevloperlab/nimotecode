@@ -1,0 +1,146 @@
+name: SEO and AI search checks
+
+on:
+  pull_request:
+  schedule:
+    - cron: '17 14 * * *'
+    - cron: '41 14 * * 1'
+  workflow_dispatch:
+    inputs:
+      weekly:
+        description: Run the full weekly crawl
+        type: boolean
+        default: true
+      create_issue:
+        description: Open a review issue for detected problems
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  preview:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            blog/package-lock.json
+      - run: npm ci
+      - run: npm ci --prefix blog
+      - run: npm run docs:build
+      - run: npm run docs:check
+      - run: npm --prefix blog run lint
+      - run: npm exec -- tsc -p docs/.vitepress/tsconfig.json
+      - run: npm exec -- astro check
+        working-directory: blog
+      - run: node --test scripts/image-optimizer-cache.test.mjs
+
+  production:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      actions: read
+    env:
+      WEEKLY: ${{ github.event.schedule == '41 14 * * 1' || inputs.weekly == true }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        if: env.WEEKLY == 'true'
+        with:
+          node-version: 24
+      - name: Check public routes
+        run: |
+          mkdir -p .seo-cache/reports
+          flags=()
+          if [[ "$WEEKLY" == true ]]; then flags+=(--weekly); fi
+          python3 scripts/seo/live.py "${flags[@]}" --output .seo-cache/reports/live.json
+      - name: Run Claude SEO on production HTML
+        if: ${{ !cancelled() && env.WEEKLY == 'true' }}
+        run: |
+          bash scripts/seo/claude-seo.sh setup
+          base=https://nimotecode.com
+          for path in / /features /pro /download /docs /docs/quick-start /docs/faq /releases/; do
+            name=${path//\//-}
+            curl -q --fail --silent --show-error --max-time 15 "$base$path" > "$RUNNER_TEMP/seo-page.html"
+            bash scripts/seo/claude-seo.sh page --file "$RUNNER_TEMP/seo-page.html" --base-url "$base$path" > ".seo-cache/reports/page$name.json"
+          done
+          bash scripts/seo/claude-seo.sh geo "$base" --ua-matrix --json > .seo-cache/reports/geo.json
+      - name: Report public product and search signals
+        if: ${{ !cancelled() && env.WEEKLY == 'true' }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          previous=()
+          for run in $(gh run list --workflow seo.yml --branch "$GITHUB_REF_NAME" --limit 14 --json databaseId,status --jq '.[] | select(.status=="completed") | .databaseId'); do
+            if gh run download "$run" --name seo-weekly --dir "$RUNNER_TEMP/seo-previous" >/dev/null 2>&1; then
+              if [[ -f "$RUNNER_TEMP/seo-previous/weekly.json" ]]; then
+                previous+=("$RUNNER_TEMP/seo-previous/weekly.json")
+              fi
+              break
+            fi
+          done
+          node scripts/seo/weekly.mjs .seo-cache/reports/weekly.json "${previous[@]}" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Read authorized webmaster metrics
+        if: ${{ !cancelled() && env.WEEKLY == 'true' && github.event.repository.private }}
+        env:
+          SEO_GSC_SERVICE_ACCOUNT: ${{ secrets.SEO_GSC_SERVICE_ACCOUNT }}
+          SEO_BING_API_KEY: ${{ secrets.SEO_BING_API_KEY }}
+        run: |
+          node scripts/seo/weekly.mjs .seo-cache/reports/webmaster-private.json
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: ${{ env.WEEKLY == 'true' && 'seo-weekly' || 'seo-daily' }}
+          path: .seo-cache/reports/
+          include-hidden-files: true
+          retention-days: 35
+          if-no-files-found: warn
+
+
+  review-issue:
+    if: ${{ always() && github.event_name == 'workflow_dispatch' && inputs.create_issue && !cancelled() }}
+    needs: production
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: read
+      issues: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.weekly && 'seo-weekly' || 'seo-daily' }}
+          path: seo-report
+      - name: Open an issue when the report contains findings
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          count=$(jq '.failures | length' seo-report/live.json)
+          retired=$(jq '[.legacyRedirects[]? | select(.status == 404)] | length' seo-report/live.json)
+          if [[ "$count" == 0 && "$retired" == 0 ]]; then exit 0; fi
+          title='SEO production audit findings'
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "$title in:title" \
+            --json title --jq '.[] | select(.title=="SEO production audit findings") | .title')
+          if [[ -n "$existing" ]]; then exit 0; fi
+          {
+            printf 'Production crawl reported %s findings and %s historical routes returning 404.\n\n' "$count" "$retired"
+            printf 'Inspect the JSON report and reproduce findings before changes.\n\n'
+            printf 'Actions run: %s/%s/actions/runs/%s\n' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID"
+          } > "$RUNNER_TEMP/seo-issue.md"
+          gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body-file "$RUNNER_TEMP/seo-issue.md"

@@ -244,11 +244,11 @@
     "connect": {
       "eyebrow": "Nimote Connect · remote SSH",
       "title": "Your development machine, across networks.",
-      "intro": "Pair your computer, enable remote access, and open its SSH workspaces, files, and terminals from your phone without exposing an SSH port yourself. Host mode is optional.",
+      "intro": "The Connect preview is designed to route SSH from a compatible phone to a paired computer without publishing your own SSH port. Host mode is optional.",
       "route": "A route to your own SSH server. Your SSH account and host-key check still protect the login.",
       "setup": "Install Connect on the computer, pair it with your account, then explicitly enable public access in the GUI or CLI.",
-      "availability": "Managed public access is a preview and may be unavailable in your current build. Direct SSH and your own Tailscale remain separate options.",
-      "guide": "Download Connect and see setup steps"
+      "availability": "A CLI preview is available for macOS and Linux. Public access in NimoteCode is planned. Direct SSH and personal Tailscale remain separate options.",
+      "guide": "Nimote Connect preview and setup"
     },
     "host": {
       "label": "NimoteHost Community · Apache-2.0 open source",
@@ -520,11 +520,11 @@
     "connect": {
       "eyebrow": "Nimote Connect · 公网 SSH",
       "title": "跨网络连接自己的开发电脑。",
-      "intro": "绑定电脑并主动开启公网连接后，无需自行开放 SSH 公网端口，即可从手机打开电脑上的 SSH 工作区、文件和终端。Host 模式是可选功能。",
+      "intro": "Connect 预览版旨在让兼容的手机通过 SSH 连接已配对的电脑，无需自行向公网开放 SSH 端口。Host 模式为可选功能。",
       "route": "Connect 提供通往电脑 SSH 服务的路径；仍使用你的 SSH 账号登录并核对主机密钥。",
       "setup": "在电脑上安装 Connect、完成账号绑定，再通过 GUI 或 CLI 明确启用公网连接。",
-      "availability": "托管公网接入目前处于预览阶段，在当前应用构建中可能不可用。直接 SSH 和自有 Tailscale 是独立连接方式。",
-      "guide": "下载 Connect 并查看安装步骤"
+      "availability": "macOS 和 Linux 已提供 CLI 预览包。NimoteCode 公网接入功能计划后续正式推出。也可使用直接 SSH 或个人 Tailscale。",
+      "guide": "Nimote Connect 预览版与安装步骤"
     },
     "host": {
       "label": "NimoteHost 社区版 · Apache-2.0 开源",
@@ -796,11 +796,11 @@
     "connect": {
       "eyebrow": "Nimote Connect · リモート SSH",
       "title": "ネットワークを越えて開発用 PC へ。",
-      "intro": "PC をペアリングして公開接続を有効にすると、SSH ポートを自分で公開せずに、スマートフォンから SSH ワークスペース、ファイル、ターミナルを開けます。Host モードは任意です。",
+      "intro": "Connect のプレビュー版は、対応するスマートフォンからペアリング済みの PC への SSH 経路を提供するためのものです。SSH ポートを公開する必要はありません。Host モードは任意です。",
       "route": "Connect は PC の SSH サーバーへの経路です。SSH アカウント認証とホスト鍵の確認は引き続き必要です。",
       "setup": "PC に Connect をインストールしてペアリングし、GUI または CLI で公開接続を明示的に有効にします。",
-      "availability": "マネージド公開接続はプレビュー段階で、現在のアプリでは利用できない場合があります。直接 SSH と個人用 Tailscale は別の接続方法です。",
-      "guide": "Connect のダウンロードと設定"
+      "availability": "macOS と Linux 向け CLI プレビュー版を配布中です。NimoteCode の公開接続は今後提供予定です。直接 SSH と個人用 Tailscale も利用できます。",
+      "guide": "Connect のプレビューと設定"
     },
     "host": {
       "label": "NimoteHost Community · Apache-2.0 オープンソース",
@@ -1072,11 +1072,11 @@
     "connect": {
       "eyebrow": "Nimote Connect · 원격 SSH",
       "title": "네트워크가 달라도 내 개발 컴퓨터에 연결하세요.",
-      "intro": "컴퓨터를 연결하고 공용 접속을 켜면 SSH 포트를 직접 공개하지 않고도 휴대폰에서 SSH 작업 공간, 파일, 터미널을 열 수 있습니다. Host 모드는 선택 사항입니다.",
+      "intro": "Connect 프리뷰는 SSH 포트를 직접 공개하지 않고 호환되는 휴대폰에서 페어링된 컴퓨터로 연결하는 SSH 경로를 제공하도록 설계되었습니다. Host 모드는 선택 사항입니다.",
       "route": "Connect는 컴퓨터의 SSH 서버로 가는 경로를 제공합니다. SSH 계정 인증과 호스트 키 확인은 그대로 필요합니다.",
       "setup": "컴퓨터에 Connect를 설치하고 계정에 연결한 뒤 GUI 또는 CLI에서 공용 접속을 명시적으로 켭니다.",
-      "availability": "관리형 공용 접속은 미리 보기 단계이며 현재 앱 빌드에서 사용할 수 없을 수 있습니다. 직접 SSH와 개인 Tailscale은 별도 방식입니다.",
-      "guide": "Connect 다운로드 및 설치 방법"
+      "availability": "macOS와 Linux용 CLI 프리뷰를 제공합니다. NimoteCode의 공용 접속은 출시 예정이며 직접 SSH와 개인 Tailscale을 별도로 사용할 수 있습니다.",
+      "guide": "Connect 프리뷰 및 설치 방법"
     },
     "host": {
       "label": "NimoteHost Community · Apache-2.0 오픈 소스",
@@ -1348,11 +1348,11 @@
     "connect": {
       "eyebrow": "Nimote Connect · SSH remoto",
       "title": "Tu ordenador de desarrollo, desde otra red.",
-      "intro": "Vincula el ordenador y activa el acceso público para abrir espacios de trabajo SSH, archivos y terminales desde el móvil sin exponer tú mismo el puerto SSH. El modo Host es opcional.",
+      "intro": "La versión preliminar de Connect ofrece una ruta SSH desde un móvil compatible a un ordenador vinculado sin publicar su puerto SSH. El modo Host es opcional.",
       "route": "Connect proporciona una ruta al servidor SSH de tu ordenador. Siguen siendo necesarios tu cuenta SSH y la verificación de la clave del equipo.",
       "setup": "Instala Connect en el ordenador, vincúlalo a tu cuenta y activa expresamente el acceso público desde la GUI o la CLI.",
-      "availability": "El acceso público administrado está en fase de prueba y puede no estar disponible en tu versión actual. SSH directo y tu propia red Tailscale son opciones independientes.",
-      "guide": "Descargar Connect y ver la instalación"
+      "availability": "Hay una versión preliminar de la CLI para macOS y Linux. El acceso público en NimoteCode está previsto. SSH directo y Tailscale personal siguen siendo opciones independientes.",
+      "guide": "Versión preliminar e instalación de Connect"
     },
     "host": {
       "label": "NimoteHost Community · Código abierto Apache-2.0",

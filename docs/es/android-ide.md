@@ -87,6 +87,8 @@ Para un solo comando puede bastar un cliente SSH; para corregir texto, un editor
 
 ## Preguntas sobre el IDE para Android
 
+<!-- faq:start -->
+
 ### ¿Necesito root para ejecutar Linux?
 
 No. Local Linux utiliza PRoot en dispositivos compatibles con Android 8 o posterior y una aplicación de 64 bits ARM64 o x86_64. Las herramientas se instalan por separado y no todas las cargas Linux son compatibles.
@@ -102,6 +104,8 @@ No. NimoteCode es un IDE móvil para edición, terminal, Git, IA y proyectos Lin
 ### ¿La descarga es gratuita?
 
 NimoteCode se puede descargar desde Google Play; algunas funciones requieren acceso Pro. La disponibilidad depende de la cuenta, la versión y la región de la tienda. El proveedor del modelo factura su uso por separado.
+
+<!-- faq:end -->
 
 <div class="seo-cta">
   <p><strong>Abre un proyecto en Android y elige el entorno que necesita tu trabajo.</strong></p>

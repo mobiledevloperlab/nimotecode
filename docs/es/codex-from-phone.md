@@ -1,7 +1,7 @@
 ---
 title: "Usar Codex desde el móvil por SSH | NimoteCode"
 description: "Ejecuta Codex en tu equipo y accede desde Android o iPhone con NimoteCode. Configuración, recuperación de sesiones, revisión Git y diagnóstico paso a paso."
-lastUpdated: "2026-11-17"
+lastUpdated: "2026-11-25"
 pageClass: "seo-product-guide"
 ---
 
@@ -10,6 +10,8 @@ pageClass: "seo-product-guide"
 ¿Quieres continuar una tarea de Codex desde el móvil sin mover el repositorio? Esta guía accede por SSH a la CLI de un equipo Linux o macOS. NimoteCode añade exploración de archivos, edición, terminal y revisión Git alrededor de esa sesión.
 
 SSH es una opción, no la única interfaz móvil. Si solo necesitas seguir al agente, revisa las opciones actuales web, móviles y remotas del proveedor. NimoteCode ayuda cuando también quieres acceso directo a los archivos y comandos del equipo.
+La pestaña Remote de la [app móvil de ChatGPT](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex) permite acceder a chats de Codex compatibles del escritorio. Con el flujo SSH de esta guía puedes usar la CLI de Codex en un equipo que administras, junto con los archivos, la terminal y Git.
+
 
 ## 1. Prepara el equipo y la cuenta
 

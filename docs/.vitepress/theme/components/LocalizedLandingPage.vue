@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import productLinks from '../data/product-links.json'
 import { computed } from 'vue'
 import { useRoute } from 'vitepress'
 
@@ -38,7 +39,7 @@ const copy: Record<Locale, Record<Page, Copy>> = {
 }
 
 const pageCopy = computed(() => copy[locale.value][props.page])
-const downloadUrl = locale.value === 'es' ? 'https://play.google.com/store/apps/details?id=com.nimote.nimotecode' : 'https://play.google.com/store/apps/details?id=com.nimote.nimotecode'
+const downloadUrl = productLinks.android
 </script>
 
 <template>

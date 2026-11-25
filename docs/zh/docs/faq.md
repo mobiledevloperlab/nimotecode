@@ -5,6 +5,10 @@ description: 快速了解 NimoteCode 的本地、Android 本地 Linux 与 SSH �
 
 # 常见问题
 
+以下限额来自即将发布的 2.5.0 方案对比。请以已安装版本及[免费版与 Pro](/zh/pro)中的账号权益为准。
+
+<!-- faq:start -->
+
 ## NimoteCode 只是 SSH Client 吗？
 
 不是。NimoteCode 可打开本地项目、使用 Android 本地 Linux 或连接 SSH 工作区，并将 Explorer、编辑器、Terminal、Git 工作流、AI 协助与诊断面板放到同一项目上下文中。
@@ -28,3 +32,5 @@ Tasks 面向 SSH 工作区中的可复用命令流程。命令在已连接的工
 ## LSP 和 Debug 所有项目都能用吗？
 
 这取决于远程主机是否已配置兼容的语言服务或调试适配器，以及项目本身的启动设置。基础 LSP 诊断、补全与导航免费；代码操作、语言服务器辅助安装与调试需要 Pro，并需配置相应工具。 可查看 [LSP](/zh/docs/lsp) 与 [调试](/zh/docs/debug)。
+
+<!-- faq:end -->

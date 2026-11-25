@@ -4,6 +4,7 @@ import { useData } from 'vitepress'
 import AppMockup from './AppMockup.vue'
 import WorkspaceModes from './WorkspaceModes.vue'
 import MockIcon from './MockIcon.vue'
+import productLinks from '../data/product-links.json'
 import reviewSnapshot from '../data/google-play-reviews.json'
 import { latestRelease, upcomingRelease } from '../data/releases'
 import translations from '../i18n/home.json'
@@ -16,8 +17,8 @@ const locale = computed(() => {
 })
 const copy = computed(() => translations[locale.value])
 const local = (path: string) => `${locale.value === 'en' ? '' : `/${locale.value}`}${path}`
-const android = 'https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=website&utm_campaign=homepage'
-const ios = 'https://apps.apple.com/app/nimotecode-ssh-client-ide/id6776158253'
+const android = `${productLinks.android}&utm_source=nimotecode&utm_medium=website&utm_campaign=homepage`
+const ios = productLinks.ios
 const activeDemo = ref(0)
 const demoOpen = ref(true)
 const expandedReviews = ref<string[]>([])
@@ -31,7 +32,7 @@ function selectDemo(index: number) {
   activeDemo.value = index
 }
 const capabilityLinks = ['source-control', 'lsp', 'debug', 'editor', 'tasks', 'plugins', 'host']
-const reviewUrl = (id: string) => `https://play.google.com/store/apps/details?id=com.nimote.nimotecode&reviewId=${encodeURIComponent(id)}`
+const reviewUrl = (id: string) => `${productLinks.android}&reviewId=${encodeURIComponent(id)}`
 const formatReviewDate = (date: string) => new Intl.DateTimeFormat(locale.value, { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`))
 </script>
 

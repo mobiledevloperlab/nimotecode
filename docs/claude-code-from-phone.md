@@ -1,7 +1,7 @@
 ---
 title: "Use Claude Code From Your Phone over SSH | NimoteCode"
 description: "Run Claude Code on your development host and access it from Android or iPhone with NimoteCode. Follow setup, session recovery, Git review and troubleshooting steps."
-lastUpdated: "2026-11-17"
+lastUpdated: "2026-11-25"
 pageClass: "seo-product-guide"
 ---
 
@@ -9,7 +9,7 @@ pageClass: "seo-product-guide"
 
 Want to continue a Claude Code task from your phone while the repository stays on your development machine? This guide uses an SSH terminal to reach the CLI on a Linux or macOS host. NimoteCode supplies file navigation, editing, terminal access, and Git review around that session.
 
-SSH is one approach, not the only mobile interface. Check the agent vendor’s current web, mobile, and remote-access options if you only need to follow an agent task. NimoteCode is useful when you also want direct access to the host’s files and project commands.
+The [Claude mobile app](https://code.claude.com/docs/en/mobile) can follow Claude Code tasks, including sessions connected through Remote Control. Use the SSH workflow below when you also need to open project files, run other terminal commands, and inspect Git changes.
 
 ## 1. Prepare the host and account
 

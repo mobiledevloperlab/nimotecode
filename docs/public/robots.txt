@@ -1,12 +1,6 @@
+# Public website. Search and user-requested retrieval can access public pages.
+# The existing wildcard policy also permits training crawlers.
 User-agent: *
 Allow: /
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: Googlebot-Image
-Allow: /
-
-Host: nimotecode.com
 
 Sitemap: https://nimotecode.com/sitemap.xml

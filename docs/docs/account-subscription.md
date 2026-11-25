@@ -17,6 +17,8 @@ If a previous purchase is not recognized, confirm the platform-store account and
 
 ## Feature access
 
+The limits below follow the upcoming 2.5.0 comparison. Check your installed version and [Free and Pro](/pro) for account-specific access.
+
 Free includes Git status, diffs, staging, unstaging and commits. Graphical push, pull, branch and stash operations, Git AI and advanced GitHub integration require Pro. Docker and Dev Containers require Pro and a compatible host. Debug sessions require Pro and a configured debug adapter.
 
 NimoteHost, persistent remote terminals and cross-device AI session takeover require an active Pro entitlement, including a valid trial or Early Access grant.

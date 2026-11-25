@@ -1,7 +1,7 @@
 ---
 title: "用手机通过 SSH 使用 Codex | NimoteCode"
 description: "在开发主机运行 Codex，通过 Android 或 iPhone 上的 NimoteCode 访问。包含配置、会话恢复、Git 审查与分层排障步骤。"
-lastUpdated: "2026-11-17"
+lastUpdated: "2026-11-25"
 pageClass: "seo-product-guide"
 ---
 
@@ -10,6 +10,8 @@ pageClass: "seo-product-guide"
 希望项目继续留在开发机上，用手机接着处理 Codex 任务？本文通过 SSH 终端访问 Linux 或 macOS 主机上的 CLI，NimoteCode 在会话周围提供文件浏览、编辑、终端和 Git 审查。
 
 SSH 是一种方式，不是唯一的移动入口。只需跟进 Agent 任务时，也应查看提供商当前的网页、移动端和远程访问方案。需要直接操作主机文件和项目命令时，NimoteCode 工作区更有价值。
+[ChatGPT 移动应用](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex)的 Remote 标签页可以访问受支持的桌面 Codex 对话。下方的 SSH 流程适用于在自己管理的主机运行 Codex CLI，同时使用项目文件、终端和 Git。
+
 
 ## 1. 准备主机与账号
 

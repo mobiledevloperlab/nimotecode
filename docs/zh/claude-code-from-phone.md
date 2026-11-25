@@ -1,7 +1,7 @@
 ---
 title: "用手机通过 SSH 使用 Claude Code | NimoteCode"
 description: "在开发主机运行 Claude Code，通过 Android 或 iPhone 上的 NimoteCode 访问。包含配置、会话恢复、Git 审查与分层排障步骤。"
-lastUpdated: "2026-11-17"
+lastUpdated: "2026-11-25"
 pageClass: "seo-product-guide"
 ---
 
@@ -10,6 +10,8 @@ pageClass: "seo-product-guide"
 希望项目继续留在开发机上，用手机接着处理 Claude Code 任务？本文通过 SSH 终端访问 Linux 或 macOS 主机上的 CLI，NimoteCode 在会话周围提供文件浏览、编辑、终端和 Git 审查。
 
 SSH 是一种方式，不是唯一的移动入口。只需跟进 Agent 任务时，也应查看提供商当前的网页、移动端和远程访问方案。需要直接操作主机文件和项目命令时，NimoteCode 工作区更有价值。
+[Claude 移动应用](https://code.claude.com/docs/en/mobile)可以跟进 Claude Code 任务，包括使用 Remote Control 连接的会话。若还需要打开项目文件、运行其他终端命令和查看 Git 改动，可使用下方的 SSH 流程。
+
 
 ## 1. 准备主机与账号
 

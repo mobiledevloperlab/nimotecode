@@ -35,3 +35,6 @@ source-bundles/
 .wrangler/
 wrangler-*.log
 .nimote
+
+# Local, reproducible SEO tooling and reports.
+.seo-cache/

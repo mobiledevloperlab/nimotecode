@@ -5,6 +5,10 @@ description: Concise answers about NimoteCode local, Android Local Linux and SSH
 
 # NimoteCode FAQ
 
+The limits below follow the upcoming 2.5.0 comparison. Check your installed version and [Free and Pro](/pro) for account-specific access.
+
+<!-- faq:start -->
+
 ## Is NimoteCode only an SSH client?
 
 No. NimoteCode can open a local project, use Android Local Linux, or connect to an SSH workspace, and brings Explorer, Editor, Terminal, Git workflows, AI assistance and diagnostic panels into the same project context.
@@ -28,3 +32,5 @@ Tasks are designed for repeatable command workflows in an SSH workspace. Command
 ## Do LSP and Debug work for every project?
 
 They depend on a compatible language server or debug adapter being configured on the remote host and on the project’s setup. Basic LSP diagnostics, completion and navigation are free. Code actions, guided language-server installation and debugging require Pro and configured tools.  see [LSP](/docs/lsp) and [Debug](/docs/debug).
+
+<!-- faq:end -->
