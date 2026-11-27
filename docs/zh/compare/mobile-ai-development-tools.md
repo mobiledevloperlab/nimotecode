@@ -1,6 +1,6 @@
 ---
 title: "NimoteCode vs 五款主要竞品：Blink Shell、Termius、Acode、Replit、Codespaces"
-description: "2026-11-20 核实：对比 NimoteCode 与五款主要竞品的移动平台、SSH、编辑器、Git、LSP、AI 和持久会话，附官方来源及 NimoteHost 社区版使用条件。"
+description: "对比 NimoteCode 与五款主要竞品的移动平台、SSH、编辑器、Git、LSP、AI 和持久会话，附官方来源及 Nimote Connect使用条件。"
 pageClass: compare-page
 ---
 
@@ -12,11 +12,11 @@ pageClass: compare-page
 <details class="major-comparison-details">
 <summary>各产品的使用条件与依据</summary>
 
-NimoteCode 权益标签依据即将发布的 2.5.0 方案对比和 Host 文档。实际账号权益请以已安装版本为准。使用 NimoteHost 社区版时，恢复、审批与 Task Inbox 取决于 Host 版本、配置及 Agent 兼容性。电脑、Host 与托管进程需要持续运行；Host 或系统重启不会恢复原进程。NimoteHost、持久化远程终端与 AI 会话跨设备接管需要有效的 Pro 权益，包括有效试用和 Early Access。 支持的 Android 设备可免费运行基础本地 Linux。开发工具管理与共享目录导入需要 Pro。 Free 支持查看 Git 状态与差异、暂存、取消暂存和提交。图形化推送、拉取、分支、Stash、Git AI 及 GitHub 高级集成需要 Pro。基础 LSP 补全、诊断与导航免费，需配置语言工具；代码操作、引导安装语言服务器与调试需要 Pro。权限边界参见免费与 Pro。
+账号权益以免费与 Pro 说明及已安装版本为准。Nimote Connect 随附的 NimoteHost 服务提供托管会话。恢复、审批与 Task Inbox 取决于 Host 版本、配置及 Agent 兼容性。电脑、服务与托管进程需要持续运行，Host 会话需要 Pro。受支持的 Android 设备可免费使用基础 Local Linux。Free 包含基础 Git、GitHub 克隆、基础 LSP 和基础调试。Git AI、GitHub 高级协作和高级调试功能需要 Pro。
 
 Blink Code 集成 VS Code 服务；已记录的仓库编辑和扩展访问取决于所连接的环境。Blink 的 LSP 和 AI Agent 工作流未获逐项确认，不因其可打开远程 IDE 就直接计为支持。本地 Unix 命令工具不等于完整 Linux 环境。Mosh 网络漫游、tmux 重附着与结构化 Agent 恢复各有不同条件。
 
-Acode 已明确提供 Android Alpine Linux 与原生 LSP 集成；具体语言服务器仍需启用或安装。官方 AI Agent 需要 version code 1002+、另装插件并配置服务商，提供会话保存与审批。iPhone/iPad 仍标为 Coming soon，不计作已正式发布的 iOS 能力。Android 终端后台运行受前台服务和系统进程管理约束。Git 图形操作尚未确认，不能仅凭可用 Git CLI 就计为支持。
+Acode 已明确提供 Android Alpine Linux 与原生 LSP 集成；具体语言服务器仍需启用或安装。官方 AI Agent 需要 version code 1002+、另装插件并配置服务商，提供会话保存与审批。Acode 已在 App Store 上架，支持 iOS 或 iPadOS 18.6 及以上版本。Android 终端后台运行受前台服务和系统进程管理约束。Git 图形操作尚未确认，不能仅凭可用 Git CLI 就计为支持。
 
 Replit 官方已说明手机项目编辑、Git 面板与 Agent 任务审查；其 SSH 文档说明的是连接到 Replit 云端应用，并非连接自有电脑的手机 SSH 客户端。移动端 LSP、持久终端进程与带审批的结构化 Agent 恢复尚未确认；任务看板已有明确文档，手机可通过 Tasks 面板访问。Codespaces 是通过浏览器或 VS Code 访问的云开发环境；手机浏览器可访问不代表有原生移动应用或相同易用性。Copilot 需要单独扩展与权限。Codespaces 的持续运行仅限活动工作区，空闲超时和文档规定的最长运行时限会停止进程。云端 Shell 不等于原生 SSH 客户端，Copilot 任务管理也不计作 Codespaces 原生收件箱或 Agent 恢复能力。
 

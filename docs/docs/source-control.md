@@ -5,7 +5,7 @@ description: Use Git status, diffs, branches, history, AI review tools, and GitH
 
 # Source Control and GitHub
 
-Free includes Git status, diffs, staging, unstaging and commits. Graphical push, pull, branch and stash operations, Git AI and advanced GitHub integration require Pro.
+Free includes Git status, diffs, staging, unstaging, commits, fetch, push, pull, creating or switching branches, and GitHub cloning. Renaming or deleting branches, stashes, manual merge and rebase, Git AI and advanced GitHub collaboration require Pro.
 
 <div class="doc-section">
 <div class="doc-section__copy">

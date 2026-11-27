@@ -197,7 +197,7 @@ Host の機能に応じて、ツール出力、承認、タスク、検証結果
 <!-- major-comparison:start -->
 ## NimoteCode と主要な 5 製品の比較
 
-資料確認日時: **2026-11-25 13:50:25 (UTC)** · 公式ドキュメント、公式サイト、公開リリース情報に基づく比較
+資料確認日時: **2026-11-27 14:03:28 (UTC)** · 公式ドキュメント、公式サイト、公開リリース情報に基づく比較
 
 **開発タスクは自分のコンピューターで実行。スマートフォンでコードとターミナルを確認し、対応する AI セッションを再開して承認に対応できます。**
 
@@ -208,12 +208,12 @@ NimoteCode チームが公開資料に基づいて作成した、上記 UTC 日�
 | 機能 | [NimoteCode](https://nimotecode.com/ja/docs/host) | [Blink Shell](https://docs.blink.sh/advanced/code) | [Termius](https://www.termius.com/) | [Acode](https://docs.acode.app/user-guide/) | [Replit](https://docs.replit.com/features/platforms/mobile-app) | [Codespaces](https://docs.github.com/en/codespaces/about-codespaces/what-are-codespaces) |
 | --- | --- | --- | --- | --- | --- | --- |
 | Android | [✅](https://nimotecode.com/ja/download) | — | [✅](https://www.termius.com/free-ssh-client-for-android) | [✅](https://docs.acode.app/user-guide/) | [✅](https://docs.replit.com/features/platforms/mobile-app) | [◐ ブラウザー](https://docs.github.com/en/codespaces/about-codespaces/codespaces-features) |
-| iOS / iPadOS | [✅](https://nimotecode.com/ja/download) | [✅](https://docs.blink.sh/) | [✅](https://www.termius.com/free-ssh-client-for-iphone) | [— 公開予定](https://acode.app/ai-coding-ios) | [✅](https://docs.replit.com/features/platforms/mobile-app) | [◐ ブラウザー](https://docs.github.com/en/codespaces/about-codespaces/codespaces-features) |
+| iOS / iPadOS | [✅](https://nimotecode.com/ja/download) | [✅](https://docs.blink.sh/) | [✅](https://www.termius.com/free-ssh-client-for-iphone) | [✅ iOS 18.6+](https://acode.app/ai-coding-ios) | [✅](https://docs.replit.com/features/platforms/mobile-app) | [◐ ブラウザー](https://docs.github.com/en/codespaces/about-codespaces/codespaces-features) |
 | SSH ターミナル | [✅](https://nimotecode.com/ja/docs/ssh) | [✅](https://docs.blink.sh/) | [✅](https://www.termius.com/free-ssh-client-for-android) | [✅](https://github.com/Acode-Foundation/Acode#readme) | — | — |
 | Mosh | — | [✅](https://docs.blink.sh/advanced/advanced-mosh) | [✅](https://www.termius.com/free-ssh-client-for-android) | — | — | — |
 | コードエディター | [✅](https://nimotecode.com/ja/docs/editor) | [✅](https://docs.blink.sh/advanced/code) | — | [✅](https://docs.acode.app/user-guide/) | [✅](https://docs.replit.com/features/platforms/mobile-app) | [✅](https://docs.github.com/en/codespaces/developing-in-a-codespace/developing-in-a-codespace) |
 | 端末内 Linux 環境 | [✅ Android · 基本機能は無料](https://nimotecode.com/ja/docs/local-linux) | — | — | [✅ Android](https://docs.acode.app/user-guide/terminal) | — | — |
-| Git の GUI 操作 | [✅ 基本のコミットは無料](https://nimotecode.com/ja/docs/source-control) | [◐](https://docs.blink.sh/advanced/code) | — | — | [✅ プロジェクトエディター](https://docs.replit.com/features/workspace-tools/git-interface) | [✅](https://docs.github.com/en/codespaces/developing-in-a-codespace/using-source-control-in-your-codespace) |
+| Git の GUI 操作 | [✅ 基本 Git は無料](https://nimotecode.com/ja/docs/source-control) | [◐](https://docs.blink.sh/advanced/code) | — | — | [✅ プロジェクトエディター](https://docs.replit.com/features/workspace-tools/git-interface) | [✅](https://docs.github.com/en/codespaces/developing-in-a-codespace/using-source-control-in-your-codespace) |
 | LSP によるコード支援 | [✅ 基本機能は無料](https://nimotecode.com/ja/docs/lsp) | — | — | [✅](https://docs.acode.app/user-guide/language-servers) | — | [◐ 言語拡張機能](https://code.visualstudio.com/docs/remote/codespaces) |
 | AI コーディング | [✅ 無料 Agent は回数制限あり](https://nimotecode.com/ja/docs/ai) | — | [◐ コマンド補完](https://www.termius.com/pricing) | [◐ 公式プラグイン](https://docs.acode.app/tutorials/ai-agent) | [✅](https://docs.replit.com/features/platforms/mobile-app) | [◐ Copilot 拡張機能](https://docs.github.com/en/codespaces/reference/using-github-copilot-in-github-codespaces) |
 | VS Code 拡張機能 | — | [◐](https://docs.blink.sh/advanced/code) | — | — | — | [✅](https://code.visualstudio.com/docs/remote/codespaces) |
@@ -224,11 +224,11 @@ NimoteCode チームが公開資料に基づいて作成した、上記 UTC 日�
 
 ### 利用条件と比較の読み方
 
-公開予定の 2.5.0 のプラン比較と Host のドキュメントに基づき、実際のアカウント権限はインストール済みのバージョンで確認してください。NimoteHost Community の復元、承認、Task Inbox は Host の版、設定、Agent の互換性に依存します。コンピューター、Host、管理対象プロセスの継続稼働が必要で、Host や OS の再起動では元のプロセスを復元できません。NimoteHost、永続リモートターミナル、デバイス間の AI セッション引き継ぎには、有効なトライアルまたは Early Access を含む Pro 権限が必要です。 対応 Android 端末では基本のローカル Linux を無料で利用できます。開発ツールの管理と共有フォルダーへのインポートには Pro が必要です。 Free では Git の状態と差分の確認、ステージング、ステージ解除、コミットができます。GUI でのプッシュ、プル、ブランチとスタッシュの操作、Git AI、高度な GitHub 連携には Pro が必要です。設定済みの言語ツールを使う基本 LSP 補完・診断・ナビゲーションは無料、コードアクション、サーバーの導入支援、デバッグは Pro が必要です。権限の範囲は無料・Pro の案内をご確認ください。
+アカウントの権限は Free・Pro の説明とインストール済みのバージョンをご確認ください。Nimote Connect に含まれる NimoteHost サービスがセッションを管理します。復元、承認、Task Inbox は Host のバージョン、設定、Agent の互換性に依存します。コンピューター、サービス、管理対象プロセスの継続稼働が必要です。Host セッションには Pro が必要です。Free では対応 Android 端末の基本ローカル Linux、基本 Git、GitHub からのクローン、基本 LSP と基本デバッグが利用できます。Git AI、高度な GitHub コラボレーション、高度なデバッグ機能には Pro が必要です。
 
 Blink Code は VS Code サービスを統合します。文書にあるリポジトリ編集や拡張機能は接続先環境に依存します。Blink の LSP と AI Agent のワークフローは個別に確認できておらず、リモート IDE を開けることだけで対応とは判定していません。ローカルの Unix コマンド群は完全な Linux 環境ではありません。Mosh のローミング、tmux の再接続、構造化された Agent セッションの復元は条件が異なります。
 
-Acode は Android の Alpine Linux とネイティブ LSP 統合を文書化しています。各言語サーバーの有効化や導入は別途必要です。公式 AI Agent は version code 1002 以上、プラグインの追加とプロバイダー設定が必要で、チャット保存と承認に対応します。iPhone/iPad は引き続き Coming soon のため、一般公開済みの iOS 機能とは扱いません。Android ターミナルのバックグラウンド実行はフォアグラウンドサービスと OS のプロセス管理に依存します。Git の GUI 操作は未確認で、Git CLI を使えるだけでは根拠になりません。
+Acode は Android の Alpine Linux とネイティブ LSP 統合を文書化しています。各言語サーバーの有効化や導入は別途必要です。公式 AI Agent は version code 1002 以上、プラグインの追加とプロバイダー設定が必要で、チャット保存と承認に対応します。Acode は App Store で配信されており、iOS または iPadOS 18.6 以降が必要です。Android ターミナルのバックグラウンド実行はフォアグラウンドサービスと OS のプロセス管理に依存します。Git の GUI 操作は未確認で、Git CLI を使えるだけでは根拠になりません。
 
 Replit はモバイルでのプロジェクト編集、Git パネル、Agent タスクのレビューを文書化しています。SSH 文書は Replit のクラウドアプリへの接続を説明しており、自分の PC に接続するモバイル SSH クライアントではありません。モバイル LSP、ターミナルプロセスの継続、承認を伴う構造化 Agent 復元は未確認です。タスクボードは明確に文書化され、モバイルの Tasks パネルから利用できます。Codespaces はブラウザーや VS Code で接続するクラウド開発環境であり、ブラウザーで開けることはネイティブアプリや同等の操作性を意味しません。Copilot は別の拡張機能と利用権限が必要です。継続実行は稼働中の codespace に限り、アイドルタイムアウトや文書に定める稼働時間上限でプロセスが停止します。クラウドの Shell はネイティブ SSH クライアントではなく、Copilot のタスク管理を Codespaces のネイティブ受信箱や Agent 復元として計上していません。
 

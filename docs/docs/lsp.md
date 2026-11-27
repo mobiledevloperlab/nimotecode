@@ -22,4 +22,4 @@ Open a source file, then open the LSP panel. Check **LSP Setup** and the server 
 
 ## Use diagnostics and code actions
 
-Expand **Problems** and select a diagnostic to open its source location. Review actions offered under **Code Actions** for the cursor position. Available actions depend on the language server. Save the file and rerun the relevant project check after applying an action. Basic LSP diagnostics, completion and navigation are free. Code actions, guided language-server installation and debugging require Pro and configured tools.
+Expand **Problems** and select a diagnostic to open its source location. Review actions offered under **Code Actions** for the cursor position. Available actions depend on the language server. Save the file and rerun the relevant project check after applying an action. Basic LSP diagnostics, completion, navigation and basic debugging are free. Code actions, guided language-server installation and advanced debugger features such as expressions and watches require Pro and configured tools.

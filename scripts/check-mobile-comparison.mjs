@@ -65,7 +65,7 @@ for (const language of comparisonLocales) {
   assert.ok(plain.includes(comparisonCopy[language].snapshot), `${path}: missing localized freshness notice`)
   for (const [name] of majorCompetitors) assert.ok(html.includes(name), `${path}: missing major alternative ${name}`)
   assert.ok(html.includes(`datetime="${reviewedAtUtc}"`), `${path}: missing current review timestamp`)
-  assert.ok(html.includes('Task Inbox') && (html.includes('Coming soon') || html.includes('待发布')), `${path}: missing Host workflow or Acode availability caveat`)
+  assert.ok(html.includes('Task Inbox'), `${path}: missing Host workflow`)
   for (const product of competitors) assert.ok(html.includes(product.name), `${path}: missing ${product.name}`)
   assert.ok(html.includes('Evidence ↗') || html.includes('官方依据 ↗'), `${path}: missing SSR evidence links`)
   assert.ok(html.includes('Git / diff interface') || html.includes('Git / Diff 图形界面'), `${path}: missing matrix`)

@@ -5,7 +5,7 @@ description: "소스 제어 설정, 사용 절차 및 화면 안내."
 
 # 소스 제어
 
-Free에서는 Git 상태와 차이 확인, 스테이징, 스테이징 취소 및 커밋을 지원합니다. GUI 푸시·풀·브랜치·스태시, Git AI 및 고급 GitHub 통합에는 Pro가 필요합니다.
+Free에서는 Git 상태와 차이 확인, 스테이징 및 취소, 커밋, 가져오기, 푸시, 풀, 브랜치 생성 및 전환, GitHub 복제를 지원합니다. 브랜치 이름 변경 및 삭제, 스태시, 수동 병합 및 리베이스, Git AI와 고급 GitHub 협업에는 Pro가 필요합니다.
 
 <div class="doc-section">
 <div class="doc-section__copy">

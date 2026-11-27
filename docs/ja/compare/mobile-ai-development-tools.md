@@ -1,6 +1,6 @@
 ---
 title: "NimoteCode と Blink Shell・Termius・Acode・Replit・Codespaces の比較"
-description: "公式資料から主要 6 製品のモバイル対応、SSH、編集、Git、LSP、AI、セッションを比較。確認日時、Pro の範囲、NimoteHost Community の利用条件を明記。"
+description: "公式資料から主要 6 製品のモバイル対応、SSH、編集、Git、LSP、AI、セッションを比較。確認日時、Pro の範囲、Nimote Connect の利用条件を明記。"
 pageClass: compare-page
 ---
 
@@ -12,11 +12,11 @@ pageClass: compare-page
 <details class="major-comparison-details">
 <summary>各製品の利用条件と根拠</summary>
 
-公開予定の 2.5.0 のプラン比較と Host のドキュメントに基づき、実際のアカウント権限はインストール済みのバージョンで確認してください。NimoteHost Community の復元、承認、Task Inbox は Host の版、設定、Agent の互換性に依存します。コンピューター、Host、管理対象プロセスの継続稼働が必要で、Host や OS の再起動では元のプロセスを復元できません。NimoteHost、永続リモートターミナル、デバイス間の AI セッション引き継ぎには、有効なトライアルまたは Early Access を含む Pro 権限が必要です。 対応 Android 端末では基本のローカル Linux を無料で利用できます。開発ツールの管理と共有フォルダーへのインポートには Pro が必要です。 Free では Git の状態と差分の確認、ステージング、ステージ解除、コミットができます。GUI でのプッシュ、プル、ブランチとスタッシュの操作、Git AI、高度な GitHub 連携には Pro が必要です。設定済みの言語ツールを使う基本 LSP 補完・診断・ナビゲーションは無料、コードアクション、サーバーの導入支援、デバッグは Pro が必要です。権限の範囲は無料・Pro の案内をご確認ください。
+アカウントの権限は Free・Pro の説明とインストール済みのバージョンをご確認ください。Nimote Connect に含まれる NimoteHost サービスがセッションを管理します。復元、承認、Task Inbox は Host のバージョン、設定、Agent の互換性に依存します。コンピューター、サービス、管理対象プロセスの継続稼働が必要です。Host セッションには Pro が必要です。Free では対応 Android 端末の基本ローカル Linux、基本 Git、GitHub からのクローン、基本 LSP と基本デバッグが利用できます。Git AI、高度な GitHub コラボレーション、高度なデバッグ機能には Pro が必要です。
 
 Blink Code は VS Code サービスを統合します。文書にあるリポジトリ編集や拡張機能は接続先環境に依存します。Blink の LSP と AI Agent のワークフローは個別に確認できておらず、リモート IDE を開けることだけで対応とは判定していません。ローカルの Unix コマンド群は完全な Linux 環境ではありません。Mosh のローミング、tmux の再接続、構造化された Agent セッションの復元は条件が異なります。
 
-Acode は Android の Alpine Linux とネイティブ LSP 統合を文書化しています。各言語サーバーの有効化や導入は別途必要です。公式 AI Agent は version code 1002 以上、プラグインの追加とプロバイダー設定が必要で、チャット保存と承認に対応します。iPhone/iPad は引き続き Coming soon のため、一般公開済みの iOS 機能とは扱いません。Android ターミナルのバックグラウンド実行はフォアグラウンドサービスと OS のプロセス管理に依存します。Git の GUI 操作は未確認で、Git CLI を使えるだけでは根拠になりません。
+Acode は Android の Alpine Linux とネイティブ LSP 統合を文書化しています。各言語サーバーの有効化や導入は別途必要です。公式 AI Agent は version code 1002 以上、プラグインの追加とプロバイダー設定が必要で、チャット保存と承認に対応します。Acode は App Store で配信されており、iOS または iPadOS 18.6 以降が必要です。Android ターミナルのバックグラウンド実行はフォアグラウンドサービスと OS のプロセス管理に依存します。Git の GUI 操作は未確認で、Git CLI を使えるだけでは根拠になりません。
 
 Replit はモバイルでのプロジェクト編集、Git パネル、Agent タスクのレビューを文書化しています。SSH 文書は Replit のクラウドアプリへの接続を説明しており、自分の PC に接続するモバイル SSH クライアントではありません。モバイル LSP、ターミナルプロセスの継続、承認を伴う構造化 Agent 復元は未確認です。タスクボードは明確に文書化され、モバイルの Tasks パネルから利用できます。Codespaces はブラウザーや VS Code で接続するクラウド開発環境であり、ブラウザーで開けることはネイティブアプリや同等の操作性を意味しません。Copilot は別の拡張機能と利用権限が必要です。継続実行は稼働中の codespace に限り、アイドルタイムアウトや文書に定める稼働時間上限でプロセスが停止します。クラウドの Shell はネイティブ SSH クライアントではなく、Copilot のタスク管理を Codespaces のネイティブ受信箱や Agent 復元として計上していません。
 

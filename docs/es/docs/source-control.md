@@ -5,7 +5,7 @@ description: "Configuración, procedimientos y referencia de la interfaz: Contro
 
 # Control de código fuente
 
-Free permite ver el estado y las diferencias de Git, preparar y retirar cambios y crear commits. Las operaciones gráficas de push, pull, ramas y stash, Git AI y la integración avanzada de GitHub requieren Pro.
+Free incluye estado y diferencias de Git, preparación y retirada de cambios, commits, fetch, push, pull, creación y cambio de ramas, y clonación desde GitHub. Renombrar o eliminar ramas, usar stash, fusionar o hacer rebase manualmente, Git AI y la colaboración avanzada en GitHub requieren Pro.
 
 <div class="doc-section">
 <div class="doc-section__copy">
