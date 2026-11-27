@@ -19,11 +19,11 @@ description: "계정 및 구독 설정, 사용 절차 및 화면 안내."
 
 아래 한도는 출시 예정인 2.5.0 요금제 비교를 기준으로 합니다. 설치된 버전과 [무료 및 Pro](/ko/pro)에서 계정 권한을 확인하세요.
 
-Free에서는 Git 상태와 차이 확인, 스테이징, 스테이징 취소 및 커밋을 지원합니다. GUI 푸시·풀·브랜치·스태시, Git AI 및 고급 GitHub 통합에는 Pro가 필요합니다. Docker 및 Dev Container에는 Pro와 호환 호스트가 필요합니다. 디버깅에는 Pro 및 구성된 디버그 어댑터가 필요합니다.
+Free는 가져오기, 푸시, 풀, 브랜치 생성과 전환 등 기본 Git, GitHub 복제와 기본 디버깅을 지원합니다. 브랜치 이름 변경·삭제, 스태시, 수동 병합·리베이스, Git AI, 고급 GitHub 협업, Docker와 Dev Containers, 디버거 표현식 평가와 감시에는 Pro가 필요합니다. 호환 도구와 권한에 따라 이용할 수 있습니다.
 
 NimoteHost, 지속 원격 터미널 및 기기 간 AI 세션 인계에는 체험판 또는 Early Access를 포함한 유효한 Pro 권한이 필요합니다.
 
-Nimote Connect의 공용 인터넷 접속은 계획 단계이며 Free 및 Pro 한도는 미정입니다. 일반 SSH와 개인 Tailscale은 사용할 수 있습니다.
+Android와 iOS에서 Nimote Connect 관리형 인터넷 연결을 사용하려면 Pro와 원격 접근을 활성화한 페어링 기기가 필요합니다. 직접 SSH와 개인 Tailscale은 별도로 이용할 수 있습니다.
 
 [무료 버전과 Pro](/ko/pro)를 참고하세요.
 

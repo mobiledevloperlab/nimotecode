@@ -19,11 +19,11 @@ description: "账户与订阅的配置、操作步骤与界面说明。"
 
 以下限额来自即将发布的 2.5.0 方案对比。请以已安装版本及[免费版与 Pro](/zh/pro)中的账号权益为准。
 
-Free 支持查看 Git 状态与差异、暂存、取消暂存和提交。图形化推送、拉取、分支、Stash、Git AI 及 GitHub 高级集成需要 Pro。 Docker 和 Dev Container 需要 Pro 及兼容的主机。 启动调试需要 Pro 和已配置的调试适配器。
+免费版包含基础 Git（包括获取、推送、拉取、新建及切换分支）、GitHub 克隆和基础调试。重命名和删除分支、Stash、手动合并和变基、Git AI、GitHub 高级协作、Docker 与 Dev Containers，以及调试表达式求值和监视需要 Pro。实际能力取决于工具兼容性和权限。
 
 NimoteHost、持久化远程终端与 AI 会话跨设备接管需要有效的 Pro 权益，包括有效试用和 Early Access。
 
-Nimote Connect 公网接入仍在规划中，Free 与 Pro 的可用额度待定。普通 SSH 和个人 Tailscale 可用。
+在 Android 和 iOS 上使用 Nimote Connect 托管公网连接，需要 Pro，并且目标电脑已绑定并开启公网访问。普通 SSH 和个人 Tailscale 可独立使用。
 
 功能对比见[免费版与 Pro](/zh/pro)。
 

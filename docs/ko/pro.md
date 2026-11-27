@@ -1,12 +1,12 @@
 ---
 title: NimoteCode Pro | 고급 모바일 개발
-description: "출시 예정인 NimoteCode 2.5.0의 무료 기능과 Pro 혜택을 비교하세요. 현재 플랜과 현지 가격은 앱에서 확인할 수 있습니다."
+description: "NimoteCode Free와 Pro의 기능을 비교하세요. 이용 가능한 요금제, 체험 자격과 현지 가격은 앱에서 확인할 수 있습니다."
 pageClass: pricing-page
 ---
 
 # NimoteCode Pro
 
-출시 예정인 NimoteCode 2.5.0의 무료 기능과 Pro 혜택을 비교하세요. 현재 플랜과 현지 가격은 앱에서 확인할 수 있습니다.
+NimoteCode Free와 Pro의 기능을 비교하세요. 이용 가능한 요금제, 체험 자격과 현지 가격은 앱에서 확인할 수 있습니다.
 
 <PricingFeatureSystem lang="ko" mode="full" />
 

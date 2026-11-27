@@ -1,12 +1,12 @@
 ---
 title: NimoteCode Pro | Advanced mobile development
-description: "Compare the Free and Pro features planned for the upcoming NimoteCode 2.5.0. Check the app for current plans and local prices."
+description: "Compare what’s included in NimoteCode Free and Pro. Available plans, trial eligibility, and local prices are shown in the app."
 pageClass: pricing-page
 ---
 
 # NimoteCode Pro
 
-Compare the Free and Pro features planned for the upcoming NimoteCode 2.5.0. Check the app for current plans and local prices.
+Compare what’s included in NimoteCode Free and Pro. Available plans, trial eligibility, and local prices are shown in the app.
 
 <PricingFeatureSystem lang="en" mode="full" />
 

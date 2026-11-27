@@ -1,12 +1,12 @@
 ---
 title: NimoteCode Pro | 移动开发进阶功能
-description: "查看即将发布的 NimoteCode 2.5.0 订阅页的免费功能与 Pro 权益。当前可选方案和本地价格以应用内显示为准。"
+description: "对比 NimoteCode 免费版和 Pro 的功能。可购买的方案、试用资格和本地价格以 App 内显示为准。"
 pageClass: pricing-page
 ---
 
 # NimoteCode Pro
 
-查看即将发布的 NimoteCode 2.5.0 订阅页的免费功能与 Pro 权益。当前可选方案和本地价格以应用内显示为准。
+对比 NimoteCode 免费版和 Pro 的功能。可购买的方案、试用资格和本地价格以 App 内显示为准。
 
 <PricingFeatureSystem lang="zh" mode="full" />
 

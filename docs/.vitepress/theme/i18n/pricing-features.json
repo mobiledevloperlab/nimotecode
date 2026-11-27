@@ -2,23 +2,25 @@
   "en": {
     "features": {
       "freeTitle": "Included for free",
-      "freeDescription": "Edit files, connect to SSH workspaces, use up to two terminals at once, including terminal search, access basic LSP completion, diagnostics and navigation, use standalone AI chat with your own model service, and stage, unstage and commit files, and view Git diffs and history for free. Basic LSP requires a configured language server. Basic Android Local Linux is free on supported devices. Free includes 3 built-in Agent tasks and 10 remote content searches per day. Quotas reset at 00:00 UTC. Free runs individual tasks. Workflows with task dependencies require Pro.",
+      "freeDescription": "Use local and SSH workspaces, edit files, and open up to two active terminals with search. Free includes Git basics including fetch, push, pull, and creating or switching branches, GitHub cloning, remote content search, basic LSP and debugging, single-file transfers and single-folder downloads over SSH, and individual tasks. Use your own model provider for AI chat and the daily allowance of built-in Agent tasks. Supported Android devices also include Local Linux. The built-in Agent allowance resets at 00:00 UTC. LSP needs a configured language server. AI chat and built-in Agent tasks use your model provider. The app shows your remaining allowance.",
       "presentation": {
         "limits": [
           "Concurrent terminals",
-          "Built-in Agent tasks / day",
-          "Remote content searches / day"
+          "Built-in Agent tasks / day"
         ],
         "items": [
           "File editing and SSH workspaces",
           "Terminal search",
-          "Git staging, commits and history",
-          "Basic LSP and standalone AI chat",
-          "Basic Android Local Linux",
+          "Git staging, commits, history, push and pull",
+          "Basic LSP, debugging and AI chat",
+          "GitHub repository cloning",
+          "SSH single-file transfers and single-folder downloads",
+          "Remote project content search",
+          "Local Linux on supported Android",
           "Run individual tasks"
         ],
         "terms": "Free plan details",
-        "finePrint": "Daily quotas reset at 00:00 UTC. LSP requires a configured server. AI Chat uses your model provider. Local Linux requires a supported Android device. Task dependencies require Pro.",
+        "finePrint": "The built-in Agent allowance resets at 00:00 UTC. LSP needs a configured language server. AI chat and built-in Agent tasks use your model provider. The app shows your remaining allowance.",
         "benefits": "Explore Pro features",
         "trialTerms": "Trial eligibility and terms"
       },
@@ -27,39 +29,42 @@
         {
           "id": "host",
           "name": "NimoteHost sessions",
-          "description": "Use NimoteHost over authenticated SSH to run persistent terminals, tasks and compatible AI sessions.",
-          "note": "NimoteHost currently supports local network (LAN) connections only."
+          "description": "Use the NimoteHost service included with Nimote Connect to run managed terminals, tasks, and compatible Agent sessions over SSH. Keep the computer and service running so you can reconnect and continue working."
         },
         {
           "id": "agent",
           "name": "AI Agent",
-          "description": "Run unlimited built-in Agent tasks and connect external ACP agents. Your model provider’s limits and fees apply."
+          "description": "Use your own model provider to run built-in Agent tasks without the app’s daily limit, or connect external ACP agents. Provider limits and fees still apply. Analyze output with your own model provider and run approved commands in the current terminal."
         },
         {
           "id": "git",
           "name": "Git & GitHub",
-          "description": "Push, pull, manage branches and stashes, and use Git AI. Clone GitHub repositories, create and edit issues and pull requests, and manage reviews and workflow runs. Repository permissions apply."
+          "description": "Rename and delete branches, manage stashes, merge or rebase manually, discard changes in bulk, and use Git AI. Create and edit GitHub issues and pull requests and manage reviews and workflow runs. Repository permissions apply."
         },
         {
           "id": "environment",
           "name": "Terminals & development environments",
-          "description": "Run tasks in multiple terminal sessions. Keep remote terminal tasks running in persistent sessions and reconnect to them later. Manage Docker, Compose and Dev Containers on SSH hosts. Manage development tools and shared folders in Android Local Linux.",
-          "note": "Persistent SSH terminals require tmux on a compatible host."
+          "description": "Use more than two active terminal sessions. Keep SSH terminal sessions running with tmux on the remote host and resume them after reconnecting. Manage Docker, Compose and Dev Containers on SSH hosts."
         },
         {
           "id": "language",
           "name": "Code actions & debugging",
-          "description": "Apply language-server code fixes and refactorings, use guided language-server installation, and run debug sessions. Capabilities depend on language server and debugger setup."
+          "description": "Use advanced language-server actions, including refactorings and server commands, and evaluate expressions and watches while debugging."
         },
         {
-          "id": "search-sync",
-          "name": "Project search & sync",
-          "description": "Search remote file contents without a daily limit and manage SSH sync and caches."
+          "id": "tasks",
+          "name": "Tasks",
+          "description": "Run task workflows with dependencies between tasks."
+        },
+        {
+          "id": "sync",
+          "name": "Sync / Cache",
+          "description": "Manage SSH project synchronization and remote caches."
         },
         {
           "id": "remote-files",
           "name": "Remote file management",
-          "description": "Batch upload and download files, transfer entire folders, and copy or move multiple remote items over SSH. Single-file transfers and basic file operations remain free."
+          "description": "Batch upload and download, upload folders, and copy or move multiple items over SSH. Individual files and single-folder downloads are free."
         }
       ]
     },
@@ -84,7 +89,6 @@
         },
         {
           "name": "Pro",
-          "badge": "Early Access",
           "price": "See store pricing",
           "period": "Varies by region",
           "summary": "Use the Pro features below. Check the app for available plans and prices.",
@@ -92,30 +96,31 @@
           "link": "/download",
           "highlight": true
         }
-      ],
-      "earlyAccessDeadline": "Early Access ends November 30, 2026 at 23:59:59 Beijing time (UTC+8)"
+      ]
     }
   },
   "zh": {
     "features": {
       "freeTitle": "免费基础功能",
-      "freeDescription": "无需订阅即可编辑文件、连接 SSH 工作区、同时使用最多两个终端及终端内搜索，使用基础 LSP 补全、诊断和跳转，自备模型服务进行独立 AI 聊天，以及暂存、取消暂存、提交文件及查看 Git 差异和历史。基础 LSP 需已配置可用的语言服务器。支持的 Android 设备可免费运行基础本地 Linux 环境。 免费版每天可运行 3 次内置 Agent 任务、搜索远程文件内容 10 次。额度于 UTC 00:00 重置。 免费版可运行独立任务。包含任务依赖的工作流需要 Pro。",
+      "freeDescription": "在本地或 SSH 工作区编辑文件，使用最多两个活动终端及终端搜索。免费版包含基础 Git（包括获取、推送、拉取及新建或切换分支）、GitHub 克隆、远程内容搜索、基础 LSP 和调试、SSH 单文件传输及单目录下载，以及独立任务。AI 聊天和有每日额度的内置 Agent 任务使用你自备的模型服务。 受支持的 Android 设备还可使用 Local Linux。 内置 Agent 日额度在 UTC 00:00 重置。LSP 需要配置语言服务器。AI 聊天和内置 Agent 使用你自备的模型服务，剩余额度以 App 内显示为准。",
       "presentation": {
         "limits": [
           "并行终端",
-          "内置 Agent 任务 / 天",
-          "远程内容搜索 / 天"
+          "内置 Agent 任务 / 天"
         ],
         "items": [
           "文件编辑与 SSH 工作区",
           "终端内搜索",
-          "Git 暂存、提交和历史",
-          "基础 LSP 与独立 AI 聊天",
-          "基础 Android 本地 Linux",
+          "Git 暂存、提交、历史、推送和拉取",
+          "基础 LSP、调试与 AI 聊天",
+          "克隆 GitHub 仓库",
+          "SSH 单文件传输和单目录下载",
+          "远程项目内容搜索",
+          "受支持 Android 设备的 Local Linux",
           "运行独立任务"
         ],
         "terms": "免费版使用条件",
-        "finePrint": "每日额度于 UTC 00:00 重置。LSP 需配置语言服务器。AI 聊天使用自备模型服务。仅兼容 Android 设备支持本地 Linux。含任务依赖的工作流需要 Pro。",
+        "finePrint": "内置 Agent 日额度在 UTC 00:00 重置。LSP 需要配置语言服务器。AI 聊天和内置 Agent 使用你自备的模型服务，剩余额度以 App 内显示为准。",
         "benefits": "查看 Pro 权益",
         "trialTerms": "试用资格与条款"
       },
@@ -124,39 +129,42 @@
         {
           "id": "host",
           "name": "NimoteHost 会话",
-          "description": "通过已认证的 SSH 使用 NimoteHost 运行持久终端、任务和兼容的 AI 会话。",
-          "note": "NimoteHost 目前仅支持局域网连接。"
+          "description": "通过 SSH 使用 Nimote Connect 随附的 NimoteHost 服务，运行托管终端、任务和兼容的 Agent 会话。电脑和服务持续运行时，可重新连接接续工作。"
         },
         {
           "id": "agent",
           "name": "AI Agent",
-          "description": "不限次数运行内置 Agent 任务，或连接外部 ACP Agent。模型用量限制与费用由供应商决定。"
+          "description": "使用你自备的模型服务，运行不受应用每日额度限制的内置 Agent 任务，或连接外部 ACP Agent。模型供应商的用量限制与费用仍适用。 使用自备模型服务分析输出，并在当前终端执行已审批的命令。"
         },
         {
           "id": "git",
           "name": "Git 与 GitHub",
-          "description": "使用图形界面推送、拉取、管理分支和 Stash，并使用 Git AI。 克隆 GitHub 仓库，创建和编辑 Issue 与 Pull Request，管理评审和工作流运行。可用操作取决于仓库权限。"
+          "description": "重命名和删除分支、管理 Stash、手动合并或变基、批量放弃修改，并使用 Git AI。 创建和编辑 GitHub Issue 与 Pull Request，管理评审和工作流运行。可用操作取决于仓库权限。"
         },
         {
           "id": "environment",
           "name": "终端与开发环境",
-          "description": "通过多个终端会话并行运行开发任务。 让远端任务在持久终端会话中继续运行，重新连接后可恢复会话。 在 SSH 主机上管理 Docker、Compose 与 Dev Containers。 管理 Android 本地 Linux 的开发工具和共享文件夹。",
-          "note": "SSH 持久终端需要兼容的主机，并已安装 tmux。"
+          "description": "同时使用两个以上的活动终端会话。 通过远端主机上的 tmux 保持 SSH 终端会话运行，重新连接后可恢复。 在 SSH 主机上管理 Docker、Compose 与 Dev Containers。"
         },
         {
           "id": "language",
           "name": "代码操作与调试",
-          "description": "使用语言服务提供的代码修复与重构、辅助安装语言服务，并运行调试会话。具体能力取决于语言服务器和调试器配置。"
+          "description": "使用重构、语言服务器命令等高级代码操作，并在调试中求值和监视表达式。"
         },
         {
-          "id": "search-sync",
-          "name": "项目搜索与同步",
-          "description": "远程文件内容搜索不限次数，支持 SSH 同步与缓存管理。"
+          "id": "tasks",
+          "name": "任务",
+          "description": "运行包含任务依赖关系的工作流。"
+        },
+        {
+          "id": "sync",
+          "name": "同步 / 缓存",
+          "description": "管理 SSH 项目同步和远程缓存。"
         },
         {
           "id": "remote-files",
           "name": "远程文件管理",
-          "description": "通过 SSH 批量上传与下载文件、传输整个文件夹，并批量复制和移动远程文件。单文件上传下载及基础文件操作免费。"
+          "description": "通过 SSH 批量上传和下载、上传目录，以及批量复制或移动。单文件传输和单目录下载免费。"
         }
       ]
     },
@@ -181,7 +189,6 @@
         },
         {
           "name": "Pro",
-          "badge": "Early Access",
           "price": "查看商店价格",
           "period": "依地区与账号显示",
           "summary": "使用下方的 Pro 功能。可选方案与价格请在应用内查看。",
@@ -189,30 +196,31 @@
           "link": "/zh/download",
           "highlight": true
         }
-      ],
-      "earlyAccessDeadline": "Early Access 截止：北京时间 2026 年 11 月 30 日 23:59:59"
+      ]
     }
   },
   "ja": {
     "features": {
       "freeTitle": "無料の基本機能",
-      "freeDescription": "ファイル編集、SSH 接続、検索付きのターミナルを同時に最大 2 つ利用、基本的な LSP 補完・診断・ナビゲーション、自分のモデルサービスでの独立した AI チャット、Git のステージング、ステージ解除、コミット、差分と履歴の閲覧は無料です。基本 LSP には設定済みの言語サーバーが必要です。対応する Android 端末では基本的なローカル Linux 環境も無料です。 無料プランでは内蔵 Agent のタスクを 1 日 3 回、リモートファイルの内容検索を 1 日 10 回利用できます。UTC 0 時にリセットされます。 単独のタスクは無料です。依存タスクを含むワークフローの実行には Pro が必要です。",
+      "freeDescription": "ローカルまたは SSH のワークスペースでファイルを編集し、検索付きのアクティブなターミナルを最大 2 つ使えます。フェッチ、プッシュ、プル、ブランチの作成・切り替えを含む基本的な Git、GitHub のクローン、リモートの内容検索、基本的な LSP とデバッグ、SSH での単一ファイル転送と単一フォルダのダウンロード、個別タスクが Free に含まれます。AI チャットと日次枠内の内蔵 Agent タスクには、ご自身のモデル提供元を使います。 対応する Android 端末ではローカル Linux も利用できます。 内蔵 Agent の日次枠は UTC 00:00 にリセットされます。LSP には設定済みの言語サーバーが必要です。AI チャットと内蔵 Agent はご自身のモデル提供元を使います。残り回数はアプリで確認できます。",
       "presentation": {
         "limits": [
           "同時ターミナル",
-          "内蔵 Agent タスク／日",
-          "リモート内容検索／日"
+          "内蔵 Agent タスク／日"
         ],
         "items": [
           "ファイル編集と SSH ワークスペース",
           "ターミナル内検索",
-          "Git のステージ・コミット・履歴",
-          "基本 LSP と独立した AI チャット",
-          "基本の Android Local Linux",
+          "Git のステージング、コミット、履歴、プッシュ、プル",
+          "基本の LSP、デバッグ、AI チャット",
+          "GitHub リポジトリのクローン",
+          "SSH での単一ファイル転送と単一フォルダのダウンロード",
+          "リモートプロジェクトの内容検索",
+          "対応 Android 端末のローカル Linux",
           "個別タスクの実行"
         ],
         "terms": "無料プランの利用条件",
-        "finePrint": "日次枠は UTC 00:00 にリセットされます。LSP には設定済みサーバーが必要です。AI チャットでは自分のモデルサービスを使用します。Local Linux は対応 Android 端末のみ利用できます。依存関係付きタスクには Pro が必要です。",
+        "finePrint": "内蔵 Agent の日次枠は UTC 00:00 にリセットされます。LSP には設定済みの言語サーバーが必要です。AI チャットと内蔵 Agent はご自身のモデル提供元を使います。残り回数はアプリで確認できます。",
         "benefits": "Pro の機能を見る",
         "trialTerms": "体験の対象と条件"
       },
@@ -221,39 +229,42 @@
         {
           "id": "host",
           "name": "NimoteHost セッション",
-          "description": "認証済み SSH 経由で NimoteHost を使い、永続ターミナル、タスク、対応する AI セッションを実行できます。",
-          "note": "NimoteHost は現在、ローカルネットワーク（LAN）内の接続のみ対応しています。"
+          "description": "Nimote Connect に含まれる NimoteHost サービスを使い、SSH 経由でターミナル、タスク、対応する Agent セッションを管理できます。PC とサービスを稼働させておけば、再接続して作業を続けられます。"
         },
         {
           "id": "agent",
           "name": "AI エージェント",
-          "description": "内蔵 Agent のタスクを回数制限なく実行し、外部 ACP Agent に接続できます。モデル提供元の料金と制限が適用されます。"
+          "description": "ご自身のモデル提供元を使い、アプリの日次制限なしで内蔵 Agent のタスクを実行できます。外部 ACP Agent も接続できます。モデル提供元の上限と料金は適用されます。 自分のモデル提供元で出力を分析し、承認済みのコマンドを現在のターミナルで実行できます。"
         },
         {
           "id": "git",
           "name": "Git と GitHub",
-          "description": "プッシュ、プル、ブランチとスタッシュの管理、Git AI を利用できます。 GitHub リポジトリのクローン、Issue と Pull Request の作成・編集、レビューとワークフロー実行の管理ができます。リポジトリの権限が適用されます。"
+          "description": "ブランチの名前変更・削除、スタッシュの管理、手動マージやリベース、変更の一括破棄、Git AI を利用できます。 GitHub の Issue と Pull Request を作成・編集し、レビューやワークフロー実行を管理できます。リポジトリの権限が適用されます。"
         },
         {
           "id": "environment",
           "name": "ターミナルと開発環境",
-          "description": "複数のターミナルセッションでタスクを並行実行。 永続セッションでリモート端末のタスクを実行し続け、あとから再接続できます。 SSH ホストで Docker、Compose、Dev Containers を管理。 Android のローカル Linux で開発ツールと共有フォルダーを管理できます。",
-          "note": "永続 SSH ターミナルには tmux を導入した対応ホストが必要です。"
+          "description": "3 つ以上のアクティブなターミナルセッションを利用できます。 リモートホスト上の tmux で SSH ターミナルセッションを維持し、再接続後に再開できます。 SSH ホストで Docker、Compose、Dev Containers を管理。"
         },
         {
           "id": "language",
           "name": "コードアクションとデバッグ",
-          "description": "言語サーバーによるコード修正・リファクタリング、言語サーバーのインストール支援、デバッグセッションを利用できます。機能は言語サーバーとデバッガーの設定によって異なります。"
+          "description": "リファクタリングやサーバーコマンドなどの高度な言語サーバー操作と、デバッグ時の式の評価やウォッチを利用できます。"
         },
         {
-          "id": "search-sync",
-          "name": "プロジェクト検索と同期",
-          "description": "リモートファイルの内容を回数制限なく検索し、SSH 同期とキャッシュを管理できます。"
+          "id": "tasks",
+          "name": "タスク",
+          "description": "タスク間に依存関係があるワークフローを実行できます。"
+        },
+        {
+          "id": "sync",
+          "name": "同期 / キャッシュ",
+          "description": "SSH プロジェクトの同期とリモートキャッシュを管理します。"
         },
         {
           "id": "remote-files",
           "name": "リモートファイル管理",
-          "description": "SSH 経由でファイルの一括アップロード・ダウンロード、フォルダー全体の転送、複数のリモート項目のコピー・移動を行えます。単一ファイルの転送と基本操作は無料です。"
+          "description": "SSH でファイルを一括転送し、フォルダをアップロードし、複数の項目をコピー・移動できます。単一ファイルの転送と単一フォルダのダウンロードは無料です。"
         }
       ]
     },
@@ -278,7 +289,6 @@
         },
         {
           "name": "Pro",
-          "badge": "Early Access",
           "price": "ストアで価格を確認",
           "period": "地域・アカウントによって異なります",
           "summary": "以下の Pro 機能を利用できます。プランと価格はアプリで確認してください。",
@@ -286,30 +296,31 @@
           "link": "/ja/download",
           "highlight": true
         }
-      ],
-      "earlyAccessDeadline": "Early Access 終了：2026年11月30日 23:59:59 北京時間（UTC+8）"
+      ]
     }
   },
   "ko": {
     "features": {
       "freeTitle": "무료 기본 기능",
-      "freeDescription": "파일 편집, SSH 연결, 검색을 지원하는 터미널 최대 2개 동시 사용, 기본 LSP 자동 완성·진단·탐색, 자체 모델 서비스를 이용한 독립 AI 채팅, Git 스테이징·스테이징 취소·커밋 및 변경 사항과 기록 조회는 무료입니다. 기본 LSP에는 설정된 언어 서버가 필요합니다. 지원되는 Android 기기에서는 기본 로컬 Linux 환경도 무료입니다. 무료 플랜은 하루에 내장 Agent 작업 3회와 원격 파일 내용 검색 10회를 제공합니다. UTC 00:00에 초기화됩니다. 개별 작업은 무료입니다. 작업 간 의존성이 있는 워크플로 실행에는 Pro가 필요합니다.",
+      "freeDescription": "로컬 또는 SSH 워크스페이스에서 파일을 편집하고 검색 가능한 활성 터미널을 최대 2개 사용할 수 있습니다. 가져오기, 푸시, 풀, 브랜치 생성과 전환을 포함한 기본 Git, GitHub 복제, 원격 내용 검색, 기본 LSP와 디버깅, SSH 단일 파일 전송 및 단일 폴더 다운로드, 개별 작업을 무료로 이용할 수 있습니다. AI 채팅과 일일 한도 내의 내장 Agent 작업에는 본인의 모델 제공업체를 사용합니다. 지원되는 Android 기기에서는 로컬 Linux도 이용할 수 있습니다. 내장 Agent의 일일 한도는 UTC 00:00에 초기화됩니다. LSP에는 설정된 언어 서버가 필요합니다. AI 채팅과 내장 Agent는 본인의 모델 제공업체를 사용합니다. 남은 횟수는 앱에서 확인할 수 있습니다.",
       "presentation": {
         "limits": [
           "동시 터미널",
-          "내장 Agent 작업 / 일",
-          "원격 내용 검색 / 일"
+          "내장 Agent 작업 / 일"
         ],
         "items": [
           "파일 편집과 SSH 작업 공간",
           "터미널 내부 검색",
-          "Git 스테이징·커밋·기록",
-          "기본 LSP와 독립형 AI 채팅",
-          "기본 Android Local Linux",
+          "Git 스테이징, 커밋, 기록, 푸시와 풀",
+          "기본 LSP, 디버깅, AI 채팅",
+          "GitHub 저장소 복제",
+          "SSH 단일 파일 전송과 단일 폴더 다운로드",
+          "원격 프로젝트 내용 검색",
+          "지원되는 Android 기기의 로컬 Linux",
           "개별 작업 실행"
         ],
         "terms": "무료 플랜 이용 조건",
-        "finePrint": "일일 한도는 UTC 00:00에 초기화됩니다. LSP는 설정된 서버가 필요합니다. AI 채팅은 사용자 모델 서비스를 사용합니다. Local Linux는 지원되는 Android에서 이용할 수 있습니다. 종속성이 있는 작업에는 Pro가 필요합니다.",
+        "finePrint": "내장 Agent의 일일 한도는 UTC 00:00에 초기화됩니다. LSP에는 설정된 언어 서버가 필요합니다. AI 채팅과 내장 Agent는 본인의 모델 제공업체를 사용합니다. 남은 횟수는 앱에서 확인할 수 있습니다.",
         "benefits": "Pro 기능 보기",
         "trialTerms": "체험 자격 및 조건"
       },
@@ -318,39 +329,42 @@
         {
           "id": "host",
           "name": "NimoteHost 세션",
-          "description": "인증된 SSH로 NimoteHost를 사용해 영구 터미널, 작업, 호환되는 AI 세션을 실행합니다.",
-          "note": "NimoteHost는 현재 로컬 네트워크(LAN) 연결만 지원합니다."
+          "description": "Nimote Connect에 포함된 NimoteHost 서비스로 SSH를 통해 터미널, 작업과 호환 Agent 세션을 관리하세요. 컴퓨터와 서비스를 계속 실행하면 다시 연결해 작업을 이어갈 수 있습니다."
         },
         {
           "id": "agent",
           "name": "AI 에이전트",
-          "description": "내장 Agent 작업을 횟수 제한 없이 실행하고 외부 ACP Agent를 연결하세요. 모델 공급자의 요금 및 한도는 적용됩니다."
+          "description": "본인의 모델 제공업체를 사용해 앱의 일일 한도 없이 내장 Agent 작업을 실행하거나 외부 ACP Agent를 연결할 수 있습니다. 모델 제공업체의 한도와 요금은 적용됩니다. 자신의 모델 제공업체로 출력을 분석하고 승인한 명령을 현재 터미널에서 실행합니다."
         },
         {
           "id": "git",
           "name": "Git 및 GitHub",
-          "description": "푸시, 풀, 브랜치 및 스태시 관리와 Git AI를 이용할 수 있습니다. GitHub 저장소를 복제하고, Issue와 Pull Request를 생성 및 편집하며, 리뷰와 워크플로 실행을 관리합니다. 저장소 권한이 적용됩니다."
+          "description": "브랜치 이름 변경과 삭제, 스태시 관리, 수동 병합이나 리베이스, 변경 사항 일괄 취소, Git AI를 이용합니다. GitHub Issue와 Pull Request를 생성 및 편집하고 리뷰와 워크플로 실행을 관리합니다. 저장소 권한이 적용됩니다."
         },
         {
           "id": "environment",
           "name": "터미널 및 개발 환경",
-          "description": "여러 터미널 세션에서 작업을 병렬 실행합니다. 원격 터미널 작업을 영구 세션에서 계속 실행하고 나중에 다시 연결할 수 있습니다. SSH 호스트에서 Docker, Compose 및 Dev Containers를 관리합니다. Android 로컬 Linux에서 개발 도구와 공유 폴더를 관리합니다.",
-          "note": "영구 SSH 터미널에는 tmux가 설치된 호환 호스트가 필요합니다."
+          "description": "활성 터미널 세션을 3개 이상 사용할 수 있습니다. 원격 호스트의 tmux로 SSH 터미널 세션을 유지하고 다시 연결한 뒤 이어서 사용합니다. SSH 호스트에서 Docker, Compose 및 Dev Containers를 관리합니다."
         },
         {
           "id": "language",
           "name": "코드 작업 및 디버깅",
-          "description": "언어 서버의 코드 수정·리팩터링, 언어 서버 설치 지원 및 디버깅 세션을 이용하세요. 기능은 언어 서버와 디버거 설정에 따라 다릅니다."
+          "description": "리팩터링, 서버 명령과 같은 고급 언어 서버 작업을 사용하고 디버그 중 표현식을 평가하고 감시합니다."
         },
         {
-          "id": "search-sync",
-          "name": "프로젝트 검색 및 동기화",
-          "description": "원격 파일 내용을 횟수 제한 없이 검색하고 SSH 동기화 및 캐시를 관리하세요."
+          "id": "tasks",
+          "name": "작업",
+          "description": "작업 간 종속성이 있는 워크플로를 실행합니다."
+        },
+        {
+          "id": "sync",
+          "name": "동기화 / 캐시",
+          "description": "SSH 프로젝트 동기화 및 원격 캐시를 관리합니다."
         },
         {
           "id": "remote-files",
           "name": "원격 파일 관리",
-          "description": "SSH로 파일을 일괄 업로드·다운로드하고 폴더 전체를 전송하며 여러 원격 항목을 복사하거나 이동하세요. 단일 파일 전송과 기본 파일 작업은 무료입니다."
+          "description": "SSH에서 일괄 업로드 및 다운로드, 폴더 업로드, 여러 항목의 복사 및 이동을 지원합니다. 단일 파일 전송과 폴더 하나의 다운로드는 무료입니다."
         }
       ]
     },
@@ -375,7 +389,6 @@
         },
         {
           "name": "Pro",
-          "badge": "Early Access",
           "price": "스토어 가격 확인",
           "period": "지역과 계정에 따라 다름",
           "summary": "아래 Pro 기능을 이용할 수 있습니다. 플랜과 가격은 앱에서 확인하세요.",
@@ -383,30 +396,31 @@
           "link": "/ko/download",
           "highlight": true
         }
-      ],
-      "earlyAccessDeadline": "Early Access 종료: 2026년 11월 30일 23:59:59 베이징 시간 (UTC+8)"
+      ]
     }
   },
   "es": {
     "features": {
       "freeTitle": "Funciones gratuitas",
-      "freeDescription": "Edita archivos, conecta espacios SSH, usa hasta dos terminales simultáneos con búsqueda, accede al autocompletado, diagnóstico y navegación LSP básicos, usa el chat de IA independiente con tu propio servicio y prepara o retira cambios, crea commits y consulta las diferencias y el historial de Git gratis. LSP básico requiere un servidor de lenguaje configurado. Linux local básico es gratuito en dispositivos Android compatibles. Free incluye 3 tareas del agente integrado y 10 búsquedas de contenido remoto al día. Se restablecen a las 00:00 UTC. Free permite ejecutar tareas individuales. Los flujos con dependencias entre tareas requieren Pro.",
+      "freeDescription": "Edita archivos en espacios locales o SSH y usa hasta dos terminales activos con búsqueda. Free incluye Git básico, incluidas las operaciones fetch, push y pull y la creación y el cambio de ramas, clonación de GitHub, búsqueda de contenido remoto, LSP y depuración básicos, transferencias de un solo archivo y descargas de una sola carpeta por SSH, y tareas individuales. Usa tu propio proveedor de modelos para chatear con IA y ejecutar tareas del agente integrado hasta el límite diario. Los dispositivos Android compatibles también incluyen Linux local. El cupo del Agent integrado se reinicia a las 00:00 UTC. LSP requiere un servidor de lenguaje configurado. El chat de IA y las tareas del Agent integrado usan tu proveedor de modelos. Consulta el cupo restante en la app.",
       "presentation": {
         "limits": [
           "Terminales simultáneos",
-          "Tareas de Agent integrado / día",
-          "Búsquedas remotas de contenido / día"
+          "Tareas de Agent integrado / día"
         ],
         "items": [
           "Edición de archivos y espacios SSH",
           "Búsqueda en el terminal",
-          "Git: preparar cambios, commits e historial",
-          "LSP básico y chat de IA independiente",
-          "Local Linux básico en Android",
+          "Preparación, commits, historial, push y pull de Git",
+          "LSP básico, depuración y chat con IA",
+          "Clonación de repositorios de GitHub",
+          "Transferencia de archivos individuales y descarga de una carpeta por SSH",
+          "Búsqueda de contenido en proyectos remotos",
+          "Linux local en Android compatible",
           "Ejecución de tareas individuales"
         ],
         "terms": "Condiciones del plan gratuito",
-        "finePrint": "Los cupos se reinician a las 00:00 UTC. LSP requiere un servidor configurado. El chat de IA usa tu proveedor. Local Linux requiere un dispositivo Android compatible. Las dependencias entre tareas requieren Pro.",
+        "finePrint": "El cupo del Agent integrado se reinicia a las 00:00 UTC. LSP requiere un servidor de lenguaje configurado. El chat de IA y las tareas del Agent integrado usan tu proveedor de modelos. Consulta el cupo restante en la app.",
         "benefits": "Ver las funciones Pro",
         "trialTerms": "Requisitos y condiciones de la prueba"
       },
@@ -415,39 +429,42 @@
         {
           "id": "host",
           "name": "Sesiones de NimoteHost",
-          "description": "Ejecuta terminales, tareas y sesiones de IA remotas que pueden continuar tras desconectarte. El modo Host requiere una conexión SSH y el servicio nimotehost instalado y en ejecución en el equipo remoto.",
-          "note": "Por ahora, NimoteHost solo admite conexiones en la red local (LAN)."
+          "description": "Usa el servicio NimoteHost incluido con Nimote Connect para ejecutar terminales, tareas y sesiones de Agent compatibles por SSH. Mantén el equipo y el servicio en ejecución para reconectar y continuar."
         },
         {
           "id": "agent",
           "name": "Agente de IA",
-          "description": "Ejecuta tareas ilimitadas del agente integrado y conecta agentes ACP externos. Se aplican las tarifas y los límites de tu proveedor de modelos."
+          "description": "Usa tu propio proveedor de modelos para ejecutar tareas del agente integrado sin el límite diario de la aplicación, o conecta agentes ACP externos. Se aplican las tarifas y los límites del proveedor. Analiza la salida con tu propio proveedor de modelos y ejecuta los comandos aprobados en el terminal actual."
         },
         {
           "id": "git",
           "name": "Git y GitHub",
-          "description": "Haz push y pull, gestiona ramas y stashes y usa Git AI. Clona repositorios de GitHub, crea y edita issues y pull requests, y gestiona revisiones y ejecuciones de flujos de trabajo. Se aplican los permisos del repositorio."
+          "description": "Cambia el nombre de ramas o bórralas, gestiona stashes, haz merge o rebase manual, descarta cambios en lote y usa Git AI. Crea y edita issues y pull requests de GitHub y gestiona revisiones y ejecuciones de flujos de trabajo. Se aplican los permisos del repositorio."
         },
         {
           "id": "environment",
           "name": "Terminales y entornos de desarrollo",
-          "description": "Ejecuta tareas en varias sesiones de terminal. Mantén las tareas del terminal remoto en sesiones persistentes y vuelve a conectarte a ellas más tarde. Gestiona Docker, Compose y Dev Containers en hosts SSH. Gestiona herramientas de desarrollo y carpetas compartidas en Linux local para Android.",
-          "note": "Los terminales SSH persistentes requieren tmux en un equipo compatible."
+          "description": "Usa más de dos sesiones de terminal activas. Mantén activas las sesiones SSH con tmux en el equipo remoto y retómalas al volver a conectarte. Gestiona Docker, Compose y Dev Containers en hosts SSH."
         },
         {
           "id": "language",
           "name": "Acciones de código y depuración",
-          "description": "Aplica correcciones y refactorizaciones del servidor de lenguaje, usa la instalación guiada de servidores de lenguaje y ejecuta sesiones de depuración. Las funciones dependen de la configuración del servidor y del depurador."
+          "description": "Usa acciones avanzadas del servidor de lenguaje, como refactorizaciones y comandos, y evalúa y observa expresiones en el depurador."
         },
         {
-          "id": "search-sync",
-          "name": "Búsqueda y sincronización",
-          "description": "Busca contenido remoto sin límite diario y gestiona la sincronización SSH y la caché."
+          "id": "tasks",
+          "name": "Tareas",
+          "description": "Ejecuta flujos de trabajo con dependencias entre tareas."
+        },
+        {
+          "id": "sync",
+          "name": "Sincronización / Caché",
+          "description": "Gestiona la sincronización de proyectos por SSH y las cachés remotas."
         },
         {
           "id": "remote-files",
           "name": "Gestión de archivos remotos",
-          "description": "Sube y descarga archivos por lotes, transfiere carpetas completas y copia o mueve varios elementos remotos mediante SSH. Las transferencias de un archivo y las operaciones básicas siguen siendo gratuitas."
+          "description": "Sube y descarga en lote, sube carpetas y copia o mueve varios elementos por SSH. Las transferencias de archivos individuales y la descarga de una carpeta son gratuitas."
         }
       ]
     },
@@ -472,7 +489,6 @@
         },
         {
           "name": "Pro",
-          "badge": "Early Access",
           "price": "Consultar precio",
           "period": "Según la región",
           "summary": "Utiliza las funciones Pro de abajo. Consulta los planes y precios en la app.",
@@ -480,8 +496,7 @@
           "link": "/es/download",
           "highlight": true
         }
-      ],
-      "earlyAccessDeadline": "Early Access termina el 30 de noviembre de 2026 a las 23:59:59, hora de Pekín (UTC+8)"
+      ]
     }
   }
 }

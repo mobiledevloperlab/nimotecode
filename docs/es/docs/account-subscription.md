@@ -19,11 +19,11 @@ Si no se reconoce una compra anterior, compruebe la cuenta de la tienda de la pl
 
 Los límites indicados corresponden a la próxima versión 2.5.0. Consulta tu versión instalada y [Gratis y Pro](/es/pro) para conocer el acceso de tu cuenta.
 
-Free permite ver el estado y las diferencias de Git, preparar y retirar cambios y crear commits. Las operaciones gráficas de push, pull, ramas y stash, Git AI y la integración avanzada de GitHub requieren Pro. Docker y los Dev Containers requieren Pro y un host compatible. La depuración requiere Pro y un adaptador configurado.
+Free incluye Git básico con fetch, push, pull, creación y cambio de ramas, además de clonación de GitHub y depuración básica. Renombrar o borrar ramas, gestionar stashes, hacer merge o rebase manual, usar Git AI, la colaboración avanzada en GitHub, Docker y Dev Containers, y evaluar o vigilar expresiones requieren Pro. Se aplican los permisos y los requisitos de compatibilidad.
 
 NimoteHost, los terminales remotos persistentes y la continuación de sesiones de IA desde otro dispositivo requieren Pro, incluido un acceso de prueba o Early Access válido.
 
-El acceso público a Internet de Nimote Connect está previsto. Las cuotas Free y Pro aún no se han definido. SSH estándar y Tailscale personal están disponibles.
+En Android e iOS, el acceso gestionado de Nimote Connect por internet requiere Pro y un equipo vinculado con acceso remoto activado. El SSH directo y Tailscale personal están disponibles por separado.
 
 Consulta [Gratis y Pro](/es/pro).
 

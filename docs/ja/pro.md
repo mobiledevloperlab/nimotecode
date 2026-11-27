@@ -1,12 +1,12 @@
 ---
 title: NimoteCode Pro | 高度なモバイル開発
-description: "公開予定の NimoteCode 2.5.0 の無料機能と Pro の利用範囲を比較できます。最新のプランと価格はアプリでご確認ください。"
+description: "NimoteCode の Free と Pro の機能を比較できます。利用可能なプラン、無料体験の対象条件、地域別の料金はアプリで確認してください。"
 pageClass: pricing-page
 ---
 
 # NimoteCode Pro
 
-公開予定の NimoteCode 2.5.0 の無料機能と Pro の利用範囲を比較できます。最新のプランと価格はアプリでご確認ください。
+NimoteCode の Free と Pro の機能を比較できます。利用可能なプラン、無料体験の対象条件、地域別の料金はアプリで確認してください。
 
 <PricingFeatureSystem lang="ja" mode="full" />
 

@@ -12,7 +12,7 @@ const props = defineProps<{
 const copy = computed(() => translations[props.lang || 'en'] || translations.en)
 const showFeatures = computed(() => props.mode !== 'preview')
 const trialCopy = computed(() => copy.value.pricing.trial)
-const freeLimits = [2, 3, 10]
+const freeLimits = [2, 10]
 const presentation = computed(() => copy.value.features.presentation)
 </script>
 
@@ -28,7 +28,6 @@ const presentation = computed(() => copy.value.features.presentation)
         >
           <div class="pf-plan-topline">
             <h2>{{ plan.highlight ? plan.name : copy.features.freeTitle }}</h2>
-            <span v-if="plan.badge">{{ plan.badge }}</span>
           </div>
           <div class="pf-price-row">
             <strong>{{ plan.price }}</strong>
@@ -38,7 +37,6 @@ const presentation = computed(() => copy.value.features.presentation)
             <ul class="pf-highlights">
               <li v-for="group in copy.features.groups.slice(0, 3)" :key="group.id">{{ group.name }}</li>
             </ul>
-            <p class="pf-campaign-notice">{{ copy.pricing.earlyAccessDeadline }}</p>
           </template>
           <template v-else>
             <ul class="pf-free-limits">

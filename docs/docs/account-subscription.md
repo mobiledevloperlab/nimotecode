@@ -19,11 +19,11 @@ If a previous purchase is not recognized, confirm the platform-store account and
 
 The limits below follow the upcoming 2.5.0 comparison. Check your installed version and [Free and Pro](/pro) for account-specific access.
 
-Free includes Git status, diffs, staging, unstaging and commits. Graphical push, pull, branch and stash operations, Git AI and advanced GitHub integration require Pro. Docker and Dev Containers require Pro and a compatible host. Debug sessions require Pro and a configured debug adapter.
+Free includes basic Git, including fetch, push, pull, and creating or switching branches, as well as GitHub cloning and basic debugging. Pro includes branch rename and deletion, stashes, manual merge and rebase, Git AI, advanced GitHub collaboration, Docker and Dev Containers, and debugger expressions and watches. Compatible tools and permissions apply.
 
 NimoteHost, persistent remote terminals and cross-device AI session takeover require an active Pro entitlement, including a valid trial or Early Access grant.
 
-Nimote Connect public internet access is planned. Free and Pro allowances have yet to be defined. Standard SSH and personal Tailscale are available.
+On Android and iOS, managed Nimote Connect internet routing requires Pro and a paired computer with remote access enabled. Direct SSH and personal Tailscale remain available separately.
 
 See [Free and Pro](/pro).
 

@@ -103,6 +103,13 @@ for (const path of ['docs/account-subscription.html', 'pro.html', 'download.html
 }
 assert.match(references[1], /public internet access is planned/i)
 for (const locale of ['', 'zh/', 'ja/', 'ko/', 'es/']) {
+  const proPage = read(`${locale}pro.html`)
+  const limits = proPage.match(/class="pf-free-limits">([\s\S]*?)<\/ul>/)?.[1] ?? ''
+  assert.deepEqual([...limits.matchAll(/<strong>(\d+)<\/strong>/g)].map((match) => Number(match[1])), [2, 10],
+    `${locale}pro: expected the free terminal limit and the built-in Agent daily allowance`)
+  assert.deepEqual([...proPage.matchAll(/data-benefit="([^"]+)"/g)].map((match) => match[1]),
+    ['host', 'agent', 'git', 'environment', 'language', 'tasks', 'sync', 'remote-files'],
+    `${locale}pro: benefit groups must match the app subscription page`)
   const connectGuide = read(`${locale}docs/connect.html`)
   assert.match(connectGuide, /github\.com\/mobiledevloperlab\/nimote-connect\/releases/)
   assert.match(connectGuide, /nimotecode\.com.*GitHub/)
