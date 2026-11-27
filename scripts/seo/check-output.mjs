@@ -2,6 +2,7 @@ import assert from 'node:assert/strict'
 import { gzipSync } from 'node:zlib'
 import { readFileSync } from 'node:fs'
 import productLinks from '../../docs/.vitepress/theme/data/product-links.json' with { type: 'json' }
+import pricingCopy from '../../docs/.vitepress/theme/i18n/pricing-features.json' with { type: 'json' }
 
 const dist = 'docs/.vitepress/dist'
 const site = 'https://nimotecode.com'
@@ -104,6 +105,16 @@ for (const path of ['docs/account-subscription.html', 'pro.html', 'download.html
 assert.match(references[1], /public internet access is planned/i)
 for (const locale of ['', 'zh/', 'ja/', 'ko/', 'es/']) {
   const proPage = read(`${locale}pro.html`)
+  const copy = pricingCopy[locale.slice(0, -1) || 'en']
+  const proPlan = copy.pricing.plans.find(plan => plan.highlight)
+  const proCard = proPage.match(/<article class="(?=[^"]*\bpf-plan-card\b)(?=[^"]*\bis-featured\b)[^"]+">([\s\S]*?)<\/article>/)?.[1] ?? ''
+  assert.ok(proCard, `${locale}pro: missing Pro plan card`)
+  const highlights = proCard.match(/class="pf-highlights">([\s\S]*?)<\/ul>/)?.[1] ?? ''
+  assert.deepEqual([...highlights.matchAll(/<li>(.*?)<\/li>/g)].map(match => visibleText(match[1])),
+    copy.features.presentation.proHighlights, `${locale}pro: missing the plan's benefit descriptions`)
+  assert.ok(visibleText(proCard).includes(proPlan.summary), `${locale}pro: missing trial eligibility on the plan card`)
+  const action = proCard.match(/<a href="([^"]+)" class="(?=[^"]*\bhome-page-btn\b)(?=[^"]*\bprimary\b)[^"]+">([^<]+)<\/a>/)
+  assert.deepEqual(action?.slice(1), [proPlan.link, proPlan.cta], `${locale}pro: wrong download action`)
   const limits = proPage.match(/class="pf-free-limits">([\s\S]*?)<\/ul>/)?.[1] ?? ''
   assert.deepEqual([...limits.matchAll(/<strong>(\d+)<\/strong>/g)].map((match) => Number(match[1])), [2, 10],
     `${locale}pro: expected the free terminal limit and the built-in Agent daily allowance`)

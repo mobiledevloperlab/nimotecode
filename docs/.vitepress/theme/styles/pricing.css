@@ -51,15 +51,6 @@
   line-height: 1.4;
 }
 
-.pf-plan-topline > span {
-  padding: 3px 10px;
-  border: 1px solid var(--nimote-border-accent);
-  border-radius: var(--nimote-radius-pill);
-  color: var(--nimote-link);
-  font-size: .75rem;
-  line-height: 1.5;
-}
-
 .pf-price-row {
   display: flex;
   flex-wrap: wrap;
@@ -90,7 +81,7 @@
 
 .pf-free-limits {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 6px;
 }
 
@@ -146,7 +137,7 @@
 
 .pf-highlights { display: grid; gap: 9px; }
 
-.vp-doc .pf-campaign-notice {
+.vp-doc .pf-plan-summary {
   margin: 16px 0 0;
   color: var(--nimote-text-secondary);
   font-size: .78rem;

@@ -35,8 +35,9 @@ const presentation = computed(() => copy.value.features.presentation)
           </div>
           <template v-if="plan.highlight">
             <ul class="pf-highlights">
-              <li v-for="group in copy.features.groups.slice(0, 3)" :key="group.id">{{ group.name }}</li>
+              <li v-for="highlight in presentation.proHighlights" :key="highlight">{{ highlight }}</li>
             </ul>
+            <p class="pf-plan-summary">{{ plan.summary }}</p>
           </template>
           <template v-else>
             <ul class="pf-free-limits">
