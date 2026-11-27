@@ -28,12 +28,8 @@ Host 컴퓨터에서 SSH에 사용하는 계정으로 명령을 실행하세요.
 | `nimotehost agents` | 실행 중인 Host가 검색한 에이전트 도구를 확인합니다. |
 | `nimotehost tools refresh` | 기존 세션을 재시작하지 않고 도구 검색을 갱신합니다. |
 
-## Community 업데이트 또는 제거
+## Nimote Connect 업데이트
 
-수동 업데이트는 실행 중인 작업을 마치고 새 패키지를 검증한 뒤 압축을 푼 폴더에서 `setup`을 실행합니다. Connect에 포함된 Host는 Connect에서 업데이트하세요.
+실행 중인 Host 작업을 마친 뒤 지원되는 macOS와 Linux에서 NimoteCode의 업데이트 안내를 사용하세요. 수동 업데이트나 제거는 배포 저장소의 안내에 따라 기존 설치 계정으로 진행합니다.
 
-`deploy uninstall`은 유휴 서비스와 설치 패키지를 제거하며 자격 증명과 세션 기록은 보존합니다. 압축을 푼 Community 패키지나 설치 폴더 외부의 검증된 배포 실행 파일을 사용하세요. 에디션 변경은 [Community 가이드](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)를 참고하세요.
-
-[고급 배포 및 복구](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/deployment.md)
-
-[개요](/ko/docs/host) · [문제 해결](/ko/docs/host/troubleshooting)
+[Nimote Connect Releases](https://github.com/mobiledevloperlab/nimote-connect/releases) · [개요](/ko/docs/host)

@@ -28,12 +28,8 @@ description: "NimoteHost 服务管理与升级说明与操作步骤。"
 | `nimotehost agents` | 检查运行中的 Host 能找到哪些 Agent 工具。 |
 | `nimotehost tools refresh` | 安装或调整工具后刷新发现结果，无需重启现有会话。 |
 
-## 更新或卸载社区版
+## 更新 Nimote Connect
 
-手动更新时，先结束正在执行的任务，下载并校验适合电脑的新包，再从新解压的目录运行 `setup`。通过 Nimote Connect 安装的 Host 请在 Connect 中更新。
+先结束正在运行的 Host 任务，再在受支持的 macOS 或 Linux 上使用 NimoteCode 的 Nimote Connect 更新入口。手动升级或卸载请按 [Nimote Connect 指南](/zh/docs/connect)操作，并使用原安装账号。
 
-`deploy uninstall` 会移除空闲的后台服务和已安装的程序包，同时保留凭据与会话记录。请从解压后的社区版包运行，或使用安装目录之外已验证的部署程序。需要切换版本时，请先阅读[社区版指南](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)。
-
-[高级部署与恢复](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/deployment.md)
-
-[概览](/zh/docs/host) · [故障排查](/zh/docs/host/troubleshooting)
+[Nimote Connect Releases](https://github.com/mobiledevloperlab/nimote-connect/releases) · [概览](/zh/docs/host)

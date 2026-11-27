@@ -160,7 +160,7 @@ Local Linux は iPhone・iPad では利用できません。開発コマンド�
 ## NimoteCode 2.5.0 · 公開予定
 
 - 個人用 Tailscale を使ってペアリング済みの PC に SSH 接続できます。
-- Pro で永続 tmux セッションを再開できます。SSH 経由で NimoteHost をインストール・更新できます。
+- Pro で永続 tmux セッションを再開できます。SSH 経由で Nimote Connect をインストール・更新できます。
 - SSH の再接続、ターミナルの入力、スクロール、コピーを改善しました。
 - スマートフォンのナビゲーションを刷新し、ワークスペース検索の一致箇所を強調表示します。
 - 内蔵 Codex の高速化と、Android のローカル Linux 開発ツールキットに対応しました。
@@ -178,7 +178,7 @@ Host の機能に応じて、ツール出力、承認、タスク、検証結果
 
 パソコンの OS と CPU に合う対応パッケージを起動し、NimoteCode 2.4.1 以降の **Host → SSH connections** から接続します。Host や OS の再起動はプロセスを中断します。Agent の導入と認証は別途必要です。通常の SSH ワークスペースは Host なしで利用できます。
 
-[導入ガイド](https://nimotecode.com/ja/docs/host/getting-started) · [ソース](https://github.com/mobiledevloperlab/nimotehost) · [Host ダウンロード](https://github.com/mobiledevloperlab/nimotehost/releases)
+[導入ガイド](https://nimotecode.com/ja/docs/host/getting-started) · [ソース](https://github.com/mobiledevloperlab/nimotehost) · [Nimote Connect Releases](https://github.com/mobiledevloperlab/nimote-connect/releases)
 
 ## 自分のツールとプロバイダーで AI を使う
 

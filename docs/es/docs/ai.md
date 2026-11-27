@@ -95,4 +95,4 @@ Los Agents ACP compatibles aceptan instrucciones durante una tarea. La disponibi
 
 [2.4.0 →](/es/releases/2.4.0)
 
-[Máquinas →](/es/docs/host) — Instalar NimoteHost, conectar por SSH y retomar terminales y tareas Agent.
+[Máquinas →](/es/docs/host) — Instalar Nimote Connect, conectar por SSH y retomar terminales y tareas Agent.

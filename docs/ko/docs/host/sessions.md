@@ -5,15 +5,11 @@ description: "NimoteHost 연결, 터미널 및 작업 안내 및 절차."
 
 # 연결, 터미널 및 작업
 
-컴퓨터에 [NimoteHost를 설치하고 시작](/ko/docs/host/getting-started)한 뒤, 같은 컴퓨터와 SSH 계정으로 세션을 여세요.
-
-**NimoteHost는 현재 로컬 네트워크(LAN) 연결만 지원합니다.** 휴대폰과 Host 컴퓨터를 같은 LAN에 연결하고 컴퓨터의 로컬 주소로 SSH에 접속하세요.
+먼저 일반 SSH가 되는지 확인하세요. 접근 가능한 SSH 주소를 사용하거나 개발 머신 목록에서 연결 가능한 페어링 기기를 선택합니다. Nimote Connect 인터넷 연결에는 기기 연결과 원격 접근 활성화가 필요합니다.
 
 ## 휴대폰에서 연결 {#_3-휴대폰에서-연결}
 
-NimoteCode 2.5.0에서 **Host → 원격 연결**을 열고 상태를 확인하세요. 표시된 설치 또는 업데이트 작업을 이용하거나 Host 도움말에서 설치된 버전을 확인할 수 있습니다. 실행 중인 세션을 중지해야 하면 영향을 확인한 뒤 승인하세요.
-
-모드 선택에서 Host를 열고 SSH connections를 누릅니다. Host를 설치한 컴퓨터와 계정을 고르세요. 저장된 연결이 없다면 New Remote Connection으로 추가하고, 처음 연결할 때 SSH 호스트 키를 확인합니다.
+NimoteCode의 **개발 머신**에서 컴퓨터의 SSH 연결을 선택하고 **Host**를 여세요. Host가 없으면 **Nimote Connect 설치**를 선택합니다. 마법사에서 SSH 호스트를 선택하고, 맞는 패키지를 다운로드한 뒤 설치 결과를 확인합니다. 요청이 표시되면 기기를 승인하세요. 지원되는 64비트 macOS와 Linux에서는 앱에서 자동 설치와 업데이트를 할 수 있습니다.
 
 <div class="doc-screenshots">
   <DocScreenshot file="host-mode.png" caption="시작 화면에서 IDE, Terminal, AI와 함께 Host를 선택할 수 있습니다." />

@@ -178,7 +178,7 @@ Revisa herramientas, permisos, tareas y verificaciones según las capacidades de
 
 Instala un paquete compatible con el sistema y CPU del ordenador, mantenlo en ejecución y conecta mediante **Host → SSH connections** en NimoteCode 2.4.1 o posterior. Reiniciar Host o el sistema interrumpe procesos. Los Agents requieren instalación y autenticación propias; los espacios SSH normales funcionan sin Host.
 
-[Instalación](https://nimotecode.com/es/docs/host/getting-started) · [Código fuente](https://github.com/mobiledevloperlab/nimotehost) · [Paquetes Host](https://github.com/mobiledevloperlab/nimotehost/releases)
+[Instalación](https://nimotecode.com/es/docs/host/getting-started) · [Código fuente](https://github.com/mobiledevloperlab/nimotehost) · [Nimote Connect Releases](https://github.com/mobiledevloperlab/nimote-connect/releases)
 
 ## IA con tus herramientas y proveedores
 

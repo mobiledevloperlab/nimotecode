@@ -5,15 +5,11 @@ description: "NimoteHost: guía de conexiones, terminales y tareas."
 
 # Conexiones, terminales y tareas
 
-Primero [instala e inicia NimoteHost](/es/docs/host/getting-started) en el ordenador y abre sesiones usando ese equipo y la misma cuenta SSH.
-
-**Por ahora, NimoteHost solo admite conexiones en la red local (LAN).** Conecta el móvil y el equipo que ejecuta Host a la misma red local y usa la dirección local del equipo para conectarte por SSH.
+Comprueba primero el SSH normal. Usa una dirección SSH accesible o elige un dispositivo vinculado disponible en Máquinas. El acceso público de Nimote Connect requiere vincular el equipo y activar el acceso remoto.
 
 ## Conectar desde el móvil {#_3-conectar-desde-el-movil}
 
-En NimoteCode 2.5.0, abre **Host → Conexiones remotas** y comprueba el estado. Usa la acción de instalación o actualización disponible, o consulta la versión instalada en la ayuda de Host. Revisa la interrupción de sesiones antes de autorizarla.
-
-Elige Host en la pantalla de modos y toca SSH connections. Selecciona la cuenta y el ordenador donde instalaste Host; usa New Remote Connection si aún no existe. Verifica la clave SSH al conectar por primera vez.
+En NimoteCode, abre **Máquinas**, selecciona la conexión SSH del equipo y abre **Host**. Si falta Host, elige **Instalar Nimote Connect**. El asistente selecciona el equipo SSH, descarga el paquete correspondiente y verifica la instalación. Aprueba el dispositivo cuando se solicite. La instalación y la actualización automáticas están disponibles en macOS y Linux compatibles de 64 bits.
 
 <div class="doc-screenshots">
   <DocScreenshot file="host-mode.png" caption="En la bienvenida, Host aparece junto a IDE, Terminal e IA." />

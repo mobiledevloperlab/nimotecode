@@ -21,7 +21,7 @@ pageClass: trust-page compatibility-page
 | SSH 認証情報の保存先は？ | 接続メタデータは端末に保存。アプリ管理のパスワード、秘密鍵、パスフレーズには iOS Keychain または Android Keystore に基づく暗号化ストレージを使用します。保存済み SSH 設定の削除で対応する認証情報も削除されます。 | [認証情報](/ja/privacy#storage) |
 | コードがモデルに送られるのは？ | AI リクエストにはプロンプト、選択内容、関連ファイル、パス、ツール出力が含まれる場合があります。直接リクエストは選択したサービスへ送信。Agent はタスクに応じてファイルを読み取れます。外部 Agent と MCP の送信先・方針は別です。BYOK は保存ゼロを意味しません。 | [AI 接続](/ja/privacy#integrations) · [Agent](/ja/docs/ai) |
 | Sync / Cache の書き込み先は？ | **Sync：ローカル → リモート。Cache：リモート → ローカル。** プロジェクトと宛先を確認してください。現行ガイドには同名ファイルの上書き、削除の伝播、競合処理の規則が明記されていません。基準となるコピーを決めてバックアップを取りましょう。履歴はバックアップではありません。 | [同期とキャッシュ](/ja/docs/sync-cache) |
-| Host の要件は？ | Host 利用権限のある NimoteCode **2.4.1 以降**、Linux / macOS / Windows PC に別途導入した互換 NimoteHost、SSH 接続とプロジェクト権限。PC は起動・稼働を継続し、Agent は別途インストール・ログインが必要です。 | [Host 導入](/ja/docs/host/getting-started) · [Pro](/ja/pro) |
+| Host の要件は？ | Host 利用権限のある NimoteCode **2.4.1 以降**、Linux / macOS / Windows PC に Nimote Connect とともに導入した Host サービス、SSH 接続とプロジェクト権限。PC は起動・稼働を継続し、Agent は別途インストール・ログインが必要です。 | [Host 導入](/ja/docs/host/getting-started) · [Pro](/ja/pro) |
 | Host はどこで実行する？ | PC 上で Host の OS アカウント権限を使用します。認証付き API はループバックのみで待ち受け、SSH 経由で接続。Host 認証情報は PC に残ります。切断後も管理対象の処理は継続できますが、Host や OS の再起動で中断します。 | [Host](/ja/docs/host) · [セッションの制限](/ja/docs/host/sessions) |
 
 </div>

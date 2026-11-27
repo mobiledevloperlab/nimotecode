@@ -76,4 +76,4 @@ Android 클라이언트는 SSH 또는 Local Linux 대상에서 백그라운드 �
 
 [2.4.0 →](/ko/releases/2.4.0)
 
-[개발 머신 →](/ko/docs/host) — NimoteHost 설치, SSH 연결, 터미널 및 Agent 사용법.
+[개발 머신 →](/ko/docs/host) — Nimote Connect 설치, SSH 연결, 터미널 및 Agent 사용법.

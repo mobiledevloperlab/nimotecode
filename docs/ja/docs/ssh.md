@@ -93,7 +93,7 @@ Windows ホストでは PowerShell と SFTP を利用してリモートプロジ
 
 ## NimoteCode 2.4.0
 
-**Host ワークスペース。** リモートに対応する NimoteHost をインストールして起動し、SSH で接続すると、ターミナルや Agent セッションの検索、固定、再開ができます。Host は任意の機能です。
+**Host ワークスペース。** リモートに対応する Nimote Connect をインストールして起動し、SSH で接続すると、ターミナルや Agent セッションの検索、固定、再開ができます。Host は任意の機能です。
 
 SSH ホスト鍵の検証、Windows の known_hosts 同時アクセス、最新 macOS SSH サーバーへの接続を改善。
 

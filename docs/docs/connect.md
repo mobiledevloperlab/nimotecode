@@ -9,19 +9,19 @@ In Machines, choose the machine’s SSH connection. A paired device can use Nimo
 
 **Nimote Connect is required for NimoteCode's paired-device public connection.** Direct SSH to an address you already control, including your own Tailscale IP or MagicDNS name, does not require it. NimoteHost alone does not register a device or provide a public tunnel.
 
-Connect supplies the **network route to the computer’s SSH server**. With the authenticated SSH connection, NimoteCode can open your remote project in IDE, Terminal or AI. Add NimoteHost to keep supported sessions and tasks running after disconnecting.
+Connect supplies the **network route to the computer’s SSH server**. With the authenticated SSH connection, NimoteCode can open your remote project in IDE, Terminal or AI. The Host service bundled with Connect keeps supported sessions and tasks running after disconnecting.
 
 ## Download the correct package
 
-The [Nimote Connect release page](https://github.com/mobiledevloperlab/nimote-connect/releases) currently lists a CLI preview (`v0.2.0-local.8b06897`) for macOS and Linux on arm64 and amd64. The preview bundles Connect and Host. The desktop app and Windows packages below describe package types to look for in future releases.
+The [Nimote Connect release page](https://github.com/mobiledevloperlab/nimote-connect/releases) provides stable CLI packages with Connect and Host for macOS, Linux, and Windows on arm64 and amd64. A GUI option is available only for targets with a matching desktop package in the selected release.
 
 | Computer | Package and interface | Requirements |
 | --- | --- | --- |
-| macOS Intel or Apple silicon | `darwin-amd64` or `darwin-arm64` commercial tarball; NimoteConn GUI and CLI | Signed-in graphical user session; enable **System Settings → General → Sharing → Remote Login** |
-| Linux x64 or ARM64 | `linux-amd64` or `linux-arm64` commercial tarball; CLI, with NimoteConn GUI only when included in that release | systemd user session and running OpenSSH server |
-| Windows x64 or ARM64 | Windows CLI ZIP if listed in that release; no NimoteConn GUI | Signed-in user session and running OpenSSH Server on TCP 22 |
+| macOS Intel or Apple silicon | `darwin-amd64` or `darwin-arm64` tarball; CLI, with NimoteConn GUI when included | Signed-in graphical user session; enable **System Settings → General → Sharing → Remote Login** |
+| Linux x64 or ARM64 | `linux-amd64` or `linux-arm64` tarball; CLI, with NimoteConn GUI only when included in that release | systemd user session and running OpenSSH server |
+| Windows x64 or ARM64 | CLI ZIP; install directly on Windows | Signed-in user session and running OpenSSH Server on TCP 22 |
 
-A compatible client is required for preview pairing. General availability of NimoteCode public internet access is planned. Use the package and SHA-256 file from the same release.
+Use the package and SHA-256 file from the same release. Public access requires a compatible NimoteCode client and device pairing.
 
 ## Install and pair
 
@@ -56,8 +56,8 @@ On Windows, replace `nimoteconnect` in the table with `& "$env:LOCALAPPDATA\Nimo
 
 ## Set up a computer reachable by SSH, then update
 
-If the computer already has a reachable SSH address, connect with NimoteCode's **SSH** tab first. With that computer's SSH account, transfer the verified Connect bundle, extract it, and run the appropriate installer above as the user who will own the service. Approve the pairing code and enable remote access on the computer. These are **Connect setup steps**, independent of the Host panel. A first-time Connect public tunnel cannot bootstrap itself: the computer must be reachable through SSH or installed locally before it can be selected as a paired device. The current App does not automate this first-time Connect installation. Automated Connect updates also require a stable, compatible GitHub release configured in the App; a release candidate does not qualify.
+On macOS and Linux, first connect over SSH in NimoteCode. Then open **Machines → Host → Install Nimote Connect**, or use the install option under **Connect / Tailscale**. The wizard loads the stable release list from nimotecode.com, downloads from GitHub, and verifies the package. Approve pairing if prompted. On Windows, follow the manual steps above. For first-time public access, use existing SSH or install locally before selecting the paired computer.
 
 To update manually, obtain the newer matching commercial bundle, verify its checksum, extract it and rerun `./install.sh` as the **same user** (Windows: rerun `.\install.ps1`). Let running Host tasks finish first. Existing pairing and Host data are retained. On macOS/Linux, an already paired computer can use `./install.sh --skip-login`; on Windows use `-SkipLogin`. Check `nimoteconnect status`, `nimoteconnect host status`, and `nimoteconnect remote-access status` afterward. For uninstall, run `./install.sh --uninstall` from the bundle (Windows: `.\install.ps1 -Uninstall`).
 
-See the [NimoteHost guide](/docs/host/getting-started) for the separate Community Host installation path.
+See [Host setup](/docs/host/getting-started) to start using the included service in NimoteCode.

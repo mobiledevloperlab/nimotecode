@@ -13,7 +13,7 @@ This is the public record of notable product updates. For setup help, use the [d
 
 ### Version 2.5.0 · Upcoming
 
-SSH to paired computers, resume tmux sessions, and install NimoteHost over SSH.
+SSH to paired computers, resume tmux sessions, and install Nimote Connect over SSH.
 
 [Read the complete 2.5.0 release notes](/releases/2.5.0)
 

@@ -1,23 +1,19 @@
 ---
-title: "NimoteHost Community | NimoteCode"
-description: "Linux、macOS、Windows に NimoteHost Community を導入できます。切断後も管理対象の作業は継続します。NimoteCode から SSH で再接続し、出力の確認やエージェントの承認、作業の再開ができます。"
+title: "Nimote Connect の Host セッション | NimoteCode"
+description: "Nimote Connect に含まれる Host サービスで、ターミナル、タスク、対応 Agent セッションを PC 上で継続できます。"
 ---
 
-# NimoteHost Community
+# Nimote Connect の Host セッション
 
-Linux、macOS、Windows に NimoteHost Community を導入できます。切断後も管理対象の作業は継続します。NimoteCode から SSH で再接続し、出力の確認やエージェントの承認、作業の再開ができます。
+Nimote Connect に含まれる Host サービスで、ターミナル、タスク、対応 Agent セッションを PC 上で継続できます。
 
-開発マシンで SSH 接続を選びます。ペアリング済みのマシンには Nimote Connect のネットワーク経路を利用できます。NimoteHost は独立して動作し、認証済みの SSH 接続を通じて高度な機能を提供します。
+Nimote Connect には、ターミナル、タスク、対応 Agent セッションを管理する NimoteHost サービスが含まれます。プロジェクトにアクセスできる SSH アカウントを使い、PC と Host サービスを稼働させてください。アプリ内の Host セッションには Pro が必要です。
 
-NimoteHost Community は Apache-2.0 で公開され、CLI またはデスクトップマネージャーで単独で動作します。スマートフォンの NimoteHost セッションには対応する NimoteCode（2.4.1 以降）と Pro が必要です。
+## Nimote Connect をインストール {#download-nimotehost}
 
-## NimoteHost Community をダウンロード {#download-nimotehost}
+[Nimote Connect をインストール](/ja/docs/host/getting-started) · [パッケージの互換性](/ja/docs/host/compatibility)
 
-<HostDownload />
-
-[NimoteHost を導入](/ja/docs/host/getting-started) · [トラブルシューティング](/ja/docs/host/troubleshooting)
-
-NimoteHost Community はターミナル、タスク、対応エージェント、コミュニティプラグインを管理します。GitHub Issue の依頼には Nimote Connect 付属の Host を使用します。更新やエディションの切り替えは [Community ガイド](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)を参照してください。
+NimoteHost は独立したオープンソースプロジェクトです。NimoteCode での導入と更新には Nimote Connect を使います。
 
 ## Host の機能と得られること
 

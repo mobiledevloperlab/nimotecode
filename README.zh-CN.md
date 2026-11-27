@@ -178,7 +178,7 @@ iPhone 和 iPad 不支持 Local Linux，可通过 SSH 主机运行开发命令�
 
 在开发电脑上安装兼容的 Host 包并保持运行，在 NimoteCode 2.4.1 或更新版本中通过 **Host → SSH connections** 连接。安装包需匹配电脑的系统和 CPU。Host 或系统重启会中断运行中的进程；Agent 运行时与认证需要单独配置。普通 SSH 工作区无需安装 Host。
 
-[安装指南](https://nimotecode.com/zh/docs/host/getting-started) · [Host 源码](https://github.com/mobiledevloperlab/nimotehost) · [Host 下载](https://github.com/mobiledevloperlab/nimotehost/releases)
+[安装指南](https://nimotecode.com/zh/docs/host/getting-started) · [Host 源码](https://github.com/mobiledevloperlab/nimotehost) · [Nimote Connect Releases](https://github.com/mobiledevloperlab/nimote-connect/releases)
 
 ## 用自己的工具与服务商开展 AI 编程
 

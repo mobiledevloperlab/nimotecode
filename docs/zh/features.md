@@ -10,7 +10,7 @@ description: 在手机或平板打开项目，连接开发电脑，在同一工�
 <details>
 <summary>2.5.0 待发布功能</summary>
 
-即将发布的 NimoteCode 2.5.0 计划支持[通过个人 Tailscale 连接已配对电脑](/zh/docs/ssh#paired-computers)、[用 tmux 恢复 SSH 终端](/zh/docs/terminal#persistent-ssh-terminal)，也可[通过 SSH 安装 NimoteHost](/zh/docs/host/getting-started#install-over-ssh)。
+即将发布的 NimoteCode 2.5.0 计划支持[通过个人 Tailscale 连接已配对电脑](/zh/docs/ssh#paired-computers)、[用 tmux 恢复 SSH 终端](/zh/docs/terminal#persistent-ssh-terminal)，也可[通过 SSH 安装 Nimote Connect](/zh/docs/host/getting-started#install-over-ssh)。
 
 [2.5.0 待发布功能](/zh/releases/2.5.0)
 

@@ -7,7 +7,7 @@ description: "Conoce los cuatro modos de NimoteCode, SSH, Linux en Android, prog
 
 Empieza con [Inicio rápido](/es/docs/quick-start) para abrir un espacio, editar un archivo y ejecutar un comando. Después elige la guía para tu tarea.
 
-En NimoteCode 2.5.0 puedes [conectar con un equipo vinculado mediante Tailscale personal](/es/docs/ssh#paired-computers), [reanudar un terminal SSH con tmux](/es/docs/terminal#persistent-ssh-terminal) o [instalar NimoteHost por SSH](/es/docs/host/getting-started#install-over-ssh).
+En NimoteCode 2.5.0 puedes [conectar con un equipo vinculado mediante Tailscale personal](/es/docs/ssh#paired-computers), [reanudar un terminal SSH con tmux](/es/docs/terminal#persistent-ssh-terminal) o [instalar Nimote Connect por SSH](/es/docs/host/getting-started#install-over-ssh).
 
 ## Elige dónde están los archivos y se ejecutan los comandos
 
@@ -62,7 +62,7 @@ Los cuatro modos de la aplicación eligen la interfaz; el espacio determina dón
 
 En **Máquinas → Añadir máquina**, elige SSH, Nimote Connect, Red local o Tailscale. Selecciona la máquina para abrir su espacio en el IDE, el terminal o la IA. Configura NimoteHost para sesiones persistentes, tareas remotas y aprobaciones. Las funciones de NimoteHost requieren herramientas compatibles y acceso Pro.
 
-[Máquinas](/es/docs/host) · [Instalar NimoteHost](/es/docs/host/getting-started) · [Solucionar problemas](/es/docs/host/troubleshooting)
+[Máquinas](/es/docs/host) · [Instalar Nimote Connect](/es/docs/host/getting-started) · [Solucionar problemas](/es/docs/host/troubleshooting)
 
 ### Local Linux en Android
 

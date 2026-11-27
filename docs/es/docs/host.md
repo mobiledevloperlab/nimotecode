@@ -1,23 +1,19 @@
 ---
-title: "NimoteHost Community | NimoteCode"
-description: "Instala NimoteHost Community en Linux, macOS o Windows. Las tareas gestionadas siguen ejecutándose al desconectar. Vuelve a conectarte por SSH desde NimoteCode para revisar la salida, responder a las solicitudes de aprobación y continuar el trabajo."
+title: "Sesiones Host con Nimote Connect | NimoteCode"
+description: "Mantén terminales, tareas y sesiones de Agent compatibles en tu equipo con el servicio Host incluido en Nimote Connect."
 ---
 
-# NimoteHost Community
+# Sesiones Host con Nimote Connect
 
-Instala NimoteHost Community en Linux, macOS o Windows. Las tareas gestionadas siguen ejecutándose al desconectar. Vuelve a conectarte por SSH desde NimoteCode para revisar la salida, responder a las solicitudes de aprobación y continuar el trabajo.
+Mantén terminales, tareas y sesiones de Agent compatibles en tu equipo con el servicio Host incluido en Nimote Connect.
 
-Selecciona una conexión SSH en Máquinas. Los equipos vinculados pueden usar Nimote Connect como ruta de red. NimoteHost funciona de forma independiente y ofrece funciones avanzadas a través de SSH autenticado.
+Nimote Connect incluye el servicio NimoteHost que gestiona terminales, tareas y sesiones de Agent compatibles. Usa una cuenta SSH con acceso al proyecto y mantén el equipo y el servicio Host en ejecución. Las sesiones Host en la app requieren Pro.
 
-NimoteHost Community se publica bajo Apache-2.0 y funciona de forma independiente con la CLI o el gestor de escritorio. El modo Host en el móvil requiere una versión compatible de NimoteCode (2.4.1 o posterior) y acceso Pro.
+## Instalar Nimote Connect {#download-nimotehost}
 
-## Descargar NimoteHost Community {#download-nimotehost}
+[Instalar Nimote Connect](/es/docs/host/getting-started) · [Compatibilidad de paquetes](/es/docs/host/compatibility)
 
-<HostDownload />
-
-[Instalar NimoteHost](/es/docs/host/getting-started) · [Solucionar problemas](/es/docs/host/troubleshooting)
-
-NimoteHost Community gestiona terminales, tareas, agentes compatibles y plugins de la comunidad. El envío de GitHub Issues se ofrece con el Host incluido en Nimote Connect. Consulta la [guía de Community](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md) para actualizar o cambiar de edición.
+NimoteHost sigue disponible como proyecto de código abierto independiente. La instalación y actualización en NimoteCode usan Nimote Connect.
 
 ## Capacidades y ventajas de Host
 

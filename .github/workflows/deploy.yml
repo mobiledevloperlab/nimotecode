@@ -41,6 +41,11 @@ jobs:
       - name: Require a recent, evidence-backed comparison review
         run: npm run compare:audit
 
+      - name: Refresh the Nimote Connect release manifest
+        env:
+          NIMOTE_CONNECT_RELEASES_TOKEN: ${{ secrets.NIMOTE_CONNECT_RELEASES_TOKEN }}
+        run: node scripts/nimote-connect-manifest.mjs refresh
+
       - name: Build with VitePress
         run: npm run docs:build
 
@@ -48,6 +53,9 @@ jobs:
       # be unique and resolvable before anything is published.
       - name: Check the built site
         run: npm run docs:check
+
+      - name: Verify the Pages artifact contains the freshly generated manifest
+        run: cmp docs/public/downloads/nimote-connect/releases.json docs/.vitepress/dist/downloads/nimote-connect/releases.json
 
       # Complete corresponding-source archives are served from Cloudflare R2.
       # docs/public/opensource/local-linux/ only publishes the metadata that

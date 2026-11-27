@@ -15,7 +15,7 @@ NimoteCode 2.5.0에서는 [개인 Tailscale로 페어링된 컴퓨터에 연결]
 | --- | --- | --- |
 | 기기에 있는 파일 편집 | [로컬 및 SSH 작업 공간](/ko/docs/ssh) | 로컬 폴더는 파일 접근을 제공합니다. 프로젝트 명령 실행에는 SSH 또는 Local Linux가 필요합니다. |
 | 기존 컴퓨터 또는 서버 사용 | [로컬 및 SSH 작업 공간](/ko/docs/ssh) | SSH로 연결해 원격 프로젝트와 설치된 도구를 사용합니다. |
-| 연결이 끊긴 뒤 원격 작업으로 복귀 | [개발 머신](/ko/docs/host) | 컴퓨터에 NimoteHost를 설치한 뒤 SSH로 연결합니다. Host가 실행되는 동안 관리 중인 프로세스를 계속 실행할 수 있습니다. |
+| 연결이 끊긴 뒤 원격 작업으로 복귀 | [개발 머신](/ko/docs/host) | 컴퓨터에 Nimote Connect를 설치한 뒤 SSH로 연결합니다. Host가 실행되는 동안 관리 중인 프로세스를 계속 실행할 수 있습니다. |
 | Android에서 Linux 도구 실행 | [설치 및 첫 명령 실행](/ko/docs/local-linux/getting-started) | 기기 요구 사항을 먼저 확인한 뒤 설치합니다. 지원되는 Android 기기에서만 사용할 수 있습니다. |
 
 앱의 네 가지 모드는 인터페이스를 선택하며, 작업 공간은 파일 위치와 명령 실행 환경을 결정합니다. Host에는 컴퓨터의 서비스도 필요합니다. 모드 선택은 [빠른 시작](/ko/docs/quick-start)을 참고하세요.
@@ -62,7 +62,7 @@ NimoteCode 2.5.0에서는 [개인 Tailscale로 페어링된 컴퓨터에 연결]
 
 **개발 머신 → 개발 머신 추가**에서 SSH, Nimote Connect, 로컬 네트워크 또는 Tailscale을 선택합니다. 머신을 선택해 IDE, 터미널 또는 AI에서 작업 공간을 엽니다. 영구 세션, 원격 작업 또는 승인이 필요하면 NimoteHost를 설정합니다. NimoteHost 기능에는 호환 도구와 Pro 이용 권한이 필요합니다.
 
-[개발 머신](/ko/docs/host) · [NimoteHost 설치](/ko/docs/host/getting-started) · [문제 해결](/ko/docs/host/troubleshooting)
+[개발 머신](/ko/docs/host) · [Nimote Connect 설치](/ko/docs/host/getting-started) · [문제 해결](/ko/docs/host/troubleshooting)
 
 ### Android Local Linux
 

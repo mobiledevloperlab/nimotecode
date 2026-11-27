@@ -98,4 +98,4 @@ Strengthened SSH host key verification, concurrent known_hosts access on Windows
 
 [2.4.0 →](/releases/2.4.0)
 
-[Machines →](/docs/host) — Install NimoteHost, connect over SSH, and return to terminals and Agent tasks.
+[Machines →](/docs/host) — Install Nimote Connect, connect over SSH, and return to terminals and Agent tasks.

@@ -21,7 +21,7 @@ pageClass: trust-page compatibility-page
 | SSH 凭据存在哪里？ | 连接元数据保存在设备。应用管理的密码、私钥和私钥口令使用系统安全存储：iOS Keychain，或 Android Keystore 支撑的加密存储。删除已保存的 SSH 配置会移除对应安全凭据。 | [凭据存储](/zh/privacy#storage) |
 | 什么情况下代码会发给模型？ | AI 请求可包含提示词、所选内容、相关文件、路径和工具输出。直接请求发送到你配置的服务；Agent 可按任务读取文件作为上下文。外部 Agent、MCP 工具有各自的接收方与政策；BYOK 不代表服务商零留存。 | [AI 数据流向](/zh/privacy#integrations) · [Agent 控制](/zh/docs/ai) |
 | Sync / Cache 会写入什么？ | **Sync：本地 → 远程；Cache：远程 → 本地。** 开始前确认项目和目标路径。现有指南未列明同名覆盖、删除传播与冲突处理规则。传输前明确以哪份文件为准并备份；历史记录不能替代备份。 | [同步与缓存](/zh/docs/sync-cache) |
-| Host 需要什么？ | 具备 Host 权益的 NimoteCode **2.4.1+**、在 Linux / macOS / Windows 电脑上单独安装的兼容 NimoteHost、可用的 SSH 连接及项目权限。电脑须保持唤醒；Agent 需另行安装、登录。 | [安装 Host](/zh/docs/host/getting-started) · [Pro 权益](/zh/pro) |
+| Host 需要什么？ | 具备 Host 权益的 NimoteCode **2.4.1+**、通过 Nimote Connect 在 Linux / macOS / Windows 上安装的 Host 服务、可用的 SSH 连接及项目权限。电脑须保持唤醒；Agent 需另行安装、登录。 | [安装 Host](/zh/docs/host/getting-started) · [Pro 权益](/zh/pro) |
 | Host 在哪里执行？ | 在你的电脑上，以 Host 系统账户权限执行。需认证的 API 仅监听回环地址，通过 SSH 访问；Host 凭据保留在电脑。断开客户端后托管任务可继续，Host 或系统重启会中断进程。 | [Host 访问边界](/zh/docs/host) · [会话限制](/zh/docs/host/sessions) |
 
 </div>

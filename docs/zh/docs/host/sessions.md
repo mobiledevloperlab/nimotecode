@@ -5,18 +5,11 @@ description: "NimoteHost 连接、终端与任务说明与操作步骤。"
 
 # 连接、终端与任务
 
-先在电脑上[安装并启动 NimoteHost](/zh/docs/host/getting-started)，再使用同一台电脑、同一 SSH 账号连接并创建会话。
-
-**NimoteHost 目前仅支持局域网连接。** **请将手机和运行 Host 的电脑接入同一局域网，并使用电脑的局域网地址通过 SSH 连接。
+先确认普通 SSH 可用。使用电脑可访问的 SSH 地址，或在「开发主机」里选择可用的已配对连接。使用 Nimote Connect 公网连接前，请先绑定设备并启用公网访问。
 
 ## 在 NimoteCode 选择 Host 和 SSH 连接 {#_3-在-nimotecode-选择-host-和-ssh-连接}
 
-在 NimoteCode 2.5.0 中，从 **Host → 远程连接** 连接并检查安装状态。使用当前连接中显示的安装或更新入口，或打开 Host 帮助查看已安装版本。若需要停止正在运行的会话，请先核对影响再确认。
-
-1. 打开 NimoteCode 的模式入口，选择 **Host**。已有工作区时，也可以从模式菜单切换。
-2. 在部署提示页点 **SSH connections（SSH 连接）**。
-3. 选择安装 Host 的那台电脑及其 SSH 账号。没有保存过连接，就先选 **New Remote Connection** 添加。
-4. 首次连接时核对 SSH 主机密钥。连上后应能看到会话列表；没有历史记录时列表为空是正常的。
+在 NimoteCode 中打开 **开发主机**，选择该电脑的 SSH 连接，再打开 **Host**。缺少 Host 时，点击 **安装 Nimote Connect**。向导会选择 SSH 主机、下载匹配的安装包并校验安装结果。出现设备批准提示时按提示操作。App 内自动安装与更新适用于受支持的 64 位 macOS 和 Linux。
 
 <div class="doc-screenshots">
   <DocScreenshot file="host-mode.png" caption="欢迎页的模式入口，Host 位于 IDE、终端和 AI 下方。" />

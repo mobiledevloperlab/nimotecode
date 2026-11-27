@@ -28,12 +28,8 @@ Primero comprueba el servicio con un comando. Puedes reemplazar `nimotehost` por
 | `nimotehost agents` | Consulta las herramientas de agentes que detecta el Host en ejecución. |
 | `nimotehost tools refresh` | Actualiza la detección de herramientas sin reiniciar las sesiones existentes. |
 
-## Actualizar o desinstalar Community
+## Actualizar Nimote Connect
 
-Para actualizar manualmente, termina las tareas activas, verifica el nuevo paquete compatible y ejecuta `setup` desde la nueva carpeta extraída. Actualiza el Host incluido con Nimote Connect desde Connect.
+Termina las tareas activas de Host y usa el aviso de actualización de NimoteCode en macOS o Linux compatibles. Para actualizar o desinstalar manualmente, sigue las instrucciones del repositorio de distribución con la cuenta de instalación original.
 
-`deploy uninstall` quita el servicio inactivo y el paquete instalado, y conserva las credenciales y los registros de sesiones. Ejecútalo desde un paquete Community extraído o un ejecutable de despliegue verificado fuera del directorio de instalación. Para cambiar de edición, consulta la [guía de Community](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md).
-
-[Despliegue avanzado y recuperación](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/deployment.md)
-
-[Resumen](/es/docs/host) · [Solución de problemas](/es/docs/host/troubleshooting)
+[Nimote Connect Releases](https://github.com/mobiledevloperlab/nimote-connect/releases) · [Descripción general](/es/docs/host)

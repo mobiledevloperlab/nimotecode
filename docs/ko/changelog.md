@@ -16,7 +16,7 @@ description: Product updates, new capabilities, fixes and compatibility notes fo
 
 ### 버전 2.5.0 · 출시 예정
 
-페어링된 컴퓨터에 SSH로 연결하고 tmux 세션을 재개하거나 SSH로 NimoteHost를 설치하세요.
+페어링된 컴퓨터에 SSH로 연결하고 tmux 세션을 재개하거나 SSH로 Nimote Connect를 설치하세요.
 
 [2.5.0 전체 릴리스 노트 읽기](/ko/releases/2.5.0)
 

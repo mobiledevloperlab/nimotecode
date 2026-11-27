@@ -10,7 +10,7 @@ description: Open your project on mobile, connect to your development machine, t
 <details>
 <summary>Upcoming in 2.5.0</summary>
 
-The upcoming NimoteCode 2.5.0 release is planned to let you [connect to a paired computer through personal Tailscale](/docs/ssh#paired-computers), [resume an SSH terminal with tmux](/docs/terminal#persistent-ssh-terminal), or [set up NimoteHost over SSH](/docs/host/getting-started#install-over-ssh).
+The upcoming NimoteCode 2.5.0 release is planned to let you [connect to a paired computer through personal Tailscale](/docs/ssh#paired-computers), [resume an SSH terminal with tmux](/docs/terminal#persistent-ssh-terminal), or [set up Nimote Connect over SSH](/docs/host/getting-started#install-over-ssh).
 
 [Upcoming in 2.5.0](/releases/2.5.0)
 

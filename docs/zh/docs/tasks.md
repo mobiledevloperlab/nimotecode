@@ -34,4 +34,4 @@ Tasks 将命令保存为命名任务，并支持按用途分组。点击 **+** �
 
 [2.4.0 →](/zh/releases/2.4.0)
 
-[开发主机 →](/zh/docs/host) — 安装 NimoteHost，通过 SSH 连接，创建终端、运行任务和使用 Agent。
+[开发主机 →](/zh/docs/host) — 安装 Nimote Connect，通过 SSH 连接，创建终端、运行任务和使用 Agent。

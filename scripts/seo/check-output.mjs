@@ -102,7 +102,13 @@ for (const path of ['docs/account-subscription.html', 'pro.html', 'download.html
   assert.match(read(path), /(?:14 days|14-day)/i, `${path}: trial length missing`)
 }
 assert.match(references[1], /public internet access is planned/i)
-assert.match(read('docs/connect.html'), /v0\.2\.0-local\.8b06897/)
+for (const locale of ['', 'zh/', 'ja/', 'ko/', 'es/']) {
+  const connectGuide = read(`${locale}docs/connect.html`)
+  assert.match(connectGuide, /github\.com\/mobiledevloperlab\/nimote-connect\/releases/)
+  assert.match(connectGuide, /nimotecode\.com.*GitHub/)
+  assert.match(connectGuide, /install\.ps1/)
+  assert.doesNotMatch(connectGuide, /v0\.2\.0-local\.8b06897/)
+}
 assert.match(read('releases/2.5.0.html'), /Upcoming/)
 assert.ok(![...sitemap].some(url => url.includes('/website-optimization/')))
 

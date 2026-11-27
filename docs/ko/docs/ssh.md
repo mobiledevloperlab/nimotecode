@@ -93,10 +93,10 @@ Windows 호스트에서는 PowerShell과 SFTP를 사용해 원격 프로젝트�
 
 ## NimoteCode 2.4.0
 
-**Host 작업 공간.** 원격 컴퓨터에 호환 NimoteHost를 설치하고 시작한 뒤 SSH로 연결해 터미널 및 Agent 세션을 검색, 고정하고 다시 시작합니다. Host는 선택 기능입니다.
+**Host 작업 공간.** 원격 컴퓨터에 Nimote Connect를 설치하고 포함된 Host를 시작한 뒤 SSH로 연결해 터미널 및 Agent 세션을 검색, 고정하고 다시 시작합니다. Host는 선택 기능입니다.
 
 SSH 호스트 키 검증, Windows known_hosts 동시 접근과 최신 macOS SSH 서버 연결을 개선했습니다.
 
 [2.4.0 →](/ko/releases/2.4.0)
 
-[개발 머신 →](/ko/docs/host) — NimoteHost 설치, SSH 연결, 터미널 및 Agent 사용법.
+[개발 머신 →](/ko/docs/host) — Nimote Connect 설치, SSH 연결, 터미널 및 Agent 사용법.

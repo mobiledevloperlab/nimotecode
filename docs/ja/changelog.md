@@ -16,7 +16,7 @@ description: Product updates, new capabilities, fixes and compatibility notes fo
 
 ### バージョン 2.5.0 · 公開予定
 
-ペアリング済み PC に SSH 接続し、tmux セッションの再開や NimoteHost のインストールができます。
+ペアリング済み PC に SSH 接続し、tmux セッションの再開や Nimote Connect のインストールができます。
 
 [2.5.0 のリリースノートを読む](/ja/releases/2.5.0)
 

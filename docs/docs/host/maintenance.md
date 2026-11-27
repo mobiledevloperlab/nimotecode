@@ -28,12 +28,8 @@ Run one command to confirm the service is available. For commands below, replace
 | `nimotehost agents` | Check which Agent tools the running Host can find. |
 | `nimotehost tools refresh` | Refresh Host’s tool discovery after changing the tool installation or configuration, without restarting sessions. |
 
-## Update or remove Community
+## Update Nimote Connect
 
-For a manual update, finish active work, download and verify the new matching bundle, then run `setup` from the newly extracted copy. If Host came with Nimote Connect, update through Connect.
+Finish active Host tasks, then use the Nimote Connect update prompt in NimoteCode on supported macOS and Linux computers. For manual updates or uninstall, follow the [Nimote Connect guide](/docs/connect) and use the original installation account.
 
-`deploy uninstall` removes the idle service and installed bundle while keeping credentials and session records. Run it from an extracted Community bundle or a verified deployment executable outside the installed directory. Follow the [Community guide](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md) before switching editions.
-
-[Advanced deployment and recovery](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/deployment.md)
-
-[Overview](/docs/host) · [Troubleshooting](/docs/host/troubleshooting)
+[Nimote Connect Releases](https://github.com/mobiledevloperlab/nimote-connect/releases) · [Overview](/docs/host)

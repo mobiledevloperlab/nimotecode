@@ -13,15 +13,15 @@ Connect 提供的是通往电脑 **SSH 服务的公网路径**。SSH 认证成�
 
 ## 从哪里下载
 
-[Nimote Connect 发布页](https://github.com/mobiledevloperlab/nimote-connect/releases) 目前提供 CLI 预览版（`v0.2.0-local.8b06897`），支持 macOS 和 Linux 的 arm64 与 amd64 架构。预览包同时包含 Connect 和 Host。下表中的桌面应用和 Windows 安装包为后续版本可能提供的包类型。
+[Nimote Connect 发布页](https://github.com/mobiledevloperlab/nimote-connect/releases)提供 macOS、Linux 和 Windows 的 arm64 与 amd64 正式 CLI 安装包，每个包都包含 Connect 和 Host。只有对应系统和架构发布桌面包时，才有 GUI 选项。
 
 | 电脑 | 安装包与界面 | 前提 |
 | --- | --- | --- |
-| macOS Intel / Apple 芯片 | `darwin-amd64` / `darwin-arm64` 商业 tarball；CLI 和 NimoteConn 图形界面 | 已登录图形用户；在「系统设置 → 通用 → 共享」开启「远程登录」 |
-| Linux x64 / ARM64 | `linux-amd64` / `linux-arm64` 商业 tarball；CLI，图形界面以该发行包实际内容为准 | systemd 用户会话和已启动的 OpenSSH 服务 |
-| Windows x64 / ARM64 | 如该版本发布了 Windows CLI ZIP；没有 NimoteConn 图形界面 | 已登录用户和监听 TCP 22 的 OpenSSH Server |
+| macOS Intel / Apple 芯片 | `darwin-amd64` / `darwin-arm64` tarball；CLI，图形界面以实际发布包为准 | 已登录图形用户；在「系统设置 → 通用 → 共享」开启「远程登录」 |
+| Linux x64 / ARM64 | `linux-amd64` / `linux-arm64` tarball；CLI，图形界面以该发行包实际内容为准 | systemd 用户会话和已启动的 OpenSSH 服务 |
+| Windows x64 / ARM64 | CLI ZIP；在 Windows 电脑上手动安装 | 已登录用户和监听 TCP 22 的 OpenSSH Server |
 
-预览版配对需要兼容客户端。NimoteCode 的公网访问功能计划后续正式推出。请使用同一版本的安装包和 SHA-256 校验文件。
+请使用同一版本的安装包和 SHA-256 校验文件。公网访问需要兼容的 NimoteCode 客户端和设备绑定。
 
 ## 安装与绑定
 
@@ -58,8 +58,8 @@ Windows PowerShell 中，把表里的 `nimoteconnect` 换成 `& "$env:LOCALAPPDA
 
 ## 已有 SSH 入口时部署，以及后续升级
 
-如果电脑已有可访问的 SSH 地址，可先在 NimoteCode **SSH** 标签建立连接，用该电脑的 SSH 账号传输已校验的 Connect 安装包、解压并以将来运行服务的用户执行上面的安装器；然后批准绑定码并在电脑上开启公网连接。**这是 Connect 自己的部署流程，不依赖 Host 面板。** 首次安装无法通过尚未建立的 Connect 公网隧道完成：须先使用现有 SSH 入口，或在电脑本机安装。当前 App 尚未自动完成 Connect 首次安装；自动升级还要求配置了兼容的正式 GitHub Release，候选版不满足当前自动安装器的筛选条件。
+macOS 和 Linux 可先在 NimoteCode 建立 SSH 连接，再进入 **开发主机 → Host → 安装 Nimote Connect**，也可以从 **Connect / Tailscale** 打开安装入口。向导从 nimotecode.com 读取正式发行清单，从 GitHub 下载并校验安装包。出现配对提示时按提示批准。Windows 请按上方步骤手动安装。首次使用公网连接前，需要通过已有 SSH 入口安装，或直接在电脑上安装并绑定。
 
 手动升级时，下载并校验新版本的对应商业包，完整解压后使用**原安装用户**重新运行 `./install.sh`（Windows：`.\install.ps1`）。先让正在运行的 Host 任务结束。升级会保留设备绑定和 Host 数据。已绑定的 macOS / Linux 主机可用 `./install.sh --skip-login`；Windows 可加 `-SkipLogin`。完成后依次检查 `nimoteconnect status`、`nimoteconnect host status` 和 `nimoteconnect remote-access status`。卸载则在安装包目录运行 `./install.sh --uninstall`（Windows：`.\install.ps1 -Uninstall`）。
 
-仅安装社区版 Host 请参阅 [NimoteHost 安装说明](/zh/docs/host/getting-started)。
+如何在 App 内使用随包安装的服务，请参阅 [Host 安装说明](/zh/docs/host/getting-started)。

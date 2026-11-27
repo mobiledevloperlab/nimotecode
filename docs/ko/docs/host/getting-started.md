@@ -1,48 +1,22 @@
 ---
-title: "다운로드 및 설치 | NimoteHost"
-description: "NimoteHost 다운로드 및 설치 안내 및 절차."
+title: "Host 세션을 위한 Nimote Connect 설치 | NimoteCode"
+description: "Nimote Connect에는 터미널, 작업, 호환 Agent 세션을 관리하는 NimoteHost 서비스가 포함됩니다. 프로젝트에 접근할 수 있는 SSH 계정을 사용하고 컴퓨터와 Host 서비스를 계속 실행하세요. 앱에서 Host 세션을 사용하려면 Pro가 필요합니다."
 ---
 
-# 다운로드 및 설치
+# Host 세션을 위한 Nimote Connect 설치
 
-**개발 머신**에서 접속 가능한 SSH 연결을 선택하고 **호스트 서비스**를 엽니다. 페어링된 머신에는 Nimote Connect를 통해 연결할 수 있습니다.
-
-## 시작하기 전에
-
-SSH로 연결할 수 있는 Linux, macOS 또는 Windows 컴퓨터와 SSH 사용자가 열 수 있는 프로젝트 폴더를 준비하세요. 설치와 연결에는 같은 계정을 사용합니다. 휴대폰에서 연결하려면 NimoteCode 2.4.1 이상, Pro, 호환 Host가 필요합니다.
+Nimote Connect에는 터미널, 작업, 호환 Agent 세션을 관리하는 NimoteHost 서비스가 포함됩니다. 프로젝트에 접근할 수 있는 SSH 계정을 사용하고 컴퓨터와 Host 서비스를 계속 실행하세요. 앱에서 Host 세션을 사용하려면 Pro가 필요합니다.
 
 ## NimoteCode에서 설치 {#install-over-ssh}
 
-NimoteCode 2.5.0에서 **Host**를 열고 SSH로 연결한 뒤 설치 안내가 표시되면 따릅니다. 컴퓨터는 GitHub Releases에 접속할 수 있어야 합니다. Nimote Connect에 포함된 Host는 Connect 안내를 따르세요.
+NimoteCode의 **개발 머신**에서 컴퓨터의 SSH 연결을 선택하고 **Host**를 여세요. Host가 없으면 **Nimote Connect 설치**를 선택합니다. 마법사에서 SSH 호스트를 선택하고, 맞는 패키지를 다운로드한 뒤 설치 결과를 확인합니다. 요청이 표시되면 기기를 승인하세요. 지원되는 64비트 macOS와 Linux에서는 앱에서 자동 설치와 업데이트를 할 수 있습니다.
 
-## 다운로드한 패키지로 설치 {#host-install}
+## 수동 설치 {#host-install}
 
-Community 2.5.0은 CLI와 데스크톱 패키지로 제공됩니다. 앱에서 설치할 수 없거나 다운로드에 실패하면 아래에서 수동으로 설치하세요.
+마법사가 패키지를 불러오지 못하거나 컴퓨터가 Windows라면 해당 컴퓨터에서 직접 설치하세요. [공식 릴리스](https://github.com/mobiledevloperlab/nimote-connect/releases)에서 맞는 압축 파일과 SHA-256 파일을 받아 검증하고 압축을 풉니다. SSH와 같은 계정으로 macOS 또는 Linux에서는 `./install.sh`, Windows PowerShell에서는 `.\install.ps1`을 실행하세요. 다시 연결해 **Host**를 엽니다.
 
-컴퓨터에 맞는 전체 [Community 배포 패키지](https://github.com/mobiledevloperlab/nimotehost/releases/tag/community-v2.5.0)를 선택하세요. 서버에는 **CLI**, 그래픽 관리 화면이 필요하면 CLI가 포함된 **데스크톱 패키지**를 선택합니다. 시스템과 CPU는 [패키지 선택](/ko/docs/host/compatibility)을 참고하세요. SHA-256을 확인한 뒤 전체 압축을 풉니다. [검증 방법](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/deployment.md#install-from-a-website-download) 릴리스 페이지에서 CLI 압축 파일은 `nimotehost-`, 데스크톱 압축 파일은 `nimotehost-gui-`로 시작합니다.
+## NimoteHost 소스 {#host-source}
 
-SSH에 사용할 계정으로 압축을 푼 폴더에서 터미널을 여세요. Linux와 macOS에서는 `sudo` 없이 실행합니다.
+[NimoteHost 저장소](https://github.com/mobiledevloperlab/nimotehost)는 소스와 독립 Community 빌드를 제공합니다. NimoteCode 내 설치에는 Nimote Connect를 사용합니다.
 
-### Linux 또는 macOS
-
-```sh
-./nimotehost setup
-./nimotehost deploy status
-```
-
-### Windows PowerShell
-
-```powershell
-.\nimotehost.exe setup
-.\nimotehost.exe deploy status
-```
-
-`setup`은 패키지를 설치하고 사용자 서비스를 시작합니다. `deploy status`로 확인하세요. `"running": true`이면 NimoteCode의 **Host**에서 SSH 연결을 선택하고 컴퓨터의 프로젝트 폴더를 지정합니다.
-
-Linux 백그라운드 서비스에는 systemd 사용자 관리자가, macOS와 Windows에는 데스크톱에 로그인한 사용자가 필요합니다. 포그라운드로 시험하려면 압축을 푼 폴더에서 `./nimotehost start`(Windows는 `.\nimotehost.exe start`)를 실행하고 창을 열어 둡니다.
-
-### 소스에서 빌드 {#host-source}
-
-환경과 명령은 [소스 빌드 안내](https://github.com/mobiledevloperlab/nimotehost#build-and-run)를 참고하세요.
-
-[개요](/ko/docs/host) · [연결, 터미널 및 작업](/ko/docs/host/sessions)
+[개요](/ko/docs/host) · [패키지 호환성](/ko/docs/host/compatibility)

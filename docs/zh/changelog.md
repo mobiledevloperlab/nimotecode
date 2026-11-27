@@ -13,7 +13,7 @@ description: NimoteCode 的产品更新、新能力、修复与兼容性说明�
 
 ### 版本 2.5.0 · 待发布
 
-通过 SSH 连接已配对电脑，恢复 tmux 会话，并通过 SSH 安装 NimoteHost。
+通过 SSH 连接已配对电脑，恢复 tmux 会话，并通过 SSH 安装 Nimote Connect。
 
 [阅读完整 2.5.0 发布说明](/zh/releases/2.5.0)
 

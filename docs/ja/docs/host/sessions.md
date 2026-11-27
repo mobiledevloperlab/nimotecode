@@ -5,15 +5,11 @@ description: "NimoteHost：接続・ターミナル・タスクの手順と注�
 
 # 接続・ターミナル・タスク
 
-先にパソコンで [NimoteHost を導入して起動](/ja/docs/host/getting-started)し、同じパソコンと SSH アカウントでセッションを開きます。
-
-**NimoteHost は現在、ローカルネットワーク（LAN）内の接続のみ対応しています。** **スマートフォンと Host を実行する PC を同じ LAN に接続し、PC のローカルアドレスを SSH に使用してください。
+まず通常の SSH を確認します。到達できる SSH アドレスを使うか、マシン一覧で接続可能なペアリング済み PC を選んでください。Nimote Connect のインターネット接続にはペアリングとリモートアクセスの有効化が必要です。
 
 ## スマートフォンから接続する {#_3-スマートフォンから接続する}
 
-NimoteCode 2.5.0 で **Host → リモート接続** を開き、状態を確認します。表示されるインストールまたは更新操作を使うか、Host のヘルプでインストール済みのバージョンを確認します。セッションを停止する場合は影響を確認して承認してください。
-
-モード選択で Host を開き、SSH connections を押します。Host をインストールしたパソコンとアカウントを選びます。未登録なら New Remote Connection で追加し、初回のホスト鍵を確認してください。
+NimoteCode の **マシン** で PC の SSH 接続を選び、**Host** を開きます。Host が見つからない場合は **Nimote Connect をインストール** を選びます。ウィザードで SSH ホストの選択、パッケージのダウンロード、導入の確認を行います。求められたらデバイスを承認してください。対応する 64 ビット版 macOS・Linux ではアプリ内で導入と更新ができます。
 
 <div class="doc-screenshots">
   <DocScreenshot file="host-mode.png" caption="起動画面では IDE、Terminal、AI と並んで Host を選べます。" />

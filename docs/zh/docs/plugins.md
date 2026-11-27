@@ -79,4 +79,4 @@ Android 支持在 SSH 和 Android Local Linux 目标上运行可恢复的插件�
 
 [2.4.0 →](/zh/releases/2.4.0)
 
-[开发主机 →](/zh/docs/host) — 安装 NimoteHost，通过 SSH 连接，创建终端、运行任务和使用 Agent。
+[开发主机 →](/zh/docs/host) — 安装 Nimote Connect，通过 SSH 连接，创建终端、运行任务和使用 Agent。

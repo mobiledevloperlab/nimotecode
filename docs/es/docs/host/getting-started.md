@@ -1,48 +1,22 @@
 ---
-title: "Descarga e instalación | NimoteHost"
-description: "NimoteHost: guía de descarga e instalación."
+title: "Instalar Nimote Connect para las sesiones Host | NimoteCode"
+description: "Nimote Connect incluye el servicio NimoteHost que gestiona terminales, tareas y sesiones de Agent compatibles. Usa una cuenta SSH con acceso al proyecto y mantén el equipo y el servicio Host en ejecución. Las sesiones Host en la app requieren Pro."
 ---
 
-# Descarga e instalación
+# Instalar Nimote Connect para las sesiones Host
 
-En **Máquinas**, selecciona una conexión SSH disponible y abre **Servicio de host**. Los equipos vinculados también pueden usar Nimote Connect.
-
-## Antes de empezar
-
-Prepara un equipo Linux, macOS o Windows accesible por SSH y una carpeta de proyecto accesible para ese usuario. Usa la misma cuenta para instalar y conectar. Para conectar desde el móvil necesitas NimoteCode 2.4.1 o posterior, Pro y un Host compatible.
+Nimote Connect incluye el servicio NimoteHost que gestiona terminales, tareas y sesiones de Agent compatibles. Usa una cuenta SSH con acceso al proyecto y mantén el equipo y el servicio Host en ejecución. Las sesiones Host en la app requieren Pro.
 
 ## Instalar desde NimoteCode {#install-over-ssh}
 
-En NimoteCode 2.5.0 abre **Host**, conecta por SSH y sigue el aviso de instalación si aparece. El equipo necesita acceso a GitHub Releases. Si Host viene con Nimote Connect, sigue las instrucciones de esa edición.
+En NimoteCode, abre **Máquinas**, selecciona la conexión SSH del equipo y abre **Host**. Si falta Host, elige **Instalar Nimote Connect**. El asistente selecciona el equipo SSH, descarga el paquete correspondiente y verifica la instalación. Aprueba el dispositivo cuando se solicite. La instalación y la actualización automáticas están disponibles en macOS y Linux compatibles de 64 bits.
 
-## Instalar desde un paquete descargado {#host-install}
+## Instalar manualmente {#host-install}
 
-Community 2.5.0 ofrece paquetes de CLI y escritorio. Si no aparece la opción de instalación en la app o la descarga falla, sigue los pasos manuales de abajo.
+Si el asistente no puede cargar un paquete o el equipo usa Windows, instala Nimote Connect directamente en el equipo. Descarga el archivo y su SHA-256 de las [versiones oficiales](https://github.com/mobiledevloperlab/nimote-connect/releases), verifica el archivo y extráelo. Con la misma cuenta de SSH, ejecuta `./install.sh` en macOS o Linux, o `.\install.ps1` en PowerShell de Windows. Vuelve a conectarte y abre **Host**.
 
-Elige el [paquete completo de Community](https://github.com/mobiledevloperlab/nimotehost/releases/tag/community-v2.5.0) para tu equipo. Usa **CLI** para un servidor o **Escritorio** si quieres el gestor gráfico con la CLI incluida. Consulta [cómo elegir el paquete](/es/docs/host/compatibility). Verifica el SHA-256 y extrae todo el archivo. [Cómo verificarlo](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/deployment.md#install-from-a-website-download) En la versión publicada, los archivos de CLI empiezan por `nimotehost-` y los de escritorio por `nimotehost-gui-`.
+## Código fuente de NimoteHost {#host-source}
 
-Abre una terminal en la carpeta extraída con la misma cuenta que usas para SSH. En Linux y macOS ejecuta la instalación sin `sudo`.
+El [repositorio de NimoteHost](https://github.com/mobiledevloperlab/nimotehost) ofrece el código fuente y compilaciones Community independientes. La instalación desde NimoteCode usa Nimote Connect.
 
-### Linux o macOS
-
-```sh
-./nimotehost setup
-./nimotehost deploy status
-```
-
-### Windows PowerShell
-
-```powershell
-.\nimotehost.exe setup
-.\nimotehost.exe deploy status
-```
-
-`setup` instala el paquete e inicia el servicio de usuario. `deploy status` comprueba su estado. Cuando veas `"running": true`, abre **Host** en NimoteCode, selecciona la conexión SSH y la carpeta del proyecto en el equipo.
-
-Linux necesita un gestor de usuario de systemd para el servicio. macOS y Windows necesitan una sesión de escritorio iniciada. Para probar en primer plano, ejecuta `./nimotehost start` (en Windows, `.\nimotehost.exe start`) desde la carpeta extraída y deja la terminal abierta.
-
-### Compilar desde el código fuente {#host-source}
-
-Consulta los requisitos y comandos en la [guía de compilación](https://github.com/mobiledevloperlab/nimotehost#build-and-run).
-
-[Resumen](/es/docs/host) · [Conexiones, terminales y tareas](/es/docs/host/sessions)
+[Descripción general](/es/docs/host) · [Compatibilidad de paquetes](/es/docs/host/compatibility)

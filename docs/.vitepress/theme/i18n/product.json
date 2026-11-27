@@ -98,13 +98,13 @@
     ],
     "host": {
       "title": "Step away. Keep the work running.",
-      "intro": "NimoteHost Community keeps managed terminals, tasks, and compatible Agents on your computer. Reconnect from your phone to inspect output and continue.",
+      "intro": "Keep terminals, tasks, and supported Agent sessions running on your computer with the Host service included in Nimote Connect.",
       "steps": [
         "Start a task",
         "Leave it running",
         "Reconnect and review"
       ],
-      "note": "NimoteHost currently supports local network (LAN) connections only. Requires NimoteCode 2.4.1+, a separate Host installation, and a computer that stays running.",
+      "note": "Nimote Connect installs the NimoteHost service that runs managed terminals, tasks, and compatible Agent sessions. Use an SSH account that can access the project, and keep the computer and its Host service running. In-app Host sessions require Pro.",
       "link": "Explore NimoteHost",
       "caption": "Managed sessions on your computer"
     }
@@ -208,13 +208,13 @@
     ],
     "host": {
       "title": "暂时离开，工作继续。",
-      "intro": "NimoteHost 社区版 将托管终端、任务和兼容 Agent 保留在电脑上。用手机重新连接，查看输出，继续处理。",
+      "intro": "通过 Nimote Connect 内置的 Host 服务，让托管终端、任务和兼容 Agent 会话在电脑上持续运行。",
       "steps": [
         "启动任务",
         "保持运行",
         "重连并检查结果"
       ],
-      "note": "NimoteHost 目前仅支持局域网连接。需 NimoteCode 2.4.1+、单独安装 Host，且电脑保持运行。",
+      "note": "Nimote Connect 会安装运行托管终端、任务和兼容 Agent 会话所需的 NimoteHost 服务。请使用有权访问项目的 SSH 账号，并保持电脑和 Host 服务运行。App 内的 Host 会话需要 Pro。",
       "link": "了解 NimoteHost",
       "caption": "管理电脑上的会话"
     }
@@ -318,13 +318,13 @@
     ],
     "host": {
       "title": "離れている間も、処理は続く。",
-      "intro": "NimoteHost Community が PC 上でターミナル、タスク、対応 Agent を管理。スマートフォンから再接続して出力を確認し、作業を続けられます。",
+      "intro": "Nimote Connect に含まれる Host サービスで、ターミナル、タスク、対応 Agent セッションを PC 上で継続できます。",
       "steps": [
         "タスクを開始",
         "実行を継続",
         "再接続して確認"
       ],
-      "note": "NimoteHost は現在、ローカルネットワーク（LAN）内の接続のみ対応しています。NimoteCode 2.4.1 以降、Host の別途インストール、PC の継続稼働が必要です。",
+      "note": "Nimote Connect には、ターミナル、タスク、対応 Agent セッションを管理する NimoteHost サービスが含まれます。プロジェクトにアクセスできる SSH アカウントを使い、PC と Host サービスを稼働させてください。アプリ内の Host セッションには Pro が必要です。",
       "link": "NimoteHost を詳しく見る",
       "caption": "PC 上のセッションを管理"
     }
@@ -428,13 +428,13 @@
     ],
     "host": {
       "title": "잠시 떠나도 작업은 계속됩니다.",
-      "intro": "NimoteHost가 컴퓨터에서 터미널, 작업, 호환 Agent를 관리합니다. 폰으로 다시 연결해 출력을 확인하고 작업을 이어가세요.",
+      "intro": "Nimote Connect에 포함된 Host 서비스로 터미널, 작업과 호환 Agent 세션을 컴퓨터에서 계속 실행할 수 있습니다.",
       "steps": [
         "작업 시작",
         "실행 유지",
         "다시 연결해 확인"
       ],
-      "note": "NimoteHost는 현재 로컬 네트워크(LAN) 연결만 지원합니다. NimoteCode 2.4.1 이상, 별도 Host 설치, 실행 중인 컴퓨터가 필요합니다.",
+      "note": "Nimote Connect에는 터미널, 작업, 호환 Agent 세션을 관리하는 NimoteHost 서비스가 포함됩니다. 프로젝트에 접근할 수 있는 SSH 계정을 사용하고 컴퓨터와 Host 서비스를 계속 실행하세요. 앱에서 Host 세션을 사용하려면 Pro가 필요합니다.",
       "link": "NimoteHost 알아보기",
       "caption": "컴퓨터의 세션 관리"
     }
@@ -538,13 +538,13 @@
     ],
     "host": {
       "title": "Aléjate. El trabajo continúa.",
-      "intro": "NimoteHost Community mantiene terminales, tareas y Agents compatibles en tu ordenador. Reconecta desde el móvil para revisar la salida y continuar.",
+      "intro": "Mantén terminales, tareas y sesiones de Agent compatibles en tu equipo con el servicio Host incluido en Nimote Connect.",
       "steps": [
         "Inicia una tarea",
         "Déjala en ejecución",
         "Reconecta y revisa"
       ],
-      "note": "Por ahora, NimoteHost solo admite conexiones en la red local (LAN). Requiere NimoteCode 2.4.1+, instalar Host por separado y mantener el ordenador encendido.",
+      "note": "Nimote Connect incluye el servicio NimoteHost que gestiona terminales, tareas y sesiones de Agent compatibles. Usa una cuenta SSH con acceso al proyecto y mantén el equipo y el servicio Host en ejecución. Las sesiones Host en la app requieren Pro.",
       "link": "Explorar NimoteHost",
       "caption": "Sesiones gestionadas en tu ordenador"
     }

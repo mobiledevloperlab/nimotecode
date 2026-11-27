@@ -1,23 +1,19 @@
 ---
-title: "NimoteHost Community | NimoteCode"
-description: "Install NimoteHost Community on your Linux, macOS, or Windows computer. Managed work continues after you disconnect. Reconnect over SSH from NimoteCode to review output, respond to Agent approvals, and continue working."
+title: "Host sessions with Nimote Connect | NimoteCode"
+description: "Keep terminals, tasks, and supported Agent sessions running on your computer with the Host service included in Nimote Connect."
 ---
 
-# NimoteHost Community
+# Host sessions with Nimote Connect
 
-Install NimoteHost Community on your Linux, macOS, or Windows computer. Managed work continues after you disconnect. Reconnect over SSH from NimoteCode to review output, respond to Agent approvals, and continue working.
+Keep terminals, tasks, and supported Agent sessions running on your computer with the Host service included in Nimote Connect.
 
-In Machines, choose the machine’s SSH connection. A paired device can use Nimote Connect for the network route. NimoteHost runs independently and provides advanced features over authenticated SSH.
+Nimote Connect installs the NimoteHost service that runs managed terminals, tasks, and compatible Agent sessions. Use an SSH account that can access the project, and keep the computer and its Host service running. In-app Host sessions require Pro.
 
-NimoteHost Community is available under Apache-2.0 and runs independently through its CLI or desktop manager. Using NimoteHost sessions from the phone requires a compatible NimoteCode build (2.4.1 or later) and Pro access.
+## Install Nimote Connect {#download-nimotehost}
 
-## Download NimoteHost Community {#download-nimotehost}
+[Install Nimote Connect](/docs/host/getting-started) · [Package compatibility](/docs/host/compatibility)
 
-<HostDownload />
-
-[Install NimoteHost](/docs/host/getting-started) · [Get help](/docs/host/troubleshooting)
-
-NimoteHost Community manages terminals, tasks, compatible coding agents, and community plugins. GitHub Issue dispatch is available with the Host bundled with Nimote Connect. For upgrades and edition changes, see the [Community guide](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md).
+NimoteHost remains available as an independent open-source project. For NimoteCode setup and updates, use Nimote Connect.
 
 ## What Host brings to your workflow
 

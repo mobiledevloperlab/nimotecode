@@ -21,7 +21,7 @@ pageClass: trust-page compatibility-page
 | SSH 인증 정보는 어디에 저장하나요? | 연결 메타데이터는 기기에 저장됩니다. 앱이 관리하는 비밀번호, 개인 키, 암호 문구는 iOS Keychain 또는 Android Keystore 기반 암호화 저장소를 사용합니다. 저장된 SSH 프로필을 삭제하면 연결된 보안 인증 정보도 삭제됩니다. | [인증 정보 저장](/ko/privacy#storage) |
 | 코드는 언제 모델에 전송되나요? | AI 요청에는 프롬프트, 선택한 내용, 관련 파일, 경로, 도구 출력이 포함될 수 있습니다. 직접 요청은 선택한 제공자로 전송되며 Agent는 작업에 필요한 파일을 읽을 수 있습니다. 외부 Agent와 MCP는 자체 수신 대상과 정책을 사용합니다. BYOK는 데이터 미보관을 뜻하지 않습니다. | [AI 연결](/ko/privacy#integrations) · [Agent 제어](/ko/docs/ai) |
 | Sync / Cache는 어디에 쓰나요? | **Sync: 로컬 → 원격. Cache: 원격 → 로컬.** 프로젝트와 대상 경로를 확인하세요. 현재 가이드에는 같은 이름 덮어쓰기, 삭제 전파, 충돌 처리 규칙이 명시되어 있지 않습니다. 기준 사본을 정하고 먼저 백업하세요. 기록은 백업을 대체하지 않습니다. | [동기화와 캐시](/ko/docs/sync-cache) |
-| Host에는 무엇이 필요한가요? | Host 이용 권한이 있는 NimoteCode **2.4.1 이상**, Linux / macOS / Windows 컴퓨터에 별도로 설치한 호환 NimoteHost, SSH 연결 및 프로젝트 권한이 필요합니다. 컴퓨터는 깨어 있어야 하며 Agent는 따로 설치하고 로그인해야 합니다. | [Host 설치](/ko/docs/host/getting-started) · [Pro](/ko/pro) |
+| Host에는 무엇이 필요한가요? | Host 이용 권한이 있는 NimoteCode **2.4.1 이상**, Linux / macOS / Windows 컴퓨터에 Nimote Connect로 설치한 Host 서비스, SSH 연결 및 프로젝트 권한이 필요합니다. 컴퓨터는 깨어 있어야 하며 Agent는 따로 설치하고 로그인해야 합니다. | [Host 설치](/ko/docs/host/getting-started) · [Pro](/ko/pro) |
 | Host 작업은 어디서 실행되나요? | 컴퓨터의 Host OS 계정 권한으로 실행합니다. 인증 API는 루프백에서만 수신하고 SSH를 통해 접근하며 Host 인증 정보는 컴퓨터에 남습니다. 연결 해제 후 관리 작업은 계속될 수 있지만 Host나 OS를 재시작하면 중단됩니다. | [Host](/ko/docs/host) · [세션 제한](/ko/docs/host/sessions) |
 
 </div>

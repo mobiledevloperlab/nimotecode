@@ -247,13 +247,13 @@
       "intro": "The Connect preview is designed to route SSH from a compatible phone to a paired computer without publishing your own SSH port. NimoteHost adds optional persistent sessions.",
       "route": "A route to your own SSH server. Your SSH account and host-key check still protect the login.",
       "setup": "Install Connect on the computer, pair it with your account, then explicitly enable public access in the GUI or CLI.",
-      "availability": "A CLI preview is available for macOS and Linux. Public access in NimoteCode is planned. Direct SSH and personal Tailscale remain separate options.",
-      "guide": "Nimote Connect preview and setup"
+      "availability": "Stable CLI packages are available for macOS, Linux, and Windows. Use the in-app installer on supported macOS or Linux hosts, or install manually on Windows.",
+      "guide": "Nimote Connect installation guide"
     },
     "host": {
-      "label": "NimoteHost Community · Apache-2.0 open source",
+      "label": "Host sessions with Nimote Connect",
       "title": "Self-hosted terminals, tasks, and coding agents",
-      "intro": "Install NimoteHost Community on your Linux, macOS, or Windows computer. Managed work continues after you disconnect. Reconnect over SSH from NimoteCode to review output, respond to Agent approvals, and continue working.",
+      "intro": "Keep terminals, tasks, and supported Agent sessions running on your computer with the Host service included in Nimote Connect.",
       "benefits": [
         [
           "Keep work moving",
@@ -269,8 +269,8 @@
         ]
       ],
       "privacy": "Self-host on Linux, macOS, or Windows through your existing SSH connection. The authenticated Host API listens only on loopback; Host credentials stay on your computer. AI tools use their configured providers.",
-      "note": "NimoteHost Community is available under Apache-2.0 and runs independently through its CLI or desktop manager. Using NimoteHost sessions from the phone requires a compatible NimoteCode build (2.4.1 or later) and Pro access.",
-      "guide": "Install and use Host",
+      "note": "Nimote Connect installs the NimoteHost service that runs managed terminals, tasks, and compatible Agent sessions. Use an SSH account that can access the project, and keep the computer and its Host service running. In-app Host sessions require Pro.",
+      "guide": "Install Nimote Connect",
       "source": "Explore the source",
       "contribute": "Contribute code"
     }
@@ -523,13 +523,13 @@
       "intro": "Connect 预览版旨在让兼容的手机通过 SSH 连接已配对的电脑，无需自行向公网开放 SSH 端口。NimoteHost 会话为可选功能。",
       "route": "Connect 提供通往电脑 SSH 服务的路径；仍使用你的 SSH 账号登录并核对主机密钥。",
       "setup": "在电脑上安装 Connect、完成账号绑定，再通过 GUI 或 CLI 明确启用公网连接。",
-      "availability": "macOS 和 Linux 已提供 CLI 预览包。NimoteCode 公网接入功能计划后续正式推出。也可使用直接 SSH 或个人 Tailscale。",
-      "guide": "Nimote Connect 预览版与安装步骤"
+      "availability": "macOS、Linux 和 Windows 已提供正式 CLI 安装包。受支持的 macOS 和 Linux 可在 App 内安装，Windows 请手动安装。",
+      "guide": "Nimote Connect 安装指南"
     },
     "host": {
-      "label": "NimoteHost 社区版 · Apache-2.0 开源",
+      "label": "使用 Nimote Connect 的 Host 会话",
       "title": "在自己的电脑上持续运行终端、任务与编程 Agent",
-      "intro": "在 Linux、macOS 或 Windows 电脑上安装 NimoteHost 社区版。断开连接后，托管任务继续运行。通过 NimoteCode 以 SSH 重新连接，即可查看输出、处理 Agent 审批并接续工作。",
+      "intro": "通过 Nimote Connect 内置的 Host 服务，让托管终端、任务和兼容 Agent 会话在电脑上持续运行。",
       "benefits": [
         [
           "工作持续推进",
@@ -545,8 +545,8 @@
         ]
       ],
       "privacy": "通过已有 SSH 连接，自部署到 Linux、macOS 或 Windows。Host API 仅监听本机回环地址并要求认证，Host 凭据留在自己的电脑上；AI 工具仍使用各自配置的模型服务。",
-      "note": "NimoteHost 社区版采用 Apache-2.0 开源许可，可通过 CLI 或桌面管理器独立运行。在手机上使用 NimoteHost 会话需要兼容的 NimoteCode（2.4.1 或更新版本）与 Pro 权益。",
-      "guide": "安装并使用 Host",
+      "note": "Nimote Connect 会安装运行托管终端、任务和兼容 Agent 会话所需的 NimoteHost 服务。请使用有权访问项目的 SSH 账号，并保持电脑和 Host 服务运行。App 内的 Host 会话需要 Pro。",
+      "guide": "安装 Nimote Connect",
       "source": "查看开源代码",
       "contribute": "参与代码贡献"
     }
@@ -799,13 +799,13 @@
       "intro": "Connect のプレビュー版は、対応するスマートフォンからペアリング済みの PC への SSH 経路を提供するためのものです。SSH ポートを公開する必要はありません。NimoteHost セッションは任意です。",
       "route": "Connect は PC の SSH サーバーへの経路です。SSH アカウント認証とホスト鍵の確認は引き続き必要です。",
       "setup": "PC に Connect をインストールしてペアリングし、GUI または CLI で公開接続を明示的に有効にします。",
-      "availability": "macOS と Linux 向け CLI プレビュー版を配布中です。NimoteCode の公開接続は今後提供予定です。直接 SSH と個人用 Tailscale も利用できます。",
-      "guide": "Connect のプレビューと設定"
+      "availability": "macOS、Linux、Windows 用の安定版 CLI を配布しています。対応する macOS・Linux はアプリ内で、Windows は手動で導入できます。",
+      "guide": "Nimote Connect の導入ガイド"
     },
     "host": {
-      "label": "NimoteHost Community · Apache-2.0 オープンソース",
+      "label": "Nimote Connect の Host セッション",
       "title": "ターミナル、タスク、コーディングエージェントを自分の環境で実行",
-      "intro": "Linux、macOS、Windows に NimoteHost Community を導入できます。切断後も管理対象の作業は継続します。NimoteCode から SSH で再接続し、出力の確認やエージェントの承認、作業の再開ができます。",
+      "intro": "Nimote Connect に含まれる Host サービスで、ターミナル、タスク、対応 Agent セッションを PC 上で継続できます。",
       "benefits": [
         [
           "作業を継続",
@@ -821,8 +821,8 @@
         ]
       ],
       "privacy": "Linux、macOS、Windows に自分で導入し、既存の SSH で接続します。認証付き API はループバックのみで待ち受け、Host 認証情報はパソコンに残ります。AI ツールは設定した提供元に接続します。",
-      "note": "NimoteHost Community は Apache-2.0 で公開され、CLI またはデスクトップマネージャーで単独で動作します。スマートフォンの NimoteHost セッションには対応する NimoteCode（2.4.1 以降）と Pro が必要です。",
-      "guide": "導入と使い方",
+      "note": "Nimote Connect には、ターミナル、タスク、対応 Agent セッションを管理する NimoteHost サービスが含まれます。プロジェクトにアクセスできる SSH アカウントを使い、PC と Host サービスを稼働させてください。アプリ内の Host セッションには Pro が必要です。",
+      "guide": "Nimote Connect をインストール",
       "source": "ソースを見る",
       "contribute": "コードを貢献"
     }
@@ -1075,13 +1075,13 @@
       "intro": "Connect 프리뷰는 SSH 포트를 직접 공개하지 않고 호환되는 휴대폰에서 페어링된 컴퓨터로 연결하는 SSH 경로를 제공하도록 설계되었습니다. NimoteHost 세션는 선택 사항입니다.",
       "route": "Connect는 컴퓨터의 SSH 서버로 가는 경로를 제공합니다. SSH 계정 인증과 호스트 키 확인은 그대로 필요합니다.",
       "setup": "컴퓨터에 Connect를 설치하고 계정에 연결한 뒤 GUI 또는 CLI에서 공용 접속을 명시적으로 켭니다.",
-      "availability": "macOS와 Linux용 CLI 프리뷰를 제공합니다. NimoteCode의 공용 접속은 출시 예정이며 직접 SSH와 개인 Tailscale을 별도로 사용할 수 있습니다.",
-      "guide": "Connect 프리뷰 및 설치 방법"
+      "availability": "macOS, Linux, Windows용 안정판 CLI 패키지가 제공됩니다. 지원되는 macOS와 Linux는 앱에서, Windows는 수동으로 설치하세요.",
+      "guide": "Nimote Connect 설치 가이드"
     },
     "host": {
-      "label": "NimoteHost Community · Apache-2.0 오픈 소스",
+      "label": "Nimote Connect의 Host 세션",
       "title": "내 컴퓨터에서 실행하는 터미널, 작업 및 코딩 에이전트",
-      "intro": "Linux, macOS 또는 Windows 컴퓨터에 NimoteHost Community를 설치하세요. 연결을 끊어도 관리 중인 작업이 계속됩니다. NimoteCode에서 SSH로 다시 연결해 출력을 확인하고 에이전트 요청을 승인하거나 작업을 이어갈 수 있습니다.",
+      "intro": "Nimote Connect에 포함된 Host 서비스로 터미널, 작업과 호환 Agent 세션을 컴퓨터에서 계속 실행할 수 있습니다.",
       "benefits": [
         [
           "작업 지속",
@@ -1097,8 +1097,8 @@
         ]
       ],
       "privacy": "Linux, macOS, Windows에 직접 배포하고 기존 SSH로 연결합니다. 인증 API는 루프백에서만 수신하고 Host 인증 정보는 컴퓨터에 남습니다. AI 도구는 설정한 제공자를 사용합니다.",
-      "note": "NimoteHost Community는 Apache-2.0으로 공개되며 CLI나 데스크톱 관리자로 독립 실행할 수 있습니다. 휴대폰에서 NimoteHost 세션를 사용하려면 호환되는 NimoteCode(2.4.1 이상)와 Pro가 필요합니다.",
-      "guide": "설치 및 사용 안내",
+      "note": "Nimote Connect에는 터미널, 작업, 호환 Agent 세션을 관리하는 NimoteHost 서비스가 포함됩니다. 프로젝트에 접근할 수 있는 SSH 계정을 사용하고 컴퓨터와 Host 서비스를 계속 실행하세요. 앱에서 Host 세션을 사용하려면 Pro가 필요합니다.",
+      "guide": "Nimote Connect 설치",
       "source": "소스 보기",
       "contribute": "코드 기여"
     }
@@ -1351,13 +1351,13 @@
       "intro": "La versión preliminar de Connect ofrece una ruta SSH desde un móvil compatible a un ordenador vinculado sin publicar su puerto SSH. El modo Host es opcional.",
       "route": "Connect proporciona una ruta al servidor SSH de tu ordenador. Siguen siendo necesarios tu cuenta SSH y la verificación de la clave del equipo.",
       "setup": "Instala Connect en el ordenador, vincúlalo a tu cuenta y activa expresamente el acceso público desde la GUI o la CLI.",
-      "availability": "Hay una versión preliminar de la CLI para macOS y Linux. El acceso público en NimoteCode está previsto. SSH directo y Tailscale personal siguen siendo opciones independientes.",
-      "guide": "Versión preliminar e instalación de Connect"
+      "availability": "Hay paquetes CLI estables para macOS, Linux y Windows. Usa el asistente en macOS o Linux compatibles e instala manualmente en Windows.",
+      "guide": "Guía de instalación de Nimote Connect"
     },
     "host": {
-      "label": "NimoteHost Community · Código abierto Apache-2.0",
+      "label": "Sesiones Host con Nimote Connect",
       "title": "Terminales, tareas y agentes de programación en tu propio equipo",
-      "intro": "Instala NimoteHost Community en Linux, macOS o Windows. Las tareas gestionadas siguen ejecutándose al desconectar. Vuelve a conectarte por SSH desde NimoteCode para revisar la salida, responder a las solicitudes de aprobación y continuar el trabajo.",
+      "intro": "Mantén terminales, tareas y sesiones de Agent compatibles en tu equipo con el servicio Host incluido en Nimote Connect.",
       "benefits": [
         [
           "Trabajo continuo",
@@ -1373,8 +1373,8 @@
         ]
       ],
       "privacy": "Despliega en Linux, macOS o Windows usando SSH. La API autenticada solo escucha en loopback y las credenciales Host permanecen en el equipo. Las herramientas de IA usan sus proveedores configurados.",
-      "note": "NimoteHost Community se publica bajo Apache-2.0 y funciona de forma independiente con la CLI o el gestor de escritorio. El modo Host en el móvil requiere una versión compatible de NimoteCode (2.4.1 o posterior) y acceso Pro.",
-      "guide": "Instalación y uso",
+      "note": "Nimote Connect incluye el servicio NimoteHost que gestiona terminales, tareas y sesiones de Agent compatibles. Usa una cuenta SSH con acceso al proyecto y mantén el equipo y el servicio Host en ejecución. Las sesiones Host en la app requieren Pro.",
+      "guide": "Instalar Nimote Connect",
       "source": "Explorar el código",
       "contribute": "Contribuir código"
     }

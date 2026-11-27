@@ -1,23 +1,19 @@
 ---
-title: "NimoteHost 社区版 | NimoteCode"
-description: "在 Linux、macOS 或 Windows 电脑上安装 NimoteHost 社区版。断开连接后，托管任务继续运行。通过 NimoteCode 以 SSH 重新连接，即可查看输出、处理 Agent 审批并接续工作。"
+title: "使用 Nimote Connect 的 Host 会话 | NimoteCode"
+description: "通过 Nimote Connect 内置的 Host 服务，让托管终端、任务和兼容 Agent 会话在电脑上持续运行。"
 ---
 
-# NimoteHost 社区版
+# 使用 Nimote Connect 的 Host 会话
 
-在 Linux、macOS 或 Windows 电脑上安装 NimoteHost 社区版。断开连接后，托管任务继续运行。通过 NimoteCode 以 SSH 重新连接，即可查看输出、处理 Agent 审批并接续工作。
+通过 Nimote Connect 内置的 Host 服务，让托管终端、任务和兼容 Agent 会话在电脑上持续运行。
 
-在开发主机中选择 SSH 连接。已配对设备可通过 Nimote Connect 获取网络路径。NimoteHost 可独立运行，通过已认证的 SSH 提供高级执行能力。
+Nimote Connect 会安装运行托管终端、任务和兼容 Agent 会话所需的 NimoteHost 服务。请使用有权访问项目的 SSH 账号，并保持电脑和 Host 服务运行。App 内的 Host 会话需要 Pro。
 
-NimoteHost 社区版采用 Apache-2.0 开源许可，可通过 CLI 或桌面管理器独立运行。在手机上使用 NimoteHost 会话需要兼容的 NimoteCode（2.4.1 或更新版本）与 Pro 权益。
+## 安装 Nimote Connect {#download-nimotehost}
 
-## 下载 NimoteHost 社区版 {#download-nimotehost}
+[安装 Nimote Connect](/zh/docs/host/getting-started) · [安装包兼容性](/zh/docs/host/compatibility)
 
-<HostDownload />
-
-[安装 NimoteHost](/zh/docs/host/getting-started) · [故障排查](/zh/docs/host/troubleshooting)
-
-NimoteHost 社区版支持终端、任务、兼容的编程 Agent 和社区插件。GitHub Issue 派发由 Nimote Connect 随附的 Host 提供。升级或切换版本请参阅[社区版指南](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)。
+NimoteHost 仍是独立的开源项目。NimoteCode 内的安装和更新统一使用 Nimote Connect。
 
 ## Host 能做什么，能为你带来什么？
 

@@ -5,7 +5,7 @@ description: "NimoteHost: troubleshooting."
 
 # Troubleshooting
 
-**NimoteHost currently supports local network (LAN) connections only.** Connect your phone and Host computer to the same local network and use the computer’s local address for SSH.
+Check ordinary SSH first. Use the computer’s reachable SSH address, or select a device with an available paired connection in Machines. Public Nimote Connect access requires pairing and enabling remote access.
 
 ## If it will not connect
 

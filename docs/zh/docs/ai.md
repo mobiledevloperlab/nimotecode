@@ -107,4 +107,4 @@ MCP 支持两类服务器传输方式：**stdio** 会在所选目标环境（自
 
 [2.4.0 →](/zh/releases/2.4.0)
 
-[开发主机 →](/zh/docs/host) — 安装 NimoteHost，通过 SSH 连接，创建终端、运行任务和使用 Agent。
+[开发主机 →](/zh/docs/host) — 安装 Nimote Connect，通过 SSH 连接，创建终端、运行任务和使用 Agent。

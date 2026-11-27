@@ -158,7 +158,7 @@ Local Linux is unavailable on iPhone and iPad; use an SSH host for development c
 ## NimoteCode 2.5.0 · Upcoming
 
 - SSH to paired computers via personal Tailscale.
-- Resume persistent tmux sessions with Pro. Install or update NimoteHost over SSH.
+- Resume persistent tmux sessions with Pro. install or update Nimote Connect over SSH.
 - Improved SSH recovery, terminal input, scrolling, and copy.
 - New phone navigation and highlighted workspace search results.
 - Faster built-in Codex and Android Local Linux toolkits.
@@ -178,7 +178,7 @@ Local Linux is unavailable on iPhone and iPad; use an SSH host for development c
 
 Install a compatible Host bundle on your development computer, keep it running, and connect through **Host → SSH connections** in NimoteCode 2.4.1 or later. Choose the bundle for the computer’s OS and CPU. Host and OS restarts interrupt running processes; Agent runtimes and authentication are configured separately. Ordinary SSH workspaces work without Host.
 
-[Setup guide](https://nimotecode.com/docs/host/getting-started) · [Host source](https://github.com/mobiledevloperlab/nimotehost) · [Host downloads](https://github.com/mobiledevloperlab/nimotehost/releases)
+[Setup guide](https://nimotecode.com/docs/host/getting-started) · [Host source](https://github.com/mobiledevloperlab/nimotehost) · [Nimote Connect Releases](https://github.com/mobiledevloperlab/nimote-connect/releases)
 
 ## AI with your own tools and providers
 

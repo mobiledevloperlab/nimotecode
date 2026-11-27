@@ -178,7 +178,7 @@ Host 기능에 따라 도구 출력, 승인, 작업과 검증 결과를 확인�
 
 컴퓨터의 OS와 CPU에 맞는 호환 패키지를 실행하고 NimoteCode 2.4.1 이상의 **Host → SSH connections**로 연결하세요. Host 또는 OS를 재시작하면 프로세스가 중단됩니다. Agent 설치와 인증은 별도로 필요하며 일반 SSH 작업 공간은 Host 없이 사용할 수 있습니다.
 
-[설치 가이드](https://nimotecode.com/ko/docs/host/getting-started) · [소스](https://github.com/mobiledevloperlab/nimotehost) · [Host 다운로드](https://github.com/mobiledevloperlab/nimotehost/releases)
+[설치 가이드](https://nimotecode.com/ko/docs/host/getting-started) · [소스](https://github.com/mobiledevloperlab/nimotehost) · [Nimote Connect Releases](https://github.com/mobiledevloperlab/nimote-connect/releases)
 
 ## 원하는 도구와 제공자로 AI 사용하기
 

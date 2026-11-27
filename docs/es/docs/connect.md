@@ -11,7 +11,9 @@ Para usar la conexión pública desde la lista de dispositivos vinculados de Nim
 
 Connect proporciona la ruta de red al servidor SSH del ordenador. Después de autenticarte puedes abrir espacios de trabajo remotos, archivos y terminales SSH. El modo Host es una opción independiente para tareas persistentes y sesiones de Agent; no es necesario para SSH público ni para el terminal. El paquete comercial actual también incluye el servicio Host.
 
-La [página de versiones de Nimote Connect](https://github.com/mobiledevloperlab/nimote-connect/releases) ofrece una versión preliminar de la CLI (`v0.2.0-local.8b06897`) para macOS y Linux en arm64 y amd64. El paquete incluye Connect y Host. Consulta futuras versiones para la aplicación de escritorio y los paquetes de Windows. La vinculación de esta versión requiere un cliente compatible. El acceso público por internet de NimoteCode está previsto. Usa el paquete y el archivo SHA-256 de la misma versión.
+La [página de versiones de Nimote Connect](https://github.com/mobiledevloperlab/nimote-connect/releases) ofrece paquetes CLI estables con Connect y Host para macOS, Linux y Windows en arm64 y amd64. Usa el paquete y el archivo SHA-256 de la misma versión.
+
+En macOS y Linux compatibles, conéctate primero por SSH en NimoteCode y elige **Máquinas → Host → Instalar Nimote Connect**. El asistente consulta las versiones en nimotecode.com y descarga y verifica el paquete de GitHub. En Windows, o si no puedes usar el asistente, instala manualmente.
 
 En macOS o Linux, extrae todo el paquete y ejecuta `./install.sh` como el usuario de escritorio, sin `sudo`. En Windows PowerShell, ejecuta `.\install.ps1` como el usuario actual. La GUI de macOS está en `~/Applications/NimoteConn.app`; en Linux, si el paquete la incluye, usa `~/.local/bin/nimoteconn`. Windows dispone solo de CLI. Activa OpenSSH, aprueba el código de vinculación y habilita **Connect → Remote access** en la GUI, o ejecuta `nimoteconnect remote-access enable`.
 

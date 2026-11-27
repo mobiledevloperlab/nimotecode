@@ -44,6 +44,7 @@ jobs:
       - run: npm exec -- astro check
         working-directory: blog
       - run: node --test scripts/image-optimizer-cache.test.mjs
+      - run: node --test scripts/nimote-connect-manifest.test.mjs
 
   production:
     if: github.event_name != 'pull_request'

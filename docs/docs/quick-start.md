@@ -20,7 +20,7 @@ Open a workspace, edit a file, and run your first command. Follow the steps belo
 
 NimoteCode 2.5.0 adds a floating navigation bar on portrait phones. Use it to switch workbench panels and use the empty editor’s file-browsing action to open Explorer.
 
-In NimoteCode 2.5.0, you can [connect to a paired computer through personal Tailscale](/docs/ssh#paired-computers), [resume an SSH terminal with tmux](/docs/terminal#persistent-ssh-terminal), or [set up NimoteHost over SSH](/docs/host/getting-started#install-over-ssh).
+In NimoteCode 2.5.0, you can [connect to a paired computer through personal Tailscale](/docs/ssh#paired-computers), [resume an SSH terminal with tmux](/docs/terminal#persistent-ssh-terminal), or [set up Nimote Connect over SSH](/docs/host/getting-started#install-over-ssh).
 
 NimoteCode offers four modes. Choose a mode on the welcome screen. In Full IDE, open the workspace menu to switch modes:
 

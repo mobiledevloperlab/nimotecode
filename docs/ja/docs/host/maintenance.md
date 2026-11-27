@@ -28,12 +28,8 @@ Host を実行する PC で、SSH に使うアカウントから操作します�
 | `nimotehost agents` | 稼働中の Host が見つけた Agent ツールを確認します。 |
 | `nimotehost tools refresh` | セッションを再起動せずツール検出を更新します。 |
 
-## Community の更新と削除
+## Nimote Connect を更新する
 
-手動更新では実行中の作業を終え、対応する新しい配布物を検証し、展開先から `setup` を実行します。Connect 付属の Host は Connect から更新します。
+Host の作業を終えてから、対象の macOS・Linux で NimoteCode の更新案内を使います。手動更新や削除は上流の手順を参照し、導入時と同じユーザーで実施してください。
 
-`deploy uninstall` は停止可能なサービスと配布物を削除し、認証情報とセッション記録を保持します。展開したパッケージか、インストール先の外にある検証済みの実行ファイルから実行します。エディションの変更は [Community ガイド](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/community.md)を参照してください。
-
-[詳細な導入と復旧](https://github.com/mobiledevloperlab/nimotehost/blob/master/docs/deployment.md)
-
-[概要](/ja/docs/host) · [トラブルシューティング](/ja/docs/host/troubleshooting)
+[Nimote Connect Releases](https://github.com/mobiledevloperlab/nimote-connect/releases) · [概要](/ja/docs/host)

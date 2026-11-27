@@ -5,7 +5,7 @@ description: "NimoteHost: guía de solución de problemas."
 
 # Solución de problemas
 
-**Por ahora, NimoteHost solo admite conexiones en la red local (LAN).** Conecta el móvil y el equipo que ejecuta Host a la misma red local y usa la dirección local del equipo para conectarte por SSH.
+Comprueba primero el SSH normal. Usa una dirección SSH accesible o elige un dispositivo vinculado disponible en Máquinas. El acceso público de Nimote Connect requiere vincular el equipo y activar el acceso remoto.
 
 ## Si no conecta
 
