@@ -76,4 +76,4 @@ Las contribuciones y dependencias versionadas de plugins se validan antes de ins
 
 [2.4.0 →](/es/releases/2.4.0)
 
-[Modo Host →](/es/docs/host) — Instalar NimoteHost, conectar por SSH y retomar terminales y tareas Agent.
+[Máquinas →](/es/docs/host) — Instalar NimoteHost, conectar por SSH y retomar terminales y tareas Agent.

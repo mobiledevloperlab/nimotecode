@@ -5,7 +5,7 @@ description: "NimoteHost: guía de descarga e instalación."
 
 # Descarga e instalación
 
-**Por ahora, NimoteHost solo admite conexiones en la red local (LAN).** Conecta el móvil y el equipo que ejecuta Host a la misma red local y usa la dirección local del equipo para conectarte por SSH.
+En **Máquinas**, selecciona una conexión SSH disponible y abre **Servicio de host**. Los equipos vinculados también pueden usar Nimote Connect.
 
 ## Antes de empezar
 

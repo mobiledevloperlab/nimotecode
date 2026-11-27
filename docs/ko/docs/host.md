@@ -7,9 +7,9 @@ description: "Linux, macOS 또는 Windows 컴퓨터에 NimoteHost Community를 �
 
 Linux, macOS 또는 Windows 컴퓨터에 NimoteHost Community를 설치하세요. 연결을 끊어도 관리 중인 작업이 계속됩니다. NimoteCode에서 SSH로 다시 연결해 출력을 확인하고 에이전트 요청을 승인하거나 작업을 이어갈 수 있습니다.
 
-**NimoteHost는 현재 로컬 네트워크(LAN) 연결만 지원합니다.** 휴대폰과 Host 컴퓨터를 같은 LAN에 연결하고 컴퓨터의 로컬 주소로 SSH에 접속하세요.
+개발 머신에서 SSH 연결을 선택합니다. 페어링된 기기는 Nimote Connect를 네트워크 경로로 사용할 수 있습니다. NimoteHost는 독립적으로 실행되며 인증된 SSH 연결을 통해 고급 기능을 제공합니다.
 
-NimoteHost Community는 Apache-2.0으로 공개되며 CLI나 데스크톱 관리자로 독립 실행할 수 있습니다. 휴대폰에서 Host 모드를 사용하려면 호환되는 NimoteCode(2.4.1 이상)와 Pro가 필요합니다.
+NimoteHost Community는 Apache-2.0으로 공개되며 CLI나 데스크톱 관리자로 독립 실행할 수 있습니다. 휴대폰에서 NimoteHost 세션를 사용하려면 호환되는 NimoteCode(2.4.1 이상)와 Pro가 필요합니다.
 
 ## NimoteHost Community 다운로드 {#download-nimotehost}
 
@@ -40,7 +40,7 @@ NimoteCode는 클라이언트이고 NimoteHost는 컴퓨터에서 작업을 실�
 
 연결은 **NimoteCode → SSH → NimoteHost → 프로젝트 도구** 순서입니다. 추가 Nimote 계정이나 공개 Host 포트가 필요 없으며 인증 정보는 컴퓨터에 남습니다. 명령은 Host의 OS 계정 권한으로 실행되므로 사용자 격리가 필요하면 OS 계정을 분리하세요. 일반 SSH에는 Host가 필요 없으며 Host는 연결 해제 후 작업 지속과 호환 Agent 관리를 추가합니다.
 
- Host 모드에는 NimoteCode 2.4.1 이상이 필요합니다. 서비스를 설치해도 이전 앱에 해당 화면이 추가되지는 않습니다.
+ NimoteHost 세션에는 NimoteCode 2.4.1 이상이 필요합니다. 서비스를 설치해도 이전 앱에 해당 화면이 추가되지는 않습니다.
 
 ## 전체 소스: 검토, 사용자 정의 및 기여
 

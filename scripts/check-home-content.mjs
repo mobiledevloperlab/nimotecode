@@ -2,6 +2,7 @@ import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 
 const copy = JSON.parse(readFileSync('docs/.vitepress/theme/i18n/home.json', 'utf8'))
+const machines = { en: 'Machines', zh: '开发主机', es: 'Máquinas', ja: '開発マシン', ko: '개발 머신' }
 const decode = text => text.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&#x27;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>')
 for (const [locale, content] of Object.entries(copy)) {
   assert.deepEqual(Object.keys(content).sort(), Object.keys(copy.en).sort(), `${locale}: missing translation keys`)
@@ -9,9 +10,9 @@ for (const [locale, content] of Object.entries(copy)) {
     assert.equal(content[key].length, copy.en[key].length, `${locale}: ${key} out of sync`)
   }
   for (const key of ['features', 'modeTitles', 'modeSummaries', 'modeBenefits', 'modeNotes']) {
-    assert.equal(content[key].length, 4, `${locale}: ${key} must describe IDE, Terminal, AI, and Host`)
+    assert.equal(content[key].length, 4, `${locale}: ${key} must describe IDE, Terminal, AI, and Machines`)
   }
-  assert.ok(content.features[3][0].includes('Host'), `${locale}: fourth mode must be Host`)
+  assert.equal(content.features[3][0], machines[locale], `${locale}: fourth mode must use the localized Machines name`)
   const path = locale === 'en' ? 'index.html' : `${locale}/index.html`
   const html = readFileSync(`docs/.vitepress/dist/${path}`, 'utf8')
   const schemas = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]

@@ -5,9 +5,11 @@ description: "Choose a Nimote Connect package, install the desktop or CLI, enabl
 
 # Nimote Connect: download and setup
 
+In Machines, choose the machine’s SSH connection. A paired device can use Nimote Connect for the network route. NimoteHost runs independently and provides advanced features over authenticated SSH.
+
 **Nimote Connect is required for NimoteCode's paired-device public connection.** Direct SSH to an address you already control, including your own Tailscale IP or MagicDNS name, does not require it. NimoteHost alone does not register a device or provide a public tunnel.
 
-Connect supplies the **network route to the computer's SSH server**. After SSH authentication, NimoteCode can open a remote workspace, browse and edit files, use SSH terminal sessions, and run the other SSH-backed tools available to that account. **Host mode is optional** for persistent Host tasks and Agent sessions; it is not a prerequisite for public SSH or the terminal. The commercial installer includes a Host service, but that packaging does not make Connect a Host-only feature.
+Connect supplies the **network route to the computer’s SSH server**. With the authenticated SSH connection, NimoteCode can open your remote project in IDE, Terminal or AI. Add NimoteHost to keep supported sessions and tasks running after disconnecting.
 
 ## Download the correct package
 
@@ -29,13 +31,13 @@ On macOS or Linux, extract the complete commercial tarball, open a terminal in i
 ./install.sh
 ```
 
-The current commercial bundle packages Connect and Host together. Connect's public SSH route works independently of entering Host mode. On Windows, extract the CLI ZIP and run in PowerShell as the signed-in user:
+The current commercial bundle packages Connect and Host together. Connect's public SSH route works independently of entering NimoteHost sessions. On Windows, extract the CLI ZIP and run in PowerShell as the signed-in user:
 
 ```powershell
 .\install.ps1
 ```
 
-Sign in and approve the computer's pairing code in NimoteCode. On macOS open `~/Applications/NimoteConn.app`; on Linux, if the release includes the desktop app, run `~/.local/bin/nimoteconn`. In **NimoteConn → Connect → Remote access**, select **Enable remote access**. The service starts with public access disabled. Wait for **Online**, then select the computer in NimoteCode's **Connect / Tailscale** tab and authenticate with its SSH account. Choose a remote workspace or terminal as needed; Host mode is a separate optional choice. Verify the SSH host fingerprint on first connection.
+Sign in and approve the computer's pairing code in NimoteCode. On macOS open `~/Applications/NimoteConn.app`; on Linux, if the release includes the desktop app, run `~/.local/bin/nimoteconn`. In **NimoteConn → Connect → Remote access**, select **Enable remote access**. The service starts with public access disabled. Wait for **Online**, then select the computer in **Machines** and authenticate with its SSH account. Choose IDE, Terminal or AI for the project. Verify the SSH host fingerprint on first connection.
 
 For a CLI-only installation, use these commands from the installed command path (`~/.local/bin/nimoteconnect` on macOS/Linux; `%LOCALAPPDATA%\NimoteConnect\nimote-connect.exe` on Windows):
 

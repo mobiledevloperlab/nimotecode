@@ -7,9 +7,9 @@ description: "Install NimoteHost Community on your Linux, macOS, or Windows comp
 
 Install NimoteHost Community on your Linux, macOS, or Windows computer. Managed work continues after you disconnect. Reconnect over SSH from NimoteCode to review output, respond to Agent approvals, and continue working.
 
-**NimoteHost currently supports local network (LAN) connections only.** Connect your phone and Host computer to the same local network and use the computer’s local address for SSH.
+In Machines, choose the machine’s SSH connection. A paired device can use Nimote Connect for the network route. NimoteHost runs independently and provides advanced features over authenticated SSH.
 
-NimoteHost Community is available under Apache-2.0 and runs independently through its CLI or desktop manager. Using Host mode from the phone requires a compatible NimoteCode build (2.4.1 or later) and Pro access.
+NimoteHost Community is available under Apache-2.0 and runs independently through its CLI or desktop manager. Using NimoteHost sessions from the phone requires a compatible NimoteCode build (2.4.1 or later) and Pro access.
 
 ## Download NimoteHost Community {#download-nimotehost}
 

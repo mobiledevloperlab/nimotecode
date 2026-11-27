@@ -95,4 +95,4 @@ AI パネルで設定済みのモデルを選び、質問を入力します。�
 
 [2.4.0 →](/ja/releases/2.4.0)
 
-[Host モード →](/ja/docs/host) — NimoteHost の導入、SSH 接続、ターミナルと Agent の使い方。
+[開発マシン →](/ja/docs/host) — NimoteHost の導入、SSH 接続、ターミナルと Agent の使い方。

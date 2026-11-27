@@ -5,7 +5,7 @@ description: "NimoteHost 下载与安装说明与操作步骤。"
 
 # 下载与安装
 
-**NimoteHost 目前仅支持局域网连接。** **请将手机和运行 Host 的电脑接入同一局域网，并使用电脑的局域网地址通过 SSH 连接。
+打开**开发主机**，选择可达的 SSH 连接，然后打开**主机服务**。已配对的机器也可以通过 Nimote Connect 建立网络连接，再使用 NimoteHost。
 
 ## 开始前
 

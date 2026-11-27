@@ -7,9 +7,9 @@ description: "在 Linux、macOS 或 Windows 电脑上安装 NimoteHost 社区版
 
 在 Linux、macOS 或 Windows 电脑上安装 NimoteHost 社区版。断开连接后，托管任务继续运行。通过 NimoteCode 以 SSH 重新连接，即可查看输出、处理 Agent 审批并接续工作。
 
-**NimoteHost 目前仅支持局域网连接。** **请将手机和运行 Host 的电脑接入同一局域网，并使用电脑的局域网地址通过 SSH 连接。
+在开发主机中选择 SSH 连接。已配对设备可通过 Nimote Connect 获取网络路径。NimoteHost 可独立运行，通过已认证的 SSH 提供高级执行能力。
 
-NimoteHost 社区版采用 Apache-2.0 开源许可，可通过 CLI 或桌面管理器独立运行。在手机上使用 Host 模式需要兼容的 NimoteCode（2.4.1 或更新版本）与 Pro 权益。
+NimoteHost 社区版采用 Apache-2.0 开源许可，可通过 CLI 或桌面管理器独立运行。在手机上使用 NimoteHost 会话需要兼容的 NimoteCode（2.4.1 或更新版本）与 Pro 权益。
 
 ## 下载 NimoteHost 社区版 {#download-nimotehost}
 

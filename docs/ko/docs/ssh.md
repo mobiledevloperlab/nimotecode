@@ -99,4 +99,4 @@ SSH 호스트 키 검증, Windows known_hosts 동시 접근과 최신 macOS SSH 
 
 [2.4.0 →](/ko/releases/2.4.0)
 
-[Host 모드 →](/ko/docs/host) — NimoteHost 설치, SSH 연결, 터미널 및 Agent 사용법.
+[개발 머신 →](/ko/docs/host) — NimoteHost 설치, SSH 연결, 터미널 및 Agent 사용법.

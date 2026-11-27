@@ -99,4 +99,4 @@ Verificación de claves SSH reforzada y mejor compatibilidad de Windows con know
 
 [2.4.0 →](/es/releases/2.4.0)
 
-[Modo Host →](/es/docs/host) — Instalar NimoteHost, conectar por SSH y retomar terminales y tareas Agent.
+[Máquinas →](/es/docs/host) — Instalar NimoteHost, conectar por SSH y retomar terminales y tareas Agent.

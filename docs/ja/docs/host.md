@@ -7,9 +7,9 @@ description: "Linux、macOS、Windows に NimoteHost Community を導入でき�
 
 Linux、macOS、Windows に NimoteHost Community を導入できます。切断後も管理対象の作業は継続します。NimoteCode から SSH で再接続し、出力の確認やエージェントの承認、作業の再開ができます。
 
-**NimoteHost は現在、ローカルネットワーク（LAN）内の接続のみ対応しています。** **スマートフォンと Host を実行する PC を同じ LAN に接続し、PC のローカルアドレスを SSH に使用してください。
+開発マシンで SSH 接続を選びます。ペアリング済みのマシンには Nimote Connect のネットワーク経路を利用できます。NimoteHost は独立して動作し、認証済みの SSH 接続を通じて高度な機能を提供します。
 
-NimoteHost Community は Apache-2.0 で公開され、CLI またはデスクトップマネージャーで単独で動作します。スマートフォンの Host モードには対応する NimoteCode（2.4.1 以降）と Pro が必要です。
+NimoteHost Community は Apache-2.0 で公開され、CLI またはデスクトップマネージャーで単独で動作します。スマートフォンの NimoteHost セッションには対応する NimoteCode（2.4.1 以降）と Pro が必要です。
 
 ## NimoteHost Community をダウンロード {#download-nimotehost}
 
@@ -40,7 +40,7 @@ NimoteCode はクライアント、NimoteHost はパソコン側の実行サー�
 
 接続は **NimoteCode → SSH → NimoteHost → プロジェクトのツール**です。追加の Nimote アカウントや Host の公開ポートは不要で、認証情報はパソコンに残ります。コマンドは Host の OS アカウント権限で動くため、ユーザーを分離する場合は OS アカウントを分けてください。通常の SSH に Host は不要です。Host は切断後のタスク継続と対応 Agent の管理を追加します。
 
-Host モードには NimoteCode 2.4.1 以降が必要です。サービスを導入しても旧アプリに入口は追加されません。
+NimoteHost セッションには NimoteCode 2.4.1 以降が必要です。サービスを導入しても旧アプリに入口は追加されません。
 
 ## 完全なソース：確認、変更、貢献
 

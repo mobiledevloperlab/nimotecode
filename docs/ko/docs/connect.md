@@ -5,9 +5,11 @@ description: "Nimote Connect 패키지 선택, GUI와 CLI 설치, 원격 접속 
 
 # Nimote Connect 설치
 
+개발 머신에서 SSH 연결을 선택합니다. 페어링된 기기는 Nimote Connect를 네트워크 경로로 사용할 수 있습니다. NimoteHost는 독립적으로 실행되며 인증된 SSH 연결을 통해 고급 기능을 제공합니다.
+
 NimoteCode의 연결된 기기 목록에서 공용 네트워크로 접속하려면 컴퓨터에 Nimote Connect를 설치하고 계정에 연결한 뒤 원격 접속을 활성화해야 합니다. 이미 접속 가능한 SSH 주소나 개인 Tailscale 주소를 통한 직접 SSH에는 필요하지 않습니다.
 
-Connect는 컴퓨터의 SSH 서버까지 연결 경로를 제공합니다. 연결 후 원격 작업 공간, 파일 및 SSH 터미널을 사용할 수 있습니다. Host 모드는 지속 작업과 Agent 세션을 위한 별도의 선택 기능이며 공용 SSH나 터미널의 필수 조건이 아닙니다. 현재 상용 패키지에는 Host도 함께 들어 있습니다.
+Connect는 컴퓨터의 SSH 서버까지 연결 경로를 제공합니다. 연결 후 원격 작업 공간, 파일 및 SSH 터미널을 사용할 수 있습니다. NimoteHost 세션는 지속 작업과 Agent 세션을 위한 별도의 선택 기능이며 공용 SSH나 터미널의 필수 조건이 아닙니다. 현재 상용 패키지에는 Host도 함께 들어 있습니다.
 
 [Nimote Connect 릴리스 페이지](https://github.com/mobiledevloperlab/nimote-connect/releases)에서 macOS 및 Linux의 arm64와 amd64용 CLI 프리뷰(`v0.2.0-local.8b06897`)를 제공합니다. Connect와 Host가 함께 들어 있습니다. 데스크톱 앱과 Windows 패키지는 이후 릴리스에서 제공 여부를 확인하세요. 프리뷰 페어링에는 호환 클라이언트가 필요하며 NimoteCode의 공개 인터넷 연결은 정식 출시 예정입니다. 동일한 릴리스의 패키지와 SHA-256 파일을 사용하세요.
 

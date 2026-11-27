@@ -7,7 +7,7 @@ description: "Instala NimoteHost Community en Linux, macOS o Windows. Las tareas
 
 Instala NimoteHost Community en Linux, macOS o Windows. Las tareas gestionadas siguen ejecutándose al desconectar. Vuelve a conectarte por SSH desde NimoteCode para revisar la salida, responder a las solicitudes de aprobación y continuar el trabajo.
 
-**Por ahora, NimoteHost solo admite conexiones en la red local (LAN).** Conecta el móvil y el equipo que ejecuta Host a la misma red local y usa la dirección local del equipo para conectarte por SSH.
+Selecciona una conexión SSH en Máquinas. Los equipos vinculados pueden usar Nimote Connect como ruta de red. NimoteHost funciona de forma independiente y ofrece funciones avanzadas a través de SSH autenticado.
 
 NimoteHost Community se publica bajo Apache-2.0 y funciona de forma independiente con la CLI o el gestor de escritorio. El modo Host en el móvil requiere una versión compatible de NimoteCode (2.4.1 o posterior) y acceso Pro.
 

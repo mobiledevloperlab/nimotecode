@@ -38,10 +38,10 @@
         "Explore AI workflows"
       ],
       [
-        "Host mode",
+        "Machines",
         "Leave the app. Keep the work running.",
         "Keep terminals, tasks, and compatible coding Agents on your own computer. Reconnect to review output, respond to approvals, and continue the session.",
-        "Explore Host mode"
+        "Explore Machines"
       ]
     ],
     "demoLabel": "See it in action",
@@ -136,7 +136,7 @@
         "Extend your workspace your way."
       ],
       [
-        "Host mode",
+        "Machines",
         "Keep terminals, tasks, and compatible coding Agents on your own computer. Reconnect to review output, respond to approvals, and continue the session."
       ]
     ],
@@ -187,7 +187,7 @@
       "Language services and debugging need configured tools; some advanced features require Pro.",
       "Commands need SSH or supported Android Local Linux; multiple terminals require Pro.",
       "Bring your own model service or external agent; usage is billed separately",
-      "Requires a compatible NimoteHost on a reachable SSH computer. Host mode requires NimoteCode 2.4.1 or later; Host and the computer must stay running."
+      "Persistent sessions use NimoteHost on a reachable SSH computer. The service and computer must stay running."
     ],
     "screenshotLink": "View screenshot",
     "capabilityDetails": "More development tools and access details",
@@ -244,7 +244,7 @@
     "connect": {
       "eyebrow": "Nimote Connect · remote SSH",
       "title": "Your development machine, across networks.",
-      "intro": "The Connect preview is designed to route SSH from a compatible phone to a paired computer without publishing your own SSH port. Host mode is optional.",
+      "intro": "The Connect preview is designed to route SSH from a compatible phone to a paired computer without publishing your own SSH port. NimoteHost adds optional persistent sessions.",
       "route": "A route to your own SSH server. Your SSH account and host-key check still protect the login.",
       "setup": "Install Connect on the computer, pair it with your account, then explicitly enable public access in the GUI or CLI.",
       "availability": "A CLI preview is available for macOS and Linux. Public access in NimoteCode is planned. Direct SSH and personal Tailscale remain separate options.",
@@ -253,7 +253,7 @@
     "host": {
       "label": "NimoteHost Community · Apache-2.0 open source",
       "title": "Self-hosted terminals, tasks, and coding agents",
-      "intro": "NimoteHost currently supports local network (LAN) connections only. Install NimoteHost Community on your Linux, macOS, or Windows computer. Managed work continues after you disconnect. Reconnect over SSH from NimoteCode to review output, respond to Agent approvals, and continue working.",
+      "intro": "Install NimoteHost Community on your Linux, macOS, or Windows computer. Managed work continues after you disconnect. Reconnect over SSH from NimoteCode to review output, respond to Agent approvals, and continue working.",
       "benefits": [
         [
           "Keep work moving",
@@ -269,7 +269,7 @@
         ]
       ],
       "privacy": "Self-host on Linux, macOS, or Windows through your existing SSH connection. The authenticated Host API listens only on loopback; Host credentials stay on your computer. AI tools use their configured providers.",
-      "note": "NimoteHost Community is available under Apache-2.0 and runs independently through its CLI or desktop manager. Using Host mode from the phone requires a compatible NimoteCode build (2.4.1 or later) and Pro access.",
+      "note": "NimoteHost Community is available under Apache-2.0 and runs independently through its CLI or desktop manager. Using NimoteHost sessions from the phone requires a compatible NimoteCode build (2.4.1 or later) and Pro access.",
       "guide": "Install and use Host",
       "source": "Explore the source",
       "contribute": "Contribute code"
@@ -314,10 +314,10 @@
         "探索 AI 工作流"
       ],
       [
-        "Host 模式",
+        "开发主机",
         "离开应用，工作继续。",
         "将终端、任务与兼容编程 Agent 托管在自己的电脑上。重新连接即可查看输出、处理审批，并回到原会话继续工作。",
-        "了解 Host 模式"
+        "了解开发主机"
       ]
     ],
     "demoLabel": "真实操作演示",
@@ -412,7 +412,7 @@
         "按自己的工作方式扩展工作区。"
       ],
       [
-        "Host 模式",
+        "开发主机",
         "将终端、任务与兼容编程 Agent 托管在自己的电脑上。重新连接即可查看输出、处理审批，并回到原会话继续工作。"
       ]
     ],
@@ -463,7 +463,7 @@
       "语言服务和调试需配置相应工具；部分进阶能力需 Pro。",
       "运行命令需 SSH 或受支持的 Android Local Linux；多终端需 Pro。",
       "需自备模型服务或外部 Agent；Pro 不包含模型用量、API 额度或第三方订阅",
-      "需在 SSH 可达的电脑上安装兼容 NimoteHost。Host 模式需要 NimoteCode 2.4.1 或更新版本；电脑和 Host 需要保持运行。"
+      "需在 SSH 可达的电脑上安装兼容 NimoteHost。NimoteHost 会话需要 NimoteCode 2.4.1 或更新版本；电脑和 Host 需要保持运行。"
     ],
     "screenshotLink": "查看真实界面",
     "capabilityDetails": "更多开发能力与使用条件",
@@ -520,7 +520,7 @@
     "connect": {
       "eyebrow": "Nimote Connect · 公网 SSH",
       "title": "跨网络连接自己的开发电脑。",
-      "intro": "Connect 预览版旨在让兼容的手机通过 SSH 连接已配对的电脑，无需自行向公网开放 SSH 端口。Host 模式为可选功能。",
+      "intro": "Connect 预览版旨在让兼容的手机通过 SSH 连接已配对的电脑，无需自行向公网开放 SSH 端口。NimoteHost 会话为可选功能。",
       "route": "Connect 提供通往电脑 SSH 服务的路径；仍使用你的 SSH 账号登录并核对主机密钥。",
       "setup": "在电脑上安装 Connect、完成账号绑定，再通过 GUI 或 CLI 明确启用公网连接。",
       "availability": "macOS 和 Linux 已提供 CLI 预览包。NimoteCode 公网接入功能计划后续正式推出。也可使用直接 SSH 或个人 Tailscale。",
@@ -529,7 +529,7 @@
     "host": {
       "label": "NimoteHost 社区版 · Apache-2.0 开源",
       "title": "在自己的电脑上持续运行终端、任务与编程 Agent",
-      "intro": "NimoteHost 目前仅支持局域网连接。在 Linux、macOS 或 Windows 电脑上安装 NimoteHost 社区版。断开连接后，托管任务继续运行。通过 NimoteCode 以 SSH 重新连接，即可查看输出、处理 Agent 审批并接续工作。",
+      "intro": "在 Linux、macOS 或 Windows 电脑上安装 NimoteHost 社区版。断开连接后，托管任务继续运行。通过 NimoteCode 以 SSH 重新连接，即可查看输出、处理 Agent 审批并接续工作。",
       "benefits": [
         [
           "工作持续推进",
@@ -545,7 +545,7 @@
         ]
       ],
       "privacy": "通过已有 SSH 连接，自部署到 Linux、macOS 或 Windows。Host API 仅监听本机回环地址并要求认证，Host 凭据留在自己的电脑上；AI 工具仍使用各自配置的模型服务。",
-      "note": "NimoteHost 社区版采用 Apache-2.0 开源许可，可通过 CLI 或桌面管理器独立运行。在手机上使用 Host 模式需要兼容的 NimoteCode（2.4.1 或更新版本）与 Pro 权益。",
+      "note": "NimoteHost 社区版采用 Apache-2.0 开源许可，可通过 CLI 或桌面管理器独立运行。在手机上使用 NimoteHost 会话需要兼容的 NimoteCode（2.4.1 或更新版本）与 Pro 权益。",
       "guide": "安装并使用 Host",
       "source": "查看开源代码",
       "contribute": "参与代码贡献"
@@ -590,10 +590,10 @@
         "AI ワークフローを見る"
       ],
       [
-        "Host モード",
+        "開発マシン",
         "アプリを離れても、作業は続く。",
         "自分のパソコンでターミナル、タスク、対応 Agent を管理。再接続して出力を確認し、承認に応答して会話を続けられます。",
-        "Host モードを見る"
+        "開発マシンを見る"
       ]
     ],
     "demoLabel": "操作デモ",
@@ -688,7 +688,7 @@
         "自分に合った開発環境に拡張。"
       ],
       [
-        "Host モード",
+        "開発マシン",
         "自分のパソコンでターミナル、タスク、対応 Agent を管理。再接続して出力を確認し、承認に応答して会話を続けられます。"
       ]
     ],
@@ -796,7 +796,7 @@
     "connect": {
       "eyebrow": "Nimote Connect · リモート SSH",
       "title": "ネットワークを越えて開発用 PC へ。",
-      "intro": "Connect のプレビュー版は、対応するスマートフォンからペアリング済みの PC への SSH 経路を提供するためのものです。SSH ポートを公開する必要はありません。Host モードは任意です。",
+      "intro": "Connect のプレビュー版は、対応するスマートフォンからペアリング済みの PC への SSH 経路を提供するためのものです。SSH ポートを公開する必要はありません。NimoteHost セッションは任意です。",
       "route": "Connect は PC の SSH サーバーへの経路です。SSH アカウント認証とホスト鍵の確認は引き続き必要です。",
       "setup": "PC に Connect をインストールしてペアリングし、GUI または CLI で公開接続を明示的に有効にします。",
       "availability": "macOS と Linux 向け CLI プレビュー版を配布中です。NimoteCode の公開接続は今後提供予定です。直接 SSH と個人用 Tailscale も利用できます。",
@@ -805,7 +805,7 @@
     "host": {
       "label": "NimoteHost Community · Apache-2.0 オープンソース",
       "title": "ターミナル、タスク、コーディングエージェントを自分の環境で実行",
-      "intro": "NimoteHost は現在、ローカルネットワーク（LAN）内の接続のみ対応しています。Linux、macOS、Windows に NimoteHost Community を導入できます。切断後も管理対象の作業は継続します。NimoteCode から SSH で再接続し、出力の確認やエージェントの承認、作業の再開ができます。",
+      "intro": "Linux、macOS、Windows に NimoteHost Community を導入できます。切断後も管理対象の作業は継続します。NimoteCode から SSH で再接続し、出力の確認やエージェントの承認、作業の再開ができます。",
       "benefits": [
         [
           "作業を継続",
@@ -821,7 +821,7 @@
         ]
       ],
       "privacy": "Linux、macOS、Windows に自分で導入し、既存の SSH で接続します。認証付き API はループバックのみで待ち受け、Host 認証情報はパソコンに残ります。AI ツールは設定した提供元に接続します。",
-      "note": "NimoteHost Community は Apache-2.0 で公開され、CLI またはデスクトップマネージャーで単独で動作します。スマートフォンの Host モードには対応する NimoteCode（2.4.1 以降）と Pro が必要です。",
+      "note": "NimoteHost Community は Apache-2.0 で公開され、CLI またはデスクトップマネージャーで単独で動作します。スマートフォンの NimoteHost セッションには対応する NimoteCode（2.4.1 以降）と Pro が必要です。",
       "guide": "導入と使い方",
       "source": "ソースを見る",
       "contribute": "コードを貢献"
@@ -866,10 +866,10 @@
         "AI 워크플로 살펴보기"
       ],
       [
-        "Host 모드",
+        "개발 머신",
         "앱을 떠나도 작업은 계속됩니다.",
         "내 컴퓨터에서 터미널, 작업과 호환 Agent를 관리합니다. 다시 연결해 출력을 확인하고 승인을 처리하며 세션을 이어가세요.",
-        "Host 모드 알아보기"
+        "개발 머신 알아보기"
       ]
     ],
     "demoLabel": "실제 사용 데모",
@@ -964,7 +964,7 @@
         "작업 공간을 원하는 대로 확장하세요."
       ],
       [
-        "Host 모드",
+        "개발 머신",
         "내 컴퓨터에서 터미널, 작업과 호환 Agent를 관리합니다. 다시 연결해 출력을 확인하고 승인을 처리하며 세션을 이어가세요."
       ]
     ],
@@ -1072,7 +1072,7 @@
     "connect": {
       "eyebrow": "Nimote Connect · 원격 SSH",
       "title": "네트워크가 달라도 내 개발 컴퓨터에 연결하세요.",
-      "intro": "Connect 프리뷰는 SSH 포트를 직접 공개하지 않고 호환되는 휴대폰에서 페어링된 컴퓨터로 연결하는 SSH 경로를 제공하도록 설계되었습니다. Host 모드는 선택 사항입니다.",
+      "intro": "Connect 프리뷰는 SSH 포트를 직접 공개하지 않고 호환되는 휴대폰에서 페어링된 컴퓨터로 연결하는 SSH 경로를 제공하도록 설계되었습니다. NimoteHost 세션는 선택 사항입니다.",
       "route": "Connect는 컴퓨터의 SSH 서버로 가는 경로를 제공합니다. SSH 계정 인증과 호스트 키 확인은 그대로 필요합니다.",
       "setup": "컴퓨터에 Connect를 설치하고 계정에 연결한 뒤 GUI 또는 CLI에서 공용 접속을 명시적으로 켭니다.",
       "availability": "macOS와 Linux용 CLI 프리뷰를 제공합니다. NimoteCode의 공용 접속은 출시 예정이며 직접 SSH와 개인 Tailscale을 별도로 사용할 수 있습니다.",
@@ -1081,7 +1081,7 @@
     "host": {
       "label": "NimoteHost Community · Apache-2.0 오픈 소스",
       "title": "내 컴퓨터에서 실행하는 터미널, 작업 및 코딩 에이전트",
-      "intro": "NimoteHost는 현재 로컬 네트워크(LAN) 연결만 지원합니다. Linux, macOS 또는 Windows 컴퓨터에 NimoteHost Community를 설치하세요. 연결을 끊어도 관리 중인 작업이 계속됩니다. NimoteCode에서 SSH로 다시 연결해 출력을 확인하고 에이전트 요청을 승인하거나 작업을 이어갈 수 있습니다.",
+      "intro": "Linux, macOS 또는 Windows 컴퓨터에 NimoteHost Community를 설치하세요. 연결을 끊어도 관리 중인 작업이 계속됩니다. NimoteCode에서 SSH로 다시 연결해 출력을 확인하고 에이전트 요청을 승인하거나 작업을 이어갈 수 있습니다.",
       "benefits": [
         [
           "작업 지속",
@@ -1097,7 +1097,7 @@
         ]
       ],
       "privacy": "Linux, macOS, Windows에 직접 배포하고 기존 SSH로 연결합니다. 인증 API는 루프백에서만 수신하고 Host 인증 정보는 컴퓨터에 남습니다. AI 도구는 설정한 제공자를 사용합니다.",
-      "note": "NimoteHost Community는 Apache-2.0으로 공개되며 CLI나 데스크톱 관리자로 독립 실행할 수 있습니다. 휴대폰에서 Host 모드를 사용하려면 호환되는 NimoteCode(2.4.1 이상)와 Pro가 필요합니다.",
+      "note": "NimoteHost Community는 Apache-2.0으로 공개되며 CLI나 데스크톱 관리자로 독립 실행할 수 있습니다. 휴대폰에서 NimoteHost 세션를 사용하려면 호환되는 NimoteCode(2.4.1 이상)와 Pro가 필요합니다.",
       "guide": "설치 및 사용 안내",
       "source": "소스 보기",
       "contribute": "코드 기여"
@@ -1142,7 +1142,7 @@
         "Explorar flujos de IA"
       ],
       [
-        "Modo Host",
+        "Máquinas",
         "Sales de la app. El trabajo continúa.",
         "Gestiona terminales, tareas y Agents compatibles en tu ordenador. Reconecta para revisar salidas, responder aprobaciones y continuar la sesión.",
         "Explorar Host"
@@ -1240,7 +1240,7 @@
         "Amplía tu espacio a tu manera."
       ],
       [
-        "Modo Host",
+        "Máquinas",
         "Gestiona terminales, tareas y Agents compatibles en tu ordenador. Reconecta para revisar salidas, responder aprobaciones y continuar la sesión."
       ]
     ],
@@ -1357,7 +1357,7 @@
     "host": {
       "label": "NimoteHost Community · Código abierto Apache-2.0",
       "title": "Terminales, tareas y agentes de programación en tu propio equipo",
-      "intro": "Por ahora, NimoteHost solo admite conexiones en la red local (LAN). Instala NimoteHost Community en Linux, macOS o Windows. Las tareas gestionadas siguen ejecutándose al desconectar. Vuelve a conectarte por SSH desde NimoteCode para revisar la salida, responder a las solicitudes de aprobación y continuar el trabajo.",
+      "intro": "Instala NimoteHost Community en Linux, macOS o Windows. Las tareas gestionadas siguen ejecutándose al desconectar. Vuelve a conectarte por SSH desde NimoteCode para revisar la salida, responder a las solicitudes de aprobación y continuar el trabajo.",
       "benefits": [
         [
           "Trabajo continuo",

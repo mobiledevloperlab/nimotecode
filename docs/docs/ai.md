@@ -87,4 +87,4 @@ ACP Agents that support follow-up prompts can receive additional instructions wh
 
 [2.4.0 →](/releases/2.4.0)
 
-[Host mode →](/docs/host) — Install NimoteHost, connect over SSH, and return to terminals and Agent tasks.
+[Machines →](/docs/host) — Install NimoteHost, connect over SSH, and return to terminals and Agent tasks.

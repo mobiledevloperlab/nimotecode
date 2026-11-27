@@ -17,7 +17,7 @@ export const product = {
     'Git write workflows and GitHub integration',
     'Android Local Linux on supported devices',
     'Multiple terminal sessions',
-    'Host mode with SSH and a running nimotehost service',
+    'Persistent sessions with SSH and a running NimoteHost service',
     'Docker, Compose and Dev Containers on SSH hosts',
     'Advanced LSP code actions, guided installation and debugging',
     'Sync / Cache workflows'

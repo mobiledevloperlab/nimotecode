@@ -15,7 +15,7 @@ description: 了解 NimoteCode 的四种模式、SSH 和 Android 本地 Linux，
 | --- | --- | --- |
 | 编辑设备上的文件 | [本地与 SSH 工作区](/zh/docs/ssh) | 本地目录提供文件访问；运行项目命令需要 SSH 或本地 Linux 环境。 |
 | 使用已有的电脑或服务器 | [本地与 SSH 工作区](/zh/docs/ssh) | 通过 SSH 访问远程项目，沿用主机上已经安装的工具链。 |
-| 断线后回来继续处理远程任务 | [Host 模式](/zh/docs/host) | 先在电脑上安装 NimoteHost，再通过 SSH 连接；Host 保持运行时可继续托管进程。 |
+| 断线后回来继续处理远程任务 | [开发主机](/zh/docs/host) | 先在电脑上安装 NimoteHost，再通过 SSH 连接；Host 保持运行时可继续托管进程。 |
 | 在 Android 上运行 Linux 工具 | [安装并运行第一条命令](/zh/docs/local-linux/getting-started) | 先检查设备要求，再安装本地 Linux；仅适用于受支持的 Android 设备。 |
 
 应用的四种模式决定操作界面，工作区决定文件位置和命令执行环境。Host 另外需要电脑上的服务。模式选择见[快速开始](/zh/docs/quick-start)。
@@ -58,9 +58,11 @@ description: 了解 NimoteCode 的四种模式、SSH 和 Android 本地 Linux，
 | [AI 对话、Agent 与 MCP](/zh/docs/ai) | 开始对话、选择 Agent、审批计划与查看执行过程 |
 | [自定义插件](/zh/docs/plugins) | 创建与安装、数据与操作、权限、后台任务 |
 
-### Host 模式
+### 开发主机
 
-[Host 模式](/zh/docs/host) · [安装 NimoteHost](/zh/docs/host/getting-started) · [故障排查](/zh/docs/host/troubleshooting)
+在**开发主机 → 添加开发主机**选择 SSH、Nimote Connect、局域网或 Tailscale。选择机器后可在 IDE、终端或 AI 中打开它的工作区。需要持久化会话、远程任务或审批时，可设置 NimoteHost。高级功能需要兼容工具和 Pro 权益。
+
+[开发主机](/zh/docs/host) · [安装 NimoteHost](/zh/docs/host/getting-started) · [故障排查](/zh/docs/host/troubleshooting)
 
 ### Android 本地 Linux
 

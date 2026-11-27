@@ -15,7 +15,7 @@ NimoteCode 2.5.0 では、[個人用 Tailscale でペアリング済みの PC �
 | --- | --- | --- |
 | 端末上のファイルを編集する | [ローカルと SSH のワークスペース](/ja/docs/ssh) | ローカルフォルダーはファイルへのアクセスを提供します。コマンド実行には SSH または Local Linux が必要です。 |
 | 既存のパソコンやサーバーを使う | [ローカルと SSH のワークスペース](/ja/docs/ssh) | SSH で接続し、リモートにあるプロジェクトとツールを使います。 |
-| 切断後もリモートタスクに戻る | [Host モード](/ja/docs/host) | パソコンに NimoteHost を導入し SSH で接続します。Host が動作中なら管理対象のプロセスを継続できます。 |
+| 切断後もリモートタスクに戻る | [開発マシン](/ja/docs/host) | パソコンに NimoteHost を導入し SSH で接続します。Host が動作中なら管理対象のプロセスを継続できます。 |
 | Android で Linux ツールを使う | [導入と初回実行](/ja/docs/local-linux/getting-started) | 先に端末要件を確認してから導入します。対応 Android 端末のみで利用できます。 |
 
 4つのアプリモードは操作画面を選び、ワークスペースはファイルとコマンドの場所を決めます。Host はパソコン側のサービスも必要です。モード選択は[クイックスタート](/ja/docs/quick-start)を参照してください。
@@ -58,9 +58,11 @@ NimoteCode 2.5.0 では、[個人用 Tailscale でペアリング済みの PC �
 | [AI Chat・Agent・MCP](/ja/docs/ai) | 会話を始める · Agent を選ぶ · 計画を承認して実行を確認する |
 | [カスタムプラグイン](/ja/docs/plugins) | 最初のプラグインを作成する · プレビュー・権限・実行 · バックグラウンドジョブとスケジュール |
 
-### Host モード
+### 開発マシン
 
-[Host モード](/ja/docs/host) · [NimoteHost を導入](/ja/docs/host/getting-started) · [トラブルシューティング](/ja/docs/host/troubleshooting)
+**開発マシン → 開発マシンを追加**から、SSH、Nimote Connect、ローカルネットワーク、Tailscale を選びます。マシンを選び、IDE、ターミナル、AI でワークスペースを開きます。永続セッション、リモートタスク、承認が必要な場合は NimoteHost を設定します。NimoteHost の機能には対応するツールと Pro が必要です。
+
+[開発マシン](/ja/docs/host) · [NimoteHost を導入](/ja/docs/host/getting-started) · [トラブルシューティング](/ja/docs/host/troubleshooting)
 
 ### Android Local Linux
 

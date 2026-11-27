@@ -5,6 +5,8 @@ description: "Paquetes compatibles, instalación de GUI y CLI, acceso remoto y a
 
 # Instalar Nimote Connect
 
+Selecciona una conexión SSH en Máquinas. Los equipos vinculados pueden usar Nimote Connect como ruta de red. NimoteHost funciona de forma independiente y ofrece funciones avanzadas a través de SSH autenticado.
+
 Para usar la conexión pública desde la lista de dispositivos vinculados de NimoteCode, instala Nimote Connect en el ordenador, vincúlalo a tu cuenta y activa el acceso remoto. Una dirección SSH pública que ya controlas, incluida una dirección Tailscale propia, puede usarse con SSH directo sin Connect.
 
 Connect proporciona la ruta de red al servidor SSH del ordenador. Después de autenticarte puedes abrir espacios de trabajo remotos, archivos y terminales SSH. El modo Host es una opción independiente para tareas persistentes y sesiones de Agent; no es necesario para SSH público ni para el terminal. El paquete comercial actual también incluye el servicio Host.

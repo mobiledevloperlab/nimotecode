@@ -5,6 +5,8 @@ description: "Configuración, procedimientos y referencia de la interfaz: Inicio
 
 # Inicio rápido
 
+En **Máquinas → Añadir máquina**, elige SSH, Nimote Connect, Red local o Tailscale. Selecciona la máquina para abrir su espacio en el IDE, el terminal o la IA. Configura NimoteHost para sesiones persistentes, tareas remotas y aprobaciones. Las funciones de NimoteHost requieren herramientas compatibles y acceso Pro.
+
 [Free y Pro](/es/pro)
 
 Abre un espacio de trabajo, edita un archivo y ejecuta tu primer comando. Sigue los pasos siguientes; configura la conexión del modelo cuando vayas a usar el Agent.

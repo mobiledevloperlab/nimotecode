@@ -76,4 +76,4 @@ Android クライアントは SSH または Local Linux 環境でバックグラ
 
 [2.4.0 →](/ja/releases/2.4.0)
 
-[Host モード →](/ja/docs/host) — NimoteHost の導入、SSH 接続、ターミナルと Agent の使い方。
+[開発マシン →](/ja/docs/host) — NimoteHost の導入、SSH 接続、ターミナルと Agent の使い方。

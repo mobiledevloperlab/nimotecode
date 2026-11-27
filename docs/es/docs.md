@@ -15,7 +15,7 @@ En NimoteCode 2.5.0 puedes [conectar con un equipo vinculado mediante Tailscale 
 | --- | --- | --- |
 | Editar archivos en mi dispositivo | [Espacios de trabajo locales y SSH](/es/docs/ssh) | Una carpeta local permite acceder a archivos. Ejecutar comandos del proyecto requiere SSH o Local Linux. |
 | Usar un ordenador o servidor existente | [Espacios de trabajo locales y SSH](/es/docs/ssh) | Conecta por SSH para usar el proyecto y las herramientas instaladas allí. |
-| Retomar tareas remotas tras desconectarme | [Modo Host](/es/docs/host) | Instala NimoteHost en el ordenador y conecta por SSH. Los procesos gestionados pueden continuar mientras Host siga activo. |
+| Retomar tareas remotas tras desconectarme | [Máquinas](/es/docs/host) | Instala NimoteHost en el ordenador y conecta por SSH. Los procesos gestionados pueden continuar mientras Host siga activo. |
 | Ejecutar herramientas Linux en Android | [Instalar y ejecutar el primer comando](/es/docs/local-linux/getting-started) | Comprueba los requisitos antes de instalar. Solo está disponible en dispositivos Android compatibles. |
 
 Los cuatro modos de la aplicación eligen la interfaz; el espacio determina dónde están los archivos y se ejecutan los comandos. Host requiere además un servicio en el ordenador. Consulta [Inicio rápido](/es/docs/quick-start) para elegir modo.
@@ -58,9 +58,11 @@ Los cuatro modos de la aplicación eligen la interfaz; el espacio determina dón
 | [Chat, Agents y MCP](/es/docs/ai) | Iniciar una conversación · Elegir un agente · Revisar el plan y seguir la ejecución |
 | [Plugins personalizados](/es/docs/plugins) | Crear el primer plugin · Vista previa, permisos y ejecución · Trabajos en segundo plano y programación |
 
-### Modo Host
+### Máquinas
 
-[Modo Host](/es/docs/host) · [Instalar NimoteHost](/es/docs/host/getting-started) · [Solucionar problemas](/es/docs/host/troubleshooting)
+En **Máquinas → Añadir máquina**, elige SSH, Nimote Connect, Red local o Tailscale. Selecciona la máquina para abrir su espacio en el IDE, el terminal o la IA. Configura NimoteHost para sesiones persistentes, tareas remotas y aprobaciones. Las funciones de NimoteHost requieren herramientas compatibles y acceso Pro.
+
+[Máquinas](/es/docs/host) · [Instalar NimoteHost](/es/docs/host/getting-started) · [Solucionar problemas](/es/docs/host/troubleshooting)
 
 ### Local Linux en Android
 

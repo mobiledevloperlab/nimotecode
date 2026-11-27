@@ -95,4 +95,4 @@ AI 패널에서 설정된 모델을 선택하고 질문을 입력합니다. 프�
 
 [2.4.0 →](/ko/releases/2.4.0)
 
-[Host 모드 →](/ko/docs/host) — NimoteHost 설치, SSH 연결, 터미널 및 Agent 사용법.
+[개발 머신 →](/ko/docs/host) — NimoteHost 설치, SSH 연결, 터미널 및 Agent 사용법.

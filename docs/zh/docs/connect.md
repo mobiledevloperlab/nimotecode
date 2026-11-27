@@ -5,9 +5,11 @@ description: "按系统选择 Nimote Connect 安装包，部署图形界面或�
 
 # Nimote Connect 下载、安装与升级
 
+在开发主机中选择 SSH 连接。已配对设备可通过 Nimote Connect 获取网络路径。NimoteHost 可独立运行，通过已认证的 SSH 提供高级执行能力。
+
 **使用 NimoteCode「Connect / Tailscale」设备列表里的 Nimote 公网连接，电脑必须先安装并绑定 Nimote Connect。** 如果你已有可访问的 SSH 地址，或自己配置了 Tailscale IP / MagicDNS，可以直接选择「SSH」，无需安装 Connect。只有 NimoteHost 不会自动提供公网隧道或出现在设备列表中。
 
-Connect 提供的是通往电脑 **SSH 服务的公网路径**。SSH 认证成功后，可在 NimoteCode 打开远程工作区、浏览和编辑文件、使用 SSH 终端，以及该 SSH 账号可用的其他远程工具。**Host 模式不是公网 SSH 或终端的前提**；它是持久任务和 Agent 会话等功能的独立选择。当前商业安装包同时包含 Host 服务，只是打包方式，不代表 Connect 只能用于 Host。
+Connect 提供的是通往电脑 **SSH 服务的公网路径**。SSH 认证成功后，可在 NimoteCode 打开远程工作区、浏览和编辑文件、使用 SSH 终端，以及该 SSH 账号可用的其他远程工具。**NimoteHost 会话不是公网 SSH 或终端的前提**；它是持久任务和 Agent 会话等功能的独立选择。当前商业安装包同时包含 Host 服务，只是打包方式，不代表 Connect 只能用于 Host。
 
 ## 从哪里下载
 
@@ -35,7 +37,7 @@ Windows：解压 CLI ZIP，以当前登录用户在 PowerShell 执行：
 .\install.ps1
 ```
 
-当前商业包会一起部署 Connect 和商业版 Host，但 Connect 的公网 SSH 不需要进入 Host 模式。按显示的设备码在 NimoteCode 中登录并批准绑定。macOS 可打开 `~/Applications/NimoteConn.app`；Linux 如果该包包含图形界面，可运行 `~/.local/bin/nimoteconn`。进入 **NimoteConn → Connect → 公网连接**，点击**启用公网连接**。公网连接默认关闭；等待状态变为**已上线**，再到 NimoteCode 的 **Connect / Tailscale** 标签选择电脑，使用该电脑的 SSH 账号认证。之后可按需要打开远程工作区或终端；Host 模式是另一项可选功能。首次连接还需核对 SSH 主机指纹。
+当前商业包会一起部署 Connect 和商业版 Host，但 Connect 的公网 SSH 不需要进入 NimoteHost 会话。按显示的设备码在 NimoteCode 中登录并批准绑定。macOS 可打开 `~/Applications/NimoteConn.app`；Linux 如果该包包含图形界面，可运行 `~/.local/bin/nimoteconn`。进入 **NimoteConn → Connect → 公网连接**，点击**启用公网连接**。公网连接默认关闭；等待状态变为**已上线**，再到 NimoteCode 的 **Connect / Tailscale** 标签选择电脑，使用该电脑的 SSH 账号认证。之后可按需要打开远程工作区或终端；NimoteHost 会话是另一项可选功能。首次连接还需核对 SSH 主机指纹。
 
 ### 只用 CLI 时
 

@@ -5,6 +5,8 @@ description: "Get started with NimoteCode: explore four modes, open a local or S
 
 # Quick start
 
+Open **Machines → Add Machine** and choose SSH, Nimote Connect, Local Network, or Tailscale. Select the machine to open its workspace in IDE, Terminal, or AI. Add NimoteHost for persistent sessions, remote tasks, and approvals. NimoteHost features require compatible tools and Pro access.
+
 [Free and Pro](/pro)
 
 Open a workspace, edit a file, and run your first command. Follow the steps below; AI setup is only needed when you reach the Agent step.

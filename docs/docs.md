@@ -15,7 +15,7 @@ In NimoteCode 2.5.0, you can [connect to a paired computer through personal Tail
 | --- | --- | --- |
 | Edit files on my device | [Local and SSH workspaces](/docs/ssh) | A local folder gives file access. Running project commands needs SSH or Local Linux. |
 | Use an existing computer or server | [Local and SSH workspaces](/docs/ssh) | Connect over SSH and use the project files and tools installed there. |
-| Return to remote tasks after disconnecting | [Host mode](/docs/host) | Install NimoteHost on the computer, then connect over SSH. Host keeps managed processes running while it remains active. |
+| Return to remote tasks after disconnecting | [Machines](/docs/host) | Install NimoteHost on the computer, then connect over SSH. Host keeps managed processes running while it remains active. |
 | Run Linux tools on Android | [Install and run a command](/docs/local-linux/getting-started) | Check device compatibility before installing Local Linux. This environment is available on supported Android devices. |
 
 The four app modes choose the interface; the workspace chooses where files and commands live. Host adds a service on your computer. See [Quick start](/docs/quick-start) for mode selection.
@@ -58,9 +58,11 @@ The four app modes choose the interface; the workspace chooses where files and c
 | [Chat, Agents and MCP](/docs/ai) | Choose Chat or Agent; Review plans and tools; Configure trusted MCP servers or ACP runtimes |
 | [Custom plugins](/docs/plugins) | Build and test panels, actions, workflows, Agent tools, MCP references, and Android background jobs |
 
-### Host mode
+### Machines
 
-[Host mode](/docs/host) · [Install NimoteHost](/docs/host/getting-started) · [Get help](/docs/host/troubleshooting)
+Open **Machines → Add Machine** and choose SSH, Nimote Connect, Local Network, or Tailscale. Select the machine to open its workspace in IDE, Terminal, or AI. Add NimoteHost for persistent sessions, remote tasks, and approvals. NimoteHost features require compatible tools and Pro access.
+
+[Machines](/docs/host) · [Install NimoteHost](/docs/host/getting-started) · [Get help](/docs/host/troubleshooting)
 
 ### Android Local Linux
 

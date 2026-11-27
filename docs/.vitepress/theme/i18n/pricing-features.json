@@ -26,8 +26,8 @@
       "groups": [
         {
           "id": "host",
-          "name": "Host mode",
-          "description": "Run remote terminals, tasks and AI sessions that can continue after disconnection. Host mode requires an SSH connection and the nimotehost service installed and running on the remote computer.",
+          "name": "NimoteHost sessions",
+          "description": "Use NimoteHost over authenticated SSH to run persistent terminals, tasks and compatible AI sessions.",
           "note": "NimoteHost currently supports local network (LAN) connections only."
         },
         {
@@ -123,8 +123,8 @@
       "groups": [
         {
           "id": "host",
-          "name": "Host 模式",
-          "description": "在远程电脑上运行终端、任务和 AI 会话，断开连接后仍可继续运行。Host 模式必须配合远程电脑上已安装并运行的 nimotehost 服务使用，并通过 SSH 连接。",
+          "name": "NimoteHost 会话",
+          "description": "通过已认证的 SSH 使用 NimoteHost 运行持久终端、任务和兼容的 AI 会话。",
           "note": "NimoteHost 目前仅支持局域网连接。"
         },
         {
@@ -220,8 +220,8 @@
       "groups": [
         {
           "id": "host",
-          "name": "Host モード",
-          "description": "リモートでターミナル、タスク、AI セッションを実行し、切断後も実行を継続できます。Host モードには SSH 接続と、リモートコンピューターでインストール・起動済みの nimotehost サービスが必要です。",
+          "name": "NimoteHost セッション",
+          "description": "認証済み SSH 経由で NimoteHost を使い、永続ターミナル、タスク、対応する AI セッションを実行できます。",
           "note": "NimoteHost は現在、ローカルネットワーク（LAN）内の接続のみ対応しています。"
         },
         {
@@ -317,8 +317,8 @@
       "groups": [
         {
           "id": "host",
-          "name": "Host 모드",
-          "description": "원격 터미널, 작업 및 AI 세션을 실행하며 연결이 끊겨도 실행을 계속할 수 있습니다. Host 모드는 SSH 연결과 원격 컴퓨터에 설치되어 실행 중인 nimotehost 서비스가 필요합니다.",
+          "name": "NimoteHost 세션",
+          "description": "인증된 SSH로 NimoteHost를 사용해 영구 터미널, 작업, 호환되는 AI 세션을 실행합니다.",
           "note": "NimoteHost는 현재 로컬 네트워크(LAN) 연결만 지원합니다."
         },
         {
@@ -414,7 +414,7 @@
       "groups": [
         {
           "id": "host",
-          "name": "Modo Host",
+          "name": "Sesiones de NimoteHost",
           "description": "Ejecuta terminales, tareas y sesiones de IA remotas que pueden continuar tras desconectarte. El modo Host requiere una conexión SSH y el servicio nimotehost instalado y en ejecución en el equipo remoto.",
           "note": "Por ahora, NimoteHost solo admite conexiones en la red local (LAN)."
         },

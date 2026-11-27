@@ -34,4 +34,4 @@ Use the play control beside a task and inspect its terminal output. A task name 
 
 [2.4.0 →](/releases/2.4.0)
 
-[Host mode →](/docs/host) — Install NimoteHost, connect over SSH, and return to terminals and Agent tasks.
+[Machines →](/docs/host) — Install NimoteHost, connect over SSH, and return to terminals and Agent tasks.

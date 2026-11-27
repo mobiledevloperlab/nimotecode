@@ -5,9 +5,11 @@ description: "Nimote Connect の対応パッケージ、セットアップ、CLI
 
 # Nimote Connect のセットアップ
 
+開発マシンで SSH 接続を選びます。ペアリング済みのマシンには Nimote Connect のネットワーク経路を利用できます。NimoteHost は独立して動作し、認証済みの SSH 接続を通じて高度な機能を提供します。
+
 NimoteCode の公開ネットワーク経由のデバイス接続には、接続先 PC への Nimote Connect のインストール、アカウントとのペアリング、公開接続の有効化が必要です。既存の SSH アドレスや個人用 Tailscale アドレスへの直接 SSH 接続には不要です。
 
-Connect は PC の SSH サーバーまでの通信経路です。接続後はリモートワークスペース、ファイル、SSH ターミナルを利用できます。Host モードは永続タスクや Agent セッションのための別の任意機能で、公開 SSH やターミナルの前提ではありません。現在の商用パッケージには Host も同梱されています。
+Connect は PC の SSH サーバーまでの通信経路です。接続後はリモートワークスペース、ファイル、SSH ターミナルを利用できます。NimoteHost セッションは永続タスクや Agent セッションのための別の任意機能で、公開 SSH やターミナルの前提ではありません。現在の商用パッケージには Host も同梱されています。
 
 [Nimote Connect のリリースページ](https://github.com/mobiledevloperlab/nimote-connect/releases)では現在、macOS と Linux の arm64／amd64 向けに CLI プレビュー版（`v0.2.0-local.8b06897`）を配布しています。Connect と Host が同梱されています。デスクトップアプリと Windows パッケージは今後の配布状況をご確認ください。プレビュー版のペアリングには対応クライアントが必要です。NimoteCode のインターネット経由の接続は一般公開を予定しています。同じリリースのパッケージと SHA-256 ファイルを使用してください。
 

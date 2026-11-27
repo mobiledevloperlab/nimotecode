@@ -5,7 +5,7 @@ description: "NimoteHost: download and installation."
 
 # Download and installation
 
-**NimoteHost currently supports local network (LAN) connections only.** Connect your phone and Host computer to the same local network and use the computer’s local address for SSH.
+Open **Machines**, select a reachable SSH connection, then open **Host Service**. Paired machines can connect over Nimote Connect before using NimoteHost.
 
 ## Start here
 
