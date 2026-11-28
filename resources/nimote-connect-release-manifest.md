@@ -7,8 +7,8 @@
 | `schemaVersion` | 整数，当前为 `1`。 |
 | `generatedAt` | UTC ISO 8601 字符串，表示清单生成时间。 |
 | `packages` | 非空数组，每项对应一个发行附件。数组顺序没有约定。 |
-| `packages[].tag` | GitHub 发行标签，例如 `v1.2.0`。 |
-| `packages[].version` | 版本号，例如 `1.2.0`。 |
+| `packages[].tag` | GitHub 发行标签，例如 `v1.2.1`。 |
+| `packages[].version` | 版本号，例如 `1.2.1`。 |
 | `packages[].prerelease` | 布尔值。当前清单仅发布稳定包，此字段为 `false`。 |
 | `packages[].os` | `darwin`（macOS）、`linux` 或 `windows`。 |
 | `packages[].arch` | `amd64`（x86-64）或 `arm64`。 |
@@ -20,24 +20,24 @@
 
 App 按系统、架构和包类型筛选，并按语义版本选择受支持的稳定包。App 自行判断是否支持对应平台的自动安装，下载后校验字节数和 SHA-256。
 
-以下示例取自真实的 `v1.2.0` 发行附件，仅展示其中一个包。完整快照见 [releases.json](../docs/public/downloads/nimote-connect/releases.json)。
+以下示例取自真实的 `v1.2.1` 发行附件，仅展示其中一个包。完整快照见 [releases.json](../docs/public/downloads/nimote-connect/releases.json)。
 
 ```json
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T13:21:19.557Z",
+  "generatedAt": "2026-11-28T09:46:16.755Z",
   "packages": [
     {
-      "tag": "v1.2.0",
-      "version": "1.2.0",
+      "tag": "v1.2.1",
+      "version": "1.2.1",
       "os": "windows",
       "arch": "amd64",
       "packageType": "cli",
       "prerelease": false,
-      "fileName": "nimote-connect-1.2.0-windows-amd64.zip",
-      "downloadUrl": "https://github.com/mobiledevloperlab/nimote-connect/releases/download/v1.2.0/nimote-connect-1.2.0-windows-amd64.zip",
-      "sizeBytes": 13344696,
-      "sha256": "58f27f6c2d685027a436e34fc9b8285df570150bcacb2bf9126c58059f4c212e"
+      "fileName": "nimote-connect-1.2.1-windows-amd64.zip",
+      "downloadUrl": "https://github.com/mobiledevloperlab/nimote-connect/releases/download/v1.2.1/nimote-connect-1.2.1-windows-amd64.zip",
+      "sizeBytes": 13345150,
+      "sha256": "2fc1785a86224a0bfd7487c5b725145feba0d7e99435ab2c24c7a2f371d1289c"
     }
   ]
 }

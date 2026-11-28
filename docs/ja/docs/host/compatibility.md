@@ -1,11 +1,11 @@
 ---
 title: "Nimote Connect パッケージの互換性 | NimoteCode"
-description: "開発用 PC の OS と CPU に合うパッケージを選びます。macOS と Linux はアプリ内の導入に対応し、Windows は PC 上で直接導入します。1.2.0 は次の 6 種類の CLI パッケージを提供します。GUI は対象 PC 向けの配布がある場合に選択できます。"
+description: "開発用 PC の OS と CPU に合うパッケージを選びます。macOS と Linux はアプリ内の導入に対応し、Windows は PC 上で直接導入します。1.2.1 は次の 6 種類の CLI パッケージを提供します。GUI は対象 PC 向けの配布がある場合に選択できます。"
 ---
 
 # Nimote Connect パッケージの互換性
 
-開発用 PC の OS と CPU に合うパッケージを選びます。macOS と Linux はアプリ内の導入に対応し、Windows は PC 上で直接導入します。1.2.0 は次の 6 種類の CLI パッケージを提供します。GUI は対象 PC 向けの配布がある場合に選択できます。
+開発用 PC の OS と CPU に合うパッケージを選びます。macOS と Linux はアプリ内の導入に対応し、Windows は PC 上で直接導入します。1.2.1 は次の 6 種類の CLI パッケージを提供します。GUI は対象 PC 向けの配布がある場合に選択できます。
 
 | PC の配布対象 | CLI アーカイブ |
 | --- | --- |

@@ -1,78 +1,78 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T13:21:19.557Z",
+  "generatedAt": "2026-11-28T09:46:16.755Z",
   "packages": [
     {
-      "tag": "v1.2.0",
-      "version": "1.2.0",
+      "tag": "v1.2.1",
+      "version": "1.2.1",
       "os": "darwin",
       "arch": "amd64",
       "packageType": "cli",
       "prerelease": false,
-      "fileName": "nimote-connect-1.2.0-darwin-amd64.tar.gz",
-      "downloadUrl": "https://github.com/mobiledevloperlab/nimote-connect/releases/download/v1.2.0/nimote-connect-1.2.0-darwin-amd64.tar.gz",
-      "sizeBytes": 16190412,
-      "sha256": "151c242a1bb2e828c034b54143f68c7508105b6dfd0b8e541ed294029d450239"
+      "fileName": "nimote-connect-1.2.1-darwin-amd64.tar.gz",
+      "downloadUrl": "https://github.com/mobiledevloperlab/nimote-connect/releases/download/v1.2.1/nimote-connect-1.2.1-darwin-amd64.tar.gz",
+      "sizeBytes": 16186973,
+      "sha256": "c8742f2057df18ec2a609a164947681fe559f969f6535ee7ad39df218165178f"
     },
     {
-      "tag": "v1.2.0",
-      "version": "1.2.0",
+      "tag": "v1.2.1",
+      "version": "1.2.1",
       "os": "darwin",
       "arch": "arm64",
       "packageType": "cli",
       "prerelease": false,
-      "fileName": "nimote-connect-1.2.0-darwin-arm64.tar.gz",
-      "downloadUrl": "https://github.com/mobiledevloperlab/nimote-connect/releases/download/v1.2.0/nimote-connect-1.2.0-darwin-arm64.tar.gz",
-      "sizeBytes": 15054208,
-      "sha256": "b63e6753a906034b8d8a7301bda50f6f30a3d0f8ea4c5f23bf73d3cd6578de7a"
+      "fileName": "nimote-connect-1.2.1-darwin-arm64.tar.gz",
+      "downloadUrl": "https://github.com/mobiledevloperlab/nimote-connect/releases/download/v1.2.1/nimote-connect-1.2.1-darwin-arm64.tar.gz",
+      "sizeBytes": 15076585,
+      "sha256": "cd711162c06ce4598c7f558622d67f43b757ce032059ad69774bb9ed00b3a923"
     },
     {
-      "tag": "v1.2.0",
-      "version": "1.2.0",
+      "tag": "v1.2.1",
+      "version": "1.2.1",
       "os": "linux",
       "arch": "amd64",
       "packageType": "cli",
       "prerelease": false,
-      "fileName": "nimote-connect-1.2.0-linux-amd64.tar.gz",
-      "downloadUrl": "https://github.com/mobiledevloperlab/nimote-connect/releases/download/v1.2.0/nimote-connect-1.2.0-linux-amd64.tar.gz",
-      "sizeBytes": 13175941,
-      "sha256": "e0789f2cab7da4f6a881dce088ad594b57fbe6fa7b9b2672e3a0d0b860177844"
+      "fileName": "nimote-connect-1.2.1-linux-amd64.tar.gz",
+      "downloadUrl": "https://github.com/mobiledevloperlab/nimote-connect/releases/download/v1.2.1/nimote-connect-1.2.1-linux-amd64.tar.gz",
+      "sizeBytes": 13176283,
+      "sha256": "15581549a18bef5902420e6c8444388cc89974c591f48a7a37fe01a2acb8e22a"
     },
     {
-      "tag": "v1.2.0",
-      "version": "1.2.0",
+      "tag": "v1.2.1",
+      "version": "1.2.1",
       "os": "linux",
       "arch": "arm64",
       "packageType": "cli",
       "prerelease": false,
-      "fileName": "nimote-connect-1.2.0-linux-arm64.tar.gz",
-      "downloadUrl": "https://github.com/mobiledevloperlab/nimote-connect/releases/download/v1.2.0/nimote-connect-1.2.0-linux-arm64.tar.gz",
-      "sizeBytes": 11908321,
-      "sha256": "3fb9bd2976899fffe41e28108692deb8d43478d27ebaee89e4f66f0aa195c8db"
+      "fileName": "nimote-connect-1.2.1-linux-arm64.tar.gz",
+      "downloadUrl": "https://github.com/mobiledevloperlab/nimote-connect/releases/download/v1.2.1/nimote-connect-1.2.1-linux-arm64.tar.gz",
+      "sizeBytes": 11908135,
+      "sha256": "f423f528a6f49369f042c7889a64d785d7f416494e9efa79ac105c78672855de"
     },
     {
-      "tag": "v1.2.0",
-      "version": "1.2.0",
+      "tag": "v1.2.1",
+      "version": "1.2.1",
       "os": "windows",
       "arch": "amd64",
       "packageType": "cli",
       "prerelease": false,
-      "fileName": "nimote-connect-1.2.0-windows-amd64.zip",
-      "downloadUrl": "https://github.com/mobiledevloperlab/nimote-connect/releases/download/v1.2.0/nimote-connect-1.2.0-windows-amd64.zip",
-      "sizeBytes": 13344696,
-      "sha256": "58f27f6c2d685027a436e34fc9b8285df570150bcacb2bf9126c58059f4c212e"
+      "fileName": "nimote-connect-1.2.1-windows-amd64.zip",
+      "downloadUrl": "https://github.com/mobiledevloperlab/nimote-connect/releases/download/v1.2.1/nimote-connect-1.2.1-windows-amd64.zip",
+      "sizeBytes": 13345150,
+      "sha256": "2fc1785a86224a0bfd7487c5b725145feba0d7e99435ab2c24c7a2f371d1289c"
     },
     {
-      "tag": "v1.2.0",
-      "version": "1.2.0",
+      "tag": "v1.2.1",
+      "version": "1.2.1",
       "os": "windows",
       "arch": "arm64",
       "packageType": "cli",
       "prerelease": false,
-      "fileName": "nimote-connect-1.2.0-windows-arm64.zip",
-      "downloadUrl": "https://github.com/mobiledevloperlab/nimote-connect/releases/download/v1.2.0/nimote-connect-1.2.0-windows-arm64.zip",
-      "sizeBytes": 11944892,
-      "sha256": "990e3fa355b575d8d2349dbe3a078372bbff2db26d64123ac0200a47be0162e5"
+      "fileName": "nimote-connect-1.2.1-windows-arm64.zip",
+      "downloadUrl": "https://github.com/mobiledevloperlab/nimote-connect/releases/download/v1.2.1/nimote-connect-1.2.1-windows-arm64.zip",
+      "sizeBytes": 11945258,
+      "sha256": "814d7466479869cf2ad1b08ad5afe406f07857ef4837bd448c964661970689f2"
     }
   ]
 }
