@@ -45,7 +45,7 @@ App 按系统、架构和包类型筛选，并按语义版本选择受支持的�
 
 ## 刷新
 
-官网 `main` 分支的推送会触发 [Pages 发布工作流](../.github/workflows/deploy.yml)。上游发版后，也可在官网仓库的 **Actions → Deploy NimoteCode-OFFICAL SITE to Pages → Run workflow** 选择 `main` 手动刷新。CI 优先读取 GitHub 附件的 SHA-256 元数据，缺失或无效时读取对应的 `.sha256` 附件。公开 API 可匿名访问。如需认证，在官网仓库的 Actions secrets 中设置 `NIMOTE_CONNECT_RELEASES_TOKEN`，授予上游仓库 Contents 只读权限。
+官网 `main` 分支的推送会触发 [Pages 发布工作流](../.github/workflows/deploy.yml)。上游发版后，也可在官网仓库的 **Actions → Deploy NimoteCode-OFFICAL SITE to Pages → Run workflow** 选择 `main` 手动刷新。CI 优先读取 GitHub 附件的 SHA-256 元数据，缺失或无效时读取对应的 `.sha256` 附件。CI 默认使用 Actions 自带的只读令牌访问公开 API，避免匿名请求限流。如需专用认证，在官网仓库的 Actions secrets 中设置 `NIMOTE_CONNECT_RELEASES_TOKEN`，授予上游仓库 Contents 只读权限。
 
 CI 在构建前生成清单，并在上传 Pages 产物前校验 JSON 与文件内容。API 或下载请求失败、附件地址校验失败、清单为空或产物校验失败时，工作流停止发布，线上继续提供上次成功部署的清单。仓库内的快照用于本地和 PR 的离线构建。
 

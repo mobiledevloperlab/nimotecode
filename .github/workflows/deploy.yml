@@ -43,7 +43,7 @@ jobs:
 
       - name: Refresh the Nimote Connect release manifest
         env:
-          NIMOTE_CONNECT_RELEASES_TOKEN: ${{ secrets.NIMOTE_CONNECT_RELEASES_TOKEN }}
+          NIMOTE_CONNECT_RELEASES_TOKEN: ${{ secrets.NIMOTE_CONNECT_RELEASES_TOKEN || github.token }}
         run: node scripts/nimote-connect-manifest.mjs refresh
 
       - name: Build with VitePress
